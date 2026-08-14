@@ -1,0 +1,72 @@
+name: WeChat Daily Article
+
+on:
+  workflow_dispatch:
+  schedule:
+    # UTC 23:53 == 北京 07:53，目标在 08:00 前出刊。
+    - cron: "53 23 * * *"
+
+concurrency:
+  group: weixin-daily-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  weixin:
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate article
+        env:
+          # Key 只存在于 GitHub Secrets；其余均为可选覆盖，留空即走代码默认值。
+          DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+          DASHSCOPE_API_BASE_URL: ${{ vars.DASHSCOPE_API_BASE_URL }}
+          WEIXIN_TEXT_MODEL: ${{ vars.WEIXIN_TEXT_MODEL }}
+          WEIXIN_IMAGE_MODEL: ${{ vars.WEIXIN_IMAGE_MODEL }}
+          WEIXIN_BRAND_NAME: ${{ vars.WEIXIN_BRAND_NAME }}
+          WEIXIN_RADAR_URL: ${{ vars.WEIXIN_RADAR_URL }}
+          WEIXIN_MAX_ITEMS: ${{ vars.WEIXIN_MAX_ITEMS }}
+          WEIXIN_ENABLED: ${{ vars.WEIXIN_ENABLED }}
+        run: python scripts/generate_weixin_article.py --data-dir data --output-dir weixin
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add weixin/
+          # Self-check: fail loudly if anything under weixin/ is still unstaged.
+          if [ -n "$(git status --porcelain --untracked-files=all -- weixin/ | grep -v '^[MADRC]' || true)" ]; then
+            echo "::error::Generated files under weixin/ were not staged:"
+            git status --porcelain --untracked-files=all -- weixin/ | grep -v '^[MADRC]'
+            exit 1
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: update weixin article"
+          # 运行期间有人推了同分支时裸 push 会被拒(non-fast-forward)，整轮白跑。
+          # rebase 到最新远端再推，最多重试 3 次；产物都是本轮生成的快照，rebase 无冲突风险。
+          for attempt in 1 2 3; do
+            git push && exit 0
+            echo "push rejected (attempt $attempt), rebasing onto latest remote..."
+            git pull --rebase origin "${GITHUB_REF_NAME}" || { git rebase --abort || true; exit 1; }
+          done
+          git push
