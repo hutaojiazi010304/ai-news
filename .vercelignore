@@ -1,0 +1,27 @@
+# Data files not fetched by the frontend (exact paths; keep the 7 required JSONs)
+data/archive.json
+data/title-zh-cache.json
+data/persona-cache.json
+data/merge-log.json
+data/paid-source-state.json
+
+# Non-site directories
+scripts/
+tests/
+docs/
+reports/
+feeds/
+examples/
+.github/
+.agents/
+
+# Local dev artifacts
+.venv/
+.pytest_cache/
+
+# Repo metadata / dev files
+requirements.txt
+requirements-dev.txt
+AGENTS.md
+CLAUDE.md
+skills-lock.json

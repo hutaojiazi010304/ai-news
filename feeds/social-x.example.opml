@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>AI News Radar Social RSS Candidates</title>
+  </head>
+  <body>
+    <outline text="X via RSSHub candidates">
+      <!--
+        X/Twitter has no official RSS. This public RSSHub route worked in local
+        tests, but public instances can time out or lose Twitter API access.
+        Use it in your private feeds/follow.opml only if you accept that risk.
+      -->
+      <outline
+        text="Andrej Karpathy on X via RSSHub"
+        title="Andrej Karpathy on X via RSSHub"
+        type="rss"
+        xmlUrl="https://rsshub.pseudoyu.com/twitter/user/karpathy"
+        htmlUrl="https://x.com/karpathy"
+      />
+    </outline>
+  </body>
+</opml>

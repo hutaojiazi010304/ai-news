@@ -1,0 +1,151 @@
+name: Update AI News Snapshot
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_tikhub:
+        description: "Force a paid TikHub refresh even before its normal interval"
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    - cron: "17 * * * *"
+
+concurrency:
+  group: update-ai-news-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    timeout-minutes: 40
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Prepare OPML
+        env:
+          FOLLOW_OPML_B64: ${{ secrets.FOLLOW_OPML_B64 }}
+        run: |
+          mkdir -p feeds
+          if [ -n "$FOLLOW_OPML_B64" ]; then
+            echo "$FOLLOW_OPML_B64" | base64 --decode > feeds/follow.opml
+            echo "Loaded feeds/follow.opml from FOLLOW_OPML_B64 secret"
+          elif [ -f feeds/follow.example.opml ]; then
+            cp feeds/follow.example.opml feeds/follow.opml
+            echo "Loaded public demo OPML from feeds/follow.example.opml"
+          else
+            echo "No OPML file available; RSS OPML is optional"
+          fi
+
+      - name: Update data
+        env:
+          EMAIL_DIGEST_ENABLED: ${{ secrets.EMAIL_DIGEST_ENABLED || vars.EMAIL_DIGEST_ENABLED }}
+          AGENTMAIL_API_KEY: ${{ secrets.AGENTMAIL_API_KEY }}
+          AGENTMAIL_INBOX_ID: ${{ secrets.AGENTMAIL_INBOX_ID }}
+          AGENTMAIL_API_BASE_URL: ${{ vars.AGENTMAIL_API_BASE_URL }}
+          AGENTMAIL_LIMIT: ${{ vars.AGENTMAIL_LIMIT }}
+          AGENTMAIL_ALLOWED_SENDER_DOMAINS: ${{ vars.AGENTMAIL_ALLOWED_SENDER_DOMAINS }}
+          # Paid X/social sources (X API, SocialData, TikHub): keys live in
+          # secrets; optional tuning variables override code defaults.
+          # Policy is key-first: a key present => the source runs; ENABLED is
+          # optional and only needs setting to 0 to force it off.
+          X_API_ENABLED: ${{ secrets.X_API_ENABLED || vars.X_API_ENABLED }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          SOCIALDATA_ENABLED: ${{ secrets.SOCIALDATA_ENABLED || vars.SOCIALDATA_ENABLED }}
+          SOCIALDATA_API_KEY: ${{ secrets.SOCIALDATA_API_KEY }}
+          SOCIALDATA_QUERY: ${{ vars.SOCIALDATA_QUERY }}
+          SOCIALDATA_SEARCH_TYPE: ${{ vars.SOCIALDATA_SEARCH_TYPE }}
+          SOCIALDATA_MAX_RESULTS: ${{ vars.SOCIALDATA_MAX_RESULTS }}
+          SOCIALDATA_DAILY_TWEET_LIMIT: ${{ vars.SOCIALDATA_DAILY_TWEET_LIMIT }}
+          SOCIALDATA_RUN_INTERVAL_HOURS: ${{ vars.SOCIALDATA_RUN_INTERVAL_HOURS }}
+          SOCIALDATA_RUN_UTC_HOUR: ${{ vars.SOCIALDATA_RUN_UTC_HOUR }}
+          SOCIALDATA_RUN_UTC_MINUTE_MAX: ${{ vars.SOCIALDATA_RUN_UTC_MINUTE_MAX }}
+          SOCIALDATA_LIST_ID: ${{ vars.SOCIALDATA_LIST_ID }}
+          SOCIALDATA_LIST_ENABLED: ${{ vars.SOCIALDATA_LIST_ENABLED }}
+          SOCIALDATA_LIST_MAX_RESULTS: ${{ vars.SOCIALDATA_LIST_MAX_RESULTS }}
+          SOCIALDATA_LIST_EXCLUDE: ${{ vars.SOCIALDATA_LIST_EXCLUDE }}
+          TIKHUB_ENABLED: ${{ secrets.TIKHUB_ENABLED || vars.TIKHUB_ENABLED }}
+          TIKHUB_API_KEY: ${{ secrets.TIKHUB_API_KEY }}
+          TIKHUB_API_BASE_URL: ${{ vars.TIKHUB_API_BASE_URL }}
+          TIKHUB_QUERY: ${{ vars.TIKHUB_QUERY }}
+          TIKHUB_PLATFORMS: ${{ vars.TIKHUB_PLATFORMS }}
+          TIKHUB_MAX_RESULTS: ${{ vars.TIKHUB_MAX_RESULTS }}
+          TIKHUB_DAILY_ITEM_LIMIT: ${{ vars.TIKHUB_DAILY_ITEM_LIMIT }}
+          TIKHUB_RUN_INTERVAL_HOURS: ${{ vars.TIKHUB_RUN_INTERVAL_HOURS }}
+          TIKHUB_RUN_UTC_HOUR: ${{ vars.TIKHUB_RUN_UTC_HOUR }}
+          TIKHUB_RUN_UTC_MINUTE_MAX: ${{ vars.TIKHUB_RUN_UTC_MINUTE_MAX }}
+          TIKHUB_FORCE_RUN: ${{ inputs.force_tikhub && '1' || '' }}
+          RSS_MAX_FEEDS: ${{ vars.RSS_MAX_FEEDS || 10 }}
+          # DeepSeek: powers title enhancement + zh translation fallback in
+          # update_news.py itself (persona scoring gets its own copy of these
+          # in the step below). All reads in update_news.py use
+          # `os.environ.get(...) or default`, so leaving the optional vars
+          # unset/empty is safe.
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_API_BASE_URL: ${{ vars.DEEPSEEK_API_BASE_URL }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
+          TITLE_ENHANCE_MAX_PER_RUN: ${{ vars.TITLE_ENHANCE_MAX_PER_RUN }}
+        run: |
+          if [ -f feeds/follow.opml ]; then
+            python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21 --rss-opml feeds/follow.opml --rss-max-feeds "${RSS_MAX_FEEDS:-10}"
+          else
+            python scripts/update_news.py --output-dir data --window-hours 24 --archive-days 21
+          fi
+
+      - name: Persona scoring
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_API_BASE_URL: ${{ vars.DEEPSEEK_API_BASE_URL }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
+        run: python scripts/persona_score.py --data-dir data
+
+      - name: Commit and push changes
+        env:
+          EMAIL_DIGEST_PUBLISH: ${{ secrets.EMAIL_DIGEST_PUBLISH || vars.EMAIL_DIGEST_PUBLISH }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Stage the whole data dir so newly added output files can never be
+          # silently dropped again (the daily-brief/stories-merged freeze was
+          # caused by a stale filename whitelist here). .gitignore keeps
+          # data/email-digest.json out of this add.
+          git add data/
+          if [ -f data/email-digest.json ] && [ "$EMAIL_DIGEST_PUBLISH" = "1" ]; then
+            git add -f data/email-digest.json
+          fi
+          # Self-check: fail loudly if anything under data/ is still unstaged,
+          # instead of green-but-stale runs.
+          if [ -n "$(git status --porcelain --untracked-files=all -- data/ | grep -v '^[MADRC]' || true)" ]; then
+            echo "::error::Generated files under data/ were not staged:"
+            git status --porcelain --untracked-files=all -- data/ | grep -v '^[MADRC]'
+            exit 1
+          fi
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: update ai news snapshot"
+          # 运行期间有人推了同分支时裸 push 会被拒(non-fast-forward),整轮数据白跑。
+          # rebase 到最新远端再推,最多重试 3 次;数据文件都是本轮生成的快照,rebase 无冲突风险。
+          for attempt in 1 2 3; do
+            git push && exit 0
+            echo "push rejected (attempt $attempt), rebasing onto latest remote..."
+            git pull --rebase origin "${GITHUB_REF_NAME}" || { git rebase --abort || true; exit 1; }
+          done
+          git push

@@ -1,0 +1,20 @@
+{
+  "name": "ai-news-radar",
+  "owner": { "name": "LearnPrompt", "url": "https://github.com/LearnPrompt" },
+  "metadata": { "description": "Marketplace hosting AI News Radar — 24h AI 更新雷达：雷达Skill（ai-radar，零API中文AI资讯查询）+ 伯乐Skill（ai-news-radar，仓库维护与信源选源）。" },
+  "plugins": [
+    {
+      "name": "ai-news-radar",
+      "description": "24小时AI更新雷达。雷达Skill（ai-radar）让Agent零API读取GitHub Pages公开JSON，回答\"今天AI圈有什么\"；伯乐Skill（ai-news-radar）帮你维护信源、抓取脚本、Pages部署。数据来自LearnPrompt/ai-news-radar，GitHub Actions每日刷新。",
+      "version": "1.0.0",
+      "author": { "name": "LearnPrompt", "url": "https://github.com/LearnPrompt" },
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/LearnPrompt/ai-news-radar",
+      "skills": [
+        "./skills/radar",
+        "./skills/ai-news-radar"
+      ]
+    }
+  ]
+}

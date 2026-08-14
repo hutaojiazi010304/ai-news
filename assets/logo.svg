@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-labelledby="title desc">
+  <title id="title">AI News Radar Logo</title>
+  <desc id="desc">Radar-inspired mark for AI News Radar</desc>
+  <defs>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d94825"/>
+      <stop offset="100%" stop-color="#0f6f7f"/>
+    </linearGradient>
+    <linearGradient id="dot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7a50"/>
+      <stop offset="100%" stop-color="#17a2b8"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="204" height="204" rx="48" fill="#f8f6f1"/>
+  <circle cx="110" cy="110" r="78" fill="none" stroke="url(#ring)" stroke-width="10" opacity="0.32"/>
+  <circle cx="110" cy="110" r="52" fill="none" stroke="url(#ring)" stroke-width="8" opacity="0.45"/>
+  <circle cx="110" cy="110" r="28" fill="none" stroke="url(#ring)" stroke-width="6" opacity="0.65"/>
+  <path d="M110 110 L176 82" stroke="url(#ring)" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="176" cy="82" r="13" fill="url(#dot)"/>
+  <circle cx="110" cy="110" r="10" fill="#12100f"/>
+  <path d="M64 165 L110 110 L131 128 L88 165 Z" fill="#12100f" opacity="0.9"/>
+</svg>

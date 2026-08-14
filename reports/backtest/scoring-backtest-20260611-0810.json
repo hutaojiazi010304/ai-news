@@ -1,0 +1,539 @@
+{
+ "total_items": 83725,
+ "kept_baseline": 10401,
+ "kept_candidate": 10078,
+ "keep_rate_baseline": 0.1242,
+ "keep_rate_candidate": 0.1204,
+ "flips_to_drop_count": 327,
+ "flips_to_keep_count": 4,
+ "flips_to_drop_samples": [
+  {
+   "site_id": "opmlrss",
+   "title": "Quoting Karen Kwok for Reuters Breakingviews",
+   "url": "https://simonwillison.net/2026/May/31/anthropic-run-rate",
+   "baseline": {
+    "label": "ai_product_update",
+    "score": 0.71
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.15
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "“写题词”并非一项技能——我们必须停止自欺欺人",
+   "url": "https://dev.to/harsh2644/the-prompt-is-not-a-skill-and-we-need-to-stop-pretending-3m18",
+   "baseline": {
+    "label": "ai_general",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "贝尔法斯特暴力事件引发右翼阵营内斗",
+   "url": "https://news.sky.com/story/belfast-violence-prompts-fight-on-the-right-13552547",
+   "baseline": {
+    "label": "ai_general",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "风投对法律初创企业可谓青睐有加。安德森·霍洛维茨（Andreessen Horowitz）刚刚投资了一家正在抢占专利律师业务的初创企业。",
+   "url": "https://www.businessinsider.com/a16z-backed-fearn-raises-5-million-legal-ai-patent-drafting-2026-6",
+   "baseline": {
+    "label": "ai_general",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "您的搜索结果正在被“Sloptimized”",
+   "url": "https://www.theatlantic.com/technology/2026/06/google-search-ai-optimization/687495",
+   "baseline": {
+    "label": "ai_product_update",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "北京在台湾附近发现疑似日本间谍飞机 - South China Morning Post",
+   "url": "https://news.google.com/read/CBMisgFBVV95cUxNM1I1dGF4cURKN3QzazRXbnl3ZHFmek5IckJleGpTOUhQbWtFRVgycnVnX1BqSnBWUWlVWDBvZllDa1JVU3l5VTlMQnR5NDBCN2xRbnVqTThJSnIzZW0",
+   "baseline": {
+    "label": "model_release",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "techurls",
+   "title": "Why high-flying chip stocks are suddenly looking vulnerable",
+   "url": "https://www.businessinsider.com/why-are-chip-stocks-down-interest-rates-ai-spacex-ipo-2026-6",
+   "baseline": {
+    "label": "infra_compute",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.08
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "巴勒斯坦人称，以色列定居者阻碍了约旦河西岸某基督教村庄附近的灭火工作 - Reuters",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMWZBcFpwamlHMmJlQXN4emZLS1VRRkpnbzJLRTRFSTlwM3duam9lQy0zYlhGUmgzWVROVDdnRzFEb2FWeTdGdkZDQkpsUDZ0elpLR3JnTEN",
+   "baseline": {
+    "label": "model_release",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "北京在台湾附近发现疑似日本间谍飞机 - South China Morning Post",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNM1I1dGF4cURKN3QzazRXbnl3ZHFmek5IckJleGpTOUhQbWtFRVgycnVnX1BqSnBWUWlVWDBvZllDa1JVU3l5VTlMQnR5NDBCN2xRbnVqTTh",
+   "baseline": {
+    "label": "model_release",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "随着动荡的一周持续，英国和欧洲股市料将下跌",
+   "url": "https://www.bloomberg.com/news/live-blog/2026-06-11/ftse-100-live-pound-gilts-ecb-rate-iran-war-trump-oil-prices-gold-ai-stocks-what-s-moving-uk-markets-right-n",
+   "baseline": {
+    "label": "ai_general",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "SpaceX首次公开募股（IPO）认购需求达2500亿美元。这对上市首日交易意味着什么 - Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMndjOTZ0TjNLQTR3MEdDSF9HQVNreDZPZEJOVGZxS1MzdzZXQUdwbDhfZ0JYR1V2dlpobnRFanJLeTF5cklVYjdFMXRveEYtRkJtbWVUQXZ",
+   "baseline": {
+    "label": "model_release",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "tophub",
+   "title": "Respan Gateway",
+   "url": "https://www.producthunt.com/products/keywords-ai",
+   "baseline": {
+    "label": "ai_product_update",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "tophub",
+   "title": "Kimi Work",
+   "url": "https://www.producthunt.com/products/kimi-ai-assistant",
+   "baseline": {
+    "label": "ai_product_update",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "tophub",
+   "title": "Whistle",
+   "url": "https://www.producthunt.com/products/whistle-ai-workout-planner",
+   "baseline": {
+    "label": "ai_product_update",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "吉姆·克莱默将高企的CPI称为“人为通胀”——这对股市意味着什么 - CNBC",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUzJvRDVMdFpXWm0xcnNNa1JFdE15VlpjaDZCeTZ3cTUyLXlnc050ZlgwSnhVNmZGOVJpNVNIb3BPeDRrNFprVC1FSWIyam5jMERlaWJNV1A",
+   "baseline": {
+    "label": "model_release",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "如果克劳德·法布尔不再帮助你，你永远都不会知道",
+   "url": "https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html",
+   "baseline": {
+    "label": "model_release",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "研究显示，去年印度尼西亚的降雨和山体滑坡导致全球最稀有的类人猿中有7%死亡 - The Guardian",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRGctd0RDdVNITnFSYTFZRVRUZXZBS0N4aDJhOWJkQkVhZ2tCTWllMWhHa0hHS2lfckt1djZLOTc5VV8tN3p2cHZqbWZYVU02Rmx2c0tJVDl",
+   "baseline": {
+    "label": "model_release",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "花莲的漫漫长夜：台湾原住民眼中的“中国威胁” - The Diplomat – Asia-Pacific",
+   "url": "https://news.google.com/read/CBMivAFBVV95cUxOQzhRTDlOajA5LU9BZ0pqX3hjcFl1azI0RFdUVnRndUNLZWJpSTNyTXpId0xmSS1PVlUtZmlpLWoyUFpBQ0w4dlZZTXdvb2hHYWpCM0VfTnJpV1hnOWJ",
+   "baseline": {
+    "label": "model_release",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "工业机器人初创公司Mujin正筹集资金，计划于2030年前上市",
+   "url": "https://www.bloomberg.com/news/articles/2026-06-10/factory-robot-startup-mujin-raising-funds-ahead-of-ipo-by-2030",
+   "baseline": {
+    "label": "robotics",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.08
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "联合国将调查黎巴嫩境内“各方”违反国际法的行为 - Haaretz",
+   "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQVzRFOV9aT1BJZjV1eGk0eUpFMHFvOHNDZDBXSUh4eXBGMjVONWNBeEc2cGdYX2N3ZER2a2J4ZERWNkdmQjNJMllMWVJOM0k2dW4tTkJRbVF",
+   "baseline": {
+    "label": "model_release",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "Tether在14亿美元融资轮中投资德国机器人初创公司Neura",
+   "url": "https://www.bloomberg.com/news/articles/2026-06-10/tether-backs-german-robotics-startup-neura-in-1-4-billion-round",
+   "baseline": {
+    "label": "robotics",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.08
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "Show HN: 基于Excel开发的2D和3D机械臂模拟器",
+   "url": "https://github.com/CarlKCarlK/excel-3d-robot-arm",
+   "baseline": {
+    "label": "robotics",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "特朗普称美国将再次对伊朗发动袭击",
+   "url": "https://www.reuters.com/es/mundo/GMCPCYVI25L45O2W4ISBATMJDU-2026-06-10",
+   "baseline": {
+    "label": "developer_tool",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "techurls",
+   "title": "Apple wants Europe to blink",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/947051/apple-europe-dma-siri-ai",
+   "baseline": {
+    "label": "ai_general",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "techurls",
+   "title": "Your Google Home speaker is about to understand you a lot better",
+   "url": "https://www.androidpolice.com/gemini-for-home-update-4-18",
+   "baseline": {
+    "label": "model_release",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "techurls",
+   "title": "Ambani-backed Addverb wants $100 million to build India’s answer to Unitree and Tesla Optimus",
+   "url": "https://thenextweb.com/news/addverb-india-robotics-ambani-100m-humanoid",
+   "baseline": {
+    "label": "robotics",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "Show HN: OpenClaw 和 Hermes Agent 通过 XMPP 相互通信",
+   "url": "https://github.com/ai-sns/openclaw-hermes-agent-network",
+   "baseline": {
+    "label": "agent_workflow",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.32
+   }
+  },
+  {
+   "site_id": "buzzing",
+   "title": "Show HN: Loom，一个用于编码代理的开源交付框架",
+   "url": "https://github.com/valkor-ai/loom",
+   "baseline": {
+    "label": "ai_tech",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.08
+   }
+  },
+  {
+   "site_id": "techurls",
+   "title": "Rotomate raises €2.1M pre-seed to put a reliability engineer inside every factory",
+   "url": "https://thenextweb.com/news/rotomate-pre-seed-funding-industrial-ai",
+   "baseline": {
+    "label": "industry_business",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  },
+  {
+   "site_id": "techurls",
+   "title": "VCs can't get enough of legal startups. Andreessen Horowitz just invested in one taking work from patent lawyers.",
+   "url": "https://www.businessinsider.com/a16z-backed-fearn-raises-5-million-legal-ai-patent-drafting-2026-6",
+   "baseline": {
+    "label": "ai_general",
+    "score": 0.65
+   },
+   "candidate": {
+    "label": "not_ai",
+    "score": 0.0
+   }
+  }
+ ],
+ "flips_to_keep_samples": [
+  {
+   "site_id": "techurls",
+   "title": "Microsoft C.E.O. Satya Nadella Says ‘Everyone Is a Stakeholder’ in A.I.",
+   "url": "https://www.nytimes.com/2026/06/10/technology/microsoft-satya-nadella-artificial-intelligence.html",
+   "baseline": {
+    "label": "not_ai",
+    "score": 0.0
+   },
+   "candidate": {
+    "label": "ai_general",
+    "score": 0.65
+   }
+  },
+  {
+   "site_id": "techurls",
+   "title": "SpaceX Has $30 Billion Deal to Provide Google With A.I. Computing Power",
+   "url": "https://www.nytimes.com/2026/06/05/technology/spacex-google-deal.html",
+   "baseline": {
+    "label": "not_ai",
+    "score": 0.0
+   },
+   "candidate": {
+    "label": "ai_product_update",
+    "score": 0.65
+   }
+  },
+  {
+   "site_id": "techurls",
+   "title": "The Public Should Own Half of the Big A.I. Companies",
+   "url": "https://www.sanders.senate.gov/op-eds/the-public-should-own-half-of-the-big-a-i-companies",
+   "baseline": {
+    "label": "not_ai",
+    "score": 0.0
+   },
+   "candidate": {
+    "label": "ai_general",
+    "score": 0.65
+   }
+  },
+  {
+   "site_id": "newsnow",
+   "title": "The Public Should Own Half of the Big A.I. Companies",
+   "url": "https://news.ycombinator.com/item?id=48386551",
+   "baseline": {
+    "label": "not_ai",
+    "score": 0.0
+   },
+   "candidate": {
+    "label": "ai_general",
+    "score": 0.65
+   }
+  }
+ ],
+ "label_moves": {
+  "ai_product_update -> ai_general": 42,
+  "model_release -> ai_product_update": 22,
+  "agent_workflow -> ai_general": 19,
+  "model_release -> ai_general": 17,
+  "developer_tool -> ai_general": 12,
+  "research_paper -> ai_general": 10,
+  "developer_tool -> ai_product_update": 8,
+  "infra_compute -> ai_general": 7,
+  "ai_tech -> ai_general": 6,
+  "model_release -> developer_tool": 5,
+  "model_release -> agent_workflow": 4,
+  "research_paper -> ai_product_update": 4,
+  "developer_tool -> industry_business": 3,
+  "industry_business -> ai_general": 3,
+  "model_release -> infra_compute": 3,
+  "infra_compute -> ai_product_update": 3,
+  "robotics -> ai_general": 3,
+  "agent_workflow -> ai_tech": 2,
+  "developer_tool -> agent_workflow": 2,
+  "agent_workflow -> industry_business": 2
+ },
+ "per_site": {
+  "tophub": {
+   "total": 38399,
+   "kept_baseline": 1269,
+   "kept_candidate": 1260
+  },
+  "buzzing": {
+   "total": 22456,
+   "kept_baseline": 2501,
+   "kept_candidate": 2312
+  },
+  "iris": {
+   "total": 11477,
+   "kept_baseline": 2017,
+   "kept_candidate": 1995
+  },
+  "techurls": {
+   "total": 5731,
+   "kept_baseline": 1574,
+   "kept_candidate": 1476
+  },
+  "newsnow": {
+   "total": 2757,
+   "kept_baseline": 444,
+   "kept_candidate": 440
+  },
+  "zeli": {
+   "total": 1189,
+   "kept_baseline": 1189,
+   "kept_candidate": 1189
+  },
+  "aihot": {
+   "total": 511,
+   "kept_baseline": 511,
+   "kept_candidate": 511
+  },
+  "aibase": {
+   "total": 386,
+   "kept_baseline": 386,
+   "kept_candidate": 386
+  },
+  "followbuilders": {
+   "total": 367,
+   "kept_baseline": 149,
+   "kept_candidate": 149
+  },
+  "opmlrss": {
+   "total": 324,
+   "kept_baseline": 233,
+   "kept_candidate": 232
+  },
+  "official_ai": {
+   "total": 122,
+   "kept_baseline": 122,
+   "kept_candidate": 122
+  },
+  "aibreakfast": {
+   "total": 6,
+   "kept_baseline": 6,
+   "kept_candidate": 6
+  }
+ }
+}

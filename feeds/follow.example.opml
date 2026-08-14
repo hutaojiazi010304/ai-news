@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>AI News Radar RSS Example</title>
+  </head>
+  <body>
+    <outline text="Official AI Sources">
+      <outline
+        text="OpenAI News"
+        title="OpenAI News"
+        type="rss"
+        xmlUrl="https://openai.com/news/rss.xml"
+        htmlUrl="https://openai.com/news"
+      />
+      <outline
+        text="Hugging Face Blog"
+        title="Hugging Face Blog"
+        type="rss"
+        xmlUrl="https://huggingface.co/blog/feed.xml"
+        htmlUrl="https://huggingface.co/blog"
+      />
+      <outline
+        text="Google DeepMind Blog"
+        title="Google DeepMind Blog"
+        type="rss"
+        xmlUrl="https://deepmind.google/blog/rss.xml"
+        htmlUrl="https://deepmind.google/discover/blog/"
+      />
+      <outline
+        text="Google AI Blog"
+        title="Google AI Blog"
+        type="rss"
+        xmlUrl="https://blog.google/technology/ai/rss/"
+        htmlUrl="https://blog.google/technology/ai/"
+      />
+      <outline
+        text="Microsoft AI Blog"
+        title="Microsoft AI Blog"
+        type="rss"
+        xmlUrl="https://news.microsoft.com/source/topics/ai/feed/"
+        htmlUrl="https://news.microsoft.com/source/topics/ai/"
+      />
+    </outline>
+    <outline text="AI Media and Builders">
+      <outline
+        text="Wired AI"
+        title="Wired AI"
+        type="rss"
+        xmlUrl="https://www.wired.com/feed/tag/ai/latest/rss"
+        htmlUrl="https://www.wired.com/tag/artificial-intelligence/"
+      />
+      <outline
+        text="InfoQ CN"
+        title="InfoQ CN"
+        type="rss"
+        xmlUrl="https://www.infoq.cn/feed"
+        htmlUrl="https://www.infoq.cn/"
+      />
+      <outline
+        text="NVIDIA Generative AI Blog"
+        title="NVIDIA Generative AI Blog"
+        type="rss"
+        xmlUrl="https://developer.nvidia.com/blog/category/generative-ai/feed/"
+        htmlUrl="https://developer.nvidia.com/blog/category/generative-ai/"
+      />
+      <outline
+        text="宝玉"
+        title="宝玉"
+        type="rss"
+        xmlUrl="https://baoyu.io/feed.xml"
+        htmlUrl="https://baoyu.io/"
+      />
+      <outline
+        text="Simon Willison"
+        title="Simon Willison"
+        type="rss"
+        xmlUrl="https://simonwillison.net/atom/everything/"
+        htmlUrl="https://simonwillison.net/"
+      />
+    </outline>
+  </body>
+</opml>

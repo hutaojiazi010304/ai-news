@@ -1,0 +1,41 @@
+# 翻译词表 —— fork 后直接改这个文件，管线自动生效 / Translation glossary — edit this file in your fork
+#
+# 两种规则 / Two kinds of rules:
+#   术语保护（一行一个词）：翻译时保留原文，不翻译
+#     Protected term (one per line): kept verbatim, never translated
+#   修正规则（bad => good [@原文含关键词]）：对译文做替换；@ 后是防误伤条件，
+#     只有英文原标题包含该关键词才执行替换，可省略
+#     Repair rule (bad => good [@keyword]): replace bad with good in the translated
+#     title; the optional @keyword guard means the replacement only fires when the
+#     English source title contains that keyword (case-insensitive)
+#
+# 以 # 开头的行和空行会被忽略 / Lines starting with # and blank lines are ignored
+
+## 保护术语 / Protected terms
+Claude
+Claude Code
+LLM
+Fable 5
+Mythos 5
+Opus
+Sonnet
+Haiku
+GPT
+Gemini
+Copilot
+Cursor
+Perplexity
+Hugging Face
+Transformer
+OpenAI
+Anthropic
+DeepSeek
+Agent
+Token
+
+## 修正规则 / Repair rules
+法学硕士（LLM） => LLM
+法学硕士(LLM) => LLM
+法学硕士 => LLM @LLM
+克劳德 => Claude @Claude
+神鬼寓言 => Fable @Fable

@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI News Radar"
+  short_description: "Review and extend AI news source coverage"
+  default_prompt: "Use $ai-news-radar to run a v2 source-coverage review, then add or route this AI news source safely if it fits the project."
+policy:
+  allow_implicit_invocation: true
