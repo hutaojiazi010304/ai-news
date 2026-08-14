@@ -1,121 +1,8 @@
 {
-  "generated_at": "2026-08-14T09:21:04.135860Z",
+  "generated_at": "2026-08-14T11:08:30.002763Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
-    {
-      "story_id": "story_3fd84efeedff",
-      "title": "GPT-5.6 构建者指南：如何以更低成本实现前沿智能体性能 / The builder’s guide to GPT‑5.6",
-      "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
-      "primary_url": "https://openai.com/index/builders-guide-to-gpt-5-6",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "4f7dedbe4a69766d646c14d32955cbaf6870a15c",
-          "title": "GPT-5.6 构建者指南：如何以更低成本实现前沿智能体性能 / The builder’s guide to GPT‑5.6",
-          "title_zh": "GPT-5.6 构建者指南：如何以更低成本实现前沿智能体性能",
-          "title_en": "The builder’s guide to GPT‑5.6",
-          "title_original": "The builder’s guide to GPT‑5.6",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-13T11:00:00Z"
-        },
-        {
-          "id": "864d3f33938ba9eb0280be7495fcd78fa2fd212b",
-          "title": "GPT-5.6 构建者指南：如何以更低成本实现前沿智能体性能 / The builder's guide to GPT-5.6",
-          "title_zh": "GPT-5.6 构建者指南：如何以更低成本实现前沿智能体性能",
-          "title_en": "The builder's guide to GPT-5.6",
-          "title_original": "The builder's guide to GPT-5.6",
-          "summary": "GPT-5.6 模型家族以更低成本实现前沿级智能体性能，并新增推理持久化、原生多智能体编排和程序化工具调用等 API 能力。在 ARC-AGI-3 上，启用保留推理和压缩后，Sol 得分从 13.3% 跃升至 38.3%，且输出 token 减少约 6 倍。Luna 在 BrowseComp 上以 84.04% 的得分追平 GPT-5.5（84.36%），成本从 $33.27 降至 $1.33。",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
-          "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-13T11:00:00Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "OpenAI News",
-        "OpenAI：官网动态（RSS · 排除企业/客户案例）"
-      ],
-      "items": [
-        {
-          "id": "4f7dedbe4a69766d646c14d32955cbaf6870a15c",
-          "title": "GPT-5.6 构建者指南：如何以更低成本实现前沿智能体性能 / The builder’s guide to GPT‑5.6",
-          "title_zh": "GPT-5.6 构建者指南：如何以更低成本实现前沿智能体性能",
-          "title_en": "The builder’s guide to GPT‑5.6",
-          "title_original": "The builder’s guide to GPT‑5.6",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-13T11:00:00Z"
-        },
-        {
-          "id": "864d3f33938ba9eb0280be7495fcd78fa2fd212b",
-          "title": "GPT-5.6 构建者指南：如何以更低成本实现前沿智能体性能 / The builder's guide to GPT-5.6",
-          "title_zh": "GPT-5.6 构建者指南：如何以更低成本实现前沿智能体性能",
-          "title_en": "The builder's guide to GPT-5.6",
-          "title_original": "The builder's guide to GPT-5.6",
-          "summary": "GPT-5.6 模型家族以更低成本实现前沿级智能体性能，并新增推理持久化、原生多智能体编排和程序化工具调用等 API 能力。在 ARC-AGI-3 上，启用保留推理和压缩后，Sol 得分从 13.3% 跃升至 38.3%，且输出 token 减少约 6 倍。Luna 在 BrowseComp 上以 84.04% 的得分追平 GPT-5.5（84.36%），成本从 $33.27 降至 $1.33。",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
-          "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-13T11:00:00Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.8353,
-      "importance": 0.8353,
-      "importance_score": 0.8353,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.7241,
-        "story_heat": 0.25
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-13T11:00:00Z",
-      "latest_at": "2026-08-13T11:00:00Z",
-      "primary_item": {
-        "id": "4f7dedbe4a69766d646c14d32955cbaf6870a15c",
-        "title": "GPT-5.6 构建者指南：如何以更低成本实现前沿智能体性能 / The builder’s guide to GPT‑5.6",
-        "title_zh": "GPT-5.6 构建者指南：如何以更低成本实现前沿智能体性能",
-        "title_en": "The builder’s guide to GPT‑5.6",
-        "title_original": "The builder’s guide to GPT‑5.6",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
-      }
-    },
     {
       "story_id": "story_7243b3d66c55",
       "title": "使用 Strands Agents、LeRobot 和 Hugging Face Storage Buckets 从一处进行记录、训练和部署 / Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
@@ -161,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8287,
-      "importance": 0.8287,
-      "importance_score": 0.8287,
+      "score": 0.8251,
+      "importance": 0.8251,
+      "importance_score": 0.8251,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.7927,
+        "recency": 0.7725,
         "story_heat": 0.0
       },
       "category": "official",
@@ -196,7 +83,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -244,15 +131,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8161,
-      "importance": 0.8161,
-      "importance_score": 0.8161,
+      "score": 0.8127,
+      "importance": 0.8127,
+      "importance_score": 0.8127,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.7564,
+        "recency": 0.7371,
         "story_heat": 0.0
       },
       "category": "official",
@@ -279,7 +166,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -327,15 +214,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8143,
-      "importance": 0.8143,
-      "importance_score": 0.8143,
+      "score": 0.8107,
+      "importance": 0.8107,
+      "importance_score": 0.8107,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.7905,
+        "recency": 0.7703,
         "story_heat": 0.0
       },
       "category": "official",
@@ -362,7 +249,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -410,15 +297,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8056,
-      "importance": 0.8056,
-      "importance_score": 0.8056,
+      "score": 0.802,
+      "importance": 0.802,
+      "importance_score": 0.802,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.7868,
+        "recency": 0.7668,
         "story_heat": 0.0
       },
       "category": "official",
@@ -445,120 +332,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
-      }
-    },
-    {
-      "story_id": "story_55c454217558",
-      "title": "预览超快模式：GPT-5.6 Sol 速度高达 14 倍 / Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-      "url": "https://openai.com/index/previewing-ultrafast",
-      "primary_url": "https://openai.com/index/previewing-ultrafast",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "5175d87bcae80ab0d848d51674956034c540468a",
-          "title": "预览超快模式：GPT-5.6 Sol 速度高达 14 倍 / Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-          "title_zh": "预览超快模式：GPT-5.6 Sol 速度高达 14 倍",
-          "title_en": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-          "title_original": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/previewing-ultrafast",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-13T10:00:00Z"
-        },
-        {
-          "id": "0da95d0920a7077beace9b3340245448028dd120",
-          "title": "预览超快模式：GPT‑5.6 Sol 速度高达 14 倍 / Previewing Ultrafast mode: GPT‑5.6 Sol at up to 14X the speed",
-          "title_zh": "预览超快模式：GPT‑5.6 Sol 速度高达 14 倍",
-          "title_en": "Previewing Ultrafast mode: GPT‑5.6 Sol at up to 14X the speed",
-          "title_original": "Previewing Ultrafast mode: GPT‑5.6 Sol at up to 14X the speed",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/previewing-ultrafast",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-13T16:59:06Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News · 24h最热",
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "5175d87bcae80ab0d848d51674956034c540468a",
-          "title": "预览超快模式：GPT-5.6 Sol 速度高达 14 倍 / Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-          "title_zh": "预览超快模式：GPT-5.6 Sol 速度高达 14 倍",
-          "title_en": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-          "title_original": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/previewing-ultrafast",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-13T10:00:00Z"
-        },
-        {
-          "id": "0da95d0920a7077beace9b3340245448028dd120",
-          "title": "预览超快模式：GPT‑5.6 Sol 速度高达 14 倍 / Previewing Ultrafast mode: GPT‑5.6 Sol at up to 14X the speed",
-          "title_zh": "预览超快模式：GPT‑5.6 Sol 速度高达 14 倍",
-          "title_en": "Previewing Ultrafast mode: GPT‑5.6 Sol at up to 14X the speed",
-          "title_original": "Previewing Ultrafast mode: GPT‑5.6 Sol at up to 14X the speed",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/previewing-ultrafast",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-13T16:59:06Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.8335,
-      "importance": 0.8335,
-      "importance_score": 0.8335,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.7138,
-        "story_heat": 0.25
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-13T10:00:00Z",
-      "latest_at": "2026-08-13T16:59:06Z",
-      "primary_item": {
-        "id": "5175d87bcae80ab0d848d51674956034c540468a",
-        "title": "预览超快模式：GPT-5.6 Sol 速度高达 14 倍 / Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-        "title_zh": "预览超快模式：GPT-5.6 Sol 速度高达 14 倍",
-        "title_en": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-        "title_original": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/previewing-ultrafast",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -606,15 +380,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8108,
-      "importance": 0.8108,
-      "importance_score": 0.8108,
+      "score": 0.8071,
+      "importance": 0.8071,
+      "importance_score": 0.8071,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8156,
+        "recency": 0.7948,
         "story_heat": 0.0
       },
       "category": "official",
@@ -641,30 +415,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
-      "story_id": "story_02e8a6ff659e",
-      "title": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
-      "url": "https://www.aibase.com/news/30362",
-      "primary_url": "https://www.aibase.com/news/30362",
+      "story_id": "story_0ce2047b51cc",
+      "title": "AI企业也能按Token融资：广东首推“Token贷”",
+      "url": "https://www.aibase.com/news/30365",
+      "primary_url": "https://www.aibase.com/news/30365",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "1f8a249b23cd6211087ba5509d94d9a585ee4e0e",
-          "title": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
-          "title_zh": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
+          "id": "b7e6deb356d821f48d5654cdeb8f9967e47a6f84",
+          "title": "AI企业也能按Token融资：广东首推“Token贷”",
+          "title_zh": "AI企业也能按Token融资：广东首推“Token贷”",
           "title_en": null,
-          "title_original": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
+          "title_original": "AI企业也能按Token融资：广东首推“Token贷”",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30362",
+          "url": "https://www.aibase.com/news/30365",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-08-14T09:21:04.135860Z"
+          "published_at": "2026-08-14T11:08:30.002763Z"
         }
       ],
       "source_count": 1,
@@ -673,18 +447,18 @@
       ],
       "items": [
         {
-          "id": "1f8a249b23cd6211087ba5509d94d9a585ee4e0e",
-          "title": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
-          "title_zh": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
+          "id": "b7e6deb356d821f48d5654cdeb8f9967e47a6f84",
+          "title": "AI企业也能按Token融资：广东首推“Token贷”",
+          "title_zh": "AI企业也能按Token融资：广东首推“Token贷”",
           "title_en": null,
-          "title_original": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
+          "title_original": "AI企业也能按Token融资：广东首推“Token贷”",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30362",
+          "url": "https://www.aibase.com/news/30365",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-08-14T09:21:04.135860Z"
+          "published_at": "2026-08-14T11:08:30.002763Z"
         }
       ],
       "item_count": 1,
@@ -705,17 +479,17 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-14T09:21:04.135860Z",
-      "latest_at": "2026-08-14T09:21:04.135860Z",
+      "earliest_at": "2026-08-14T11:08:30.002763Z",
+      "latest_at": "2026-08-14T11:08:30.002763Z",
       "primary_item": {
-        "id": "1f8a249b23cd6211087ba5509d94d9a585ee4e0e",
-        "title": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
-        "title_zh": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
+        "id": "b7e6deb356d821f48d5654cdeb8f9967e47a6f84",
+        "title": "AI企业也能按Token融资：广东首推“Token贷”",
+        "title_zh": "AI企业也能按Token融资：广东首推“Token贷”",
         "title_en": null,
-        "title_original": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
+        "title_original": "AI企业也能按Token融资：广东首推“Token贷”",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30362",
+        "url": "https://www.aibase.com/news/30365",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -723,7 +497,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -771,15 +545,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7609,
-      "importance": 0.7609,
-      "importance_score": 0.7609,
+      "score": 0.7566,
+      "importance": 0.7566,
+      "importance_score": 0.7566,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9461,
+        "recency": 0.922,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -805,7 +579,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -853,15 +627,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8104,
-      "importance": 0.8104,
-      "importance_score": 0.8104,
+      "score": 0.8067,
+      "importance": 0.8067,
+      "importance_score": 0.8067,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8134,
+        "recency": 0.7926,
         "story_heat": 0.0
       },
       "category": "official",
@@ -888,7 +662,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -965,15 +739,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7462,
-      "importance": 0.7462,
-      "importance_score": 0.7462,
+      "score": 0.7423,
+      "importance": 0.7423,
+      "importance_score": 0.7423,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8421,
+        "recency": 0.8206,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -999,7 +773,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -1047,15 +821,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7455,
-      "importance": 0.7455,
-      "importance_score": 0.7455,
+      "score": 0.7421,
+      "importance": 0.7421,
+      "importance_score": 0.7421,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7271,
+        "recency": 0.7085,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1080,26 +854,26 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
-      "story_id": "story_7877e29da15e",
-      "title": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
-      "url": "https://www.aibase.com/news/30364",
-      "primary_url": "https://www.aibase.com/news/30364",
+      "story_id": "story_02e8a6ff659e",
+      "title": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
+      "url": "https://www.aibase.com/news/30362",
+      "primary_url": "https://www.aibase.com/news/30362",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "ca4af3cca400e2aac9ca17a95b4c319e26e4f7a1",
-          "title": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
-          "title_zh": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+          "id": "1f8a249b23cd6211087ba5509d94d9a585ee4e0e",
+          "title": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
+          "title_zh": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
           "title_en": null,
-          "title_original": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+          "title_original": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30364",
+          "url": "https://www.aibase.com/news/30362",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
@@ -1112,14 +886,14 @@
       ],
       "items": [
         {
-          "id": "ca4af3cca400e2aac9ca17a95b4c319e26e4f7a1",
-          "title": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
-          "title_zh": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+          "id": "1f8a249b23cd6211087ba5509d94d9a585ee4e0e",
+          "title": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
+          "title_zh": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
           "title_en": null,
-          "title_original": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+          "title_original": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30364",
+          "url": "https://www.aibase.com/news/30362",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
@@ -1128,15 +902,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.763,
+      "importance": 0.763,
+      "importance_score": 0.763,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9745,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1147,14 +921,14 @@
       "earliest_at": "2026-08-14T09:21:04.135860Z",
       "latest_at": "2026-08-14T09:21:04.135860Z",
       "primary_item": {
-        "id": "ca4af3cca400e2aac9ca17a95b4c319e26e4f7a1",
-        "title": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
-        "title_zh": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+        "id": "1f8a249b23cd6211087ba5509d94d9a585ee4e0e",
+        "title": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
+        "title_zh": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
         "title_en": null,
-        "title_original": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+        "title_original": "MiniMax 发布 Music3 音乐模型：给歌词和描述，可生成最长 5 分钟歌曲",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30364",
+        "url": "https://www.aibase.com/news/30362",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -1162,7 +936,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -1210,15 +984,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7358,
-      "importance": 0.7358,
-      "importance_score": 0.7358,
+      "score": 0.7318,
+      "importance": 0.7318,
+      "importance_score": 0.7318,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8733,
+        "recency": 0.851,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1243,7 +1017,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -1291,15 +1065,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7355,
-      "importance": 0.7355,
-      "importance_score": 0.7355,
+      "score": 0.7312,
+      "importance": 0.7312,
+      "importance_score": 0.7312,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9382,
+        "recency": 0.9142,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1324,88 +1098,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
-      }
-    },
-    {
-      "story_id": "story_cab5ba4e8224",
-      "title": "小红书开源连续自回归语音合成模型 dots.tts：打造可持续扩展的 TTS 基座",
-      "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496062&idx=1&sn=d4c48926c5d7607f129dfea03699a6c0",
-      "primary_url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496062&idx=1&sn=d4c48926c5d7607f129dfea03699a6c0",
-      "source": "公众号：小红书技术（dots.llm）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "3a87a0e9b0f20da582880d81f3932ae4aa3ef59f",
-          "title": "小红书开源连续自回归语音合成模型 dots.tts：打造可持续扩展的 TTS 基座",
-          "title_zh": "小红书开源连续自回归语音合成模型 dots.tts：打造可持续扩展的 TTS 基座",
-          "title_en": null,
-          "title_original": "小红书开源连续自回归语音合成模型 dots.tts：打造可持续扩展的 TTS 基座",
-          "summary": "小红书 dots 团队开源 20 亿参数全连续端到端自回归语音合成模型 dots.tts，在 Seed-TTS-Eval 三个子集上取得最佳平均内容准确度和平均说话人相似度。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496062&idx=1&sn=d4c48926c5d7607f129dfea03699a6c0",
-          "source": "公众号：小红书技术（dots.llm）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-13T09:59:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "公众号：小红书技术（dots.llm）"
-      ],
-      "items": [
-        {
-          "id": "3a87a0e9b0f20da582880d81f3932ae4aa3ef59f",
-          "title": "小红书开源连续自回归语音合成模型 dots.tts：打造可持续扩展的 TTS 基座",
-          "title_zh": "小红书开源连续自回归语音合成模型 dots.tts：打造可持续扩展的 TTS 基座",
-          "title_en": null,
-          "title_original": "小红书开源连续自回归语音合成模型 dots.tts：打造可持续扩展的 TTS 基座",
-          "summary": "小红书 dots 团队开源 20 亿参数全连续端到端自回归语音合成模型 dots.tts，在 Seed-TTS-Eval 三个子集上取得最佳平均内容准确度和平均说话人相似度。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496062&idx=1&sn=d4c48926c5d7607f129dfea03699a6c0",
-          "source": "公众号：小红书技术（dots.llm）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-13T09:59:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.725,
-      "importance": 0.725,
-      "importance_score": 0.725,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.75,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7136,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-13T09:59:00Z",
-      "latest_at": "2026-08-13T09:59:00Z",
-      "primary_item": {
-        "id": "3a87a0e9b0f20da582880d81f3932ae4aa3ef59f",
-        "title": "小红书开源连续自回归语音合成模型 dots.tts：打造可持续扩展的 TTS 基座",
-        "title_zh": "小红书开源连续自回归语音合成模型 dots.tts：打造可持续扩展的 TTS 基座",
-        "title_en": null,
-        "title_original": "小红书开源连续自回归语音合成模型 dots.tts：打造可持续扩展的 TTS 基座",
-        "summary": "小红书 dots 团队开源 20 亿参数全连续端到端自回归语音合成模型 dots.tts，在 Seed-TTS-Eval 三个子集上取得最佳平均内容准确度和平均说话人相似度。",
-        "recommend_reason_zh": null,
-        "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496062&idx=1&sn=d4c48926c5d7607f129dfea03699a6c0",
-        "source": "公众号：小红书技术（dots.llm）",
-        "source_name": "AI HOT"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -1453,15 +1146,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7242,
-      "importance": 0.7242,
-      "importance_score": 0.7242,
+      "score": 0.72,
+      "importance": 0.72,
+      "importance_score": 0.72,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.62,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9256,
+        "recency": 0.902,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1486,7 +1179,89 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
+      }
+    },
+    {
+      "story_id": "story_7877e29da15e",
+      "title": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+      "url": "https://www.aibase.com/news/30364",
+      "primary_url": "https://www.aibase.com/news/30364",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "ca4af3cca400e2aac9ca17a95b4c319e26e4f7a1",
+          "title": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+          "title_zh": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+          "title_en": null,
+          "title_original": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30364",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-14T09:21:04.135860Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "ca4af3cca400e2aac9ca17a95b4c319e26e4f7a1",
+          "title": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+          "title_zh": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+          "title_en": null,
+          "title_original": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30364",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-14T09:21:04.135860Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.763,
+      "importance": 0.763,
+      "importance_score": 0.763,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9745,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-14T09:21:04.135860Z",
+      "latest_at": "2026-08-14T09:21:04.135860Z",
+      "primary_item": {
+        "id": "ca4af3cca400e2aac9ca17a95b4c319e26e4f7a1",
+        "title": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+        "title_zh": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+        "title_en": null,
+        "title_original": "微软又弃一 AI 形象：Copilot 黄色小怪 Mico 退场，转岗学习平台",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30364",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -1534,15 +1309,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.763,
+      "importance": 0.763,
+      "importance_score": 0.763,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9745,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1568,7 +1343,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -1616,15 +1391,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.763,
+      "importance": 0.763,
+      "importance_score": 0.763,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9745,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1650,7 +1425,118 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
+      }
+    },
+    {
+      "story_id": "story_08f58e5058d2",
+      "title": "OpenAI 推出“超快”新模式，使 GPT-5.6 Sol 的工作速度提高 14 倍 / OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+      "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed",
+      "primary_url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed",
+      "source": "TechCrunch AI",
+      "source_name": "Curated Media",
+      "sources": [
+        {
+          "id": "206ac5348dbcc5c7d2f8fb3aa1b757814eb4e638",
+          "title": "OpenAI 推出“超快”新模式，使 GPT-5.6 Sol 的工作速度提高 14 倍 / OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+          "title_zh": "OpenAI 推出“超快”新模式，使 GPT-5.6 Sol 的工作速度提高 14 倍",
+          "title_en": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+          "title_original": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed",
+          "source": "TechCrunch AI",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-08-13T19:22:40Z"
+        },
+        {
+          "id": "a4b6405fe42e30ccbd34a7e082e867231c5b745a",
+          "title": "OpenAI 推出“超快”新模式，使 GPT 5.6 Sol 的工作速度提高 14 倍 / OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT 5.6 Sol work at 14x the speed",
+          "title_zh": "OpenAI 推出“超快”新模式，使 GPT 5.6 Sol 的工作速度提高 14 倍",
+          "title_en": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT 5.6 Sol work at 14x the speed",
+          "title_original": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT 5.6 Sol work at 14x the speed",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed",
+          "source": "TechCrunch",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-13T19:22:40Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "TechCrunch",
+        "TechCrunch AI"
+      ],
+      "items": [
+        {
+          "id": "206ac5348dbcc5c7d2f8fb3aa1b757814eb4e638",
+          "title": "OpenAI 推出“超快”新模式，使 GPT-5.6 Sol 的工作速度提高 14 倍 / OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+          "title_zh": "OpenAI 推出“超快”新模式，使 GPT-5.6 Sol 的工作速度提高 14 倍",
+          "title_en": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+          "title_original": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed",
+          "source": "TechCrunch AI",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-08-13T19:22:40Z"
+        },
+        {
+          "id": "a4b6405fe42e30ccbd34a7e082e867231c5b745a",
+          "title": "OpenAI 推出“超快”新模式，使 GPT 5.6 Sol 的工作速度提高 14 倍 / OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT 5.6 Sol work at 14x the speed",
+          "title_zh": "OpenAI 推出“超快”新模式，使 GPT 5.6 Sol 的工作速度提高 14 倍",
+          "title_en": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT 5.6 Sol work at 14x the speed",
+          "title_original": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT 5.6 Sol work at 14x the speed",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed",
+          "source": "TechCrunch",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-13T19:22:40Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.6371,
+      "importance": 0.6371,
+      "importance_score": 0.6371,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.5904,
+        "source_tier": 0.58,
+        "ai_relevance": 0.82,
+        "recency": 0.7964,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source",
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-08-13T19:22:40Z",
+      "latest_at": "2026-08-13T19:22:40Z",
+      "primary_item": {
+        "id": "206ac5348dbcc5c7d2f8fb3aa1b757814eb4e638",
+        "title": "OpenAI 推出“超快”新模式，使 GPT-5.6 Sol 的工作速度提高 14 倍 / OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+        "title_zh": "OpenAI 推出“超快”新模式，使 GPT-5.6 Sol 的工作速度提高 14 倍",
+        "title_en": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+        "title_original": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed",
+        "source": "TechCrunch AI",
+        "source_name": "Curated Media"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     },
     {
@@ -1698,15 +1584,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.763,
+      "importance": 0.763,
+      "importance_score": 0.763,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9745,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1732,7 +1618,117 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-14T09:23:14.692826Z"
+        "scored_at": "2026-08-14T11:09:07.186843Z"
+      }
+    },
+    {
+      "story_id": "story_df3cadd6dc23",
+      "title": "苹果在阿里巴巴的帮助下为中国训练了自己的人工智能模型 / Apple trained its own AI model for China with help from Alibaba",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+      "primary_url": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+      "source": "The Verge",
+      "source_name": "Curated Media",
+      "sources": [
+        {
+          "id": "b48a94fbbe103bab1b05ca13b32326d5e59b4e5a",
+          "title": "苹果在阿里巴巴的帮助下为中国训练了自己的人工智能模型 / Apple trained its own AI model for China with help from Alibaba",
+          "title_zh": "苹果在阿里巴巴的帮助下为中国训练了自己的人工智能模型",
+          "title_en": "Apple trained its own AI model for China with help from Alibaba",
+          "title_original": "Apple trained its own AI model for China with help from Alibaba",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+          "source": "The Verge",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-08-14T09:21:17Z"
+        },
+        {
+          "id": "4a92499d9a353c37f2b90952d4ffcb4fd710c8e7",
+          "title": "苹果在阿里巴巴的帮助下为中国市场训练了自己的人工智能模型 / Apple Trained Own AI model for China Market With Help From Alibaba",
+          "title_zh": "苹果在阿里巴巴的帮助下为中国市场训练了自己的人工智能模型",
+          "title_en": "Apple Trained Own AI model for China Market With Help From Alibaba",
+          "title_original": "Apple Trained Own AI model for China Market With Help From Alibaba",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.macrumors.com/2026/08/14/apple-trained-own-ai-model-for-china",
+          "source": "Mac Rumors",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-14T09:46:29Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Mac Rumors",
+        "The Verge"
+      ],
+      "items": [
+        {
+          "id": "b48a94fbbe103bab1b05ca13b32326d5e59b4e5a",
+          "title": "苹果在阿里巴巴的帮助下为中国训练了自己的人工智能模型 / Apple trained its own AI model for China with help from Alibaba",
+          "title_zh": "苹果在阿里巴巴的帮助下为中国训练了自己的人工智能模型",
+          "title_en": "Apple trained its own AI model for China with help from Alibaba",
+          "title_original": "Apple trained its own AI model for China with help from Alibaba",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+          "source": "The Verge",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-08-14T09:21:17Z"
+        },
+        {
+          "id": "4a92499d9a353c37f2b90952d4ffcb4fd710c8e7",
+          "title": "苹果在阿里巴巴的帮助下为中国市场训练了自己的人工智能模型 / Apple Trained Own AI model for China Market With Help From Alibaba",
+          "title_zh": "苹果在阿里巴巴的帮助下为中国市场训练了自己的人工智能模型",
+          "title_en": "Apple Trained Own AI model for China Market With Help From Alibaba",
+          "title_original": "Apple Trained Own AI model for China Market With Help From Alibaba",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.macrumors.com/2026/08/14/apple-trained-own-ai-model-for-china",
+          "source": "Mac Rumors",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-14T09:46:29Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.6109,
+      "importance": 0.6109,
+      "importance_score": 0.6109,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.4896,
+        "source_tier": 0.58,
+        "ai_relevance": 0.68,
+        "recency": 0.9745,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-14T09:21:17Z",
+      "latest_at": "2026-08-14T09:46:29Z",
+      "primary_item": {
+        "id": "b48a94fbbe103bab1b05ca13b32326d5e59b4e5a",
+        "title": "苹果在阿里巴巴的帮助下为中国训练了自己的人工智能模型 / Apple trained its own AI model for China with help from Alibaba",
+        "title_zh": "苹果在阿里巴巴的帮助下为中国训练了自己的人工智能模型",
+        "title_en": "Apple trained its own AI model for China with help from Alibaba",
+        "title_original": "Apple trained its own AI model for China with help from Alibaba",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+        "source": "The Verge",
+        "source_name": "Curated Media"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-14T11:09:07.186843Z"
       }
     }
   ]
