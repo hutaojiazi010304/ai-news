@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T15:07:29.313769Z",
+  "generated_at": "2026-08-14T16:06:37.656185Z",
   "timezone": "Asia/Shanghai",
   "root_url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview",
   "history_url": "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc",
@@ -44,7 +44,7 @@
       "url": "https://waytoagi.feishu.cn/wiki/RO06w0R0Iivq3WkGv0ycIsI1noe?from=from_copylink"
     }
   ],
-  "count_7d": 32,
+  "count_7d": 28,
   "updates_7d": [
     {
       "date": "2026-08-13",
@@ -213,30 +213,6 @@
       "title": "95分钟AI电影，把每个镜头的提示词都公开了（附电影级提示词Skill）",
       "summary": "很多人做 AI 视频，真正卡住的往往是“镜头到底该怎么写”：人物怎么站、镜头怎么动、光从哪边来，前后画面怎么别突然跳戏。小歪拿《Hell Grind》这个开源项目做样本，把每个镜头公开的提示词、参考图、参数、11 万多条生成记录，以及官方 CINEDANCE 电影级提示词 Skill 都拆开讲清楚。照着“找相似画面→拆运镜/动作/灯光→替换成自己的内容”这条路抄作业，会比盲目堆提示词稳很多。",
       "url": "https://waytoagi.feishu.cn/wiki/Gv1GwMWUjiBtw7kXoiXcyondnRe?from=from_copylink"
-    },
-    {
-      "date": "2026-08-08",
-      "title": "老金这段提示词揪出你没察觉的重复劳动，做成无感自动化",
-      "summary": "老金分享了一套跨平台通用的审计提示词，可以自动挖掘近30天的高频重复操作，输出频次、时间损耗、风险预判与落地建议。然后后台会自动生成审计报告与可复用的指令。",
-      "url": "https://waytoagi.feishu.cn/wiki/GzQ2wSANKimtkxkWOqycH60jnBd?from=from_copylink"
-    },
-    {
-      "date": "2026-08-08",
-      "title": "如何成为记忆工程师：来自 Stanford、Microsoft、Anthropic 与 NVIDIA 的视角",
-      "summary": "如果Agent真的拥有长期记忆，它最危险的能力可能不是“记住”，而是“不知道该忘什么”。这篇文章讨论的正是记忆工程的核心：让智能体有选择地保留、压缩、修正和遗忘信息。不主张把所有对话日志和推理过程都塞进系统，而是将关键事实、用户偏好和可复用的技能提炼出来，并对冲突、过期和敏感记忆建立控制机制。",
-      "url": "https://waytoagi.feishu.cn/wiki/PCj7wTswPigE9ukBveicR3Frnzh?from=from_copylink"
-    },
-    {
-      "date": "2026-08-08",
-      "title": "为什么托管式智能体会成为智能体构建的下一个重要方向",
-      "summary": "Langchain发布了Managed Deep Agents。这是构建、运行和部署生产级智能体最简单的方式。这篇文章分享了他们团队一路走到这里的过程，以及为什么会如此期待智能体构建的下一个阶段。",
-      "url": "https://waytoagi.feishu.cn/wiki/PHrZwoc6GijA2IkXryccO06KnFh?from=from_copylink"
-    },
-    {
-      "date": "2026-08-08",
-      "title": "Graph Engineering：来自Anthropic 的真实落地实践",
-      "summary": "这篇文章用Anthropic的百万行代码迁移和Python转TypeScript案例，分享了图工程的完整实操方案：先写判定器，再沉淀规则手册，把状态放到磁盘队列里，用独立审查者、确定性检查、串行化昂贵操作和分角色模型来控制流程。",
-      "url": "https://waytoagi.feishu.cn/wiki/RrslwsTiJitt1GkJvF3ckf0Nnvn?from=from_copylink"
     }
   ],
   "warning": null,
