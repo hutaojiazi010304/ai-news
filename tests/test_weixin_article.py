@@ -184,6 +184,20 @@ def run_patched(env: dict, post_side_effect, session, args_list) -> int:
 
 BASE_ENV = {"DASHSCOPE_API_KEY": "test-key"}
 
+# Long enough (>= gwa.REASON_MIN_REUSE_CHARS) to be reused without an LLM call.
+LONG_EXISTING_REASON = (
+    "这是上游已经写好的导读：新发布的模型在多项推理基准上较上一代提升约三成，"
+    "单位推理成本下降近一半，上下文窗口扩展到百万级 token，并同步开放了权重与评测细节，"
+    "适合关注模型进展的读者深入了解这次发布的具体内容与影响。"
+    "这也让它成为当天最值得细读的发布说明之一。"
+)
+# Long enough (>= gwa.REASON_MIN_CHARS) to pass validate_reason.
+LONG_GENERATED_REASON = (
+    "OpenAI 发布了新一代模型，推理成本较上一代下降一半，"
+    "上下文窗口扩展到 200 万 token，并同步开放 API 与评测细节，"
+    "官方称其在多项基准上领先同级竞品。"
+)
+
 
 # ---------------------------------------------------------------------------
 # Degradation & input guards
@@ -253,7 +267,7 @@ def test_weixin_enabled_killswitch():
 # ---------------------------------------------------------------------------
 
 def test_existing_reason_reused_without_llm():
-    reason = "这是上游已经写好的推荐语，包含具体事实，长度也足够。"
+    reason = LONG_EXISTING_REASON
     with tempfile.TemporaryDirectory() as tmp:
         data_dir, assets_dir = write_fixture(
             tmp, [make_item(1, reason=reason, summary="摘要内容")]
@@ -284,7 +298,7 @@ def test_existing_reason_reused_without_llm():
 
 
 def test_reason_fill_success_writes_cache():
-    generated = "OpenAI 发布了新一代模型，推理成本下降一半，支持更长上下文窗口。"
+    generated = LONG_GENERATED_REASON
     with tempfile.TemporaryDirectory() as tmp:
         data_dir, assets_dir = write_fixture(
             tmp, [make_item(1, summary="这是一段足够长的摘要内容，用于生成推荐语。")]
@@ -320,7 +334,7 @@ def test_reason_fill_success_writes_cache():
 
 
 def test_reason_cache_hit_skips_llm():
-    generated = "OpenAI 发布了新一代模型，推理成本下降一半，支持更长上下文窗口。"
+    generated = LONG_GENERATED_REASON
     with tempfile.TemporaryDirectory() as tmp:
         data_dir, assets_dir = write_fixture(
             tmp, [make_item(1, summary="这是一段足够长的摘要内容，用于生成推荐语。")]
@@ -416,7 +430,7 @@ def test_fetch_failure_skips_reason_without_llm():
 def test_title_llm_success():
     with tempfile.TemporaryDirectory() as tmp:
         data_dir, assets_dir = write_fixture(
-            tmp, [make_item(1, reason="已有推荐语，字数足够长。")]
+            tmp, [make_item(1, reason=LONG_EXISTING_REASON)]
         )
         make_static_asset(assets_dir)
         output_dir = Path(tmp) / "weixin"
@@ -442,7 +456,7 @@ def test_title_llm_success():
 def test_title_overlong_falls_back():
     with tempfile.TemporaryDirectory() as tmp:
         data_dir, assets_dir = write_fixture(
-            tmp, [make_item(1, reason="已有推荐语，字数足够长。")]
+            tmp, [make_item(1, reason=LONG_EXISTING_REASON)]
         )
         make_static_asset(assets_dir)
         output_dir = Path(tmp) / "weixin"
@@ -468,7 +482,7 @@ def test_title_overlong_falls_back():
 def test_title_exception_falls_back():
     with tempfile.TemporaryDirectory() as tmp:
         data_dir, assets_dir = write_fixture(
-            tmp, [make_item(1, reason="已有推荐语，字数足够长。")]
+            tmp, [make_item(1, reason=LONG_EXISTING_REASON)]
         )
         make_static_asset(assets_dir)
         output_dir = Path(tmp) / "weixin"
@@ -523,7 +537,7 @@ def test_image_success_and_crop():
     png_bytes = make_png_bytes(1000, 500)
     with tempfile.TemporaryDirectory() as tmp:
         data_dir, assets_dir = write_fixture(
-            tmp, [make_item(1, reason="已有推荐语，字数足够长。")]
+            tmp, [make_item(1, reason=LONG_EXISTING_REASON)]
         )
         make_static_asset(assets_dir)
         output_dir = Path(tmp) / "weixin"
@@ -569,7 +583,7 @@ def test_image_success_and_crop():
 def test_image_all_fail_uses_static_cover():
     with tempfile.TemporaryDirectory() as tmp:
         data_dir, assets_dir = write_fixture(
-            tmp, [make_item(1, reason="已有推荐语，字数足够长。")]
+            tmp, [make_item(1, reason=LONG_EXISTING_REASON)]
         )
         make_static_asset(assets_dir)
         output_dir = Path(tmp) / "weixin"
@@ -596,7 +610,7 @@ def test_image_size_400_retries_without_size():
     png_bytes = make_png_bytes(800, 400)
     with tempfile.TemporaryDirectory() as tmp:
         data_dir, assets_dir = write_fixture(
-            tmp, [make_item(1, reason="已有推荐语，字数足够长。")]
+            tmp, [make_item(1, reason=LONG_EXISTING_REASON)]
         )
         make_static_asset(assets_dir)
         output_dir = Path(tmp) / "weixin"
@@ -691,9 +705,82 @@ def test_multi_source_item_lists_subtitles():
         assert "子标题B报道" in html_text
         assert "子标题C报道" in html_text
         assert "3 个来源" in html_text
+        # Each item carries its original URL as plain text.
+        assert "原文：https://example.com/story/1" in html_text
         # Article body must not contain hyperlinks or images.
         assert "<a " not in html_text
         assert "<img" not in html_text
+
+
+def test_items_carry_original_link_as_plain_text():
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(tmp, [make_item(1), make_item(2)])
+        output_dir = Path(tmp) / "weixin"
+
+        with patch.dict("os.environ", {}, clear=True):
+            rc = run_main(data_dir, output_dir, assets_dir)
+
+        assert rc == 0
+        html_text = (output_dir / "index.html").read_text(encoding="utf-8")
+        assert "原文：https://example.com/story/1" in html_text
+        assert "原文：https://example.com/story/2" in html_text
+        assert "<a " not in html_text
+
+
+def test_short_existing_reason_is_rewritten():
+    short_reason = "上游留下的短推荐语。"
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(
+            tmp,
+            [
+                make_item(
+                    1,
+                    reason=short_reason,
+                    summary="这是一段足够长的摘要内容，用于生成推荐语。",
+                )
+            ],
+        )
+        make_static_asset(assets_dir)
+        output_dir = Path(tmp) / "weixin"
+        side_effect, calls = make_text_router(
+            reason=text_response(LONG_GENERATED_REASON),
+            title=text_response("今日AI头条标题"),
+        )
+
+        rc = run_patched(
+            BASE_ENV,
+            side_effect,
+            offline_session(),
+            [
+                "--data-dir", str(data_dir),
+                "--output-dir", str(output_dir),
+                "--assets-dir", str(assets_dir),
+            ],
+        )
+
+        assert rc == 0
+        assert calls["reason"] == 1
+        html_text = (output_dir / "index.html").read_text(encoding="utf-8")
+        assert LONG_GENERATED_REASON in html_text
+        assert short_reason not in html_text
+
+
+def test_no_key_keeps_short_existing_reason():
+    short_reason = "上游留下的短推荐语。"
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(
+            tmp, [make_item(1, reason=short_reason)]
+        )
+        make_static_asset(assets_dir)
+        output_dir = Path(tmp) / "weixin"
+
+        with patch.dict("os.environ", {}, clear=True):
+            rc = run_main(data_dir, output_dir, assets_dir)
+
+        assert rc == 0
+        html_text = (output_dir / "index.html").read_text(encoding="utf-8")
+        # Without an API key the short reason is kept rather than dropped.
+        assert short_reason in html_text
 
 
 def test_dry_run_writes_nothing():
@@ -705,7 +792,7 @@ def test_dry_run_writes_nothing():
         make_static_asset(assets_dir)
         output_dir = Path(tmp) / "weixin"
         side_effect, calls = make_text_router(
-            reason=text_response("一条符合要求的中文推荐语，长度足够，引用了具体事实。"),
+            reason=text_response(LONG_GENERATED_REASON),
             title=text_response("今日AI头条标题"),
         )
 

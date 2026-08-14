@@ -2,11 +2,13 @@
 """WeChat Official Account daily article generator.
 
 Reads ``{data-dir}/daily-brief.json`` produced by ``update_news.py``, picks
-the top curated items, (re)writes one-sentence recommend reasons with a
-Qwen text model, composes a headline-driven title, a fixed-template digest,
-and a 2.35:1 cover image (Qwen image model with three-level fallback), then
-renders a self-contained inline-style HTML page that can be copied into the
-WeChat editor, plus ``meta.json`` for future API draft delivery.
+the top curated items, (re)writes per-item reading guides (120-200 chars)
+with a Qwen text model, composes a headline-driven title, a fixed-template
+digest, and a 2.35:1 cover image (Qwen image model with three-level
+fallback), then renders a self-contained inline-style HTML page that can be
+copied into the WeChat editor, plus ``meta.json`` for future API draft
+delivery. Every item carries its original article URL as plain text
+(WeChat strips external hyperlinks, so no ``<a>`` tags are used).
 
 Design constraints:
 
@@ -14,8 +16,9 @@ Design constraints:
   files. Never imports ``update_news.py``.
 - Zero hard dependencies beyond ``requests`` (``Pillow`` only for cover
   processing); public repo stays runnable key-free.
-- Runs without any API key: reuses existing recommend reasons from the data,
-  falls back to a template title and the static brand cover.
+- Runs without any API key: reuses existing recommend reasons from the data
+  (long ones as-is, short ones kept as fallback), falls back to a template
+  title and the static brand cover.
 - Exit code is always 0 except for argument errors or corrupted input JSON.
 
 Outputs (under ``--output-dir``, default ``weixin/``):
@@ -54,9 +57,16 @@ TZ_CN = timezone(timedelta(hours=8))
 WEEKDAY_CN = ("周一", "周二", "周三", "周四", "周五", "周六", "周日")
 CIRCLED_NUMS = "❶❷❸❹❺❻❼❽❾❿⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳"
 
-CACHE_VERSION = 1
+CACHE_VERSION = 2  # v1 cached short 40-80 char reasons; bump to regenerate
 CACHE_MAX_AGE_DAYS = 21
 REASON_RETRY_BACKOFF_SECONDS = 2.0
+# LLM output bounds: the prompt targets 120-200 chars; the bounds are wider
+# so slightly off-target output is still usable instead of discarded.
+REASON_MIN_CHARS = 60
+REASON_MAX_CHARS = 260
+# An existing (upstream/cached) reason must already be this long to be
+# reused as-is; shorter ones are rewritten by the LLM when a key exists.
+REASON_MIN_REUSE_CHARS = 120
 FULL_TEXT_MAX_CHARS = 3500
 FULL_TEXT_MIN_CHARS = 120
 COVER_W, COVER_H = 1664, 708  # 2.35:1
@@ -85,13 +95,14 @@ CJK_RE = re.compile(r"[一-鿿]")
 WHITESPACE_RE = re.compile(r"\s+")
 
 REASON_SYSTEM_PROMPT = (
-    "你是科技新闻编辑，负责为一篇具体的文章写一句「为什么值得读」的中文推荐语，"
+    "你是科技新闻编辑，负责为一篇具体的文章写一段「为什么值得读」的中文导读，"
     "用于微信公众号每日 AI 精选推文。"
-    "输出一句中文，40到80个字之间。"
-    "必须引用原文中的具体事实、数字或细节，讲清楚这篇内容具体讲了什么，不能写空洞的营销话术。"
+    "输出两到三句中文，120到200个字之间。"
+    "必须引用原文中的具体事实、数字或细节，讲清楚这篇内容具体讲了什么、"
+    "有哪些值得关注的背景或影响，不能写空洞的营销话术。"
     "不得编造原文之外的数字或事实。"
     "原文中的关键实体（公司名、产品名、人名）保留英文原样，不要翻译或音译。"
-    "只输出这一句推荐语本身，不加引号，不加任何解释或前缀。"
+    "只输出这段导读本身，不加引号，不加任何解释或前缀。"
 )
 
 TITLE_SYSTEM_PROMPT = (
@@ -313,7 +324,7 @@ def validate_reason(content: str, title: str) -> bool:
     content = str(content or "").strip()
     if not content or not has_cjk(content):
         return False
-    if len(content) < 10 or len(content) > 200:
+    if len(content) < REASON_MIN_CHARS or len(content) > REASON_MAX_CHARS:
         return False
     if content == str(title or "").strip():
         return False
@@ -345,14 +356,21 @@ def fill_reasons(
     session: requests.Session | None,
     stats: dict,
 ) -> None:
-    """Attach ``weixin_reason`` to each item: upstream reason > cache > LLM."""
+    """Attach ``weixin_reason`` to each item.
+
+    Priority: an existing reason that already meets the length bar
+    (``REASON_MIN_REUSE_CHARS``) > long-format cache entry > fresh LLM
+    generation. Shorter existing reasons are rewritten by the LLM when a
+    key is available, and kept as-is otherwise so key-free runs still
+    degrade gracefully.
+    """
     for item in items:
         title = str(item.get("title") or "")
         story_id = str(item.get("story_id") or "")
+        existing = existing_reason(item)
 
-        reused = existing_reason(item)
-        if reused:
-            item["weixin_reason"] = reused
+        if existing and len(existing) >= REASON_MIN_REUSE_CHARS:
+            item["weixin_reason"] = existing
             stats["reused"] += 1
             continue
 
@@ -366,7 +384,7 @@ def fill_reasons(
                 continue
 
         if not cfg["api_key"]:
-            item["weixin_reason"] = ""
+            item["weixin_reason"] = existing or ""
             stats["skipped"] += 1
             continue
 
@@ -381,7 +399,7 @@ def fill_reasons(
             }
             stats["generated"] += 1
         else:
-            item["weixin_reason"] = ""
+            item["weixin_reason"] = existing or ""
             stats["skipped"] += 1
 
 
@@ -646,6 +664,20 @@ def _make_static_cover_pure(path: Path) -> None:
 # HTML rendering (inline styles only; no <a>/<img>/<table>/flex/float/position)
 # ---------------------------------------------------------------------------
 
+def item_original_url(item: dict) -> str:
+    """Best original-article URL for an item: primary > url > first source."""
+    url = str(item.get("primary_url") or item.get("url") or "").strip()
+    if url.startswith(("http://", "https://")):
+        return url
+    for src in item.get("sources") or []:
+        if not isinstance(src, dict):
+            continue
+        candidate = str(src.get("url") or "").strip()
+        if candidate.startswith(("http://", "https://")):
+            return candidate
+    return ""
+
+
 def render_item_html(item: dict, idx: int) -> str:
     num = CIRCLED_NUMS[idx] if idx < len(CIRCLED_NUMS) else f"{idx + 1}."
     title = str(item.get("title") or "").strip()
@@ -688,6 +720,14 @@ def render_item_html(item: dict, idx: int) -> str:
         parts.append(
             f'<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">{meta}</p>'
         )
+    link = item_original_url(item)
+    if link:
+        # Plain-text URL on purpose: the WeChat editor strips external
+        # hyperlinks, so this is the only way to hand readers the source.
+        parts.append(
+            '<p style="margin:8px 0 0;font-size:13px;line-height:1.6;'
+            f'color:#576b95;word-break:break-all;">原文：{esc(link)}</p>'
+        )
     parts.append("</section>")
     return "\n".join(parts)
 
@@ -722,7 +762,7 @@ def render_article_html(
 {items_html}
 
 <section style="margin-top:30px;border-top:1px dashed #d9d9d9;padding-top:16px;">
-<p style="margin:0;font-size:13px;line-height:1.7;color:#999999;">以上内容由 {esc(brand)} 自动整理自过去 24 小时的公开信源，原文请在各来源网站查看。</p>
+<p style="margin:0;font-size:13px;line-height:1.7;color:#999999;">以上内容由 {esc(brand)} 自动整理自过去 24 小时的公开信源，原文链接见每条信息下方。</p>
 </section>
 
 <section style="margin-top:22px;background-color:#f5f6f7;padding:14px 16px;">

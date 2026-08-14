@@ -16,7 +16,9 @@ data/daily-brief.json（现有管线产物）
         ▼
 scripts/generate_weixin_article.py
   ├─ 选条：按 importance_score 降序取前 20 条
-  ├─ 推荐语：复用上游已有的 recommend_reason_zh → 本地缓存 → 千问补写
+  ├─ 每条导读：上游/缓存中已有且长度达标（≥120字）直接复用，
+  │     否则由千问补写（120–200字）；无 key 时保留已有短导读兜底
+  ├─ 每条信息下附原文链接（纯文本 URL）
   ├─ 标题：千问起标题（≤30字）；失败用模板「AI 雷达 · X月X日｜今日精选N条」
   ├─ 摘要：固定模板（≤120字）
   ├─ 封面：三级兜底
@@ -26,7 +28,7 @@ scripts/generate_weixin_article.py
   └─ 渲染：内联样式 HTML（公众号编辑器只认 inline style）
         │
         ▼
-weixin/index.html   预览页（底部附标题/摘要/阅读原文纯文本，方便手机复制）
+weixin/index.html   预览页（每条附原文链接；底部附标题/摘要/阅读原文纯文本，方便手机复制）
 weixin/meta.json    title/digest/cover/read_more_url（将来接 API 草稿箱直接消费）
 weixin/cover.jpg|png  封面
 weixin/reason-cache.json  推荐语缓存（21 天过期）
@@ -117,5 +119,7 @@ python scripts/generate_weixin_article.py --data-dir data --output-dir weixin
   在 stderr 打印原因。可用 Variables 里的 `WEIXIN_IMAGE_MODEL` 换成可用模型。
 - **粘贴进编辑器样式丢了？** 正文只用安全内联样式（无 `<a>`/`<img>`/class）；
   如个别样式丢失，属编辑器行为，内容不受影响。
+- **原文链接为什么是纯文本、点不了？** 公众号正文不支持外链超链接，编辑器会
+  去掉 `<a>` 标签，所以每条信息下方以纯文本给出原文 URL，读者可复制到浏览器打开。
 - **想改排版/条数/品牌名？** 排版改 `scripts/generate_weixin_article.py` 的
   `render_article_html`；条数与品牌名用 Variables 即可，无需改代码。
