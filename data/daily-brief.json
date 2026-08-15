@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-15T16:41:45.780498Z",
+  "generated_at": "2026-08-15T17:35:43.986706Z",
   "window_hours": 24,
-  "total_items": 17,
+  "total_items": 16,
   "items": [
     {
       "story_id": "story_e27bfcf013b4",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8029,
-      "importance": 0.8029,
-      "importance_score": 0.8029,
+      "score": 0.8011,
+      "importance": 0.8011,
+      "importance_score": 0.8011,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.7715,
+        "recency": 0.7615,
         "story_heat": 0.0
       },
       "category": "official",
@@ -83,7 +83,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     },
     {
@@ -189,15 +189,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.7973,
-      "importance": 0.7973,
-      "importance_score": 0.7973,
+      "score": 0.7956,
+      "importance": 0.7956,
+      "importance_score": 0.7956,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.7351,
+        "recency": 0.7256,
         "story_heat": 0.5
       },
       "category": "official",
@@ -224,7 +224,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     },
     {
@@ -272,15 +272,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7474,
-      "importance": 0.7474,
-      "importance_score": 0.7474,
+      "score": 0.7453,
+      "importance": 0.7453,
+      "importance_score": 0.7453,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9212,
+        "recency": 0.9093,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -305,146 +305,146 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     },
     {
-      "story_id": "story_67a9736d0220",
-      "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-      "url": "https://news.ycombinator.com/item?id=49310725",
-      "primary_url": "https://news.ycombinator.com/item?id=49310725",
-      "source": "hackernews",
-      "source_name": "NewsNow",
+      "story_id": "story_461e5611a9d5",
+      "title": "从事人工智能工作，与其说是编程，不如说是领导工作",
+      "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership",
+      "primary_url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership",
+      "source": "allen.bargi.org",
+      "source_name": "Buzzing",
       "sources": [
         {
-          "id": "f50f85b755a8871c36dc1a3f17ad231bac4f5f7e",
-          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-          "title_en": "Secondhand book sales are booming. Is it because of AI?",
-          "title_original": "Secondhand book sales are booming. Is it because of AI?",
+          "id": "75443a8cd653f571b5a8ca0103a27e4a20ca7a4d",
+          "title": "从事人工智能工作，与其说是编程，不如说是领导工作",
+          "title_zh": "从事人工智能工作，与其说是编程，不如说是领导工作",
+          "title_en": null,
+          "title_original": "从事人工智能工作，与其说是编程，不如说是领导工作",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49310725",
+          "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership",
+          "source": "allen.bargi.org",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-15T16:38:01.653000Z"
+        },
+        {
+          "id": "b90c3bc7c0cde103f85eff23dc739c1eeaea4cf6",
+          "title": "与人工智能一起工作感觉更像是领导而不是编码 / Working with AI Feels More Like Leadership Than Coding",
+          "title_zh": "与人工智能一起工作感觉更像是领导而不是编码",
+          "title_en": "Working with AI Feels More Like Leadership Than Coding",
+          "title_original": "Working with AI Feels More Like Leadership Than Coding",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49309451",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-08-15T14:40:11.976000Z"
+          "published_at": "2026-08-15T13:44:33.948000Z"
         },
         {
-          "id": "fb298e71a21de056b737cb1400f65f0be73dfa0f",
-          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-          "title_en": "Secondhand book sales are booming. Is it because of AI?",
-          "title_original": "Secondhand book sales are booming. Is it because of AI?",
+          "id": "24e0d1e34756b4b289b3c6515c68fefe0aa322bd",
+          "title": "从事人工智能工作，与其说是编程，不如说是领导工作 / Working with AI Feels More Like Leadership Than Coding",
+          "title_zh": "从事人工智能工作，与其说是编程，不如说是领导工作",
+          "title_en": "Working with AI Feels More Like Leadership Than Coding",
+          "title_original": "Working with AI Feels More Like Leadership Than Coding",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o",
+          "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership",
           "source": "Hacker News (黑客新闻)",
           "source_name": "Info Flow",
           "site_id": "iris",
-          "published_at": "2026-08-15T14:08:55Z"
-        },
-        {
-          "id": "dcc8a19034a29524320fe1cf922bc36524fb4b37",
-          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-          "title_en": "Secondhand book sales are booming. Is it because of AI?",
-          "title_original": "Secondhand book sales are booming. Is it because of AI?",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss",
-          "source": "BBC News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-15T11:25:32Z"
+          "published_at": "2026-08-15T10:39:41Z"
         }
       ],
       "source_count": 3,
       "source_names": [
-        "BBC News",
         "Hacker News (黑客新闻)",
+        "allen.bargi.org",
         "hackernews"
       ],
       "items": [
         {
-          "id": "f50f85b755a8871c36dc1a3f17ad231bac4f5f7e",
-          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-          "title_en": "Secondhand book sales are booming. Is it because of AI?",
-          "title_original": "Secondhand book sales are booming. Is it because of AI?",
+          "id": "75443a8cd653f571b5a8ca0103a27e4a20ca7a4d",
+          "title": "从事人工智能工作，与其说是编程，不如说是领导工作",
+          "title_zh": "从事人工智能工作，与其说是编程，不如说是领导工作",
+          "title_en": null,
+          "title_original": "从事人工智能工作，与其说是编程，不如说是领导工作",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49310725",
+          "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership",
+          "source": "allen.bargi.org",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-15T16:38:01.653000Z"
+        },
+        {
+          "id": "b90c3bc7c0cde103f85eff23dc739c1eeaea4cf6",
+          "title": "与人工智能一起工作感觉更像是领导而不是编码 / Working with AI Feels More Like Leadership Than Coding",
+          "title_zh": "与人工智能一起工作感觉更像是领导而不是编码",
+          "title_en": "Working with AI Feels More Like Leadership Than Coding",
+          "title_original": "Working with AI Feels More Like Leadership Than Coding",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49309451",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-08-15T14:40:11.976000Z"
+          "published_at": "2026-08-15T13:44:33.948000Z"
         },
         {
-          "id": "fb298e71a21de056b737cb1400f65f0be73dfa0f",
-          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-          "title_en": "Secondhand book sales are booming. Is it because of AI?",
-          "title_original": "Secondhand book sales are booming. Is it because of AI?",
+          "id": "24e0d1e34756b4b289b3c6515c68fefe0aa322bd",
+          "title": "从事人工智能工作，与其说是编程，不如说是领导工作 / Working with AI Feels More Like Leadership Than Coding",
+          "title_zh": "从事人工智能工作，与其说是编程，不如说是领导工作",
+          "title_en": "Working with AI Feels More Like Leadership Than Coding",
+          "title_original": "Working with AI Feels More Like Leadership Than Coding",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o",
+          "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership",
           "source": "Hacker News (黑客新闻)",
           "source_name": "Info Flow",
           "site_id": "iris",
-          "published_at": "2026-08-15T14:08:55Z"
-        },
-        {
-          "id": "dcc8a19034a29524320fe1cf922bc36524fb4b37",
-          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-          "title_en": "Secondhand book sales are booming. Is it because of AI?",
-          "title_original": "Secondhand book sales are booming. Is it because of AI?",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss",
-          "source": "BBC News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-15T11:25:32Z"
+          "published_at": "2026-08-15T10:39:41Z"
         }
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5656,
-      "importance": 0.5656,
-      "importance_score": 0.5656,
+      "score": 0.5683,
+      "importance": 0.5683,
+      "importance_score": 0.5683,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9712,
+        "recency": 0.9862,
         "story_heat": 0.5
       },
       "category": "multi_source",
       "reasons": [
         "multi_source"
       ],
-      "earliest_at": "2026-08-15T11:25:32Z",
-      "latest_at": "2026-08-15T14:40:11.976000Z",
+      "earliest_at": "2026-08-15T10:39:41Z",
+      "latest_at": "2026-08-15T16:38:01.653000Z",
       "primary_item": {
-        "id": "f50f85b755a8871c36dc1a3f17ad231bac4f5f7e",
-        "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-        "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-        "title_en": "Secondhand book sales are booming. Is it because of AI?",
-        "title_original": "Secondhand book sales are booming. Is it because of AI?",
+        "id": "75443a8cd653f571b5a8ca0103a27e4a20ca7a4d",
+        "title": "从事人工智能工作，与其说是编程，不如说是领导工作",
+        "title_zh": "从事人工智能工作，与其说是编程，不如说是领导工作",
+        "title_en": null,
+        "title_original": "从事人工智能工作，与其说是编程，不如说是领导工作",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=49310725",
-        "source": "hackernews",
-        "source_name": "NewsNow"
+        "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership",
+        "source": "allen.bargi.org",
+        "source_name": "Buzzing"
       },
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     },
     {
@@ -484,7 +484,7 @@
           "published_at": "2026-08-15T12:38:05.900000Z"
         },
         {
-          "id": "bc9604c13e3a66b8b75be69bf59facde955e8ba2",
+          "id": "5a1c3f74be042d50ee3fda39cc577a12635ca5bc",
           "title": "使用 Codex 进行自动研究：我是如何实现内核速度提升 232 倍的 / Auto-research with codex: How I achieved a 232x Faster Kernel",
           "title_zh": "使用 Codex 进行自动研究：我是如何实现内核速度提升 232 倍的",
           "title_en": "Auto-research with codex: How I achieved a 232x Faster Kernel",
@@ -492,15 +492,15 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://sankalp.bearblog.dev/autoresearch",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
           "published_at": "2026-08-15T11:00:02Z"
         }
       ],
       "source_count": 3,
       "source_names": [
-        "Hacker News",
+        "Hacker News (黑客新闻)",
         "hackernews",
         "sankalp.bearblog.dev"
       ],
@@ -534,7 +534,7 @@
           "published_at": "2026-08-15T12:38:05.900000Z"
         },
         {
-          "id": "bc9604c13e3a66b8b75be69bf59facde955e8ba2",
+          "id": "5a1c3f74be042d50ee3fda39cc577a12635ca5bc",
           "title": "使用 Codex 进行自动研究：我是如何实现内核速度提升 232 倍的 / Auto-research with codex: How I achieved a 232x Faster Kernel",
           "title_zh": "使用 Codex 进行自动研究：我是如何实现内核速度提升 232 倍的",
           "title_en": "Auto-research with codex: How I achieved a 232x Faster Kernel",
@@ -542,23 +542,23 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://sankalp.bearblog.dev/autoresearch",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
           "published_at": "2026-08-15T11:00:02Z"
         }
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5638,
-      "importance": 0.5638,
-      "importance_score": 0.5638,
+      "score": 0.5616,
+      "importance": 0.5616,
+      "importance_score": 0.5616,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9614,
+        "recency": 0.949,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -583,7 +583,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     },
     {
@@ -660,15 +660,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5458,
-      "importance": 0.5458,
-      "importance_score": 0.5458,
+      "score": 0.5435,
+      "importance": 0.5435,
+      "importance_score": 0.5435,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 1.0,
+        "recency": 0.9872,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -693,117 +693,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
-      }
-    },
-    {
-      "story_id": "story_f83e47ee3c75",
-      "title": "人工智能驱动测试 / AI Driven Testing",
-      "url": "https://app.deltix.ai",
-      "primary_url": "https://app.deltix.ai",
-      "source": "Hacker News",
-      "source_name": "TechURLs",
-      "sources": [
-        {
-          "id": "0a7b10cb17b8d4acad23f6140e6218be614c2da6",
-          "title": "人工智能驱动测试 / AI Driven Testing",
-          "title_zh": "人工智能驱动测试",
-          "title_en": "AI Driven Testing",
-          "title_original": "AI Driven Testing",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://app.deltix.ai",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-15T02:42:14Z"
-        },
-        {
-          "id": "e205e722bde4dc4eca5649c78b23bcab4873c0e7",
-          "title": "显示 HN：Deltix – AI 驱动测试 / Show HN: Deltix – AI Driven Testing",
-          "title_zh": "显示 HN：Deltix – AI 驱动测试",
-          "title_en": "Show HN: Deltix – AI Driven Testing",
-          "title_original": "Show HN: Deltix – AI Driven Testing",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://app.deltix.ai",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-15T02:42:14Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "Hacker News · 24h最热"
-      ],
-      "items": [
-        {
-          "id": "0a7b10cb17b8d4acad23f6140e6218be614c2da6",
-          "title": "人工智能驱动测试 / AI Driven Testing",
-          "title_zh": "人工智能驱动测试",
-          "title_en": "AI Driven Testing",
-          "title_original": "AI Driven Testing",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://app.deltix.ai",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-15T02:42:14Z"
-        },
-        {
-          "id": "e205e722bde4dc4eca5649c78b23bcab4873c0e7",
-          "title": "显示 HN：Deltix – AI 驱动测试 / Show HN: Deltix – AI Driven Testing",
-          "title_zh": "显示 HN：Deltix – AI 驱动测试",
-          "title_en": "Show HN: Deltix – AI Driven Testing",
-          "title_original": "Show HN: Deltix – AI Driven Testing",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://app.deltix.ai",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-15T02:42:14Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5129,
-      "importance": 0.5129,
-      "importance_score": 0.5129,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.8171,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-15T02:42:14Z",
-      "latest_at": "2026-08-15T02:42:14Z",
-      "primary_item": {
-        "id": "0a7b10cb17b8d4acad23f6140e6218be614c2da6",
-        "title": "人工智能驱动测试 / AI Driven Testing",
-        "title_zh": "人工智能驱动测试",
-        "title_en": "AI Driven Testing",
-        "title_original": "AI Driven Testing",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://app.deltix.ai",
-        "source": "Hacker News",
-        "source_name": "TechURLs"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     },
     {
@@ -880,15 +770,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5458,
-      "importance": 0.5458,
-      "importance_score": 0.5458,
+      "score": 0.5435,
+      "importance": 0.5435,
+      "importance_score": 0.5435,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 1.0,
+        "recency": 0.9872,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -913,7 +803,117 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
+      }
+    },
+    {
+      "story_id": "story_f83e47ee3c75",
+      "title": "人工智能驱动测试 / AI Driven Testing",
+      "url": "https://app.deltix.ai",
+      "primary_url": "https://app.deltix.ai",
+      "source": "Hacker News",
+      "source_name": "TechURLs",
+      "sources": [
+        {
+          "id": "0a7b10cb17b8d4acad23f6140e6218be614c2da6",
+          "title": "人工智能驱动测试 / AI Driven Testing",
+          "title_zh": "人工智能驱动测试",
+          "title_en": "AI Driven Testing",
+          "title_original": "AI Driven Testing",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://app.deltix.ai",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-15T02:42:14Z"
+        },
+        {
+          "id": "e205e722bde4dc4eca5649c78b23bcab4873c0e7",
+          "title": "显示 HN：Deltix – AI 驱动测试 / Show HN: Deltix – AI Driven Testing",
+          "title_zh": "显示 HN：Deltix – AI 驱动测试",
+          "title_en": "Show HN: Deltix – AI Driven Testing",
+          "title_original": "Show HN: Deltix – AI Driven Testing",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://app.deltix.ai",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-15T02:42:14Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News",
+        "Hacker News · 24h最热"
+      ],
+      "items": [
+        {
+          "id": "0a7b10cb17b8d4acad23f6140e6218be614c2da6",
+          "title": "人工智能驱动测试 / AI Driven Testing",
+          "title_zh": "人工智能驱动测试",
+          "title_en": "AI Driven Testing",
+          "title_original": "AI Driven Testing",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://app.deltix.ai",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-15T02:42:14Z"
+        },
+        {
+          "id": "e205e722bde4dc4eca5649c78b23bcab4873c0e7",
+          "title": "显示 HN：Deltix – AI 驱动测试 / Show HN: Deltix – AI Driven Testing",
+          "title_zh": "显示 HN：Deltix – AI 驱动测试",
+          "title_en": "Show HN: Deltix – AI Driven Testing",
+          "title_original": "Show HN: Deltix – AI Driven Testing",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://app.deltix.ai",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-15T02:42:14Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.511,
+      "importance": 0.511,
+      "importance_score": 0.511,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.8065,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-15T02:42:14Z",
+      "latest_at": "2026-08-15T02:42:14Z",
+      "primary_item": {
+        "id": "0a7b10cb17b8d4acad23f6140e6218be614c2da6",
+        "title": "人工智能驱动测试 / AI Driven Testing",
+        "title_zh": "人工智能驱动测试",
+        "title_en": "AI Driven Testing",
+        "title_original": "AI Driven Testing",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://app.deltix.ai",
+        "source": "Hacker News",
+        "source_name": "TechURLs"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     },
     {
@@ -990,15 +990,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5406,
-      "importance": 0.5406,
-      "importance_score": 0.5406,
+      "score": 0.5384,
+      "importance": 0.5384,
+      "importance_score": 0.5384,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9712,
+        "recency": 0.9586,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1023,7 +1023,117 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
+      }
+    },
+    {
+      "story_id": "story_67a9736d0220",
+      "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+      "url": "https://news.ycombinator.com/item?id=49310725",
+      "primary_url": "https://news.ycombinator.com/item?id=49310725",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "f50f85b755a8871c36dc1a3f17ad231bac4f5f7e",
+          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
+          "title_en": "Secondhand book sales are booming. Is it because of AI?",
+          "title_original": "Secondhand book sales are booming. Is it because of AI?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49310725",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T14:40:11.976000Z"
+        },
+        {
+          "id": "dcc8a19034a29524320fe1cf922bc36524fb4b37",
+          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
+          "title_en": "Secondhand book sales are booming. Is it because of AI?",
+          "title_original": "Secondhand book sales are booming. Is it because of AI?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-15T11:25:32Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "BBC News",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "f50f85b755a8871c36dc1a3f17ad231bac4f5f7e",
+          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
+          "title_en": "Secondhand book sales are booming. Is it because of AI?",
+          "title_original": "Secondhand book sales are booming. Is it because of AI?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49310725",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T14:40:11.976000Z"
+        },
+        {
+          "id": "dcc8a19034a29524320fe1cf922bc36524fb4b37",
+          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
+          "title_en": "Secondhand book sales are booming. Is it because of AI?",
+          "title_original": "Secondhand book sales are booming. Is it because of AI?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-15T11:25:32Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5384,
+      "importance": 0.5384,
+      "importance_score": 0.5384,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9586,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-15T11:25:32Z",
+      "latest_at": "2026-08-15T14:40:11.976000Z",
+      "primary_item": {
+        "id": "f50f85b755a8871c36dc1a3f17ad231bac4f5f7e",
+        "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+        "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
+        "title_en": "Secondhand book sales are booming. Is it because of AI?",
+        "title_original": "Secondhand book sales are booming. Is it because of AI?",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=49310725",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     },
     {
@@ -1100,15 +1210,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5383,
-      "importance": 0.5383,
-      "importance_score": 0.5383,
+      "score": 0.5361,
+      "importance": 0.5361,
+      "importance_score": 0.5361,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9582,
+        "recency": 0.9459,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1133,117 +1243,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
-      }
-    },
-    {
-      "story_id": "story_461e5611a9d5",
-      "title": "与人工智能一起工作感觉更像是领导而不是编码 / Working with AI Feels More Like Leadership Than Coding",
-      "url": "https://news.ycombinator.com/item?id=49309451",
-      "primary_url": "https://news.ycombinator.com/item?id=49309451",
-      "source": "hackernews",
-      "source_name": "NewsNow",
-      "sources": [
-        {
-          "id": "b90c3bc7c0cde103f85eff23dc739c1eeaea4cf6",
-          "title": "与人工智能一起工作感觉更像是领导而不是编码 / Working with AI Feels More Like Leadership Than Coding",
-          "title_zh": "与人工智能一起工作感觉更像是领导而不是编码",
-          "title_en": "Working with AI Feels More Like Leadership Than Coding",
-          "title_original": "Working with AI Feels More Like Leadership Than Coding",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49309451",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-15T13:44:33.948000Z"
-        },
-        {
-          "id": "7424ad1f591f93f7da2d5fe2e48a56f5fd4dab7d",
-          "title": "与人工智能一起工作感觉更像是领导而不是编码 / Working with AI Feels More Like Leadership Than Coding",
-          "title_zh": "与人工智能一起工作感觉更像是领导而不是编码",
-          "title_en": "Working with AI Feels More Like Leadership Than Coding",
-          "title_original": "Working with AI Feels More Like Leadership Than Coding",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-15T10:39:41Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "b90c3bc7c0cde103f85eff23dc739c1eeaea4cf6",
-          "title": "与人工智能一起工作感觉更像是领导而不是编码 / Working with AI Feels More Like Leadership Than Coding",
-          "title_zh": "与人工智能一起工作感觉更像是领导而不是编码",
-          "title_en": "Working with AI Feels More Like Leadership Than Coding",
-          "title_original": "Working with AI Feels More Like Leadership Than Coding",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49309451",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-15T13:44:33.948000Z"
-        },
-        {
-          "id": "7424ad1f591f93f7da2d5fe2e48a56f5fd4dab7d",
-          "title": "与人工智能一起工作感觉更像是领导而不是编码 / Working with AI Feels More Like Leadership Than Coding",
-          "title_zh": "与人工智能一起工作感觉更像是领导而不是编码",
-          "title_en": "Working with AI Feels More Like Leadership Than Coding",
-          "title_original": "Working with AI Feels More Like Leadership Than Coding",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-15T10:39:41Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5383,
-      "importance": 0.5383,
-      "importance_score": 0.5383,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.9582,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-15T10:39:41Z",
-      "latest_at": "2026-08-15T13:44:33.948000Z",
-      "primary_item": {
-        "id": "b90c3bc7c0cde103f85eff23dc739c1eeaea4cf6",
-        "title": "与人工智能一起工作感觉更像是领导而不是编码 / Working with AI Feels More Like Leadership Than Coding",
-        "title_zh": "与人工智能一起工作感觉更像是领导而不是编码",
-        "title_en": "Working with AI Feels More Like Leadership Than Coding",
-        "title_original": "Working with AI Feels More Like Leadership Than Coding",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=49309451",
-        "source": "hackernews",
-        "source_name": "NewsNow"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     },
     {
@@ -1320,15 +1320,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5355,
-      "importance": 0.5355,
-      "importance_score": 0.5355,
+      "score": 0.5334,
+      "importance": 0.5334,
+      "importance_score": 0.5334,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.943,
+        "recency": 0.9309,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1353,7 +1353,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     },
     {
@@ -1430,15 +1430,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5277,
-      "importance": 0.5277,
-      "importance_score": 0.5277,
+      "score": 0.5256,
+      "importance": 0.5256,
+      "importance_score": 0.5256,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8994,
+        "recency": 0.8878,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1463,7 +1463,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     },
     {
@@ -1540,15 +1540,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5222,
-      "importance": 0.5222,
-      "importance_score": 0.5222,
+      "score": 0.5202,
+      "importance": 0.5202,
+      "importance_score": 0.5202,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8691,
+        "recency": 0.8579,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1573,7 +1573,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     },
     {
@@ -1650,15 +1650,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5065,
-      "importance": 0.5065,
-      "importance_score": 0.5065,
+      "score": 0.5047,
+      "importance": 0.5047,
+      "importance_score": 0.5047,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7816,
+        "recency": 0.7715,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1683,7 +1683,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     },
     {
@@ -1760,15 +1760,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5008,
-      "importance": 0.5008,
-      "importance_score": 0.5008,
+      "score": 0.4991,
+      "importance": 0.4991,
+      "importance_score": 0.4991,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.75,
+        "recency": 0.7403,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1790,120 +1790,10 @@
         "source_name": "NewsNow"
       },
       "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
-      }
-    },
-    {
-      "story_id": "story_b235d2a8da13",
-      "title": "LLM 生成的 GPU 内核的合同级验证器 / A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-      "url": "https://news.ycombinator.com/item?id=49301417",
-      "primary_url": "https://news.ycombinator.com/item?id=49301417",
-      "source": "hackernews",
-      "source_name": "NewsNow",
-      "sources": [
-        {
-          "id": "02aea13b6c790485d065938d4fcb5807c087c520",
-          "title": "LLM 生成的 GPU 内核的合同级验证器 / A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-          "title_zh": "LLM 生成的 GPU 内核的合同级验证器",
-          "title_en": "A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-          "title_original": "A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49301417",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-14T18:07:24.400000Z"
-        },
-        {
-          "id": "b1271d964bd74835298defc6c9b6c351230f171f",
-          "title": "LLM 生成的 GPU 内核的合同级验证器 / A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-          "title_zh": "LLM 生成的 GPU 内核的合同级验证器",
-          "title_en": "A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-          "title_original": "A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arxiv.org/abs/2608.12700",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-14T16:57:14Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News · 24h最热",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "02aea13b6c790485d065938d4fcb5807c087c520",
-          "title": "LLM 生成的 GPU 内核的合同级验证器 / A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-          "title_zh": "LLM 生成的 GPU 内核的合同级验证器",
-          "title_en": "A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-          "title_original": "A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49301417",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-14T18:07:24.400000Z"
-        },
-        {
-          "id": "b1271d964bd74835298defc6c9b6c351230f171f",
-          "title": "LLM 生成的 GPU 内核的合同级验证器 / A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-          "title_zh": "LLM 生成的 GPU 内核的合同级验证器",
-          "title_en": "A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-          "title_original": "A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arxiv.org/abs/2608.12700",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-14T16:57:14Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.4957,
-      "importance": 0.4957,
-      "importance_score": 0.4957,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.7218,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-14T16:57:14Z",
-      "latest_at": "2026-08-14T18:07:24.400000Z",
-      "primary_item": {
-        "id": "02aea13b6c790485d065938d4fcb5807c087c520",
-        "title": "LLM 生成的 GPU 内核的合同级验证器 / A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-        "title_zh": "LLM 生成的 GPU 内核的合同级验证器",
-        "title_en": "A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-        "title_original": "A Contract-Grade Verifier for LLM-Generated GPU Kernels",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=49301417",
-        "source": "hackernews",
-        "source_name": "NewsNow"
-      },
-      "persona_id": "pragmatic",
       "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T16:42:28.833222Z"
+        "scored_at": "2026-08-15T17:36:52.131613Z"
       }
     }
   ]
