@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T10:39:19.902937Z",
+  "generated_at": "2026-08-15T11:33:56.989623Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8181,
-      "importance": 0.8181,
-      "importance_score": 0.8181,
+      "score": 0.8163,
+      "importance": 0.8163,
+      "importance_score": 0.8163,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.7671,
+        "recency": 0.7571,
         "story_heat": 0.0
       },
       "category": "official",
@@ -83,7 +83,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -189,15 +189,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.8094,
-      "importance": 0.8094,
-      "importance_score": 0.8094,
+      "score": 0.8075,
+      "importance": 0.8075,
+      "importance_score": 0.8075,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.802,
+        "recency": 0.7916,
         "story_heat": 0.5
       },
       "category": "official",
@@ -224,7 +224,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -272,15 +272,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8015,
-      "importance": 0.8015,
-      "importance_score": 0.8015,
+      "score": 0.7997,
+      "importance": 0.7997,
+      "importance_score": 0.7997,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.7638,
+        "recency": 0.7539,
         "story_heat": 0.0
       },
       "category": "official",
@@ -307,7 +307,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -355,15 +355,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8155,
-      "importance": 0.8155,
-      "importance_score": 0.8155,
+      "score": 0.8135,
+      "importance": 0.8135,
+      "importance_score": 0.8135,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8418,
+        "recency": 0.8308,
         "story_heat": 0.0
       },
       "category": "official",
@@ -390,88 +390,89 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
-      "story_id": "story_5634b0a754f6",
-      "title": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
-      "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496140&idx=1&sn=5239a5fbb115c58d2ae0056bb32789ff",
-      "primary_url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496140&idx=1&sn=5239a5fbb115c58d2ae0056bb32789ff",
-      "source": "公众号：小红书技术（dots.llm）",
+      "story_id": "story_e50ea4ab6859",
+      "title": "人工智能生成的书籍充斥亚马逊，人类作家的销量大幅下降 / AI-generated books are flooding Amazon and tanking sales for human authors",
+      "url": "https://the-decoder.com/ai-generated-books-are-flooding-amazon-and-tanking-sales-for-human-authors",
+      "primary_url": "https://the-decoder.com/ai-generated-books-are-flooding-amazon-and-tanking-sales-for-human-authors",
+      "source": "The Decoder：AI News（RSS）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "a059b7702912fcb0e95b0fff5d2a7da4864b1da9",
-          "title": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
-          "title_zh": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
-          "title_en": null,
-          "title_original": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
-          "summary": "小红书技术开源 dots3-note Preview，这是 dots3 系列最轻量模型，总参数 280B、激活参数 16B，支持 512K 上下文及文本、视觉、语音多模态理解，并针对复杂推理和长程 Agent 任务优化。",
+          "id": "d7799803fcf09767f5fac7c966f8170274cdec44",
+          "title": "人工智能生成的书籍充斥亚马逊，人类作家的销量大幅下降 / AI-generated books are flooding Amazon and tanking sales for human authors",
+          "title_zh": "人工智能生成的书籍充斥亚马逊，人类作家的销量大幅下降",
+          "title_en": "AI-generated books are flooding Amazon and tanking sales for human authors",
+          "title_original": "AI-generated books are flooding Amazon and tanking sales for human authors",
+          "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496140&idx=1&sn=5239a5fbb115c58d2ae0056bb32789ff",
-          "source": "公众号：小红书技术（dots.llm）",
+          "url": "https://the-decoder.com/ai-generated-books-are-flooding-amazon-and-tanking-sales-for-human-authors",
+          "source": "The Decoder：AI News（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-08-14T11:25:29Z"
+          "published_at": "2026-08-15T11:00:50Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "公众号：小红书技术（dots.llm）"
+        "The Decoder：AI News（RSS）"
       ],
       "items": [
         {
-          "id": "a059b7702912fcb0e95b0fff5d2a7da4864b1da9",
-          "title": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
-          "title_zh": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
-          "title_en": null,
-          "title_original": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
-          "summary": "小红书技术开源 dots3-note Preview，这是 dots3 系列最轻量模型，总参数 280B、激活参数 16B，支持 512K 上下文及文本、视觉、语音多模态理解，并针对复杂推理和长程 Agent 任务优化。",
+          "id": "d7799803fcf09767f5fac7c966f8170274cdec44",
+          "title": "人工智能生成的书籍充斥亚马逊，人类作家的销量大幅下降 / AI-generated books are flooding Amazon and tanking sales for human authors",
+          "title_zh": "人工智能生成的书籍充斥亚马逊，人类作家的销量大幅下降",
+          "title_en": "AI-generated books are flooding Amazon and tanking sales for human authors",
+          "title_original": "AI-generated books are flooding Amazon and tanking sales for human authors",
+          "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496140&idx=1&sn=5239a5fbb115c58d2ae0056bb32789ff",
-          "source": "公众号：小红书技术（dots.llm）",
+          "url": "https://the-decoder.com/ai-generated-books-are-flooding-amazon-and-tanking-sales-for-human-authors",
+          "source": "The Decoder：AI News（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-08-14T11:25:29Z"
+          "published_at": "2026-08-15T11:00:50Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7373,
-      "importance": 0.7373,
-      "importance_score": 0.7373,
+      "score": 0.7602,
+      "importance": 0.7602,
+      "importance_score": 0.7602,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.79,
+        "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.715,
+        "recency": 0.9921,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-08-14T11:25:29Z",
-      "latest_at": "2026-08-14T11:25:29Z",
+      "earliest_at": "2026-08-15T11:00:50Z",
+      "latest_at": "2026-08-15T11:00:50Z",
       "primary_item": {
-        "id": "a059b7702912fcb0e95b0fff5d2a7da4864b1da9",
-        "title": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
-        "title_zh": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
-        "title_en": null,
-        "title_original": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
-        "summary": "小红书技术开源 dots3-note Preview，这是 dots3 系列最轻量模型，总参数 280B、激活参数 16B，支持 512K 上下文及文本、视觉、语音多模态理解，并针对复杂推理和长程 Agent 任务优化。",
+        "id": "d7799803fcf09767f5fac7c966f8170274cdec44",
+        "title": "人工智能生成的书籍充斥亚马逊，人类作家的销量大幅下降 / AI-generated books are flooding Amazon and tanking sales for human authors",
+        "title_zh": "人工智能生成的书籍充斥亚马逊，人类作家的销量大幅下降",
+        "title_en": "AI-generated books are flooding Amazon and tanking sales for human authors",
+        "title_original": "AI-generated books are flooding Amazon and tanking sales for human authors",
+        "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://mp.weixin.qq.com/s?__biz=Mzg4OTc2MzczNg%3D%3D&mid=2247496140&idx=1&sn=5239a5fbb115c58d2ae0056bb32789ff",
-        "source": "公众号：小红书技术（dots.llm）",
+        "url": "https://the-decoder.com/ai-generated-books-are-flooding-amazon-and-tanking-sales-for-human-authors",
+        "source": "The Decoder：AI News（RSS）",
         "source_name": "AI HOT"
       },
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -519,15 +520,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7344,
-      "importance": 0.7344,
-      "importance_score": 0.7344,
+      "score": 0.7326,
+      "importance": 0.7326,
+      "importance_score": 0.7326,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.732,
+        "recency": 0.7225,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -552,7 +553,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -600,15 +601,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7341,
-      "importance": 0.7341,
-      "importance_score": 0.7341,
+      "score": 0.7323,
+      "importance": 0.7323,
+      "importance_score": 0.7323,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.747,
+        "recency": 0.7372,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -633,7 +634,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -710,15 +711,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7304,
-      "importance": 0.7304,
-      "importance_score": 0.7304,
+      "score": 0.7287,
+      "importance": 0.7287,
+      "importance_score": 0.7287,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.721,
+        "recency": 0.7116,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -744,88 +745,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
-      }
-    },
-    {
-      "story_id": "story_a5a9de1a4652",
-      "title": "通义千问开源 Qwen3.8 系列模型 / We promised open weights for Qwen3.8. Now， time to meet them！ 🎉 ⚡ Qwen3.8-27B： - A native multimod…",
-      "url": "https://x.com/Alibaba_Qwen/status/2088280182356611304",
-      "primary_url": "https://x.com/Alibaba_Qwen/status/2088280182356611304",
-      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "ef74b668854b5a5fd23bf9ef2f74ec6cf633a6ad",
-          "title": "通义千问开源 Qwen3.8 系列模型 / We promised open weights for Qwen3.8. Now， time to meet them！ 🎉 ⚡ Qwen3.8-27B： - A native multimod…",
-          "title_zh": "通义千问开源 Qwen3.8 系列模型",
-          "title_en": "We promised open weights for Qwen3.8. Now， time to meet them！ 🎉 ⚡ Qwen3.8-27B： - A native multimod…",
-          "title_original": "We promised open weights for Qwen3.8. Now， time to meet them！ 🎉 ⚡ Qwen3.8-27B： - A native multimod…",
-          "summary": "通义千问兑现承诺，开源 Qwen3.8 系列模型。其中 Qwen3.8-27B 为原生多模态稠密模型，仅 27B 参数即全面超越 Qwen3.7-Plus，原生支持 262K 上下文，可通过 YaRN 扩展至 1M tokens，采用 Apache 2.0 许可。Max 级 Qwen3.8-2.4T-A95B 的开放权重也已同步发布。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Alibaba_Qwen/status/2088280182356611304",
-          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-14T15:02:48Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：通义千问 / Qwen (@Alibaba_Qwen)"
-      ],
-      "items": [
-        {
-          "id": "ef74b668854b5a5fd23bf9ef2f74ec6cf633a6ad",
-          "title": "通义千问开源 Qwen3.8 系列模型 / We promised open weights for Qwen3.8. Now， time to meet them！ 🎉 ⚡ Qwen3.8-27B： - A native multimod…",
-          "title_zh": "通义千问开源 Qwen3.8 系列模型",
-          "title_en": "We promised open weights for Qwen3.8. Now， time to meet them！ 🎉 ⚡ Qwen3.8-27B： - A native multimod…",
-          "title_original": "We promised open weights for Qwen3.8. Now， time to meet them！ 🎉 ⚡ Qwen3.8-27B： - A native multimod…",
-          "summary": "通义千问兑现承诺，开源 Qwen3.8 系列模型。其中 Qwen3.8-27B 为原生多模态稠密模型，仅 27B 参数即全面超越 Qwen3.7-Plus，原生支持 262K 上下文，可通过 YaRN 扩展至 1M tokens，采用 Apache 2.0 许可。Max 级 Qwen3.8-2.4T-A95B 的开放权重也已同步发布。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Alibaba_Qwen/status/2088280182356611304",
-          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-14T15:02:48Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7202,
-      "importance": 0.7202,
-      "importance_score": 0.7202,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.71,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7534,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-14T15:02:48Z",
-      "latest_at": "2026-08-14T15:02:48Z",
-      "primary_item": {
-        "id": "ef74b668854b5a5fd23bf9ef2f74ec6cf633a6ad",
-        "title": "通义千问开源 Qwen3.8 系列模型 / We promised open weights for Qwen3.8. Now， time to meet them！ 🎉 ⚡ Qwen3.8-27B： - A native multimod…",
-        "title_zh": "通义千问开源 Qwen3.8 系列模型",
-        "title_en": "We promised open weights for Qwen3.8. Now， time to meet them！ 🎉 ⚡ Qwen3.8-27B： - A native multimod…",
-        "title_original": "We promised open weights for Qwen3.8. Now， time to meet them！ 🎉 ⚡ Qwen3.8-27B： - A native multimod…",
-        "summary": "通义千问兑现承诺，开源 Qwen3.8 系列模型。其中 Qwen3.8-27B 为原生多模态稠密模型，仅 27B 参数即全面超越 Qwen3.7-Plus，原生支持 262K 上下文，可通过 YaRN 扩展至 1M tokens，采用 Apache 2.0 许可。Max 级 Qwen3.8-2.4T-A95B 的开放权重也已同步发布。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/Alibaba_Qwen/status/2088280182356611304",
-        "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-        "source_name": "AI HOT"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -902,15 +822,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.6067,
-      "importance": 0.6067,
-      "importance_score": 0.6067,
+      "score": 0.6049,
+      "importance": 0.6049,
+      "importance_score": 0.6049,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.5472,
         "source_tier": 0.58,
         "ai_relevance": 0.76,
-        "recency": 0.7664,
+        "recency": 0.7563,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -935,7 +855,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -1011,15 +931,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5868,
-      "importance": 0.5868,
-      "importance_score": 0.5868,
+      "score": 0.585,
+      "importance": 0.585,
+      "importance_score": 0.585,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.5112,
         "source_tier": 0.58,
         "ai_relevance": 0.71,
-        "recency": 0.7711,
+        "recency": 0.7611,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1044,7 +964,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -1121,15 +1041,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5425,
-      "importance": 0.5425,
-      "importance_score": 0.5425,
+      "score": 0.5401,
+      "importance": 0.5401,
+      "importance_score": 0.5401,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9814,
+        "recency": 0.9686,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1154,7 +1074,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -1260,15 +1180,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5413,
-      "importance": 0.5413,
-      "importance_score": 0.5413,
+      "score": 0.5394,
+      "importance": 0.5394,
+      "importance_score": 0.5394,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8362,
+        "recency": 0.8253,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1293,7 +1213,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -1399,15 +1319,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5352,
-      "importance": 0.5352,
-      "importance_score": 0.5352,
+      "score": 0.5333,
+      "importance": 0.5333,
+      "importance_score": 0.5333,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.802,
+        "recency": 0.7915,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1432,7 +1352,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -1538,15 +1458,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5286,
-      "importance": 0.5286,
-      "importance_score": 0.5286,
+      "score": 0.5268,
+      "importance": 0.5268,
+      "importance_score": 0.5268,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7657,
+        "recency": 0.7557,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1571,7 +1491,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -1597,7 +1517,7 @@
           "published_at": "2026-08-15T02:42:14Z"
         },
         {
-          "id": "8b505a81e3065b1d92b7679c3db0826cae05db8a",
+          "id": "e205e722bde4dc4eca5649c78b23bcab4873c0e7",
           "title": "显示 HN：Deltix – AI 驱动测试 / Show HN: Deltix – AI Driven Testing",
           "title_zh": "显示 HN：Deltix – AI 驱动测试",
           "title_en": "Show HN: Deltix – AI Driven Testing",
@@ -1605,16 +1525,16 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://app.deltix.ai",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
           "published_at": "2026-08-15T02:42:14Z"
         }
       ],
       "source_count": 2,
       "source_names": [
         "Hacker News",
-        "Hacker News (黑客新闻)"
+        "Hacker News · 24h最热"
       ],
       "items": [
         {
@@ -1632,7 +1552,7 @@
           "published_at": "2026-08-15T02:42:14Z"
         },
         {
-          "id": "8b505a81e3065b1d92b7679c3db0826cae05db8a",
+          "id": "e205e722bde4dc4eca5649c78b23bcab4873c0e7",
           "title": "显示 HN：Deltix – AI 驱动测试 / Show HN: Deltix – AI Driven Testing",
           "title_zh": "显示 HN：Deltix – AI 驱动测试",
           "title_en": "Show HN: Deltix – AI Driven Testing",
@@ -1640,23 +1560,23 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://app.deltix.ai",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
           "published_at": "2026-08-15T02:42:14Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5263,
-      "importance": 0.5263,
-      "importance_score": 0.5263,
+      "score": 0.5242,
+      "importance": 0.5242,
+      "importance_score": 0.5242,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8915,
+        "recency": 0.8799,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1681,7 +1601,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -1758,15 +1678,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5135,
-      "importance": 0.5135,
-      "importance_score": 0.5135,
+      "score": 0.5115,
+      "importance": 0.5115,
+      "importance_score": 0.5115,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8204,
+        "recency": 0.8097,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1791,7 +1711,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -1868,15 +1788,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5365,
-      "importance": 0.5365,
-      "importance_score": 0.5365,
+      "score": 0.5343,
+      "importance": 0.5343,
+      "importance_score": 0.5343,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9484,
+        "recency": 0.936,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1901,7 +1821,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -1978,15 +1898,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5052,
-      "importance": 0.5052,
-      "importance_score": 0.5052,
+      "score": 0.5034,
+      "importance": 0.5034,
+      "importance_score": 0.5034,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7746,
+        "recency": 0.7644,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -2011,7 +1931,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     },
     {
@@ -2088,15 +2008,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5193,
-      "importance": 0.5193,
-      "importance_score": 0.5193,
+      "score": 0.5173,
+      "importance": 0.5173,
+      "importance_score": 0.5173,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8528,
+        "recency": 0.8417,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -2121,7 +2041,117 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T10:41:26.354748Z"
+        "scored_at": "2026-08-15T11:34:35.994831Z"
+      }
+    },
+    {
+      "story_id": "story_fca11916aed9",
+      "title": "人为风险 2026 年 8 月 [pdf] / Anthropic Risk August 2026 [pdf]",
+      "url": "https://news.ycombinator.com/item?id=49303540",
+      "primary_url": "https://news.ycombinator.com/item?id=49303540",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "daab5008e852f001e85fe3bb1cce85d80adbcb39",
+          "title": "人为风险 2026 年 8 月 [pdf] / Anthropic Risk August 2026 [pdf]",
+          "title_zh": "人为风险 2026 年 8 月 [pdf]",
+          "title_en": "Anthropic Risk August 2026 [pdf]",
+          "title_original": "Anthropic Risk August 2026 [pdf]",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49303540",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-14T20:46:18.627000Z"
+        },
+        {
+          "id": "b1371fb2e556503b2ce599e21a43d4af5154feb3",
+          "title": "人为风险 2026 年 8 月 [pdf] / Anthropic Risk August 2026 [pdf]",
+          "title_zh": "人为风险 2026 年 8 月 [pdf]",
+          "title_en": "Anthropic Risk August 2026 [pdf]",
+          "title_original": "Anthropic Risk August 2026 [pdf]",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-14T19:32:15Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News · 24h最热",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "daab5008e852f001e85fe3bb1cce85d80adbcb39",
+          "title": "人为风险 2026 年 8 月 [pdf] / Anthropic Risk August 2026 [pdf]",
+          "title_zh": "人为风险 2026 年 8 月 [pdf]",
+          "title_en": "Anthropic Risk August 2026 [pdf]",
+          "title_original": "Anthropic Risk August 2026 [pdf]",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49303540",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-14T20:46:18.627000Z"
+        },
+        {
+          "id": "b1371fb2e556503b2ce599e21a43d4af5154feb3",
+          "title": "人为风险 2026 年 8 月 [pdf] / Anthropic Risk August 2026 [pdf]",
+          "title_zh": "人为风险 2026 年 8 月 [pdf]",
+          "title_en": "Anthropic Risk August 2026 [pdf]",
+          "title_original": "Anthropic Risk August 2026 [pdf]",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-14T19:32:15Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5112,
+      "importance": 0.5112,
+      "importance_score": 0.5112,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.8076,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-14T19:32:15Z",
+      "latest_at": "2026-08-14T20:46:18.627000Z",
+      "primary_item": {
+        "id": "daab5008e852f001e85fe3bb1cce85d80adbcb39",
+        "title": "人为风险 2026 年 8 月 [pdf] / Anthropic Risk August 2026 [pdf]",
+        "title_zh": "人为风险 2026 年 8 月 [pdf]",
+        "title_en": "Anthropic Risk August 2026 [pdf]",
+        "title_original": "Anthropic Risk August 2026 [pdf]",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=49303540",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-15T11:34:35.994831Z"
       }
     }
   ]
