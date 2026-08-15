@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-15T21:35:06.918656Z",
+  "generated_at": "2026-08-15T22:37:32.953543Z",
   "window_hours": 24,
-  "total_items": 19,
+  "total_items": 20,
   "items": [
     {
       "story_id": "story_e27bfcf013b4",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7934,
-      "importance": 0.7934,
-      "importance_score": 0.7934,
+      "score": 0.7915,
+      "importance": 0.7915,
+      "importance_score": 0.7915,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.7189,
+        "recency": 0.7082,
         "story_heat": 0.0
       },
       "category": "official",
@@ -83,7 +83,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
@@ -160,15 +160,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7858,
-      "importance": 0.7858,
-      "importance_score": 0.7858,
+      "score": 0.7831,
+      "importance": 0.7831,
+      "importance_score": 0.7831,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9788,
+        "recency": 0.9642,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -195,7 +195,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
@@ -243,15 +243,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7361,
-      "importance": 0.7361,
-      "importance_score": 0.7361,
+      "score": 0.7338,
+      "importance": 0.7338,
+      "importance_score": 0.7338,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8584,
+        "recency": 0.8456,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -276,7 +276,174 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
+      }
+    },
+    {
+      "story_id": "story_e676b61085b8",
+      "title": "人工智能拥有比人脑大得多的工作记忆 / AI has access to a vastly larger working memory than the human brain",
+      "url": "https://news.ycombinator.com/item?id=49312845",
+      "primary_url": "https://news.ycombinator.com/item?id=49312845",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "08906e6f1e9a21d97e4fad47f959d9beeacacd33",
+          "title": "人工智能拥有比人脑大得多的工作记忆 / AI has access to a vastly larger working memory than the human brain",
+          "title_zh": "人工智能拥有比人脑大得多的工作记忆",
+          "title_en": "AI has access to a vastly larger working memory than the human brain",
+          "title_original": "AI has access to a vastly larger working memory than the human brain",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49312845",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T22:41:57.165000Z"
+        },
+        {
+          "id": "770e92996439c8cf792759006c44b0bd1224b1f7",
+          "title": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
+          "title_zh": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
+          "title_en": null,
+          "title_original": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+          "source": "davidepiffer.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-15T19:18:02.348000Z"
+        },
+        {
+          "id": "247028b738cd821f96f0574b414bfe8f3a3266b1",
+          "title": "人工智能并不比数学家聪明。它已经超出了记住他们的范围 / AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
+          "title_zh": "人工智能并不比数学家聪明。它已经超出了记住他们的范围",
+          "title_en": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
+          "title_original": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49312845",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T18:48:11.018000Z"
+        },
+        {
+          "id": "d96f5b708b46a172781224ee52287d992d3b751f",
+          "title": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们 / AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
+          "title_zh": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
+          "title_en": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
+          "title_original": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-15T18:13:02Z"
+        }
+      ],
+      "source_count": 4,
+      "source_names": [
+        "Hacker News (黑客新闻)",
+        "davidepiffer.com",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "08906e6f1e9a21d97e4fad47f959d9beeacacd33",
+          "title": "人工智能拥有比人脑大得多的工作记忆 / AI has access to a vastly larger working memory than the human brain",
+          "title_zh": "人工智能拥有比人脑大得多的工作记忆",
+          "title_en": "AI has access to a vastly larger working memory than the human brain",
+          "title_original": "AI has access to a vastly larger working memory than the human brain",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49312845",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T22:41:57.165000Z"
+        },
+        {
+          "id": "770e92996439c8cf792759006c44b0bd1224b1f7",
+          "title": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
+          "title_zh": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
+          "title_en": null,
+          "title_original": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+          "source": "davidepiffer.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-15T19:18:02.348000Z"
+        },
+        {
+          "id": "247028b738cd821f96f0574b414bfe8f3a3266b1",
+          "title": "人工智能并不比数学家聪明。它已经超出了记住他们的范围 / AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
+          "title_zh": "人工智能并不比数学家聪明。它已经超出了记住他们的范围",
+          "title_en": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
+          "title_original": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49312845",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T18:48:11.018000Z"
+        },
+        {
+          "id": "d96f5b708b46a172781224ee52287d992d3b751f",
+          "title": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们 / AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
+          "title_zh": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
+          "title_en": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
+          "title_original": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-15T18:13:02Z"
+        }
+      ],
+      "item_count": 4,
+      "duplicate_count": 4,
+      "score": 0.5958,
+      "importance": 0.5958,
+      "importance_score": 0.5958,
+      "importance_label": "多源热议",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 1.0,
+        "story_heat": 0.75
+      },
+      "category": "multi_source",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-15T18:13:02Z",
+      "latest_at": "2026-08-15T22:41:57.165000Z",
+      "primary_item": {
+        "id": "08906e6f1e9a21d97e4fad47f959d9beeacacd33",
+        "title": "人工智能拥有比人脑大得多的工作记忆 / AI has access to a vastly larger working memory than the human brain",
+        "title_zh": "人工智能拥有比人脑大得多的工作记忆",
+        "title_en": "AI has access to a vastly larger working memory than the human brain",
+        "title_original": "AI has access to a vastly larger working memory than the human brain",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=49312845",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
@@ -382,15 +549,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5697,
-      "importance": 0.5697,
-      "importance_score": 0.5697,
+      "score": 0.567,
+      "importance": 0.567,
+      "importance_score": 0.567,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.994,
+        "recency": 0.9791,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -415,146 +582,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
-      }
-    },
-    {
-      "story_id": "story_e676b61085b8",
-      "title": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
-      "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
-      "primary_url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
-      "source": "davidepiffer.com",
-      "source_name": "Buzzing",
-      "sources": [
-        {
-          "id": "770e92996439c8cf792759006c44b0bd1224b1f7",
-          "title": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
-          "title_zh": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
-          "title_en": null,
-          "title_original": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
-          "source": "davidepiffer.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-08-15T19:18:02.348000Z"
-        },
-        {
-          "id": "247028b738cd821f96f0574b414bfe8f3a3266b1",
-          "title": "人工智能并不比数学家聪明。它已经超出了记住他们的范围 / AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
-          "title_zh": "人工智能并不比数学家聪明。它已经超出了记住他们的范围",
-          "title_en": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
-          "title_original": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49312845",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-15T18:48:11.018000Z"
-        },
-        {
-          "id": "d96f5b708b46a172781224ee52287d992d3b751f",
-          "title": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们 / AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
-          "title_zh": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
-          "title_en": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
-          "title_original": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-15T18:13:02Z"
-        }
-      ],
-      "source_count": 3,
-      "source_names": [
-        "Hacker News (黑客新闻)",
-        "davidepiffer.com",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "770e92996439c8cf792759006c44b0bd1224b1f7",
-          "title": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
-          "title_zh": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
-          "title_en": null,
-          "title_original": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
-          "source": "davidepiffer.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-08-15T19:18:02.348000Z"
-        },
-        {
-          "id": "247028b738cd821f96f0574b414bfe8f3a3266b1",
-          "title": "人工智能并不比数学家聪明。它已经超出了记住他们的范围 / AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
-          "title_zh": "人工智能并不比数学家聪明。它已经超出了记住他们的范围",
-          "title_en": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
-          "title_original": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49312845",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-15T18:48:11.018000Z"
-        },
-        {
-          "id": "d96f5b708b46a172781224ee52287d992d3b751f",
-          "title": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们 / AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
-          "title_zh": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
-          "title_en": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
-          "title_original": "AI Isn't Outthinking Mathematicians. It's Out-Remembering Them",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-15T18:13:02Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.565,
-      "importance": 0.565,
-      "importance_score": 0.565,
-      "importance_label": "多源热议",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.9675,
-        "story_heat": 0.5
-      },
-      "category": "multi_source",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-15T18:13:02Z",
-      "latest_at": "2026-08-15T19:18:02.348000Z",
-      "primary_item": {
-        "id": "770e92996439c8cf792759006c44b0bd1224b1f7",
-        "title": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
-        "title_zh": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
-        "title_en": null,
-        "title_original": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
-        "source": "davidepiffer.com",
-        "source_name": "Buzzing"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
@@ -581,10 +609,10 @@
         },
         {
           "id": "b90c3bc7c0cde103f85eff23dc739c1eeaea4cf6",
-          "title": "与人工智能一起工作感觉更像是领导而不是编码 / Working with AI Feels More Like Leadership Than Coding",
+          "title": "与人工智能一起工作感觉更像是领导而不是编码 / Working with AI feels more like leadership than coding",
           "title_zh": "与人工智能一起工作感觉更像是领导而不是编码",
-          "title_en": "Working with AI Feels More Like Leadership Than Coding",
-          "title_original": "Working with AI Feels More Like Leadership Than Coding",
+          "title_en": "Working with AI feels more like leadership than coding",
+          "title_original": "Working with AI feels more like leadership than coding",
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://news.ycombinator.com/item?id=49309451",
@@ -594,7 +622,7 @@
           "published_at": "2026-08-15T13:44:33.948000Z"
         },
         {
-          "id": "24e0d1e34756b4b289b3c6515c68fefe0aa322bd",
+          "id": "7424ad1f591f93f7da2d5fe2e48a56f5fd4dab7d",
           "title": "从事人工智能工作，与其说是编程，不如说是领导工作 / Working with AI Feels More Like Leadership Than Coding",
           "title_zh": "从事人工智能工作，与其说是编程，不如说是领导工作",
           "title_en": "Working with AI Feels More Like Leadership Than Coding",
@@ -602,15 +630,15 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
           "published_at": "2026-08-15T10:39:41Z"
         }
       ],
       "source_count": 3,
       "source_names": [
-        "Hacker News (黑客新闻)",
+        "Hacker News",
         "allen.bargi.org",
         "hackernews"
       ],
@@ -631,10 +659,10 @@
         },
         {
           "id": "b90c3bc7c0cde103f85eff23dc739c1eeaea4cf6",
-          "title": "与人工智能一起工作感觉更像是领导而不是编码 / Working with AI Feels More Like Leadership Than Coding",
+          "title": "与人工智能一起工作感觉更像是领导而不是编码 / Working with AI feels more like leadership than coding",
           "title_zh": "与人工智能一起工作感觉更像是领导而不是编码",
-          "title_en": "Working with AI Feels More Like Leadership Than Coding",
-          "title_original": "Working with AI Feels More Like Leadership Than Coding",
+          "title_en": "Working with AI feels more like leadership than coding",
+          "title_original": "Working with AI feels more like leadership than coding",
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://news.ycombinator.com/item?id=49309451",
@@ -644,7 +672,7 @@
           "published_at": "2026-08-15T13:44:33.948000Z"
         },
         {
-          "id": "24e0d1e34756b4b289b3c6515c68fefe0aa322bd",
+          "id": "7424ad1f591f93f7da2d5fe2e48a56f5fd4dab7d",
           "title": "从事人工智能工作，与其说是编程，不如说是领导工作 / Working with AI Feels More Like Leadership Than Coding",
           "title_zh": "从事人工智能工作，与其说是编程，不如说是领导工作",
           "title_en": "Working with AI Feels More Like Leadership Than Coding",
@@ -652,23 +680,23 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
           "published_at": "2026-08-15T10:39:41Z"
         }
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5584,
-      "importance": 0.5584,
-      "importance_score": 0.5584,
+      "score": 0.5559,
+      "importance": 0.5559,
+      "importance_score": 0.5559,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.931,
+        "recency": 0.9171,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -693,146 +721,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
-      }
-    },
-    {
-      "story_id": "story_67a9736d0220",
-      "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-      "url": "https://news.ycombinator.com/item?id=49310725",
-      "primary_url": "https://news.ycombinator.com/item?id=49310725",
-      "source": "hackernews",
-      "source_name": "NewsNow",
-      "sources": [
-        {
-          "id": "f50f85b755a8871c36dc1a3f17ad231bac4f5f7e",
-          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-          "title_en": "Secondhand book sales are booming. Is it because of AI?",
-          "title_original": "Secondhand book sales are booming. Is it because of AI?",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49310725",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-15T14:40:11.976000Z"
-        },
-        {
-          "id": "f9db1e50aae4565b43f99f9b9e7aacbbebab7100",
-          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-          "title_en": "Secondhand book sales are booming. Is it because of AI?",
-          "title_original": "Secondhand book sales are booming. Is it because of AI?",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-15T14:08:55Z"
-        },
-        {
-          "id": "dcc8a19034a29524320fe1cf922bc36524fb4b37",
-          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-          "title_en": "Secondhand book sales are booming. Is it because of AI?",
-          "title_original": "Secondhand book sales are booming. Is it because of AI?",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss",
-          "source": "BBC News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-15T11:25:32Z"
-        }
-      ],
-      "source_count": 3,
-      "source_names": [
-        "BBC News",
-        "Hacker News · 24h最热",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "f50f85b755a8871c36dc1a3f17ad231bac4f5f7e",
-          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-          "title_en": "Secondhand book sales are booming. Is it because of AI?",
-          "title_original": "Secondhand book sales are booming. Is it because of AI?",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49310725",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-15T14:40:11.976000Z"
-        },
-        {
-          "id": "f9db1e50aae4565b43f99f9b9e7aacbbebab7100",
-          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-          "title_en": "Secondhand book sales are booming. Is it because of AI?",
-          "title_original": "Secondhand book sales are booming. Is it because of AI?",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-15T14:08:55Z"
-        },
-        {
-          "id": "dcc8a19034a29524320fe1cf922bc36524fb4b37",
-          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-          "title_en": "Secondhand book sales are booming. Is it because of AI?",
-          "title_original": "Secondhand book sales are booming. Is it because of AI?",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss",
-          "source": "BBC News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-15T11:25:32Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.5537,
-      "importance": 0.5537,
-      "importance_score": 0.5537,
-      "importance_label": "多源热议",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.905,
-        "story_heat": 0.5
-      },
-      "category": "multi_source",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-15T11:25:32Z",
-      "latest_at": "2026-08-15T14:40:11.976000Z",
-      "primary_item": {
-        "id": "f50f85b755a8871c36dc1a3f17ad231bac4f5f7e",
-        "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
-        "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
-        "title_en": "Secondhand book sales are booming. Is it because of AI?",
-        "title_original": "Secondhand book sales are booming. Is it because of AI?",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=49310725",
-        "source": "hackernews",
-        "source_name": "NewsNow"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
@@ -938,15 +827,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.552,
-      "importance": 0.552,
-      "importance_score": 0.552,
+      "score": 0.5496,
+      "importance": 0.5496,
+      "importance_score": 0.5496,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8958,
+        "recency": 0.8825,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -971,7 +860,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
@@ -1048,15 +937,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5433,
-      "importance": 0.5433,
-      "importance_score": 0.5433,
+      "score": 0.5407,
+      "importance": 0.5407,
+      "importance_score": 0.5407,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9863,
+        "recency": 0.9716,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1081,109 +970,138 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
-      "story_id": "story_79edf3446ec2",
-      "title": "为什么科技巨头们不断分享他们关于人工智能的宣言 / Why tech bosses keep sharing their manifestos about AI",
-      "url": "https://news.ycombinator.com/item?id=49313519",
-      "primary_url": "https://news.ycombinator.com/item?id=49313519",
+      "story_id": "story_01c472791cae",
+      "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
+      "url": "https://news.ycombinator.com/item?id=49313367",
+      "primary_url": "https://news.ycombinator.com/item?id=49313367",
       "source": "hackernews",
       "source_name": "NewsNow",
       "sources": [
         {
-          "id": "901b3aaa15d04da62e96b93894715feadc126f5c",
-          "title": "为什么科技巨头们不断分享他们关于人工智能的宣言 / Why tech bosses keep sharing their manifestos about AI",
-          "title_zh": "为什么科技巨头们不断分享他们关于人工智能的宣言",
-          "title_en": "Why tech bosses keep sharing their manifestos about AI",
-          "title_original": "Why tech bosses keep sharing their manifestos about AI",
+          "id": "66448732fdd4b21dd75ef6e84479fa756b82a7b9",
+          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
+          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
+          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
+          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49313519",
+          "url": "https://news.ycombinator.com/item?id=49313367",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
           "published_at": "2026-08-15T20:39:42.682000Z"
         },
         {
-          "id": "a5c133336b6e6a98972c6f1411921a08ea19d62f",
-          "title": "为什么科技巨头们不断分享他们关于人工智能的宣言 / Why tech bosses keep sharing their manifestos about AI",
-          "title_zh": "为什么科技巨头们不断分享他们关于人工智能的宣言",
-          "title_en": "Why tech bosses keep sharing their manifestos about AI",
-          "title_original": "Why tech bosses keep sharing their manifestos about AI",
+          "id": "c0fe1f3b01d2aa3b80eb53360a87b75e3588b96b",
+          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery – what it is, where we stand and the path forward",
+          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
+          "title_en": "AI in drug discovery – what it is, where we stand and the path forward",
+          "title_original": "AI in drug discovery – what it is, where we stand and the path forward",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.bbc.com/news/articles/cz97ljy91zxo",
+          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
           "source": "Hacker News (黑客新闻)",
           "source_name": "Info Flow",
           "site_id": "iris",
-          "published_at": "2026-08-15T19:30:32Z"
+          "published_at": "2026-08-15T19:12:53Z"
+        },
+        {
+          "id": "272ea2a447fcb4e4062b82df6b876d97ca4cd881",
+          "title": "那么人工智能药物发现到底表现如何？ / So How Is AI Drug Discovery Doing, Really?",
+          "title_zh": "那么人工智能药物发现到底表现如何？",
+          "title_en": "So How Is AI Drug Discovery Doing, Really?",
+          "title_original": "So How Is AI Drug Discovery Doing, Really?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-15T19:12:53Z"
         }
       ],
-      "source_count": 2,
+      "source_count": 3,
       "source_names": [
+        "Hacker News",
         "Hacker News (黑客新闻)",
         "hackernews"
       ],
       "items": [
         {
-          "id": "901b3aaa15d04da62e96b93894715feadc126f5c",
-          "title": "为什么科技巨头们不断分享他们关于人工智能的宣言 / Why tech bosses keep sharing their manifestos about AI",
-          "title_zh": "为什么科技巨头们不断分享他们关于人工智能的宣言",
-          "title_en": "Why tech bosses keep sharing their manifestos about AI",
-          "title_original": "Why tech bosses keep sharing their manifestos about AI",
+          "id": "66448732fdd4b21dd75ef6e84479fa756b82a7b9",
+          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
+          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
+          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
+          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49313519",
+          "url": "https://news.ycombinator.com/item?id=49313367",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
           "published_at": "2026-08-15T20:39:42.682000Z"
         },
         {
-          "id": "a5c133336b6e6a98972c6f1411921a08ea19d62f",
-          "title": "为什么科技巨头们不断分享他们关于人工智能的宣言 / Why tech bosses keep sharing their manifestos about AI",
-          "title_zh": "为什么科技巨头们不断分享他们关于人工智能的宣言",
-          "title_en": "Why tech bosses keep sharing their manifestos about AI",
-          "title_original": "Why tech bosses keep sharing their manifestos about AI",
+          "id": "c0fe1f3b01d2aa3b80eb53360a87b75e3588b96b",
+          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery – what it is, where we stand and the path forward",
+          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
+          "title_en": "AI in drug discovery – what it is, where we stand and the path forward",
+          "title_original": "AI in drug discovery – what it is, where we stand and the path forward",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.bbc.com/news/articles/cz97ljy91zxo",
+          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
           "source": "Hacker News (黑客新闻)",
           "source_name": "Info Flow",
           "site_id": "iris",
-          "published_at": "2026-08-15T19:30:32Z"
+          "published_at": "2026-08-15T19:12:53Z"
+        },
+        {
+          "id": "272ea2a447fcb4e4062b82df6b876d97ca4cd881",
+          "title": "那么人工智能药物发现到底表现如何？ / So How Is AI Drug Discovery Doing, Really?",
+          "title_zh": "那么人工智能药物发现到底表现如何？",
+          "title_en": "So How Is AI Drug Discovery Doing, Really?",
+          "title_original": "So How Is AI Drug Discovery Doing, Really?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-15T19:12:53Z"
         }
       ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5434,
-      "importance": 0.5434,
-      "importance_score": 0.5434,
-      "importance_label": "值得关注",
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.5658,
+      "importance": 0.5658,
+      "importance_score": 0.5658,
+      "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9868,
-        "story_heat": 0.25
+        "recency": 0.972,
+        "story_heat": 0.5
       },
-      "category": "watch",
+      "category": "multi_source",
       "reasons": [
         "multi_source"
       ],
-      "earliest_at": "2026-08-15T19:30:32Z",
+      "earliest_at": "2026-08-15T19:12:53Z",
       "latest_at": "2026-08-15T20:39:42.682000Z",
       "primary_item": {
-        "id": "901b3aaa15d04da62e96b93894715feadc126f5c",
-        "title": "为什么科技巨头们不断分享他们关于人工智能的宣言 / Why tech bosses keep sharing their manifestos about AI",
-        "title_zh": "为什么科技巨头们不断分享他们关于人工智能的宣言",
-        "title_en": "Why tech bosses keep sharing their manifestos about AI",
-        "title_original": "Why tech bosses keep sharing their manifestos about AI",
+        "id": "66448732fdd4b21dd75ef6e84479fa756b82a7b9",
+        "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
+        "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
+        "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
+        "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=49313519",
+        "url": "https://news.ycombinator.com/item?id=49313367",
         "source": "hackernews",
         "source_name": "NewsNow"
       },
@@ -1191,7 +1109,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
@@ -1268,15 +1186,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5028,
-      "importance": 0.5028,
-      "importance_score": 0.5028,
+      "score": 0.5008,
+      "importance": 0.5008,
+      "importance_score": 0.5008,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7614,
+        "recency": 0.75,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1301,44 +1219,183 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
-      "story_id": "story_7ea48d24e4f7",
-      "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
-      "url": "https://news.ycombinator.com/item?id=49313367",
-      "primary_url": "https://news.ycombinator.com/item?id=49313367",
+      "story_id": "story_67a9736d0220",
+      "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+      "url": "https://news.ycombinator.com/item?id=49310725",
+      "primary_url": "https://news.ycombinator.com/item?id=49310725",
       "source": "hackernews",
       "source_name": "NewsNow",
       "sources": [
         {
-          "id": "66448732fdd4b21dd75ef6e84479fa756b82a7b9",
-          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
-          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
-          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
-          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
+          "id": "f50f85b755a8871c36dc1a3f17ad231bac4f5f7e",
+          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
+          "title_en": "Secondhand book sales are booming. Is it because of AI?",
+          "title_original": "Secondhand book sales are booming. Is it because of AI?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49313367",
+          "url": "https://news.ycombinator.com/item?id=49310725",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-08-15T20:39:42.682000Z"
+          "published_at": "2026-08-15T14:40:11.976000Z"
         },
         {
-          "id": "473357bb1da9ea71f19979651bedf55d6dd3774a",
-          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
-          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
-          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
-          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
+          "id": "f9db1e50aae4565b43f99f9b9e7aacbbebab7100",
+          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
+          "title_en": "Secondhand book sales are booming. Is it because of AI?",
+          "title_original": "Secondhand book sales are booming. Is it because of AI?",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.nature.com/articles/s41573-026-01496-2",
+          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-15T14:08:55Z"
+        },
+        {
+          "id": "dcc8a19034a29524320fe1cf922bc36524fb4b37",
+          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
+          "title_en": "Secondhand book sales are booming. Is it because of AI?",
+          "title_original": "Secondhand book sales are booming. Is it because of AI?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-15T11:25:32Z"
+        }
+      ],
+      "source_count": 3,
+      "source_names": [
+        "BBC News",
+        "Hacker News · 24h最热",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "f50f85b755a8871c36dc1a3f17ad231bac4f5f7e",
+          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
+          "title_en": "Secondhand book sales are booming. Is it because of AI?",
+          "title_original": "Secondhand book sales are booming. Is it because of AI?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49310725",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T14:40:11.976000Z"
+        },
+        {
+          "id": "f9db1e50aae4565b43f99f9b9e7aacbbebab7100",
+          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
+          "title_en": "Secondhand book sales are booming. Is it because of AI?",
+          "title_original": "Secondhand book sales are booming. Is it because of AI?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-15T14:08:55Z"
+        },
+        {
+          "id": "dcc8a19034a29524320fe1cf922bc36524fb4b37",
+          "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+          "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
+          "title_en": "Secondhand book sales are booming. Is it because of AI?",
+          "title_original": "Secondhand book sales are booming. Is it because of AI?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.bbc.co.uk/news/articles/cp3rprx2wl4o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-15T11:25:32Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.5513,
+      "importance": 0.5513,
+      "importance_score": 0.5513,
+      "importance_label": "多源热议",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.8915,
+        "story_heat": 0.5
+      },
+      "category": "multi_source",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-15T11:25:32Z",
+      "latest_at": "2026-08-15T14:40:11.976000Z",
+      "primary_item": {
+        "id": "f50f85b755a8871c36dc1a3f17ad231bac4f5f7e",
+        "title": "二手书销售蓬勃发展。是因为人工智能吗？ / Secondhand book sales are booming. Is it because of AI?",
+        "title_zh": "二手书销售蓬勃发展。是因为人工智能吗？",
+        "title_en": "Secondhand book sales are booming. Is it because of AI?",
+        "title_original": "Secondhand book sales are booming. Is it because of AI?",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=49310725",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-15T22:42:15.195060Z"
+      }
+    },
+    {
+      "story_id": "story_dfcb40835c8c",
+      "title": "Show HN：Live Claude 使用 HUD 购买价值 38 美元的 Thermalright Trofeo Vision LCD / Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
+      "url": "https://news.ycombinator.com/item?id=49314594",
+      "primary_url": "https://news.ycombinator.com/item?id=49314594",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "bf33b62e59436f0fbc332603014ef4e239963f52",
+          "title": "Show HN：Live Claude 使用 HUD 购买价值 38 美元的 Thermalright Trofeo Vision LCD / Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
+          "title_zh": "Show HN：Live Claude 使用 HUD 购买价值 38 美元的 Thermalright Trofeo Vision LCD",
+          "title_en": "Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
+          "title_original": "Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49314594",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T22:41:57.165000Z"
+        },
+        {
+          "id": "93e8094c3cc8a799abf393e2ec0c67cb9e3d8e0a",
+          "title": "Show HN：Live Claude 使用 HUD 购买价值 38 美元的 Thermalright Trofeo Vision LCD / Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
+          "title_zh": "Show HN：Live Claude 使用 HUD 购买价值 38 美元的 Thermalright Trofeo Vision LCD",
+          "title_en": "Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
+          "title_original": "Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.com/christensen143/claude-trofeo-hud",
           "source": "Hacker News (黑客新闻)",
           "source_name": "Info Flow",
           "site_id": "iris",
-          "published_at": "2026-08-15T19:12:53Z"
+          "published_at": "2026-08-15T21:42:39Z"
         }
       ],
       "source_count": 2,
@@ -1348,62 +1405,62 @@
       ],
       "items": [
         {
-          "id": "66448732fdd4b21dd75ef6e84479fa756b82a7b9",
-          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
-          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
-          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
-          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
+          "id": "bf33b62e59436f0fbc332603014ef4e239963f52",
+          "title": "Show HN：Live Claude 使用 HUD 购买价值 38 美元的 Thermalright Trofeo Vision LCD / Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
+          "title_zh": "Show HN：Live Claude 使用 HUD 购买价值 38 美元的 Thermalright Trofeo Vision LCD",
+          "title_en": "Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
+          "title_original": "Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49313367",
+          "url": "https://news.ycombinator.com/item?id=49314594",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-08-15T20:39:42.682000Z"
+          "published_at": "2026-08-15T22:41:57.165000Z"
         },
         {
-          "id": "473357bb1da9ea71f19979651bedf55d6dd3774a",
-          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
-          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
-          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
-          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
+          "id": "93e8094c3cc8a799abf393e2ec0c67cb9e3d8e0a",
+          "title": "Show HN：Live Claude 使用 HUD 购买价值 38 美元的 Thermalright Trofeo Vision LCD / Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
+          "title_zh": "Show HN：Live Claude 使用 HUD 购买价值 38 美元的 Thermalright Trofeo Vision LCD",
+          "title_en": "Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
+          "title_original": "Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.nature.com/articles/s41573-026-01496-2",
+          "url": "https://github.com/christensen143/claude-trofeo-hud",
           "source": "Hacker News (黑客新闻)",
           "source_name": "Info Flow",
           "site_id": "iris",
-          "published_at": "2026-08-15T19:12:53Z"
+          "published_at": "2026-08-15T21:42:39Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5434,
-      "importance": 0.5434,
-      "importance_score": 0.5434,
+      "score": 0.5458,
+      "importance": 0.5458,
+      "importance_score": 0.5458,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9868,
+        "recency": 1.0,
         "story_heat": 0.25
       },
       "category": "watch",
       "reasons": [
         "multi_source"
       ],
-      "earliest_at": "2026-08-15T19:12:53Z",
-      "latest_at": "2026-08-15T20:39:42.682000Z",
+      "earliest_at": "2026-08-15T21:42:39Z",
+      "latest_at": "2026-08-15T22:41:57.165000Z",
       "primary_item": {
-        "id": "66448732fdd4b21dd75ef6e84479fa756b82a7b9",
-        "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
-        "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
-        "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
-        "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
+        "id": "bf33b62e59436f0fbc332603014ef4e239963f52",
+        "title": "Show HN：Live Claude 使用 HUD 购买价值 38 美元的 Thermalright Trofeo Vision LCD / Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
+        "title_zh": "Show HN：Live Claude 使用 HUD 购买价值 38 美元的 Thermalright Trofeo Vision LCD",
+        "title_en": "Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
+        "title_original": "Show HN: Live Claude Usage HUD for a $38 Thermalright Trofeo Vision LCD",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=49313367",
+        "url": "https://news.ycombinator.com/item?id=49314594",
         "source": "hackernews",
         "source_name": "NewsNow"
       },
@@ -1411,7 +1468,227 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
+      }
+    },
+    {
+      "story_id": "story_171205bf2b4a",
+      "title": "Meta 将在极右媒体 Newsmax 上训练其人工智能 / Meta will train its AI on Newsmax, a far-right media outlet",
+      "url": "https://news.ycombinator.com/item?id=49313778",
+      "primary_url": "https://news.ycombinator.com/item?id=49313778",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "637ee186802d893e04b6fe64158efba8fcd57d16",
+          "title": "Meta 将在极右媒体 Newsmax 上训练其人工智能 / Meta will train its AI on Newsmax, a far-right media outlet",
+          "title_zh": "Meta 将在极右媒体 Newsmax 上训练其人工智能",
+          "title_en": "Meta will train its AI on Newsmax, a far-right media outlet",
+          "title_original": "Meta will train its AI on Newsmax, a far-right media outlet",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49313778",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T21:09:38.355000Z"
+        },
+        {
+          "id": "bbd280fdcddc95fcf5ccd42ea2c1cdb93042ece7",
+          "title": "Meta 将在极右媒体 Newsmax 上训练其人工智能 / Meta will train its AI on Newsmax, a far-right media outlet",
+          "title_zh": "Meta 将在极右媒体 Newsmax 上训练其人工智能",
+          "title_en": "Meta will train its AI on Newsmax, a far-right media outlet",
+          "title_original": "Meta will train its AI on Newsmax, a far-right media outlet",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://popular.info/p/meta-will-train-its-ai-on-far-right",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-15T20:00:14Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News · 24h最热",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "637ee186802d893e04b6fe64158efba8fcd57d16",
+          "title": "Meta 将在极右媒体 Newsmax 上训练其人工智能 / Meta will train its AI on Newsmax, a far-right media outlet",
+          "title_zh": "Meta 将在极右媒体 Newsmax 上训练其人工智能",
+          "title_en": "Meta will train its AI on Newsmax, a far-right media outlet",
+          "title_original": "Meta will train its AI on Newsmax, a far-right media outlet",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49313778",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T21:09:38.355000Z"
+        },
+        {
+          "id": "bbd280fdcddc95fcf5ccd42ea2c1cdb93042ece7",
+          "title": "Meta 将在极右媒体 Newsmax 上训练其人工智能 / Meta will train its AI on Newsmax, a far-right media outlet",
+          "title_zh": "Meta 将在极右媒体 Newsmax 上训练其人工智能",
+          "title_en": "Meta will train its AI on Newsmax, a far-right media outlet",
+          "title_original": "Meta will train its AI on Newsmax, a far-right media outlet",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://popular.info/p/meta-will-train-its-ai-on-far-right",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-15T20:00:14Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.542,
+      "importance": 0.542,
+      "importance_score": 0.542,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9791,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-15T20:00:14Z",
+      "latest_at": "2026-08-15T21:09:38.355000Z",
+      "primary_item": {
+        "id": "637ee186802d893e04b6fe64158efba8fcd57d16",
+        "title": "Meta 将在极右媒体 Newsmax 上训练其人工智能 / Meta will train its AI on Newsmax, a far-right media outlet",
+        "title_zh": "Meta 将在极右媒体 Newsmax 上训练其人工智能",
+        "title_en": "Meta will train its AI on Newsmax, a far-right media outlet",
+        "title_original": "Meta will train its AI on Newsmax, a far-right media outlet",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=49313778",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-15T22:42:15.195060Z"
+      }
+    },
+    {
+      "story_id": "story_79edf3446ec2",
+      "title": "为什么科技巨头们不断分享他们关于人工智能的宣言 / Why tech bosses keep sharing their manifestos about AI",
+      "url": "https://news.ycombinator.com/item?id=49313519",
+      "primary_url": "https://news.ycombinator.com/item?id=49313519",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "901b3aaa15d04da62e96b93894715feadc126f5c",
+          "title": "为什么科技巨头们不断分享他们关于人工智能的宣言 / Why tech bosses keep sharing their manifestos about AI",
+          "title_zh": "为什么科技巨头们不断分享他们关于人工智能的宣言",
+          "title_en": "Why tech bosses keep sharing their manifestos about AI",
+          "title_original": "Why tech bosses keep sharing their manifestos about AI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49313519",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T20:39:42.682000Z"
+        },
+        {
+          "id": "a5c133336b6e6a98972c6f1411921a08ea19d62f",
+          "title": "为什么科技巨头们不断分享他们关于人工智能的宣言 / Why tech bosses keep sharing their manifestos about AI",
+          "title_zh": "为什么科技巨头们不断分享他们关于人工智能的宣言",
+          "title_en": "Why tech bosses keep sharing their manifestos about AI",
+          "title_original": "Why tech bosses keep sharing their manifestos about AI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.bbc.com/news/articles/cz97ljy91zxo",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-15T19:30:32Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News (黑客新闻)",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "901b3aaa15d04da62e96b93894715feadc126f5c",
+          "title": "为什么科技巨头们不断分享他们关于人工智能的宣言 / Why tech bosses keep sharing their manifestos about AI",
+          "title_zh": "为什么科技巨头们不断分享他们关于人工智能的宣言",
+          "title_en": "Why tech bosses keep sharing their manifestos about AI",
+          "title_original": "Why tech bosses keep sharing their manifestos about AI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49313519",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T20:39:42.682000Z"
+        },
+        {
+          "id": "a5c133336b6e6a98972c6f1411921a08ea19d62f",
+          "title": "为什么科技巨头们不断分享他们关于人工智能的宣言 / Why tech bosses keep sharing their manifestos about AI",
+          "title_zh": "为什么科技巨头们不断分享他们关于人工智能的宣言",
+          "title_en": "Why tech bosses keep sharing their manifestos about AI",
+          "title_original": "Why tech bosses keep sharing their manifestos about AI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.bbc.com/news/articles/cz97ljy91zxo",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-15T19:30:32Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5408,
+      "importance": 0.5408,
+      "importance_score": 0.5408,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.972,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-15T19:30:32Z",
+      "latest_at": "2026-08-15T20:39:42.682000Z",
+      "primary_item": {
+        "id": "901b3aaa15d04da62e96b93894715feadc126f5c",
+        "title": "为什么科技巨头们不断分享他们关于人工智能的宣言 / Why tech bosses keep sharing their manifestos about AI",
+        "title_zh": "为什么科技巨头们不断分享他们关于人工智能的宣言",
+        "title_en": "Why tech bosses keep sharing their manifestos about AI",
+        "title_original": "Why tech bosses keep sharing their manifestos about AI",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=49313519",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
@@ -1488,15 +1765,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5335,
-      "importance": 0.5335,
-      "importance_score": 0.5335,
+      "score": 0.531,
+      "importance": 0.531,
+      "importance_score": 0.531,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9319,
+        "recency": 0.918,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1521,7 +1798,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
@@ -1598,15 +1875,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5335,
-      "importance": 0.5335,
-      "importance_score": 0.5335,
+      "score": 0.531,
+      "importance": 0.531,
+      "importance_score": 0.531,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9319,
+        "recency": 0.918,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1631,7 +1908,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
@@ -1708,15 +1985,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5287,
-      "importance": 0.5287,
-      "importance_score": 0.5287,
+      "score": 0.5263,
+      "importance": 0.5263,
+      "importance_score": 0.5263,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.905,
+        "recency": 0.8915,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1741,7 +2018,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
@@ -1818,15 +2095,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5265,
-      "importance": 0.5265,
-      "importance_score": 0.5265,
+      "score": 0.5241,
+      "importance": 0.5241,
+      "importance_score": 0.5241,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8929,
+        "recency": 0.8796,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1851,7 +2128,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
@@ -1928,15 +2205,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.524,
-      "importance": 0.524,
-      "importance_score": 0.524,
+      "score": 0.5216,
+      "importance": 0.5216,
+      "importance_score": 0.5216,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8788,
+        "recency": 0.8657,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1961,7 +2238,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     },
     {
@@ -2038,15 +2315,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5167,
-      "importance": 0.5167,
-      "importance_score": 0.5167,
+      "score": 0.5144,
+      "importance": 0.5144,
+      "importance_score": 0.5144,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8381,
+        "recency": 0.8256,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -2071,117 +2348,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
-      }
-    },
-    {
-      "story_id": "story_7997168e9fa3",
-      "title": "Claude寓言5 玩得开心 / Claude Fable 5 Having Fun",
-      "url": "https://news.ycombinator.com/item?id=49305642",
-      "primary_url": "https://news.ycombinator.com/item?id=49305642",
-      "source": "hackernews",
-      "source_name": "NewsNow",
-      "sources": [
-        {
-          "id": "62aec33577ddba6c91ec387131cb67a11ba49f72",
-          "title": "Claude寓言5 玩得开心 / Claude Fable 5 Having Fun",
-          "title_zh": "Claude寓言5 玩得开心",
-          "title_en": "Claude Fable 5 Having Fun",
-          "title_original": "Claude Fable 5 Having Fun",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49305642",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-14T23:37:58.565000Z"
-        },
-        {
-          "id": "e55e047834a78a545af0c1dd41cfb1a5118c170c",
-          "title": "Claude寓言5 玩得开心 / Claude Fable 5 Having Fun",
-          "title_zh": "Claude寓言5 玩得开心",
-          "title_en": "Claude Fable 5 Having Fun",
-          "title_original": "Claude Fable 5 Having Fun",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/robss2020/claude-fable-5-having-fun",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-14T23:01:46Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "62aec33577ddba6c91ec387131cb67a11ba49f72",
-          "title": "Claude寓言5 玩得开心 / Claude Fable 5 Having Fun",
-          "title_zh": "Claude寓言5 玩得开心",
-          "title_en": "Claude Fable 5 Having Fun",
-          "title_original": "Claude Fable 5 Having Fun",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49305642",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-14T23:37:58.565000Z"
-        },
-        {
-          "id": "e55e047834a78a545af0c1dd41cfb1a5118c170c",
-          "title": "Claude寓言5 玩得开心 / Claude Fable 5 Having Fun",
-          "title_zh": "Claude寓言5 玩得开心",
-          "title_en": "Claude Fable 5 Having Fun",
-          "title_original": "Claude Fable 5 Having Fun",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/robss2020/claude-fable-5-having-fun",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-14T23:01:46Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.4969,
-      "importance": 0.4969,
-      "importance_score": 0.4969,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.7283,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-14T23:01:46Z",
-      "latest_at": "2026-08-14T23:37:58.565000Z",
-      "primary_item": {
-        "id": "62aec33577ddba6c91ec387131cb67a11ba49f72",
-        "title": "Claude寓言5 玩得开心 / Claude Fable 5 Having Fun",
-        "title_zh": "Claude寓言5 玩得开心",
-        "title_en": "Claude Fable 5 Having Fun",
-        "title_original": "Claude Fable 5 Having Fun",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=49305642",
-        "source": "hackernews",
-        "source_name": "NewsNow"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 0,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-15T21:35:47.484612Z"
+        "scored_at": "2026-08-15T22:42:15.195060Z"
       }
     }
   ]
