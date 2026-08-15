@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T15:35:07.838150Z",
+  "generated_at": "2026-08-15T16:41:45.780498Z",
   "timezone": "Asia/Shanghai",
   "root_url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview",
   "history_url": "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc",
@@ -44,7 +44,7 @@
       "url": "https://waytoagi.feishu.cn/wiki/RO06w0R0Iivq3WkGv0ycIsI1noe?from=from_copylink"
     }
   ],
-  "count_7d": 28,
+  "count_7d": 22,
   "updates_7d": [
     {
       "date": "2026-08-13",
@@ -177,42 +177,6 @@
       "title": "AI 名词小白入门白皮书",
       "summary": "很多人学AI一上来就被一堆英文缩写劝退：GPT、Token、RAG、MCP、Agent、Loop、Graph单独都能查，放在一起就分不清谁是模型、谁是产品、谁负责资料、谁负责执行。这份白皮书适合刚入门的小白。",
       "url": "https://waytoagi.feishu.cn/wiki/Enmdwp5OQivcWOk7pQOco4oSnAd?from=from_copylink"
-    },
-    {
-      "date": "2026-08-09",
-      "title": "🥇 8.3—8.9｜本周 AI 论文精选",
-      "summary": "本周AI论文合集聚焦智能体工程落地的现实痛点。十篇研究基于大量实测与对照实验，厘清了模型与harness的故障划分，验证零大模型调用记忆栈的降本效果，推翻自我反思类方案的增益认知。同时还覆盖harness学习优化、提示词带来的隐性成本、技能库实际收益、长周期仿真基准、分词加速等方向。",
-      "url": "https://waytoagi.feishu.cn/wiki/S3ykwZoTsi34w0kk0x0cCvTKnxf?from=from_copylink"
-    },
-    {
-      "date": "2026-08-09",
-      "title": "阿里Wan3.0来了，我立马测了5大类场景，丢文档、网页居然也能生视频",
-      "summary": "阿里正式发布视频模型 Wan3.0，它把“参考素材”往前推进了一步：网页链接、Excel、Word、说明书、图片组都能直接丢进去，自动生成科普、数据汇报、产品演示和门店宣传视频。想做“文件转视频”或产品展示的人可以重点看看小歪这组测试。",
-      "url": "https://waytoagi.feishu.cn/wiki/YlhUwEou1ix71LkWs9ycHf6znqd?from=from_copylink"
-    },
-    {
-      "date": "2026-08-09",
-      "title": "开源 4天就被“速通”？MiniMax H3这场 Reddit AMA到底聊了啥？",
-      "summary": "MiniMax H3开源4天就有人做出 4–8 步蒸馏 LoRA，Reddit AMA里大家也开始追问 2K、VAE、长视频续写、显存、LoRA 和 ComfyUI 接入这些硬问题。尽管显存、细节损失等难题仍待解决，但开源释放的社区活力，让这套视频模型的想象空间真正打开。",
-      "url": "https://waytoagi.feishu.cn/wiki/G2pKwarimieXh3kMbQBcVUx1n1g?from=from_copylink"
-    },
-    {
-      "date": "2026-08-09",
-      "title": "从零训练到真板运行：我们怎样把中文模型放进 ESP32",
-      "summary": "一块只有 8 MB PSRAM、16 MB Flash 的 ESP32-S3，能不能离线运行一个真正会逐词生成答案的中文模型？我们用一套从随机参数开始训练的 783 万参数模型，完成了从产品知识、训练、量化到真板运行的整条链路。",
-      "url": "https://waytoagi.feishu.cn/wiki/EBtDwo1RniC5o7kzF5EcYwRKngb?from=from_copylink"
-    },
-    {
-      "date": "2026-08-09",
-      "title": "一晚两场，H3 技术团队和全球开发者聊了什么？",
-      "summary": "MiniMax H3 开源的第一周，很多国内外开发社区里的开发者、创作者已经有了量化、硬件适配和工作流的丰富探索，也提出了一些关于模型机制和后续计划的问题。技术团队参加了 Reddit 社区 AMA 问答交流和 ComfyUI Live 直播，和来自不同地区的开发者、创作者聊了聊：模型架构是怎么做的？长视频能不能续写？目前还有哪些技术局限，后续的开源策略是什么。",
-      "url": "https://waytoagi.feishu.cn/wiki/Qz83wOcduiq22IkrwEkcvTdgnNb?from=from_copylink"
-    },
-    {
-      "date": "2026-08-09",
-      "title": "95分钟AI电影，把每个镜头的提示词都公开了（附电影级提示词Skill）",
-      "summary": "很多人做 AI 视频，真正卡住的往往是“镜头到底该怎么写”：人物怎么站、镜头怎么动、光从哪边来，前后画面怎么别突然跳戏。小歪拿《Hell Grind》这个开源项目做样本，把每个镜头公开的提示词、参考图、参数、11 万多条生成记录，以及官方 CINEDANCE 电影级提示词 Skill 都拆开讲清楚。照着“找相似画面→拆运镜/动作/灯光→替换成自己的内容”这条路抄作业，会比盲目堆提示词稳很多。",
-      "url": "https://waytoagi.feishu.cn/wiki/Gv1GwMWUjiBtw7kXoiXcyondnRe?from=from_copylink"
     }
   ],
   "warning": null,
