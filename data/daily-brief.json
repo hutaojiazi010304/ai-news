@@ -1,8 +1,90 @@
 {
-  "generated_at": "2026-08-16T22:37:17.723464Z",
+  "generated_at": "2026-08-16T23:34:18.136551Z",
   "window_hours": 24,
-  "total_items": 15,
+  "total_items": 16,
   "items": [
+    {
+      "story_id": "story_5df010d9d793",
+      "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考 / Qwen 3.8 27B is excellent， but it defaults to wildly overthinking things",
+      "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+      "primary_url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+      "source": "Simon Willison 博客",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "e37a636db32579233e4e64ee024855a5030f5857",
+          "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考 / Qwen 3.8 27B is excellent， but it defaults to wildly overthinking things",
+          "title_zh": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
+          "title_en": "Qwen 3.8 27B is excellent， but it defaults to wildly overthinking things",
+          "title_original": "Qwen 3.8 27B is excellent， but it defaults to wildly overthinking things",
+          "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
+          "recommend_reason_zh": null,
+          "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+          "source": "Simon Willison 博客",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-16T22:00:39Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Simon Willison 博客"
+      ],
+      "items": [
+        {
+          "id": "e37a636db32579233e4e64ee024855a5030f5857",
+          "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考 / Qwen 3.8 27B is excellent， but it defaults to wildly overthinking things",
+          "title_zh": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
+          "title_en": "Qwen 3.8 27B is excellent， but it defaults to wildly overthinking things",
+          "title_original": "Qwen 3.8 27B is excellent， but it defaults to wildly overthinking things",
+          "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
+          "recommend_reason_zh": null,
+          "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+          "source": "Simon Willison 博客",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-16T22:00:39Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7666,
+      "importance": 0.7666,
+      "importance_score": 0.7666,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.73,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9777,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-16T22:00:39Z",
+      "latest_at": "2026-08-16T22:00:39Z",
+      "primary_item": {
+        "id": "e37a636db32579233e4e64ee024855a5030f5857",
+        "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考 / Qwen 3.8 27B is excellent， but it defaults to wildly overthinking things",
+        "title_zh": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
+        "title_en": "Qwen 3.8 27B is excellent， but it defaults to wildly overthinking things",
+        "title_original": "Qwen 3.8 27B is excellent， but it defaults to wildly overthinking things",
+        "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
+        "recommend_reason_zh": null,
+        "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+        "source": "Simon Willison 博客",
+        "source_name": "AI HOT"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-16T23:34:59.082105Z"
+      }
+    },
     {
       "story_id": "story_0bf300873ab5",
       "title": "新兴多智能体系统的模式与问题",
@@ -77,15 +159,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7684,
-      "importance": 0.7684,
-      "importance_score": 0.7684,
+      "score": 0.7664,
+      "importance": 0.7664,
+      "importance_score": 0.7664,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8492,
+        "recency": 0.8376,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -112,7 +194,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
+        "scored_at": "2026-08-16T23:34:59.082105Z"
       }
     },
     {
@@ -160,15 +242,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7237,
-      "importance": 0.7237,
-      "importance_score": 0.7237,
+      "score": 0.7218,
+      "importance": 0.7218,
+      "importance_score": 0.7218,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.756,
+        "recency": 0.7457,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -193,7 +275,285 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
+        "scored_at": "2026-08-16T23:34:59.082105Z"
+      }
+    },
+    {
+      "story_id": "story_a23b56bee6e9",
+      "title": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+      "primary_url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+      "source": "www.bloomberg.com",
+      "source_name": "Buzzing",
+      "sources": [
+        {
+          "id": "606e2da905768ff4c91e5705070cb5ae9b37d3b4",
+          "title": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter",
+          "title_zh": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter",
+          "title_en": null,
+          "title_original": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+          "source": "www.bloomberg.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-16T23:17:59.746000Z"
+        },
+        {
+          "id": "346161818116422bcfb29c8e94075ad65d0274b2",
+          "title": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易 / Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+          "title_zh": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易",
+          "title_en": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+          "title_original": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49323381",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-16T21:14:49.799000Z"
+        },
+        {
+          "id": "2f2157fe5087e46db86f48926fe42ddb8cf585f7",
+          "title": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter / Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+          "title_zh": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter",
+          "title_en": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+          "title_original": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-16T20:31:16Z"
+        }
+      ],
+      "source_count": 3,
+      "source_names": [
+        "Hacker News (黑客新闻)",
+        "hackernews",
+        "www.bloomberg.com"
+      ],
+      "items": [
+        {
+          "id": "606e2da905768ff4c91e5705070cb5ae9b37d3b4",
+          "title": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter",
+          "title_zh": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter",
+          "title_en": null,
+          "title_original": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+          "source": "www.bloomberg.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-16T23:17:59.746000Z"
+        },
+        {
+          "id": "346161818116422bcfb29c8e94075ad65d0274b2",
+          "title": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易 / Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+          "title_zh": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易",
+          "title_en": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+          "title_original": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49323381",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-16T21:14:49.799000Z"
+        },
+        {
+          "id": "2f2157fe5087e46db86f48926fe42ddb8cf585f7",
+          "title": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter / Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+          "title_zh": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter",
+          "title_en": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+          "title_original": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-16T20:31:16Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.5701,
+      "importance": 0.5701,
+      "importance_score": 0.5701,
+      "importance_label": "多源热议",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9961,
+        "story_heat": 0.5
+      },
+      "category": "multi_source",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-16T20:31:16Z",
+      "latest_at": "2026-08-16T23:17:59.746000Z",
+      "primary_item": {
+        "id": "606e2da905768ff4c91e5705070cb5ae9b37d3b4",
+        "title": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter",
+        "title_zh": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter",
+        "title_en": null,
+        "title_original": "Stripe敲定一笔超过70亿美元的交易，收购人工智能公司OpenRouter",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
+        "source": "www.bloomberg.com",
+        "source_name": "Buzzing"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-16T23:34:59.082105Z"
+      }
+    },
+    {
+      "story_id": "story_6ea5c9d0c11e",
+      "title": "Claude中人类的“水印”文本掺假是对写作的歪曲 / Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+      "url": "https://news.ycombinator.com/item?id=49324087",
+      "primary_url": "https://news.ycombinator.com/item?id=49324087",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "d0e9b4dba32697b50990e520b8b6d050fdbd91d8",
+          "title": "Claude中人类的“水印”文本掺假是对写作的歪曲 / Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+          "title_zh": "Claude中人类的“水印”文本掺假是对写作的歪曲",
+          "title_en": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+          "title_original": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49324087",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-16T23:15:10.042000Z"
+        },
+        {
+          "id": "f87ec54de342fd6f1595037476aaf413449cdbfe",
+          "title": "Claude中人类的“水印”文本掺假是对写作的歪曲 / Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+          "title_zh": "Claude中人类的“水印”文本掺假是对写作的歪曲",
+          "title_en": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+          "title_original": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-16T21:53:43Z"
+        },
+        {
+          "id": "1096d4d6014fef89eee8e27720ab7a0eb66fc753",
+          "title": "★ Anthropic 在Claude中的“水印”文本掺假是对写作的歪曲 / ★ Anthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing",
+          "title_zh": "★ Anthropic 在Claude中的“水印”文本掺假是对写作的歪曲",
+          "title_en": "★ Anthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing",
+          "title_original": "★ Anthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
+          "source": "Daring Fireball",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-16T19:26:33Z"
+        }
+      ],
+      "source_count": 3,
+      "source_names": [
+        "Daring Fireball",
+        "Hacker News (黑客新闻)",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "d0e9b4dba32697b50990e520b8b6d050fdbd91d8",
+          "title": "Claude中人类的“水印”文本掺假是对写作的歪曲 / Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+          "title_zh": "Claude中人类的“水印”文本掺假是对写作的歪曲",
+          "title_en": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+          "title_original": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49324087",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-16T23:15:10.042000Z"
+        },
+        {
+          "id": "f87ec54de342fd6f1595037476aaf413449cdbfe",
+          "title": "Claude中人类的“水印”文本掺假是对写作的歪曲 / Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+          "title_zh": "Claude中人类的“水印”文本掺假是对写作的歪曲",
+          "title_en": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+          "title_original": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-16T21:53:43Z"
+        },
+        {
+          "id": "1096d4d6014fef89eee8e27720ab7a0eb66fc753",
+          "title": "★ Anthropic 在Claude中的“水印”文本掺假是对写作的歪曲 / ★ Anthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing",
+          "title_zh": "★ Anthropic 在Claude中的“水印”文本掺假是对写作的歪曲",
+          "title_en": "★ Anthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing",
+          "title_original": "★ Anthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
+          "source": "Daring Fireball",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-16T19:26:33Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.57,
+      "importance": 0.57,
+      "importance_score": 0.57,
+      "importance_label": "多源热议",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9954,
+        "story_heat": 0.5
+      },
+      "category": "multi_source",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-16T19:26:33Z",
+      "latest_at": "2026-08-16T23:15:10.042000Z",
+      "primary_item": {
+        "id": "d0e9b4dba32697b50990e520b8b6d050fdbd91d8",
+        "title": "Claude中人类的“水印”文本掺假是对写作的歪曲 / Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+        "title_zh": "Claude中人类的“水印”文本掺假是对写作的歪曲",
+        "title_en": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+        "title_original": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=49324087",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-16T23:34:59.082105Z"
       }
     },
     {
@@ -299,15 +659,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5578,
-      "importance": 0.5578,
-      "importance_score": 0.5578,
+      "score": 0.5556,
+      "importance": 0.5556,
+      "importance_score": 0.5556,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.928,
+        "recency": 0.9153,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -332,227 +692,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
-      }
-    },
-    {
-      "story_id": "story_1e07c512b23d",
-      "title": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测 / Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-      "url": "https://news.ycombinator.com/item?id=49323620",
-      "primary_url": "https://news.ycombinator.com/item?id=49323620",
-      "source": "hackernews",
-      "source_name": "NewsNow",
-      "sources": [
-        {
-          "id": "4831da02cbb52ec2f0c55d62ce4d7a77787209d6",
-          "title": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测 / Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-          "title_zh": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测",
-          "title_en": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-          "title_original": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49323620",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-16T22:15:06.163000Z"
-        },
-        {
-          "id": "216c7ae686b6ed275ac6d38453019a626829ad7b",
-          "title": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测 / Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-          "title_zh": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测",
-          "title_en": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-          "title_original": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-16T21:00:25Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News (黑客新闻)",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "4831da02cbb52ec2f0c55d62ce4d7a77787209d6",
-          "title": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测 / Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-          "title_zh": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测",
-          "title_en": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-          "title_original": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49323620",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-16T22:15:06.163000Z"
-        },
-        {
-          "id": "216c7ae686b6ed275ac6d38453019a626829ad7b",
-          "title": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测 / Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-          "title_zh": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测",
-          "title_en": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-          "title_original": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-16T21:00:25Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5448,
-      "importance": 0.5448,
-      "importance_score": 0.5448,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.9947,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-16T21:00:25Z",
-      "latest_at": "2026-08-16T22:15:06.163000Z",
-      "primary_item": {
-        "id": "4831da02cbb52ec2f0c55d62ce4d7a77787209d6",
-        "title": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测 / Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-        "title_zh": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测",
-        "title_en": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-        "title_original": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=49323620",
-        "source": "hackernews",
-        "source_name": "NewsNow"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
-      }
-    },
-    {
-      "story_id": "story_6ea5c9d0c11e",
-      "title": "Claude中人类的“水印”文本掺假是对写作的歪曲 / Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
-      "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
-      "primary_url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
-      "source": "Hacker News (黑客新闻)",
-      "source_name": "Info Flow",
-      "sources": [
-        {
-          "id": "f87ec54de342fd6f1595037476aaf413449cdbfe",
-          "title": "Claude中人类的“水印”文本掺假是对写作的歪曲 / Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
-          "title_zh": "Claude中人类的“水印”文本掺假是对写作的歪曲",
-          "title_en": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
-          "title_original": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-16T21:53:43Z"
-        },
-        {
-          "id": "1096d4d6014fef89eee8e27720ab7a0eb66fc753",
-          "title": "★ Anthropic 在Claude中的“水印”文本掺假是对写作的歪曲 / ★ Anthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing",
-          "title_zh": "★ Anthropic 在Claude中的“水印”文本掺假是对写作的歪曲",
-          "title_en": "★ Anthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing",
-          "title_original": "★ Anthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
-          "source": "Daring Fireball",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-16T19:26:33Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Daring Fireball",
-        "Hacker News (黑客新闻)"
-      ],
-      "items": [
-        {
-          "id": "f87ec54de342fd6f1595037476aaf413449cdbfe",
-          "title": "Claude中人类的“水印”文本掺假是对写作的歪曲 / Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
-          "title_zh": "Claude中人类的“水印”文本掺假是对写作的歪曲",
-          "title_en": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
-          "title_original": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-16T21:53:43Z"
-        },
-        {
-          "id": "1096d4d6014fef89eee8e27720ab7a0eb66fc753",
-          "title": "★ Anthropic 在Claude中的“水印”文本掺假是对写作的歪曲 / ★ Anthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing",
-          "title_zh": "★ Anthropic 在Claude中的“水印”文本掺假是对写作的歪曲",
-          "title_en": "★ Anthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing",
-          "title_original": "★ Anthropic’s ‘Watermark’ Text Adulteration in Claude Is a Perversion of Writing",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
-          "source": "Daring Fireball",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-16T19:26:33Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5439,
-      "importance": 0.5439,
-      "importance_score": 0.5439,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.9896,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-16T19:26:33Z",
-      "latest_at": "2026-08-16T21:53:43Z",
-      "primary_item": {
-        "id": "f87ec54de342fd6f1595037476aaf413449cdbfe",
-        "title": "Claude中人类的“水印”文本掺假是对写作的歪曲 / Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
-        "title_zh": "Claude中人类的“水印”文本掺假是对写作的歪曲",
-        "title_en": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
-        "title_original": "Anthropic's 'Watermark' Text Adulteration in Claude Is a Perversion of Writing",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
-        "source": "Hacker News (黑客新闻)",
-        "source_name": "Info Flow"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
+        "scored_at": "2026-08-16T23:34:59.082105Z"
       }
     },
     {
@@ -658,15 +798,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5402,
-      "importance": 0.5402,
-      "importance_score": 0.5402,
+      "score": 0.5381,
+      "importance": 0.5381,
+      "importance_score": 0.5381,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8298,
+        "recency": 0.8185,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -691,7 +831,117 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
+        "scored_at": "2026-08-16T23:34:59.082105Z"
+      }
+    },
+    {
+      "story_id": "story_246463fb652c",
+      "title": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+      "url": "https://www.reddit.com/r/technology/comments/1vq3dh3/anthropic_ceo_dario_amodei_says_the_way_for_ai_to",
+      "primary_url": "https://www.reddit.com/r/technology/comments/1vq3dh3/anthropic_ceo_dario_amodei_says_the_way_for_ai_to",
+      "source": "Reddit (热门)",
+      "source_name": "Info Flow",
+      "sources": [
+        {
+          "id": "4b4fdc768257e83bb3fecdbb54a3c9651d99720f",
+          "title": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+          "title_zh": null,
+          "title_en": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+          "title_original": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.reddit.com/r/technology/comments/1vq3dh3/anthropic_ceo_dario_amodei_says_the_way_for_ai_to",
+          "source": "Reddit (热门)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-16T17:41:11Z"
+        },
+        {
+          "id": "b3f6977b46a76bd87884fd151cb205504f398853",
+          "title": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+          "title_zh": null,
+          "title_en": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+          "title_original": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.businessinsider.com/anthropic-ceo-dario-amodei-ai-public-opinion-cure-cancer-2026-8",
+          "source": "Business Insider",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-16T16:30:38Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Business Insider",
+        "Reddit (热门)"
+      ],
+      "items": [
+        {
+          "id": "4b4fdc768257e83bb3fecdbb54a3c9651d99720f",
+          "title": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+          "title_zh": null,
+          "title_en": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+          "title_original": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.reddit.com/r/technology/comments/1vq3dh3/anthropic_ceo_dario_amodei_says_the_way_for_ai_to",
+          "source": "Reddit (热门)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-16T17:41:11Z"
+        },
+        {
+          "id": "b3f6977b46a76bd87884fd151cb205504f398853",
+          "title": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+          "title_zh": null,
+          "title_en": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+          "title_original": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.businessinsider.com/anthropic-ceo-dario-amodei-ai-public-opinion-cure-cancer-2026-8",
+          "source": "Business Insider",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-16T16:30:38Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5311,
+      "importance": 0.5311,
+      "importance_score": 0.5311,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9185,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-16T16:30:38Z",
+      "latest_at": "2026-08-16T17:41:11Z",
+      "primary_item": {
+        "id": "4b4fdc768257e83bb3fecdbb54a3c9651d99720f",
+        "title": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+        "title_zh": null,
+        "title_en": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+        "title_original": "Anthropic CEO Dario Amodei says the way for AI to win over the public is to 'actually' cure cancer",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.reddit.com/r/technology/comments/1vq3dh3/anthropic_ceo_dario_amodei_says_the_way_for_ai_to",
+        "source": "Reddit (热门)",
+        "source_name": "Info Flow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-16T23:34:59.082105Z"
       }
     },
     {
@@ -768,15 +1018,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5259,
-      "importance": 0.5259,
-      "importance_score": 0.5259,
+      "score": 0.5237,
+      "importance": 0.5237,
+      "importance_score": 0.5237,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8894,
+        "recency": 0.8773,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -801,7 +1051,117 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
+        "scored_at": "2026-08-16T23:34:59.082105Z"
+      }
+    },
+    {
+      "story_id": "story_1e07c512b23d",
+      "title": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测 / Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+      "url": "https://news.ycombinator.com/item?id=49323620",
+      "primary_url": "https://news.ycombinator.com/item?id=49323620",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "4831da02cbb52ec2f0c55d62ce4d7a77787209d6",
+          "title": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测 / Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+          "title_zh": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测",
+          "title_en": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+          "title_original": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49323620",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-16T22:15:06.163000Z"
+        },
+        {
+          "id": "216c7ae686b6ed275ac6d38453019a626829ad7b",
+          "title": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测 / Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+          "title_zh": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测",
+          "title_en": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+          "title_original": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-16T21:00:25Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News (黑客新闻)",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "4831da02cbb52ec2f0c55d62ce4d7a77787209d6",
+          "title": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测 / Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+          "title_zh": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测",
+          "title_en": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+          "title_original": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49323620",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-16T22:15:06.163000Z"
+        },
+        {
+          "id": "216c7ae686b6ed275ac6d38453019a626829ad7b",
+          "title": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测 / Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+          "title_zh": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测",
+          "title_en": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+          "title_original": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.reuters.com/business/anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-2026-08-15",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-16T21:00:25Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5424,
+      "importance": 0.5424,
+      "importance_score": 0.5424,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9811,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-16T21:00:25Z",
+      "latest_at": "2026-08-16T22:15:06.163000Z",
+      "primary_item": {
+        "id": "4831da02cbb52ec2f0c55d62ce4d7a77787209d6",
+        "title": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测 / Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+        "title_zh": "Anthropic IPO 估值取决于 2028 年 190-200B 美元的收入预测",
+        "title_en": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+        "title_original": "Anthropic IPO valuation hinges on $190-200B 2028 revenue forecast",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=49323620",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-16T23:34:59.082105Z"
       }
     },
     {
@@ -878,15 +1238,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5448,
-      "importance": 0.5448,
-      "importance_score": 0.5448,
+      "score": 0.5424,
+      "importance": 0.5424,
+      "importance_score": 0.5424,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9947,
+        "recency": 0.9811,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -911,117 +1271,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
-      }
-    },
-    {
-      "story_id": "story_a23b56bee6e9",
-      "title": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易 / Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-      "url": "https://news.ycombinator.com/item?id=49323381",
-      "primary_url": "https://news.ycombinator.com/item?id=49323381",
-      "source": "hackernews",
-      "source_name": "NewsNow",
-      "sources": [
-        {
-          "id": "346161818116422bcfb29c8e94075ad65d0274b2",
-          "title": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易 / Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-          "title_zh": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易",
-          "title_en": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-          "title_original": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49323381",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-16T21:14:49.799000Z"
-        },
-        {
-          "id": "2f2157fe5087e46db86f48926fe42ddb8cf585f7",
-          "title": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易 / Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-          "title_zh": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易",
-          "title_en": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-          "title_original": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-16T20:31:16Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News (黑客新闻)",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "346161818116422bcfb29c8e94075ad65d0274b2",
-          "title": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易 / Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-          "title_zh": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易",
-          "title_en": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-          "title_original": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49323381",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-16T21:14:49.799000Z"
-        },
-        {
-          "id": "2f2157fe5087e46db86f48926fe42ddb8cf585f7",
-          "title": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易 / Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-          "title_zh": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易",
-          "title_en": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-          "title_original": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-16T20:31:16Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5423,
-      "importance": 0.5423,
-      "importance_score": 0.5423,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.9803,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-16T20:31:16Z",
-      "latest_at": "2026-08-16T21:14:49.799000Z",
-      "primary_item": {
-        "id": "346161818116422bcfb29c8e94075ad65d0274b2",
-        "title": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易 / Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-        "title_zh": "Stripe 完成 70 亿美元收购人工智能公司 OpenRouter 的交易",
-        "title_en": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-        "title_original": "Stripe Clinches over $7B Deal to Buy AI Firm OpenRouter",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=49323381",
-        "source": "hackernews",
-        "source_name": "NewsNow"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
+        "scored_at": "2026-08-16T23:34:59.082105Z"
       }
     },
     {
@@ -1098,15 +1348,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5275,
-      "importance": 0.5275,
-      "importance_score": 0.5275,
+      "score": 0.5253,
+      "importance": 0.5253,
+      "importance_score": 0.5253,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8985,
+        "recency": 0.8863,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1131,7 +1381,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
+        "scored_at": "2026-08-16T23:34:59.082105Z"
       }
     },
     {
@@ -1157,7 +1407,7 @@
           "published_at": "2026-08-16T15:12:34.771000Z"
         },
         {
-          "id": "9e06c7fd63ff348cef640034ab1593ab62b167bf",
+          "id": "297c4b7ca2b8d4318f2de991d4a70e5baf413f6c",
           "title": "据报道，第二季度 Anthropic 收入跃升至超过 $11.5B / Anthropic revenue reportedly jumps to more than $11.5B in second quarter",
           "title_zh": "据报道，第二季度 Anthropic 收入跃升至超过 $11.5B",
           "title_en": "Anthropic revenue reportedly jumps to more than $11.5B in second quarter",
@@ -1165,15 +1415,15 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
           "published_at": "2026-08-16T13:58:17Z"
         }
       ],
       "source_count": 2,
       "source_names": [
-        "Hacker News",
+        "Hacker News · 24h最热",
         "hackernews"
       ],
       "items": [
@@ -1192,7 +1442,7 @@
           "published_at": "2026-08-16T15:12:34.771000Z"
         },
         {
-          "id": "9e06c7fd63ff348cef640034ab1593ab62b167bf",
+          "id": "297c4b7ca2b8d4318f2de991d4a70e5baf413f6c",
           "title": "据报道，第二季度 Anthropic 收入跃升至超过 $11.5B / Anthropic revenue reportedly jumps to more than $11.5B in second quarter",
           "title_zh": "据报道，第二季度 Anthropic 收入跃升至超过 $11.5B",
           "title_en": "Anthropic revenue reportedly jumps to more than $11.5B in second quarter",
@@ -1200,23 +1450,23 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
           "published_at": "2026-08-16T13:58:17Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5275,
-      "importance": 0.5275,
-      "importance_score": 0.5275,
+      "score": 0.5253,
+      "importance": 0.5253,
+      "importance_score": 0.5253,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8985,
+        "recency": 0.8863,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1241,7 +1491,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
+        "scored_at": "2026-08-16T23:34:59.082105Z"
       }
     },
     {
@@ -1318,15 +1568,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5252,
-      "importance": 0.5252,
-      "importance_score": 0.5252,
+      "score": 0.523,
+      "importance": 0.523,
+      "importance_score": 0.523,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8856,
+        "recency": 0.8735,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1351,7 +1601,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
+        "scored_at": "2026-08-16T23:34:59.082105Z"
       }
     },
     {
@@ -1428,15 +1678,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5069,
-      "importance": 0.5069,
-      "importance_score": 0.5069,
+      "score": 0.5049,
+      "importance": 0.5049,
+      "importance_score": 0.5049,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7837,
+        "recency": 0.773,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1461,117 +1711,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
-      }
-    },
-    {
-      "story_id": "story_3415e330fba4",
-      "title": "AI 辅助 GPU 移植 250k 行旧天气模拟代码 / AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-      "url": "https://news.ycombinator.com/item?id=49314967",
-      "primary_url": "https://news.ycombinator.com/item?id=49314967",
-      "source": "hackernews",
-      "source_name": "NewsNow",
-      "sources": [
-        {
-          "id": "d9e5761eb9dc631140a0a40569ec395b1563f0a7",
-          "title": "AI 辅助 GPU 移植 250k 行旧天气模拟代码 / AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-          "title_zh": "AI 辅助 GPU 移植 250k 行旧天气模拟代码",
-          "title_en": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-          "title_original": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49314967",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-16T03:13:50.576000Z"
-        },
-        {
-          "id": "6a58a1a6f84416fd76382194fc6abc8444164d49",
-          "title": "AI 辅助 GPU 移植 250k 行旧天气模拟代码 / AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-          "title_zh": "AI 辅助 GPU 移植 250k 行旧天气模拟代码",
-          "title_en": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-          "title_original": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arxiv.org/abs/2608.13122",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-15T22:41:51Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News · 24h最热",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "d9e5761eb9dc631140a0a40569ec395b1563f0a7",
-          "title": "AI 辅助 GPU 移植 250k 行旧天气模拟代码 / AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-          "title_zh": "AI 辅助 GPU 移植 250k 行旧天气模拟代码",
-          "title_en": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-          "title_original": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49314967",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-16T03:13:50.576000Z"
-        },
-        {
-          "id": "6a58a1a6f84416fd76382194fc6abc8444164d49",
-          "title": "AI 辅助 GPU 移植 250k 行旧天气模拟代码 / AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-          "title_zh": "AI 辅助 GPU 移植 250k 行旧天气模拟代码",
-          "title_en": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-          "title_original": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arxiv.org/abs/2608.13122",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-15T22:41:51Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5018,
-      "importance": 0.5018,
-      "importance_score": 0.5018,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.7558,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-15T22:41:51Z",
-      "latest_at": "2026-08-16T03:13:50.576000Z",
-      "primary_item": {
-        "id": "d9e5761eb9dc631140a0a40569ec395b1563f0a7",
-        "title": "AI 辅助 GPU 移植 250k 行旧天气模拟代码 / AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-        "title_zh": "AI 辅助 GPU 移植 250k 行旧天气模拟代码",
-        "title_en": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-        "title_original": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=49314967",
-        "source": "hackernews",
-        "source_name": "NewsNow"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
+        "scored_at": "2026-08-16T23:34:59.082105Z"
       }
     },
     {
@@ -1648,15 +1788,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5018,
-      "importance": 0.5018,
-      "importance_score": 0.5018,
+      "score": 0.5,
+      "importance": 0.5,
+      "importance_score": 0.5,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7558,
+        "recency": 0.7455,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1678,10 +1818,10 @@
         "source_name": "NewsNow"
       },
       "persona_id": "pragmatic",
-      "persona_score": 1,
+      "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T22:37:55.965194Z"
+        "scored_at": "2026-08-16T23:34:59.082105Z"
       }
     }
   ]
