@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-16T15:35:56.909241Z",
+  "generated_at": "2026-08-16T16:42:58.525174Z",
   "window_hours": 24,
-  "total_items": 17,
+  "total_items": 18,
   "items": [
     {
       "story_id": "story_0bf300873ab5",
@@ -77,15 +77,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7848,
-      "importance": 0.7848,
-      "importance_score": 0.7848,
+      "score": 0.7821,
+      "importance": 0.7821,
+      "importance_score": 0.7821,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9398,
+        "recency": 0.9248,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -112,7 +112,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -160,15 +160,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7382,
-      "importance": 0.7382,
-      "importance_score": 0.7382,
+      "score": 0.7358,
+      "importance": 0.7358,
+      "importance_score": 0.7358,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8367,
+        "recency": 0.8233,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -193,7 +193,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -270,15 +270,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7454,
-      "importance": 0.7454,
-      "importance_score": 0.7454,
+      "score": 0.7433,
+      "importance": 0.7433,
+      "importance_score": 0.7433,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7546,
+        "recency": 0.7425,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -304,7 +304,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -409,15 +409,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.6524,
-      "importance": 0.6524,
-      "importance_score": 0.6524,
+      "score": 0.6502,
+      "importance": 0.6502,
+      "importance_score": 0.6502,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.5904,
         "source_tier": 0.58,
         "ai_relevance": 0.82,
-        "recency": 0.7425,
+        "recency": 0.7306,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -443,7 +443,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -606,15 +606,15 @@
       ],
       "item_count": 5,
       "duplicate_count": 5,
-      "score": 0.5904,
-      "importance": 0.5904,
-      "importance_score": 0.5904,
+      "score": 0.588,
+      "importance": 0.588,
+      "importance_score": 0.588,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.831,
+        "recency": 0.8177,
         "story_heat": 1.0
       },
       "category": "multi_source",
@@ -639,7 +639,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -719,9 +719,23 @@
           "source_name": "Zeli",
           "site_id": "zeli",
           "published_at": "2026-08-15T18:13:02Z"
+        },
+        {
+          "id": "3dbbb30ee3c690d65bd950ecb4b8531b4f68f3b8",
+          "title": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们 / AI isn’t outthinking mathematicians, it’s out-remembering them",
+          "title_zh": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
+          "title_en": "AI isn’t outthinking mathematicians, it’s out-remembering them",
+          "title_original": "AI isn’t outthinking mathematicians, it’s out-remembering them",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-15T18:13:02Z"
         }
       ],
-      "source_count": 5,
+      "source_count": 6,
       "source_names": [
         "Hacker News",
         "Hacker News · 24h最热",
@@ -798,19 +812,33 @@
           "source_name": "Zeli",
           "site_id": "zeli",
           "published_at": "2026-08-15T18:13:02Z"
+        },
+        {
+          "id": "3dbbb30ee3c690d65bd950ecb4b8531b4f68f3b8",
+          "title": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们 / AI isn’t outthinking mathematicians, it’s out-remembering them",
+          "title_zh": "人工智能并非在智力上胜过数学家，而是在记忆力上胜过他们",
+          "title_en": "AI isn’t outthinking mathematicians, it’s out-remembering them",
+          "title_original": "AI isn’t outthinking mathematicians, it’s out-remembering them",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-15T18:13:02Z"
         }
       ],
-      "item_count": 5,
-      "duplicate_count": 5,
-      "score": 0.5818,
-      "importance": 0.5818,
-      "importance_score": 0.5818,
+      "item_count": 6,
+      "duplicate_count": 6,
+      "score": 0.5796,
+      "importance": 0.5796,
+      "importance_score": 0.5796,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7835,
+        "recency": 0.7709,
         "story_heat": 1.0
       },
       "category": "multi_source",
@@ -835,7 +863,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -941,15 +969,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5561,
-      "importance": 0.5561,
-      "importance_score": 0.5561,
+      "score": 0.5535,
+      "importance": 0.5535,
+      "importance_score": 0.5535,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9183,
+        "recency": 0.9037,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -974,7 +1002,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -1051,15 +1079,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.543,
-      "importance": 0.543,
-      "importance_score": 0.543,
+      "score": 0.5401,
+      "importance": 0.5401,
+      "importance_score": 0.5401,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9843,
+        "recency": 0.9686,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1084,7 +1112,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -1161,15 +1189,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5448,
-      "importance": 0.5448,
-      "importance_score": 0.5448,
+      "score": 0.5419,
+      "importance": 0.5419,
+      "importance_score": 0.5419,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9944,
+        "recency": 0.9785,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1194,7 +1222,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -1271,15 +1299,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5448,
-      "importance": 0.5448,
-      "importance_score": 0.5448,
+      "score": 0.5419,
+      "importance": 0.5419,
+      "importance_score": 0.5419,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9944,
+        "recency": 0.9785,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1304,7 +1332,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -1330,7 +1358,7 @@
           "published_at": "2026-08-16T15:12:34.771000Z"
         },
         {
-          "id": "cb2b2d9b9bd159491e81661eb7eb6d0218f7d48f",
+          "id": "9e06c7fd63ff348cef640034ab1593ab62b167bf",
           "title": "据报道，第二季度 Anthropic 收入跃升至超过 $11.5B / Anthropic revenue reportedly jumps to more than $11.5B in second quarter",
           "title_zh": "据报道，第二季度 Anthropic 收入跃升至超过 $11.5B",
           "title_en": "Anthropic revenue reportedly jumps to more than $11.5B in second quarter",
@@ -1338,15 +1366,15 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
           "published_at": "2026-08-16T13:58:17Z"
         }
       ],
       "source_count": 2,
       "source_names": [
-        "Hacker News (黑客新闻)",
+        "Hacker News",
         "hackernews"
       ],
       "items": [
@@ -1365,7 +1393,7 @@
           "published_at": "2026-08-16T15:12:34.771000Z"
         },
         {
-          "id": "cb2b2d9b9bd159491e81661eb7eb6d0218f7d48f",
+          "id": "9e06c7fd63ff348cef640034ab1593ab62b167bf",
           "title": "据报道，第二季度 Anthropic 收入跃升至超过 $11.5B / Anthropic revenue reportedly jumps to more than $11.5B in second quarter",
           "title_zh": "据报道，第二季度 Anthropic 收入跃升至超过 $11.5B",
           "title_en": "Anthropic revenue reportedly jumps to more than $11.5B in second quarter",
@@ -1373,23 +1401,23 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
           "published_at": "2026-08-16T13:58:17Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5448,
-      "importance": 0.5448,
-      "importance_score": 0.5448,
+      "score": 0.5419,
+      "importance": 0.5419,
+      "importance_score": 0.5419,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9944,
+        "recency": 0.9785,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1414,7 +1442,117 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
+      }
+    },
+    {
+      "story_id": "story_e463307b5ae9",
+      "title": "没有共鸣的人工智能编码 / AI Coding Without the Vibes",
+      "url": "https://news.ycombinator.com/item?id=49318735",
+      "primary_url": "https://news.ycombinator.com/item?id=49318735",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "1d2492a515caa36c70355895c4703f446a0a5ae2",
+          "title": "没有共鸣的人工智能编码 / AI Coding Without the Vibes",
+          "title_zh": "没有共鸣的人工智能编码",
+          "title_en": "AI Coding Without the Vibes",
+          "title_original": "AI Coding Without the Vibes",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49318735",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-16T14:12:25.568000Z"
+        },
+        {
+          "id": "7047a7d3f024068ad0e570dfecf36db9c4b95ae1",
+          "title": "没有共鸣的人工智能编码 / AI Coding Without the Vibes",
+          "title_zh": "没有共鸣的人工智能编码",
+          "title_en": "AI Coding Without the Vibes",
+          "title_original": "AI Coding Without the Vibes",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://peterbloem.nl/blog/craft-coding",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-16T10:31:36Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News · 24h最热",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "1d2492a515caa36c70355895c4703f446a0a5ae2",
+          "title": "没有共鸣的人工智能编码 / AI Coding Without the Vibes",
+          "title_zh": "没有共鸣的人工智能编码",
+          "title_en": "AI Coding Without the Vibes",
+          "title_original": "AI Coding Without the Vibes",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49318735",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-16T14:12:25.568000Z"
+        },
+        {
+          "id": "7047a7d3f024068ad0e570dfecf36db9c4b95ae1",
+          "title": "没有共鸣的人工智能编码 / AI Coding Without the Vibes",
+          "title_zh": "没有共鸣的人工智能编码",
+          "title_en": "AI Coding Without the Vibes",
+          "title_original": "AI Coding Without the Vibes",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://peterbloem.nl/blog/craft-coding",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-16T10:31:36Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5394,
+      "importance": 0.5394,
+      "importance_score": 0.5394,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9644,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-16T10:31:36Z",
+      "latest_at": "2026-08-16T14:12:25.568000Z",
+      "primary_item": {
+        "id": "1d2492a515caa36c70355895c4703f446a0a5ae2",
+        "title": "没有共鸣的人工智能编码 / AI Coding Without the Vibes",
+        "title_zh": "没有共鸣的人工智能编码",
+        "title_en": "AI Coding Without the Vibes",
+        "title_original": "AI Coding Without the Vibes",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=49318735",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -1491,15 +1629,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5219,
-      "importance": 0.5219,
-      "importance_score": 0.5219,
+      "score": 0.5194,
+      "importance": 0.5194,
+      "importance_score": 0.5194,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8673,
+        "recency": 0.8534,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1524,7 +1662,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -1601,15 +1739,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5164,
-      "importance": 0.5164,
-      "importance_score": 0.5164,
+      "score": 0.5139,
+      "importance": 0.5139,
+      "importance_score": 0.5139,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8364,
+        "recency": 0.823,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1634,7 +1772,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -1711,15 +1849,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5164,
-      "importance": 0.5164,
-      "importance_score": 0.5164,
+      "score": 0.5139,
+      "importance": 0.5139,
+      "importance_score": 0.5139,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8364,
+        "recency": 0.823,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1744,7 +1882,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -1821,15 +1959,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5068,
-      "importance": 0.5068,
-      "importance_score": 0.5068,
+      "score": 0.5046,
+      "importance": 0.5046,
+      "importance_score": 0.5046,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7835,
+        "recency": 0.7709,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1854,7 +1992,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -1931,15 +2069,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5037,
-      "importance": 0.5037,
-      "importance_score": 0.5037,
+      "score": 0.5015,
+      "importance": 0.5015,
+      "importance_score": 0.5015,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7662,
+        "recency": 0.754,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1964,7 +2102,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     },
     {
@@ -2041,15 +2179,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5027,
-      "importance": 0.5027,
-      "importance_score": 0.5027,
+      "score": 0.5005,
+      "importance": 0.5005,
+      "importance_score": 0.5005,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7607,
+        "recency": 0.7486,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -2074,7 +2212,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T15:36:35.164552Z"
+        "scored_at": "2026-08-16T16:44:59.693193Z"
       }
     }
   ]
