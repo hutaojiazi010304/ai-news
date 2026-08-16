@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T01:57:41.183152Z",
+  "generated_at": "2026-08-16T03:13:31.969294Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -77,15 +77,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.775,
-      "importance": 0.775,
-      "importance_score": 0.775,
+      "score": 0.772,
+      "importance": 0.772,
+      "importance_score": 0.772,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9188,
+        "recency": 0.9022,
         "story_heat": 0.25
       },
       "category": "industry",
@@ -112,7 +112,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -160,15 +160,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7267,
-      "importance": 0.7267,
-      "importance_score": 0.7267,
+      "score": 0.724,
+      "importance": 0.724,
+      "importance_score": 0.724,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8059,
+        "recency": 0.7913,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -193,7 +193,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -270,15 +270,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.6565,
-      "importance": 0.6565,
-      "importance_score": 0.6565,
+      "score": 0.6535,
+      "importance": 0.6535,
+      "importance_score": 0.6535,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.5904,
         "source_tier": 0.58,
         "ai_relevance": 0.82,
-        "recency": 0.9041,
+        "recency": 0.8877,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -304,7 +304,203 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
+      }
+    },
+    {
+      "story_id": "story_01c472791cae",
+      "title": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+      "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+      "primary_url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+      "source": "www.science.org",
+      "source_name": "Buzzing",
+      "sources": [
+        {
+          "id": "7d5005fb42ddcfa124069511ff7a8a4f328f6333",
+          "title": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+          "title_zh": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+          "title_en": null,
+          "title_original": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+          "source": "www.science.org",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-16T02:46:42.706000Z"
+        },
+        {
+          "id": "66448732fdd4b21dd75ef6e84479fa756b82a7b9",
+          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
+          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
+          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
+          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49313367",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T20:39:42.682000Z"
+        },
+        {
+          "id": "c0fe1f3b01d2aa3b80eb53360a87b75e3588b96b",
+          "title": "人工智能在药物研发中的应用——概述、现状及未来发展方向 / AI in drug discovery – what it is, where we stand and the path forward",
+          "title_zh": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+          "title_en": "AI in drug discovery – what it is, where we stand and the path forward",
+          "title_original": "AI in drug discovery – what it is, where we stand and the path forward",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-15T19:12:53Z"
+        },
+        {
+          "id": "27bdad6646bdd01e6c3dd7fbbc37fdf837d9b10a",
+          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
+          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
+          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
+          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.nature.com/articles/s41573-026-01496-2",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-15T19:12:53Z"
+        },
+        {
+          "id": "272ea2a447fcb4e4062b82df6b876d97ca4cd881",
+          "title": "人工智能在药物研发中的应用——概述、现状及未来发展方向 / So How Is AI Drug Discovery Doing, Really?",
+          "title_zh": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+          "title_en": "So How Is AI Drug Discovery Doing, Really?",
+          "title_original": "So How Is AI Drug Discovery Doing, Really?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-15T19:12:53Z"
+        }
+      ],
+      "source_count": 5,
+      "source_names": [
+        "Hacker News",
+        "Hacker News (黑客新闻)",
+        "hackernews",
+        "www.science.org"
+      ],
+      "items": [
+        {
+          "id": "7d5005fb42ddcfa124069511ff7a8a4f328f6333",
+          "title": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+          "title_zh": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+          "title_en": null,
+          "title_original": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+          "source": "www.science.org",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-16T02:46:42.706000Z"
+        },
+        {
+          "id": "66448732fdd4b21dd75ef6e84479fa756b82a7b9",
+          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
+          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
+          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
+          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49313367",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-15T20:39:42.682000Z"
+        },
+        {
+          "id": "c0fe1f3b01d2aa3b80eb53360a87b75e3588b96b",
+          "title": "人工智能在药物研发中的应用——概述、现状及未来发展方向 / AI in drug discovery – what it is, where we stand and the path forward",
+          "title_zh": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+          "title_en": "AI in drug discovery – what it is, where we stand and the path forward",
+          "title_original": "AI in drug discovery – what it is, where we stand and the path forward",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-15T19:12:53Z"
+        },
+        {
+          "id": "27bdad6646bdd01e6c3dd7fbbc37fdf837d9b10a",
+          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
+          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
+          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
+          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.nature.com/articles/s41573-026-01496-2",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-15T19:12:53Z"
+        },
+        {
+          "id": "272ea2a447fcb4e4062b82df6b876d97ca4cd881",
+          "title": "人工智能在药物研发中的应用——概述、现状及未来发展方向 / So How Is AI Drug Discovery Doing, Really?",
+          "title_zh": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+          "title_en": "So How Is AI Drug Discovery Doing, Really?",
+          "title_original": "So How Is AI Drug Discovery Doing, Really?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-15T19:12:53Z"
+        }
+      ],
+      "item_count": 5,
+      "duplicate_count": 5,
+      "score": 0.6196,
+      "importance": 0.6196,
+      "importance_score": 0.6196,
+      "importance_label": "多源热议",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9936,
+        "story_heat": 1.0
+      },
+      "category": "multi_source",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-15T19:12:53Z",
+      "latest_at": "2026-08-16T02:46:42.706000Z",
+      "primary_item": {
+        "id": "7d5005fb42ddcfa124069511ff7a8a4f328f6333",
+        "title": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+        "title_zh": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+        "title_en": null,
+        "title_original": "人工智能在药物研发中的应用——概述、现状及未来发展方向",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
+        "source": "www.science.org",
+        "source_name": "Buzzing"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -467,15 +663,15 @@
       ],
       "item_count": 5,
       "duplicate_count": 5,
-      "score": 0.6125,
-      "importance": 0.6125,
-      "importance_score": 0.6125,
+      "score": 0.6094,
+      "importance": 0.6094,
+      "importance_score": 0.6094,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.954,
+        "recency": 0.9367,
         "story_heat": 1.0
       },
       "category": "multi_source",
@@ -500,7 +696,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -606,15 +802,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5588,
-      "importance": 0.5588,
-      "importance_score": 0.5588,
+      "score": 0.5557,
+      "importance": 0.5557,
+      "importance_score": 0.5557,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9331,
+        "recency": 0.9162,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -639,174 +835,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
-      }
-    },
-    {
-      "story_id": "story_01c472791cae",
-      "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
-      "url": "https://news.ycombinator.com/item?id=49313367",
-      "primary_url": "https://news.ycombinator.com/item?id=49313367",
-      "source": "hackernews",
-      "source_name": "NewsNow",
-      "sources": [
-        {
-          "id": "66448732fdd4b21dd75ef6e84479fa756b82a7b9",
-          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
-          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
-          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
-          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49313367",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-15T20:39:42.682000Z"
-        },
-        {
-          "id": "c0fe1f3b01d2aa3b80eb53360a87b75e3588b96b",
-          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery – what it is, where we stand and the path forward",
-          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
-          "title_en": "AI in drug discovery – what it is, where we stand and the path forward",
-          "title_original": "AI in drug discovery – what it is, where we stand and the path forward",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-15T19:12:53Z"
-        },
-        {
-          "id": "27bdad6646bdd01e6c3dd7fbbc37fdf837d9b10a",
-          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
-          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
-          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
-          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.nature.com/articles/s41573-026-01496-2",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-15T19:12:53Z"
-        },
-        {
-          "id": "272ea2a447fcb4e4062b82df6b876d97ca4cd881",
-          "title": "那么人工智能药物发现到底表现如何？ / So How Is AI Drug Discovery Doing, Really?",
-          "title_zh": "那么人工智能药物发现到底表现如何？",
-          "title_en": "So How Is AI Drug Discovery Doing, Really?",
-          "title_original": "So How Is AI Drug Discovery Doing, Really?",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-15T19:12:53Z"
-        }
-      ],
-      "source_count": 4,
-      "source_names": [
-        "Hacker News",
-        "Hacker News (黑客新闻)",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "66448732fdd4b21dd75ef6e84479fa756b82a7b9",
-          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
-          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
-          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
-          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49313367",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-15T20:39:42.682000Z"
-        },
-        {
-          "id": "c0fe1f3b01d2aa3b80eb53360a87b75e3588b96b",
-          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery – what it is, where we stand and the path forward",
-          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
-          "title_en": "AI in drug discovery – what it is, where we stand and the path forward",
-          "title_original": "AI in drug discovery – what it is, where we stand and the path forward",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-15T19:12:53Z"
-        },
-        {
-          "id": "27bdad6646bdd01e6c3dd7fbbc37fdf837d9b10a",
-          "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
-          "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
-          "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
-          "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.nature.com/articles/s41573-026-01496-2",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-15T19:12:53Z"
-        },
-        {
-          "id": "272ea2a447fcb4e4062b82df6b876d97ca4cd881",
-          "title": "那么人工智能药物发现到底表现如何？ / So How Is AI Drug Discovery Doing, Really?",
-          "title_zh": "那么人工智能药物发现到底表现如何？",
-          "title_en": "So How Is AI Drug Discovery Doing, Really?",
-          "title_original": "So How Is AI Drug Discovery Doing, Really?",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.science.org/content/blog-post/so-how-ai-drug-discovery-doing-really",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-15T19:12:53Z"
-        }
-      ],
-      "item_count": 4,
-      "duplicate_count": 4,
-      "score": 0.5825,
-      "importance": 0.5825,
-      "importance_score": 0.5825,
-      "importance_label": "多源热议",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.9263,
-        "story_heat": 0.75
-      },
-      "category": "multi_source",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-15T19:12:53Z",
-      "latest_at": "2026-08-15T20:39:42.682000Z",
-      "primary_item": {
-        "id": "66448732fdd4b21dd75ef6e84479fa756b82a7b9",
-        "title": "药物发现中的人工智能——它是什么、我们的立场和前进的道路 / AI in drug discovery — what it is, where we stand and the path forward",
-        "title_zh": "药物发现中的人工智能——它是什么、我们的立场和前进的道路",
-        "title_en": "AI in drug discovery — what it is, where we stand and the path forward",
-        "title_original": "AI in drug discovery — what it is, where we stand and the path forward",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=49313367",
-        "source": "hackernews",
-        "source_name": "NewsNow"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -912,15 +941,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5481,
-      "importance": 0.5481,
-      "importance_score": 0.5481,
+      "score": 0.5453,
+      "importance": 0.5453,
+      "importance_score": 0.5453,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.874,
+        "recency": 0.8582,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -945,7 +974,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -1051,15 +1080,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5422,
-      "importance": 0.5422,
-      "importance_score": 0.5422,
+      "score": 0.5394,
+      "importance": 0.5394,
+      "importance_score": 0.5394,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.841,
+        "recency": 0.8258,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1084,7 +1113,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -1161,15 +1190,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5325,
-      "importance": 0.5325,
-      "importance_score": 0.5325,
+      "score": 0.5295,
+      "importance": 0.5295,
+      "importance_score": 0.5295,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9259,
+        "recency": 0.9092,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1194,117 +1223,227 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
-      "story_id": "story_f83e47ee3c75",
-      "title": "人工智能驱动测试 / AI Driven Testing",
-      "url": "https://app.deltix.ai",
-      "primary_url": "https://app.deltix.ai",
-      "source": "Hacker News",
-      "source_name": "TechURLs",
+      "story_id": "story_3415e330fba4",
+      "title": "AI 辅助 GPU 移植 250k 行旧天气模拟代码 / AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+      "url": "https://news.ycombinator.com/item?id=49314967",
+      "primary_url": "https://news.ycombinator.com/item?id=49314967",
+      "source": "hackernews",
+      "source_name": "NewsNow",
       "sources": [
         {
-          "id": "0a7b10cb17b8d4acad23f6140e6218be614c2da6",
-          "title": "人工智能驱动测试 / AI Driven Testing",
-          "title_zh": "人工智能驱动测试",
-          "title_en": "AI Driven Testing",
-          "title_original": "AI Driven Testing",
+          "id": "d9e5761eb9dc631140a0a40569ec395b1563f0a7",
+          "title": "AI 辅助 GPU 移植 250k 行旧天气模拟代码 / AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+          "title_zh": "AI 辅助 GPU 移植 250k 行旧天气模拟代码",
+          "title_en": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+          "title_original": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://app.deltix.ai",
+          "url": "https://news.ycombinator.com/item?id=49314967",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-16T03:13:50.576000Z"
+        },
+        {
+          "id": "2713b3286640bc0d1328925207c5e5ec1bff3bae",
+          "title": "AI 辅助 GPU 移植 250k 行旧天气模拟代码 / AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+          "title_zh": "AI 辅助 GPU 移植 250k 行旧天气模拟代码",
+          "title_en": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+          "title_original": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://arxiv.org/abs/2608.13122",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-08-15T02:42:14Z"
-        },
-        {
-          "id": "e205e722bde4dc4eca5649c78b23bcab4873c0e7",
-          "title": "显示 HN：Deltix – AI 驱动测试 / Show HN: Deltix – AI Driven Testing",
-          "title_zh": "显示 HN：Deltix – AI 驱动测试",
-          "title_en": "Show HN: Deltix – AI Driven Testing",
-          "title_original": "Show HN: Deltix – AI Driven Testing",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://app.deltix.ai",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-15T02:42:14Z"
+          "published_at": "2026-08-15T22:41:51Z"
         }
       ],
       "source_count": 2,
       "source_names": [
         "Hacker News",
-        "Hacker News · 24h最热"
+        "hackernews"
       ],
       "items": [
         {
-          "id": "0a7b10cb17b8d4acad23f6140e6218be614c2da6",
-          "title": "人工智能驱动测试 / AI Driven Testing",
-          "title_zh": "人工智能驱动测试",
-          "title_en": "AI Driven Testing",
-          "title_original": "AI Driven Testing",
+          "id": "d9e5761eb9dc631140a0a40569ec395b1563f0a7",
+          "title": "AI 辅助 GPU 移植 250k 行旧天气模拟代码 / AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+          "title_zh": "AI 辅助 GPU 移植 250k 行旧天气模拟代码",
+          "title_en": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+          "title_original": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://app.deltix.ai",
+          "url": "https://news.ycombinator.com/item?id=49314967",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-16T03:13:50.576000Z"
+        },
+        {
+          "id": "2713b3286640bc0d1328925207c5e5ec1bff3bae",
+          "title": "AI 辅助 GPU 移植 250k 行旧天气模拟代码 / AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+          "title_zh": "AI 辅助 GPU 移植 250k 行旧天气模拟代码",
+          "title_en": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+          "title_original": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://arxiv.org/abs/2608.13122",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-08-15T02:42:14Z"
-        },
-        {
-          "id": "e205e722bde4dc4eca5649c78b23bcab4873c0e7",
-          "title": "显示 HN：Deltix – AI 驱动测试 / Show HN: Deltix – AI Driven Testing",
-          "title_zh": "显示 HN：Deltix – AI 驱动测试",
-          "title_en": "Show HN: Deltix – AI Driven Testing",
-          "title_original": "Show HN: Deltix – AI Driven Testing",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://app.deltix.ai",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-15T02:42:14Z"
+          "published_at": "2026-08-15T22:41:51Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.4945,
-      "importance": 0.4945,
-      "importance_score": 0.4945,
+      "score": 0.5458,
+      "importance": 0.5458,
+      "importance_score": 0.5458,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7147,
+        "recency": 1.0,
         "story_heat": 0.25
       },
       "category": "watch",
       "reasons": [
         "multi_source"
       ],
-      "earliest_at": "2026-08-15T02:42:14Z",
-      "latest_at": "2026-08-15T02:42:14Z",
+      "earliest_at": "2026-08-15T22:41:51Z",
+      "latest_at": "2026-08-16T03:13:50.576000Z",
       "primary_item": {
-        "id": "0a7b10cb17b8d4acad23f6140e6218be614c2da6",
-        "title": "人工智能驱动测试 / AI Driven Testing",
-        "title_zh": "人工智能驱动测试",
-        "title_en": "AI Driven Testing",
-        "title_original": "AI Driven Testing",
+        "id": "d9e5761eb9dc631140a0a40569ec395b1563f0a7",
+        "title": "AI 辅助 GPU 移植 250k 行旧天气模拟代码 / AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+        "title_zh": "AI 辅助 GPU 移植 250k 行旧天气模拟代码",
+        "title_en": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+        "title_original": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://app.deltix.ai",
-        "source": "Hacker News",
-        "source_name": "TechURLs"
+        "url": "https://news.ycombinator.com/item?id=49314967",
+        "source": "hackernews",
+        "source_name": "NewsNow"
       },
       "persona_id": "pragmatic",
-      "persona_score": 0,
+      "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
+      }
+    },
+    {
+      "story_id": "story_58174a0827d8",
+      "title": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序 / Show HN: I built a native app for coding agents with Rust and GPUI",
+      "url": "https://news.ycombinator.com/item?id=49315709",
+      "primary_url": "https://news.ycombinator.com/item?id=49315709",
+      "source": "hackernews",
+      "source_name": "NewsNow",
+      "sources": [
+        {
+          "id": "a8484567193fa84bfd673651a93e15a0dab91865",
+          "title": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序 / Show HN: I built a native app for coding agents with Rust and GPUI",
+          "title_zh": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序",
+          "title_en": "Show HN: I built a native app for coding agents with Rust and GPUI",
+          "title_original": "Show HN: I built a native app for coding agents with Rust and GPUI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49315709",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-16T03:13:50.576000Z"
+        },
+        {
+          "id": "282436b9431520837238c95954a35be14d9c1e21",
+          "title": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序 / Show HN: I built a native app for coding agents with Rust and GPUI",
+          "title_zh": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序",
+          "title_en": "Show HN: I built a native app for coding agents with Rust and GPUI",
+          "title_original": "Show HN: I built a native app for coding agents with Rust and GPUI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://waku.sh",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-16T00:38:44Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "a8484567193fa84bfd673651a93e15a0dab91865",
+          "title": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序 / Show HN: I built a native app for coding agents with Rust and GPUI",
+          "title_zh": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序",
+          "title_en": "Show HN: I built a native app for coding agents with Rust and GPUI",
+          "title_original": "Show HN: I built a native app for coding agents with Rust and GPUI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49315709",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-08-16T03:13:50.576000Z"
+        },
+        {
+          "id": "282436b9431520837238c95954a35be14d9c1e21",
+          "title": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序 / Show HN: I built a native app for coding agents with Rust and GPUI",
+          "title_zh": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序",
+          "title_en": "Show HN: I built a native app for coding agents with Rust and GPUI",
+          "title_original": "Show HN: I built a native app for coding agents with Rust and GPUI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://waku.sh",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-08-16T00:38:44Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5458,
+      "importance": 0.5458,
+      "importance_score": 0.5458,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 1.0,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-16T00:38:44Z",
+      "latest_at": "2026-08-16T03:13:50.576000Z",
+      "primary_item": {
+        "id": "a8484567193fa84bfd673651a93e15a0dab91865",
+        "title": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序 / Show HN: I built a native app for coding agents with Rust and GPUI",
+        "title_zh": "Show HN：我使用 Rust 和 GPUI 为编码代理构建了一个本机应用程序",
+        "title_en": "Show HN: I built a native app for coding agents with Rust and GPUI",
+        "title_original": "Show HN: I built a native app for coding agents with Rust and GPUI",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://news.ycombinator.com/item?id=49315709",
+        "source": "hackernews",
+        "source_name": "NewsNow"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -1410,15 +1549,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5437,
-      "importance": 0.5437,
-      "importance_score": 0.5437,
+      "score": 0.541,
+      "importance": 0.541,
+      "importance_score": 0.541,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8495,
+        "recency": 0.8342,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1443,7 +1582,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -1520,15 +1659,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5375,
-      "importance": 0.5375,
-      "importance_score": 0.5375,
+      "score": 0.5344,
+      "importance": 0.5344,
+      "importance_score": 0.5344,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.954,
+        "recency": 0.9367,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1553,7 +1692,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -1630,15 +1769,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5337,
-      "importance": 0.5337,
-      "importance_score": 0.5337,
+      "score": 0.5307,
+      "importance": 0.5307,
+      "importance_score": 0.5307,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.933,
+        "recency": 0.9161,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1663,7 +1802,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -1740,15 +1879,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5325,
-      "importance": 0.5325,
-      "importance_score": 0.5325,
+      "score": 0.5295,
+      "importance": 0.5295,
+      "importance_score": 0.5295,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9263,
+        "recency": 0.9096,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1773,7 +1912,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -1850,15 +1989,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5233,
-      "importance": 0.5233,
-      "importance_score": 0.5233,
+      "score": 0.5204,
+      "importance": 0.5204,
+      "importance_score": 0.5204,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8748,
+        "recency": 0.859,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1883,7 +2022,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -1960,15 +2099,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5233,
-      "importance": 0.5233,
-      "importance_score": 0.5233,
+      "score": 0.5204,
+      "importance": 0.5204,
+      "importance_score": 0.5204,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8748,
+        "recency": 0.859,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1993,7 +2132,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -2070,15 +2209,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5187,
-      "importance": 0.5187,
-      "importance_score": 0.5187,
+      "score": 0.516,
+      "importance": 0.516,
+      "importance_score": 0.516,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8495,
+        "recency": 0.8342,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -2103,7 +2242,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -2180,15 +2319,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5167,
-      "importance": 0.5167,
-      "importance_score": 0.5167,
+      "score": 0.514,
+      "importance": 0.514,
+      "importance_score": 0.514,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8382,
+        "recency": 0.8231,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -2213,7 +2352,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     },
     {
@@ -2290,15 +2429,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5143,
-      "importance": 0.5143,
-      "importance_score": 0.5143,
+      "score": 0.5116,
+      "importance": 0.5116,
+      "importance_score": 0.5116,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8249,
+        "recency": 0.81,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -2323,117 +2462,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
-      }
-    },
-    {
-      "story_id": "story_9b3a42a6069d",
-      "title": "怀疑法庭使用人工智能，男子在文件中注入提示以试图打赢官司 / Suspecting court of using AI, man injected prompts in filings to try to win case",
-      "url": "https://news.ycombinator.com/item?id=49308553",
-      "primary_url": "https://news.ycombinator.com/item?id=49308553",
-      "source": "hackernews",
-      "source_name": "NewsNow",
-      "sources": [
-        {
-          "id": "c30f8573a51fc6a0016a46508904b90a17de31ff",
-          "title": "怀疑法庭使用人工智能，男子在文件中注入提示以试图打赢官司 / Suspecting court of using AI, man injected prompts in filings to try to win case",
-          "title_zh": "怀疑法庭使用人工智能，男子在文件中注入提示以试图打赢官司",
-          "title_en": "Suspecting court of using AI, man injected prompts in filings to try to win case",
-          "title_original": "Suspecting court of using AI, man injected prompts in filings to try to win case",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49308553",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-15T09:21:23.610000Z"
-        },
-        {
-          "id": "62898d884feb1e92e6098d4e2970a33b66410c56",
-          "title": "怀疑法庭使用人工智能，男子在文件中注入提示以试图打赢官司 / Suspecting court of using AI, man injected prompts in filings to try to win case",
-          "title_zh": "怀疑法庭使用人工智能，男子在文件中注入提示以试图打赢官司",
-          "title_en": "Suspecting court of using AI, man injected prompts in filings to try to win case",
-          "title_original": "Suspecting court of using AI, man injected prompts in filings to try to win case",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-15T07:31:46Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News · 24h最热",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "c30f8573a51fc6a0016a46508904b90a17de31ff",
-          "title": "怀疑法庭使用人工智能，男子在文件中注入提示以试图打赢官司 / Suspecting court of using AI, man injected prompts in filings to try to win case",
-          "title_zh": "怀疑法庭使用人工智能，男子在文件中注入提示以试图打赢官司",
-          "title_en": "Suspecting court of using AI, man injected prompts in filings to try to win case",
-          "title_original": "Suspecting court of using AI, man injected prompts in filings to try to win case",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49308553",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-15T09:21:23.610000Z"
-        },
-        {
-          "id": "62898d884feb1e92e6098d4e2970a33b66410c56",
-          "title": "怀疑法庭使用人工智能，男子在文件中注入提示以试图打赢官司 / Suspecting court of using AI, man injected prompts in filings to try to win case",
-          "title_zh": "怀疑法庭使用人工智能，男子在文件中注入提示以试图打赢官司",
-          "title_en": "Suspecting court of using AI, man injected prompts in filings to try to win case",
-          "title_original": "Suspecting court of using AI, man injected prompts in filings to try to win case",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-15T07:31:46Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5074,
-      "importance": 0.5074,
-      "importance_score": 0.5074,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.7868,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-15T07:31:46Z",
-      "latest_at": "2026-08-15T09:21:23.610000Z",
-      "primary_item": {
-        "id": "c30f8573a51fc6a0016a46508904b90a17de31ff",
-        "title": "怀疑法庭使用人工智能，男子在文件中注入提示以试图打赢官司 / Suspecting court of using AI, man injected prompts in filings to try to win case",
-        "title_zh": "怀疑法庭使用人工智能，男子在文件中注入提示以试图打赢官司",
-        "title_en": "Suspecting court of using AI, man injected prompts in filings to try to win case",
-        "title_original": "Suspecting court of using AI, man injected prompts in filings to try to win case",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=49308553",
-        "source": "hackernews",
-        "source_name": "NewsNow"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-16T01:58:20.439778Z"
+        "scored_at": "2026-08-16T03:14:07.863900Z"
       }
     }
   ]
