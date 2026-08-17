@@ -1,39 +1,75 @@
 {
-  "generated_at": "2026-08-17T15:40:29.449073Z",
+  "generated_at": "2026-08-17T16:46:02.664445Z",
   "timezone": "Asia/Shanghai",
   "root_url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview",
   "history_url": "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc",
   "window_days": 7,
-  "latest_date": "2026-08-16",
-  "count_today": 4,
+  "latest_date": "2026-08-17",
+  "count_today": 5,
   "updates_today": [
     {
-      "date": "2026-08-16",
-      "title": "科罗拉多大学教授：当AI替你完成越来越多工作，怎样保住自己的学习能力？丨EO",
-      "summary": "AI最危险的地方，可能是让你太快拿到答案，然后误把“看懂了解释”当成自己真的会了。Tom Yeh是科罗拉多大学博尔德分校计算机科学副教授，也是AI by Hand的发起人。他这期播客带我们拆解了下怎样才能保住自己的学习能力！",
-      "url": "https://waytoagi.feishu.cn/wiki/A75Nw8jkmizYBbkXEkOcmyc1nbd?from=from_copylink"
+      "date": "2026-08-17",
+      "title": "一张图扒光5个国产模型：Kimi憋半天才动手，豆包忙了293次，GLM最吃状态",
+      "summary": "最近模型更新快的，确实有点看不过来， 而且还都说自己很强 。DeepSeek V4 Pro、GLM-5.3 接连更新，豆包推出了 Seed-Evolving，DeepSeek 还发布了自己的 Harness。模型能力在涨，给模型提供工具和执行环境的 Harness 也在进化。梦飞这篇文章把5个国产编程模型放进了同一个真实的代码仓库，处理同一个 Bug，并用轨迹图记录读文件、搜索、修改、测试、报错全过程。来一起看看各个模型的表现效果如何！",
+      "url": "https://waytoagi.feishu.cn/wiki/Y8efwjXZgiGtVjk9M5ncRpgjnBg?from=from_copylink"
     },
     {
-      "date": "2026-08-16",
-      "title": "如何设计 Agent Harness",
-      "summary": "Agent频繁出现虚假完成、遗忘规则的问题，往往不是模型不行，而是运行框架Harness设计的不足。这篇文章结合DoorDash、OpenAI、Anthropic的实战案例，拆解了循环控制、工具权限、记忆管理、崩溃恢复、安全边界、任务验收六大关键设计维度。",
-      "url": "https://waytoagi.feishu.cn/wiki/WTWZw8eu7iZ9rckqbSXcGdcgnQh?from=from_copylink"
+      "date": "2026-08-17",
+      "title": "OpenAI设计负责人：AI 时代，设计师该如何转型丨Lenny's Podcast",
+      "summary": "OpenAI设计负责人Ian Silber这期播客很适合设计师、产品经理、AI创业者看。他讲得很直接：AI已经能做出不错的界面和原型，设计师更要守住判断力——服务谁、解决什么、哪些体验值得保留。来一起看看，AI 时代，设计师该如何转型？",
+      "url": "https://waytoagi.feishu.cn/wiki/LaWMwErzpi5llLkIE5zcSlzpnsg?from=from_copylink"
     },
     {
-      "date": "2026-08-16",
-      "title": "万字长文｜GitHub 从入门到精通",
-      "summary": "这篇文章，作者从0到1把Git、GitHub、Commit、分支、PR和常见报错都实操了一遍，带你掌握Github协作与工程化的协作能力！",
-      "url": "https://waytoagi.feishu.cn/wiki/Nnb6wEwhri3WyZkdMy5cQJxWnAf?from=from_copylink"
+      "date": "2026-08-17",
+      "title": "Agent的上限，可能不在模型，而在团队知识",
+      "summary": "Agent真正上生产后，最先翻车的往往不是模型，而是知识：找不准、喂不进、旧内容越堆越乱。这篇文章从安全中心团队的真实实践出发，拆清楚了怎么定目标、搭知识体系、处理知识生产、检索、注入和淘汰，最后跑出一套能持续迭代的知识飞轮。想让Agent从“偶尔好用”变成“稳定可用”，这套经验很值得参考。",
+      "url": "https://waytoagi.feishu.cn/wiki/LDVewr1dUiZ48tkp4iAc9hUInhe?from=from_copylink"
     },
     {
-      "date": "2026-08-16",
-      "title": "8.10—8.16｜本周 AI 论文精选",
-      "summary": "本周AI论文合集直击大模型与Agent落地的各类隐蔽痛点，或许可以帮你规避不少隐藏陷阱。包含修正缩放定律、大幅降低预训练测算成本的新公式，也曝光了推理轨迹窃取、心智病毒传播等新兴的安全风险。此外还解析了提示词恶性膨胀、上下文压缩丢失约束、底层架构暗藏缺陷等工程难题。做Agent、大模型研发的开发者们可以借鉴下！",
-      "url": "https://waytoagi.feishu.cn/wiki/B0QvwfQdNicPL2krQclc0MF8nCH?from=from_copylink"
+      "date": "2026-08-17",
+      "title": "AI音乐周刊 W.A 041",
+      "summary": "AI音乐领域在这一周有个明显的信号：平台不只在拼生成效果，也开始拼版权合规、分发规则和专业工作流。Suno开始限制下载并强化C2PA溯源，Spotify给AI Persona打标并默认切断推荐流量，Suno与BMG合作走向合规共建。同时还有7篇高质量论文，覆盖乐器合成、音频生成与模型评测。",
+      "url": "https://waytoagi.feishu.cn/wiki/OiyFwKrCaipukTkmQUPcdaCbn2b?from=from_copylink"
+    },
+    {
+      "date": "2026-08-17",
+      "title": "AI PPT全场景、多维度实用测评（打工人实测，早下班有救！）",
+      "summary": "芋头小宝这篇文章用打工人最常用的PPT场景，横评了最近出来的几个办公型Agent在PPT文档解析和生成方面的能力差距。经常需要用AI工具做PPT的人，可以先看这篇少走点弯路。",
+      "url": "https://waytoagi.feishu.cn/wiki/YFszwFAM5ikgVRkKoQecKlG5nyd?from=from_copylink"
     }
   ],
-  "count_7d": 19,
+  "count_7d": 18,
   "updates_7d": [
+    {
+      "date": "2026-08-17",
+      "title": "一张图扒光5个国产模型：Kimi憋半天才动手，豆包忙了293次，GLM最吃状态",
+      "summary": "最近模型更新快的，确实有点看不过来， 而且还都说自己很强 。DeepSeek V4 Pro、GLM-5.3 接连更新，豆包推出了 Seed-Evolving，DeepSeek 还发布了自己的 Harness。模型能力在涨，给模型提供工具和执行环境的 Harness 也在进化。梦飞这篇文章把5个国产编程模型放进了同一个真实的代码仓库，处理同一个 Bug，并用轨迹图记录读文件、搜索、修改、测试、报错全过程。来一起看看各个模型的表现效果如何！",
+      "url": "https://waytoagi.feishu.cn/wiki/Y8efwjXZgiGtVjk9M5ncRpgjnBg?from=from_copylink"
+    },
+    {
+      "date": "2026-08-17",
+      "title": "OpenAI设计负责人：AI 时代，设计师该如何转型丨Lenny's Podcast",
+      "summary": "OpenAI设计负责人Ian Silber这期播客很适合设计师、产品经理、AI创业者看。他讲得很直接：AI已经能做出不错的界面和原型，设计师更要守住判断力——服务谁、解决什么、哪些体验值得保留。来一起看看，AI 时代，设计师该如何转型？",
+      "url": "https://waytoagi.feishu.cn/wiki/LaWMwErzpi5llLkIE5zcSlzpnsg?from=from_copylink"
+    },
+    {
+      "date": "2026-08-17",
+      "title": "Agent的上限，可能不在模型，而在团队知识",
+      "summary": "Agent真正上生产后，最先翻车的往往不是模型，而是知识：找不准、喂不进、旧内容越堆越乱。这篇文章从安全中心团队的真实实践出发，拆清楚了怎么定目标、搭知识体系、处理知识生产、检索、注入和淘汰，最后跑出一套能持续迭代的知识飞轮。想让Agent从“偶尔好用”变成“稳定可用”，这套经验很值得参考。",
+      "url": "https://waytoagi.feishu.cn/wiki/LDVewr1dUiZ48tkp4iAc9hUInhe?from=from_copylink"
+    },
+    {
+      "date": "2026-08-17",
+      "title": "AI音乐周刊 W.A 041",
+      "summary": "AI音乐领域在这一周有个明显的信号：平台不只在拼生成效果，也开始拼版权合规、分发规则和专业工作流。Suno开始限制下载并强化C2PA溯源，Spotify给AI Persona打标并默认切断推荐流量，Suno与BMG合作走向合规共建。同时还有7篇高质量论文，覆盖乐器合成、音频生成与模型评测。",
+      "url": "https://waytoagi.feishu.cn/wiki/OiyFwKrCaipukTkmQUPcdaCbn2b?from=from_copylink"
+    },
+    {
+      "date": "2026-08-17",
+      "title": "AI PPT全场景、多维度实用测评（打工人实测，早下班有救！）",
+      "summary": "芋头小宝这篇文章用打工人最常用的PPT场景，横评了最近出来的几个办公型Agent在PPT文档解析和生成方面的能力差距。经常需要用AI工具做PPT的人，可以先看这篇少走点弯路。",
+      "url": "https://waytoagi.feishu.cn/wiki/YFszwFAM5ikgVRkKoQecKlG5nyd?from=from_copylink"
+    },
     {
       "date": "2026-08-16",
       "title": "科罗拉多大学教授：当AI替你完成越来越多工作，怎样保住自己的学习能力？丨EO",
@@ -111,42 +147,6 @@
       "title": "Stripe创始人：AI时代，创业还需要“小步快跑”吗？丨YC",
       "summary": "Stripe创始人Patrick在这期YC的播客上输出了很多对AI创业过程中的反思。面对一群正在考虑退学、用 AI 创业的学生。大家最关心的是：AI 能替人做多少事？过去那套“小步快跑”的创业方法还管用吗？ Patrick 的答案是：AI 确实让新公司出现得更快、收入来得更早，但学什么、做什么、什么时候推出产品，仍要靠创业者自己判断。",
       "url": "https://waytoagi.feishu.cn/wiki/D2fSwVarFicLf9kjayEcIzusnbo?from=from_copylink"
-    },
-    {
-      "date": "2026-08-11",
-      "title": "硅谷观察日记｜AI恐慌退潮，分享我走访多所大学后的四点观察",
-      "summary": "作者在走访纽约大学、卡内基梅隆、南加大、UCLA、ACCD后发现，美国高校的 AI 恐慌正在退潮，老师们更关心一项作业里哪些步骤能交给 AI，哪些必须学生亲手完成。AI 让答案变便宜了，人的判断、过程和责任反而更值钱。",
-      "url": "https://waytoagi.feishu.cn/wiki/FR2WwcGY2iJ0qRkbldLcGokOnxf?from=from_copylink"
-    },
-    {
-      "date": "2026-08-11",
-      "title": "从 RAG 到上下文图：9 步路线图",
-      "summary": "这篇文章把从RAG到上下文图的路线拆成 9 步：先找一个RAG答不好的多跳问题，再抽实体和关系、做实体规范化、建正反向边、给边加权并保留来源，最后按路径检索并带引用生成答案。适合做企业知识库、GraphRAG、Agent上下文工程的人看。",
-      "url": "https://waytoagi.feishu.cn/wiki/XZvOwM99nivQSAkHzsJc261xnhh?from=from_copylink"
-    },
-    {
-      "date": "2026-08-11",
-      "title": "Codex Security，开源了！",
-      "summary": "现在用 AI 半天搓个产品上线，已经不稀奇了，但最容易被忽略的往往是安全：权限没收紧、数据库没校验、接口没防护，前期看不出问题，真有流量后就可能变成事故。OpenAI 开源的Codex Security可以直接装成npm包，在项目里扫描漏洞，还会先验证风险、给出位置和修复建议，支持日常检查和深度扫描，也能对比修复前后的结果。产品上线前用它跑一遍，至少能少踩几个安全坑。",
-      "url": "https://waytoagi.feishu.cn/wiki/Kgu3wTyD3inmRwkmbufcaLzWnWd?from=from_copylink"
-    },
-    {
-      "date": "2026-08-11",
-      "title": "Claude/Codex能跨会话传消息，我重构工作流",
-      "summary": "很多人用Claude/Codex来vibe coding，都会遇到一个很烦的问题。上下文一乱，新想法塞进当前对话会带偏主线，重开一条又要补充背景、重复解释踩过的坑。Claude/Codex能跨会话传消息后，就可以探索所有可行路径还不丢上下文。Codex适合用会话ID精确寻址，Claude Code则更适合按项目、日期、主题搜索历史会话。快来试试！",
-      "url": "https://waytoagi.feishu.cn/wiki/AoMvwYVlpiaBtPkm55HcGvxjn2d?from=from_copylink"
-    },
-    {
-      "date": "2026-08-11",
-      "title": "Claude Tag 可能会是下一个现象级 AI 产品。",
-      "summary": "一个月前，Anthropic 在Slack里上线了Claude Tag。阿颖这篇文章把Claude Tag和Claude Code、Codex、OpenClaw放在一起进行了对比，发现Claude Tag或许会是下一个现象级 AI 产品。",
-      "url": "https://waytoagi.feishu.cn/wiki/OF3IwAy1rip2BKkNGnQcUmITnwf?from=from_copylink"
-    },
-    {
-      "date": "2026-08-11",
-      "title": "AI 工程师必备的 7 条自改进智能体循环规则",
-      "summary": "智能体会自己写代码、自己改提示词、自己跑循环，看起来越来越聪明；但如果你没先定义什么叫“好”，它很可能只是把分数刷漂亮，真实效果反而变差。来一起看看Google官方的自改进智能体循环是如何避免这一问题的！",
-      "url": "https://waytoagi.feishu.cn/wiki/ENInwjmnViH3I4knMO2cmO1PnVg?from=from_copylink"
     }
   ],
   "warning": null,
