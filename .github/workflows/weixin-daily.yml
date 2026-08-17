@@ -15,7 +15,9 @@ permissions:
 
 jobs:
   weixin:
-    timeout-minutes: 15
+    # Reasoning-model guide generation can take ~1-2 min per item; 20 items
+    # sequentially plus title/cover needs more headroom than the old 15 min.
+    timeout-minutes: 30
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

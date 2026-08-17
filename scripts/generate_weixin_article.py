@@ -283,9 +283,15 @@ def reason_context(item: dict, session: requests.Session | None) -> str | None:
 
 
 def call_text_api(
-    messages: list[dict], cfg: Config, *, temperature: float = 0.3, timeout: float = 45.0
+    messages: list[dict], cfg: Config, *, temperature: float = 0.3, timeout: float = 120.0
 ) -> str | None:
-    """One Qwen chat completion with a single retry (2s backoff)."""
+    """One Qwen chat completion with a single retry (2s backoff).
+
+    Generous timeout on purpose: reasoning models (qwen3.x-max) can spend
+    well over a minute thinking before answering a long-context guide
+    request, and a 45s cap made real workloads time out while trivial
+    prompts succeeded.
+    """
     url = f"{cfg['base_url'].rstrip('/')}/chat/completions"
     headers = {
         "Authorization": f"Bearer {cfg['api_key']}",
