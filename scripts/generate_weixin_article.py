@@ -303,7 +303,9 @@ def call_text_api(
         try:
             response = requests.post(url, json=payload, headers=headers, timeout=timeout)
             if response.status_code != 200:
-                last_error = f"HTTP {response.status_code}"
+                # Include the server's message: it distinguishes an invalid
+                # key (401) from a model/permission/region denial (403).
+                last_error = f"HTTP {response.status_code}: {response.text[:200]}"
                 continue
             body = response.json()
             choices = body.get("choices") if isinstance(body, dict) else None
@@ -479,14 +481,15 @@ def call_qwen_image(prompt: str, cfg: Config, session: requests.Session) -> byte
             )
             if response.status_code == 400 and index < len(payloads) - 1:
                 print(
-                    f"weixin: image api rejected payload ({response.status_code}), "
-                    "retrying with smaller payload",
+                    f"weixin: image api rejected payload ({response.status_code}): "
+                    f"{response.text[:200]} — retrying with smaller payload",
                     file=sys.stderr,
                 )
                 continue
             if response.status_code != 200:
                 print(
-                    f"weixin: image api HTTP {response.status_code}", file=sys.stderr
+                    f"weixin: image api HTTP {response.status_code}: {response.text[:200]}",
+                    file=sys.stderr,
                 )
                 continue
             body = response.json()
