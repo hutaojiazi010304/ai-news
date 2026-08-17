@@ -1,4 +1,80 @@
 {
   "version": 2,
-  "entries": {}
+  "entries": {
+    "story_8b2229e8149b|f1d6d3ff": {
+      "reason": "这篇报道聚焦 AI 行业对公众抵制的争论：Anthropic CEO Dario Amodei 将 AI resistance 称为深层信任危机，并公开回应 Gavin Baker 对其表述过于悲观的质疑。文中提到，Baker 认为 Amodei 反复警告 AI 风险可能无意中助长反对，尤其波及美国数据中心建设，并认为他应更积极地对外沟通。这为理解 AI 风险叙事如何反过来影响基础设施落地和公众信任提供了一个具体切口。",
+      "title_hash": "f1d6d3ff",
+      "created_at": "2026-08-17T07:09:59.391081Z"
+    },
+    "story_2a73cff5b8fb|455d963c": {
+      "reason": "这篇约三分钟读完的报道，聚焦 SpaceX 以 600 亿美元完成年度最大并购，将 AI 编程助手 Cursor 正式收入麾下。文章称这起交易是 AI 编程领域的重大里程碑，双方从今年 4 月启动合作与收购流程，后续将进入算力与模型开发深度整合的新阶段。值得关注的是，Cursor 已从最初的基础代码补全工具，演进为能够交付实际生产力的 AI 智能团队成员。",
+      "title_hash": "455d963c",
+      "created_at": "2026-08-17T07:13:09.640544Z"
+    },
+    "story_d5502002c943|ba6f3d37": {
+      "reason": "据报道，支付巨头 Stripe 拟以超 70 亿美元收购 AI 独角兽 OpenRouter，后者作为 AI 聚合网关公司为企业和开发者提供模型路由服务，可按任务需求和预算匹配模型。OpenRouter 今年 5 月刚完成 1.13 亿美元 B 轮融资，当时估值为 13 亿美元，投资方包括 Sequoia Capital。若这笔传闻中的交易最终落地，将进一步凸显模型路由作为 AI 基础设施入口的战略价值，也说明支付巨头正加快进入 AI 生态关键节点。",
+      "title_hash": "ba6f3d37",
+      "created_at": "2026-08-17T07:14:43.002986Z"
+    },
+    "story_16fc69470215|ce0dbbad": {
+      "reason": "OpenAI CEO Sam Altman 在近期公开访谈中回顾自己的教育选择，称在 Stanford 读满两年后辍学是刚刚好的安排，并认为四年大学对当下快速变化的科技环境来说有点久。他表示，两年已让他获得后续创业所需的核心知识，若再花两年留在校园，额外实践收获有限，时间投入的性价比不高。这番表态为年轻人是否应缩短学制、更早进入创业与实践提供了现实讨论点。",
+      "title_hash": "ce0dbbad",
+      "created_at": "2026-08-17T07:15:30.315227Z"
+    },
+    "story_6cfaa7bb350f|0f06b91b": {
+      "reason": "这篇报道关注垂直大模型如何进入大豆育种：在广西南宁举行的第32届全国大豆科研生产研讨会上，Wang Xiaobo 代表团队发布 Fengshu 2.0。模型整合种质资源、基因组、蛋白组、转录组、病害样本、育种试验记录和国内外文献，用多模型协同降低单一模型偏差。它展示了农业科研数据如何被接入智能育种，值得农业 AI 与育种从业者关注其数据整合路径。",
+      "title_hash": "0f06b91b",
+      "created_at": "2026-08-17T07:16:39.460229Z"
+    },
+    "story_f1ac0a167ce6|620894b7": {
+      "reason": "Bloomberg 报道，Stripe 已完成对 AI 基础设施初创公司 OpenRouter 的收购，交易金额超过 70 亿美元，约合 473 亿元人民币。OpenRouter 的核心能力是帮助用户根据具体任务、需求和预算，在不同 AI 模型之间匹配出最合适选项，并提供统一接入点。CEO Alex Atallah 曾把它称为 AI world 的 Stripe，如今这家公司被真正的 Stripe 收入麾下，后续如何影响 AI 模型分发、接入方式与支付生态，值得持续观察。",
+      "title_hash": "620894b7",
+      "created_at": "2026-08-17T07:20:18.432049Z"
+    },
+    "story_5014b5e051ff|9f90324d": {
+      "reason": "OpenAI 旗下 Codex 迎来关键更新：工程师 Tibo 宣布，GPT-5.6Sol 的百万 Token 上下文窗口已向所有 ChatGPT 账户开放。此前该能力仅限 API key 调用，现在 ChatGPT Plus 和 Pro 用户可在 Codex 中手动配置约 105 万 Tokens 的完整上下文。值得开发者关注的是，Codex 因此能容纳和处理更多代码，也让长上下文能力从接口调用走向订阅用户的日常编程场景。",
+      "title_hash": "9f90324d",
+      "created_at": "2026-08-17T07:23:51.874027Z"
+    },
+    "story_5df010d9d793|3c7c35b5": {
+      "reason": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 视觉大模型 Qwen 3.8 27B，官方基准称其超过 Qwen 3.6 27B 与闭源 Qwen 3.7-Plus。文章也指出它默认推理强度过高、容易过度思考，提醒开发者关注默认配置对实际使用的影响。这为评估开源视觉模型能否直接落地提供了具体观察点。",
+      "title_hash": "3c7c35b5",
+      "created_at": "2026-08-17T07:29:53.945884Z"
+    },
+    "story_8758de6d3ed7|1e988a23": {
+      "reason": "这篇内容把视角从单个模型转向多智能体系统，指出当 AI 智能体进入共享代码库、市场等社会系统后，智能体间真实交互可能超过人机交互。文中引用 Anthropic 实验：协调式智能体群在 2700 万 token 运行中发现 266 个漏洞，远超独立并行方法的 21 个，但两者互补明显。它也提醒，智能体虽擅长工具使用，长期协作与协调仍是需要解决的现实挑战。",
+      "title_hash": "1e988a23",
+      "created_at": "2026-08-17T07:30:32.465035Z"
+    },
+    "story_6ea5c9d0c11e|e6e98591": {
+      "reason": "Anthropic 为符合 EU 规定，将在 Claude 中为所有生成文本加入 Watermark。其支持文档曾称水印不可感知，不改变意义、质量或可读性；但后续说明显示，它会在推理时用词或输出选择留下可概率检测的隐写指纹。作者认为这背离了对写作工具的基本要求，并借 James Padolsey 的互动长文解释 AI 文本水印如何运作，以及合规如何影响用户对输出的信任。",
+      "title_hash": "e6e98591",
+      "created_at": "2026-08-17T07:33:52.716504Z"
+    },
+    "story_02084b7684a5|05f6a4b5": {
+      "reason": "这篇 Matt Lenhard 的调查讲的是一个正在商业化的 AI credits 转售市场：token brokers 低价收购初创公司未用完的额度，再转卖 Anthropic 等模型推理，甚至有卖家声称每天可提供 10 万美元消费。作者不仅联系了直接卖家，还看到 AI Credits 挂出 30%—80% 折扣、CheapCredits 宣称每个模型 40% off，并通过 proxy 从 key pool 转发请求。这些细节说明 API 额度正在形成灰色二级市场，也带来 GDPR 合规和密钥管理风险。",
+      "title_hash": "05f6a4b5",
+      "created_at": "2026-08-17T07:37:05.040061Z"
+    },
+    "story_49a27a8cb3e7|56b18e36": {
+      "reason": "OpenAI 工程师 Tibo 宣布 Codex 中 GPT-5.6 Sol 模型的百万 Token 上下文窗口已向 ChatGPT 订阅用户开放，打破了此前仅限 API key 使用的限制。这意味着用户在处理大型项目时不再受历史记录截断困扰，可手动启用该功能以支持超长代码库分析。此次更新显著降低了长上下文编程辅助的使用门槛，让普通订阅者也能获得原本仅面向开发者的完整工程能力。",
+      "title_hash": "56b18e36",
+      "created_at": "2026-08-17T07:49:13.819585Z"
+    },
+    "story_24a06eb07327|b04c52cc": {
+      "reason": "Faraday Future 创始人 Jia Youting 宣布 FF 机器人业务拟独立融资上市，以摆脱历史债务负担并设定年底出货 2000 台的目标。该计划依托下半年“Four Cores Full Intelligence”实战化战役，重点加速 EAI body 销售及加州市场拓展。这一将机器人业务与汽车债务剥离的资本运作尝试，为观察 FFAI 能否在具身智能赛道实现商业化闭环提供了关键样本。",
+      "title_hash": "b04c52cc",
+      "created_at": "2026-08-17T07:49:16.360358Z"
+    },
+    "story_cbb4336f669a|797bb72e": {
+      "reason": "CNBC Generation Labs 对千余名18至34岁美国青年的调查显示，AI CEO 的信任度已跌至冰点，Palantir CEO Alex Karp 不信任率高达81%，表现最好的 Microsoft CEO Satya Nadella 也仅获35%信任。相比数据中心，年轻人对科技领袖的厌恶更甚，70%以上受访者不信任 Mark Zuckerberg、Elon Musk 和 Sam Altman，反映出数据隐私与平台衰退等问题正深刻重塑年轻一代对 AI 行业的认知。",
+      "title_hash": "797bb72e",
+      "created_at": "2026-08-17T07:51:19.068312Z"
+    },
+    "story_7a8d440461c0|c9bbbc77": {
+      "reason": "MPI for Intelligent Systems 等机构基于仅含美国 K-5 课程内容的 88B token 语料库 LittleCurriculum，从零训练了 LittleLearner 系列模型。研究发现即便将模型扩展至 5B 参数或进行 GRPO 后训练，其能力仍被严格限制在五年级知识范围内，无法突破预训练数据的边界。这一实证结果揭示了当前 LLM 的能力上限主要由预训练语料决定，为理解模型知识获取机制提供了关键参照。",
+      "title_hash": "c9bbbc77",
+      "created_at": "2026-08-17T07:52:01.939719Z"
+    }
+  }
 }
