@@ -293,7 +293,7 @@ python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml fee
 
 线上页面右上角显示的"更新时间"来自 `data/latest-24h.json` 的 `generated_at`。如果页面长时间停在旧时间，优先检查 GitHub Actions 最近一次 `Update AI News Snapshot` 是否运行、是否有抓取错误、以及仓库 Pages 是否部署到包含最新 `data/` 提交的分支。
 
-此外，`.github/workflows/weixin-daily.yml` 每天北京时间约 08:00 把伯乐精选整理成一篇公众号推文预览页（`weixin/`），复制粘贴即可发公众号；配置与取稿流程见 [docs/WEIXIN_DAILY.md](docs/WEIXIN_DAILY.md)。该工作流只消费现有管线产物，不改动抓取流程；不配置千问 key 也能降级运行。
+此外，伯乐精选每天会被整理成一篇公众号推文预览页（`weixin/`），复制粘贴即可发公众号。千问 API key 有 IP 白名单限制、只能在本地网络调用，因此推文改为每天本地手动运行 `scripts/generate_weixin_article.py` 生成并提交（原 `weixin-daily.yml` 工作流已移除）；配置与取稿流程见 [docs/WEIXIN_DAILY.md](docs/WEIXIN_DAILY.md)。该步骤只消费现有管线产物，不改动抓取流程；不配置千问 key 也能降级运行。
 
 高级源配置模板见 `examples/advanced-sources.env.example`，
 
