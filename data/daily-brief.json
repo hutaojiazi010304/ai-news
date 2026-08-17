@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T10:48:41.319696Z",
+  "generated_at": "2026-08-17T11:41:12.456151Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8448,
-      "importance": 0.8448,
-      "importance_score": 0.8448,
+      "score": 0.8427,
+      "importance": 0.8427,
+      "importance_score": 0.8427,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9602,
+        "recency": 0.9482,
         "story_heat": 0.0
       },
       "category": "official",
@@ -83,7 +83,90 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
+      }
+    },
+    {
+      "story_id": "story_f74afed454d1",
+      "title": "情报时代的新政策理念 / New policy ideas for the Intelligence Age",
+      "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+      "primary_url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "98012ec2d34b31c122d53ffafb6e0cbb292bd317",
+          "title": "情报时代的新政策理念 / New policy ideas for the Intelligence Age",
+          "title_zh": "情报时代的新政策理念",
+          "title_en": "New policy ideas for the Intelligence Age",
+          "title_original": "New policy ideas for the Intelligence Age",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-17T03:15:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "98012ec2d34b31c122d53ffafb6e0cbb292bd317",
+          "title": "情报时代的新政策理念 / New policy ideas for the Intelligence Age",
+          "title_zh": "情报时代的新政策理念",
+          "title_en": "New policy ideas for the Intelligence Age",
+          "title_original": "New policy ideas for the Intelligence Age",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-17T03:15:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8314,
+      "importance": 0.8314,
+      "importance_score": 0.8314,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.8853,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-17T03:15:00Z",
+      "latest_at": "2026-08-17T03:15:00Z",
+      "primary_item": {
+        "id": "98012ec2d34b31c122d53ffafb6e0cbb292bd317",
+        "title": "情报时代的新政策理念 / New policy ideas for the Intelligence Age",
+        "title_zh": "情报时代的新政策理念",
+        "title_en": "New policy ideas for the Intelligence Age",
+        "title_original": "New policy ideas for the Intelligence Age",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -131,15 +214,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7653,
+      "importance": 0.7653,
+      "importance_score": 0.7653,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9874,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -165,7 +248,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -213,15 +296,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7402,
-      "importance": 0.7402,
-      "importance_score": 0.7402,
+      "score": 0.7383,
+      "importance": 0.7383,
+      "importance_score": 0.7383,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8312,
+        "recency": 0.8208,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -246,7 +329,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -294,15 +377,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7654,
-      "importance": 0.7654,
-      "importance_score": 0.7654,
+      "score": 0.7632,
+      "importance": 0.7632,
+      "importance_score": 0.7632,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9879,
+        "recency": 0.9755,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -328,7 +411,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -376,15 +459,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7654,
-      "importance": 0.7654,
-      "importance_score": 0.7654,
+      "score": 0.7632,
+      "importance": 0.7632,
+      "importance_score": 0.7632,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9879,
+        "recency": 0.9755,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -410,7 +493,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -458,15 +541,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.763,
-      "importance": 0.763,
-      "importance_score": 0.763,
+      "score": 0.7608,
+      "importance": 0.7608,
+      "importance_score": 0.7608,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9746,
+        "recency": 0.9623,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -492,7 +575,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -540,15 +623,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.763,
-      "importance": 0.763,
-      "importance_score": 0.763,
+      "score": 0.7608,
+      "importance": 0.7608,
+      "importance_score": 0.7608,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9746,
+        "recency": 0.9623,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -574,7 +657,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -622,15 +705,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.763,
-      "importance": 0.763,
-      "importance_score": 0.763,
+      "score": 0.7608,
+      "importance": 0.7608,
+      "importance_score": 0.7608,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9746,
+        "recency": 0.9623,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -656,7 +739,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -704,15 +787,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.763,
-      "importance": 0.763,
-      "importance_score": 0.763,
+      "score": 0.7608,
+      "importance": 0.7608,
+      "importance_score": 0.7608,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9746,
+        "recency": 0.9623,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -738,7 +821,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -786,15 +869,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.763,
-      "importance": 0.763,
-      "importance_score": 0.763,
+      "score": 0.7608,
+      "importance": 0.7608,
+      "importance_score": 0.7608,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9746,
+        "recency": 0.9623,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -820,7 +903,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -926,15 +1009,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5492,
-      "importance": 0.5492,
-      "importance_score": 0.5492,
+      "score": 0.5472,
+      "importance": 0.5472,
+      "importance_score": 0.5472,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8801,
+        "recency": 0.869,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -959,7 +1042,117 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
+      }
+    },
+    {
+      "story_id": "story_40f3e2e4a0ac",
+      "title": "MathCode，数学编码代理",
+      "url": "https://math-ai-org.github.io/mathcode",
+      "primary_url": "https://math-ai-org.github.io/mathcode",
+      "source": "math-ai-org.github.io",
+      "source_name": "Buzzing",
+      "sources": [
+        {
+          "id": "07f75fa673c4968c9d2b523fb141e4a52f712710",
+          "title": "MathCode，数学编码代理",
+          "title_zh": "MathCode，数学编码代理",
+          "title_en": null,
+          "title_original": "MathCode，数学编码代理",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://math-ai-org.github.io/mathcode",
+          "source": "math-ai-org.github.io",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-17T11:33:59.048000Z"
+        },
+        {
+          "id": "94ba1d06854a30f0b2933918dd421418881390cc",
+          "title": "MathCode，数学编码代理 / MathCode, Mathematical Coding Agent",
+          "title_zh": "MathCode，数学编码代理",
+          "title_en": "MathCode, Mathematical Coding Agent",
+          "title_original": "MathCode, Mathematical Coding Agent",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://math-ai-org.github.io/mathcode",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-16T18:17:10Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News (黑客新闻)",
+        "math-ai-org.github.io"
+      ],
+      "items": [
+        {
+          "id": "07f75fa673c4968c9d2b523fb141e4a52f712710",
+          "title": "MathCode，数学编码代理",
+          "title_zh": "MathCode，数学编码代理",
+          "title_en": null,
+          "title_original": "MathCode，数学编码代理",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://math-ai-org.github.io/mathcode",
+          "source": "math-ai-org.github.io",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-17T11:33:59.048000Z"
+        },
+        {
+          "id": "94ba1d06854a30f0b2933918dd421418881390cc",
+          "title": "MathCode，数学编码代理 / MathCode, Mathematical Coding Agent",
+          "title_zh": "MathCode，数学编码代理",
+          "title_en": "MathCode, Mathematical Coding Agent",
+          "title_original": "MathCode, Mathematical Coding Agent",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://math-ai-org.github.io/mathcode",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-16T18:17:10Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.5455,
+      "importance": 0.5455,
+      "importance_score": 0.5455,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9983,
+        "story_heat": 0.25
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-08-16T18:17:10Z",
+      "latest_at": "2026-08-17T11:33:59.048000Z",
+      "primary_item": {
+        "id": "07f75fa673c4968c9d2b523fb141e4a52f712710",
+        "title": "MathCode，数学编码代理",
+        "title_zh": "MathCode，数学编码代理",
+        "title_en": null,
+        "title_original": "MathCode，数学编码代理",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://math-ai-org.github.io/mathcode",
+        "source": "math-ai-org.github.io",
+        "source_name": "Buzzing"
+      },
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -1065,15 +1258,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.545,
-      "importance": 0.545,
-      "importance_score": 0.545,
+      "score": 0.5431,
+      "importance": 0.5431,
+      "importance_score": 0.5431,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8567,
+        "recency": 0.8459,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1098,7 +1291,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -1204,15 +1397,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5432,
-      "importance": 0.5432,
-      "importance_score": 0.5432,
+      "score": 0.5413,
+      "importance": 0.5413,
+      "importance_score": 0.5413,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8468,
+        "recency": 0.8362,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1237,7 +1430,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -1343,15 +1536,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5422,
-      "importance": 0.5422,
-      "importance_score": 0.5422,
+      "score": 0.5403,
+      "importance": 0.5403,
+      "importance_score": 0.5403,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8413,
+        "recency": 0.8307,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1376,7 +1569,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -1453,15 +1646,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5403,
-      "importance": 0.5403,
-      "importance_score": 0.5403,
+      "score": 0.5381,
+      "importance": 0.5381,
+      "importance_score": 0.5381,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9695,
+        "recency": 0.9573,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1486,7 +1679,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -1592,15 +1785,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5309,
-      "importance": 0.5309,
-      "importance_score": 0.5309,
+      "score": 0.5291,
+      "importance": 0.5291,
+      "importance_score": 0.5291,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.7782,
+        "recency": 0.7684,
         "story_heat": 0.5
       },
       "category": "multi_source",
@@ -1625,7 +1818,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -1702,15 +1895,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5279,
-      "importance": 0.5279,
-      "importance_score": 0.5279,
+      "score": 0.5259,
+      "importance": 0.5259,
+      "importance_score": 0.5259,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9007,
+        "recency": 0.8894,
         "story_heat": 0.25
       },
       "category": "watch",
@@ -1735,7 +1928,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     },
     {
@@ -1783,15 +1976,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7606,
-      "importance": 0.7606,
-      "importance_score": 0.7606,
+      "score": 0.7584,
+      "importance": 0.7584,
+      "importance_score": 0.7584,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.961,
+        "recency": 0.949,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1817,227 +2010,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
-      }
-    },
-    {
-      "story_id": "story_ad56c119c312",
-      "title": "克劳德：系统提示",
-      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-      "primary_url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-      "source": "platform.claude.com",
-      "source_name": "Buzzing",
-      "sources": [
-        {
-          "id": "f652679f24bb81d021d5b62102e00cba581f8d6c",
-          "title": "克劳德：系统提示",
-          "title_zh": "克劳德：系统提示",
-          "title_en": null,
-          "title_original": "克劳德：系统提示",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-          "source": "platform.claude.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-08-16T14:30:18.432000Z"
-        },
-        {
-          "id": "cea8f9e643bc8d866babefa81ba8586221c8913e",
-          "title": "Claude：系统提示 / Claude: System Prompts",
-          "title_zh": "Claude：系统提示",
-          "title_en": "Claude: System Prompts",
-          "title_original": "Claude: System Prompts",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-16T12:48:21Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News (黑客新闻)",
-        "platform.claude.com"
-      ],
-      "items": [
-        {
-          "id": "f652679f24bb81d021d5b62102e00cba581f8d6c",
-          "title": "克劳德：系统提示",
-          "title_zh": "克劳德：系统提示",
-          "title_en": null,
-          "title_original": "克劳德：系统提示",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-          "source": "platform.claude.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-08-16T14:30:18.432000Z"
-        },
-        {
-          "id": "cea8f9e643bc8d866babefa81ba8586221c8913e",
-          "title": "Claude：系统提示 / Claude: System Prompts",
-          "title_zh": "Claude：系统提示",
-          "title_en": "Claude: System Prompts",
-          "title_original": "Claude: System Prompts",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-16T12:48:21Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5001,
-      "importance": 0.5001,
-      "importance_score": 0.5001,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.7458,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-16T12:48:21Z",
-      "latest_at": "2026-08-16T14:30:18.432000Z",
-      "primary_item": {
-        "id": "f652679f24bb81d021d5b62102e00cba581f8d6c",
-        "title": "克劳德：系统提示",
-        "title_zh": "克劳德：系统提示",
-        "title_en": null,
-        "title_original": "克劳德：系统提示",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-        "source": "platform.claude.com",
-        "source_name": "Buzzing"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
-      }
-    },
-    {
-      "story_id": "story_a1caa46a80fe",
-      "title": "红皇后假说——自我完善人工智能的新途径 / Red queen hypothesis – A new way forward for self-improving AI",
-      "url": "https://news.ycombinator.com/item?id=49323136",
-      "primary_url": "https://news.ycombinator.com/item?id=49323136",
-      "source": "hackernews",
-      "source_name": "NewsNow",
-      "sources": [
-        {
-          "id": "5185cec364d42b8d8fdb81877d2d7a9f09ff9571",
-          "title": "红皇后假说——自我完善人工智能的新途径 / Red queen hypothesis – A new way forward for self-improving AI",
-          "title_zh": "红皇后假说——自我完善人工智能的新途径",
-          "title_en": "Red queen hypothesis – A new way forward for self-improving AI",
-          "title_original": "Red queen hypothesis – A new way forward for self-improving AI",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49323136",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-17T01:55:58.555000Z"
-        },
-        {
-          "id": "e65ff95c4c70f4ac352d14e5cb1db191859800fd",
-          "title": "红皇后假说——自我完善人工智能的新途径 / Red queen hypothesis – A new way forward for self-improving AI",
-          "title_zh": "红皇后假说——自我完善人工智能的新途径",
-          "title_en": "Red queen hypothesis – A new way forward for self-improving AI",
-          "title_original": "Red queen hypothesis – A new way forward for self-improving AI",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-16T20:01:13Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News (黑客新闻)",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "5185cec364d42b8d8fdb81877d2d7a9f09ff9571",
-          "title": "红皇后假说——自我完善人工智能的新途径 / Red queen hypothesis – A new way forward for self-improving AI",
-          "title_zh": "红皇后假说——自我完善人工智能的新途径",
-          "title_en": "Red queen hypothesis – A new way forward for self-improving AI",
-          "title_original": "Red queen hypothesis – A new way forward for self-improving AI",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49323136",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-17T01:55:58.555000Z"
-        },
-        {
-          "id": "e65ff95c4c70f4ac352d14e5cb1db191859800fd",
-          "title": "红皇后假说——自我完善人工智能的新途径 / Red queen hypothesis – A new way forward for self-improving AI",
-          "title_zh": "红皇后假说——自我完善人工智能的新途径",
-          "title_en": "Red queen hypothesis – A new way forward for self-improving AI",
-          "title_original": "Red queen hypothesis – A new way forward for self-improving AI",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-16T20:01:13Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.5241,
-      "importance": 0.5241,
-      "importance_score": 0.5241,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.8797,
-        "story_heat": 0.25
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-08-16T20:01:13Z",
-      "latest_at": "2026-08-17T01:55:58.555000Z",
-      "primary_item": {
-        "id": "5185cec364d42b8d8fdb81877d2d7a9f09ff9571",
-        "title": "红皇后假说——自我完善人工智能的新途径 / Red queen hypothesis – A new way forward for self-improving AI",
-        "title_zh": "红皇后假说——自我完善人工智能的新途径",
-        "title_en": "Red queen hypothesis – A new way forward for self-improving AI",
-        "title_original": "Red queen hypothesis – A new way forward for self-improving AI",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://news.ycombinator.com/item?id=49323136",
-        "source": "hackernews",
-        "source_name": "NewsNow"
-      },
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-17T10:49:16.293314Z"
+        "scored_at": "2026-08-17T11:41:50.551346Z"
       }
     }
   ]
