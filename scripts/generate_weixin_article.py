@@ -32,7 +32,6 @@ Outputs (under ``--output-dir``, default ``weixin/``):
 from __future__ import annotations
 
 import argparse
-import base64
 import hashlib
 import html as html_mod
 import io
@@ -48,7 +47,9 @@ import requests
 
 DEFAULT_API_BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 DEFAULT_TEXT_MODEL = "qwen3.8-max"
-DEFAULT_IMAGE_MODEL = "qwen-image-3.0-pro"
+# Sync-capable Qwen-Image model; qwen-image-max / qwen-image-plus also work
+# (override via WEIXIN_IMAGE_MODEL).
+DEFAULT_IMAGE_MODEL = "qwen-image-2.0-pro"
 DEFAULT_BRAND_NAME = "AI 雷达"
 DEFAULT_RADAR_URL = "https://hutaojiazi010304.github.io/ai-news-radar/"
 DEFAULT_MAX_ITEMS = 20
@@ -71,7 +72,13 @@ REASON_MIN_REUSE_CHARS = 120
 FULL_TEXT_MAX_CHARS = 3500
 FULL_TEXT_MIN_CHARS = 120
 COVER_W, COVER_H = 1664, 708  # 2.35:1
-IMAGE_REQUEST_SIZE = "1664*928"
+# qwen-image-2.0 series recommended 16:9 size (total pixels must stay within
+# the 512*512..2048*2048 range); crop_cover then trims it to the 2.35:1 banner.
+IMAGE_REQUEST_SIZE = "2688*1536"
+# Qwen-Image models are not served under the OpenAI-compatible routes
+# (POST .../compatible-mode/v1/images/generations 404s); the native sync
+# multimodal-generation API is required instead.
+IMAGE_API_PATH = "/api/v1/services/aigc/multimodal-generation/generation"
 TITLE_MAX_CHARS = 30
 DIGEST_MAX_CHARS = 120
 MAX_SOURCE_LINES = 5
@@ -463,21 +470,70 @@ def build_cover_prompt(headline: str) -> tuple[str, str]:
     return prompt, "headline"
 
 
+def image_api_url(base_url: str) -> str:
+    """Native DashScope sync image endpoint derived from the text base URL.
+
+    Strips a trailing ``/compatible-mode/v1`` so custom workspace domains
+    (``{WorkspaceId}.cn-beijing.maas.aliyuncs.com``) keep working.
+    """
+    root = base_url.strip().rstrip("/")
+    for suffix in ("/compatible-mode/v1", "/compatible-mode"):
+        if root.endswith(suffix):
+            root = root[: -len(suffix)]
+            break
+    return root.rstrip("/") + IMAGE_API_PATH
+
+
+def extract_image_url(body) -> str | None:
+    """Generated image URL from a native multimodal-generation response:
+    ``output.choices[0].message.content[].image`` (valid for 24h)."""
+    if not isinstance(body, dict):
+        return None
+    output = body.get("output")
+    if not isinstance(output, dict):
+        return None
+    choices = output.get("choices")
+    if not isinstance(choices, list) or not choices or not isinstance(choices[0], dict):
+        return None
+    message = choices[0].get("message")
+    content = message.get("content") if isinstance(message, dict) else None
+    if isinstance(content, list):
+        for part in content:
+            if isinstance(part, dict):
+                image = str(part.get("image") or "")
+                if image.startswith("http"):
+                    return image
+    return None
+
+
 def call_qwen_image(prompt: str, cfg: Config, session: requests.Session) -> bytes | None:
-    """POST images/generations; defensive payload shrink on 400; downloads the
-    result bytes immediately (OSS URLs expire)."""
-    url = f"{cfg['base_url'].rstrip('/')}/images/generations"
+    """POST the native sync image API; defensive payload shrink on 400;
+    downloads the result bytes immediately (result URLs expire in 24h)."""
+    url = image_api_url(cfg["base_url"])
     headers = {
         "Authorization": f"Bearer {cfg['api_key']}",
         "Content-Type": "application/json",
     }
-    base_payload = {"model": cfg["image_model"], "prompt": prompt, "n": 1}
-    full = dict(base_payload)
-    full["negative_prompt"] = IMAGE_NEGATIVE_PROMPT
-    full["size"] = IMAGE_REQUEST_SIZE
+    base_payload = {
+        "model": cfg["image_model"],
+        "input": {
+            "messages": [{"role": "user", "content": [{"text": prompt}]}],
+        },
+    }
+    full_params = {
+        "negative_prompt": IMAGE_NEGATIVE_PROMPT,
+        # Keep prompt rewriting off: cover prompts carry a hard "no text"
+        # constraint we don't want the model to rephrase away.
+        "prompt_extend": False,
+        "watermark": False,
+        "size": IMAGE_REQUEST_SIZE,
+    }
     payloads = [
-        full,
-        {k: v for k, v in full.items() if k != "size"},
+        {**base_payload, "parameters": dict(full_params)},
+        {
+            **base_payload,
+            "parameters": {k: v for k, v in full_params.items() if k != "size"},
+        },
         dict(base_payload),
     ]
     for index, payload in enumerate(payloads):
@@ -498,19 +554,12 @@ def call_qwen_image(prompt: str, cfg: Config, session: requests.Session) -> byte
                     file=sys.stderr,
                 )
                 continue
-            body = response.json()
-            data = body.get("data") if isinstance(body, dict) else None
-            if not isinstance(data, list) or not data:
+            image_url = extract_image_url(response.json())
+            if not image_url:
                 continue
-            first = data[0] or {}
-            b64 = first.get("b64_json")
-            if b64:
-                return base64.b64decode(b64)
-            image_url = first.get("url")
-            if image_url:
-                download = session.get(image_url, timeout=cfg["download_timeout"])
-                if download.status_code == 200 and download.content:
-                    return download.content
+            download = session.get(image_url, timeout=cfg["download_timeout"])
+            if download.status_code == 200 and download.content:
+                return download.content
         except (requests.RequestException, ValueError, TypeError, KeyError) as exc:
             print(f"weixin: image api error: {exc}", file=sys.stderr)
             continue

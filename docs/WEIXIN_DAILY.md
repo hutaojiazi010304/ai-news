@@ -64,7 +64,7 @@ Settings → Secrets and variables → Actions → **Variables** 页签，按需
 | `WEIXIN_RADAR_URL` | `https://hutaojiazi010304.github.io/ai-news-radar/` | 「阅读原文」链接 |
 | `WEIXIN_MAX_ITEMS` | `20` | 每期条数 |
 | `WEIXIN_TEXT_MODEL` | `qwen3.8-max` | 文本模型 |
-| `WEIXIN_IMAGE_MODEL` | `qwen-image-3.0-pro` | 生图模型 |
+| `WEIXIN_IMAGE_MODEL` | `qwen-image-2.0-pro` | 生图模型（Qwen-Image 同步接口系列，如 `qwen-image-max`） |
 | `DASHSCOPE_API_BASE_URL` | DashScope 兼容模式地址 | 一般不用改 |
 | `WEIXIN_ENABLED` | （开启） | 设为 `0` 临时停刊 |
 
@@ -116,7 +116,9 @@ python scripts/generate_weixin_article.py --data-dir data --output-dir weixin
 - **定时任务没跑？** fork 仓库的 schedule 不会自动触发；必须是自己新建的仓库
   （本项目已按此方式迁移）。另外 GitHub cron 可能有几分钟到一小时的延迟。
 - **封面是静态图？** 说明生图失败（key 无效 / 模型名不可用 / 网络），脚本会
-  在 stderr 打印原因。可用 Variables 里的 `WEIXIN_IMAGE_MODEL` 换成可用模型。
+  在 stderr 打印原因。可用 Variables 里的 `WEIXIN_IMAGE_MODEL` 换成可用模型
+  （需支持同步 `multimodal-generation` 接口，如 `qwen-image-2.0-pro`、
+  `qwen-image-max`）。
 - **粘贴进编辑器样式丢了？** 正文只用安全内联样式（无 `<a>`/`<img>`/class）；
   如个别样式丢失，属编辑器行为，内容不受影响。
 - **原文链接为什么是纯文本、点不了？** 公众号正文不支持外链超链接，编辑器会

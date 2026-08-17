@@ -113,7 +113,20 @@ def text_response(content: str) -> MagicMock:
 def image_url_response(url: str = "https://img.example/cover.png") -> MagicMock:
     response = MagicMock()
     response.status_code = 200
-    response.json.return_value = {"data": [{"url": url}]}
+    response.json.return_value = {
+        "output": {
+            "choices": [
+                {
+                    "finish_reason": "stop",
+                    "message": {
+                        "role": "assistant",
+                        "content": [{"image": url}],
+                    },
+                }
+            ]
+        },
+        "usage": {"image_count": 1},
+    }
     return response
 
 
@@ -565,6 +578,41 @@ def test_negative_headline_switches_to_brand_prompt():
     assert "OpenAI" in prompt
 
 
+def test_image_api_url_derived_from_base_url():
+    default = gwa.image_api_url(gwa.DEFAULT_API_BASE_URL)
+    assert default == (
+        "https://dashscope.aliyuncs.com/api/v1/services/aigc/"
+        "multimodal-generation/generation"
+    )
+    # Custom workspace domains keep working.
+    ws = gwa.image_api_url(
+        "https://ws-123.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+    )
+    assert ws == (
+        "https://ws-123.cn-beijing.maas.aliyuncs.com/api/v1/services/aigc/"
+        "multimodal-generation/generation"
+    )
+
+
+def test_extract_image_url_native_shape():
+    body = {
+        "output": {
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": [{"text": "done"}, {"image": "https://oss/x.png"}],
+                    }
+                }
+            ]
+        }
+    }
+    assert gwa.extract_image_url(body) == "https://oss/x.png"
+    assert gwa.extract_image_url({"output": {"choices": []}}) is None
+    assert gwa.extract_image_url({"data": [{"url": "https://oss/x.png"}]}) is None
+    assert gwa.extract_image_url(None) is None
+
+
 def test_image_success_and_crop():
     png_bytes = make_png_bytes(1000, 500)
     with tempfile.TemporaryDirectory() as tmp:
@@ -600,6 +648,12 @@ def test_image_success_and_crop():
         assert rc == 0
         assert calls["title"] == 1
         assert session.post.call_count == 1
+        # Native sync image endpoint, not the (404ing) OpenAI-compatible route.
+        post_call = session.post.call_args
+        assert post_call.args[0].endswith(gwa.IMAGE_API_PATH)
+        payload = post_call.kwargs["json"]
+        assert payload["model"] == gwa.DEFAULT_IMAGE_MODEL
+        assert payload["input"]["messages"][0]["content"][0]["text"]
         meta = read_json(output_dir / "meta.json")
         try:
             from PIL import Image
@@ -674,9 +728,11 @@ def test_image_size_400_retries_without_size():
 
         assert rc == 0
         assert session.post.call_count == 2
-        # Second payload must drop the size parameter.
+        # First payload carries size; the retry must drop it.
+        first_payload = session.post.call_args_list[0].kwargs["json"]
+        assert first_payload["parameters"]["size"] == gwa.IMAGE_REQUEST_SIZE
         second_payload = session.post.call_args_list[1].kwargs["json"]
-        assert "size" not in second_payload
+        assert "size" not in second_payload.get("parameters", {})
         meta = read_json(output_dir / "meta.json")
         try:
             from PIL import Image  # noqa: F401
