@@ -5433,7 +5433,8 @@ def add_title_enhancements(
 def generate_recommend_reason_deepseek(
     title: str, full_text: str, session: requests.Session | None = None, timeout: int = 45
 ) -> str | None:
-    """Given the real article title + full text, write one Chinese sentence
+    """Given the real article title + grounding text (the item's summary or
+    its fetched full text), write one Chinese sentence
     explaining concretely what this specific piece covers and why it's worth
     reading. Unlike `enhance_title_deepseek()` this is prose, not a structured
     title, so validation only does a basic sanity check (non-empty, has CJK,
@@ -5513,14 +5514,18 @@ def add_recommend_reasons(
     cache: dict[str, str],
     max_new_per_run: int | None = None,
 ) -> tuple[list[dict[str, Any]], dict[str, str]]:
-    """Full-text-fetch + DeepSeek-authored, per-item `recommend_reason_zh`
-    for the already AI-relevance-filtered `items_ai` set (same scope as
-    `add_title_enhancements()` — deliberately not expanded to the unfiltered
-    pool, to control fetch/LLM cost). No-ops entirely without a DeepSeek key.
-    Uses an independent per-run budget (`REASON_ENHANCE_MAX_PER_RUN`) from
-    title enhancement, since full-text fetch + reasoning is more expensive
-    per item; shares the same on-disk cache dict/file as title enhancement
-    (distinct `RECOMMEND_REASON_CACHE_PREFIX` key namespace) for consistency."""
+    """Summary-first grounding + DeepSeek-authored, per-item
+    `recommend_reason_zh` for the already AI-relevance-filtered `items_ai`
+    set (same scope as `add_title_enhancements()` — deliberately not
+    expanded to the unfiltered pool, to control fetch/LLM cost). Grounding
+    prefers the item's existing summary (already in the data, zero network
+    cost) and falls back to a full-text fetch only for items without a
+    usable summary; items with neither keep an empty reason. No-ops
+    entirely without a DeepSeek key. Uses an independent per-run budget
+    (`REASON_ENHANCE_MAX_PER_RUN`) from title enhancement, since reasoning
+    is expensive per item; shares the same on-disk cache dict/file as title
+    enhancement (distinct `RECOMMEND_REASON_CACHE_PREFIX` key namespace) for
+    consistency."""
     if not str(os.environ.get("DEEPSEEK_API_KEY") or "").strip():
         return items_ai, cache
 
@@ -5541,10 +5546,19 @@ def add_recommend_reasons(
         ).strip()
         cache_key = RECOMMEND_REASON_CACHE_PREFIX + hashlib.sha1(f"{url}|{title}".encode("utf-8")).hexdigest()
 
-        if cache_key in cache:
-            cached = cache.get(cache_key) or ""
-            if cached:
-                new_item["recommend_reason_zh"] = cached
+        cached = cache.get(cache_key) or ""
+        if cached:
+            new_item["recommend_reason_zh"] = cached
+            out.append(new_item)
+            continue
+
+        summary = str(new_item.get("summary") or "").strip()
+        have_summary = not _recommend_reason_summary_is_placeholder(summary, title)
+
+        # A negative cache entry ("") means an earlier run failed to fetch
+        # this URL. With a usable summary we can still proceed; without one
+        # there is nothing to ground a reason on, so the item stays empty.
+        if not have_summary and cache_key in cache:
             out.append(new_item)
             continue
 
@@ -5553,20 +5567,28 @@ def add_recommend_reasons(
             continue
 
         used += 1
-        full_text = fetch_full_text_context(session, str(new_item.get("url") or ""))
-        if not full_text:
-            cache[cache_key] = ""
-            out.append(new_item)
-            continue
+        full_text = ""
+        if have_summary:
+            # Summary-first grounding: cheaper and more reliable than live
+            # fetches — WeChat/paywalled/anti-bot pages routinely block the
+            # fetcher, while their feeds usually carry a decent summary.
+            grounding = summary[:FULL_TEXT_CONTEXT_CHAR_CAP]
+        else:
+            full_text = fetch_full_text_context(session, str(new_item.get("url") or ""))
+            if not full_text:
+                cache[cache_key] = ""
+                out.append(new_item)
+                continue
+            grounding = full_text
 
-        reason = generate_recommend_reason_deepseek(title, full_text)
+        reason = generate_recommend_reason_deepseek(title, grounding)
         if reason:
             cache[cache_key] = reason
             new_item["recommend_reason_zh"] = reason
-        else:
-            cache[cache_key] = ""
+        # Generation failures are deliberately not negatively cached: the
+        # grounding already exists, so retrying on the next run is cheap.
 
-        if _recommend_reason_summary_is_placeholder(str(new_item.get("summary") or ""), title):
+        if full_text and _recommend_reason_summary_is_placeholder(str(new_item.get("summary") or ""), title):
             new_item["summary"] = full_text[:500]
 
         out.append(new_item)

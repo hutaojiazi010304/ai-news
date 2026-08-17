@@ -267,6 +267,7 @@ def test_weixin_enabled_killswitch():
 # ---------------------------------------------------------------------------
 
 def test_existing_reason_reused_without_llm():
+    """Keyless runs reuse a long upstream reason as-is (no network calls)."""
     reason = LONG_EXISTING_REASON
     with tempfile.TemporaryDirectory() as tmp:
         data_dir, assets_dir = write_fixture(
@@ -274,8 +275,39 @@ def test_existing_reason_reused_without_llm():
         )
         make_static_asset(assets_dir)
         output_dir = Path(tmp) / "weixin"
+
+        with patch.dict("os.environ", {}, clear=True), patch(
+            "scripts.generate_weixin_article.requests.post"
+        ) as mock_post, patch(
+            "scripts.generate_weixin_article.create_session"
+        ) as mock_session_factory:
+            rc = run_main(data_dir, output_dir, assets_dir)
+
+        assert rc == 0
+        assert mock_post.call_count == 0
+        assert mock_session_factory.call_count == 0
+        html_text = (output_dir / "index.html").read_text(encoding="utf-8")
+        assert reason in html_text
+
+
+def test_keyed_run_prefers_qwen_over_upstream_reason():
+    """With a key, Qwen is the single guide author: even a long upstream
+    reason is replaced by a freshly generated one."""
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(
+            tmp,
+            [
+                make_item(
+                    1,
+                    reason=LONG_EXISTING_REASON,
+                    summary="这是一段足够长的摘要内容，用于生成推荐语。",
+                )
+            ],
+        )
+        make_static_asset(assets_dir)
+        output_dir = Path(tmp) / "weixin"
         side_effect, calls = make_text_router(
-            reason=AssertionError("reason must not be called"),
+            reason=text_response(LONG_GENERATED_REASON),
             title=text_response("今日AI头条标题"),
         )
 
@@ -291,10 +323,10 @@ def test_existing_reason_reused_without_llm():
         )
 
         assert rc == 0
-        assert calls["reason"] == 0
-        assert calls["title"] == 1
+        assert calls["reason"] == 1
         html_text = (output_dir / "index.html").read_text(encoding="utf-8")
-        assert reason in html_text
+        assert LONG_GENERATED_REASON in html_text
+        assert LONG_EXISTING_REASON not in html_text
 
 
 def test_reason_fill_success_writes_cache():

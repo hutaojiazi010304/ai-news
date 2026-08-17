@@ -64,8 +64,9 @@ REASON_RETRY_BACKOFF_SECONDS = 2.0
 # so slightly off-target output is still usable instead of discarded.
 REASON_MIN_CHARS = 60
 REASON_MAX_CHARS = 260
-# An existing (upstream/cached) reason must already be this long to be
-# reused as-is; shorter ones are rewritten by the LLM when a key exists.
+# Keyless degradation only: an upstream reason must be this long to be
+# preferred over a cached long-format reason; with an API key Qwen writes
+# every guide itself (see fill_reasons).
 REASON_MIN_REUSE_CHARS = 120
 FULL_TEXT_MAX_CHARS = 3500
 FULL_TEXT_MIN_CHARS = 120
@@ -358,49 +359,53 @@ def fill_reasons(
 ) -> None:
     """Attach ``weixin_reason`` to each item.
 
-    Priority: an existing reason that already meets the length bar
-    (``REASON_MIN_REUSE_CHARS``) > long-format cache entry > fresh LLM
-    generation. Shorter existing reasons are rewritten by the LLM when a
-    key is available, and kept as-is otherwise so key-free runs still
-    degrade gracefully.
+    With an API key, Qwen is the single source of guide text: cached
+    long-format reason > fresh Qwen generation > upstream reason as a
+    last-resort fallback (any length) when Qwen has no grounding or fails.
+    Keyless runs degrade gracefully: long upstream reason > cache > short
+    upstream reason > empty.
     """
     for item in items:
         title = str(item.get("title") or "")
         story_id = str(item.get("story_id") or "")
         existing = existing_reason(item)
 
+        key = cache_key(story_id, title)
+        entry = cache.get("entries", {}).get(key)
+        cached_reason = ""
+        if isinstance(entry, dict) and entry.get("title_hash") == title_hash(title):
+            cached_reason = str(entry.get("reason") or "").strip()
+
+        if cfg["api_key"]:
+            if cached_reason:
+                item["weixin_reason"] = cached_reason
+                stats["cached"] += 1
+                continue
+            context = reason_context(item, session)
+            reason = generate_reason(item, context, cfg) if context else None
+            if reason:
+                item["weixin_reason"] = reason
+                cache["entries"][key] = {
+                    "reason": reason,
+                    "title_hash": title_hash(title),
+                    "created_at": utcnow_iso(),
+                }
+                stats["generated"] += 1
+            else:
+                item["weixin_reason"] = existing or ""
+                stats["skipped"] += 1
+            continue
+
         if existing and len(existing) >= REASON_MIN_REUSE_CHARS:
             item["weixin_reason"] = existing
             stats["reused"] += 1
             continue
-
-        key = cache_key(story_id, title)
-        entry = cache.get("entries", {}).get(key)
-        if isinstance(entry, dict):
-            cached_reason = str(entry.get("reason") or "").strip()
-            if cached_reason and entry.get("title_hash") == title_hash(title):
-                item["weixin_reason"] = cached_reason
-                stats["cached"] += 1
-                continue
-
-        if not cfg["api_key"]:
-            item["weixin_reason"] = existing or ""
-            stats["skipped"] += 1
+        if cached_reason:
+            item["weixin_reason"] = cached_reason
+            stats["cached"] += 1
             continue
-
-        context = reason_context(item, session)
-        reason = generate_reason(item, context, cfg) if context else None
-        if reason:
-            item["weixin_reason"] = reason
-            cache["entries"][key] = {
-                "reason": reason,
-                "title_hash": title_hash(title),
-                "created_at": utcnow_iso(),
-            }
-            stats["generated"] += 1
-        else:
-            item["weixin_reason"] = existing or ""
-            stats["skipped"] += 1
+        item["weixin_reason"] = existing or ""
+        stats["skipped"] += 1
 
 
 # ---------------------------------------------------------------------------
