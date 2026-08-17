@@ -294,10 +294,11 @@ def call_text_api(
 ) -> str | None:
     """One Qwen chat completion with a single retry (2s backoff).
 
-    Generous timeout on purpose: reasoning models (qwen3.x-max) can spend
-    well over a minute thinking before answering a long-context guide
-    request, and a 45s cap made real workloads time out while trivial
-    prompts succeeded.
+    ``enable_thinking`` is switched off: Qwen3 thinking mode stalls
+    non-streaming requests on DashScope (read timeouts) and adds minutes
+    of latency even when it does answer — neither helps with writing
+    short guides. If an endpoint rejects the parameter (HTTP 400), the
+    retry drops it and tries again.
     """
     url = f"{cfg['base_url'].rstrip('/')}/chat/completions"
     headers = {
@@ -308,6 +309,7 @@ def call_text_api(
         "model": cfg["text_model"],
         "temperature": temperature,
         "messages": messages,
+        "enable_thinking": False,
     }
     last_error = None
     for attempt in range(2):
@@ -315,6 +317,11 @@ def call_text_api(
             time.sleep(REASON_RETRY_BACKOFF_SECONDS)
         try:
             response = requests.post(url, json=payload, headers=headers, timeout=timeout)
+            if response.status_code == 400 and "enable_thinking" in payload:
+                # Model/endpoint does not know the parameter: retry without it.
+                payload = {k: v for k, v in payload.items() if k != "enable_thinking"}
+                last_error = f"HTTP 400: {response.text[:200]}"
+                continue
             if response.status_code != 200:
                 # Include the server's message: it distinguishes an invalid
                 # key (401) from a model/permission/region denial (403).
