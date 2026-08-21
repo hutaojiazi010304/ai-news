@@ -1020,21 +1020,32 @@ function storyPrimaryEnText(story) {
 }
 
 function storySourceCount(story) {
-  const sources = Array.isArray(story && story.sources) ? story.sources : [];
-  const explicit = Number(story && story.duplicate_count);
+  // 以后端去重后的 source_count（独立出处数，按 canonical URL 去重）为准；
+  // duplicate_count/sources.length 含同一 URL 的镜像与重抓，不代表独立信源。
+  const explicit = Number(story && story.source_count);
   if (Number.isFinite(explicit) && explicit > 0) return explicit;
+  const sources = Array.isArray(story && story.sources) ? story.sources : [];
   return Math.max(1, sources.length);
 }
 
 // 同一事件展开：source_count>=2 的故事可以展开看每家独立报道（标题+来源+相对时间）。
-// 去重：跳过 url 与主条目重复的信源（已经在卡片主体展示过），除非去重后一条不剩——
+// 去重：跳过 url 与主条目重复的信源（已经在卡片主体展示过），也跳过与已保留条目
+// url 相同的镜像/重抓（同一 URL 不是独立信源）；除非去重后一条不剩——
 // 那种情况说明所有信源 url 都和主条目一致，只能保留原始 sources 列表兜底展示。
 function dedupedStorySources(row) {
   const story = row && row.story;
   if (!story) return [];
   const sources = Array.isArray(story.sources) ? story.sources : [];
   const primaryUrl = (row.item && row.item.url) || story.primary_url || story.url || "";
-  const filtered = primaryUrl ? sources.filter((src) => src && src.url !== primaryUrl) : sources;
+  const seen = new Set(primaryUrl ? [primaryUrl] : []);
+  const filtered = [];
+  for (const src of sources) {
+    if (!src) continue;
+    const url = src.url || "";
+    if (url && seen.has(url)) continue;
+    if (url) seen.add(url);
+    filtered.push(src);
+  }
   return filtered.length ? filtered : sources;
 }
 
@@ -1345,10 +1356,12 @@ function itemSourceRefs(item, row = null) {
 }
 
 function rowSourceCount(row) {
+  // 故事行以去重后的独立信源数为准；mergedCount/通道 refs 含同一 URL 的
+  // 镜像条目，不能把"5 条管道记录"当成"5 个信源"。
+  if (row.story) return Math.max(1, storySourceCount(row.story));
   const item = row.item || {};
   const refs = itemSourceRefs(item, row);
-  const storyCount = row.story ? storySourceCount(row.story) : 0;
-  return Math.max(1, refs.length, Number(row.sourceCount || 0), Number(row.mergedCount || 0), storyCount);
+  return Math.max(1, refs.length);
 }
 
 function signalSummaryText(row) {

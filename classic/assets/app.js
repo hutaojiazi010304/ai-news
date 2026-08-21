@@ -1258,9 +1258,11 @@ function storyPrimaryEnText(story) {
 }
 
 function storySourceCount(story) {
-  const sources = Array.isArray(story && story.sources) ? story.sources : [];
-  const explicit = Number(story && story.duplicate_count);
+  // 以后端去重后的 source_count（独立出处数，按 canonical URL 去重）为准；
+  // duplicate_count/sources.length 含同一 URL 的镜像与重抓，不代表独立信源。
+  const explicit = Number(story && story.source_count);
   if (Number.isFinite(explicit) && explicit > 0) return explicit;
+  const sources = Array.isArray(story && story.sources) ? story.sources : [];
   return Math.max(1, sources.length);
 }
 
@@ -1446,18 +1448,26 @@ function buildStoryCard(story, rank) {
 
   const sources = Array.isArray(story.sources) ? story.sources : [];
   if (sources.length) {
+    // 与"N 个来源"计数一致：同一 URL 的镜像/重抓只展示一次。
+    const seenUrls = new Set();
+    const distinctSources = sources.filter((src) => {
+      const url = src && src.url ? src.url : "";
+      if (url && seenUrls.has(url)) return false;
+      if (url) seenUrls.add(url);
+      return true;
+    });
     const sourcesEl = document.createElement("div");
     sourcesEl.className = "story-sources";
-    sources.slice(0, 6).forEach((src) => {
+    distinctSources.slice(0, 6).forEach((src) => {
       const kind = sourceKind(src.site_id);
       const label = src.source || src.source_name || "来源";
       const tag = sourceChip(label, kind.tone, "story-source-chip source-chip");
       sourcesEl.appendChild(tag);
     });
-    if (sources.length > 6) {
+    if (distinctSources.length > 6) {
       const more = document.createElement("span");
       more.className = "story-source-more";
-      more.textContent = `+${sources.length - 6}`;
+      more.textContent = `+${distinctSources.length - 6}`;
       sourcesEl.appendChild(more);
     }
     body.appendChild(sourcesEl);
@@ -1972,7 +1982,7 @@ function itemTagLabels(item, row = null) {
   const tags = [];
   const sections = itemSections(item);
   if (state.activeSection !== "hot") tags.push(sectionBadgeLabel(state.activeSection));
-  if (row && (row.sourceCount > 1 || row.mergedCount > 1)) tags.push("多源验证");
+  if (row && row.sourceCount > 1) tags.push("多源验证");
   if (item.site_id === "official_ai") tags.push("官方");
   if (item.site_id === "aihot") tags.push("AI HOT");
   if (sections.has("models")) tags.push("模型发布");
@@ -2020,10 +2030,12 @@ function priorityGrade(score) {
 }
 
 function rowSourceCount(row) {
+  // 故事行以去重后的独立信源数为准；mergedCount/通道 refs 含同一 URL 的
+  // 镜像条目，不能把"5 条管道记录"当成"5 个信源"。
+  if (row.story) return Math.max(1, storySourceCount(row.story));
   const item = row.item || {};
   const refs = itemSourceRefs(item, row);
-  const storyCount = row.story ? storySourceCount(row.story) : 0;
-  return Math.max(1, refs.length, Number(row.sourceCount || 0), Number(row.mergedCount || 0), storyCount);
+  return Math.max(1, refs.length);
 }
 
 function signalSummaryText(row) {
@@ -2031,7 +2043,8 @@ function signalSummaryText(row) {
   const story = row.story || {};
   const label = story.importance_label || labelText(item);
   const sourceCount = rowSourceCount(row);
-  const multi = row.sourceCount > 1 || row.mergedCount > 1;
+  // 仅独立信源数 >= 2 才算"多来源验证"；mergedCount 含同一 URL 的镜像条目。
+  const multi = sourceCount > 1;
   if (multi && label) return `${label}信号，已被 ${fmtNumber(sourceCount)} 个来源验证，适合优先判断是否继续深挖。`;
   const reason = reasonText(item);
   if (reason && !reason.startsWith("来源与标题")) return reason.replace(/^命中方向：/, "核心方向：");
