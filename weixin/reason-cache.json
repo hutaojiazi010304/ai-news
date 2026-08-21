@@ -255,6 +255,71 @@
       "reason": "Anthropic 基于对十余家高增长公司的调研，发布面向初创公司的 Claude Code 使用指南，总结出五大核心规则：人人皆可交付、自动化繁琐工作、信任但验证、为重构而构建、原型-自用-产品化。该指南提炼了早期团队在实际业务中应用 AI 编程工具的具体实践路径与创始人洞见，旨在帮助初创公司更高效地将 Claude Code 融入开发流程并实现产品落地。",
       "title_hash": "399d8853",
       "created_at": "2026-08-21T01:25:40.904623Z"
+    },
+    "story_85ec019c932d|8c3efd18": {
+      "reason": "GitHub 仓库 issues 侧边栏现已正式支持固定保存的视图功能，用户可将最常用的视图直接固定在侧边栏中，实现一键快速访问。该功能目前已全面可用，旨在简化项目管理流程，提升在代码仓库中筛选和追踪 issue 的操作效率。",
+      "title_hash": "8c3efd18",
+      "created_at": "2026-08-21T02:48:51.324792Z"
+    },
+    "story_13b553da3c26|b07872a5": {
+      "reason": "Windows 11 arm64 VS2026 镜像已在 GitHub-hosted runners 的 standard 及更大规格实例上正式可用。开发者现可在 GitHub Actions 中使用该环境进行构建与测试，只需更新 workflow 配置文件即可启用这一原生 ARM64 开发运行环境。",
+      "title_hash": "b07872a5",
+      "created_at": "2026-08-21T02:48:52.881435Z"
+    },
+    "story_6bffb665747e|f25c9088": {
+      "reason": "GitHub Code Quality 现会在仓库中启用、禁用或更改其设置时写入审核日志事件。新增的 repo.code_quality_enabled 等三个事件可记录相关配置变更历史，使管理员能够追踪代码质量功能的启用状态及具体修改操作，便于合规审计与变更回溯。",
+      "title_hash": "f25c9088",
+      "created_at": "2026-08-21T02:48:54.592566Z"
+    },
+    "story_c5030fa07ae8|b4479c1d": {
+      "reason": "GitHub Code Quality 的 CodeQL actions workflows 专用路径现已正式可用。该功能将代码质量检查从常规 CI/CD 流程中独立出来，使 workflow run history 和 Actions usage reports 能够单独区分并展示 GitHub Code Quality 的运行记录与资源消耗数据，便于开发者更清晰地追踪代码质量分析的执行情况与用量统计。",
+      "title_hash": "b4479c1d",
+      "created_at": "2026-08-21T02:48:57.784827Z"
+    },
+    "story_4a9843552c46|8fb7b6ae": {
+      "reason": "OpenAI 推出新博客 AI Futures，专门探讨变革性人工智能将如何重塑权力、治理、经济及个人自由。该博客聚焦 AI 技术对社会结构与人类核心议题的深层影响，而非仅限于产品更新或技术细节，为理解 AI 在政治经济维度的潜在演变提供了来自 OpenAI 的直接视角。",
+      "title_hash": "8fb7b6ae",
+      "created_at": "2026-08-21T02:48:59.612653Z"
+    },
+    "story_63917d286fbf|9a9c245b": {
+      "reason": "受顶级AI实验室和企业对高质量训练数据需求激增推动，数据标注初创公司Micro1年化营收在8个月内从1亿美元增至5亿美元。该公司通常保留60%至70%的合同收入，预计年净收入达1.5亿至2亿美元。尽管其规模仍小于今年年化总收入分别为20亿美元的Mercor和10亿美元的Handshake，但这一增长直接反映了AI训练数据市场的快速扩张。",
+      "title_hash": "9a9c245b",
+      "created_at": "2026-08-21T02:49:01.985017Z"
+    },
+    "story_e98fa202cb48|a4cb8c00": {
+      "reason": "Adobe Firefly音频生成工具正式上线，包含Generate Music、Generate Voice和Generate Sound Effects三项功能，支持在桌面端及移动Web应用中直接创建可商用音频内容并融入视频制作流程。Adobe与Berklee College of Music联合调查显示，100%受访视频创作者、音乐人和营销人员在视频中使用音乐，32.7%已使用AI生成音乐，43.2%将法律版权风险、38.9%将授权费用视为主要障碍。",
+      "title_hash": "a4cb8c00",
+      "created_at": "2026-08-21T02:49:04.234318Z"
+    },
+    "story_abe339f5a478|f32ded26": {
+      "reason": "xAI 旗下聊天机器人 Grok 近日出现异常故障，部分用户在 Grok.com 请求生成 PDF 时收到大段乱码及无意义文本，回复中甚至包含指向强化学习研究网站的链接。受影响用户主要使用 Grok Lite 版本，问题于周三上午首次被发现。目前测试未能复现该故障，表明其可能仅影响少量用户。",
+      "title_hash": "f32ded26",
+      "created_at": "2026-08-21T02:49:06.385578Z"
+    },
+    "story_ee84fbd49797|9efd90c9": {
+      "reason": "macOS版ChatGPT应用升级后已深度集成Apple Messages，在获得用户授权后可直接读取、编写和发送短信，并支持海量聊天记录智能搜索及对话摘要生成。OpenAI强调该功能在设计上不会对用户所有消息进行全局索引。此次更新使ChatGPT在Mac端具备了直接操作苹果原生通讯应用的能力，被古尔曼视为对Siri生态优势的直接挑战。",
+      "title_hash": "9efd90c9",
+      "created_at": "2026-08-21T02:49:08.526859Z"
+    },
+    "story_fe5d8ad916c5|2b90bfe4": {
+      "reason": "Ramp最新数据显示，OpenAI在美国企业AI市场的份额已重回40%以上，反超Anthropic。此前5月Anthropic以41%对39%领先，7月其份额接近44%时OpenAI也逼近40%，但自第三季度起OpenAI增速已超过Anthropic。该数据基于超过7万家美国企业通过Ramp产生的数十亿美元AI支出记录，反映出企业级AI采购格局的最新变动及整体支出的持续扩张趋势。",
+      "title_hash": "2b90bfe4",
+      "created_at": "2026-08-21T02:49:11.078722Z"
+    },
+    "story_66ab945ad6af|fdeffb3d": {
+      "reason": "Waymo定制自动驾驶出租车Ojai已深度集成Google Gemini AI助手，面向洛杉矶、凤凰城和旧金山的所有常规用户全面开放。该升级专为网约车场景设计，旨在提升车内智能交互体验。Waymo计划后续将此服务扩展至更多城市，推动无人驾驶出行向更高智能化水平发展。",
+      "title_hash": "fdeffb3d",
+      "created_at": "2026-08-21T02:49:12.818719Z"
+    },
+    "story_0304d5a50065|186dccc4": {
+      "reason": "阳光清言”通用藏语大模型在2026全球数字经济大会拉萨会场正式发布，参数规模突破千亿。该模型研究成果曾于2025年11月19日首次亮相。同期，拉萨市纳金数智研究院正式揭牌成立，作为支撑藏语大模型研发与应用的本地化科研机构投入运行。",
+      "title_hash": "186dccc4",
+      "created_at": "2026-08-21T02:49:14.967418Z"
+    },
+    "story_e47cefc47e1b|6d7c84b4": {
+      "reason": "Google DeepMind 宣布 Gemma 系列开源大模型全球下载量突破十亿次。过去两年间，开发者基于该模型发布了超过十万个变体，构建起名为 Gemmaverse 的创新生态。Gemma 具备高灵活性，支持在本地设备、边缘基础设施乃至太空等复杂环境中部署，目前已正式进入外太空应用场景，同时覆盖医学前沿等领域，助力开发者构建 AI 应用。",
+      "title_hash": "6d7c84b4",
+      "created_at": "2026-08-21T03:17:20.372561Z"
     }
   }
 }
