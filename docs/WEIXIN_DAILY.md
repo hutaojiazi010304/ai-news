@@ -122,6 +122,8 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
 
    ```bash
    python scripts/generate_weixin_article.py --data-dir data --output-dir weixin
+   python scripts/generate_weixin_article.py            --data-dir data --output-dir weixin
+   python scripts/generate_weixin_article_grouped.py    --data-dir data --output-dir weixin-grouped
    ```
 
    看结束时的汇总日志确认 key 生效：
@@ -139,6 +141,10 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
    git commit -m "chore: update weixin article"
    git push
    ```
+   如果报错就
+   git pull --rebase --autostash
+   git push
+
 
 6. 手机取稿（预览页更新后）：打开
    `https://hutaojiazi010304.github.io/ai-news-radar/weixin/`
@@ -150,6 +156,27 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
    - 封面：保存 `weixin/cover.jpg`（或 `.png`），上传为封面图（2.35:1）
    - 「阅读原文」链接：填辅助区块里的地址（= 雷达主页）
 
+## 分组对比版（weixin-grouped/）
+
+与正式版**并存**的备选排版：选条、导读、标题、摘要完全一致（直接 import
+正式版脚本的函数），只是正文按故事类别分组显示——官方更新 → 多源热议 →
+行业动态 → 值得关注，空分组跳过，组内保持 peak_score 排序、编号重新从 ① 开始。
+
+```bash
+# 先跑正式版（分组版要复用它的封面和导读缓存），再跑分组版
+python scripts/generate_weixin_article.py --data-dir data --output-dir weixin
+python scripts/generate_weixin_article_grouped.py --data-dir data --output-dir weixin-grouped
+```
+
+- 预览页 `https://hutaojiazi010304.github.io/ai-news-radar/weixin-grouped/`，
+  与正式版 `/weixin/` 并排对比；最终定版后只保留对应脚本即可
+- 导读缓存共享正式版的 `weixin/reason-cache.json`：导读按条目生成、与排版
+  无关，先跑哪一版另一版都全命中，不会重复调千问
+- 封面直接复用正式版当天的封面（按 `weixin/meta.json` 的 issue_date 校验，
+  不会误用昨天的）；正式版还没生成时才走相同的封面生成流程
+- 汇总日志 `cover_mode=reused` 表示复用了正式版封面；`sections=` 给出各组条数
+- `weixin-grouped/` 产物同样要及时提交推送（同正式版的注意事项）
+
 ## 本地调试
 
 ```bash
@@ -159,11 +186,15 @@ python scripts/generate_weixin_article.py --data-dir data --output-dir weixin-te
 # 只跑流程不写文件
 python scripts/generate_weixin_article.py --data-dir data --output-dir weixin --dry-run
 
+# 分组版冒烟 / 只跑流程不写文件
+python scripts/generate_weixin_article_grouped.py --data-dir data --output-dir weixin-test-grouped
+python scripts/generate_weixin_article_grouped.py --data-dir data --output-dir weixin-grouped --dry-run
+
 # 重新生成静态兜底封面
 python scripts/generate_weixin_article.py --make-fallback-cover --assets-dir assets
 
 # 测试（需 pytest）
-python -m pytest tests/test_weixin_article.py -q
+python -m pytest tests/test_weixin_article.py tests/test_weixin_article_grouped.py -q
 ```
 
 ## 常见问题
