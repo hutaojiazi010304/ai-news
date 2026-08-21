@@ -138,23 +138,29 @@ def offline_session() -> MagicMock:
     return session
 
 
-def make_text_router(reason=None, title=None):
-    """Route module-level requests.post (text completions) by system prompt.
+def make_text_router(reason=None, scene=None):
+    """Mock module-level requests.post (text completions).
 
-    Returns (side_effect, counters). A spec may be a MagicMock response,
-    an exception instance (raised), or a callable(counters) -> response.
+    Only reading-guide and cover-scene generation may hit the text API (the
+    title is a fixed template), so any other call fails the test. Returns
+    (side_effect, counters). A spec may be a MagicMock response, an exception
+    instance (raised), or a callable(counters) -> response.
     """
-    calls = {"reason": 0, "title": 0}
+    calls = {"reason": 0, "scene": 0}
 
     def side_effect(url, **kwargs):
         payload = kwargs.get("json") or {}
         messages = payload.get("messages")
         system = str(((messages or [{}])[0] or {}).get("content") or "")
-        key = "reason" if "值得读" in system else "title"
-        calls[key] += 1
-        spec = {"reason": reason, "title": title}[key]
+        if "插画设计师" in system:
+            which, spec = "scene", scene
+        elif "值得读" in system:
+            which, spec = "reason", reason
+        else:
+            raise AssertionError(f"unexpected non-reason text api call: {url}")
+        calls[which] += 1
         if spec is None:
-            raise AssertionError(f"unexpected text api call ({key}): {url}")
+            raise AssertionError(f"unexpected {which} api call: {url}")
         if isinstance(spec, BaseException):
             raise spec
         if isinstance(spec, MagicMock):
@@ -209,6 +215,10 @@ LONG_GENERATED_REASON = (
     "OpenAI 发布了新一代模型，推理成本较上一代下降一半，"
     "上下文窗口扩展到 200 万 token，并同步开放 API 与评测细节，"
     "官方称其在多项基准上领先同级竞品。"
+)
+# Within gwa.COVER_SCENE_* bounds: a brand-free visual scene description.
+COVER_SCENE_TEXT = (
+    "两条发光的数据流从一座机柜流向另一座机柜，象征代码托管服务的迁移与替代。"
 )
 
 
@@ -321,7 +331,7 @@ def test_keyed_run_prefers_qwen_over_upstream_reason():
         output_dir = Path(tmp) / "weixin"
         side_effect, calls = make_text_router(
             reason=text_response(LONG_GENERATED_REASON),
-            title=text_response("今日AI头条标题"),
+            scene=text_response(COVER_SCENE_TEXT),
         )
 
         rc = run_patched(
@@ -352,7 +362,7 @@ def test_reason_fill_success_writes_cache():
         output_dir = Path(tmp) / "weixin"
         side_effect, calls = make_text_router(
             reason=text_response(generated),
-            title=text_response("今日AI头条标题"),
+            scene=text_response(COVER_SCENE_TEXT),
         )
 
         rc = run_patched(
@@ -394,14 +404,14 @@ def test_reason_cache_hit_skips_llm():
 
         side_effect, first_calls = make_text_router(
             reason=text_response(generated),
-            title=text_response("今日AI头条标题"),
+            scene=text_response(COVER_SCENE_TEXT),
         )
         run_patched(BASE_ENV, side_effect, offline_session(), base_args)
         assert first_calls["reason"] == 1
 
         side_effect, second_calls = make_text_router(
             reason=AssertionError("cached reason must not be regenerated"),
-            title=text_response("今日AI头条标题"),
+            scene=text_response(COVER_SCENE_TEXT),
         )
         rc = run_patched(BASE_ENV, side_effect, offline_session(), base_args)
 
@@ -421,7 +431,7 @@ def test_reason_validation_rejects_bad_output():
         output_dir = Path(tmp) / "weixin"
         side_effect, calls = make_text_router(
             reason=text_response(bad_reason),
-            title=text_response("今日AI头条标题"),
+            scene=text_response(COVER_SCENE_TEXT),
         )
 
         rc = run_patched(
@@ -450,7 +460,7 @@ def test_fetch_failure_skips_reason_without_llm():
         output_dir = Path(tmp) / "weixin"
         side_effect, calls = make_text_router(
             reason=AssertionError("no grounding => no reason call"),
-            title=text_response("今日AI头条标题"),
+            scene=text_response(COVER_SCENE_TEXT),
         )
 
         rc = run_patched(
@@ -472,14 +482,19 @@ def test_fetch_failure_skips_reason_without_llm():
 # Title / digest
 # ---------------------------------------------------------------------------
 
-def test_title_llm_success():
+def test_title_always_uses_fixed_template():
+    """The title is the fixed template even with an API key; nothing calls
+    the text API for it."""
     with tempfile.TemporaryDirectory() as tmp:
         data_dir, assets_dir = write_fixture(
             tmp, [make_item(1, reason=LONG_EXISTING_REASON)]
         )
         make_static_asset(assets_dir)
         output_dir = Path(tmp) / "weixin"
-        side_effect, calls = make_text_router(title=text_response("新模型发布，成本降半"))
+        side_effect, calls = make_text_router(
+            reason=AssertionError("the title is a fixed template, not an LLM call"),
+            scene=text_response(COVER_SCENE_TEXT),
+        )
 
         rc = run_patched(
             BASE_ENV,
@@ -493,60 +508,11 @@ def test_title_llm_success():
         )
 
         assert rc == 0
-        assert calls["title"] == 1
+        assert calls["reason"] == 0
         meta = read_json(output_dir / "meta.json")
-        assert meta["title"] == "新模型发布，成本降半"
-
-
-def test_title_overlong_falls_back():
-    with tempfile.TemporaryDirectory() as tmp:
-        data_dir, assets_dir = write_fixture(
-            tmp, [make_item(1, reason=LONG_EXISTING_REASON)]
-        )
-        make_static_asset(assets_dir)
-        output_dir = Path(tmp) / "weixin"
-        side_effect, _ = make_text_router(title=text_response("字" * 40))
-
-        rc = run_patched(
-            BASE_ENV,
-            side_effect,
-            offline_session(),
-            [
-                "--data-dir", str(data_dir),
-                "--output-dir", str(output_dir),
-                "--assets-dir", str(assets_dir),
-            ],
-        )
-
-        assert rc == 0
-        meta = read_json(output_dir / "meta.json")
+        assert meta["title"].startswith("AI 雷达")
+        assert "今日精选1条" in meta["title"]
         assert len(meta["title"]) <= gwa.TITLE_MAX_CHARS
-        assert "今日精选" in meta["title"]
-
-
-def test_title_exception_falls_back():
-    with tempfile.TemporaryDirectory() as tmp:
-        data_dir, assets_dir = write_fixture(
-            tmp, [make_item(1, reason=LONG_EXISTING_REASON)]
-        )
-        make_static_asset(assets_dir)
-        output_dir = Path(tmp) / "weixin"
-        side_effect, _ = make_text_router(title=requests.ConnectionError("api down"))
-
-        rc = run_patched(
-            BASE_ENV,
-            side_effect,
-            offline_session(),
-            [
-                "--data-dir", str(data_dir),
-                "--output-dir", str(output_dir),
-                "--assets-dir", str(assets_dir),
-            ],
-        )
-
-        assert rc == 0
-        meta = read_json(output_dir / "meta.json")
-        assert "今日精选" in meta["title"]
 
 
 def test_digest_length_contract():
@@ -576,6 +542,88 @@ def test_negative_headline_switches_to_brand_prompt():
     prompt, mode = gwa.build_cover_prompt("OpenAI 发布新模型")
     assert mode == "headline"
     assert "OpenAI" in prompt
+
+
+def test_cover_prompt_prefers_scene_over_raw_headline():
+    headline = "Cursor 推出 Origin 代码托管服务，作为 GitHub 的替代方案"
+    prompt, mode = gwa.build_cover_prompt(headline, scene=COVER_SCENE_TEXT)
+    assert mode == "headline"
+    assert COVER_SCENE_TEXT in prompt
+    assert "GitHub" not in prompt
+    assert "Cursor" not in prompt
+    # Without a scene the raw headline remains the theme (last resort).
+    raw_prompt, raw_mode = gwa.build_cover_prompt(headline)
+    assert raw_mode == "headline"
+    assert "GitHub" in raw_prompt
+
+
+def test_validate_cover_scene_rejects_bad_output():
+    assert gwa.validate_cover_scene("") is False
+    assert gwa.validate_cover_scene("brand logo only") is False
+    assert gwa.validate_cover_scene("太短") is False
+    assert gwa.validate_cover_scene("一个场景" * 30) is False
+    assert gwa.validate_cover_scene("https://x.co 的数据流场景描述内容") is False
+    assert gwa.validate_cover_scene(COVER_SCENE_TEXT) is True
+
+
+def test_reason_validation_rejects_refusal():
+    """A model refusal (fetched "full text" was only site navigation) must
+    never render as a guide."""
+    refusal = (
+        "提供的正文内容仅为 GitHub 博客的导航菜单与栏目索引，未包含标题所述的具体技术细节，"
+        "无法据此提取有效导读信息。"
+    )
+    assert gwa.validate_reason(refusal, "画布如何使代理工作流程可见") is False
+    assert gwa.validate_reason(LONG_GENERATED_REASON, "任意标题") is True
+
+
+def test_scene_failure_falls_back_to_raw_headline():
+    png_bytes = make_png_bytes(1000, 500)
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(
+            tmp,
+            [
+                make_item(
+                    1,
+                    title="Cursor 推出 Origin，作为 GitHub 的替代方案",
+                    reason=LONG_EXISTING_REASON,
+                )
+            ],
+        )
+        make_static_asset(assets_dir)
+        output_dir = Path(tmp) / "weixin"
+        # Scene output fails validation -> raw headline stays the theme.
+        side_effect, calls = make_text_router(scene=text_response("logo"))
+
+        session = MagicMock()
+        session.post.return_value = image_url_response()
+
+        def get_handler(url, **kwargs):
+            response = MagicMock()
+            response.status_code = 200
+            response.content = png_bytes
+            return response
+
+        session.get.side_effect = get_handler
+
+        rc = run_patched(
+            BASE_ENV,
+            side_effect,
+            session,
+            [
+                "--data-dir", str(data_dir),
+                "--output-dir", str(output_dir),
+                "--assets-dir", str(assets_dir),
+            ],
+        )
+
+        assert rc == 0
+        assert calls["scene"] == 1
+        post_call = session.post.call_args
+        prompt_text = (
+            post_call.kwargs["json"]["input"]["messages"][0]["content"][0]["text"]
+        )
+        assert "GitHub" in prompt_text
 
 
 def test_image_api_url_derived_from_base_url():
@@ -621,7 +669,9 @@ def test_image_success_and_crop():
         )
         make_static_asset(assets_dir)
         output_dir = Path(tmp) / "weixin"
-        side_effect, calls = make_text_router(title=text_response("今日AI头条标题"))
+        side_effect, calls = make_text_router(
+            scene=text_response(COVER_SCENE_TEXT),
+        )
 
         session = MagicMock()
         session.post.return_value = image_url_response()
@@ -646,14 +696,19 @@ def test_image_success_and_crop():
         )
 
         assert rc == 0
-        assert calls["title"] == 1
+        assert calls["reason"] == 0  # title no longer hits the text API
         assert session.post.call_count == 1
         # Native sync image endpoint, not the (404ing) OpenAI-compatible route.
         post_call = session.post.call_args
         assert post_call.args[0].endswith(gwa.IMAGE_API_PATH)
         payload = post_call.kwargs["json"]
         assert payload["model"] == gwa.DEFAULT_IMAGE_MODEL
-        assert payload["input"]["messages"][0]["content"][0]["text"]
+        prompt_text = payload["input"]["messages"][0]["content"][0]["text"]
+        assert prompt_text
+        # The theme is the text model's brand-free scene, not the raw headline.
+        assert calls["scene"] == 1
+        assert COVER_SCENE_TEXT in prompt_text
+        assert "测试新闻标题 1" not in prompt_text
         meta = read_json(output_dir / "meta.json")
         try:
             from PIL import Image
@@ -673,7 +728,7 @@ def test_image_all_fail_uses_static_cover():
         )
         make_static_asset(assets_dir)
         output_dir = Path(tmp) / "weixin"
-        side_effect, _ = make_text_router(title=text_response("今日AI头条标题"))
+        side_effect, _ = make_text_router(scene=text_response(COVER_SCENE_TEXT))
 
         rc = run_patched(
             BASE_ENV,
@@ -700,7 +755,7 @@ def test_image_size_400_retries_without_size():
         )
         make_static_asset(assets_dir)
         output_dir = Path(tmp) / "weixin"
-        side_effect, _ = make_text_router(title=text_response("今日AI头条标题"))
+        side_effect, _ = make_text_router(scene=text_response(COVER_SCENE_TEXT))
 
         rejected = MagicMock()
         rejected.status_code = 400
@@ -765,12 +820,99 @@ def test_sort_descending_and_circled_numbers():
         pos_mid = html_text.index("中分条目丙")
         pos_low = html_text.index("低分条目甲")
         assert pos_high < pos_mid < pos_low
-        assert "❶ 高分条目乙" in html_text
-        assert "❷ 中分条目丙" in html_text
-        assert "❸ 低分条目甲" in html_text
+        # Numbers use the unified outlined ①–⑳ set, never the thin filled
+        # ❶–❿ glyphs.
+        assert "① 高分条目乙" in html_text
+        assert "② 中分条目丙" in html_text
+        assert "③ 低分条目甲" in html_text
+        assert "❶" not in html_text
 
 
-def test_multi_source_item_lists_subtitles():
+def test_select_items_prefers_peak_score_over_decayed_importance():
+    """The daily push ranks by the window-peak importance so an important
+    story published early in the window is not sunk below fresher mid-tier
+    items by push time. items[0] also drives the headline and cover."""
+    early = make_item(1, title="早间重要条目", score=60.0)
+    early["peak_score"] = 0.9
+    fresh = make_item(2, title="新近中分条目", score=70.0)
+    fresh["peak_score"] = 0.72
+    brief = {"items": [fresh, early]}
+
+    ordered = gwa.select_items(brief, 10)
+    assert [item["title"] for item in ordered] == ["早间重要条目", "新近中分条目"]
+
+
+def test_select_items_falls_back_to_importance_without_peak():
+    """Briefs produced before peak tracking existed keep the old order."""
+    brief = {"items": [make_item(1, score=30.0), make_item(2, score=80.0)]}
+
+    ordered = gwa.select_items(brief, 10)
+    assert [item["importance_score"] for item in ordered] == [80.0, 30.0]
+
+
+# ---------------------------------------------------------------------------
+# Summary-first grounding: a persisted RSS summary is an offline asset and
+# must be preferred over fetching the live page (which is often bot-blocked);
+# only unusable summaries degrade to a full-text fetch.
+# ---------------------------------------------------------------------------
+
+def test_summary_grounding_gates():
+    title = "GitHub Copilot app for Beginners"
+    assert gwa.summary_grounding("", title) is None
+    assert gwa.summary_grounding(None, title) is None
+    assert gwa.summary_grounding(title, title) is None
+    assert gwa.summary_grounding("too short", title) is None
+
+    usable = "The My work pane tracks multiple Copilot sessions so you can resume."
+    assert gwa.summary_grounding(usable, title) == usable
+
+    # WordPress boilerplate is stripped; what remains is too short to ground.
+    boilerplate_only = "The post Copilot update appeared first on The GitHub Blog."
+    assert gwa.summary_grounding(boilerplate_only, title) is None
+
+    # Boilerplate tail stripped, real editorial content kept.
+    mixed = usable + " The post Copilot update appeared first on The GitHub Blog."
+    assert gwa.summary_grounding(mixed, title) == usable
+
+
+def test_reason_context_uses_summary_without_any_fetch():
+    summary = "A persisted RSS summary long enough to ground the guide text."
+    item = {
+        "title": "GitHub Copilot app for Beginners",
+        "primary_url": "https://github.blog/x",
+        "primary_item": {"summary": summary},
+        "sources": [],
+    }
+    # session=None proves the network path is never attempted.
+    assert gwa.reason_context(item, None) == summary
+
+
+def test_reason_context_degrades_to_fetch_when_summary_unusable():
+    calls = []
+
+    class FakeResponse:
+        status_code = 200
+        text = "<p>" + "Full article body text for grounding. " * 8 + "</p>"
+
+    class FakeSession:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return FakeResponse()
+
+    item = {
+        "title": "GitHub Copilot app for Beginners",
+        "primary_url": "https://github.blog/x",
+        "primary_item": {"summary": "short"},
+        "sources": [
+            {"summary": "The post Copilot update appeared first on The GitHub Blog."}
+        ],
+    }
+    context = gwa.reason_context(item, FakeSession())
+    assert calls == ["https://github.blog/x"]
+    assert context and "Full article body text" in context
+
+
+def test_multi_source_item_merges_source_names():
     sources = [
         {"title": "子标题A报道", "url": "https://a.example/1", "source_name": "Source A"},
         {"title": "子标题B报道", "url": "https://b.example/2", "source_name": "Source B"},
@@ -789,15 +931,91 @@ def test_multi_source_item_lists_subtitles():
 
         assert rc == 0
         html_text = (output_dir / "index.html").read_text(encoding="utf-8")
-        assert "子标题A报道" in html_text
-        assert "子标题B报道" in html_text
-        assert "子标题C报道" in html_text
-        assert "3 个来源" in html_text
+        # One merged line: story title + every source name joined by ", ".
+        assert "合并后的大事件标题（Source A, Source B, Source C）" in html_text
+        # Per-source titles are no longer listed individually.
+        assert "子标题A报道" not in html_text
+        assert "子标题B报道" not in html_text
+        assert "子标题C报道" not in html_text
+        # Meta line names the first source plus 等.
+        assert "Source A等 · 3 个来源" in html_text
         # Each item carries its original URL as plain text.
         assert "原文：https://example.com/story/1" in html_text
         # Article body must not contain hyperlinks or images.
         assert "<a " not in html_text
         assert "<img" not in html_text
+
+
+def test_single_source_meta_has_no_suffix():
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(tmp, [make_item(1)])
+        output_dir = Path(tmp) / "weixin"
+
+        with patch.dict("os.environ", {}, clear=True):
+            rc = run_main(data_dir, output_dir, assets_dir)
+
+        assert rc == 0
+        html_text = (output_dir / "index.html").read_text(encoding="utf-8")
+        # Single-source items keep the bare source name and no merged line.
+        assert "Example Source · 1 个来源" in html_text
+        assert "Example Source等" not in html_text
+        assert "Example Source）" not in html_text
+
+
+def test_category_renders_chinese_label():
+    with tempfile.TemporaryDirectory() as tmp:
+        items = [make_item(1, title="官方条目"), make_item(2, title="多源条目")]
+        items[0]["category"] = "official"
+        items[1]["category"] = "multi_source"
+        data_dir, assets_dir = write_fixture(tmp, items)
+        output_dir = Path(tmp) / "weixin"
+
+        with patch.dict("os.environ", {}, clear=True):
+            rc = run_main(data_dir, output_dir, assets_dir)
+
+        assert rc == 0
+        html_text = (output_dir / "index.html").read_text(encoding="utf-8")
+        assert "官方更新 · Example Source · 1 个来源" in html_text
+        assert "多源热议 · Example Source · 1 个来源" in html_text
+        # Raw English category keys no longer reach the page.
+        assert "multi_source" not in html_text
+        assert "· official ·" not in html_text
+
+
+def test_strip_english_tail_keeps_chinese_only():
+    assert gwa.strip_english_tail("中文标题 / English Title") == "中文标题"
+    assert (
+        gwa.strip_english_tail("Qwen 3.8 表现出色 / Qwen 3.8 is excellent")
+        == "Qwen 3.8 表现出色"
+    )
+    # Multiple segments: keep the leading Chinese one.
+    assert gwa.strip_english_tail("中文 / English one / English two") == "中文"
+    # No bilingual split: unchanged.
+    assert gwa.strip_english_tail("纯中文标题") == "纯中文标题"
+    assert gwa.strip_english_tail("Pure English title") == "Pure English title"
+    assert gwa.strip_english_tail("") == ""
+    # Leading segment without CJK is not treated as a bilingual title.
+    assert gwa.strip_english_tail("AI / ML 工具发布") == "AI / ML 工具发布"
+
+
+def test_bilingual_title_renders_chinese_only():
+    bilingual = (
+        "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考 / "
+        "Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things"
+    )
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(tmp, [make_item(1, title=bilingual)])
+        output_dir = Path(tmp) / "weixin"
+
+        with patch.dict("os.environ", {}, clear=True):
+            rc = run_main(data_dir, output_dir, assets_dir)
+
+        assert rc == 0
+        html_text = (output_dir / "index.html").read_text(encoding="utf-8")
+        assert "① Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考</p>" in html_text
+        # The English tail disappears everywhere, digest included.
+        assert "overthinking" not in html_text
+        assert " / " not in html_text
 
 
 def test_items_carry_original_link_as_plain_text():
@@ -832,7 +1050,7 @@ def test_short_existing_reason_is_rewritten():
         output_dir = Path(tmp) / "weixin"
         side_effect, calls = make_text_router(
             reason=text_response(LONG_GENERATED_REASON),
-            title=text_response("今日AI头条标题"),
+            scene=text_response(COVER_SCENE_TEXT),
         )
 
         rc = run_patched(
@@ -881,7 +1099,7 @@ def test_dry_run_writes_nothing():
         output_dir = Path(tmp) / "weixin"
         side_effect, calls = make_text_router(
             reason=text_response(LONG_GENERATED_REASON),
-            title=text_response("今日AI头条标题"),
+            scene=text_response(COVER_SCENE_TEXT),
         )
 
         rc = run_patched(

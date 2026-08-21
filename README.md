@@ -206,6 +206,7 @@ AI News Radar学习了现代新闻学的技术，不是简单堆信息源，一�
 - `data/source-status.json`：来源抓取状态、成功率、站点覆盖和源健康
 - `data/stories-merged.json`：故事合并后的完整事件集合
 - `data/merge-log.json`：故事合并过程和命中记录，方便调试与审计
+- `data/story-peak-state.json`：每条故事在窗口内达到过的最高重要度（峰值分），精选门槛和日更推送排序用它，避免单来源条目因新近度衰减在发布前老化掉出精选
 
 如果 `daily-brief.json` 暂时不存在，页面会回退到候选信号列表；如果 `stories-merged.json` 存在，页面会用完整故事池补齐后续故事线，避免只有少量精选故事被接入。
 

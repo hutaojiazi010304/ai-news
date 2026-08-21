@@ -2,13 +2,15 @@
 """WeChat Official Account daily article generator.
 
 Reads ``{data-dir}/daily-brief.json`` produced by ``update_news.py``, picks
-the top curated items, (re)writes per-item reading guides (120-200 chars)
-with a Qwen text model, composes a headline-driven title, a fixed-template
-digest, and a 2.35:1 cover image (Qwen image model with three-level
-fallback), then renders a self-contained inline-style HTML page that can be
-copied into the WeChat editor, plus ``meta.json`` for future API draft
-delivery. Every item carries its original article URL as plain text
-(WeChat strips external hyperlinks, so no ``<a>`` tags are used).
+the top curated items, (re)writes per-item reading guides (direct content
+summaries, length follows the content) with a Qwen text model, uses a
+fixed-template title and digest, and composes
+a 2.35:1 cover image (headline first rewritten into a concrete, AI-focused
+visual scene by the text model, then drawn by a Qwen image model,
+three-level fallback), then renders a self-contained inline-style HTML page that can be copied into the
+WeChat editor, plus ``meta.json`` for future API draft delivery. Every item
+carries its original article URL as plain text (WeChat strips external
+hyperlinks, so no ``<a>`` tags are used).
 
 Design constraints:
 
@@ -17,7 +19,7 @@ Design constraints:
 - Zero hard dependencies beyond ``requests`` (``Pillow`` only for cover
   processing); public repo stays runnable key-free.
 - Runs without any API key: reuses existing recommend reasons from the data
-  (long ones as-is, short ones kept as fallback), falls back to a template
+  (long ones as-is, short ones kept as fallback), keeps the fixed-template
   title and the static brand cover.
 - Exit code is always 0 except for argument errors or corrupted input JSON.
 
@@ -56,14 +58,27 @@ DEFAULT_MAX_ITEMS = 20
 
 TZ_CN = timezone(timedelta(hours=8))
 WEEKDAY_CN = ("周一", "周二", "周三", "周四", "周五", "周六", "周日")
-CIRCLED_NUMS = "❶❷❸❹❺❻❼❽❾❿⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳"
 
-CACHE_VERSION = 2  # v1 cached short 40-80 char reasons; bump to regenerate
+# Chinese labels for the story category keys produced by update_news.py's
+# story_category(); unknown keys pass through unchanged.
+CATEGORY_LABEL_ZH = {
+    "official": "官方更新",
+    "multi_source": "多源热议",
+    "industry": "行业动态",
+    "watch": "值得关注",
+}
+
+CACHE_VERSION = 6  # v5 cached guides before the absolute no-annotation rule; regen
+
+# Item numbers as circled digits. The filled ❶–❿ glyphs render thin on web
+# views, so use the single outlined ①–⑳ set (same style as ⑪) for all 20
+# items — consistent weight, always legible.
+CIRCLED_NUMS = tuple("①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳")
 CACHE_MAX_AGE_DAYS = 21
 REASON_RETRY_BACKOFF_SECONDS = 2.0
-# LLM output bounds: the prompt targets 120-200 chars; the bounds are wider
-# so slightly off-target output is still usable instead of discarded.
-REASON_MIN_CHARS = 60
+# LLM output bounds: the prompt has no fixed target (length follows the
+# content), so the bounds only reject degenerate output.
+REASON_MIN_CHARS = 40
 REASON_MAX_CHARS = 260
 # Keyless degradation only: an upstream reason must be this long to be
 # preferred over a cached long-format reason; with an API key Qwen writes
@@ -71,6 +86,18 @@ REASON_MAX_CHARS = 260
 REASON_MIN_REUSE_CHARS = 120
 FULL_TEXT_MAX_CHARS = 3500
 FULL_TEXT_MIN_CHARS = 120
+# A persisted summary (the RSS description captured by the pipeline) is the
+# preferred grounding for guide writing: it is an offline, deterministic
+# asset, while fetching the live page depends on the local network and is
+# frequently bot-blocked (403 / timeouts). Summaries below this length — or
+# reduced to nothing once boilerplate is stripped — degrade to a full-text
+# fetch instead. The bound is low because CJK summaries are dense.
+SUMMARY_MIN_GROUNDING_CHARS = 20
+# WordPress feeds append "The post <title> appeared first on <blog>." —
+# pure boilerplate that must never ground a guide.
+SUMMARY_BOILERPLATE_RE = re.compile(
+    r"\s*\bthe post\b.*?appeared first on.*$", re.IGNORECASE | re.DOTALL
+)
 COVER_W, COVER_H = 1664, 708  # 2.35:1
 # qwen-image-2.0 series recommended 16:9 size (total pixels must stay within
 # the 512*512..2048*2048 range); crop_cover then trims it to the 2.35:1 banner.
@@ -79,9 +106,9 @@ IMAGE_REQUEST_SIZE = "2688*1536"
 # (POST .../compatible-mode/v1/images/generations 404s); the native sync
 # multimodal-generation API is required instead.
 IMAGE_API_PATH = "/api/v1/services/aigc/multimodal-generation/generation"
+# WeChat title length budget; the fixed template title must stay within it.
 TITLE_MAX_CHARS = 30
 DIGEST_MAX_CHARS = 120
-MAX_SOURCE_LINES = 5
 USER_AGENT = (
     "Mozilla/5.0 (compatible; ai-news-radar-weixin/1.0; +https://github.com)"
 )
@@ -101,24 +128,23 @@ TAG_RE = re.compile(r"<[^>]+>")
 BLOCK_TAG_RE = re.compile(r"(?is)<(script|style|noscript|svg|head)[^>]*>.*?</\1>")
 CJK_RE = re.compile(r"[一-鿿]")
 WHITESPACE_RE = re.compile(r"\s+")
+BILINGUAL_TITLE_RE = re.compile(r"\s+/\s+")
 
 REASON_SYSTEM_PROMPT = (
     "你是科技新闻编辑，负责为一篇具体的文章写一段「为什么值得读」的中文导读，"
     "用于微信公众号每日 AI 精选推文。"
-    "输出两到三句中文，120到200个字之间。"
-    "必须引用原文中的具体事实、数字或细节，讲清楚这篇内容具体讲了什么、"
-    "有哪些值得关注的背景或影响，不能写空洞的营销话术。"
+    "直接概括原文最关键的内容：具体事实、数字、产品、结论，让读者不看原文也知道重点。"
+    "以内容本身为主语，不要用「本文」「该文」「作者」这类以文章为主语的开头。"
+    "不要自行添加「展示了……」「标志着……」「为……提供了新范式」之类的意义话术；"
+    "除非原文本身就是评论观点，才可以转述其观点。"
+    "若提供的正文显然不是文章正文（导航、目录、验证页等），就直接把标题本身包含的"
+    "信息整理成导读，不编造标题之外的细节，也不要在导读里解释正文缺失或无法概括。"
+    "字数跟随内容，简洁为好，通常六七十到两百字，不卡死，不要为凑字数注水，也别超过两百字。"
     "不得编造原文之外的数字或事实。"
-    "原文中的关键实体（公司名、产品名、人名）保留英文原样，不要翻译或音译。"
+    "公司名、产品名一律只用原文中出现的形式（通常是英文），"
+    "绝不要附加中文翻译、音译或括号注释，哪怕你自认为知道官方中文名；"
+    "人名按国籍写：华人用中文名（如周鸿祎），拿不准时保留英文，同样不得自行音译。"
     "只输出这段导读本身，不加引号，不加任何解释或前缀。"
-)
-
-TITLE_SYSTEM_PROMPT = (
-    "你是公众号编辑，负责给每日 AI 精选推文起标题。"
-    "根据今日头条写一个公众号标题：中文，不超过30个字，"
-    "有信息量和吸引力，但不做作、不标题党，"
-    "不使用“震惊”“炸裂”“重磅”“必看”这类夸张词，尽量点出具体事实。"
-    "只输出标题本身，不加引号和前缀。"
 )
 
 BRAND_COVER_PROMPT = (
@@ -126,6 +152,23 @@ BRAND_COVER_PROMPT = (
     "深色背景上的雷达屏幕扫描出光点与数据流，扁平插画，科技感，干净留白。"
     "不要出现任何文字、字母、数字或水印。"
 )
+
+# The text model rewrites the headline into a concrete drawing prompt:
+# keep the scene tied to the actual AI subject (repos, models, data flows),
+# allow brand marks when the headline names them, and avoid stock metaphors
+# (ships, mountains) that read as unrelated scenery.
+COVER_SCENE_SYSTEM_PROMPT = (
+    "你是插画设计师，把一条 AI 新闻标题翻译成一句话的封面画面描述，"
+    "供文生图模型绘制扁平插画横幅封面。"
+    "画面直接描绘新闻报道的具体内容：产品、技术动作、数据流向，"
+    "并紧贴 AI 主题（代码、模型、服务器、机器人、芯片等科技元素）。"
+    "可以直接出现标题中提到的公司或产品商标元素（如 GitHub 的猫形标志）；"
+    "少用航海、登山、过河之类的隐喻画面，不描绘具体真实人物。"
+    "画面中不要出现任何文字、字母、数字。"
+    "输出一句 30 到 60 字的中文，只输出描述本身。"
+)
+COVER_SCENE_MIN_CHARS = 10
+COVER_SCENE_MAX_CHARS = 80
 
 
 class Config(dict):
@@ -138,6 +181,23 @@ def utcnow_iso() -> str:
 
 def has_cjk(text: str) -> bool:
     return bool(CJK_RE.search(str(text or "")))
+
+
+def strip_english_tail(title: str) -> str:
+    """Keep only the leading Chinese part of a bilingual "中文标题 / English
+    Title" headline.
+
+    Upstream sources (AI HOT and friends) join the Chinese title with the
+    English original using " / "; the WeChat article shows the Chinese part
+    only. Titles are left untouched unless the split yields at least two
+    segments and the first one carries CJK text, so pure-English titles and
+    other uses of " / " survive as-is.
+    """
+    text = str(title or "").strip()
+    parts = [part.strip() for part in BILINGUAL_TITLE_RE.split(text) if part.strip()]
+    if len(parts) < 2 or not has_cjk(parts[0]):
+        return text
+    return parts[0]
 
 
 def esc(value) -> str:
@@ -174,9 +234,22 @@ def load_brief(path: Path) -> dict | None:
 
 
 def select_items(brief: dict, max_items: int) -> list[dict]:
-    """Items sorted by importance_score DESC (the brief is not pre-sorted)."""
+    """Items sorted by peak_score DESC (the brief is not pre-sorted).
+
+    ``peak_score`` is the best importance the story reached during the
+    24h window (persisted by update_news.py). Ranking the daily push by it
+    keeps an important story published early in the window from sinking
+    below fresher mid-tier items just because its recency component has
+    decayed by push time. Falls back to importance_score for briefs
+    produced before peak tracking existed."""
     items = [item for item in brief.get("items", []) if isinstance(item, dict)]
-    items.sort(key=lambda it: -float(it.get("importance_score") or 0))
+    items.sort(
+        key=lambda it: -(
+            float(it.get("peak_score"))
+            if it.get("peak_score") is not None
+            else float(it.get("importance_score") or 0)
+        )
+    )
     return items[:max_items]
 
 
@@ -266,23 +339,43 @@ def fetch_full_text(session: requests.Session, url: str, timeout: float = 20.0) 
     return None
 
 
+def summary_grounding(summary: str, title: str) -> str | None:
+    """Return ``summary`` as grounding text, or None if it is not usable.
+
+    Rejects empty text, title duplicates, and anything too short to ground a
+    guide; strips WordPress boilerplate ("The post … appeared first on …")
+    so only editorial content is kept.
+    """
+    s = re.sub(r"\s+", " ", str(summary or "")).strip()
+    if not s or s == str(title or "").strip():
+        return None
+    s = SUMMARY_BOILERPLATE_RE.sub("", s).strip()
+    if len(s) < SUMMARY_MIN_GROUNDING_CHARS or s == str(title or "").strip():
+        return None
+    return s
+
+
 def reason_context(item: dict, session: requests.Session | None) -> str | None:
-    """Grounding context for reason writing: summary first, full text second."""
+    """Grounding context for reason writing: summary first, full text second.
+
+    A persisted summary (captured by the pipeline from the RSS description)
+    is preferred whenever it passes summary_grounding(): it needs no network
+    access, so guide generation does not depend on the live page being
+    fetchable from the local machine. Only when no summary qualifies does
+    the script fall back to fetching the article itself.
+    """
     title = str(item.get("title") or "").strip()
-    summary = ""
+    candidates: list[str] = []
     primary = item.get("primary_item")
     if isinstance(primary, dict):
-        summary = str(primary.get("summary") or "").strip()
-    if not summary or summary == title:
-        for src in item.get("sources") or []:
-            if not isinstance(src, dict):
-                continue
-            candidate = str(src.get("summary") or "").strip()
-            if candidate and candidate != title:
-                summary = candidate
-                break
-    if summary and summary != title:
-        return summary[:FULL_TEXT_MAX_CHARS]
+        candidates.append(str(primary.get("summary") or ""))
+    for src in item.get("sources") or []:
+        if isinstance(src, dict):
+            candidates.append(str(src.get("summary") or ""))
+    for candidate in candidates:
+        grounding = summary_grounding(candidate, title)
+        if grounding:
+            return grounding[:FULL_TEXT_MAX_CHARS]
     url = str(item.get("primary_url") or item.get("url") or "").strip()
     if url and session is not None:
         return fetch_full_text(session, url)
@@ -343,6 +436,14 @@ def call_text_api(
     return None
 
 
+# Phrases a model uses when it refuses to summarize (e.g. the fetched "full
+# text" was only site navigation). A refusal must never render as a guide.
+REFUSAL_MARKERS = (
+    "无法据此", "无法提取", "无法生成导读", "有效导读", "导航菜单",
+    "栏目索引", "正文内容仅", "未提供正文",
+)
+
+
 def validate_reason(content: str, title: str) -> bool:
     content = str(content or "").strip()
     if not content or not has_cjk(content):
@@ -352,6 +453,8 @@ def validate_reason(content: str, title: str) -> bool:
     if content == str(title or "").strip():
         return False
     if "http" in content:
+        return False
+    if any(marker in content for marker in REFUSAL_MARKERS):
         return False
     return True
 
@@ -438,21 +541,8 @@ def fallback_title(brand: str, now_cn: datetime, count: int) -> str:
     return f"{brand} · {now_cn.month}月{now_cn.day}日｜今日精选{count}条"
 
 
-def generate_main_title(headline: str, cfg: Config) -> str | None:
-    content = call_text_api(
-        [
-            {"role": "system", "content": TITLE_SYSTEM_PROMPT},
-            {"role": "user", "content": f"今日头条：{headline}"},
-        ],
-        cfg,
-    )
-    if content and len(content) <= TITLE_MAX_CHARS and has_cjk(content):
-        return content
-    return None
-
-
 def make_digest(brand: str, count: int, headline: str, issue_label: str) -> str:
-    digest = f"{brand}{issue_label}精选 {count} 条 AI 要闻：{headline}。完整原文与更多条目见「阅读原文」。"
+    digest = f"{brand}{issue_label}精选 {count} 条 AI 要闻：{headline}。更多条目见「阅读原文」。"
     return digest[:DIGEST_MAX_CHARS]
 
 
@@ -464,17 +554,50 @@ def is_negative_headline(headline: str) -> bool:
     return any(word in str(headline or "") for word in NEGATIVE_WORDS)
 
 
-def build_cover_prompt(headline: str) -> tuple[str, str]:
-    """Returns (prompt, mode). Negative headlines use the brand template."""
+def build_cover_prompt(headline: str, scene: str | None = None) -> tuple[str, str]:
+    """Returns (prompt, mode). Negative headlines use the brand template.
+
+    ``scene`` is the text model's brand-free visual description; it replaces
+    the raw headline as the theme so the image model never sees brand names.
+    """
     headline = str(headline or "").strip()
     if not headline or is_negative_headline(headline):
         return BRAND_COVER_PROMPT, "brand"
     prompt = (
-        f"编辑插画风格横幅封面图，主题：{headline[:60]}。"
+        f"编辑插画风格横幅封面图，主题：{(scene or headline)[:60]}。"
         "扁平插画，科技感，明亮配色，干净留白，适合公众号头图。"
         "不要出现任何文字、字母、数字或水印。"
     )
     return prompt, "headline"
+
+
+def validate_cover_scene(content: str) -> bool:
+    content = str(content or "").strip()
+    if not content or not has_cjk(content):
+        return False
+    if len(content) < COVER_SCENE_MIN_CHARS or len(content) > COVER_SCENE_MAX_CHARS:
+        return False
+    if "http" in content:
+        return False
+    return True
+
+
+def generate_cover_scene(headline: str, cfg: Config) -> str | None:
+    """One text-model pass rewriting the headline as a drawable, brand-free
+    scene; raw headlines make the image model draw literal logos."""
+    headline = str(headline or "").strip()
+    if not headline:
+        return None
+    content = call_text_api(
+        [
+            {"role": "system", "content": COVER_SCENE_SYSTEM_PROMPT},
+            {"role": "user", "content": f"标题：{headline}"},
+        ],
+        cfg,
+    )
+    if content and validate_cover_scene(content):
+        return content
+    return None
 
 
 def image_api_url(base_url: str) -> str:
@@ -612,12 +735,18 @@ def static_cover_bytes(assets_dir: Path) -> bytes | None:
 
 def resolve_cover(
     headline: str, cfg: Config, session: requests.Session | None, assets_dir: Path
-) -> tuple[bytes | None, str, str]:
-    """Returns (bytes, filename, mode). Mode: headline | brand | static."""
+) -> tuple[bytes | None, str, str, bool]:
+    """Returns (bytes, filename, mode, scene_used). Mode: headline | brand | static."""
     static = static_cover_bytes(assets_dir)
     if not cfg["api_key"] or session is None:
-        return static, "cover.png", "static"
+        return static, "cover.png", "static", False
     prompt, mode = build_cover_prompt(headline)
+    scene_used = False
+    if mode == "headline":
+        scene = generate_cover_scene(headline, cfg)
+        if scene:
+            prompt, _ = build_cover_prompt(headline, scene)
+            scene_used = True
     image_bytes = call_qwen_image(prompt, cfg, session)
     if image_bytes is None and mode == "headline":
         # Level B: brand template prompt retry.
@@ -626,8 +755,8 @@ def resolve_cover(
     if image_bytes is not None:
         cropped = crop_cover(image_bytes)
         if cropped is not None:
-            return cropped, "cover.jpg", mode
-    return static, "cover.png", "static"
+            return cropped, "cover.jpg", mode, scene_used
+    return static, "cover.png", "static", False
 
 
 def _write_png(path: Path, width: int, height: int, pixel_fn) -> None:
@@ -748,9 +877,15 @@ def item_original_url(item: dict) -> str:
     return ""
 
 
+def circled_number(num: int) -> str:
+    """Circled item number in the unified outlined ①–⑳ style."""
+    if 1 <= num <= len(CIRCLED_NUMS):
+        return CIRCLED_NUMS[num - 1]
+    return str(num)
+
+
 def render_item_html(item: dict, idx: int) -> str:
-    num = CIRCLED_NUMS[idx] if idx < len(CIRCLED_NUMS) else f"{idx + 1}."
-    title = str(item.get("title") or "").strip()
+    title = strip_english_tail(str(item.get("title") or "").strip())
     reason = str(item.get("weixin_reason") or "").strip()
     sources = [s for s in (item.get("sources") or []) if isinstance(s, dict)]
     source_count = item.get("source_count")
@@ -766,25 +901,38 @@ def render_item_html(item: dict, idx: int) -> str:
     parts = ['<section style="margin:26px 0 0;padding:0;">']
     parts.append(
         '<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;'
-        f'color:#1f1f1f;">{num} {esc(title)}</p>'
+        f'color:#1f1f1f;">{circled_number(idx + 1)} {esc(title)}</p>'
     )
     if reason:
         parts.append(
-            '<p style="margin:8px 0 0;font-size:14px;line-height:1.7;'
+            '<p style="margin:8px 0 0;font-size:15px;line-height:1.75;'
             f'color:#666666;">{esc(reason)}</p>'
         )
     if len(sources) > 1:
-        for src in sources[:MAX_SOURCE_LINES]:
-            sub_title = str(src.get("title") or "").strip()
-            if not sub_title:
-                continue
+        # Collapse the per-source title list into a single line that carries
+        # every source name: "标题（Buzzing, NewsNow, Info Flow）".
+        line_title = title
+        if not line_title:
+            for src in sources:
+                line_title = strip_english_tail(str(src.get("title") or "").strip())
+                if line_title:
+                    break
+        source_names = []
+        for src in sources:
             sub_source = str(src.get("source_name") or "").strip()
-            suffix = f"（{esc(sub_source)}）" if sub_source else ""
+            if sub_source and sub_source not in source_names:
+                source_names.append(sub_source)
+        if line_title or source_names:
+            suffix = f"（{', '.join(esc(name) for name in source_names)}）" if source_names else ""
             parts.append(
                 '<p style="margin:6px 0 0;font-size:13px;line-height:1.6;'
-                f'color:#999999;">· {esc(sub_title)}{suffix}</p>'
+                f'color:#999999;">{esc(line_title)}{suffix}</p>'
             )
-    meta_bits = [bit for bit in (category, source_name, f"{source_count} 个来源") if bit]
+    # Meta line shows the Chinese category label and, for multi-source items,
+    # the first source plus 等: "多源热议 · Buzzing等 · 3 个来源".
+    meta_source = f"{source_name}等" if len(sources) > 1 and source_name else source_name
+    category_zh = CATEGORY_LABEL_ZH.get(category, category)
+    meta_bits = [bit for bit in (category_zh, meta_source, f"{source_count} 个来源") if bit]
     if meta_bits:
         meta = " · ".join(esc(bit) for bit in meta_bits)
         parts.append(
@@ -963,17 +1111,14 @@ def main(argv: list[str] | None = None) -> int:
 
     fill_reasons(items, cache, cfg, session, stats)
 
-    headline = str(items[0].get("title") or "").strip()
-    title = None
-    if cfg["api_key"]:
-        title = generate_main_title(headline, cfg)
-    title_mode = "llm" if title else "fallback"
-    if not title:
-        title = fallback_title(cfg["brand"], now_cn, len(items))
+    headline = strip_english_tail(str(items[0].get("title") or "").strip())
+    # Fixed template title 「AI 雷达 · X月X日｜今日精选N条」; it never depends
+    # on the API key.
+    title = fallback_title(cfg["brand"], now_cn, len(items))
 
     digest = make_digest(cfg["brand"], len(items), headline, issue_label)
 
-    cover_bytes, cover_filename, cover_mode = resolve_cover(
+    cover_bytes, cover_filename, cover_mode, cover_scene = resolve_cover(
         headline, cfg, session, assets_dir
     )
 
@@ -1015,15 +1160,16 @@ def main(argv: list[str] | None = None) -> int:
 
     print(
         "weixin: items={items} reasons reused={reused} cached={cached} "
-        "generated={generated} skipped={skipped} title_mode={title_mode} "
-        "cover_mode={cover_mode} dry_run={dry_run}".format(
+        "generated={generated} skipped={skipped} "
+        "cover_mode={cover_mode} cover_scene={cover_scene} "
+        "dry_run={dry_run}".format(
             items=len(items),
             reused=stats["reused"],
             cached=stats["cached"],
             generated=stats["generated"],
             skipped=stats["skipped"],
-            title_mode=title_mode,
             cover_mode=cover_mode,
+            cover_scene=1 if cover_scene else 0,
             dry_run=1 if args.dry_run else 0,
         )
     )

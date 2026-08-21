@@ -629,7 +629,7 @@ function editorialPercent(item) {
   return internal ? Math.max(45, Math.round(internal * 0.72)) : 36;
 }
 
-function freshnessPercent(item, halfLifeHours = 48) {
+function freshnessPercent(item, halfLifeHours = 72) {
   const ageMs = Date.now() - timelineMs(item);
   if (!Number.isFinite(ageMs) || ageMs < 0) return 100;
   const ageHours = ageMs / 3600000;

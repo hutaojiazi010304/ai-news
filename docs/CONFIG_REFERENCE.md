@@ -142,11 +142,21 @@ SocialData 同时跑两路:① 中英关键词搜索发现新声音;② 一个�
 
 **入选门槛**(`story_passes_brief_gate`,理念是"宁缺毋滥"):一条故事要进精选池,必须满足其一:
 - **来源数 ≥ 2**(多源印证),或
-- **评分 ≥ 0.72**(`BRIEF_SCORE_GATE`,约 4721 行)
+- **峰值分 ≥ 0.72**(`BRIEF_SCORE_GATE`)。峰值分(`peak_score`)持久化在
+  `data/story-peak-state.json`,记录每条故事在本窗口内达到过的最高分:
+  重要度里的新近度项会逐轮衰减,单来源故事如果只看"当前分",会在发布前
+  (如每天上午的日更推送)老化跌出门槛;按峰值判定后,曾经过线的故事
+  在 24 小时窗口内不会掉出精选。超过 20 条过线时的取舍排序同样按峰值分。
 
 **评分公式**(`calculate_item_importance`):
 `分 = 编辑权重×0.3 + 来源层级×0.22 + AI相关×0.2 + 新近度×0.18 + 热度×0.1`
 来源层级权重:官方 1.0 > AI HOT 0.78 > 自媒体(抖音/小红书)0.48 > X 0.45。自媒体单条很难过线,所以 Top 3 里少。
+新近度按指数衰减:`0.5^(年龄小时数 / 半衰期)`,**半衰期 72 小时**
+(`headline_freshness_score` 的 `half_life_hours`):为配合 24 小时窗口 +
+每天一次的出刊,24 小时龄的条目仍保留约 79% 的新近度(原 48 小时半衰期
+只剩约 71%),早间的重要条目不至于在发布前衰减太多。前端两套皮肤的
+`freshnessPercent`(`assets/app.js`、`classic/assets/app.js`)镜像同一公式,
+改半衰期时要同步。
 
 **想让自媒体/研究 Top 3 更满**:可调低门槛 `BRIEF_SCORE_GATE`,或改前端逻辑(`assets/app.js` 第 ~1529 行)在精选故事不足 3 条时用本栏目自有内容补齐。(此项尚未实施,需要的话可单独做。)
 
@@ -166,6 +176,7 @@ SocialData 同时跑两路:① 中英关键词搜索发现新声音;② 一个�
 | **临时关掉**某个付费源 | GitHub Variables 把对应 `*_ENABLED` 设 `0` |
 | 改**运行频率** | workflow 第 6 行 `cron` |
 | 改**付费源每天跑几次** | `PAID_SOURCE_DEFAULT_INTERVAL_HOURS`(约 188 行) |
+| 改**新近度衰减快慢** | `headline_freshness_score` 的 `half_life_hours`(半衰期小时数),并同步前端 `freshnessPercent` |
 
 ---
 

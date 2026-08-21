@@ -120,6 +120,11 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, str], ...] = (
     },
 )
 OFFICIAL_AI_MAX_AGE_DAYS = 45
+# RSS/Atom entry summaries (<description>) are kept as grounding text for
+# downstream guide/recommendation writing (see generate_weixin_article.py):
+# they let consumers work offline instead of fetching the live page, which
+# is often bot-blocked. Truncated to bound data/*.json size.
+FEED_SUMMARY_MAX_CHARS = 800
 CURATED_AI_MEDIA_MAX_AGE_DAYS = 30
 # Per-fetch item cap for wide discussion-tier aggregators (buzzing/iris).
 # They dominate raw volume with very low AI keep rates (see
@@ -243,6 +248,7 @@ AGENTMAIL_API_BASE_DEFAULT = "https://api.agentmail.to"
 AGENTMAIL_DIGEST_FILE = "email-digest.json"
 AGENTMAIL_DEFAULT_LIMIT = 50
 PAID_SOURCE_STATE_FILE = "paid-source-state.json"
+STORY_PEAK_STATE_FILE = "story-peak-state.json"
 PAID_SOURCE_DEFAULT_INTERVAL_HOURS = 24
 PAID_SOURCE_DEFAULT_INTERVAL_HOURS_BY_PREFIX = {
     "SOCIALDATA": 12,
@@ -469,7 +475,16 @@ def parse_feed_entries_via_xml(feed_xml: bytes) -> list[dict[str, Any]]:
                 if key in seen:
                     continue
                 seen.add(key)
-                out.append({"title": title, "link": link, "published": published})
+                summary = (
+                    node.findtext("description")
+                    or node.findtext("{*}description")
+                    or node.findtext("summary")
+                    or node.findtext("{*}summary")
+                    or ""
+                ).strip()
+                out.append(
+                    {"title": title, "link": link, "published": published, "summary": summary}
+                )
     return out
 
 
@@ -1599,6 +1614,24 @@ def parse_openai_codex_changelog_items(page_html: str, now: datetime) -> list[Ra
     return out
 
 
+def clean_feed_summary(raw: Any) -> str:
+    """Normalize an RSS/Atom entry summary (<description>) to plain text.
+
+    Feed summaries commonly embed HTML fragments and entities; strip the
+    markup, collapse whitespace, and truncate so the persisted value stays
+    compact. Returns "" when nothing useful remains.
+    """
+    text = str(raw or "").strip()
+    if not text:
+        return ""
+    try:
+        plain = BeautifulSoup(text, "html.parser").get_text(" ", strip=True)
+    except Exception:
+        plain = text
+    plain = re.sub(r"\s+", " ", plain).strip()
+    return plain[:FEED_SUMMARY_MAX_CHARS]
+
+
 def fetch_feed_as_official_items(
     session: requests.Session,
     feed: dict[str, str],
@@ -1652,6 +1685,7 @@ def fetch_feed_as_official_items(
         if published < now - timedelta(days=OFFICIAL_AI_MAX_AGE_DAYS):
             continue
 
+        summary = clean_feed_summary(entry.get("summary") or entry.get("description"))
         out.append(
             RawItem(
                 site_id=site_id,
@@ -1663,6 +1697,7 @@ def fetch_feed_as_official_items(
                 meta={
                     "feed_url": feed_url,
                     "feed_home": feed.get("html_url") or "",
+                    "summary": summary or None,
                 },
             )
         )
@@ -5750,7 +5785,14 @@ def recency_score(record: dict[str, Any], now: datetime, window_hours: int) -> f
     return max(0.0, min(1.0, (float(window_hours) - age_hours) / max(1.0, float(window_hours))))
 
 
-def headline_freshness_score(record: dict[str, Any], now: datetime, half_life_hours: float = 48.0) -> float:
+def headline_freshness_score(record: dict[str, Any], now: datetime, half_life_hours: float = 72.0) -> float:
+    """Exponential recency: 0.5 ** (age_hours / half_life_hours).
+
+    The half-life is tuned for a 24h rolling window with a once-daily push:
+    a story should not lose most of its recency value before publish time.
+    Keep in sync with freshnessPercent() in assets/app.js and
+    classic/assets/app.js, which mirror this formula client-side.
+    """
     ts = event_time(record)
     if not ts:
         return 0.0
@@ -6071,21 +6113,122 @@ def merge_story_items(
 
 
 BRIEF_SCORE_GATE = 0.72
+# Peak-score state: stories only live ~24h in the window, so entries unseen
+# for this many days are dropped. Kept slightly above the window so a story
+# that ages out mid-run still has its peak available until the next prune.
+STORY_PEAK_STATE_MAX_AGE_DAYS = 3
+STORY_PEAK_STATE_MAX_ENTRIES = 3000
+
+
+def load_story_peak_state(path: Path) -> dict[str, Any]:
+    """Load persisted per-story peak scores (story_id -> best score seen so far).
+
+    The brief gate must judge a story by the best score it reached during the
+    window, not by its score at rebuild time: the recency component decays
+    every run, so single-source stories would otherwise age out of the brief
+    hours before a daily push happens.
+    """
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, ValueError):
+        payload = {}
+    if not isinstance(payload, dict):
+        payload = {}
+    entries = payload.get("stories")
+    if not isinstance(entries, dict):
+        entries = {}
+    stories: dict[str, Any] = {}
+    for story_id, entry in entries.items():
+        if not isinstance(entry, dict):
+            continue
+        try:
+            peak = float(entry.get("peak_score"))
+        except (TypeError, ValueError):
+            continue
+        stories[str(story_id)] = {
+            "peak_score": round(max(0.0, min(1.0, peak)), 4),
+            "last_seen_at": str(entry.get("last_seen_at") or ""),
+        }
+    return {"schema_version": 1, "stories": stories}
+
+
+def apply_story_peak_scores(
+    stories: list[dict[str, Any]],
+    state: dict[str, Any],
+    now: datetime,
+    *,
+    max_age_days: float = STORY_PEAK_STATE_MAX_AGE_DAYS,
+    max_entries: int = STORY_PEAK_STATE_MAX_ENTRIES,
+) -> None:
+    """Attach ``peak_score`` to every story and advance the persisted state.
+
+    ``peak_score`` is the max of the story's current score and every score
+    recorded for the same story_id on earlier runs. Entries not seen for
+    ``max_age_days`` are pruned; a hard cap keeps the state file bounded even
+    if story ids churn.
+    """
+    entries = state.setdefault("stories", {})
+    if not isinstance(entries, dict):
+        entries = {}
+        state["stories"] = entries
+    now_iso = iso(now)
+    for story in stories:
+        story_id = str(story.get("story_id") or "")
+        if not story_id:
+            continue
+        try:
+            current = float(story.get("score") or 0.0)
+        except (TypeError, ValueError):
+            current = 0.0
+        previous = 0.0
+        entry = entries.get(story_id)
+        if isinstance(entry, dict):
+            try:
+                previous = float(entry.get("peak_score") or 0.0)
+            except (TypeError, ValueError):
+                previous = 0.0
+        peak = round(max(0.0, min(1.0, max(current, previous))), 4)
+        story["peak_score"] = peak
+        entries[story_id] = {"peak_score": peak, "last_seen_at": now_iso}
+    cutoff = now - timedelta(days=max_age_days)
+    stale = []
+    for story_id, entry in entries.items():
+        seen = parse_iso(str(entry.get("last_seen_at") or ""))
+        if not seen or seen < cutoff:
+            stale.append(story_id)
+    for story_id in stale:
+        del entries[story_id]
+    overflow = len(entries) - max_entries
+    if overflow > 0:
+        oldest = sorted(entries.items(), key=lambda kv: str(kv[1].get("last_seen_at") or ""))[:overflow]
+        for story_id, _entry in oldest:
+            del entries[story_id]
+
+
+def story_gate_score(story: dict[str, Any]) -> float:
+    """Best score this story reached during the window (falls back to the
+    current score when no persisted peak exists, e.g. in unit tests)."""
+    try:
+        return max(0.0, float(story.get("peak_score")))
+    except (TypeError, ValueError):
+        pass
+    try:
+        return max(0.0, float(story.get("score") or 0))
+    except (TypeError, ValueError):
+        return 0.0
 
 
 def story_passes_brief_gate(story: dict[str, Any]) -> bool:
     """宁缺毋滥: a story earns a brief slot via multi-source confirmation or a
-    strong score. Quiet days produce a short (possibly empty) brief instead of
-    a padded one."""
+    strong peak score. Quiet days produce a short (possibly empty) brief
+    instead of a padded one. The gate reads the persisted peak so a
+    single-source story that scored high earlier in the window does not age
+    out as its recency component decays run by run."""
     try:
         sources = int(story.get("source_count") or 1)
     except Exception:
         sources = 1
-    try:
-        score = float(story.get("score") or 0)
-    except Exception:
-        score = 0.0
-    return sources >= 2 or score >= BRIEF_SCORE_GATE
+    return sources >= 2 or story_gate_score(story) >= BRIEF_SCORE_GATE
 
 
 def select_diverse_stories(
@@ -6093,12 +6236,18 @@ def select_diverse_stories(
     limit: int,
     same_source_penalty: float = 0.03,
 ) -> list[dict[str, Any]]:
-    """Greedy top-N by score with a per-source decay so one prolific source
-    cannot fill the brief, plus same-cluster suppression across the whole
-    window: a story whose title near-duplicates an already picked one is
-    skipped, so an event reposted hours apart (outside the merge window)
-    still occupies only one slot."""
-    candidates = sorted(stories, key=lambda story: (-float(story.get("score") or 0), str(story.get("title") or "")))
+    """Greedy top-N by peak score with a per-source decay so one prolific
+    source cannot fill the brief, plus same-cluster suppression across the
+    whole window: a story whose title near-duplicates an already picked one
+    is skipped, so an event reposted hours apart (outside the merge window)
+    still occupies only one slot.
+
+    Ranking uses ``story_gate_score`` (the persisted per-story peak) instead
+    of the decayed current score, so an important story published early in
+    the window is not out-ranked by fresher mid-tier items at selection
+    time — the brief should reflect the day's best stories, not the last
+    few hours."""
+    candidates = sorted(stories, key=lambda story: (-story_gate_score(story), str(story.get("title") or "")))
     picked: list[dict[str, Any]] = []
     picked_titles: list[tuple[str, set[str]]] = []
     picked_per_source: dict[str, int] = {}
@@ -6123,7 +6272,7 @@ def select_diverse_stories(
         best_eff = float("-inf")
         for idx, story in enumerate(remaining):
             source = str(story.get("source") or story.get("source_name") or "")
-            eff = float(story.get("score") or 0) - same_source_penalty * picked_per_source.get(source, 0)
+            eff = story_gate_score(story) - same_source_penalty * picked_per_source.get(source, 0)
             if eff > best_eff:
                 best_eff = eff
                 best_idx = idx
@@ -6512,6 +6661,9 @@ def main() -> int:
     latest_items_ai_dedup, title_cache = add_title_enhancements(latest_items_ai_dedup, session, title_cache)
     latest_items_ai_dedup, title_cache = add_recommend_reasons(latest_items_ai_dedup, session, title_cache)
     stories, merge_events = merge_story_items(latest_items_ai_dedup, now=now, window_hours=args.window_hours)
+    story_peak_state_path = output_dir / STORY_PEAK_STATE_FILE
+    story_peak_state = load_story_peak_state(story_peak_state_path)
+    apply_story_peak_scores(stories, story_peak_state, now)
     generated_at = iso(now)
     daily_brief_payload = build_daily_brief_payload(stories, generated_at=generated_at, window_hours=args.window_hours)
     stories_merged_payload = build_stories_payload(stories, generated_at=generated_at, window_hours=args.window_hours)
@@ -6685,6 +6837,10 @@ def main() -> int:
         json.dumps(sanitize_public_payload(paid_source_state), ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
+    story_peak_state_path.write_text(
+        json.dumps(sanitize_public_payload(story_peak_state), ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
     if email_digest_payload is not None:
         email_digest_path.write_text(
             json.dumps(sanitize_public_payload(email_digest_payload), ensure_ascii=False, indent=2),
@@ -6702,6 +6858,7 @@ def main() -> int:
     print(f"Wrote: {archive_path} ({len(archive)} items)")
     print(f"Wrote: {status_path}")
     print(f"Wrote: {paid_source_state_path}")
+    print(f"Wrote: {story_peak_state_path} ({len(story_peak_state.get('stories', {}))} tracked stories)")
     if email_digest_payload is not None:
         print(f"Wrote: {email_digest_path} ({email_digest_payload.get('total_messages', 0)} email items)")
     print(f"Wrote: {waytoagi_path} ({waytoagi_payload.get('count_7d', 0)} items)")

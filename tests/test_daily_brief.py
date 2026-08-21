@@ -4,12 +4,20 @@ from datetime import datetime, timedelta, timezone
 
 from scripts.update_news import (
     add_source_tier_fields,
+    apply_story_peak_scores,
     build_daily_brief_payload,
     build_merge_log_payload,
     build_stories_payload,
     calculate_item_importance,
+    clean_feed_summary,
     editorial_score,
+    fetch_feed_as_official_items,
+    headline_freshness_score,
+    load_story_peak_state,
     merge_story_items,
+    select_diverse_stories,
+    story_gate_score,
+    story_passes_brief_gate,
     waytoagi_updates_to_raw_items,
 )
 
@@ -144,3 +152,209 @@ def test_stories_and_merge_log_payload_shapes_are_explicit():
     assert stories_payload["stories"][0]["story_id"]
     assert merge_payload["merge_strategy"] == "url_or_title_similarity_v0_6"
     assert merge_payload["total_events"] == len(events) == 1
+
+
+# ---------------------------------------------------------------------------
+# Peak-score tracking (daily-push support): the brief must judge a story by
+# the best score it reached during the window, not by its decayed score at
+# rebuild time, so single-source stories do not age out before a 10:00 push.
+# ---------------------------------------------------------------------------
+
+def test_brief_gate_reads_peak_score_when_present():
+    # Single-source story whose current score decayed below the gate after a
+    # strong start: the persisted peak keeps it brief-eligible.
+    decayed = {"source_count": 1, "score": 0.65, "peak_score": 0.78}
+    assert story_passes_brief_gate(decayed) is True
+    assert story_gate_score(decayed) == 0.78
+
+    # Without a persisted peak the gate falls back to the current score.
+    no_peak = {"source_count": 1, "score": 0.65}
+    assert story_passes_brief_gate(no_peak) is False
+    fresh = {"source_count": 1, "score": 0.8}
+    assert story_passes_brief_gate(fresh) is True
+
+    # Multi-source stories pass regardless of any score.
+    multi = {"source_count": 2, "score": 0.3, "peak_score": 0.3}
+    assert story_passes_brief_gate(multi) is True
+
+
+def test_apply_story_peak_scores_keeps_max_across_runs():
+    state = {"schema_version": 1, "stories": {}}
+    first_run = [{"story_id": "story_a", "score": 0.8}]
+    apply_story_peak_scores(first_run, state, NOW)
+    assert first_run[0]["peak_score"] == 0.8
+    assert state["stories"]["story_a"]["peak_score"] == 0.8
+
+    # Ten hours later the recency component has decayed the score; the peak
+    # must not shrink with it.
+    later_run = [{"story_id": "story_a", "score": 0.69}]
+    apply_story_peak_scores(later_run, state, NOW + timedelta(hours=10))
+    assert later_run[0]["peak_score"] == 0.8
+    assert state["stories"]["story_a"]["peak_score"] == 0.8
+
+    # A later run may raise the peak (e.g. more sources join the story).
+    hotter_run = [{"story_id": "story_a", "score": 0.86}]
+    apply_story_peak_scores(hotter_run, state, NOW + timedelta(hours=12))
+    assert hotter_run[0]["peak_score"] == 0.86
+
+
+def test_apply_story_peak_scores_prunes_stale_entries():
+    stale_seen = (NOW - timedelta(days=4)).isoformat().replace("+00:00", "Z")
+    fresh_seen = NOW.isoformat().replace("+00:00", "Z")
+    state = {
+        "schema_version": 1,
+        "stories": {
+            "old_story": {"peak_score": 0.9, "last_seen_at": stale_seen},
+            "recent_story": {"peak_score": 0.8, "last_seen_at": fresh_seen},
+        },
+    }
+    apply_story_peak_scores([{"story_id": "new_story", "score": 0.5}], state, NOW)
+    assert "old_story" not in state["stories"]
+    assert "recent_story" in state["stories"]
+    assert "new_story" in state["stories"]
+
+
+def test_load_story_peak_state_tolerates_missing_and_corrupt_files(tmp_path):
+    missing = tmp_path / "story-peak-state.json"
+    assert load_story_peak_state(missing) == {"schema_version": 1, "stories": {}}
+
+    corrupt = tmp_path / "corrupt.json"
+    corrupt.write_text("{not json", encoding="utf-8")
+    state = load_story_peak_state(corrupt)
+    assert state == {"schema_version": 1, "stories": {}}
+
+    # Malformed entries are dropped, valid ones survive the round trip.
+    partial = tmp_path / "partial.json"
+    partial.write_text(
+        '{"schema_version": 1, "stories": {'
+        '"good": {"peak_score": 0.75, "last_seen_at": "2026-06-02T12:00:00Z"},'
+        '"bad": {"peak_score": "nope"},'
+        '"also_bad": 3'
+        "}}",
+        encoding="utf-8",
+    )
+    state = load_story_peak_state(partial)
+    assert set(state["stories"]) == {"good"}
+    assert state["stories"]["good"]["peak_score"] == 0.75
+
+
+def test_select_diverse_stories_ranks_by_peak_score():
+    """Over-capacity selection must not let fresher mid-tier items push an
+    early-window high-peak story out of the brief."""
+    early_peak = {
+        "story_id": "early",
+        "title": "Early major model release dominates benchmarks",
+        "source": "Source A",
+        "source_count": 1,
+        "score": 0.66,       # decayed by push time
+        "peak_score": 0.85,  # earned hours ago
+    }
+    fresh = {
+        "story_id": "fresh",
+        "title": "Fresh minor tooling update ships today",
+        "source": "Source B",
+        "source_count": 1,
+        "score": 0.74,
+        "peak_score": 0.74,
+    }
+    picked = select_diverse_stories([fresh, early_peak], limit=2)
+    assert [story["story_id"] for story in picked] == ["early", "fresh"]
+
+
+def test_daily_brief_keeps_decayed_single_source_story_via_peak():
+    """End-to-end shape: a story list whose only high-peak entry has decayed
+    below the gate still lands in the brief payload."""
+    stories = [
+        {"story_id": "kept", "title": "Kept story", "source_count": 1,
+         "score": 0.68, "peak_score": 0.8},
+        {"story_id": "dropped", "title": "Dropped story", "source_count": 1,
+         "score": 0.68, "peak_score": 0.6},
+    ]
+    payload = build_daily_brief_payload(stories, generated_at="2026-06-02T12:00:00Z", window_hours=24)
+    assert payload["total_items"] == 1
+    assert payload["items"][0]["story_id"] == "kept"
+
+
+# ---------------------------------------------------------------------------
+# Recency half-life: tuned to 72h so a story keeps most of its recency value
+# across the 24h window before a once-daily push. Frontend skins mirror this
+# constant (freshnessPercent in assets/app.js and classic/assets/app.js).
+# ---------------------------------------------------------------------------
+
+def test_headline_freshness_uses_72h_half_life():
+    fresh = make_item(1, hours_ago=0)
+    one_half_life = make_item(2, hours_ago=72)
+    in_window = make_item(3, hours_ago=24)
+
+    assert headline_freshness_score(fresh, NOW) == 1.0
+    assert headline_freshness_score(one_half_life, NOW) == 0.5
+    # 24h of age costs ~21% of recency (0.5 ** (24/72) ≈ 0.794); under the
+    # old 48h half-life the same story had already lost ~29%.
+    assert abs(headline_freshness_score(in_window, NOW) - 0.5 ** (24 / 72)) < 1e-9
+
+
+def test_importance_recency_component_follows_72h_half_life():
+    item = make_item(1, hours_ago=24)
+    breakdown = calculate_item_importance(item, NOW, 24)["breakdown"]
+    assert abs(breakdown["recency"] - 0.5 ** (24 / 72)) < 1e-4
+
+
+# ---------------------------------------------------------------------------
+# Official-feed summaries: the pipeline persists the RSS <description> as
+# clean plain text so downstream guide writing (weixin daily push) can use
+# it as offline grounding instead of fetching bot-blocked live pages.
+# ---------------------------------------------------------------------------
+
+def test_clean_feed_summary_strips_html_and_truncates():
+    html = "<p>OpenAI reaffirms <b>Zero Data Retention</b> for API customers.</p>"
+    assert clean_feed_summary(html) == "OpenAI reaffirms Zero Data Retention for API customers."
+    assert clean_feed_summary("") == ""
+    assert clean_feed_summary(None) == ""
+    assert len(clean_feed_summary("x" * 5000)) <= 800
+
+
+OFFICIAL_FEED_XML = b"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>OpenAI News</title>
+<item>
+  <title>Offering Zero Data Retention for frontier models</title>
+  <link>https://openai.com/index/offering-zero-data-retention-for-frontier-models</link>
+  <pubDate>Tue, 02 Jun 2026 06:00:00 GMT</pubDate>
+  <description><![CDATA[<p>OpenAI reaffirms <b>Zero Data Retention</b> for eligible
+    API customers and previews new privacy features.</p>]]></description>
+</item>
+<item>
+  <title>An item without a description</title>
+  <link>https://openai.com/index/no-description</link>
+  <pubDate>Tue, 02 Jun 2026 05:00:00 GMT</pubDate>
+</item>
+</channel></rss>
+"""
+
+
+def test_fetch_feed_as_official_items_persists_cleaned_rss_summary():
+    class FakeResponse:
+        content = OFFICIAL_FEED_XML
+
+        def raise_for_status(self):
+            return None
+
+    class FakeSession:
+        def get(self, url, **kwargs):
+            return FakeResponse()
+
+    feed = {
+        "title": "OpenAI News",
+        "xml_url": "https://openai.com/news/rss.xml",
+        "html_url": "https://openai.com/news",
+    }
+    items = fetch_feed_as_official_items(FakeSession(), feed, NOW)
+
+    assert len(items) == 2
+    with_summary = next(it for it in items if "Zero Data" in it.title)
+    assert with_summary.meta["summary"] == (
+        "OpenAI reaffirms Zero Data Retention for eligible API customers "
+        "and previews new privacy features."
+    )
+    without = next(it for it in items if it.title == "An item without a description")
+    assert without.meta["summary"] is None
