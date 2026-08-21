@@ -1,8 +1,92 @@
 {
-  "generated_at": "2026-08-21T15:57:31.364347Z",
+  "generated_at": "2026-08-21T17:00:00.992186Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
+    {
+      "story_id": "story_f852499667bc",
+      "title": "Slack 中的全新 GitHub Copilot 体验 / The new GitHub Copilot experience in Slack",
+      "url": "https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack",
+      "primary_url": "https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "95be4d894cfb7732cd86896767c25f43138d9629",
+          "title": "Slack 中的全新 GitHub Copilot 体验 / The new GitHub Copilot experience in Slack",
+          "title_zh": "Slack 中的全新 GitHub Copilot 体验",
+          "title_en": "The new GitHub Copilot experience in Slack",
+          "title_original": "The new GitHub Copilot experience in Slack",
+          "summary": "The GitHub integration in Slack now brings the agentic capabilities of GitHub Copilot CLI and the GitHub Copilot app into Slack in public preview. You can work with @GitHub to… The post The new GitHub Copilot experience in Slack appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-21T16:07:15Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub Changelog"
+      ],
+      "items": [
+        {
+          "id": "95be4d894cfb7732cd86896767c25f43138d9629",
+          "title": "Slack 中的全新 GitHub Copilot 体验 / The new GitHub Copilot experience in Slack",
+          "title_zh": "Slack 中的全新 GitHub Copilot 体验",
+          "title_en": "The new GitHub Copilot experience in Slack",
+          "title_original": "The new GitHub Copilot experience in Slack",
+          "summary": "The GitHub integration in Slack now brings the agentic capabilities of GitHub Copilot CLI and the GitHub Copilot app into Slack in public preview. You can work with @GitHub to… The post The new GitHub Copilot experience in Slack appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-21T16:07:15Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8505,
+      "importance": 0.8505,
+      "importance_score": 0.8505,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9916,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-21T16:07:15Z",
+      "latest_at": "2026-08-21T16:07:15Z",
+      "primary_item": {
+        "id": "95be4d894cfb7732cd86896767c25f43138d9629",
+        "title": "Slack 中的全新 GitHub Copilot 体验 / The new GitHub Copilot experience in Slack",
+        "title_zh": "Slack 中的全新 GitHub Copilot 体验",
+        "title_en": "The new GitHub Copilot experience in Slack",
+        "title_original": "The new GitHub Copilot experience in Slack",
+        "summary": "The GitHub integration in Slack now brings the agentic capabilities of GitHub Copilot CLI and the GitHub Copilot app into Slack in public preview. You can work with @GitHub to… The post The new GitHub Copilot experience in Slack appeared first on The GitHub Blog .",
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8505,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-21T17:00:47.401654Z"
+      }
+    },
     {
       "story_id": "story_1942460359a8",
       "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
@@ -106,15 +190,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.84,
-      "importance": 0.84,
-      "importance_score": 0.84,
+      "score": 0.8384,
+      "importance": 0.8384,
+      "importance_score": 0.8384,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9391,
+        "recency": 0.9298,
         "story_heat": 0.5
       },
       "category": "official",
@@ -142,424 +226,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
-      }
-    },
-    {
-      "story_id": "story_666a236350be",
-      "title": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍 / Up to 3.2x Faster Inference with LFM2.5-DSpark",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-      "primary_url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-      "source": "Hugging Face Blog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "8a28e486c5c80d8b81f7ef6434b41bc0d3758f07",
-          "title": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍 / Up to 3.2x Faster Inference with LFM2.5-DSpark",
-          "title_zh": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍",
-          "title_en": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
-          "title_original": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-20T16:52:57Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hugging Face Blog"
-      ],
-      "items": [
-        {
-          "id": "8a28e486c5c80d8b81f7ef6434b41bc0d3758f07",
-          "title": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍 / Up to 3.2x Faster Inference with LFM2.5-DSpark",
-          "title_zh": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍",
-          "title_en": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
-          "title_original": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-20T16:52:57Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8241,
-      "importance": 0.8241,
-      "importance_score": 0.8241,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8008,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-20T16:52:57Z",
-      "latest_at": "2026-08-20T16:52:57Z",
-      "primary_item": {
-        "id": "8a28e486c5c80d8b81f7ef6434b41bc0d3758f07",
-        "title": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍 / Up to 3.2x Faster Inference with LFM2.5-DSpark",
-        "title_zh": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍",
-        "title_en": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
-        "title_original": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-        "source": "Hugging Face Blog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8449,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
-      }
-    },
-    {
-      "story_id": "story_371125c1602a",
-      "title": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究 / From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
-      "primary_url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
-      "source": "Google DeepMind",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "170a12f11c9a3347096780bfa4e659b0e9daca01",
-          "title": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究 / From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-          "title_zh": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究",
-          "title_en": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-          "title_original": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-          "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
-          "recommend_reason_zh": null,
-          "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
-          "source": "Google DeepMind",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-21T11:59:48Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Google DeepMind"
-      ],
-      "items": [
-        {
-          "id": "170a12f11c9a3347096780bfa4e659b0e9daca01",
-          "title": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究 / From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-          "title_zh": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究",
-          "title_en": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-          "title_original": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-          "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
-          "recommend_reason_zh": null,
-          "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
-          "source": "Google DeepMind",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-21T11:59:48Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8373,
-      "importance": 0.8373,
-      "importance_score": 0.8373,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.9626,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-21T11:59:48Z",
-      "latest_at": "2026-08-21T11:59:48Z",
-      "primary_item": {
-        "id": "170a12f11c9a3347096780bfa4e659b0e9daca01",
-        "title": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究 / From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-        "title_zh": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究",
-        "title_en": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-        "title_original": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-        "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
-        "recommend_reason_zh": null,
-        "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
-        "source": "Google DeepMind",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8415,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
-      }
-    },
-    {
-      "story_id": "story_85ec019c932d",
-      "title": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等 / Pinning saved views to the repository issues sidebar is generally available and more",
-      "url": "https://github.blog/changelog/2026-08-20-pin-projects-views-and-milestones-to-the-repository-sidebar",
-      "primary_url": "https://github.blog/changelog/2026-08-20-pin-projects-views-and-milestones-to-the-repository-sidebar",
-      "source": "GitHub Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "2c4fc71547d52e8375f29f8ac4898b98edf8d7c5",
-          "title": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等 / Pinning saved views to the repository issues sidebar is generally available and more",
-          "title_zh": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等",
-          "title_en": "Pinning saved views to the repository issues sidebar is generally available and more",
-          "title_original": "Pinning saved views to the repository issues sidebar is generally available and more",
-          "summary": "Pinning saved views to the repository issues sidebar You can now pin saved views⁠ to the repository issues sidebar, making the views you use most just one click away, even… The post Pinning saved views to the repository issues sidebar is generally available and more appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-08-20-pin-projects-views-and-milestones-to-the-repository-sidebar",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-20T23:29:34Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "items": [
-        {
-          "id": "2c4fc71547d52e8375f29f8ac4898b98edf8d7c5",
-          "title": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等 / Pinning saved views to the repository issues sidebar is generally available and more",
-          "title_zh": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等",
-          "title_en": "Pinning saved views to the repository issues sidebar is generally available and more",
-          "title_original": "Pinning saved views to the repository issues sidebar is generally available and more",
-          "summary": "Pinning saved views to the repository issues sidebar You can now pin saved views⁠ to the repository issues sidebar, making the views you use most just one click away, even… The post Pinning saved views to the repository issues sidebar is generally available and more appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-08-20-pin-projects-views-and-milestones-to-the-repository-sidebar",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-20T23:29:34Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8176,
-      "importance": 0.8176,
-      "importance_score": 0.8176,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.8534,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-20T23:29:34Z",
-      "latest_at": "2026-08-20T23:29:34Z",
-      "primary_item": {
-        "id": "2c4fc71547d52e8375f29f8ac4898b98edf8d7c5",
-        "title": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等 / Pinning saved views to the repository issues sidebar is generally available and more",
-        "title_zh": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等",
-        "title_en": "Pinning saved views to the repository issues sidebar is generally available and more",
-        "title_original": "Pinning saved views to the repository issues sidebar is generally available and more",
-        "summary": "Pinning saved views to the repository issues sidebar You can now pin saved views⁠ to the repository issues sidebar, making the views you use most just one click away, even… The post Pinning saved views to the repository issues sidebar is generally available and more appeared first on The GitHub Blog .",
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/changelog/2026-08-20-pin-projects-views-and-milestones-to-the-repository-sidebar",
-        "source": "GitHub Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8398,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
-      }
-    },
-    {
-      "story_id": "story_4a9843552c46",
-      "title": "介绍人工智能期货 / Introducing AI Futures",
-      "url": "https://openai.com/index/introducing-ai-futures",
-      "primary_url": "https://openai.com/index/introducing-ai-futures",
-      "source": "Hacker News · 24h最热",
-      "source_name": "Zeli",
-      "sources": [
-        {
-          "id": "721b0d1928a4f4a94f98cd32dc519404aaa9955f",
-          "title": "介绍人工智能期货 / Introducing AI Futures",
-          "title_zh": "介绍人工智能期货",
-          "title_en": "Introducing AI Futures",
-          "title_original": "Introducing AI Futures",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-ai-futures",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-20T19:46:49Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News · 24h最热"
-      ],
-      "items": [
-        {
-          "id": "721b0d1928a4f4a94f98cd32dc519404aaa9955f",
-          "title": "介绍人工智能期货 / Introducing AI Futures",
-          "title_zh": "介绍人工智能期货",
-          "title_en": "Introducing AI Futures",
-          "title_original": "Introducing AI Futures",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-ai-futures",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-20T19:46:49Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.489,
-      "importance": 0.489,
-      "importance_score": 0.489,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.8234,
-        "story_heat": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "recent_ai_signal"
-      ],
-      "earliest_at": "2026-08-20T19:46:49Z",
-      "latest_at": "2026-08-20T19:46:49Z",
-      "primary_item": {
-        "id": "721b0d1928a4f4a94f98cd32dc519404aaa9955f",
-        "title": "介绍人工智能期货 / Introducing AI Futures",
-        "title_zh": "介绍人工智能期货",
-        "title_en": "Introducing AI Futures",
-        "title_original": "Introducing AI Futures",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/introducing-ai-futures",
-        "source": "Hacker News · 24h最热",
-        "source_name": "Zeli"
-      },
-      "peak_score": 0.822,
-      "persona_id": "pragmatic",
-      "persona_score": 0,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
-      }
-    },
-    {
-      "story_id": "story_ab204c545599",
-      "title": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期 / The AI-Native SDLC playbook",
-      "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
-      "primary_url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
-      "source": "Claude：Blog（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "005c8d0ec7d674a738e61cb654fbac11082cdba3",
-          "title": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期 / The AI-Native SDLC playbook",
-          "title_zh": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期",
-          "title_en": "The AI-Native SDLC playbook",
-          "title_original": "The AI-Native SDLC playbook",
-          "summary": "Anthropic 发布 AI 原生 SDLC 实战手册，提出将传统六阶段软件开发生命周期重构为 AI 嵌入各环节的闭环流程。手册指出，当代码不再是瓶颈时，规划、审查、部署等人速环节成为新约束，需通过 Claude 将需求压缩为 intent.md、以技能编码标准、用持续评测替代阶段门禁，并保留人工对关键代码的审查。",
-          "recommend_reason_zh": null,
-          "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
-          "source": "Claude：Blog（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-21T14:28:27.351000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Claude：Blog（网页）"
-      ],
-      "items": [
-        {
-          "id": "005c8d0ec7d674a738e61cb654fbac11082cdba3",
-          "title": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期 / The AI-Native SDLC playbook",
-          "title_zh": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期",
-          "title_en": "The AI-Native SDLC playbook",
-          "title_original": "The AI-Native SDLC playbook",
-          "summary": "Anthropic 发布 AI 原生 SDLC 实战手册，提出将传统六阶段软件开发生命周期重构为 AI 嵌入各环节的闭环流程。手册指出，当代码不再是瓶颈时，规划、审查、部署等人速环节成为新约束，需通过 Claude 将需求压缩为 intent.md、以技能编码标准、用持续评测替代阶段门禁，并保留人工对关键代码的审查。",
-          "recommend_reason_zh": null,
-          "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
-          "source": "Claude：Blog（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-21T14:28:27.351000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8164,
-      "importance": 0.8164,
-      "importance_score": 0.8164,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.73,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.9858,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-21T14:28:27.351000Z",
-      "latest_at": "2026-08-21T14:28:27.351000Z",
-      "primary_item": {
-        "id": "005c8d0ec7d674a738e61cb654fbac11082cdba3",
-        "title": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期 / The AI-Native SDLC playbook",
-        "title_zh": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期",
-        "title_en": "The AI-Native SDLC playbook",
-        "title_original": "The AI-Native SDLC playbook",
-        "summary": "Anthropic 发布 AI 原生 SDLC 实战手册，提出将传统六阶段软件开发生命周期重构为 AI 嵌入各环节的闭环流程。手册指出，当代码不再是瓶颈时，规划、审查、部署等人速环节成为新约束，需通过 Claude 将需求压缩为 intent.md、以技能编码标准、用持续评测替代阶段门禁，并保留人工对关键代码的审查。",
-        "recommend_reason_zh": null,
-        "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
-        "source": "Claude：Blog（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.818,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     },
     {
@@ -607,15 +274,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8404,
-      "importance": 0.8404,
-      "importance_score": 0.8404,
+      "score": 0.8388,
+      "importance": 0.8388,
+      "importance_score": 0.8388,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.8576,
+        "recency": 0.849,
         "story_heat": 0.0
       },
       "category": "official",
@@ -643,7 +310,340 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
+      }
+    },
+    {
+      "story_id": "story_371125c1602a",
+      "title": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究 / From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
+      "primary_url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
+      "source": "Google DeepMind",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "170a12f11c9a3347096780bfa4e659b0e9daca01",
+          "title": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究 / From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+          "title_zh": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究",
+          "title_en": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+          "title_original": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+          "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-21T11:59:48Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Google DeepMind"
+      ],
+      "items": [
+        {
+          "id": "170a12f11c9a3347096780bfa4e659b0e9daca01",
+          "title": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究 / From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+          "title_zh": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究",
+          "title_en": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+          "title_original": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+          "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-21T11:59:48Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8355,
+      "importance": 0.8355,
+      "importance_score": 0.8355,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.953,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-21T11:59:48Z",
+      "latest_at": "2026-08-21T11:59:48Z",
+      "primary_item": {
+        "id": "170a12f11c9a3347096780bfa4e659b0e9daca01",
+        "title": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究 / From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+        "title_zh": "从 Atari 到 EVE Online：基于 15 年游戏人工智能研究",
+        "title_en": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+        "title_original": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+        "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
+        "recommend_reason_zh": null,
+        "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games",
+        "source": "Google DeepMind",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8415,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-21T17:00:47.401654Z"
+      }
+    },
+    {
+      "story_id": "story_4a9843552c46",
+      "title": "介绍人工智能期货 / Introducing AI Futures",
+      "url": "https://openai.com/index/introducing-ai-futures",
+      "primary_url": "https://openai.com/index/introducing-ai-futures",
+      "source": "Hacker News · 24h最热",
+      "source_name": "Zeli",
+      "sources": [
+        {
+          "id": "721b0d1928a4f4a94f98cd32dc519404aaa9955f",
+          "title": "介绍人工智能期货 / Introducing AI Futures",
+          "title_zh": "介绍人工智能期货",
+          "title_en": "Introducing AI Futures",
+          "title_original": "Introducing AI Futures",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/introducing-ai-futures",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-20T19:46:49Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News · 24h最热"
+      ],
+      "items": [
+        {
+          "id": "721b0d1928a4f4a94f98cd32dc519404aaa9955f",
+          "title": "介绍人工智能期货 / Introducing AI Futures",
+          "title_zh": "介绍人工智能期货",
+          "title_en": "Introducing AI Futures",
+          "title_original": "Introducing AI Futures",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/introducing-ai-futures",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-20T19:46:49Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.4875,
+      "importance": 0.4875,
+      "importance_score": 0.4875,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.8152,
+        "story_heat": 0.0
+      },
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-08-20T19:46:49Z",
+      "latest_at": "2026-08-20T19:46:49Z",
+      "primary_item": {
+        "id": "721b0d1928a4f4a94f98cd32dc519404aaa9955f",
+        "title": "介绍人工智能期货 / Introducing AI Futures",
+        "title_zh": "介绍人工智能期货",
+        "title_en": "Introducing AI Futures",
+        "title_original": "Introducing AI Futures",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/introducing-ai-futures",
+        "source": "Hacker News · 24h最热",
+        "source_name": "Zeli"
+      },
+      "peak_score": 0.822,
+      "persona_id": "pragmatic",
+      "persona_score": 0,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-21T17:00:47.401654Z"
+      }
+    },
+    {
+      "story_id": "story_99aa6c57026b",
+      "title": "在 Microsoft Teams 中与 GitHub Copilot 共享代理工作 / Shared agentic work with GitHub Copilot in Microsoft Teams",
+      "url": "https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams",
+      "primary_url": "https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "decada2ec28c4f5c3a53da129b04075e40cc546e",
+          "title": "在 Microsoft Teams 中与 GitHub Copilot 共享代理工作 / Shared agentic work with GitHub Copilot in Microsoft Teams",
+          "title_zh": "在 Microsoft Teams 中与 GitHub Copilot 共享代理工作",
+          "title_en": "Shared agentic work with GitHub Copilot in Microsoft Teams",
+          "title_original": "Shared agentic work with GitHub Copilot in Microsoft Teams",
+          "summary": "Turn a Microsoft Teams discussion into a collaborative agent session everyone can see and help direct. Mention @GitHub in a channel, thread, or direct message to start a GitHub Copilot… The post Shared agentic work with GitHub Copilot in Microsoft Teams appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-21T16:03:36Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub Changelog"
+      ],
+      "items": [
+        {
+          "id": "decada2ec28c4f5c3a53da129b04075e40cc546e",
+          "title": "在 Microsoft Teams 中与 GitHub Copilot 共享代理工作 / Shared agentic work with GitHub Copilot in Microsoft Teams",
+          "title_zh": "在 Microsoft Teams 中与 GitHub Copilot 共享代理工作",
+          "title_en": "Shared agentic work with GitHub Copilot in Microsoft Teams",
+          "title_original": "Shared agentic work with GitHub Copilot in Microsoft Teams",
+          "summary": "Turn a Microsoft Teams discussion into a collaborative agent session everyone can see and help direct. Mention @GitHub in a channel, thread, or direct message to start a GitHub Copilot… The post Shared agentic work with GitHub Copilot in Microsoft Teams appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-21T16:03:36Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8504,
+      "importance": 0.8504,
+      "importance_score": 0.8504,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.991,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-21T16:03:36Z",
+      "latest_at": "2026-08-21T16:03:36Z",
+      "primary_item": {
+        "id": "decada2ec28c4f5c3a53da129b04075e40cc546e",
+        "title": "在 Microsoft Teams 中与 GitHub Copilot 共享代理工作 / Shared agentic work with GitHub Copilot in Microsoft Teams",
+        "title_zh": "在 Microsoft Teams 中与 GitHub Copilot 共享代理工作",
+        "title_en": "Shared agentic work with GitHub Copilot in Microsoft Teams",
+        "title_original": "Shared agentic work with GitHub Copilot in Microsoft Teams",
+        "summary": "Turn a Microsoft Teams discussion into a collaborative agent session everyone can see and help direct. Mention @GitHub in a channel, thread, or direct message to start a GitHub Copilot… The post Shared agentic work with GitHub Copilot in Microsoft Teams appeared first on The GitHub Blog .",
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8504,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-21T17:00:47.401654Z"
+      }
+    },
+    {
+      "story_id": "story_ab204c545599",
+      "title": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期 / The AI-Native SDLC playbook",
+      "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
+      "primary_url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
+      "source": "Claude：Blog（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "005c8d0ec7d674a738e61cb654fbac11082cdba3",
+          "title": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期 / The AI-Native SDLC playbook",
+          "title_zh": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期",
+          "title_en": "The AI-Native SDLC playbook",
+          "title_original": "The AI-Native SDLC playbook",
+          "summary": "Anthropic 发布 AI 原生 SDLC 实战手册，提出将传统六阶段软件开发生命周期重构为 AI 嵌入各环节的闭环流程。手册指出，当代码不再是瓶颈时，规划、审查、部署等人速环节成为新约束，需通过 Claude 将需求压缩为 intent.md、以技能编码标准、用持续评测替代阶段门禁，并保留人工对关键代码的审查。",
+          "recommend_reason_zh": null,
+          "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-21T14:28:27.351000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Claude：Blog（网页）"
+      ],
+      "items": [
+        {
+          "id": "005c8d0ec7d674a738e61cb654fbac11082cdba3",
+          "title": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期 / The AI-Native SDLC playbook",
+          "title_zh": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期",
+          "title_en": "The AI-Native SDLC playbook",
+          "title_original": "The AI-Native SDLC playbook",
+          "summary": "Anthropic 发布 AI 原生 SDLC 实战手册，提出将传统六阶段软件开发生命周期重构为 AI 嵌入各环节的闭环流程。手册指出，当代码不再是瓶颈时，规划、审查、部署等人速环节成为新约束，需通过 Claude 将需求压缩为 intent.md、以技能编码标准、用持续评测替代阶段门禁，并保留人工对关键代码的审查。",
+          "recommend_reason_zh": null,
+          "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-21T14:28:27.351000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8147,
+      "importance": 0.8147,
+      "importance_score": 0.8147,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.73,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.976,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-21T14:28:27.351000Z",
+      "latest_at": "2026-08-21T14:28:27.351000Z",
+      "primary_item": {
+        "id": "005c8d0ec7d674a738e61cb654fbac11082cdba3",
+        "title": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期 / The AI-Native SDLC playbook",
+        "title_zh": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期",
+        "title_en": "The AI-Native SDLC playbook",
+        "title_original": "The AI-Native SDLC playbook",
+        "summary": "Anthropic 发布 AI 原生 SDLC 实战手册，提出将传统六阶段软件开发生命周期重构为 AI 嵌入各环节的闭环流程。手册指出，当代码不再是瓶颈时，规划、审查、部署等人速环节成为新约束，需通过 Claude 将需求压缩为 intent.md、以技能编码标准、用持续评测替代阶段门禁，并保留人工对关键代码的审查。",
+        "recommend_reason_zh": null,
+        "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
+        "source": "Claude：Blog（网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.818,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     },
     {
@@ -691,15 +691,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.802,
-      "importance": 0.802,
-      "importance_score": 0.802,
+      "score": 0.8002,
+      "importance": 0.8002,
+      "importance_score": 0.8002,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9721,
+        "recency": 0.9624,
         "story_heat": 0.0
       },
       "category": "official",
@@ -726,30 +726,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     },
     {
-      "story_id": "story_13b553da3c26",
-      "title": "Windows 11 arm64 VS2026 镜像正式发布 / Windows 11 arm64 VS2026 image generally available",
-      "url": "https://github.blog/changelog/2026-08-20-windows-11-arm64-vs2026-image-generally-available",
-      "primary_url": "https://github.blog/changelog/2026-08-20-windows-11-arm64-vs2026-image-generally-available",
+      "story_id": "story_85ec019c932d",
+      "title": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等 / Pinning saved views to the repository issues sidebar is generally available and more",
+      "url": "https://github.blog/changelog/2026-08-20-pin-projects-views-and-milestones-to-the-repository-sidebar",
+      "primary_url": "https://github.blog/changelog/2026-08-20-pin-projects-views-and-milestones-to-the-repository-sidebar",
       "source": "GitHub Changelog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "e3d7b1a7c89459a1e7f611544f5024ba1b88f489",
-          "title": "Windows 11 arm64 VS2026 镜像正式发布 / Windows 11 arm64 VS2026 image generally available",
-          "title_zh": "Windows 11 arm64 VS2026 镜像正式发布",
-          "title_en": "Windows 11 arm64 VS2026 image generally available",
-          "title_original": "Windows 11 arm64 VS2026 image generally available",
-          "summary": "The Windows 11 arm64 image with Visual Studio 2026 is now generally available on standard and larger GitHub-hosted runners. To use it in GitHub Actions, update your workflow file to… The post Windows 11 arm64 VS2026 image generally available appeared first on The GitHub Blog .",
+          "id": "2c4fc71547d52e8375f29f8ac4898b98edf8d7c5",
+          "title": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等 / Pinning saved views to the repository issues sidebar is generally available and more",
+          "title_zh": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等",
+          "title_en": "Pinning saved views to the repository issues sidebar is generally available and more",
+          "title_original": "Pinning saved views to the repository issues sidebar is generally available and more",
+          "summary": "Pinning saved views to the repository issues sidebar You can now pin saved views⁠ to the repository issues sidebar, making the views you use most just one click away, even… The post Pinning saved views to the repository issues sidebar is generally available and more appeared first on The GitHub Blog .",
           "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-08-20-windows-11-arm64-vs2026-image-generally-available",
+          "url": "https://github.blog/changelog/2026-08-20-pin-projects-views-and-milestones-to-the-repository-sidebar",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-08-20T17:52:38Z"
+          "published_at": "2026-08-20T23:29:34Z"
         }
       ],
       "source_count": 1,
@@ -758,31 +758,31 @@
       ],
       "items": [
         {
-          "id": "e3d7b1a7c89459a1e7f611544f5024ba1b88f489",
-          "title": "Windows 11 arm64 VS2026 镜像正式发布 / Windows 11 arm64 VS2026 image generally available",
-          "title_zh": "Windows 11 arm64 VS2026 镜像正式发布",
-          "title_en": "Windows 11 arm64 VS2026 image generally available",
-          "title_original": "Windows 11 arm64 VS2026 image generally available",
-          "summary": "The Windows 11 arm64 image with Visual Studio 2026 is now generally available on standard and larger GitHub-hosted runners. To use it in GitHub Actions, update your workflow file to… The post Windows 11 arm64 VS2026 image generally available appeared first on The GitHub Blog .",
+          "id": "2c4fc71547d52e8375f29f8ac4898b98edf8d7c5",
+          "title": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等 / Pinning saved views to the repository issues sidebar is generally available and more",
+          "title_zh": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等",
+          "title_en": "Pinning saved views to the repository issues sidebar is generally available and more",
+          "title_original": "Pinning saved views to the repository issues sidebar is generally available and more",
+          "summary": "Pinning saved views to the repository issues sidebar You can now pin saved views⁠ to the repository issues sidebar, making the views you use most just one click away, even… The post Pinning saved views to the repository issues sidebar is generally available and more appeared first on The GitHub Blog .",
           "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-08-20-windows-11-arm64-vs2026-image-generally-available",
+          "url": "https://github.blog/changelog/2026-08-20-pin-projects-views-and-milestones-to-the-repository-sidebar",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-08-20T17:52:38Z"
+          "published_at": "2026-08-20T23:29:34Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8095,
-      "importance": 0.8095,
-      "importance_score": 0.8095,
+      "score": 0.8161,
+      "importance": 0.8161,
+      "importance_score": 0.8161,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8085,
+        "recency": 0.8449,
         "story_heat": 0.0
       },
       "category": "official",
@@ -791,109 +791,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-20T17:52:38Z",
-      "latest_at": "2026-08-20T17:52:38Z",
+      "earliest_at": "2026-08-20T23:29:34Z",
+      "latest_at": "2026-08-20T23:29:34Z",
       "primary_item": {
-        "id": "e3d7b1a7c89459a1e7f611544f5024ba1b88f489",
-        "title": "Windows 11 arm64 VS2026 镜像正式发布 / Windows 11 arm64 VS2026 image generally available",
-        "title_zh": "Windows 11 arm64 VS2026 镜像正式发布",
-        "title_en": "Windows 11 arm64 VS2026 image generally available",
-        "title_original": "Windows 11 arm64 VS2026 image generally available",
-        "summary": "The Windows 11 arm64 image with Visual Studio 2026 is now generally available on standard and larger GitHub-hosted runners. To use it in GitHub Actions, update your workflow file to… The post Windows 11 arm64 VS2026 image generally available appeared first on The GitHub Blog .",
+        "id": "2c4fc71547d52e8375f29f8ac4898b98edf8d7c5",
+        "title": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等 / Pinning saved views to the repository issues sidebar is generally available and more",
+        "title_zh": "将保存的视图固定到代码仓库问题侧边栏通常是可用的等等",
+        "title_en": "Pinning saved views to the repository issues sidebar is generally available and more",
+        "title_original": "Pinning saved views to the repository issues sidebar is generally available and more",
+        "summary": "Pinning saved views to the repository issues sidebar You can now pin saved views⁠ to the repository issues sidebar, making the views you use most just one click away, even… The post Pinning saved views to the repository issues sidebar is generally available and more appeared first on The GitHub Blog .",
         "recommend_reason_zh": null,
-        "url": "https://github.blog/changelog/2026-08-20-windows-11-arm64-vs2026-image-generally-available",
+        "url": "https://github.blog/changelog/2026-08-20-pin-projects-views-and-milestones-to-the-repository-sidebar",
         "source": "GitHub Changelog",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8305,
+      "peak_score": 0.8398,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
-      }
-    },
-    {
-      "story_id": "story_a4fea9f5c87a",
-      "title": "Mistral 推出 Agentic Search：多步检索提升 AI 系统复杂文档查询准确率 / Agentic Search. More accurate and efficient results from your AI systems. The retrieval layer that helps AI systems navigate， read， and verify information inside and across even the most complex documents.",
-      "url": "https://mistral.ai/news/agentic-search",
-      "primary_url": "https://mistral.ai/news/agentic-search",
-      "source": "Mistral AI：News（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "294b8bfa7f1dbcaf05bd40143d528810ca70d355",
-          "title": "Mistral 推出 Agentic Search：多步检索提升 AI 系统复杂文档查询准确率 / Agentic Search. More accurate and efficient results from your AI systems. The retrieval layer that helps AI systems navigate， read， and verify information inside and across even the most complex documents.",
-          "title_zh": "Mistral 推出 Agentic Search：多步检索提升 AI 系统复杂文档查询准确率",
-          "title_en": "Agentic Search. More accurate and efficient results from your AI systems. The retrieval layer that helps AI systems navigate， read， and verify information inside and across even the most complex documents.",
-          "title_original": "Agentic Search. More accurate and efficient results from your AI systems. The retrieval layer that helps AI systems navigate， read， and verify information inside and across even the most complex documents.",
-          "summary": "Mistral 发布 Agentic Search，通过 search、open、navigate、read、grep 五工具的多步检索循环，让模型在长文档与多来源中查找、定位并验证信息。",
-          "recommend_reason_zh": null,
-          "url": "https://mistral.ai/news/agentic-search",
-          "source": "Mistral AI：News（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-20T16:02:07.300000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Mistral AI：News（网页）"
-      ],
-      "items": [
-        {
-          "id": "294b8bfa7f1dbcaf05bd40143d528810ca70d355",
-          "title": "Mistral 推出 Agentic Search：多步检索提升 AI 系统复杂文档查询准确率 / Agentic Search. More accurate and efficient results from your AI systems. The retrieval layer that helps AI systems navigate， read， and verify information inside and across even the most complex documents.",
-          "title_zh": "Mistral 推出 Agentic Search：多步检索提升 AI 系统复杂文档查询准确率",
-          "title_en": "Agentic Search. More accurate and efficient results from your AI systems. The retrieval layer that helps AI systems navigate， read， and verify information inside and across even the most complex documents.",
-          "title_original": "Agentic Search. More accurate and efficient results from your AI systems. The retrieval layer that helps AI systems navigate， read， and verify information inside and across even the most complex documents.",
-          "summary": "Mistral 发布 Agentic Search，通过 search、open、navigate、read、grep 五工具的多步检索循环，让模型在长文档与多来源中查找、定位并验证信息。",
-          "recommend_reason_zh": null,
-          "url": "https://mistral.ai/news/agentic-search",
-          "source": "Mistral AI：News（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-20T16:02:07.300000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.764,
-      "importance": 0.764,
-      "importance_score": 0.764,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.67,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.7943,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-20T16:02:07.300000Z",
-      "latest_at": "2026-08-20T16:02:07.300000Z",
-      "primary_item": {
-        "id": "294b8bfa7f1dbcaf05bd40143d528810ca70d355",
-        "title": "Mistral 推出 Agentic Search：多步检索提升 AI 系统复杂文档查询准确率 / Agentic Search. More accurate and efficient results from your AI systems. The retrieval layer that helps AI systems navigate， read， and verify information inside and across even the most complex documents.",
-        "title_zh": "Mistral 推出 Agentic Search：多步检索提升 AI 系统复杂文档查询准确率",
-        "title_en": "Agentic Search. More accurate and efficient results from your AI systems. The retrieval layer that helps AI systems navigate， read， and verify information inside and across even the most complex documents.",
-        "title_original": "Agentic Search. More accurate and efficient results from your AI systems. The retrieval layer that helps AI systems navigate， read， and verify information inside and across even the most complex documents.",
-        "summary": "Mistral 发布 Agentic Search，通过 search、open、navigate、read、grep 五工具的多步检索循环，让模型在长文档与多来源中查找、定位并验证信息。",
-        "recommend_reason_zh": null,
-        "url": "https://mistral.ai/news/agentic-search",
-        "source": "Mistral AI：News（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7846,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     },
     {
@@ -941,15 +858,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7656,
-      "importance": 0.7656,
-      "importance_score": 0.7656,
+      "score": 0.7639,
+      "importance": 0.7639,
+      "importance_score": 0.7639,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9391,
+        "recency": 0.9297,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -976,7 +893,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     },
     {
@@ -1024,15 +941,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7449,
-      "importance": 0.7449,
-      "importance_score": 0.7449,
+      "score": 0.7433,
+      "importance": 0.7433,
+      "importance_score": 0.7433,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.874,
+        "recency": 0.8652,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1058,90 +975,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     },
     {
-      "story_id": "story_a623b326864e",
-      "title": "AlloyDB ScaNN 如何将向量搜索扩展到 100 亿向量 / How AlloyDB ScaNN scales vector search to 10 billion vectors",
-      "url": "https://cloud.google.com/blog/products/databases/alloydb-scann-index-four-level-tree-improves-vector-search",
-      "primary_url": "https://cloud.google.com/blog/products/databases/alloydb-scann-index-four-level-tree-improves-vector-search",
-      "source": "Google Cloud：Databases（RSS）",
-      "source_name": "AI HOT",
+      "story_id": "story_13b553da3c26",
+      "title": "Windows 11 arm64 VS2026 镜像正式发布 / Windows 11 arm64 VS2026 image generally available",
+      "url": "https://github.blog/changelog/2026-08-20-windows-11-arm64-vs2026-image-generally-available",
+      "primary_url": "https://github.blog/changelog/2026-08-20-windows-11-arm64-vs2026-image-generally-available",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "e1dd7332969dac2ee00003cfa01feb6cf9840e10",
-          "title": "AlloyDB ScaNN 如何将向量搜索扩展到 100 亿向量 / How AlloyDB ScaNN scales vector search to 10 billion vectors",
-          "title_zh": "AlloyDB ScaNN 如何将向量搜索扩展到 100 亿向量",
-          "title_en": "How AlloyDB ScaNN scales vector search to 10 billion vectors",
-          "title_original": "How AlloyDB ScaNN scales vector search to 10 billion vectors",
-          "summary": "AlloyDB 的 ScaNN 索引现已支持超过 100 亿向量的规模，通过全新的四层树架构（预览版）实现，将查询复杂度从 O（N^1/2） 降至 O（N^1/4）。内部测试中，该架构在 100 亿向量规模下可实现 p95 延迟不超过 51 毫秒、召回率达 95%。该功能可通过快速入门指南部署，新用户可享受 30 天免费试用。",
+          "id": "e3d7b1a7c89459a1e7f611544f5024ba1b88f489",
+          "title": "Windows 11 arm64 VS2026 镜像正式发布 / Windows 11 arm64 VS2026 image generally available",
+          "title_zh": "Windows 11 arm64 VS2026 镜像正式发布",
+          "title_en": "Windows 11 arm64 VS2026 image generally available",
+          "title_original": "Windows 11 arm64 VS2026 image generally available",
+          "summary": "The Windows 11 arm64 image with Visual Studio 2026 is now generally available on standard and larger GitHub-hosted runners. To use it in GitHub Actions, update your workflow file to… The post Windows 11 arm64 VS2026 image generally available appeared first on The GitHub Blog .",
           "recommend_reason_zh": null,
-          "url": "https://cloud.google.com/blog/products/databases/alloydb-scann-index-four-level-tree-improves-vector-search",
-          "source": "Google Cloud：Databases（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-20T16:00:00Z"
+          "url": "https://github.blog/changelog/2026-08-20-windows-11-arm64-vs2026-image-generally-available",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-20T17:52:38Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Google Cloud：Databases（RSS）"
+        "GitHub Changelog"
       ],
       "items": [
         {
-          "id": "e1dd7332969dac2ee00003cfa01feb6cf9840e10",
-          "title": "AlloyDB ScaNN 如何将向量搜索扩展到 100 亿向量 / How AlloyDB ScaNN scales vector search to 10 billion vectors",
-          "title_zh": "AlloyDB ScaNN 如何将向量搜索扩展到 100 亿向量",
-          "title_en": "How AlloyDB ScaNN scales vector search to 10 billion vectors",
-          "title_original": "How AlloyDB ScaNN scales vector search to 10 billion vectors",
-          "summary": "AlloyDB 的 ScaNN 索引现已支持超过 100 亿向量的规模，通过全新的四层树架构（预览版）实现，将查询复杂度从 O（N^1/2） 降至 O（N^1/4）。内部测试中，该架构在 100 亿向量规模下可实现 p95 延迟不超过 51 毫秒、召回率达 95%。该功能可通过快速入门指南部署，新用户可享受 30 天免费试用。",
+          "id": "e3d7b1a7c89459a1e7f611544f5024ba1b88f489",
+          "title": "Windows 11 arm64 VS2026 镜像正式发布 / Windows 11 arm64 VS2026 image generally available",
+          "title_zh": "Windows 11 arm64 VS2026 镜像正式发布",
+          "title_en": "Windows 11 arm64 VS2026 image generally available",
+          "title_original": "Windows 11 arm64 VS2026 image generally available",
+          "summary": "The Windows 11 arm64 image with Visual Studio 2026 is now generally available on standard and larger GitHub-hosted runners. To use it in GitHub Actions, update your workflow file to… The post Windows 11 arm64 VS2026 image generally available appeared first on The GitHub Blog .",
           "recommend_reason_zh": null,
-          "url": "https://cloud.google.com/blog/products/databases/alloydb-scann-index-four-level-tree-improves-vector-search",
-          "source": "Google Cloud：Databases（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-20T16:00:00Z"
+          "url": "https://github.blog/changelog/2026-08-20-windows-11-arm64-vs2026-image-generally-available",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-20T17:52:38Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7579,
-      "importance": 0.7579,
-      "importance_score": 0.7579,
+      "score": 0.8081,
+      "importance": 0.8081,
+      "importance_score": 0.8081,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.65,
+        "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.794,
+        "ai_relevance": 0.87,
+        "recency": 0.8004,
         "story_heat": 0.0
       },
       "category": "official",
       "reasons": [
+        "official_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-20T16:00:00Z",
-      "latest_at": "2026-08-20T16:00:00Z",
+      "earliest_at": "2026-08-20T17:52:38Z",
+      "latest_at": "2026-08-20T17:52:38Z",
       "primary_item": {
-        "id": "e1dd7332969dac2ee00003cfa01feb6cf9840e10",
-        "title": "AlloyDB ScaNN 如何将向量搜索扩展到 100 亿向量 / How AlloyDB ScaNN scales vector search to 10 billion vectors",
-        "title_zh": "AlloyDB ScaNN 如何将向量搜索扩展到 100 亿向量",
-        "title_en": "How AlloyDB ScaNN scales vector search to 10 billion vectors",
-        "title_original": "How AlloyDB ScaNN scales vector search to 10 billion vectors",
-        "summary": "AlloyDB 的 ScaNN 索引现已支持超过 100 亿向量的规模，通过全新的四层树架构（预览版）实现，将查询复杂度从 O（N^1/2） 降至 O（N^1/4）。内部测试中，该架构在 100 亿向量规模下可实现 p95 延迟不超过 51 毫秒、召回率达 95%。该功能可通过快速入门指南部署，新用户可享受 30 天免费试用。",
+        "id": "e3d7b1a7c89459a1e7f611544f5024ba1b88f489",
+        "title": "Windows 11 arm64 VS2026 镜像正式发布 / Windows 11 arm64 VS2026 image generally available",
+        "title_zh": "Windows 11 arm64 VS2026 镜像正式发布",
+        "title_en": "Windows 11 arm64 VS2026 image generally available",
+        "title_original": "Windows 11 arm64 VS2026 image generally available",
+        "summary": "The Windows 11 arm64 image with Visual Studio 2026 is now generally available on standard and larger GitHub-hosted runners. To use it in GitHub Actions, update your workflow file to… The post Windows 11 arm64 VS2026 image generally available appeared first on The GitHub Blog .",
         "recommend_reason_zh": null,
-        "url": "https://cloud.google.com/blog/products/databases/alloydb-scann-index-four-level-tree-improves-vector-search",
-        "source": "Google Cloud：Databases（RSS）",
-        "source_name": "AI HOT"
+        "url": "https://github.blog/changelog/2026-08-20-windows-11-arm64-vs2026-image-generally-available",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
       },
-      "peak_score": 0.7664,
+      "peak_score": 0.8305,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     },
     {
@@ -1189,15 +1107,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7449,
-      "importance": 0.7449,
-      "importance_score": 0.7449,
+      "score": 0.7433,
+      "importance": 0.7433,
+      "importance_score": 0.7433,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.874,
+        "recency": 0.8652,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1223,7 +1141,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     },
     {
@@ -1271,15 +1189,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7582,
-      "importance": 0.7582,
-      "importance_score": 0.7582,
+      "score": 0.7567,
+      "importance": 0.7567,
+      "importance_score": 0.7567,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.63,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8288,
+        "recency": 0.8205,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1306,7 +1224,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     },
     {
@@ -1354,15 +1272,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7472,
-      "importance": 0.7472,
-      "importance_score": 0.7472,
+      "score": 0.7456,
+      "importance": 0.7456,
+      "importance_score": 0.7456,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8868,
+        "recency": 0.878,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1388,7 +1306,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     },
     {
@@ -1436,15 +1354,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7456,
-      "importance": 0.7456,
-      "importance_score": 0.7456,
+      "score": 0.7442,
+      "importance": 0.7442,
+      "importance_score": 0.7442,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.6,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8091,
+        "recency": 0.801,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1470,7 +1388,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     },
     {
@@ -1518,15 +1436,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7472,
-      "importance": 0.7472,
-      "importance_score": 0.7472,
+      "score": 0.7456,
+      "importance": 0.7456,
+      "importance_score": 0.7456,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8868,
+        "recency": 0.878,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1552,7 +1470,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     },
     {
@@ -1600,15 +1518,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7449,
-      "importance": 0.7449,
-      "importance_score": 0.7449,
+      "score": 0.7433,
+      "importance": 0.7433,
+      "importance_score": 0.7433,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.874,
+        "recency": 0.8652,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1634,7 +1552,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     },
     {
@@ -1682,15 +1600,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7533,
-      "importance": 0.7533,
-      "importance_score": 0.7533,
+      "score": 0.7517,
+      "importance": 0.7517,
+      "importance_score": 0.7517,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9207,
+        "recency": 0.9116,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1717,7 +1635,89 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T15:58:13.746742Z"
+        "scored_at": "2026-08-21T17:00:47.401654Z"
+      }
+    },
+    {
+      "story_id": "story_ee84fbd49797",
+      "title": "Mac版ChatGPT深度接管苹果信息，古尔曼直言将直接对标Siri生态优势",
+      "url": "https://www.aibase.com/news/30510",
+      "primary_url": "https://www.aibase.com/news/30510",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "48381bcbd179dc2dbcfd8c484f4dd443e20070e5",
+          "title": "Mac版ChatGPT深度接管苹果信息，古尔曼直言将直接对标Siri生态优势",
+          "title_zh": "Mac版ChatGPT深度接管苹果信息，古尔曼直言将直接对标Siri生态优势",
+          "title_en": null,
+          "title_original": "Mac版ChatGPT深度接管苹果信息，古尔曼直言将直接对标Siri生态优势",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30510",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-21T01:57:50.598779Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "48381bcbd179dc2dbcfd8c484f4dd443e20070e5",
+          "title": "Mac版ChatGPT深度接管苹果信息，古尔曼直言将直接对标Siri生态优势",
+          "title_zh": "Mac版ChatGPT深度接管苹果信息，古尔曼直言将直接对标Siri生态优势",
+          "title_en": null,
+          "title_original": "Mac版ChatGPT深度接管苹果信息，古尔曼直言将直接对标Siri生态优势",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30510",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-21T01:57:50.598779Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7433,
+      "importance": 0.7433,
+      "importance_score": 0.7433,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8652,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-08-21T01:57:50.598779Z",
+      "latest_at": "2026-08-21T01:57:50.598779Z",
+      "primary_item": {
+        "id": "48381bcbd179dc2dbcfd8c484f4dd443e20070e5",
+        "title": "Mac版ChatGPT深度接管苹果信息，古尔曼直言将直接对标Siri生态优势",
+        "title_zh": "Mac版ChatGPT深度接管苹果信息，古尔曼直言将直接对标Siri生态优势",
+        "title_en": null,
+        "title_original": "Mac版ChatGPT深度接管苹果信息，古尔曼直言将直接对标Siri生态优势",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30510",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-21T17:00:47.401654Z"
       }
     }
   ]
