@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T05:56:37.477881Z",
+  "generated_at": "2026-08-21T07:22:52.329975Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8387,
-      "importance": 0.8387,
-      "importance_score": 0.8387,
+      "score": 0.8366,
+      "importance": 0.8366,
+      "importance_score": 0.8366,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8818,
+        "recency": 0.8697,
         "story_heat": 0.0
       },
       "category": "official",
@@ -84,7 +84,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -132,15 +132,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8332,
-      "importance": 0.8332,
-      "importance_score": 0.8332,
+      "score": 0.8308,
+      "importance": 0.8308,
+      "importance_score": 0.8308,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9398,
+        "recency": 0.9269,
         "story_heat": 0.0
       },
       "category": "official",
@@ -168,7 +168,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -176,83 +176,81 @@
       "title": "介绍人工智能期货 / Introducing AI Futures",
       "url": "https://openai.com/index/introducing-ai-futures",
       "primary_url": "https://openai.com/index/introducing-ai-futures",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
+      "source": "Hacker News · 24h最热",
+      "source_name": "Zeli",
       "sources": [
         {
-          "id": "bd145d40d86f467dd6a10beed7263e931c9e17f1",
+          "id": "721b0d1928a4f4a94f98cd32dc519404aaa9955f",
           "title": "介绍人工智能期货 / Introducing AI Futures",
           "title_zh": "介绍人工智能期货",
           "title_en": "Introducing AI Futures",
           "title_original": "Introducing AI Futures",
-          "summary": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
+          "summary": null,
           "recommend_reason_zh": null,
           "url": "https://openai.com/index/introducing-ai-futures",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-20T07:00:00Z"
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-20T19:46:49Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "OpenAI News"
+        "Hacker News · 24h最热"
       ],
       "items": [
         {
-          "id": "bd145d40d86f467dd6a10beed7263e931c9e17f1",
+          "id": "721b0d1928a4f4a94f98cd32dc519404aaa9955f",
           "title": "介绍人工智能期货 / Introducing AI Futures",
           "title_zh": "介绍人工智能期货",
           "title_en": "Introducing AI Futures",
           "title_original": "Introducing AI Futures",
-          "summary": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
+          "summary": null,
           "recommend_reason_zh": null,
           "url": "https://openai.com/index/introducing-ai-futures",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-20T07:00:00Z"
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-20T19:46:49Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8163,
-      "importance": 0.8163,
-      "importance_score": 0.8163,
-      "importance_label": "官方更新",
+      "score": 0.5018,
+      "importance": 0.5018,
+      "importance_score": 0.5018,
+      "importance_label": "值得关注",
       "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8018,
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.8943,
         "story_heat": 0.0
       },
-      "category": "official",
+      "category": "watch",
       "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
+        "recent_ai_signal"
       ],
-      "earliest_at": "2026-08-20T07:00:00Z",
-      "latest_at": "2026-08-20T07:00:00Z",
+      "earliest_at": "2026-08-20T19:46:49Z",
+      "latest_at": "2026-08-20T19:46:49Z",
       "primary_item": {
-        "id": "bd145d40d86f467dd6a10beed7263e931c9e17f1",
+        "id": "721b0d1928a4f4a94f98cd32dc519404aaa9955f",
         "title": "介绍人工智能期货 / Introducing AI Futures",
         "title_zh": "介绍人工智能期货",
         "title_en": "Introducing AI Futures",
         "title_original": "Introducing AI Futures",
-        "summary": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
+        "summary": null,
         "recommend_reason_zh": null,
         "url": "https://openai.com/index/introducing-ai-futures",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
+        "source": "Hacker News · 24h最热",
+        "source_name": "Zeli"
       },
       "peak_score": 0.822,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -300,15 +298,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8243,
-      "importance": 0.8243,
-      "importance_score": 0.8243,
+      "score": 0.8221,
+      "importance": 0.8221,
+      "importance_score": 0.8221,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8903,
+        "recency": 0.8781,
         "story_heat": 0.0
       },
       "category": "official",
@@ -336,7 +334,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -384,15 +382,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7784,
-      "importance": 0.7784,
-      "importance_score": 0.7784,
+      "score": 0.7763,
+      "importance": 0.7763,
+      "importance_score": 0.7763,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8747,
+        "recency": 0.8627,
         "story_heat": 0.0
       },
       "category": "official",
@@ -419,7 +417,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -467,15 +465,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7608,
-      "importance": 0.7608,
-      "importance_score": 0.7608,
+      "score": 0.7585,
+      "importance": 0.7585,
+      "importance_score": 0.7585,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9624,
+        "recency": 0.9492,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -502,7 +500,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -550,15 +548,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8202,
-      "importance": 0.8202,
-      "importance_score": 0.8202,
+      "score": 0.8181,
+      "importance": 0.8181,
+      "importance_score": 0.8181,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.868,
+        "recency": 0.8561,
         "story_heat": 0.0
       },
       "category": "official",
@@ -586,7 +584,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -634,15 +632,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7358,
-      "importance": 0.7358,
-      "importance_score": 0.7358,
+      "score": 0.7338,
+      "importance": 0.7338,
+      "importance_score": 0.7338,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8234,
+        "recency": 0.8121,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -668,7 +666,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -716,15 +714,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7608,
-      "importance": 0.7608,
-      "importance_score": 0.7608,
+      "score": 0.7585,
+      "importance": 0.7585,
+      "importance_score": 0.7585,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9624,
+        "recency": 0.9492,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -751,7 +749,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -799,15 +797,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8191,
-      "importance": 0.8191,
-      "importance_score": 0.8191,
+      "score": 0.817,
+      "importance": 0.817,
+      "importance_score": 0.817,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8617,
+        "recency": 0.8498,
         "story_heat": 0.0
       },
       "category": "official",
@@ -835,7 +833,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -883,15 +881,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7249,
-      "importance": 0.7249,
-      "importance_score": 0.7249,
+      "score": 0.7226,
+      "importance": 0.7226,
+      "importance_score": 0.7226,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.63,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9127,
+        "recency": 0.9001,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -917,7 +915,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -965,15 +963,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.724,
-      "importance": 0.724,
-      "importance_score": 0.724,
+      "score": 0.7218,
+      "importance": 0.7218,
+      "importance_score": 0.7218,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8744,
+        "recency": 0.8624,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -999,7 +997,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -1047,15 +1045,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7634,
-      "importance": 0.7634,
-      "importance_score": 0.7634,
+      "score": 0.761,
+      "importance": 0.761,
+      "importance_score": 0.761,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9766,
+        "recency": 0.9632,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1082,7 +1080,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -1130,15 +1128,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8191,
-      "importance": 0.8191,
-      "importance_score": 0.8191,
+      "score": 0.817,
+      "importance": 0.817,
+      "importance_score": 0.817,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8618,
+        "recency": 0.8499,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1166,7 +1164,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -1214,18 +1212,18 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7202,
-      "importance": 0.7202,
-      "importance_score": 0.7202,
-      "importance_label": "行业动态",
+      "score": 0.7181,
+      "importance": 0.7181,
+      "importance_score": 0.7181,
+      "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8532,
+        "recency": 0.8414,
         "story_heat": 0.0
       },
-      "category": "industry",
+      "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
@@ -1248,7 +1246,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -1296,15 +1294,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7634,
-      "importance": 0.7634,
-      "importance_score": 0.7634,
+      "score": 0.761,
+      "importance": 0.761,
+      "importance_score": 0.761,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9766,
+        "recency": 0.9632,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1331,7 +1329,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -1379,15 +1377,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7608,
-      "importance": 0.7608,
-      "importance_score": 0.7608,
+      "score": 0.7585,
+      "importance": 0.7585,
+      "importance_score": 0.7585,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9624,
+        "recency": 0.9492,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1414,7 +1412,90 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
+      }
+    },
+    {
+      "story_id": "story_15ad92659081",
+      "title": "LFM2.5 DSpark草稿模型发布，推理速度最高飙升3. 18 倍",
+      "url": "https://www.aibase.com/news/30528",
+      "primary_url": "https://www.aibase.com/news/30528",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "1567b723363c36458c4ff930033d5c8e54b461bc",
+          "title": "LFM2.5 DSpark草稿模型发布，推理速度最高飙升3. 18 倍",
+          "title_zh": "LFM2.5 DSpark草稿模型发布，推理速度最高飙升3. 18 倍",
+          "title_en": null,
+          "title_original": "LFM2.5 DSpark草稿模型发布，推理速度最高飙升3. 18 倍",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30528",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-21T07:22:52.329975Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "1567b723363c36458c4ff930033d5c8e54b461bc",
+          "title": "LFM2.5 DSpark草稿模型发布，推理速度最高飙升3. 18 倍",
+          "title_zh": "LFM2.5 DSpark草稿模型发布，推理速度最高飙升3. 18 倍",
+          "title_en": null,
+          "title_original": "LFM2.5 DSpark草稿模型发布，推理速度最高飙升3. 18 倍",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30528",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-21T07:22:52.329975Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-21T07:22:52.329975Z",
+      "latest_at": "2026-08-21T07:22:52.329975Z",
+      "primary_item": {
+        "id": "1567b723363c36458c4ff930033d5c8e54b461bc",
+        "title": "LFM2.5 DSpark草稿模型发布，推理速度最高飙升3. 18 倍",
+        "title_zh": "LFM2.5 DSpark草稿模型发布，推理速度最高飙升3. 18 倍",
+        "title_en": null,
+        "title_original": "LFM2.5 DSpark草稿模型发布，推理速度最高飙升3. 18 倍",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30528",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
@@ -1462,15 +1543,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7608,
-      "importance": 0.7608,
-      "importance_score": 0.7608,
+      "score": 0.7585,
+      "importance": 0.7585,
+      "importance_score": 0.7585,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9624,
+        "recency": 0.9492,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1497,30 +1578,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     },
     {
-      "story_id": "story_fe5d8ad916c5",
-      "title": "OpenAI企业市场份额反超Anthropic，AI支出持续扩张",
-      "url": "https://www.aibase.com/news/30511",
-      "primary_url": "https://www.aibase.com/news/30511",
+      "story_id": "story_776e3d1fe586",
+      "title": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
+      "url": "https://www.aibase.com/news/30529",
+      "primary_url": "https://www.aibase.com/news/30529",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "1c4ae393aaaf7fe0e78103d74e384ba1d03b39d2",
-          "title": "OpenAI企业市场份额反超Anthropic，AI支出持续扩张",
-          "title_zh": "OpenAI企业市场份额反超Anthropic，AI支出持续扩张",
+          "id": "657ab5eda5b2404dc5aec1aac2b065a5990be4c7",
+          "title": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
+          "title_zh": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
           "title_en": null,
-          "title_original": "OpenAI企业市场份额反超Anthropic，AI支出持续扩张",
+          "title_original": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30511",
+          "url": "https://www.aibase.com/news/30529",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-08-21T01:57:50.598779Z"
+          "published_at": "2026-08-21T07:22:52.329975Z"
         }
       ],
       "source_count": 1,
@@ -1529,31 +1610,31 @@
       ],
       "items": [
         {
-          "id": "1c4ae393aaaf7fe0e78103d74e384ba1d03b39d2",
-          "title": "OpenAI企业市场份额反超Anthropic，AI支出持续扩张",
-          "title_zh": "OpenAI企业市场份额反超Anthropic，AI支出持续扩张",
+          "id": "657ab5eda5b2404dc5aec1aac2b065a5990be4c7",
+          "title": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
+          "title_zh": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
           "title_en": null,
-          "title_original": "OpenAI企业市场份额反超Anthropic，AI支出持续扩张",
+          "title_original": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30511",
+          "url": "https://www.aibase.com/news/30529",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-08-21T01:57:50.598779Z"
+          "published_at": "2026-08-21T07:22:52.329975Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7608,
-      "importance": 0.7608,
-      "importance_score": 0.7608,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9624,
+        "recency": 1.0,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1561,17 +1642,17 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-21T01:57:50.598779Z",
-      "latest_at": "2026-08-21T01:57:50.598779Z",
+      "earliest_at": "2026-08-21T07:22:52.329975Z",
+      "latest_at": "2026-08-21T07:22:52.329975Z",
       "primary_item": {
-        "id": "1c4ae393aaaf7fe0e78103d74e384ba1d03b39d2",
-        "title": "OpenAI企业市场份额反超Anthropic，AI支出持续扩张",
-        "title_zh": "OpenAI企业市场份额反超Anthropic，AI支出持续扩张",
+        "id": "657ab5eda5b2404dc5aec1aac2b065a5990be4c7",
+        "title": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
+        "title_zh": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
         "title_en": null,
-        "title_original": "OpenAI企业市场份额反超Anthropic，AI支出持续扩张",
+        "title_original": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30511",
+        "url": "https://www.aibase.com/news/30529",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -1580,90 +1661,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
-      }
-    },
-    {
-      "story_id": "story_66ab945ad6af",
-      "title": "Waymo定制出租车Ojai全面接入Gemini，开启车内智能交互新体验",
-      "url": "https://www.aibase.com/news/30520",
-      "primary_url": "https://www.aibase.com/news/30520",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "d4eece4da88cfb089317c56589fb4a4170ff24bb",
-          "title": "Waymo定制出租车Ojai全面接入Gemini，开启车内智能交互新体验",
-          "title_zh": "Waymo定制出租车Ojai全面接入Gemini，开启车内智能交互新体验",
-          "title_en": null,
-          "title_original": "Waymo定制出租车Ojai全面接入Gemini，开启车内智能交互新体验",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30520",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-21T01:57:50.598779Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "d4eece4da88cfb089317c56589fb4a4170ff24bb",
-          "title": "Waymo定制出租车Ojai全面接入Gemini，开启车内智能交互新体验",
-          "title_zh": "Waymo定制出租车Ojai全面接入Gemini，开启车内智能交互新体验",
-          "title_en": null,
-          "title_original": "Waymo定制出租车Ojai全面接入Gemini，开启车内智能交互新体验",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30520",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-21T01:57:50.598779Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7608,
-      "importance": 0.7608,
-      "importance_score": 0.7608,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9624,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-21T01:57:50.598779Z",
-      "latest_at": "2026-08-21T01:57:50.598779Z",
-      "primary_item": {
-        "id": "d4eece4da88cfb089317c56589fb4a4170ff24bb",
-        "title": "Waymo定制出租车Ojai全面接入Gemini，开启车内智能交互新体验",
-        "title_zh": "Waymo定制出租车Ojai全面接入Gemini，开启车内智能交互新体验",
-        "title_en": null,
-        "title_original": "Waymo定制出租车Ojai全面接入Gemini，开启车内智能交互新体验",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30520",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-21T05:58:39.292394Z"
+        "scored_at": "2026-08-21T07:23:38.777885Z"
       }
     }
   ]
