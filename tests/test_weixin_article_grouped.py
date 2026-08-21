@@ -279,3 +279,41 @@ def test_end_to_end_falls_back_to_static_cover_without_main_variant(tmp_path):
     assert (grouped_dir / "cover.png").exists()
     # Cache is written into the (freshly created) main dir, still shared.
     assert (tmp_path / "weixin" / "reason-cache.json").exists()
+
+
+def test_end_to_end_stale_first_party_story_is_grouped_as_official(tmp_path):
+    """The category override lives in the shared select_items, so the grouped
+    variant must also sort a stale 'industry' story from a whitelisted
+    official channel into the 官方更新 section."""
+    item = make_item(1, title="官方博客发布新闻", score=95)
+    item["category"] = "industry"  # stale persisted category
+    item["source"] = "Claude：Blog（网页）"
+    item["sources"] = [
+        {
+            "site_id": "aihot",
+            "source": "Claude：Blog（网页）",
+            "source_name": "AI HOT",
+            "url": item["url"],
+        }
+    ]
+    data_dir, assets_dir = write_fixture(tmp_path, [item])
+    make_static_asset(assets_dir)
+    grouped_dir = tmp_path / "weixin-grouped"
+    args = [
+        "--data-dir", str(data_dir),
+        "--output-dir", str(grouped_dir),
+        "--main-output-dir", str(tmp_path / "weixin"),
+        "--assets-dir", str(assets_dir),
+    ]
+
+    with patch.dict("os.environ", {}, clear=True):
+        rc = gwag.main(args)
+
+    assert rc == 0
+    meta = read_json(grouped_dir / "meta.json")
+    assert meta["sections"] == [
+        {"category": "official", "label": "官方更新", "count": 1}
+    ]
+    html_text = (grouped_dir / "index.html").read_text(encoding="utf-8")
+    assert "官方博客发布新闻" in html_text
+    assert "行业动态" not in html_text

@@ -850,6 +850,76 @@ def test_select_items_falls_back_to_importance_without_peak():
     assert [item["importance_score"] for item in ordered] == [80.0, 30.0]
 
 
+def _whitelist_item(idx: int, category: str, source: str, site_id: str) -> dict:
+    """Story as persisted by the pipeline: precomputed category plus source
+    strings exactly as the aihot public API reports them."""
+    item = make_item(idx, title=f"白名单测试 {idx}")
+    item["category"] = category
+    item["source"] = source
+    item["sources"] = [
+        {
+            "site_id": site_id,
+            "source": source,
+            "source_name": "AI HOT",
+            "url": item["url"],
+        }
+    ]
+    return item
+
+
+def test_select_items_promotes_stale_first_party_story_to_official():
+    """Stories persisted before a whitelist change keep their stale category;
+    select_items re-derives it from the current whitelist. Regression: the
+    Claude Blog Computer Use story stayed 行业动态 after the whitelist fix
+    because the cloud pipeline had already persisted category=industry."""
+    item = _whitelist_item(1, "industry", "Claude：Blog（网页）", "aihot")
+    # Real data: the story-level primary_item carries no site_id, so the
+    # override must recover it from the matching sources[] ref.
+    assert "site_id" not in item["primary_item"]
+
+    selected = gwa.select_items({"items": [item]}, 20)
+
+    assert selected[0]["category"] == "official"
+    # The rendered meta line follows the refreshed category.
+    assert "官方更新" in gwa.render_item_html(selected[0], 0)
+
+
+def test_select_items_promotes_stale_watch_story_to_official():
+    item = _whitelist_item(1, "watch", "Claude：Blog（网页）", "aihot")
+
+    selected = gwa.select_items({"items": [item]}, 20)
+
+    assert selected[0]["category"] == "official"
+
+
+def test_select_items_keeps_non_whitelist_aihot_category():
+    item = _whitelist_item(1, "industry", "IT之家（RSS）", "aihot")
+
+    selected = gwa.select_items({"items": [item]}, 20)
+
+    assert selected[0]["category"] == "industry"
+
+
+def test_select_items_does_not_promote_non_aihot_site():
+    """The whitelist only applies to the aihot channel."""
+    item = _whitelist_item(1, "industry", "Claude：Blog（网页）", "hackernews")
+
+    selected = gwa.select_items({"items": [item]}, 20)
+
+    assert selected[0]["category"] == "industry"
+
+
+def test_first_party_override_needs_primary_source_and_site():
+    # No primary source string anywhere → no override.
+    bare = make_item(1)
+    bare["category"] = "industry"
+    assert gwa.first_party_category_override(bare) is None
+    # Source string present but no site_id recoverable → no override.
+    nosite = _whitelist_item(2, "industry", "Claude：Blog（网页）", "aihot")
+    nosite["sources"][0].pop("site_id")
+    assert gwa.first_party_category_override(nosite) is None
+
+
 # ---------------------------------------------------------------------------
 # Summary-first grounding: a persisted RSS summary is an offline asset and
 # must be preferred over fetching the live page (which is often bot-blocked);

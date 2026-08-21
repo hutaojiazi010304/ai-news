@@ -47,6 +47,18 @@ from pathlib import Path
 
 import requests
 
+# The pipeline's first-party source whitelist, reused to refresh story
+# categories at push time (see first_party_category_override). Guarded so a
+# minimal environment (requests only) still runs — it then trusts the
+# persisted categories as before.
+try:  # imported as part of the repo package (tests)
+    from scripts.update_news import source_tier_for_record as _source_tier_for_record
+except ImportError:
+    try:  # run directly as a script next to update_news.py
+        from update_news import source_tier_for_record as _source_tier_for_record
+    except ImportError:  # update_news deps (bs4, dateutil, ...) not installed
+        _source_tier_for_record = None
+
 DEFAULT_API_BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 DEFAULT_TEXT_MODEL = "qwen3.8-max"
 # Sync-capable Qwen-Image model; qwen-image-max / qwen-image-plus also work
@@ -233,6 +245,45 @@ def load_brief(path: Path) -> dict | None:
     return brief
 
 
+def first_party_category_override(item: dict) -> str | None:
+    """Return ``"official"`` when the story's primary source is a first-party
+    channel per the live aihot whitelist, otherwise ``None``.
+
+    The category persisted in daily-brief.json was computed by the cloud
+    pipeline when the story was created. Stories created before a whitelist
+    change (or while the cloud still runs an older commit) keep their stale
+    label — e.g. an official company blog stuck on 行业动态. Re-deriving the
+    category from the *current* whitelist at push time keeps both article
+    variants in sync without waiting for the story to be re-created. Only
+    promotes to "official"; never alters any other category.
+    """
+    if _source_tier_for_record is None:
+        return None
+    primary = item.get("primary_item")
+    primary = primary if isinstance(primary, dict) else {}
+    primary_source = str(item.get("source") or primary.get("source") or "").strip()
+    if not primary_source:
+        return None
+    site_id = str(primary.get("site_id") or "").strip()
+    if not site_id:
+        # Story-level primary_item may lack site_id; find the sources[] ref
+        # matching the primary source string to recover it.
+        for ref in item.get("sources") or []:
+            if not isinstance(ref, dict):
+                continue
+            if str(ref.get("source") or "").strip() != primary_source:
+                continue
+            ref_site = str(ref.get("site_id") or "").strip()
+            if ref_site:
+                site_id = ref_site
+                break
+    if not site_id:
+        return None
+    if _source_tier_for_record(site_id, primary_source) is not None:
+        return "official"
+    return None
+
+
 def select_items(brief: dict, max_items: int) -> list[dict]:
     """Items sorted by peak_score DESC (the brief is not pre-sorted).
 
@@ -250,7 +301,16 @@ def select_items(brief: dict, max_items: int) -> list[dict]:
             else float(it.get("importance_score") or 0)
         )
     )
-    return items[:max_items]
+    selected = items[:max_items]
+    # Refresh categories against the current first-party whitelist so stories
+    # persisted before a whitelist change are not mislabelled. Shared entry
+    # point of both article variants — one fix covers the flat and the
+    # grouped layout together.
+    for item in selected:
+        override = first_party_category_override(item)
+        if override:
+            item["category"] = override
+    return selected
 
 
 def existing_reason(item: dict) -> str | None:
