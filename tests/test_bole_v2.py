@@ -22,8 +22,10 @@ def make_story(idx: int, *, source: str = "AIbase", score: float = 0.8, sources:
 
 
 class TestBriefGate:
-    def test_multi_source_passes_regardless_of_score(self):
-        assert story_passes_brief_gate(make_story(1, score=0.4, sources=2))
+    def test_multi_source_needs_minimum_score(self):
+        assert not story_passes_brief_gate(make_story(1, score=0.4, sources=2))
+        assert not story_passes_brief_gate(make_story(1, score=0.64, sources=2))
+        assert story_passes_brief_gate(make_story(1, score=0.65, sources=2))
 
     def test_single_source_needs_strong_score(self):
         assert not story_passes_brief_gate(make_story(1, score=0.71, sources=1))

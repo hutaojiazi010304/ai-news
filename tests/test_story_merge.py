@@ -115,3 +115,35 @@ def test_same_site_shared_url_and_same_title_still_merges():
     assert stories[0]["duplicate_count"] == 2
     assert events[0]["reason"] == "canonical_url"
     assert events[0]["similarity"] == 1.0
+
+
+def test_mirror_channels_do_not_inflate_source_count_or_heat():
+    # Regression: one HN discussion re-crawled twice plus one GitHub repo
+    # mirrored by three aggregator channels merged into a single story with
+    # source_count=5, maxed its heat component and rode the multi-source
+    # gate into the brief despite the lowest score of the day. Mirrors of
+    # the same canonical URL must count as one source each.
+    hn_url = "https://news.ycombinator.com/item?id=49375996"
+    repo_url = "https://github.com/zachahn/vomit"
+    title = "Vomit: Clean up Claude 5 token output with a separate LLM"
+    items = [
+        make_item(1, title=title, url=hn_url, site_id="newsnow", hours_ago=6),
+        make_item(2, title=title, url=hn_url, site_id="newsnow", hours_ago=1),
+        make_item(3, title=title, url=repo_url, site_id="buzzing", hours_ago=5),
+        make_item(4, title=title, url=repo_url, site_id="hackernews", hours_ago=5),
+        make_item(5, title=title, url=repo_url, site_id="iris", hours_ago=5),
+    ]
+
+    stories, events = merge_story_items(items, NOW, 24)
+
+    assert len(stories) == 1
+    story = stories[0]
+    # Raw pipeline entries stay visible for traceability / UI expansion...
+    assert story["duplicate_count"] == 5
+    assert len(story["sources"]) == 5
+    # ...but the source count reflects the two distinct canonical URLs.
+    assert story["source_count"] == 2
+    # Heat (weight 0.1) must come from the distinct count, not the mirrors:
+    # (2-1)/4 = 0.25 instead of the maxed 1.0 five copies used to produce.
+    assert story["importance_breakdown"]["story_heat"] == 0.25
+    assert events  # merges still recorded in the merge log

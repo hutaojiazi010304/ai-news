@@ -173,9 +173,19 @@ def test_brief_gate_reads_peak_score_when_present():
     fresh = {"source_count": 1, "score": 0.8}
     assert story_passes_brief_gate(fresh) is True
 
-    # Multi-source stories pass regardless of any score.
+    # Multi-source stories still need a quality floor: a low-score story
+    # must not ride into the brief on source count alone (mirrors of one
+    # forum thread can fake a high source count).
     multi = {"source_count": 2, "score": 0.3, "peak_score": 0.3}
-    assert story_passes_brief_gate(multi) is True
+    assert story_passes_brief_gate(multi) is False
+    multi_ok = {"source_count": 2, "score": 0.65}
+    assert story_passes_brief_gate(multi_ok) is True
+    # The multi-source floor also reads the persisted peak.
+    multi_peak = {"source_count": 3, "score": 0.5, "peak_score": 0.66}
+    assert story_passes_brief_gate(multi_peak) is True
+    # One source below the score gate stays out even above the multi floor.
+    single_mid = {"source_count": 1, "score": 0.66}
+    assert story_passes_brief_gate(single_mid) is False
 
 
 def test_apply_story_peak_scores_keeps_max_across_runs():

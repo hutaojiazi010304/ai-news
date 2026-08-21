@@ -5924,10 +5924,13 @@ def choose_primary_story_item(
     items: list[dict[str, Any]],
     now: datetime,
     window_hours: int,
+    duplicate_count: int | None = None,
 ) -> dict[str, Any]:
+    heat_input = len(items) if duplicate_count is None else duplicate_count
+
     def key(item: dict[str, Any]) -> tuple[int, float, float, str]:
         tier_rank = int(source_tier_for_site(str(item.get("site_id") or "")).get("source_tier_rank", 9))
-        importance = calculate_item_importance(item, now, window_hours, duplicate_count=len(items))["score"]
+        importance = calculate_item_importance(item, now, window_hours, duplicate_count=heat_input)["score"]
         ts = event_time(item)
         return (tier_rank, -importance, -(ts.timestamp() if ts else 0), str(item.get("title") or ""))
 
@@ -5967,6 +5970,22 @@ def story_reasons(primary: dict[str, Any], score: float, duplicate_count: int) -
     return reasons
 
 
+def distinct_story_source_count(items: list[dict[str, Any]]) -> int:
+    """Independent coverage origins behind a story.
+
+    Mirrors and re-crawls of the same canonical URL count once: one HN
+    discussion mirrored by several aggregator channels is still a single
+    source, not one source per pipeline entry. Items without a URL each
+    count as their own origin since they cannot be proven copies of
+    anything else.
+    """
+    keys: set[str] = set()
+    for index, item in enumerate(items):
+        canonical = canonical_story_url(str(item.get("url") or ""))
+        keys.add(canonical or f"__no_url__{item.get('id') or index}")
+    return len(keys)
+
+
 def build_story_record(
     story_id: str,
     items: list[dict[str, Any]],
@@ -5974,10 +5993,14 @@ def build_story_record(
     window_hours: int,
 ) -> dict[str, Any]:
     sorted_items = sorted(items, key=source_tier_sort_key)
-    primary = choose_primary_story_item(sorted_items, now, window_hours)
-    importance = calculate_item_importance(primary, now, window_hours, duplicate_count=len(items))
+    # 来源数 / 热度 / 多源分类按"独立出处"（去重后的 canonical URL）计，
+    # 同一 URL 的重复抓取与镜像通道不算新来源；sources/items 列表和
+    # item_count/duplicate_count 仍保留全部管道条目，供追溯与展开。
+    distinct_sources = distinct_story_source_count(sorted_items)
+    primary = choose_primary_story_item(sorted_items, now, window_hours, duplicate_count=distinct_sources)
+    importance = calculate_item_importance(primary, now, window_hours, duplicate_count=distinct_sources)
     score = importance["score"]
-    category = story_category(score, primary, len(items))
+    category = story_category(score, primary, distinct_sources)
     times = [ts for ts in (event_time(item) for item in sorted_items) if ts]
     # 与前端 timelineIso 的未来时间防御对齐：错标时区的条目漏到 story 层时，
     # earliest_at/latest_at 不得超过当前时间（精选模式排序/展示走的是这两个字段）
@@ -5995,7 +6018,7 @@ def build_story_record(
         "source": primary.get("source"),
         "source_name": primary.get("site_name"),
         "sources": source_refs,
-        "source_count": len(source_refs),
+        "source_count": distinct_sources,
         "source_names": source_names,
         "items": source_refs,
         "item_count": len(sorted_items),
@@ -6006,7 +6029,7 @@ def build_story_record(
         "importance_label": importance_label(category),
         "importance_breakdown": importance["breakdown"],
         "category": category,
-        "reasons": story_reasons(primary, score, len(sorted_items)),
+        "reasons": story_reasons(primary, score, distinct_sources),
         "earliest_at": iso(min(times)) if times else None,
         "latest_at": iso(max(times)) if times else None,
         "primary_item": {
@@ -6113,6 +6136,9 @@ def merge_story_items(
 
 
 BRIEF_SCORE_GATE = 0.72
+# 多源印证路径的质量下限：来源数达标但分数太低（例如一个论坛帖被多个
+# 镜像通道刷出"多来源"假象）不允许仅凭来源数进入精选池。
+BRIEF_MULTI_SOURCE_SCORE_GATE = 0.65
 # Peak-score state: stories only live ~24h in the window, so entries unseen
 # for this many days are dropped. Kept slightly above the window so a story
 # that ages out mid-run still has its peak available until the next prune.
@@ -6219,16 +6245,25 @@ def story_gate_score(story: dict[str, Any]) -> float:
 
 
 def story_passes_brief_gate(story: dict[str, Any]) -> bool:
-    """宁缺毋滥: a story earns a brief slot via multi-source confirmation or a
-    strong peak score. Quiet days produce a short (possibly empty) brief
-    instead of a padded one. The gate reads the persisted peak so a
-    single-source story that scored high earlier in the window does not age
-    out as its recency component decays run by run."""
+    """宁缺毋滥: a story earns a brief slot via a strong peak score, or via
+    multi-source confirmation that still clears a quality floor. Quiet days
+    produce a short (possibly empty) brief instead of a padded one. The gate
+    reads the persisted peak so a story that scored high earlier in the
+    window does not age out as its recency component decays run by run.
+
+    The multi-source path requires ``BRIEF_MULTI_SOURCE_SCORE_GATE`` because
+    source count alone is not a quality signal: a single forum thread
+    mirrored across aggregator channels can look "multi-source" while
+    carrying no independent reporting.
+    """
     try:
         sources = int(story.get("source_count") or 1)
     except Exception:
         sources = 1
-    return sources >= 2 or story_gate_score(story) >= BRIEF_SCORE_GATE
+    gate_score = story_gate_score(story)
+    if gate_score >= BRIEF_SCORE_GATE:
+        return True
+    return sources >= 2 and gate_score >= BRIEF_MULTI_SOURCE_SCORE_GATE
 
 
 def select_diverse_stories(
