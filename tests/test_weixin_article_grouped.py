@@ -37,18 +37,18 @@ def make_categorized_item(idx: int, category: str, score: float) -> dict:
 
 def test_group_items_orders_categories_and_keeps_in_group_rank():
     items = [
-        make_categorized_item(1, "industry", 90),
+        make_categorized_item(1, "multi_source", 90),
         make_categorized_item(2, "official", 80),
         make_categorized_item(3, "industry", 70),
         make_categorized_item(4, "watch", 60),
         make_categorized_item(5, "official", 50),
-        make_categorized_item(6, "multi_source", 40),
+        make_categorized_item(6, "industry", 40),
     ]
 
     groups = gwag.group_items(items)
 
     assert [category for category, _ in groups] == [
-        "official", "multi_source", "industry", "watch",
+        "official", "industry", "multi_source", "watch",
     ]
     by_category = dict(groups)
     # In-group order follows the peak_score ranking, untouched by grouping.
@@ -56,7 +56,7 @@ def test_group_items_orders_categories_and_keeps_in_group_rank():
         "分类测试新闻 2（official）", "分类测试新闻 5（official）",
     ]
     assert [it["title"] for it in by_category["industry"]] == [
-        "分类测试新闻 1（industry）", "分类测试新闻 3（industry）",
+        "分类测试新闻 3（industry）", "分类测试新闻 6（industry）",
     ]
 
 
@@ -86,39 +86,78 @@ def test_group_items_missing_category_defaults_to_watch():
 # Rendering
 # ---------------------------------------------------------------------------
 
-def test_render_grouped_html_restarts_numbering_per_section():
+def test_render_grouped_html_layout_order_centered_titles_and_boxes():
     items = [
         make_categorized_item(1, "official", 90),
         make_categorized_item(2, "official", 80),
         make_categorized_item(3, "industry", 70),
+        make_categorized_item(4, "multi_source", 60),
+        make_categorized_item(5, "watch", 50),
     ]
     html = gwag.render_grouped_article_html(
         items,
-        title="AI 雷达 · 8月21日｜今日精选3条",
+        title="AI 雷达 · 8月21日｜今日精选5条",
         digest="摘要",
         brand="AI 雷达",
         issue_label="8月21日 周五",
         radar_url="https://example.github.io/ai-news-radar/",
     )
 
-    # Section headers in category order, each with its item count.
-    official_head = html.index("官方更新<span")
-    industry_head = html.index("行业动态<span")
-    assert official_head < industry_head
-    assert "2 条" in html[official_head:industry_head]
-    assert "1 条" in html[industry_head:]
+    # Section order: 官方更新 → 行业动态 → 多源热议 → 值得关注. The ">label</p>"
+    # marker only matches section titles — item meta lines carry the label
+    # followed by " · source ...", never by "</p>".
+    heads = ["官方更新", "行业动态", "多源热议", "值得关注"]
+    positions = [html.index(f">{label}</p>") for label in heads]
+    assert positions == sorted(positions)
+
+    # Centered, color-coded titles, one per section, without item counts.
+    assert html.count("text-align:center") == 4
+    assert " 条</p>" not in html
+    for style in gwag.CATEGORY_STYLES.values():
+        assert f'color:{style["color"]};' in html
+
+    # Boxes use the title hue with added transparency (rgba), derived — not
+    # hand-matched — from CATEGORY_COLORS.
+    for category, style in gwag.CATEGORY_STYLES.items():
+        base = gwag.CATEGORY_COLORS[category]
+        assert style["border"] == gwag.with_alpha(base, gwag.BOX_BORDER_ALPHA)
+        assert style["background"] == gwag.with_alpha(base, gwag.BOX_BACKGROUND_ALPHA)
+
+    # Every section's items sit inside one large enclosing box.
+    assert html.count("border:1px solid") == 4
+    assert html.count("border-radius:10px") == 4
+    for style in gwag.CATEGORY_STYLES.values():
+        assert f'border:1px solid {style["border"]}' in html
+        assert f'background-color:{style["background"]}' in html
 
     # Numbering restarts at ① inside each section.
-    assert html.count("①") == 2
+    assert html.count("①") == 4
     assert "②" in html
 
     # Every item (title + meta line + plain-text URL) is still rendered.
-    for idx in (1, 2, 3):
+    for idx in range(1, 6):
         assert f"分类测试新闻 {idx}" in html
         assert f"https://example.com/story/{idx}" in html
+
+
+def test_render_grouped_html_skips_empty_sections():
+    items = [
+        make_categorized_item(1, "official", 90),
+        make_categorized_item(2, "industry", 70),
+    ]
+    html = gwag.render_grouped_article_html(
+        items,
+        title="t",
+        digest="d",
+        brand="AI 雷达",
+        issue_label="8月21日 周五",
+        radar_url="https://example.github.io/ai-news-radar/",
+    )
+
     # 多源热议 / 值得关注 sections absent when empty.
     assert "多源热议" not in html
     assert "值得关注" not in html
+    assert html.count("text-align:center") == 2
 
 
 # ---------------------------------------------------------------------------
@@ -202,11 +241,11 @@ def test_end_to_end_keyless_run_writes_grouped_output(tmp_path):
     # Title identical to the main variant's fixed template.
     assert re.fullmatch(r"AI 雷达 · \d+月\d+日｜今日精选4条", meta["title"])
 
-    # All four items present, grouped, in ranking order inside sections.
+    # All four items present, grouped, in the fixed section order.
     for idx in (1, 2, 3, 4):
         assert f"分类测试新闻 {idx}" in html_text
-    assert html_text.index("官方更新<span") < html_text.index("行业动态<span")
-    assert html_text.index("行业动态<span") < html_text.index("值得关注<span")
+    assert html_text.index(">官方更新</p>") < html_text.index(">行业动态</p>")
+    assert html_text.index(">行业动态</p>") < html_text.index(">值得关注</p>")
 
     # Cover reused verbatim from the main variant; no image API was needed.
     assert meta["cover"] == "cover.jpg"

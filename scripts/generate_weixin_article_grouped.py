@@ -5,7 +5,8 @@ exact same selection, guide-writing and cover logic as
 ``generate_weixin_article.py`` (imported, not copied — so the 20 picked
 items and their texts are guaranteed identical). The only difference is the
 body layout: items are rendered grouped by story category
-(官方更新 → 多源热议 → 行业动态 → 值得关注) with per-section numbering,
+(官方更新 → 行业动态 → 多源热议 → 值得关注), each group under a centered,
+color-coded title and inside its own large box, with per-section numbering —
 instead of one flat ranked list.
 
 Output goes to ``weixin-grouped/`` by default so both variants coexist for
@@ -79,18 +80,48 @@ except ImportError:  # run directly as a script
         strip_english_tail,
     )
 
-# Display order for the sections: most authoritative first. Empty sections
-# are skipped entirely; unknown categories (should not happen) go last.
-CATEGORY_ORDER = ("official", "multi_source", "industry", "watch")
+# Display order for the sections: official first, then high-score industry
+# news, multi-source discussions and the watchlist. Empty sections are
+# skipped entirely; unknown categories (should not happen) go last.
+CATEGORY_ORDER = ("official", "industry", "multi_source", "watch")
 
-# WeChat-safe accent colors per section, mirroring the web tag tones
-# (official green / hot red / info blue / neutral gray). Inline styles only.
-CATEGORY_ACCENTS = {
-    "official": "#07c160",
-    "multi_source": "#e64340",
-    "industry": "#10aeff",
-    "watch": "#8a8a8a",
+# Per-section title colors (deep, brand-like tones). The large enclosing box
+# is drawn in the SAME hue at higher transparency (rgba) so each section reads
+# as one color family. Inline styles only — the WeChat editor strips classes
+# and <style> blocks.
+CATEGORY_COLORS = {
+    "official": "#13501B",
+    "industry": "#215F9A",
+    "multi_source": "#C04F15",
+    "watch": "#595959",
 }
+
+# Box transparency: border is the hue at moderate alpha, background a faint
+# wash of the same hue.
+BOX_BORDER_ALPHA = 0.45
+BOX_BACKGROUND_ALPHA = 0.08
+
+
+def with_alpha(hex_color: str, alpha: float) -> str:
+    """Return ``rgba(r, g, b, alpha)`` for a ``#rrggbb`` color."""
+    h = hex_color.lstrip("#")
+    r, g, b = int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+    return f"rgba({r}, {g}, {b}, {alpha})"
+
+
+def _build_styles() -> dict[str, dict[str, str]]:
+    styles = {}
+    for category, color in CATEGORY_COLORS.items():
+        styles[category] = {
+            "color": color,
+            "border": with_alpha(color, BOX_BORDER_ALPHA),
+            "background": with_alpha(color, BOX_BACKGROUND_ALPHA),
+        }
+    return styles
+
+
+CATEGORY_STYLES = _build_styles()
+DEFAULT_STYLE = CATEGORY_STYLES["watch"]
 
 DEFAULT_OUTPUT_DIR = "weixin-grouped"
 DEFAULT_MAIN_OUTPUT_DIR = "weixin"
@@ -115,21 +146,26 @@ def group_items(items: list[dict]) -> list[tuple[str, list[dict]]]:
 
 def render_group_section(category: str, items: list[dict]) -> str:
     label = CATEGORY_LABEL_ZH.get(category, category)
-    accent = CATEGORY_ACCENTS.get(category, CATEGORY_ACCENTS["watch"])
+    style = CATEGORY_STYLES.get(category, DEFAULT_STYLE)
     parts = [
-        '<section style="margin:32px 0 0;">',
+        '<section style="margin:34px 0 0;">',
+        # Centered, color-coded section title (no item count by design).
         (
-            '<section style="border-left:4px solid '
-            f'{accent};background-color:#f7f8f9;padding:8px 12px;">'
-            f'<p style="margin:0;font-size:16px;font-weight:bold;color:#1f1f1f;">{esc(label)}'
-            f'<span style="margin-left:8px;font-size:12px;font-weight:normal;'
-            f'color:#999999;">{len(items)} 条</span></p>'
-            "</section>"
+            '<p style="margin:0 0 14px;text-align:center;font-size:17px;'
+            f'font-weight:bold;letter-spacing:2px;color:{style["color"]};">'
+            f'{esc(label)}</p>'
+        ),
+        # One large box enclosing every item of this section.
+        (
+            f'<section style="border:1px solid {style["border"]};'
+            f'border-radius:10px;background-color:{style["background"]};'
+            'padding:2px 14px 14px;">'
         ),
     ]
     # Per-section numbering restarts at ①.
     for idx, item in enumerate(items):
         parts.append(render_item_html(item, idx))
+    parts.append("</section>")
     parts.append("</section>")
     return "\n".join(parts)
 
