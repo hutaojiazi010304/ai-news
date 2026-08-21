@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T09:06:36.334767Z",
+  "generated_at": "2026-08-21T09:59:36.864938Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.834,
-      "importance": 0.834,
-      "importance_score": 0.834,
+      "score": 0.8327,
+      "importance": 0.8327,
+      "importance_score": 0.8327,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8554,
+        "recency": 0.8481,
         "story_heat": 0.0
       },
       "category": "official",
@@ -84,7 +84,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     },
     {
@@ -132,15 +132,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8281,
-      "importance": 0.8281,
-      "importance_score": 0.8281,
+      "score": 0.8267,
+      "importance": 0.8267,
+      "importance_score": 0.8267,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9116,
+        "recency": 0.9039,
         "story_heat": 0.0
       },
       "category": "official",
@@ -168,7 +168,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     },
     {
@@ -216,15 +216,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.4991,
-      "importance": 0.4991,
-      "importance_score": 0.4991,
+      "score": 0.4978,
+      "importance": 0.4978,
+      "importance_score": 0.4978,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8796,
+        "recency": 0.8721,
         "story_heat": 0.0
       },
       "category": "watch",
@@ -250,7 +250,7 @@
       "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     },
     {
@@ -298,15 +298,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8194,
-      "importance": 0.8194,
-      "importance_score": 0.8194,
+      "score": 0.8181,
+      "importance": 0.8181,
+      "importance_score": 0.8181,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8636,
+        "recency": 0.8563,
         "story_heat": 0.0
       },
       "category": "official",
@@ -334,7 +334,90 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
+      }
+    },
+    {
+      "story_id": "story_1942460359a8",
+      "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
+      "url": "https://api-docs.deepseek.com/zh-cn/updates",
+      "primary_url": "https://api-docs.deepseek.com/zh-cn/updates",
+      "source": "DeepSeek：API 更新日志",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "3292523df0d3dc1a19bfb08fadf619c3e5dabd12",
+          "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
+          "title_zh": "DeepSeek-V4-Flash-Vision-Exp 发布",
+          "title_en": null,
+          "title_original": "DeepSeek-V4-Flash-Vision-Exp 发布",
+          "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。",
+          "recommend_reason_zh": null,
+          "url": "https://api-docs.deepseek.com/zh-cn/updates",
+          "source": "DeepSeek：API 更新日志",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-21T09:26:04.727000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "DeepSeek：API 更新日志"
+      ],
+      "items": [
+        {
+          "id": "3292523df0d3dc1a19bfb08fadf619c3e5dabd12",
+          "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
+          "title_zh": "DeepSeek-V4-Flash-Vision-Exp 发布",
+          "title_en": null,
+          "title_original": "DeepSeek-V4-Flash-Vision-Exp 发布",
+          "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。",
+          "recommend_reason_zh": null,
+          "url": "https://api-docs.deepseek.com/zh-cn/updates",
+          "source": "DeepSeek：API 更新日志",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-21T09:26:04.727000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8,
+      "importance": 0.8,
+      "importance_score": 0.8,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.67,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9946,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-21T09:26:04.727000Z",
+      "latest_at": "2026-08-21T09:26:04.727000Z",
+      "primary_item": {
+        "id": "3292523df0d3dc1a19bfb08fadf619c3e5dabd12",
+        "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
+        "title_zh": "DeepSeek-V4-Flash-Vision-Exp 发布",
+        "title_en": null,
+        "title_original": "DeepSeek-V4-Flash-Vision-Exp 发布",
+        "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。",
+        "recommend_reason_zh": null,
+        "url": "https://api-docs.deepseek.com/zh-cn/updates",
+        "source": "DeepSeek：API 更新日志",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     },
     {
@@ -382,15 +465,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7737,
-      "importance": 0.7737,
-      "importance_score": 0.7737,
+      "score": 0.7724,
+      "importance": 0.7724,
+      "importance_score": 0.7724,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8484,
+        "recency": 0.8412,
         "story_heat": 0.0
       },
       "category": "official",
@@ -417,7 +500,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     },
     {
@@ -465,15 +548,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7556,
-      "importance": 0.7556,
-      "importance_score": 0.7556,
+      "score": 0.7542,
+      "importance": 0.7542,
+      "importance_score": 0.7542,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9335,
+        "recency": 0.9256,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -500,340 +583,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
-      }
-    },
-    {
-      "story_id": "story_185e96d8c2f8",
-      "title": "代码扫描添加了缓解警报解除原因 / Code scanning adds a mitigated alert dismissal reason",
-      "url": "https://github.blog/changelog/2026-08-20-code-scanning-adds-a-mitigated-alert-dismissal-reason",
-      "primary_url": "https://github.blog/changelog/2026-08-20-code-scanning-adds-a-mitigated-alert-dismissal-reason",
-      "source": "GitHub Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "f4c17395c04a766662eb04284b415ce431dd4390",
-          "title": "代码扫描添加了缓解警报解除原因 / Code scanning adds a mitigated alert dismissal reason",
-          "title_zh": "代码扫描添加了缓解警报解除原因",
-          "title_en": "Code scanning adds a mitigated alert dismissal reason",
-          "title_original": "Code scanning adds a mitigated alert dismissal reason",
-          "summary": "You can now dismiss a code scanning alert with the reason Mitigated when a vulnerability remains in the code but external controls, such as a web application firewall or network… The post Code scanning adds a mitigated alert dismissal reason appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-08-20-code-scanning-adds-a-mitigated-alert-dismissal-reason",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-20T15:14:31Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "items": [
-        {
-          "id": "f4c17395c04a766662eb04284b415ce431dd4390",
-          "title": "代码扫描添加了缓解警报解除原因 / Code scanning adds a mitigated alert dismissal reason",
-          "title_zh": "代码扫描添加了缓解警报解除原因",
-          "title_en": "Code scanning adds a mitigated alert dismissal reason",
-          "title_original": "Code scanning adds a mitigated alert dismissal reason",
-          "summary": "You can now dismiss a code scanning alert with the reason Mitigated when a vulnerability remains in the code but external controls, such as a web application firewall or network… The post Code scanning adds a mitigated alert dismissal reason appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-08-20-code-scanning-adds-a-mitigated-alert-dismissal-reason",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-20T15:14:31Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8156,
-      "importance": 0.8156,
-      "importance_score": 0.8156,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.842,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-20T15:14:31Z",
-      "latest_at": "2026-08-20T15:14:31Z",
-      "primary_item": {
-        "id": "f4c17395c04a766662eb04284b415ce431dd4390",
-        "title": "代码扫描添加了缓解警报解除原因 / Code scanning adds a mitigated alert dismissal reason",
-        "title_zh": "代码扫描添加了缓解警报解除原因",
-        "title_en": "Code scanning adds a mitigated alert dismissal reason",
-        "title_original": "Code scanning adds a mitigated alert dismissal reason",
-        "summary": "You can now dismiss a code scanning alert with the reason Mitigated when a vulnerability remains in the code but external controls, such as a web application firewall or network… The post Code scanning adds a mitigated alert dismissal reason appeared first on The GitHub Blog .",
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/changelog/2026-08-20-code-scanning-adds-a-mitigated-alert-dismissal-reason",
-        "source": "GitHub Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8263,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
-      }
-    },
-    {
-      "story_id": "story_07ac88c2e7ee",
-      "title": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-      "url": "https://www.ithome.com/0/992/239.htm",
-      "primary_url": "https://www.ithome.com/0/992/239.htm",
-      "source": "IT之家（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "639c31e3f086c0a76f0dd5c5b512d606d2e82585",
-          "title": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-          "title_zh": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-          "title_en": null,
-          "title_original": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-          "summary": "阿里巴巴正式推出 Qwen-UI-Agent，一个以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/0/992/239.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-20T09:45:51Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "IT之家（RSS）"
-      ],
-      "items": [
-        {
-          "id": "639c31e3f086c0a76f0dd5c5b512d606d2e82585",
-          "title": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-          "title_zh": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-          "title_en": null,
-          "title_original": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-          "summary": "阿里巴巴正式推出 Qwen-UI-Agent，一个以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/0/992/239.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-20T09:45:51Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7314,
-      "importance": 0.7314,
-      "importance_score": 0.7314,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7987,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-20T09:45:51Z",
-      "latest_at": "2026-08-20T09:45:51Z",
-      "primary_item": {
-        "id": "639c31e3f086c0a76f0dd5c5b512d606d2e82585",
-        "title": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-        "title_zh": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-        "title_en": null,
-        "title_original": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
-        "summary": "阿里巴巴正式推出 Qwen-UI-Agent，一个以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境。",
-        "recommend_reason_zh": null,
-        "url": "https://www.ithome.com/0/992/239.htm",
-        "source": "IT之家（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7416,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
-      }
-    },
-    {
-      "story_id": "story_e98fa202cb48",
-      "title": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
-      "url": "https://www.aibase.com/news/30519",
-      "primary_url": "https://www.aibase.com/news/30519",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "24d9be228661134f28d9f0248f3f61d8a10b112e",
-          "title": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
-          "title_zh": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
-          "title_en": null,
-          "title_original": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30519",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-21T01:57:50.598779Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "24d9be228661134f28d9f0248f3f61d8a10b112e",
-          "title": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
-          "title_zh": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
-          "title_en": null,
-          "title_original": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30519",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-21T01:57:50.598779Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7556,
-      "importance": 0.7556,
-      "importance_score": 0.7556,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9335,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-21T01:57:50.598779Z",
-      "latest_at": "2026-08-21T01:57:50.598779Z",
-      "primary_item": {
-        "id": "24d9be228661134f28d9f0248f3f61d8a10b112e",
-        "title": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
-        "title_zh": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
-        "title_en": null,
-        "title_original": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30519",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
-      }
-    },
-    {
-      "story_id": "story_6bffb665747e",
-      "title": "在审核日志中跟踪 GitHub 代码质量启用更改 / Track GitHub Code Quality enablement changes in the audit log",
-      "url": "https://github.blog/changelog/2026-08-20-track-github-code-quality-enablement-changes-in-the-audit-log",
-      "primary_url": "https://github.blog/changelog/2026-08-20-track-github-code-quality-enablement-changes-in-the-audit-log",
-      "source": "GitHub Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "1cc18a7327743210494631f42c24107a27ce2aff",
-          "title": "在审核日志中跟踪 GitHub 代码质量启用更改 / Track GitHub Code Quality enablement changes in the audit log",
-          "title_zh": "在审核日志中跟踪 GitHub 代码质量启用更改",
-          "title_en": "Track GitHub Code Quality enablement changes in the audit log",
-          "title_original": "Track GitHub Code Quality enablement changes in the audit log",
-          "summary": "GitHub Code Quality now writes an audit log event whenever someone enables, disables, or changes its settings on a repository. Three new events give you that history: repo.code_quality_enabled records when… The post Track GitHub Code Quality enablement changes in the audit log appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-08-20-track-github-code-quality-enablement-changes-in-the-audit-log",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-20T14:28:41Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "items": [
-        {
-          "id": "1cc18a7327743210494631f42c24107a27ce2aff",
-          "title": "在审核日志中跟踪 GitHub 代码质量启用更改 / Track GitHub Code Quality enablement changes in the audit log",
-          "title_zh": "在审核日志中跟踪 GitHub 代码质量启用更改",
-          "title_en": "Track GitHub Code Quality enablement changes in the audit log",
-          "title_original": "Track GitHub Code Quality enablement changes in the audit log",
-          "summary": "GitHub Code Quality now writes an audit log event whenever someone enables, disables, or changes its settings on a repository. Three new events give you that history: repo.code_quality_enabled records when… The post Track GitHub Code Quality enablement changes in the audit log appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-08-20-track-github-code-quality-enablement-changes-in-the-audit-log",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-20T14:28:41Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8144,
-      "importance": 0.8144,
-      "importance_score": 0.8144,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.8358,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-20T14:28:41Z",
-      "latest_at": "2026-08-20T14:28:41Z",
-      "primary_item": {
-        "id": "1cc18a7327743210494631f42c24107a27ce2aff",
-        "title": "在审核日志中跟踪 GitHub 代码质量启用更改 / Track GitHub Code Quality enablement changes in the audit log",
-        "title_zh": "在审核日志中跟踪 GitHub 代码质量启用更改",
-        "title_en": "Track GitHub Code Quality enablement changes in the audit log",
-        "title_original": "Track GitHub Code Quality enablement changes in the audit log",
-        "summary": "GitHub Code Quality now writes an audit log event whenever someone enables, disables, or changes its settings on a repository. Three new events give you that history: repo.code_quality_enabled records when… The post Track GitHub Code Quality enablement changes in the audit log appeared first on The GitHub Blog .",
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/changelog/2026-08-20-track-github-code-quality-enablement-changes-in-the-audit-log",
-        "source": "GitHub Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8252,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     },
     {
@@ -881,20 +631,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7199,
-      "importance": 0.7199,
-      "importance_score": 0.7199,
-      "importance_label": "值得关注",
+      "score": 0.767,
+      "importance": 0.767,
+      "importance_score": 0.767,
+      "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.63,
-        "source_tier": 0.78,
+        "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8853,
+        "recency": 0.8778,
         "story_heat": 0.0
       },
-      "category": "watch",
+      "category": "official",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
       "earliest_at": "2026-08-20T20:27:01.660000Z",
       "latest_at": "2026-08-20T20:27:01.660000Z",
@@ -910,12 +661,12 @@
         "source": "Claude：Blog（网页）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7313,
+      "peak_score": 0.767,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     },
     {
@@ -963,20 +714,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7193,
-      "importance": 0.7193,
-      "importance_score": 0.7193,
-      "importance_label": "值得关注",
+      "score": 0.7664,
+      "importance": 0.7664,
+      "importance_score": 0.7664,
+      "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
-        "source_tier": 0.78,
+        "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8481,
+        "recency": 0.8409,
         "story_heat": 0.0
       },
-      "category": "watch",
+      "category": "official",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
       "earliest_at": "2026-08-20T16:00:00Z",
       "latest_at": "2026-08-20T16:00:00Z",
@@ -992,118 +744,35 @@
         "source": "Google Cloud：Databases（RSS）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7301,
+      "peak_score": 0.7664,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     },
     {
-      "story_id": "story_f02c0a256fdb",
-      "title": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
-      "url": "https://www.aibase.com/news/30522",
-      "primary_url": "https://www.aibase.com/news/30522",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "29723a13da3409d24ae8006c95bbc51698f5d195",
-          "title": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
-          "title_zh": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
-          "title_en": null,
-          "title_original": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30522",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-21T03:28:54.032153Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "29723a13da3409d24ae8006c95bbc51698f5d195",
-          "title": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
-          "title_zh": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
-          "title_en": null,
-          "title_original": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30522",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-21T03:28:54.032153Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7581,
-      "importance": 0.7581,
-      "importance_score": 0.7581,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9473,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-21T03:28:54.032153Z",
-      "latest_at": "2026-08-21T03:28:54.032153Z",
-      "primary_item": {
-        "id": "29723a13da3409d24ae8006c95bbc51698f5d195",
-        "title": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
-        "title_zh": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
-        "title_en": null,
-        "title_original": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30522",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
-      }
-    },
-    {
-      "story_id": "story_c5030fa07ae8",
-      "title": "针对 GitHub 代码质量的单独 GitHub Actions 路径 / Separate GitHub Actions path for GitHub Code Quality",
-      "url": "https://github.blog/changelog/2026-08-20-separate-github-actions-path-for-github-code-quality",
-      "primary_url": "https://github.blog/changelog/2026-08-20-separate-github-actions-path-for-github-code-quality",
+      "story_id": "story_185e96d8c2f8",
+      "title": "代码扫描添加了缓解警报解除原因 / Code scanning adds a mitigated alert dismissal reason",
+      "url": "https://github.blog/changelog/2026-08-20-code-scanning-adds-a-mitigated-alert-dismissal-reason",
+      "primary_url": "https://github.blog/changelog/2026-08-20-code-scanning-adds-a-mitigated-alert-dismissal-reason",
       "source": "GitHub Changelog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "5fa0aca95d20e87c77398d511dfb4c4fa67865ef",
-          "title": "针对 GitHub 代码质量的单独 GitHub Actions 路径 / Separate GitHub Actions path for GitHub Code Quality",
-          "title_zh": "针对 GitHub 代码质量的单独 GitHub Actions 路径",
-          "title_en": "Separate GitHub Actions path for GitHub Code Quality",
-          "title_original": "Separate GitHub Actions path for GitHub Code Quality",
-          "summary": "A dedicated workflow path for code quality CodeQL actions workflows is now generally available. Your workflow run history and your Actions usage reports now tell GitHub Code Quality runs apart… The post Separate GitHub Actions path for GitHub Code Quality appeared first on The GitHub Blog .",
+          "id": "f4c17395c04a766662eb04284b415ce431dd4390",
+          "title": "代码扫描添加了缓解警报解除原因 / Code scanning adds a mitigated alert dismissal reason",
+          "title_zh": "代码扫描添加了缓解警报解除原因",
+          "title_en": "Code scanning adds a mitigated alert dismissal reason",
+          "title_original": "Code scanning adds a mitigated alert dismissal reason",
+          "summary": "You can now dismiss a code scanning alert with the reason Mitigated when a vulnerability remains in the code but external controls, such as a web application firewall or network… The post Code scanning adds a mitigated alert dismissal reason appeared first on The GitHub Blog .",
           "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-08-20-separate-github-actions-path-for-github-code-quality",
+          "url": "https://github.blog/changelog/2026-08-20-code-scanning-adds-a-mitigated-alert-dismissal-reason",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-08-20T14:29:27Z"
+          "published_at": "2026-08-20T15:14:31Z"
         }
       ],
       "source_count": 1,
@@ -1112,31 +781,31 @@
       ],
       "items": [
         {
-          "id": "5fa0aca95d20e87c77398d511dfb4c4fa67865ef",
-          "title": "针对 GitHub 代码质量的单独 GitHub Actions 路径 / Separate GitHub Actions path for GitHub Code Quality",
-          "title_zh": "针对 GitHub 代码质量的单独 GitHub Actions 路径",
-          "title_en": "Separate GitHub Actions path for GitHub Code Quality",
-          "title_original": "Separate GitHub Actions path for GitHub Code Quality",
-          "summary": "A dedicated workflow path for code quality CodeQL actions workflows is now generally available. Your workflow run history and your Actions usage reports now tell GitHub Code Quality runs apart… The post Separate GitHub Actions path for GitHub Code Quality appeared first on The GitHub Blog .",
+          "id": "f4c17395c04a766662eb04284b415ce431dd4390",
+          "title": "代码扫描添加了缓解警报解除原因 / Code scanning adds a mitigated alert dismissal reason",
+          "title_zh": "代码扫描添加了缓解警报解除原因",
+          "title_en": "Code scanning adds a mitigated alert dismissal reason",
+          "title_original": "Code scanning adds a mitigated alert dismissal reason",
+          "summary": "You can now dismiss a code scanning alert with the reason Mitigated when a vulnerability remains in the code but external controls, such as a web application firewall or network… The post Code scanning adds a mitigated alert dismissal reason appeared first on The GitHub Blog .",
           "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-08-20-separate-github-actions-path-for-github-code-quality",
+          "url": "https://github.blog/changelog/2026-08-20-code-scanning-adds-a-mitigated-alert-dismissal-reason",
           "source": "GitHub Changelog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-08-20T14:29:27Z"
+          "published_at": "2026-08-20T15:14:31Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8145,
-      "importance": 0.8145,
-      "importance_score": 0.8145,
+      "score": 0.8143,
+      "importance": 0.8143,
+      "importance_score": 0.8143,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8359,
+        "recency": 0.8348,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1145,17 +814,184 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-20T14:29:27Z",
-      "latest_at": "2026-08-20T14:29:27Z",
+      "earliest_at": "2026-08-20T15:14:31Z",
+      "latest_at": "2026-08-20T15:14:31Z",
       "primary_item": {
-        "id": "5fa0aca95d20e87c77398d511dfb4c4fa67865ef",
-        "title": "针对 GitHub 代码质量的单独 GitHub Actions 路径 / Separate GitHub Actions path for GitHub Code Quality",
-        "title_zh": "针对 GitHub 代码质量的单独 GitHub Actions 路径",
-        "title_en": "Separate GitHub Actions path for GitHub Code Quality",
-        "title_original": "Separate GitHub Actions path for GitHub Code Quality",
-        "summary": "A dedicated workflow path for code quality CodeQL actions workflows is now generally available. Your workflow run history and your Actions usage reports now tell GitHub Code Quality runs apart… The post Separate GitHub Actions path for GitHub Code Quality appeared first on The GitHub Blog .",
+        "id": "f4c17395c04a766662eb04284b415ce431dd4390",
+        "title": "代码扫描添加了缓解警报解除原因 / Code scanning adds a mitigated alert dismissal reason",
+        "title_zh": "代码扫描添加了缓解警报解除原因",
+        "title_en": "Code scanning adds a mitigated alert dismissal reason",
+        "title_original": "Code scanning adds a mitigated alert dismissal reason",
+        "summary": "You can now dismiss a code scanning alert with the reason Mitigated when a vulnerability remains in the code but external controls, such as a web application firewall or network… The post Code scanning adds a mitigated alert dismissal reason appeared first on The GitHub Blog .",
         "recommend_reason_zh": null,
-        "url": "https://github.blog/changelog/2026-08-20-separate-github-actions-path-for-github-code-quality",
+        "url": "https://github.blog/changelog/2026-08-20-code-scanning-adds-a-mitigated-alert-dismissal-reason",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8263,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-21T10:00:17.798494Z"
+      }
+    },
+    {
+      "story_id": "story_e98fa202cb48",
+      "title": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
+      "url": "https://www.aibase.com/news/30519",
+      "primary_url": "https://www.aibase.com/news/30519",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "24d9be228661134f28d9f0248f3f61d8a10b112e",
+          "title": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
+          "title_zh": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
+          "title_en": null,
+          "title_original": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30519",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-21T01:57:50.598779Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "24d9be228661134f28d9f0248f3f61d8a10b112e",
+          "title": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
+          "title_zh": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
+          "title_en": null,
+          "title_original": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30519",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-21T01:57:50.598779Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7542,
+      "importance": 0.7542,
+      "importance_score": 0.7542,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9256,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-21T01:57:50.598779Z",
+      "latest_at": "2026-08-21T01:57:50.598779Z",
+      "primary_item": {
+        "id": "24d9be228661134f28d9f0248f3f61d8a10b112e",
+        "title": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
+        "title_zh": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
+        "title_en": null,
+        "title_original": "Adobe Firefly音频工具全面上线，支持AI生成音乐、语音和音效",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30519",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-21T10:00:17.798494Z"
+      }
+    },
+    {
+      "story_id": "story_6bffb665747e",
+      "title": "在审核日志中跟踪 GitHub 代码质量启用更改 / Track GitHub Code Quality enablement changes in the audit log",
+      "url": "https://github.blog/changelog/2026-08-20-track-github-code-quality-enablement-changes-in-the-audit-log",
+      "primary_url": "https://github.blog/changelog/2026-08-20-track-github-code-quality-enablement-changes-in-the-audit-log",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "1cc18a7327743210494631f42c24107a27ce2aff",
+          "title": "在审核日志中跟踪 GitHub 代码质量启用更改 / Track GitHub Code Quality enablement changes in the audit log",
+          "title_zh": "在审核日志中跟踪 GitHub 代码质量启用更改",
+          "title_en": "Track GitHub Code Quality enablement changes in the audit log",
+          "title_original": "Track GitHub Code Quality enablement changes in the audit log",
+          "summary": "GitHub Code Quality now writes an audit log event whenever someone enables, disables, or changes its settings on a repository. Three new events give you that history: repo.code_quality_enabled records when… The post Track GitHub Code Quality enablement changes in the audit log appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-08-20-track-github-code-quality-enablement-changes-in-the-audit-log",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-20T14:28:41Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub Changelog"
+      ],
+      "items": [
+        {
+          "id": "1cc18a7327743210494631f42c24107a27ce2aff",
+          "title": "在审核日志中跟踪 GitHub 代码质量启用更改 / Track GitHub Code Quality enablement changes in the audit log",
+          "title_zh": "在审核日志中跟踪 GitHub 代码质量启用更改",
+          "title_en": "Track GitHub Code Quality enablement changes in the audit log",
+          "title_original": "Track GitHub Code Quality enablement changes in the audit log",
+          "summary": "GitHub Code Quality now writes an audit log event whenever someone enables, disables, or changes its settings on a repository. Three new events give you that history: repo.code_quality_enabled records when… The post Track GitHub Code Quality enablement changes in the audit log appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-08-20-track-github-code-quality-enablement-changes-in-the-audit-log",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-20T14:28:41Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8132,
+      "importance": 0.8132,
+      "importance_score": 0.8132,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.8287,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-20T14:28:41Z",
+      "latest_at": "2026-08-20T14:28:41Z",
+      "primary_item": {
+        "id": "1cc18a7327743210494631f42c24107a27ce2aff",
+        "title": "在审核日志中跟踪 GitHub 代码质量启用更改 / Track GitHub Code Quality enablement changes in the audit log",
+        "title_zh": "在审核日志中跟踪 GitHub 代码质量启用更改",
+        "title_en": "Track GitHub Code Quality enablement changes in the audit log",
+        "title_original": "Track GitHub Code Quality enablement changes in the audit log",
+        "summary": "GitHub Code Quality now writes an audit log event whenever someone enables, disables, or changes its settings on a repository. Three new events give you that history: repo.code_quality_enabled records when… The post Track GitHub Code Quality enablement changes in the audit log appeared first on The GitHub Blog .",
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/changelog/2026-08-20-track-github-code-quality-enablement-changes-in-the-audit-log",
         "source": "GitHub Changelog",
         "source_name": "Official AI Updates"
       },
@@ -1164,7 +1000,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     },
     {
@@ -1212,20 +1048,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7156,
-      "importance": 0.7156,
-      "importance_score": 0.7156,
-      "importance_label": "值得关注",
+      "score": 0.7627,
+      "importance": 0.7627,
+      "importance_score": 0.7627,
+      "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
-        "source_tier": 0.78,
+        "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8276,
+        "recency": 0.8205,
         "story_heat": 0.0
       },
-      "category": "watch",
+      "category": "official",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
       "earliest_at": "2026-08-20T13:26:53.704000Z",
       "latest_at": "2026-08-20T13:26:53.704000Z",
@@ -1241,12 +1078,262 @@
         "source": "Claude：Blog（网页）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7262,
+      "peak_score": 0.7627,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
+      }
+    },
+    {
+      "story_id": "story_f02c0a256fdb",
+      "title": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
+      "url": "https://www.aibase.com/news/30522",
+      "primary_url": "https://www.aibase.com/news/30522",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "29723a13da3409d24ae8006c95bbc51698f5d195",
+          "title": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
+          "title_zh": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
+          "title_en": null,
+          "title_original": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30522",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-21T03:28:54.032153Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "29723a13da3409d24ae8006c95bbc51698f5d195",
+          "title": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
+          "title_zh": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
+          "title_en": null,
+          "title_original": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30522",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-21T03:28:54.032153Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7567,
+      "importance": 0.7567,
+      "importance_score": 0.7567,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9392,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-21T03:28:54.032153Z",
+      "latest_at": "2026-08-21T03:28:54.032153Z",
+      "primary_item": {
+        "id": "29723a13da3409d24ae8006c95bbc51698f5d195",
+        "title": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
+        "title_zh": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
+        "title_en": null,
+        "title_original": "Claude Platform 正式上线Computer Use、Skills API 与 Files API",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30522",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-21T10:00:17.798494Z"
+      }
+    },
+    {
+      "story_id": "story_c5030fa07ae8",
+      "title": "针对 GitHub 代码质量的单独 GitHub Actions 路径 / Separate GitHub Actions path for GitHub Code Quality",
+      "url": "https://github.blog/changelog/2026-08-20-separate-github-actions-path-for-github-code-quality",
+      "primary_url": "https://github.blog/changelog/2026-08-20-separate-github-actions-path-for-github-code-quality",
+      "source": "GitHub Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "5fa0aca95d20e87c77398d511dfb4c4fa67865ef",
+          "title": "针对 GitHub 代码质量的单独 GitHub Actions 路径 / Separate GitHub Actions path for GitHub Code Quality",
+          "title_zh": "针对 GitHub 代码质量的单独 GitHub Actions 路径",
+          "title_en": "Separate GitHub Actions path for GitHub Code Quality",
+          "title_original": "Separate GitHub Actions path for GitHub Code Quality",
+          "summary": "A dedicated workflow path for code quality CodeQL actions workflows is now generally available. Your workflow run history and your Actions usage reports now tell GitHub Code Quality runs apart… The post Separate GitHub Actions path for GitHub Code Quality appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-08-20-separate-github-actions-path-for-github-code-quality",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-20T14:29:27Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub Changelog"
+      ],
+      "items": [
+        {
+          "id": "5fa0aca95d20e87c77398d511dfb4c4fa67865ef",
+          "title": "针对 GitHub 代码质量的单独 GitHub Actions 路径 / Separate GitHub Actions path for GitHub Code Quality",
+          "title_zh": "针对 GitHub 代码质量的单独 GitHub Actions 路径",
+          "title_en": "Separate GitHub Actions path for GitHub Code Quality",
+          "title_original": "Separate GitHub Actions path for GitHub Code Quality",
+          "summary": "A dedicated workflow path for code quality CodeQL actions workflows is now generally available. Your workflow run history and your Actions usage reports now tell GitHub Code Quality runs apart… The post Separate GitHub Actions path for GitHub Code Quality appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/changelog/2026-08-20-separate-github-actions-path-for-github-code-quality",
+          "source": "GitHub Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-20T14:29:27Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8132,
+      "importance": 0.8132,
+      "importance_score": 0.8132,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.8288,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-20T14:29:27Z",
+      "latest_at": "2026-08-20T14:29:27Z",
+      "primary_item": {
+        "id": "5fa0aca95d20e87c77398d511dfb4c4fa67865ef",
+        "title": "针对 GitHub 代码质量的单独 GitHub Actions 路径 / Separate GitHub Actions path for GitHub Code Quality",
+        "title_zh": "针对 GitHub 代码质量的单独 GitHub Actions 路径",
+        "title_en": "Separate GitHub Actions path for GitHub Code Quality",
+        "title_original": "Separate GitHub Actions path for GitHub Code Quality",
+        "summary": "A dedicated workflow path for code quality CodeQL actions workflows is now generally available. Your workflow run history and your Actions usage reports now tell GitHub Code Quality runs apart… The post Separate GitHub Actions path for GitHub Code Quality appeared first on The GitHub Blog .",
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/changelog/2026-08-20-separate-github-actions-path-for-github-code-quality",
+        "source": "GitHub Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8252,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-21T10:00:17.798494Z"
+      }
+    },
+    {
+      "story_id": "story_3416d3016502",
+      "title": "Anthropic 如何开展 AI 教学 / Anthropic's approach to teaching and learning AI",
+      "url": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai",
+      "primary_url": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai",
+      "source": "Claude：Blog（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "dd38bd3d207f43c21bdd7b391bb4a791651609c7",
+          "title": "Anthropic 如何开展 AI 教学 / Anthropic's approach to teaching and learning AI",
+          "title_zh": "Anthropic 如何开展 AI 教学",
+          "title_en": "Anthropic's approach to teaching and learning AI",
+          "title_original": "Anthropic's approach to teaching and learning AI",
+          "summary": "Anthropic 发布 Claude Academy，为全球数百万用户提供 AI 教学资源，帮助其安全、有效地使用 AI。该学院课程借鉴其内部员工培训方法，包括 4D AI Fluency Framework 及\"ever-boarding\"持续学习项目，并强调以问题为中心、培养持久思维模式而非特定操作行为。",
+          "recommend_reason_zh": null,
+          "url": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-20T17:56:58.396000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Claude：Blog（网页）"
+      ],
+      "items": [
+        {
+          "id": "dd38bd3d207f43c21bdd7b391bb4a791651609c7",
+          "title": "Anthropic 如何开展 AI 教学 / Anthropic's approach to teaching and learning AI",
+          "title_zh": "Anthropic 如何开展 AI 教学",
+          "title_en": "Anthropic's approach to teaching and learning AI",
+          "title_original": "Anthropic's approach to teaching and learning AI",
+          "summary": "Anthropic 发布 Claude Academy，为全球数百万用户提供 AI 教学资源，帮助其安全、有效地使用 AI。该学院课程借鉴其内部员工培训方法，包括 4D AI Fluency Framework 及\"ever-boarding\"持续学习项目，并强调以问题为中心、培养持久思维模式而非特定操作行为。",
+          "recommend_reason_zh": null,
+          "url": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-20T17:56:58.396000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7542,
+      "importance": 0.7542,
+      "importance_score": 0.7542,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.6,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.8569,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-20T17:56:58.396000Z",
+      "latest_at": "2026-08-20T17:56:58.396000Z",
+      "primary_item": {
+        "id": "dd38bd3d207f43c21bdd7b391bb4a791651609c7",
+        "title": "Anthropic 如何开展 AI 教学 / Anthropic's approach to teaching and learning AI",
+        "title_zh": "Anthropic 如何开展 AI 教学",
+        "title_en": "Anthropic's approach to teaching and learning AI",
+        "title_original": "Anthropic's approach to teaching and learning AI",
+        "summary": "Anthropic 发布 Claude Academy，为全球数百万用户提供 AI 教学资源，帮助其安全、有效地使用 AI。该学院课程借鉴其内部员工培训方法，包括 4D AI Fluency Framework 及\"ever-boarding\"持续学习项目，并强调以问题为中心、培养持久思维模式而非特定操作行为。",
+        "recommend_reason_zh": null,
+        "url": "https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai",
+        "source": "Claude：Blog（网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7542,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     },
     {
@@ -1294,15 +1381,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7581,
-      "importance": 0.7581,
-      "importance_score": 0.7581,
+      "score": 0.7567,
+      "importance": 0.7567,
+      "importance_score": 0.7567,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9473,
+        "recency": 0.9392,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1329,7 +1416,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     },
     {
@@ -1377,15 +1464,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7556,
-      "importance": 0.7556,
-      "importance_score": 0.7556,
+      "score": 0.7542,
+      "importance": 0.7542,
+      "importance_score": 0.7542,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9335,
+        "recency": 0.9256,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1412,7 +1499,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     },
     {
@@ -1460,15 +1547,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7646,
-      "importance": 0.7646,
-      "importance_score": 0.7646,
+      "score": 0.7631,
+      "importance": 0.7631,
+      "importance_score": 0.7631,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9835,
+        "recency": 0.9752,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1495,7 +1582,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     },
     {
@@ -1543,15 +1630,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7556,
-      "importance": 0.7556,
-      "importance_score": 0.7556,
+      "score": 0.7542,
+      "importance": 0.7542,
+      "importance_score": 0.7542,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9335,
+        "recency": 0.9256,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1578,90 +1665,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
-      }
-    },
-    {
-      "story_id": "story_776e3d1fe586",
-      "title": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
-      "url": "https://www.aibase.com/news/30529",
-      "primary_url": "https://www.aibase.com/news/30529",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "657ab5eda5b2404dc5aec1aac2b065a5990be4c7",
-          "title": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
-          "title_zh": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
-          "title_en": null,
-          "title_original": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30529",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-21T07:22:52.329975Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "657ab5eda5b2404dc5aec1aac2b065a5990be4c7",
-          "title": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
-          "title_zh": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
-          "title_en": null,
-          "title_original": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30529",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-21T07:22:52.329975Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7646,
-      "importance": 0.7646,
-      "importance_score": 0.7646,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9835,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-21T07:22:52.329975Z",
-      "latest_at": "2026-08-21T07:22:52.329975Z",
-      "primary_item": {
-        "id": "657ab5eda5b2404dc5aec1aac2b065a5990be4c7",
-        "title": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
-        "title_zh": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
-        "title_en": null,
-        "title_original": "Mistral推出Agentic Search，多步检索将复杂文档准确率提升至86%",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30529",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-21T09:07:17.597518Z"
+        "scored_at": "2026-08-21T10:00:17.798494Z"
       }
     }
   ]
