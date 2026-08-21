@@ -2,7 +2,12 @@ from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
 
-from scripts.update_news import add_source_tier_fields, merge_story_items
+from scripts.update_news import (
+    AIHOT_FIRST_PARTY_SOURCE_NAMES,
+    add_source_tier_fields,
+    merge_story_items,
+    source_tier_for_record,
+)
 
 
 NOW = datetime(2026, 6, 2, 12, 0, tzinfo=timezone.utc)
@@ -147,3 +152,49 @@ def test_mirror_channels_do_not_inflate_source_count_or_heat():
     # (2-1)/4 = 0.25 instead of the maxed 1.0 five copies used to produce.
     assert story["importance_breakdown"]["story_heat"] == 0.25
     assert events  # merges still recorded in the merge log
+
+
+def test_aihot_first_party_whitelist_promotes_official_tier():
+    # An aihot item whose ``source`` matches the first-party whitelist must be
+    # promoted to the "official" tier, exactly like a direct official feed.
+    for src in (
+        "Claude：Blog（网页）",
+        "Anthropic：Research（发表成果 · 网页）",
+        "xAI：News（网页）",
+        "DeepSeek：API 更新日志",
+        "X：OpenAI (@OpenAI)",
+        "公众号：智谱（GLM）",
+    ):
+        assert source_tier_for_record("aihot", src) == ("official", "官方一手源", 0), src
+
+    # Non first-party aihot sources fall through to the site-level tier.
+    assert source_tier_for_record("aihot", "IT之家（RSS）") is None
+    assert source_tier_for_record("aihot", "公众号：数字生命卡兹克") is None
+    # The override only applies to the aihot channel.
+    assert source_tier_for_record("hackernews", "Claude：Blog（网页）") is None
+
+
+def test_aihot_whitelist_has_no_duplicates_or_blank_entries():
+    assert len(AIHOT_FIRST_PARTY_SOURCE_NAMES) == len(
+        {name.strip() for name in AIHOT_FIRST_PARTY_SOURCE_NAMES}
+    )
+    assert all(name.strip() for name in AIHOT_FIRST_PARTY_SOURCE_NAMES)
+
+
+def test_aihot_first_party_story_is_labelled_official_update():
+    # End-to-end: a single-source aihot story from a whitelisted first-party
+    # channel must land in the "official" category (官方更新), not "行业动态".
+    item = make_item(
+        1,
+        title="Claude Platform 正式上线 Computer Use、Skills API 与 Files API",
+        url="https://claude.com/blog/computer-use-skills-api-files-api",
+        site_id="aihot",
+    )
+    item["source"] = "Claude：Blog（网页）"
+    item = add_source_tier_fields(item)
+
+    stories, _ = merge_story_items([item], NOW, 24)
+
+    assert len(stories) == 1
+    assert stories[0]["category"] == "official"
+    assert stories[0]["importance_label"] == "官方更新"

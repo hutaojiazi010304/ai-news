@@ -2928,32 +2928,104 @@ SOURCE_TIER_IMPORTANCE = {
 AIHOT_FIRST_PARTY_SOURCE_NAMES: frozenset[str] = frozenset({
     # --- OpenAI ---
     "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+    "X：OpenAI (@OpenAI)",
     "X：OpenAI Developers (@OpenAIDevs)",
     "X：ChatGPT (@ChatGPTapp)",
     # --- Anthropic ---
     "Anthropic：Newsroom（网页）",
+    "Anthropic：Research（发表成果 · 网页）",
+    "Claude：Blog（网页）",
     "Claude Code：GitHub Releases（RSS）",
+    "X：Anthropic (@AnthropicAI)",
+    "X：Claude (@claudeai)",
     "X：Claude Devs (@ClaudeDevs)",
     # --- Google ---
+    "Google Blog：AI（RSS）",
+    "Google AI：DEV 作者专属（RSS）",
     "Google Developers Blog（RSS）",
     "Google Research：Blog（网页）",
+    "Google DeepMind：Blog（RSS）",
+    "Google Cloud：Databases（RSS）",
+    "X：Google AI (@GoogleAI)",
     "X：Google DeepMind (@GoogleDeepMind)",
+    "X：Gemini (@GeminiApp)",
     "X：NotebookLM (@NotebookLM)",
     # --- Meta ---
     "X：AI at Meta (@AIatMeta)",
+    # --- Microsoft ---
+    "X：Microsoft Research (@MSFTResearch)",
+    # --- NVIDIA ---
+    "NVIDIA Blog（RSS）",
+    # --- xAI ---
+    "xAI：News（网页）",
     # --- Mistral ---
     "Mistral AI：News（网页）",
+    # --- DeepSeek ---
+    "DeepSeek：API 更新日志",
+    "X：DeepSeek (@deepseek_ai)",
     # --- Hugging Face ---
     "Hugging Face：Blog（RSS）",
     "HuggingFace Daily Papers（社区热门论文）",
     # --- Perplexity ---
     "X：Perplexity (@perplexity_ai)",
     # --- Runway ---
+    "Runway：News（网页）",
     "X：Runway (@runwayml)",
+    # --- Midjourney / Suno / Krea ---
+    "Midjourney：Updates（RSS）",
+    "X：Suno (@suno)",
+    "X：Krea AI (@krea_ai)",
+    # --- Cursor ---
+    "Cursor Blog",
+    # --- Replit ---
+    "X：Replit (@Replit)",
+    # --- Thinking Machines ---
+    "X：Thinking Machines (@thinkymachines)",
+    # --- OpenRouter ---
+    "OpenRouter：Announcements（RSS）",
+    "X：OpenRouter (@OpenRouter)",
+    # --- Cloudflare / GitHub / Apple / Databricks / LangChain ---
+    "Cloudflare Blog",
+    "GitHub Blog",
+    "Apple Machine Learning Research（RSS）",
+    "Databricks：Blog（RSS）",
+    "LangChain：Blog（RSS）",
     # --- Alibaba / Qwen ---
+    "Qwen：Blog Retrieval（API）",
     "X：阿里云 / Alibaba Cloud (@alibaba_cloud)",
-    # --- ByteDance / Kling ---
+    "X：通义千问 / Qwen (@Alibaba_Qwen)",
+    "公众号：千问APP（阿里）",
+    # --- ByteDance ---
+    "字节 Seed：Research Feed（网页内嵌数据）",
     "X：可灵 Kling AI (@Kling_ai)",
+    "公众号：火山引擎",
+    # --- Tencent ---
+    "X：腾讯混元 (@TencentHunyuan)",
+    "公众号：腾讯混元",
+    # --- Baidu ---
+    "公众号：百度智能云（文心）",
+    # --- Zhipu ---
+    "智谱：研究（网页内嵌数据）",
+    "公众号：智谱（GLM）",
+    # --- MiniMax ---
+    "MiniMax：Blog（网页）",
+    "公众号：MiniMax（稀宇科技）",
+    # --- Moonshot / Kimi ---
+    "X：Kimi.ai (@Kimi_Moonshot)",
+    "公众号：月之暗面（Kimi）",
+    # --- OpenBMB / MiniCPM ---
+    "X：面壁智能 OpenBMB (@OpenBMB)",
+    "公众号：面壁智能（MiniCPM）",
+    # --- SenseTime ---
+    "X：商汤 SenseTime (@SenseTime_AI)",
+    # --- SiliconFlow ---
+    "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+    # --- Ant Group ---
+    "蚂蚁 inclusionAI：GitHub 新仓库",
+    "X：蚂蚁百灵 (@AntLingAGI)",
+    "公众号：蚂蚁百灵（Ling）",
+    # --- Xiaohongshu ---
+    "公众号：小红书技术（dots.llm）",
 })
 
 
