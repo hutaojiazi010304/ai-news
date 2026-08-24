@@ -1,57 +1,39 @@
 {
-  "generated_at": "2026-08-24T16:03:29.461001Z",
+  "generated_at": "2026-08-24T17:04:20.709899Z",
   "timezone": "Asia/Shanghai",
   "root_url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview",
   "history_url": "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc",
   "window_days": 7,
-  "latest_date": "2026-08-23",
-  "count_today": 7,
+  "latest_date": "2026-08-24",
+  "count_today": 2,
   "updates_today": [
     {
-      "date": "2026-08-23",
-      "title": "给我 10 分钟，我教你掌握 Claude Code 的 80%。",
-      "summary": "很多人看到Claude Code的第一反应是：这不是写代码的吗？终端、命令、插件一堆，小白很容易还没开始就被劝退。这篇文章是一个营销人173天的实操复盘，把Claude Code拆成了普通人也能上手的工作系统。",
-      "url": "https://waytoagi.feishu.cn/wiki/XiIlwVRoZimHXikV9crcVuSsnBe?from=from_copylink"
+      "date": "2026-08-24",
+      "title": "有趣的小红书图文自动排版Skill，使用教程来喽！",
+      "summary": "很多做小红书/小绿书图文的人，最耗时间的往往不是写内容，而是排版、配图、改字、对齐，还要保持自己的IP风格稳定。阿真这篇把“小红书图文自动排版 Skill”的搭建流程拆解了下，后面只要丢文章或飞书链接，就能自动拆页、渲染、导出2K图片。内容创作者们可以上手试试！",
+      "url": "https://waytoagi.feishu.cn/wiki/FQCHw2MzPidJsSkpijYclsSenre?from=from_copylink"
     },
     {
-      "date": "2026-08-23",
-      "title": "第一性原理拆解：生图提示词究竟该怎么写？",
-      "summary": "很多人生图一翻车，就开始疯狂加风格词、镜头词、材质词，提示词越写越长，结果主体还是歪、文字还是乱。作者从第一性原理出发，带你看懂生图提示词究竟该怎么写？",
-      "url": "https://waytoagi.feishu.cn/wiki/KdvGwS9UDiFM2ckPjSxcW9NPnwB?from=from_copylink"
-    },
-    {
-      "date": "2026-08-23",
-      "title": "从零开始，搭建你的 Harness，定制化懂你的 Agent",
-      "summary": "这篇文章很适合刚开始用Agent、但总觉得“它不懂你”的人看。作者围绕Harness做了3个 Skill帮你搭建一个懂你的个人Agent：star帮你从零搭个人工作目录，better从安全、上下文、工具、记忆、学习五层做体检，view则把本地文件和Skill变成可视化工作台。",
-      "url": "https://waytoagi.feishu.cn/wiki/Q9pIwvAJxiSru3k4SsLcDMKhnDh?from=from_copylink"
-    },
-    {
-      "date": "2026-08-23",
-      "title": "从零开发一个 DeepSeek Harness 插件",
-      "summary": "这篇文章是作者亲手做了一个插件并发布到GitHub的完整复盘：从 5 分钟跑通第一个插件，到踩过的两个真实的坑，到配置化、打包、发布。全程实操，命令可复制。",
-      "url": "https://waytoagi.feishu.cn/wiki/Ph2mwxxPCiwf2bkSfTrcGHd7nCf?from=from_copylink"
-    },
-    {
-      "date": "2026-08-23",
-      "title": "万字长文｜Codex 从入门到精通",
-      "summary": "第一次打开 Codex，真正容易卡住的是眼前这些区域分别管什么：项目和任务有什么区别，Local、Worktree、Cloud 该选哪个，Plan 是不是必须开，权限应该给到哪里，Plugins、Skills、MCP 又为什么同时存在。作者这篇教程就从这些基础问题讲起，先把界面、按钮、工作区和常用能力认清，再判断哪些扩展功能值得接入。",
-      "url": "https://waytoagi.feishu.cn/wiki/XbCCwsMQSipBdvknK2fcGuipnQh?from=from_copylink"
-    },
-    {
-      "date": "2026-08-23",
-      "title": "Codex 斜杠命令完全指南：别再只会 /model 和 /status",
-      "summary": "Codex 的斜杠命令相当于它的“控制面板”：提示词负责描述你想完成什么，斜杠命令负责控制 Codex 如何工作。作者这篇文章详细拆解了Codex CLI当前内置的全部斜杠命令，并补充了IDE扩展与桌面端特有命令。",
-      "url": "https://waytoagi.feishu.cn/wiki/InCcwEeg7iRYfjkmR7DcWdilnWd?from=from_copylink"
-    },
-    {
-      "date": "2026-08-23",
-      "title": "8.17—8.23｜本周AI 论文精选",
-      "summary": "本周精选的10篇AI论文转向“运行框架、Skill、记忆、自我改进和成本控制到底靠不靠谱”。Agent Lightning和ClawGym讲怎么在真实框架里训练Agent；Skill Trigger Bottleneck、Demystifying Agent Skills讲Skill太多后怎么触发、怎么写才有用；Harness-Level Forgetting和Fragile Self-Improvement则提醒大家，自我改进很容易变成过拟合和遗忘。",
-      "url": "https://waytoagi.feishu.cn/wiki/M0f9wV2gBiQGC3kGADDcOElvn0b?from=from_copylink"
+      "date": "2026-08-24",
+      "title": "AI音乐周刊 W.A 042",
+      "summary": "AI 音乐这周最值得盯的，已经从“谁的生成效果更像歌”，走到了版权、分发、标识、生产工具一起重构。环球音乐推出单曲级二创权限、输出 AI 专利，Apple Music 即将增设 AI 生成音乐标签，行业版权规范正在加速成型。多款实用创作工具迎来重磅更新，覆盖 DAW 插件、音频转 MIDI、离线歌单、开源歌唱合成。还有五篇前沿论文覆盖模型评估、唱跳视频、符号音乐分词等方向。",
+      "url": "https://waytoagi.feishu.cn/wiki/MuEYwFlKfinkHmkbsd4caLgKnfd?from=from_copylink"
     }
   ],
-  "count_7d": 31,
+  "count_7d": 33,
   "updates_7d": [
+    {
+      "date": "2026-08-24",
+      "title": "有趣的小红书图文自动排版Skill，使用教程来喽！",
+      "summary": "很多做小红书/小绿书图文的人，最耗时间的往往不是写内容，而是排版、配图、改字、对齐，还要保持自己的IP风格稳定。阿真这篇把“小红书图文自动排版 Skill”的搭建流程拆解了下，后面只要丢文章或飞书链接，就能自动拆页、渲染、导出2K图片。内容创作者们可以上手试试！",
+      "url": "https://waytoagi.feishu.cn/wiki/FQCHw2MzPidJsSkpijYclsSenre?from=from_copylink"
+    },
+    {
+      "date": "2026-08-24",
+      "title": "AI音乐周刊 W.A 042",
+      "summary": "AI 音乐这周最值得盯的，已经从“谁的生成效果更像歌”，走到了版权、分发、标识、生产工具一起重构。环球音乐推出单曲级二创权限、输出 AI 专利，Apple Music 即将增设 AI 生成音乐标签，行业版权规范正在加速成型。多款实用创作工具迎来重磅更新，覆盖 DAW 插件、音频转 MIDI、离线歌单、开源歌唱合成。还有五篇前沿论文覆盖模型评估、唱跳视频、符号音乐分词等方向。",
+      "url": "https://waytoagi.feishu.cn/wiki/MuEYwFlKfinkHmkbsd4caLgKnfd?from=from_copylink"
+    },
     {
       "date": "2026-08-23",
       "title": "给我 10 分钟，我教你掌握 Claude Code 的 80%。",

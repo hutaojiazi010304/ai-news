@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T16:03:29.461001Z",
+  "generated_at": "2026-08-24T17:04:20.709899Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8402,
-      "importance": 0.8402,
-      "importance_score": 0.8402,
+      "score": 0.8387,
+      "importance": 0.8387,
+      "importance_score": 0.8387,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.8568,
+        "recency": 0.8484,
         "story_heat": 0.0
       },
       "category": "official",
@@ -84,7 +84,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
+      }
+    },
+    {
+      "story_id": "story_35aa593beb9e",
+      "title": "Codex MCP server command deprecated",
+      "url": "https://developers.openai.com/codex/changelog",
+      "primary_url": "https://developers.openai.com/codex/changelog",
+      "source": "OpenAI Codex Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "b879362b027e92c973cf4116b786bb6e72b5c006",
+          "title": "Codex MCP server command deprecated",
+          "title_zh": null,
+          "title_en": "Codex MCP server command deprecated",
+          "title_original": "Codex MCP server command deprecated",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-24T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI Codex Changelog"
+      ],
+      "items": [
+        {
+          "id": "b879362b027e92c973cf4116b786bb6e72b5c006",
+          "title": "Codex MCP server command deprecated",
+          "title_zh": null,
+          "title_en": "Codex MCP server command deprecated",
+          "title_original": "Codex MCP server command deprecated",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-24T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8427,
+      "importance": 0.8427,
+      "importance_score": 0.8427,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.8484,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-24T00:00:00Z",
+      "latest_at": "2026-08-24T00:00:00Z",
+      "primary_item": {
+        "id": "b879362b027e92c973cf4116b786bb6e72b5c006",
+        "title": "Codex MCP server command deprecated",
+        "title_zh": null,
+        "title_en": "Codex MCP server command deprecated",
+        "title_original": "Codex MCP server command deprecated",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "OpenAI Codex Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8427,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -132,15 +216,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7872,
-      "importance": 0.7872,
-      "importance_score": 0.7872,
+      "score": 0.7855,
+      "importance": 0.7855,
+      "importance_score": 0.7855,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.63,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9899,
+        "recency": 0.9803,
         "story_heat": 0.0
       },
       "category": "official",
@@ -167,7 +251,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -215,15 +299,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7535,
-      "importance": 0.7535,
-      "importance_score": 0.7535,
+      "score": 0.7519,
+      "importance": 0.7519,
+      "importance_score": 0.7519,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9218,
+        "recency": 0.9128,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -250,7 +334,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -327,15 +411,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7598,
-      "importance": 0.7598,
-      "importance_score": 0.7598,
+      "score": 0.758,
+      "importance": 0.758,
+      "importance_score": 0.758,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9899,
+        "recency": 0.9802,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -362,7 +446,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -410,15 +494,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.745,
-      "importance": 0.745,
-      "importance_score": 0.745,
+      "score": 0.7434,
+      "importance": 0.7434,
+      "importance_score": 0.7434,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8743,
+        "recency": 0.8658,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -444,7 +528,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -492,15 +576,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.745,
-      "importance": 0.745,
-      "importance_score": 0.745,
+      "score": 0.7434,
+      "importance": 0.7434,
+      "importance_score": 0.7434,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8743,
+        "recency": 0.8658,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -526,7 +610,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -574,15 +658,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.745,
-      "importance": 0.745,
-      "importance_score": 0.745,
+      "score": 0.7434,
+      "importance": 0.7434,
+      "importance_score": 0.7434,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8743,
+        "recency": 0.8658,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -608,7 +692,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -656,15 +740,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.745,
-      "importance": 0.745,
-      "importance_score": 0.745,
+      "score": 0.7434,
+      "importance": 0.7434,
+      "importance_score": 0.7434,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8743,
+        "recency": 0.8658,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -690,7 +774,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -738,15 +822,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7471,
-      "importance": 0.7471,
-      "importance_score": 0.7471,
+      "score": 0.7456,
+      "importance": 0.7456,
+      "importance_score": 0.7456,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8862,
+        "recency": 0.8776,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -772,7 +856,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -820,15 +904,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.745,
-      "importance": 0.745,
-      "importance_score": 0.745,
+      "score": 0.7434,
+      "importance": 0.7434,
+      "importance_score": 0.7434,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8743,
+        "recency": 0.8658,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -854,7 +938,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -902,21 +986,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.751,
-      "importance": 0.751,
-      "importance_score": 0.751,
+      "score": 0.7495,
+      "importance": 0.7495,
+      "importance_score": 0.7495,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.908,
+        "recency": 0.8992,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-08-24T06:02:18.206421Z",
       "latest_at": "2026-08-24T06:02:18.206421Z",
@@ -937,7 +1020,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -985,21 +1068,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.751,
-      "importance": 0.751,
-      "importance_score": 0.751,
+      "score": 0.7495,
+      "importance": 0.7495,
+      "importance_score": 0.7495,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.908,
+        "recency": 0.8992,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-08-24T06:02:18.206421Z",
       "latest_at": "2026-08-24T06:02:18.206421Z",
@@ -1020,7 +1102,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -1068,15 +1150,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7471,
-      "importance": 0.7471,
-      "importance_score": 0.7471,
+      "score": 0.7456,
+      "importance": 0.7456,
+      "importance_score": 0.7456,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8862,
+        "recency": 0.8776,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1102,7 +1184,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -1150,15 +1232,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7471,
-      "importance": 0.7471,
-      "importance_score": 0.7471,
+      "score": 0.7456,
+      "importance": 0.7456,
+      "importance_score": 0.7456,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8862,
+        "recency": 0.8776,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1184,7 +1266,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -1232,15 +1314,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7535,
-      "importance": 0.7535,
-      "importance_score": 0.7535,
+      "score": 0.7519,
+      "importance": 0.7519,
+      "importance_score": 0.7519,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9218,
+        "recency": 0.9128,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1267,7 +1349,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -1315,15 +1397,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7471,
-      "importance": 0.7471,
-      "importance_score": 0.7471,
+      "score": 0.7456,
+      "importance": 0.7456,
+      "importance_score": 0.7456,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8862,
+        "recency": 0.8776,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1349,7 +1431,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -1397,15 +1479,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.745,
-      "importance": 0.745,
-      "importance_score": 0.745,
+      "score": 0.7434,
+      "importance": 0.7434,
+      "importance_score": 0.7434,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8743,
+        "recency": 0.8658,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1431,7 +1513,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -1479,15 +1561,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7561,
-      "importance": 0.7561,
-      "importance_score": 0.7561,
+      "score": 0.7545,
+      "importance": 0.7545,
+      "importance_score": 0.7545,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9361,
+        "recency": 0.927,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1514,7 +1596,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     },
     {
@@ -1562,15 +1644,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7577,
-      "importance": 0.7577,
-      "importance_score": 0.7577,
+      "score": 0.756,
+      "importance": 0.756,
+      "importance_score": 0.756,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9448,
+        "recency": 0.9356,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1597,89 +1679,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
-      }
-    },
-    {
-      "story_id": "story_f9980ad00360",
-      "title": "全能开源王炸！谷歌Gemma下载量突破10亿，AI深入生命禁区破解癌症治疗密码",
-      "url": "https://www.aibase.com/news/30550",
-      "primary_url": "https://www.aibase.com/news/30550",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "520193c69d55554442a947fe47fa584a8d7b5448",
-          "title": "全能开源王炸！谷歌Gemma下载量突破10亿，AI深入生命禁区破解癌症治疗密码",
-          "title_zh": "全能开源王炸！谷歌Gemma下载量突破10亿，AI深入生命禁区破解癌症治疗密码",
-          "title_en": null,
-          "title_original": "全能开源王炸！谷歌Gemma下载量突破10亿，AI深入生命禁区破解癌症治疗密码",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30550",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-24T02:06:10.669195Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "520193c69d55554442a947fe47fa584a8d7b5448",
-          "title": "全能开源王炸！谷歌Gemma下载量突破10亿，AI深入生命禁区破解癌症治疗密码",
-          "title_zh": "全能开源王炸！谷歌Gemma下载量突破10亿，AI深入生命禁区破解癌症治疗密码",
-          "title_en": null,
-          "title_original": "全能开源王炸！谷歌Gemma下载量突破10亿，AI深入生命禁区破解癌症治疗密码",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30550",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-24T02:06:10.669195Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.745,
-      "importance": 0.745,
-      "importance_score": 0.745,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8743,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-24T02:06:10.669195Z",
-      "latest_at": "2026-08-24T02:06:10.669195Z",
-      "primary_item": {
-        "id": "520193c69d55554442a947fe47fa584a8d7b5448",
-        "title": "全能开源王炸！谷歌Gemma下载量突破10亿，AI深入生命禁区破解癌症治疗密码",
-        "title_zh": "全能开源王炸！谷歌Gemma下载量突破10亿，AI深入生命禁区破解癌症治疗密码",
-        "title_en": null,
-        "title_original": "全能开源王炸！谷歌Gemma下载量突破10亿，AI深入生命禁区破解癌症治疗密码",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30550",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-24T16:39:11.199432Z"
+        "scored_at": "2026-08-24T17:40:12.149835Z"
       }
     }
   ]
