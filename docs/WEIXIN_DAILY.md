@@ -116,14 +116,27 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
    `git checkout -- weixin/` 并删除多余文件后再 pull。github 直连
    不通的环境请用代理终端执行。
 
-2. 设置 key（仅当前终端，勿写入文件）：
+2. 设置 key 与代理（仅当前终端，勿写入文件）：
 
    ```cmd
    set DASHSCOPE_API_KEY=你的key
    ```
 
-   PowerShell 用 `$env:DASHSCOPE_API_KEY="你的key"`，macOS/Linux 用
-   `export DASHSCOPE_API_KEY=你的key`。
+   精读版要抓境外原文的正文与插图，直连不通的环境在同一终端补设本地
+   代理（端口按你的代理软件实际值，Clash 默认 7897）：
+
+   ```cmd
+   set HTTPS_PROXY=http://127.0.0.1:7897
+   set HTTP_PROXY=http://127.0.0.1:7897
+   set NO_PROXY=dashscope.aliyuncs.com,aliyuncs.com
+   ```
+
+   **`NO_PROXY` 必须一起设**：千问是国内服务，被代理中转会打断 SSL、
+   导读生成失败（详见 FAQ「精读版跑了很久没输出/没结果」）。1.0/2.0
+   的摘要兜底抓取同样受益于代理，不设也能跑（境外条目按降级处理）。
+
+   PowerShell 用 `$env:DASHSCOPE_API_KEY="你的key"`（代理同理
+   `$env:HTTPS_PROXY=…`），macOS/Linux 用 `export …`。
 
 3. 生成推文：
 
@@ -138,8 +151,9 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
    标题固定为模板「AI 雷达 · X月X日｜今日精选N条」，不再调用千问；
    `cover_mode=static` 说明 key 没生效或生图失败（见 FAQ）；
    `cover_scene=0` 说明场景翻译失败、封面主题回退为原始头条。
-   分组版汇总另有 `sections=` 各组条数；精读版汇总形如
-   `items=10 … images found=N missed=M cover_mode=reused`，
+   分组版汇总另有 `sections=` 各组条数；精读版运行时逐条打印进度
+   （导读/插图各一行），汇总形如
+   `items=10 … images found=N missed=M cover_mode=reused elapsed=…s`，
    `images missed` 是抓不到原文插图的条数（正常现象，该条无图出刊）。
 
 4. 打开 `weixin/index.html` 检查各条导读、原文链接，以及底部辅助区块里的标题/摘要
@@ -199,10 +213,26 @@ python scripts/generate_weixin_article_grouped.py --data-dir data --output-dir w
 - **选条**：纯按 `peak_score` 取全局前 10 条（`WEIXIN_DEEP_MAX_ITEMS` /
   `--max-items` 可调；与 `WEIXIN_MAX_ITEMS` 互不相干）。分组沿用
   官方更新 → 行业动态 → 多源热议 → 值得关注，空组直接跳过
-- **导读**：转述式报道体（「据 X 报道」开头、只复述原文事实、不编造），
-  约 150–350 字。**缓存独立**于正式版：写在 `weixin-deep/reason-cache.json`
+- **导读**：转述式报道体（直接复述原文事实、不编造，无「据 X 报道」固定
+  开头），建议约 150–350 字，内容充实可适当更长——长度不设上限，写长了
+  不算失败、不会因此回退上游推荐语。**缓存独立**于正式版：写在
+  `weixin-deep/reason-cache.json`
   （自己的版本号）。不能共享 `weixin/reason-cache.json`——缓存 key 只有
   条目+标题，共享会永远命中旧短导读，新风格无法生效
+- **关键句高亮**：导读生成之后，由**独立的第二步「标注」调用**用【】标出
+  最值得读的片段（与导读生成分开两步、互不影响——合在一条提示词里会
+  拉低导读质量）。选取原则：优先概括/结论性的短语或句子（含简短判断
+  短语），其次是与主题紧密相关的关键名称或数字；先总说后展开的句子
+  标冒号前的总说部分，不标段尾细节；总共不超过 4 处、可以更少。
+  标注模型不得改动原文；若它仍顺手改动（最常见是补句号），脚本只取
+  它选中的片段、在导读原文里重新锚定，导读本身一字不变；片段锚不
+  上时重试一次，仍不行才退为无高亮。渲染时自动加粗并染成所在分组
+  的颜色（与分组标题同色：官方更新绿、行业动态蓝等）。标记异常
+  （不成对、单处包了大半个导读）同样自动纠正或退为无高亮，导读文字
+  本身不受影响
+- **导读质量与重掷**：导读由千问现场采样生成，提示词与参数不变时每次
+  跑出的文稿也有天然差异（细节取舍、句式），属正常现象。某条不满意时
+  不必整期重跑，用 `--regenerate` 只重掷该条（见本地调试）
 - **插图**：出刊时逐条抓原文页（直连，403/空页走 r.jina.ai 兜底），取正文
   第一张合格大图（跳过 logo/图标/追踪像素等），存到 `weixin-deep/images/`
   并在图下自动加「图源：{域名}」。原文没图或抓不到 → 该条无图，属正常
@@ -246,6 +276,10 @@ python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weix
 python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-test-deep --no-images
 python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-deep --dry-run
 
+# 精读版：某条导读不满意，只重掷该条（story_id 或标题片段，逗号分隔；
+# all = 清空精读缓存全部重来）
+python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-deep --regenerate Fable5
+
 # 重新生成静态兜底封面
 python scripts/generate_weixin_article.py --make-fallback-cover --assets-dir assets
 
@@ -255,6 +289,28 @@ python -m pytest tests/test_weixin_article.py tests/test_weixin_article_grouped.
 
 ## 常见问题
 
+- **精读版跑了很久没输出/没结果？** 精读版每一步都有进度行（`[3/10] 导读：…`、
+  `[3/10] 插图：…`，末行汇总含 `elapsed=总耗时秒数`），卡在哪一步看最后一行
+  进度即可定位。两个高频坑：
+  - **别用鼠标点运行窗口**：Windows 黑色控制台一旦被点中会进入「选择」模式，
+    进程整个冻结，直到按 Enter 才继续（标题栏出现「选择」字样）。看上去像
+    卡死，其实按一下 Enter 就恢复。
+  - **境外原文直连不通**：系统没开代理时，境外页面（如 openai.com）与
+    r.jina.ai 兜底都连不上，相关条目按「无图/回退上游推荐语」降级，脚本不会
+    死等（每个请求都有硬时限，同一兜底连不上时本次运行自动跳过）。想抓全，
+    在同一终端先开本地代理再跑（端口按你的代理软件实际值）：
+
+    ```cmd
+    set HTTPS_PROXY=http://127.0.0.1:7897
+    set HTTP_PROXY=http://127.0.0.1:7897
+    set NO_PROXY=dashscope.aliyuncs.com,aliyuncs.com
+    ```
+
+    **`NO_PROXY` 必须一起设**：千问是国内服务，被代理中转会打断 SSL
+    （日志出现 `text api failed … SSLError`），导读退化为空白。代理开启后
+    境外页面与 r.jina.ai 可达，境外条目也能取图、生成导读；浏览器打不开
+    原文页不影响脚本（脚本不依赖你的浏览器，直连被拒时由 r.jina.ai 在它
+    自己的服务器上取回正文和图片链接）。
 - **改了白名单，为什么旧故事的标签也变了？** 类别由云端管线在故事创建时
   落盘，白名单改动不会改写已在盘上的旧数据；但出刊时推文脚本会按当前白名单
   复核并纠正（只升为「官方更新」），所以两个排版版本立即生效。云端管线本身

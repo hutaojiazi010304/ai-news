@@ -47,6 +47,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -58,6 +59,7 @@ try:  # imported as part of the repo package (tests)
         CATEGORY_LABEL_ZH,
         DIGEST_MAX_CHARS,
         FULL_TEXT_MAX_CHARS,
+        FULL_TEXT_MIN_CHARS,
         REFUSAL_MARKERS,
         TZ_CN,
         WEEKDAY_CN,
@@ -69,7 +71,6 @@ try:  # imported as part of the repo package (tests)
         create_session,
         esc,
         existing_reason,
-        fetch_full_text,
         has_cjk,
         item_original_url,
         load_brief,
@@ -77,6 +78,7 @@ try:  # imported as part of the repo package (tests)
         save_cache,
         select_items,
         strip_english_tail,
+        strip_html_text,
         summary_grounding,
         title_hash,
         utcnow_iso,
@@ -92,6 +94,7 @@ except ImportError:  # run directly as a script
         CATEGORY_LABEL_ZH,
         DIGEST_MAX_CHARS,
         FULL_TEXT_MAX_CHARS,
+        FULL_TEXT_MIN_CHARS,
         REFUSAL_MARKERS,
         TZ_CN,
         WEEKDAY_CN,
@@ -103,7 +106,6 @@ except ImportError:  # run directly as a script
         create_session,
         esc,
         existing_reason,
-        fetch_full_text,
         has_cjk,
         item_original_url,
         load_brief,
@@ -111,6 +113,7 @@ except ImportError:  # run directly as a script
         save_cache,
         select_items,
         strip_english_tail,
+        strip_html_text,
         summary_grounding,
         title_hash,
         utcnow_iso,
@@ -126,26 +129,47 @@ DEFAULT_OUTPUT_DIR = "weixin-deep"
 DEFAULT_MAIN_OUTPUT_DIR = "weixin"
 DEFAULT_DEEP_MAX_ITEMS = 10
 
-# Independent cache version: bumped only when the deep prompt/bounds change.
+# Independent cache version: bumped only when the deep prompt/bounds change
+# in a way that invalidates EXISTING entries. v5: generation reverted to the
+# pre-highlight prompt and marking moved to a separate second call — the
+# combined prompt degraded guide quality, so v4 entries (written under it)
+# must be regenerated.
 # 1.0 bumping its own CACHE_VERSION never invalidates this cache and vice
 # versa (load_deep_cache rejects mismatched versions, forcing regeneration).
-DEEP_CACHE_VERSION = 1
+DEEP_CACHE_VERSION = 5
 
-# Deep guides are longer than 1.0's 40-260 window; the bounds only reject
-# degenerate output since the prompt itself targets 150-350 chars.
+# Deep guides are longer than 1.0's 40-260 window. Only a MINIMUM is
+# enforced: the deep variant prefers a longer guide over falling back to the
+# upstream blurb, so there is no upper bound — the prompt suggests 150-350
+# chars but longer answers are accepted as-is.
 DEEP_REASON_MIN_CHARS = 80
-DEEP_REASON_MAX_CHARS = 450
+# Highlight marks: the model brackets the most worth-reading fragments with
+# 【】 while generating (summaries/conclusions first, then theme-tied names
+# or numbers); rendering turns them into bold spans in the section color.
+# Cap aligned with the maintainer's hand-marked examples (up to 4 per guide).
+# Bad markup degrades to an un-highlighted guide — formatting never loses text.
+DEEP_REASON_MAX_MARKS = 4
+# One mark covering this share of the whole guide means "highlighted
+# everything" — treat as bad markup and drop the highlights.
+DEEP_REASON_MARK_MAX_COVERAGE = 0.8
 # A persisted summary must be this long before it alone can ground a
 # 150-350-char report; anything thinner falls back to a full-text fetch
 # (deliberate inversion of 1.0's 20-char summary-first policy — only 10
 # items run locally, so per-item fetching is affordable).
 DEEP_SUMMARY_MIN_GROUNDING_CHARS = 120
 
+# All three values are HARD WALL-CLOCK DEADLINES per request (enforced by
+# bounded_get on top of requests' per-chunk timeout): a slow trickle would
+# otherwise defeat the per-chunk timeout and keep a request open almost
+# indefinitely.
 PAGE_FETCH_TIMEOUT = 15.0
-IMAGE_DOWNLOAD_TIMEOUT = 30.0
+IMAGE_DOWNLOAD_TIMEOUT = 20.0
 # Pages under 300 chars are almost certainly bot walls/redirect stubs;
 # fall back to the reader proxy for those too.
 PAGE_MIN_HTML_CHARS = 300
+# Body budgets (bytes): bounded_get stops reading once exceeded, so a
+# mislabelled huge file can never be buffered fully into RAM.
+PAGE_MAX_BYTES = 8_000_000
 IMAGE_MAX_BYTES = 2_500_000
 # Tracking pixels compress to a few hundred bytes.
 IMAGE_MIN_BYTES = 512
@@ -177,22 +201,44 @@ IMAGE_EXT_BLOCKLIST = (".svg", ".ico")
 DEEP_REASON_SYSTEM_PROMPT = (
     "你是科技新闻编辑，负责把一篇具体文章的核心内容转述成一段「精读导读」，"
     "用于微信公众号每日 AI 精选的深度版（精读版）推文。"
-    "用转述式报道的口吻写：第一句以「据 {信源} 报道」开头，信源名取自用户提供的"
-    "「信源」一行，原样使用，不得改写、翻译或替换成母公司名称；"
-    "未提供信源行时改用「据相关报道」，不得编造信源名。"
-    "之后用自己的话复述原文最关键的内容：做了什么、数字是多少、结论是什么；"
+    "用转述式报道的口吻写：开头直接复述原文最关键的内容，"
+    "不要使用「据某某报道」之类的固定开场；"
+    "提供了「信源」一行时，可在正文里自然提及信源（信源名原样使用，"
+    "不得改写、翻译或替换成母公司名称），没有合适位置就不提，不得编造信源名。"
+    "用自己的话复述原文最关键的内容：做了什么、数字是多少、结论是什么；"
     "优先保留正文中的具体事实与数字。"
     "只复述正文中明确出现的信息，不得编造、推断或补充任何正文之外的事实、"
     "数字、日期与意义。"
     "不要添加「展示了……」「标志着……」「为……开启了新篇章」之类的意义话术；"
     "除非原文本身就是评论，才可以转述其观点，并注明是原文观点。"
-    "字数控制在一百五十到三百五十之间，信息密度优先，不要为凑字数注水。"
+    "字数建议在一百五十到三百五十之间，原文内容充实的可适当写长一些，"
+    "信息密度优先，不要为凑字数注水。"
+    "导读中不得出现任何网址、链接或链接文字（如 GitHub、官网地址），"
+    "需要提及页面时只描述它是什么（如「官方更新日志」）。"
     "公司名、产品名一律只用原文中出现的形式（通常是英文），"
     "绝不要附加中文翻译、音译或括号注释，哪怕你自认为知道官方中文名；"
     "人名按国籍写：华人用中文名（如周鸿祎），拿不准时保留英文，同样不得自行音译。"
     "若提供的正文显然不是文章正文（导航、目录、验证页等），就把标题本身包含的"
     "信息整理成转述，不编造标题之外的细节，也不要在导读里解释正文缺失或无法转述。"
     "只输出这段导读本身，不加引号，不加任何解释或前缀。"
+)
+
+# Highlighting runs as a SEPARATE second call over the finished guide:
+# folding these instructions into the generation prompt measurably degraded
+# guide quality (lost punctuation, leaked meta commentary about the source
+# text). The marker must return the guide verbatim plus 【】 brackets.
+DEEP_MARK_SYSTEM_PROMPT = (
+    "你是校对员，唯一的工作是给一段已成稿的新闻导读添加高亮标记："
+    "从中挑出最值得读的片段，用中文方括号【】原样包住，然后输出标注后的导读。"
+    "挑选原则：优先标能概括全文核心或带结论性的短语、句子"
+    "（包括简短的判断性短语）；与主题紧密相关的关键名称或数字"
+    "（产品名、版本号、核心数据等）也可以标；"
+    "句子先总说后展开（冒号或列举引出细节）时，标前面的总说部分，"
+    "不标段尾的展开细节；同类信息不要重复标。"
+    "总共不超过四处，可以更少，互不重叠；全文平铺直叙、挑不出时可以不标。"
+    "严格要求：除添加【】外，不得改动、增删原文的任何文字与标点，"
+    "原文缺句号等问题也保持原样，不要替它修正。"
+    "只输出标注后的导读，不加任何解释或前缀。"
 )
 
 
@@ -229,6 +275,21 @@ def load_deep_cache(path: Path) -> dict:
     return {"version": DEEP_CACHE_VERSION, "entries": entries}
 
 
+def drop_cache_entries(cache: dict, story_ids: set) -> int:
+    """Drop cached guides for the given story ids; returns count dropped.
+
+    Used by ``--regenerate``: guide generation is stochastic sampling, so
+    quality varies run to run under an identical prompt. Re-rolling the
+    specific entries a maintainer is unhappy with is the practical quality
+    lever — no need to lower standards or regenerate the whole issue.
+    """
+    entries = cache.get("entries") or {}
+    doomed = [k for k in entries if k.split("|", 1)[0] in story_ids]
+    for key in doomed:
+        del entries[key]
+    return len(doomed)
+
+
 # ---------------------------------------------------------------------------
 # Deep guides
 # ---------------------------------------------------------------------------
@@ -237,7 +298,7 @@ def validate_deep_reason(content: str, title: str) -> bool:
     content = str(content or "").strip()
     if not content or not has_cjk(content):
         return False
-    if len(content) < DEEP_REASON_MIN_CHARS or len(content) > DEEP_REASON_MAX_CHARS:
+    if len(content) < DEEP_REASON_MIN_CHARS:
         return False
     if content == str(title or "").strip():
         return False
@@ -248,12 +309,60 @@ def validate_deep_reason(content: str, title: str) -> bool:
     return True
 
 
-def deep_reason_context(item: dict, session: requests.Session | None) -> str | None:
+def parse_deep_marks(content: str):
+    """Split a 【】-marked guide into ``(plain_text, [(start, end), ...])``.
+
+    Offsets index into ``plain_text``. Returns None for malformed markup
+    (unpaired, nested or empty marks) so callers can degrade to the
+    un-highlighted text instead of losing the guide over formatting.
+    """
+    text = str(content or "")
+    plain: list[str] = []
+    marks: list[tuple[int, int]] = []
+    open_at: int | None = None
+    for ch in text:
+        if ch == "【":
+            if open_at is not None:
+                return None
+            open_at = len(plain)
+        elif ch == "】":
+            if open_at is None or len(plain) == open_at:
+                return None
+            marks.append((open_at, len(plain)))
+            open_at = None
+        else:
+            plain.append(ch)
+    if open_at is not None:
+        return None
+    return "".join(plain), marks
+
+
+def strip_deep_marks(content: str) -> str:
+    return str(content or "").replace("【", "").replace("】", "")
+
+
+def deep_marks_usable(plain: str, marks: list[tuple[int, int]]) -> bool:
+    """Too many marks, or one mark covering most of the guide, is a marking
+    failure: render the guide without highlights rather than a wall of color."""
+    if len(marks) > DEEP_REASON_MAX_MARKS:
+        return False
+    limit = max(1, int(len(plain) * DEEP_REASON_MARK_MAX_COVERAGE))
+    return all(end - start < limit for start, end in marks)
+
+
+def deep_reason_context(
+    item: dict, session: requests.Session | None, net_state: dict | None = None
+) -> str | None:
     """Grounding for deep guides: long summary first, full-text fetch second.
 
     Unlike 1.0 (any summary ≥20 chars is enough for a short guide), a deep
     150-350-char report needs real substance: summaries under 120 chars
     degrade to a live fetch of the article, whose text is usually richer.
+
+    The fetch is a bounded re-implementation of 1.0's fetch_full_text chain
+    (same direct → r.jina.ai order, same strip/threshold rules) instead of a
+    call into it: the shared helper buffers whole bodies under per-chunk
+    timeouts only, and this variant must never stall (see bounded_get).
     """
     title = str(item.get("title") or "").strip()
     candidates: list[str] = []
@@ -268,8 +377,21 @@ def deep_reason_context(item: dict, session: requests.Session | None) -> str | N
         if grounding and len(grounding) >= DEEP_SUMMARY_MIN_GROUNDING_CHARS:
             return grounding[:FULL_TEXT_MAX_CHARS]
     url = str(item.get("primary_url") or item.get("url") or "").strip()
-    if url and session is not None:
-        return fetch_full_text(session, url, timeout=PAGE_FETCH_TIMEOUT)
+    if not url.startswith(("http://", "https://")) or session is None:
+        return None
+    try:
+        payload = bounded_get(session, url, PAGE_FETCH_TIMEOUT, PAGE_MAX_BYTES)
+    except requests.RequestException:
+        payload = None
+    if payload is None:
+        payload = fetch_jina_bytes(
+            session, url, PAGE_FETCH_TIMEOUT, PAGE_MAX_BYTES, net_state
+        )
+    if payload is None:
+        return None
+    text = strip_html_text(payload.decode("utf-8", errors="replace"))
+    if len(text) >= FULL_TEXT_MIN_CHARS:
+        return text[:FULL_TEXT_MAX_CHARS]
     return None
 
 
@@ -283,6 +405,106 @@ def _item_source_name(item: dict) -> str:
             if name:
                 return name
     return ""
+
+
+def _anchor_deep_marks(text: str, fragments: list[str]) -> list[tuple[int, int]]:
+    """Locate the model's chosen spans in the ORIGINAL guide, in order.
+
+    The marker model often "fixes" punctuation outside the marks; its span
+    choices are still good. Re-anchoring keeps them while the guide text
+    itself stays byte-identical. Spans that cannot be placed (not found,
+    nearly whole-guide, cap reached) are dropped.
+    """
+    limit = max(1, int(len(text) * DEEP_REASON_MARK_MAX_COVERAGE))
+    anchors: list[tuple[int, int]] = []
+    search_from = 0
+    for frag in fragments:
+        if len(anchors) >= DEEP_REASON_MAX_MARKS:
+            break
+        if not frag or len(frag) >= limit:
+            continue
+        pos = text.find(frag, search_from)
+        if pos == -1:
+            continue
+        anchors.append((pos, pos + len(frag)))
+        search_from = pos + len(frag)
+    return anchors
+
+
+def apply_deep_marks(text: str, marks: list[tuple[int, int]]) -> str:
+    """Rebuild ``text`` with 【】 brackets around the ``marks`` offsets."""
+    parts: list[str] = []
+    pos = 0
+    for start, end in marks:
+        parts.append(text[pos:start])
+        parts.append(f"【{text[start:end]}】")
+        pos = end
+    parts.append(text[pos:])
+    return "".join(parts)
+
+
+def add_deep_marks(guide: str, cfg: dict, label: str = "") -> str:
+    """Second, strictly separated LLM pass that only brackets key fragments.
+
+    Mixing marking instructions into the generation prompt measurably
+    degraded guide quality (lost punctuation, leaked meta commentary about
+    the source text), so marking runs on its own call over the finished
+    guide. Clean verbatim output is used as-is; when the marker rewrites
+    anything outside the brackets (most commonly "fixing" punctuation) its
+    SPAN CHOICES are kept but re-anchored in the original guide, so the
+    guide text never changes. Only when no span can be anchored is the
+    attempt discarded — with one reinforced retry before giving up.
+    """
+    text = str(guide or "").strip()
+    if not text:
+        return text
+    tag = label or text[:20]
+    reminder = ""
+    for attempt in (1, 2):
+        content = call_text_api(
+            [
+                {"role": "system", "content": DEEP_MARK_SYSTEM_PROMPT},
+                {"role": "user", "content": text + reminder},
+            ],
+            cfg,
+        )
+        cause = None
+        if content:
+            marked = str(content).strip()
+            parsed = parse_deep_marks(marked)
+            if parsed is None:
+                cause = "【】不成对或嵌套"
+            else:
+                plain, marks = parsed
+                if plain == text and deep_marks_usable(plain, marks):
+                    if not marks:
+                        print(
+                            f"weixin-deep: 标注：模型判断无可标片段：{tag}",
+                            flush=True,
+                        )
+                    return marked
+                fragments = [plain[s:e] for s, e in marks]
+                anchors = _anchor_deep_marks(text, fragments)
+                if anchors:
+                    print(
+                        "weixin-deep: 标注：模型改动原文已纠正，"
+                        f"按原文重新锚定 {len(anchors)} 处：{tag}",
+                        flush=True,
+                    )
+                    return apply_deep_marks(text, anchors)
+                cause = "标记片段与原文对不上"
+        else:
+            cause = "API 未返回内容"
+        print(
+            f"weixin-deep: 标注第 {attempt}/2 次未采用（{cause}）：{tag}",
+            file=sys.stderr,
+            flush=True,
+        )
+        reminder = (
+            "\n\n（注意：这是第二次机会。除添加【】外，不得改动原文的任何字符，"
+            "包括标点与空格；【】必须成对，总共不超过四处。）"
+        )
+    return text
 
 
 def generate_deep_reason(item: dict, context: str, cfg: dict) -> str | None:
@@ -301,8 +523,31 @@ def generate_deep_reason(item: dict, context: str, cfg: dict) -> str | None:
         ],
         cfg,
     )
-    if content and validate_deep_reason(content, title):
-        return content
+    if not content:
+        print("weixin-deep: 深度导读：API 未返回内容", file=sys.stderr, flush=True)
+        return None
+    stripped = str(content).strip()
+    if validate_deep_reason(stripped, title):
+        return add_deep_marks(stripped, cfg, title)
+    # Silent rejects made failures impossible to diagnose; show what the model
+    # returned and which bound it tripped (bounds re-checked inline so the
+    # message names the real cause). Length only rejects too-short output:
+    # long guides are fine in the deep variant and never cause a fallback.
+    if not has_cjk(stripped):
+        cause = "无中文"
+    elif len(stripped) < DEEP_REASON_MIN_CHARS:
+        cause = f"字数 {len(stripped)} 不足 {DEEP_REASON_MIN_CHARS}"
+    elif stripped == title:
+        cause = "与标题相同"
+    elif "http" in stripped:
+        cause = "含 URL"
+    else:
+        cause = "含拒答话术"
+    print(
+        f"weixin-deep: 深度导读被校验拒绝（{cause}）：{stripped[:60]}…",
+        file=sys.stderr,
+        flush=True,
+    )
     return None
 
 
@@ -312,14 +557,19 @@ def fill_deep_reasons(
     cfg: dict,
     session: requests.Session | None,
     stats: dict,
+    net_state: dict | None = None,
 ) -> None:
     """Attach ``weixin_deep_reason`` to each item.
 
     Keyed: deep-cache hit > fresh deep generation > upstream reason > "".
     Keyless: upstream reason (any length) > deep cache > "". The cache is
     the deep variant's own file — never the shared 1.0/2.0 one.
+
+    Progress is logged per item (flushed): a run that stalls is then always
+    identifiable by its last printed line.
     """
-    for item in items:
+    total = len(items)
+    for i, item in enumerate(items, start=1):
         title = str(item.get("title") or "")
         story_id = str(item.get("story_id") or "")
         existing = existing_reason(item)
@@ -334,40 +584,129 @@ def fill_deep_reasons(
             if cached_reason:
                 item["weixin_deep_reason"] = cached_reason
                 stats["cached"] += 1
-                continue
-            context = deep_reason_context(item, session)
-            reason = generate_deep_reason(item, context, cfg) if context else None
-            if reason:
-                item["weixin_deep_reason"] = reason
-                cache["entries"][key] = {
-                    "reason": reason,
-                    "title_hash": title_hash(title),
-                    "created_at": utcnow_iso(),
-                }
-                stats["generated"] += 1
+                outcome = "缓存"
             else:
-                item["weixin_deep_reason"] = existing or ""
-                stats["skipped"] += 1
-            continue
-
-        if existing:
+                context = deep_reason_context(item, session, net_state)
+                reason = generate_deep_reason(item, context, cfg) if context else None
+                if reason:
+                    item["weixin_deep_reason"] = reason
+                    cache["entries"][key] = {
+                        "reason": reason,
+                        "title_hash": title_hash(title),
+                        "created_at": utcnow_iso(),
+                    }
+                    stats["generated"] += 1
+                    outcome = "生成"
+                else:
+                    item["weixin_deep_reason"] = existing or ""
+                    stats["skipped"] += 1
+                    # Distinguish the two silent-skip causes on the progress
+                    # line itself (validation/API details go to stderr).
+                    outcome = "回退上游（无素材）" if not context else "回退上游（生成失败）"
+        elif existing:
             item["weixin_deep_reason"] = existing
             stats["reused"] += 1
-            continue
-        if cached_reason:
+            outcome = "复用上游"
+        elif cached_reason:
             item["weixin_deep_reason"] = cached_reason
             stats["cached"] += 1
-            continue
-        item["weixin_deep_reason"] = ""
-        stats["skipped"] += 1
+            outcome = "缓存"
+        else:
+            item["weixin_deep_reason"] = ""
+            stats["skipped"] += 1
+            outcome = "跳过"
+        print(
+            f"weixin-deep: [{i}/{total}] 导读：{outcome}｜{(title or story_id)[:24]}",
+            flush=True,
+        )
 
 
 # ---------------------------------------------------------------------------
 # Article images
 # ---------------------------------------------------------------------------
 
+def bounded_get(
+    session: requests.Session | None,
+    url: str,
+    timeout: float,
+    max_bytes: int,
+    accept=None,
+) -> bytes | None:
+    """GET under a hard wall-clock deadline and byte budget; None on reject.
+
+    ``requests`` timeouts bound individual socket operations (connect, the
+    gap between chunks), NOT the transfer as a whole: a slow trickle keeps a
+    request open almost indefinitely, and a non-streaming read buffers the
+    entire body into RAM before any size check. This helper streams instead
+    and aborts once ``timeout`` seconds of wall clock or ``max_bytes`` are
+    consumed. ``accept(response)`` may veto a response (headers are already
+    available) before its body is downloaded.
+
+    RequestException propagates: callers decide whether a failure is final
+    (mark the fallback dead) or just "try the next candidate".
+    """
+    url = str(url or "").strip()
+    if session is None or not url.startswith(("http://", "https://")):
+        return None
+    deadline = time.monotonic() + timeout
+    response = session.get(url, timeout=timeout, stream=True)
+    try:
+        if response.status_code != 200:
+            return None
+        if accept is not None and not accept(response):
+            return None
+        buf = bytearray()
+        for chunk in response.iter_content(chunk_size=65536):
+            if time.monotonic() > deadline:
+                return None
+            if chunk:
+                buf.extend(chunk)
+                if len(buf) > max_bytes:
+                    return None
+        return bytes(buf)
+    finally:
+        try:
+            response.close()
+        except Exception:  # noqa: BLE001 - closing is best-effort
+            pass
+
+
+def fetch_jina_bytes(
+    session: requests.Session | None,
+    url: str,
+    timeout: float,
+    max_bytes: int,
+    net_state: dict | None = None,
+) -> bytes | None:
+    """r.jina.ai reader fallback with a run-wide circuit breaker.
+
+    The proxy needs no key but is rate-limited, and on networks that cannot
+    reach it at all every fallback burns the full connect timeout (observed:
+    15s each, dozens of times per run). After the first failure the rest of
+    the run skips it outright; jina availability is effectively all-or-nothing
+    per network, so one failure predicts the rest.
+    """
+    if session is None or (net_state is not None and net_state.get("jina_down")):
+        return None
+    try:
+        payload = bounded_get(session, f"https://r.jina.ai/{url}", timeout, max_bytes)
+    except requests.RequestException:
+        payload = None
+    if payload is None and net_state is not None and not net_state.get("jina_down"):
+        net_state["jina_down"] = True
+        print(
+            "weixin-deep: r.jina.ai 本次不可用，后续条目跳过 reader 兜底",
+            file=sys.stderr,
+            flush=True,
+        )
+    return payload
+
+
 def fetch_page_html(
-    session: requests.Session | None, url: str, timeout: float = PAGE_FETCH_TIMEOUT
+    session: requests.Session | None,
+    url: str,
+    net_state: dict | None = None,
+    timeout: float = PAGE_FETCH_TIMEOUT,
 ) -> tuple[str, str] | None:
     """(payload, kind) with kind in {"html", "markdown"}, or None.
 
@@ -379,19 +718,18 @@ def fetch_page_html(
     if not url.startswith(("http://", "https://")) or session is None:
         return None
     try:
-        response = session.get(url, timeout=timeout)
-        if response.status_code == 200:
-            text = str(response.text or "")
-            if len(text) >= PAGE_MIN_HTML_CHARS:
-                return text, "html"
+        payload = bounded_get(session, url, timeout, PAGE_MAX_BYTES)
     except requests.RequestException:
-        pass
-    try:
-        response = session.get(f"https://r.jina.ai/{url}", timeout=timeout)
-        if response.status_code == 200 and str(response.text or "").strip():
-            return str(response.text), "markdown"
-    except requests.RequestException:
-        pass
+        payload = None
+    if payload is not None:
+        text = payload.decode("utf-8", errors="replace")
+        if len(text) >= PAGE_MIN_HTML_CHARS:
+            return text, "html"
+    payload = fetch_jina_bytes(session, url, timeout, PAGE_MAX_BYTES, net_state)
+    if payload is not None:
+        text = payload.decode("utf-8", errors="replace")
+        if text.strip():
+            return text, "markdown"
     return None
 
 
@@ -545,7 +883,14 @@ def save_image_bytes(
                 new_h = max(1, int(height * IMAGE_MAX_WIDTH / width))
                 img = img.resize((IMAGE_MAX_WIDTH, new_h))
             if img.mode not in ("RGB", "L"):
-                img = img.convert("RGB")
+                # Composite onto white instead of a direct convert("RGB"):
+                # palette PNGs with byte transparency warn and drop their
+                # transparent pixels to arbitrary palette colors (observed on
+                # openai.com images).
+                rgba = img.convert("RGBA")
+                background = Image.new("RGB", rgba.size, (255, 255, 255))
+                background.paste(rgba, mask=rgba.getchannel("A"))
+                img = background
             img.save(
                 images_dir / f"{story_id}.jpg",
                 format="JPEG",
@@ -568,6 +913,11 @@ def save_image_bytes(
     return f"images/{story_id}{ext}"
 
 
+def _looks_like_image_response(response) -> bool:
+    content_type = str(response.headers.get("Content-Type") or "").lower()
+    return content_type.startswith("image/") and "svg" not in content_type
+
+
 def download_item_image(
     session: requests.Session | None,
     candidates: list[str],
@@ -576,7 +926,11 @@ def download_item_image(
     article_url: str,
 ) -> tuple[str, str] | None:
     """First candidate that downloads as a real image; ("images/…", credit)
-    or None. Never raises — every failure just means "no image today"."""
+    or None. Never raises — every failure just means "no image today".
+
+    Downloads are bounded (wall-clock deadline + byte budget, budget enforced
+    mid-stream), so one hostile candidate can stall neither the run nor RAM.
+    """
     if session is None or not candidates or not story_id:
         return None
     # Drop stale outputs of this story (previous runs / other extensions)
@@ -589,16 +943,16 @@ def download_item_image(
     credit = credit_domain(article_url)
     for candidate in candidates:
         try:
-            response = session.get(candidate, timeout=IMAGE_DOWNLOAD_TIMEOUT)
+            data = bounded_get(
+                session,
+                candidate,
+                IMAGE_DOWNLOAD_TIMEOUT,
+                IMAGE_MAX_BYTES,
+                accept=_looks_like_image_response,
+            )
         except requests.RequestException:
             continue
-        if response.status_code != 200:
-            continue
-        content_type = str(response.headers.get("Content-Type") or "").lower()
-        if not content_type.startswith("image/") or "svg" in content_type:
-            continue
-        data = response.content or b""
-        if len(data) < IMAGE_MIN_BYTES or len(data) > IMAGE_MAX_BYTES:
+        if data is None or len(data) < IMAGE_MIN_BYTES:
             continue
         saved = save_image_bytes(data, candidate, images_dir, story_id)
         if saved:
@@ -607,7 +961,10 @@ def download_item_image(
 
 
 def fill_deep_images(
-    items: list[dict], session: requests.Session | None, output_dir: Path
+    items: list[dict],
+    session: requests.Session | None,
+    output_dir: Path,
+    net_state: dict | None = None,
 ) -> tuple[int, int]:
     """Fetch one article image per item; returns (found, missed).
 
@@ -617,9 +974,13 @@ def fill_deep_images(
     images_dir = Path(output_dir) / "images"
     found = missed = 0
     written: set[str] = set()
-    for item in items:
+    total = len(items)
+    print(f"weixin-deep: 开始抓取原文插图（共 {total} 条）…", flush=True)
+    for i, item in enumerate(items, start=1):
         article_url = item_original_url(item)
-        payload = fetch_page_html(session, article_url) if article_url else None
+        payload = (
+            fetch_page_html(session, article_url, net_state) if article_url else None
+        )
         candidates: list[str] = []
         if payload is not None:
             body, kind = payload
@@ -634,8 +995,16 @@ def fill_deep_images(
             item["deep_image_credit"] = credit
             written.add(Path(rel_path).name)
             found += 1
+            print(
+                f"weixin-deep: [{i}/{total}] 插图：{rel_path}（图源：{credit}）",
+                flush=True,
+            )
         else:
             missed += 1
+            print(
+                f"weixin-deep: [{i}/{total}] 插图：无图（原文无可用图片或抓取失败）",
+                flush=True,
+            )
     # Prune files no longer referenced by today's selection (the images/
     # directory is script-owned; nothing else writes into it).
     if images_dir.is_dir():
@@ -652,7 +1021,31 @@ def fill_deep_images(
 # HTML rendering (inline styles only; <img> allowed in THIS variant)
 # ---------------------------------------------------------------------------
 
-def render_deep_item_html(item: dict, idx: int) -> str:
+def render_deep_reason_html(reason: str, accent_color: str) -> str:
+    """Render a guide with 【】 marks as bold spans in the section color.
+
+    Any markup problem (or no marks at all) falls back to plain escaped
+    text: highlighting is decoration and must never break the guide.
+    """
+    parsed = parse_deep_marks(reason)
+    if parsed is None:
+        return esc(strip_deep_marks(reason))
+    plain, marks = parsed
+    if not marks or not deep_marks_usable(plain, marks):
+        return esc(plain)
+    parts: list[str] = []
+    pos = 0
+    for start, end in marks:
+        parts.append(esc(plain[pos:start]))
+        parts.append(
+            f'<strong style="color:{accent_color};">{esc(plain[start:end])}</strong>'
+        )
+        pos = end
+    parts.append(esc(plain[pos:]))
+    return "".join(parts)
+
+
+def render_deep_item_html(item: dict, idx: int, accent_color: str) -> str:
     title = strip_english_tail(str(item.get("title") or "").strip())
     reason = str(item.get("weixin_deep_reason") or "").strip()
     sources = [s for s in (item.get("sources") or []) if isinstance(s, dict)]
@@ -688,7 +1081,7 @@ def render_deep_item_html(item: dict, idx: int) -> str:
     if reason:
         parts.append(
             '<p style="margin:10px 0 0;font-size:15px;line-height:1.8;'
-            f'color:#555555;">{esc(reason)}</p>'
+            f'color:#555555;">{render_deep_reason_html(reason, accent_color)}</p>'
         )
     if len(sources) > 1:
         # Same merged-source line as 1.0: "标题（Buzzing, NewsNow, …）".
@@ -747,7 +1140,7 @@ def render_deep_group_section(category: str, items: list[dict]) -> str:
     ]
     # Per-section numbering restarts at ① (2.0 convention).
     for idx, item in enumerate(items):
-        parts.append(render_deep_item_html(item, idx))
+        parts.append(render_deep_item_html(item, idx, style["color"]))
     parts.append("</section>")
     parts.append("</section>")
     return "\n".join(parts)
@@ -850,12 +1243,24 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="skip original-article image fetching (fast/offline smoke runs)",
     )
     parser.add_argument(
+        "--regenerate",
+        default="",
+        help=(
+            "comma-separated story ids or title fragments: matching cached "
+            "guides are dropped before the run so they get re-rolled; "
+            "'all' clears the whole deep cache (guide generation is "
+            "stochastic — this is the lever for re-rolling entries whose "
+            "quality you are unhappy with)"
+        ),
+    )
+    parser.add_argument(
         "--dry-run", action="store_true", help="run without writing any files"
     )
     return parser.parse_args(argv)
 
 
 def main(argv: list[str] | None = None) -> int:
+    started = time.monotonic()
     args = parse_args(argv)
 
     if os.environ.get("WEIXIN_ENABLED", "").strip() == "0":
@@ -890,17 +1295,38 @@ def main(argv: list[str] | None = None) -> int:
     # exists unconditionally (1.0 gates it on the key only because all its
     # network use is key-bound).
     session = create_session()
+    # Run-wide network state (currently the r.jina.ai circuit breaker).
+    net_state: dict = {}
     # Deliberately NOT the shared weixin/reason-cache.json: deep guides are a
     # different style and would otherwise hit stale short guides forever.
     cache_path = output_dir / "reason-cache.json"
     cache = load_deep_cache(cache_path)
     stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0}
 
-    fill_deep_reasons(items, cache, cfg, session, stats)
+    regenerate = [s.strip() for s in str(args.regenerate or "").split(",") if s.strip()]
+    if regenerate:
+        wanted: set = set()
+        for spec in regenerate:
+            if spec.lower() == "all":
+                wanted = {str(it.get("story_id") or "") for it in items}
+                break
+            for it in items:
+                story_id = str(it.get("story_id") or "")
+                if story_id and (
+                    spec == story_id or spec in str(it.get("title") or "")
+                ):
+                    wanted.add(story_id)
+        dropped = drop_cache_entries(cache, wanted)
+        print(
+            f"weixin-deep: --regenerate 已清除 {dropped} 条缓存导读，将重新生成",
+            flush=True,
+        )
+
+    fill_deep_reasons(items, cache, cfg, session, stats, net_state)
 
     images_found = images_missed = 0
     if not args.dry_run and not args.no_images:
-        images_found, images_missed = fill_deep_images(items, session, output_dir)
+        images_found, images_missed = fill_deep_images(items, session, output_dir, net_state)
 
     headline = strip_english_tail(str(items[0].get("title") or "").strip())
     title = deep_title(cfg["brand"], now_cn, len(items))
@@ -975,7 +1401,7 @@ def main(argv: list[str] | None = None) -> int:
         "reasons reused={reused} cached={cached} generated={generated} "
         "skipped={skipped} images found={found} missed={missed} "
         "cover_mode={cover_mode} cover_scene={cover_scene} "
-        "dry_run={dry_run}".format(
+        "elapsed={elapsed:.0f}s dry_run={dry_run}".format(
             items=len(items),
             sections=",".join(
                 f"{CATEGORY_LABEL_ZH.get(cat, cat)}×{len(group)}"
@@ -989,8 +1415,10 @@ def main(argv: list[str] | None = None) -> int:
             missed=images_missed,
             cover_mode=cover_mode,
             cover_scene=1 if cover_scene else 0,
+            elapsed=time.monotonic() - started,
             dry_run=1 if args.dry_run else 0,
-        )
+        ),
+        flush=True,
     )
     return 0
 

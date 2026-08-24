@@ -10,11 +10,15 @@ session returned by create_session — nothing touches the real network.
 
 from __future__ import annotations
 
+import io
 import json
 import sys
+import warnings
 from datetime import datetime
 from pathlib import Path
 from unittest.mock import MagicMock, patch
+
+import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -50,7 +54,7 @@ DEEP_SUMMARY = (
     "与吞吐量变化，并说明新接口在兼容性方面的处理方式以及已知的限制条件，"
     "方便开发者评估升级的成本与收益。"
 )
-# Within DEEP_REASON_* bounds; starts with the source-attribution opener.
+# A realistic deep guide as the model would return one (passes validation).
 LONG_DEEP_REASON = (
     "据 Example Source 报道，该团队发布了新一代推理模型，官方给出的数据显示其"
     "推理成本较上一代下降约五成，上下文窗口扩展到一百二十万 token，并同步开放了"
@@ -63,14 +67,16 @@ LONG_DEEP_REASON = (
 THIN_SUMMARY = "这是一段很短的摘要，不足以支撑精读导读。"
 
 
-def make_deep_text_router(reason=None, scene=None):
+def make_deep_text_router(reason=None, scene=None, mark=None):
     """Route text completions by system-prompt markers.
 
     「精读」marks the deep guide prompt (NOT 「转述」 — 1.0's prompt contains
-    「转述其观点」 and would collide); 「插画设计师」 marks the cover scene.
+    「转述其观点」 and would collide); 「插画设计师」 marks the cover scene;
+    「校对员」 marks the highlight pass, which by default (mark=None) echoes
+    the guide back unchanged — no highlights, text preserved verbatim.
     Any other call fails the test.
     """
-    calls = {"reason": 0, "scene": 0}
+    calls = {"reason": 0, "scene": 0, "mark": 0}
 
     def side_effect(url, **kwargs):
         payload = kwargs.get("json") or {}
@@ -80,9 +86,14 @@ def make_deep_text_router(reason=None, scene=None):
             which, spec = "scene", scene
         elif "精读" in system:
             which, spec = "reason", reason
+        elif "校对员" in system:
+            which, spec = "mark", mark
         else:
             raise AssertionError(f"unexpected text api call: {url}")
         calls[which] += 1
+        if which == "mark" and spec is None:
+            user = str(((messages or [{}])[-1] or {}).get("content") or "")
+            return text_response(user)
         if isinstance(spec, BaseException):
             raise spec
         if isinstance(spec, MagicMock):
@@ -118,14 +129,16 @@ def seed_main_cover(main_dir: Path, cover_bytes: bytes = b"\xff\xd8fake-jpeg-byt
 
 
 def page_response(img_tag: str) -> MagicMock:
+    """Streaming mock: bounded_get reads via iter_content (stream=True)."""
     response = MagicMock()
     response.status_code = 200
-    response.text = (
+    html = (
         "<html><body><article>"
         f"<p>{'这是一段用于测试的正文内容。' * 30}</p>"
         f"{img_tag}"
         "</article></body></html>"
     )
+    response.iter_content.return_value = [html.encode("utf-8")]
     return response
 
 
@@ -134,10 +147,11 @@ def image_response(
     content_type: str = "image/jpeg",
     status_code: int = 200,
 ) -> MagicMock:
+    """Streaming mock: bounded_get reads via iter_content (stream=True)."""
     response = MagicMock()
     response.status_code = status_code
     response.headers = {"Content-Type": content_type}
-    response.content = data
+    response.iter_content.return_value = [data]
     return response
 
 
@@ -145,6 +159,13 @@ class FakeResponse:
     def __init__(self, status_code: int = 200, text: str = ""):
         self.status_code = status_code
         self.text = text
+        self.headers = {"Content-Type": "text/html"}
+
+    def iter_content(self, chunk_size=None):
+        return iter([self.text.encode("utf-8")])
+
+    def close(self):
+        pass
 
 
 class FakeSession:
@@ -297,16 +318,269 @@ def test_deep_reason_generated_and_cached(tmp_path):
     assert LONG_DEEP_REASON in html_text
 
 
+def test_drop_cache_entries():
+    cache = {
+        "version": gwad.DEEP_CACHE_VERSION,
+        "entries": {
+            "story_1|aaa": {"reason": "甲"},
+            "story_2|bbb": {"reason": "乙"},
+        },
+    }
+    assert gwad.drop_cache_entries(cache, {"story_1"}) == 1
+    assert list(cache["entries"]) == ["story_2|bbb"]
+    assert gwad.drop_cache_entries(cache, {"没有这个条目"}) == 0
+
+
+def test_regenerate_flag_forces_regeneration(tmp_path):
+    """A cached entry is re-rolled when named via --regenerate."""
+    data_dir, assets_dir = write_fixture(
+        tmp_path, [make_item(1, summary=DEEP_SUMMARY)]
+    )
+    make_static_asset(assets_dir)
+    main_dir = tmp_path / "weixin"
+    seed_main_cover(main_dir)
+    deep_dir = tmp_path / "weixin-deep"
+    args = [
+        "--data-dir", str(data_dir),
+        "--output-dir", str(deep_dir),
+        "--main-output-dir", str(main_dir),
+        "--assets-dir", str(assets_dir),
+        "--no-images",
+    ]
+
+    side_effect, first_calls = make_deep_text_router(reason=text_response(LONG_DEEP_REASON))
+    run_deep_patched(BASE_ENV, side_effect, offline_session(), args)
+    assert first_calls["reason"] == 1
+
+    side_effect, second_calls = make_deep_text_router(
+        reason=text_response(LONG_DEEP_REASON)
+    )
+    rc = run_deep_patched(
+        BASE_ENV, side_effect, offline_session(), args + ["--regenerate", "story_1"]
+    )
+    assert rc == 0
+    assert second_calls["reason"] == 1  # 缓存被清除 → 重新生成
+
+
 def test_deep_validation_bounds():
     good = LONG_DEEP_REASON
     title = "校验测试标题"
     assert gwad.validate_deep_reason(good, title) is True
     assert gwad.validate_deep_reason("据某媒体报道，这是一条很短的消息。", title) is False  # <80
-    assert gwad.validate_deep_reason("好" * (gwad.DEEP_REASON_MAX_CHARS + 1), title) is False
+    assert gwad.validate_deep_reason("好" * 800, title) is True  # 精读版不设字数上限
     assert gwad.validate_deep_reason("a" * 120, title) is False  # no CJK
     assert gwad.validate_deep_reason(title, title) is False
     assert gwad.validate_deep_reason("据某媒体报道，详情见 https://example.com 。" * 5, title) is False
     assert gwad.validate_deep_reason("很抱歉，无法生成导读。" + "填" * 100, title) is False
+
+
+def test_generate_deep_reason_rejection_is_diagnosed(capsys):
+    """A rejected generation must name its cause on stderr (no silent skips)."""
+    item = make_item(1, title="诊断测试标题")
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    content_with_url = (
+        "据 Example Source 报道，" + "内容" * 50
+        + " 详见 https://github.com/openai/codex ，" + "。" * 10
+    )
+
+    with patch(
+        "scripts.generate_weixin_article.requests.post",
+        return_value=text_response(content_with_url),
+    ):
+        assert gwad.generate_deep_reason(item, "正文内容若干", cfg) is None
+
+    err = capsys.readouterr().err
+    assert "含 URL" in err
+
+
+def test_generate_deep_reason_accepts_long(capsys):
+    """Long generations pass through untouched: the deep variant has no
+    upper char bound and never falls back to upstream over length."""
+    item = make_item(1, title="超长导读测试标题")
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    long_content = "该团队发布了新版本，" + "这是用于凑字数的测试句子内容。" * 40  # ~600 字
+
+    with patch(
+        "scripts.generate_weixin_article.requests.post",
+        return_value=text_response(long_content),
+    ):
+        result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
+
+    assert result is not None
+    assert result.strip() == long_content.strip()
+    assert len(result.strip()) > 500
+    assert "被校验拒绝" not in capsys.readouterr().err
+
+
+def test_parse_deep_marks():
+    parsed = gwad.parse_deep_marks("甲【乙】丙【丁】")
+    assert parsed == ("甲乙丙丁", [(1, 2), (3, 4)])
+    assert gwad.parse_deep_marks("【甲】") == ("甲", [(0, 1)])
+    assert gwad.parse_deep_marks("没有标记") == ("没有标记", [])
+    assert gwad.parse_deep_marks("【不成对") is None
+    assert gwad.parse_deep_marks("不成对】") is None
+    assert gwad.parse_deep_marks("【【嵌套】】") is None
+    assert gwad.parse_deep_marks("【】空的") is None
+    assert gwad.strip_deep_marks("甲【乙】丙") == "甲乙丙"
+
+
+def test_deep_marks_usable():
+    plain = "这是一段足够长的导读文本内容。"  # 15 字
+    assert gwad.deep_marks_usable(plain, []) is True
+    assert gwad.deep_marks_usable(plain, [(0, 3), (4, 6)]) is True
+    assert gwad.deep_marks_usable(plain, [(0, 1), (2, 3), (4, 5), (6, 7)]) is True  # 4 处合法
+    assert gwad.deep_marks_usable(plain, [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9)]) is False  # >4 处
+    assert gwad.deep_marks_usable(plain, [(0, 12)]) is False  # 覆盖 ≥80%
+
+
+def test_render_deep_reason_html():
+    html = gwad.render_deep_reason_html("重点【结论句】收尾", "#13501B")
+    assert html == '重点<strong style="color:#13501B;">结论句</strong>收尾'
+    assert gwad.render_deep_reason_html("无标记", "#13501B") == "无标记"
+    assert "<strong" not in gwad.render_deep_reason_html("【不成对", "#13501B")
+    assert "【" not in gwad.render_deep_reason_html("【不成对", "#13501B")
+    assert gwad.render_deep_reason_html("a<b", "#000000") == "a&lt;b"
+
+
+def test_generate_deep_reason_keeps_valid_marks():
+    """Generation and marking are two calls: guide first, brackets second."""
+    item = make_item(1, title="高亮生成测试标题")
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    plain = (
+        "该团队发布了新一代模型，" + "这是用于补足字数的测试句子。" * 8
+        + "官方确认全面开源，定价为每月 10 美元。"
+    )
+    marked = (
+        "该团队发布了新一代模型，" + "这是用于补足字数的测试句子。" * 8
+        + "官方确认【全面开源】，定价为【每月 10 美元】。"
+    )
+
+    with patch(
+        "scripts.generate_weixin_article.requests.post",
+        side_effect=[text_response(plain), text_response(marked)],
+    ):
+        result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
+
+    assert result == marked.strip()
+    assert gwad.validate_deep_reason(gwad.strip_deep_marks(result), item["title"]) is True
+
+
+def test_generate_deep_reason_salvages_bad_marks():
+    """A bad marking pass never damages the guide: span choices are kept
+    only when they can be re-anchored in the ORIGINAL text."""
+    item = make_item(1, title="高亮降级测试标题")
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    body = "发布说明正文。" + "这是用于补足字数的测试句子。" * 8
+
+    over_marked_response = (
+        "【发布】说明【正文】。"
+        + "【这是】用于【补足】字数的【测试】句子。"
+        + "这是用于补足字数的测试句子。" * 7
+    )
+    with patch(
+        "scripts.generate_weixin_article.requests.post",
+        side_effect=[text_response(body), text_response(over_marked_response)],
+    ):
+        over_marked = gwad.generate_deep_reason(item, "正文内容若干", cfg)
+    # 5 处超限 → 截前 4 处，其余原文一字不动
+    assert over_marked == (
+        "【发布】说明【正文】。"
+        + "【这是】用于【补足】字数的测试句子。"
+        + "这是用于补足字数的测试句子。" * 7
+    )
+
+    marked_body = body.replace("发布说明正文", "【发布说明正文】", 1)
+    with patch(
+        "scripts.generate_weixin_article.requests.post",
+        side_effect=[
+            text_response(body),
+            text_response(marked_body + "（完）"),  # 改写了原文，但片段可锚定
+        ],
+    ):
+        rewritten = gwad.generate_deep_reason(item, "正文内容若干", cfg)
+    assert rewritten == marked_body  # 只保留能锚定的片段，改写被丢弃
+
+
+def test_add_deep_marks_verbatim_and_failures():
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    guide = (
+        "该团队发布了新一代模型，" + "这是用于补足字数的测试句子。" * 8
+        + "官方确认全面开源。"
+    )
+    marked = guide.replace("全面开源", "【全面开源】")
+
+    with patch(
+        "scripts.generate_weixin_article.requests.post",
+        return_value=text_response(marked),
+    ):
+        assert gwad.add_deep_marks(guide, cfg) == marked
+
+    with patch(
+        "scripts.generate_weixin_article.requests.post",
+        return_value=text_response(marked + "（补充）"),  # 改动原文 → 重锚定后只留片段
+    ):
+        assert gwad.add_deep_marks(guide, cfg) == marked
+
+    with patch(
+        "scripts.generate_weixin_article.requests.post",
+        return_value=text_response("")), patch(  # 调用失败 → 弃标注
+        "scripts.generate_weixin_article.time.sleep"
+    ):
+        assert gwad.add_deep_marks(guide, cfg) == guide
+
+
+def test_add_deep_marks_salvages_rewritten_punctuation():
+    """The marker 'fixing' a missing period must not leak into the guide:
+    its span choices survive, re-anchored in the untouched original."""
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    guide = "该团队发布了新一代模型，" + "这是用于补足字数的测试句子。" * 8 + "官方确认全面开源"
+    response = guide.replace("全面开源", "【全面开源】") + "。"  # 模型补了句号
+
+    with patch(
+        "scripts.generate_weixin_article.requests.post",
+        return_value=text_response(response),
+    ):
+        result = gwad.add_deep_marks(guide, cfg)
+
+    assert result == guide.replace("全面开源", "【全面开源】")
+    assert not result.endswith("。")  # 原文没有的句号不会被带进来
+
+
+def test_add_deep_marks_unanchorable_spans_drop(capsys):
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    guide = "该团队发布了新一代模型，" + "这是用于补足字数的测试句子。" * 8 + "官方确认全面开源。"
+
+    with patch(
+        "scripts.generate_weixin_article.requests.post",
+        return_value=text_response("【完全找不到出处的片段】"),
+    ):
+        assert gwad.add_deep_marks(guide, cfg, "锚定失败测试") == guide
+
+    err = capsys.readouterr().err
+    assert "标记片段与原文对不上" in err
+
+
+def test_add_deep_marks_retry_recovers(capsys):
+    """An unanchorable first attempt is diagnosed and a clean second attempt wins."""
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    guide = (
+        "该团队发布了新一代模型，" + "这是用于补足字数的测试句子。" * 8
+        + "官方确认全面开源。"
+    )
+    marked = guide.replace("全面开源", "【全面开源】")
+
+    with patch(
+        "scripts.generate_weixin_article.requests.post",
+        side_effect=[
+            text_response(guide + "。"),  # 第一次只改写、没加标记 → 无片段可锚定
+            text_response(marked),
+        ],
+    ):
+        assert gwad.add_deep_marks(guide, cfg, "重试测试") == marked
+
+    err = capsys.readouterr().err
+    assert "标记片段与原文对不上" in err
+    assert "重试测试" in err
 
 
 def test_deep_grounding_summary_threshold():
@@ -485,6 +759,90 @@ def test_download_item_image_skips_bad_first_candidate(tmp_path):
     assert (images_dir / "story_2.jpg").exists()
 
 
+def make_transparent_palette_png() -> bytes:
+    """Palette PNG with byte-transparency (the openai.com case): converting
+    it straight to RGB makes Pillow warn and maps transparent pixels to
+    arbitrary palette colors."""
+    from PIL import Image
+
+    img = Image.new("P", (400, 300), color=1)
+    img.putpalette([i % 256 for i in range(256 * 3)])
+    buf = io.BytesIO()
+    img.save(buf, format="PNG", transparency=bytes([0] * 128 + [255] * 128))
+    return buf.getvalue()
+
+
+def test_download_item_image_palette_transparency(tmp_path):
+    session = MagicMock()
+    session.get.return_value = image_response(
+        make_transparent_palette_png(), "image/png"
+    )
+    images_dir = tmp_path / "images"
+
+    with warnings.catch_warnings():
+        warnings.simplefilter("error", UserWarning)  # old code path warned here
+        result = gwad.download_item_image(
+            session,
+            ["https://cdn.example.com/p.png"],
+            images_dir,
+            "story_3",
+            "https://example.com/a",
+        )
+
+    assert result == ("images/story_3.jpg", "example.com")
+    assert (images_dir / "story_3.jpg").exists()
+
+
+def test_bounded_get_enforces_budget_and_deadline():
+    """The hang fixes: byte budget mid-stream and a wall-clock deadline."""
+    session = MagicMock()
+
+    # Byte budget: aborts once max_bytes is exceeded (no full buffering).
+    session.get.return_value = image_response(b"x" * 1000)
+    assert gwad.bounded_get(session, "https://a.example/x", 5.0, 500) is None
+
+    # Small body inside the budget comes through intact.
+    session.get.return_value = image_response(b"hello")
+    assert gwad.bounded_get(session, "https://a.example/x", 5.0, 500) == b"hello"
+
+    # Wall-clock deadline: the per-chunk requests timeout cannot catch a slow
+    # trickle; bounded_get must stop on total elapsed time. Two chunks, the
+    # monotonic clock jumps past the deadline before the second one.
+    response = MagicMock()
+    response.status_code = 200
+    response.iter_content.return_value = [b"abcd", b"efgh"]
+    session.get.return_value = response
+    with patch(
+        "scripts.generate_weixin_article_deep.time.monotonic",
+        side_effect=[0.0, 0.5, 100.0],
+    ):
+        assert gwad.bounded_get(session, "https://a.example/x", 5.0, 500) is None
+
+
+def test_jina_breaker_skips_after_first_failure():
+    """Once r.jina.ai fails, the rest of the run must not pay its timeout."""
+    session = MagicMock()
+    not_found = MagicMock()
+    not_found.status_code = 404
+    session.get.side_effect = [
+        not_found,                                    # direct, item A
+        requests.ConnectionError("jina unreachable"),  # jina, item A
+        not_found,                                    # direct, item B
+    ]
+    net_state: dict = {}
+
+    assert gwad.fetch_page_html(session, "https://a.example/1", net_state) is None
+    assert gwad.fetch_page_html(session, "https://a.example/2", net_state) is None
+
+    assert net_state == {"jina_down": True}
+    urls = [call.args[0] for call in session.get.call_args_list]
+    assert urls == [
+        "https://a.example/1",
+        "https://r.jina.ai/https://a.example/1",
+        "https://a.example/2",  # item B: jina attempt skipped entirely
+    ]
+
+
 # ---------------------------------------------------------------------------
 # Rendering
 # ---------------------------------------------------------------------------
@@ -495,7 +853,7 @@ def test_render_deep_item_html_order_and_credit():
     item["deep_image"] = "images/story_1.jpg"
     item["deep_image_credit"] = "example.com"
 
-    html = gwad.render_deep_item_html(item, 0)
+    html = gwad.render_deep_item_html(item, 0, "#13501B")
 
     assert "① 深度版渲染测试" in html
     assert '<img src="images/story_1.jpg"' in html
@@ -515,10 +873,33 @@ def test_render_deep_item_html_without_image_has_no_img_tag():
     item = make_item(1)
     item["weixin_deep_reason"] = LONG_DEEP_REASON
 
-    html = gwad.render_deep_item_html(item, 0)
+    html = gwad.render_deep_item_html(item, 0, "#595959")
 
     assert "<img" not in html
     assert "图源" not in html
+
+
+def test_render_deep_item_html_highlights_marks_in_section_color():
+    item = make_item(1, title="高亮渲染测试")
+    item["weixin_deep_reason"] = (
+        "该团队发布了新一代模型，" + "这是用于补足字数的测试句子。" * 8
+        + "官方确认【全面开源】，并同步更新了文档。"
+    )
+
+    html = gwad.render_deep_item_html(item, 0, "#13501B")
+
+    assert '<strong style="color:#13501B;">全面开源</strong>' in html
+    assert "【" not in html and "】" not in html
+
+
+def test_render_deep_group_section_threads_color_to_marks():
+    item = make_item(1, title="分组高亮测试")
+    item["category"] = "official"
+    item["weixin_deep_reason"] = "更新内容说明。" * 10 + "结论是【正式发布】。"
+
+    html = gwad.render_deep_group_section("official", [item])
+
+    assert '<strong style="color:#13501B;">正式发布</strong>' in html
 
 
 # ---------------------------------------------------------------------------
