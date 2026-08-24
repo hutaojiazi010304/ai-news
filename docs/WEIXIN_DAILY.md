@@ -83,7 +83,8 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
 | --- | --- | --- |
 | `WEIXIN_BRAND_NAME` | `AI 雷达` | 公众号名定了以后改这里 |
 | `WEIXIN_RADAR_URL` | `https://hutaojiazi010304.github.io/ai-news-radar/` | 「阅读原文」链接 |
-| `WEIXIN_MAX_ITEMS` | `20` | 每期条数 |
+| `WEIXIN_MAX_ITEMS` | `20` | 每期条数（1.0/2.0） |
+| `WEIXIN_DEEP_MAX_ITEMS` | `10` | 精读版每期条数（只影响 3.0，与上一行互不相干） |
 | `WEIXIN_TEXT_MODEL` | `qwen3.8-max` | 文本模型 |
 | `WEIXIN_IMAGE_MODEL` | `qwen-image-2.0-pro` | 生图模型（Qwen-Image 同步接口系列，如 `qwen-image-max`） |
 | `DASHSCOPE_API_BASE_URL` | DashScope 兼容模式地址 | 一般不用改 |
@@ -127,9 +128,9 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
 3. 生成推文：
 
    ```bash
-   python scripts/generate_weixin_article.py --data-dir data --output-dir weixin
    python scripts/generate_weixin_article.py            --data-dir data --output-dir weixin
    python scripts/generate_weixin_article_grouped.py    --data-dir data --output-dir weixin-grouped
+   python scripts/generate_weixin_article_deep.py       --data-dir data --output-dir weixin-deep
    ```
 
    看结束时的汇总日志确认 key 生效：
@@ -137,13 +138,17 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
    标题固定为模板「AI 雷达 · X月X日｜今日精选N条」，不再调用千问；
    `cover_mode=static` 说明 key 没生效或生图失败（见 FAQ）；
    `cover_scene=0` 说明场景翻译失败、封面主题回退为原始头条。
+   分组版汇总另有 `sections=` 各组条数；精读版汇总形如
+   `items=10 … images found=N missed=M cover_mode=reused`，
+   `images missed` 是抓不到原文插图的条数（正常现象，该条无图出刊）。
 
-4. 打开 `weixin/index.html` 检查各条导读、原文链接，以及底部辅助区块里的标题/摘要。
+4. 打开 `weixin/index.html` 检查各条导读、原文链接，以及底部辅助区块里的标题/摘要
+   （分组版/精读版同样检查各自的 `index.html`，精读版还要看图与「图源」行）。
 
 5. 提交并推送，Pages 会自动更新预览页：
 
    ```bash
-   git add weixin/
+   git add weixin/ weixin-grouped/ weixin-deep/
    git commit -m "chore: update weixin article"
    git push
    ```
@@ -177,13 +182,51 @@ python scripts/generate_weixin_article_grouped.py --data-dir data --output-dir w
 ```
 
 - 预览页 `https://hutaojiazi010304.github.io/ai-news-radar/weixin-grouped/`，
-  与正式版 `/weixin/` 并排对比；最终定版后只保留对应脚本即可
+  与正式版 `/weixin/` 并排对比。三个版本（正式/分组/精读）按产品决策长期并存，
+  各自独立保留
 - 导读缓存共享正式版的 `weixin/reason-cache.json`：导读按条目生成、与排版
   无关，先跑哪一版另一版都全命中，不会重复调千问
 - 封面直接复用正式版当天的封面（按 `weixin/meta.json` 的 issue_date 校验，
   不会误用昨天的）；正式版还没生成时才走相同的封面生成流程
 - 汇总日志 `cover_mode=reused` 表示复用了正式版封面；`sections=` 给出各组条数
 - `weixin-grouped/` 产物同样要及时提交推送（同正式版的注意事项）
+
+## 精读版（weixin-deep/）
+
+在分组版排版基础上做的「深度阅读」第三版，用于企业内部会话软件的服务号
+内部分享（非公开公众号），与前两版**并存**：
+
+- **选条**：纯按 `peak_score` 取全局前 10 条（`WEIXIN_DEEP_MAX_ITEMS` /
+  `--max-items` 可调；与 `WEIXIN_MAX_ITEMS` 互不相干）。分组沿用
+  官方更新 → 行业动态 → 多源热议 → 值得关注，空组直接跳过
+- **导读**：转述式报道体（「据 X 报道」开头、只复述原文事实、不编造），
+  约 150–350 字。**缓存独立**于正式版：写在 `weixin-deep/reason-cache.json`
+  （自己的版本号）。不能共享 `weixin/reason-cache.json`——缓存 key 只有
+  条目+标题，共享会永远命中旧短导读，新风格无法生效
+- **插图**：出刊时逐条抓原文页（直连，403/空页走 r.jina.ai 兜底），取正文
+  第一张合格大图（跳过 logo/图标/追踪像素等），存到 `weixin-deep/images/`
+  并在图下自动加「图源：{域名}」。原文没图或抓不到 → 该条无图，属正常
+  降级；不做 AI 补图。有 Pillow 时统一压到 ≤1080 宽、JPEG q82，仓库每天
+  约增长 1–3MB
+- **标题/摘要**：固定模板「AI 雷达 · X月X日｜今日精读N条」，不调千问
+- **封面**：复用正式版当天封面（同分组版逻辑）
+- **取图不需要千问 key**：无 key 也能跑插图；只是导读会退化为数据里已有的
+  推荐语
+
+```bash
+# 先跑正式版（精读版复用它的封面），再跑精读版
+python scripts/generate_weixin_article.py      --data-dir data --output-dir weixin
+python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-deep
+```
+
+- 预览页 `https://hutaojiazi010304.github.io/ai-news-radar/weixin-deep/`
+- **图片不进粘贴流**：复制预览页正文粘贴进编辑器时，`<img>` 会被丢掉。
+  预览页是准绳视图；给内部服务号发布时按 `weixin-deep/images/` 里的文件
+  逐张手动插入（`meta.json` 的 `images` 字段按 story_id 记录了每条对应的
+  图片文件与图源，预留将来接草稿箱 API）
+- 内部分发的图片版权：封闭传播 + 每条带图源说明，实务投诉风险很低；
+  仅限内部使用，如收到异议撤换对应图片即可
+- `weixin-deep/` 产物（含 `images/`）同样要及时提交推送
 
 ## 本地调试
 
@@ -198,11 +241,16 @@ python scripts/generate_weixin_article.py --data-dir data --output-dir weixin --
 python scripts/generate_weixin_article_grouped.py --data-dir data --output-dir weixin-test-grouped
 python scripts/generate_weixin_article_grouped.py --data-dir data --output-dir weixin-grouped --dry-run
 
+# 精读版冒烟 / 只跑流程不写文件（--no-images 跳过抓图，完全离线快速冒烟）
+python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-test-deep
+python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-test-deep --no-images
+python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-deep --dry-run
+
 # 重新生成静态兜底封面
 python scripts/generate_weixin_article.py --make-fallback-cover --assets-dir assets
 
 # 测试（需 pytest）
-python -m pytest tests/test_weixin_article.py tests/test_weixin_article_grouped.py -q
+python -m pytest tests/test_weixin_article.py tests/test_weixin_article_grouped.py tests/test_weixin_article_deep.py -q
 ```
 
 ## 常见问题
