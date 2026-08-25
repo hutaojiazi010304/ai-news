@@ -22,7 +22,18 @@ if str(ROOT) not in sys.path:
 from scripts import generate_weixin_article as gwa
 from scripts import generate_weixin_article_grouped as gwag
 
-from test_weixin_article import make_item, make_static_asset, read_json, write_fixture
+from test_weixin_article import (
+    BASE_ENV,
+    COVER_SCENE_TEXT,
+    LONG_GENERATED_REASON,
+    make_item,
+    make_static_asset,
+    make_text_router,
+    offline_session,
+    read_json,
+    text_response,
+    write_fixture,
+)
 
 
 def make_categorized_item(idx: int, category: str, score: float) -> dict:
@@ -317,3 +328,120 @@ def test_end_to_end_stale_first_party_story_is_grouped_as_official(tmp_path):
     html_text = (grouped_dir / "index.html").read_text(encoding="utf-8")
     assert "官方博客发布新闻" in html_text
     assert "行业动态" not in html_text
+
+
+def test_grouped_uses_translated_title_from_shared_cache(tmp_path):
+    """Translations live in the shared main-variant cache: the grouped run
+    must reuse them (zero text API calls) and render the Chinese title."""
+    en_title = "Advancing price-performance for developers with GPT-5.6 in Kiro"
+    zh_title = "GPT-5.6 接入 Kiro，为开发者提升模型性价比"
+    item = make_item(1, title=en_title, score=92)
+    item["category"] = "official"
+    data_dir, assets_dir = write_fixture(tmp_path, [item])
+    make_static_asset(assets_dir)
+
+    main_dir = tmp_path / "weixin"
+    main_dir.mkdir()
+    issue_date = datetime.now(gwa.TZ_CN).strftime("%Y-%m-%d")
+    (main_dir / "cover.jpg").write_bytes(b"\xff\xd8fake-jpeg-bytes")
+    (main_dir / "meta.json").write_text(
+        json.dumps({"issue_date": issue_date, "cover": "cover.jpg"}),
+        encoding="utf-8",
+    )
+    # The main variant already translated this title into the shared cache.
+    tt_key = gwa.TITLE_TRANSLATE_CACHE_PREFIX + gwa.title_hash(en_title)
+    (main_dir / "reason-cache.json").write_text(
+        json.dumps(
+            {
+                "version": gwa.CACHE_VERSION,
+                "entries": {
+                    tt_key: {
+                        "zh_title": zh_title,
+                        "created_at": "2026-08-25T00:00:00Z",
+                    }
+                },
+            },
+            ensure_ascii=False,
+        ),
+        encoding="utf-8",
+    )
+
+    grouped_dir = tmp_path / "weixin-grouped"
+    args = [
+        "--data-dir", str(data_dir),
+        "--output-dir", str(grouped_dir),
+        "--main-output-dir", str(main_dir),
+        "--assets-dir", str(assets_dir),
+    ]
+    # Every spec is None: ANY text API call fails the test — the cached
+    # translation, the reused cover and the guide fallback (no grounding)
+    # must make this a zero-call run.
+    side_effect, calls = make_text_router()
+    with patch.dict("os.environ", BASE_ENV, clear=True), patch(
+        "scripts.generate_weixin_article.requests.post", side_effect=side_effect
+    ), patch("scripts.generate_weixin_article.time.sleep"):
+        rc = gwag.main(args)
+
+    assert rc == 0
+    assert calls["translate"] == 0
+    html_text = (grouped_dir / "index.html").read_text(encoding="utf-8")
+    assert zh_title in html_text
+    assert en_title not in html_text
+
+
+def test_grouped_regenerate_re_rolls_via_shared_cache(tmp_path):
+    """--regenerate on the grouped variant drops the named entry from the
+    SHARED cache, so exactly that guide is re-rolled (for both layouts)."""
+    item1 = make_item(
+        1, title="分类测试新闻 1", score=92,
+        summary="这是第一条足够长的摘要内容，用于生成推荐语。",
+    )
+    item1["category"] = "official"
+    item2 = make_item(
+        2, title="分类测试新闻 2", score=88,
+        summary="这是第二条足够长的摘要内容，用于生成推荐语。",
+    )
+    item2["category"] = "industry"
+    data_dir, assets_dir = write_fixture(tmp_path, [item1, item2])
+    make_static_asset(assets_dir)
+
+    main_dir = tmp_path / "weixin"
+    grouped_dir = tmp_path / "weixin-grouped"
+    args = [
+        "--data-dir", str(data_dir),
+        "--output-dir", str(grouped_dir),
+        "--main-output-dir", str(main_dir),
+        "--assets-dir", str(assets_dir),
+    ]
+
+    def run(args_list, side_effect):
+        with patch.dict("os.environ", BASE_ENV, clear=True), patch(
+            "scripts.generate_weixin_article.requests.post", side_effect=side_effect
+        ), patch(
+            "scripts.generate_weixin_article_grouped.create_session",
+            return_value=offline_session(),
+        ), patch("scripts.generate_weixin_article.time.sleep"):
+            return gwag.main(args_list)
+
+    side_effect, first_calls = make_text_router(
+        reason=text_response(LONG_GENERATED_REASON),
+        scene=text_response(COVER_SCENE_TEXT),
+    )
+    rc = run(args, side_effect)
+    assert rc == 0
+    assert first_calls["reason"] == 2
+
+    # Naming position 1 (overall selection order) re-rolls only that guide.
+    side_effect, second_calls = make_text_router(
+        reason=text_response(LONG_GENERATED_REASON),
+        scene=text_response(COVER_SCENE_TEXT),
+    )
+    rc = run(args + ["--regenerate", "1"], side_effect)
+    assert rc == 0
+    assert second_calls["reason"] == 1
+    # Both entries live in the shared (main-dir) cache, one freshly re-rolled.
+    shared = read_json(main_dir / "reason-cache.json")
+    guide_keys = [k for k in shared["entries"] if not k.startswith("tt1|")]
+    assert sorted(guide_keys) == sorted(
+        [gwa.cache_key("story_1", item1["title"]), gwa.cache_key("story_2", item2["title"])]
+    )

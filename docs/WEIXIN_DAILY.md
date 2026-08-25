@@ -24,6 +24,11 @@ data/daily-brief.json（现有管线产物，云端每小时更新）
   │     旧故事会带着错误标签（如官方博客停留在「行业动态」）。出刊时按
   │     当前 aihot 官方一手源白名单复核主条目来源，命中即纠正为「官方
   │     更新」（只升不改其他类别），两个排版版本共用此逻辑
+  ├─ 英文标题兜底翻译：上游翻译链失效时，daily-brief 会残留纯英文标题。
+  │     配了千问 key 时在写导读之前逐条译成中文（产品/公司/模型/人名
+  │     保留英文原文），译文按原标题缓存（reason-cache 里的 tt1| 条目，
+  │     1.0/2.0 共用，精读版独立）；翻译失败保留英文原标题，无 key 时
+  │     原样保留，均不影响出刊
   ├─ 每条导读：配了千问 key 时统一由千问生成（直接概括内容、正文缺失
   │     时按标题整理；无意义话术、字数跟随内容，21天缓存），
   │     仅在生成失败时回退到数据里已有的推荐语；无 key 时复用已有推荐语
@@ -237,7 +242,12 @@ python scripts/generate_weixin_article_grouped.py --data-dir data --output-dir w
   本身不受影响
 - **导读质量与重掷**：导读由千问现场采样生成，提示词与参数不变时每次
   跑出的文稿也有天然差异（细节取舍、句式），属正常现象。某条不满意时
-  不必整期重跑，用 `--regenerate` 只重掷该条（见本地调试）
+  不必整期重跑，用 `--regenerate` 只重掷该条（三个版本都支持，见本地
+  调试）。参数值逗号分隔、可混写：**显示序号**（`3` 或 `③`，正式版即
+  正文编号；分组版/精读版组内编号会重新从 ① 开始，序号按整期排名
+  数）、**标题片段**（看到什么输什么，中文显示标题或英文原标题都行、
+  忽略大小写）、**story_id**；`all` 全部重掷。未命中会打印本期编号清单
+  供重试。1.0/2.0 删的是共享缓存，重掷一次两版同时更新
 - **插图**：出刊时逐条抓原文页（直连，403/空页走 r.jina.ai 兜底），先定位
   正文范围（优先取 `<article>` 元素；页面没有该标签时按「AI News
   Recommendations / 推荐阅读 / 相关推荐」等推荐区标题截断），再取正文内
@@ -295,9 +305,13 @@ python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weix
 python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-test-deep --no-images
 python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-deep --dry-run
 
-# 精读版：某条导读不满意，只重掷该条（story_id 或标题片段，逗号分隔；
-# all = 清空精读缓存全部重来）
-python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-deep --regenerate Fable5
+# 某条导读不满意，只重掷该条（三个版本都支持；参数可混写、逗号分隔：
+# 显示序号 3 或 ③ / 标题片段，中英文都行 / story_id；all = 全部重掷。
+# 未命中会打印本期编号清单，照着重试即可）
+python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-deep --regenerate 3
+python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-deep --regenerate 连线、运行
+python scripts/generate_weixin_article.py --data-dir data --output-dir weixin --regenerate ③,⑤
+python scripts/generate_weixin_article_grouped.py --data-dir data --output-dir weixin-grouped --regenerate Kiro
 
 # 重新生成静态兜底封面
 python scripts/generate_weixin_article.py --make-fallback-cover --assets-dir assets

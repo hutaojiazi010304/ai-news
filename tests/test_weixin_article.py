@@ -138,15 +138,16 @@ def offline_session() -> MagicMock:
     return session
 
 
-def make_text_router(reason=None, scene=None):
+def make_text_router(reason=None, scene=None, translate=None):
     """Mock module-level requests.post (text completions).
 
-    Only reading-guide and cover-scene generation may hit the text API (the
-    title is a fixed template), so any other call fails the test. Returns
+    Only reading-guide, cover-scene generation and the English-title
+    backfill translation may hit the text API (the article title is a
+    fixed template), so any other call fails the test. Returns
     (side_effect, counters). A spec may be a MagicMock response, an exception
     instance (raised), or a callable(counters) -> response.
     """
-    calls = {"reason": 0, "scene": 0}
+    calls = {"reason": 0, "scene": 0, "translate": 0}
 
     def side_effect(url, **kwargs):
         payload = kwargs.get("json") or {}
@@ -154,6 +155,8 @@ def make_text_router(reason=None, scene=None):
         system = str(((messages or [{}])[0] or {}).get("content") or "")
         if "插画设计师" in system:
             which, spec = "scene", scene
+        elif "地道的简体中文" in system:
+            which, spec = "translate", translate
         elif "值得读" in system:
             which, spec = "reason", reason
         else:
@@ -1187,3 +1190,350 @@ def test_dry_run_writes_nothing():
         assert rc == 0
         assert not output_dir.exists()
         assert calls["reason"] == 1  # full pipeline ran, nothing persisted
+
+
+# ---------------------------------------------------------------------------
+# English-title backfill translation
+# ---------------------------------------------------------------------------
+
+EN_STORY_TITLE = "Advancing price-performance for developers with GPT-5.6 in Kiro"
+ZH_STORY_TRANSLATION = "GPT-5.6 接入 Kiro，为开发者提升模型性价比"
+
+
+def test_title_needs_translation_rules():
+    assert gwa.title_needs_translation(EN_STORY_TITLE) is True
+    assert gwa.title_needs_translation(
+        "OpenAI is building AI agents for everything. Will everyone use them?"
+    ) is True
+    # Chinese part survives strip_english_tail: nothing to translate.
+    assert gwa.title_needs_translation("中文标题 / English Title") is False
+    assert gwa.title_needs_translation("纯中文标题") is False
+    # Non-prose strings pass through: translating them yields garbage.
+    assert gwa.title_needs_translation("v2.1.245") is False
+    assert gwa.title_needs_translation("") is False
+
+
+def test_validate_title_translation_bounds():
+    assert gwa.validate_title_translation(EN_STORY_TITLE, ZH_STORY_TRANSLATION) is True
+    # No CJK / identical to the original / degenerate / too long / URL.
+    assert gwa.validate_title_translation(EN_STORY_TITLE, "still all english") is False
+    assert gwa.validate_title_translation(EN_STORY_TITLE, EN_STORY_TITLE) is False
+    assert gwa.validate_title_translation(EN_STORY_TITLE, "短") is False
+    assert gwa.validate_title_translation(EN_STORY_TITLE, "字" * 91) is False
+    assert gwa.validate_title_translation(EN_STORY_TITLE, "译文带链接 http://x.com") is False
+
+
+def test_english_title_translated_rendered_and_cached():
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(
+            tmp,
+            [
+                make_item(
+                    1,
+                    title=EN_STORY_TITLE,
+                    summary="这是一段足够长的摘要内容，用于生成推荐语。",
+                ),
+                make_item(2, summary="这是另一段足够长的摘要内容，用于生成推荐语。"),
+            ],
+        )
+        make_static_asset(assets_dir)
+        output_dir = Path(tmp) / "weixin"
+        base_args = [
+            "--data-dir", str(data_dir),
+            "--output-dir", str(output_dir),
+            "--assets-dir", str(assets_dir),
+        ]
+
+        side_effect, calls = make_text_router(
+            reason=text_response(LONG_GENERATED_REASON),
+            scene=text_response(COVER_SCENE_TEXT),
+            translate=text_response(ZH_STORY_TRANSLATION),
+        )
+        rc = run_patched(BASE_ENV, side_effect, offline_session(), base_args)
+
+        assert rc == 0
+        assert calls["translate"] == 1
+        html_text = (output_dir / "index.html").read_text(encoding="utf-8")
+        assert ZH_STORY_TRANSLATION in html_text
+        assert EN_STORY_TITLE not in html_text
+        cache = read_json(output_dir / "reason-cache.json")
+        tt_key = gwa.TITLE_TRANSLATE_CACHE_PREFIX + gwa.title_hash(EN_STORY_TITLE)
+        assert cache["entries"][tt_key]["zh_title"] == ZH_STORY_TRANSLATION
+
+        # Second run: translation comes from the cache, no new API call.
+        side_effect, second_calls = make_text_router(
+            reason=AssertionError("reasons are cached too"),
+            scene=text_response(COVER_SCENE_TEXT),
+            translate=AssertionError("cached translation must not be regenerated"),
+        )
+        rc = run_patched(BASE_ENV, side_effect, offline_session(), base_args)
+        assert rc == 0
+        assert second_calls["translate"] == 0
+        html_text = (output_dir / "index.html").read_text(encoding="utf-8")
+        assert ZH_STORY_TRANSLATION in html_text
+
+
+def test_english_title_kept_without_key():
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(
+            tmp, [make_item(1, title=EN_STORY_TITLE, reason=LONG_EXISTING_REASON)]
+        )
+        make_static_asset(assets_dir)
+        output_dir = Path(tmp) / "weixin"
+
+        with patch.dict("os.environ", {}, clear=True):
+            rc = run_main(data_dir, output_dir, assets_dir)
+
+        assert rc == 0
+        html_text = (output_dir / "index.html").read_text(encoding="utf-8")
+        assert EN_STORY_TITLE in html_text
+
+
+def test_translation_failure_keeps_original_title():
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(
+            tmp,
+            [
+                make_item(
+                    1,
+                    title=EN_STORY_TITLE,
+                    summary="这是一段足够长的摘要内容，用于生成推荐语。",
+                )
+            ],
+        )
+        make_static_asset(assets_dir)
+        output_dir = Path(tmp) / "weixin"
+        # The model echoes the English original: validation must reject it
+        # and the item keeps its untranslated title.
+        side_effect, calls = make_text_router(
+            reason=text_response(LONG_GENERATED_REASON),
+            scene=text_response(COVER_SCENE_TEXT),
+            translate=text_response(EN_STORY_TITLE),
+        )
+
+        rc = run_patched(
+            BASE_ENV,
+            side_effect,
+            offline_session(),
+            [
+                "--data-dir", str(data_dir),
+                "--output-dir", str(output_dir),
+                "--assets-dir", str(assets_dir),
+            ],
+        )
+
+        assert rc == 0
+        assert calls["translate"] == 1
+        html_text = (output_dir / "index.html").read_text(encoding="utf-8")
+        assert EN_STORY_TITLE in html_text
+
+
+def test_bilingual_title_triggers_no_translation():
+    bilingual = "阿里发布全新大模型 / Alibaba Releases a New Large Model"
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(
+            tmp,
+            [
+                make_item(
+                    1,
+                    title=bilingual,
+                    summary="这是一段足够长的摘要内容，用于生成推荐语。",
+                )
+            ],
+        )
+        make_static_asset(assets_dir)
+        output_dir = Path(tmp) / "weixin"
+        side_effect, calls = make_text_router(
+            reason=text_response(LONG_GENERATED_REASON),
+            scene=text_response(COVER_SCENE_TEXT),
+            translate=AssertionError("bilingual titles need no translation"),
+        )
+
+        rc = run_patched(
+            BASE_ENV,
+            side_effect,
+            offline_session(),
+            [
+                "--data-dir", str(data_dir),
+                "--output-dir", str(output_dir),
+                "--assets-dir", str(assets_dir),
+            ],
+        )
+
+        assert rc == 0
+        assert calls["translate"] == 0
+        html_text = (output_dir / "index.html").read_text(encoding="utf-8")
+        assert "阿里发布全新大模型" in html_text
+        assert "Alibaba Releases" not in html_text
+
+
+# ---------------------------------------------------------------------------
+# --regenerate: re-roll guides by display number / fragment / story id
+# ---------------------------------------------------------------------------
+
+def test_match_regenerate_specs():
+    items = [
+        {"story_id": "story_1", "title": "连线、运行、部署：Gradio 中的 AI 工作流实战"},
+        {
+            "story_id": "story_2",
+            "title": "GPT-5.6 接入 Kiro，为开发者提升模型性价比",
+            "title_pre_translate": EN_STORY_TITLE,
+        },
+        {"story_id": "story_3", "title": "第三条中文标题"},
+    ]
+    # Display positions: Arabic digits and circled digits, out-of-range misses.
+    assert gwa.match_regenerate(items, ["2"]) == ({"story_2"}, [])
+    assert gwa.match_regenerate(items, ["③"]) == ({"story_3"}, [])
+    assert gwa.match_regenerate(items, ["9"]) == (set(), ["9"])
+    # Exact story id.
+    assert gwa.match_regenerate(items, ["story_1"]) == ({"story_1"}, [])
+    # Title fragments: Chinese display title, pre-translation English title,
+    # case-insensitive.
+    assert gwa.match_regenerate(items, ["连线"]) == ({"story_1"}, [])
+    assert gwa.match_regenerate(items, ["price-performance"]) == ({"story_2"}, [])
+    assert gwa.match_regenerate(items, ["gpt-5.6"]) == ({"story_2"}, [])
+    # 'all' selects everything.
+    assert gwa.match_regenerate(items, ["ALL"]) == (
+        {"story_1", "story_2", "story_3"},
+        [],
+    )
+    # Multiple specs accumulate; unknown specs are reported untouched.
+    wanted, unmatched = gwa.match_regenerate(items, ["1", "不存在的片段"])
+    assert wanted == {"story_1"}
+    assert unmatched == ["不存在的片段"]
+
+
+def test_regenerate_by_display_number_re_rolls_one_guide():
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(
+            tmp,
+            [
+                make_item(1, score=90, summary="这是第一条足够长的摘要内容，用于生成推荐语。"),
+                make_item(2, score=80, summary="这是第二条足够长的摘要内容，用于生成推荐语。"),
+            ],
+        )
+        make_static_asset(assets_dir)
+        output_dir = Path(tmp) / "weixin"
+        base_args = [
+            "--data-dir", str(data_dir),
+            "--output-dir", str(output_dir),
+            "--assets-dir", str(assets_dir),
+        ]
+
+        side_effect, calls = make_text_router(
+            reason=text_response(LONG_GENERATED_REASON),
+            scene=text_response(COVER_SCENE_TEXT),
+        )
+        rc = run_patched(BASE_ENV, side_effect, offline_session(), base_args)
+        assert rc == 0
+        assert calls["reason"] == 2
+
+        # Only the item named by its display number is re-rolled.
+        side_effect, second = make_text_router(
+            reason=text_response(LONG_GENERATED_REASON),
+            scene=text_response(COVER_SCENE_TEXT),
+        )
+        rc = run_patched(
+            BASE_ENV, side_effect, offline_session(), base_args + ["--regenerate", "②"]
+        )
+        assert rc == 0
+        assert second["reason"] == 1
+
+
+def test_regenerate_matches_translated_display_title():
+    """The maintainer reads the Chinese display title in the article, so a
+    fragment of the on-the-fly translation must match — and the English
+    original must keep matching too."""
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(
+            tmp,
+            [
+                make_item(
+                    1,
+                    title=EN_STORY_TITLE,
+                    summary="这是一段足够长的摘要内容，用于生成推荐语。",
+                )
+            ],
+        )
+        make_static_asset(assets_dir)
+        output_dir = Path(tmp) / "weixin"
+        base_args = [
+            "--data-dir", str(data_dir),
+            "--output-dir", str(output_dir),
+            "--assets-dir", str(assets_dir),
+        ]
+
+        side_effect, calls = make_text_router(
+            reason=text_response(LONG_GENERATED_REASON),
+            scene=text_response(COVER_SCENE_TEXT),
+            translate=text_response(ZH_STORY_TRANSLATION),
+        )
+        rc = run_patched(BASE_ENV, side_effect, offline_session(), base_args)
+        assert rc == 0
+        assert calls["translate"] == 1 and calls["reason"] == 1
+
+        # Chinese fragment of the translated display title.
+        side_effect, second = make_text_router(
+            reason=text_response(LONG_GENERATED_REASON),
+            scene=text_response(COVER_SCENE_TEXT),
+            translate=AssertionError("translation is cached"),
+        )
+        rc = run_patched(
+            BASE_ENV, side_effect, offline_session(), base_args + ["--regenerate", "接入 Kiro"]
+        )
+        assert rc == 0
+        assert second["translate"] == 0
+        assert second["reason"] == 1  # matched and re-rolled
+
+        # English fragment of the pre-translation title still matches too.
+        side_effect, third = make_text_router(
+            reason=text_response(LONG_GENERATED_REASON),
+            scene=text_response(COVER_SCENE_TEXT),
+            translate=AssertionError("translation is cached"),
+        )
+        rc = run_patched(
+            BASE_ENV,
+            side_effect,
+            offline_session(),
+            base_args + ["--regenerate", "price-performance"],
+        )
+        assert rc == 0
+        assert third["reason"] == 1
+
+
+def test_regenerate_miss_prints_menu_and_changes_nothing(capsys):
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(
+            tmp, [make_item(1, summary="这是一段足够长的摘要内容，用于生成推荐语。")]
+        )
+        make_static_asset(assets_dir)
+        output_dir = Path(tmp) / "weixin"
+        base_args = [
+            "--data-dir", str(data_dir),
+            "--output-dir", str(output_dir),
+            "--assets-dir", str(assets_dir),
+        ]
+        side_effect, calls = make_text_router(
+            reason=text_response(LONG_GENERATED_REASON),
+            scene=text_response(COVER_SCENE_TEXT),
+        )
+        rc = run_patched(BASE_ENV, side_effect, offline_session(), base_args)
+        assert rc == 0 and calls["reason"] == 1
+
+        # A mistyped spec must not fail silently: nothing is re-rolled and
+        # stderr lists the numbered items for a retry.
+        side_effect, second = make_text_router(
+            reason=AssertionError("nothing may be re-rolled on a miss"),
+            scene=text_response(COVER_SCENE_TEXT),
+        )
+        capsys.readouterr()  # drop run-1 output
+        rc = run_patched(
+            BASE_ENV, side_effect, offline_session(), base_args + ["--regenerate", "不存在的片段"]
+        )
+        assert rc == 0
+        assert second["reason"] == 0
+        err = capsys.readouterr().err
+        assert "未命中" in err
+        assert "测试新闻标题 1" in err
+
+

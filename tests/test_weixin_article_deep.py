@@ -67,16 +67,17 @@ LONG_DEEP_REASON = (
 THIN_SUMMARY = "这是一段很短的摘要，不足以支撑精读导读。"
 
 
-def make_deep_text_router(reason=None, scene=None, mark=None):
+def make_deep_text_router(reason=None, scene=None, mark=None, translate=None):
     """Route text completions by system-prompt markers.
 
     「精读」marks the deep guide prompt (NOT 「转述」 — 1.0's prompt contains
     「转述其观点」 and would collide); 「插画设计师」 marks the cover scene;
     「校对员」 marks the highlight pass, which by default (mark=None) echoes
-    the guide back unchanged — no highlights, text preserved verbatim.
+    the guide back unchanged — no highlights, text preserved verbatim;
+    「地道的简体中文」 marks the English-title backfill translation.
     Any other call fails the test.
     """
-    calls = {"reason": 0, "scene": 0, "mark": 0}
+    calls = {"reason": 0, "scene": 0, "mark": 0, "translate": 0}
 
     def side_effect(url, **kwargs):
         payload = kwargs.get("json") or {}
@@ -84,6 +85,8 @@ def make_deep_text_router(reason=None, scene=None, mark=None):
         system = str(((messages or [{}])[0] or {}).get("content") or "")
         if "插画设计师" in system:
             which, spec = "scene", scene
+        elif "地道的简体中文" in system:
+            which, spec = "translate", translate
         elif "精读" in system:
             which, spec = "reason", reason
         elif "校对员" in system:
@@ -360,6 +363,68 @@ def test_regenerate_flag_forces_regeneration(tmp_path):
     )
     assert rc == 0
     assert second_calls["reason"] == 1  # 缓存被清除 → 重新生成
+
+
+def test_regenerate_by_number_and_chinese_fragment(tmp_path):
+    """The maintainer-friendly specs: a display number, or a fragment of the
+    Chinese title as READ in the article (which only exists after the
+    on-the-fly translation — matching must run late enough to see it)."""
+    en_title = "Wire It, Run It, Deploy It: AI Workflows in Gradio"
+    zh_title = "Gradio 串起 AI 工作流：接线、运行、部署一步到位"
+    data_dir, assets_dir = write_fixture(
+        tmp_path, [make_item(1, title=en_title, summary=DEEP_SUMMARY)]
+    )
+    make_static_asset(assets_dir)
+    main_dir = tmp_path / "weixin"
+    seed_main_cover(main_dir)
+    deep_dir = tmp_path / "weixin-deep"
+    args = [
+        "--data-dir", str(data_dir),
+        "--output-dir", str(deep_dir),
+        "--main-output-dir", str(main_dir),
+        "--assets-dir", str(assets_dir),
+        "--no-images",
+    ]
+
+    side_effect, first_calls = make_deep_text_router(
+        reason=text_response(LONG_DEEP_REASON),
+        translate=text_response(zh_title),
+    )
+    run_deep_patched(BASE_ENV, side_effect, offline_session(), args)
+    assert first_calls["reason"] == 1 and first_calls["translate"] == 1
+
+    # Re-roll by display number; the translation stays cached.
+    side_effect, second_calls = make_deep_text_router(
+        reason=text_response(LONG_DEEP_REASON),
+        translate=AssertionError("translation is cached"),
+    )
+    rc = run_deep_patched(
+        BASE_ENV, side_effect, offline_session(), args + ["--regenerate", "1"]
+    )
+    assert rc == 0
+    assert second_calls["reason"] == 1 and second_calls["translate"] == 0
+
+    # Re-roll by a Chinese display-title fragment.
+    side_effect, third_calls = make_deep_text_router(
+        reason=text_response(LONG_DEEP_REASON),
+        translate=AssertionError("translation is cached"),
+    )
+    rc = run_deep_patched(
+        BASE_ENV, side_effect, offline_session(), args + ["--regenerate", "接线、运行"]
+    )
+    assert rc == 0
+    assert third_calls["reason"] == 1
+
+    # An unmatched spec re-rolls nothing.
+    side_effect, fourth_calls = make_deep_text_router(
+        reason=AssertionError("nothing may be re-rolled on a miss"),
+        translate=AssertionError("translation is cached"),
+    )
+    rc = run_deep_patched(
+        BASE_ENV, side_effect, offline_session(), args + ["--regenerate", "不存在的片段"]
+    )
+    assert rc == 0
+    assert fourth_calls["reason"] == 0
 
 
 def test_deep_validation_bounds():
@@ -1503,3 +1568,40 @@ def test_weixin_enabled_killswitch_message(capsys, tmp_path):
         rc = gwad.main(["--data-dir", str(tmp_path), "--output-dir", str(tmp_path / "x")])
     assert rc == 0
     assert "disabled" in capsys.readouterr().out
+
+
+def test_english_title_translated_before_deep_guides(tmp_path):
+    """A pure-English story title is translated BEFORE deep guides are
+    written: the rendered title is Chinese and the guide cache key is
+    derived from the translated title."""
+    en_title = "Wire It, Run It, Deploy It: AI Workflows in Gradio"
+    zh_title = "Gradio 串起 AI 工作流：接线、运行、部署一步到位"
+    data_dir, assets_dir = write_fixture(
+        tmp_path, [make_item(1, title=en_title, summary=DEEP_SUMMARY)]
+    )
+    make_static_asset(assets_dir)
+    main_dir = tmp_path / "weixin"
+    seed_main_cover(main_dir)
+    deep_dir = tmp_path / "weixin-deep"
+    args = [
+        "--data-dir", str(data_dir),
+        "--output-dir", str(deep_dir),
+        "--main-output-dir", str(main_dir),
+        "--assets-dir", str(assets_dir),
+        "--no-images",
+    ]
+
+    side_effect, calls = make_deep_text_router(
+        reason=text_response(LONG_DEEP_REASON),
+        translate=text_response(zh_title),
+    )
+    rc = run_deep_patched(BASE_ENV, side_effect, offline_session(), args)
+
+    assert rc == 0
+    assert calls["translate"] == 1
+    html_text = (deep_dir / "index.html").read_text(encoding="utf-8")
+    assert zh_title in html_text
+    assert en_title not in html_text
+    deep_cache = read_json(deep_dir / "reason-cache.json")
+    assert gwa.cache_key("story_1", zh_title) in deep_cache["entries"]
+    assert gwa.cache_key("story_1", en_title) not in deep_cache["entries"]

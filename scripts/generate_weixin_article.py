@@ -425,6 +425,11 @@ def reason_context(item: dict, session: requests.Session | None) -> str | None:
     the script fall back to fetching the article itself.
     """
     title = str(item.get("title") or "").strip()
+    # ensure_zh_titles may have replaced item["title"] with a Chinese
+    # translation; keep comparing summaries against the original title too,
+    # so a lazy feed's summary that merely repeats the (English) title is
+    # still rejected as no-grounding.
+    title_original = WHITESPACE_RE.sub(" ", str(item.get("title_original") or "")).strip()
     candidates: list[str] = []
     primary = item.get("primary_item")
     if isinstance(primary, dict):
@@ -434,7 +439,7 @@ def reason_context(item: dict, session: requests.Session | None) -> str | None:
             candidates.append(str(src.get("summary") or ""))
     for candidate in candidates:
         grounding = summary_grounding(candidate, title)
-        if grounding:
+        if grounding and (not title_original or grounding != title_original):
             return grounding[:FULL_TEXT_MAX_CHARS]
     url = str(item.get("primary_url") or item.get("url") or "").strip()
     if url and session is not None:
@@ -604,6 +609,234 @@ def fallback_title(brand: str, now_cn: datetime, count: int) -> str:
 def make_digest(brand: str, count: int, headline: str, issue_label: str) -> str:
     digest = f"{brand}{issue_label}精选 {count} 条 AI 要闻：{headline}。更多条目见「阅读原文」。"
     return digest[:DIGEST_MAX_CHARS]
+
+
+# ---------------------------------------------------------------------------
+# English-title backfill translation
+# ---------------------------------------------------------------------------
+
+# Upstream (update_news.py add_bilingual_fields) translates English headlines
+# into bilingual "中文 / English" titles, but when that chain is down stories
+# reach the brief with pure-English titles. The article is Chinese-first, so
+# translate the residue here with the same Qwen text model that writes the
+# guides. Mirrors the upstream translation prompt: Chinese output, entities
+# (products/companies/models/people) kept verbatim in English.
+TITLE_TRANSLATE_SYSTEM_PROMPT = (
+    "你是科技新闻编辑，把英文 AI/科技新闻标题翻译成地道的简体中文，"
+    "用作微信公众号推文里的条目标题。"
+    "产品名、公司名、模型名、媒体名、人名一律保留英文原文，不翻译也不音译。"
+    "用自然的中文新闻标题表达，避免翻译腔，信息量贴近原标题。"
+    "只返回译文本身，不加引号，不加任何解释。"
+)
+TITLE_TRANSLATE_CACHE_PREFIX = "tt1|"
+TITLE_TRANSLATE_MIN_CJK = 4
+TITLE_TRANSLATE_MAX_CHARS = 90
+
+
+def title_needs_translation(title: str) -> bool:
+    """True when no Chinese survives ``strip_english_tail`` and the rest
+    still reads as English prose.
+
+    Bare version tags ("v2.1.245") and other non-prose strings are skipped:
+    translating them produces garbage, so they pass through untranslated.
+    The letter-count rule mirrors update_news.py's ``is_mostly_english``.
+    """
+    text = strip_english_tail(str(title or "").strip())
+    if not text or has_cjk(text):
+        return False
+    letters = re.findall(r"[A-Za-z]", text)
+    return len(letters) >= max(6, len(text) // 4)
+
+
+def validate_title_translation(original: str, translated: str) -> bool:
+    """Sanity bounds on a title translation candidate (fresh or cached)."""
+    text = str(translated or "").strip()
+    if not text or not has_cjk(text):
+        return False
+    if text == str(original or "").strip():
+        return False
+    if len(CJK_RE.findall(text)) < TITLE_TRANSLATE_MIN_CJK:
+        return False
+    if len(text) > TITLE_TRANSLATE_MAX_CHARS:
+        return False
+    if "http" in text:
+        return False
+    return True
+
+
+def translate_title_to_zh(title: str, cfg: Config) -> str | None:
+    """One Qwen call translating a pure-English headline; None on failure."""
+    content = call_text_api(
+        [
+            {"role": "system", "content": TITLE_TRANSLATE_SYSTEM_PROMPT},
+            {"role": "user", "content": str(title or "").strip()},
+        ],
+        cfg,
+        temperature=0.2,
+        timeout=60.0,
+    )
+    if content and validate_title_translation(title, content):
+        return content.strip()
+    return None
+
+
+def ensure_zh_titles(items: list[dict], cache: dict, cfg: Config, stats: dict) -> None:
+    """Translate pure-English story titles in place.
+
+    Runs after select_items and before guide generation in every article
+    variant, so guides, the cover headline and the rendered titles all see
+    the Chinese form. Translations are cached per original title — they are
+    layout-agnostic, so 1.0 and 2.0 share them through the shared reason
+    cache. Failures degrade to the original English title; without an API
+    key this is a no-op (the article still renders, English titles intact).
+
+    Note: rewriting ``item["title"]`` changes the guide cache key of the
+    affected stories once (story_id|title_hash), so their guides regenerate
+    on the first run after the switch — a one-time cost.
+    """
+    for item in items:
+        title = str(item.get("title") or "").strip()
+        if not title_needs_translation(title):
+            continue
+        if not cfg.get("api_key"):
+            # Keyless: nothing can translate; count so the summary line
+            # still reports how many titles stay English.
+            stats["titles_skipped"] = stats.get("titles_skipped", 0) + 1
+            continue
+        key = TITLE_TRANSLATE_CACHE_PREFIX + title_hash(title)
+        entry = cache.get("entries", {}).get(key)
+        cached = str(entry.get("zh_title") or "").strip() if isinstance(entry, dict) else ""
+        if cached and validate_title_translation(title, cached):
+            item["title_pre_translate"] = title  # keeps --regenerate fragments working
+            item["title"] = cached
+            stats["titles_cached"] = stats.get("titles_cached", 0) + 1
+            continue
+        translated = translate_title_to_zh(title, cfg)
+        if translated:
+            item["title_pre_translate"] = title  # keeps --regenerate fragments working
+            item["title"] = translated
+            cache["entries"][key] = {
+                "zh_title": translated,
+                "created_at": utcnow_iso(),
+            }
+            stats["titles_translated"] = stats.get("titles_translated", 0) + 1
+            print(f"weixin: 标题翻译：{title[:48]} → {translated}")
+        else:
+            stats["titles_skipped"] = stats.get("titles_skipped", 0) + 1
+            print(f"weixin: 标题翻译失败，保留英文原标题：{title[:48]}", file=sys.stderr)
+
+
+# ---------------------------------------------------------------------------
+# --regenerate: re-roll cached guides by display number / fragment / story id
+# ---------------------------------------------------------------------------
+
+def parse_regenerate_specs(value: str) -> list[str]:
+    """Comma-separated ``--regenerate`` value into individual specs."""
+    return [s.strip() for s in str(value or "").split(",") if s.strip()]
+
+
+def _regenerate_position(spec: str) -> int | None:
+    """Spec as a 1-based display position (``3`` or ``③``); None otherwise.
+
+    NB: ``isdigit()`` is True for ``③`` too but ``int()`` rejects it, so
+    plain digits are identified via ``isdecimal()``.
+    """
+    if spec.isdecimal():
+        return int(spec)
+    if len(spec) == 1 and spec in CIRCLED_NUMS:
+        return CIRCLED_NUMS.index(spec) + 1
+    return None
+
+
+def match_regenerate(items: list[dict], specs: list[str]) -> tuple[set, list]:
+    """Resolve ``--regenerate`` specs to story ids.
+
+    A spec may be: a display position as shown in the article (``3`` or
+    ``③`` — the selection order, which is also the 1.0/deep display order),
+    an exact story_id, or a title fragment. Fragments match
+    case-insensitively against the current display title AND the pre-
+    translation English title, so whatever a maintainer reads — in the
+    article or in the brief — works. ``all`` selects every picked item.
+    Returns ``(matched story_ids, unmatched specs)``.
+    """
+    wanted: set = set()
+    unmatched: list = []
+    for spec in specs:
+        if spec.lower() == "all":
+            wanted.update(str(it.get("story_id") or "") for it in items)
+            continue
+        position = _regenerate_position(spec)
+        if position is not None:
+            if 1 <= position <= len(items):
+                wanted.add(str(items[position - 1].get("story_id") or ""))
+            else:
+                unmatched.append(spec)
+            continue
+        lowered = spec.lower()
+        hits = []
+        for it in items:
+            story_id = str(it.get("story_id") or "")
+            if spec == story_id:
+                hits.append(story_id)
+                continue
+            haystacks = (
+                str(it.get("title") or ""),
+                str(it.get("title_pre_translate") or ""),
+                str(it.get("title_original") or ""),
+            )
+            if any(lowered in text.lower() for text in haystacks if text):
+                hits.append(story_id)
+        if hits:
+            wanted.update(hits)
+        else:
+            unmatched.append(spec)
+    wanted.discard("")
+    return wanted, unmatched
+
+
+def drop_cache_entries(cache: dict, story_ids: set) -> int:
+    """Drop cached guides for the given story ids; returns count dropped.
+
+    Used by ``--regenerate``: guide generation is stochastic sampling, so
+    quality varies run to run under an identical prompt. Re-rolling the
+    specific entries a maintainer is unhappy with is the practical quality
+    lever — no need to lower standards or regenerate the whole issue.
+    Keys are matched on the ``story_id|`` prefix only, so ``tt1|`` title
+    translations are never dropped.
+    """
+    entries = cache.get("entries") or {}
+    doomed = [k for k in entries if k.split("|", 1)[0] in story_ids]
+    for key in doomed:
+        del entries[key]
+    return len(doomed)
+
+
+def report_regenerate(
+    prefix: str, items: list[dict], wanted: set, unmatched: list, dropped: int
+) -> None:
+    """Print what --regenerate matched (or the item menu when nothing did).
+
+    A mistyped spec must not fail silently: when nothing matched, the full
+    numbered item list is printed so the maintainer can retry with a number.
+    """
+    for spec in unmatched:
+        print(f"{prefix}: --regenerate 未命中：{spec}", file=sys.stderr)
+    matched = [
+        (num, it)
+        for num, it in enumerate(items, 1)
+        if str(it.get("story_id") or "") in wanted
+    ]
+    if matched:
+        print(f"{prefix}: --regenerate 已清除 {dropped} 条缓存导读，将重新生成：")
+        for num, it in matched:
+            print(f"  {circled_number(num)} {str(it.get('title') or '')[:60]}")
+    elif unmatched:
+        print(f"{prefix}: 本期条目如下，可用序号或标题片段重试：", file=sys.stderr)
+        for num, it in enumerate(items, 1):
+            print(
+                f"  {circled_number(num)} {str(it.get('title') or '')[:60]}",
+                file=sys.stderr,
+            )
 
 
 # ---------------------------------------------------------------------------
@@ -1101,6 +1334,16 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--dry-run", action="store_true", help="run without writing any files"
     )
     parser.add_argument(
+        "--regenerate",
+        default="",
+        help=(
+            "comma-separated display numbers (3 or ③), story ids or title "
+            "fragments (中英文均可，忽略大小写): matching cached guides are "
+            "dropped before the run so they get re-rolled; 'all' re-rolls "
+            "every picked item"
+        ),
+    )
+    parser.add_argument(
         "--make-fallback-cover",
         action="store_true",
         help="generate assets/weixin-cover-fallback.png and exit",
@@ -1169,6 +1412,19 @@ def main(argv: list[str] | None = None) -> int:
     cache = load_cache(cache_path)
     stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0}
 
+    # Translate leftover pure-English titles before guides are written so the
+    # guides, the cover headline and the rendered titles all use Chinese.
+    ensure_zh_titles(items, cache, cfg, stats)
+
+    # Re-roll cached guides named via --regenerate. Runs AFTER title
+    # translation so fragments can match whatever the maintainer reads in the
+    # article (the Chinese display title or the kept-English original).
+    specs = parse_regenerate_specs(args.regenerate)
+    if specs:
+        wanted, unmatched = match_regenerate(items, specs)
+        dropped = drop_cache_entries(cache, wanted)
+        report_regenerate("weixin", items, wanted, unmatched, dropped)
+
     fill_reasons(items, cache, cfg, session, stats)
 
     headline = strip_english_tail(str(items[0].get("title") or "").strip())
@@ -1221,6 +1477,8 @@ def main(argv: list[str] | None = None) -> int:
     print(
         "weixin: items={items} reasons reused={reused} cached={cached} "
         "generated={generated} skipped={skipped} "
+        "titles translated={titles_translated} cached={titles_cached} "
+        "kept_english={titles_skipped} "
         "cover_mode={cover_mode} cover_scene={cover_scene} "
         "dry_run={dry_run}".format(
             items=len(items),
@@ -1228,6 +1486,9 @@ def main(argv: list[str] | None = None) -> int:
             cached=stats["cached"],
             generated=stats["generated"],
             skipped=stats["skipped"],
+            titles_translated=stats.get("titles_translated", 0),
+            titles_cached=stats.get("titles_cached", 0),
+            titles_skipped=stats.get("titles_skipped", 0),
             cover_mode=cover_mode,
             cover_scene=1 if cover_scene else 0,
             dry_run=1 if args.dry_run else 0,

@@ -27,6 +27,10 @@ and ``generate_weixin_article_grouped.py`` (2.0, grouped boxes). It keeps the
   redistribution. Rendered AFTER the guide, centered at
   ``DEEP_IMAGE_WIDTH_PERCENT`` of the column width.
 - Title/digest: fixed templates ("今日精读N条"), no LLM, as in 1.0/2.0.
+  Per-story titles get the shared ``ensure_zh_titles`` backfill (1.0 logic):
+  pure-English titles left over by a broken upstream translation chain are
+  translated with Qwen before guides and rendering, cached in this variant's
+  own cache (``tt1|`` entries); failures keep the English title as-is.
 - Cover: the top story's own downloaded illustration, center-cropped to
   2.35:1; when the top story has no image, the next item in selection
   order (score-descending) that has one. Only when NO item carries an
@@ -83,11 +87,16 @@ try:  # imported as part of the repo package (tests)
         circled_number,
         create_session,
         crop_cover,
+        drop_cache_entries,
+        ensure_zh_titles,
         esc,
         existing_reason,
         has_cjk,
         item_original_url,
         load_brief,
+        match_regenerate,
+        parse_regenerate_specs,
+        report_regenerate,
         resolve_cover,
         save_cache,
         select_items,
@@ -119,11 +128,16 @@ except ImportError:  # run directly as a script
         circled_number,
         create_session,
         crop_cover,
+        drop_cache_entries,
+        ensure_zh_titles,
         esc,
         existing_reason,
         has_cjk,
         item_original_url,
         load_brief,
+        match_regenerate,
+        parse_regenerate_specs,
+        report_regenerate,
         resolve_cover,
         save_cache,
         select_items,
@@ -329,21 +343,6 @@ def load_deep_cache(path: Path) -> dict:
     return {"version": DEEP_CACHE_VERSION, "entries": entries}
 
 
-def drop_cache_entries(cache: dict, story_ids: set) -> int:
-    """Drop cached guides for the given story ids; returns count dropped.
-
-    Used by ``--regenerate``: guide generation is stochastic sampling, so
-    quality varies run to run under an identical prompt. Re-rolling the
-    specific entries a maintainer is unhappy with is the practical quality
-    lever — no need to lower standards or regenerate the whole issue.
-    """
-    entries = cache.get("entries") or {}
-    doomed = [k for k in entries if k.split("|", 1)[0] in story_ids]
-    for key in doomed:
-        del entries[key]
-    return len(doomed)
-
-
 # ---------------------------------------------------------------------------
 # Deep guides
 # ---------------------------------------------------------------------------
@@ -418,6 +417,11 @@ def deep_reason_context(
     recommendation widgets below it can never leak into the grounding.
     """
     title = str(item.get("title") or "").strip()
+    # ensure_zh_titles may have replaced item["title"] with a Chinese
+    # translation; keep comparing summaries against the original title too,
+    # so a lazy feed's summary that merely repeats the (English) title is
+    # still rejected as no-grounding.
+    title_original = re.sub(r"\s+", " ", str(item.get("title_original") or "")).strip()
     candidates: list[str] = []
     primary = item.get("primary_item")
     if isinstance(primary, dict):
@@ -427,6 +431,8 @@ def deep_reason_context(
             candidates.append(str(src.get("summary") or ""))
     for candidate in candidates:
         grounding = summary_grounding(candidate, title)
+        if title_original and grounding == title_original:
+            grounding = None
         if grounding and len(grounding) >= DEEP_SUMMARY_MIN_GROUNDING_CHARS:
             return grounding[:FULL_TEXT_MAX_CHARS]
     url = str(item.get("primary_url") or item.get("url") or "").strip()
@@ -1541,11 +1547,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--regenerate",
         default="",
         help=(
-            "comma-separated story ids or title fragments: matching cached "
-            "guides are dropped before the run so they get re-rolled; "
-            "'all' clears the whole deep cache (guide generation is "
-            "stochastic — this is the lever for re-rolling entries whose "
-            "quality you are unhappy with)"
+            "comma-separated display numbers (3 or ③), story ids or title "
+            "fragments (中英文均可，忽略大小写): matching cached guides are "
+            "dropped before the run so they get re-rolled; 'all' re-rolls "
+            "every picked item"
         ),
     )
     parser.add_argument(
@@ -1598,24 +1603,19 @@ def main(argv: list[str] | None = None) -> int:
     cache = load_deep_cache(cache_path)
     stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0}
 
-    regenerate = [s.strip() for s in str(args.regenerate or "").split(",") if s.strip()]
-    if regenerate:
-        wanted: set = set()
-        for spec in regenerate:
-            if spec.lower() == "all":
-                wanted = {str(it.get("story_id") or "") for it in items}
-                break
-            for it in items:
-                story_id = str(it.get("story_id") or "")
-                if story_id and (
-                    spec == story_id or spec in str(it.get("title") or "")
-                ):
-                    wanted.add(story_id)
+    # Translate leftover pure-English titles before deep guides are written,
+    # so guides, the cover headline and the rendered titles all use Chinese.
+    ensure_zh_titles(items, cache, cfg, stats)
+
+    # Re-roll cached guides named via --regenerate. Runs AFTER title
+    # translation so fragments can match the Chinese display titles the
+    # maintainer reads in the article (the pre-translation English title is
+    # kept on the item and matches too).
+    specs = parse_regenerate_specs(args.regenerate)
+    if specs:
+        wanted, unmatched = match_regenerate(items, specs)
         dropped = drop_cache_entries(cache, wanted)
-        print(
-            f"weixin-deep: --regenerate 已清除 {dropped} 条缓存导读，将重新生成",
-            flush=True,
-        )
+        report_regenerate("weixin-deep", items, wanted, unmatched, dropped)
 
     fill_deep_reasons(items, cache, cfg, session, stats, net_state)
 
@@ -1703,7 +1703,9 @@ def main(argv: list[str] | None = None) -> int:
     print(
         "weixin-deep: items={items} sections={sections} "
         "reasons reused={reused} cached={cached} generated={generated} "
-        "skipped={skipped} images found={found} missed={missed} "
+        "skipped={skipped} titles translated={titles_translated} "
+        "cached={titles_cached} kept_english={titles_skipped} "
+        "images found={found} missed={missed} "
         "cover_mode={cover_mode} cover_scene={cover_scene} "
         "elapsed={elapsed:.0f}s dry_run={dry_run}".format(
             items=len(items),
@@ -1715,6 +1717,9 @@ def main(argv: list[str] | None = None) -> int:
             cached=stats["cached"],
             generated=stats["generated"],
             skipped=stats["skipped"],
+            titles_translated=stats.get("titles_translated", 0),
+            titles_cached=stats.get("titles_cached", 0),
+            titles_skipped=stats.get("titles_skipped", 0),
             found=images_found,
             missed=images_missed,
             cover_mode=cover_mode,

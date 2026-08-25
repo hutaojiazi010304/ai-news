@@ -20,7 +20,8 @@ Shared assets (by design, confirmed as product decisions):
 - Reason cache: read/written from the main variant's output dir
   (``weixin/reason-cache.json``). Guides are per-item and layout-agnostic,
   so whichever variant runs first warms the cache for the other — no
-  duplicate Qwen text calls.
+  duplicate Qwen text calls. English-title backfill translations live in
+  the same cache (``tt1|`` entries) for the same reason.
 - Cover: when the main variant already produced a cover for the same issue
   date (checked via ``weixin/meta.json``), it is copied verbatim; only
   otherwise does this script fall back to the identical ``resolve_cover``
@@ -47,13 +48,18 @@ try:  # imported as part of the repo package (tests)
         build_config,
         build_meta,
         create_session,
+        drop_cache_entries,
+        ensure_zh_titles,
         esc,
         fallback_title,
         fill_reasons,
         load_brief,
         load_cache,
         make_digest,
+        match_regenerate,
+        parse_regenerate_specs,
         render_item_html,
+        report_regenerate,
         resolve_cover,
         save_cache,
         select_items,
@@ -67,13 +73,18 @@ except ImportError:  # run directly as a script
         build_config,
         build_meta,
         create_session,
+        drop_cache_entries,
+        ensure_zh_titles,
         esc,
         fallback_title,
         fill_reasons,
         load_brief,
         load_cache,
         make_digest,
+        match_regenerate,
+        parse_regenerate_specs,
         render_item_html,
+        report_regenerate,
         resolve_cover,
         save_cache,
         select_items,
@@ -266,6 +277,17 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="max items (defaults to WEIXIN_MAX_ITEMS env or 20)",
     )
     parser.add_argument(
+        "--regenerate",
+        default="",
+        help=(
+            "comma-separated display numbers (3 or ③), story ids or title "
+            "fragments (中英文均可，忽略大小写): matching cached guides are "
+            "dropped from the SHARED cache before the run so they get "
+            "re-rolled (both variants update); 'all' re-rolls everything. "
+            "Numbers count in the overall selection order, not per section"
+        ),
+    )
+    parser.add_argument(
         "--dry-run", action="store_true", help="run without writing any files"
     )
     return parser.parse_args(argv)
@@ -306,6 +328,20 @@ def main(argv: list[str] | None = None) -> int:
     cache_path = main_output_dir / "reason-cache.json"
     cache = load_cache(cache_path)
     stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0}
+
+    # Same English-title backfill as the main variant, before guide writing.
+    # Translations live in the shared cache too, so both variants are
+    # guaranteed to show identical titles.
+    ensure_zh_titles(items, cache, cfg, stats)
+
+    # Re-roll cached guides named via --regenerate (shared cache: the main
+    # variant's copy updates too). Runs after title translation so fragments
+    # can match the Chinese display titles the maintainer actually reads.
+    specs = parse_regenerate_specs(args.regenerate)
+    if specs:
+        wanted, unmatched = match_regenerate(items, specs)
+        dropped = drop_cache_entries(cache, wanted)
+        report_regenerate("weixin-grouped", items, wanted, unmatched, dropped)
 
     fill_reasons(items, cache, cfg, session, stats)
 
@@ -369,7 +405,9 @@ def main(argv: list[str] | None = None) -> int:
     print(
         "weixin-grouped: items={items} sections={sections} "
         "reasons reused={reused} cached={cached} generated={generated} "
-        "skipped={skipped} cover_mode={cover_mode} cover_scene={cover_scene} "
+        "skipped={skipped} titles translated={titles_translated} "
+        "cached={titles_cached} kept_english={titles_skipped} "
+        "cover_mode={cover_mode} cover_scene={cover_scene} "
         "dry_run={dry_run}".format(
             items=len(items),
             sections=",".join(
@@ -380,6 +418,9 @@ def main(argv: list[str] | None = None) -> int:
             cached=stats["cached"],
             generated=stats["generated"],
             skipped=stats["skipped"],
+            titles_translated=stats.get("titles_translated", 0),
+            titles_cached=stats.get("titles_cached", 0),
+            titles_skipped=stats.get("titles_skipped", 0),
             cover_mode=cover_mode,
             cover_scene=1 if cover_scene else 0,
             dry_run=1 if args.dry_run else 0,
