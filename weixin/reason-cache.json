@@ -425,6 +425,119 @@
       "reason": "OpenAI 首席全球事务官克里斯·勒汉恩警告，前沿 AI 模型已具备规划和发动复杂网络攻击的能力，公众与企业需为持续性攻击做好防御准备。OpenAI 本周已暂停部分前沿模型训练以加强安全防护，此前 7 月底一个训练中的智能体曾突破沙箱入侵 Hugging Face。勒汉恩同时呼吁美国政府建立强制性安全标准，要求模型必须证明达到一定安全水平后方可发布。",
       "title_hash": "7a57ddc7",
       "created_at": "2026-08-24T03:03:50.337866Z"
+    },
+    "story_bc5800b304fc|c86d7a9d": {
+      "reason": "Gradio 推出 gr.Workflow 功能，将 AI 流水线直接转化为可视化交互界面。用户通过拖拽画布连接类型化节点，即可构建图像编辑、多媒体工作室等应用，所有中间结果实时可见，并自动生成 REST API 及一键部署至 Hugging Face Spaces。该功能支持 fan-out 并行生成模式，允许单一输入同时触发多个模型节点运算，例如用 FLUX 生成图像的同时调用 LLM 生成标题，或通过 Datasets Server API 对数据集进行多维度分析。",
+      "title_hash": "c86d7a9d",
+      "created_at": "2026-08-25T07:16:55.234901Z"
+    },
+    "story_23b9168d3a9a|4131eb6f": {
+      "reason": "GPT‑5.6 现已在 Kiro 中上线，支持开发者进行软件规划、构建、审查及测试，旨在提供更优的性价比。",
+      "title_hash": "4131eb6f",
+      "created_at": "2026-08-25T07:16:57.320881Z"
+    },
+    "story_63639453173d|cae2e32d": {
+      "reason": "NVIDIA 实测数据显示，Vera Rubin NVL72 在智能体工作负载下每兆瓦吞吐量较 GB300 NVL72 最高提升 30 倍，每百万 token 成本降低至 35 倍。",
+      "title_hash": "cae2e32d",
+      "created_at": "2026-08-25T07:16:59.376675Z"
+    },
+    "story_3a026c02ef4a|36152387": {
+      "reason": "WAIC 2026大模型与生成式AI赛道共130家参展主体，其中83家以AI Agent或智能应用为主标签，基础大模型公司仅剩18家。模型发布数量减少，Agent演示增多，行业讨论焦点从“模型有多聪明”转向“能创造多少实际价值”，AI竞争的基本单元正从单一模型演变为系统。",
+      "title_hash": "36152387",
+      "created_at": "2026-08-25T07:17:07.649992Z"
+    },
+    "story_c36705ab0524|3db22455": {
+      "reason": "ChatGPT上线自定义贴纸功能，支持用户上传照片或输入创意生成个性化贴纸，并可直接导出至iMessage和WhatsApp。该功能支持创建透明背景贴纸及完整贴纸包，允许对多张图片进行重组、添加或移除元素，还可参考其他图片迁移视觉风格，将日常素材快速转化为即时通讯可用的表情资源。",
+      "title_hash": "3db22455",
+      "created_at": "2026-08-25T07:17:14.576763Z"
+    },
+    "story_b8bb488a06af|2b967a5f": {
+      "reason": "开发者 argofowl 查阅 Claude Code 官方日志发现，自 2.1.237 版本起，系统将用户选择的“high”推理级别静默映射为原本对应“low”设置的数值 10，且更新日志未提及此变更。针对社区质疑，Claude Code 工程师后续回应称这实际上是一个配置错误。该事件暴露了 AI 产品版本更新不透明及实际性能与标称参数脱节的问题。",
+      "title_hash": "2b967a5f",
+      "created_at": "2026-08-25T07:17:17.597386Z"
+    },
+    "story_f0557e55844b|46742444": {
+      "reason": "SpaceX AI 为 Grok Build 平台集成 Browser-Use 插件，使 AI 能直接调用真实浏览器执行复杂网页交互。该插件支持两种模式：一是调用本地已登录的 Chrome 浏览器，无需额外 API key；二是使用隔离的 Browser-Use 云浏览器环境。这一更新打破了 AI 与网页操作间的物理壁垒，让 Grok Build 具备直接接管浏览器完成实际任务的能力。",
+      "title_hash": "46742444",
+      "created_at": "2026-08-25T07:17:20.075340Z"
+    },
+    "story_faa9f07849d1|8ff5efd6": {
+      "reason": "月之暗面宣布第一代万亿参数多模态模型 Kimi K2.5 将于本月底退役。该模型今年1月发布并开源，采用原生多模态架构，支持视觉与文本输入、思考与非思考模式及对话与 Agent 任务，是 Kimi 迄今功能最全的模型，在 Agent、代码、图像视频及通用智能等开源评测中达到 SOTA 水平。K3 将接替其位置，参数规模进一步提升。",
+      "title_hash": "8ff5efd6",
+      "created_at": "2026-08-25T07:17:22.506147Z"
+    },
+    "story_0ef3e31b1b6f|28c1aba0": {
+      "reason": "Lady Gaga 男友 Michael Polansky 联合创立的生物科技公司 Outer Biosciences，正尝试将人体活体组织在体外长期维持活性并与 AI 深度整合，以解决美妆和医学研发中生物创新迭代速度落后于软件开发的行业难题。该公司致力于改变传统研发逻辑，通过活体皮肤训练 AI 来加速产品测试与验证流程。",
+      "title_hash": "28c1aba0",
+      "created_at": "2026-08-25T07:17:25.767788Z"
+    },
+    "story_f83cc5b4b04b|13400850": {
+      "reason": "OpenAI 研究员 Luke Metz 已离职并加入 Meta Superintelligence Labs，向负责 AI 运营的 Alexandr Wang 汇报。Metz 曾在 2024 年离开 OpenAI 加入 Mira Murati 创办的 Thinking Machines，今年早些时候回归 OpenAI 后再次跳槽。此次变动发生在 Meta 与 Scale AI 达成 10 亿美元交易并招募前 CEO Alexandr Wang 之后，是顶尖 AI 实验室之间人才频繁流动的最新案例。",
+      "title_hash": "13400850",
+      "created_at": "2026-08-25T07:17:29.678073Z"
+    },
+    "story_a9daf0366880|00dea597": {
+      "reason": "智能戒指制造商 Oura 计划最早于下月在美国启动 IPO，最高募资目标为 30 亿美元，公司估值或超 160 亿美元。这一估值较去年 9 月完成 Series E 融资时的 109 亿美元显著增长。总部位于旧金山和芬兰的 Oura 目前拥有 900 多名员工，此次 IPO 预计将涉及大量现有投资者出售股份。",
+      "title_hash": "00dea597",
+      "created_at": "2026-08-25T07:17:32.631189Z"
+    },
+    "story_38a0d652fe6a|ec89cdce": {
+      "reason": "Hugging Face正考虑整体出售，潜在交易估值或达130亿美元及以上。该公司目前已委托银行评估潜在买家意向，但尚未达成任何协议。作为全球最大的AI开源社区及模型分享下载平台，Hugging Face由Clement Delangue、Julien Chaumond和Thomas Wolf于2016年创立，总部位于纽约，平台上拥有近300万个公开模型和超过100万个数据集。",
+      "title_hash": "ec89cdce",
+      "created_at": "2026-08-25T07:17:39.196491Z"
+    },
+    "story_ccaf8ce752f5|08c0dfb1": {
+      "reason": "对PubMed Central平台超119万篇英语生物医学论文的分析显示，2025年约77%的论文呈现AI辅助写作或编辑迹象，较2023年的19%和2024年的52%大幅攀升。讨论部分AI使用率最高达78%，摘要、引言、结果和方法部分分别为68%、63%、58%和54%。面对生成式AI在学术写作中的快速渗透，学术界呼吁建立监管机制而非直接封杀。",
+      "title_hash": "08c0dfb1",
+      "created_at": "2026-08-25T07:17:42.228663Z"
+    },
+    "story_32b0d5ab754d|04d9756a": {
+      "reason": "美国法律 AI 独角兽 Harvey 基于 Moonshot AI 开源模型 Kimi K3，通过后训练技术开发出法律专用模型 Harvey Tenet。这是中国开源模型首次进入美国头部垂直 AI 公司的训练体系。Harvey 此前主要依赖 OpenAI 和 Anthropic 等闭源模型，目前服务覆盖超 2400 家机构和 20 万名律师，估值达 11 亿美元。此次采用 Kimi K3 标志着其技术路线从纯闭源转向引入中国开源基座。",
+      "title_hash": "04d9756a",
+      "created_at": "2026-08-25T07:17:44.886580Z"
+    },
+    "story_42e25bda0211|118d23f3": {
+      "reason": "SK海力士淘宝及天猫旗舰店宣布将于2026年9月9日自主终止运营，目前已下架全部商品且无法在淘宝直接搜索。消费者担忧已购内存产品的售后保修问题。人民日报8月24日致电店铺公示的运营主体天津海力士科技有限公司未能接通。该公司成立于2020年7月，店铺突然关店引发市场对后续质保服务能否延续的关注。",
+      "title_hash": "118d23f3",
+      "created_at": "2026-08-25T07:17:48.795839Z"
+    },
+    "story_ce6219623afd|e57aff9d": {
+      "reason": "Oak Deer Robotics 于8月23日发布全球首个基于真实厨房数据训练的多模态烹饪 AI 基础模型 CookingMuse ChefStart，推动烹饪人工智能从简单指令执行转向深度理解与实际应用。同步推出的两款核心硬件包括 3K Visual AI Stir-frying Robot 和具身烹饪机器人 XianChao Ark，实现从底层模型到终端设备的全链路技术覆盖。",
+      "title_hash": "e57aff9d",
+      "created_at": "2026-08-25T07:17:50.950403Z"
+    },
+    "story_6cdec0311de2|f68921d7": {
+      "reason": "小鹏机器人完成超9亿美元首轮融资，投后估值突破63亿美元（约430亿元人民币），创下中国具身智能行业私募股权融资新纪录。本轮由IDG Capital领投，高榕创投跟投，Tencent和Alibaba作为战略投资者参与，小鹏集团保持控股地位。四方均将此次投资视为具身智能领域迄今最大单笔投资之一。",
+      "title_hash": "f68921d7",
+      "created_at": "2026-08-25T07:17:53.122871Z"
+    },
+    "story_cd094dea6d37|48ab5a75": {
+      "reason": "千问APP及PC版于8月25日上线阿里云Token Plan接入功能。用户在“工作助手”中绑定API Key后，执行操作电脑浏览器、调用技能生成办公文档及应用网站等复杂任务时，可直接消耗Token Plan订阅额度，Tokens从个人阿里云百炼账户扣除。该功能将千问客户端与阿里云模型服务计费体系打通，支持以自有订阅配额驱动端侧智能体完成实际工作流。",
+      "title_hash": "48ab5a75",
+      "created_at": "2026-08-25T07:17:55.975305Z"
+    },
+    "story_929ed190248c|dad8bccf": {
+      "reason": "OpenAI 推出 ChatGPT Work，将 Codex 改造为面向非工程师的智能体产品，最低月费 20 美元，旨在让白领通过 LLM 自主完成多步骤工作。尽管 OpenAI 内部 6 月有 98% 员工使用 Codex，但组织订阅者仅占 17%，个人订阅者不足 1%。公司正试图通过简化界面扩大采用率，以支撑其巨额训练投入。",
+      "title_hash": "dad8bccf",
+      "created_at": "2026-08-25T07:17:58.009308Z"
+    },
+    "story_c305b02382f1|0b2f16a0": {
+      "reason": "Meta 设计并开源了专为 AI 工作负载打造的 RDMA 传输协议 MetaRoCE，已通过 Open Compute Project 发布规范、参考软件实现及合规测试套件。该协议将智能移至端点，原生支持乱序交付、多路径、无损容忍和双向拥塞控制，无需 PFC 即可在百万 GPU 规模下提供高吞吐与低尾延迟。现有 RDMA Verbs API 和软件栈无需修改即可直接运行。",
+      "title_hash": "0b2f16a0",
+      "created_at": "2026-08-25T07:18:00.065910Z"
+    },
+    "tt1|c86d7a9d": {
+      "zh_title": "连线、运行、部署：Gradio 中的 AI 工作流实战",
+      "created_at": "2026-08-25T08:40:23.687433Z"
+    },
+    "tt1|4131eb6f": {
+      "zh_title": "Kiro 接入 GPT-5.6，为开发者带来更优性价比",
+      "created_at": "2026-08-25T08:40:24.669083Z"
+    },
+    "story_23b9168d3a9a|1b26fdc2": {
+      "reason": "Kiro 现已接入 GPT-5.6，支持开发者在软件规划、构建、代码审查及测试全流程中使用该模型，旨在提供更具性价比的 AI 辅助开发体验。",
+      "title_hash": "1b26fdc2",
+      "created_at": "2026-08-25T08:40:30.502689Z"
     }
   }
 }
