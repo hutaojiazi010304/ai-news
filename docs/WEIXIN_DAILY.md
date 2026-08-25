@@ -128,12 +128,15 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
    ```cmd
    set HTTPS_PROXY=http://127.0.0.1:7897
    set HTTP_PROXY=http://127.0.0.1:7897
-   set NO_PROXY=dashscope.aliyuncs.com,aliyuncs.com
+   set NO_PROXY=dashscope.aliyuncs.com,aliyuncs.com,aibase.com,chinaz.com
    ```
 
    **`NO_PROXY` 必须一起设**：千问是国内服务，被代理中转会打断 SSL、
-   导读生成失败（详见 FAQ「精读版跑了很久没输出/没结果」）。1.0/2.0
-   的摘要兜底抓取同样受益于代理，不设也能跑（境外条目按降级处理）。
+   导读生成失败（详见 FAQ「精读版跑了很久没输出/没结果」）；aibase 与
+   插图 CDN（chinaz）同属国内，走代理同样会 SSL 失败导致插图抓不到
+   （脚本对这两类请求已内置直连重试兜底，设了 `NO_PROXY` 只是省掉
+   一次必然失败的代理尝试）。1.0/2.0 的摘要兜底抓取同样受益于代理，
+   不设也能跑（境外条目按降级处理）。
 
    PowerShell 用 `$env:DASHSCOPE_API_KEY="你的key"`（代理同理
    `$env:HTTPS_PROXY=…`），macOS/Linux 用 `export …`。
@@ -153,8 +156,10 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
    `cover_scene=0` 说明场景翻译失败、封面主题回退为原始头条。
    分组版汇总另有 `sections=` 各组条数；精读版运行时逐条打印进度
    （导读/插图各一行），汇总形如
-   `items=10 … images found=N missed=M cover_mode=reused elapsed=…s`，
-   `images missed` 是抓不到原文插图的条数（正常现象，该条无图出刊）。
+   `items=10 … images found=N missed=M cover_mode=item elapsed=…s`，
+   `images missed` 是抓不到原文插图的条数（正常现象，该条无图出刊）；
+   `cover_mode=item` 表示封面取自头条（或按评分降序第一个有图的）条目
+   插图，`reused`/`static` 表示整期无图走了旧兜底。
 
 4. 打开 `weixin/index.html` 检查各条导读、原文链接，以及底部辅助区块里的标题/摘要
    （分组版/精读版同样检查各自的 `index.html`，精读版还要看图与「图源」行）。
@@ -233,13 +238,27 @@ python scripts/generate_weixin_article_grouped.py --data-dir data --output-dir w
 - **导读质量与重掷**：导读由千问现场采样生成，提示词与参数不变时每次
   跑出的文稿也有天然差异（细节取舍、句式），属正常现象。某条不满意时
   不必整期重跑，用 `--regenerate` 只重掷该条（见本地调试）
-- **插图**：出刊时逐条抓原文页（直连，403/空页走 r.jina.ai 兜底），取正文
-  第一张合格大图（跳过 logo/图标/追踪像素等），存到 `weixin-deep/images/`
-  并在图下自动加「图源：{域名}」。原文没图或抓不到 → 该条无图，属正常
-  降级；不做 AI 补图。有 Pillow 时统一压到 ≤1080 宽、JPEG q82，仓库每天
-  约增长 1–3MB
+- **插图**：出刊时逐条抓原文页（直连，403/空页走 r.jina.ai 兜底），先定位
+  正文范围（优先取 `<article>` 元素；页面没有该标签时按「AI News
+  Recommendations / 推荐阅读 / 相关推荐」等推荐区标题截断），再取正文内
+  第一张合格大图——推荐区缩略图不进候选（旧逻辑整页扫描，正文图下载
+  一旦抖动就会错抓推荐新闻的图），跳过 logo/图标/追踪像素等，存到
+  `weixin-deep/images/` 并在图下自动加「图源：{域名}」。排版上图片放在
+  该条**导读之后**，按 65% 宽等比缩小、居中显示、不带圆角（宽度用脚本
+  常量 `DEEP_IMAGE_WIDTH_PERCENT` 调整）。**正文完全没图时的推荐区借用**：
+  用页面自身 H1 与推荐卡的标题（`<img alt>`）做二元组相似度比对，最高分
+  ≥ 0.65 且领先第二名 ≥ 0.08（`REC_BORROW_MIN_SCORE` /
+  `REC_BORROW_MIN_MARGIN`）才借用该卡的图，日志注明「推荐区同题报道」，
+  `meta.json` 里该图标 `borrowed: true`；比对用页面 H1 而非中文标题
+  （推荐卡标题是页面语言，aibase 为英文，跨语言永远配不上）。宁缺毋错：
+  同产品不同事件、两张图难分伯仲等情况一律保持无图。正文没图且无可借用
+  → 该条无图，属正常降级；不做 AI 补图。有 Pillow 时统一压到 ≤1080 宽、
+  JPEG q82，仓库每天约增长 1–3MB
 - **标题/摘要**：固定模板「AI 雷达 · X月X日｜今日精读N条」，不调千问
-- **封面**：复用正式版当天封面（同分组版逻辑）
+- **封面**：优先用**头条条目抓到的原文插图**中心裁切成 2.35:1
+  （1664×708，复用 1.0 的 `crop_cover`）；头条没图时按评分降序取第一条有
+  图的条目插图；整期都没图才回退旧链路（复用正式版当天封面 / 1.0 生图 /
+  静态兜底）。汇总日志 `cover_mode=item` 即「用了条目插图」
 - **取图不需要千问 key**：无 key 也能跑插图；只是导读会退化为数据里已有的
   推荐语
 
@@ -303,14 +322,16 @@ python -m pytest tests/test_weixin_article.py tests/test_weixin_article_grouped.
     ```cmd
     set HTTPS_PROXY=http://127.0.0.1:7897
     set HTTP_PROXY=http://127.0.0.1:7897
-    set NO_PROXY=dashscope.aliyuncs.com,aliyuncs.com
+    set NO_PROXY=dashscope.aliyuncs.com,aliyuncs.com,aibase.com,chinaz.com
     ```
 
     **`NO_PROXY` 必须一起设**：千问是国内服务，被代理中转会打断 SSL
-    （日志出现 `text api failed … SSLError`），导读退化为空白。代理开启后
-    境外页面与 r.jina.ai 可达，境外条目也能取图、生成导读；浏览器打不开
-    原文页不影响脚本（脚本不依赖你的浏览器，直连被拒时由 r.jina.ai 在它
-    自己的服务器上取回正文和图片链接）。
+    （日志出现 `text api failed … SSLError`），导读退化为空白；aibase 与
+    插图 CDN 同属国内，走代理也会 SSL 失败、插图整批抓空（脚本已内置
+    直连重试兜底）。代理开启后境外页面与 r.jina.ai 可达，境外条目也能
+    取图、生成导读；浏览器打不开原文页不影响脚本（脚本不依赖你的浏
+    览器，直连被拒时由 r.jina.ai 在它自己的服务器上取回正文和图片链
+    接）。
 - **改了白名单，为什么旧故事的标签也变了？** 类别由云端管线在故事创建时
   落盘，白名单改动不会改写已在盘上的旧数据；但出刊时推文脚本会按当前白名单
   复核并纠正（只升为「官方更新」），所以两个排版版本立即生效。云端管线本身

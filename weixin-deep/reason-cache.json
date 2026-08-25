@@ -45,6 +45,11 @@
       "reason": "针对近期大量用户反馈的 Codex 用量消耗过快问题，OpenAI Codex & ChatGPT 团队负责人 Thibault Sottiaux 在社交平台回应，宣布将于太平洋时间明日14:00左右【统一重置所有订阅用户的用量额度】。据 AIbase 报道，OpenAI 专项调查组已查明导致此次异常消耗的【三项具体技术原因】：其一是在长会话中频繁使用图片并经历多次上下文压缩时，底层运行效率显著下降；其二是资源占用出现异常。官方将通过此次额度重置与Bug修复解决上述技术问题。",
       "title_hash": "82a804d4",
       "created_at": "2026-08-24T09:01:02.060126Z"
+    },
+    "story_a31e711ee9db|101a7735": {
+      "reason": "【Codex CLI 发布 0.149.1 版本】，同时 【codex mcp-server 命令已被弃用】，官方建议改用 Codex app server，Claude Code 用户需使用 Codex plugin for Claude Code。据 Official AI Updates 披露，本次更新伴随多项功能上线：macOS 端 ChatGPT 桌面应用新增 Apple Messages 插件，支持读取、搜索及发送信息，默认需用户审批；Site 协作允许所有者邀请同工作区成员为编辑者，编辑者可读取实时数据库、更新内容并发布变更；所有者现可直接修改 Site 的 ChatGPT 托管地址，旧地址自动重定向；Computer History 功能面向欧洲经济区、瑞士及英国的 ChatGPT Pro、Business 和 Enterprise 用户开放，默认关闭且需管理员启用；所有 Codex 计划支持从 macOS 桌面应用分享本地线程的只读快照，系统会自动脱敏已知密钥模式但建议人工复核；此外还实现了跨桌面端与 iOS 的统一置顶会话功能。",
+      "title_hash": "101a7735",
+      "created_at": "2026-08-25T01:06:21.770853Z"
     }
   }
 }

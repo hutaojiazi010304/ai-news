@@ -14,13 +14,24 @@ and ``generate_weixin_article_grouped.py`` (2.0, grouped boxes). It keeps the
   1.0/2.0 cache keys only on story_id+title, so reusing it would hit the
   stale short guides forever and the new style would never take effect.
 - Images: each item gets ONE real illustration pulled from its original
-  article page at publish time (direct fetch, r.jina.ai fallback). Articles
-  without a usable image simply render without one; no AI-generated filler.
-  Images are saved under ``images/`` (committed, served by Pages) with a
-  「图源：domain」credit line for internal redistribution.
+  article page at publish time (direct fetch, r.jina.ai fallback).
+  Extraction is scoped to the article body (<article> element, or the page
+  cut at a recommendation heading) so related-news thumbnails can never
+  substitute for body art. When the body has NO image at all and the
+  page's recommendation widget carries a card whose title clearly reports
+  the same story (matched against the page's own headline, double-gated
+  by score and margin), that card's image is borrowed — a same-topic
+  illustration beats none; near-misses keep the item image-less. No
+  AI-generated filler. Images are saved under ``images/`` (committed,
+  served by Pages) with a 「图源：domain」credit line for internal
+  redistribution. Rendered AFTER the guide, centered at
+  ``DEEP_IMAGE_WIDTH_PERCENT`` of the column width.
 - Title/digest: fixed templates ("今日精读N条"), no LLM, as in 1.0/2.0.
-- Cover: reused from the main variant for the same issue date (2.0 logic),
-  otherwise the identical 1.0 ``resolve_cover`` pipeline.
+- Cover: the top story's own downloaded illustration, center-cropped to
+  2.35:1; when the top story has no image, the next item in selection
+  order (score-descending) that has one. Only when NO item carries an
+  image does it fall back to same-day reuse from the main variant (2.0
+  logic) / the identical 1.0 ``resolve_cover`` pipeline.
 
 Design constraints mirror 1.0/2.0: standalone JSON-file interface, exit 0 on
 every graceful path, keyless runs degrade (upstream reasons, static cover,
@@ -34,7 +45,8 @@ Output (default ``weixin-deep/``):
                         strips external images and they are re-inserted
                         manually for the internal service account)
 - ``meta.json``         layout="deep", sections census, per-story images map
-- ``cover.jpg|.png``    2.35:1 cover (reused or regenerated)
+- ``cover.jpg|.png``    2.35:1 cover (top item's illustration first; reused
+                        or regenerated only when no item has an image)
 - ``reason-cache.json`` deep-guide cache (21-day TTL, independent)
 - ``images/``           one downloaded article image per story that has one
 """
@@ -48,6 +60,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -69,6 +82,7 @@ try:  # imported as part of the repo package (tests)
         call_text_api,
         circled_number,
         create_session,
+        crop_cover,
         esc,
         existing_reason,
         has_cjk,
@@ -104,6 +118,7 @@ except ImportError:  # run directly as a script
         call_text_api,
         circled_number,
         create_session,
+        crop_cover,
         esc,
         existing_reason,
         has_cjk,
@@ -179,10 +194,31 @@ IMAGE_MIN_DIMENSION = 120
 IMAGE_MAX_WIDTH = 1080
 IMAGE_JPEG_QUALITY = 82
 MAX_IMAGE_CANDIDATES = 10
+# Display width of the article image relative to the text column. Full-width
+# pictures dominate the short deep items, so the image renders AFTER the
+# guide, shrunk to this percent (aspect ratio kept) and centered; tweak
+# here, nowhere else.
+DEEP_IMAGE_WIDTH_PERCENT = 65
+
+# Recommendation-widget image borrowing: considered ONLY when the body scope
+# yields zero image candidates. A card's title (its <img alt>) is compared
+# against the page's OWN headline — not the brief title, which is translated
+# while card titles come in the page language (English on aibase), so a
+# cross-language pair could never match. Thresholds measured on live aibase
+# pages: same-story pairs scored 0.72-0.76, the closest near-miss (a related
+# but different story about the same product) 0.59, unrelated cards <= 0.28.
+# The winner must clear the floor AND lead the runner-up by the margin, so
+# "same product, different event" cards never borrow into the wrong article;
+# a genuine two-card cluster stays ambiguous and the item keeps no image.
+REC_BORROW_MIN_SCORE = 0.65
+REC_BORROW_MIN_MARGIN = 0.08
+# Card alt texts shorter than this are chrome, not a recommendation title.
+REC_CARD_MIN_ALT_CHARS = 4
 
 IMG_TAG_RE = re.compile(r"<img\b[^>]*>", re.IGNORECASE)
 ATTR_RE = re.compile(r"([\w-]+)\s*=\s*(\"[^\"]*\"|'[^']*'|[^\s>]+)", re.IGNORECASE)
 MD_IMAGE_RE = re.compile(r"!\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
+H1_TAG_RE = re.compile(r"<h1\b[^>]*>(.*?)</h1>", re.IGNORECASE | re.DOTALL)
 
 # Attribute precedence for lazy-loaded pages; the first non-empty wins.
 IMAGE_SRC_ATTRS = ("src", "data-src", "data-original", "data-lazy-src")
@@ -197,6 +233,24 @@ IMAGE_URL_SKIP_MARKERS = (
     "loading", "spinner", "sprite", "tracking", "beacon",
 )
 IMAGE_EXT_BLOCKLIST = (".svg", ".ico")
+
+# Body scoping for image/grounding extraction. News sites (aibase among
+# them) wrap the article in an <article> element while the "related news"
+# widget ("AI News Recommendations") lives OUTSIDE it, so whole-page
+# scanning let recommendation thumbnails win whenever the body image failed
+# to download. Prefer the longest <article>; on pages without one, cut the
+# page at the first recommendation heading instead (HTML <hN> or markdown
+# #). No signal at all → whole page, i.e. the legacy behavior.
+ARTICLE_TAG_RE = re.compile(r"<article\b[^>]*>.*?</article>", re.IGNORECASE | re.DOTALL)
+REC_HEADING_RE = (
+    r"AI\s*News\s*Recommendations|推荐阅读|相关推荐|相关阅读|为你推荐|猜你喜欢"
+)
+REC_HEADING_HTML_RE = re.compile(
+    rf"<h[1-6][^>]*>\s*(?:{REC_HEADING_RE})\s*</h[1-6]>", re.IGNORECASE
+)
+REC_HEADING_MD_RE = re.compile(
+    rf"^#{{1,6}}\s*(?:{REC_HEADING_RE})\s*$", re.IGNORECASE | re.MULTILINE
+)
 
 DEEP_REASON_SYSTEM_PROMPT = (
     "你是科技新闻编辑，负责把一篇具体文章的核心内容转述成一段「精读导读」，"
@@ -359,10 +413,9 @@ def deep_reason_context(
     150-350-char report needs real substance: summaries under 120 chars
     degrade to a live fetch of the article, whose text is usually richer.
 
-    The fetch is a bounded re-implementation of 1.0's fetch_full_text chain
-    (same direct → r.jina.ai order, same strip/threshold rules) instead of a
-    call into it: the shared helper buffers whole bodies under per-chunk
-    timeouts only, and this variant must never stall (see bounded_get).
+    The fetch goes through fetch_page_html (direct → r.jina.ai, both under
+    hard wall-clock deadlines) and is scoped to the article body, so
+    recommendation widgets below it can never leak into the grounding.
     """
     title = str(item.get("title") or "").strip()
     candidates: list[str] = []
@@ -379,17 +432,11 @@ def deep_reason_context(
     url = str(item.get("primary_url") or item.get("url") or "").strip()
     if not url.startswith(("http://", "https://")) or session is None:
         return None
-    try:
-        payload = bounded_get(session, url, PAGE_FETCH_TIMEOUT, PAGE_MAX_BYTES)
-    except requests.RequestException:
-        payload = None
-    if payload is None:
-        payload = fetch_jina_bytes(
-            session, url, PAGE_FETCH_TIMEOUT, PAGE_MAX_BYTES, net_state
-        )
+    payload = fetch_page_html(session, url, net_state)
     if payload is None:
         return None
-    text = strip_html_text(payload.decode("utf-8", errors="replace"))
+    body, kind = payload
+    text = strip_html_text(scope_to_article_body(body, kind))
     if len(text) >= FULL_TEXT_MIN_CHARS:
         return text[:FULL_TEXT_MAX_CHARS]
     return None
@@ -702,6 +749,48 @@ def fetch_jina_bytes(
     return payload
 
 
+# When the publisher's terminal exports HTTPS_PROXY (needed for overseas
+# originals), domestic hosts (aibase pages, the chinaz image CDN) ride the
+# proxy too and can die there — observed: SSLError on upload.chinaz.com,
+# whole-page failures on www.aibase.com. A second session that ignores the
+# environment restores the true-direct route as a fallback. It is only
+# touched after the env-routed attempt fails, so overseas behavior and
+# proxy-less runs are unchanged.
+_DIRECT_SESSION: requests.Session | None = None
+
+
+def env_proxy_configured() -> bool:
+    return any(
+        os.environ.get(key)
+        for key in ("HTTPS_PROXY", "https_proxy", "HTTP_PROXY", "http_proxy")
+    )
+
+
+def direct_session() -> requests.Session:
+    global _DIRECT_SESSION
+    if _DIRECT_SESSION is None:
+        _DIRECT_SESSION = create_session()
+        _DIRECT_SESSION.trust_env = False
+    return _DIRECT_SESSION
+
+
+def bounded_get_alt_route(
+    session: requests.Session | None,
+    url: str,
+    timeout: float,
+    max_bytes: int,
+    accept=None,
+) -> bytes | None:
+    """Retry ``bounded_get`` on the true-direct route; None when there is no
+    alternate route (no env proxy) or it also fails."""
+    if session is None or not env_proxy_configured():
+        return None
+    try:
+        return bounded_get(direct_session(), url, timeout, max_bytes, accept=accept)
+    except requests.RequestException:
+        return None
+
+
 def fetch_page_html(
     session: requests.Session | None,
     url: str,
@@ -721,6 +810,10 @@ def fetch_page_html(
         payload = bounded_get(session, url, timeout, PAGE_MAX_BYTES)
     except requests.RequestException:
         payload = None
+    if payload is None:
+        # The env proxy can break domestic hosts; try the direct route
+        # before spending the r.jina.ai fallback on it.
+        payload = bounded_get_alt_route(session, url, timeout, PAGE_MAX_BYTES)
     if payload is not None:
         text = payload.decode("utf-8", errors="replace")
         if len(text) >= PAGE_MIN_HTML_CHARS:
@@ -803,16 +896,41 @@ def absolutize_image_url(url: str, base_url: str) -> str:
     return url
 
 
+def scope_to_article_body(text: str, kind: str = "html") -> str:
+    """Restrict extraction to the article body; whole page when unlocatable.
+
+    The longest <article> element wins (recommendation cards on some sites
+    use <article> too, but the body is the longest one). Cutting at a
+    recommendation heading is the fallback for pages without semantic
+    markup and for reader-proxy markdown.
+    """
+    if kind == "html":
+        articles = ARTICLE_TAG_RE.findall(str(text or ""))
+        if articles:
+            return max(articles, key=len)
+        cut = REC_HEADING_HTML_RE.search(str(text or ""))
+        if cut:
+            return str(text)[: cut.start()]
+    else:
+        cut = REC_HEADING_MD_RE.search(str(text or ""))
+        if cut:
+            return str(text)[: cut.start()]
+    return str(text or "")
+
+
 def extract_image_candidates(
     payload: str, base_url: str, kind: str = "html"
 ) -> list[str]:
-    """Ordered, de-duplicated content-image candidates from a page body.
+    """Ordered, de-duplicated content-image candidates from the article body.
 
-    For reader-proxy markdown, ``![alt](url)`` links come first (the body
-    images), then any embedded raw ``<img>`` tags; for plain HTML only the
-    tags. Document order is preserved within each pass.
+    Candidates are drawn from the body scope only (see scope_to_article_body):
+    recommendation-widget thumbnails outside it never enter the list, so a
+    flaky body-image download degrades to "no image" instead of "wrong
+    image". For reader-proxy markdown, ``![alt](url)`` links come first (the
+    body images), then any embedded raw ``<img>`` tags; for plain HTML only
+    the tags. Document order is preserved within each pass.
     """
-    text = str(payload or "")
+    text = scope_to_article_body(payload, kind)
     raw: list[tuple[str, int, int]] = []
     if kind == "markdown":
         raw.extend((match.group(1), 0, 0) for match in MD_IMAGE_RE.finditer(text))
@@ -836,6 +954,132 @@ def extract_image_candidates(
         seen.add(url)
         candidates.append(url)
     return candidates
+
+
+def normalize_for_similarity(text: str) -> str:
+    """Lowercased alphanumerics + CJK only, NFKC-normalized: the comparison
+    alphabet for title matching. Everything else (punctuation, whitespace,
+    HTML-entity leftovers) is noise."""
+    lowered = unicodedata.normalize("NFKC", str(text or "")).lower()
+    return re.sub(r"[^a-z0-9一-鿿]+", "", lowered)
+
+
+def _char_bigrams(text: str) -> set[str]:
+    if not text:
+        return set()
+    if len(text) == 1:
+        return {text}
+    return {text[i : i + 2] for i in range(len(text) - 1)}
+
+
+def title_similarity(left: str, right: str) -> float:
+    """Bigram overlap coefficient in 0..1: the intersection over the SMALLER
+    side's bigram count. Size-agnostic by design — a card that re-headlines
+    half of a long compound headline still scores high."""
+    ga = _char_bigrams(normalize_for_similarity(left))
+    gb = _char_bigrams(normalize_for_similarity(right))
+    if not ga or not gb:
+        return 0.0
+    return len(ga & gb) / min(len(ga), len(gb))
+
+
+def extract_page_heading(payload: str, kind: str = "html") -> str:
+    """The page's own headline (<h1> for html, first #-line for reader
+    markdown), used for recommendation-card matching.
+
+    Deliberately NOT the brief title: card titles come in the page language
+    (English on aibase) while brief titles are translated (Chinese), so a
+    cross-language comparison could never reach the borrow threshold.
+    """
+    text = str(payload or "")
+    if kind == "html":
+        match = H1_TAG_RE.search(text)
+        if not match:
+            return ""
+        return strip_html_text(match.group(1)).strip()
+    match = re.search(r"^#\s+(.+?)\s*$", text, re.MULTILINE)
+    return match.group(1).strip() if match else ""
+
+
+def extract_rec_section(payload: str, kind: str = "html") -> str:
+    """The page region OUTSIDE the article body, where recommendation
+    widgets live. Empty when the body boundary is not identifiable —
+    without it, content images and card thumbnails are not distinguishable."""
+    if kind != "html":
+        return ""
+    text = str(payload or "")
+    body = scope_to_article_body(text, "html")
+    if not body or body == text:
+        return ""
+    return text.replace(body, "", 1)
+
+
+def extract_rec_image_cards(
+    payload: str, base_url: str, kind: str = "html"
+) -> list[tuple[str, str]]:
+    """(card title, image url) pairs from the recommendation widget.
+
+    The card's ``<img alt>`` carries the recommended article's headline —
+    the comparison text for borrowing. Images without a real alt,
+    skippable URLs (logo/icon class) and small declared dimensions drop
+    out, mirroring the body-candidate filters.
+    """
+    cards: list[tuple[str, str]] = []
+    for tag in IMG_TAG_RE.findall(extract_rec_section(payload, kind)):
+        # Unescape entities (&#x27; …) so matching and the progress log see
+        # the clean card title.
+        alt = strip_html_text(_parse_attrs(tag).get("alt") or "")
+        if len(alt) < REC_CARD_MIN_ALT_CHARS:
+            continue
+        url, width, height = image_attrs_from_tag(tag)
+        if not url:
+            continue
+        url = absolutize_image_url(url, base_url)
+        if not url or is_skippable_image_url(url):
+            continue
+        if width and width < IMAGE_MIN_DIMENSION:
+            continue
+        if height and height < IMAGE_MIN_DIMENSION:
+            continue
+        cards.append((alt, url))
+    return cards
+
+
+def pick_rec_borrow_image(
+    payload: str, base_url: str, kind: str = "html"
+) -> tuple[str, str] | None:
+    """(image url, card title) of a recommendation card clearly reporting
+    the same story as this page; None otherwise.
+
+    The match runs on the page's own headline and is double-gated
+    (REC_BORROW_MIN_SCORE plus REC_BORROW_MIN_MARGIN over the runner-up),
+    so both unrelated cards and "same product, different event" cards are
+    rejected. Cards sharing one image URL collapse into a single contender,
+    so a reused thumbnail cannot fabricate a runner-up.
+    """
+    heading = extract_page_heading(payload, kind)
+    if not heading:
+        return None
+    by_url: dict[str, tuple[float, str]] = {}
+    for alt, url in extract_rec_image_cards(payload, base_url, kind):
+        score = title_similarity(heading, alt)
+        kept = by_url.get(url)
+        if kept is None or score > kept[0]:
+            by_url[url] = (score, alt)
+    if not by_url:
+        return None
+    ranked = sorted(
+        ((score, alt, url) for url, (score, alt) in by_url.items()),
+        key=lambda entry: (entry[0], entry[1], entry[2]),
+        reverse=True,
+    )
+    best_score, best_alt, best_url = ranked[0]
+    if best_score < REC_BORROW_MIN_SCORE:
+        return None
+    runner_up = ranked[1][0] if len(ranked) > 1 else 0.0
+    if best_score - runner_up < REC_BORROW_MIN_MARGIN:
+        return None
+    return best_url, best_alt
 
 
 def credit_domain(url: str) -> str:
@@ -951,7 +1195,17 @@ def download_item_image(
                 accept=_looks_like_image_response,
             )
         except requests.RequestException:
-            continue
+            data = None
+        if data is None or len(data) < IMAGE_MIN_BYTES:
+            # Domestic CDNs can die on the env-proxy route (SSL interception);
+            # give the same candidate one true-direct attempt before moving on.
+            data = bounded_get_alt_route(
+                session,
+                candidate,
+                IMAGE_DOWNLOAD_TIMEOUT,
+                IMAGE_MAX_BYTES,
+                accept=_looks_like_image_response,
+            )
         if data is None or len(data) < IMAGE_MIN_BYTES:
             continue
         saved = save_image_bytes(data, candidate, images_dir, story_id)
@@ -982,9 +1236,19 @@ def fill_deep_images(
             fetch_page_html(session, article_url, net_state) if article_url else None
         )
         candidates: list[str] = []
+        borrowed_alt = ""
         if payload is not None:
             body, kind = payload
             candidates = extract_image_candidates(body, article_url, kind)
+            if not candidates:
+                # No body image: when the recommendation widget carries a
+                # card that clearly reports the same story, borrow ITS image
+                # — a same-topic illustration beats none. The match is
+                # double-gated; near-misses keep the item image-less.
+                borrow = pick_rec_borrow_image(body, article_url, kind)
+                if borrow:
+                    borrow_url, borrowed_alt = borrow
+                    candidates = [borrow_url]
         story_id = str(item.get("story_id") or "").strip() or title_hash(
             str(item.get("title") or "")
         )
@@ -993,10 +1257,13 @@ def fill_deep_images(
             rel_path, credit = result
             item["deep_image"] = rel_path
             item["deep_image_credit"] = credit
+            if borrowed_alt:
+                item["deep_image_borrowed"] = True
             written.add(Path(rel_path).name)
             found += 1
+            note = f"，推荐区同题报道「{borrowed_alt[:30]}」" if borrowed_alt else ""
             print(
-                f"weixin-deep: [{i}/{total}] 插图：{rel_path}（图源：{credit}）",
+                f"weixin-deep: [{i}/{total}] 插图：{rel_path}（图源：{credit}{note}）",
                 flush=True,
             )
         else:
@@ -1015,6 +1282,33 @@ def fill_deep_images(
                 except OSError:
                     pass
     return found, missed
+
+
+def resolve_deep_cover(
+    items: list[dict], output_dir: Path
+) -> tuple[bytes, str, str] | None:
+    """(bytes, "cover.jpg", rel image path) for the deep cover; None if no
+    item carries an illustration (caller falls back to the 1.0 chain).
+
+    The deep cover IS a real article image: the top story's illustration
+    first, else the next item in selection order (score-descending) that
+    has one, center-cropped to the shared 2.35:1 cover format. Readers see
+    the day's headline art, not a generated scene or another variant's
+    cover.
+    """
+    for item in items:
+        rel = str(item.get("deep_image") or "").strip()
+        if not rel:
+            continue
+        try:
+            data = (Path(output_dir) / rel).read_bytes()
+        except OSError:
+            continue
+        cropped = crop_cover(data)
+        if cropped is None:
+            continue
+        return cropped, "cover.jpg", rel
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -1064,13 +1358,19 @@ def render_deep_item_html(item: dict, idx: int, accent_color: str) -> str:
         '<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;'
         f'color:#1f1f1f;">{circled_number(idx + 1)} {esc(title)}</p>'
     )
+    if reason:
+        parts.append(
+            '<p style="margin:10px 0 0;font-size:15px;line-height:1.8;'
+            f'color:#555555;">{render_deep_reason_html(reason, accent_color)}</p>'
+        )
     image_path = str(item.get("deep_image") or "").strip()
     if image_path:
         credit = str(item.get("deep_image_credit") or "").strip()
         parts.append('<section style="margin:12px 0 0;">')
         parts.append(
             f'<img src="{esc(image_path)}" alt="" '
-            'style="width:100%;display:block;border-radius:8px;">'
+            f'style="width:{DEEP_IMAGE_WIDTH_PERCENT}%;display:block;'
+            'margin:0 auto;">'
         )
         if credit:
             parts.append(
@@ -1078,11 +1378,6 @@ def render_deep_item_html(item: dict, idx: int, accent_color: str) -> str:
                 f'color:#b2b2b2;text-align:center;">图源：{esc(credit)}</p>'
             )
         parts.append("</section>")
-    if reason:
-        parts.append(
-            '<p style="margin:10px 0 0;font-size:15px;line-height:1.8;'
-            f'color:#555555;">{render_deep_reason_html(reason, accent_color)}</p>'
-        )
     if len(sources) > 1:
         # Same merged-source line as 1.0: "标题（Buzzing, NewsNow, …）".
         line_title = title
@@ -1332,13 +1627,19 @@ def main(argv: list[str] | None = None) -> int:
     title = deep_title(cfg["brand"], now_cn, len(items))
     digest = make_deep_digest(cfg["brand"], len(items), headline, issue_label)
 
-    cover_bytes, cover_filename = reuse_cover(main_output_dir, issue_date)
-    if cover_bytes is not None:
-        cover_mode, cover_scene = "reused", False
+    item_cover = resolve_deep_cover(items, output_dir)
+    if item_cover is not None:
+        cover_bytes, cover_filename, cover_rel = item_cover
+        cover_mode, cover_scene = "item", False
+        print(f"weixin-deep: 封面：采用条目插图 {cover_rel}", flush=True)
     else:
-        cover_bytes, cover_filename, cover_mode, cover_scene = resolve_cover(
-            headline, cfg, session, assets_dir
-        )
+        cover_bytes, cover_filename = reuse_cover(main_output_dir, issue_date)
+        if cover_bytes is not None:
+            cover_mode, cover_scene = "reused", False
+        else:
+            cover_bytes, cover_filename, cover_mode, cover_scene = resolve_cover(
+                headline, cfg, session, assets_dir
+            )
 
     groups = group_items(items)
     html_text = render_deep_article_html(
@@ -1368,11 +1669,14 @@ def main(argv: list[str] | None = None) -> int:
         }
         for category, group in groups
     ]
-    # Per-story image map, ready for future API draft delivery.
+    # Per-story image map, ready for future API draft delivery. "borrowed"
+    # marks images taken from a same-story recommendation card instead of
+    # the article body (the only place illustration provenance matters).
     meta["images"] = {
         str(item.get("story_id") or ""): {
             "file": str(item.get("deep_image") or ""),
             "credit": str(item.get("deep_image_credit") or ""),
+            "borrowed": bool(item.get("deep_image_borrowed")),
         }
         for item in items
         if item.get("deep_image")

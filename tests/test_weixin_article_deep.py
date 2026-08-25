@@ -599,6 +599,23 @@ def test_deep_grounding_summary_threshold():
     assert gwad.deep_reason_context(nothing, None) is None
 
 
+def test_deep_grounding_scoped_to_article_body():
+    # Recommendation-widget text below the body must not leak into the
+    # guide grounding.
+    thin_item = make_item(2, summary=THIN_SUMMARY)
+    body = (
+        "<article><p>" + "这是抓回来的正文内容，用来补足摘要的信息量。" * 20 + "</p></article>"
+        "<h3>AI News Recommendations</h3>"
+        "<p>推荐新闻标题不应进入导读取材。</p>"
+    )
+    session = FakeSession(text=body)
+
+    grounding = gwad.deep_reason_context(thin_item, session)
+
+    assert grounding and "抓回来的正文内容" in grounding
+    assert "推荐新闻标题" not in grounding
+
+
 def test_keyless_degradation_uses_upstream_reason(tmp_path):
     upstream = (
         "上游管线已经写好的较长推荐语：这次发布带来了新的接口与更高的吞吐，"
@@ -682,9 +699,418 @@ def test_extract_image_candidates_cap_and_dedup():
     assert len(set(candidates)) == len(candidates)
 
 
+def test_extract_image_candidates_scopes_to_article_body():
+    # Recommendation-widget thumbnails live OUTSIDE <article>; they must not
+    # become candidates even though they precede nothing and follow the body.
+    base = "https://site.example.com/news/1"
+    html = (
+        '<img src="https://cdn.example.com/logo.png">'
+        "<article><p>body</p>"
+        '<img src="https://cdn.example.com/body.jpg" width="800">'
+        "</article>"
+        '<h3 class="text-xl">AI News Recommendations</h3>'
+        '<img src="https://cdn.example.com/rec1.jpg" width="500">'
+        '<img src="https://cdn.example.com/rec2.jpg" width="500">'
+    )
+
+    assert gwad.extract_image_candidates(html, base, "html") == [
+        "https://cdn.example.com/body.jpg"
+    ]
+
+
+def test_extract_image_candidates_longest_article_wins():
+    # Recommendation cards may use <article> too; the body is the longest one.
+    base = "https://site.example.com/news/1"
+    html = (
+        "<article>"
+        '<img src="https://cdn.example.com/teaser.jpg" width="500">'
+        "</article>"
+        "<article><p>" + "正文。" * 30 + "</p>"
+        '<img src="https://cdn.example.com/body.jpg" width="800">'
+        "</article>"
+        "<article>"
+        '<img src="https://cdn.example.com/card.jpg" width="500">'
+        "</article>"
+    )
+
+    assert gwad.extract_image_candidates(html, base, "html") == [
+        "https://cdn.example.com/body.jpg"
+    ]
+
+
+def test_extract_image_candidates_cuts_at_recommendation_heading():
+    base = "https://site.example.com/news/1"
+    html = (
+        '<img src="https://cdn.example.com/body.jpg" width="800">'
+        '<h2 class="x">推荐阅读</h2>'
+        '<img src="https://cdn.example.com/rec.jpg" width="500">'
+    )
+    markdown = (
+        "![body](https://cdn.example.com/body.jpg)\n"
+        "## AI News Recommendations\n"
+        "![rec](https://cdn.example.com/rec.jpg)\n"
+    )
+
+    assert gwad.extract_image_candidates(html, base, "html") == [
+        "https://cdn.example.com/body.jpg"
+    ]
+    assert gwad.extract_image_candidates(markdown, base, "markdown") == [
+        "https://cdn.example.com/body.jpg"
+    ]
+
+
+def test_extract_image_candidates_no_body_signal_keeps_whole_page():
+    base = "https://site.example.com/news/1"
+    html = (
+        '<img src="https://cdn.example.com/a.jpg" width="800">'
+        '<img src="https://cdn.example.com/b.jpg" width="800">'
+    )
+
+    assert gwad.extract_image_candidates(html, base, "html") == [
+        "https://cdn.example.com/a.jpg",
+        "https://cdn.example.com/b.jpg",
+    ]
+
+
+# ---------------------------------------------------------------------------
+# Recommendation-card image borrowing
+# ---------------------------------------------------------------------------
+
+GOOD_CARD_ALT = "Google Gemma Downloads Exceed One Billion Barrier!"
+UNRELATED_CARD_ALT = "Apple Announces New MacBook Air Lineup Today"
+
+
+def html_response(html: str) -> MagicMock:
+    """Streaming mock for a page fetch (bounded_get reads via iter_content)."""
+    response = MagicMock()
+    response.status_code = 200
+    response.iter_content.return_value = [html.encode("utf-8")]
+    return response
+
+
+def borrow_page(heading: str, cards: list[tuple[str, str]]) -> str:
+    """Page shape mirroring aibase: an image-less <article> body followed by
+    recommendation cards (title in the img alt, thumbnail as src)."""
+    card_html = "".join(
+        f'<a target="_blank" href="/news/{30000 + n}">'
+        f'<img alt="{alt}" src="{src}"></a>'
+        for n, (alt, src) in enumerate(cards)
+    )
+    return (
+        "<html><head><title>title</title></head><body>"
+        f"<h1>{heading}</h1>"
+        "<article><p>" + "纯文字正文，没有任何图片。" * 20 + "</p></article>"
+        '<h3 class="text-xl">AI News Recommendations</h3>'
+        f"{card_html}</body></html>"
+    )
+
+
+def test_title_similarity_bounds():
+    assert gwad.title_similarity(
+        "Google Gemma Downloads Exceed 1 Billion!",
+        "google gemma downloads exceed 1 billion",
+    ) == 1.0  # case and punctuation normalize away
+    assert gwad.title_similarity(
+        "Google Gemma Downloads Exceed One Billion Barrier",
+        "Gemma Downloads Exceed One Billion Barrier",
+    ) > gwad.REC_BORROW_MIN_SCORE
+    # Same product, different event must stay under the floor.
+    assert gwad.title_similarity(
+        "Farewell Vanity Fire! OpenAI Acts Urgently: Codex Resets Quota Tomorrow",
+        "OpenAI Fully Open Sources Codex Harness AI Project",
+    ) < gwad.REC_BORROW_MIN_SCORE
+    assert gwad.title_similarity("", "anything at all") == 0.0
+
+
+def test_extract_page_heading():
+    html = '<div><h1 class="x">All-Round <b>King</b> &amp; Co</h1><p>x</p></div>'
+    assert gwad.extract_page_heading(html, "html") == "All-Round King & Co"
+    assert gwad.extract_page_heading("<p>no heading here</p>", "html") == ""
+    assert gwad.extract_page_heading("# Deep Title\n\nbody", "markdown") == "Deep Title"
+    assert gwad.extract_page_heading("no heading line", "markdown") == ""
+
+
+def test_extract_rec_image_cards_only_outside_body():
+    page = borrow_page("Heading", [(GOOD_CARD_ALT, "https://cdn.example.com/rec.jpg")])
+    assert gwad.extract_rec_image_cards(page, "https://site.example/news/1") == [
+        (GOOD_CARD_ALT, "https://cdn.example.com/rec.jpg")
+    ]
+    # Without an identifiable body boundary there is no rec region to borrow from.
+    flat = '<h1>H</h1><img alt="' + GOOD_CARD_ALT + '" src="https://cdn.example.com/x.jpg">'
+    assert gwad.extract_rec_image_cards(flat, "https://site.example/news/1") == []
+    # Reader markdown carries no card structure.
+    assert (
+        gwad.extract_rec_image_cards(page, "https://site.example/news/1", "markdown")
+        == []
+    )
+
+
+def test_extract_rec_image_cards_unescapes_alt_entities():
+    page = borrow_page("Heading", [
+        ("Anthropic&#x27;s Flagship Model Faces Cold Reception",
+         "https://cdn.example.com/rec.jpg"),
+    ])
+    assert gwad.extract_rec_image_cards(page, "https://site.example/news/1") == [
+        ("Anthropic's Flagship Model Faces Cold Reception",
+         "https://cdn.example.com/rec.jpg"),
+    ]
+
+
+def test_extract_rec_image_cards_filters():
+    page = borrow_page("Heading", [
+        ("", "https://cdn.example.com/noalt.jpg"),                        # empty alt
+        ("ab", "https://cdn.example.com/shortalt.jpg"),                   # alt too short
+        ("A Real Card Title", "https://cdn.example.com/logo-main.png"),   # skippable URL
+        ("Another Real Card", "/rel/pic.jpg"),                            # relative
+    ])
+    assert gwad.extract_rec_image_cards(page, "https://site.example/news/1") == [
+        ("Another Real Card", "https://site.example/rel/pic.jpg")
+    ]
+
+
+def test_pick_rec_borrow_image_same_story_wins():
+    page = borrow_page(
+        "Google Gemma Downloads Exceed One Billion Barrier",
+        [
+            (GOOD_CARD_ALT, "https://cdn.example.com/same.jpg"),
+            (UNRELATED_CARD_ALT, "https://cdn.example.com/other.jpg"),
+        ],
+    )
+    assert gwad.pick_rec_borrow_image(page, "https://site.example/news/1") == (
+        "https://cdn.example.com/same.jpg",
+        GOOD_CARD_ALT,
+    )
+
+
+def test_pick_rec_borrow_image_rejects_cross_event_and_ambiguous():
+    # Same product, different event: below the score floor.
+    page = borrow_page(
+        "Farewell Vanity Fire! OpenAI Acts Urgently: Codex Resets Quota Tomorrow",
+        [
+            ("OpenAI Fully Open Sources Codex Harness AI Project",
+             "https://cdn.example.com/a.jpg"),
+            (UNRELATED_CARD_ALT, "https://cdn.example.com/b.jpg"),
+        ],
+    )
+    assert gwad.pick_rec_borrow_image(page, "https://site.example/news/1") is None
+    # Two near-identical matches with DIFFERENT images: no clear winner, the
+    # margin gate keeps the item image-less (no-image beats a wrong image).
+    page = borrow_page(
+        "Google Gemma Downloads Exceed One Billion",
+        [
+            ("Google Gemma Downloads Surpass One Billion", "https://cdn.example.com/a.jpg"),
+            ("Google Gemma Downloads Reach One Billion", "https://cdn.example.com/b.jpg"),
+        ],
+    )
+    assert gwad.pick_rec_borrow_image(page, "https://site.example/news/1") is None
+
+
+def test_pick_rec_borrow_image_shared_thumbnail_collapses():
+    # Two cards sharing one image collapse into a single contender, so the
+    # duplicate cannot eat the winner's margin.
+    shared = "https://cdn.example.com/shared.jpg"
+    page = borrow_page(
+        "Google Gemma Downloads Exceed One Billion Barrier",
+        [
+            (GOOD_CARD_ALT, shared),
+            ("Google Gemma Downloads Surpass One Billion Barrier", shared),
+            (UNRELATED_CARD_ALT, "https://cdn.example.com/other.jpg"),
+        ],
+    )
+    result = gwad.pick_rec_borrow_image(page, "https://site.example/news/1")
+    assert result is not None and result[0] == shared
+
+
+def test_pick_rec_borrow_image_needs_heading():
+    page = borrow_page("", [(GOOD_CARD_ALT, "https://cdn.example.com/same.jpg")])
+    assert gwad.pick_rec_borrow_image(page, "https://site.example/news/1") is None
+
+
+def test_resolve_deep_cover_prefers_first_item_with_image(tmp_path):
+    images_dir = tmp_path / "images"
+    images_dir.mkdir()
+    (images_dir / "story_2.jpg").write_bytes(make_png_bytes(600, 400))
+    items = [
+        {"story_id": "story_1"},  # top story has no image
+        {"story_id": "story_2", "deep_image": "images/story_2.jpg"},
+        {"story_id": "story_3", "deep_image": "images/story_3.jpg"},  # file missing
+    ]
+
+    result = gwad.resolve_deep_cover(items, tmp_path)
+
+    assert result is not None
+    cover_bytes, filename, rel = result
+    assert filename == "cover.jpg"
+    assert rel == "images/story_2.jpg"  # first item IN ORDER that has an image
+    try:
+        from PIL import Image
+
+        img = Image.open(io.BytesIO(cover_bytes))
+        assert img.size == (gwa.COVER_W, gwa.COVER_H)  # 2.35:1 crop
+    except ImportError:
+        pass
+
+    # No item with a readable image → None, the caller falls back.
+    assert (
+        gwad.resolve_deep_cover(
+            [
+                {"story_id": "story_1"},
+                {"story_id": "story_3", "deep_image": "images/story_3.jpg"},
+            ],
+            tmp_path,
+        )
+        is None
+    )
+
+
+def test_e2e_deep_cover_uses_top_item_illustration(tmp_path):
+    data_dir, assets_dir = write_fixture(
+        tmp_path, [make_item(1, summary=DEEP_SUMMARY)]
+    )
+    make_static_asset(assets_dir)
+    main_dir = tmp_path / "weixin"
+    seeded = seed_main_cover(main_dir)
+    deep_dir = tmp_path / "weixin-deep"
+    args = [
+        "--data-dir", str(data_dir),
+        "--output-dir", str(deep_dir),
+        "--main-output-dir", str(main_dir),
+        "--assets-dir", str(assets_dir),
+    ]
+    session = MagicMock()
+    session.get.side_effect = [
+        page_response('<img src="https://cdn.example.com/photo.jpg">'),
+        image_response(make_png_bytes(600, 400)),
+    ]
+    side_effect, calls = make_deep_text_router(reason=text_response(LONG_DEEP_REASON))
+
+    rc = run_deep_patched(BASE_ENV, side_effect, session, args)
+
+    assert rc == 0
+    # The cover is the headline item's own illustration cropped to 2.35:1 —
+    # NOT the seeded same-day main-variant cover.
+    saved = (deep_dir / "images" / "story_1.jpg").read_bytes()
+    cover = (deep_dir / "cover.jpg").read_bytes()
+    assert cover == gwa.crop_cover(saved)
+    assert cover != seeded
+    meta = read_json(deep_dir / "meta.json")
+    assert meta["cover"] == "cover.jpg"
+
+
+def test_fill_deep_images_borrows_rec_card_image(tmp_path):
+    page = borrow_page(
+        "Google Gemma Downloads Exceed One Billion Barrier",
+        [
+            (GOOD_CARD_ALT, "https://cdn.example.com/same.jpg"),
+            (UNRELATED_CARD_ALT, "https://cdn.example.com/other.jpg"),
+        ],
+    )
+    session = MagicMock()
+    session.get.side_effect = [
+        html_response(page),                        # page fetch
+        image_response(make_png_bytes(600, 400)),   # borrowed card image
+    ]
+    item = make_item(1, title="谷歌 Gemma 下载量突破十亿")
+
+    found, missed = gwad.fill_deep_images([item], session, tmp_path, {})
+
+    assert (found, missed) == (1, 0)
+    assert item["deep_image"] == "images/story_1.jpg"
+    assert item["deep_image_credit"] == "example.com"
+    assert item.get("deep_image_borrowed") is True
+    assert (tmp_path / "images" / "story_1.jpg").exists()
+    # Only the winning card's image was downloaded.
+    assert session.get.call_count == 2
+    assert session.get.call_args_list[1].args[0] == "https://cdn.example.com/same.jpg"
+
+
+def test_fill_deep_images_body_image_preempts_borrow(tmp_path):
+    # A body image always wins; rec cards never compete with it.
+    page = (
+        "<h1>Google Gemma Downloads Exceed One Billion Barrier</h1>"
+        "<article><p>" + "这是足够长的正文文字内容。" * 30 + "</p>"
+        '<img src="https://cdn.example.com/body.jpg"></article>'
+        "<h3>AI News Recommendations</h3>"
+        '<a href="/news/9"><img alt="' + GOOD_CARD_ALT + '" '
+        'src="https://cdn.example.com/rec.jpg"></a>'
+    )
+    session = MagicMock()
+    session.get.side_effect = [
+        html_response(page),
+        image_response(make_png_bytes(600, 400)),
+    ]
+    item = make_item(2, title="谷歌 Gemma 下载量突破十亿")
+
+    found, missed = gwad.fill_deep_images([item], session, tmp_path, {})
+
+    assert (found, missed) == (1, 0)
+    assert item["deep_image"] == "images/story_2.jpg"
+    assert "deep_image_borrowed" not in item
+    assert session.get.call_args_list[1].args[0] == "https://cdn.example.com/body.jpg"
+
+
 # ---------------------------------------------------------------------------
 # Image download
 # ---------------------------------------------------------------------------
+
+def test_fetch_page_html_direct_route_fallback_under_env_proxy():
+    # Env-proxied session dies on a domestic host; the true-direct route
+    # (trust_env=False) must rescue it before the jina fallback.
+    gwad._DIRECT_SESSION = None
+    page = "<html>" + "x" * 400 + "</html>"
+    try:
+        with patch.dict(
+            "os.environ", {"HTTPS_PROXY": "http://127.0.0.1:7897"}
+        ), patch.object(gwad, "create_session", return_value=FakeSession(text=page)):
+            result = gwad.fetch_page_html(
+                offline_session(), "https://www.aibase.com/news/1"
+            )
+    finally:
+        gwad._DIRECT_SESSION = None
+
+    assert result == (page, "html")
+
+
+def test_fetch_page_html_no_env_proxy_skips_alt_route():
+    gwad._DIRECT_SESSION = None
+    try:
+        with patch.dict("os.environ", {}, clear=True), patch.object(
+            gwad, "create_session", side_effect=AssertionError("no alt route expected")
+        ):
+            result = gwad.fetch_page_html(
+                offline_session(), "https://www.aibase.com/news/1", {"jina_down": True}
+            )
+    finally:
+        gwad._DIRECT_SESSION = None
+
+    assert result is None
+
+
+def test_download_item_image_direct_route_fallback(tmp_path):
+    # The proxied route SSL-fails on the domestic CDN; the same candidate
+    # must be retried true-direct instead of being dropped.
+    gwad._DIRECT_SESSION = None
+    direct = MagicMock()
+    direct.get.return_value = image_response(make_png_bytes(600, 400))
+    proxied = MagicMock()
+    proxied.get.side_effect = requests.exceptions.SSLError("intercepted")
+    try:
+        with patch.dict(
+            "os.environ", {"HTTPS_PROXY": "http://127.0.0.1:7897"}
+        ), patch.object(gwad, "create_session", return_value=direct):
+            result = gwad.download_item_image(
+                proxied,
+                ["https://upload.chinaz.com/2026/0824/x.jpg"],
+                tmp_path / "images",
+                "story_9",
+                "https://www.aibase.com/news/9",
+            )
+    finally:
+        gwad._DIRECT_SESSION = None
+
+    assert result == ("images/story_9.jpg", "aibase.com")
+    assert (tmp_path / "images" / "story_9.jpg").exists()
+
 
 def test_download_item_image_happy_path(tmp_path):
     session = MagicMock()
@@ -858,11 +1284,17 @@ def test_render_deep_item_html_order_and_credit():
     assert "① 深度版渲染测试" in html
     assert '<img src="images/story_1.jpg"' in html
     assert "图源：example.com" in html
+    # The guide leads, the image follows it — shrunk (aspect kept), centered
+    # and square-cornered, not full-width.
+    assert f"width:{gwad.DEEP_IMAGE_WIDTH_PERCENT}%" in html
+    assert "width:100%" not in html
+    assert "margin:0 auto" in html
+    assert "border-radius" not in html
     assert (
         html.index("深度版渲染测试")
+        < html.index(LONG_DEEP_REASON)
         < html.index("<img")
         < html.index("图源：example.com")
-        < html.index(LONG_DEEP_REASON)
         < html.index("个来源")
         < html.index("原文：")
     )
@@ -877,6 +1309,19 @@ def test_render_deep_item_html_without_image_has_no_img_tag():
 
     assert "<img" not in html
     assert "图源" not in html
+
+
+def test_render_deep_item_html_image_without_guide_follows_title():
+    # Degraded item (guide generation failed, upstream had none): the image
+    # still renders, directly under the title.
+    item = make_item(1, title="无导读有图测试")
+    item["deep_image"] = "images/story_1.jpg"
+    item["deep_image_credit"] = "example.com"
+
+    html = gwad.render_deep_item_html(item, 0, "#595959")
+
+    assert html.index("无导读有图测试") < html.index("<img")
+    assert "图源：example.com" in html
 
 
 def test_render_deep_item_html_highlights_marks_in_section_color():
@@ -990,7 +1435,11 @@ def test_e2e_keyed_run_with_images(tmp_path):
     meta = read_json(deep_dir / "meta.json")
     assert meta["layout"] == "deep"
     assert meta["images"] == {
-        "story_1": {"file": "images/story_1.jpg", "credit": "example.com"}
+        "story_1": {
+            "file": "images/story_1.jpg",
+            "credit": "example.com",
+            "borrowed": False,
+        }
     }
     assert (deep_dir / "images" / "story_1.jpg").exists()
     assert not (deep_dir / "images" / "story_old.jpg").exists()
