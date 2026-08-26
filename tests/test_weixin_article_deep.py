@@ -432,7 +432,8 @@ def test_deep_validation_bounds():
     title = "校验测试标题"
     assert gwad.validate_deep_reason(good, title) is True
     assert gwad.validate_deep_reason("据某媒体报道，这是一条很短的消息。", title) is False  # <80
-    assert gwad.validate_deep_reason("好" * 800, title) is True  # 精读版不设字数上限
+    assert gwad.validate_deep_reason("好" * 450, title) is True  # == 上限
+    assert gwad.validate_deep_reason("好" * 451, title) is False  # 超出上限
     assert gwad.validate_deep_reason("a" * 120, title) is False  # no CJK
     assert gwad.validate_deep_reason(title, title) is False
     assert gwad.validate_deep_reason("据某媒体报道，详情见 https://example.com 。" * 5, title) is False
@@ -458,9 +459,9 @@ def test_generate_deep_reason_rejection_is_diagnosed(capsys):
     assert "含 URL" in err
 
 
-def test_generate_deep_reason_accepts_long(capsys):
-    """Long generations pass through untouched: the deep variant has no
-    upper char bound and never falls back to upstream over length."""
+def test_generate_deep_reason_rejects_overlong(capsys):
+    """Overlong generations are rejected: the hard ceiling is back because
+    rich full-text grounding makes the model overshoot into padded recaps."""
     item = make_item(1, title="超长导读测试标题")
     cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
     long_content = "该团队发布了新版本，" + "这是用于凑字数的测试句子内容。" * 40  # ~600 字
@@ -471,10 +472,9 @@ def test_generate_deep_reason_accepts_long(capsys):
     ):
         result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
 
-    assert result is not None
-    assert result.strip() == long_content.strip()
-    assert len(result.strip()) > 500
-    assert "被校验拒绝" not in capsys.readouterr().err
+    assert result is None
+    err = capsys.readouterr().err
+    assert "超出上限" in err
 
 
 def test_parse_deep_marks():

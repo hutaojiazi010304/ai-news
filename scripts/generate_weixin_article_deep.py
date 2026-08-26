@@ -159,19 +159,23 @@ DEFAULT_MAIN_OUTPUT_DIR = "weixin"
 DEFAULT_DEEP_MAX_ITEMS = 10
 
 # Independent cache version: bumped only when the deep prompt/bounds change
-# in a way that invalidates EXISTING entries. v5: generation reverted to the
+# in a way that invalidates EXISTING entries. v6: hard length ceiling
+# restored and the prompt's "可适当写长" permission revoked — v5 entries
+# were written under the looser wording and read noticeably longer/padded,
+# so they must be regenerated. (v5 itself: generation reverted to the
 # pre-highlight prompt and marking moved to a separate second call — the
-# combined prompt degraded guide quality, so v4 entries (written under it)
-# must be regenerated.
+# combined prompt degraded guide quality, so v4 entries had to go too.)
 # 1.0 bumping its own CACHE_VERSION never invalidates this cache and vice
 # versa (load_deep_cache rejects mismatched versions, forcing regeneration).
-DEEP_CACHE_VERSION = 5
+DEEP_CACHE_VERSION = 6
 
-# Deep guides are longer than 1.0's 40-260 window. Only a MINIMUM is
-# enforced: the deep variant prefers a longer guide over falling back to the
-# upstream blurb, so there is no upper bound — the prompt suggests 150-350
-# chars but longer answers are accepted as-is.
+# Deep guides are longer than 1.0's 40-260 window. The prompt targets
+# 150-350 chars and the ceiling is enforced too: full-text grounding is
+# often rich enough that the model overshoots into padded, multi-topic
+# recaps without a hard bound (the brief "可适当写长" experiment drifted
+# every guide ~50-200 chars longer and pulled in peripheral reactions).
 DEEP_REASON_MIN_CHARS = 80
+DEEP_REASON_MAX_CHARS = 450
 # Highlight marks: the model brackets the most worth-reading fragments with
 # 【】 while generating (summaries/conclusions first, then theme-tied names
 # or numbers); rendering turns them into bold spans in the section color.
@@ -279,8 +283,9 @@ DEEP_REASON_SYSTEM_PROMPT = (
     "数字、日期与意义。"
     "不要添加「展示了……」「标志着……」「为……开启了新篇章」之类的意义话术；"
     "除非原文本身就是评论，才可以转述其观点，并注明是原文观点。"
-    "字数建议在一百五十到三百五十之间，原文内容充实的可适当写长一些，"
-    "信息密度优先，不要为凑字数注水。"
+    "字数控制在一百五十到三百五十之间，信息密度优先，不要为凑字数注水；"
+    "正文素材再多，也只挑最核心的事实、数字与结论来写，"
+    "不要逐点罗列次要细节，不写背景铺垫、外界反应、观点争议等外围内容。"
     "导读中不得出现任何网址、链接或链接文字（如 GitHub、官网地址），"
     "需要提及页面时只描述它是什么（如「官方更新日志」）。"
     "公司名、产品名一律只用原文中出现的形式（通常是英文），"
@@ -351,7 +356,7 @@ def validate_deep_reason(content: str, title: str) -> bool:
     content = str(content or "").strip()
     if not content or not has_cjk(content):
         return False
-    if len(content) < DEEP_REASON_MIN_CHARS:
+    if len(content) < DEEP_REASON_MIN_CHARS or len(content) > DEEP_REASON_MAX_CHARS:
         return False
     if content == str(title or "").strip():
         return False
@@ -584,12 +589,13 @@ def generate_deep_reason(item: dict, context: str, cfg: dict) -> str | None:
         return add_deep_marks(stripped, cfg, title)
     # Silent rejects made failures impossible to diagnose; show what the model
     # returned and which bound it tripped (bounds re-checked inline so the
-    # message names the real cause). Length only rejects too-short output:
-    # long guides are fine in the deep variant and never cause a fallback.
+    # message names the real cause).
     if not has_cjk(stripped):
         cause = "无中文"
     elif len(stripped) < DEEP_REASON_MIN_CHARS:
         cause = f"字数 {len(stripped)} 不足 {DEEP_REASON_MIN_CHARS}"
+    elif len(stripped) > DEEP_REASON_MAX_CHARS:
+        cause = f"字数 {len(stripped)} 超出上限 {DEEP_REASON_MAX_CHARS}"
     elif stripped == title:
         cause = "与标题相同"
     elif "http" in stripped:
