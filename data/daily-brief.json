@@ -1,92 +1,8 @@
 {
-  "generated_at": "2026-08-26T05:58:27.708091Z",
+  "generated_at": "2026-08-26T18:13:39.802111Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
-    {
-      "story_id": "story_2e1e1831ce49",
-      "title": "Granite 4.2 LLMs: How They're Built",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-      "primary_url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-      "source": "Hugging Face Blog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "b343f39bfe6c0fcb583e96ace127b7456d9cc623",
-          "title": "Granite 4.2 LLMs: How They're Built",
-          "title_zh": null,
-          "title_en": "Granite 4.2 LLMs: How They're Built",
-          "title_original": "Granite 4.2 LLMs: How They're Built",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-25T15:14:14Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hugging Face Blog"
-      ],
-      "items": [
-        {
-          "id": "b343f39bfe6c0fcb583e96ace127b7456d9cc623",
-          "title": "Granite 4.2 LLMs: How They're Built",
-          "title_zh": null,
-          "title_en": "Granite 4.2 LLMs: How They're Built",
-          "title_original": "Granite 4.2 LLMs: How They're Built",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-25T15:14:14Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8442,
-      "importance": 0.8442,
-      "importance_score": 0.8442,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.99,
-        "recency": 0.8677,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-25T15:14:14Z",
-      "latest_at": "2026-08-25T15:14:14Z",
-      "primary_item": {
-        "id": "b343f39bfe6c0fcb583e96ace127b7456d9cc623",
-        "title": "Granite 4.2 LLMs: How They're Built",
-        "title_zh": null,
-        "title_en": "Granite 4.2 LLMs: How They're Built",
-        "title_original": "Granite 4.2 LLMs: How They're Built",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-        "source": "Hugging Face Blog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8614,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
-      }
-    },
     {
       "story_id": "story_4b7b151c884e",
       "title": "How to evaluate LLMs before production",
@@ -132,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.844,
-      "importance": 0.844,
-      "importance_score": 0.844,
+      "score": 0.8256,
+      "importance": 0.8256,
+      "importance_score": 0.8256,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.94,
-        "recency": 0.9224,
+        "recency": 0.8198,
         "story_heat": 0.0
       },
       "category": "official",
@@ -168,7 +84,258 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
+      }
+    },
+    {
+      "story_id": "story_93586c9b901c",
+      "title": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型 / Intelligent transcription with Gemini 3.5 Transcribe",
+      "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+      "primary_url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+      "source": "Google DeepMind",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "edaf458d83ab7c8fe035f85664aa2cb09ede175c",
+          "title": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型 / Intelligent transcription with Gemini 3.5 Transcribe",
+          "title_zh": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
+          "title_en": "Intelligent transcription with Gemini 3.5 Transcribe",
+          "title_original": "Intelligent transcription with Gemini 3.5 Transcribe",
+          "summary": "Now you can get more intelligent speech-to-text transcription with Gemini 3.5 Transcribe.",
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-26T17:01:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Google DeepMind"
+      ],
+      "items": [
+        {
+          "id": "edaf458d83ab7c8fe035f85664aa2cb09ede175c",
+          "title": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型 / Intelligent transcription with Gemini 3.5 Transcribe",
+          "title_zh": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
+          "title_en": "Intelligent transcription with Gemini 3.5 Transcribe",
+          "title_original": "Intelligent transcription with Gemini 3.5 Transcribe",
+          "summary": "Now you can get more intelligent speech-to-text transcription with Gemini 3.5 Transcribe.",
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-26T17:01:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8499,
+      "importance": 0.8499,
+      "importance_score": 0.8499,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9884,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-26T17:01:00Z",
+      "latest_at": "2026-08-26T17:01:00Z",
+      "primary_item": {
+        "id": "edaf458d83ab7c8fe035f85664aa2cb09ede175c",
+        "title": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型 / Intelligent transcription with Gemini 3.5 Transcribe",
+        "title_zh": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
+        "title_en": "Intelligent transcription with Gemini 3.5 Transcribe",
+        "title_original": "Intelligent transcription with Gemini 3.5 Transcribe",
+        "summary": "Now you can get more intelligent speech-to-text transcription with Gemini 3.5 Transcribe.",
+        "recommend_reason_zh": null,
+        "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+        "source": "Google DeepMind",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8499,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-26T18:51:51.359198Z"
+      }
+    },
+    {
+      "story_id": "story_ddd2368b2c0c",
+      "title": "Qwen3.8-Flash 开源，Qwen4 架构预览 / API is live on QwenCloud： https://www.qwencloud.com/models/qwen3.8-flash 🙌Let's build something！",
+      "url": "https://x.com/Alibaba_Qwen/status/2092636376990990503",
+      "primary_url": "https://x.com/Alibaba_Qwen/status/2092636376990990503",
+      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "2a56b9a1d4c0f7eb496a4c3f9cb9d16edeac8570",
+          "title": "Qwen3.8-Flash 开源，Qwen4 架构预览 / API is live on QwenCloud： https://www.qwencloud.com/models/qwen3.8-flash 🙌Let's build something！",
+          "title_zh": "Qwen3.8-Flash 开源，Qwen4 架构预览",
+          "title_en": "API is live on QwenCloud： https://www.qwencloud.com/models/qwen3.8-flash 🙌Let's build something！",
+          "title_original": "API is live on QwenCloud： https://www.qwencloud.com/models/qwen3.8-flash 🙌Let's build something！",
+          "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Alibaba_Qwen/status/2092636376990990503",
+          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T15:32:46Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：通义千问 / Qwen (@Alibaba_Qwen)"
+      ],
+      "items": [
+        {
+          "id": "2a56b9a1d4c0f7eb496a4c3f9cb9d16edeac8570",
+          "title": "Qwen3.8-Flash 开源，Qwen4 架构预览 / API is live on QwenCloud： https://www.qwencloud.com/models/qwen3.8-flash 🙌Let's build something！",
+          "title_zh": "Qwen3.8-Flash 开源，Qwen4 架构预览",
+          "title_en": "API is live on QwenCloud： https://www.qwencloud.com/models/qwen3.8-flash 🙌Let's build something！",
+          "title_original": "API is live on QwenCloud： https://www.qwencloud.com/models/qwen3.8-flash 🙌Let's build something！",
+          "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Alibaba_Qwen/status/2092636376990990503",
+          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T15:32:46Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8474,
+      "importance": 0.8474,
+      "importance_score": 0.8474,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.84,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9745,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-26T15:32:46Z",
+      "latest_at": "2026-08-26T15:32:46Z",
+      "primary_item": {
+        "id": "2a56b9a1d4c0f7eb496a4c3f9cb9d16edeac8570",
+        "title": "Qwen3.8-Flash 开源，Qwen4 架构预览 / API is live on QwenCloud： https://www.qwencloud.com/models/qwen3.8-flash 🙌Let's build something！",
+        "title_zh": "Qwen3.8-Flash 开源，Qwen4 架构预览",
+        "title_en": "API is live on QwenCloud： https://www.qwencloud.com/models/qwen3.8-flash 🙌Let's build something！",
+        "title_original": "API is live on QwenCloud： https://www.qwencloud.com/models/qwen3.8-flash 🙌Let's build something！",
+        "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/Alibaba_Qwen/status/2092636376990990503",
+        "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8474,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-26T18:51:51.359198Z"
+      }
+    },
+    {
+      "story_id": "story_6b30649509f4",
+      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+      "primary_url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "588215148c3b72c0715d264ed0cc70f6b4fdc9e9",
+          "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+          "title_zh": null,
+          "title_en": "Bringing ChatGPT for Teachers to more U.S. school districts",
+          "title_original": "Bringing ChatGPT for Teachers to more U.S. school districts",
+          "summary": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-26T10:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "588215148c3b72c0715d264ed0cc70f6b4fdc9e9",
+          "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+          "title_zh": null,
+          "title_en": "Bringing ChatGPT for Teachers to more U.S. school districts",
+          "title_original": "Bringing ChatGPT for Teachers to more U.S. school districts",
+          "summary": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-26T10:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8463,
+      "importance": 0.8463,
+      "importance_score": 0.8463,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.95,
+        "recency": 0.9238,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-26T10:00:00Z",
+      "latest_at": "2026-08-26T10:00:00Z",
+      "primary_item": {
+        "id": "588215148c3b72c0715d264ed0cc70f6b4fdc9e9",
+        "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
+        "title_zh": null,
+        "title_en": "Bringing ChatGPT for Teachers to more U.S. school districts",
+        "title_original": "Bringing ChatGPT for Teachers to more U.S. school districts",
+        "summary": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8463,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     },
     {
@@ -216,15 +383,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8254,
-      "importance": 0.8254,
-      "importance_score": 0.8254,
+      "score": 0.8074,
+      "importance": 0.8074,
+      "importance_score": 0.8074,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8967,
+        "recency": 0.7969,
         "story_heat": 0.0
       },
       "category": "official",
@@ -252,227 +419,254 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     },
     {
-      "story_id": "story_e7853aaebb60",
-      "title": "5 ways to upgrade your home decor with Google Search",
-      "url": "https://blog.google/products-and-platforms/products/search/home-decor-tips",
-      "primary_url": "https://blog.google/products-and-platforms/products/search/home-decor-tips",
-      "source": "Google AI Blog",
-      "source_name": "Official AI Updates",
+      "story_id": "story_741a74c53da2",
+      "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494157&idx=1&sn=6837b15a07d2518842eb6c6b53a3eb3c",
+      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494157&idx=1&sn=6837b15a07d2518842eb6c6b53a3eb3c",
+      "source": "公众号：智谱（GLM）",
+      "source_name": "AI HOT",
       "sources": [
         {
-          "id": "0b2841eb6231ab409e73135b67fdec5ef997d3e2",
-          "title": "5 ways to upgrade your home decor with Google Search",
-          "title_zh": null,
-          "title_en": "5 ways to upgrade your home decor with Google Search",
-          "title_original": "5 ways to upgrade your home decor with Google Search",
-          "summary": "Illustration of ombre rainbow furniture items like a sofa, lamp, and chair against a purple background",
+          "id": "c746200b2ef4819b5c374166fd2b65ff4ccaeec1",
+          "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+          "title_zh": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+          "title_en": null,
+          "title_original": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+          "summary": "智谱上线并开源 GLM-5.3-Flash（320B-A18B），这是 GLM-5 系列首个原生多模态模型，AA 综合智能指数 57 分，与 Claude Opus 4.8 持平。其定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40，并已接入 ZCode 等平台开放 API 调用。该模型采用稀疏注意力与线性注意力混合架构，推理服务已跑在国产芯片集群上。",
           "recommend_reason_zh": null,
-          "url": "https://blog.google/products-and-platforms/products/search/home-decor-tips",
-          "source": "Google AI Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-25T16:00:00Z"
+          "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494157&idx=1&sn=6837b15a07d2518842eb6c6b53a3eb3c",
+          "source": "公众号：智谱（GLM）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T14:11:33Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Google AI Blog"
+        "公众号：智谱（GLM）"
       ],
       "items": [
         {
-          "id": "0b2841eb6231ab409e73135b67fdec5ef997d3e2",
-          "title": "5 ways to upgrade your home decor with Google Search",
-          "title_zh": null,
-          "title_en": "5 ways to upgrade your home decor with Google Search",
-          "title_original": "5 ways to upgrade your home decor with Google Search",
-          "summary": "Illustration of ombre rainbow furniture items like a sofa, lamp, and chair against a purple background",
+          "id": "c746200b2ef4819b5c374166fd2b65ff4ccaeec1",
+          "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+          "title_zh": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+          "title_en": null,
+          "title_original": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+          "summary": "智谱上线并开源 GLM-5.3-Flash（320B-A18B），这是 GLM-5 系列首个原生多模态模型，AA 综合智能指数 57 分，与 Claude Opus 4.8 持平。其定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40，并已接入 ZCode 等平台开放 API 调用。该模型采用稀疏注意力与线性注意力混合架构，推理服务已跑在国产芯片集群上。",
           "recommend_reason_zh": null,
-          "url": "https://blog.google/products-and-platforms/products/search/home-decor-tips",
-          "source": "Google AI Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-25T16:00:00Z"
+          "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494157&idx=1&sn=6837b15a07d2518842eb6c6b53a3eb3c",
+          "source": "公众号：智谱（GLM）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T14:11:33Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8213,
-      "importance": 0.8213,
-      "importance_score": 0.8213,
+      "score": 0.8421,
+      "importance": 0.8421,
+      "importance_score": 0.8421,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.9,
+        "editorial": 0.83,
         "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.8741,
+        "ai_relevance": 1.0,
+        "recency": 0.9619,
         "story_heat": 0.0
       },
       "category": "official",
       "reasons": [
-        "official_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-25T16:00:00Z",
-      "latest_at": "2026-08-25T16:00:00Z",
+      "earliest_at": "2026-08-26T14:11:33Z",
+      "latest_at": "2026-08-26T14:11:33Z",
       "primary_item": {
-        "id": "0b2841eb6231ab409e73135b67fdec5ef997d3e2",
-        "title": "5 ways to upgrade your home decor with Google Search",
-        "title_zh": null,
-        "title_en": "5 ways to upgrade your home decor with Google Search",
-        "title_original": "5 ways to upgrade your home decor with Google Search",
-        "summary": "Illustration of ombre rainbow furniture items like a sofa, lamp, and chair against a purple background",
+        "id": "c746200b2ef4819b5c374166fd2b65ff4ccaeec1",
+        "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+        "title_zh": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+        "title_en": null,
+        "title_original": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+        "summary": "智谱上线并开源 GLM-5.3-Flash（320B-A18B），这是 GLM-5 系列首个原生多模态模型，AA 综合智能指数 57 分，与 Claude Opus 4.8 持平。其定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40，并已接入 ZCode 等平台开放 API 调用。该模型采用稀疏注意力与线性注意力混合架构，推理服务已跑在国产芯片集群上。",
         "recommend_reason_zh": null,
-        "url": "https://blog.google/products-and-platforms/products/search/home-decor-tips",
-        "source": "Google AI Blog",
-        "source_name": "Official AI Updates"
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494157&idx=1&sn=6837b15a07d2518842eb6c6b53a3eb3c",
+        "source": "公众号：智谱（GLM）",
+        "source_name": "AI HOT"
       },
-      "peak_score": 0.8387,
+      "peak_score": 0.8421,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     },
     {
-      "story_id": "story_b95e33dbd1e9",
-      "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-      "url": "https://openai.com/index/jalapeno-first-results",
-      "primary_url": "https://openai.com/index/jalapeno-first-results",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
+      "story_id": "story_7cf7f5b5f125",
+      "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览 / Qwen3.8-Flash-Next： A New Architecture， Towards Ultimate Cost-Efficiency",
+      "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "primary_url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "source": "Qwen：Blog Retrieval（API）",
+      "source_name": "AI HOT",
       "sources": [
         {
-          "id": "b3bde5a716f5cd02908984c8fb28a797c214d23e",
-          "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-          "title_zh": null,
-          "title_en": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-          "title_original": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-          "summary": "Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models.",
+          "id": "e26a51bb54313b977caff74c043731ed56dc444a",
+          "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览 / Qwen3.8-Flash-Next： A New Architecture， Towards Ultimate Cost-Efficiency",
+          "title_zh": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+          "title_en": "Qwen3.8-Flash-Next： A New Architecture， Towards Ultimate Cost-Efficiency",
+          "title_original": "Qwen3.8-Flash-Next： A New Architecture， Towards Ultimate Cost-Efficiency",
+          "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/jalapeno-first-results",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-25T07:00:00Z"
+          "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+          "source": "Qwen：Blog Retrieval（API）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T12:30:00Z"
         },
         {
-          "id": "41a3b35044428ad51fdf46c06a544e2679420c47",
-          "title": "Jalapeño's results show industry-leading speed and efficiency in AI inference",
-          "title_zh": null,
-          "title_en": "Jalapeño's results show industry-leading speed and efficiency in AI inference",
-          "title_original": "Jalapeño's results show industry-leading speed and efficiency in AI inference",
+          "id": "1a64a33f368e096e708b88a2879936f307a4aadd",
+          "title": "Qwen3.8-Flash-Next：一种新架构，迈向极致的成本效益",
+          "title_zh": "Qwen3.8-Flash-Next：一种新架构，迈向极致的成本效益",
+          "title_en": null,
+          "title_original": "Qwen3.8-Flash-Next：一种新架构，迈向极致的成本效益",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/jalapeno-first-results",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-25T14:33:46Z"
+          "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+          "source": "qwen.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-26T14:05:28.714000Z"
+        },
+        {
+          "id": "5b704af96d16dec9cc401b169dc8d074cc0b52db",
+          "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览 / Qwen3.8-Flash-Next",
+          "title_zh": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+          "title_en": "Qwen3.8-Flash-Next",
+          "title_original": "Qwen3.8-Flash-Next",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-26T12:52:12Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hacker News · 24h最热",
-        "OpenAI News"
+        "Hacker News (黑客新闻)",
+        "Qwen：Blog Retrieval（API）",
+        "qwen.ai"
       ],
       "items": [
         {
-          "id": "b3bde5a716f5cd02908984c8fb28a797c214d23e",
-          "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-          "title_zh": null,
-          "title_en": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-          "title_original": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-          "summary": "Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models.",
+          "id": "e26a51bb54313b977caff74c043731ed56dc444a",
+          "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览 / Qwen3.8-Flash-Next： A New Architecture， Towards Ultimate Cost-Efficiency",
+          "title_zh": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+          "title_en": "Qwen3.8-Flash-Next： A New Architecture， Towards Ultimate Cost-Efficiency",
+          "title_original": "Qwen3.8-Flash-Next： A New Architecture， Towards Ultimate Cost-Efficiency",
+          "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/jalapeno-first-results",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-25T07:00:00Z"
+          "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+          "source": "Qwen：Blog Retrieval（API）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T12:30:00Z"
         },
         {
-          "id": "41a3b35044428ad51fdf46c06a544e2679420c47",
-          "title": "Jalapeño's results show industry-leading speed and efficiency in AI inference",
-          "title_zh": null,
-          "title_en": "Jalapeño's results show industry-leading speed and efficiency in AI inference",
-          "title_original": "Jalapeño's results show industry-leading speed and efficiency in AI inference",
+          "id": "1a64a33f368e096e708b88a2879936f307a4aadd",
+          "title": "Qwen3.8-Flash-Next：一种新架构，迈向极致的成本效益",
+          "title_zh": "Qwen3.8-Flash-Next：一种新架构，迈向极致的成本效益",
+          "title_en": null,
+          "title_original": "Qwen3.8-Flash-Next：一种新架构，迈向极致的成本效益",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/jalapeno-first-results",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-25T14:33:46Z"
+          "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+          "source": "qwen.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-26T14:05:28.714000Z"
+        },
+        {
+          "id": "5b704af96d16dec9cc401b169dc8d074cc0b52db",
+          "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览 / Qwen3.8-Flash-Next",
+          "title_zh": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+          "title_en": "Qwen3.8-Flash-Next",
+          "title_original": "Qwen3.8-Flash-Next",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-08-26T12:52:12Z"
         }
       ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.8163,
-      "importance": 0.8163,
-      "importance_score": 0.8163,
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8393,
+      "importance": 0.8393,
+      "importance_score": 0.8393,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.9,
+        "editorial": 0.83,
         "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8016,
+        "ai_relevance": 1.0,
+        "recency": 0.9464,
         "story_heat": 0.0
       },
       "category": "official",
       "reasons": [
-        "official_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-25T07:00:00Z",
-      "latest_at": "2026-08-25T14:33:46Z",
+      "earliest_at": "2026-08-26T12:30:00Z",
+      "latest_at": "2026-08-26T14:05:28.714000Z",
       "primary_item": {
-        "id": "b3bde5a716f5cd02908984c8fb28a797c214d23e",
-        "title": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-        "title_zh": null,
-        "title_en": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-        "title_original": "Jalapeño’s first results show industry-leading speed and efficiency in AI inference",
-        "summary": "Jalapeño is a custom inference chip from OpenAI that delivers faster, more power-efficient AI inference, with higher throughput and lower latency for modern models.",
+        "id": "e26a51bb54313b977caff74c043731ed56dc444a",
+        "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览 / Qwen3.8-Flash-Next： A New Architecture， Towards Ultimate Cost-Efficiency",
+        "title_zh": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+        "title_en": "Qwen3.8-Flash-Next： A New Architecture， Towards Ultimate Cost-Efficiency",
+        "title_original": "Qwen3.8-Flash-Next： A New Architecture， Towards Ultimate Cost-Efficiency",
+        "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/jalapeno-first-results",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
+        "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+        "source": "Qwen：Blog Retrieval（API）",
+        "source_name": "AI HOT"
       },
-      "peak_score": 0.8383,
+      "peak_score": 0.8393,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     },
     {
-      "story_id": "story_7ee612916ff0",
-      "title": "Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc",
-      "primary_url": "https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc",
+      "story_id": "story_4ff4202e3dc7",
+      "title": "用 Sentence Transformers 训练与微调多向量嵌入模型 / Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+      "url": "https://huggingface.co/blog/train-multi-vector-encoder",
+      "primary_url": "https://huggingface.co/blog/train-multi-vector-encoder",
       "source": "Hugging Face Blog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "0a76454f1d452daaa1c07b06c870f3d91a9eef77",
-          "title": "Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC",
-          "title_zh": null,
-          "title_en": "Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC",
-          "title_original": "Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC",
+          "id": "2c906b47277a348a417d05657118c6719c7825c2",
+          "title": "用 Sentence Transformers 训练与微调多向量嵌入模型 / Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+          "title_zh": "用 Sentence Transformers 训练与微调多向量嵌入模型",
+          "title_en": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+          "title_original": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc",
+          "url": "https://huggingface.co/blog/train-multi-vector-encoder",
           "source": "Hugging Face Blog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-08-25T15:01:00Z"
+          "published_at": "2026-08-26T00:00:00Z"
         }
       ],
       "source_count": 1,
@@ -481,31 +675,31 @@
       ],
       "items": [
         {
-          "id": "0a76454f1d452daaa1c07b06c870f3d91a9eef77",
-          "title": "Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC",
-          "title_zh": null,
-          "title_en": "Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC",
-          "title_original": "Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC",
+          "id": "2c906b47277a348a417d05657118c6719c7825c2",
+          "title": "用 Sentence Transformers 训练与微调多向量嵌入模型 / Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+          "title_zh": "用 Sentence Transformers 训练与微调多向量嵌入模型",
+          "title_en": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+          "title_original": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc",
+          "url": "https://huggingface.co/blog/train-multi-vector-encoder",
           "source": "Hugging Face Blog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-08-25T15:01:00Z"
+          "published_at": "2026-08-26T00:00:00Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8359,
-      "importance": 0.8359,
-      "importance_score": 0.8359,
+      "score": 0.839,
+      "importance": 0.839,
+      "importance_score": 0.839,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8659,
+        "ai_relevance": 0.99,
+        "recency": 0.8391,
         "story_heat": 0.0
       },
       "category": "official",
@@ -514,82 +708,164 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-25T15:01:00Z",
-      "latest_at": "2026-08-25T15:01:00Z",
+      "earliest_at": "2026-08-26T00:00:00Z",
+      "latest_at": "2026-08-26T00:00:00Z",
       "primary_item": {
-        "id": "0a76454f1d452daaa1c07b06c870f3d91a9eef77",
-        "title": "Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC",
-        "title_zh": null,
-        "title_en": "Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC",
-        "title_original": "Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC",
+        "id": "2c906b47277a348a417d05657118c6719c7825c2",
+        "title": "用 Sentence Transformers 训练与微调多向量嵌入模型 / Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+        "title_zh": "用 Sentence Transformers 训练与微调多向量嵌入模型",
+        "title_en": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+        "title_original": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc",
+        "url": "https://huggingface.co/blog/train-multi-vector-encoder",
         "source": "Hugging Face Blog",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8596,
+      "peak_score": 0.839,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     },
     {
-      "story_id": "story_e1c25592fe2f",
-      "title": "WeatherNext 预测气旋：提前五天预警五级飓风 / https://x.com/i/article/2092249927812337664",
-      "url": "https://x.com/GoogleAI/status/2092275116503707733",
-      "primary_url": "https://x.com/GoogleAI/status/2092275116503707733",
-      "source": "X：Google AI (@GoogleAI)",
-      "source_name": "AI HOT",
+      "story_id": "story_4c08adc024bd",
+      "title": "Disrupting a new covert influence campaign from Russia",
+      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+      "primary_url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+      "source": "Hacker News · 24h最热",
+      "source_name": "Zeli",
       "sources": [
         {
-          "id": "5ae985e719104741d17e0406d4efd8ff4e4b64cf",
-          "title": "WeatherNext 预测气旋：提前五天预警五级飓风 / https://x.com/i/article/2092249927812337664",
-          "title_zh": "WeatherNext 预测气旋：提前五天预警五级飓风",
-          "title_en": "https://x.com/i/article/2092249927812337664",
-          "title_original": "https://x.com/i/article/2092249927812337664",
-          "summary": "Google AI 发布 WeatherNext 气旋预测模型，可同时预测风暴路径、强度和规模，比现有系统多提供一整天的预警时间。该模型在 2025 飓风季实战测试中，提前五天预测飓风 Melissa 在牙买加的五级登陆，系美国国家飓风中心首次实时使用 AI 模型。模型单场风暴可生成多达 1000 次模拟，代码与权重已开源。",
+          "id": "18bef62bb60b1edd898c002e7e2a935abaccdb66",
+          "title": "Disrupting a new covert influence campaign from Russia",
+          "title_zh": null,
+          "title_en": "Disrupting a new covert influence campaign from Russia",
+          "title_original": "Disrupting a new covert influence campaign from Russia",
+          "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://x.com/GoogleAI/status/2092275116503707733",
-          "source": "X：Google AI (@GoogleAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-25T15:37:15Z"
+          "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-26T07:31:31Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "X：Google AI (@GoogleAI)"
+        "Hacker News · 24h最热"
       ],
       "items": [
         {
-          "id": "5ae985e719104741d17e0406d4efd8ff4e4b64cf",
-          "title": "WeatherNext 预测气旋：提前五天预警五级飓风 / https://x.com/i/article/2092249927812337664",
-          "title_zh": "WeatherNext 预测气旋：提前五天预警五级飓风",
-          "title_en": "https://x.com/i/article/2092249927812337664",
-          "title_original": "https://x.com/i/article/2092249927812337664",
-          "summary": "Google AI 发布 WeatherNext 气旋预测模型，可同时预测风暴路径、强度和规模，比现有系统多提供一整天的预警时间。该模型在 2025 飓风季实战测试中，提前五天预测飓风 Melissa 在牙买加的五级登陆，系美国国家飓风中心首次实时使用 AI 模型。模型单场风暴可生成多达 1000 次模拟，代码与权重已开源。",
+          "id": "18bef62bb60b1edd898c002e7e2a935abaccdb66",
+          "title": "Disrupting a new covert influence campaign from Russia",
+          "title_zh": null,
+          "title_en": "Disrupting a new covert influence campaign from Russia",
+          "title_original": "Disrupting a new covert influence campaign from Russia",
+          "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://x.com/GoogleAI/status/2092275116503707733",
-          "source": "X：Google AI (@GoogleAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-25T15:37:15Z"
+          "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-26T07:31:31Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7958,
-      "importance": 0.7958,
-      "importance_score": 0.7958,
+      "score": 0.5032,
+      "importance": 0.5032,
+      "importance_score": 0.5032,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9021,
+        "story_heat": 0.0
+      },
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-08-26T07:31:31Z",
+      "latest_at": "2026-08-26T07:31:31Z",
+      "primary_item": {
+        "id": "18bef62bb60b1edd898c002e7e2a935abaccdb66",
+        "title": "Disrupting a new covert influence campaign from Russia",
+        "title_zh": null,
+        "title_en": "Disrupting a new covert influence campaign from Russia",
+        "title_original": "Disrupting a new covert influence campaign from Russia",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia",
+        "source": "Hacker News · 24h最热",
+        "source_name": "Zeli"
+      },
+      "peak_score": 0.8369,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-26T18:51:51.359198Z"
+      }
+    },
+    {
+      "story_id": "story_a3eb56560645",
+      "title": "Claude in Chrome 正式全面上线 / Claude in Chrome is generally available",
+      "url": "https://claude.com/blog/claude-in-chrome-generally-available",
+      "primary_url": "https://claude.com/blog/claude-in-chrome-generally-available",
+      "source": "Claude：Blog（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "22af8ad13634d242eac2b6750476413f3696325a",
+          "title": "Claude in Chrome 正式全面上线 / Claude in Chrome is generally available",
+          "title_zh": "Claude in Chrome 正式全面上线",
+          "title_en": "Claude in Chrome is generally available",
+          "title_original": "Claude in Chrome is generally available",
+          "summary": "Anthropic 宣布 Claude in Chrome 现已面向所有付费 Claude 套餐全面开放，Claude 可在浏览器中自主执行操作，无需逐步审批。系统通过安全分类器在每次操作前验证其安全性及是否符合用户请求，并强化了针对提示注入攻击的防御。最新评测显示，在启用探测与安全分类器后，自 Opus 4.8 起的所有模型均未出现攻击成功案例。",
+          "recommend_reason_zh": null,
+          "url": "https://claude.com/blog/claude-in-chrome-generally-available",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T18:02:41.262000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Claude：Blog（网页）"
+      ],
+      "items": [
+        {
+          "id": "22af8ad13634d242eac2b6750476413f3696325a",
+          "title": "Claude in Chrome 正式全面上线 / Claude in Chrome is generally available",
+          "title_zh": "Claude in Chrome 正式全面上线",
+          "title_en": "Claude in Chrome is generally available",
+          "title_original": "Claude in Chrome is generally available",
+          "summary": "Anthropic 宣布 Claude in Chrome 现已面向所有付费 Claude 套餐全面开放，Claude 可在浏览器中自主执行操作，无需逐步审批。系统通过安全分类器在每次操作前验证其安全性及是否符合用户请求，并强化了针对提示注入攻击的防御。最新评测显示，在启用探测与安全分类器后，自 Opus 4.8 起的所有模型均未出现攻击成功案例。",
+          "recommend_reason_zh": null,
+          "url": "https://claude.com/blog/claude-in-chrome-generally-available",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T18:02:41.262000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8157,
+      "importance": 0.8157,
+      "importance_score": 0.8157,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.73,
+        "editorial": 0.72,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8709,
+        "recency": 0.9982,
         "story_heat": 0.0
       },
       "category": "official",
@@ -597,26 +873,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-25T15:37:15Z",
-      "latest_at": "2026-08-25T15:37:15Z",
+      "earliest_at": "2026-08-26T18:02:41.262000Z",
+      "latest_at": "2026-08-26T18:02:41.262000Z",
       "primary_item": {
-        "id": "5ae985e719104741d17e0406d4efd8ff4e4b64cf",
-        "title": "WeatherNext 预测气旋：提前五天预警五级飓风 / https://x.com/i/article/2092249927812337664",
-        "title_zh": "WeatherNext 预测气旋：提前五天预警五级飓风",
-        "title_en": "https://x.com/i/article/2092249927812337664",
-        "title_original": "https://x.com/i/article/2092249927812337664",
-        "summary": "Google AI 发布 WeatherNext 气旋预测模型，可同时预测风暴路径、强度和规模，比现有系统多提供一整天的预警时间。该模型在 2025 飓风季实战测试中，提前五天预测飓风 Melissa 在牙买加的五级登陆，系美国国家飓风中心首次实时使用 AI 模型。模型单场风暴可生成多达 1000 次模拟，代码与权重已开源。",
+        "id": "22af8ad13634d242eac2b6750476413f3696325a",
+        "title": "Claude in Chrome 正式全面上线 / Claude in Chrome is generally available",
+        "title_zh": "Claude in Chrome 正式全面上线",
+        "title_en": "Claude in Chrome is generally available",
+        "title_original": "Claude in Chrome is generally available",
+        "summary": "Anthropic 宣布 Claude in Chrome 现已面向所有付费 Claude 套餐全面开放，Claude 可在浏览器中自主执行操作，无需逐步审批。系统通过安全分类器在每次操作前验证其安全性及是否符合用户请求，并强化了针对提示注入攻击的防御。最新评测显示，在启用探测与安全分类器后，自 Opus 4.8 起的所有模型均未出现攻击成功案例。",
         "recommend_reason_zh": null,
-        "url": "https://x.com/GoogleAI/status/2092275116503707733",
-        "source": "X：Google AI (@GoogleAI)",
+        "url": "https://claude.com/blog/claude-in-chrome-generally-available",
+        "source": "Claude：Blog（网页）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.813,
+      "peak_score": 0.8157,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     },
     {
@@ -664,15 +940,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8357,
-      "importance": 0.8357,
-      "importance_score": 0.8357,
+      "score": 0.8175,
+      "importance": 0.8175,
+      "importance_score": 0.8175,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9092,
+        "recency": 0.8081,
         "story_heat": 0.0
       },
       "category": "official",
@@ -700,30 +976,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     },
     {
-      "story_id": "story_6e67842f0f7e",
-      "title": "The full stack behind abundant intelligence",
-      "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
-      "primary_url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+      "story_id": "story_716a4067630f",
+      "title": "Learning never stops: How AI makes learning continuous",
+      "url": "https://openai.com/index/learning-never-stops",
+      "primary_url": "https://openai.com/index/learning-never-stops",
       "source": "OpenAI News",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "c11537df89677eb075157ecdbf835a264160de84",
-          "title": "The full stack behind abundant intelligence",
+          "id": "b0d741202592d07d3ecf5eb0cfc756b9803bf7d9",
+          "title": "Learning never stops: How AI makes learning continuous",
           "title_zh": null,
-          "title_en": "The full stack behind abundant intelligence",
-          "title_original": "The full stack behind abundant intelligence",
-          "summary": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost.",
+          "title_en": "Learning never stops: How AI makes learning continuous",
+          "title_original": "Learning never stops: How AI makes learning continuous",
+          "summary": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+          "url": "https://openai.com/index/learning-never-stops",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-08-25T07:05:00Z"
+          "published_at": "2026-08-26T10:00:00Z"
         }
       ],
       "source_count": 1,
@@ -732,31 +1008,31 @@
       ],
       "items": [
         {
-          "id": "c11537df89677eb075157ecdbf835a264160de84",
-          "title": "The full stack behind abundant intelligence",
+          "id": "b0d741202592d07d3ecf5eb0cfc756b9803bf7d9",
+          "title": "Learning never stops: How AI makes learning continuous",
           "title_zh": null,
-          "title_en": "The full stack behind abundant intelligence",
-          "title_original": "The full stack behind abundant intelligence",
-          "summary": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost.",
+          "title_en": "Learning never stops: How AI makes learning continuous",
+          "title_original": "Learning never stops: How AI makes learning continuous",
+          "summary": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+          "url": "https://openai.com/index/learning-never-stops",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-08-25T07:05:00Z"
+          "published_at": "2026-08-26T10:00:00Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8164,
-      "importance": 0.8164,
-      "importance_score": 0.8164,
+      "score": 0.8383,
+      "importance": 0.8383,
+      "importance_score": 0.8383,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8022,
+        "recency": 0.9238,
         "story_heat": 0.0
       },
       "category": "official",
@@ -765,133 +1041,356 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-25T07:05:00Z",
-      "latest_at": "2026-08-25T07:05:00Z",
+      "earliest_at": "2026-08-26T10:00:00Z",
+      "latest_at": "2026-08-26T10:00:00Z",
       "primary_item": {
-        "id": "c11537df89677eb075157ecdbf835a264160de84",
-        "title": "The full stack behind abundant intelligence",
+        "id": "b0d741202592d07d3ecf5eb0cfc756b9803bf7d9",
+        "title": "Learning never stops: How AI makes learning continuous",
         "title_zh": null,
-        "title_en": "The full stack behind abundant intelligence",
-        "title_original": "The full stack behind abundant intelligence",
-        "summary": "OpenAI CFO Sarah Friar explains how advances across chips, compute, models, and products compound to deliver more useful intelligence at greater scale and lower cost.",
+        "title_en": "Learning never stops: How AI makes learning continuous",
+        "title_original": "Learning never stops: How AI makes learning continuous",
+        "summary": "OpenAI’s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/the-full-stack-behind-abundant-intelligence",
+        "url": "https://openai.com/index/learning-never-stops",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8323,
+      "peak_score": 0.8383,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     },
     {
-      "story_id": "story_6411634610d0",
-      "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-      "primary_url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-      "source": "Hugging Face Blog",
-      "source_name": "Official AI Updates",
+      "story_id": "story_809ef9d986bc",
+      "title": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果 / Enabling independent research on how people use Claude",
+      "url": "https://www.anthropic.com/research/enabling-independent-research",
+      "primary_url": "https://www.anthropic.com/research/enabling-independent-research",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "source_name": "AI HOT",
       "sources": [
         {
-          "id": "04b618df28b926c9c0332e417c3ad4705c0212a1",
-          "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-          "title_zh": null,
-          "title_en": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-          "title_original": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-          "summary": null,
+          "id": "098f6cf77d5fa58ef362e1940d0e887881c51ba7",
+          "title": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果 / Enabling independent research on how people use Claude",
+          "title_zh": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果",
+          "title_en": "Enabling independent research on how people use Claude",
+          "title_original": "Enabling independent research on how people use Claude",
+          "summary": "Anthropic 今年春季启动试点，通过隐私保护工具 Anthropic Insights（原 Clio）向斯坦福大学 SALT Lab、牛津大学人类信息处理实验室及 METR 三个外部机构开放约 25 万段 2026 年 4-5 月的 Claude.ai 或 Claude Code 对话数据，供其独立设计研究并公开发布结果。",
           "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-25T11:39:24Z"
+          "url": "https://www.anthropic.com/research/enabling-independent-research",
+          "source": "Anthropic：Research（发表成果 · 网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T17:30:30.074000Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hugging Face Blog"
+        "Anthropic：Research（发表成果 · 网页）"
       ],
       "items": [
         {
-          "id": "04b618df28b926c9c0332e417c3ad4705c0212a1",
-          "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-          "title_zh": null,
-          "title_en": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-          "title_original": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-          "summary": null,
+          "id": "098f6cf77d5fa58ef362e1940d0e887881c51ba7",
+          "title": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果 / Enabling independent research on how people use Claude",
+          "title_zh": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果",
+          "title_en": "Enabling independent research on how people use Claude",
+          "title_original": "Enabling independent research on how people use Claude",
+          "summary": "Anthropic 今年春季启动试点，通过隐私保护工具 Anthropic Insights（原 Clio）向斯坦福大学 SALT Lab、牛津大学人类信息处理实验室及 METR 三个外部机构开放约 25 万段 2026 年 4-5 月的 Claude.ai 或 Claude Code 对话数据，供其独立设计研究并公开发布结果。",
           "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-25T11:39:24Z"
+          "url": "https://www.anthropic.com/research/enabling-independent-research",
+          "source": "Anthropic：Research（发表成果 · 网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T17:30:30.074000Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8309,
-      "importance": 0.8309,
-      "importance_score": 0.8309,
+      "score": 0.8058,
+      "importance": 0.8058,
+      "importance_score": 0.8058,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.9,
+        "editorial": 0.69,
         "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8383,
+        "ai_relevance": 1.0,
+        "recency": 0.9931,
         "story_heat": 0.0
       },
       "category": "official",
       "reasons": [
-        "official_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-25T11:39:24Z",
-      "latest_at": "2026-08-25T11:39:24Z",
+      "earliest_at": "2026-08-26T17:30:30.074000Z",
+      "latest_at": "2026-08-26T17:30:30.074000Z",
       "primary_item": {
-        "id": "04b618df28b926c9c0332e417c3ad4705c0212a1",
-        "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-        "title_zh": null,
-        "title_en": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-        "title_original": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-        "summary": null,
+        "id": "098f6cf77d5fa58ef362e1940d0e887881c51ba7",
+        "title": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果 / Enabling independent research on how people use Claude",
+        "title_zh": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果",
+        "title_en": "Enabling independent research on how people use Claude",
+        "title_original": "Enabling independent research on how people use Claude",
+        "summary": "Anthropic 今年春季启动试点，通过隐私保护工具 Anthropic Insights（原 Clio）向斯坦福大学 SALT Lab、牛津大学人类信息处理实验室及 METR 三个外部机构开放约 25 万段 2026 年 4-5 月的 Claude.ai 或 Claude Code 对话数据，供其独立设计研究并公开发布结果。",
         "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-        "source": "Hugging Face Blog",
-        "source_name": "Official AI Updates"
+        "url": "https://www.anthropic.com/research/enabling-independent-research",
+        "source": "Anthropic：Research（发表成果 · 网页）",
+        "source_name": "AI HOT"
       },
-      "peak_score": 0.8596,
+      "peak_score": 0.8058,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     },
     {
-      "story_id": "story_fb0dc79a0364",
-      "title": "Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑 / Claude's memory works everywhere， and you decide what's in it",
-      "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
-      "primary_url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
+      "story_id": "story_5b62f6af7f72",
+      "title": "以色列资助的假美国智库试图利用AI进行宣传",
+      "url": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+      "primary_url": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "4885376f482f17e357c3cc0163dfa0cf7b713dd4",
+          "title": "以色列资助的假美国智库试图利用AI进行宣传",
+          "title_zh": "以色列资助的假美国智库试图利用AI进行宣传",
+          "title_en": null,
+          "title_original": "以色列资助的假美国智库试图利用AI进行宣传",
+          "summary": "一个打着\"汉诺威公共政策研究所\"旗号的亲以色列网站，在九天内发布了124篇、超56万字的报告，旨在优化内容以引导ChatGPT等AI聊天机器人引用其亲以观点。该网站由美国公司Piro Inc依据《外国代理人登记法》为以色列政府分发内容，其背后是以色列政府数千万美元资助、经Havas Media等第三方转手的更广泛宣传行动。",
+          "recommend_reason_zh": null,
+          "url": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T14:05:28.706000Z"
+        },
+        {
+          "id": "26e18a5fdfcdc9acc3304a792ad6fafc84058728",
+          "title": "一个由以色列设立并资助的假美国智库，试图利用人工智能进行宣传",
+          "title_zh": "一个由以色列设立并资助的假美国智库，试图利用人工智能进行宣传",
+          "title_en": null,
+          "title_original": "一个由以色列设立并资助的假美国智库，试图利用人工智能进行宣传",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+          "source": "www.theguardian.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-26T14:05:28.706000Z"
+        },
+        {
+          "id": "28827361f20d91352021d756755dba29a3b2772b",
+          "title": "以色列资助的假美国智库试图利用AI进行宣传 / Fake US thinktank set up and funded by Israel sought to game AI for propaganda",
+          "title_zh": "以色列资助的假美国智库试图利用AI进行宣传",
+          "title_en": "Fake US thinktank set up and funded by Israel sought to game AI for propaganda",
+          "title_original": "Fake US thinktank set up and funded by Israel sought to game AI for propaganda",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-26T12:11:19Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News · 24h最热",
+        "Hacker News 热门（buzzing.cc 中文翻译）",
+        "www.theguardian.com"
+      ],
+      "items": [
+        {
+          "id": "4885376f482f17e357c3cc0163dfa0cf7b713dd4",
+          "title": "以色列资助的假美国智库试图利用AI进行宣传",
+          "title_zh": "以色列资助的假美国智库试图利用AI进行宣传",
+          "title_en": null,
+          "title_original": "以色列资助的假美国智库试图利用AI进行宣传",
+          "summary": "一个打着\"汉诺威公共政策研究所\"旗号的亲以色列网站，在九天内发布了124篇、超56万字的报告，旨在优化内容以引导ChatGPT等AI聊天机器人引用其亲以观点。该网站由美国公司Piro Inc依据《外国代理人登记法》为以色列政府分发内容，其背后是以色列政府数千万美元资助、经Havas Media等第三方转手的更广泛宣传行动。",
+          "recommend_reason_zh": null,
+          "url": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T14:05:28.706000Z"
+        },
+        {
+          "id": "26e18a5fdfcdc9acc3304a792ad6fafc84058728",
+          "title": "一个由以色列设立并资助的假美国智库，试图利用人工智能进行宣传",
+          "title_zh": "一个由以色列设立并资助的假美国智库，试图利用人工智能进行宣传",
+          "title_en": null,
+          "title_original": "一个由以色列设立并资助的假美国智库，试图利用人工智能进行宣传",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+          "source": "www.theguardian.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-26T14:05:28.706000Z"
+        },
+        {
+          "id": "28827361f20d91352021d756755dba29a3b2772b",
+          "title": "以色列资助的假美国智库试图利用AI进行宣传 / Fake US thinktank set up and funded by Israel sought to game AI for propaganda",
+          "title_zh": "以色列资助的假美国智库试图利用AI进行宣传",
+          "title_en": "Fake US thinktank set up and funded by Israel sought to game AI for propaganda",
+          "title_original": "Fake US thinktank set up and funded by Israel sought to game AI for propaganda",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-08-26T12:11:19Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.7906,
+      "importance": 0.7906,
+      "importance_score": 0.7906,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.82,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.961,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-26T12:11:19Z",
+      "latest_at": "2026-08-26T14:05:28.706000Z",
+      "primary_item": {
+        "id": "4885376f482f17e357c3cc0163dfa0cf7b713dd4",
+        "title": "以色列资助的假美国智库试图利用AI进行宣传",
+        "title_zh": "以色列资助的假美国智库试图利用AI进行宣传",
+        "title_en": null,
+        "title_original": "以色列资助的假美国智库试图利用AI进行宣传",
+        "summary": "一个打着\"汉诺威公共政策研究所\"旗号的亲以色列网站，在九天内发布了124篇、超56万字的报告，旨在优化内容以引导ChatGPT等AI聊天机器人引用其亲以观点。该网站由美国公司Piro Inc依据《外国代理人登记法》为以色列政府分发内容，其背后是以色列政府数千万美元资助、经Havas Media等第三方转手的更广泛宣传行动。",
+        "recommend_reason_zh": null,
+        "url": "https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7906,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-26T18:51:51.359198Z"
+      }
+    },
+    {
+      "story_id": "story_8d6ab5e53d6a",
+      "title": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498367&idx=1&sn=f1a5cf87eb06015cbe995bd5ef8b5d0a",
+      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498367&idx=1&sn=f1a5cf87eb06015cbe995bd5ef8b5d0a",
+      "source": "公众号：腾讯混元",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "c4810573b947190f73ba986cd181cfff47ec62bd",
+          "title": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+          "title_zh": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+          "title_en": null,
+          "title_original": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+          "summary": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 通过 2-bit 与 1.25-bit 量化方案压缩至 574MB 和 440MB，翻译质量几乎无损，在 FLORES-200 上优于 Microsoft Translator 等商业 API。该模型已联合英特尔完成 x86 适配，并在哔哩哔哩直播弹幕实时翻译中落地，单条弹幕翻译耗时 500~800ms。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498367&idx=1&sn=f1a5cf87eb06015cbe995bd5ef8b5d0a",
+          "source": "公众号：腾讯混元",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T08:04:03Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "公众号：腾讯混元"
+      ],
+      "items": [
+        {
+          "id": "c4810573b947190f73ba986cd181cfff47ec62bd",
+          "title": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+          "title_zh": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+          "title_en": null,
+          "title_original": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+          "summary": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 通过 2-bit 与 1.25-bit 量化方案压缩至 574MB 和 440MB，翻译质量几乎无损，在 FLORES-200 上优于 Microsoft Translator 等商业 API。该模型已联合英特尔完成 x86 适配，并在哔哩哔哩直播弹幕实时翻译中落地，单条弹幕翻译耗时 500~800ms。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498367&idx=1&sn=f1a5cf87eb06015cbe995bd5ef8b5d0a",
+          "source": "公众号：腾讯混元",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-26T08:04:03Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7842,
+      "importance": 0.7842,
+      "importance_score": 0.7842,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.67,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9068,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-26T08:04:03Z",
+      "latest_at": "2026-08-26T08:04:03Z",
+      "primary_item": {
+        "id": "c4810573b947190f73ba986cd181cfff47ec62bd",
+        "title": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+        "title_zh": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+        "title_en": null,
+        "title_original": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+        "summary": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 通过 2-bit 与 1.25-bit 量化方案压缩至 574MB 和 440MB，翻译质量几乎无损，在 FLORES-200 上优于 Microsoft Translator 等商业 API。该模型已联合英特尔完成 x86 适配，并在哔哩哔哩直播弹幕实时翻译中落地，单条弹幕翻译耗时 500~800ms。",
+        "recommend_reason_zh": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498367&idx=1&sn=f1a5cf87eb06015cbe995bd5ef8b5d0a",
+        "source": "公众号：腾讯混元",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7842,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-26T18:51:51.359198Z"
+      }
+    },
+    {
+      "story_id": "story_0242f5e0fb1e",
+      "title": "Warp 如何在 Claude 上构建自我改进的智能体 / How Warp builds self-improving agents on Claude",
+      "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
+      "primary_url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
       "source": "Claude：Blog（网页）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "a4abeec045a4d6f73b7bd3f023a245e64406b37c",
-          "title": "Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑 / Claude's memory works everywhere， and you decide what's in it",
-          "title_zh": "Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑",
-          "title_en": "Claude's memory works everywhere， and you decide what's in it",
-          "title_original": "Claude's memory works everywhere， and you decide what's in it",
-          "summary": "Claude 即日起将聊天与 Claude Cowork 的记忆统一，用户在任一场景对话时都能调用此前积累的上下文，减少重复解释。记忆会在聊天过程中实时更新，用户可在 Memory 设置中按主题查看、编辑或删除每条记忆。健康、信仰等敏感话题默认不存储，但可在设置中开启，且敏感识别号、犯罪记录等始终不会被保存。",
+          "id": "4e7c629ad03b81993ca4ae308131ef05d92b7981",
+          "title": "Warp 如何在 Claude 上构建自我改进的智能体 / How Warp builds self-improving agents on Claude",
+          "title_zh": "Warp 如何在 Claude 上构建自我改进的智能体",
+          "title_en": "How Warp builds self-improving agents on Claude",
+          "title_original": "How Warp builds self-improving agents on Claude",
+          "summary": "Warp 在 Claude 平台上构建了基于 Agent Skills 的自我改进循环，通过基础技能与改进技能两个文件型技能，将人类反馈转化为对智能体的持续优化。该模式已应用于其整个开源仓库，覆盖数百名贡献者与数千次代码审查。团队建议以原则而非规则编写技能，并强调低摩擦反馈与改进技能的可复用性。",
           "recommend_reason_zh": null,
-          "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
+          "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
           "source": "Claude：Blog（网页）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-08-25T18:02:04.743000Z"
+          "published_at": "2026-08-26T17:02:40.777000Z"
         }
       ],
       "source_count": 1,
@@ -900,31 +1399,31 @@
       ],
       "items": [
         {
-          "id": "a4abeec045a4d6f73b7bd3f023a245e64406b37c",
-          "title": "Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑 / Claude's memory works everywhere， and you decide what's in it",
-          "title_zh": "Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑",
-          "title_en": "Claude's memory works everywhere， and you decide what's in it",
-          "title_original": "Claude's memory works everywhere， and you decide what's in it",
-          "summary": "Claude 即日起将聊天与 Claude Cowork 的记忆统一，用户在任一场景对话时都能调用此前积累的上下文，减少重复解释。记忆会在聊天过程中实时更新，用户可在 Memory 设置中按主题查看、编辑或删除每条记忆。健康、信仰等敏感话题默认不存储，但可在设置中开启，且敏感识别号、犯罪记录等始终不会被保存。",
+          "id": "4e7c629ad03b81993ca4ae308131ef05d92b7981",
+          "title": "Warp 如何在 Claude 上构建自我改进的智能体 / How Warp builds self-improving agents on Claude",
+          "title_zh": "Warp 如何在 Claude 上构建自我改进的智能体",
+          "title_en": "How Warp builds self-improving agents on Claude",
+          "title_original": "How Warp builds self-improving agents on Claude",
+          "summary": "Warp 在 Claude 平台上构建了基于 Agent Skills 的自我改进循环，通过基础技能与改进技能两个文件型技能，将人类反馈转化为对智能体的持续优化。该模式已应用于其整个开源仓库，覆盖数百名贡献者与数千次代码审查。团队建议以原则而非规则编写技能，并强调低摩擦反馈与改进技能的可复用性。",
           "recommend_reason_zh": null,
-          "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
+          "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
           "source": "Claude：Blog（网页）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-08-25T18:02:04.743000Z"
+          "published_at": "2026-08-26T17:02:40.777000Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7815,
-      "importance": 0.7815,
-      "importance_score": 0.7815,
+      "score": 0.805,
+      "importance": 0.805,
+      "importance_score": 0.805,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.67,
+        "editorial": 0.69,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8914,
+        "recency": 0.9887,
         "story_heat": 0.0
       },
       "category": "official",
@@ -932,281 +1431,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-25T18:02:04.743000Z",
-      "latest_at": "2026-08-25T18:02:04.743000Z",
+      "earliest_at": "2026-08-26T17:02:40.777000Z",
+      "latest_at": "2026-08-26T17:02:40.777000Z",
       "primary_item": {
-        "id": "a4abeec045a4d6f73b7bd3f023a245e64406b37c",
-        "title": "Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑 / Claude's memory works everywhere， and you decide what's in it",
-        "title_zh": "Claude 记忆功能全面打通聊天与 Cowork，用户可逐条查看和编辑",
-        "title_en": "Claude's memory works everywhere， and you decide what's in it",
-        "title_original": "Claude's memory works everywhere， and you decide what's in it",
-        "summary": "Claude 即日起将聊天与 Claude Cowork 的记忆统一，用户在任一场景对话时都能调用此前积累的上下文，减少重复解释。记忆会在聊天过程中实时更新，用户可在 Memory 设置中按主题查看、编辑或删除每条记忆。健康、信仰等敏感话题默认不存储，但可在设置中开启，且敏感识别号、犯罪记录等始终不会被保存。",
+        "id": "4e7c629ad03b81993ca4ae308131ef05d92b7981",
+        "title": "Warp 如何在 Claude 上构建自我改进的智能体 / How Warp builds self-improving agents on Claude",
+        "title_zh": "Warp 如何在 Claude 上构建自我改进的智能体",
+        "title_en": "How Warp builds self-improving agents on Claude",
+        "title_original": "How Warp builds self-improving agents on Claude",
+        "summary": "Warp 在 Claude 平台上构建了基于 Agent Skills 的自我改进循环，通过基础技能与改进技能两个文件型技能，将人类反馈转化为对智能体的持续优化。该模式已应用于其整个开源仓库，覆盖数百名贡献者与数千次代码审查。团队建议以原则而非规则编写技能，并强调低摩擦反馈与改进技能的可复用性。",
         "recommend_reason_zh": null,
-        "url": "https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it",
+        "url": "https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude",
         "source": "Claude：Blog（网页）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7991,
+      "peak_score": 0.805,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
-      }
-    },
-    {
-      "story_id": "story_451d09e98bb5",
-      "title": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升",
-      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
-      "primary_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "dc643214494de427dfdd7f8c6e946612ba4af61d",
-          "title": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升",
-          "title_zh": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升",
-          "title_en": null,
-          "title_original": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升",
-          "summary": "苹果发布首款 2nm 芯片 M6 和迄今最强芯片 M5 Ultra，分别搭载于新款 Mac mini 与 Mac Studio。",
-          "recommend_reason_zh": null,
-          "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-25T13:41:50.050000Z"
-        },
-        {
-          "id": "7a0c88e1c4a6b50eb638032ad231d087bc3f14db",
-          "title": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-          "title_zh": null,
-          "title_en": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-          "title_original": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49433292",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-25T14:01:59.571000Z"
-        },
-        {
-          "id": "18edc7081b76e892ec99e6b3ad4d98bb5298dc59",
-          "title": "苹果推出 M6 和 M5 Ultra，性能和人工智能计算能力实现重大飞跃",
-          "title_zh": "苹果推出 M6 和 M5 Ultra，性能和人工智能计算能力实现重大飞跃",
-          "title_en": null,
-          "title_original": "苹果推出 M6 和 M5 Ultra，性能和人工智能计算能力实现重大飞跃",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
-          "source": "www.apple.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-08-25T13:41:50.050000Z"
-        },
-        {
-          "id": "1687009435840307a88af69c47597de7fdce46aa",
-          "title": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升 / Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-          "title_zh": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升",
-          "title_en": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-          "title_original": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-25T13:01:22Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News (黑客新闻)",
-        "Hacker News 热门（buzzing.cc 中文翻译）",
-        "hackernews",
-        "www.apple.com"
-      ],
-      "items": [
-        {
-          "id": "dc643214494de427dfdd7f8c6e946612ba4af61d",
-          "title": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升",
-          "title_zh": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升",
-          "title_en": null,
-          "title_original": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升",
-          "summary": "苹果发布首款 2nm 芯片 M6 和迄今最强芯片 M5 Ultra，分别搭载于新款 Mac mini 与 Mac Studio。",
-          "recommend_reason_zh": null,
-          "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-25T13:41:50.050000Z"
-        },
-        {
-          "id": "7a0c88e1c4a6b50eb638032ad231d087bc3f14db",
-          "title": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-          "title_zh": null,
-          "title_en": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-          "title_original": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49433292",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-25T14:01:59.571000Z"
-        },
-        {
-          "id": "18edc7081b76e892ec99e6b3ad4d98bb5298dc59",
-          "title": "苹果推出 M6 和 M5 Ultra，性能和人工智能计算能力实现重大飞跃",
-          "title_zh": "苹果推出 M6 和 M5 Ultra，性能和人工智能计算能力实现重大飞跃",
-          "title_en": null,
-          "title_original": "苹果推出 M6 和 M5 Ultra，性能和人工智能计算能力实现重大飞跃",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
-          "source": "www.apple.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-08-25T13:41:50.050000Z"
-        },
-        {
-          "id": "1687009435840307a88af69c47597de7fdce46aa",
-          "title": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升 / Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-          "title_zh": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升",
-          "title_en": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-          "title_original": "Apple introduces M6 and M5 Ultra for a big leap in performance and AI compute",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-25T13:01:22Z"
-        }
-      ],
-      "item_count": 4,
-      "duplicate_count": 4,
-      "score": 0.7605,
-      "importance": 0.7605,
-      "importance_score": 0.7605,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.7,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.855,
-        "story_heat": 0.25
-      },
-      "category": "industry",
-      "reasons": [
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-25T13:01:22Z",
-      "latest_at": "2026-08-25T14:01:59.571000Z",
-      "primary_item": {
-        "id": "dc643214494de427dfdd7f8c6e946612ba4af61d",
-        "title": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升",
-        "title_zh": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升",
-        "title_en": null,
-        "title_original": "苹果推出 M6 和 M5 Ultra，性能和 AI 算力大幅跃升",
-        "summary": "苹果发布首款 2nm 芯片 M6 和迄今最强芯片 M5 Ultra，分别搭载于新款 Mac mini 与 Mac Studio。",
-        "recommend_reason_zh": null,
-        "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7857,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
-      }
-    },
-    {
-      "story_id": "story_2ae3bbe5c601",
-      "title": "Push rules in rulesets now support path exceptions",
-      "url": "https://github.blog/changelog/2026-08-25-push-rules-in-rulesets-now-support-path-exceptions",
-      "primary_url": "https://github.blog/changelog/2026-08-25-push-rules-in-rulesets-now-support-path-exceptions",
-      "source": "GitHub Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "e1c4eac73d8d8b63b5ddd2c669c78b7c2842a6c9",
-          "title": "Push rules in rulesets now support path exceptions",
-          "title_zh": null,
-          "title_en": "Push rules in rulesets now support path exceptions",
-          "title_original": "Push rules in rulesets now support path exceptions",
-          "summary": "You can now configure push rules more granularly by exempting specific file paths, so a rule applies everywhere in scope except the paths you choose. Path exceptions are in public… The post Push rules in rulesets now support path exceptions appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-08-25-push-rules-in-rulesets-now-support-path-exceptions",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-25T17:40:15Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub Changelog"
-      ],
-      "items": [
-        {
-          "id": "e1c4eac73d8d8b63b5ddd2c669c78b7c2842a6c9",
-          "title": "Push rules in rulesets now support path exceptions",
-          "title_zh": null,
-          "title_en": "Push rules in rulesets now support path exceptions",
-          "title_original": "Push rules in rulesets now support path exceptions",
-          "summary": "You can now configure push rules more granularly by exempting specific file paths, so a rule applies everywhere in scope except the paths you choose. Path exceptions are in public… The post Push rules in rulesets now support path exceptions appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/changelog/2026-08-25-push-rules-in-rulesets-now-support-path-exceptions",
-          "source": "GitHub Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-25T17:40:15Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8239,
-      "importance": 0.8239,
-      "importance_score": 0.8239,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.8883,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-25T17:40:15Z",
-      "latest_at": "2026-08-25T17:40:15Z",
-      "primary_item": {
-        "id": "e1c4eac73d8d8b63b5ddd2c669c78b7c2842a6c9",
-        "title": "Push rules in rulesets now support path exceptions",
-        "title_zh": null,
-        "title_en": "Push rules in rulesets now support path exceptions",
-        "title_original": "Push rules in rulesets now support path exceptions",
-        "summary": "You can now configure push rules more granularly by exempting specific file paths, so a rule applies everywhere in scope except the paths you choose. Path exceptions are in public… The post Push rules in rulesets now support path exceptions appeared first on The GitHub Blog .",
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/changelog/2026-08-25-push-rules-in-rulesets-now-support-path-exceptions",
-        "source": "GitHub Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8415,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     },
     {
@@ -1254,15 +1498,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7684,
-      "importance": 0.7684,
-      "importance_score": 0.7684,
+      "score": 0.75,
+      "importance": 0.75,
+      "importance_score": 0.75,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.61,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9191,
+        "recency": 0.8169,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1289,171 +1533,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
-      }
-    },
-    {
-      "story_id": "story_79b9ec90a382",
-      "title": "ARIA 重拳封杀纯 AI 歌曲：人类创作主唱才能上榜，AI 辅助仍可准入",
-      "url": "https://www.aibase.com/news/30604",
-      "primary_url": "https://www.aibase.com/news/30604",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "32bf9da3f8cd8b23a50f42dddb4d2c71448b97e0",
-          "title": "ARIA 重拳封杀纯 AI 歌曲：人类创作主唱才能上榜，AI 辅助仍可准入",
-          "title_zh": "ARIA 重拳封杀纯 AI 歌曲：人类创作主唱才能上榜，AI 辅助仍可准入",
-          "title_en": null,
-          "title_original": "ARIA 重拳封杀纯 AI 歌曲：人类创作主唱才能上榜，AI 辅助仍可准入",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30604",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-25T08:06:48.721044Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "32bf9da3f8cd8b23a50f42dddb4d2c71448b97e0",
-          "title": "ARIA 重拳封杀纯 AI 歌曲：人类创作主唱才能上榜，AI 辅助仍可准入",
-          "title_zh": "ARIA 重拳封杀纯 AI 歌曲：人类创作主唱才能上榜，AI 辅助仍可准入",
-          "title_en": null,
-          "title_original": "ARIA 重拳封杀纯 AI 歌曲：人类创作主唱才能上榜，AI 辅助仍可准入",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30604",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-25T08:06:48.721044Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7334,
-      "importance": 0.7334,
-      "importance_score": 0.7334,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8102,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-25T08:06:48.721044Z",
-      "latest_at": "2026-08-25T08:06:48.721044Z",
-      "primary_item": {
-        "id": "32bf9da3f8cd8b23a50f42dddb4d2c71448b97e0",
-        "title": "ARIA 重拳封杀纯 AI 歌曲：人类创作主唱才能上榜，AI 辅助仍可准入",
-        "title_zh": "ARIA 重拳封杀纯 AI 歌曲：人类创作主唱才能上榜，AI 辅助仍可准入",
-        "title_en": null,
-        "title_original": "ARIA 重拳封杀纯 AI 歌曲：人类创作主唱才能上榜，AI 辅助仍可准入",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30604",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
-      }
-    },
-    {
-      "story_id": "story_6ccc5b93e71a",
-      "title": "OpenWorker 新版发布，内置网络安全智能体 / OpenWorker -- an open source agent that doesn't just chat but completes tasks on your laptop -- just…",
-      "url": "https://x.com/AndrewYNg/status/2092315079576555806",
-      "primary_url": "https://x.com/AndrewYNg/status/2092315079576555806",
-      "source": "X：Andrew Ng（DeepLearning.AI 创始人） (@AndrewYNg)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "d1d7d8b4938352b2de83fe45b4d0d2ec94555d49",
-          "title": "OpenWorker 新版发布，内置网络安全智能体 / OpenWorker -- an open source agent that doesn't just chat but completes tasks on your laptop -- just…",
-          "title_zh": "OpenWorker 新版发布，内置网络安全智能体",
-          "title_en": "OpenWorker -- an open source agent that doesn't just chat but completes tasks on your laptop -- just…",
-          "title_original": "OpenWorker -- an open source agent that doesn't just chat but completes tasks on your laptop -- just…",
-          "summary": "Andrew Ng 旗下开源智能体 OpenWorker 发布新版，强化安全工作流。其 harness 完全开源，安全团队可审计无后门。新版内置代码漏洞扫描、依赖供应链注入检测和云安全配置检查三类网络安全智能体，并支持本地运行开源权重模型以保护敏感代码。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/AndrewYNg/status/2092315079576555806",
-          "source": "X：Andrew Ng（DeepLearning.AI 创始人） (@AndrewYNg)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-25T18:16:02Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Andrew Ng（DeepLearning.AI 创始人） (@AndrewYNg)"
-      ],
-      "items": [
-        {
-          "id": "d1d7d8b4938352b2de83fe45b4d0d2ec94555d49",
-          "title": "OpenWorker 新版发布，内置网络安全智能体 / OpenWorker -- an open source agent that doesn't just chat but completes tasks on your laptop -- just…",
-          "title_zh": "OpenWorker 新版发布，内置网络安全智能体",
-          "title_en": "OpenWorker -- an open source agent that doesn't just chat but completes tasks on your laptop -- just…",
-          "title_original": "OpenWorker -- an open source agent that doesn't just chat but completes tasks on your laptop -- just…",
-          "summary": "Andrew Ng 旗下开源智能体 OpenWorker 发布新版，强化安全工作流。其 harness 完全开源，安全团队可审计无后门。新版内置代码漏洞扫描、依赖供应链注入检测和云安全配置检查三类网络安全智能体，并支持本地运行开源权重模型以保护敏感代码。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/AndrewYNg/status/2092315079576555806",
-          "source": "X：Andrew Ng（DeepLearning.AI 创始人） (@AndrewYNg)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-25T18:16:02Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7334,
-      "importance": 0.7334,
-      "importance_score": 0.7334,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.67,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8934,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-25T18:16:02Z",
-      "latest_at": "2026-08-25T18:16:02Z",
-      "primary_item": {
-        "id": "d1d7d8b4938352b2de83fe45b4d0d2ec94555d49",
-        "title": "OpenWorker 新版发布，内置网络安全智能体 / OpenWorker -- an open source agent that doesn't just chat but completes tasks on your laptop -- just…",
-        "title_zh": "OpenWorker 新版发布，内置网络安全智能体",
-        "title_en": "OpenWorker -- an open source agent that doesn't just chat but completes tasks on your laptop -- just…",
-        "title_original": "OpenWorker -- an open source agent that doesn't just chat but completes tasks on your laptop -- just…",
-        "summary": "Andrew Ng 旗下开源智能体 OpenWorker 发布新版，强化安全工作流。其 harness 完全开源，安全团队可审计无后门。新版内置代码漏洞扫描、依赖供应链注入检测和云安全配置检查三类网络安全智能体，并支持本地运行开源权重模型以保护敏感代码。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/AndrewYNg/status/2092315079576555806",
-        "source": "X：Andrew Ng（DeepLearning.AI 创始人） (@AndrewYNg)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7511,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     },
     {
@@ -1501,15 +1581,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8277,
-      "importance": 0.8277,
-      "importance_score": 0.8277,
+      "score": 0.8095,
+      "importance": 0.8095,
+      "importance_score": 0.8095,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9093,
+        "recency": 0.8081,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1537,89 +1617,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     },
     {
-      "story_id": "story_e78ba6d6ecd7",
-      "title": "Apple 推出搭载 M5 Max 与 M5 Ultra 的全新 Mac Studio / Apple introduces new Mac Studio with M5 Max and M5 Ultra",
-      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra",
-      "primary_url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra",
-      "source": "Apple：Newsroom（RSS）",
-      "source_name": "AI HOT",
+      "story_id": "story_4346047ee8ea",
+      "title": "How loveholidays is making everyone a builder with Codex",
+      "url": "https://openai.com/index/loveholidays",
+      "primary_url": "https://openai.com/index/loveholidays",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "900130058d1341061578b56b4d1701a3676a34d7",
-          "title": "Apple 推出搭载 M5 Max 与 M5 Ultra 的全新 Mac Studio / Apple introduces new Mac Studio with M5 Max and M5 Ultra",
-          "title_zh": "Apple 推出搭载 M5 Max 与 M5 Ultra 的全新 Mac Studio",
-          "title_en": "Apple introduces new Mac Studio with M5 Max and M5 Ultra",
-          "title_original": "Apple introduces new Mac Studio with M5 Max and M5 Ultra",
-          "summary": "Apple 发布搭载 M5 Max 与全新 M5 Ultra 的 Mac Studio，AI 性能最高提升 4.3 倍，图形性能提升 1.8 倍，存储速度提升 2 倍。M5 Ultra 版本支持最高 512GB 统一内存与 1.2TB/s 内存带宽，可完全在设备端运行大型 LLM；四台集群可带来最高 3 倍分布式 AI 推理速度提升。新品今日起接受预购，9 月 22 日开售。",
+          "id": "14383b7f92a78efa35f12af8bae47555ed7c2a55",
+          "title": "How loveholidays is making everyone a builder with Codex",
+          "title_zh": null,
+          "title_en": "How loveholidays is making everyone a builder with Codex",
+          "title_original": "How loveholidays is making everyone a builder with Codex",
+          "summary": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster.",
           "recommend_reason_zh": null,
-          "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra",
-          "source": "Apple：Newsroom（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-25T13:00:23.969000Z"
+          "url": "https://openai.com/index/loveholidays",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-26T00:00:00Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Apple：Newsroom（RSS）"
+        "OpenAI News"
       ],
       "items": [
         {
-          "id": "900130058d1341061578b56b4d1701a3676a34d7",
-          "title": "Apple 推出搭载 M5 Max 与 M5 Ultra 的全新 Mac Studio / Apple introduces new Mac Studio with M5 Max and M5 Ultra",
-          "title_zh": "Apple 推出搭载 M5 Max 与 M5 Ultra 的全新 Mac Studio",
-          "title_en": "Apple introduces new Mac Studio with M5 Max and M5 Ultra",
-          "title_original": "Apple introduces new Mac Studio with M5 Max and M5 Ultra",
-          "summary": "Apple 发布搭载 M5 Max 与全新 M5 Ultra 的 Mac Studio，AI 性能最高提升 4.3 倍，图形性能提升 1.8 倍，存储速度提升 2 倍。M5 Ultra 版本支持最高 512GB 统一内存与 1.2TB/s 内存带宽，可完全在设备端运行大型 LLM；四台集群可带来最高 3 倍分布式 AI 推理速度提升。新品今日起接受预购，9 月 22 日开售。",
+          "id": "14383b7f92a78efa35f12af8bae47555ed7c2a55",
+          "title": "How loveholidays is making everyone a builder with Codex",
+          "title_zh": null,
+          "title_en": "How loveholidays is making everyone a builder with Codex",
+          "title_original": "How loveholidays is making everyone a builder with Codex",
+          "summary": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster.",
           "recommend_reason_zh": null,
-          "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra",
-          "source": "Apple：Newsroom（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-25T13:00:23.969000Z"
+          "url": "https://openai.com/index/loveholidays",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-26T00:00:00Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7165,
-      "importance": 0.7165,
-      "importance_score": 0.7165,
-      "importance_label": "值得关注",
+      "score": 0.831,
+      "importance": 0.831,
+      "importance_score": 0.831,
+      "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.64,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8493,
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.95,
+        "recency": 0.8391,
         "story_heat": 0.0
       },
-      "category": "watch",
+      "category": "official",
       "reasons": [
-        "high_ai_relevance"
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-08-25T13:00:23.969000Z",
-      "latest_at": "2026-08-25T13:00:23.969000Z",
+      "earliest_at": "2026-08-26T00:00:00Z",
+      "latest_at": "2026-08-26T00:00:00Z",
       "primary_item": {
-        "id": "900130058d1341061578b56b4d1701a3676a34d7",
-        "title": "Apple 推出搭载 M5 Max 与 M5 Ultra 的全新 Mac Studio / Apple introduces new Mac Studio with M5 Max and M5 Ultra",
-        "title_zh": "Apple 推出搭载 M5 Max 与 M5 Ultra 的全新 Mac Studio",
-        "title_en": "Apple introduces new Mac Studio with M5 Max and M5 Ultra",
-        "title_original": "Apple introduces new Mac Studio with M5 Max and M5 Ultra",
-        "summary": "Apple 发布搭载 M5 Max 与全新 M5 Ultra 的 Mac Studio，AI 性能最高提升 4.3 倍，图形性能提升 1.8 倍，存储速度提升 2 倍。M5 Ultra 版本支持最高 512GB 统一内存与 1.2TB/s 内存带宽，可完全在设备端运行大型 LLM；四台集群可带来最高 3 倍分布式 AI 推理速度提升。新品今日起接受预购，9 月 22 日开售。",
+        "id": "14383b7f92a78efa35f12af8bae47555ed7c2a55",
+        "title": "How loveholidays is making everyone a builder with Codex",
+        "title_zh": null,
+        "title_en": "How loveholidays is making everyone a builder with Codex",
+        "title_original": "How loveholidays is making everyone a builder with Codex",
+        "summary": "Discover how loveholidays uses OpenAI Codex to make software development accessible across the business, helping teams turn ideas into products faster.",
         "recommend_reason_zh": null,
-        "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra",
-        "source": "Apple：Newsroom（RSS）",
-        "source_name": "AI HOT"
+        "url": "https://openai.com/index/loveholidays",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
       },
-      "peak_score": 0.7415,
+      "peak_score": 0.831,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     },
     {
@@ -1667,21 +1749,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7611,
-      "importance": 0.7611,
-      "importance_score": 0.7611,
+      "score": 0.7418,
+      "importance": 0.7418,
+      "importance_score": 0.7418,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9637,
+        "recency": 0.8565,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-08-26T02:08:02.708283Z",
       "latest_at": "2026-08-26T02:08:02.708283Z",
@@ -1702,89 +1783,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
-      }
-    },
-    {
-      "story_id": "story_33fb169ced44",
-      "title": "Dylan Patel：Anthropic 与 OpenAI 到 2028 年将控制全球大部分算力 / Dylan Patel - Anthropic & OpenAI will have most of the world's compute by 2028",
-      "url": "https://www.dwarkesh.com/p/dylan-patel-3",
-      "primary_url": "https://www.dwarkesh.com/p/dylan-patel-3",
-      "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "5d63273982e062f7d8bb53aeac2027ff9a8ded8f",
-          "title": "Dylan Patel：Anthropic 与 OpenAI 到 2028 年将控制全球大部分算力 / Dylan Patel - Anthropic & OpenAI will have most of the world's compute by 2028",
-          "title_zh": "Dylan Patel：Anthropic 与 OpenAI 到 2028 年将控制全球大部分算力",
-          "title_en": "Dylan Patel - Anthropic & OpenAI will have most of the world's compute by 2028",
-          "title_original": "Dylan Patel - Anthropic & OpenAI will have most of the world's compute by 2028",
-          "summary": "在最新一期播客中，SemiAnalysis 创始人 Dylan Patel 与 Dwarkesh Patel 讨论实验室经济学，预计 Anthropic 和 OpenAI 到 2028 年将控制全球大部分可用 FLOPs，因其能更好变现算力并出价高于其他方。",
-          "recommend_reason_zh": null,
-          "url": "https://www.dwarkesh.com/p/dylan-patel-3",
-          "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-25T15:32:57Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Dwarkesh Patel：Podcast & Blog（RSS）"
-      ],
-      "items": [
-        {
-          "id": "5d63273982e062f7d8bb53aeac2027ff9a8ded8f",
-          "title": "Dylan Patel：Anthropic 与 OpenAI 到 2028 年将控制全球大部分算力 / Dylan Patel - Anthropic & OpenAI will have most of the world's compute by 2028",
-          "title_zh": "Dylan Patel：Anthropic 与 OpenAI 到 2028 年将控制全球大部分算力",
-          "title_en": "Dylan Patel - Anthropic & OpenAI will have most of the world's compute by 2028",
-          "title_original": "Dylan Patel - Anthropic & OpenAI will have most of the world's compute by 2028",
-          "summary": "在最新一期播客中，SemiAnalysis 创始人 Dylan Patel 与 Dwarkesh Patel 讨论实验室经济学，预计 Anthropic 和 OpenAI 到 2028 年将控制全球大部分可用 FLOPs，因其能更好变现算力并出价高于其他方。",
-          "recommend_reason_zh": null,
-          "url": "https://www.dwarkesh.com/p/dylan-patel-3",
-          "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-25T15:32:57Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7203,
-      "importance": 0.7203,
-      "importance_score": 0.7203,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.64,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8703,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-25T15:32:57Z",
-      "latest_at": "2026-08-25T15:32:57Z",
-      "primary_item": {
-        "id": "5d63273982e062f7d8bb53aeac2027ff9a8ded8f",
-        "title": "Dylan Patel：Anthropic 与 OpenAI 到 2028 年将控制全球大部分算力 / Dylan Patel - Anthropic & OpenAI will have most of the world's compute by 2028",
-        "title_zh": "Dylan Patel：Anthropic 与 OpenAI 到 2028 年将控制全球大部分算力",
-        "title_en": "Dylan Patel - Anthropic & OpenAI will have most of the world's compute by 2028",
-        "title_original": "Dylan Patel - Anthropic & OpenAI will have most of the world's compute by 2028",
-        "summary": "在最新一期播客中，SemiAnalysis 创始人 Dylan Patel 与 Dwarkesh Patel 讨论实验室经济学，预计 Anthropic 和 OpenAI 到 2028 年将控制全球大部分可用 FLOPs，因其能更好变现算力并出价高于其他方。",
-        "recommend_reason_zh": null,
-        "url": "https://www.dwarkesh.com/p/dylan-patel-3",
-        "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7375,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-26T06:37:33.686351Z"
+        "scored_at": "2026-08-26T18:51:51.359198Z"
       }
     }
   ]

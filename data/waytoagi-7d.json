@@ -1,57 +1,99 @@
 {
-  "generated_at": "2026-08-26T05:58:27.708091Z",
+  "generated_at": "2026-08-26T18:13:39.802111Z",
   "timezone": "Asia/Shanghai",
   "root_url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview",
   "history_url": "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc",
   "window_days": 7,
-  "latest_date": "2026-08-25",
+  "latest_date": "2026-08-26",
   "count_today": 7,
   "updates_today": [
     {
-      "date": "2026-08-25",
-      "title": "我的 AI 原生开发流程：一个真实案例的完整复盘",
-      "summary": "代码已经越来越像最容易交给Agent的环节，真正考验人的是做不做、怎么做、做完好不好用。宝玉这篇文章从BaoCut的远程转录功能出发，复盘了一套 AI 原生开发流程：可行性分析、设计文档、高精度原型、Agent 实现、自验证，再由人像普通用户一样黑盒测试。适合开发者、产品读，能帮你把 AI 从“写代码助手”变成完整开发协作系统。",
-      "url": "https://waytoagi.feishu.cn/wiki/XJEzwR5FGi60fuk9kVBcXeTOnah?from=from_copylink"
+      "date": "2026-08-26",
+      "title": "这9个Skill，把我的图像审美拉到了一个新高度",
+      "summary": "作者整理了下面这9个Skill，带你一次性理解图像背后的审美逻辑：哪些适合一句话出海报，哪些必须上传原图；纸刊、像素、低饱和、解构、手绘、抽象、旅行手账各自怎么选。",
+      "url": "https://waytoagi.feishu.cn/wiki/RpAHwVbImi6Q2HkvZ9qcPRMWnHg?from=from_copylink"
     },
     {
-      "date": "2026-08-25",
-      "title": "我扒完了 GitHub 上 55 个 AI 成片产线，得出一个结论",
-      "summary": "作者最近在做 skill/agent 驱动的 AI 成片产线，顺手把 GitHub 同赛道全扒了一遍，分成视频 Skill、一站式成片平台、分镜/导演画布三类，总共55个。",
-      "url": "https://waytoagi.feishu.cn/wiki/ZEonw9QWdidPU4kcnP1cH1XpnTB?from=from_copylink"
+      "date": "2026-08-26",
+      "title": "万字长文：Deepseek Harness 一文全看懂！！",
+      "summary": "本文附有很多名词解释与图片表达，可以让想学AI但苦于不懂术语、基础不好的人或懂技术但不太了解DSH的人，都能获得对Deepseek Harness的深度认知！",
+      "url": "https://waytoagi.feishu.cn/wiki/Aj1rw6AyWiqFPGkEdTFcJglwnId?from=from_copylink"
     },
     {
-      "date": "2026-08-25",
-      "title": "什么是Harness工程，为什么我要关心？",
-      "summary": "“零行手写代码也能发布软件”，听起来很厉害，但关键其实在 Harness：给Agent配好沙箱、权限边界、测试反馈和急停机制，让它写完代码后能自己跑测试、看报错、再修复。谷歌官方的这篇文章详细拆解了下Harness到底是什么？",
-      "url": "https://waytoagi.feishu.cn/wiki/MXIzwnvSaipysMkxX79crgfen3q?from=from_copylink"
+      "date": "2026-08-26",
+      "title": "一篇讲透Agent自进化飞轮怎么搭：评测→记忆→落地→控制",
+      "summary": "2026 年Agent自进化开始从论文和框架走向工程现场，但很多团队还在把评测、记忆、Skill更新拆开做，结果就是Agent 用了半年还像新手。作者这篇文章基于对 Anthropic 递归自改进报告、斯坦福 CS329A 课程、EvoAgentX 等开源框架的深度研读，结合业界多个团队已验证的优秀实践，提炼出一个完整的、可落地的、经过验证的工程闭环。",
+      "url": "https://waytoagi.feishu.cn/wiki/RAmOw0hiqikA9ukMTxOcvv2Vnhf?from=from_copylink"
     },
     {
-      "date": "2026-08-25",
-      "title": "「豆包工作」+ 飞书完全指南",
-      "summary": "豆包工作这次把入口直接放进飞书：云文档、多维表格、群聊、会议纪要，都能在权限范围内被调用起来。这篇文章把豆包工作怎么访问、飞书登录后能做什么、隐私边界和套餐额度讲得很清楚。",
-      "url": "https://waytoagi.feishu.cn/wiki/XFzXweH7Biu9KKk7dWocZZNgnzO?from=from_copylink"
+      "date": "2026-08-26",
+      "title": "Tutti · VM 首发 ｜多人、多 Agents 协作的 Google docs 时刻",
+      "summary": "Tutti· VM是行业首个【实况级】多人多agent并行协作空间，在不迁移现有工具和使用习惯的前提下，将个人、临时的 Agent 运行环境，升级为持续存在的团队共享工作现场；并且把串行交接变成实时并行协作。文中附有内测邀请码，感兴趣的小伙伴儿可以来体验下！",
+      "url": "https://waytoagi.feishu.cn/wiki/H5s7w5iD8i4IsdkgZrJcn75ZnCf?from=from_copylink"
     },
     {
-      "date": "2026-08-25",
-      "title": "《100 个问题》系列丛书",
-      "summary": "都说提示词已死，AI 越聊越笨。作者整理了《关于提示工程的100个问题》，带你看清提示工程当下真实面貌。",
-      "url": "https://waytoagi.feishu.cn/wiki/YTt3wPPIeixEK5kbJPnc0YL7nTf?from=from_copylink"
+      "date": "2026-08-26",
+      "title": "Hello Plugin：我把 DeepSeek Harness 插件开发全链路跑了一遍",
+      "summary": "或许大家也看过不少 DeepSeek Harness 的分析文章和架构介绍，但只要没有亲手把插件跑起来，对它的理解就总像隔着一层皮。作者沿着官方文档亲手做了一个Hello Plugin：从最小插件、工具注册和配置校验，到组合包安装、profile 加载、发布与卸载，把插件开发的完整链路实操了一遍。快一起上手实操试试！",
+      "url": "https://waytoagi.feishu.cn/wiki/H3OMwxGJZiKB0HksfGBcfTgVndg?from=from_copylink"
     },
     {
-      "date": "2026-08-25",
-      "title": "OpenClaw创始人：“乐趣就是速度”丨Y Combinator",
-      "summary": "这期对话复盘了OpenClaw从一小时做出的WhatsApp中继，到周下载量 470万、社区PR爆炸、配置项堆到9500个的全过程。里面最值得开发者和 AI 创业者看的，是Peter对增长、依赖平台、安全边界和产品失焦的反思：热度会来会走，真正要守住的是你自己的判断、使用频率和创造乐趣。",
-      "url": "https://waytoagi.feishu.cn/wiki/UNB4wK4XkiuChHksIBFcSZiBnNf?from=from_copylink"
+      "date": "2026-08-26",
+      "title": "GLM-5.3-Flash：前沿智能进入普惠时代",
+      "summary": "GLM-5系列的首个原生多模态模型：GLM-5.3-Flash (320B-A18B)正式上线并开源。320B 总参数、18B激活，编程体感对齐Claude Opus 4.8，价格却压到Opus 4.8 的1/40。更值得关注的是背后的工程路线：混合注意力机制降低成本，视觉反馈进入代码循环，还跑在国产芯片集群上。一起来测试下真实效果如何？",
+      "url": "https://waytoagi.feishu.cn/wiki/Bdx6wt9VziLbqIkM1L8cMDSJnXd?from=from_copylink"
     },
     {
-      "date": "2026-08-25",
-      "title": "AI 做海报、HTML构图手册：16 种控制焦点与动势的海报构图——上册（附样图和提示词）",
-      "summary": "这篇文章适合三类人：经常用 AI 生海报的人、要让 AI 写 HTML 落地页的人，以及不会专业设计软件，但需要把视觉需求讲清楚的人。读完以后，你会知道该选哪种构图，也知道怎么把它写进提示词。",
-      "url": "https://waytoagi.feishu.cn/wiki/U6C3wpb9OiwXn9kngvkcwluGnSb?from=from_copylink"
+      "date": "2026-08-26",
+      "title": "Anthropic 官方指南：AI Native 开发手册",
+      "summary": "Anthropic 官方发布的AI Native 开发手册，适合研发团队、技术负责人和正在把Claude/Codex接进工作流的人看。他们把软件从一个想法变成线上产品的完整过程：规划、设计、构建、测试、部署、运维 详细拆解了下。",
+      "url": "https://waytoagi.feishu.cn/wiki/Epowwhkb2i0M5pkJ3HJcXCqZnHf?from=from_copylink"
     }
   ],
-  "count_7d": 37,
+  "count_7d": 38,
   "updates_7d": [
+    {
+      "date": "2026-08-26",
+      "title": "这9个Skill，把我的图像审美拉到了一个新高度",
+      "summary": "作者整理了下面这9个Skill，带你一次性理解图像背后的审美逻辑：哪些适合一句话出海报，哪些必须上传原图；纸刊、像素、低饱和、解构、手绘、抽象、旅行手账各自怎么选。",
+      "url": "https://waytoagi.feishu.cn/wiki/RpAHwVbImi6Q2HkvZ9qcPRMWnHg?from=from_copylink"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "万字长文：Deepseek Harness 一文全看懂！！",
+      "summary": "本文附有很多名词解释与图片表达，可以让想学AI但苦于不懂术语、基础不好的人或懂技术但不太了解DSH的人，都能获得对Deepseek Harness的深度认知！",
+      "url": "https://waytoagi.feishu.cn/wiki/Aj1rw6AyWiqFPGkEdTFcJglwnId?from=from_copylink"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "一篇讲透Agent自进化飞轮怎么搭：评测→记忆→落地→控制",
+      "summary": "2026 年Agent自进化开始从论文和框架走向工程现场，但很多团队还在把评测、记忆、Skill更新拆开做，结果就是Agent 用了半年还像新手。作者这篇文章基于对 Anthropic 递归自改进报告、斯坦福 CS329A 课程、EvoAgentX 等开源框架的深度研读，结合业界多个团队已验证的优秀实践，提炼出一个完整的、可落地的、经过验证的工程闭环。",
+      "url": "https://waytoagi.feishu.cn/wiki/RAmOw0hiqikA9ukMTxOcvv2Vnhf?from=from_copylink"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "Tutti · VM 首发 ｜多人、多 Agents 协作的 Google docs 时刻",
+      "summary": "Tutti· VM是行业首个【实况级】多人多agent并行协作空间，在不迁移现有工具和使用习惯的前提下，将个人、临时的 Agent 运行环境，升级为持续存在的团队共享工作现场；并且把串行交接变成实时并行协作。文中附有内测邀请码，感兴趣的小伙伴儿可以来体验下！",
+      "url": "https://waytoagi.feishu.cn/wiki/H5s7w5iD8i4IsdkgZrJcn75ZnCf?from=from_copylink"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "Hello Plugin：我把 DeepSeek Harness 插件开发全链路跑了一遍",
+      "summary": "或许大家也看过不少 DeepSeek Harness 的分析文章和架构介绍，但只要没有亲手把插件跑起来，对它的理解就总像隔着一层皮。作者沿着官方文档亲手做了一个Hello Plugin：从最小插件、工具注册和配置校验，到组合包安装、profile 加载、发布与卸载，把插件开发的完整链路实操了一遍。快一起上手实操试试！",
+      "url": "https://waytoagi.feishu.cn/wiki/H3OMwxGJZiKB0HksfGBcfTgVndg?from=from_copylink"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "GLM-5.3-Flash：前沿智能进入普惠时代",
+      "summary": "GLM-5系列的首个原生多模态模型：GLM-5.3-Flash (320B-A18B)正式上线并开源。320B 总参数、18B激活，编程体感对齐Claude Opus 4.8，价格却压到Opus 4.8 的1/40。更值得关注的是背后的工程路线：混合注意力机制降低成本，视觉反馈进入代码循环，还跑在国产芯片集群上。一起来测试下真实效果如何？",
+      "url": "https://waytoagi.feishu.cn/wiki/Bdx6wt9VziLbqIkM1L8cMDSJnXd?from=from_copylink"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "Anthropic 官方指南：AI Native 开发手册",
+      "summary": "Anthropic 官方发布的AI Native 开发手册，适合研发团队、技术负责人和正在把Claude/Codex接进工作流的人看。他们把软件从一个想法变成线上产品的完整过程：规划、设计、构建、测试、部署、运维 详细拆解了下。",
+      "url": "https://waytoagi.feishu.cn/wiki/Epowwhkb2i0M5pkJ3HJcXCqZnHf?from=from_copylink"
+    },
     {
       "date": "2026-08-25",
       "title": "我的 AI 原生开发流程：一个真实案例的完整复盘",
@@ -237,42 +279,6 @@
       "title": "AI 工程技能地图：构建和部署 AI 应用",
       "summary": "吴恩达梳理出一个搭建生产级AI应用的核心能力框架。从大模型底层原理、数据上下文供给、智能体系统设计，到评估驱动开发、线上运维、机器学习基础都给出了完整指引。",
       "url": "https://waytoagi.feishu.cn/wiki/RIiEwOam7ie5oLkKpVjcyap2nfd?from=from_copylink"
-    },
-    {
-      "date": "2026-08-20",
-      "title": "全球AI创造力发展报告2026-AI教育.pdf",
-      "summary": "全球AI创造力发展报告【AI+教育专项】梳理了全球AI+教育从政策驱动、技术突破到应用涌现的十年变化，还有中小学、高校、终身学习、教育产品和人机共生等具体场景。",
-      "url": "https://waytoagi.feishu.cn/wiki/P4ilw4bWhifrRjkhSvec6mLDnNd?from=from_copylink"
-    },
-    {
-      "date": "2026-08-20",
-      "title": "《100 个问题》系列丛书",
-      "summary": "这份《DeepSeek Harness的100 个问题》适合刚刷到Harness但看不懂的人，也适合已经在用Agent干活、想搞清楚“为什么别人用同一个模型更稳”的开发者。",
-      "url": "https://waytoagi.feishu.cn/wiki/YTt3wPPIeixEK5kbJPnc0YL7nTf?from=from_copylink"
-    },
-    {
-      "date": "2026-08-20",
-      "title": "YC前负责人：如何找到 to C 的创业点子丨Dalton + Michael",
-      "summary": "Dalton Caldwell 和 Michael Seibel 都做过消费互联网公司，也在 Y Combinator 看过上千个创业项目。这次两人讨论了一个更难的问题：今天的消费级 AI 创业者，去哪里找值得做很多年的点子？一起来看看他们的见解！",
-      "url": "https://waytoagi.feishu.cn/wiki/AVKNweCR5i1mOPkUE9NcRo1mnxc?from=from_copylink"
-    },
-    {
-      "date": "2026-08-20",
-      "title": "MiniMax Design：从操作像素，到操作语义和表达意图",
-      "summary": "MiniMax Design发布，是一款把多模态模型能力变成真实可用的生产力的Harness。H3负责提供视频理解、生成、编辑和参考控制能力，MiniMax Design则把这些能力组织成可执行的创作链路，尤其适合视频编辑、商业内容生产这类既要理解素材、又要精准修改和交付的场景。",
-      "url": "https://waytoagi.feishu.cn/wiki/NohjwrL5OiP0xfkgXRccUASBnOf?from=from_copylink"
-    },
-    {
-      "date": "2026-08-20",
-      "title": "DAN KOE：给我 20 分钟，让你变得无法被操控",
-      "summary": "如果你经常刷完信息更焦虑，也说不清自己到底获得了什么，这篇很适合你看。Dan Koe把“被操控”拆成三个思维层级：NPC只会按脚本反应，主角开始质疑和选择，程序员能观察自己的思考，并主动切换视角。或许能帮你把注意力从反应模式里拽回来，重新变成自己的操作系统。",
-      "url": "https://waytoagi.feishu.cn/wiki/QtPdwqNPGiVJ82kPRCOcBPQYneg?from=from_copylink"
-    },
-    {
-      "date": "2026-08-20",
-      "title": "2026 年 成为Agent工程师的12 步路线图—— Loops，Graphs，Evals，Context，Harness",
-      "summary": "这是完整的 12 步路线图，涵盖真正决定智能体能否工作的七大支柱：上下文、工具、记忆、循环、图、开发框架、评估——每一步都有验证其有效性的 Claude 工作流。",
-      "url": "https://waytoagi.feishu.cn/wiki/DlHIwfDqoiylXSktdSccaB0Gnwe?from=from_copylink"
     }
   ],
   "warning": null,
