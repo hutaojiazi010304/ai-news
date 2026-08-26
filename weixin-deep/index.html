@@ -3,100 +3,89 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI 雷达 · 8月25日｜今日精读10条</title>
+<title>AI 雷达 · 8月26日｜今日精读10条</title>
 </head>
 <body style="margin:0;padding:0;background-color:#f5f6f7;">
 <section style="max-width:677px;margin:0 auto;background-color:#ffffff;padding:28px 20px 36px;">
 
 <section style="border-left:4px solid #07c160;padding-left:12px;margin:0 0 20px;">
 <p style="margin:0;font-size:19px;font-weight:bold;color:#1f1f1f;letter-spacing:1px;">AI 雷达</p>
-<p style="margin:3px 0 0;font-size:13px;color:#999999;">8月25日 周二 · 每日 AI 精读</p>
+<p style="margin:3px 0 0;font-size:13px;color:#999999;">8月26日 周三 · 每日 AI 精读</p>
 </section>
 
-<p style="margin:0 0 4px;font-size:18px;font-weight:bold;line-height:1.5;color:#111111;">AI 雷达 · 8月25日｜今日精读10条</p>
+<p style="margin:0 0 4px;font-size:18px;font-weight:bold;line-height:1.5;color:#111111;">AI 雷达 · 8月26日｜今日精读10条</p>
 
 <section style="margin:34px 0 0;">
 <p style="margin:0 0 14px;text-align:center;font-size:17px;font-weight:bold;letter-spacing:2px;color:#13501B;">官方更新</p>
 <section style="border:1px solid rgba(19, 80, 27, 0.45);border-radius:10px;background-color:rgba(19, 80, 27, 0.08);padding:2px 14px 14px;">
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">① 连线、运行、部署：Gradio 中的 AI 工作流实战</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">① Granite 4.2 LLMs 是如何构建的</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">Granite 4.2</strong> 是首个 dense decoder-only 推理 LLM 系列，提供 3B、8B 和 30B 三种规格，均基于约 15T tokens 从头预训练，采用五阶段策略将上下文窗口扩展至 512K tokens。模型在思维链、推理及智能体轨迹数据上进行监督微调，并通过多阶段强化学习管线完成后续训练，其中 8B 和 30B 模型额外经历 agentic RL 阶段，在真实沙盒环境中学习工具调用、代码编辑执行、终端操作及网络搜索。所有模型支持 thinking/non-thinking 模式切换及针对简单问题的 low-effort thinking 模式，并具备原生工具调用能力。Official AI Updates 发布的技术详解指出，该系列模型均采用 <strong style="color:#13501B;">Apache 2.0 许可证开源</strong>。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://huggingface.co/blog/ibm-granite/granite-4-2</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">② Granite Speech 5.0 Turbo CTC：极速精准语音转写</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Granite Speech 系列发布两款 470M 参数量的英语语音识别模型 granite-speech-5.0-470m-turboctc 与 granite-speech-5.0-470m-turboctc-nc，采用 encoder-only 架构。据 Official AI Updates 披露，模型在 NVIDIA H200 GPU 上<strong style="color:#13501B;">批量推理吞吐量超 12,600 RTFx</strong>，即一秒可转写逾 3.5 小时语音。在 OpenASR Leaderboard 公开测试集上，非商用版聚合 WER 为 4.85%，Apache 2.0 版为 5.00%；在 FFASR Leaderboard 远场识别排名中，两者分列第五和第九，且是<strong style="color:#13501B;">榜单中速度最快的两个模型</strong>。<strong style="color:#13501B;">两模型主要区别在于训练数据规模与许可协议</strong>，非商用版使用更多数据并采用 CC-BY-NC-SA-4.0 许可，Apache 2.0 版训练数据较少。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">③ 量化感知修复：4-bit压缩模型性能反超全精度原版</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">MultiverseComputingCAI 团队提出 <strong style="color:#13501B;">Quantization-Aware Healing（QAH）方法</strong>，应用于经结构压缩至 60B 参数并量化为 MXFP4 的 GPT-OSS 120B 模型后，该 4-bit 模型在 9 项基准测试中的 7 项上性能超越其全精度 bfloat16 原版，实现了更小体积、更低运行成本与更高准确率。Official AI Updates 发布的文章指出，当前主流修复手段如量化感知训练（QAT）需重跑多阶段后训练流程，成本高且易不稳定；量化感知蒸馏（QAD）虽避免重训历史，但仅适用于特定场景。QAH 针对已完成结构压缩的模型设计，解决了传统修复方法在此类情况下的不足，使 <strong style="color:#13501B;">4-bit 压缩模型反超 16-bit 原模型成为可能</strong>，<strong style="color:#13501B;">逆转了通常量化导致性能下降的预期关系</strong>。</p>
+<section style="margin:12px 0 0;">
+<img src="images/story_6411634610d0.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
+<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：huggingface.co</p>
+</section>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">④ 连线、运行、部署：Gradio 中的 AI 工作流实战</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Gradio 推出内置功能 <strong style="color:#13501B;">gr.Workflow</strong>，将 AI 流水线直接转化为可视化交互界面。用户通过拖拽画布描述类型化节点图，即可运行每个节点并查看中间结果，该图同时<strong style="color:#13501B;">自动生成 REST API 并支持一键部署至 Hugging Face Spaces</strong>。Official AI Updates 展示了多个实战案例：图像编辑应用通过单节点调用 Qwen-Image-Edit；AI 媒体工作室在一个图中集成三条流水线，组合 FLUX 生图、背景移除及文本转语音，并为贴纸、配音等输出提供独立 REST 端点；生成艺术实验室采用扇出模式，由一个提示词并行触发 FLUX 生图、风格重绘及 LLM 标题生成；数据集分析工具则通过 Datasets Server API 对输入 ID 进行四路并行分析，实时返回概览卡片、数据预览及统计信息。</p>
 <p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
 <p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://huggingface.co/blog/gradio-workflow-guide</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">② Kiro 集成 GPT-5.6，为开发者带来更优性价比</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">Kiro 现已集成 GPT-5.6</strong>，旨在为开发者提供更具性价比的软件开发辅助能力。根据 Official AI Updates 发布的信息，此次更新使开发者能够在 Kiro 平台内直接调用 GPT-5.6 模型，覆盖软件规划、构建、代码审查及测试等核心开发环节。<strong style="color:#13501B;">该集成重点优化了价格与性能的平衡</strong>，使开发者在利用大模型完成全流程开发任务时获得更优的成本效益比。</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑤ 支持直接从安全公告中拉黑用户</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">用户现在可以直接在公共仓库的安全公告页面中拉黑其他用户，该功能适用于组织或个人账户拥有的仓库。这一更新将原本分散的审核操作整合到了安全公告界面内，使维护者无需跳转至其他设置页面即可完成对特定用户的封禁处理，从而<strong style="color:#13501B;">简化了针对安全相关内容的社区管理流程</strong>。根据 Official AI Updates 披露的信息，此举旨在为仓库管理者提供更流畅的审核体验，让应对潜在安全风险时的用户处置动作更加直接高效。</p>
 <p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://openai.com/index/gpt-5-6-in-kiro</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://github.blog/changelog/2026-08-25-block-users-directly-from-security-advisories</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">③ NVIDIA Vera Rubin NVL72 树立 AI 智能体效率新标准：每瓦特工作量提升至 30 倍</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">NVIDIA 公布的片上性能实测数据显示，<strong style="color:#13501B;">Vera Rubin NVL72 系统在 AI 智能体工作负载下的每兆瓦吞吐量达到 NVIDIA GB300 NVL72 的 30 倍</strong>，Token 成本降低至后者的三十五分之一。该测试基于 SemiAnalysis AgentX 工作负载，采用真实世界的智能体编程轨迹，保留了实际上下文增长、工具调用及子智能体生成过程。OpenRouter 数据显示<strong style="color:#13501B;">智能体 AI 工作负载消耗的 Token 量是简单聊天请求的 15 倍</strong>，因智能体需持续推理并积累长上下文。在 DeepSeek V4 Pro 模型上，GB300 NVL72 的每兆瓦吞吐量已是 NVIDIA Hopper 架构的 15 倍，而 Vera Rubin NVL72 在此基础上进一步将性能提升 30 倍。对于受电力限制的 AI 工厂，这意味着<strong style="color:#13501B;">同等能耗下可完成 30 倍的智能体工作量</strong>。目前该早期测试结果尚待 SemiAnalysis 审核，且未包含 Vera CPU 的性能数据。</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑥ 规则集中的推送规则现已支持路径例外</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">规则集中的推送规则现已支持<strong style="color:#13501B;">路径例外功能</strong>，允许用户通过豁免特定文件路径来实现更精细的配置。启用该功能后，设定的规则将在作用域内全局生效，但会自动跳过用户指定的例外路径。根据 Official AI Updates 发布的信息，这一路径例外机制目前已处于<strong style="color:#13501B;">公开可用状态</strong>，开发者无需额外申请即可在推送规则配置中直接使用，从而避免对特定目录或文件应用不必要的推送限制。</p>
 <section style="margin:12px 0 0;">
-<img src="images/story_63639453173d.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
-<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：nvidia.com</p>
+<img src="images/story_2ae3bbe5c601.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
+<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：github.blog</p>
 </section>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · AI HOT · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents</p>
-</section>
-</section>
-</section>
-<section style="margin:34px 0 0;">
-<p style="margin:0 0 14px;text-align:center;font-size:17px;font-weight:bold;letter-spacing:2px;color:#215F9A;">行业动态</p>
-<section style="border:1px solid rgba(33, 95, 154, 0.45);border-radius:10px;background-color:rgba(33, 95, 154, 0.08);padding:2px 14px 14px;">
-<section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">① 2026CSDI：AGI前夜，属于懂Agent、更懂模型的长期深耕企业</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">WAIC 2026大模型与生成式AI赛道共有130家参展主体，其中83家以AI Agent或智能应用为主标签，基础大模型公司仅剩18家，<strong style="color:#215F9A;">行业竞争单元正从单一模型向系统演进</strong>。AIbase指出，AGI已成为研发组织的核心战略锚点，DeepSeek创始人梁文锋在闭门交流中提出<strong style="color:#215F9A;">六步渐进式AGI路线图</strong>，即语言模型、思维链、Agent、持续学习、自迭代至具身智能，强调各步骤不可浪费且需相互支撑。唐杰认为此次AI革命本质是抬高“智能天花板”的技术变革。当前全球AI产业处于关键十字路口，企业AI策略已从分散探索转向系统性整合，关于AGI的讨论重点也从能否实现转向哪些组织能够实现，<strong style="color:#215F9A;">算力、数据、算法、人才及组织结构共同决定了发展上限</strong>。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">行业动态 · AIbase · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://www.aibase.com/news/30569</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://github.blog/changelog/2026-08-25-push-rules-in-rulesets-now-support-path-exceptions</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">② ChatGPT上线自定义贴纸功能，支持导出iMessage和WhatsApp</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">OpenAI 正式上线 <strong style="color:#215F9A;">ChatGPT 自定义贴纸功能</strong>，支持用户基于照片、创意或趣味内容生成个性化贴纸，并直接导出至 iMessage、WhatsApp 及本地相册。该功能支持透明背景贴纸及完整贴纸包制作，用户可上传单张或多张图片进行转换、素材重组与元素增删，也可参考其他图片迁移视觉风格或通过文本提示词生成设计。据 AIbase 实测，用户上传一张图片并输入“Create iMessage Sticker”等指令即可获得透明背景素材，<strong style="color:#215F9A;">ChatGPT 在抠图同时还能智能修复原图中被裁切的人物部分</strong>。导出时点击“Add to Messaging App”按钮即可，其中 WhatsApp 受 Meta 平台限制需至少一次导出三张贴纸。导出至 iMessage 后，贴纸将出现在“信息”应用贴纸功能的 <strong style="color:#215F9A;">ChatGPT 专属区域</strong>。</p>
-<section style="margin:12px 0 0;">
-<img src="images/story_c36705ab0524.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
-<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：aibase.com</p>
-</section>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">行业动态 · AIbase · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://www.aibase.com/news/30583</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑦ 5个用Google Search升级家居装饰的实用技巧</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Official AI Updates 介绍了<strong style="color:#13501B;">利用 Google Search 升级家居装饰的五种实用方法</strong>。数据显示，过去一个月“home decor inspo”搜索量增长300%，“bathroom inspo”和“living room inspo”成为突破性搜索词，teal与magenta是今年热门涂料色。用户可通过 <strong style="color:#13501B;">Search 的 AI Mode</strong> 上传房间照片并输入具体尺寸（如84英寸宽墙面），生成家具摆放效果图；使用 Google Lens 拍摄 vintage 物品以识别信息并查找同价位相似商品；借助 <strong style="color:#13501B;">Circle to Search</strong> 在视频或社交页面中圈选装饰元素（如搜索量上涨140%的鱼纹壁纸）直接检索类似选项；还可利用 <strong style="color:#13501B;">Search Live</strong> 获取 DIY 项目的实时视频指导，以及通过价格历史追踪功能确保获得最优购买价格。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://blog.google/products-and-platforms/products/search/home-decor-tips</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">③ Claude Code 官方日志曝出“暗中降智”实锤，AI 行业跑分脱节与版本黑箱再遭质疑</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">开发者 argofowl 在查阅 Claude Code 官方日志时发现，自 <strong style="color:#215F9A;">2.1.237 版本</strong>起，系统将用户选择的“high”推理级别静默映射为原本对应“low”设置的数值 10，且官方更新日志未提及此项变更。针对社区质疑，Claude Code 工程师回应称这实为 API 服务的配置测试，该数值本身无实际意义，不会对整体性能产生实质影响，但这一解释未能完全消除用户顾虑。随后科技博主 Chubby 指出 Opus5 性能出现明显下滑，相关工程师承认模型当前存在不稳定性，团队已优先处理该问题。AIbase 认为，此次事件暴露了当前 AI 行业<strong style="color:#215F9A;">跑分成绩与用户实际体验严重脱节</strong>的痛点，同时也凸显了模型版本更新不透明带来的风险，强调随着人工智能逐渐成为数字基础设施，<strong style="color:#215F9A;">模型的持续稳定性与透明度是维系用户信任的关键基石</strong>。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">行业动态 · AIbase · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://www.aibase.com/news/30588</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑧ Jalapeño 首批测试结果出炉：AI 推理速度与效率领跑行业</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">OpenAI 自研推理芯片 Jalapeño 首批测试结果出炉，<strong style="color:#13501B;">在现代模型推理任务中实现了更快的速度与更高的能效</strong>。Official AI Updates 披露的数据显示，该定制芯片在吞吐量与延迟两项关键指标上均优于行业现有水平，能够为现代 AI 模型提供更高吞吐、更低延迟的推理支持，同时显著降低功耗。这一结果确认了 Jalapeño 作为专用推理硬件在性能与效率方面的实际表现，其核心优势集中体现在<strong style="color:#13501B;">对当代模型推理负载的加速能力与能源利用率的提升</strong>上。</p>
+<p style="margin:6px 0 0;font-size:13px;line-height:1.6;color:#999999;">Jalapeño 首批测试结果出炉：AI 推理速度与效率领跑行业（Official AI Updates, Zeli）</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates等 · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://openai.com/index/jalapeno-first-results</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">④ Grok Build迎来最强外挂！集成Browser-Use插件，AI正式接管你的浏览器</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">SpaceX AI 宣布为 Grok Build 平台集成 Browser-Use 插件，使 AI 能够<strong style="color:#215F9A;">直接调用真实浏览器执行复杂网页交互</strong>。该插件提供两种运行模式：用户可直接调用本地已保存登录状态的 Chrome 浏览器且无需额外 API key，也可选择隔离的 Browser-Use 云浏览器环境。集成后 Grok Build 具备独立浏览网站、提取网页数据、填写在线表单、自动化测试 Web 应用及截图等能力。开发者还可通过 uvx 在本地运行该工具，构建完整的 Web 自动化工作流。AIbase 指出，此次升级是 <strong style="color:#215F9A;">Grok 迈向全栈 Web 智能助手的关键一步</strong>。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">行业动态 · AIbase · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://www.aibase.com/news/30586</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑨ ChatGPT Work 与 Codex 推出 Admin 插件</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">ChatGPT Work 与 Codex 推出 Admin 插件</strong>，用于分析工作区使用情况、管理成员与权限、调整使用限制以及处理管理员请求。根据 Official AI Updates 发布的信息，该插件为管理员提供了<strong style="color:#13501B;">针对工作区的集中管控能力</strong>，核心功能覆盖用量分析、人员权限配置、限额调整及行政事务响应四个方面，旨在支持团队对 ChatGPT Work 和 Codex 环境进行统一的运维与管理操作。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://openai.com/index/introducing-admin-plugin</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑤ Kimi K2.5 月底退役：月之暗面第一代万亿参数多模态模型谢幕</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Moonshot 通过 Kimi 官方微博宣布，其第一代万亿参数多模态模型 <strong style="color:#215F9A;">Kimi K2.5 将于本月底正式退役</strong>。该模型今年 1 月发布并开源，采用原生多模态架构，支持视觉与文本输入、思考与非思考模式以及对话和 Agent 任务，曾在 Agents、代码、图像视频及通用智能等开源评测中取得领先表现。随着 K2.5 谢幕，Moonshot 已将重心转向 7 月开源的 Kimi K3。<strong style="color:#215F9A;">K3 参数规模达 2.8 万亿</strong>，采用 KDA 混合线性注意力机制与注意力残差技术，原生支持视觉理解，上下文窗口最高 100 万 tokens。据 AIbase 信息，官方称 <strong style="color:#215F9A;">K3 是首个达到 2.8 万亿参数的开源模型</strong>，且在过去 12 个月中，Kimi 有 9 个月保持着最大开源模型规模的纪录。</p>
-<section style="margin:12px 0 0;">
-<img src="images/story_faa9f07849d1.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
-<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：aibase.com</p>
-</section>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">行业动态 · AIbase · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://www.aibase.com/news/30563</p>
-</section>
-<section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑥ Lady Gaga男友低调布局：用“活体皮肤”训练AI，这家生物初创公司如何颠覆美妆研发？</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">生物初创公司 Outer Biosciences 将体外人体活体皮肤的存活时间延长至一个月，远超行业通常仅能维持数天的标准，并将这些组织数据接入<strong style="color:#215F9A;">闭环自增强 AI 模型</strong>以加速美妆与医疗研发。该公司由 Lady Gaga 的伴侣 Michael Polansky 联合创立，据 AIbase 介绍，其团队从 National Disease Research Interchange 等合规生物样本库获取整形手术废弃皮肤，在伦理审查下实现长期体外培养，使胶原蛋白重塑、色素沉着等需数周显现的慢速生物过程得以观测。AI 模型预测未测试化学成分对特定皮肤功能的效果后，直接在活体系统中验证，无论结果准确与否均即时反馈优化下一轮迭代。Outer Biosciences 不推出自有消费品牌，而是将验证安全的高效成分通过授权或销售提供给主流美妆及制药企业，目前已培育出多个高商业潜力候选成分，并与药企合作研究特定抗癌药物引发的严重皮疹成因。为保护数据隐私，其大部分 AI 运算目前在本地服务器运行。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">行业动态 · AIbase · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://www.aibase.com/news/30592</p>
-</section>
-<section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑦ OpenAI 研究员 Luke Metz 转投 Meta 超级智能实验室，AI 人才争夺再升级</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">知名 AI 研究员 Luke Metz 已离开 OpenAI，于本周加入 <strong style="color:#215F9A;">Meta Superintelligence Labs</strong>，向负责 AI 运营的 Alexandr Wang 汇报。据 Axios 援引知情人士消息，这是 Metz 职业生涯的又一次变动，他曾在 2024 年离开 OpenAI 加入 Mira Murati 创办的 Thinking Machines，今年早些时候回归 OpenAI 后如今再次跳槽。自 Meta 与 Scale AI 达成 10 亿美元交易并招募前 CEO Alexandr Wang 以来，该公司一直在积极吸纳人才，Luke Metz 的加入是其最新重要人事动作。AIbase 指出，这种顶尖研究人员在竞争实验室间频繁流动的现象，反映出随着大模型竞争进入超级智能冲刺阶段，<strong style="color:#215F9A;">AI 人才争夺正在加剧</strong>，顶尖研究人员的归属已成为衡量各公司实力的关键变量。</p>
-<section style="margin:12px 0 0;">
-<img src="images/story_f83cc5b4b04b.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
-<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：aibase.com</p>
-</section>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">行业动态 · AIbase · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://www.aibase.com/news/30565</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑩ 瓦解俄罗斯新一轮隐蔽影响力行动</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">OpenAI 封禁了一批源自俄罗斯的账户</strong>，这些账户利用 AI 推广一个虚假的以色列智库以及一份名为“主权”的指数。该指数内容旨在赞扬俄罗斯并批评西方国家。此次行动针对的是<strong style="color:#13501B;">利用人工智能技术进行的隐蔽影响力操作</strong>，被处置的账号通过生成内容伪装成独立研究机构发布特定政治倾向信息。Official AI Updates 披露了这一处理结果，显示平台识别并阻断了<strong style="color:#13501B;">借助 AI 工具伪造信源、操纵舆论的尝试</strong>，涉及的具体载体包括虚构智库身份与定制化排名指标。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia</p>
 </section>
 </section>
 </section>
@@ -107,8 +96,8 @@
 
 <section style="margin-top:22px;background-color:#f5f6f7;padding:14px 16px;">
 <p style="margin:0;font-size:12px;font-weight:bold;color:#666666;">以下为发布辅助信息（复制用，粘贴时请勿包含本区块）</p>
-<p style="margin:10px 0 0;font-size:13px;line-height:1.7;color:#666666;">标题：AI 雷达 · 8月25日｜今日精读10条</p>
-<p style="margin:6px 0 0;font-size:13px;line-height:1.7;color:#666666;">摘要：AI 雷达8月25日 周二精读 10 条 AI 要闻：连线、运行、部署：Gradio 中的 AI 工作流实战。更多条目见「阅读原文」。</p>
+<p style="margin:10px 0 0;font-size:13px;line-height:1.7;color:#666666;">标题：AI 雷达 · 8月26日｜今日精读10条</p>
+<p style="margin:6px 0 0;font-size:13px;line-height:1.7;color:#666666;">摘要：AI 雷达8月26日 周三精读 10 条 AI 要闻：Granite 4.2 LLMs 是如何构建的。更多条目见「阅读原文」。</p>
 <p style="margin:6px 0 0;font-size:13px;line-height:1.7;color:#666666;">阅读原文：https://hutaojiazi010304.github.io/ai-news-radar/</p>
 </section>
 
