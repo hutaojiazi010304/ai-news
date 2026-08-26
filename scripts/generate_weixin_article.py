@@ -329,6 +329,50 @@ def existing_reason(item: dict) -> str | None:
     return None
 
 
+# Umbrella ``source_name``s label an aggregate adapter, not a publisher:
+# "Official AI Updates" bundles every first-party channel (OpenAI News,
+# GitHub Changelog, Google AI Blog, Hugging Face Blog, …) and "AI HOT"
+# bundles the trending-channel aggregate. Displaying the bucket repeats a
+# generic label; the specific channel (``source``) is the meaningful name,
+# so display resolves buckets to their channel (real publishers pass
+# through unchanged).
+UMBRELLA_SOURCE_NAMES = {"Official AI Updates", "AI HOT"}
+
+
+def item_channel_source(item: dict) -> str:
+    """The specific feed/channel an item came from (``source``)."""
+    channel = str(item.get("source") or "").strip()
+    if channel:
+        return channel
+    primary = item.get("primary_item")
+    if isinstance(primary, dict):
+        channel = str(primary.get("source") or "").strip()
+        if channel:
+            return channel
+    for src in item.get("sources") or []:
+        if isinstance(src, dict):
+            channel = str(src.get("source") or "").strip()
+            if channel:
+                return channel
+    return ""
+
+
+def item_display_source(item: dict) -> str:
+    """Source name for display: umbrella buckets resolve to their channel."""
+    source_name = str(item.get("source_name") or "").strip()
+    if not source_name:
+        for src in item.get("sources") or []:
+            if isinstance(src, dict):
+                source_name = str(src.get("source_name") or "").strip()
+                if source_name:
+                    break
+    if source_name in UMBRELLA_SOURCE_NAMES:
+        channel = item_channel_source(item)
+        if channel:
+            return channel
+    return source_name
+
+
 # ---------------------------------------------------------------------------
 # Cache (mirrors scripts/persona_score.py)
 # ---------------------------------------------------------------------------
@@ -1187,9 +1231,7 @@ def render_item_html(item: dict, idx: int) -> str:
     except (TypeError, ValueError):
         source_count = len(sources) or 1
     category = str(item.get("category") or "").strip()
-    source_name = str(item.get("source_name") or "").strip()
-    if not source_name and sources:
-        source_name = str(sources[0].get("source_name") or "").strip()
+    source_name = item_display_source(item)
 
     parts = ['<section style="margin:26px 0 0;padding:0;">']
     parts.append(
@@ -1212,7 +1254,7 @@ def render_item_html(item: dict, idx: int) -> str:
                     break
         source_names = []
         for src in sources:
-            sub_source = str(src.get("source_name") or "").strip()
+            sub_source = item_display_source(src)
             if sub_source and sub_source not in source_names:
                 source_names.append(sub_source)
         if line_title or source_names:

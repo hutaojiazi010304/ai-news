@@ -50,7 +50,7 @@ Sources and coverage:
 
 - Built-in official AI sources include OpenAI News, OpenAI Codex Changelog,
   OpenAI Skills commits filtered for Codex/pet-related updates, Anthropic,
-  Google DeepMind, Google AI, Hugging Face, and GitHub AI/Changelog.
+  Google DeepMind, Google AI, Hugging Face, and GitHub AI & ML.
 - AI Breakfast is read through its public archive path because Beehiiv feed
   access can be blocked in CLI/GitHub Actions environments.
 - Follow Builders is consumed as public generated JSON feed files. The project

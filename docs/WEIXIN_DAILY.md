@@ -231,6 +231,13 @@ python scripts/generate_weixin_article_grouped.py --data-dir data --output-dir w
   `weixin-deep/reason-cache.json`
   （自己的版本号）。不能共享 `weixin/reason-cache.json`——缓存 key 只有
   条目+标题，共享会永远命中旧短导读，新风格无法生效
+- **信源行**：精读导读正文不提信源名——生成时不注入「信源：X」行，提示词
+  明确正文不要提及信源（此前注入的信源行让官方更新板块的导读开头清一色
+  "Official AI Updates 发布/披露"）。信源归属只在条目下方 meta 行显示；
+  聚合筐名字（`Official AI Updates` 把各家官方渠道归在一个适配器下、
+  `AI HOT` 是热点渠道聚合筐）不是真实发布方，显示时自动改用它旗下的具体
+  渠道（`OpenAI News`、`GitHub Blog` 等），真实发布方（`AIbase` 等）
+  原样保留。三个版本的 meta 行同此规则，署名跟着渠道走而不是清一色筐名
 - **关键句高亮**：导读生成之后，由**独立的第二步「标注」调用**用【】标出
   最值得读的片段（与导读生成分开两步、互不影响——合在一条提示词里会
   拉低导读质量）。选取原则：优先概括/结论性的短语或句子（含简短判断

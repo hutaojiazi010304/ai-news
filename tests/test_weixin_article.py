@@ -1035,6 +1035,52 @@ def test_single_source_meta_has_no_suffix():
         assert "Example Source）" not in html_text
 
 
+def test_item_display_source_resolves_umbrella_buckets():
+    # "Official AI Updates" and "AI HOT" are aggregate buckets, not
+    # publishers: display resolves them to the specific channel (``source``).
+    official = {"source_name": "Official AI Updates", "source": "OpenAI News"}
+    assert gwa.item_display_source(official) == "OpenAI News"
+
+    aihot = {"source_name": "AI HOT", "source": "GitHub Blog"}
+    assert gwa.item_display_source(aihot) == "GitHub Blog"
+
+    # Real publisher names pass through unchanged.
+    assert gwa.item_display_source(make_item(1)) == "Example Source"
+
+    # A bucket with no channel falls back to the bucket name rather than
+    # rendering blank.
+    assert (
+        gwa.item_display_source({"source_name": "Official AI Updates"})
+        == "Official AI Updates"
+    )
+
+
+def test_meta_line_shows_channel_for_umbrella_bucket():
+    # The rendered meta line names the specific channel, not the umbrella
+    # bucket that would repeat across the whole official/hot section.
+    official = make_item(1, title="官方渠道条目")
+    official["source_name"] = "Official AI Updates"
+    official["source"] = "OpenAI News"
+    for src in official["sources"] + [official["primary_item"]]:
+        src["source_name"] = "Official AI Updates"
+        src["source"] = "OpenAI News"
+
+    html = gwa.render_item_html(official, 0)
+    assert "OpenAI News" in html
+    assert "Official AI Updates" not in html
+
+    aihot = make_item(2, title="热点渠道条目")
+    aihot["source_name"] = "AI HOT"
+    aihot["source"] = "GitHub Blog"
+    for src in aihot["sources"] + [aihot["primary_item"]]:
+        src["source_name"] = "AI HOT"
+        src["source"] = "GitHub Blog"
+
+    html = gwa.render_item_html(aihot, 0)
+    assert "GitHub Blog" in html
+    assert "AI HOT" not in html
+
+
 def test_category_renders_chinese_label():
     with tempfile.TemporaryDirectory() as tmp:
         items = [make_item(1, title="官方条目"), make_item(2, title="多源条目")]

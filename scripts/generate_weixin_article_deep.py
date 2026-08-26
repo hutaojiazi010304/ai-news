@@ -8,8 +8,8 @@ and ``generate_weixin_article_grouped.py`` (2.0, grouped boxes). It keeps the
   ``--max-items`` or ``WEIXIN_DEEP_MAX_ITEMS`` — deliberately NOT
   ``WEIXIN_MAX_ITEMS``, so 1.0/2.0 stay untouched). Empty sections are
   skipped, exactly like 2.0.
-- Guides: longer, written in a relayed-news style ("据 X 报道" attribution,
-  facts and numbers only, no fabrication). Stored in an INDEPENDENT cache
+- Guides: longer, written in a relayed-news style (facts and numbers only,
+  no fabrication, no fixed "据 X 报道" opening). Stored in an INDEPENDENT cache
   (``weixin-deep/reason-cache.json``, ``DEEP_CACHE_VERSION``): the shared
   1.0/2.0 cache keys only on story_id+title, so reusing it would hit the
   stale short guides forever and the new style would never take effect.
@@ -92,6 +92,7 @@ try:  # imported as part of the repo package (tests)
         esc,
         existing_reason,
         has_cjk,
+        item_display_source,
         item_original_url,
         load_brief,
         match_regenerate,
@@ -133,6 +134,7 @@ except ImportError:  # run directly as a script
         esc,
         existing_reason,
         has_cjk,
+        item_display_source,
         item_original_url,
         load_brief,
         match_regenerate,
@@ -159,15 +161,21 @@ DEFAULT_MAIN_OUTPUT_DIR = "weixin"
 DEFAULT_DEEP_MAX_ITEMS = 10
 
 # Independent cache version: bumped only when the deep prompt/bounds change
-# in a way that invalidates EXISTING entries. v6: hard length ceiling
-# restored and the prompt's "可适当写长" permission revoked — v5 entries
-# were written under the looser wording and read noticeably longer/padded,
-# so they must be regenerated. (v5 itself: generation reverted to the
-# pre-highlight prompt and marking moved to a separate second call — the
-# combined prompt degraded guide quality, so v4 entries had to go too.)
+# in a way that invalidates EXISTING entries. v8 drops the source line from
+# both the prompt and the user content ("可在正文里自然提及信源" made guides
+# open with "Official AI Updates 发布/披露"-style attributions; the specific
+# channel now appears only in the meta line, via item_display_source) — v7
+# entries were still free to name the source in the body. (v7 itself:
+# grounding stopped trusting chrome-card <article> elements (see
+# DEEP_ARTICLE_MIN_BODY_CHARS) and attribution stopped using the umbrella
+# bucket name. v6: hard length ceiling restored and the prompt's "可适当写长"
+# permission revoked — v5 entries read noticeably longer/padded. v5:
+# generation reverted to the pre-highlight prompt and marking moved to a
+# separate second call — the combined prompt degraded guide quality, so v4
+# entries had to go too.)
 # 1.0 bumping its own CACHE_VERSION never invalidates this cache and vice
 # versa (load_deep_cache rejects mismatched versions, forcing regeneration).
-DEEP_CACHE_VERSION = 6
+DEEP_CACHE_VERSION = 8
 
 # Deep guides are longer than 1.0's 40-260 window. The prompt targets
 # 150-350 chars and the ceiling is enforced too: full-text grounding is
@@ -190,6 +198,16 @@ DEEP_REASON_MARK_MAX_COVERAGE = 0.8
 # (deliberate inversion of 1.0's 20-char summary-first policy — only 10
 # items run locally, so per-item fetching is affordable).
 DEEP_SUMMARY_MIN_GROUNDING_CHARS = 120
+# Same idea for the scoped <article> element: huggingface.co blog pages
+# wrap ONLY sidebar/model cards in <article> (the post sits outside every
+# one), so "the longest <article>" can be ~130 chars of card chrome that
+# either starves the guide of grounding or grounds it on the wrong text.
+# The longest <article> only counts as the body when its stripped text
+# clears this floor; otherwise extraction falls back to the recommendation
+# heading cut / whole page. 300 keeps every real article (thousands of
+# chars) while clearing the largest observed card with >2x margin. Image
+# scoping stays unguarded so card thumbnails still never leak in.
+DEEP_ARTICLE_MIN_BODY_CHARS = 300
 
 # All three values are HARD WALL-CLOCK DEADLINES per request (enforced by
 # bounded_get on top of requests' per-chunk timeout): a slow trickle would
@@ -274,9 +292,7 @@ DEEP_REASON_SYSTEM_PROMPT = (
     "你是科技新闻编辑，负责把一篇具体文章的核心内容转述成一段「精读导读」，"
     "用于微信公众号每日 AI 精选的深度版（精读版）推文。"
     "用转述式报道的口吻写：开头直接复述原文最关键的内容，"
-    "不要使用「据某某报道」之类的固定开场；"
-    "提供了「信源」一行时，可在正文里自然提及信源（信源名原样使用，"
-    "不得改写、翻译或替换成母公司名称），没有合适位置就不提，不得编造信源名。"
+    "不要使用「据某某报道」之类的固定开场，正文中不要提及信源名称；"
     "用自己的话复述原文最关键的内容：做了什么、数字是多少、结论是什么；"
     "优先保留正文中的具体事实与数字。"
     "只复述正文中明确出现的信息，不得编造、推断或补充任何正文之外的事实、"
@@ -447,22 +463,12 @@ def deep_reason_context(
     if payload is None:
         return None
     body, kind = payload
-    text = strip_html_text(scope_to_article_body(body, kind))
+    text = strip_html_text(
+        scope_to_article_body(body, kind, DEEP_ARTICLE_MIN_BODY_CHARS)
+    )
     if len(text) >= FULL_TEXT_MIN_CHARS:
         return text[:FULL_TEXT_MAX_CHARS]
     return None
-
-
-def _item_source_name(item: dict) -> str:
-    source_name = str(item.get("source_name") or "").strip()
-    if source_name:
-        return source_name
-    for src in item.get("sources") or []:
-        if isinstance(src, dict):
-            name = str(src.get("source_name") or "").strip()
-            if name:
-                return name
-    return ""
 
 
 def _anchor_deep_marks(text: str, fragments: list[str]) -> list[tuple[int, int]]:
@@ -569,11 +575,7 @@ def generate_deep_reason(item: dict, context: str, cfg: dict) -> str | None:
     title = str(item.get("title") or "").strip()
     if not title or not context:
         return None
-    source_name = _item_source_name(item)
-    user_content = f"标题：{title}\n"
-    if source_name:
-        user_content += f"\n信源：{source_name}\n"
-    user_content += f"\n正文：\n{context}"
+    user_content = f"标题：{title}\n\n正文：\n{context}"
     content = call_text_api(
         [
             {"role": "system", "content": DEEP_REASON_SYSTEM_PROMPT},
@@ -908,18 +910,32 @@ def absolutize_image_url(url: str, base_url: str) -> str:
     return url
 
 
-def scope_to_article_body(text: str, kind: str = "html") -> str:
+def scope_to_article_body(
+    text: str, kind: str = "html", min_body_chars: int = 0
+) -> str:
     """Restrict extraction to the article body; whole page when unlocatable.
 
     The longest <article> element wins (recommendation cards on some sites
     use <article> too, but the body is the longest one). Cutting at a
     recommendation heading is the fallback for pages without semantic
     markup and for reader-proxy markdown.
+
+    ``min_body_chars`` (used by guide grounding) guards that assumption:
+    when the longest <article>'s stripped text is shorter, the <article>
+    elements are chrome, not the body — huggingface.co blog pages wrap
+    ONLY sidebar/model cards in <article> while the post itself sits
+    outside every one, so "longest wins" returned ~100 chars of card text
+    and guides were grounded on it (or got no grounding at all). Such a
+    page is then treated like one without semantic markup and falls back
+    to the heading cut / whole page. Image scoping keeps the unguarded
+    behavior so card thumbnails still never leak into the candidate list.
     """
     if kind == "html":
         articles = ARTICLE_TAG_RE.findall(str(text or ""))
         if articles:
-            return max(articles, key=len)
+            longest = max(articles, key=len)
+            if not min_body_chars or len(strip_html_text(longest)) >= min_body_chars:
+                return longest
         cut = REC_HEADING_HTML_RE.search(str(text or ""))
         if cut:
             return str(text)[: cut.start()]
@@ -1361,9 +1377,7 @@ def render_deep_item_html(item: dict, idx: int, accent_color: str) -> str:
     except (TypeError, ValueError):
         source_count = len(sources) or 1
     category = str(item.get("category") or "").strip()
-    source_name = str(item.get("source_name") or "").strip()
-    if not source_name and sources:
-        source_name = str(sources[0].get("source_name") or "").strip()
+    source_name = item_display_source(item)
 
     parts = ['<section style="margin:30px 0 0;padding:0;">']
     parts.append(
@@ -1400,7 +1414,7 @@ def render_deep_item_html(item: dict, idx: int, accent_color: str) -> str:
                     break
         source_names = []
         for src in sources:
-            sub_source = str(src.get("source_name") or "").strip()
+            sub_source = item_display_source(src)
             if sub_source and sub_source not in source_names:
                 source_names.append(sub_source)
         if line_title or source_names:

@@ -40,7 +40,7 @@ private forks because they need credentials, bridges, or ongoing maintenance.
 | Source type | Current support | Recommended path | Notes |
 | --- | --- | --- | --- |
 | Official RSS / Atom | Supported through OPML | Add to `feeds/follow.opml` locally, or `FOLLOW_OPML_B64` in GitHub Actions | Best default for personal customization. |
-| Official AI vendor updates | Built in for selected high-signal sources | Keep OpenAI, Anthropic, Google DeepMind/AI, Hugging Face, and GitHub AI/Changelog as first-class sources | These should not depend only on aggregator coverage. |
+| Official AI vendor updates | Built in for selected high-signal sources | Keep OpenAI, Anthropic, Google DeepMind/AI, Hugging Face, and GitHub AI & ML as first-class sources | These should not depend only on aggregator coverage. |
 | Curated AI media RSS | Built in for selected high-signal public feeds | Keep source-specific caps and AI/research filters so media breadth does not drown the default view | Useful for product, industry, model, and research coverage. |
 | OPML collections | Supported | Export from RSS reader, copy from `feeds/follow.example.opml`, keep private file out of git | Good for cross-device and multi-agent workflows. |
 | Public JSON APIs | Supported by custom Python fetchers | Add a `fetch_*` function in `scripts/update_news.py` and register it in the task list | Use only stable APIs with timestamps. |
@@ -73,7 +73,6 @@ The public site should directly track these high-signal official sources:
 - Google AI Blog RSS
 - Hugging Face Blog RSS
 - GitHub AI & ML RSS
-- GitHub Changelog RSS
 
 Aggregator sites may already surface some of these updates, but they are not
 guaranteed to be complete or timely. Keep these official sources as a stable

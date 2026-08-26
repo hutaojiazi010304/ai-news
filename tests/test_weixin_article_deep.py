@@ -681,6 +681,111 @@ def test_deep_grounding_scoped_to_article_body():
     assert "推荐新闻标题" not in grounding
 
 
+def test_scope_to_article_body_gate_rejects_chrome_cards():
+    # huggingface.co blog pages wrap ONLY sidebar cards in <article>; the
+    # post sits outside every one. Gated (grounding) scoping must reject
+    # such chrome and fall back to the whole page; ungated (image) scoping
+    # keeps longest-<article>-wins so card thumbnails never leak in.
+    cards = "<article>卡片一 • 479</article><article>卡片二 • 2.92k</article>"
+    page = "<div>" + "正文内容。" * 100 + "</div>" + cards
+
+    assert gwad.scope_to_article_body(page, "html") == "<article>卡片二 • 2.92k</article>"
+    assert gwad.scope_to_article_body(
+        page, "html", gwad.DEEP_ARTICLE_MIN_BODY_CHARS
+    ) == page
+
+    # A real body clears the gate and still wins over the cards.
+    real = "<article><p>" + "正文。" * 400 + "</p></article>"
+    assert gwad.scope_to_article_body(
+        real + cards, "html", gwad.DEEP_ARTICLE_MIN_BODY_CHARS
+    ) == real
+
+
+def test_deep_grounding_survives_chrome_article_cards():
+    # With every <article> being a small card, grounding must fall back to
+    # the whole page instead of a ~100-char card snippet.
+    thin_item = make_item(2, summary=THIN_SUMMARY)
+    cards = "".join(
+        f"<article>Card {i} • Text-to-Video • Updated Aug 25 • 479</article>"
+        for i in range(20)
+    )
+    body = (
+        "<html><body><nav>Models Datasets Spaces Docs</nav>"
+        "<h1>Build Anything with gr.Workflow</h1>"
+        "<div>" + "这是博客正文里的真实内容，介绍工作流怎么搭建。" * 30 + "</div>"
+        + cards
+        + "</body></html>"
+    )
+    session = FakeSession(text=body)
+
+    grounding = gwad.deep_reason_context(thin_item, session)
+
+    assert grounding and "真实内容" in grounding
+    assert len(grounding) > 500  # the real body, not a card snippet
+
+
+def test_deep_meta_line_shows_channel_for_umbrella_bucket():
+    # "Official AI Updates" and "AI HOT" are aggregate buckets, not
+    # publishers: the meta line resolves them to the specific channel
+    # (shared item_display_source). Real publisher names pass through, and
+    # a bucket with no channel falls back to the bucket name.
+    official = make_item(1, title="官方渠道元信息")
+    official["weixin_deep_reason"] = LONG_DEEP_REASON
+    official["source_name"] = "Official AI Updates"
+    official["source"] = "OpenAI News"
+    for src in official["sources"] + [official["primary_item"]]:
+        src["source_name"] = "Official AI Updates"
+        src["source"] = "OpenAI News"
+
+    html = gwad.render_deep_item_html(official, 0, "#13501B")
+    assert "OpenAI News · 1 个来源" in html
+    assert "Official AI Updates" not in html
+
+    aihot = make_item(2, title="热点渠道元信息")
+    aihot["weixin_deep_reason"] = LONG_DEEP_REASON
+    aihot["source_name"] = "AI HOT"
+    aihot["source"] = "GitHub Blog"
+
+    html = gwad.render_deep_item_html(aihot, 0, "#13501B")
+    assert "GitHub Blog · 1 个来源" in html
+    assert "AI HOT" not in html
+
+    no_channel = make_item(3, title="无渠道兜底")
+    no_channel["weixin_deep_reason"] = LONG_DEEP_REASON
+    no_channel["source_name"] = "Official AI Updates"
+    no_channel.pop("source", None)
+
+    html = gwad.render_deep_item_html(no_channel, 0, "#13501B")
+    assert "Official AI Updates · 1 个来源" in html
+
+
+def test_deep_reason_user_content_has_no_source_line():
+    # Guides must not name their source: the user content is exactly
+    # title + body, with no 信源 line (the channel appears only in the
+    # meta line under the item).
+    item = make_item(1, title="官方渠道新闻")
+    item["source_name"] = "Official AI Updates"
+    item["source"] = "OpenAI News"
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    captured = []
+    router, calls = make_deep_text_router(reason=text_response(LONG_DEEP_REASON))
+
+    def side_effect(url, **kwargs):
+        captured.append(kwargs.get("json") or {})
+        return router(url, **kwargs)
+
+    with patch("scripts.generate_weixin_article.requests.post", side_effect=side_effect):
+        result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
+
+    assert result
+    assert calls["reason"] == 1
+    reason_user = captured[0]["messages"][1]["content"]
+    assert reason_user == "标题：官方渠道新闻\n\n正文：\n正文内容若干"
+    assert "信源" not in reason_user
+    assert "OpenAI News" not in reason_user
+    assert "Official AI Updates" not in reason_user
+
+
 def test_keyless_degradation_uses_upstream_reason(tmp_path):
     upstream = (
         "上游管线已经写好的较长推荐语：这次发布带来了新的接口与更高的吞吐，"

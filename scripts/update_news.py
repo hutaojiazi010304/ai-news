@@ -108,11 +108,6 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, str], ...] = (
         "html_url": "https://github.blog/ai-and-ml/",
     },
     {
-        "title": "GitHub Changelog",
-        "xml_url": "https://github.blog/changelog/feed/",
-        "html_url": "https://github.blog/changelog/",
-    },
-    {
         "title": "OpenAI Skills",
         "xml_url": "https://github.com/openai/skills/commits/main.atom",
         "html_url": "https://github.com/openai/skills",
