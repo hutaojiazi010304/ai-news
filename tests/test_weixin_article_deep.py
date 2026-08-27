@@ -1,6 +1,6 @@
 """Tests for scripts/generate_weixin_article_deep.py (3.0 精读版).
 
-Pins the three upgrades over the grouped variant: top-10 selection, longer
+Pins the three upgrades over the grouped variant: top-20 selection, longer
 repeated-news style guides in an INDEPENDENT cache (the shared 1.0/2.0 cache
 must never leak in), and one real article image per item with graceful
 no-image degradation. Mock plumbing mirrors test_weixin_article.py: text
@@ -192,20 +192,21 @@ def test_resolve_deep_max_items_precedence():
     args.max_items = None
 
     with patch.dict("os.environ", {}, clear=True):
-        assert gwad.resolve_deep_max_items(args) == 10
+        assert gwad.resolve_deep_max_items(args) == 20
     with patch.dict("os.environ", {"WEIXIN_DEEP_MAX_ITEMS": "7"}, clear=True):
         assert gwad.resolve_deep_max_items(args) == 7
-    # The 1.0/2.0 knob must have NO effect on the deep variant.
-    with patch.dict("os.environ", {"WEIXIN_MAX_ITEMS": "20"}, clear=True):
-        assert gwad.resolve_deep_max_items(args) == 10
+    # The 1.0/2.0 knob must have NO effect on the deep variant (use a value
+    # unlike the deep default so an accidental read-through cannot pass).
+    with patch.dict("os.environ", {"WEIXIN_MAX_ITEMS": "35"}, clear=True):
+        assert gwad.resolve_deep_max_items(args) == 20
     # CLI beats env.
     args.max_items = 3
     with patch.dict("os.environ", {"WEIXIN_DEEP_MAX_ITEMS": "7"}, clear=True):
         assert gwad.resolve_deep_max_items(args) == 3
 
 
-def test_top10_selection_cap_and_ranking(tmp_path):
-    items = [make_item(idx, title=f"精读选条测试第{idx}条", score=100.0 - idx) for idx in range(1, 15)]
+def test_top20_selection_cap_and_ranking(tmp_path):
+    items = [make_item(idx, title=f"精读选条测试第{idx}条", score=100.0 - idx) for idx in range(1, 26)]
     data_dir, assets_dir = write_fixture(tmp_path, items)
     make_static_asset(assets_dir)
     out_dir = tmp_path / "weixin-deep"
@@ -224,11 +225,11 @@ def test_top10_selection_cap_and_ranking(tmp_path):
 
     assert rc == 0
     meta = read_json(out_dir / "meta.json")
-    assert meta["item_count"] == 10
+    assert meta["item_count"] == 20
     html_text = (out_dir / "index.html").read_text(encoding="utf-8")
-    for idx in range(1, 11):
+    for idx in range(1, 21):
         assert f"精读选条测试第{idx}条" in html_text
-    for idx in range(11, 15):
+    for idx in range(21, 26):
         assert f"精读选条测试第{idx}条" not in html_text
 
 
@@ -477,6 +478,44 @@ def test_generate_deep_reason_rejects_overlong(capsys):
     assert "超出上限" in err
 
 
+def test_generate_deep_reason_retries_once_after_rejection(capsys):
+    """A stochastic overshoot gets one reinforced retry: the valid second
+    draft flows on into the marking pass instead of dropping the item."""
+    item = make_item(1, title="重试成功测试标题")
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    overlong = "该团队发布了新版本，" + "这是用于凑字数的测试句子内容。" * 40
+    router, calls = make_deep_text_router(
+        reason=lambda c: text_response(overlong if c["reason"] == 1 else LONG_DEEP_REASON)
+    )
+
+    with patch("scripts.generate_weixin_article.requests.post", side_effect=router):
+        result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
+
+    assert result == LONG_DEEP_REASON
+    assert calls["reason"] == 2   # overshoot + reinforced retry
+    assert calls["mark"] == 1     # the valid retry still gets highlighted
+    err = capsys.readouterr().err
+    assert "强化重试" in err
+    assert "被校验拒绝" not in err
+
+
+def test_generate_deep_reason_rejects_after_retry_also_fails(capsys):
+    """When the retry trips the same bound, the item degrades as before."""
+    item = make_item(1, title="重试失败测试标题")
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    overlong = "该团队发布了新版本，" + "这是用于凑字数的测试句子内容。" * 40
+    router, calls = make_deep_text_router(reason=text_response(overlong))
+
+    with patch("scripts.generate_weixin_article.requests.post", side_effect=router):
+        result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
+
+    assert result is None
+    assert calls["reason"] == 2
+    err = capsys.readouterr().err
+    assert "强化重试" in err
+    assert "超出上限" in err
+
+
 def test_parse_deep_marks():
     parsed = gwad.parse_deep_marks("甲【乙】丙【丁】")
     assert parsed == ("甲乙丙丁", [(1, 2), (3, 4)])
@@ -722,6 +761,101 @@ def test_deep_grounding_survives_chrome_article_cards():
 
     assert grounding and "真实内容" in grounding
     assert len(grounding) > 500  # the real body, not a card snippet
+
+
+def test_body_scope_degraded_flags_unscopable_pages():
+    # Chrome-only <article>s (all under the guard) and no recommendation
+    # heading: scoping would fall back to the whole page -> degraded.
+    cards = "".join(f"<article>related card {i} title byline</article>" for i in range(5))
+    shell = f"<html><body><nav>Skip to content</nav>{cards}</body></html>"
+    assert gwad.body_scope_degraded(shell, "html", gwad.DEEP_ARTICLE_MIN_BODY_CHARS)
+
+    # A real <article> clearing the guard -> not degraded.
+    real = f"<html><body>{cards}<article>{'real body sentence. ' * 40}</article></body></html>"
+    assert not gwad.body_scope_degraded(real, "html", gwad.DEEP_ARTICLE_MIN_BODY_CHARS)
+
+    # A recommendation-heading cut also counts as a body scope.
+    rec = "<html><body><p>lead</p><h2>推荐阅读</h2><ul><li>x</li></ul></body></html>"
+    assert not gwad.body_scope_degraded(rec, "html", gwad.DEEP_ARTICLE_MIN_BODY_CHARS)
+
+    # Markdown: degraded only when no recommendation heading exists.
+    assert gwad.body_scope_degraded("plain markdown", "markdown")
+    assert not gwad.body_scope_degraded("body\n# 推荐阅读\ncards", "markdown")
+
+
+class PerUrlSession:
+    """Serves a fixed body per requested URL (records call order)."""
+
+    def __init__(self, pages: dict[str, str]):
+        self.pages = pages
+        self.calls: list[str] = []
+
+    def get(self, url, timeout=None, **kwargs):
+        self.calls.append(str(url))
+        return FakeResponse(200, self.pages.get(str(url), ""))
+
+
+def test_deep_grounding_uses_reader_proxy_on_shell_page():
+    # github.blog-style JS shell: the direct HTML is big enough to pass the
+    # bot-wall floor, but every <article> is a profile/related card and the
+    # whole page strips down to navigation text. The reader proxy's markdown
+    # (which carries the real body) must win over that garbage.
+    shell = (
+        "<html><body><nav>Skip to content Blog Changelog Docs Customer stories</nav>"
+        + "".join(f"<article>related card {i} title byline</article>" for i in range(5))
+        + "</body></html>"
+    )
+    markdown = "Title: T\nMarkdown Content: " + "这是文章正文里的真实内容。" * 40
+    session = PerUrlSession({
+        "https://a.example/story": shell,
+        "https://r.jina.ai/https://a.example/story": markdown,
+    })
+    item = make_item(1, summary=THIN_SUMMARY)
+    item["url"] = "https://a.example/story"
+    item["primary_url"] = "https://a.example/story"
+
+    grounding = gwad.deep_reason_context(item, session, {})
+
+    assert grounding and "真实内容" in grounding
+    assert session.calls == [
+        "https://a.example/story",
+        "https://r.jina.ai/https://a.example/story",
+    ]
+
+
+def test_deep_grounding_uses_direct_page_when_shell_and_jina_down():
+    # Reader proxy unavailable (circuit breaker): the page's own text is the
+    # best grounding left — keep the legacy whole-page behavior.
+    shell = (
+        "<html><body><nav>Skip to content Blog Changelog Docs</nav>"
+        + "".join(f"<article>related card {i} title byline</article>" for i in range(5))
+        + "<p>" + "页面里仅有的可读文字内容。" * 20 + "</p></body></html>"
+    )
+    session = PerUrlSession({"https://a.example/story": shell})
+    item = make_item(1, summary=THIN_SUMMARY)
+    item["url"] = "https://a.example/story"
+    item["primary_url"] = "https://a.example/story"
+
+    grounding = gwad.deep_reason_context(item, session, {"jina_down": True})
+
+    assert grounding and "可读文字内容" in grounding
+    assert session.calls == ["https://a.example/story"]
+
+
+def test_deep_grounding_skips_reader_proxy_when_body_scopes():
+    # A page whose body DOES scope never pays for the second chance.
+    body = (
+        "<html><body><nav>menu</nav><article>"
+        + "这是正文里的真实内容句子。" * 60
+        + "</article></body></html>"
+    )
+    session = FakeSession(text=body)
+    item = make_item(2, summary=THIN_SUMMARY)
+
+    grounding = gwad.deep_reason_context(item, session, {})
+
+    assert grounding and "真实内容" in grounding
+    assert session.calls == ["https://example.com/story/2"]
 
 
 def test_deep_meta_line_shows_channel_for_umbrella_bucket():

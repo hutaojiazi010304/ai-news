@@ -4,7 +4,7 @@ Third layout variant beside ``generate_weixin_article.py`` (1.0, flat list)
 and ``generate_weixin_article_grouped.py`` (2.0, grouped boxes). It keeps the
 2.0 grouped layout but upgrades the content for close reading:
 
-- Selection: the top 10 stories by ``peak_score`` only (default; override via
+- Selection: the top 20 stories by ``peak_score`` only (default; override via
   ``--max-items`` or ``WEIXIN_DEEP_MAX_ITEMS`` — deliberately NOT
   ``WEIXIN_MAX_ITEMS``, so 1.0/2.0 stay untouched). Empty sections are
   skipped, exactly like 2.0.
@@ -158,7 +158,7 @@ except ImportError:  # run directly as a script
 
 DEFAULT_OUTPUT_DIR = "weixin-deep"
 DEFAULT_MAIN_OUTPUT_DIR = "weixin"
-DEFAULT_DEEP_MAX_ITEMS = 10
+DEFAULT_DEEP_MAX_ITEMS = 20
 
 # Independent cache version: bumped only when the deep prompt/bounds change
 # in a way that invalidates EXISTING entries. v8 drops the source line from
@@ -195,8 +195,8 @@ DEEP_REASON_MAX_MARKS = 4
 DEEP_REASON_MARK_MAX_COVERAGE = 0.8
 # A persisted summary must be this long before it alone can ground a
 # 150-350-char report; anything thinner falls back to a full-text fetch
-# (deliberate inversion of 1.0's 20-char summary-first policy — only 10
-# items run locally, so per-item fetching is affordable).
+# (deliberate inversion of 1.0's 20-char summary-first policy — the item
+# count is small and bounded, so per-item fetching is affordable).
 DEEP_SUMMARY_MIN_GROUNDING_CHARS = 120
 # Same idea for the scoped <article> element: huggingface.co blog pages
 # wrap ONLY sidebar/model cards in <article> (the post sits outside every
@@ -336,10 +336,11 @@ DEEP_MARK_SYSTEM_PROMPT = (
 # ---------------------------------------------------------------------------
 
 def resolve_deep_max_items(args: argparse.Namespace) -> int:
-    """--max-items > WEIXIN_DEEP_MAX_ITEMS > 10.
+    """--max-items > WEIXIN_DEEP_MAX_ITEMS > 20.
 
-    ``WEIXIN_MAX_ITEMS`` is deliberately ignored: 1.0/2.0 keep their own
-    20-item default, this variant keeps its own 10-item default.
+    ``WEIXIN_MAX_ITEMS`` is deliberately ignored even though both defaults
+    are 20 now: the knobs must stay separate so a 1.0/2.0 change never
+    affects this variant.
     """
     if args.max_items is not None:
         return max(1, args.max_items)
@@ -435,7 +436,10 @@ def deep_reason_context(
 
     The fetch goes through fetch_page_html (direct → r.jina.ai, both under
     hard wall-clock deadlines) and is scoped to the article body, so
-    recommendation widgets below it can never leak into the grounding.
+    recommendation widgets below it can never leak into the grounding. When
+    the direct HTML cannot be scoped at all (JS-shell pages whose <article>
+    elements are all chrome), the reader proxy gets a second chance so the
+    guide is grounded on the real article instead of navigation text.
     """
     title = str(item.get("title") or "").strip()
     # ensure_zh_titles may have replaced item["title"] with a Chinese
@@ -463,6 +467,20 @@ def deep_reason_context(
     if payload is None:
         return None
     body, kind = payload
+    if kind == "html" and body_scope_degraded(body, kind, DEEP_ARTICLE_MIN_BODY_CHARS):
+        # JS-shell pages (github.blog is the observed case): the article body
+        # never reaches the server HTML, every <article> is a profile or
+        # related-post card, and scoping degrades to the whole page — which
+        # strips down to navigation text, grounding the guide on menus. The
+        # reader proxy renders the actual article, so try it before settling
+        # for chrome (costs one extra call, and only on unscopable pages).
+        jina_payload = fetch_jina_bytes(
+            session, url, PAGE_FETCH_TIMEOUT, PAGE_MAX_BYTES, net_state
+        )
+        if jina_payload is not None:
+            jina_text = jina_payload.decode("utf-8", errors="replace")
+            if jina_text.strip():
+                body, kind = jina_text, "markdown"
     text = strip_html_text(
         scope_to_article_body(body, kind, DEEP_ARTICLE_MIN_BODY_CHARS)
     )
@@ -571,44 +589,65 @@ def add_deep_marks(guide: str, cfg: dict, label: str = "") -> str:
     return text
 
 
+def _deep_reject_cause(stripped: str, title: str) -> str:
+    """Human-readable cause for a validate_deep_reason failure (bounds are
+    re-checked inline so the diagnostic names the REAL cause)."""
+    if not has_cjk(stripped):
+        return "无中文"
+    if len(stripped) < DEEP_REASON_MIN_CHARS:
+        return f"字数 {len(stripped)} 不足 {DEEP_REASON_MIN_CHARS}"
+    if len(stripped) > DEEP_REASON_MAX_CHARS:
+        return f"字数 {len(stripped)} 超出上限 {DEEP_REASON_MAX_CHARS}"
+    if stripped == title:
+        return "与标题相同"
+    if "http" in stripped:
+        return "含 URL"
+    return "含拒答话术"
+
+
 def generate_deep_reason(item: dict, context: str, cfg: dict) -> str | None:
     title = str(item.get("title") or "").strip()
     if not title or not context:
         return None
     user_content = f"标题：{title}\n\n正文：\n{context}"
-    content = call_text_api(
-        [
-            {"role": "system", "content": DEEP_REASON_SYSTEM_PROMPT},
-            {"role": "user", "content": user_content},
-        ],
-        cfg,
-    )
-    if not content:
-        print("weixin-deep: 深度导读：API 未返回内容", file=sys.stderr, flush=True)
+    reminder = ""
+    for attempt in (1, 2):
+        content = call_text_api(
+            [
+                {"role": "system", "content": DEEP_REASON_SYSTEM_PROMPT},
+                {"role": "user", "content": user_content + reminder},
+            ],
+            cfg,
+        )
+        if not content:
+            print("weixin-deep: 深度导读：API 未返回内容", file=sys.stderr, flush=True)
+            return None
+        stripped = str(content).strip()
+        if validate_deep_reason(stripped, title):
+            return add_deep_marks(stripped, cfg, title)
+        cause = _deep_reject_cause(stripped, title)
+        if attempt == 1:
+            # Most rejections are stochastic overshoots (length, meta
+            # commentary about the body); one reinforced retry recovers
+            # them — mirrors the marking pass's single retry.
+            print(
+                f"weixin-deep: 深度导读初稿未过校验（{cause}），强化重试：{title[:24]}",
+                file=sys.stderr,
+                flush=True,
+            )
+            reminder = (
+                "\n\n（严格遵守要求：只输出导读本身，不加任何解释、前缀或对"
+                "正文质量的评价；字数控制在一百五十到三百五十之间。）"
+            )
+            continue
+        # Silent rejects made failures impossible to diagnose; show what the
+        # model returned and which bound it tripped, even after the retry.
+        print(
+            f"weixin-deep: 深度导读被校验拒绝（{cause}）：{stripped[:60]}…",
+            file=sys.stderr,
+            flush=True,
+        )
         return None
-    stripped = str(content).strip()
-    if validate_deep_reason(stripped, title):
-        return add_deep_marks(stripped, cfg, title)
-    # Silent rejects made failures impossible to diagnose; show what the model
-    # returned and which bound it tripped (bounds re-checked inline so the
-    # message names the real cause).
-    if not has_cjk(stripped):
-        cause = "无中文"
-    elif len(stripped) < DEEP_REASON_MIN_CHARS:
-        cause = f"字数 {len(stripped)} 不足 {DEEP_REASON_MIN_CHARS}"
-    elif len(stripped) > DEEP_REASON_MAX_CHARS:
-        cause = f"字数 {len(stripped)} 超出上限 {DEEP_REASON_MAX_CHARS}"
-    elif stripped == title:
-        cause = "与标题相同"
-    elif "http" in stripped:
-        cause = "含 URL"
-    else:
-        cause = "含拒答话术"
-    print(
-        f"weixin-deep: 深度导读被校验拒绝（{cause}）：{stripped[:60]}…",
-        file=sys.stderr,
-        flush=True,
-    )
     return None
 
 
@@ -944,6 +983,23 @@ def scope_to_article_body(
         if cut:
             return str(text)[: cut.start()]
     return str(text or "")
+
+
+def body_scope_degraded(body: str, kind: str, min_body_chars: int = 0) -> bool:
+    """True when scope_to_article_body would return the WHOLE payload: no
+    qualifying <article> (html) and no recommendation-heading cut. Such an
+    html page is typically a JS shell whose stripped text is navigation
+    chrome; deep_reason_context answers it with a reader-proxy second chance
+    instead of grounding a guide on menus."""
+    text = str(body or "")
+    if kind == "html":
+        articles = ARTICLE_TAG_RE.findall(text)
+        if articles:
+            longest = max(articles, key=len)
+            if not min_body_chars or len(strip_html_text(longest)) >= min_body_chars:
+                return False
+        return REC_HEADING_HTML_RE.search(text) is None
+    return REC_HEADING_MD_RE.search(text) is None
 
 
 def extract_image_candidates(
@@ -1556,7 +1612,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--max-items",
         type=int,
         default=None,
-        help="max items (defaults to WEIXIN_DEEP_MAX_ITEMS env or 10)",
+        help="max items (defaults to WEIXIN_DEEP_MAX_ITEMS env or 20)",
     )
     parser.add_argument(
         "--no-images",
