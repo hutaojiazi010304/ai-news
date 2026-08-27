@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI 雷达 · 8月27日｜今日精读10条</title>
+<title>AI 雷达 · 8月27日｜今日精读20条</title>
 </head>
 <body style="margin:0;padding:0;background-color:#f5f6f7;">
 <section style="max-width:677px;margin:0 auto;background-color:#ffffff;padding:28px 20px 36px;">
@@ -13,95 +13,170 @@
 <p style="margin:3px 0 0;font-size:13px;color:#999999;">8月27日 周四 · 每日 AI 精读</p>
 </section>
 
-<p style="margin:0 0 4px;font-size:18px;font-weight:bold;line-height:1.5;color:#111111;">AI 雷达 · 8月27日｜今日精读10条</p>
+<p style="margin:0 0 4px;font-size:18px;font-weight:bold;line-height:1.5;color:#111111;">AI 雷达 · 8月27日｜今日精读20条</p>
 
 <section style="margin:34px 0 0;">
 <p style="margin:0 0 14px;text-align:center;font-size:17px;font-weight:bold;letter-spacing:2px;color:#13501B;">官方更新</p>
 <section style="border:1px solid rgba(19, 80, 27, 0.45);border-radius:10px;background-color:rgba(19, 80, 27, 0.08);padding:2px 14px 14px;">
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">① Granite 4.2 LLMs 是如何构建的</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">Granite 4.2</strong> 是首个 dense decoder-only 推理 LLM 系列，提供 3B、8B 和 30B 三种规格，均采用 Apache 2.0 许可证发布。模型从零开始预训练约 15T tokens，通过五阶段策略将上下文窗口扩展至 512K tokens，随后使用思维链、推理及智能体轨迹数据进行监督微调，并经由包含 Agentic RL 的多阶段强化学习管线完成训练。其中 8B 和 30B 模型在真实沙盒环境中学习工具调用、代码编辑执行、终端操作及网络搜索等智能体行为。所有模型均支持原生工具调用，并配备 thinking/non-thinking 切换开关及针对简单问题分配短推理预算的 low-effort thinking 模式。三个尺寸共享相同架构设计与训练流程，<strong style="color:#13501B;">主要能力差异体现在后训练阶段</strong>，8B 与 30B 额外增加了智能体强化学习模块。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Hugging Face Blog · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://huggingface.co/blog/ibm-granite/granite-4-2</p>
-</section>
-<section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">② Granite Speech 5.0 Turbo CTC：极速精准语音转写</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Granite Speech 5.0 Turbo CTC 系列发布了两款 470M 参数的紧凑型英语语音识别模型，在 NVIDIA H200 GPU 上实现<strong style="color:#13501B;">超过 12,600 RTFx 的吞吐量</strong>，批量推理下一秒可转写逾 3.5 小时语音。两款模型均为 encoder-only 架构，其中 granite-speech-5.0-470m-turboctc-nc 采用 CC-BY-NC-SA-4.0 许可并使用更多训练数据，在 OpenASR Leaderboard 公开测试集上取得 4.85% WER；Apache 2.0 许可的 granite-speech-5.0-470m-turboctc WER 为 5.00%。在 FFASR Leaderboard 远场语音识别评测中，非商业版准确率排名第五，Apache 2.0 版排名第九，<strong style="color:#13501B;">两者均为该榜单速度最快的模型</strong>。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Hugging Face Blog · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc</p>
-</section>
-<section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">③ 量化感知修复：4-bit压缩模型性能反超全精度原版</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Quantization-Aware Healing（QAH）方法应用于经结构压缩至60B参数并量化为MXFP4的GPT-OSS 120B模型后，<strong style="color:#13501B;">该4-bit模型在9项基准测试中的7项上性能超越了其全精度bfloat16原版</strong>，实现了更小体积、更低运行成本与更高准确率。针对现有量化感知训练（QAT）需重跑多阶段后训练且易不稳定、量化感知蒸馏（QAD）仅适用于纯量化场景等局限，<strong style="color:#13501B;">QAH专门解决模型先经结构压缩再量化后的恢复难题</strong>。该方法使4-bit压缩模型反超16-bit源模型成为可能，<strong style="color:#13501B;">改变了低精度模型必然弱于高精度原版的常规认知</strong>，为已压缩模型的量化恢复提供了新路径。</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">① GitHub Copilot 新手指南：自动分拣 Dependabot Pull Request</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">GitHub Copilot 应用现可自动分拣 Dependabot Pull Request</strong>，用于处理库更新这类重复性任务。该功能旨在替代人工管理依赖更新时的繁琐流程，通过自动化方式完成对 Dependabot 生成的 Pull Request 的分类与整理工作。官方更新日志将此定位为<strong style="color:#13501B;">针对开发过程中高频、低价值操作的效率优化手段</strong>，使开发者能将精力从机械性的依赖维护中释放出来。</p>
 <section style="margin:12px 0 0;">
-<img src="images/story_6411634610d0.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
-<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：huggingface.co</p>
-</section>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Hugging Face Blog · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing</p>
-</section>
-<section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">④ LLM 上线前该如何评估？</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">LLM 在基准测试中表现良好并不意味着能适应生产环境</strong>，真实输入往往存在歧义、标签不一致或上下文缺失，导致离线指标无法直接转化为线上效果。针对 secret scanning 减少误报的场景，评估核心并非模型分类准确率，而是<strong style="color:#13501B;">系统能否在降低噪声告警的同时保持足够召回率以确保安全</strong>。该场景将精确率作为首要优化目标，召回率则作为安全约束，实验仅在召回率下降处于预定义可接受范围内时才可推进。<strong style="color:#13501B;">有效的评估应始于产品决策而非模型调整</strong>，需先明确评估所支持的具体业务决策、可接受的错误类型及驱动决策的指标，并设定必须维持的防护阈值，避免在未定义目标前盲目修改提示词或切换模型。</p>
-<section style="margin:12px 0 0;">
-<img src="images/story_4b7b151c884e.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
+<img src="images/story_719767637d52.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
 <p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：github.blog</p>
 </section>
 <p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · GitHub AI &amp; ML · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑤ 支持直接从安全公告中封禁用户</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">现在支持在组织或个人账户拥有的公开仓库安全公告页面中<strong style="color:#13501B;">直接封禁用户</strong>。这一功能将原本分散的审核流程整合至安全公告界面内，允许维护者在查看或处理安全相关议题时即时执行封禁操作，无需跳转至其他管理后台。该更新旨在<strong style="color:#13501B;">简化公开仓库的安全事件响应与社区治理步骤</strong>，使针对恶意行为者的处置动作能够与安全风险披露同步完成，提升维护者在应对安全威胁时的<strong style="color:#13501B;">操作效率与连贯性</strong>。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · GitHub Changelog · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://github.blog/changelog/2026-08-25-block-users-directly-from-security-advisories</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">② Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">Gemini 3.5 Transcribe</strong> 作为最新语音转文本模型正式发布，专为实时语音交互设计，可将原始音频直接转换为准确、格式化文本。该模型在 Artificial Analysis 测评中<strong style="color:#13501B;">流式场景平均词错误率为 4.0%</strong>，非流式场景为 2.6%，支持自动检测并转录超过 85 种语言，预录音频可识别最多三名说话人并附带字级时间戳。功能上支持去除填充词、处理自我纠正、自动格式化及通过函数调用委托图像生成等复杂任务，并能适配自定义词汇表以识别专业术语。开发者现可通过 Gemini API 获取两种接口：基于 gemini-3.5-transcribe-live 的实时双向流式传输具备亚秒级延迟，基于 gemini-3.5-transcribe 的预录音频处理则适用于会议记录与通话分析等场景。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Google DeepMind · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑥ GitHub Copilot 应用 Customize 选项卡正式全面开放</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">GitHub Copilot 应用中的 Customize 选项卡已正式全面开放</strong>，该功能旨在让 Copilot 与团队现有的工具、知识及工作流深度整合。此次更新在 Customize 选项卡中引入了 <strong style="color:#13501B;">MCP 支持</strong>，使用户能够根据自身需求对 Copilot 进行定制化配置。通过将模型能力与团队实际依赖的开发环境和业务流程直接对接，<strong style="color:#13501B;">Copilot 的实用性和适配度得到提升</strong>。这一调整意味着开发者不再局限于通用交互模式，而是可以在应用内通过专属设置页面，将外部工具链和内部知识库纳入 Copilot 的工作上下文，从而实现更贴合具体业务场景的智能辅助体验。</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">③ Qwen3.8-Flash 开源，Qwen4 架构预览</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">通义千问发布多模态 MoE 模型 Qwen3.8-Flash，作为 <strong style="color:#13501B;">Qwen4 架构的早期预览</strong>并开放权重。该模型总参数量为 125B，每 token 仅激活 6B，<strong style="color:#13501B;">训练成本降至 Qwen3.7-Plus 的九分之一</strong>，性能全面超越后者。生产版 API 定价为输入 $0.16/1M tokens、输出 $0.47/1M tokens，原生支持 262K 上下文长度，<strong style="color:#13501B;">可扩展至 1M</strong>。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · X：通义千问 / Qwen (@Alibaba_Qwen) · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://x.com/Alibaba_Qwen/status/2092636376990990503</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">④ ChatGPT for Teachers 将覆盖更多美国学区</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">ChatGPT for Teachers 正扩展至美国55个学区系统</strong>，将为超过10万名教育工作者及员工提供安全的AI工具、培训与支持服务。此次覆盖范围的扩大直接面向一线教学与行政人员，旨在通过配套的资源体系协助教育从业者使用AI技术。<strong style="color:#13501B;">该计划的核心交付内容包括安全合规的AI应用工具以及相应的操作培训和后续支持</strong>，服务对象明确限定为新增学区内的教师与职员群体。</p>
 <section style="margin:12px 0 0;">
-<img src="images/story_72c69d1ef3c2.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
-<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：github.blog</p>
-</section>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · GitHub Changelog · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://github.blog/changelog/2026-08-25-github-copilot-app-customize-tab-is-generally-available</p>
-</section>
-<section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑦ 规则集中的推送规则现已支持路径例外</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">推送规则配置现已支持<strong style="color:#13501B;">路径例外功能</strong>，允许用户通过豁免特定文件路径来实现更细粒度的控制。启用该功能后，设定的推送规则将在作用范围内全局生效，但会自动排除用户指定的路径。这一更新使得<strong style="color:#13501B;">规则应用不再局限于整体范围</strong>，而是能够针对具体文件路径进行差异化处理，目前路径例外功能已正式公开可用。用户在配置推送规则时可直接设定例外路径，确保规则仅作用于非豁免区域，从而满足对代码仓库不同目录实施<strong style="color:#13501B;">差异化推送策略</strong>的需求。</p>
-<section style="margin:12px 0 0;">
-<img src="images/story_2ae3bbe5c601.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
-<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：github.blog</p>
-</section>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · GitHub Changelog · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://github.blog/changelog/2026-08-25-push-rules-in-rulesets-now-support-path-exceptions</p>
-</section>
-<section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑧ 用 Google Search 升级家居装饰的5种方法</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">过去一个月<strong style="color:#13501B;">“home decor inspo”搜索量增长300%</strong>，“bathroom inspo”和“living room inspo”成为突破性搜索词，今年流行涂料色包括teal和magenta。<strong style="color:#13501B;">Google Search提供多种工具辅助家居装饰落地</strong>：通过Search AI Mode上传房间照片并输入具体尺寸（如84英寸宽墙面），可生成家具摆放效果图；使用Google Lens拍摄vintage物品照片，能识别信息并推荐同价位相似商品，“vintage braided rugs”和“vintage wood coffee table”为当前热门趋势；借助Circle to Search功能，在Pixel和Samsung Galaxy S26设备上长按导航栏圈选屏幕内容即可查找同款，近期fish wallpaper搜索量上涨140%；此外还可利用Search Live获取DIY项目实时视频指导，并通过价格历史追踪确保获得最优折扣。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Google AI Blog · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://blog.google/products-and-platforms/products/search/home-decor-tips</p>
-</section>
-<section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑨ Jalapeño 首测出炉：AI 推理速度与效率领跑行业</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">OpenAI 自研推理芯片 <strong style="color:#13501B;">Jalapeño</strong> 首次测试结果出炉，该芯片专为现代模型设计，在 AI 推理环节实现了更快的速度与更高的能效。测试数据显示，Jalapeño 具备更高的吞吐量和更低的延迟，同时保持了优异的功耗效率，<strong style="color:#13501B;">整体推理性能与能效表现均处于行业领先水平</strong>。作为 OpenAI 的定制硬件，Jalapeño 直接针对当前主流 AI 模型的推理需求进行优化，验证了其在提升推理速度、降低延迟及改善能耗方面的实际效果。</p>
-<section style="margin:12px 0 0;">
-<img src="images/story_b95e33dbd1e9.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
+<img src="images/story_6b30649509f4.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
 <p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：openai.com</p>
 </section>
-<p style="margin:6px 0 0;font-size:13px;line-height:1.6;color:#999999;">Jalapeño 首测出炉：AI 推理速度与效率领跑行业（OpenAI News, Zeli）</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · OpenAI News等 · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://openai.com/index/jalapeno-first-results</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · OpenAI News · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑩ Rule Insights 仪表板正式全面开放</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">Rule Insights 仪表板现已在 repository 和 organization 层级全面开放</strong>。该功能提供可视化的高层视图，用于展示 GitHub 如何评估和执行 repository 规则。用户可通过此仪表板直观了解规则的具体生效情况与执行状态，无需再依赖零散的日志或配置页面进行排查。这一更新覆盖了从单个代码仓库到整个组织的管理范围，使<strong style="color:#13501B;">规则合规性的监控与验证流程更加集中和透明</strong>。</p>
-<section style="margin:12px 0 0;">
-<img src="images/story_95764e895938.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
-<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：github.blog</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑤ GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">智谱上线并开源 <strong style="color:#13501B;">GLM-5.3-Flash（320B-A18B）</strong>，作为 GLM-5 系列首个原生多模态模型，其 AA 综合智能指数达 57 分，<strong style="color:#13501B;">与 Claude Opus 4.8 持平</strong>。该模型定价为 GLM-5.3 的十分之一，限时折扣期间仅为 Opus 4.8 的四十分之一，目前已接入 ZCode 等平台开放 API 调用。技术架构上，GLM-5.3-Flash 采用<strong style="color:#13501B;">稀疏注意力与线性注意力混合设计</strong>，推理服务已部署于国产芯片集群运行。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · 公众号：智谱（GLM） · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&amp;mid=2247494157&amp;idx=1&amp;sn=6837b15a07d2518842eb6c6b53a3eb3c</p>
 </section>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · GitHub Changelog · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://github.blog/changelog/2026-08-25-rule-insights-dashboard-generally-available</p>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑥ Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">通义千问开源了多模态 MoE 模型 <strong style="color:#13501B;">Qwen3.8-Flash-Next</strong>，作为 Qwen4 架构的早期预览版本。该模型总参数量为 125B，每 token 激活参数仅 6B，采用了包括 GDN + QSA 混合注意力在内的四项架构升级。其训练成本约为 Qwen3.7-Plus 的九分之一，在编码与办公任务上的能力得到增强。这一新架构旨在通过降低激活参数规模与训练开销，<strong style="color:#13501B;">实现极致的成本效率</strong>，同时保持并提升特定场景下的模型性能表现。</p>
+<p style="margin:6px 0 0;font-size:13px;line-height:1.6;color:#999999;">Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览（Qwen：Blog Retrieval（API）, Buzzing, Info Flow）</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Qwen：Blog Retrieval（API）等 · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://qwen.ai/blog?id=qwen3.8-flash-next</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑦ 用 Sentence Transformers 训练与微调多向量嵌入模型</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">Sentence Transformers v6.0</strong> 新增 MultiVectorEncoder 模型类型，支持 ColBERT 风格后期交互检索及完整训练流程。通过该库微调的多向量模型 mLateOn-medical 在单张 RTX 3090 上训练 14.5 小时后，在医疗检索评估中<strong style="color:#13501B;">性能超过所有通用检索模型</strong>，涵盖 dense、sparse、lexical 及多向量类型。微调过程涉及模型选择、数据集、损失函数、训练参数、评估器及 Trainer 类等组件，<strong style="color:#13501B;">既支持对现有多向量模型微调，也支持从基础 transformer 从头构建</strong>。所有内容可通过安装 sentence-transformers[train] 运行，配套文档提供了各组件的实操示例及多数据集训练、索引优化等方法。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Hugging Face Blog · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://huggingface.co/blog/train-multi-vector-encoder</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑧ 学习永无止境：AI 如何让终身学习成为可能</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">OpenAI 发布的新报告探讨了学生与教育工作者如何利用 ChatGPT 实现更持续的终身学习。该报告聚焦于 <strong style="color:#13501B;">AI 工具在实际教育场景中的应用方式</strong>，指出 ChatGPT 提供的支持已延伸至传统课堂之外，使学习过程不再受限于固定时间与场所。报告内容围绕用户具体使用行为展开，呈现了 AI 在促进持续性学习方面的实际作用路径，强调其在课后辅导、自主探索及个性化学习节奏调整等环节中的辅助功能。这一发现基于对学生和教育工作者真实使用模式的观察与分析，揭示了 <strong style="color:#13501B;">AI 技术如何嵌入日常学习流程以支撑终身学习目标的实现</strong>。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · OpenAI News · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://openai.com/index/learning-never-stops</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑨ Codex CLI 0.150.0</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">Codex CLI 0.150.0</strong> 新增主题自定义功能，用户可在设置中选择基础主题，调整强调色、背景色与前景色，更改界面及代码字体，并支持分享自定义主题。<strong style="color:#13501B;">自动化模块经过重构</strong>，现允许选择自动化在本地或 worktree 中运行，支持定义自定义推理级别与模型，并提供模板以辅助创建新自动化。该版本还包含多项性能优化与错误修复。</p>
+<section style="margin:12px 0 0;">
+<img src="images/story_f836dca9a8f7.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
+<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：openai.com</p>
+</section>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · OpenAI Codex Changelog · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://developers.openai.com/codex/changelog</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑩ loveholidays 如何借助 Codex 让人人都成为开发者</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">loveholidays 利用 <strong style="color:#13501B;">OpenAI Codex</strong> 使软件开发能力在公司内部普及，帮助各业务团队将创意更快速地转化为实际产品。通过引入该工具，<strong style="color:#13501B;">非传统技术岗位的员工也能参与开发流程</strong>，显著缩短了从想法到产品落地的周期。这一实践表明，借助 AI 辅助编程工具，企业能够<strong style="color:#13501B;">降低软件开发门槛</strong>，提升整体创新效率与响应速度。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · OpenAI News · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://openai.com/index/loveholidays</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑪ Claude in Chrome 正式全面上线</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">Claude in Chrome 现已面向所有付费 Claude 套餐全面开放</strong>，支持在浏览器中自主执行操作且无需逐步审批。系统通过安全分类器在每次操作前验证安全性及是否符合用户请求，并强化了针对提示注入攻击的防御机制。最新评测数据显示，在启用探测与安全分类器后，<strong style="color:#13501B;">自 Opus 4.8 起的所有模型均未出现攻击成功案例</strong>。</p>
+<section style="margin:12px 0 0;">
+<img src="images/story_a3eb56560645.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
+<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：claude.com</p>
+</section>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Claude：Blog（网页） · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://claude.com/blog/claude-in-chrome-generally-available</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑫ Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Anthropic 今年春季启动试点，通过隐私保护工具 Anthropic Insights 向斯坦福大学 SALT Lab、牛津大学人类信息处理实验室及 METR 三个外部机构开放约 <strong style="color:#13501B;">25 万段 Claude.ai 或 Claude Code 对话数据</strong>，供其独立设计研究并公开发布结果。这批数据涵盖 2026 年 4 月至 5 月的真实使用记录，旨在支持外部研究者在不接触原始敏感信息的前提下，对 Claude 的实际使用模式开展独立分析。该试点是 <strong style="color:#13501B;">Anthropic 首次系统性地向学术界与评估机构提供大规模真实交互数据用于第三方研究</strong>，所有参与机构均自主确定研究方向并负责成果发布。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Anthropic：Research（发表成果 · 网页） · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://www.anthropic.com/research/enabling-independent-research</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑬ Warp 如何在 Claude 上构建自我改进的智能体</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Warp 在 Claude 平台上构建了<strong style="color:#13501B;">基于 Agent Skills 的自我改进循环</strong>，利用基础技能与改进技能两个文件型技能，将人类反馈转化为对智能体的持续优化。该模式已应用于其整个开源仓库，覆盖数百名贡献者与数千次代码审查。团队建议<strong style="color:#13501B;">以原则而非规则编写技能</strong>，并强调低摩擦反馈与改进技能的可复用性，以此实现<strong style="color:#13501B;">智能体能力的迭代提升</strong>。</p>
+<section style="margin:12px 0 0;">
+<img src="images/story_0242f5e0fb1e.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
+<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：claude.com</p>
+</section>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Claude：Blog（网页） · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑭ GlucoFM：面向连续血糖监测的基础模型</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Google Research 推出轻量级自监督 CGM 基础模型 <strong style="color:#13501B;">GlucoFM</strong>，采用双流设计分别建模缓慢血糖趋势与短期波动。该模型在 109,066 小时无标注 CGM 数据上完成预训练，具备跨数据集迁移与少样本适应能力。在四个队列、七项临床预测任务的 14 项评估中，<strong style="color:#13501B;">GlucoFM 的 PR-AUC 较最优 GluFormer 变体平均高出 5.8 个百分点</strong>，并在 PPGR 预测中取得最低 MAE。</p>
+<section style="margin:12px 0 0;">
+<img src="images/story_8368ac600900.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
+<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：research.google</p>
+</section>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Google Research：Blog（网页） · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑮ 腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">腾讯混元将端侧翻译模型 Hy-MT2-1.8B 通过 2-bit 与 1.25-bit 量化方案分别压缩至 574MB 和 440MB，<strong style="color:#13501B;">在 FLORES-200 评测集上的翻译质量优于 Microsoft Translator 等商业 API</strong>，且几乎无损。该模型已联合英特尔完成 x86 架构适配，并在哔哩哔哩直播弹幕实时翻译场景中落地应用，实测单条弹幕翻译耗时为 500 至 800ms。<strong style="color:#13501B;">这一部署验证了极低比特量化技术在保持翻译性能的同时，能够满足端侧实时推理对模型体积与响应速度的要求</strong>。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · 公众号：腾讯混元 · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&amp;mid=2247498367&amp;idx=1&amp;sn=f1a5cf87eb06015cbe995bd5ef8b5d0a</p>
+</section>
+</section>
+</section>
+<section style="margin:34px 0 0;">
+<p style="margin:0 0 14px;text-align:center;font-size:17px;font-weight:bold;letter-spacing:2px;color:#215F9A;">行业动态</p>
+<section style="border:1px solid rgba(33, 95, 154, 0.45);border-radius:10px;background-color:rgba(33, 95, 154, 0.08);padding:2px 14px 14px;">
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">① 以色列资助的假美国智库试图利用AI进行宣传</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">一个自称“汉诺威公共政策研究所”的亲以色列网站在九天内发布了124篇、总计超56万字的报告，<strong style="color:#215F9A;">旨在优化内容以引导ChatGPT等AI聊天机器人引用其亲以观点</strong>。该网站由美国公司Piro Inc依据《外国代理人登记法》为以色列政府分发内容，其背后是以色列政府数千万美元资助、经Havas Media等第三方转手的更广泛宣传行动。这一操作通过高频次、大体量的内容生产，<strong style="color:#215F9A;">试图系统性地影响生成式AI的信息输出结果</strong>。</p>
+<p style="margin:6px 0 0;font-size:13px;line-height:1.6;color:#999999;">以色列资助的假美国智库试图利用AI进行宣传（Hacker News 热门（buzzing.cc 中文翻译）, Buzzing, Zeli）</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">行业动态 · Hacker News 热门（buzzing.cc 中文翻译）等 · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://www.theguardian.com/world/2026/aug/26/fake-thinktank-israel-ai-propaganda</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">② C2PA相机经不起现实的考验：Android端可被root攻击伪造签名</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">安全研究员David Buchanan指出，<strong style="color:#215F9A;">C2PA相机认证在Android平台上可被攻破</strong>。攻击者利用root权限提升漏洞（如CVE-2026-43499），即可调用StrongBox硬件对任意数据进行签名，从而伪造带有C2PA签名的图像和视频，整个过程无需进行物理硬件攻击。<strong style="color:#215F9A;">该安全问题无法通过常规软件补丁修复</strong>，相关发现已提前90天向有关方面报告。这意味着即便依赖硬件级安全模块，<strong style="color:#215F9A;">C2PA认证体系在Android端仍面临可被软件层面绕过的风险</strong>，且现有修补手段无效。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">行业动态 · Hacker News 热门（buzzing.cc 中文翻译） · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">③ Anthropic 冲击全球最大 IPO：画 30 万亿美元市场蓝图，估值锚定 2 万亿</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Anthropic 在 IPO 招股书中预测<strong style="color:#215F9A;">潜在总市场规模超过 30 万亿美元</strong>，以此支撑其 2 万亿美元的估值目标，该数字并非基于当前软硬件销售，而是测算未来 AI 可替代或完成的全球所有工作的总经济价值与劳动力成本。公司计划于 2026 年秋季上市，拟募资高达 1000 亿美元。财务数据显示，Anthropic 第二季度营收达 116 亿美元，并<strong style="color:#215F9A;">首次实现调整后营业利润为正</strong>，投资者预期其年化营收年底可达 1000 亿美元。不过分析指出，受美国数据中心建设受阻及海外低成本模型竞争加剧影响，<strong style="color:#215F9A;">二级市场对高估值的容忍度正在下降</strong>，这一市场蓝图能否说服理性资本仍待检验。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">行业动态 · AIbase · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://www.aibase.com/news/30610</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">④ 英伟达 2027 财年半年报归母净利润 1180.1 亿美元，同比增长 161.1%</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">英伟达2027财年半年报显示，上半年营收1778.37亿美元，归母净利润1180.1亿美元，同比增长161.1%，GAAP毛利率为75%。第二财季单季营收962.21亿美元，同比增长106%，环比增长18%，归母净利润596.88亿美元，同比增长126%。<strong style="color:#215F9A;">数据中心业务在第二季度贡献收入890.23亿美元</strong>，同比增长117%，Vera Rubin平台已进入全面量产阶段。<strong style="color:#215F9A;">核心财务指标与数据中心业务收入均实现同比翻倍以上增长</strong>，净利润增速显著高于营收增速，反映出<strong style="color:#215F9A;">高毛利产品组合对盈利能力的直接拉动作用</strong>。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">行业动态 · IT之家（RSS） · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://www.ithome.com/0/994/791.htm</p>
+</section>
+</section>
+</section>
+<section style="margin:34px 0 0;">
+<p style="margin:0 0 14px;text-align:center;font-size:17px;font-weight:bold;letter-spacing:2px;color:#595959;">值得关注</p>
+<section style="border:1px solid rgba(89, 89, 89, 0.45);border-radius:10px;background-color:rgba(89, 89, 89, 0.08);padding:2px 14px 14px;">
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">① 瓦解俄罗斯新一轮隐蔽影响力行动</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">OpenAI 近期封禁了一批源自俄罗斯的 ChatGPT 账号，这些账号通过 VPN 绕过地域限制，使用俄语提示词生成大量英文社交媒体评论，发布在 Substack、Telegram、X、Facebook 和 LinkedIn 等平台，旨在推广一个自称位于以色列的“专家社区” International Burke Institute。调查揭示该行动实为<strong style="color:#595959;">精心构建的隐蔽影响力操作</strong>，其核心网站注册于2025年2月，内容包含抄袭并错误署名的学术文章、美化俄罗斯的“主权”指数，以及掩盖运营者俄罗斯身份的痕迹，部分文章显示出斯拉夫语机器翻译特征。尽管该行动触达受众规模相对较小，但其<strong style="color:#595959;">复杂程度显著高于俄乌战争爆发以来被瓦解的其他俄罗斯关联影响力行动</strong>。运营者明确指示模型隐藏语言线索以伪装来源，生成的评论内容主要服务于 IBI 品牌宣传，而 IBI 网站本身的文章并非由 AI 模型直接生成。</p>
+<section style="margin:12px 0 0;">
+<img src="images/story_4c08adc024bd.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
+<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：openai.com</p>
+</section>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">值得关注 · Zeli · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia</p>
 </section>
 </section>
 </section>
@@ -112,8 +187,8 @@
 
 <section style="margin-top:22px;background-color:#f5f6f7;padding:14px 16px;">
 <p style="margin:0;font-size:12px;font-weight:bold;color:#666666;">以下为发布辅助信息（复制用，粘贴时请勿包含本区块）</p>
-<p style="margin:10px 0 0;font-size:13px;line-height:1.7;color:#666666;">标题：AI 雷达 · 8月27日｜今日精读10条</p>
-<p style="margin:6px 0 0;font-size:13px;line-height:1.7;color:#666666;">摘要：AI 雷达8月27日 周四精读 10 条 AI 要闻：Granite 4.2 LLMs 是如何构建的。更多条目见「阅读原文」。</p>
+<p style="margin:10px 0 0;font-size:13px;line-height:1.7;color:#666666;">标题：AI 雷达 · 8月27日｜今日精读20条</p>
+<p style="margin:6px 0 0;font-size:13px;line-height:1.7;color:#666666;">摘要：AI 雷达8月27日 周四精读 20 条 AI 要闻：GitHub Copilot 新手指南：自动分拣 Dependabot Pull Request。更多条目见「阅读原文」。</p>
 <p style="margin:6px 0 0;font-size:13px;line-height:1.7;color:#666666;">阅读原文：https://hutaojiazi010304.github.io/ai-news-radar/</p>
 </section>
 
