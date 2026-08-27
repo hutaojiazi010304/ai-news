@@ -893,6 +893,32 @@ def test_deep_meta_line_shows_channel_for_umbrella_bucket():
     assert "Official AI Updates · 1 个来源" in html
 
 
+def test_deep_single_origin_meta_shows_source_and_reposts():
+    # Same split as 1.0: a single-origin story (source_count == 1, several
+    # entries linking the same article) names the primary as 来源 and the
+    # other channels as 转载; the channel-list line is dropped.
+    url = "https://qwen.ai/blog?id=qwen3.8-flash-next"
+    sources = [
+        {"id": "p1", "title": "官方博客", "url": url,
+         "source_name": "AI HOT", "source": "Qwen Blog"},
+        {"id": "r1", "title": "镜像标题", "url": url,
+         "source_name": "Buzzing", "source": "qwen.ai"},
+        {"id": "r2", "title": "HN 讨论", "url": url,
+         "source_name": "Info Flow", "source": "Hacker News"},
+    ]
+    item = make_item(1, title="开源新模型", sources=sources)
+    item["source_count"] = 1
+    item["source_name"] = "AI HOT"
+    item["source"] = "Qwen Blog"
+    item["primary_item"] = dict(
+        item["primary_item"], id="p1", source_name="AI HOT", source="Qwen Blog"
+    )
+
+    html = gwad.render_deep_item_html(item, 0, "#13501B")
+    assert "Qwen Blog · 1 个来源 · Buzzing, Info Flow · 2 个转载" in html
+    assert "（Qwen Blog, Buzzing, Info Flow）" not in html
+
+
 def test_deep_reason_user_content_has_no_source_line():
     # Guides must not name their source: the user content is exactly
     # title + body, with no 信源 line (the channel appears only in the

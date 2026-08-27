@@ -985,7 +985,7 @@ def test_reason_context_degrades_to_fetch_when_summary_unusable():
     assert context and "Full article body text" in context
 
 
-def test_multi_source_item_merges_source_names():
+def test_multi_source_item_lists_channels_in_meta_line():
     sources = [
         {"title": "子标题A报道", "url": "https://a.example/1", "source_name": "Source A"},
         {"title": "子标题B报道", "url": "https://b.example/2", "source_name": "Source B"},
@@ -1004,14 +1004,15 @@ def test_multi_source_item_merges_source_names():
 
         assert rc == 0
         html_text = (output_dir / "index.html").read_text(encoding="utf-8")
-        # One merged line: story title + every source name joined by ", ".
-        assert "合并后的大事件标题（Source A, Source B, Source C）" in html_text
+        # Every channel name sits inline in the meta line.
+        assert "Source A, Source B, Source C · 3 个来源" in html_text
+        # The parenthesized title(channel list) line is gone.
+        assert "（Source A, Source B, Source C）" not in html_text
+        assert "Source A等" not in html_text
         # Per-source titles are no longer listed individually.
         assert "子标题A报道" not in html_text
         assert "子标题B报道" not in html_text
         assert "子标题C报道" not in html_text
-        # Meta line names the first source plus 等.
-        assert "Source A等 · 3 个来源" in html_text
         # Each item carries its original URL as plain text.
         assert "原文：https://example.com/story/1" in html_text
         # Article body must not contain hyperlinks or images.
@@ -1035,6 +1036,85 @@ def test_single_source_meta_has_no_suffix():
         assert "Example Source）" not in html_text
 
 
+def test_single_origin_multi_entry_shows_source_and_reposts():
+    # Every entry links the same canonical URL (source_count == 1): the
+    # pipeline's primary entry is the credited 来源, the remaining channels
+    # are listed as 转载 — and the parenthesized channel-list line is gone.
+    url = "https://qwen.ai/blog?id=qwen3.8-flash-next"
+    sources = [
+        {"id": "p1", "title": "官方博客", "url": url,
+         "source_name": "AI HOT", "source": "Qwen Blog"},
+        {"id": "r1", "title": "镜像标题", "url": url,
+         "source_name": "Buzzing", "source": "qwen.ai"},
+        {"id": "r2", "title": "HN 讨论", "url": url,
+         "source_name": "Info Flow", "source": "Hacker News"},
+    ]
+    item = make_item(1, title="开源新模型", sources=sources)
+    item["source_count"] = 1
+    item["source_name"] = "AI HOT"
+    item["source"] = "Qwen Blog"
+    item["primary_item"] = dict(
+        item["primary_item"], id="p1", source_name="AI HOT", source="Qwen Blog"
+    )
+
+    html = gwa.render_item_html(item, 0)
+    assert "Qwen Blog · 1 个来源 · Buzzing, Info Flow · 2 个转载" in html
+    assert "（Qwen Blog, Buzzing, Info Flow）" not in html
+    assert "等" not in html
+
+
+def test_single_origin_without_ids_falls_back_to_first_entry():
+    # Old/synthetic data carries no ids: the tier-sorted first entry stands
+    # in for the primary.
+    url = "https://example.com/story/1"
+    sources = [
+        {"title": "原始报道", "url": url, "source_name": "Source A"},
+        {"title": "转载报道", "url": url, "source_name": "Source B"},
+    ]
+    item = make_item(1, sources=sources)
+    item["source_count"] = 1
+    item["source_name"] = "Source A"
+
+    html = gwa.render_item_html(item, 0)
+    assert "Source A · 1 个来源 · Source B · 1 个转载" in html
+
+
+def test_single_origin_repost_names_dedup_against_primary():
+    # The same channel fetched twice must not appear as its own repost; with
+    # nothing distinct left, the 转载 segment disappears entirely.
+    url = "https://example.com/story/x"
+    sources = [
+        {"id": "p1", "title": "t1", "url": url, "source_name": "Buzzing"},
+        {"id": "r1", "title": "t2", "url": url, "source_name": "Buzzing"},
+    ]
+    item = make_item(1, sources=sources)
+    item["source_count"] = 1
+    item["source_name"] = "Buzzing"
+    item["primary_item"] = dict(item["primary_item"], id="p1", source_name="Buzzing")
+
+    html = gwa.render_item_html(item, 0)
+    assert "Buzzing · 1 个来源" in html
+    assert "个转载" not in html
+
+
+def test_multi_source_missing_source_count_falls_back_to_entry_count():
+    # Old data without source_count falls back to the entry count and gets
+    # the same inline channel-list meta line.
+    url = "https://example.com/story/1"
+    sources = [
+        {"title": "t1", "url": url, "source_name": "Source A"},
+        {"title": "t2", "url": url, "source_name": "Source B"},
+        {"title": "t3", "url": url, "source_name": "Source C"},
+    ]
+    item = make_item(1, sources=sources)
+    item.pop("source_count", None)
+    item["source_name"] = "Source A"
+
+    html = gwa.render_item_html(item, 0)
+    assert "Source A, Source B, Source C · 3 个来源" in html
+    assert "个转载" not in html
+
+
 def test_item_display_source_resolves_umbrella_buckets():
     # "Official AI Updates" and "AI HOT" are aggregate buckets, not
     # publishers: display resolves them to the specific channel (``source``).
@@ -1053,6 +1133,44 @@ def test_item_display_source_resolves_umbrella_buckets():
         gwa.item_display_source({"source_name": "Official AI Updates"})
         == "Official AI Updates"
     )
+
+
+def test_display_source_trims_trailing_annotation():
+    # Fetch-method / provenance annotations are noise for readers: every
+    # item shows its 原文 link, so the real publisher is one tap away.
+    assert gwa.trim_source_annotation("Hacker News 热门（buzzing.cc 中文翻译）") == "Hacker News 热门"
+    assert gwa.trim_source_annotation("Qwen：Blog Retrieval（API）") == "Qwen：Blog Retrieval"
+    assert gwa.trim_source_annotation("Google Research：Blog（网页）") == "Google Research：Blog"
+    assert gwa.trim_source_annotation("Midjourney: Updates (RSS)") == "Midjourney: Updates"
+    # No annotation: unchanged. Name that IS an annotation: kept as-is.
+    assert gwa.trim_source_annotation("Buzzing") == "Buzzing"
+    assert gwa.trim_source_annotation("（仅注记）") == "（仅注记）"
+
+    # Display resolution trims umbrella channels and plain names alike.
+    assert (
+        gwa.item_display_source(
+            {"source_name": "AI HOT", "source": "Qwen：Blog Retrieval（API）"}
+        )
+        == "Qwen：Blog Retrieval"
+    )
+    assert (
+        gwa.item_display_source({"source_name": "Hacker News 热门（buzzing.cc 中文翻译）"})
+        == "Hacker News 热门"
+    )
+
+
+def test_meta_line_trims_channel_annotation_end_to_end():
+    # The real-world HN-translation channel renders without its suffix;
+    # the 原文 link below carries the actual publisher.
+    item = make_item(1, title="翻译渠道条目")
+    item["category"] = "industry"
+    item["source_name"] = "Hacker News 热门（buzzing.cc 中文翻译）"
+    for src in item["sources"]:
+        src["source_name"] = "Hacker News 热门（buzzing.cc 中文翻译）"
+
+    html = gwa.render_item_html(item, 0)
+    assert "行业动态 · Hacker News 热门 · 1 个来源" in html
+    assert "buzzing.cc" not in html
 
 
 def test_meta_line_shows_channel_for_umbrella_bucket():

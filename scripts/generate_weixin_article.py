@@ -357,6 +357,49 @@ def item_channel_source(item: dict) -> str:
     return ""
 
 
+def split_single_origin_sources(item: dict) -> tuple[str, list[str]]:
+    """Source vs repost display names for a single-origin story.
+
+    When every pipeline entry links the same canonical URL
+    (``source_count == 1``), the pipeline-chosen primary entry is the
+    credited source and every other entry is a mirror/reshare (转载) of
+    that same article. Returns the primary's display name plus the
+    deduped display names of the remaining entries (order kept). Names
+    equal to the primary's are dropped so a channel fetched twice never
+    shows up as its own repost.
+    """
+    sources = [s for s in (item.get("sources") or []) if isinstance(s, dict)]
+    primary_name = item_display_source(item)
+    primary = item.get("primary_item")
+    primary_id = str(primary.get("id") or "") if isinstance(primary, dict) else ""
+
+    repost_names: list[str] = []
+    for index, src in enumerate(sources):
+        src_id = str(src.get("id") or "")
+        if primary_id:
+            if src_id and src_id == primary_id:
+                continue
+        elif index == 0:
+            # Old/synthetic data without ids: entries are tier-sorted and
+            # the primary comes first.
+            continue
+        name = item_display_source(src)
+        if name and name != primary_name and name not in repost_names:
+            repost_names.append(name)
+    return primary_name, repost_names
+
+
+def trim_source_annotation(name: str) -> str:
+    """Drop the trailing fetch-method / provenance annotation from a channel
+    name: "Hacker News 热门（buzzing.cc 中文翻译）" → "Hacker News 热门",
+    "Qwen：Blog Retrieval（API）" → "Qwen：Blog Retrieval". Every item shows
+    its 原文 link right under the meta line, so the real publisher is one tap
+    away and the annotation is noise for readers. Display-only: the data
+    keeps the full name (tier overrides match on it)."""
+    trimmed = re.sub(r"[（(][^（）()]*[）)]\s*$", "", name).strip()
+    return trimmed or name
+
+
 def item_display_source(item: dict) -> str:
     """Source name for display: umbrella buckets resolve to their channel."""
     source_name = str(item.get("source_name") or "").strip()
@@ -369,8 +412,8 @@ def item_display_source(item: dict) -> str:
     if source_name in UMBRELLA_SOURCE_NAMES:
         channel = item_channel_source(item)
         if channel:
-            return channel
-    return source_name
+            return trim_source_annotation(channel)
+    return trim_source_annotation(source_name)
 
 
 # ---------------------------------------------------------------------------
@@ -1243,31 +1286,49 @@ def render_item_html(item: dict, idx: int) -> str:
             '<p style="margin:8px 0 0;font-size:15px;line-height:1.75;'
             f'color:#666666;">{esc(reason)}</p>'
         )
+    single_origin = source_count == 1 and len(sources) > 1
+    source_names: list[str] = []
+    repost_names: list[str] = []
     if len(sources) > 1:
-        # Collapse the per-source title list into a single line that carries
-        # every source name: "标题（Buzzing, NewsNow, Info Flow）".
-        line_title = title
-        if not line_title:
+        if single_origin:
+            source_name, repost_names = split_single_origin_sources(item)
+        else:
+            for src in sources:
+                sub_source = item_display_source(src)
+                if sub_source and sub_source not in source_names:
+                    source_names.append(sub_source)
+        # Channel lists moved into the meta line; this grey line only
+        # survives as the title fallback for stories without a title.
+        if not title:
+            line_title = ""
             for src in sources:
                 line_title = strip_english_tail(str(src.get("title") or "").strip())
                 if line_title:
                     break
-        source_names = []
-        for src in sources:
-            sub_source = item_display_source(src)
-            if sub_source and sub_source not in source_names:
-                source_names.append(sub_source)
-        if line_title or source_names:
-            suffix = f"（{', '.join(esc(name) for name in source_names)}）" if source_names else ""
-            parts.append(
-                '<p style="margin:6px 0 0;font-size:13px;line-height:1.6;'
-                f'color:#999999;">{esc(line_title)}{suffix}</p>'
-            )
-    # Meta line shows the Chinese category label and, for multi-source items,
-    # the first source plus 等: "多源热议 · Buzzing等 · 3 个来源".
-    meta_source = f"{source_name}等" if len(sources) > 1 and source_name else source_name
+            if line_title:
+                parts.append(
+                    '<p style="margin:6px 0 0;font-size:13px;line-height:1.6;'
+                    f'color:#999999;">{esc(line_title)}</p>'
+                )
+    # Meta line: Chinese category label plus source attribution.
+    # Multi-source items list every channel inline:
+    # "多源热议 · Buzzing, NewsNow, Info Flow · 3 个来源". Single-origin
+    # stories (every entry links the same article) split the pipeline
+    # entries into the credited source and the reposting channels:
+    # "官方更新 · Qwen Blog · 1 个来源 · Buzzing, Info Flow · 2 个转载".
     category_zh = CATEGORY_LABEL_ZH.get(category, category)
-    meta_bits = [bit for bit in (category_zh, meta_source, f"{source_count} 个来源") if bit]
+    if single_origin:
+        meta_bits = [bit for bit in (category_zh, source_name, "1 个来源") if bit]
+        if repost_names:
+            meta_bits.append(f"{', '.join(repost_names)} · {len(repost_names)} 个转载")
+    elif source_names:
+        meta_bits = [
+            bit
+            for bit in (category_zh, ", ".join(source_names), f"{source_count} 个来源")
+            if bit
+        ]
+    else:
+        meta_bits = [bit for bit in (category_zh, source_name, f"{source_count} 个来源") if bit]
     if meta_bits:
         meta = " · ".join(esc(bit) for bit in meta_bits)
         parts.append(

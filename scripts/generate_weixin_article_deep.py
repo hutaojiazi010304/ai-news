@@ -101,6 +101,7 @@ try:  # imported as part of the repo package (tests)
         resolve_cover,
         save_cache,
         select_items,
+        split_single_origin_sources,
         strip_english_tail,
         strip_html_text,
         summary_grounding,
@@ -143,6 +144,7 @@ except ImportError:  # run directly as a script
         resolve_cover,
         save_cache,
         select_items,
+        split_single_origin_sources,
         strip_english_tail,
         strip_html_text,
         summary_grounding,
@@ -1460,28 +1462,48 @@ def render_deep_item_html(item: dict, idx: int, accent_color: str) -> str:
                 f'color:#b2b2b2;text-align:center;">图源：{esc(credit)}</p>'
             )
         parts.append("</section>")
+    single_origin = source_count == 1 and len(sources) > 1
+    source_names: list[str] = []
+    repost_names: list[str] = []
     if len(sources) > 1:
-        # Same merged-source line as 1.0: "标题（Buzzing, NewsNow, …）".
-        line_title = title
-        if not line_title:
+        if single_origin:
+            source_name, repost_names = split_single_origin_sources(item)
+        else:
+            for src in sources:
+                sub_source = item_display_source(src)
+                if sub_source and sub_source not in source_names:
+                    source_names.append(sub_source)
+        # Channel lists moved into the meta line; this grey line only
+        # survives as the title fallback for stories without a title.
+        if not title:
+            line_title = ""
             for src in sources:
                 line_title = strip_english_tail(str(src.get("title") or "").strip())
                 if line_title:
                     break
-        source_names = []
-        for src in sources:
-            sub_source = item_display_source(src)
-            if sub_source and sub_source not in source_names:
-                source_names.append(sub_source)
-        if line_title or source_names:
-            suffix = f"（{', '.join(esc(name) for name in source_names)}）" if source_names else ""
-            parts.append(
-                '<p style="margin:6px 0 0;font-size:13px;line-height:1.6;'
-                f'color:#999999;">{esc(line_title)}{suffix}</p>'
-            )
-    meta_source = f"{source_name}等" if len(sources) > 1 and source_name else source_name
+            if line_title:
+                parts.append(
+                    '<p style="margin:6px 0 0;font-size:13px;line-height:1.6;'
+                    f'color:#999999;">{esc(line_title)}</p>'
+                )
+    # Meta line: same rules as 1.0 — multi-source items list every channel
+    # inline ("多源热议 · Buzzing, NewsNow, Info Flow · 3 个来源");
+    # single-origin stories split the entries into the credited source and
+    # the reposting channels ("官方更新 · Qwen Blog · 1 个来源 · Buzzing,
+    # Info Flow · 2 个转载").
     category_zh = CATEGORY_LABEL_ZH.get(category, category)
-    meta_bits = [bit for bit in (category_zh, meta_source, f"{source_count} 个来源") if bit]
+    if single_origin:
+        meta_bits = [bit for bit in (category_zh, source_name, "1 个来源") if bit]
+        if repost_names:
+            meta_bits.append(f"{', '.join(repost_names)} · {len(repost_names)} 个转载")
+    elif source_names:
+        meta_bits = [
+            bit
+            for bit in (category_zh, ", ".join(source_names), f"{source_count} 个来源")
+            if bit
+        ]
+    else:
+        meta_bits = [bit for bit in (category_zh, source_name, f"{source_count} 个来源") if bit]
     if meta_bits:
         meta = " · ".join(esc(bit) for bit in meta_bits)
         parts.append(
