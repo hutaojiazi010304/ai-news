@@ -3,89 +3,105 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI 雷达 · 8月26日｜今日精读10条</title>
+<title>AI 雷达 · 8月27日｜今日精读10条</title>
 </head>
 <body style="margin:0;padding:0;background-color:#f5f6f7;">
 <section style="max-width:677px;margin:0 auto;background-color:#ffffff;padding:28px 20px 36px;">
 
 <section style="border-left:4px solid #07c160;padding-left:12px;margin:0 0 20px;">
 <p style="margin:0;font-size:19px;font-weight:bold;color:#1f1f1f;letter-spacing:1px;">AI 雷达</p>
-<p style="margin:3px 0 0;font-size:13px;color:#999999;">8月26日 周三 · 每日 AI 精读</p>
+<p style="margin:3px 0 0;font-size:13px;color:#999999;">8月27日 周四 · 每日 AI 精读</p>
 </section>
 
-<p style="margin:0 0 4px;font-size:18px;font-weight:bold;line-height:1.5;color:#111111;">AI 雷达 · 8月26日｜今日精读10条</p>
+<p style="margin:0 0 4px;font-size:18px;font-weight:bold;line-height:1.5;color:#111111;">AI 雷达 · 8月27日｜今日精读10条</p>
 
 <section style="margin:34px 0 0;">
 <p style="margin:0 0 14px;text-align:center;font-size:17px;font-weight:bold;letter-spacing:2px;color:#13501B;">官方更新</p>
 <section style="border:1px solid rgba(19, 80, 27, 0.45);border-radius:10px;background-color:rgba(19, 80, 27, 0.08);padding:2px 14px 14px;">
 <section style="margin:30px 0 0;padding:0;">
 <p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">① Granite 4.2 LLMs 是如何构建的</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">Granite 4.2</strong> 是首个 dense decoder-only 推理 LLM 系列，提供 3B、8B 和 30B 三种规格，均基于约 15T tokens 从头预训练，采用五阶段策略将上下文窗口扩展至 512K tokens。模型在思维链、推理及智能体轨迹数据上进行监督微调，并通过多阶段强化学习管线完成后续训练，其中 8B 和 30B 模型额外经历 agentic RL 阶段，在真实沙盒环境中学习工具调用、代码编辑执行、终端操作及网络搜索。所有模型支持 thinking/non-thinking 模式切换及针对简单问题的 low-effort thinking 模式，并具备原生工具调用能力。Official AI Updates 发布的技术详解指出，该系列模型均采用 <strong style="color:#13501B;">Apache 2.0 许可证开源</strong>。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">Granite 4.2</strong> 是首个 dense decoder-only 推理 LLM 系列，提供 3B、8B 和 30B 三种规格，均采用 Apache 2.0 许可证发布。模型从零开始预训练约 15T tokens，通过五阶段策略将上下文窗口扩展至 512K tokens，随后使用思维链、推理及智能体轨迹数据进行监督微调，并经由包含 Agentic RL 的多阶段强化学习管线完成训练。其中 8B 和 30B 模型在真实沙盒环境中学习工具调用、代码编辑执行、终端操作及网络搜索等智能体行为。所有模型均支持原生工具调用，并配备 thinking/non-thinking 切换开关及针对简单问题分配短推理预算的 low-effort thinking 模式。三个尺寸共享相同架构设计与训练流程，<strong style="color:#13501B;">主要能力差异体现在后训练阶段</strong>，8B 与 30B 额外增加了智能体强化学习模块。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Hugging Face Blog · 1 个来源</p>
 <p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://huggingface.co/blog/ibm-granite/granite-4-2</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
 <p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">② Granite Speech 5.0 Turbo CTC：极速精准语音转写</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Granite Speech 系列发布两款 470M 参数量的英语语音识别模型 granite-speech-5.0-470m-turboctc 与 granite-speech-5.0-470m-turboctc-nc，采用 encoder-only 架构。据 Official AI Updates 披露，模型在 NVIDIA H200 GPU 上<strong style="color:#13501B;">批量推理吞吐量超 12,600 RTFx</strong>，即一秒可转写逾 3.5 小时语音。在 OpenASR Leaderboard 公开测试集上，非商用版聚合 WER 为 4.85%，Apache 2.0 版为 5.00%；在 FFASR Leaderboard 远场识别排名中，两者分列第五和第九，且是<strong style="color:#13501B;">榜单中速度最快的两个模型</strong>。<strong style="color:#13501B;">两模型主要区别在于训练数据规模与许可协议</strong>，非商用版使用更多数据并采用 CC-BY-NC-SA-4.0 许可，Apache 2.0 版训练数据较少。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Granite Speech 5.0 Turbo CTC 系列发布了两款 470M 参数的紧凑型英语语音识别模型，在 NVIDIA H200 GPU 上实现<strong style="color:#13501B;">超过 12,600 RTFx 的吞吐量</strong>，批量推理下一秒可转写逾 3.5 小时语音。两款模型均为 encoder-only 架构，其中 granite-speech-5.0-470m-turboctc-nc 采用 CC-BY-NC-SA-4.0 许可并使用更多训练数据，在 OpenASR Leaderboard 公开测试集上取得 4.85% WER；Apache 2.0 许可的 granite-speech-5.0-470m-turboctc WER 为 5.00%。在 FFASR Leaderboard 远场语音识别评测中，非商业版准确率排名第五，Apache 2.0 版排名第九，<strong style="color:#13501B;">两者均为该榜单速度最快的模型</strong>。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Hugging Face Blog · 1 个来源</p>
 <p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
 <p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">③ 量化感知修复：4-bit压缩模型性能反超全精度原版</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">MultiverseComputingCAI 团队提出 <strong style="color:#13501B;">Quantization-Aware Healing（QAH）方法</strong>，应用于经结构压缩至 60B 参数并量化为 MXFP4 的 GPT-OSS 120B 模型后，该 4-bit 模型在 9 项基准测试中的 7 项上性能超越其全精度 bfloat16 原版，实现了更小体积、更低运行成本与更高准确率。Official AI Updates 发布的文章指出，当前主流修复手段如量化感知训练（QAT）需重跑多阶段后训练流程，成本高且易不稳定；量化感知蒸馏（QAD）虽避免重训历史，但仅适用于特定场景。QAH 针对已完成结构压缩的模型设计，解决了传统修复方法在此类情况下的不足，使 <strong style="color:#13501B;">4-bit 压缩模型反超 16-bit 原模型成为可能</strong>，<strong style="color:#13501B;">逆转了通常量化导致性能下降的预期关系</strong>。</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Quantization-Aware Healing（QAH）方法应用于经结构压缩至60B参数并量化为MXFP4的GPT-OSS 120B模型后，<strong style="color:#13501B;">该4-bit模型在9项基准测试中的7项上性能超越了其全精度bfloat16原版</strong>，实现了更小体积、更低运行成本与更高准确率。针对现有量化感知训练（QAT）需重跑多阶段后训练且易不稳定、量化感知蒸馏（QAD）仅适用于纯量化场景等局限，<strong style="color:#13501B;">QAH专门解决模型先经结构压缩再量化后的恢复难题</strong>。该方法使4-bit压缩模型反超16-bit源模型成为可能，<strong style="color:#13501B;">改变了低精度模型必然弱于高精度原版的常规认知</strong>，为已压缩模型的量化恢复提供了新路径。</p>
 <section style="margin:12px 0 0;">
 <img src="images/story_6411634610d0.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
 <p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：huggingface.co</p>
 </section>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Hugging Face Blog · 1 个来源</p>
 <p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">④ 连线、运行、部署：Gradio 中的 AI 工作流实战</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Gradio 推出内置功能 <strong style="color:#13501B;">gr.Workflow</strong>，将 AI 流水线直接转化为可视化交互界面。用户通过拖拽画布描述类型化节点图，即可运行每个节点并查看中间结果，该图同时<strong style="color:#13501B;">自动生成 REST API 并支持一键部署至 Hugging Face Spaces</strong>。Official AI Updates 展示了多个实战案例：图像编辑应用通过单节点调用 Qwen-Image-Edit；AI 媒体工作室在一个图中集成三条流水线，组合 FLUX 生图、背景移除及文本转语音，并为贴纸、配音等输出提供独立 REST 端点；生成艺术实验室采用扇出模式，由一个提示词并行触发 FLUX 生图、风格重绘及 LLM 标题生成；数据集分析工具则通过 Datasets Server API 对输入 ID 进行四路并行分析，实时返回概览卡片、数据预览及统计信息。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://huggingface.co/blog/gradio-workflow-guide</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">④ LLM 上线前该如何评估？</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">LLM 在基准测试中表现良好并不意味着能适应生产环境</strong>，真实输入往往存在歧义、标签不一致或上下文缺失，导致离线指标无法直接转化为线上效果。针对 secret scanning 减少误报的场景，评估核心并非模型分类准确率，而是<strong style="color:#13501B;">系统能否在降低噪声告警的同时保持足够召回率以确保安全</strong>。该场景将精确率作为首要优化目标，召回率则作为安全约束，实验仅在召回率下降处于预定义可接受范围内时才可推进。<strong style="color:#13501B;">有效的评估应始于产品决策而非模型调整</strong>，需先明确评估所支持的具体业务决策、可接受的错误类型及驱动决策的指标，并设定必须维持的防护阈值，避免在未定义目标前盲目修改提示词或切换模型。</p>
+<section style="margin:12px 0 0;">
+<img src="images/story_4b7b151c884e.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
+<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：github.blog</p>
+</section>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · GitHub AI &amp; ML · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑤ 支持直接从安全公告中拉黑用户</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">用户现在可以直接在公共仓库的安全公告页面中拉黑其他用户，该功能适用于组织或个人账户拥有的仓库。这一更新将原本分散的审核操作整合到了安全公告界面内，使维护者无需跳转至其他设置页面即可完成对特定用户的封禁处理，从而<strong style="color:#13501B;">简化了针对安全相关内容的社区管理流程</strong>。根据 Official AI Updates 披露的信息，此举旨在为仓库管理者提供更流畅的审核体验，让应对潜在安全风险时的用户处置动作更加直接高效。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑤ 支持直接从安全公告中封禁用户</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">现在支持在组织或个人账户拥有的公开仓库安全公告页面中<strong style="color:#13501B;">直接封禁用户</strong>。这一功能将原本分散的审核流程整合至安全公告界面内，允许维护者在查看或处理安全相关议题时即时执行封禁操作，无需跳转至其他管理后台。该更新旨在<strong style="color:#13501B;">简化公开仓库的安全事件响应与社区治理步骤</strong>，使针对恶意行为者的处置动作能够与安全风险披露同步完成，提升维护者在应对安全威胁时的<strong style="color:#13501B;">操作效率与连贯性</strong>。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · GitHub Changelog · 1 个来源</p>
 <p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://github.blog/changelog/2026-08-25-block-users-directly-from-security-advisories</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑥ 规则集中的推送规则现已支持路径例外</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">规则集中的推送规则现已支持<strong style="color:#13501B;">路径例外功能</strong>，允许用户通过豁免特定文件路径来实现更精细的配置。启用该功能后，设定的规则将在作用域内全局生效，但会自动跳过用户指定的例外路径。根据 Official AI Updates 发布的信息，这一路径例外机制目前已处于<strong style="color:#13501B;">公开可用状态</strong>，开发者无需额外申请即可在推送规则配置中直接使用，从而避免对特定目录或文件应用不必要的推送限制。</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑥ GitHub Copilot 应用 Customize 选项卡正式全面开放</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">GitHub Copilot 应用中的 Customize 选项卡已正式全面开放</strong>，该功能旨在让 Copilot 与团队现有的工具、知识及工作流深度整合。此次更新在 Customize 选项卡中引入了 <strong style="color:#13501B;">MCP 支持</strong>，使用户能够根据自身需求对 Copilot 进行定制化配置。通过将模型能力与团队实际依赖的开发环境和业务流程直接对接，<strong style="color:#13501B;">Copilot 的实用性和适配度得到提升</strong>。这一调整意味着开发者不再局限于通用交互模式，而是可以在应用内通过专属设置页面，将外部工具链和内部知识库纳入 Copilot 的工作上下文，从而实现更贴合具体业务场景的智能辅助体验。</p>
+<section style="margin:12px 0 0;">
+<img src="images/story_72c69d1ef3c2.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
+<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：github.blog</p>
+</section>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · GitHub Changelog · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://github.blog/changelog/2026-08-25-github-copilot-app-customize-tab-is-generally-available</p>
+</section>
+<section style="margin:30px 0 0;padding:0;">
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑦ 规则集中的推送规则现已支持路径例外</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">推送规则配置现已支持<strong style="color:#13501B;">路径例外功能</strong>，允许用户通过豁免特定文件路径来实现更细粒度的控制。启用该功能后，设定的推送规则将在作用范围内全局生效，但会自动排除用户指定的路径。这一更新使得<strong style="color:#13501B;">规则应用不再局限于整体范围</strong>，而是能够针对具体文件路径进行差异化处理，目前路径例外功能已正式公开可用。用户在配置推送规则时可直接设定例外路径，确保规则仅作用于非豁免区域，从而满足对代码仓库不同目录实施<strong style="color:#13501B;">差异化推送策略</strong>的需求。</p>
 <section style="margin:12px 0 0;">
 <img src="images/story_2ae3bbe5c601.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
 <p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：github.blog</p>
 </section>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · GitHub Changelog · 1 个来源</p>
 <p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://github.blog/changelog/2026-08-25-push-rules-in-rulesets-now-support-path-exceptions</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑦ 5个用Google Search升级家居装饰的实用技巧</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">Official AI Updates 介绍了<strong style="color:#13501B;">利用 Google Search 升级家居装饰的五种实用方法</strong>。数据显示，过去一个月“home decor inspo”搜索量增长300%，“bathroom inspo”和“living room inspo”成为突破性搜索词，teal与magenta是今年热门涂料色。用户可通过 <strong style="color:#13501B;">Search 的 AI Mode</strong> 上传房间照片并输入具体尺寸（如84英寸宽墙面），生成家具摆放效果图；使用 Google Lens 拍摄 vintage 物品以识别信息并查找同价位相似商品；借助 <strong style="color:#13501B;">Circle to Search</strong> 在视频或社交页面中圈选装饰元素（如搜索量上涨140%的鱼纹壁纸）直接检索类似选项；还可利用 <strong style="color:#13501B;">Search Live</strong> 获取 DIY 项目的实时视频指导，以及通过价格历史追踪功能确保获得最优购买价格。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑧ 用 Google Search 升级家居装饰的5种方法</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">过去一个月<strong style="color:#13501B;">“home decor inspo”搜索量增长300%</strong>，“bathroom inspo”和“living room inspo”成为突破性搜索词，今年流行涂料色包括teal和magenta。<strong style="color:#13501B;">Google Search提供多种工具辅助家居装饰落地</strong>：通过Search AI Mode上传房间照片并输入具体尺寸（如84英寸宽墙面），可生成家具摆放效果图；使用Google Lens拍摄vintage物品照片，能识别信息并推荐同价位相似商品，“vintage braided rugs”和“vintage wood coffee table”为当前热门趋势；借助Circle to Search功能，在Pixel和Samsung Galaxy S26设备上长按导航栏圈选屏幕内容即可查找同款，近期fish wallpaper搜索量上涨140%；此外还可利用Search Live获取DIY项目实时视频指导，并通过价格历史追踪确保获得最优折扣。</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Google AI Blog · 1 个来源</p>
 <p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://blog.google/products-and-platforms/products/search/home-decor-tips</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑧ Jalapeño 首批测试结果出炉：AI 推理速度与效率领跑行业</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">OpenAI 自研推理芯片 Jalapeño 首批测试结果出炉，<strong style="color:#13501B;">在现代模型推理任务中实现了更快的速度与更高的能效</strong>。Official AI Updates 披露的数据显示，该定制芯片在吞吐量与延迟两项关键指标上均优于行业现有水平，能够为现代 AI 模型提供更高吞吐、更低延迟的推理支持，同时显著降低功耗。这一结果确认了 Jalapeño 作为专用推理硬件在性能与效率方面的实际表现，其核心优势集中体现在<strong style="color:#13501B;">对当代模型推理负载的加速能力与能源利用率的提升</strong>上。</p>
-<p style="margin:6px 0 0;font-size:13px;line-height:1.6;color:#999999;">Jalapeño 首批测试结果出炉：AI 推理速度与效率领跑行业（Official AI Updates, Zeli）</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates等 · 1 个来源</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑨ Jalapeño 首测出炉：AI 推理速度与效率领跑行业</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;">OpenAI 自研推理芯片 <strong style="color:#13501B;">Jalapeño</strong> 首次测试结果出炉，该芯片专为现代模型设计，在 AI 推理环节实现了更快的速度与更高的能效。测试数据显示，Jalapeño 具备更高的吞吐量和更低的延迟，同时保持了优异的功耗效率，<strong style="color:#13501B;">整体推理性能与能效表现均处于行业领先水平</strong>。作为 OpenAI 的定制硬件，Jalapeño 直接针对当前主流 AI 模型的推理需求进行优化，验证了其在提升推理速度、降低延迟及改善能耗方面的实际效果。</p>
+<section style="margin:12px 0 0;">
+<img src="images/story_b95e33dbd1e9.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
+<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：openai.com</p>
+</section>
+<p style="margin:6px 0 0;font-size:13px;line-height:1.6;color:#999999;">Jalapeño 首测出炉：AI 推理速度与效率领跑行业（OpenAI News, Zeli）</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · OpenAI News等 · 1 个来源</p>
 <p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://openai.com/index/jalapeno-first-results</p>
 </section>
 <section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑨ ChatGPT Work 与 Codex 推出 Admin 插件</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">ChatGPT Work 与 Codex 推出 Admin 插件</strong>，用于分析工作区使用情况、管理成员与权限、调整使用限制以及处理管理员请求。根据 Official AI Updates 发布的信息，该插件为管理员提供了<strong style="color:#13501B;">针对工作区的集中管控能力</strong>，核心功能覆盖用量分析、人员权限配置、限额调整及行政事务响应四个方面，旨在支持团队对 ChatGPT Work 和 Codex 环境进行统一的运维与管理操作。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://openai.com/index/introducing-admin-plugin</p>
+<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑩ Rule Insights 仪表板正式全面开放</p>
+<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">Rule Insights 仪表板现已在 repository 和 organization 层级全面开放</strong>。该功能提供可视化的高层视图，用于展示 GitHub 如何评估和执行 repository 规则。用户可通过此仪表板直观了解规则的具体生效情况与执行状态，无需再依赖零散的日志或配置页面进行排查。这一更新覆盖了从单个代码仓库到整个组织的管理范围，使<strong style="color:#13501B;">规则合规性的监控与验证流程更加集中和透明</strong>。</p>
+<section style="margin:12px 0 0;">
+<img src="images/story_95764e895938.jpg" alt="" style="width:65%;display:block;margin:0 auto;">
+<p style="margin:6px 0 0;font-size:12px;line-height:1.5;color:#b2b2b2;text-align:center;">图源：github.blog</p>
 </section>
-<section style="margin:30px 0 0;padding:0;">
-<p style="margin:0;font-size:16px;line-height:1.55;font-weight:bold;color:#1f1f1f;">⑩ 瓦解俄罗斯新一轮隐蔽影响力行动</p>
-<p style="margin:10px 0 0;font-size:15px;line-height:1.8;color:#555555;"><strong style="color:#13501B;">OpenAI 封禁了一批源自俄罗斯的账户</strong>，这些账户利用 AI 推广一个虚假的以色列智库以及一份名为“主权”的指数。该指数内容旨在赞扬俄罗斯并批评西方国家。此次行动针对的是<strong style="color:#13501B;">利用人工智能技术进行的隐蔽影响力操作</strong>，被处置的账号通过生成内容伪装成独立研究机构发布特定政治倾向信息。Official AI Updates 披露了这一处理结果，显示平台识别并阻断了<strong style="color:#13501B;">借助 AI 工具伪造信源、操纵舆论的尝试</strong>，涉及的具体载体包括虚构智库身份与定制化排名指标。</p>
-<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · Official AI Updates · 1 个来源</p>
-<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://openai.com/index/disrupting-malicious-uses-of-ai-influence-campaign-russia</p>
+<p style="margin:8px 0 0;font-size:12px;color:#b2b2b2;">官方更新 · GitHub Changelog · 1 个来源</p>
+<p style="margin:8px 0 0;font-size:13px;line-height:1.6;color:#576b95;word-break:break-all;">原文：https://github.blog/changelog/2026-08-25-rule-insights-dashboard-generally-available</p>
 </section>
 </section>
 </section>
@@ -96,8 +112,8 @@
 
 <section style="margin-top:22px;background-color:#f5f6f7;padding:14px 16px;">
 <p style="margin:0;font-size:12px;font-weight:bold;color:#666666;">以下为发布辅助信息（复制用，粘贴时请勿包含本区块）</p>
-<p style="margin:10px 0 0;font-size:13px;line-height:1.7;color:#666666;">标题：AI 雷达 · 8月26日｜今日精读10条</p>
-<p style="margin:6px 0 0;font-size:13px;line-height:1.7;color:#666666;">摘要：AI 雷达8月26日 周三精读 10 条 AI 要闻：Granite 4.2 LLMs 是如何构建的。更多条目见「阅读原文」。</p>
+<p style="margin:10px 0 0;font-size:13px;line-height:1.7;color:#666666;">标题：AI 雷达 · 8月27日｜今日精读10条</p>
+<p style="margin:6px 0 0;font-size:13px;line-height:1.7;color:#666666;">摘要：AI 雷达8月27日 周四精读 10 条 AI 要闻：Granite 4.2 LLMs 是如何构建的。更多条目见「阅读原文」。</p>
 <p style="margin:6px 0 0;font-size:13px;line-height:1.7;color:#666666;">阅读原文：https://hutaojiazi010304.github.io/ai-news-radar/</p>
 </section>
 
