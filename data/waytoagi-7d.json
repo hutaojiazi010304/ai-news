@@ -1,39 +1,87 @@
 {
-  "generated_at": "2026-08-28T05:31:20.040087Z",
+  "generated_at": "2026-08-28T18:53:21.600850Z",
   "timezone": "Asia/Shanghai",
   "root_url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview",
   "history_url": "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc",
   "window_days": 7,
-  "latest_date": "2026-08-27",
-  "count_today": 4,
+  "latest_date": "2026-08-28",
+  "count_today": 6,
   "updates_today": [
     {
-      "date": "2026-08-27",
-      "title": "前Figma工程师是如何用 AI 进行设计的",
-      "summary": "前Figma工程师是如何用 AI 进行设计的",
-      "url": "https://waytoagi.feishu.cn/wiki/D3jewnaqRiFOzVkuAFRcCDwVnGg?from=from_copylink"
+      "date": "2026-08-28",
+      "title": "吴恩达：AI 工程技能图谱：软件工程基础",
+      "summary": "Agent可以帮你写代码，但真正决定项目能不能跑稳的，还是数据、架构、安全、部署、监控和扩展这些基本功。",
+      "url": "https://waytoagi.feishu.cn/wiki/G3IwwW1AIibAqokzMUOcx1QHnif?from=from_copylink"
     },
     {
-      "date": "2026-08-27",
-      "title": "万字长文｜Agent 从入门到精通（附实战：论文整理 Agent 搭建）",
-      "summary": "这篇文章很适合Agent新手和想把Codex用到真实工作的运营、研究者、开发者看。作者先解读了大模型、Tool/API、Agent Loop、MCP、CLI/桌面端这些概念，然后用“论文资料整理 Agent”带你落地，最后沉淀成 Skill。",
-      "url": "https://waytoagi.feishu.cn/wiki/JLDVw9Bqli57PJkvdMWcIxQonog?from=from_copylink"
+      "date": "2026-08-28",
+      "title": "一人公司做到数百万美元：从验证、产品到获客的完整系统丨Product Faculty",
+      "summary": "内容分发工具Blotato的开发者Sabrina用一条30秒TikTok验证需求，把第一版砍到只剩一个功能，上线10天做到1万美元月度经常性收入，不到两年把业务做到了数百万美元年收入。AI帮她压缩执行成本，但产品判断、功能取舍和责任始终在人手里。想知道“一人公司”怎么少踩坑、先跑出确定性，可以认真看看她每一步的具体做法。",
+      "url": "https://waytoagi.feishu.cn/wiki/KzqdwEd1piv3HgkxlZCcWcAgnog?from=from_copylink"
     },
     {
-      "date": "2026-08-27",
-      "title": "万字长文 | Pi Agent 零基础实操：从打开终端到完成第一个真实任务",
-      "summary": "这篇很适合 Pi Agent 小白从0上手。作者用一份会议记录带你跑完整个流程：新建安全练习目录、安装登录、看懂界面，用@引用文件生成行动清单，再回到命令行独立验收结果。后面还讲了AGENTS.md、会话管理、Skill/Extension/Package的区别。",
-      "url": "https://waytoagi.feishu.cn/wiki/FQ9RweSViibRb5k4kAacFgIznKg?from=from_copylink"
+      "date": "2026-08-28",
+      "title": "WorkBuddy 超保姆级入门教程-附图解实操 【万字长文】",
+      "summary": "这篇WorkBuddy 超保姆级入门教程就是给小白准备的：从下载安装到第一次打开界面，哪些按钮该看、哪些入口先不用管、怎么照着截图跑通第一个任务，都会一步步拆清楚。",
+      "url": "https://waytoagi.feishu.cn/wiki/Y6ZewCbWhiEx5jkE53kcVgKTnQh?from=from_copylink"
     },
     {
-      "date": "2026-08-27",
-      "title": "AI 做海报、HTML 构图手册：16 种控制网格、图文关系与信息密度的海报构图——下册",
-      "summary": "这篇下册会同时给你两套表达：一套写给图像模型，一套写给 HTML / CSS。读完以后，你应该能从第 17–32 种里选出一个主构图，再把它落成可检查的网格、图文层级或节奏规则。",
-      "url": "https://waytoagi.feishu.cn/wiki/DPKZw4T8wiWN00kmewxcItRXnLD?from=from_copylink"
+      "date": "2026-08-28",
+      "title": "KV、前缀、提示词与语义缓存：LLM 中四类缓存的清晰解析",
+      "summary": "这篇文章把KV缓存、前缀缓存、提示词缓存、语义缓存拆得很清楚。你需要了解的是你的输入token在哪里被重新计算，以及如何应对。本文从基本原理出发，覆盖四层缓存及其权衡、它们交互时会发生什么，以及阻碍缓存复用的五个最常见问题。",
+      "url": "https://waytoagi.feishu.cn/wiki/OHAPwy71RidXi5kMWYFchCDhnzb?from=from_copylink"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "Codex 进阶应用教程：普通人最常用的 10 个工作场景",
+      "summary": "Codex 适合处理有明确材料、具体步骤和可检查结果的任务。它可以读取文件、整理信息、运行命令、操作网页和软件，也可以把反复出现的要求保存成固定流程。下面十个场景按照普通人的实际使用顺序展开。每一节都会讲清任务为什么容易出错、怎样交给 Codex，以及完成以后检查什么。",
+      "url": "https://waytoagi.feishu.cn/wiki/SXPwwEYhRiBY9AkEwUWc22GmnFd?from=from_copylink"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "10 个 Skill 搭建日更爆文的公众号写作系统",
+      "summary": "如果你也想做自媒体的话，作者这篇文章不容错过！作者把三年400多篇原创经验拆成了10个Skill，覆盖账号定位、爆款分析、每日选题、长短文写作、标题生成、封面配图、逻辑图和整篇排版，还延伸到视频复用、多平台分发。想把日更爆文的，可以试试这套流程。",
+      "url": "https://waytoagi.feishu.cn/wiki/MfWUwQc6piE3aWk2B2kcsJ0unZg?from=from_copylink"
     }
   ],
-  "count_7d": 35,
+  "count_7d": 36,
   "updates_7d": [
+    {
+      "date": "2026-08-28",
+      "title": "吴恩达：AI 工程技能图谱：软件工程基础",
+      "summary": "Agent可以帮你写代码，但真正决定项目能不能跑稳的，还是数据、架构、安全、部署、监控和扩展这些基本功。",
+      "url": "https://waytoagi.feishu.cn/wiki/G3IwwW1AIibAqokzMUOcx1QHnif?from=from_copylink"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "一人公司做到数百万美元：从验证、产品到获客的完整系统丨Product Faculty",
+      "summary": "内容分发工具Blotato的开发者Sabrina用一条30秒TikTok验证需求，把第一版砍到只剩一个功能，上线10天做到1万美元月度经常性收入，不到两年把业务做到了数百万美元年收入。AI帮她压缩执行成本，但产品判断、功能取舍和责任始终在人手里。想知道“一人公司”怎么少踩坑、先跑出确定性，可以认真看看她每一步的具体做法。",
+      "url": "https://waytoagi.feishu.cn/wiki/KzqdwEd1piv3HgkxlZCcWcAgnog?from=from_copylink"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "WorkBuddy 超保姆级入门教程-附图解实操 【万字长文】",
+      "summary": "这篇WorkBuddy 超保姆级入门教程就是给小白准备的：从下载安装到第一次打开界面，哪些按钮该看、哪些入口先不用管、怎么照着截图跑通第一个任务，都会一步步拆清楚。",
+      "url": "https://waytoagi.feishu.cn/wiki/Y6ZewCbWhiEx5jkE53kcVgKTnQh?from=from_copylink"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "KV、前缀、提示词与语义缓存：LLM 中四类缓存的清晰解析",
+      "summary": "这篇文章把KV缓存、前缀缓存、提示词缓存、语义缓存拆得很清楚。你需要了解的是你的输入token在哪里被重新计算，以及如何应对。本文从基本原理出发，覆盖四层缓存及其权衡、它们交互时会发生什么，以及阻碍缓存复用的五个最常见问题。",
+      "url": "https://waytoagi.feishu.cn/wiki/OHAPwy71RidXi5kMWYFchCDhnzb?from=from_copylink"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "Codex 进阶应用教程：普通人最常用的 10 个工作场景",
+      "summary": "Codex 适合处理有明确材料、具体步骤和可检查结果的任务。它可以读取文件、整理信息、运行命令、操作网页和软件，也可以把反复出现的要求保存成固定流程。下面十个场景按照普通人的实际使用顺序展开。每一节都会讲清任务为什么容易出错、怎样交给 Codex，以及完成以后检查什么。",
+      "url": "https://waytoagi.feishu.cn/wiki/SXPwwEYhRiBY9AkEwUWc22GmnFd?from=from_copylink"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "10 个 Skill 搭建日更爆文的公众号写作系统",
+      "summary": "如果你也想做自媒体的话，作者这篇文章不容错过！作者把三年400多篇原创经验拆成了10个Skill，覆盖账号定位、爆款分析、每日选题、长短文写作、标题生成、封面配图、逻辑图和整篇排版，还延伸到视频复用、多平台分发。想把日更爆文的，可以试试这套流程。",
+      "url": "https://waytoagi.feishu.cn/wiki/MfWUwQc6piE3aWk2B2kcsJ0unZg?from=from_copylink"
+    },
     {
       "date": "2026-08-27",
       "title": "前Figma工程师是如何用 AI 进行设计的",
@@ -213,36 +261,6 @@
       "title": "8.17—8.23｜本周AI 论文精选",
       "summary": "本周精选的10篇AI论文转向“运行框架、Skill、记忆、自我改进和成本控制到底靠不靠谱”。Agent Lightning和ClawGym讲怎么在真实框架里训练Agent；Skill Trigger Bottleneck、Demystifying Agent Skills讲Skill太多后怎么触发、怎么写才有用；Harness-Level Forgetting和Fragile Self-Improvement则提醒大家，自我改进很容易变成过拟合和遗忘。",
       "url": "https://waytoagi.feishu.cn/wiki/M0f9wV2gBiQGC3kGADDcOElvn0b?from=from_copylink"
-    },
-    {
-      "date": "2026-08-22",
-      "title": "贾栾：DeepSeek Harness 到底是什么，为什么它说“一切皆插件”",
-      "summary": "DeepSeek开源了 DeepSeek Harness（DSH），很多人会以为 DeepSeek 又做了一个AI模型，或者Claude Code、Codex 之外又多了一个同类工具。作者实操了一遍，尽可能的在这篇文章里用通俗的语言来讲明白DSH到底是什么。",
-      "url": "https://waytoagi.feishu.cn/wiki/J4QNwE2TgiUsv9kQHJ7cOXKsnog?from=from_copylink"
-    },
-    {
-      "date": "2026-08-22",
-      "title": "深度｜对话 Anthropic 产品负责人：不懂评测的 AI 产品负责人，只是在假装做产品",
-      "summary": "这篇对话把Anthropic的产品方法论讲得很透：前沿模型需要Claude Code这样的产品载体，模型能力也要靠持续评测才能被发现、验证和转成用户价值。里面最值得产品经理和AI创业者看的，是“评测就是新的PRD”这条线：把用户的一句“不好用”，拆成可复现、可衡量的任务。想做AI产品，这篇文章不容错过！",
-      "url": "https://waytoagi.feishu.cn/wiki/SBlowl5u4izAQOkQBfIcz4x8nxb?from=from_copylink"
-    },
-    {
-      "date": "2026-08-22",
-      "title": "什么他妈的叫他妈的人味",
-      "summary": "很多人改AI生成的文案，第一反应是删“首先其次”、加点口语、把检测分降下去。但所谓AI味，本质上是“均值味”——选词太稳、节奏太平、结构太顺、口癖太像模型。作者这篇文章深度拆解了AI文本检测的底层逻辑，提出了一个跨四层的“结构化离群”统一框架，或许可以帮到你！",
-      "url": "https://waytoagi.feishu.cn/wiki/RHH9wJvTqiKuN8kTgRHcsUIQnJf?from=from_copylink"
-    },
-    {
-      "date": "2026-08-22",
-      "title": "DSH：Minke v0.2.0 发布了",
-      "summary": "Minke v0.2.0基于DeepSeek Harness的架构，借助Cordis插件树做扩展，实现了移动端远程控制本地Agent主机。它不走传统画面投屏，只同步任务、文件、终端状态，项目与运行环境依旧留存于本地电脑。一起来看看具体的开发细节！",
-      "url": "https://waytoagi.feishu.cn/wiki/XnvHwYGRTifyWWkQHubca2xjn3b?from=from_copylink"
-    },
-    {
-      "date": "2026-08-22",
-      "title": "Agent 自进化：从经验到可验证的能力增长",
-      "summary": "Agent会反思、会写 Skill、会改Harness，好像越来越强。但经验到底有没有被写进长期生效的Prompt、Memory、Tool、Workflow、Harness 或模型参数？有没有在没见过的任务上变好？有没有通过回归、安全、成本和可恢复性检查？这篇文章拆解了Agent自进化的边界和一些未解问题。",
-      "url": "https://waytoagi.feishu.cn/wiki/HQ6dwkiakiDrgkkMVoHcGjFOn4b?from=from_copylink"
     }
   ],
   "warning": null,
