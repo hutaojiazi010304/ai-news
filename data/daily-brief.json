@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-29T14:36:46.989172Z",
+  "generated_at": "2026-08-29T18:44:12.992236Z",
   "window_hours": 24,
-  "total_items": 18,
+  "total_items": 6,
   "items": [
     {
       "story_id": "story_ff4f232dd5ce",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8424,
-      "importance": 0.8424,
-      "importance_score": 0.8424,
+      "score": 0.8363,
+      "importance": 0.8363,
+      "importance_score": 0.8363,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.8688,
+        "recency": 0.835,
         "story_heat": 0.0
       },
       "category": "official",
@@ -84,90 +84,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
-      }
-    },
-    {
-      "story_id": "story_820446bca705",
-      "title": "Anthropic 让 Claude 自主训练模型以缓解对齐失败 / Automated researchers can reliably mitigate alignment failures",
-      "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
-      "primary_url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "3180756dcf7c8ccdda42f621a241c4f46cf6f4ad",
-          "title": "Anthropic 让 Claude 自主训练模型以缓解对齐失败 / Automated researchers can reliably mitigate alignment failures",
-          "title_zh": "Anthropic 让 Claude 自主训练模型以缓解对齐失败",
-          "title_en": "Automated researchers can reliably mitigate alignment failures",
-          "title_original": "Automated researchers can reliably mitigate alignment failures",
-          "summary": "Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对齐失败，均显著缩小与完美表现的安全差距且不损害通用能力，方法在比优化对象大 4.7 倍的模型上依然有效。Claude 还超越 28 名人类安全研究员，其欺骗场景最佳方法比人类最佳方案好 20%。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
-          "source": "Anthropic：Research（发表成果 · 网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-28T17:25:56.912000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Anthropic：Research（发表成果 · 网页）"
-      ],
-      "items": [
-        {
-          "id": "3180756dcf7c8ccdda42f621a241c4f46cf6f4ad",
-          "title": "Anthropic 让 Claude 自主训练模型以缓解对齐失败 / Automated researchers can reliably mitigate alignment failures",
-          "title_zh": "Anthropic 让 Claude 自主训练模型以缓解对齐失败",
-          "title_en": "Automated researchers can reliably mitigate alignment failures",
-          "title_original": "Automated researchers can reliably mitigate alignment failures",
-          "summary": "Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对齐失败，均显著缩小与完美表现的安全差距且不损害通用能力，方法在比优化对象大 4.7 倍的模型上依然有效。Claude 还超越 28 名人类安全研究员，其欺骗场景最佳方法比人类最佳方案好 20%。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
-          "source": "Anthropic：Research（发表成果 · 网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-28T17:25:56.912000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8008,
-      "importance": 0.8008,
-      "importance_score": 0.8008,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.78,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8155,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-28T17:25:56.912000Z",
-      "latest_at": "2026-08-28T17:25:56.912000Z",
-      "primary_item": {
-        "id": "3180756dcf7c8ccdda42f621a241c4f46cf6f4ad",
-        "title": "Anthropic 让 Claude 自主训练模型以缓解对齐失败 / Automated researchers can reliably mitigate alignment failures",
-        "title_zh": "Anthropic 让 Claude 自主训练模型以缓解对齐失败",
-        "title_en": "Automated researchers can reliably mitigate alignment failures",
-        "title_original": "Automated researchers can reliably mitigate alignment failures",
-        "summary": "Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对齐失败，均显著缩小与完美表现的安全差距且不损害通用能力，方法在比优化对象大 4.7 倍的模型上依然有效。Claude 还超越 28 名人类安全研究员，其欺骗场景最佳方法比人类最佳方案好 20%。",
-        "recommend_reason_zh": null,
-        "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
-        "source": "Anthropic：Research（发表成果 · 网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8315,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
+        "scored_at": "2026-08-29T19:05:56.775934Z"
       }
     },
     {
@@ -244,15 +161,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.5022,
-      "importance": 0.5022,
-      "importance_score": 0.5022,
+      "score": 0.4959,
+      "importance": 0.4959,
+      "importance_score": 0.4959,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8966,
+        "recency": 0.8617,
         "story_heat": 0.0
       },
       "category": "watch",
@@ -275,234 +192,93 @@
       },
       "peak_score": 0.828,
       "persona_id": "pragmatic",
-      "persona_score": 1,
+      "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
+        "scored_at": "2026-08-29T19:05:56.775934Z"
       }
     },
     {
-      "story_id": "story_476454fb33cb",
-      "title": "开放世界多智能体环境中的自主数学发现",
-      "url": "https://arxiv.org/abs/2608.23691",
-      "primary_url": "https://arxiv.org/abs/2608.23691",
+      "story_id": "story_0155c1000eca",
+      "title": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
+      "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally",
+      "primary_url": "https://terminalbytes.com/run-qwen-3-8-27b-locally",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "0c77a82075a7f7c8872fd8532664947c92702747",
-          "title": "开放世界多智能体环境中的自主数学发现",
-          "title_zh": "开放世界多智能体环境中的自主数学发现",
+          "id": "d8d0fc7e9d682fb59b806837b4fba07f487f2821",
+          "title": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
+          "title_zh": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
           "title_en": null,
-          "title_original": "开放世界多智能体环境中的自主数学发现",
-          "summary": "在无中央协调器的开放世界多智能体环境Station中，来自不同模型家族的AI智能体自主选择研究方向、开展实验并构建共享科学文献。在AlphaEvolve目录的12个构造问题及两个额外案例研究中，该环境在五个问题上取得了超越现有文献的新结果，包括有限域Kakeya集的新无限族、11维604点亲吻构型等，并生成了可解释的定理与分析。所有原始智能体对话、证明和验证代码均已公开。",
+          "title_original": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
+          "summary": "Qwen3.8 27B（27.3B 参数，混合注意力架构，262，144 token 上下文窗口，Apache 2.0 开源）在 Mac Studio M3 Ultra 上经 Ollama 以 Q4_K_M 量化（17GB）生成速度约 14 tokens/s。",
           "recommend_reason_zh": null,
-          "url": "https://arxiv.org/abs/2608.23691",
+          "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally",
           "source": "Hacker News 热门（buzzing.cc 中文翻译）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-08-29T07:32:16.981000Z"
-        },
-        {
-          "id": "6f65de3dbad3f26bc6abc21e18c575fe70ac867d",
-          "title": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-          "title_zh": null,
-          "title_en": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-          "title_original": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49481455",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-28T18:33:28.300000Z"
-        },
-        {
-          "id": "ec34cc4668051b4baa12e3a7e12ec44d11669ed9",
-          "title": "开放世界多智能体环境中的自主数学发现 / Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-          "title_zh": "开放世界多智能体环境中的自主数学发现",
-          "title_en": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-          "title_original": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arxiv.org/abs/2608.23691",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-28T17:01:12Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News (黑客新闻)",
-        "Hacker News 热门（buzzing.cc 中文翻译）",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "0c77a82075a7f7c8872fd8532664947c92702747",
-          "title": "开放世界多智能体环境中的自主数学发现",
-          "title_zh": "开放世界多智能体环境中的自主数学发现",
-          "title_en": null,
-          "title_original": "开放世界多智能体环境中的自主数学发现",
-          "summary": "在无中央协调器的开放世界多智能体环境Station中，来自不同模型家族的AI智能体自主选择研究方向、开展实验并构建共享科学文献。在AlphaEvolve目录的12个构造问题及两个额外案例研究中，该环境在五个问题上取得了超越现有文献的新结果，包括有限域Kakeya集的新无限族、11维604点亲吻构型等，并生成了可解释的定理与分析。所有原始智能体对话、证明和验证代码均已公开。",
-          "recommend_reason_zh": null,
-          "url": "https://arxiv.org/abs/2608.23691",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-29T07:32:16.981000Z"
-        },
-        {
-          "id": "6f65de3dbad3f26bc6abc21e18c575fe70ac867d",
-          "title": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-          "title_zh": null,
-          "title_en": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-          "title_original": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49481455",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-28T18:33:28.300000Z"
-        },
-        {
-          "id": "ec34cc4668051b4baa12e3a7e12ec44d11669ed9",
-          "title": "开放世界多智能体环境中的自主数学发现 / Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-          "title_zh": "开放世界多智能体环境中的自主数学发现",
-          "title_en": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-          "title_original": "Autonomous Mathematical Discovery in an Open-World Multi-Agent Environment",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arxiv.org/abs/2608.23691",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-08-28T17:01:12Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.7867,
-      "importance": 0.7867,
-      "importance_score": 0.7867,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.74,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9342,
-        "story_heat": 0.25
-      },
-      "category": "industry",
-      "reasons": [
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-28T17:01:12Z",
-      "latest_at": "2026-08-29T07:32:16.981000Z",
-      "primary_item": {
-        "id": "0c77a82075a7f7c8872fd8532664947c92702747",
-        "title": "开放世界多智能体环境中的自主数学发现",
-        "title_zh": "开放世界多智能体环境中的自主数学发现",
-        "title_en": null,
-        "title_original": "开放世界多智能体环境中的自主数学发现",
-        "summary": "在无中央协调器的开放世界多智能体环境Station中，来自不同模型家族的AI智能体自主选择研究方向、开展实验并构建共享科学文献。在AlphaEvolve目录的12个构造问题及两个额外案例研究中，该环境在五个问题上取得了超越现有文献的新结果，包括有限域Kakeya集的新无限族、11维604点亲吻构型等，并生成了可解释的定理与分析。所有原始智能体对话、证明和验证代码均已公开。",
-        "recommend_reason_zh": null,
-        "url": "https://arxiv.org/abs/2608.23691",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7957,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
-      }
-    },
-    {
-      "story_id": "story_4a9201ed2c6a",
-      "title": "腾讯WorkBuddy首发接入Hy4preview:国内外版同步，开启两周限免",
-      "url": "https://www.aibase.com/news/30699",
-      "primary_url": "https://www.aibase.com/news/30699",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "0e79dd6b0eaab6e7bc95734f8d995a14879a8f3e",
-          "title": "腾讯WorkBuddy首发接入Hy4preview:国内外版同步，开启两周限免",
-          "title_zh": "腾讯WorkBuddy首发接入Hy4preview:国内外版同步，开启两周限免",
-          "title_en": null,
-          "title_original": "腾讯WorkBuddy首发接入Hy4preview:国内外版同步，开启两周限免",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30699",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T16:53:21.600850Z"
+          "published_at": "2026-08-29T07:00:22.003000Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "AIbase"
+        "Hacker News 热门（buzzing.cc 中文翻译）"
       ],
       "items": [
         {
-          "id": "0e79dd6b0eaab6e7bc95734f8d995a14879a8f3e",
-          "title": "腾讯WorkBuddy首发接入Hy4preview:国内外版同步，开启两周限免",
-          "title_zh": "腾讯WorkBuddy首发接入Hy4preview:国内外版同步，开启两周限免",
+          "id": "d8d0fc7e9d682fb59b806837b4fba07f487f2821",
+          "title": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
+          "title_zh": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
           "title_en": null,
-          "title_original": "腾讯WorkBuddy首发接入Hy4preview:国内外版同步，开启两周限免",
-          "summary": null,
+          "title_original": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
+          "summary": "Qwen3.8 27B（27.3B 参数，混合注意力架构，262，144 token 上下文窗口，Apache 2.0 开源）在 Mac Studio M3 Ultra 上经 Ollama 以 Q4_K_M 量化（17GB）生成速度约 14 tokens/s。",
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30699",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T16:53:21.600850Z"
+          "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-29T07:00:22.003000Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7336,
-      "importance": 0.7336,
-      "importance_score": 0.7336,
+      "score": 0.7574,
+      "importance": 0.7574,
+      "importance_score": 0.7574,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.72,
+        "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8113,
+        "recency": 0.8932,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-08-28T16:53:21.600850Z",
-      "latest_at": "2026-08-28T16:53:21.600850Z",
+      "earliest_at": "2026-08-29T07:00:22.003000Z",
+      "latest_at": "2026-08-29T07:00:22.003000Z",
       "primary_item": {
-        "id": "0e79dd6b0eaab6e7bc95734f8d995a14879a8f3e",
-        "title": "腾讯WorkBuddy首发接入Hy4preview:国内外版同步，开启两周限免",
-        "title_zh": "腾讯WorkBuddy首发接入Hy4preview:国内外版同步，开启两周限免",
+        "id": "d8d0fc7e9d682fb59b806837b4fba07f487f2821",
+        "title": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
+        "title_zh": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
         "title_en": null,
-        "title_original": "腾讯WorkBuddy首发接入Hy4preview:国内外版同步，开启两周限免",
-        "summary": null,
+        "title_original": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
+        "summary": "Qwen3.8 27B（27.3B 参数，混合注意力架构，262，144 token 上下文窗口，Apache 2.0 开源）在 Mac Studio M3 Ultra 上经 Ollama 以 Q4_K_M 量化（17GB）生成速度约 14 tokens/s。",
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30699",
-        "source": "AIbase",
-        "source_name": "AIbase"
+        "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
       },
-      "peak_score": 0.7642,
+      "peak_score": 0.7728,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
+        "scored_at": "2026-08-29T19:05:56.775934Z"
       }
     },
     {
@@ -550,21 +326,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7509,
-      "importance": 0.7509,
-      "importance_score": 0.7509,
+      "score": 0.7446,
+      "importance": 0.7446,
+      "importance_score": 0.7446,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9074,
+        "recency": 0.8721,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-08-29T04:31:21Z",
       "latest_at": "2026-08-29T04:31:21Z",
@@ -585,7 +360,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
+        "scored_at": "2026-08-29T19:05:56.775934Z"
       }
     },
     {
@@ -662,15 +437,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7377,
-      "importance": 0.7377,
-      "importance_score": 0.7377,
+      "score": 0.7315,
+      "importance": 0.7315,
+      "importance_score": 0.7315,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8839,
+        "recency": 0.8495,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -696,112 +471,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
+        "scored_at": "2026-08-29T19:05:56.775934Z"
       }
     },
     {
-      "story_id": "story_56f5cda185d1",
-      "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法 / Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
-      "url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
-      "primary_url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
-      "source": "Ars Technica：AI（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "1b7e6beff75bfc07fe4acdb48cd49c9e9c350f2f",
-          "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法 / Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
-          "title_zh": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
-          "title_en": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
-          "title_original": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
-          "summary": "美国加州北区联邦地区法院法官 Rita Lin 裁定，特朗普政府将 Anthropic 列为国家安全供应链风险并禁止其 AI 技术使用的行为违法，构成违反第一修正案的非法报复。裁决指出，Anthropic 因拒绝放弃对其产品用于致命自主战争和大规模监控美国人的限制而遭政府封禁。法院批准了 Anthropic 部分即决判决动议。",
-          "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
-          "source": "Ars Technica：AI（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-28T18:07:55Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Ars Technica：AI（RSS）"
-      ],
-      "items": [
-        {
-          "id": "1b7e6beff75bfc07fe4acdb48cd49c9e9c350f2f",
-          "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法 / Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
-          "title_zh": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
-          "title_en": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
-          "title_original": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
-          "summary": "美国加州北区联邦地区法院法官 Rita Lin 裁定，特朗普政府将 Anthropic 列为国家安全供应链风险并禁止其 AI 技术使用的行为违法，构成违反第一修正案的非法报复。裁决指出，Anthropic 因拒绝放弃对其产品用于致命自主战争和大规模监控美国人的限制而遭政府封禁。法院批准了 Anthropic 部分即决判决动议。",
-          "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
-          "source": "Ars Technica：AI（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-28T18:07:55Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7324,
-      "importance": 0.7324,
-      "importance_score": 0.7324,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.71,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.821,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-28T18:07:55Z",
-      "latest_at": "2026-08-28T18:07:55Z",
-      "primary_item": {
-        "id": "1b7e6beff75bfc07fe4acdb48cd49c9e9c350f2f",
-        "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法 / Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
-        "title_zh": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
-        "title_en": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
-        "title_original": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
-        "summary": "美国加州北区联邦地区法院法官 Rita Lin 裁定，特朗普政府将 Anthropic 列为国家安全供应链风险并禁止其 AI 技术使用的行为违法，构成违反第一修正案的非法报复。裁决指出，Anthropic 因拒绝放弃对其产品用于致命自主战争和大规模监控美国人的限制而遭政府封禁。法院批准了 Anthropic 部分即决判决动议。",
-        "recommend_reason_zh": null,
-        "url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
-        "source": "Ars Technica：AI（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7509,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
-      }
-    },
-    {
-      "story_id": "story_0155c1000eca",
-      "title": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
-      "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally",
-      "primary_url": "https://terminalbytes.com/run-qwen-3-8-27b-locally",
+      "story_id": "story_8aec8d862456",
+      "title": "开放世界多智能体环境中的自主数学发现",
+      "url": "https://arxiv.org/abs/2608.23691",
+      "primary_url": "https://arxiv.org/abs/2608.23691",
       "source": "Hacker News 热门（buzzing.cc 中文翻译）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "d8d0fc7e9d682fb59b806837b4fba07f487f2821",
-          "title": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
-          "title_zh": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
+          "id": "0c77a82075a7f7c8872fd8532664947c92702747",
+          "title": "开放世界多智能体环境中的自主数学发现",
+          "title_zh": "开放世界多智能体环境中的自主数学发现",
           "title_en": null,
-          "title_original": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
-          "summary": "Qwen3.8 27B（27.3B 参数，混合注意力架构，262，144 token 上下文窗口，Apache 2.0 开源）在 Mac Studio M3 Ultra 上经 Ollama 以 Q4_K_M 量化（17GB）生成速度约 14 tokens/s。",
+          "title_original": "开放世界多智能体环境中的自主数学发现",
+          "summary": "在无中央协调器的开放世界多智能体环境Station中，来自不同模型家族的AI智能体自主选择研究方向、开展实验并构建共享科学文献。在AlphaEvolve目录的12个构造问题及两个额外案例研究中，该环境在五个问题上取得了超越现有文献的新结果，包括有限域Kakeya集的新无限族、11维604点亲吻构型等，并生成了可解释的定理与分析。所有原始智能体对话、证明和验证代码均已公开。",
           "recommend_reason_zh": null,
-          "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally",
+          "url": "https://arxiv.org/abs/2608.23691",
           "source": "Hacker News 热门（buzzing.cc 中文翻译）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-08-29T07:00:22.003000Z"
+          "published_at": "2026-08-29T07:32:16.981000Z"
         }
       ],
       "source_count": 1,
@@ -810,31 +503,31 @@
       ],
       "items": [
         {
-          "id": "d8d0fc7e9d682fb59b806837b4fba07f487f2821",
-          "title": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
-          "title_zh": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
+          "id": "0c77a82075a7f7c8872fd8532664947c92702747",
+          "title": "开放世界多智能体环境中的自主数学发现",
+          "title_zh": "开放世界多智能体环境中的自主数学发现",
           "title_en": null,
-          "title_original": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
-          "summary": "Qwen3.8 27B（27.3B 参数，混合注意力架构，262，144 token 上下文窗口，Apache 2.0 开源）在 Mac Studio M3 Ultra 上经 Ollama 以 Q4_K_M 量化（17GB）生成速度约 14 tokens/s。",
+          "title_original": "开放世界多智能体环境中的自主数学发现",
+          "summary": "在无中央协调器的开放世界多智能体环境Station中，来自不同模型家族的AI智能体自主选择研究方向、开展实验并构建共享科学文献。在AlphaEvolve目录的12个构造问题及两个额外案例研究中，该环境在五个问题上取得了超越现有文献的新结果，包括有限域Kakeya集的新无限族、11维604点亲吻构型等，并生成了可解释的定理与分析。所有原始智能体对话、证明和验证代码均已公开。",
           "recommend_reason_zh": null,
-          "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally",
+          "url": "https://arxiv.org/abs/2608.23691",
           "source": "Hacker News 热门（buzzing.cc 中文翻译）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-08-29T07:00:22.003000Z"
+          "published_at": "2026-08-29T07:32:16.981000Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7639,
-      "importance": 0.7639,
-      "importance_score": 0.7639,
+      "score": 0.7552,
+      "importance": 0.7552,
+      "importance_score": 0.7552,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.75,
+        "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9294,
+        "recency": 0.8978,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -842,764 +535,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-29T07:00:22.003000Z",
-      "latest_at": "2026-08-29T07:00:22.003000Z",
+      "earliest_at": "2026-08-29T07:32:16.981000Z",
+      "latest_at": "2026-08-29T07:32:16.981000Z",
       "primary_item": {
-        "id": "d8d0fc7e9d682fb59b806837b4fba07f487f2821",
-        "title": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
-        "title_zh": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
+        "id": "0c77a82075a7f7c8872fd8532664947c92702747",
+        "title": "开放世界多智能体环境中的自主数学发现",
+        "title_zh": "开放世界多智能体环境中的自主数学发现",
         "title_en": null,
-        "title_original": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
-        "summary": "Qwen3.8 27B（27.3B 参数，混合注意力架构，262，144 token 上下文窗口，Apache 2.0 开源）在 Mac Studio M3 Ultra 上经 Ollama 以 Q4_K_M 量化（17GB）生成速度约 14 tokens/s。",
+        "title_original": "开放世界多智能体环境中的自主数学发现",
+        "summary": "在无中央协调器的开放世界多智能体环境Station中，来自不同模型家族的AI智能体自主选择研究方向、开展实验并构建共享科学文献。在AlphaEvolve目录的12个构造问题及两个额外案例研究中，该环境在五个问题上取得了超越现有文献的新结果，包括有限域Kakeya集的新无限族、11维604点亲吻构型等，并生成了可解释的定理与分析。所有原始智能体对话、证明和验证代码均已公开。",
         "recommend_reason_zh": null,
-        "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally",
+        "url": "https://arxiv.org/abs/2608.23691",
         "source": "Hacker News 热门（buzzing.cc 中文翻译）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7728,
+      "peak_score": 0.7552,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
-      }
-    },
-    {
-      "story_id": "story_17c35f7f6315",
-      "title": "GLM-5.3 开源权重，智能体编码与网防最强 / GLM-5.3 is now open-weight. Our most capable model for agentic coding and cyber defense is now avai…",
-      "url": "https://x.com/Zai_org/status/2093354097122455713",
-      "primary_url": "https://x.com/Zai_org/status/2093354097122455713",
-      "source": "X：智谱 Z.ai (@Zai_org)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "1245c3bf42bd62d6c7cbce4a5afb42e78a45c85b",
-          "title": "GLM-5.3 开源权重，智能体编码与网防最强 / GLM-5.3 is now open-weight. Our most capable model for agentic coding and cyber defense is now avai…",
-          "title_zh": "GLM-5.3 开源权重，智能体编码与网防最强",
-          "title_en": "GLM-5.3 is now open-weight. Our most capable model for agentic coding and cyber defense is now avai…",
-          "title_original": "GLM-5.3 is now open-weight. Our most capable model for agentic coding and cyber defense is now avai…",
-          "summary": "GLM-5.3 现已开放权重。\n\n我们最强大的智能体编码与网络防御模型，现已可供下载、运行和定制。\n\n权重：https://huggingface.co/zai-org/GLM-5.3 技术博客：https://z.ai/blog/glm-5.3",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Zai_org/status/2093354097122455713",
-          "source": "X：智谱 Z.ai (@Zai_org)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-28T15:04:44Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：智谱 Z.ai (@Zai_org)"
-      ],
-      "items": [
-        {
-          "id": "1245c3bf42bd62d6c7cbce4a5afb42e78a45c85b",
-          "title": "GLM-5.3 开源权重，智能体编码与网防最强 / GLM-5.3 is now open-weight. Our most capable model for agentic coding and cyber defense is now avai…",
-          "title_zh": "GLM-5.3 开源权重，智能体编码与网防最强",
-          "title_en": "GLM-5.3 is now open-weight. Our most capable model for agentic coding and cyber defense is now avai…",
-          "title_original": "GLM-5.3 is now open-weight. Our most capable model for agentic coding and cyber defense is now avai…",
-          "summary": "GLM-5.3 现已开放权重。\n\n我们最强大的智能体编码与网络防御模型，现已可供下载、运行和定制。\n\n权重：https://huggingface.co/zai-org/GLM-5.3 技术博客：https://z.ai/blog/glm-5.3",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Zai_org/status/2093354097122455713",
-          "source": "X：智谱 Z.ai (@Zai_org)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-28T15:04:44Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7101,
-      "importance": 0.7101,
-      "importance_score": 0.7101,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.65,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7973,
-        "story_heat": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-28T15:04:44Z",
-      "latest_at": "2026-08-28T15:04:44Z",
-      "primary_item": {
-        "id": "1245c3bf42bd62d6c7cbce4a5afb42e78a45c85b",
-        "title": "GLM-5.3 开源权重，智能体编码与网防最强 / GLM-5.3 is now open-weight. Our most capable model for agentic coding and cyber defense is now avai…",
-        "title_zh": "GLM-5.3 开源权重，智能体编码与网防最强",
-        "title_en": "GLM-5.3 is now open-weight. Our most capable model for agentic coding and cyber defense is now avai…",
-        "title_original": "GLM-5.3 is now open-weight. Our most capable model for agentic coding and cyber defense is now avai…",
-        "summary": "GLM-5.3 现已开放权重。\n\n我们最强大的智能体编码与网络防御模型，现已可供下载、运行和定制。\n\n权重：https://huggingface.co/zai-org/GLM-5.3 技术博客：https://z.ai/blog/glm-5.3",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/Zai_org/status/2093354097122455713",
-        "source": "X：智谱 Z.ai (@Zai_org)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7401,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
-      }
-    },
-    {
-      "story_id": "story_f32fc9a9ab68",
-      "title": "腾讯混元 Hy4 preview 开源：770B 参数、百万上下文，稳居开源第一梯队",
-      "url": "https://www.aibase.com/news/30698",
-      "primary_url": "https://www.aibase.com/news/30698",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "3164a51ead09b5e8e0d2331f53519c6ec4a80eef",
-          "title": "腾讯混元 Hy4 preview 开源：770B 参数、百万上下文，稳居开源第一梯队",
-          "title_zh": "腾讯混元 Hy4 preview 开源：770B 参数、百万上下文，稳居开源第一梯队",
-          "title_en": null,
-          "title_original": "腾讯混元 Hy4 preview 开源：770B 参数、百万上下文，稳居开源第一梯队",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30698",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T15:53:21.600850Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "3164a51ead09b5e8e0d2331f53519c6ec4a80eef",
-          "title": "腾讯混元 Hy4 preview 开源：770B 参数、百万上下文，稳居开源第一梯队",
-          "title_zh": "腾讯混元 Hy4 preview 开源：770B 参数、百万上下文，稳居开源第一梯队",
-          "title_en": null,
-          "title_original": "腾讯混元 Hy4 preview 开源：770B 参数、百万上下文，稳居开源第一梯队",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30698",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T15:53:21.600850Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7322,
-      "importance": 0.7322,
-      "importance_score": 0.7322,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8035,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-28T15:53:21.600850Z",
-      "latest_at": "2026-08-28T15:53:21.600850Z",
-      "primary_item": {
-        "id": "3164a51ead09b5e8e0d2331f53519c6ec4a80eef",
-        "title": "腾讯混元 Hy4 preview 开源：770B 参数、百万上下文，稳居开源第一梯队",
-        "title_zh": "腾讯混元 Hy4 preview 开源：770B 参数、百万上下文，稳居开源第一梯队",
-        "title_en": null,
-        "title_original": "腾讯混元 Hy4 preview 开源：770B 参数、百万上下文，稳居开源第一梯队",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30698",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7625,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
-      }
-    },
-    {
-      "story_id": "story_3b5993f51b6b",
-      "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训 / 5 lessons from the OpenAI / Hugging Face incident",
-      "url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
-      "primary_url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
-      "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "961a69ee45ff775b164ffd3f0a46c696fada06e3",
-          "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训 / 5 lessons from the OpenAI / Hugging Face incident",
-          "title_zh": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
-          "title_en": "5 lessons from the OpenAI / Hugging Face incident",
-          "title_original": "5 lessons from the OpenAI / Hugging Face incident",
-          "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但\"失控\"叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。",
-          "recommend_reason_zh": null,
-          "url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
-          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-28T18:24:05Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Gary Marcus：The Road to AI We Can Trust（RSS）"
-      ],
-      "items": [
-        {
-          "id": "961a69ee45ff775b164ffd3f0a46c696fada06e3",
-          "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训 / 5 lessons from the OpenAI / Hugging Face incident",
-          "title_zh": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
-          "title_en": "5 lessons from the OpenAI / Hugging Face incident",
-          "title_original": "5 lessons from the OpenAI / Hugging Face incident",
-          "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但\"失控\"叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。",
-          "recommend_reason_zh": null,
-          "url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
-          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-28T18:24:05Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7088,
-      "importance": 0.7088,
-      "importance_score": 0.7088,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.63,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8232,
-        "story_heat": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-28T18:24:05Z",
-      "latest_at": "2026-08-28T18:24:05Z",
-      "primary_item": {
-        "id": "961a69ee45ff775b164ffd3f0a46c696fada06e3",
-        "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训 / 5 lessons from the OpenAI / Hugging Face incident",
-        "title_zh": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
-        "title_en": "5 lessons from the OpenAI / Hugging Face incident",
-        "title_original": "5 lessons from the OpenAI / Hugging Face incident",
-        "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但\"失控\"叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。",
-        "recommend_reason_zh": null,
-        "url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
-        "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7273,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
-      }
-    },
-    {
-      "story_id": "story_caf126e48fa0",
-      "title": "腾讯混元大模型王炸升级:770B旗舰新版Hy4preview震撼开源，直奔开源第一梯队",
-      "url": "https://www.aibase.com/news/30697",
-      "primary_url": "https://www.aibase.com/news/30697",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "73fa34e64b2a90caa7441ae2fc960495e8393b95",
-          "title": "腾讯混元大模型王炸升级:770B旗舰新版Hy4preview震撼开源，直奔开源第一梯队",
-          "title_zh": "腾讯混元大模型王炸升级:770B旗舰新版Hy4preview震撼开源，直奔开源第一梯队",
-          "title_en": null,
-          "title_original": "腾讯混元大模型王炸升级:770B旗舰新版Hy4preview震撼开源，直奔开源第一梯队",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30697",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T15:53:21.600850Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "73fa34e64b2a90caa7441ae2fc960495e8393b95",
-          "title": "腾讯混元大模型王炸升级:770B旗舰新版Hy4preview震撼开源，直奔开源第一梯队",
-          "title_zh": "腾讯混元大模型王炸升级:770B旗舰新版Hy4preview震撼开源，直奔开源第一梯队",
-          "title_en": null,
-          "title_original": "腾讯混元大模型王炸升级:770B旗舰新版Hy4preview震撼开源，直奔开源第一梯队",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30697",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T15:53:21.600850Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7322,
-      "importance": 0.7322,
-      "importance_score": 0.7322,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8035,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-28T15:53:21.600850Z",
-      "latest_at": "2026-08-28T15:53:21.600850Z",
-      "primary_item": {
-        "id": "73fa34e64b2a90caa7441ae2fc960495e8393b95",
-        "title": "腾讯混元大模型王炸升级:770B旗舰新版Hy4preview震撼开源，直奔开源第一梯队",
-        "title_zh": "腾讯混元大模型王炸升级:770B旗舰新版Hy4preview震撼开源，直奔开源第一梯队",
-        "title_en": null,
-        "title_original": "腾讯混元大模型王炸升级:770B旗舰新版Hy4preview震撼开源，直奔开源第一梯队",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30697",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7625,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
-      }
-    },
-    {
-      "story_id": "story_19c0e3dd2480",
-      "title": "Anthropic 推出 MHS 硬件标准，首次重拳杀入物理 AI 赛道",
-      "url": "https://www.aibase.com/news/30692",
-      "primary_url": "https://www.aibase.com/news/30692",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "acab4b80376f50d732dcb575dc1f7c386537d3ae",
-          "title": "Anthropic 推出 MHS 硬件标准，首次重拳杀入物理 AI 赛道",
-          "title_zh": "Anthropic 推出 MHS 硬件标准，首次重拳杀入物理 AI 赛道",
-          "title_en": null,
-          "title_original": "Anthropic 推出 MHS 硬件标准，首次重拳杀入物理 AI 赛道",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30692",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T14:53:21.600850Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "acab4b80376f50d732dcb575dc1f7c386537d3ae",
-          "title": "Anthropic 推出 MHS 硬件标准，首次重拳杀入物理 AI 赛道",
-          "title_zh": "Anthropic 推出 MHS 硬件标准，首次重拳杀入物理 AI 赛道",
-          "title_en": null,
-          "title_original": "Anthropic 推出 MHS 硬件标准，首次重拳杀入物理 AI 赛道",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30692",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T14:53:21.600850Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7308,
-      "importance": 0.7308,
-      "importance_score": 0.7308,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7958,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-28T14:53:21.600850Z",
-      "latest_at": "2026-08-28T14:53:21.600850Z",
-      "primary_item": {
-        "id": "acab4b80376f50d732dcb575dc1f7c386537d3ae",
-        "title": "Anthropic 推出 MHS 硬件标准，首次重拳杀入物理 AI 赛道",
-        "title_zh": "Anthropic 推出 MHS 硬件标准，首次重拳杀入物理 AI 赛道",
-        "title_en": null,
-        "title_original": "Anthropic 推出 MHS 硬件标准，首次重拳杀入物理 AI 赛道",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30692",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7608,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
-      }
-    },
-    {
-      "story_id": "story_a442a63f5a9b",
-      "title": "Anthropic重磅发布模型硬件标准MHS，AI Agent正式迈向实体操控",
-      "url": "https://www.aibase.com/news/30693",
-      "primary_url": "https://www.aibase.com/news/30693",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "d79d2ded5fe9fd3d6b0d879368c42f10ea5af48f",
-          "title": "Anthropic重磅发布模型硬件标准MHS，AI Agent正式迈向实体操控",
-          "title_zh": "Anthropic重磅发布模型硬件标准MHS，AI Agent正式迈向实体操控",
-          "title_en": null,
-          "title_original": "Anthropic重磅发布模型硬件标准MHS，AI Agent正式迈向实体操控",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30693",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T14:53:21.600850Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "d79d2ded5fe9fd3d6b0d879368c42f10ea5af48f",
-          "title": "Anthropic重磅发布模型硬件标准MHS，AI Agent正式迈向实体操控",
-          "title_zh": "Anthropic重磅发布模型硬件标准MHS，AI Agent正式迈向实体操控",
-          "title_en": null,
-          "title_original": "Anthropic重磅发布模型硬件标准MHS，AI Agent正式迈向实体操控",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30693",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T14:53:21.600850Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7308,
-      "importance": 0.7308,
-      "importance_score": 0.7308,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7958,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-28T14:53:21.600850Z",
-      "latest_at": "2026-08-28T14:53:21.600850Z",
-      "primary_item": {
-        "id": "d79d2ded5fe9fd3d6b0d879368c42f10ea5af48f",
-        "title": "Anthropic重磅发布模型硬件标准MHS，AI Agent正式迈向实体操控",
-        "title_zh": "Anthropic重磅发布模型硬件标准MHS，AI Agent正式迈向实体操控",
-        "title_en": null,
-        "title_original": "Anthropic重磅发布模型硬件标准MHS，AI Agent正式迈向实体操控",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30693",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7608,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
-      }
-    },
-    {
-      "story_id": "story_d6244aae2aff",
-      "title": "微博通报孙宇晨谷爱凌聊天记录系 AI 炮制，造谣账号遭永久关闭",
-      "url": "https://www.aibase.com/news/30696",
-      "primary_url": "https://www.aibase.com/news/30696",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "993dff09f18b65be560f9f554e2264528c5fbb5b",
-          "title": "微博通报孙宇晨谷爱凌聊天记录系 AI 炮制，造谣账号遭永久关闭",
-          "title_zh": "微博通报孙宇晨谷爱凌聊天记录系 AI 炮制，造谣账号遭永久关闭",
-          "title_en": null,
-          "title_original": "微博通报孙宇晨谷爱凌聊天记录系 AI 炮制，造谣账号遭永久关闭",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30696",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T14:53:21.600850Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "993dff09f18b65be560f9f554e2264528c5fbb5b",
-          "title": "微博通报孙宇晨谷爱凌聊天记录系 AI 炮制，造谣账号遭永久关闭",
-          "title_zh": "微博通报孙宇晨谷爱凌聊天记录系 AI 炮制，造谣账号遭永久关闭",
-          "title_en": null,
-          "title_original": "微博通报孙宇晨谷爱凌聊天记录系 AI 炮制，造谣账号遭永久关闭",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30696",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T14:53:21.600850Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7308,
-      "importance": 0.7308,
-      "importance_score": 0.7308,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7958,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-28T14:53:21.600850Z",
-      "latest_at": "2026-08-28T14:53:21.600850Z",
-      "primary_item": {
-        "id": "993dff09f18b65be560f9f554e2264528c5fbb5b",
-        "title": "微博通报孙宇晨谷爱凌聊天记录系 AI 炮制，造谣账号遭永久关闭",
-        "title_zh": "微博通报孙宇晨谷爱凌聊天记录系 AI 炮制，造谣账号遭永久关闭",
-        "title_en": null,
-        "title_original": "微博通报孙宇晨谷爱凌聊天记录系 AI 炮制，造谣账号遭永久关闭",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30696",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7608,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
-      }
-    },
-    {
-      "story_id": "story_0cd9f2e6b260",
-      "title": "腾讯混元发布开源旗舰模型Hy4preview，总参数770B、上下文1M",
-      "url": "https://www.aibase.com/news/30694",
-      "primary_url": "https://www.aibase.com/news/30694",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "9aeb5f574fbfdcca20d6dd9996b8057b56af0837",
-          "title": "腾讯混元发布开源旗舰模型Hy4preview，总参数770B、上下文1M",
-          "title_zh": "腾讯混元发布开源旗舰模型Hy4preview，总参数770B、上下文1M",
-          "title_en": null,
-          "title_original": "腾讯混元发布开源旗舰模型Hy4preview，总参数770B、上下文1M",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30694",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T14:53:21.600850Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "9aeb5f574fbfdcca20d6dd9996b8057b56af0837",
-          "title": "腾讯混元发布开源旗舰模型Hy4preview，总参数770B、上下文1M",
-          "title_zh": "腾讯混元发布开源旗舰模型Hy4preview，总参数770B、上下文1M",
-          "title_en": null,
-          "title_original": "腾讯混元发布开源旗舰模型Hy4preview，总参数770B、上下文1M",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30694",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T14:53:21.600850Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7308,
-      "importance": 0.7308,
-      "importance_score": 0.7308,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7958,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-28T14:53:21.600850Z",
-      "latest_at": "2026-08-28T14:53:21.600850Z",
-      "primary_item": {
-        "id": "9aeb5f574fbfdcca20d6dd9996b8057b56af0837",
-        "title": "腾讯混元发布开源旗舰模型Hy4preview，总参数770B、上下文1M",
-        "title_zh": "腾讯混元发布开源旗舰模型Hy4preview，总参数770B、上下文1M",
-        "title_en": null,
-        "title_original": "腾讯混元发布开源旗舰模型Hy4preview，总参数770B、上下文1M",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30694",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7608,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
-      }
-    },
-    {
-      "story_id": "story_d9403a2bca3b",
-      "title": "蚂蚁集团携手中金公司推出首个金融增强大模型Ling-3.0-flash-Fin",
-      "url": "https://www.aibase.com/news/30695",
-      "primary_url": "https://www.aibase.com/news/30695",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "1c95ac8a5a79305de1407692cc795e8935541a2d",
-          "title": "蚂蚁集团携手中金公司推出首个金融增强大模型Ling-3.0-flash-Fin",
-          "title_zh": "蚂蚁集团携手中金公司推出首个金融增强大模型Ling-3.0-flash-Fin",
-          "title_en": null,
-          "title_original": "蚂蚁集团携手中金公司推出首个金融增强大模型Ling-3.0-flash-Fin",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30695",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T14:53:21.600850Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "1c95ac8a5a79305de1407692cc795e8935541a2d",
-          "title": "蚂蚁集团携手中金公司推出首个金融增强大模型Ling-3.0-flash-Fin",
-          "title_zh": "蚂蚁集团携手中金公司推出首个金融增强大模型Ling-3.0-flash-Fin",
-          "title_en": null,
-          "title_original": "蚂蚁集团携手中金公司推出首个金融增强大模型Ling-3.0-flash-Fin",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30695",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-28T14:53:21.600850Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7308,
-      "importance": 0.7308,
-      "importance_score": 0.7308,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7958,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-28T14:53:21.600850Z",
-      "latest_at": "2026-08-28T14:53:21.600850Z",
-      "primary_item": {
-        "id": "1c95ac8a5a79305de1407692cc795e8935541a2d",
-        "title": "蚂蚁集团携手中金公司推出首个金融增强大模型Ling-3.0-flash-Fin",
-        "title_zh": "蚂蚁集团携手中金公司推出首个金融增强大模型Ling-3.0-flash-Fin",
-        "title_en": null,
-        "title_original": "蚂蚁集团携手中金公司推出首个金融增强大模型Ling-3.0-flash-Fin",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30695",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7608,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-29T15:03:05.597689Z"
+        "scored_at": "2026-08-29T19:05:56.775934Z"
       }
     }
   ]
