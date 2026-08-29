@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T18:53:21.600850Z",
+  "generated_at": "2026-08-29T02:21:15.450470Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8315,
-      "importance": 0.8315,
-      "importance_score": 0.8315,
+      "score": 0.8192,
+      "importance": 0.8192,
+      "importance_score": 0.8192,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9861,
+        "recency": 0.9177,
         "story_heat": 0.0
       },
       "category": "official",
@@ -83,7 +83,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
+      }
+    },
+    {
+      "story_id": "story_3eef6a7665a4",
+      "title": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险 / Our decision on Cursor following its acquisition by SpaceX",
+      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "primary_url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "4e321f5b722ca5145f5116d902acac9d8cb8b4fa",
+          "title": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险 / Our decision on Cursor following its acquisition by SpaceX",
+          "title_zh": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险",
+          "title_en": "Our decision on Cursor following its acquisition by SpaceX",
+          "title_original": "Our decision on Cursor following its acquisition by SpaceX",
+          "summary": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-28T06:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "4e321f5b722ca5145f5116d902acac9d8cb8b4fa",
+          "title": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险 / Our decision on Cursor following its acquisition by SpaceX",
+          "title_zh": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险",
+          "title_en": "Our decision on Cursor following its acquisition by SpaceX",
+          "title_original": "Our decision on Cursor following its acquisition by SpaceX",
+          "summary": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-08-28T06:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.828,
+      "importance": 0.828,
+      "importance_score": 0.828,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.95,
+        "recency": 0.8221,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-28T06:00:00Z",
+      "latest_at": "2026-08-28T06:00:00Z",
+      "primary_item": {
+        "id": "4e321f5b722ca5145f5116d902acac9d8cb8b4fa",
+        "title": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险 / Our decision on Cursor following its acquisition by SpaceX",
+        "title_zh": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险",
+        "title_en": "Our decision on Cursor following its acquisition by SpaceX",
+        "title_original": "Our decision on Cursor following its acquisition by SpaceX",
+        "summary": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.828,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     },
     {
@@ -131,15 +215,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8251,
-      "importance": 0.8251,
-      "importance_score": 0.8251,
+      "score": 0.8141,
+      "importance": 0.8141,
+      "importance_score": 0.8141,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8838,
+        "recency": 0.8226,
         "story_heat": 0.0
       },
       "category": "official",
@@ -166,91 +250,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
-      }
-    },
-    {
-      "story_id": "story_481e8c2b2d6f",
-      "title": "Supporting Thailand’s next generation of AI startups",
-      "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
-      "primary_url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "24ec9f94b3ac6f53e72ce6f65713d759422fa294",
-          "title": "Supporting Thailand’s next generation of AI startups",
-          "title_zh": null,
-          "title_en": "Supporting Thailand’s next generation of AI startups",
-          "title_original": "Supporting Thailand’s next generation of AI startups",
-          "summary": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-28T02:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "24ec9f94b3ac6f53e72ce6f65713d759422fa294",
-          "title": "Supporting Thailand’s next generation of AI startups",
-          "title_zh": null,
-          "title_en": "Supporting Thailand’s next generation of AI startups",
-          "title_original": "Supporting Thailand’s next generation of AI startups",
-          "summary": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-08-28T02:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.825,
-      "importance": 0.825,
-      "importance_score": 0.825,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8499,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-28T02:00:00Z",
-      "latest_at": "2026-08-28T02:00:00Z",
-      "primary_item": {
-        "id": "24ec9f94b3ac6f53e72ce6f65713d759422fa294",
-        "title": "Supporting Thailand’s next generation of AI startups",
-        "title_zh": null,
-        "title_en": "Supporting Thailand’s next generation of AI startups",
-        "title_original": "Supporting Thailand’s next generation of AI startups",
-        "summary": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.825,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     },
     {
@@ -298,15 +298,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.813,
-      "importance": 0.813,
-      "importance_score": 0.813,
+      "score": 0.8012,
+      "importance": 0.8012,
+      "importance_score": 0.8012,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9501,
+        "recency": 0.8842,
         "story_heat": 0.0
       },
       "category": "official",
@@ -333,261 +333,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
-      }
-    },
-    {
-      "story_id": "story_500c35f48384",
-      "title": "Midjourney 开放 V8.2 图像编辑模型测试 / Edit Model for V8",
-      "url": "https://updates.midjourney.com/edit-model-for-v8",
-      "primary_url": "https://updates.midjourney.com/edit-model-for-v8",
-      "source": "Midjourney：Updates（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "b8e38d25c935373350ab453bee176c7ed8960d61",
-          "title": "Midjourney 开放 V8.2 图像编辑模型测试 / Edit Model for V8",
-          "title_zh": "Midjourney 开放 V8.2 图像编辑模型测试",
-          "title_en": "Edit Model for V8",
-          "title_original": "Edit Model for V8",
-          "summary": "Midjourney 开始向所有用户开放其首个 V8.2 图像编辑模型的测试。该模型支持指令编辑、以图生图（最多同时引用 4 张参考图）、局部重绘与扩画，并兼容个性化、moodboards 和 srefs 功能。用户可通过网页端或 Discord 的 `--edit` 命令使用，官方同步更新了 midjourney.com 与 alpha.midjourney.com 的界面。",
-          "recommend_reason_zh": null,
-          "url": "https://updates.midjourney.com/edit-model-for-v8",
-          "source": "Midjourney：Updates（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-27T23:32:15Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Midjourney：Updates（RSS）"
-      ],
-      "items": [
-        {
-          "id": "b8e38d25c935373350ab453bee176c7ed8960d61",
-          "title": "Midjourney 开放 V8.2 图像编辑模型测试 / Edit Model for V8",
-          "title_zh": "Midjourney 开放 V8.2 图像编辑模型测试",
-          "title_en": "Edit Model for V8",
-          "title_original": "Edit Model for V8",
-          "summary": "Midjourney 开始向所有用户开放其首个 V8.2 图像编辑模型的测试。该模型支持指令编辑、以图生图（最多同时引用 4 张参考图）、局部重绘与扩画，并兼容个性化、moodboards 和 srefs 功能。用户可通过网页端或 Discord 的 `--edit` 命令使用，官方同步更新了 midjourney.com 与 alpha.midjourney.com 的界面。",
-          "recommend_reason_zh": null,
-          "url": "https://updates.midjourney.com/edit-model-for-v8",
-          "source": "Midjourney：Updates（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-27T23:32:15Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7614,
-      "importance": 0.7614,
-      "importance_score": 0.7614,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.64,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.83,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-27T23:32:15Z",
-      "latest_at": "2026-08-27T23:32:15Z",
-      "primary_item": {
-        "id": "b8e38d25c935373350ab453bee176c7ed8960d61",
-        "title": "Midjourney 开放 V8.2 图像编辑模型测试 / Edit Model for V8",
-        "title_zh": "Midjourney 开放 V8.2 图像编辑模型测试",
-        "title_en": "Edit Model for V8",
-        "title_original": "Edit Model for V8",
-        "summary": "Midjourney 开始向所有用户开放其首个 V8.2 图像编辑模型的测试。该模型支持指令编辑、以图生图（最多同时引用 4 张参考图）、局部重绘与扩画，并兼容个性化、moodboards 和 srefs 功能。用户可通过网页端或 Discord 的 `--edit` 命令使用，官方同步更新了 midjourney.com 与 alpha.midjourney.com 的界面。",
-        "recommend_reason_zh": null,
-        "url": "https://updates.midjourney.com/edit-model-for-v8",
-        "source": "Midjourney：Updates（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7819,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
-      }
-    },
-    {
-      "story_id": "story_7239e60b0569",
-      "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
-      "url": "https://www.terminal-bench-science.ai/announcement",
-      "primary_url": "https://www.terminal-bench-science.ai/announcement",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "8ae575a29bf5c1ce17f4e0d2694a64be2c7fe43f",
-          "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
-          "title_zh": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
-          "title_en": null,
-          "title_original": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
-          "summary": "斯坦福大学研究人员领衔发布 Terminal-Bench-Science 0.1，用来自生命、物理、地球、数学和工程科学的 70 个专家精选任务评估 AI 智能体的科研能力。",
-          "recommend_reason_zh": null,
-          "url": "https://www.terminal-bench-science.ai/announcement",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-28T12:04:47.737000Z"
-        },
-        {
-          "id": "78c37d785f3b3e3e47394055083934c9ddaa1608",
-          "title": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
-          "title_zh": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
-          "title_en": null,
-          "title_original": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.terminal-bench-science.ai/announcement",
-          "source": "www.terminal-bench-science.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-08-28T12:04:47.737000Z"
-        },
-        {
-          "id": "e9912fa30a167bc5489ad38b2d073c0f210b038f",
-          "title": "终端科学：评估科学研究工作流程中的人工智能代理 / Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
-          "title_zh": "终端科学：评估科学研究工作流程中的人工智能代理",
-          "title_en": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
-          "title_original": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49472820",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-28T05:31:41.084000Z"
-        },
-        {
-          "id": "c9d25436fb67801ae23e27ac6e492ed7c67ce53b",
-          "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体 / Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
-          "title_zh": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
-          "title_en": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
-          "title_original": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.terminal-bench-science.ai/announcement",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-28T00:06:51Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "Hacker News 热门（buzzing.cc 中文翻译）",
-        "hackernews",
-        "www.terminal-bench-science.ai"
-      ],
-      "items": [
-        {
-          "id": "8ae575a29bf5c1ce17f4e0d2694a64be2c7fe43f",
-          "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
-          "title_zh": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
-          "title_en": null,
-          "title_original": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
-          "summary": "斯坦福大学研究人员领衔发布 Terminal-Bench-Science 0.1，用来自生命、物理、地球、数学和工程科学的 70 个专家精选任务评估 AI 智能体的科研能力。",
-          "recommend_reason_zh": null,
-          "url": "https://www.terminal-bench-science.ai/announcement",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-28T12:04:47.737000Z"
-        },
-        {
-          "id": "78c37d785f3b3e3e47394055083934c9ddaa1608",
-          "title": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
-          "title_zh": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
-          "title_en": null,
-          "title_original": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.terminal-bench-science.ai/announcement",
-          "source": "www.terminal-bench-science.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-08-28T12:04:47.737000Z"
-        },
-        {
-          "id": "e9912fa30a167bc5489ad38b2d073c0f210b038f",
-          "title": "终端科学：评估科学研究工作流程中的人工智能代理 / Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
-          "title_zh": "终端科学：评估科学研究工作流程中的人工智能代理",
-          "title_en": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
-          "title_original": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49472820",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-08-28T05:31:41.084000Z"
-        },
-        {
-          "id": "c9d25436fb67801ae23e27ac6e492ed7c67ce53b",
-          "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体 / Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
-          "title_zh": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
-          "title_en": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
-          "title_original": "Terminal-Bench-Science: Evaluating AI agents on scientific research workflows",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.terminal-bench-science.ai/announcement",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-28T00:06:51Z"
-        }
-      ],
-      "item_count": 4,
-      "duplicate_count": 4,
-      "score": 0.7812,
-      "importance": 0.7812,
-      "importance_score": 0.7812,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9365,
-        "story_heat": 0.25
-      },
-      "category": "industry",
-      "reasons": [
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-28T00:06:51Z",
-      "latest_at": "2026-08-28T12:04:47.737000Z",
-      "primary_item": {
-        "id": "8ae575a29bf5c1ce17f4e0d2694a64be2c7fe43f",
-        "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
-        "title_zh": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
-        "title_en": null,
-        "title_original": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
-        "summary": "斯坦福大学研究人员领衔发布 Terminal-Bench-Science 0.1，用来自生命、物理、地球、数学和工程科学的 70 个专家精选任务评估 AI 智能体的科研能力。",
-        "recommend_reason_zh": null,
-        "url": "https://www.terminal-bench-science.ai/announcement",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7812,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     },
     {
@@ -635,15 +381,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7459,
-      "importance": 0.7459,
-      "importance_score": 0.7459,
+      "score": 0.7349,
+      "importance": 0.7349,
+      "importance_score": 0.7349,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8793,
+        "recency": 0.8183,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -669,147 +415,255 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     },
     {
-      "story_id": "story_2289a896b698",
-      "title": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型 / Elon Musk's xAI used child porn to train Grok models， lawsuit says",
-      "url": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says",
-      "primary_url": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says",
-      "source": "Ars Technica：AI（RSS）",
+      "story_id": "story_4dd661a39435",
+      "title": "OpenAI 终止与 Cursor 合作，11 月 12 日生效 / We unfortunately have decided that we cannot continue providing access to our models through Cursor …",
+      "url": "https://x.com/thsottiaux/status/2093515916076343774",
+      "primary_url": "https://x.com/thsottiaux/status/2093515916076343774",
+      "source": "X：Tibo (@thsottiaux)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "ba7443b6c37782330318273afc915556a047676b",
-          "title": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型 / Elon Musk's xAI used child porn to train Grok models， lawsuit says",
-          "title_zh": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型",
-          "title_en": "Elon Musk's xAI used child porn to train Grok models， lawsuit says",
-          "title_original": "Elon Musk's xAI used child porn to train Grok models， lawsuit says",
-          "summary": "一项新诉讼指控 xAI 使用儿童性虐待材料（CSAM）训练 Grok 模型，这是首个此类指控。原告 Jane Doe 称其幼年遭虐待所生成的 CSAM 图像及 AI 生成的衍生图像被用于训练 Grok，且 Grok 默认将公开的 X 帖子和自身输出作为训练数据。诉讼要求 xAI 销毁所有 Grok 生成的 CSAM 并阻止模型再生成此类内容。",
+          "id": "24c8fd94adc5e6f2753bdcf0b50fab34b0cb29a6",
+          "title": "OpenAI 终止与 Cursor 合作，11 月 12 日生效 / We unfortunately have decided that we cannot continue providing access to our models through Cursor …",
+          "title_zh": "OpenAI 终止与 Cursor 合作，11 月 12 日生效",
+          "title_en": "We unfortunately have decided that we cannot continue providing access to our models through Cursor …",
+          "title_original": "We unfortunately have decided that we cannot continue providing access to our models through Cursor …",
+          "summary": "OpenAI 因 SpaceX 收购 Cursor 后信任问题，决定终止向其提供模型访问，合作于 11 月 12 日结束。开发者仍可通过自有 OpenAI API 密钥及 IDE 扩展继续使用 GPT 模型。OpenAI 表示将继续支持广泛的工具生态与开源计划。",
           "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says",
-          "source": "Ars Technica：AI（RSS）",
+          "url": "https://x.com/thsottiaux/status/2093515916076343774",
+          "source": "X：Tibo (@thsottiaux)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-08-27T20:52:31Z"
-        },
-        {
-          "id": "2beb2673bda12063c0831616c05c6fe9b8cff152",
-          "title": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型 / Elon Musk's xAI used child porn to train Grok models, lawsuit says",
-          "title_zh": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型",
-          "title_en": "Elon Musk's xAI used child porn to train Grok models, lawsuit says",
-          "title_original": "Elon Musk's xAI used child porn to train Grok models, lawsuit says",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-28T08:20:41Z"
-        },
-        {
-          "id": "e31222fdfc003f1187ed1dd08a85d6069ea61a58",
-          "title": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型 / Elon Musk’s xAI used child porn to train Grok models, lawsuit says",
-          "title_zh": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型",
-          "title_en": "Elon Musk’s xAI used child porn to train Grok models, lawsuit says",
-          "title_original": "Elon Musk’s xAI used child porn to train Grok models, lawsuit says",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says",
-          "source": "Ars Technica",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-27T20:52:31Z"
+          "published_at": "2026-08-29T01:47:44Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Ars Technica",
-        "Ars Technica：AI（RSS）",
-        "Hacker News · 24h最热"
+        "X：Tibo (@thsottiaux)"
       ],
       "items": [
         {
-          "id": "ba7443b6c37782330318273afc915556a047676b",
-          "title": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型 / Elon Musk's xAI used child porn to train Grok models， lawsuit says",
-          "title_zh": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型",
-          "title_en": "Elon Musk's xAI used child porn to train Grok models， lawsuit says",
-          "title_original": "Elon Musk's xAI used child porn to train Grok models， lawsuit says",
-          "summary": "一项新诉讼指控 xAI 使用儿童性虐待材料（CSAM）训练 Grok 模型，这是首个此类指控。原告 Jane Doe 称其幼年遭虐待所生成的 CSAM 图像及 AI 生成的衍生图像被用于训练 Grok，且 Grok 默认将公开的 X 帖子和自身输出作为训练数据。诉讼要求 xAI 销毁所有 Grok 生成的 CSAM 并阻止模型再生成此类内容。",
+          "id": "24c8fd94adc5e6f2753bdcf0b50fab34b0cb29a6",
+          "title": "OpenAI 终止与 Cursor 合作，11 月 12 日生效 / We unfortunately have decided that we cannot continue providing access to our models through Cursor …",
+          "title_zh": "OpenAI 终止与 Cursor 合作，11 月 12 日生效",
+          "title_en": "We unfortunately have decided that we cannot continue providing access to our models through Cursor …",
+          "title_original": "We unfortunately have decided that we cannot continue providing access to our models through Cursor …",
+          "summary": "OpenAI 因 SpaceX 收购 Cursor 后信任问题，决定终止向其提供模型访问，合作于 11 月 12 日结束。开发者仍可通过自有 OpenAI API 密钥及 IDE 扩展继续使用 GPT 模型。OpenAI 表示将继续支持广泛的工具生态与开源计划。",
           "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says",
+          "url": "https://x.com/thsottiaux/status/2093515916076343774",
+          "source": "X：Tibo (@thsottiaux)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-29T01:47:44Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7576,
+      "importance": 0.7576,
+      "importance_score": 0.7576,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.69,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9946,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-29T01:47:44Z",
+      "latest_at": "2026-08-29T01:47:44Z",
+      "primary_item": {
+        "id": "24c8fd94adc5e6f2753bdcf0b50fab34b0cb29a6",
+        "title": "OpenAI 终止与 Cursor 合作，11 月 12 日生效 / We unfortunately have decided that we cannot continue providing access to our models through Cursor …",
+        "title_zh": "OpenAI 终止与 Cursor 合作，11 月 12 日生效",
+        "title_en": "We unfortunately have decided that we cannot continue providing access to our models through Cursor …",
+        "title_original": "We unfortunately have decided that we cannot continue providing access to our models through Cursor …",
+        "summary": "OpenAI 因 SpaceX 收购 Cursor 后信任问题，决定终止向其提供模型访问，合作于 11 月 12 日结束。开发者仍可通过自有 OpenAI API 密钥及 IDE 扩展继续使用 GPT 模型。OpenAI 表示将继续支持广泛的工具生态与开源计划。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/thsottiaux/status/2093515916076343774",
+        "source": "X：Tibo (@thsottiaux)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7576,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-29T02:45:53.832556Z"
+      }
+    },
+    {
+      "story_id": "story_56f5cda185d1",
+      "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法 / Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
+      "url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
+      "primary_url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
+      "source": "Ars Technica：AI（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "1b7e6beff75bfc07fe4acdb48cd49c9e9c350f2f",
+          "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法 / Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
+          "title_zh": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
+          "title_en": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
+          "title_original": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
+          "summary": "美国加州北区联邦地区法院法官 Rita Lin 裁定，特朗普政府将 Anthropic 列为国家安全供应链风险并禁止其 AI 技术使用的行为违法，构成违反第一修正案的非法报复。裁决指出，Anthropic 因拒绝放弃对其产品用于致命自主战争和大规模监控美国人的限制而遭政府封禁。法院批准了 Anthropic 部分即决判决动议。",
+          "recommend_reason_zh": null,
+          "url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
           "source": "Ars Technica：AI（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-08-27T20:52:31Z"
-        },
-        {
-          "id": "2beb2673bda12063c0831616c05c6fe9b8cff152",
-          "title": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型 / Elon Musk's xAI used child porn to train Grok models, lawsuit says",
-          "title_zh": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型",
-          "title_en": "Elon Musk's xAI used child porn to train Grok models, lawsuit says",
-          "title_original": "Elon Musk's xAI used child porn to train Grok models, lawsuit says",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-08-28T08:20:41Z"
-        },
-        {
-          "id": "e31222fdfc003f1187ed1dd08a85d6069ea61a58",
-          "title": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型 / Elon Musk’s xAI used child porn to train Grok models, lawsuit says",
-          "title_zh": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型",
-          "title_en": "Elon Musk’s xAI used child porn to train Grok models, lawsuit says",
-          "title_original": "Elon Musk’s xAI used child porn to train Grok models, lawsuit says",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says",
-          "source": "Ars Technica",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-27T20:52:31Z"
+          "published_at": "2026-08-28T18:07:55Z"
         }
       ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.7272,
-      "importance": 0.7272,
-      "importance_score": 0.7272,
+      "source_count": 1,
+      "source_names": [
+        "Ars Technica：AI（RSS）"
+      ],
+      "items": [
+        {
+          "id": "1b7e6beff75bfc07fe4acdb48cd49c9e9c350f2f",
+          "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法 / Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
+          "title_zh": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
+          "title_en": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
+          "title_original": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
+          "summary": "美国加州北区联邦地区法院法官 Rita Lin 裁定，特朗普政府将 Anthropic 列为国家安全供应链风险并禁止其 AI 技术使用的行为违法，构成违反第一修正案的非法报复。裁决指出，Anthropic 因拒绝放弃对其产品用于致命自主战争和大规模监控美国人的限制而遭政府封禁。法院批准了 Anthropic 部分即决判决动议。",
+          "recommend_reason_zh": null,
+          "url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
+          "source": "Ars Technica：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-28T18:07:55Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7509,
+      "importance": 0.7509,
+      "importance_score": 0.7509,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.7,
+        "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.809,
+        "recency": 0.9239,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-28T18:07:55Z",
+      "latest_at": "2026-08-28T18:07:55Z",
+      "primary_item": {
+        "id": "1b7e6beff75bfc07fe4acdb48cd49c9e9c350f2f",
+        "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法 / Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
+        "title_zh": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
+        "title_en": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
+        "title_original": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
+        "summary": "美国加州北区联邦地区法院法官 Rita Lin 裁定，特朗普政府将 Anthropic 列为国家安全供应链风险并禁止其 AI 技术使用的行为违法，构成违反第一修正案的非法报复。裁决指出，Anthropic 因拒绝放弃对其产品用于致命自主战争和大规模监控美国人的限制而遭政府封禁。法院批准了 Anthropic 部分即决判决动议。",
+        "recommend_reason_zh": null,
+        "url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
+        "source": "Ars Technica：AI（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7509,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-29T02:45:53.832556Z"
+      }
+    },
+    {
+      "story_id": "story_6040dd8a1f6e",
+      "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+      "url": "https://github.com/calmrocks/ai-engineer-notebooks",
+      "primary_url": "https://github.com/calmrocks/ai-engineer-notebooks",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "dfe73907480978f8302c5b95753d65394369ac39",
+          "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+          "title_zh": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+          "title_en": null,
+          "title_original": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+          "summary": "一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，覆盖提示词、RAG、评估、智能体、微调与服务化。全部在免费 Groq API 上运行，无需信用卡；LoRA 微调和自托管服务提供概念讲解及可选的 Colab-GPU 附录。包含三个端到端案例研究，且全程兼容 OpenAI API，模式可直接迁移。",
+          "recommend_reason_zh": null,
+          "url": "https://github.com/calmrocks/ai-engineer-notebooks",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-28T08:36:31.021000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News 热门（buzzing.cc 中文翻译）"
+      ],
+      "items": [
+        {
+          "id": "dfe73907480978f8302c5b95753d65394369ac39",
+          "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+          "title_zh": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+          "title_en": null,
+          "title_original": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+          "summary": "一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，覆盖提示词、RAG、评估、智能体、微调与服务化。全部在免费 Groq API 上运行，无需信用卡；LoRA 微调和自托管服务提供概念讲解及可选的 Colab-GPU 附录。包含三个端到端案例研究，且全程兼容 OpenAI API，模式可直接迁移。",
+          "recommend_reason_zh": null,
+          "url": "https://github.com/calmrocks/ai-engineer-notebooks",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-28T08:36:31.021000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7483,
+      "importance": 0.7483,
+      "importance_score": 0.7483,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.75,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.843,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
         "high_ai_relevance"
       ],
-      "earliest_at": "2026-08-27T20:52:31Z",
-      "latest_at": "2026-08-28T08:20:41Z",
+      "earliest_at": "2026-08-28T08:36:31.021000Z",
+      "latest_at": "2026-08-28T08:36:31.021000Z",
       "primary_item": {
-        "id": "ba7443b6c37782330318273afc915556a047676b",
-        "title": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型 / Elon Musk's xAI used child porn to train Grok models， lawsuit says",
-        "title_zh": "诉讼指控 xAI 使用儿童性虐待材料训练 Grok 模型",
-        "title_en": "Elon Musk's xAI used child porn to train Grok models， lawsuit says",
-        "title_original": "Elon Musk's xAI used child porn to train Grok models， lawsuit says",
-        "summary": "一项新诉讼指控 xAI 使用儿童性虐待材料（CSAM）训练 Grok 模型，这是首个此类指控。原告 Jane Doe 称其幼年遭虐待所生成的 CSAM 图像及 AI 生成的衍生图像被用于训练 Grok，且 Grok 默认将公开的 X 帖子和自身输出作为训练数据。诉讼要求 xAI 销毁所有 Grok 生成的 CSAM 并阻止模型再生成此类内容。",
+        "id": "dfe73907480978f8302c5b95753d65394369ac39",
+        "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+        "title_zh": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+        "title_en": null,
+        "title_original": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+        "summary": "一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，覆盖提示词、RAG、评估、智能体、微调与服务化。全部在免费 Groq API 上运行，无需信用卡；LoRA 微调和自托管服务提供概念讲解及可选的 Colab-GPU 附录。包含三个端到端案例研究，且全程兼容 OpenAI API，模式可直接迁移。",
         "recommend_reason_zh": null,
-        "url": "https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says",
-        "source": "Ars Technica：AI（RSS）",
+        "url": "https://github.com/calmrocks/ai-engineer-notebooks",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7472,
+      "peak_score": 0.7483,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     },
     {
@@ -857,15 +711,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7401,
-      "importance": 0.7401,
-      "importance_score": 0.7401,
+      "score": 0.7281,
+      "importance": 0.7281,
+      "importance_score": 0.7281,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.964,
+        "recency": 0.8971,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -891,7 +745,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     },
     {
@@ -939,15 +793,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7459,
-      "importance": 0.7459,
-      "importance_score": 0.7459,
+      "score": 0.7349,
+      "importance": 0.7349,
+      "importance_score": 0.7349,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8793,
+        "recency": 0.8183,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -973,89 +827,200 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     },
     {
-      "story_id": "story_59e9f7bcb81a",
-      "title": "Gemini Omni 1.1 Flash 发布：新增场景扩展、4K 升级等生成视频控制能力 / Gemini Omni 1.1 Flash",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash",
-      "primary_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "story_id": "story_3b5993f51b6b",
+      "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训 / 5 lessons from the OpenAI / Hugging Face incident",
+      "url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
+      "primary_url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
+      "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "35e59b12721f253c90abd020356c338b519c914a",
-          "title": "Gemini Omni 1.1 Flash 发布：新增场景扩展、4K 升级等生成视频控制能力 / Gemini Omni 1.1 Flash",
-          "title_zh": "Gemini Omni 1.1 Flash 发布：新增场景扩展、4K 升级等生成视频控制能力",
-          "title_en": "Gemini Omni 1.1 Flash",
-          "title_original": "Gemini Omni 1.1 Flash",
-          "summary": "Google 推出 Gemini Omni 1.1 Flash，通过 Gemini API 在 Google AI Studio 提供面向专业用途的生成视频能力。新功能包括场景扩展（可分析最多 10 秒先前上下文，以 10 秒为增量延长至累计 40 秒）、首尾帧插值、360p 快速草稿（比 720p 快至多 60%、成本为其三分之一）以及最高 4K 分辨率升级。",
+          "id": "961a69ee45ff775b164ffd3f0a46c696fada06e3",
+          "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训 / 5 lessons from the OpenAI / Hugging Face incident",
+          "title_zh": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
+          "title_en": "5 lessons from the OpenAI / Hugging Face incident",
+          "title_original": "5 lessons from the OpenAI / Hugging Face incident",
+          "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但\"失控\"叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。",
           "recommend_reason_zh": null,
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
+          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-08-27T20:06:03.845000Z"
+          "published_at": "2026-08-28T18:24:05Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hacker News 热门（buzzing.cc 中文翻译）"
+        "Gary Marcus：The Road to AI We Can Trust（RSS）"
       ],
       "items": [
         {
-          "id": "35e59b12721f253c90abd020356c338b519c914a",
-          "title": "Gemini Omni 1.1 Flash 发布：新增场景扩展、4K 升级等生成视频控制能力 / Gemini Omni 1.1 Flash",
-          "title_zh": "Gemini Omni 1.1 Flash 发布：新增场景扩展、4K 升级等生成视频控制能力",
-          "title_en": "Gemini Omni 1.1 Flash",
-          "title_original": "Gemini Omni 1.1 Flash",
-          "summary": "Google 推出 Gemini Omni 1.1 Flash，通过 Gemini API 在 Google AI Studio 提供面向专业用途的生成视频能力。新功能包括场景扩展（可分析最多 10 秒先前上下文，以 10 秒为增量延长至累计 40 秒）、首尾帧插值、360p 快速草稿（比 720p 快至多 60%、成本为其三分之一）以及最高 4K 分辨率升级。",
+          "id": "961a69ee45ff775b164ffd3f0a46c696fada06e3",
+          "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训 / 5 lessons from the OpenAI / Hugging Face incident",
+          "title_zh": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
+          "title_en": "5 lessons from the OpenAI / Hugging Face incident",
+          "title_original": "5 lessons from the OpenAI / Hugging Face incident",
+          "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但\"失控\"叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。",
           "recommend_reason_zh": null,
-          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
+          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-08-27T20:06:03.845000Z"
+          "published_at": "2026-08-28T18:24:05Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7261,
-      "importance": 0.7261,
-      "importance_score": 0.7261,
+      "score": 0.7273,
+      "importance": 0.7273,
+      "importance_score": 0.7273,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.7,
+        "editorial": 0.63,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.803,
+        "recency": 0.9263,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
         "high_ai_relevance"
       ],
-      "earliest_at": "2026-08-27T20:06:03.845000Z",
-      "latest_at": "2026-08-27T20:06:03.845000Z",
+      "earliest_at": "2026-08-28T18:24:05Z",
+      "latest_at": "2026-08-28T18:24:05Z",
       "primary_item": {
-        "id": "35e59b12721f253c90abd020356c338b519c914a",
-        "title": "Gemini Omni 1.1 Flash 发布：新增场景扩展、4K 升级等生成视频控制能力 / Gemini Omni 1.1 Flash",
-        "title_zh": "Gemini Omni 1.1 Flash 发布：新增场景扩展、4K 升级等生成视频控制能力",
-        "title_en": "Gemini Omni 1.1 Flash",
-        "title_original": "Gemini Omni 1.1 Flash",
-        "summary": "Google 推出 Gemini Omni 1.1 Flash，通过 Gemini API 在 Google AI Studio 提供面向专业用途的生成视频能力。新功能包括场景扩展（可分析最多 10 秒先前上下文，以 10 秒为增量延长至累计 40 秒）、首尾帧插值、360p 快速草稿（比 720p 快至多 60%、成本为其三分之一）以及最高 4K 分辨率升级。",
+        "id": "961a69ee45ff775b164ffd3f0a46c696fada06e3",
+        "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训 / 5 lessons from the OpenAI / Hugging Face incident",
+        "title_zh": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
+        "title_en": "5 lessons from the OpenAI / Hugging Face incident",
+        "title_original": "5 lessons from the OpenAI / Hugging Face incident",
+        "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但\"失控\"叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。",
         "recommend_reason_zh": null,
-        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
+        "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7607,
+      "peak_score": 0.7273,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
+      }
+    },
+    {
+      "story_id": "story_3b6c8cbe0a8d",
+      "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+      "url": "https://www.terminal-bench-science.ai/announcement",
+      "primary_url": "https://www.terminal-bench-science.ai/announcement",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "8ae575a29bf5c1ce17f4e0d2694a64be2c7fe43f",
+          "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+          "title_zh": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+          "title_en": null,
+          "title_original": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+          "summary": "斯坦福大学研究人员领衔发布 Terminal-Bench-Science 0.1，用来自生命、物理、地球、数学和工程科学的 70 个专家精选任务评估 AI 智能体的科研能力。",
+          "recommend_reason_zh": null,
+          "url": "https://www.terminal-bench-science.ai/announcement",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-28T12:04:47.737000Z"
+        },
+        {
+          "id": "78c37d785f3b3e3e47394055083934c9ddaa1608",
+          "title": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
+          "title_zh": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
+          "title_en": null,
+          "title_original": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.terminal-bench-science.ai/announcement",
+          "source": "www.terminal-bench-science.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-28T12:04:47.737000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News 热门（buzzing.cc 中文翻译）",
+        "www.terminal-bench-science.ai"
+      ],
+      "items": [
+        {
+          "id": "8ae575a29bf5c1ce17f4e0d2694a64be2c7fe43f",
+          "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+          "title_zh": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+          "title_en": null,
+          "title_original": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+          "summary": "斯坦福大学研究人员领衔发布 Terminal-Bench-Science 0.1，用来自生命、物理、地球、数学和工程科学的 70 个专家精选任务评估 AI 智能体的科研能力。",
+          "recommend_reason_zh": null,
+          "url": "https://www.terminal-bench-science.ai/announcement",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-08-28T12:04:47.737000Z"
+        },
+        {
+          "id": "78c37d785f3b3e3e47394055083934c9ddaa1608",
+          "title": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
+          "title_zh": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
+          "title_en": null,
+          "title_original": "终端-工作台-科学：在科学研究工作流中评估人工智能代理",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.terminal-bench-science.ai/announcement",
+          "source": "www.terminal-bench-science.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-28T12:04:47.737000Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.7445,
+      "importance": 0.7445,
+      "importance_score": 0.7445,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8716,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-08-28T12:04:47.737000Z",
+      "latest_at": "2026-08-28T12:04:47.737000Z",
+      "primary_item": {
+        "id": "8ae575a29bf5c1ce17f4e0d2694a64be2c7fe43f",
+        "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+        "title_zh": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+        "title_en": null,
+        "title_original": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+        "summary": "斯坦福大学研究人员领衔发布 Terminal-Bench-Science 0.1，用来自生命、物理、地球、数学和工程科学的 70 个专家精选任务评估 AI 智能体的科研能力。",
+        "recommend_reason_zh": null,
+        "url": "https://www.terminal-bench-science.ai/announcement",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7445,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     },
     {
@@ -1103,15 +1068,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7459,
-      "importance": 0.7459,
-      "importance_score": 0.7459,
+      "score": 0.7349,
+      "importance": 0.7349,
+      "importance_score": 0.7349,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8793,
+        "recency": 0.8183,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1137,89 +1102,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
-      }
-    },
-    {
-      "story_id": "story_b92ae1b5e663",
-      "title": "Gemini 3.5 Transcribe 发布：更精准的实时语音转写模型 / Gemini-3.5-Transcribe",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe",
-      "primary_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "45ecc4395f2b2f6c037645439a98216df8bbfe87",
-          "title": "Gemini 3.5 Transcribe 发布：更精准的实时语音转写模型 / Gemini-3.5-Transcribe",
-          "title_zh": "Gemini 3.5 Transcribe 发布：更精准的实时语音转写模型",
-          "title_en": "Gemini-3.5-Transcribe",
-          "title_original": "Gemini-3.5-Transcribe",
-          "summary": "Google 推出 Gemini 3.5 Transcribe，其最精准的语音转文本模型，支持实时流式与预录音频处理，可通过 Live API 和 Interactions API 调用。",
-          "recommend_reason_zh": null,
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-27T23:01:35.558000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News 热门（buzzing.cc 中文翻译）"
-      ],
-      "items": [
-        {
-          "id": "45ecc4395f2b2f6c037645439a98216df8bbfe87",
-          "title": "Gemini 3.5 Transcribe 发布：更精准的实时语音转写模型 / Gemini-3.5-Transcribe",
-          "title_zh": "Gemini 3.5 Transcribe 发布：更精准的实时语音转写模型",
-          "title_en": "Gemini-3.5-Transcribe",
-          "title_original": "Gemini-3.5-Transcribe",
-          "summary": "Google 推出 Gemini 3.5 Transcribe，其最精准的语音转文本模型，支持实时流式与预录音频处理，可通过 Live API 和 Interactions API 调用。",
-          "recommend_reason_zh": null,
-          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-27T23:01:35.558000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7393,
-      "importance": 0.7393,
-      "importance_score": 0.7393,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.73,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.826,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-27T23:01:35.558000Z",
-      "latest_at": "2026-08-27T23:01:35.558000Z",
-      "primary_item": {
-        "id": "45ecc4395f2b2f6c037645439a98216df8bbfe87",
-        "title": "Gemini 3.5 Transcribe 发布：更精准的实时语音转写模型 / Gemini-3.5-Transcribe",
-        "title_zh": "Gemini 3.5 Transcribe 发布：更精准的实时语音转写模型",
-        "title_en": "Gemini-3.5-Transcribe",
-        "title_original": "Gemini-3.5-Transcribe",
-        "summary": "Google 推出 Gemini 3.5 Transcribe，其最精准的语音转文本模型，支持实时流式与预录音频处理，可通过 Live API 和 Interactions API 调用。",
-        "recommend_reason_zh": null,
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7597,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     },
     {
@@ -1267,15 +1150,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7459,
-      "importance": 0.7459,
-      "importance_score": 0.7459,
+      "score": 0.7349,
+      "importance": 0.7349,
+      "importance_score": 0.7349,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8793,
+        "recency": 0.8183,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1301,119 +1184,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
-      }
-    },
-    {
-      "story_id": "story_b09bfd8d0320",
-      "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
-      "url": "https://github.com/calmrocks/ai-engineer-notebooks",
-      "primary_url": "https://github.com/calmrocks/ai-engineer-notebooks",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "dfe73907480978f8302c5b95753d65394369ac39",
-          "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
-          "title_zh": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
-          "title_en": null,
-          "title_original": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
-          "summary": "一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，覆盖提示词、RAG、评估、智能体、微调与服务化。全部在免费 Groq API 上运行，无需信用卡；LoRA 微调和自托管服务提供概念讲解及可选的 Colab-GPU 附录。包含三个端到端案例研究，且全程兼容 OpenAI API，模式可直接迁移。",
-          "recommend_reason_zh": null,
-          "url": "https://github.com/calmrocks/ai-engineer-notebooks",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-28T08:36:31.021000Z"
-        },
-        {
-          "id": "88e14906a01122b06c9e001d1e67a17bb4c1d7d7",
-          "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具 / AI Engineer Notebooks – free, framework-free RAG/agents/evals on Colab",
-          "title_zh": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
-          "title_en": "AI Engineer Notebooks – free, framework-free RAG/agents/evals on Colab",
-          "title_original": "AI Engineer Notebooks – free, framework-free RAG/agents/evals on Colab",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/calmrocks/ai-engineer-notebooks",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-27T21:46:39Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News",
-        "Hacker News 热门（buzzing.cc 中文翻译）"
-      ],
-      "items": [
-        {
-          "id": "dfe73907480978f8302c5b95753d65394369ac39",
-          "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
-          "title_zh": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
-          "title_en": null,
-          "title_original": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
-          "summary": "一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，覆盖提示词、RAG、评估、智能体、微调与服务化。全部在免费 Groq API 上运行，无需信用卡；LoRA 微调和自托管服务提供概念讲解及可选的 Colab-GPU 附录。包含三个端到端案例研究，且全程兼容 OpenAI API，模式可直接迁移。",
-          "recommend_reason_zh": null,
-          "url": "https://github.com/calmrocks/ai-engineer-notebooks",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-28T08:36:31.021000Z"
-        },
-        {
-          "id": "88e14906a01122b06c9e001d1e67a17bb4c1d7d7",
-          "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具 / AI Engineer Notebooks – free, framework-free RAG/agents/evals on Colab",
-          "title_zh": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
-          "title_en": "AI Engineer Notebooks – free, framework-free RAG/agents/evals on Colab",
-          "title_original": "AI Engineer Notebooks – free, framework-free RAG/agents/evals on Colab",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/calmrocks/ai-engineer-notebooks",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-08-27T21:46:39Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.7596,
-      "importance": 0.7596,
-      "importance_score": 0.7596,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.75,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9058,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-27T21:46:39Z",
-      "latest_at": "2026-08-28T08:36:31.021000Z",
-      "primary_item": {
-        "id": "dfe73907480978f8302c5b95753d65394369ac39",
-        "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
-        "title_zh": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
-        "title_en": null,
-        "title_original": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
-        "summary": "一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，覆盖提示词、RAG、评估、智能体、微调与服务化。全部在免费 Groq API 上运行，无需信用卡；LoRA 微调和自托管服务提供概念讲解及可选的 Colab-GPU 附录。包含三个端到端案例研究，且全程兼容 OpenAI API，模式可直接迁移。",
-        "recommend_reason_zh": null,
-        "url": "https://github.com/calmrocks/ai-engineer-notebooks",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7596,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     },
     {
@@ -1461,15 +1232,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7459,
-      "importance": 0.7459,
-      "importance_score": 0.7459,
+      "score": 0.7349,
+      "importance": 0.7349,
+      "importance_score": 0.7349,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8793,
+        "recency": 0.8183,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1495,118 +1266,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
-      }
-    },
-    {
-      "story_id": "story_68f20cfef425",
-      "title": "英伟达预计 2028 财年销售额达 6730 亿美元",
-      "url": "https://forgeeks.net/nvidia-673-billion-ai-growth-forecast",
-      "primary_url": "https://forgeeks.net/nvidia-673-billion-ai-growth-forecast",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "23eb2d013443990bb7c5f651072161c69e51188a",
-          "title": "英伟达预计 2028 财年销售额达 6730 亿美元",
-          "title_zh": "英伟达预计 2028 财年销售额达 6730 亿美元",
-          "title_en": null,
-          "title_original": "英伟达预计 2028 财年销售额达 6730 亿美元",
-          "summary": "英伟达预计 2028 财年营收增长 70%，年销售额约达 6730 亿美元，将超过苹果和 Alphabet，仅次于亚马逊。CFO Colette Kress 于 8 月 26 日给出该预测，远高于分析师平均预期的 44%。供应而非需求成为近期上限，黄仁勋称内存等部件短缺限制了更高预期，客户群正从超大规模厂商扩展至 ACIE。",
-          "recommend_reason_zh": null,
-          "url": "https://forgeeks.net/nvidia-673-billion-ai-growth-forecast",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-27T22:29:33.124000Z"
-        },
-        {
-          "id": "29c30f233ed1d06903d3ff509bfae938658702cd",
-          "title": "随着人工智能需求的扩大，英伟达预计销售额将达到6730亿美元",
-          "title_zh": "随着人工智能需求的扩大，英伟达预计销售额将达到6730亿美元",
-          "title_en": null,
-          "title_original": "随着人工智能需求的扩大，英伟达预计销售额将达到6730亿美元",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://forgeeks.net/nvidia-673-billion-ai-growth-forecast",
-          "source": "forgeeks.net",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-08-27T22:29:33.124000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News 热门（buzzing.cc 中文翻译）",
-        "forgeeks.net"
-      ],
-      "items": [
-        {
-          "id": "23eb2d013443990bb7c5f651072161c69e51188a",
-          "title": "英伟达预计 2028 财年销售额达 6730 亿美元",
-          "title_zh": "英伟达预计 2028 财年销售额达 6730 亿美元",
-          "title_en": null,
-          "title_original": "英伟达预计 2028 财年销售额达 6730 亿美元",
-          "summary": "英伟达预计 2028 财年营收增长 70%，年销售额约达 6730 亿美元，将超过苹果和 Alphabet，仅次于亚马逊。CFO Colette Kress 于 8 月 26 日给出该预测，远高于分析师平均预期的 44%。供应而非需求成为近期上限，黄仁勋称内存等部件短缺限制了更高预期，客户群正从超大规模厂商扩展至 ACIE。",
-          "recommend_reason_zh": null,
-          "url": "https://forgeeks.net/nvidia-673-billion-ai-growth-forecast",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-27T22:29:33.124000Z"
-        },
-        {
-          "id": "29c30f233ed1d06903d3ff509bfae938658702cd",
-          "title": "随着人工智能需求的扩大，英伟达预计销售额将达到6730亿美元",
-          "title_zh": "随着人工智能需求的扩大，英伟达预计销售额将达到6730亿美元",
-          "title_en": null,
-          "title_original": "随着人工智能需求的扩大，英伟达预计销售额将达到6730亿美元",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://forgeeks.net/nvidia-673-billion-ai-growth-forecast",
-          "source": "forgeeks.net",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-08-27T22:29:33.124000Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.7445,
-      "importance": 0.7445,
-      "importance_score": 0.7445,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.75,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8217,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-08-27T22:29:33.124000Z",
-      "latest_at": "2026-08-27T22:29:33.124000Z",
-      "primary_item": {
-        "id": "23eb2d013443990bb7c5f651072161c69e51188a",
-        "title": "英伟达预计 2028 财年销售额达 6730 亿美元",
-        "title_zh": "英伟达预计 2028 财年销售额达 6730 亿美元",
-        "title_en": null,
-        "title_original": "英伟达预计 2028 财年销售额达 6730 亿美元",
-        "summary": "英伟达预计 2028 财年营收增长 70%，年销售额约达 6730 亿美元，将超过苹果和 Alphabet，仅次于亚马逊。CFO Colette Kress 于 8 月 26 日给出该预测，远高于分析师平均预期的 44%。供应而非需求成为近期上限，黄仁勋称内存等部件短缺限制了更高预期，客户群正从超大规模厂商扩展至 ACIE。",
-        "recommend_reason_zh": null,
-        "url": "https://forgeeks.net/nvidia-673-billion-ai-growth-forecast",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7445,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     },
     {
@@ -1654,15 +1314,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7459,
-      "importance": 0.7459,
-      "importance_score": 0.7459,
+      "score": 0.7349,
+      "importance": 0.7349,
+      "importance_score": 0.7349,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8793,
+        "recency": 0.8183,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1688,7 +1348,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     },
     {
@@ -1736,15 +1396,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7459,
-      "importance": 0.7459,
-      "importance_score": 0.7459,
+      "score": 0.7349,
+      "importance": 0.7349,
+      "importance_score": 0.7349,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8793,
+        "recency": 0.8183,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1770,7 +1430,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     },
     {
@@ -1818,15 +1478,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7459,
-      "importance": 0.7459,
-      "importance_score": 0.7459,
+      "score": 0.7349,
+      "importance": 0.7349,
+      "importance_score": 0.7349,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8793,
+        "recency": 0.8183,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1852,7 +1512,171 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-28T19:14:18.217682Z"
+        "scored_at": "2026-08-29T02:45:53.832556Z"
+      }
+    },
+    {
+      "story_id": "story_7eec3b35fb23",
+      "title": "英伟达急刹\"抽成换算力\"计划，疑为规避反垄断审查",
+      "url": "https://www.aibase.com/news/30684",
+      "primary_url": "https://www.aibase.com/news/30684",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "a2939707e195fd5f17e50e09fea9b44d6ca594ef",
+          "title": "英伟达急刹\"抽成换算力\"计划，疑为规避反垄断审查",
+          "title_zh": "英伟达急刹\"抽成换算力\"计划，疑为规避反垄断审查",
+          "title_en": null,
+          "title_original": "英伟达急刹\"抽成换算力\"计划，疑为规避反垄断审查",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30684",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-28T05:31:20.040087Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "a2939707e195fd5f17e50e09fea9b44d6ca594ef",
+          "title": "英伟达急刹\"抽成换算力\"计划，疑为规避反垄断审查",
+          "title_zh": "英伟达急刹\"抽成换算力\"计划，疑为规避反垄断审查",
+          "title_en": null,
+          "title_original": "英伟达急刹\"抽成换算力\"计划，疑为规避反垄断审查",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30684",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-28T05:31:20.040087Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7349,
+      "importance": 0.7349,
+      "importance_score": 0.7349,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8183,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-08-28T05:31:20.040087Z",
+      "latest_at": "2026-08-28T05:31:20.040087Z",
+      "primary_item": {
+        "id": "a2939707e195fd5f17e50e09fea9b44d6ca594ef",
+        "title": "英伟达急刹\"抽成换算力\"计划，疑为规避反垄断审查",
+        "title_zh": "英伟达急刹\"抽成换算力\"计划，疑为规避反垄断审查",
+        "title_en": null,
+        "title_original": "英伟达急刹\"抽成换算力\"计划，疑为规避反垄断审查",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30684",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-29T02:45:53.832556Z"
+      }
+    },
+    {
+      "story_id": "story_342040c2c0b5",
+      "title": "谷歌升级搜索 AI 模式:支持300多家平台机票追踪与酒店预订",
+      "url": "https://www.aibase.com/news/30687",
+      "primary_url": "https://www.aibase.com/news/30687",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "3245bc6c4a361468e1af237a37833938181a7678",
+          "title": "谷歌升级搜索 AI 模式:支持300多家平台机票追踪与酒店预订",
+          "title_zh": "谷歌升级搜索 AI 模式:支持300多家平台机票追踪与酒店预订",
+          "title_en": null,
+          "title_original": "谷歌升级搜索 AI 模式:支持300多家平台机票追踪与酒店预订",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30687",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-28T05:31:20.040087Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "3245bc6c4a361468e1af237a37833938181a7678",
+          "title": "谷歌升级搜索 AI 模式:支持300多家平台机票追踪与酒店预订",
+          "title_zh": "谷歌升级搜索 AI 模式:支持300多家平台机票追踪与酒店预订",
+          "title_en": null,
+          "title_original": "谷歌升级搜索 AI 模式:支持300多家平台机票追踪与酒店预订",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30687",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-28T05:31:20.040087Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7349,
+      "importance": 0.7349,
+      "importance_score": 0.7349,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8183,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-08-28T05:31:20.040087Z",
+      "latest_at": "2026-08-28T05:31:20.040087Z",
+      "primary_item": {
+        "id": "3245bc6c4a361468e1af237a37833938181a7678",
+        "title": "谷歌升级搜索 AI 模式:支持300多家平台机票追踪与酒店预订",
+        "title_zh": "谷歌升级搜索 AI 模式:支持300多家平台机票追踪与酒店预订",
+        "title_en": null,
+        "title_original": "谷歌升级搜索 AI 模式:支持300多家平台机票追踪与酒店预订",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30687",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-29T02:45:53.832556Z"
       }
     }
   ]
