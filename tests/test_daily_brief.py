@@ -310,6 +310,46 @@ def test_importance_recency_component_follows_72h_half_life():
 
 
 # ---------------------------------------------------------------------------
+# flat_hours (weekly push): the score stays at 1.0 until the item is
+# flat_hours old and only then decays. flat_hours=0 keeps the historical
+# behaviour bit-for-bit (frontend mirror + daily pipeline are untouched).
+# ---------------------------------------------------------------------------
+
+def test_headline_freshness_flat_segment_holds_full_score():
+    flat = 144.0  # 6 days: the weekly push keeps the first 6 days undecayed
+    inside_flat = make_item(1, hours_ago=140)  # still inside the flat segment
+    at_boundary = make_item(2, hours_ago=144)  # exactly 6 days: decay starts now
+    just_past_flat = make_item(3, hours_ago=168)  # 7 days: 24h into the decay
+    deep = make_item(4, hours_ago=192)  # 8 days: 48h into the decay
+
+    assert headline_freshness_score(inside_flat, NOW, flat_hours=flat) == 1.0
+    assert headline_freshness_score(at_boundary, NOW, flat_hours=flat) == 1.0
+    assert abs(
+        headline_freshness_score(just_past_flat, NOW, half_life_hours=48.0, flat_hours=flat)
+        - 0.5 ** (24 / 48)
+    ) < 1e-9
+    assert abs(
+        headline_freshness_score(deep, NOW, half_life_hours=48.0, flat_hours=flat)
+        - 0.5 ** (48 / 48)
+    ) < 1e-9
+
+
+def test_headline_freshness_flat_zero_matches_default():
+    for hours_ago in (0, 24, 72, 168):
+        item = make_item(1, hours_ago=hours_ago)
+        assert headline_freshness_score(item, NOW, flat_hours=0.0) == headline_freshness_score(item, NOW)
+
+
+def test_importance_flat_hours_passthrough():
+    item = make_item(1, hours_ago=140)  # inside the weekly flat segment, decayed daily
+    weekly = calculate_item_importance(item, NOW, 168, half_life_hours=48.0, flat_hours=144.0)
+    daily = calculate_item_importance(item, NOW, 168)
+    assert weekly["breakdown"]["recency"] == 1.0
+    assert abs(daily["breakdown"]["recency"] - 0.5 ** (140 / 72)) < 1e-4
+    assert weekly["score"] > daily["score"]
+
+
+# ---------------------------------------------------------------------------
 # Official-feed summaries: the pipeline persists the RSS <description> as
 # clean plain text so downstream guide writing (weixin daily push) can use
 # it as offline grounding instead of fetching bot-blocked live pages.

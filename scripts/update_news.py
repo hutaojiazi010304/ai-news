@@ -5852,19 +5852,30 @@ def recency_score(record: dict[str, Any], now: datetime, window_hours: int) -> f
     return max(0.0, min(1.0, (float(window_hours) - age_hours) / max(1.0, float(window_hours))))
 
 
-def headline_freshness_score(record: dict[str, Any], now: datetime, half_life_hours: float = 72.0) -> float:
-    """Exponential recency: 0.5 ** (age_hours / half_life_hours).
+def headline_freshness_score(
+    record: dict[str, Any],
+    now: datetime,
+    half_life_hours: float = 72.0,
+    flat_hours: float = 0.0,
+) -> float:
+    """Exponential recency: 0.5 ** (max(0, age_hours - flat_hours) / half_life_hours).
 
-    The half-life is tuned for a 24h rolling window with a once-daily push:
-    a story should not lose most of its recency value before publish time.
+    The default half-life is tuned for a 24h rolling window with a once-daily
+    push: a story should not lose most of its recency value before publish
+    time. With flat_hours > 0 the score stays at 1.0 until the item is
+    flat_hours old and only then starts decaying — the weekly WeChat push
+    uses this so events published earlier in the 7-day window are not
+    down-ranked by age.
     Keep in sync with freshnessPercent() in assets/app.js and
-    classic/assets/app.js, which mirror this formula client-side.
+    classic/assets/app.js, which mirror the DEFAULT (flat_hours=0) formula
+    client-side.
     """
     ts = event_time(record)
     if not ts:
         return 0.0
     age_hours = max(0.0, (now - ts).total_seconds() / 3600)
-    return max(0.0, min(1.0, 0.5 ** (age_hours / max(1.0, half_life_hours))))
+    effective_age = max(0.0, age_hours - max(0.0, float(flat_hours)))
+    return max(0.0, min(1.0, 0.5 ** (effective_age / max(1.0, half_life_hours))))
 
 
 def ai_relevance_score(record: dict[str, Any]) -> float:
@@ -5947,11 +5958,13 @@ def calculate_item_importance(
     now: datetime,
     window_hours: int,
     duplicate_count: int = 1,
+    half_life_hours: float = 72.0,
+    flat_hours: float = 0.0,
 ) -> dict[str, Any]:
     tier = str(item.get("source_tier") or source_tier_for_site(str(item.get("site_id") or "")).get("source_tier"))
     source_score = SOURCE_TIER_IMPORTANCE.get(tier, SOURCE_TIER_IMPORTANCE["other"])
     relevance = ai_relevance_score(item)
-    recency = headline_freshness_score(item, now)
+    recency = headline_freshness_score(item, now, half_life_hours, flat_hours)
     editorial = editorial_score(item)
     heat = min(1.0, max(0, duplicate_count - 1) / 4)
     score = (editorial * 0.3) + (source_score * 0.22) + (relevance * 0.2) + (recency * 0.18) + (heat * 0.1)

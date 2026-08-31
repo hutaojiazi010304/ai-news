@@ -107,7 +107,7 @@ def test_render_grouped_html_layout_order_centered_titles_and_boxes():
     ]
     html = gwag.render_grouped_article_html(
         items,
-        title="AI 雷达 · 8月21日｜今日精选5条",
+        title="AI 雷达 · 8月21日｜本周精选5条",
         digest="摘要",
         brand="AI 雷达",
         issue_label="8月21日 周五",
@@ -250,7 +250,7 @@ def test_end_to_end_keyless_run_writes_grouped_output(tmp_path):
     ]
 
     # Title identical to the main variant's fixed template.
-    assert re.fullmatch(r"AI 雷达 · \d+月\d+日｜今日精选4条", meta["title"])
+    assert re.fullmatch(r"AI 雷达 · \d+月\d+日｜本周精选4条", meta["title"])
 
     # All four items present, grouped, in the fixed section order.
     for idx in (1, 2, 3, 4):

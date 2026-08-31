@@ -1,10 +1,11 @@
-"""Deep-read (精读版) variant of the WeChat daily article generator.
+"""Deep-read (精读版) variant of the WeChat weekly article generator.
 
 Third layout variant beside ``generate_weixin_article.py`` (1.0, flat list)
 and ``generate_weixin_article_grouped.py`` (2.0, grouped boxes). It keeps the
 2.0 grouped layout but upgrades the content for close reading:
 
-- Selection: the top 20 stories by ``peak_score`` only (default; override via
+- Selection: the top 20 stories by ``peak_score`` (or ``importance_score``
+  for the weekly pool, which carries no peak) only (default; override via
   ``--max-items`` or ``WEIXIN_DEEP_MAX_ITEMS`` — deliberately NOT
   ``WEIXIN_MAX_ITEMS``, so 1.0/2.0 stay untouched). Empty sections are
   skipped, exactly like 2.0.
@@ -26,7 +27,10 @@ and ``generate_weixin_article_grouped.py`` (2.0, grouped boxes). It keeps the
   served by Pages) with a 「图源：domain」credit line for internal
   redistribution. Rendered AFTER the guide, centered at
   ``DEEP_IMAGE_WIDTH_PERCENT`` of the column width.
-- Title/digest: fixed templates ("今日精读N条"), no LLM, as in 1.0/2.0.
+- Title/digest: fixed templates ("X月X日-X月X日｜本周精读N条"), no LLM, as
+  in 1.0/2.0. The publish helper block (title/digest/read-more URL) is NOT
+  rendered into the page body (it kept getting pasted into the editor by
+  accident); it is written to ``publish-info.txt`` next to the article.
   Per-story titles get the shared ``ensure_zh_titles`` backfill (1.0 logic):
   pure-English titles left over by a broken upstream translation chain are
   translated with Qwen before guides and rendering, cached in this variant's
@@ -52,6 +56,7 @@ Output (default ``weixin-deep/``):
 - ``cover.jpg|.png``    2.35:1 cover (top item's illustration first; reused
                         or regenerated only when no item has an image)
 - ``reason-cache.json`` deep-guide cache (21-day TTL, independent)
+- ``publish-info.txt``  title/digest/read-more URL for manual publishing
 - ``images/``           one downloaded article image per story that has one
 """
 
@@ -65,7 +70,7 @@ import re
 import sys
 import time
 import unicodedata
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
@@ -80,6 +85,7 @@ try:  # imported as part of the repo package (tests)
         REFUSAL_MARKERS,
         TZ_CN,
         WEEKDAY_CN,
+        _weekly_lookback_days,
         build_config,
         build_meta,
         cache_key,
@@ -95,13 +101,14 @@ try:  # imported as part of the repo package (tests)
         item_display_source,
         item_original_url,
         load_brief,
+        load_push_brief,
         match_regenerate,
         parse_regenerate_specs,
         report_regenerate,
         resolve_cover,
         save_cache,
         select_items,
-        split_single_origin_sources,
+        split_origin_sources,
         strip_english_tail,
         strip_html_text,
         summary_grounding,
@@ -123,6 +130,7 @@ except ImportError:  # run directly as a script
         REFUSAL_MARKERS,
         TZ_CN,
         WEEKDAY_CN,
+        _weekly_lookback_days,
         build_config,
         build_meta,
         cache_key,
@@ -138,13 +146,14 @@ except ImportError:  # run directly as a script
         item_display_source,
         item_original_url,
         load_brief,
+        load_push_brief,
         match_regenerate,
         parse_regenerate_specs,
         report_regenerate,
         resolve_cover,
         save_cache,
         select_items,
-        split_single_origin_sources,
+        split_origin_sources,
         strip_english_tail,
         strip_html_text,
         summary_grounding,
@@ -292,7 +301,7 @@ REC_HEADING_MD_RE = re.compile(
 
 DEEP_REASON_SYSTEM_PROMPT = (
     "你是科技新闻编辑，负责把一篇具体文章的核心内容转述成一段「精读导读」，"
-    "用于微信公众号每日 AI 精选的深度版（精读版）推文。"
+    "用于微信公众号每周 AI 精选的深度版（精读版）推文。"
     "用转述式报道的口吻写：开头直接复述原文最关键的内容，"
     "不要使用「据某某报道」之类的固定开场，正文中不要提及信源名称；"
     "用自己的话复述原文最关键的内容：做了什么、数字是多少、结论是什么；"
@@ -1462,46 +1471,39 @@ def render_deep_item_html(item: dict, idx: int, accent_color: str) -> str:
                 f'color:#b2b2b2;text-align:center;">图源：{esc(credit)}</p>'
             )
         parts.append("</section>")
-    single_origin = source_count == 1 and len(sources) > 1
-    source_names: list[str] = []
-    repost_names: list[str] = []
-    if len(sources) > 1:
-        if single_origin:
-            source_name, repost_names = split_single_origin_sources(item)
-        else:
-            for src in sources:
-                sub_source = item_display_source(src)
-                if sub_source and sub_source not in source_names:
-                    source_names.append(sub_source)
-        # Channel lists moved into the meta line; this grey line only
-        # survives as the title fallback for stories without a title.
-        if not title:
-            line_title = ""
-            for src in sources:
-                line_title = strip_english_tail(str(src.get("title") or "").strip())
-                if line_title:
-                    break
+    origin_names, origin_count, repost_names = split_origin_sources(item)
+    # Channel lists moved into the meta line; this grey line only survives
+    # as the title fallback for stories without a title.
+    if len(sources) > 1 and not title:
+        line_title = ""
+        for src in sources:
+            line_title = strip_english_tail(str(src.get("title") or "").strip())
             if line_title:
-                parts.append(
-                    '<p style="margin:6px 0 0;font-size:13px;line-height:1.6;'
-                    f'color:#999999;">{esc(line_title)}</p>'
-                )
-    # Meta line: same rules as 1.0 — multi-source items list every channel
-    # inline ("多源热议 · Buzzing, NewsNow, Info Flow · 3 个来源");
-    # single-origin stories split the entries into the credited source and
-    # the reposting channels ("官方更新 · Qwen Blog · 1 个来源 · Buzzing,
-    # Info Flow · 2 个转载").
+                break
+        if line_title:
+            parts.append(
+                '<p style="margin:6px 0 0;font-size:13px;line-height:1.6;'
+                f'color:#999999;">{esc(line_title)}</p>'
+            )
+    # Meta line: same rules as 1.0 — origins (one per distinct canonical
+    # URL) are credited as 来源, pipeline entries repeating an
+    # already-credited URL as 转载 ("官方更新 · OpenAI News, NewsNow ·
+    # 2 个来源 · Buzzing · 1 个转载"); a single origin collapses to
+    # "官方更新 · Qwen Blog · 1 个来源 · Buzzing, Info Flow · 2 个转载",
+    # and without reposts the tail is dropped.
     category_zh = CATEGORY_LABEL_ZH.get(category, category)
-    if single_origin:
-        meta_bits = [bit for bit in (category_zh, source_name, "1 个来源") if bit]
-        if repost_names:
-            meta_bits.append(f"{', '.join(repost_names)} · {len(repost_names)} 个转载")
-    elif source_names:
+    if origin_names:
         meta_bits = [
             bit
-            for bit in (category_zh, ", ".join(source_names), f"{source_count} 个来源")
+            for bit in (
+                category_zh,
+                ", ".join(origin_names),
+                f"{origin_count} 个来源",
+            )
             if bit
         ]
+        if repost_names:
+            meta_bits.append(f"{', '.join(repost_names)} · {len(repost_names)} 个转载")
     else:
         meta_bits = [bit for bit in (category_zh, source_name, f"{source_count} 个来源") if bit]
     if meta_bits:
@@ -1549,10 +1551,9 @@ def render_deep_article_html(
     items: list[dict],
     *,
     title: str,
-    digest: str,
     brand: str,
     issue_label: str,
-    radar_url: str,
+    issue_range: str,
 ) -> str:
     sections_html = "\n".join(
         render_deep_group_section(category, group)
@@ -1570,7 +1571,7 @@ def render_deep_article_html(
 
 <section style="border-left:4px solid #07c160;padding-left:12px;margin:0 0 20px;">
 <p style="margin:0;font-size:19px;font-weight:bold;color:#1f1f1f;letter-spacing:1px;">{esc(brand)}</p>
-<p style="margin:3px 0 0;font-size:13px;color:#999999;">{esc(issue_label)} · 每日 AI 精读</p>
+<p style="margin:3px 0 0;font-size:13px;color:#999999;">{esc(issue_label)} · 每周 AI 精读</p>
 </section>
 
 <p style="margin:0 0 4px;font-size:18px;font-weight:bold;line-height:1.5;color:#111111;">{esc(title)}</p>
@@ -1578,14 +1579,7 @@ def render_deep_article_html(
 {sections_html}
 
 <section style="margin-top:30px;border-top:1px dashed #d9d9d9;padding-top:16px;">
-<p style="margin:0;font-size:13px;line-height:1.7;color:#999999;">以上内容由 {esc(brand)} 自动整理自过去 24 小时的公开信源，图片来自原文页面，原文出处链接见每条信息下方。</p>
-</section>
-
-<section style="margin-top:22px;background-color:#f5f6f7;padding:14px 16px;">
-<p style="margin:0;font-size:12px;font-weight:bold;color:#666666;">以下为发布辅助信息（复制用，粘贴时请勿包含本区块）</p>
-<p style="margin:10px 0 0;font-size:13px;line-height:1.7;color:#666666;">标题：{esc(title)}</p>
-<p style="margin:6px 0 0;font-size:13px;line-height:1.7;color:#666666;">摘要：{esc(digest)}</p>
-<p style="margin:6px 0 0;font-size:13px;line-height:1.7;color:#666666;">阅读原文：{esc(radar_url)}</p>
+<p style="margin:0;font-size:13px;line-height:1.7;color:#999999;">以上内容由 {esc(brand)} 自动整理自{esc(issue_range)}的公开信源，图片来自原文页面，原文出处链接见每条信息下方。</p>
 </section>
 
 </section>
@@ -1598,8 +1592,24 @@ def render_deep_article_html(
 # Title / digest (fixed templates; never LLM-dependent)
 # ---------------------------------------------------------------------------
 
-def deep_title(brand: str, now_cn: datetime, count: int) -> str:
-    return f"{brand} · {now_cn.month}月{now_cn.day}日｜今日精读{count}条"
+def issue_range_label(brief: dict, now_cn: datetime) -> str:
+    """Publish-window label like 「8月22日-8月28日」, derived from the actual
+    brief window: the weekly pool spans its lookback days, the daily
+    fallback collapses to the single issue day."""
+    try:
+        window_hours = int(brief.get("window_hours"))
+    except (TypeError, ValueError):
+        window_hours = _weekly_lookback_days() * 24
+    days = max(1, round(window_hours / 24))
+    end = f"{now_cn.month}月{now_cn.day}日"
+    if days <= 1:
+        return end
+    start = now_cn - timedelta(days=days - 1)
+    return f"{start.month}月{start.day}日-{end}"
+
+
+def deep_title(brand: str, range_label: str, count: int) -> str:
+    return f"{brand} · {range_label}｜本周精读{count}条"
 
 
 def make_deep_digest(brand: str, count: int, headline: str, issue_label: str) -> str:
@@ -1613,7 +1623,7 @@ def make_deep_digest(brand: str, count: int, headline: str, issue_label: str) ->
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="WeChat daily article generator (deep-read / 精读版 layout)"
+        description="WeChat weekly article generator (deep-read / 精读版 layout)"
     )
     parser.add_argument("--data-dir", default="data", help="data directory")
     parser.add_argument(
@@ -1672,11 +1682,11 @@ def main(argv: list[str] | None = None) -> int:
     main_output_dir = Path(args.main_output_dir)
     assets_dir = Path(args.assets_dir)
 
-    brief = load_brief(data_dir / "daily-brief.json")
+    brief = load_push_brief(data_dir, cfg["max_items"])
     if brief is None:
         print(
-            f"weixin-deep: {data_dir / 'daily-brief.json'} not found or invalid, "
-            "nothing to do"
+            f"weixin-deep: no usable brief under {data_dir} "
+            "(weekly pool and daily-brief.json both unavailable), nothing to do"
         )
         return 0
 
@@ -1688,6 +1698,7 @@ def main(argv: list[str] | None = None) -> int:
     now_cn = datetime.now(TZ_CN)
     issue_date = now_cn.strftime("%Y-%m-%d")
     issue_label = f"{now_cn.month}月{now_cn.day}日 {WEEKDAY_CN[now_cn.weekday()]}"
+    range_label = issue_range_label(brief, now_cn)
 
     # Images and grounding fetches do not need the Qwen key, so the session
     # exists unconditionally (1.0 gates it on the key only because all its
@@ -1722,7 +1733,7 @@ def main(argv: list[str] | None = None) -> int:
         images_found, images_missed = fill_deep_images(items, session, output_dir, net_state)
 
     headline = strip_english_tail(str(items[0].get("title") or "").strip())
-    title = deep_title(cfg["brand"], now_cn, len(items))
+    title = deep_title(cfg["brand"], range_label, len(items))
     digest = make_deep_digest(cfg["brand"], len(items), headline, issue_label)
 
     item_cover = resolve_deep_cover(items, output_dir)
@@ -1743,10 +1754,9 @@ def main(argv: list[str] | None = None) -> int:
     html_text = render_deep_article_html(
         items,
         title=title,
-        digest=digest,
         brand=cfg["brand"],
         issue_label=issue_label,
-        radar_url=cfg["radar_url"],
+        issue_range=range_label,
     )
     meta = build_meta(
         issue_date=issue_date,
@@ -1785,6 +1795,12 @@ def main(argv: list[str] | None = None) -> int:
         (output_dir / "index.html").write_text(html_text, encoding="utf-8")
         (output_dir / "meta.json").write_text(
             json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        # Publish helper info as a separate text file: the block used to be
+        # rendered at the page bottom and kept getting pasted into the editor.
+        (output_dir / "publish-info.txt").write_text(
+            f"标题：{title}\n摘要：{digest}\n阅读原文：{cfg['radar_url']}\n",
+            encoding="utf-8",
         )
         if cover_bytes:
             # Remove the other cover variant so no stale file is served.

@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
-"""WeChat Official Account daily article generator.
+"""WeChat Official Account weekly article generator.
 
-Reads ``{data-dir}/daily-brief.json`` produced by ``update_news.py``, picks
-the top curated items, (re)writes per-item reading guides (direct content
+Selects stories from the last 7 days: rebuilds the story pool from
+``{data-dir}/archive.json`` (the pipeline's 21-day item store) with the
+weekly freshness curve (no decay for the first 6 days, gentle decay after),
+and falls back to ``{data-dir}/daily-brief.json`` when the weekly pool
+cannot be built (see ``load_push_brief``). Picks the top curated items,
+(re)writes per-item reading guides (direct content
 summaries, length follows the content) with a Qwen text model, uses a
 fixed-template title and digest, and composes
 a 2.35:1 cover image (headline first rewritten into a concrete, AI-focused
@@ -14,8 +18,10 @@ hyperlinks, so no ``<a>`` tags are used).
 
 Design constraints:
 
-- Standalone: communicates with the rest of the pipeline only through JSON
-  files. Never imports ``update_news.py``.
+- Communicates with the rest of the pipeline through JSON files; the weekly
+  selection path additionally imports ``update_news.py`` through a guarded
+  hook, and without it (or its deps) degrades to the daily brief. The
+  weekly build treats ``data/`` as strictly read-only.
 - Zero hard dependencies beyond ``requests`` (``Pillow`` only for cover
   processing); public repo stays runnable key-free.
 - Runs without any API key: reuses existing recommend reasons from the data
@@ -47,17 +53,21 @@ from pathlib import Path
 
 import requests
 
-# The pipeline's first-party source whitelist, reused to refresh story
-# categories at push time (see first_party_category_override). Guarded so a
-# minimal environment (requests only) still runs — it then trusts the
-# persisted categories as before.
+# The pipeline module (update_news.py), reused at push time: the first-party
+# source whitelist that refreshes story categories (see
+# first_party_category_override), and the weekly selection pipeline (see
+# build_weekly_brief) which rebuilds the story pool from data/archive.json.
+# Guarded so a minimal environment (requests only) still runs — it then falls
+# back to daily-brief.json and trusts the persisted categories as before.
 try:  # imported as part of the repo package (tests)
-    from scripts.update_news import source_tier_for_record as _source_tier_for_record
+    from scripts import update_news as _un
 except ImportError:
     try:  # run directly as a script next to update_news.py
-        from update_news import source_tier_for_record as _source_tier_for_record
+        import update_news as _un
     except ImportError:  # update_news deps (bs4, dateutil, ...) not installed
-        _source_tier_for_record = None
+        _un = None
+
+_source_tier_for_record = getattr(_un, "source_tier_for_record", None) if _un is not None else None
 
 DEFAULT_API_BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 DEFAULT_TEXT_MODEL = "qwen3.8-max"
@@ -67,6 +77,37 @@ DEFAULT_IMAGE_MODEL = "qwen-image-2.0-pro"
 DEFAULT_BRAND_NAME = "AI 雷达"
 DEFAULT_RADAR_URL = "https://hutaojiazi010304.github.io/ai-news-radar/"
 DEFAULT_MAX_ITEMS = 20
+
+# Weekly push cadence: the issue is selected from the pipeline's 21-day
+# archive (data/archive.json) instead of the daily brief's 24h window.
+# Overridable via WEIXIN_LOOKBACK_DAYS (clamped to 1..20 days).
+WEEKLY_LOOKBACK_DAYS_DEFAULT = 7
+WEEKLY_LOOKBACK_DAYS_MIN = 1
+WEEKLY_LOOKBACK_DAYS_MAX = 20  # the archive keeps 21 days; leave headroom
+# Weekly freshness curve: a story keeps full recency for the first 6 days
+# (flat segment) and only then decays with a gentle 48h half-life, so an
+# important event published earlier in the week is not down-ranked by age
+# at push time. The daily pipeline keeps the default 72h half-life with no
+# flat segment (update_news.py headline_freshness_score).
+WEEKLY_FRESHNESS_FLAT_HOURS = 144.0
+WEEKLY_FRESHNESS_HALF_LIFE_HOURS = 48.0
+# Merge/dedup windows wider than the daily pipeline (6h): follow-up
+# reporting across days belongs to the same story, and same-site rewrites
+# syndicated days apart must still collapse.
+WEEKLY_TITLE_WINDOW_HOURS = 72
+WEEKLY_NEAR_DUP_WINDOW_HOURS = 168.0
+# Default per-issue cap on official-tier stories (override via
+# WEIXIN_OFFICIAL_CAP; set 0 for no cap). Official changelogs easily fill an
+# entire 7-day pool (a typical week: 40+ of the ~60 gated stories are
+# official, and their fixed editorial/tier floor keeps every one of them
+# above the best industry story), crowding industry/multi-source/watch items
+# out of the issue entirely. The cap applies at the very END of selection:
+# the uncapped mechanism runs over the full pool exactly as before, the
+# issue's first 16 officials in display order stay untouched, and the freed
+# slots go to the next non-official stories. (Trimming the pool beforehand
+# removed the fresh-channel tail that feeds the source penalty and changed
+# which officials survive — the opposite of the intended effect.)
+WEEKLY_OFFICIAL_CAP_DEFAULT = 16
 
 TZ_CN = timezone(timedelta(hours=8))
 WEEKDAY_CN = ("周一", "周二", "周三", "周四", "周五", "周六", "周日")
@@ -144,7 +185,7 @@ BILINGUAL_TITLE_RE = re.compile(r"\s+/\s+")
 
 REASON_SYSTEM_PROMPT = (
     "你是科技新闻编辑，负责为一篇具体的文章写一段「为什么值得读」的中文导读，"
-    "用于微信公众号每日 AI 精选推文。"
+    "用于微信公众号每周 AI 精选推文。"
     "直接概括原文最关键的内容：具体事实、数字、产品、结论，让读者不看原文也知道重点。"
     "以内容本身为主语，不要用「本文」「该文」「作者」这类以文章为主语的开头。"
     "不要自行添加「展示了……」「标志着……」「为……提供了新范式」之类的意义话术；"
@@ -243,6 +284,264 @@ def load_brief(path: Path) -> dict | None:
     if not isinstance(brief, dict) or not isinstance(brief.get("items"), list):
         return None
     return brief
+
+
+# ---------------------------------------------------------------------------
+# Weekly story pool (rebuilt from the pipeline archive)
+# ---------------------------------------------------------------------------
+
+def _weekly_lookback_days() -> int:
+    raw = os.environ.get("WEIXIN_LOOKBACK_DAYS", "").strip()
+    if not raw:
+        return WEEKLY_LOOKBACK_DAYS_DEFAULT
+    try:
+        value = int(raw)
+    except ValueError:
+        return WEEKLY_LOOKBACK_DAYS_DEFAULT
+    return max(WEEKLY_LOOKBACK_DAYS_MIN, min(WEEKLY_LOOKBACK_DAYS_MAX, value))
+
+
+def _weekly_official_cap() -> int:
+    """WEIXIN_OFFICIAL_CAP: max official-tier stories per issue.
+
+    Defaults to ``WEEKLY_OFFICIAL_CAP_DEFAULT`` (16); set ``0`` to disable
+    the cap entirely. The cap is applied at the very END of selection (see
+    ``_select_with_official_cap``): the uncapped mechanism runs unchanged,
+    the issue's first N officials in display order stay untouched, and the
+    freed slots go to the next non-official stories. The candidate pool is
+    never trimmed."""
+    raw = os.environ.get("WEIXIN_OFFICIAL_CAP", "").strip()
+    if not raw:
+        return WEEKLY_OFFICIAL_CAP_DEFAULT
+    try:
+        return max(0, int(raw))
+    except ValueError:
+        return WEEKLY_OFFICIAL_CAP_DEFAULT
+
+
+def _select_with_official_cap(gated: list[dict], max_items: int, cap: int) -> list[dict]:
+    """Uncapped selection mechanism, official cap applied only at the end.
+
+    Runs the same greedy diversity selection over the FULL pool that the
+    uncapped version uses, then — if the resulting issue carries more than
+    ``cap`` official stories — keeps the first ``cap`` officials in the
+    issue's display (score-descending) order and backfills the freed slots
+    with the non-official stories the same mechanism picks next. Nothing is
+    trimmed from the pool beforehand: the greedy sees exactly the candidates
+    of the uncapped run, so the surviving officials are literally the
+    uncapped issue's first officials, untouched.
+    """
+    full_order = _un.select_diverse_stories(gated, len(gated))
+    article = full_order[:max_items]
+    officials = [s for s in article if str(s.get("category") or "") == "official"]
+    if len(officials) <= cap:
+        return article
+    kept_ids = {
+        id(s)
+        for s in sorted(
+            officials,
+            key=lambda s: (-_un.story_gate_score(s), str(s.get("title") or "")),
+        )[:cap]
+    }
+    kept = [s for s in article if id(s) in kept_ids]
+    nonofficials = [
+        s
+        for s in article
+        if id(s) not in kept_ids and str(s.get("category") or "") != "official"
+    ]
+    backfill: list[dict] = []
+    for story in full_order[max_items:]:
+        if len(nonofficials) + len(backfill) >= max_items - len(kept):
+            break
+        if str(story.get("category") or "") == "official":
+            continue
+        backfill.append(story)
+    return kept + nonofficials + backfill
+
+
+def _apply_pipeline_enhance_cache(items: list[dict], cache: dict[str, str]) -> None:
+    """Restore title_enhanced_zh / recommend_reason_zh from the pipeline's
+    persisted cache entries (``te1|`` / ``re1|`` key namespaces).
+
+    update_news.py's add_title_enhancements()/add_recommend_reasons() return
+    before even reading the cache when DEEPSEEK_API_KEY is absent — and the
+    local weekly push only carries the Qwen key — so the entries are looked
+    up directly with the pipeline's key formula:
+    ``prefix + sha1(normalize_url(url) + "|" + title)`` where title is the
+    bilingual pass's ``title_en or title_original or title``. Empty values
+    are negative-cache entries and are skipped. Must run after
+    add_bilingual_fields so the key titles exist.
+    """
+    for item in items:
+        url = _un.normalize_url(str(item.get("url") or ""))
+        title = str(
+            item.get("title_en") or item.get("title_original") or item.get("title") or ""
+        ).strip()
+        key_body = hashlib.sha1(f"{url}|{title}".encode("utf-8")).hexdigest()
+        enhanced = cache.get(_un.TITLE_ENHANCE_CACHE_PREFIX + key_body) or ""
+        if enhanced:
+            item["title_enhanced_zh"] = enhanced
+        reason = cache.get(_un.RECOMMEND_REASON_CACHE_PREFIX + key_body) or ""
+        if reason:
+            item["recommend_reason_zh"] = reason
+
+
+def build_weekly_brief(data_dir: Path, now: datetime, max_items: int) -> dict | None:
+    """Rebuild the story pool for the weekly push from the pipeline archive.
+
+    daily-brief.json only covers the pipeline's 24h window, so the weekly
+    issue rebuilds stories from ``data/archive.json`` (the 21-day item
+    store): filter to the lookback window, replay the pipeline
+    normalisation / AI filter / dedup / story merge with week-wide windows,
+    then rescore every story with the weekly freshness curve (flat for the
+    first 6 days, gentle half-life after) so an important event published
+    earlier in the week is not out-ranked by fresher mid-tier items.
+
+    Strictly read-only: nothing under ``data_dir`` is ever written; in
+    particular the in-memory title-cache mutations from the bilingual and
+    enhance passes are never persisted. Returns a brief-shaped payload
+    (``generated_at`` / ``window_hours`` / ``total_items`` / ``items``), or
+    None when the weekly pool cannot be built (pipeline module unavailable,
+    archive missing/corrupt/empty, or no story passes the quality gate) —
+    the caller then falls back to daily-brief.json.
+    """
+    if _un is None:
+        return None
+    try:
+        payload = json.loads((data_dir / "archive.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, ValueError):
+        return None
+    records = payload.get("items") if isinstance(payload, dict) else None
+    if not isinstance(records, list) or not records:
+        return None
+
+    lookback_days = _weekly_lookback_days()
+    window_hours = lookback_days * 24
+    cutoff = now - timedelta(days=lookback_days)
+
+    pool: list[dict] = []
+    for record in records:
+        if not isinstance(record, dict):
+            continue
+        ts = _un.event_time(record)
+        if not ts or ts < cutoff:
+            continue
+        item = dict(record)
+        item["title"] = _un.maybe_fix_mojibake(str(item.get("title") or ""))
+        item["source"] = _un.maybe_fix_mojibake(
+            _un.normalize_source_for_display(
+                str(item.get("site_id") or ""),
+                str(item.get("source") or ""),
+                str(item.get("url") or ""),
+            )
+        )
+        if (
+            str(item.get("site_id") or "") == "aihubtoday"
+            and _un.is_hubtoday_placeholder_title(str(item.get("title") or ""))
+        ):
+            continue
+        item = _un.add_ai_relevance_fields(item)
+        if not item.get("ai_is_related", False):
+            continue
+        item = _un.add_source_tier_fields(item)
+        pool.append(item)
+
+    if not pool:
+        return None
+    pool = _un.normalize_aihubtoday_records(pool)
+    # Cache-only bilingual pass: zero translation budgets make this a pure
+    # offline cache lookup (the session argument is never touched). The
+    # returned cache dict may gain entries in memory; it is never written
+    # back — data/ stays read-only for the weekly push.
+    title_cache = _un.load_title_zh_cache(data_dir / "title-zh-cache.json")
+    pool, _unused_all, title_cache = _un.add_bilingual_fields(
+        pool, [], None, title_cache, 0
+    )
+    _apply_pipeline_enhance_cache(pool, title_cache)
+
+    # Rescoring below needs the FULL original items: the truncated
+    # primary_item copied into story records lacks site_id/published_at/
+    # ai_score and would collapse the score. Index before dedupe drops any.
+    by_id = {str(item.get("id") or ""): item for item in pool if item.get("id")}
+
+    deduped = _un.dedupe_items_by_title_url(pool, random_pick=False)
+    deduped = _un.suppress_near_duplicate_items(
+        deduped, window_hours=WEEKLY_NEAR_DUP_WINDOW_HOURS
+    )
+    stories, _events = _un.merge_story_items(
+        deduped,
+        now,
+        window_hours=window_hours,
+        title_window_hours=WEEKLY_TITLE_WINDOW_HOURS,
+    )
+
+    for story in stories:
+        primary_item = story.get("primary_item") or {}
+        full = by_id.get(str(primary_item.get("id") or ""))
+        if not isinstance(full, dict):
+            continue
+        try:
+            source_count = int(story.get("source_count") or 1)
+        except (TypeError, ValueError):
+            source_count = 1
+        importance = _un.calculate_item_importance(
+            full,
+            now,
+            window_hours,
+            duplicate_count=source_count,
+            half_life_hours=WEEKLY_FRESHNESS_HALF_LIFE_HOURS,
+            flat_hours=WEEKLY_FRESHNESS_FLAT_HOURS,
+        )
+        score = importance["score"]
+        story["score"] = score
+        story["importance"] = score
+        story["importance_score"] = score
+        story["importance_breakdown"] = importance["breakdown"]
+        category = _un.story_category(score, full, source_count)
+        story["category"] = category
+        story["importance_label"] = _un.importance_label(category)
+        story["reasons"] = _un.story_reasons(full, score, source_count)
+
+    gated = [story for story in stories if _un.story_passes_brief_gate(story)]
+    if not gated:
+        return None
+    cap = _weekly_official_cap()
+    if cap > 0:
+        items = _select_with_official_cap(gated, max_items, cap)
+    else:
+        items = _un.select_diverse_stories(gated, max_items)
+    if not items:
+        return None
+    return {
+        "generated_at": now.astimezone(timezone.utc).isoformat(),
+        "window_hours": window_hours,
+        "total_items": len(items),
+        "items": items,
+    }
+
+
+def load_push_brief(data_dir: Path, max_items: int) -> dict | None:
+    """Unified input for the push scripts: the weekly story pool rebuilt
+    from the pipeline archive, falling back to the 24h daily brief.
+
+    Fallback (logged) when the pipeline module is unavailable,
+    ``WEIXIN_FORCE_DAILY=1`` is set, archive.json is missing/corrupt/empty,
+    or no story passes the quality gate. Fixtures that ship only a
+    daily-brief.json therefore keep working unchanged.
+    """
+    data_dir = Path(data_dir)
+    if str(os.environ.get("WEIXIN_FORCE_DAILY") or "").strip() == "1":
+        print("weixin: WEIXIN_FORCE_DAILY=1, using daily-brief.json")
+        return load_brief(data_dir / "daily-brief.json")
+    brief = build_weekly_brief(data_dir, datetime.now(timezone.utc), max_items)
+    if brief is not None:
+        print(
+            "weixin: weekly brief from archive: "
+            f"{brief.get('total_items')} items over {brief.get('window_hours')}h"
+        )
+        return brief
+    print("weixin: weekly brief unavailable, falling back to daily-brief.json")
+    return load_brief(data_dir / "daily-brief.json")
 
 
 def first_party_category_override(item: dict) -> str | None:
@@ -357,36 +656,74 @@ def item_channel_source(item: dict) -> str:
     return ""
 
 
-def split_single_origin_sources(item: dict) -> tuple[str, list[str]]:
-    """Source vs repost display names for a single-origin story.
+def origin_url_key(entry: dict, fallback_index: int) -> str:
+    """Canonical URL key that decides origin identity for a pipeline entry.
 
-    When every pipeline entry links the same canonical URL
-    (``source_count == 1``), the pipeline-chosen primary entry is the
-    credited source and every other entry is a mirror/reshare (转载) of
-    that same article. Returns the primary's display name plus the
-    deduped display names of the remaining entries (order kept). Names
-    equal to the primary's are dropped so a channel fetched twice never
-    shows up as its own repost.
+    Mirrors ``update_news.distinct_story_source_count``: entries linking the
+    same canonical URL are copies of one origin; entries without a URL each
+    get their own key since they cannot be proven copies of anything. Falls
+    back to plain string comparison when the pipeline module is unavailable.
+    """
+    url = str(entry.get("url") or "")
+    if _un is not None:
+        canonical = _un.canonical_story_url(url)
+    else:
+        canonical = url.strip().lower().rstrip("/")
+    return canonical or f"__no_url__{entry.get('id') or fallback_index}"
+
+
+def split_origin_sources(item: dict) -> tuple[list[str], int, list[str]]:
+    """Origin vs repost display names for any story.
+
+    Generalizes the former single-origin split to every story: one pipeline
+    entry per distinct canonical URL is a credited origin (``M`` in the meta
+    line's 「M 个来源 · N 个转载」), every extra entry that repeats an
+    already-credited URL is a repost (转载), so ``N`` is the pipeline entry
+    count minus the origin count. Entries are tier-sorted upstream, so a
+    URL's first representative is its highest-priority channel; the
+    pipeline-chosen primary entry (id match, else the first entry for
+    id-less data) opens the origin list under the item-level display name,
+    exactly as the old single-origin branch did. Returns ``(origin names,
+    origin count, repost names)``; names are deduped — a channel fetched
+    twice never shows up as its own repost — and the origin count tracks
+    URLs, not names, so it always equals the pipeline's ``source_count``.
     """
     sources = [s for s in (item.get("sources") or []) if isinstance(s, dict)]
-    primary_name = item_display_source(item)
+    if not sources:
+        return [], 0, []
     primary = item.get("primary_item")
     primary_id = str(primary.get("id") or "") if isinstance(primary, dict) else ""
-
+    primary_index: int | None = 0
+    if primary_id:
+        primary_index = None
+        for index, entry in enumerate(sources):
+            if str(entry.get("id") or "") == primary_id:
+                primary_index = index
+                break
+    order = list(range(len(sources)))
+    if primary_index:
+        order.insert(0, order.pop(primary_index))
+    origin_names: list[str] = []
     repost_names: list[str] = []
-    for index, src in enumerate(sources):
-        src_id = str(src.get("id") or "")
-        if primary_id:
-            if src_id and src_id == primary_id:
-                continue
-        elif index == 0:
-            # Old/synthetic data without ids: entries are tier-sorted and
-            # the primary comes first.
+    claimed: set[str] = set()
+    origin_count = 0
+    for index in order:
+        entry = sources[index]
+        key = origin_url_key(entry, index)
+        name = (
+            item_display_source(item)
+            if index == primary_index
+            else item_display_source(entry)
+        )
+        if key in claimed:
+            if name and name not in origin_names and name not in repost_names:
+                repost_names.append(name)
             continue
-        name = item_display_source(src)
-        if name and name != primary_name and name not in repost_names:
-            repost_names.append(name)
-    return primary_name, repost_names
+        claimed.add(key)
+        origin_count += 1
+        if name and name not in origin_names:
+            origin_names.append(name)
+    return origin_names, origin_count, repost_names
 
 
 def trim_source_annotation(name: str) -> str:
@@ -690,7 +1027,7 @@ def fill_reasons(
 # ---------------------------------------------------------------------------
 
 def fallback_title(brand: str, now_cn: datetime, count: int) -> str:
-    return f"{brand} · {now_cn.month}月{now_cn.day}日｜今日精选{count}条"
+    return f"{brand} · {now_cn.month}月{now_cn.day}日｜本周精选{count}条"
 
 
 def make_digest(brand: str, count: int, headline: str, issue_label: str) -> str:
@@ -1286,47 +1623,39 @@ def render_item_html(item: dict, idx: int) -> str:
             '<p style="margin:8px 0 0;font-size:15px;line-height:1.75;'
             f'color:#666666;">{esc(reason)}</p>'
         )
-    single_origin = source_count == 1 and len(sources) > 1
-    source_names: list[str] = []
-    repost_names: list[str] = []
-    if len(sources) > 1:
-        if single_origin:
-            source_name, repost_names = split_single_origin_sources(item)
-        else:
-            for src in sources:
-                sub_source = item_display_source(src)
-                if sub_source and sub_source not in source_names:
-                    source_names.append(sub_source)
-        # Channel lists moved into the meta line; this grey line only
-        # survives as the title fallback for stories without a title.
-        if not title:
-            line_title = ""
-            for src in sources:
-                line_title = strip_english_tail(str(src.get("title") or "").strip())
-                if line_title:
-                    break
+    origin_names, origin_count, repost_names = split_origin_sources(item)
+    # Channel lists moved into the meta line; this grey line only survives
+    # as the title fallback for stories without a title.
+    if len(sources) > 1 and not title:
+        line_title = ""
+        for src in sources:
+            line_title = strip_english_tail(str(src.get("title") or "").strip())
             if line_title:
-                parts.append(
-                    '<p style="margin:6px 0 0;font-size:13px;line-height:1.6;'
-                    f'color:#999999;">{esc(line_title)}</p>'
-                )
-    # Meta line: Chinese category label plus source attribution.
-    # Multi-source items list every channel inline:
-    # "多源热议 · Buzzing, NewsNow, Info Flow · 3 个来源". Single-origin
-    # stories (every entry links the same article) split the pipeline
-    # entries into the credited source and the reposting channels:
-    # "官方更新 · Qwen Blog · 1 个来源 · Buzzing, Info Flow · 2 个转载".
+                break
+        if line_title:
+            parts.append(
+                '<p style="margin:6px 0 0;font-size:13px;line-height:1.6;'
+                f'color:#999999;">{esc(line_title)}</p>'
+            )
+    # Meta line: Chinese category label plus source attribution. Origins
+    # (one per distinct canonical URL) are credited as 来源, pipeline
+    # entries repeating an already-credited URL as 转载: "官方更新 ·
+    # OpenAI News, NewsNow · 2 个来源 · Buzzing · 1 个转载". A single
+    # origin collapses to "官方更新 · Qwen Blog · 1 个来源 · Buzzing,
+    # Info Flow · 2 个转载"; without reposts the tail is dropped.
     category_zh = CATEGORY_LABEL_ZH.get(category, category)
-    if single_origin:
-        meta_bits = [bit for bit in (category_zh, source_name, "1 个来源") if bit]
-        if repost_names:
-            meta_bits.append(f"{', '.join(repost_names)} · {len(repost_names)} 个转载")
-    elif source_names:
+    if origin_names:
         meta_bits = [
             bit
-            for bit in (category_zh, ", ".join(source_names), f"{source_count} 个来源")
+            for bit in (
+                category_zh,
+                ", ".join(origin_names),
+                f"{origin_count} 个来源",
+            )
             if bit
         ]
+        if repost_names:
+            meta_bits.append(f"{', '.join(repost_names)} · {len(repost_names)} 个转载")
     else:
         meta_bits = [bit for bit in (category_zh, source_name, f"{source_count} 个来源") if bit]
     if meta_bits:
@@ -1368,7 +1697,7 @@ def render_article_html(
 
 <section style="border-left:4px solid #07c160;padding-left:12px;margin:0 0 20px;">
 <p style="margin:0;font-size:19px;font-weight:bold;color:#1f1f1f;letter-spacing:1px;">{esc(brand)}</p>
-<p style="margin:3px 0 0;font-size:13px;color:#999999;">{esc(issue_label)} · 每日 AI 精选</p>
+<p style="margin:3px 0 0;font-size:13px;color:#999999;">{esc(issue_label)} · 每周 AI 精选</p>
 </section>
 
 <p style="margin:0 0 4px;font-size:18px;font-weight:bold;line-height:1.5;color:#111111;">{esc(title)}</p>
@@ -1376,7 +1705,7 @@ def render_article_html(
 {items_html}
 
 <section style="margin-top:30px;border-top:1px dashed #d9d9d9;padding-top:16px;">
-<p style="margin:0;font-size:13px;line-height:1.7;color:#999999;">以上内容由 {esc(brand)} 自动整理自过去 24 小时的公开信源，原文链接见每条信息下方。</p>
+<p style="margin:0;font-size:13px;line-height:1.7;color:#999999;">以上内容由 {esc(brand)} 自动整理自过去 7 天的公开信源，原文链接见每条信息下方。</p>
 </section>
 
 <section style="margin-top:22px;background-color:#f5f6f7;padding:14px 16px;">
@@ -1423,7 +1752,7 @@ def build_meta(
 # ---------------------------------------------------------------------------
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="WeChat daily article generator")
+    parser = argparse.ArgumentParser(description="WeChat weekly article generator")
     parser.add_argument("--data-dir", default="data", help="data directory")
     parser.add_argument("--output-dir", default="weixin", help="output directory")
     parser.add_argument("--assets-dir", default="assets", help="assets directory")
@@ -1496,9 +1825,12 @@ def main(argv: list[str] | None = None) -> int:
     output_dir = Path(args.output_dir)
     assets_dir = Path(args.assets_dir)
 
-    brief = load_brief(data_dir / "daily-brief.json")
+    brief = load_push_brief(data_dir, cfg["max_items"])
     if brief is None:
-        print(f"weixin: {data_dir / 'daily-brief.json'} not found or invalid, nothing to do")
+        print(
+            f"weixin: no usable brief under {data_dir} "
+            "(weekly pool and daily-brief.json both unavailable), nothing to do"
+        )
         return 0
 
     items = select_items(brief, cfg["max_items"])
@@ -1531,7 +1863,7 @@ def main(argv: list[str] | None = None) -> int:
     fill_reasons(items, cache, cfg, session, stats)
 
     headline = strip_english_tail(str(items[0].get("title") or "").strip())
-    # Fixed template title 「AI 雷达 · X月X日｜今日精选N条」; it never depends
+    # Fixed template title 「AI 雷达 · X月X日｜本周精选N条」; it never depends
     # on the API key.
     title = fallback_title(cfg["brand"], now_cn, len(items))
 

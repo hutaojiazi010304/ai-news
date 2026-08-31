@@ -249,7 +249,7 @@ def test_no_key_degradation():
         assert "测试新闻标题 1" in html_text
         meta = read_json(output_dir / "meta.json")
         assert meta["delivery"] == "manual_copy"
-        assert "今日精选2条" in meta["title"]  # template fallback title
+        assert "本周精选2条" in meta["title"]  # template fallback title
         assert meta["cover"] == "cover.png"
         assert (output_dir / "cover.png").is_file()
 
@@ -514,7 +514,7 @@ def test_title_always_uses_fixed_template():
         assert calls["reason"] == 0
         meta = read_json(output_dir / "meta.json")
         assert meta["title"].startswith("AI 雷达")
-        assert "今日精选1条" in meta["title"]
+        assert "本周精选1条" in meta["title"]
         assert len(meta["title"]) <= gwa.TITLE_MAX_CHARS
 
 
@@ -1097,9 +1097,10 @@ def test_single_origin_repost_names_dedup_against_primary():
     assert "个转载" not in html
 
 
-def test_multi_source_missing_source_count_falls_back_to_entry_count():
-    # Old data without source_count falls back to the entry count and gets
-    # the same inline channel-list meta line.
+def test_missing_source_count_splits_same_url_entries_into_reposts():
+    # Old data without source_count: attribution derives from the entries'
+    # URLs, not the entry count — three entries linking the same article
+    # are 1 origin plus 2 reposts, not "3 个来源".
     url = "https://example.com/story/1"
     sources = [
         {"title": "t1", "url": url, "source_name": "Source A"},
@@ -1111,8 +1112,36 @@ def test_multi_source_missing_source_count_falls_back_to_entry_count():
     item["source_name"] = "Source A"
 
     html = gwa.render_item_html(item, 0)
-    assert "Source A, Source B, Source C · 3 个来源" in html
-    assert "个转载" not in html
+    assert "Source A · 1 个来源 · Source B, Source C · 2 个转载" in html
+
+
+def test_mixed_origins_split_by_url_not_entry_count():
+    # Pipeline entries outnumber distinct URLs (official post + a mirror of
+    # it + a genuinely different origin like the HN discussion page): one
+    # 来源 per distinct canonical URL, extra same-URL entries listed as
+    # 转载 — so names and the count no longer disagree. The pipeline
+    # primary opens the origin list even when it is not the first entry.
+    openai_url = "https://openai.com/index/hugging-face-incident"
+    sources = [
+        {"id": "m1", "title": "镜像", "url": openai_url, "source_name": "Buzzing"},
+        {"id": "p1", "title": "官方原文", "url": openai_url,
+         "source_name": "Official AI Updates", "source": "OpenAI News"},
+        {"id": "n1", "title": "HN 讨论",
+         "url": "https://news.ycombinator.com/item?id=49454314",
+         "source_name": "NewsNow"},
+    ]
+    item = make_item(1, title="多出处混合故事", sources=sources)
+    item["category"] = "official"
+    item["source_count"] = 2
+    item["source_name"] = "Official AI Updates"
+    item["source"] = "OpenAI News"
+    item["primary_item"] = dict(
+        item["primary_item"], id="p1",
+        source_name="Official AI Updates", source="OpenAI News",
+    )
+
+    html = gwa.render_item_html(item, 0)
+    assert "官方更新 · OpenAI News, NewsNow · 2 个来源 · Buzzing · 1 个转载" in html
 
 
 def test_item_display_source_resolves_umbrella_buckets():

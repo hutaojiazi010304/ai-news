@@ -1,10 +1,11 @@
-"""Grouped-layout variant of the WeChat daily article generator.
+"""Grouped-layout variant of the WeChat weekly article generator.
 
-This variant consumes the exact same ``data/daily-brief.json`` through the
-exact same selection, guide-writing and cover logic as
-``generate_weixin_article.py`` (imported, not copied — so the 20 picked
-items and their texts are guaranteed identical). The only difference is the
-body layout: items are rendered grouped by story category
+This variant consumes the exact same push input (the weekly story pool from
+``data/archive.json``, falling back to ``data/daily-brief.json``; see
+``load_push_brief``) through the exact same selection, guide-writing and
+cover logic as ``generate_weixin_article.py`` (imported, not copied — so
+the 20 picked items and their texts are guaranteed identical). The only
+difference is the body layout: items are rendered grouped by story category
 (官方更新 → 行业动态 → 多源热议 → 值得关注), each group under a centered,
 color-coded title and inside its own large box, with per-section numbering —
 instead of one flat ranked list.
@@ -55,6 +56,7 @@ try:  # imported as part of the repo package (tests)
         fill_reasons,
         load_brief,
         load_cache,
+        load_push_brief,
         make_digest,
         match_regenerate,
         parse_regenerate_specs,
@@ -80,6 +82,7 @@ except ImportError:  # run directly as a script
         fill_reasons,
         load_brief,
         load_cache,
+        load_push_brief,
         make_digest,
         match_regenerate,
         parse_regenerate_specs,
@@ -205,7 +208,7 @@ def render_grouped_article_html(
 
 <section style="border-left:4px solid #07c160;padding-left:12px;margin:0 0 20px;">
 <p style="margin:0;font-size:19px;font-weight:bold;color:#1f1f1f;letter-spacing:1px;">{esc(brand)}</p>
-<p style="margin:3px 0 0;font-size:13px;color:#999999;">{esc(issue_label)} · 每日 AI 精选</p>
+<p style="margin:3px 0 0;font-size:13px;color:#999999;">{esc(issue_label)} · 每周 AI 精选</p>
 </section>
 
 <p style="margin:0 0 4px;font-size:18px;font-weight:bold;line-height:1.5;color:#111111;">{esc(title)}</p>
@@ -213,7 +216,7 @@ def render_grouped_article_html(
 {sections_html}
 
 <section style="margin-top:30px;border-top:1px dashed #d9d9d9;padding-top:16px;">
-<p style="margin:0;font-size:13px;line-height:1.7;color:#999999;">以上内容由 {esc(brand)} 自动整理自过去 24 小时的公开信源，原文链接见每条信息下方。</p>
+<p style="margin:0;font-size:13px;line-height:1.7;color:#999999;">以上内容由 {esc(brand)} 自动整理自过去 7 天的公开信源，原文链接见每条信息下方。</p>
 </section>
 
 <section style="margin-top:22px;background-color:#f5f6f7;padding:14px 16px;">
@@ -253,7 +256,7 @@ def reuse_cover(main_output_dir: Path, issue_date: str) -> tuple[bytes | None, s
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="WeChat daily article generator (grouped-by-category layout)"
+        description="WeChat weekly article generator (grouped-by-category layout)"
     )
     parser.add_argument("--data-dir", default="data", help="data directory")
     parser.add_argument(
@@ -306,11 +309,11 @@ def main(argv: list[str] | None = None) -> int:
     main_output_dir = Path(args.main_output_dir)
     assets_dir = Path(args.assets_dir)
 
-    brief = load_brief(data_dir / "daily-brief.json")
+    brief = load_push_brief(data_dir, cfg["max_items"])
     if brief is None:
         print(
-            f"weixin-grouped: {data_dir / 'daily-brief.json'} not found or invalid, "
-            "nothing to do"
+            f"weixin-grouped: no usable brief under {data_dir} "
+            "(weekly pool and daily-brief.json both unavailable), nothing to do"
         )
         return 0
 

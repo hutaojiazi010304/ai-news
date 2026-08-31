@@ -234,6 +234,58 @@ def test_top20_selection_cap_and_ranking(tmp_path):
 
 
 # ---------------------------------------------------------------------------
+# Weekly labels: date-range title/footer; the publish helper block moved out
+# of the page body into publish-info.txt
+# ---------------------------------------------------------------------------
+
+def test_issue_range_label_follows_brief_window():
+    now_cn = datetime(2026, 8, 28, 10, 0, tzinfo=gwa.TZ_CN)
+    assert gwad.issue_range_label({"window_hours": 168}, now_cn) == "8月22日-8月28日"
+    assert gwad.issue_range_label({"window_hours": 72}, now_cn) == "8月26日-8月28日"
+    # Daily fallback window collapses to the single issue day.
+    assert gwad.issue_range_label({"window_hours": 24}, now_cn) == "8月28日"
+    # Missing window falls back to the weekly lookback (default 7 days).
+    with patch.dict("os.environ", {}, clear=True):
+        assert gwad.issue_range_label({}, now_cn) == "8月22日-8月28日"
+
+
+def test_deep_title_uses_range_label():
+    assert (
+        gwad.deep_title("AI 雷达", "8月22日-8月28日", 20)
+        == "AI 雷达 · 8月22日-8月28日｜本周精读20条"
+    )
+
+
+def test_publish_info_file_replaces_helper_block(tmp_path):
+    item = make_item(1, title="发布辅助信息测试条目")
+    data_dir, assets_dir = write_fixture(tmp_path, [item])
+    make_static_asset(assets_dir)
+    out_dir = tmp_path / "weixin-deep"
+    args = [
+        "--data-dir", str(data_dir),
+        "--output-dir", str(out_dir),
+        "--main-output-dir", str(tmp_path / "weixin"),
+        "--assets-dir", str(assets_dir),
+        "--no-images",
+    ]
+    with patch.dict("os.environ", {}, clear=True), patch(
+        "scripts.generate_weixin_article_deep.create_session",
+        return_value=offline_session(),
+    ):
+        rc = gwad.main(args)
+
+    assert rc == 0
+    html_text = (out_dir / "index.html").read_text(encoding="utf-8")
+    assert "以下为发布辅助信息" not in html_text
+    assert "阅读原文：" not in html_text
+    info = (out_dir / "publish-info.txt").read_text(encoding="utf-8")
+    lines = info.strip().splitlines()
+    assert lines[0].startswith("标题：") and "本周精读1条" in lines[0]
+    assert lines[1].startswith("摘要：")
+    assert lines[2].startswith("阅读原文：")
+
+
+# ---------------------------------------------------------------------------
 # Deep guide: cache isolation, generation, validation, grounding
 # ---------------------------------------------------------------------------
 
@@ -917,6 +969,35 @@ def test_deep_single_origin_meta_shows_source_and_reposts():
     html = gwad.render_deep_item_html(item, 0, "#13501B")
     assert "Qwen Blog · 1 个来源 · Buzzing, Info Flow · 2 个转载" in html
     assert "（Qwen Blog, Buzzing, Info Flow）" not in html
+
+
+def test_deep_mixed_origins_split_by_url_not_entry_count():
+    # Same generalization as 1.0: entries outnumber distinct URLs (official
+    # post + mirror + a second origin such as the HN discussion page) →
+    # 「M 个来源 · N 个转载」 with M = distinct canonical URLs and
+    # N = entries − URLs, instead of listing every channel as a 来源.
+    openai_url = "https://openai.com/index/hugging-face-incident"
+    sources = [
+        {"id": "m1", "title": "镜像", "url": openai_url, "source_name": "Buzzing"},
+        {"id": "p1", "title": "官方原文", "url": openai_url,
+         "source_name": "Official AI Updates", "source": "OpenAI News"},
+        {"id": "n1", "title": "HN 讨论",
+         "url": "https://news.ycombinator.com/item?id=49454314",
+         "source_name": "NewsNow"},
+    ]
+    item = make_item(1, title="多出处混合故事", sources=sources)
+    item["weixin_deep_reason"] = LONG_DEEP_REASON
+    item["category"] = "official"
+    item["source_count"] = 2
+    item["source_name"] = "Official AI Updates"
+    item["source"] = "OpenAI News"
+    item["primary_item"] = dict(
+        item["primary_item"], id="p1",
+        source_name="Official AI Updates", source="OpenAI News",
+    )
+
+    html = gwad.render_deep_item_html(item, 0, "#13501B")
+    assert "官方更新 · OpenAI News, NewsNow · 2 个来源 · Buzzing · 1 个转载" in html
 
 
 def test_deep_reason_user_content_has_no_source_line():
