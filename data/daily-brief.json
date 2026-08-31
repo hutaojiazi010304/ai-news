@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-31T01:26:35.899172Z",
+  "generated_at": "2026-08-31T07:19:16.327601Z",
   "window_hours": 24,
-  "total_items": 12,
+  "total_items": 20,
   "items": [
     {
       "story_id": "story_18a239b0d7bf",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8025,
-      "importance": 0.8025,
-      "importance_score": 0.8025,
+      "score": 0.7927,
+      "importance": 0.7927,
+      "importance_score": 0.7927,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9919,
+        "recency": 0.9373,
         "story_heat": 0.0
       },
       "category": "official",
@@ -83,7 +83,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-31T01:41:22.324829Z"
+        "scored_at": "2026-08-31T07:37:38.308165Z"
       }
     },
     {
@@ -107,11 +107,26 @@
           "source_name": "AI HOT",
           "site_id": "aihot",
           "published_at": "2026-08-30T23:59:47Z"
+        },
+        {
+          "id": "4a82cc3eadf8b53dea74654be42d7b4b4f17ed3a",
+          "title": "了解 ChatGPT 的工作原理",
+          "title_zh": "了解 ChatGPT 的工作原理",
+          "title_en": null,
+          "title_original": "了解 ChatGPT 的工作原理",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
+          "source": "simonwillison.net",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-31T05:07:13.656000Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Simon Willison 博客"
+        "Simon Willison 博客",
+        "simonwillison.net"
       ],
       "items": [
         {
@@ -127,19 +142,33 @@
           "source_name": "AI HOT",
           "site_id": "aihot",
           "published_at": "2026-08-30T23:59:47Z"
+        },
+        {
+          "id": "4a82cc3eadf8b53dea74654be42d7b4b4f17ed3a",
+          "title": "了解 ChatGPT 的工作原理",
+          "title_zh": "了解 ChatGPT 的工作原理",
+          "title_en": null,
+          "title_original": "了解 ChatGPT 的工作原理",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work",
+          "source": "simonwillison.net",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-08-31T05:07:13.656000Z"
         }
       ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7951,
-      "importance": 0.7951,
-      "importance_score": 0.7951,
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.7853,
+      "importance": 0.7853,
+      "importance_score": 0.7853,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9862,
+        "recency": 0.9319,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -148,7 +177,7 @@
         "high_importance"
       ],
       "earliest_at": "2026-08-30T23:59:47Z",
-      "latest_at": "2026-08-30T23:59:47Z",
+      "latest_at": "2026-08-31T05:07:13.656000Z",
       "primary_item": {
         "id": "f86ca557fb0453ee2854c6c5653ca834fe354259",
         "title": "理解 ChatGPT Work：它到底是什么，以及它和 Chat 有何不同 / Understanding ChatGPT Work",
@@ -166,7 +195,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-31T01:41:22.324829Z"
+        "scored_at": "2026-08-31T07:37:38.308165Z"
       }
     },
     {
@@ -214,21 +243,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.753,
-      "importance": 0.753,
-      "importance_score": 0.753,
+      "score": 0.7446,
+      "importance": 0.7446,
+      "importance_score": 0.7446,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8523,
+        "recency": 0.8054,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-08-30T08:50:20Z",
       "latest_at": "2026-08-30T08:50:20Z",
@@ -249,7 +277,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-31T01:41:22.324829Z"
+        "scored_at": "2026-08-31T07:37:38.308165Z"
       }
     },
     {
@@ -297,15 +325,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7718,
-      "importance": 0.7718,
-      "importance_score": 0.7718,
+      "score": 0.762,
+      "importance": 0.762,
+      "importance_score": 0.762,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9901,
+        "recency": 0.9356,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -332,7 +360,256 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-31T01:41:22.324829Z"
+        "scored_at": "2026-08-31T07:37:38.308165Z"
+      }
+    },
+    {
+      "story_id": "story_e42196c2130a",
+      "title": "AI\"已读乱回\"要担责、外卖包装\"瘦身\"，一批新规 9 月起施行",
+      "url": "https://www.aibase.com/news/30719",
+      "primary_url": "https://www.aibase.com/news/30719",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "69fb80dff160c7af3f195cfa143907145a5bfe8f",
+          "title": "AI\"已读乱回\"要担责、外卖包装\"瘦身\"，一批新规 9 月起施行",
+          "title_zh": "AI\"已读乱回\"要担责、外卖包装\"瘦身\"，一批新规 9 月起施行",
+          "title_en": null,
+          "title_original": "AI\"已读乱回\"要担责、外卖包装\"瘦身\"，一批新规 9 月起施行",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30719",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "69fb80dff160c7af3f195cfa143907145a5bfe8f",
+          "title": "AI\"已读乱回\"要担责、外卖包装\"瘦身\"，一批新规 9 月起施行",
+          "title_zh": "AI\"已读乱回\"要担责、外卖包装\"瘦身\"，一批新规 9 月起施行",
+          "title_en": null,
+          "title_original": "AI\"已读乱回\"要担责、外卖包装\"瘦身\"，一批新规 9 月起施行",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30719",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-31T07:19:16.327601Z",
+      "latest_at": "2026-08-31T07:19:16.327601Z",
+      "primary_item": {
+        "id": "69fb80dff160c7af3f195cfa143907145a5bfe8f",
+        "title": "AI\"已读乱回\"要担责、外卖包装\"瘦身\"，一批新规 9 月起施行",
+        "title_zh": "AI\"已读乱回\"要担责、外卖包装\"瘦身\"，一批新规 9 月起施行",
+        "title_en": null,
+        "title_original": "AI\"已读乱回\"要担责、外卖包装\"瘦身\"，一批新规 9 月起施行",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30719",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-31T07:37:38.308165Z"
+      }
+    },
+    {
+      "story_id": "story_aa0326d1aa66",
+      "title": "Anthropic调整Claude Code用量限制:基本额度永久上调25%，实际每周上限降17%",
+      "url": "https://www.aibase.com/news/30709",
+      "primary_url": "https://www.aibase.com/news/30709",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "5abea2f8291a52aaaffad2293d7cbad957291af6",
+          "title": "Anthropic调整Claude Code用量限制:基本额度永久上调25%，实际每周上限降17%",
+          "title_zh": "Anthropic调整Claude Code用量限制:基本额度永久上调25%，实际每周上限降17%",
+          "title_en": null,
+          "title_original": "Anthropic调整Claude Code用量限制:基本额度永久上调25%，实际每周上限降17%",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30709",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "5abea2f8291a52aaaffad2293d7cbad957291af6",
+          "title": "Anthropic调整Claude Code用量限制:基本额度永久上调25%，实际每周上限降17%",
+          "title_zh": "Anthropic调整Claude Code用量限制:基本额度永久上调25%，实际每周上限降17%",
+          "title_en": null,
+          "title_original": "Anthropic调整Claude Code用量限制:基本额度永久上调25%，实际每周上限降17%",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30709",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-31T07:19:16.327601Z",
+      "latest_at": "2026-08-31T07:19:16.327601Z",
+      "primary_item": {
+        "id": "5abea2f8291a52aaaffad2293d7cbad957291af6",
+        "title": "Anthropic调整Claude Code用量限制:基本额度永久上调25%，实际每周上限降17%",
+        "title_zh": "Anthropic调整Claude Code用量限制:基本额度永久上调25%，实际每周上限降17%",
+        "title_en": null,
+        "title_original": "Anthropic调整Claude Code用量限制:基本额度永久上调25%，实际每周上限降17%",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30709",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-31T07:37:38.308165Z"
+      }
+    },
+    {
+      "story_id": "story_14ea3c1dc9f0",
+      "title": "Claude遭大规模盗号，大批账号被强制注销",
+      "url": "https://www.aibase.com/news/30722",
+      "primary_url": "https://www.aibase.com/news/30722",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "ac3d42e757acdf40ddc5ef4762382e2fe7ac959e",
+          "title": "Claude遭大规模盗号，大批账号被强制注销",
+          "title_zh": "Claude遭大规模盗号，大批账号被强制注销",
+          "title_en": null,
+          "title_original": "Claude遭大规模盗号，大批账号被强制注销",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30722",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "ac3d42e757acdf40ddc5ef4762382e2fe7ac959e",
+          "title": "Claude遭大规模盗号，大批账号被强制注销",
+          "title_zh": "Claude遭大规模盗号，大批账号被强制注销",
+          "title_en": null,
+          "title_original": "Claude遭大规模盗号，大批账号被强制注销",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30722",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-31T07:19:16.327601Z",
+      "latest_at": "2026-08-31T07:19:16.327601Z",
+      "primary_item": {
+        "id": "ac3d42e757acdf40ddc5ef4762382e2fe7ac959e",
+        "title": "Claude遭大规模盗号，大批账号被强制注销",
+        "title_zh": "Claude遭大规模盗号，大批账号被强制注销",
+        "title_en": null,
+        "title_original": "Claude遭大规模盗号，大批账号被强制注销",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30722",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-31T07:37:38.308165Z"
       }
     },
     {
@@ -380,15 +657,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7577,
+      "importance": 0.7577,
+      "importance_score": 0.7577,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.945,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -415,89 +692,339 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-31T01:41:22.324829Z"
+        "scored_at": "2026-08-31T07:37:38.308165Z"
       }
     },
     {
-      "story_id": "story_593496b70a8b",
-      "title": "何夕2077 AI 深度信号周报 (2026-W35)：智能体自治危机、稀疏激活架构与具身智能融资潮",
-      "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-08-30-hexi-2077-ai-weekly-2026-w35",
-      "primary_url": "https://hex2077.dev/zh-CN/blog/weekly/2026-08-30-hexi-2077-ai-weekly-2026-w35",
-      "source": "Daily Digest",
-      "source_name": "AI HubToday",
+      "story_id": "story_f84aa5a305aa",
+      "title": "OpenAI十万亿参数新模型Bel预训练完成",
+      "url": "https://www.aibase.com/news/30718",
+      "primary_url": "https://www.aibase.com/news/30718",
+      "source": "AIbase",
+      "source_name": "AIbase",
       "sources": [
         {
-          "id": "7ff7bf5d7d7068f4125735362fa01a896621d53d",
-          "title": "何夕2077 AI 深度信号周报 (2026-W35)：智能体自治危机、稀疏激活架构与具身智能融资潮",
-          "title_zh": "何夕2077 AI 深度信号周报 (2026-W35)：智能体自治危机、稀疏激活架构与具身智能融资潮",
+          "id": "8225e4eeefa231b29afe8442b6400c3cd755d480",
+          "title": "OpenAI十万亿参数新模型Bel预训练完成",
+          "title_zh": "OpenAI十万亿参数新模型Bel预训练完成",
           "title_en": null,
-          "title_original": "何夕2077 AI 深度信号周报 (2026-W35)：智能体自治危机、稀疏激活架构与具身智能融资潮",
+          "title_original": "OpenAI十万亿参数新模型Bel预训练完成",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-08-30-hexi-2077-ai-weekly-2026-w35",
-          "source": "Daily Digest",
-          "source_name": "AI HubToday",
-          "site_id": "aihubtoday",
-          "published_at": "2026-08-30T04:21:04Z"
+          "url": "https://www.aibase.com/news/30718",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Daily Digest"
+        "AIbase"
       ],
       "items": [
         {
-          "id": "7ff7bf5d7d7068f4125735362fa01a896621d53d",
-          "title": "何夕2077 AI 深度信号周报 (2026-W35)：智能体自治危机、稀疏激活架构与具身智能融资潮",
-          "title_zh": "何夕2077 AI 深度信号周报 (2026-W35)：智能体自治危机、稀疏激活架构与具身智能融资潮",
+          "id": "8225e4eeefa231b29afe8442b6400c3cd755d480",
+          "title": "OpenAI十万亿参数新模型Bel预训练完成",
+          "title_zh": "OpenAI十万亿参数新模型Bel预训练完成",
           "title_en": null,
-          "title_original": "何夕2077 AI 深度信号周报 (2026-W35)：智能体自治危机、稀疏激活架构与具身智能融资潮",
+          "title_original": "OpenAI十万亿参数新模型Bel预训练完成",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-08-30-hexi-2077-ai-weekly-2026-w35",
-          "source": "Daily Digest",
-          "source_name": "AI HubToday",
-          "site_id": "aihubtoday",
-          "published_at": "2026-08-30T04:21:04Z"
+          "url": "https://www.aibase.com/news/30718",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7345,
-      "importance": 0.7345,
-      "importance_score": 0.7345,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8162,
+        "recency": 1.0,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-08-30T04:21:04Z",
-      "latest_at": "2026-08-30T04:21:04Z",
+      "earliest_at": "2026-08-31T07:19:16.327601Z",
+      "latest_at": "2026-08-31T07:19:16.327601Z",
       "primary_item": {
-        "id": "7ff7bf5d7d7068f4125735362fa01a896621d53d",
-        "title": "何夕2077 AI 深度信号周报 (2026-W35)：智能体自治危机、稀疏激活架构与具身智能融资潮",
-        "title_zh": "何夕2077 AI 深度信号周报 (2026-W35)：智能体自治危机、稀疏激活架构与具身智能融资潮",
+        "id": "8225e4eeefa231b29afe8442b6400c3cd755d480",
+        "title": "OpenAI十万亿参数新模型Bel预训练完成",
+        "title_zh": "OpenAI十万亿参数新模型Bel预训练完成",
         "title_en": null,
-        "title_original": "何夕2077 AI 深度信号周报 (2026-W35)：智能体自治危机、稀疏激活架构与具身智能融资潮",
+        "title_original": "OpenAI十万亿参数新模型Bel预训练完成",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-08-30-hexi-2077-ai-weekly-2026-w35",
-        "source": "Daily Digest",
-        "source_name": "AI HubToday"
+        "url": "https://www.aibase.com/news/30718",
+        "source": "AIbase",
+        "source_name": "AIbase"
       },
-      "peak_score": 0.7653,
+      "peak_score": 0.7676,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-31T01:41:22.324829Z"
+        "scored_at": "2026-08-31T07:37:38.308165Z"
+      }
+    },
+    {
+      "story_id": "story_fb04a48586f4",
+      "title": "OpenClaw2.0正式发布:重构底层架构，支持多人共享云端会话",
+      "url": "https://www.aibase.com/news/30720",
+      "primary_url": "https://www.aibase.com/news/30720",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "4002cb2839ec1f2fd066b48899cde68d2aa06615",
+          "title": "OpenClaw2.0正式发布:重构底层架构，支持多人共享云端会话",
+          "title_zh": "OpenClaw2.0正式发布:重构底层架构，支持多人共享云端会话",
+          "title_en": null,
+          "title_original": "OpenClaw2.0正式发布:重构底层架构，支持多人共享云端会话",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30720",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "4002cb2839ec1f2fd066b48899cde68d2aa06615",
+          "title": "OpenClaw2.0正式发布:重构底层架构，支持多人共享云端会话",
+          "title_zh": "OpenClaw2.0正式发布:重构底层架构，支持多人共享云端会话",
+          "title_en": null,
+          "title_original": "OpenClaw2.0正式发布:重构底层架构，支持多人共享云端会话",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30720",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-31T07:19:16.327601Z",
+      "latest_at": "2026-08-31T07:19:16.327601Z",
+      "primary_item": {
+        "id": "4002cb2839ec1f2fd066b48899cde68d2aa06615",
+        "title": "OpenClaw2.0正式发布:重构底层架构，支持多人共享云端会话",
+        "title_zh": "OpenClaw2.0正式发布:重构底层架构，支持多人共享云端会话",
+        "title_en": null,
+        "title_original": "OpenClaw2.0正式发布:重构底层架构，支持多人共享云端会话",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30720",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-31T07:37:38.308165Z"
+      }
+    },
+    {
+      "story_id": "story_afb410df2404",
+      "title": "一个创意，一支AI团队:千问创作Agent Teams上线，编剧导演美术全承包",
+      "url": "https://www.aibase.com/news/30721",
+      "primary_url": "https://www.aibase.com/news/30721",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "02fd4e679dd1f9f6e0ef561b3aa49f58a7127d25",
+          "title": "一个创意，一支AI团队:千问创作Agent Teams上线，编剧导演美术全承包",
+          "title_zh": "一个创意，一支AI团队:千问创作Agent Teams上线，编剧导演美术全承包",
+          "title_en": null,
+          "title_original": "一个创意，一支AI团队:千问创作Agent Teams上线，编剧导演美术全承包",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30721",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "02fd4e679dd1f9f6e0ef561b3aa49f58a7127d25",
+          "title": "一个创意，一支AI团队:千问创作Agent Teams上线，编剧导演美术全承包",
+          "title_zh": "一个创意，一支AI团队:千问创作Agent Teams上线，编剧导演美术全承包",
+          "title_en": null,
+          "title_original": "一个创意，一支AI团队:千问创作Agent Teams上线，编剧导演美术全承包",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30721",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-31T07:19:16.327601Z",
+      "latest_at": "2026-08-31T07:19:16.327601Z",
+      "primary_item": {
+        "id": "02fd4e679dd1f9f6e0ef561b3aa49f58a7127d25",
+        "title": "一个创意，一支AI团队:千问创作Agent Teams上线，编剧导演美术全承包",
+        "title_zh": "一个创意，一支AI团队:千问创作Agent Teams上线，编剧导演美术全承包",
+        "title_en": null,
+        "title_original": "一个创意，一支AI团队:千问创作Agent Teams上线，编剧导演美术全承包",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30721",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-31T07:37:38.308165Z"
+      }
+    },
+    {
+      "story_id": "story_e46ee5bfc69b",
+      "title": "上线即爆单!混元Hy4preview Agent能力大升级，腾讯紧急扩容集群",
+      "url": "https://www.aibase.com/news/30711",
+      "primary_url": "https://www.aibase.com/news/30711",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "f5607d801bc601e2ad635d6805febdfe714580fc",
+          "title": "上线即爆单!混元Hy4preview Agent能力大升级，腾讯紧急扩容集群",
+          "title_zh": "上线即爆单!混元Hy4preview Agent能力大升级，腾讯紧急扩容集群",
+          "title_en": null,
+          "title_original": "上线即爆单!混元Hy4preview Agent能力大升级，腾讯紧急扩容集群",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30711",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "f5607d801bc601e2ad635d6805febdfe714580fc",
+          "title": "上线即爆单!混元Hy4preview Agent能力大升级，腾讯紧急扩容集群",
+          "title_zh": "上线即爆单!混元Hy4preview Agent能力大升级，腾讯紧急扩容集群",
+          "title_en": null,
+          "title_original": "上线即爆单!混元Hy4preview Agent能力大升级，腾讯紧急扩容集群",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30711",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-31T07:19:16.327601Z",
+      "latest_at": "2026-08-31T07:19:16.327601Z",
+      "primary_item": {
+        "id": "f5607d801bc601e2ad635d6805febdfe714580fc",
+        "title": "上线即爆单!混元Hy4preview Agent能力大升级，腾讯紧急扩容集群",
+        "title_zh": "上线即爆单!混元Hy4preview Agent能力大升级，腾讯紧急扩容集群",
+        "title_en": null,
+        "title_original": "上线即爆单!混元Hy4preview Agent能力大升级，腾讯紧急扩容集群",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30711",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-31T07:37:38.308165Z"
       }
     },
     {
@@ -545,15 +1072,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7577,
+      "importance": 0.7577,
+      "importance_score": 0.7577,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.945,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -580,7 +1107,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-31T01:41:22.324829Z"
+        "scored_at": "2026-08-31T07:37:38.308165Z"
       }
     },
     {
@@ -628,15 +1155,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7577,
+      "importance": 0.7577,
+      "importance_score": 0.7577,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.945,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -663,7 +1190,256 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-31T01:41:22.324829Z"
+        "scored_at": "2026-08-31T07:37:38.308165Z"
+      }
+    },
+    {
+      "story_id": "story_6cfd4307c35d",
+      "title": "华为联合瑞金医院正式发布瑞智病理大模型RuiPath 2.0并落地90余家医院",
+      "url": "https://www.aibase.com/news/30710",
+      "primary_url": "https://www.aibase.com/news/30710",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "bda210869bdd6ce7559fc972baae4ed381d075ac",
+          "title": "华为联合瑞金医院正式发布瑞智病理大模型RuiPath 2.0并落地90余家医院",
+          "title_zh": "华为联合瑞金医院正式发布瑞智病理大模型RuiPath 2.0并落地90余家医院",
+          "title_en": null,
+          "title_original": "华为联合瑞金医院正式发布瑞智病理大模型RuiPath 2.0并落地90余家医院",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30710",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "bda210869bdd6ce7559fc972baae4ed381d075ac",
+          "title": "华为联合瑞金医院正式发布瑞智病理大模型RuiPath 2.0并落地90余家医院",
+          "title_zh": "华为联合瑞金医院正式发布瑞智病理大模型RuiPath 2.0并落地90余家医院",
+          "title_en": null,
+          "title_original": "华为联合瑞金医院正式发布瑞智病理大模型RuiPath 2.0并落地90余家医院",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30710",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-31T07:19:16.327601Z",
+      "latest_at": "2026-08-31T07:19:16.327601Z",
+      "primary_item": {
+        "id": "bda210869bdd6ce7559fc972baae4ed381d075ac",
+        "title": "华为联合瑞金医院正式发布瑞智病理大模型RuiPath 2.0并落地90余家医院",
+        "title_zh": "华为联合瑞金医院正式发布瑞智病理大模型RuiPath 2.0并落地90余家医院",
+        "title_en": null,
+        "title_original": "华为联合瑞金医院正式发布瑞智病理大模型RuiPath 2.0并落地90余家医院",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30710",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-31T07:37:38.308165Z"
+      }
+    },
+    {
+      "story_id": "story_a25a2dec59b6",
+      "title": "国产黑马本地大模型StartLux-27B正面硬刚DeepSeek，开启端侧AI新时代",
+      "url": "https://www.aibase.com/news/30712",
+      "primary_url": "https://www.aibase.com/news/30712",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "3e9ff0648c7c5f476560a0acdd14fa1b7f72364e",
+          "title": "国产黑马本地大模型StartLux-27B正面硬刚DeepSeek，开启端侧AI新时代",
+          "title_zh": "国产黑马本地大模型StartLux-27B正面硬刚DeepSeek，开启端侧AI新时代",
+          "title_en": null,
+          "title_original": "国产黑马本地大模型StartLux-27B正面硬刚DeepSeek，开启端侧AI新时代",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30712",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "3e9ff0648c7c5f476560a0acdd14fa1b7f72364e",
+          "title": "国产黑马本地大模型StartLux-27B正面硬刚DeepSeek，开启端侧AI新时代",
+          "title_zh": "国产黑马本地大模型StartLux-27B正面硬刚DeepSeek，开启端侧AI新时代",
+          "title_en": null,
+          "title_original": "国产黑马本地大模型StartLux-27B正面硬刚DeepSeek，开启端侧AI新时代",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30712",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-31T07:19:16.327601Z",
+      "latest_at": "2026-08-31T07:19:16.327601Z",
+      "primary_item": {
+        "id": "3e9ff0648c7c5f476560a0acdd14fa1b7f72364e",
+        "title": "国产黑马本地大模型StartLux-27B正面硬刚DeepSeek，开启端侧AI新时代",
+        "title_zh": "国产黑马本地大模型StartLux-27B正面硬刚DeepSeek，开启端侧AI新时代",
+        "title_en": null,
+        "title_original": "国产黑马本地大模型StartLux-27B正面硬刚DeepSeek，开启端侧AI新时代",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30712",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-31T07:37:38.308165Z"
+      }
+    },
+    {
+      "story_id": "story_56d6fce334e6",
+      "title": "国内首部 AIGC 长剧《后西游记》今日开播，也是首部\"边审边播\"剧集",
+      "url": "https://www.aibase.com/news/30708",
+      "primary_url": "https://www.aibase.com/news/30708",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "e954dd6cba1373a0e57b14c03ce2d357deb006f2",
+          "title": "国内首部 AIGC 长剧《后西游记》今日开播，也是首部\"边审边播\"剧集",
+          "title_zh": "国内首部 AIGC 长剧《后西游记》今日开播，也是首部\"边审边播\"剧集",
+          "title_en": null,
+          "title_original": "国内首部 AIGC 长剧《后西游记》今日开播，也是首部\"边审边播\"剧集",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30708",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "e954dd6cba1373a0e57b14c03ce2d357deb006f2",
+          "title": "国内首部 AIGC 长剧《后西游记》今日开播，也是首部\"边审边播\"剧集",
+          "title_zh": "国内首部 AIGC 长剧《后西游记》今日开播，也是首部\"边审边播\"剧集",
+          "title_en": null,
+          "title_original": "国内首部 AIGC 长剧《后西游记》今日开播，也是首部\"边审边播\"剧集",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30708",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-08-31T07:19:16.327601Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-08-31T07:19:16.327601Z",
+      "latest_at": "2026-08-31T07:19:16.327601Z",
+      "primary_item": {
+        "id": "e954dd6cba1373a0e57b14c03ce2d357deb006f2",
+        "title": "国内首部 AIGC 长剧《后西游记》今日开播，也是首部\"边审边播\"剧集",
+        "title_zh": "国内首部 AIGC 长剧《后西游记》今日开播，也是首部\"边审边播\"剧集",
+        "title_en": null,
+        "title_original": "国内首部 AIGC 长剧《后西游记》今日开播，也是首部\"边审边播\"剧集",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30708",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-08-31T07:37:38.308165Z"
       }
     },
     {
@@ -711,15 +1487,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7577,
+      "importance": 0.7577,
+      "importance_score": 0.7577,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.945,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -746,30 +1522,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-31T01:41:22.324829Z"
+        "scored_at": "2026-08-31T07:37:38.308165Z"
       }
     },
     {
-      "story_id": "story_5194671a6db9",
-      "title": "深度对齐与自研坚守：字节跳动豆包大模型2.2宣布推迟发布",
-      "url": "https://www.aibase.com/news/30702",
-      "primary_url": "https://www.aibase.com/news/30702",
+      "story_id": "story_93408dff46a5",
+      "title": "微软收紧员工 AI 预算：有人 28 天烧掉 2.8 万美元，编程转向 GPT-5.6 Sol",
+      "url": "https://www.aibase.com/news/30714",
+      "primary_url": "https://www.aibase.com/news/30714",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "0588f36296be2b362ed9df08f6917e42da9fa00c",
-          "title": "深度对齐与自研坚守：字节跳动豆包大模型2.2宣布推迟发布",
-          "title_zh": "深度对齐与自研坚守：字节跳动豆包大模型2.2宣布推迟发布",
+          "id": "5b2f31ad71724412d63e5465425b9ab32a3dccc7",
+          "title": "微软收紧员工 AI 预算：有人 28 天烧掉 2.8 万美元，编程转向 GPT-5.6 Sol",
+          "title_zh": "微软收紧员工 AI 预算：有人 28 天烧掉 2.8 万美元，编程转向 GPT-5.6 Sol",
           "title_en": null,
-          "title_original": "深度对齐与自研坚守：字节跳动豆包大模型2.2宣布推迟发布",
+          "title_original": "微软收紧员工 AI 预算：有人 28 天烧掉 2.8 万美元，编程转向 GPT-5.6 Sol",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30702",
+          "url": "https://www.aibase.com/news/30714",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-08-31T01:26:35.899172Z"
+          "published_at": "2026-08-31T07:19:16.327601Z"
         }
       ],
       "source_count": 1,
@@ -778,18 +1554,18 @@
       ],
       "items": [
         {
-          "id": "0588f36296be2b362ed9df08f6917e42da9fa00c",
-          "title": "深度对齐与自研坚守：字节跳动豆包大模型2.2宣布推迟发布",
-          "title_zh": "深度对齐与自研坚守：字节跳动豆包大模型2.2宣布推迟发布",
+          "id": "5b2f31ad71724412d63e5465425b9ab32a3dccc7",
+          "title": "微软收紧员工 AI 预算：有人 28 天烧掉 2.8 万美元，编程转向 GPT-5.6 Sol",
+          "title_zh": "微软收紧员工 AI 预算：有人 28 天烧掉 2.8 万美元，编程转向 GPT-5.6 Sol",
           "title_en": null,
-          "title_original": "深度对齐与自研坚守：字节跳动豆包大模型2.2宣布推迟发布",
+          "title_original": "微软收紧员工 AI 预算：有人 28 天烧掉 2.8 万美元，编程转向 GPT-5.6 Sol",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30702",
+          "url": "https://www.aibase.com/news/30714",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-08-31T01:26:35.899172Z"
+          "published_at": "2026-08-31T07:19:16.327601Z"
         }
       ],
       "item_count": 1,
@@ -810,17 +1586,17 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-31T01:26:35.899172Z",
-      "latest_at": "2026-08-31T01:26:35.899172Z",
+      "earliest_at": "2026-08-31T07:19:16.327601Z",
+      "latest_at": "2026-08-31T07:19:16.327601Z",
       "primary_item": {
-        "id": "0588f36296be2b362ed9df08f6917e42da9fa00c",
-        "title": "深度对齐与自研坚守：字节跳动豆包大模型2.2宣布推迟发布",
-        "title_zh": "深度对齐与自研坚守：字节跳动豆包大模型2.2宣布推迟发布",
+        "id": "5b2f31ad71724412d63e5465425b9ab32a3dccc7",
+        "title": "微软收紧员工 AI 预算：有人 28 天烧掉 2.8 万美元，编程转向 GPT-5.6 Sol",
+        "title_zh": "微软收紧员工 AI 预算：有人 28 天烧掉 2.8 万美元，编程转向 GPT-5.6 Sol",
         "title_en": null,
-        "title_original": "深度对齐与自研坚守：字节跳动豆包大模型2.2宣布推迟发布",
+        "title_original": "微软收紧员工 AI 预算：有人 28 天烧掉 2.8 万美元，编程转向 GPT-5.6 Sol",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30702",
+        "url": "https://www.aibase.com/news/30714",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -829,30 +1605,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-31T01:41:22.324829Z"
+        "scored_at": "2026-08-31T07:37:38.308165Z"
       }
     },
     {
-      "story_id": "story_2e200d750b6d",
-      "title": "米哈游 AI 女友《BSide: Olivia Lin》上线不足一月停运，离线版本今日限时领取",
-      "url": "https://www.aibase.com/news/30703",
-      "primary_url": "https://www.aibase.com/news/30703",
+      "story_id": "story_aa9834fea55d",
+      "title": "消息称字节加大AI核心团队激励力度，豆包股提价14.6%加码大模型战略",
+      "url": "https://www.aibase.com/news/30717",
+      "primary_url": "https://www.aibase.com/news/30717",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "e720328621639f9fe6a542e92fe2ea41dd12b62d",
-          "title": "米哈游 AI 女友《BSide: Olivia Lin》上线不足一月停运，离线版本今日限时领取",
-          "title_zh": "米哈游 AI 女友《BSide: Olivia Lin》上线不足一月停运，离线版本今日限时领取",
+          "id": "3d1e4f8f263e6c9726738bbc7e549c4ce16f8c8a",
+          "title": "消息称字节加大AI核心团队激励力度，豆包股提价14.6%加码大模型战略",
+          "title_zh": "消息称字节加大AI核心团队激励力度，豆包股提价14.6%加码大模型战略",
           "title_en": null,
-          "title_original": "米哈游 AI 女友《BSide: Olivia Lin》上线不足一月停运，离线版本今日限时领取",
+          "title_original": "消息称字节加大AI核心团队激励力度，豆包股提价14.6%加码大模型战略",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30703",
+          "url": "https://www.aibase.com/news/30717",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-08-31T01:26:35.899172Z"
+          "published_at": "2026-08-31T07:19:16.327601Z"
         }
       ],
       "source_count": 1,
@@ -861,18 +1637,18 @@
       ],
       "items": [
         {
-          "id": "e720328621639f9fe6a542e92fe2ea41dd12b62d",
-          "title": "米哈游 AI 女友《BSide: Olivia Lin》上线不足一月停运，离线版本今日限时领取",
-          "title_zh": "米哈游 AI 女友《BSide: Olivia Lin》上线不足一月停运，离线版本今日限时领取",
+          "id": "3d1e4f8f263e6c9726738bbc7e549c4ce16f8c8a",
+          "title": "消息称字节加大AI核心团队激励力度，豆包股提价14.6%加码大模型战略",
+          "title_zh": "消息称字节加大AI核心团队激励力度，豆包股提价14.6%加码大模型战略",
           "title_en": null,
-          "title_original": "米哈游 AI 女友《BSide: Olivia Lin》上线不足一月停运，离线版本今日限时领取",
+          "title_original": "消息称字节加大AI核心团队激励力度，豆包股提价14.6%加码大模型战略",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30703",
+          "url": "https://www.aibase.com/news/30717",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-08-31T01:26:35.899172Z"
+          "published_at": "2026-08-31T07:19:16.327601Z"
         }
       ],
       "item_count": 1,
@@ -893,17 +1669,17 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-31T01:26:35.899172Z",
-      "latest_at": "2026-08-31T01:26:35.899172Z",
+      "earliest_at": "2026-08-31T07:19:16.327601Z",
+      "latest_at": "2026-08-31T07:19:16.327601Z",
       "primary_item": {
-        "id": "e720328621639f9fe6a542e92fe2ea41dd12b62d",
-        "title": "米哈游 AI 女友《BSide: Olivia Lin》上线不足一月停运，离线版本今日限时领取",
-        "title_zh": "米哈游 AI 女友《BSide: Olivia Lin》上线不足一月停运，离线版本今日限时领取",
+        "id": "3d1e4f8f263e6c9726738bbc7e549c4ce16f8c8a",
+        "title": "消息称字节加大AI核心团队激励力度，豆包股提价14.6%加码大模型战略",
+        "title_zh": "消息称字节加大AI核心团队激励力度，豆包股提价14.6%加码大模型战略",
         "title_en": null,
-        "title_original": "米哈游 AI 女友《BSide: Olivia Lin》上线不足一月停运，离线版本今日限时领取",
+        "title_original": "消息称字节加大AI核心团队激励力度，豆包股提价14.6%加码大模型战略",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30703",
+        "url": "https://www.aibase.com/news/30717",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -912,90 +1688,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-08-31T01:41:22.324829Z"
-      }
-    },
-    {
-      "story_id": "story_b8b9603f9923",
-      "title": "音乐巨头联手向AI开炮：索尼华纳正式起诉Anthropic涉嫌大规模版权盗窃",
-      "url": "https://www.aibase.com/news/30707",
-      "primary_url": "https://www.aibase.com/news/30707",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "a441238eda38562035c58d09cf71ec37f84a32f3",
-          "title": "音乐巨头联手向AI开炮：索尼华纳正式起诉Anthropic涉嫌大规模版权盗窃",
-          "title_zh": "音乐巨头联手向AI开炮：索尼华纳正式起诉Anthropic涉嫌大规模版权盗窃",
-          "title_en": null,
-          "title_original": "音乐巨头联手向AI开炮：索尼华纳正式起诉Anthropic涉嫌大规模版权盗窃",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30707",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-31T01:26:35.899172Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "a441238eda38562035c58d09cf71ec37f84a32f3",
-          "title": "音乐巨头联手向AI开炮：索尼华纳正式起诉Anthropic涉嫌大规模版权盗窃",
-          "title_zh": "音乐巨头联手向AI开炮：索尼华纳正式起诉Anthropic涉嫌大规模版权盗窃",
-          "title_en": null,
-          "title_original": "音乐巨头联手向AI开炮：索尼华纳正式起诉Anthropic涉嫌大规模版权盗窃",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30707",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-08-31T01:26:35.899172Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-08-31T01:26:35.899172Z",
-      "latest_at": "2026-08-31T01:26:35.899172Z",
-      "primary_item": {
-        "id": "a441238eda38562035c58d09cf71ec37f84a32f3",
-        "title": "音乐巨头联手向AI开炮：索尼华纳正式起诉Anthropic涉嫌大规模版权盗窃",
-        "title_zh": "音乐巨头联手向AI开炮：索尼华纳正式起诉Anthropic涉嫌大规模版权盗窃",
-        "title_en": null,
-        "title_original": "音乐巨头联手向AI开炮：索尼华纳正式起诉Anthropic涉嫌大规模版权盗窃",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30707",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-08-31T01:41:22.324829Z"
+        "scored_at": "2026-08-31T07:37:38.308165Z"
       }
     }
   ]
