@@ -48,6 +48,12 @@ ROWS = [
      "https://www.artificialintelligence-news.com/feed/", "RSS", "最多 8 条"),
     ("内置·精选媒体", "Claude Code Releases", "github.com",
      "https://github.com/anthropics/claude-code/releases.atom", "GitHub releases Atom", "最多 6 条"),
+    ("内置·精选媒体", "OpenRouter Announcements", "openrouter.ai",
+     "https://openrouter.ai/blog/feed.xml", "RSS",
+     "最多 6 条；2026-08-31 复查时 feed 复活（此前 Not Found），博客混有教程/营销文，靠条数上限+下游门槛过滤"),
+    ("内置·精选媒体", "量子位 QbitAI", "qbitai.com",
+     "https://www.qbitai.com/feed", "RSS",
+     "最多 10 条；中文 AI 行业媒体；需浏览器 UA（默认 UA 被 403）；2026-08-31 重叠率 0% 晋升接入"),
 
     # ---------------- 内置 · 聚合 / 社区 ----------------
     ("内置·聚合社区", "AI HOT", "aihot.virxact.com",
@@ -158,16 +164,12 @@ ROWS = [
      "LLM 接口", "LLM 辅助写作", "文章生成链路使用，非新闻信源"),
 
     # ---------------- 已评估未接入 ----------------
-    ("已评估未接入", "OpenRouter Announcements", "openrouter.ai",
-     "/blog/feed.xml", "RSS（未接入）", "接入探测时返回 Not Found 页面"),
     ("已评估未接入", "LMSYS Blog", "lmsys.org",
      "feed 端点探测", "RSS（未接入）", "重定向或 404"),
     ("已评估未接入", "Hugging Face Daily Papers", "huggingface.co",
      "RSS 风格端点探测", "RSS（未接入）", "返回 401/404；等稳定公开 feed 再议"),
     ("已评估未接入", "Berkeley RDI Blog", "—",
      "/feed.xml", "RSS（未接入）", "仅 2021 年 Jekyll 占位条目"),
-    ("已评估未接入", "量子位 QbitAI", "qbitai.com",
-     "RSS 直连", "RSS（观察名单）", "项目抓取路径下返回 403"),
     ("已评估未接入", "Substack 类 newsletter", "substack.com",
      "各刊 RSS", "RSS（未入公开示例）", "GitHub Actions 常收 403，本地可能正常"),
 ]

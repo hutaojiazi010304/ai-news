@@ -88,11 +88,19 @@ baseline, then let the aggregator layer add breadth.
 - **Curated AI media RSS**: reads a small set of public RSS/Atom feeds that add
   coverage without requiring login: The Decoder AI News, TechCrunch AI, The
   Verge RSS with strict AI-title filtering, MarkTechPost Research with research
-  filtering, VentureBeat AI, Artificial Intelligence News, and Claude Code
-  GitHub releases. These feeds are capped per source and pass through the same
-  AI relevance scoring as the rest of the radar. Research-heavy feeds are
-  intentionally filtered and downweighted so they fill the research lane without
-  dominating the default hot view.
+  filtering, VentureBeat AI, Artificial Intelligence News, Claude Code GitHub
+  releases, OpenRouter Announcements, and QbitAI (量子位). These feeds are
+  capped per source and pass through the same AI relevance scoring as the rest
+  of the radar. Research-heavy feeds are intentionally filtered and downweighted
+  so they fill the research lane without dominating the default hot view.
+  OpenRouter's blog mixes model/provider announcements with tutorials and
+  marketing posts; a low per-source cap plus the downstream relevance and
+  scoring gates keep only the signal, and items that AI HOT already surfaced
+  simply become multi-source evidence during story merging. QbitAI adds
+  Chinese-language AI industry coverage the other curated feeds lack; its feed
+  rejects default and stale browser agents (Chrome versions below 126 receive
+  HTTP 403), so the project fetch path must keep sending the current browser
+  `User-Agent`.
 - **AI Breakfast**: reads the public Beehiiv archive through Jina Reader because
   the original Beehiiv feed can be blocked from GitHub Actions.
 - **AI HOT**: reads the public `https://aihot.virxact.com/api/public/items`
@@ -205,21 +213,36 @@ hosted page visibly proving that RSS/OPML import works without requiring any
 private subscriptions. Maintainers can override it by setting `FOLLOW_OPML_B64`.
 Substack newsletters are intentionally excluded from the public demo OPML because
 GitHub Actions runners can receive `403 Forbidden` even when the same feeds work
-locally. QbitAI remains on the watchlist because the direct feed probed via
-`urllib` but returned `403 Forbidden` through the project fetch path. Broad
-sources such as Hacker News frontpage, general hot lists, X bridges, and WeChat
-bridges remain outside the example file unless the maintainer explicitly accepts
-the extra filtering and maintenance risk.
+locally. Broad sources such as Hacker News frontpage, general hot lists, X
+bridges, and WeChat bridges remain outside the example file unless the
+maintainer explicitly accepts the extra filtering and maintenance risk.
 
 Recent candidates skipped from the built-in default set:
 
-- **OpenRouter Announcements**: the public page advertises an RSS alternate, but
-  the observed `/blog/feed.xml` target returned a Not Found page during intake.
 - **LMSYS Blog**: probed feed endpoints redirected or returned 404.
 - **Hugging Face Daily Papers**: probed RSS-style endpoints returned 401/404;
   keep it out of the default set until a stable public feed is available.
 - **Berkeley RDI Blog**: `/feed.xml` returned only a stale Jekyll placeholder
   item from 2021, so it is not useful as a default source yet.
+
+Candidates promoted to built-in curated feeds after re-evaluation
+(2026-08-31):
+
+- **OpenRouter Announcements**: the 2026-05 intake probe saw `/blog/feed.xml`
+  return a Not Found page, so it was skipped. A 2026-08-31 re-probe found the
+  feed alive (116 entries). Overlap check against the last 7 days of
+  `data/archive.json` showed 3 recent items, all already covered by AI HOT, so
+  it does not meet the accept-default overlap threshold; it is integrated
+  anyway as a low-capped curated feed so model/provider announcements do not
+  depend on AI HOT availability, and duplicates become multi-source evidence
+  at story merge time.
+- **QbitAI (量子位)**: the old record said the project fetch path received
+  `403 Forbidden`. A 2026-08-31 re-probe found the block is
+  User-Agent-version based: the feed accepts Chrome 126+ and rejects the
+  pipeline's former Chrome 122 agent with HTTP 403. `BROWSER_UA` was bumped to
+  Chrome 126 and the direct feed now works. Overlap check found 10 recent
+  items with 0% duplication against the archive, so it was promoted into the
+  built-in curated media set to add Chinese-language AI industry coverage.
 
 ## Personal Source Workflow
 

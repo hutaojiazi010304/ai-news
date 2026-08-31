@@ -114,6 +114,31 @@ class AiRelevanceScoringTests(unittest.TestCase):
         self.assertEqual(result["reason"], "curated_media_source_filter")
         self.assertEqual(result["label"], "industry_business")
 
+    def test_curated_media_keeps_chinese_trusted_feed_without_ai_keyword_title(self):
+        rec = {
+            "site_id": "curated_media",
+            "site_name": "Curated Media",
+            "source": "量子位",
+            "title": "「灵犀智涌」发布新一代具身智能基座，多家机器人厂商宣布接入",
+            "url": "https://www.qbitai.com/example",
+        }
+        result = score_ai_relevance(rec)
+        self.assertTrue(result["is_ai_related"])
+        self.assertEqual(result["reason"], "curated_media_source_filter")
+
+    def test_curated_media_keeps_openrouter_as_trusted_feed(self):
+        rec = {
+            "site_id": "curated_media",
+            "site_name": "Curated Media",
+            "source": "OpenRouter Announcements",
+            "title": "Startup raises funding for enterprise routing platform",
+            "url": "https://openrouter.ai/blog/example",
+        }
+        result = score_ai_relevance(rec)
+        self.assertTrue(result["is_ai_related"])
+        self.assertEqual(result["reason"], "curated_media_source_filter")
+        self.assertEqual(result["label"], "industry_business")
+
     def test_curated_general_feed_requires_title_signal(self):
         rec = {
             "site_id": "curated_media",

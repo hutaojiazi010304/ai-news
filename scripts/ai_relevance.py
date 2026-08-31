@@ -156,6 +156,8 @@ CURATED_MEDIA_TRUSTED_SOURCE_KEYWORDS = [
     "venturebeat ai",
     "artificial intelligence news",
     "claude code releases",
+    "openrouter",
+    "量子位",
 ]
 CURATED_MEDIA_RESEARCH_SOURCE_KEYWORDS = [
     "marktechpost research",

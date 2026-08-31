@@ -202,7 +202,7 @@ class TestGlossaryParsing(unittest.TestCase):
             "法学硕士（LLM） => LLM\n"
             "克劳德 => Claude @Claude\n"
         )
-        with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as f:
+        with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False, encoding="utf-8") as f:
             f.write(content)
             path = f.name
         try:

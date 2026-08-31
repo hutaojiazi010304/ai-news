@@ -42,9 +42,11 @@ UTC = timezone.utc
 TZINFOS = {"CET": 3600, "CEST": 7200, "EST": -18000, "EDT": -14400,
            "PST": -28800, "PDT": -25200, "CST": -21600, "CDT": -18000,
            "MST": -25200, "MDT": -21600, "BST": 3600, "JST": 32400}
+# Keep the Chrome version current: some sites (e.g. qbitai.com) reject
+# stale browser versions with HTTP 403.
 BROWSER_UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 )
 SH_TZ = ZoneInfo("Asia/Shanghai")
 WAYTOAGI_DEFAULT = (
@@ -175,6 +177,24 @@ CURATED_AI_MEDIA_FEEDS: tuple[dict[str, Any], ...] = (
         "xml_url": "https://github.com/anthropics/claude-code/releases.atom",
         "html_url": "https://github.com/anthropics/claude-code/releases",
         "max_entries": 6,
+    },
+    {
+        # OpenRouter's blog mixes model/provider announcements with
+        # tutorials and marketing posts; the low cap plus downstream
+        # relevance/scoring gates keep only the signal.
+        "title": "OpenRouter Announcements",
+        "xml_url": "https://openrouter.ai/blog/feed.xml",
+        "html_url": "https://openrouter.ai/blog",
+        "max_entries": 6,
+    },
+    {
+        # Chinese-language AI industry outlet; titles are CJK so the
+        # bilingual path keeps them as-is. Requires the pipeline browser
+        # UA (the site blocks default agents).
+        "title": "量子位",
+        "xml_url": "https://www.qbitai.com/feed",
+        "html_url": "https://www.qbitai.com/",
+        "max_entries": 10,
     },
 )
 AIBREAKFAST_JINA_URL = "https://r.jina.ai/https://aibreakfast.beehiiv.com/"

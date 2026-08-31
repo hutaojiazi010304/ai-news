@@ -522,6 +522,36 @@ class TopicFilterTests(unittest.TestCase):
         self.assertEqual(items[0].source, "The Verge")
         self.assertIn("OpenAI", items[0].title)
 
+    def test_parse_curated_media_feed_keeps_chinese_titles_and_cap(self):
+        xml = """<?xml version='1.0' encoding='UTF-8'?>
+<rss><channel><title>量子位</title>
+<item>
+<title>「灵犀智涌」发布新一代具身智能基座</title>
+<link>https://www.qbitai.com/2026/06/example-1.html</link>
+<pubDate>Mon, 15 Jun 2026 02:05:04 +0000</pubDate>
+</item>
+<item>
+<title>国产大模型通过等保四级测评</title>
+<link>https://www.qbitai.com/2026/06/example-2.html</link>
+<pubDate>Mon, 15 Jun 2026 01:05:04 +0000</pubDate>
+</item>
+</channel></rss>""".encode("utf-8")
+        feed = {
+            "title": "量子位",
+            "xml_url": "https://www.qbitai.com/feed",
+            "html_url": "https://www.qbitai.com/",
+            "max_entries": 1,
+        }
+        items = parse_curated_ai_media_feed_items(xml, feed, now=parse_date_any("2026-06-16T00:00:00Z", None))
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0].site_id, "curated_media")
+        self.assertEqual(items[0].source, "量子位")
+        self.assertEqual(items[0].title, "「灵犀智涌」发布新一代具身智能基座")
+        self.assertEqual(
+            items[0].published_at,
+            datetime(2026, 6, 15, 2, 5, 4, tzinfo=timezone.utc),
+        )
+
     def test_parse_follow_builders_items(self):
         feeds = {
             "x": {
