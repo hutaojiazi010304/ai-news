@@ -200,6 +200,53 @@ baseline, then let the aggregator layer add breadth.
 See `docs/research/advanced-source-free-tier-budget-2026-05-10.md` for the X API
 and AgentMail budget notes.
 
+## Disabling Sources Per Environment (DISABLED_SOURCES)
+
+Set the `DISABLED_SOURCES` environment variable (comma-separated) to skip
+sources that are unreachable from the current network without removing them
+from the code. Entries match collector site ids exactly (`newsnow`), match
+feed/site titles by containment case-insensitively (`hugging face blog` also
+covers an OPML title like `Google DeepMind Blog`), and match OPML feed URLs
+by exact value. Disabled collectors report `skipped: true` with
+`skip_reason: disabled_by_env` in `data/source-status.json`; disabled OPML
+feeds report the same skip reason per feed.
+
+This matters because reachability differs per network. GitHub Actions runners
+reach `github.com`, `huggingface.co`, and `newsnow.busiyi.world` fine, while
+the maintainer's local direct network (no proxy) cannot, and conversely
+`qbitai.com` accepts the local IP but may reject other egress IPs. Cloud runs
+leave the variable unset and fetch everything; local runs set it to the list
+below.
+
+Local direct-network recommendation (probed 2026-08-31, direct only, no
+proxy; re-verify with `probe_sources_once.py` when the network changes):
+
+```
+set DISABLED_SOURCES=aibreakfast,newsnow,iris,hugging face blog,openai skills,claude code releases,google deepmind,google ai blog,microsoft ai blog
+```
+
+Reasons, one by one:
+
+- `aibreakfast`: `r.jina.ai` times out locally and the upstream Beehiiv
+  path is broken from cloud too (see the AI Breakfast note above).
+- `newsnow`: the site returns HTTP 403 to this local IP (works from
+  GitHub Actions).
+- `iris` (Info Flow): `iris.findtruman.io` returned HTTP 502 on every
+  2026-08-31 afternoon probe after working that morning; upstream outage,
+  re-probe before re-enabling.
+- `hugging face blog`: `huggingface.co` connections time out locally; covers
+  both the built-in official feed and the example OPML entry.
+- `openai skills` and `claude code releases`: `github.com` Atom endpoints
+  time out locally.
+- `google deepmind` and `google ai blog`: connections are reset locally
+  (interference), wasting 20-40 s per feed per run; they were reachable
+  earlier the same day, so re-probe before re-enabling.
+- `microsoft ai blog`: returns HTTP 403 locally (example OPML entry only).
+
+Sources deliberately NOT disabled despite being flaky: `followbuilders`
+(`raw.githubusercontent.com`) failed direct in one probe round but succeeded
+in the next two, so it stays enabled; failures are tolerated per run.
+
 ## Example OPML Seeds
 
 `feeds/follow.example.opml` contains a public, low-risk demo set that is expected

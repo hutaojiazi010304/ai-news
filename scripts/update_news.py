@@ -48,6 +48,30 @@ BROWSER_UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 )
+
+
+def disabled_source_names() -> set[str]:
+    """Lowercase entries from the DISABLED_SOURCES env var (comma-separated).
+
+    Entries match collector site ids exactly ("newsnow") and feed/site
+    titles by containment ("hugging face blog" also covers an OPML title
+    like "Google DeepMind Blog"), plus OPML feed URLs by exact match.
+    Lets a local run skip sources unreachable from its network without
+    removing them for other environments (e.g. GitHub Actions).
+    """
+    raw = str(os.environ.get("DISABLED_SOURCES") or "")
+    return {part.strip().lower() for part in raw.split(",") if part.strip()}
+
+
+def is_disabled_source(disabled: set[str], title: str = "", url: str = "") -> bool:
+    title_l = (title or "").strip().lower()
+    url_l = (url or "").strip().lower()
+    for name in disabled:
+        if not name:
+            continue
+        if (title_l and name in title_l) or (url_l and name == url_l):
+            return True
+    return False
 SH_TZ = ZoneInfo("Asia/Shanghai")
 WAYTOAGI_DEFAULT = (
     "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview"
@@ -1814,8 +1838,11 @@ def parse_curated_ai_media_feed_items(
 def fetch_curated_ai_media(session: requests.Session, now: datetime) -> list[RawItem]:
     out: list[RawItem] = []
     failures: list[str] = []
+    disabled = disabled_source_names()
 
     for feed in CURATED_AI_MEDIA_FEEDS:
+        if is_disabled_source(disabled, title=str(feed.get("title") or "")):
+            continue
         try:
             resp = session.get(
                 str(feed["xml_url"]),
@@ -1838,8 +1865,11 @@ def fetch_curated_ai_media(session: requests.Session, now: datetime) -> list[Raw
 
 def fetch_official_ai_updates(session: requests.Session, now: datetime) -> list[RawItem]:
     out: list[RawItem] = []
+    disabled = disabled_source_names()
 
     for feed in OFFICIAL_AI_FEEDS:
+        if is_disabled_source(disabled, title=str(feed.get("title") or "")):
+            continue
         try:
             out.extend(fetch_feed_as_official_items(session, feed, now))
         except Exception:
@@ -2457,8 +2487,23 @@ def collect_all(session: requests.Session, now: datetime) -> tuple[list[RawItem]
 
     raw_items: list[RawItem] = []
     statuses: list[dict[str, Any]] = []
+    disabled = disabled_source_names()
 
     for site_id, site_name, fn in tasks:
+        if site_id in disabled or is_disabled_source(disabled, title=site_name):
+            statuses.append(
+                {
+                    "site_id": site_id,
+                    "site_name": site_name,
+                    "ok": True,
+                    "item_count": 0,
+                    "duration_ms": 0,
+                    "error": None,
+                    "skipped": True,
+                    "skip_reason": "disabled_by_env",
+                }
+            )
+            continue
         start = time.perf_counter()
         error = None
         count = 0
@@ -2673,9 +2718,29 @@ def fetch_opml_rss(
     out: list[RawItem] = []
     feed_statuses: list[dict[str, Any]] = []
     resolved_feeds: list[dict[str, str]] = []
+    disabled = disabled_source_names()
 
     for feed in feeds:
         original_url = feed["xml_url"]
+        if is_disabled_source(disabled, title=feed.get("title") or "", url=original_url):
+            feed_id = hashlib.sha1(original_url.encode("utf-8")).hexdigest()[:10]
+            feed_statuses.append(
+                {
+                    "site_id": f"opmlrss:{feed_id}",
+                    "site_name": "OPML RSS",
+                    "feed_title": feed["title"],
+                    "feed_url": original_url,
+                    "effective_feed_url": None,
+                    "ok": True,
+                    "item_count": 0,
+                    "duration_ms": 0,
+                    "error": None,
+                    "skipped": True,
+                    "skip_reason": "disabled_by_env",
+                    "replaced": False,
+                }
+            )
+            continue
         bridge = resolve_opml_bridge_source(original_url, feed.get("html_url") or "")
         if bridge:
             record = dict(feed)
@@ -6635,21 +6700,7 @@ def main() -> int:
             )
 
     waytoagi_started = time.perf_counter()
-    try:
-        waytoagi_payload = fetch_waytoagi_recent_7d(session, now, WAYTOAGI_DEFAULT)
-        waytoagi_items = waytoagi_updates_to_raw_items(waytoagi_payload, now)
-        raw_items.extend(waytoagi_items)
-        statuses.append(
-            {
-                "site_id": "waytoagi",
-                "site_name": "WaytoAGI",
-                "ok": True,
-                "item_count": len(waytoagi_items),
-                "duration_ms": int((time.perf_counter() - waytoagi_started) * 1000),
-                "error": None,
-            }
-        )
-    except Exception as exc:
+    if is_disabled_source(disabled_source_names(), title="WaytoAGI", url=WAYTOAGI_DEFAULT):
         waytoagi_payload = {
             "generated_at": iso(now),
             "timezone": "Asia/Shanghai",
@@ -6658,20 +6709,60 @@ def main() -> int:
             "window_days": 7,
             "count_7d": 0,
             "updates_7d": [],
-            "warning": "WaytoAGI 近7日更新抓取失败",
-            "has_error": True,
-            "error": str(exc),
+            "warning": None,
+            "has_error": False,
+            "error": None,
         }
         statuses.append(
             {
                 "site_id": "waytoagi",
                 "site_name": "WaytoAGI",
-                "ok": False,
+                "ok": True,
                 "item_count": 0,
-                "duration_ms": int((time.perf_counter() - waytoagi_started) * 1000),
-                "error": str(exc),
+                "duration_ms": 0,
+                "error": None,
+                "skipped": True,
+                "skip_reason": "disabled_by_env",
             }
         )
+    else:
+        try:
+            waytoagi_payload = fetch_waytoagi_recent_7d(session, now, WAYTOAGI_DEFAULT)
+            waytoagi_items = waytoagi_updates_to_raw_items(waytoagi_payload, now)
+            raw_items.extend(waytoagi_items)
+            statuses.append(
+                {
+                    "site_id": "waytoagi",
+                    "site_name": "WaytoAGI",
+                    "ok": True,
+                    "item_count": len(waytoagi_items),
+                    "duration_ms": int((time.perf_counter() - waytoagi_started) * 1000),
+                    "error": None,
+                }
+            )
+        except Exception as exc:
+            waytoagi_payload = {
+                "generated_at": iso(now),
+                "timezone": "Asia/Shanghai",
+                "root_url": WAYTOAGI_DEFAULT,
+                "history_url": None,
+                "window_days": 7,
+                "count_7d": 0,
+                "updates_7d": [],
+                "warning": "WaytoAGI 近7日更新抓取失败",
+                "has_error": True,
+                "error": str(exc),
+            }
+            statuses.append(
+                {
+                    "site_id": "waytoagi",
+                    "site_name": "WaytoAGI",
+                    "ok": False,
+                    "item_count": 0,
+                    "duration_ms": int((time.perf_counter() - waytoagi_started) * 1000),
+                    "error": str(exc),
+                }
+            )
 
     if args.rss_opml:
         opml_path = Path(args.rss_opml).expanduser()
