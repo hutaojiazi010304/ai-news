@@ -126,6 +126,18 @@ class AiRelevanceScoringTests(unittest.TestCase):
         self.assertTrue(result["is_ai_related"])
         self.assertEqual(result["reason"], "curated_media_source_filter")
 
+    def test_curated_media_keeps_xinzhiyuan_as_trusted_feed(self):
+        rec = {
+            "site_id": "curated_media",
+            "site_name": "Curated Media",
+            "source": "新智元",
+            "title": "陶哲轩：100年后，数学再度大危机！",
+            "url": "https://aiera.com.cn/example",
+        }
+        result = score_ai_relevance(rec)
+        self.assertTrue(result["is_ai_related"])
+        self.assertEqual(result["reason"], "curated_media_source_filter")
+
     def test_curated_media_keeps_openrouter_as_trusted_feed(self):
         rec = {
             "site_id": "curated_media",

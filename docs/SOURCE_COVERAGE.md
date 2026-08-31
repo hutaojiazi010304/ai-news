@@ -89,10 +89,11 @@ baseline, then let the aggregator layer add breadth.
   coverage without requiring login: The Decoder AI News, TechCrunch AI, The
   Verge RSS with strict AI-title filtering, MarkTechPost Research with research
   filtering, VentureBeat AI, Artificial Intelligence News, Claude Code GitHub
-  releases, OpenRouter Announcements, and QbitAI (量子位). These feeds are
-  capped per source and pass through the same AI relevance scoring as the rest
-  of the radar. Research-heavy feeds are intentionally filtered and downweighted
-  so they fill the research lane without dominating the default hot view.
+  releases, OpenRouter Announcements, QbitAI (量子位), and Xinzhiyuan
+  (新智元). These feeds are capped per source and pass through the same AI
+  relevance scoring as the rest of the radar. Research-heavy feeds are
+  intentionally filtered and downweighted so they fill the research lane without
+  dominating the default hot view.
   OpenRouter's blog mixes model/provider announcements with tutorials and
   marketing posts; a low per-source cap plus the downstream relevance and
   scoring gates keep only the signal, and items that AI HOT already surfaced
@@ -100,7 +101,9 @@ baseline, then let the aggregator layer add breadth.
   Chinese-language AI industry coverage the other curated feeds lack; its feed
   rejects default and stale browser agents (Chrome versions below 126 receive
   HTTP 403), so the project fetch path must keep sending the current browser
-  `User-Agent`.
+  `User-Agent`. Xinzhiyuan's WordPress feed publishes a daily batch of Chinese
+  AI news each morning; an overlap check found 0% duplication against the
+  archive, so it was added to strengthen Chinese-language coverage.
 - **AI Breakfast**: reads the public Beehiiv archive through Jina Reader because
   the original Beehiiv feed can be blocked from GitHub Actions.
 - **AI HOT**: reads the public `https://aihot.virxact.com/api/public/items`
@@ -243,6 +246,20 @@ Candidates promoted to built-in curated feeds after re-evaluation
   Chrome 126 and the direct feed now works. Overlap check found 10 recent
   items with 0% duplication against the archive, so it was promoted into the
   built-in curated media set to add Chinese-language AI industry coverage.
+
+New sources evaluated on 2026-08-31:
+
+- **Xinzhiyuan (新智元, adopted)**: `https://aiera.com.cn/feed/` is a standard
+  WordPress RSS feed publishing a daily batch of Chinese AI news each morning.
+  Overlap check found 15 recent items with 0% duplication against the archive
+  (`accept_default`), so it was added to the built-in curated media set.
+- **Jiqizhixin (机器之心, skipped)**: the site was rebuilt into a landing page
+  for its paid data service; every route, including `/rss` and article URLs,
+  returns the same splash page, so there is no free public fetch path. The
+  sitemap still updates but article pages no longer serve content. Options if
+  coverage becomes critical: the vendor's paid data service (would need a
+  secret-backed advanced adapter) or a WeChat bridge (maintainer risk
+  acceptance required).
 
 ## Personal Source Workflow
 

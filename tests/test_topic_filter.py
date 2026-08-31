@@ -552,6 +552,41 @@ class TopicFilterTests(unittest.TestCase):
             datetime(2026, 6, 15, 2, 5, 4, tzinfo=timezone.utc),
         )
 
+    def test_parse_curated_media_feed_applies_xinzhiyuan_daily_batch_cap(self):
+        xml = """<?xml version='1.0' encoding='UTF-8'?>
+<rss><channel><title>新智元</title>
+<item>
+<title>OpenAI官宣：你的数据一字不留！</title>
+<link>https://aiera.com.cn/2026/06/example-1.html</link>
+<pubDate>Mon, 15 Jun 2026 00:01:35 +0000</pubDate>
+</item>
+<item>
+<title>9亿人免费用，GPT私人秘书来了！</title>
+<link>https://aiera.com.cn/2026/06/example-2.html</link>
+<pubDate>Mon, 15 Jun 2026 00:01:24 +0000</pubDate>
+</item>
+<item>
+<title>陶哲轩：100年后，数学再度大危机！</title>
+<link>https://aiera.com.cn/2026/06/example-3.html</link>
+<pubDate>Mon, 15 Jun 2026 00:01:14 +0000</pubDate>
+</item>
+</channel></rss>""".encode("utf-8")
+        feed = {
+            "title": "新智元",
+            "xml_url": "https://aiera.com.cn/feed/",
+            "html_url": "https://aiera.com.cn/",
+            "max_entries": 2,
+        }
+        items = parse_curated_ai_media_feed_items(xml, feed, now=parse_date_any("2026-06-16T00:00:00Z", None))
+        self.assertEqual(len(items), 2)
+        self.assertTrue(all(item.site_id == "curated_media" for item in items))
+        self.assertTrue(all(item.source == "新智元" for item in items))
+        self.assertEqual(items[0].title, "OpenAI官宣：你的数据一字不留！")
+        self.assertEqual(
+            items[1].published_at,
+            datetime(2026, 6, 15, 0, 1, 24, tzinfo=timezone.utc),
+        )
+
     def test_parse_follow_builders_items(self):
         feeds = {
             "x": {

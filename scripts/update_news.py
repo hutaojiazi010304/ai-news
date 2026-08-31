@@ -196,6 +196,15 @@ CURATED_AI_MEDIA_FEEDS: tuple[dict[str, Any], ...] = (
         "html_url": "https://www.qbitai.com/",
         "max_entries": 10,
     },
+    {
+        # WordPress feed of the WeChat-first outlet 新智元 (AI Era); it
+        # publishes a daily batch of Chinese AI news each morning, so the
+        # cap matches the full daily batch.
+        "title": "新智元",
+        "xml_url": "https://aiera.com.cn/feed/",
+        "html_url": "https://aiera.com.cn/",
+        "max_entries": 15,
+    },
 )
 AIBREAKFAST_JINA_URL = "https://r.jina.ai/https://aibreakfast.beehiiv.com/"
 AIHOT_ITEMS_API_URL = "https://aihot.virxact.com/api/public/items"

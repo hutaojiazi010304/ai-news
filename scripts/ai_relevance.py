@@ -158,6 +158,7 @@ CURATED_MEDIA_TRUSTED_SOURCE_KEYWORDS = [
     "claude code releases",
     "openrouter",
     "量子位",
+    "新智元",
 ]
 CURATED_MEDIA_RESEARCH_SOURCE_KEYWORDS = [
     "marktechpost research",
