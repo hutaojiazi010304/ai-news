@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T16:48:38.126062Z",
+  "generated_at": "2026-09-01T20:00:58.104477Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8391,
-      "importance": 0.8391,
-      "importance_score": 0.8391,
+      "score": 0.8345,
+      "importance": 0.8345,
+      "importance_score": 0.8345,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.8506,
+        "recency": 0.8247,
         "story_heat": 0.0
       },
       "category": "official",
@@ -84,7 +84,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
+      }
+    },
+    {
+      "story_id": "story_7ec800fd62d3",
+      "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能 / Introducing agentic video understanding with Gemini",
+      "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
+      "primary_url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
+      "source": "Google DeepMind",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "a6473259f31904c8b2a5ec6e629746de582bf604",
+          "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能 / Introducing agentic video understanding with Gemini",
+          "title_zh": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能",
+          "title_en": "Introducing agentic video understanding with Gemini",
+          "title_original": "Introducing agentic video understanding with Gemini",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-01T17:08:51Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Google DeepMind"
+      ],
+      "items": [
+        {
+          "id": "a6473259f31904c8b2a5ec6e629746de582bf604",
+          "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能 / Introducing agentic video understanding with Gemini",
+          "title_zh": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能",
+          "title_en": "Introducing agentic video understanding with Gemini",
+          "title_original": "Introducing agentic video understanding with Gemini",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-01T17:08:51Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8471,
+      "importance": 0.8471,
+      "importance_score": 0.8471,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9728,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-01T17:08:51Z",
+      "latest_at": "2026-09-01T17:08:51Z",
+      "primary_item": {
+        "id": "a6473259f31904c8b2a5ec6e629746de582bf604",
+        "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能 / Introducing agentic video understanding with Gemini",
+        "title_zh": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能",
+        "title_en": "Introducing agentic video understanding with Gemini",
+        "title_original": "Introducing agentic video understanding with Gemini",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
+        "source": "Google DeepMind",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8471,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-01T20:01:46.051644Z"
+      }
+    },
+    {
+      "story_id": "story_ad13bde463ce",
+      "title": "How AI-native companies turn workflows into operating capability",
+      "url": "https://openai.com/index/ai-native-company-workflows",
+      "primary_url": "https://openai.com/index/ai-native-company-workflows",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "d2442e95c27315c0dc37c732237ceff1d778958a",
+          "title": "How AI-native companies turn workflows into operating capability",
+          "title_zh": null,
+          "title_en": "How AI-native companies turn workflows into operating capability",
+          "title_original": "How AI-native companies turn workflows into operating capability",
+          "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/ai-native-company-workflows",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-01T17:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "d2442e95c27315c0dc37c732237ceff1d778958a",
+          "title": "How AI-native companies turn workflows into operating capability",
+          "title_zh": null,
+          "title_en": "How AI-native companies turn workflows into operating capability",
+          "title_original": "How AI-native companies turn workflows into operating capability",
+          "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/ai-native-company-workflows",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-01T17:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8468,
+      "importance": 0.8468,
+      "importance_score": 0.8468,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9714,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-01T17:00:00Z",
+      "latest_at": "2026-09-01T17:00:00Z",
+      "primary_item": {
+        "id": "d2442e95c27315c0dc37c732237ceff1d778958a",
+        "title": "How AI-native companies turn workflows into operating capability",
+        "title_zh": null,
+        "title_en": "How AI-native companies turn workflows into operating capability",
+        "title_original": "How AI-native companies turn workflows into operating capability",
+        "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/ai-native-company-workflows",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8468,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -161,15 +329,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8426,
-      "importance": 0.8426,
-      "importance_score": 0.8426,
+      "score": 0.8372,
+      "importance": 0.8372,
+      "importance_score": 0.8372,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9922,
+        "recency": 0.9621,
         "story_heat": 0.0
       },
       "category": "official",
@@ -197,7 +365,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -274,15 +442,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8391,
-      "importance": 0.8391,
-      "importance_score": 0.8391,
+      "score": 0.8345,
+      "importance": 0.8345,
+      "importance_score": 0.8345,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.8506,
+        "recency": 0.8247,
         "story_heat": 0.0
       },
       "category": "official",
@@ -310,7 +478,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -358,15 +526,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8116,
-      "importance": 0.8116,
-      "importance_score": 0.8116,
+      "score": 0.807,
+      "importance": 0.807,
+      "importance_score": 0.807,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8424,
+        "recency": 0.8168,
         "story_heat": 0.0
       },
       "category": "official",
@@ -393,7 +561,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -441,15 +609,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7923,
-      "importance": 0.7923,
-      "importance_score": 0.7923,
+      "score": 0.7876,
+      "importance": 0.7876,
+      "importance_score": 0.7876,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8517,
+        "recency": 0.8258,
         "story_heat": 0.0
       },
       "category": "official",
@@ -476,90 +644,174 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
-      "story_id": "story_48cf16a198d6",
-      "title": "Runway 发布 Solaris：首个界面世界模型，实时生成操作系统级交互界面 / Introducing Solaris",
-      "url": "https://runwayml.com/news/research/introducing-solaris",
-      "primary_url": "https://runwayml.com/news/research/introducing-solaris",
-      "source": "Runway：News（网页）",
-      "source_name": "AI HOT",
+      "story_id": "story_d048fe91383f",
+      "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+      "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+      "primary_url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "79a3911397e1bb59a4732194be300a67c1486761",
-          "title": "Runway 发布 Solaris：首个界面世界模型，实时生成操作系统级交互界面 / Introducing Solaris",
-          "title_zh": "Runway 发布 Solaris：首个界面世界模型，实时生成操作系统级交互界面",
-          "title_en": "Introducing Solaris",
-          "title_original": "Introducing Solaris",
-          "summary": "Runway 推出 Solaris，这是其全新界面世界模型（Interface World Models）系列的首个模型。Solaris 能实时逐帧生成应用和网站界面，无需中间代码表示，直接以图像作为交互层，支持视觉化、动态响应和开放式交互。它还可用于训练智能体，使其适应不断变化的界面布局，而非局限于特定训练环境。",
+          "id": "7a67f17ba50439bcdd9c0e031cdf68e41a427274",
+          "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+          "title_zh": null,
+          "title_en": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+          "title_original": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+          "summary": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more.",
           "recommend_reason_zh": null,
-          "url": "https://runwayml.com/news/research/introducing-solaris",
-          "source": "Runway：News（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-31T17:03:47.031000Z"
+          "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-01T12:00:00Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Runway：News（网页）"
+        "OpenAI News"
       ],
       "items": [
         {
-          "id": "79a3911397e1bb59a4732194be300a67c1486761",
-          "title": "Runway 发布 Solaris：首个界面世界模型，实时生成操作系统级交互界面 / Introducing Solaris",
-          "title_zh": "Runway 发布 Solaris：首个界面世界模型，实时生成操作系统级交互界面",
-          "title_en": "Introducing Solaris",
-          "title_original": "Introducing Solaris",
-          "summary": "Runway 推出 Solaris，这是其全新界面世界模型（Interface World Models）系列的首个模型。Solaris 能实时逐帧生成应用和网站界面，无需中间代码表示，直接以图像作为交互层，支持视觉化、动态响应和开放式交互。它还可用于训练智能体，使其适应不断变化的界面布局，而非局限于特定训练环境。",
+          "id": "7a67f17ba50439bcdd9c0e031cdf68e41a427274",
+          "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+          "title_zh": null,
+          "title_en": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+          "title_original": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+          "summary": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more.",
           "recommend_reason_zh": null,
-          "url": "https://runwayml.com/news/research/introducing-solaris",
-          "source": "Runway：News（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-08-31T17:03:47.031000Z"
+          "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-01T12:00:00Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7522,
-      "importance": 0.7522,
-      "importance_score": 0.7522,
+      "score": 0.8466,
+      "importance": 0.8466,
+      "importance_score": 0.8466,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.63,
+        "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.7956,
+        "ai_relevance": 0.95,
+        "recency": 0.9257,
         "story_heat": 0.0
       },
       "category": "official",
       "reasons": [
+        "official_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-08-31T17:03:47.031000Z",
-      "latest_at": "2026-08-31T17:03:47.031000Z",
+      "earliest_at": "2026-09-01T12:00:00Z",
+      "latest_at": "2026-09-01T12:00:00Z",
       "primary_item": {
-        "id": "79a3911397e1bb59a4732194be300a67c1486761",
-        "title": "Runway 发布 Solaris：首个界面世界模型，实时生成操作系统级交互界面 / Introducing Solaris",
-        "title_zh": "Runway 发布 Solaris：首个界面世界模型，实时生成操作系统级交互界面",
-        "title_en": "Introducing Solaris",
-        "title_original": "Introducing Solaris",
-        "summary": "Runway 推出 Solaris，这是其全新界面世界模型（Interface World Models）系列的首个模型。Solaris 能实时逐帧生成应用和网站界面，无需中间代码表示，直接以图像作为交互层，支持视觉化、动态响应和开放式交互。它还可用于训练智能体，使其适应不断变化的界面布局，而非局限于特定训练环境。",
+        "id": "7a67f17ba50439bcdd9c0e031cdf68e41a427274",
+        "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+        "title_zh": null,
+        "title_en": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+        "title_original": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
+        "summary": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more.",
         "recommend_reason_zh": null,
-        "url": "https://runwayml.com/news/research/introducing-solaris",
-        "source": "Runway：News（网页）",
-        "source_name": "AI HOT"
+        "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
       },
-      "peak_score": 0.7824,
+      "peak_score": 0.8466,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
+      }
+    },
+    {
+      "story_id": "story_5537a1603458",
+      "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+      "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "541ec9d2c0068956dc4cb240382160f9f8e409f3",
+          "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+          "title_zh": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
+          "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+          "title_original": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+          "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-01T19:43:09Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "items": [
+        {
+          "id": "541ec9d2c0068956dc4cb240382160f9f8e409f3",
+          "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+          "title_zh": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
+          "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+          "title_original": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+          "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-01T19:43:09Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7881,
+      "importance": 0.7881,
+      "importance_score": 0.7881,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.79,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9971,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-01T19:43:09Z",
+      "latest_at": "2026-09-01T19:43:09Z",
+      "primary_item": {
+        "id": "541ec9d2c0068956dc4cb240382160f9f8e409f3",
+        "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+        "title_zh": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
+        "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+        "title_original": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+        "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7881,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -607,15 +859,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7766,
-      "importance": 0.7766,
-      "importance_score": 0.7766,
+      "score": 0.772,
+      "importance": 0.772,
+      "importance_score": 0.772,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.85,
+        "recency": 0.8242,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -642,7 +894,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -690,21 +942,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7505,
-      "importance": 0.7505,
-      "importance_score": 0.7505,
+      "score": 0.7456,
+      "importance": 0.7456,
+      "importance_score": 0.7456,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9052,
+        "recency": 0.8777,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-01T06:28:08.558093Z",
       "latest_at": "2026-09-01T06:28:08.558093Z",
@@ -725,7 +976,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -773,15 +1024,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7726,
-      "importance": 0.7726,
-      "importance_score": 0.7726,
+      "score": 0.7673,
+      "importance": 0.7673,
+      "importance_score": 0.7673,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9609,
+        "recency": 0.9317,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -808,7 +1059,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -856,15 +1107,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7593,
-      "importance": 0.7593,
-      "importance_score": 0.7593,
+      "score": 0.7541,
+      "importance": 0.7541,
+      "importance_score": 0.7541,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.954,
+        "recency": 0.925,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -891,7 +1142,89 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
+      }
+    },
+    {
+      "story_id": "story_6f36d8876ee7",
+      "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Claude Platform release notes - September 1， 2026",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "primary_url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "source": "Claude Platform：开发者版本说明（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "e2696f8d56951fd0408043550930c79ed5401eb2",
+          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Claude Platform release notes - September 1， 2026",
+          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+          "title_en": "Claude Platform release notes - September 1， 2026",
+          "title_original": "Claude Platform release notes - September 1， 2026",
+          "summary": "Anthropic 发布 Claude Fable 5.1（claude-fable-5-1），面向长时间运行的智能体编码、知识工作与研究，Claude Mythos 5.1 面向 Project Glasswing 参与者。",
+          "recommend_reason_zh": null,
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "source": "Claude Platform：开发者版本说明（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-01T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Claude Platform：开发者版本说明（RSS）"
+      ],
+      "items": [
+        {
+          "id": "e2696f8d56951fd0408043550930c79ed5401eb2",
+          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Claude Platform release notes - September 1， 2026",
+          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+          "title_en": "Claude Platform release notes - September 1， 2026",
+          "title_original": "Claude Platform release notes - September 1， 2026",
+          "summary": "Anthropic 发布 Claude Fable 5.1（claude-fable-5-1），面向长时间运行的智能体编码、知识工作与研究，Claude Mythos 5.1 面向 Project Glasswing 参与者。",
+          "recommend_reason_zh": null,
+          "url": "https://platform.claude.com/docs/en/release-notes/overview",
+          "source": "Claude Platform：开发者版本说明（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-01T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7361,
+      "importance": 0.7361,
+      "importance_score": 0.7361,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8247,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-01T00:00:00Z",
+      "latest_at": "2026-09-01T00:00:00Z",
+      "primary_item": {
+        "id": "e2696f8d56951fd0408043550930c79ed5401eb2",
+        "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Claude Platform release notes - September 1， 2026",
+        "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+        "title_en": "Claude Platform release notes - September 1， 2026",
+        "title_original": "Claude Platform release notes - September 1， 2026",
+        "summary": "Anthropic 发布 Claude Fable 5.1（claude-fable-5-1），面向长时间运行的智能体编码、知识工作与研究，Claude Mythos 5.1 面向 Project Glasswing 参与者。",
+        "recommend_reason_zh": null,
+        "url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "source": "Claude Platform：开发者版本说明（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7361,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -939,21 +1272,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7505,
-      "importance": 0.7505,
-      "importance_score": 0.7505,
+      "score": 0.7456,
+      "importance": 0.7456,
+      "importance_score": 0.7456,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9052,
+        "recency": 0.8777,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-01T06:28:08.558093Z",
       "latest_at": "2026-09-01T06:28:08.558093Z",
@@ -974,7 +1306,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -1022,15 +1354,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7593,
-      "importance": 0.7593,
-      "importance_score": 0.7593,
+      "score": 0.7541,
+      "importance": 0.7541,
+      "importance_score": 0.7541,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.954,
+        "recency": 0.925,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1057,7 +1389,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -1105,15 +1437,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7593,
-      "importance": 0.7593,
-      "importance_score": 0.7593,
+      "score": 0.7541,
+      "importance": 0.7541,
+      "importance_score": 0.7541,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.954,
+        "recency": 0.925,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1140,7 +1472,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -1188,21 +1520,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7505,
-      "importance": 0.7505,
-      "importance_score": 0.7505,
+      "score": 0.7456,
+      "importance": 0.7456,
+      "importance_score": 0.7456,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9052,
+        "recency": 0.8777,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-01T06:28:08.558093Z",
       "latest_at": "2026-09-01T06:28:08.558093Z",
@@ -1223,7 +1554,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -1271,21 +1602,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7505,
-      "importance": 0.7505,
-      "importance_score": 0.7505,
+      "score": 0.7456,
+      "importance": 0.7456,
+      "importance_score": 0.7456,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9052,
+        "recency": 0.8777,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-01T06:28:08.558093Z",
       "latest_at": "2026-09-01T06:28:08.558093Z",
@@ -1306,7 +1636,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     },
     {
@@ -1354,15 +1684,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7621,
+      "importance": 0.7621,
+      "importance_score": 0.7621,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9696,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1389,339 +1719,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
-      }
-    },
-    {
-      "story_id": "story_34e1bbef1d56",
-      "title": "MiniMax新模型引爆股价大涨超20%，下半年蓄势冲击3万亿参数",
-      "url": "https://www.aibase.com/news/30751",
-      "primary_url": "https://www.aibase.com/news/30751",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "9ed7f687304b1cf12ba7396369721865d3531713",
-          "title": "MiniMax新模型引爆股价大涨超20%，下半年蓄势冲击3万亿参数",
-          "title_zh": "MiniMax新模型引爆股价大涨超20%，下半年蓄势冲击3万亿参数",
-          "title_en": null,
-          "title_original": "MiniMax新模型引爆股价大涨超20%，下半年蓄势冲击3万亿参数",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30751",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T06:28:08.558093Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "9ed7f687304b1cf12ba7396369721865d3531713",
-          "title": "MiniMax新模型引爆股价大涨超20%，下半年蓄势冲击3万亿参数",
-          "title_zh": "MiniMax新模型引爆股价大涨超20%，下半年蓄势冲击3万亿参数",
-          "title_en": null,
-          "title_original": "MiniMax新模型引爆股价大涨超20%，下半年蓄势冲击3万亿参数",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30751",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T06:28:08.558093Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7505,
-      "importance": 0.7505,
-      "importance_score": 0.7505,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9052,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-01T06:28:08.558093Z",
-      "latest_at": "2026-09-01T06:28:08.558093Z",
-      "primary_item": {
-        "id": "9ed7f687304b1cf12ba7396369721865d3531713",
-        "title": "MiniMax新模型引爆股价大涨超20%，下半年蓄势冲击3万亿参数",
-        "title_zh": "MiniMax新模型引爆股价大涨超20%，下半年蓄势冲击3万亿参数",
-        "title_en": null,
-        "title_original": "MiniMax新模型引爆股价大涨超20%，下半年蓄势冲击3万亿参数",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30751",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
-      }
-    },
-    {
-      "story_id": "story_d50e38f3313d",
-      "title": "Runway发布首个界面世界模型Solaris，实时逐帧生成动态交互界面",
-      "url": "https://www.aibase.com/news/30756",
-      "primary_url": "https://www.aibase.com/news/30756",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "993b62ebd3b045f88455749478a3a8a0eb01d374",
-          "title": "Runway发布首个界面世界模型Solaris，实时逐帧生成动态交互界面",
-          "title_zh": "Runway发布首个界面世界模型Solaris，实时逐帧生成动态交互界面",
-          "title_en": null,
-          "title_original": "Runway发布首个界面世界模型Solaris，实时逐帧生成动态交互界面",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30756",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T11:55:17.044035Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "993b62ebd3b045f88455749478a3a8a0eb01d374",
-          "title": "Runway发布首个界面世界模型Solaris，实时逐帧生成动态交互界面",
-          "title_zh": "Runway发布首个界面世界模型Solaris，实时逐帧生成动态交互界面",
-          "title_en": null,
-          "title_original": "Runway发布首个界面世界模型Solaris，实时逐帧生成动态交互界面",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30756",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T11:55:17.044035Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7593,
-      "importance": 0.7593,
-      "importance_score": 0.7593,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.954,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-01T11:55:17.044035Z",
-      "latest_at": "2026-09-01T11:55:17.044035Z",
-      "primary_item": {
-        "id": "993b62ebd3b045f88455749478a3a8a0eb01d374",
-        "title": "Runway发布首个界面世界模型Solaris，实时逐帧生成动态交互界面",
-        "title_zh": "Runway发布首个界面世界模型Solaris，实时逐帧生成动态交互界面",
-        "title_en": null,
-        "title_original": "Runway发布首个界面世界模型Solaris，实时逐帧生成动态交互界面",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30756",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
-      }
-    },
-    {
-      "story_id": "story_8fd2f4035342",
-      "title": "​35 亿美元押注联发科：英伟达联手打造覆盖 AI 工厂到 PC 的下一代计算平台",
-      "url": "https://www.aibase.com/news/30747",
-      "primary_url": "https://www.aibase.com/news/30747",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "96d288338f75e896213c1b6a05f8585077b74913",
-          "title": "​35 亿美元押注联发科：英伟达联手打造覆盖 AI 工厂到 PC 的下一代计算平台",
-          "title_zh": "​35 亿美元押注联发科：英伟达联手打造覆盖 AI 工厂到 PC 的下一代计算平台",
-          "title_en": null,
-          "title_original": "​35 亿美元押注联发科：英伟达联手打造覆盖 AI 工厂到 PC 的下一代计算平台",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30747",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T06:28:08.558093Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "96d288338f75e896213c1b6a05f8585077b74913",
-          "title": "​35 亿美元押注联发科：英伟达联手打造覆盖 AI 工厂到 PC 的下一代计算平台",
-          "title_zh": "​35 亿美元押注联发科：英伟达联手打造覆盖 AI 工厂到 PC 的下一代计算平台",
-          "title_en": null,
-          "title_original": "​35 亿美元押注联发科：英伟达联手打造覆盖 AI 工厂到 PC 的下一代计算平台",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30747",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T06:28:08.558093Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7505,
-      "importance": 0.7505,
-      "importance_score": 0.7505,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9052,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-01T06:28:08.558093Z",
-      "latest_at": "2026-09-01T06:28:08.558093Z",
-      "primary_item": {
-        "id": "96d288338f75e896213c1b6a05f8585077b74913",
-        "title": "​35 亿美元押注联发科：英伟达联手打造覆盖 AI 工厂到 PC 的下一代计算平台",
-        "title_zh": "​35 亿美元押注联发科：英伟达联手打造覆盖 AI 工厂到 PC 的下一代计算平台",
-        "title_en": null,
-        "title_original": "​35 亿美元押注联发科：英伟达联手打造覆盖 AI 工厂到 PC 的下一代计算平台",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30747",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
-      }
-    },
-    {
-      "story_id": "story_080bc9896870",
-      "title": "​AI 造剧也能拿收视第一：国内首部 AIGC 长剧《后西游记》开播即飘红",
-      "url": "https://www.aibase.com/news/30743",
-      "primary_url": "https://www.aibase.com/news/30743",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "b115e881d08f3a343ecfe685f6aab741eba8a727",
-          "title": "​AI 造剧也能拿收视第一：国内首部 AIGC 长剧《后西游记》开播即飘红",
-          "title_zh": "​AI 造剧也能拿收视第一：国内首部 AIGC 长剧《后西游记》开播即飘红",
-          "title_en": null,
-          "title_original": "​AI 造剧也能拿收视第一：国内首部 AIGC 长剧《后西游记》开播即飘红",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30743",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T06:28:08.558093Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "b115e881d08f3a343ecfe685f6aab741eba8a727",
-          "title": "​AI 造剧也能拿收视第一：国内首部 AIGC 长剧《后西游记》开播即飘红",
-          "title_zh": "​AI 造剧也能拿收视第一：国内首部 AIGC 长剧《后西游记》开播即飘红",
-          "title_en": null,
-          "title_original": "​AI 造剧也能拿收视第一：国内首部 AIGC 长剧《后西游记》开播即飘红",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30743",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T06:28:08.558093Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7505,
-      "importance": 0.7505,
-      "importance_score": 0.7505,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9052,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-01T06:28:08.558093Z",
-      "latest_at": "2026-09-01T06:28:08.558093Z",
-      "primary_item": {
-        "id": "b115e881d08f3a343ecfe685f6aab741eba8a727",
-        "title": "​AI 造剧也能拿收视第一：国内首部 AIGC 长剧《后西游记》开播即飘红",
-        "title_zh": "​AI 造剧也能拿收视第一：国内首部 AIGC 长剧《后西游记》开播即飘红",
-        "title_en": null,
-        "title_original": "​AI 造剧也能拿收视第一：国内首部 AIGC 长剧《后西游记》开播即飘红",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30743",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-01T17:01:59.187587Z"
+        "scored_at": "2026-09-01T20:01:46.051644Z"
       }
     }
   ]
