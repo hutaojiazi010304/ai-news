@@ -5,7 +5,10 @@ Selects stories from the last 7 days: rebuilds the story pool from
 ``{data-dir}/archive.json`` (the pipeline's 21-day item store) with the
 weekly freshness curve (no decay for the first 6 days, gentle decay after),
 and falls back to ``{data-dir}/daily-brief.json`` when the weekly pool
-cannot be built (see ``load_push_brief``). Picks the top curated items,
+cannot be built (see ``load_push_brief``). Picks the top curated items plus
+a few backup candidates (``WEIXIN_POOL_EXTRA``): an item whose reading guide
+ends up empty is dropped and the next backup moves up (see ``fill_reasons``),
+so the issue keeps its full size whenever the pool allows. Then
 (re)writes per-item reading guides (direct content
 summaries, length follows the content) with a Qwen text model, uses a
 fixed-template title and digest, and composes
@@ -111,6 +114,11 @@ WEEKLY_NEAR_DUP_WINDOW_HOURS = 168.0
 # removed the fresh-channel tail that feeds the source penalty and changed
 # which officials survive — the opposite of the intended effect.)
 WEEKLY_OFFICIAL_CAP_DEFAULT = 16
+# Backup candidates carried into guide writing beyond max_items (override via
+# WEIXIN_POOL_EXTRA). Items whose final guide ends up empty are dropped and
+# these backups fill the freed slots, so the issue keeps its full size
+# whenever the pool allows (see fill_reasons).
+WEEKLY_POOL_EXTRA_DEFAULT = 10
 
 TZ_CN = timezone(timedelta(hours=8))
 WEEKDAY_CN = ("周一", "周二", "周三", "周四", "周五", "周六", "周日")
@@ -322,6 +330,26 @@ def _weekly_official_cap() -> int:
         return WEEKLY_OFFICIAL_CAP_DEFAULT
 
 
+def weekly_pool_extra() -> int:
+    """WEIXIN_POOL_EXTRA: backup candidates carried into guide writing.
+
+    The guide-writing pool holds ``max_items + extra`` candidates instead of
+    exactly ``max_items``: an item whose final guide ends up empty is dropped
+    and the next backup moves up (see ``fill_reasons``), so the article keeps
+    its full size whenever the pool allows. Defaults to
+    ``WEEKLY_POOL_EXTRA_DEFAULT``; garbage/negative values clamp to 0 (= the
+    former exact-size pool). Shared by the 1.0 and 2.0 layouts; the deep 3.0
+    layout keeps its own knob (WEIXIN_DEEP_POOL_EXTRA) like its max-items one.
+    """
+    raw = os.environ.get("WEIXIN_POOL_EXTRA", "").strip()
+    if not raw:
+        return WEEKLY_POOL_EXTRA_DEFAULT
+    try:
+        return max(0, int(raw))
+    except ValueError:
+        return WEEKLY_POOL_EXTRA_DEFAULT
+
+
 def _select_with_official_cap(gated: list[dict], max_items: int, cap: int) -> list[dict]:
     """Uncapped selection mechanism, official cap applied only at the end.
 
@@ -389,7 +417,9 @@ def _apply_pipeline_enhance_cache(items: list[dict], cache: dict[str, str]) -> N
             item["recommend_reason_zh"] = reason
 
 
-def build_weekly_brief(data_dir: Path, now: datetime, max_items: int) -> dict | None:
+def build_weekly_brief(
+    data_dir: Path, now: datetime, max_items: int, pool_size: int | None = None
+) -> dict | None:
     """Rebuild the story pool for the weekly push from the pipeline archive.
 
     daily-brief.json only covers the pipeline's 24h window, so the weekly
@@ -407,6 +437,13 @@ def build_weekly_brief(data_dir: Path, now: datetime, max_items: int) -> dict | 
     None when the weekly pool cannot be built (pipeline module unavailable,
     archive missing/corrupt/empty, or no story passes the quality gate) —
     the caller then falls back to daily-brief.json.
+
+    ``pool_size`` over-selects the guide-writing pool: the selection
+    mechanism returns up to ``pool_size`` candidates (at least ``max_items``)
+    so items whose guide ends up empty can be dropped and backfilled before
+    the issue narrows back to ``max_items`` (see ``fill_reasons``). None
+    keeps the former exact-``max_items`` selection. The official cap still
+    bounds the pool, so the final issue (a subset of it) stays ≤ cap too.
     """
     if _un is None:
         return None
@@ -453,12 +490,12 @@ def build_weekly_brief(data_dir: Path, now: datetime, max_items: int) -> dict | 
         return None
     pool = _un.normalize_aihubtoday_records(pool)
     # Cache-only bilingual pass: zero translation budgets make this a pure
-    # offline cache lookup (the session argument is never touched). The
-    # returned cache dict may gain entries in memory; it is never written
-    # back — data/ stays read-only for the weekly push.
+    # offline cache lookup. The returned cache dict may gain entries in
+    # memory; it is never written back — data/ stays read-only for the
+    # weekly push.
     title_cache = _un.load_title_zh_cache(data_dir / "title-zh-cache.json")
     pool, _unused_all, title_cache = _un.add_bilingual_fields(
-        pool, [], None, title_cache, 0
+        pool, [], title_cache, 0
     )
     _apply_pipeline_enhance_cache(pool, title_cache)
 
@@ -509,10 +546,11 @@ def build_weekly_brief(data_dir: Path, now: datetime, max_items: int) -> dict | 
     if not gated:
         return None
     cap = _weekly_official_cap()
+    limit = max_items if pool_size is None else max(pool_size, max_items)
     if cap > 0:
-        items = _select_with_official_cap(gated, max_items, cap)
+        items = _select_with_official_cap(gated, limit, cap)
     else:
-        items = _un.select_diverse_stories(gated, max_items)
+        items = _un.select_diverse_stories(gated, limit)
     if not items:
         return None
     return {
@@ -523,7 +561,9 @@ def build_weekly_brief(data_dir: Path, now: datetime, max_items: int) -> dict | 
     }
 
 
-def load_push_brief(data_dir: Path, max_items: int) -> dict | None:
+def load_push_brief(
+    data_dir: Path, max_items: int, pool_size: int | None = None
+) -> dict | None:
     """Unified input for the push scripts: the weekly story pool rebuilt
     from the pipeline archive, falling back to the 24h daily brief.
 
@@ -531,12 +571,18 @@ def load_push_brief(data_dir: Path, max_items: int) -> dict | None:
     ``WEIXIN_FORCE_DAILY=1`` is set, archive.json is missing/corrupt/empty,
     or no story passes the quality gate. Fixtures that ship only a
     daily-brief.json therefore keep working unchanged.
+
+    ``pool_size`` is forwarded to ``build_weekly_brief`` (over-selected
+    guide-writing pool); the daily-brief fallback ignores it — the daily
+    snapshot carries at most 20 items, so backfill is best-effort there.
     """
     data_dir = Path(data_dir)
     if str(os.environ.get("WEIXIN_FORCE_DAILY") or "").strip() == "1":
         print("weixin: WEIXIN_FORCE_DAILY=1, using daily-brief.json")
         return load_brief(data_dir / "daily-brief.json")
-    brief = build_weekly_brief(data_dir, datetime.now(timezone.utc), max_items)
+    brief = build_weekly_brief(
+        data_dir, datetime.now(timezone.utc), max_items, pool_size
+    )
     if brief is not None:
         print(
             "weixin: weekly brief from archive: "
@@ -967,14 +1013,14 @@ def generate_reason(item: dict, context: str, cfg: Config) -> str | None:
     return None
 
 
-def fill_reasons(
-    items: list[dict],
+def _fill_one_reason(
+    item: dict,
     cache: dict,
     cfg: Config,
     session: requests.Session | None,
     stats: dict,
 ) -> None:
-    """Attach ``weixin_reason`` to each item.
+    """Attach ``weixin_reason`` to a single item (the former fill-loop body).
 
     With an API key, Qwen is the single source of guide text: cached
     long-format reason > fresh Qwen generation > upstream reason as a
@@ -982,47 +1028,92 @@ def fill_reasons(
     Keyless runs degrade gracefully: long upstream reason > cache > short
     upstream reason > empty.
     """
-    for item in items:
-        title = str(item.get("title") or "")
-        story_id = str(item.get("story_id") or "")
-        existing = existing_reason(item)
+    title = str(item.get("title") or "")
+    story_id = str(item.get("story_id") or "")
+    existing = existing_reason(item)
 
-        key = cache_key(story_id, title)
-        entry = cache.get("entries", {}).get(key)
-        cached_reason = ""
-        if isinstance(entry, dict) and entry.get("title_hash") == title_hash(title):
-            cached_reason = str(entry.get("reason") or "").strip()
+    key = cache_key(story_id, title)
+    entry = cache.get("entries", {}).get(key)
+    cached_reason = ""
+    if isinstance(entry, dict) and entry.get("title_hash") == title_hash(title):
+        cached_reason = str(entry.get("reason") or "").strip()
 
-        if cfg["api_key"]:
-            if cached_reason:
-                item["weixin_reason"] = cached_reason
-                stats["cached"] += 1
-                continue
-            context = reason_context(item, session)
-            reason = generate_reason(item, context, cfg) if context else None
-            if reason:
-                item["weixin_reason"] = reason
-                cache["entries"][key] = {
-                    "reason": reason,
-                    "title_hash": title_hash(title),
-                    "created_at": utcnow_iso(),
-                }
-                stats["generated"] += 1
-            else:
-                item["weixin_reason"] = existing or ""
-                stats["skipped"] += 1
-            continue
-
-        if existing and len(existing) >= REASON_MIN_REUSE_CHARS:
-            item["weixin_reason"] = existing
-            stats["reused"] += 1
-            continue
+    if cfg["api_key"]:
         if cached_reason:
             item["weixin_reason"] = cached_reason
             stats["cached"] += 1
+            return
+        context = reason_context(item, session)
+        reason = generate_reason(item, context, cfg) if context else None
+        if reason:
+            item["weixin_reason"] = reason
+            cache["entries"][key] = {
+                "reason": reason,
+                "title_hash": title_hash(title),
+                "created_at": utcnow_iso(),
+            }
+            stats["generated"] += 1
+        else:
+            item["weixin_reason"] = existing or ""
+            stats["skipped"] += 1
+        return
+
+    if existing and len(existing) >= REASON_MIN_REUSE_CHARS:
+        item["weixin_reason"] = existing
+        stats["reused"] += 1
+        return
+    if cached_reason:
+        item["weixin_reason"] = cached_reason
+        stats["cached"] += 1
+        return
+    item["weixin_reason"] = existing or ""
+    stats["skipped"] += 1
+
+
+def fill_reasons(
+    items: list[dict],
+    cache: dict,
+    cfg: Config,
+    session: requests.Session | None,
+    stats: dict,
+    max_items: int | None = None,
+) -> list[dict]:
+    """Fill guides candidate by candidate and return the kept issue items.
+
+    Candidates are processed in order; one whose final ``weixin_reason`` ends
+    up empty has no guide material and is dropped (``stats["dropped"]``)
+    instead of rendering as an empty shell — the next candidate moves up, so
+    the article keeps its full size whenever the pool allows. Stops early
+    once ``max_items`` items are kept, so candidates past the cutoff cost no
+    API/fetch calls. Safety net: if EVERY candidate ends up empty (e.g. a
+    keyless run without any upstream reasons), fall back to the top
+    ``max_items`` candidates rendered as-is — the pre-filter behavior — so
+    the article never regresses to zero items. A dropped item never polluted
+    the cache: cache writes only happen on successful generation, which
+    implies a non-empty reason and thus a kept item.
+    """
+    kept: list[dict] = []
+    for item in items:
+        if max_items is not None and len(kept) >= max_items:
+            break
+        _fill_one_reason(item, cache, cfg, session, stats)
+        if str(item.get("weixin_reason") or "").strip():
+            kept.append(item)
             continue
-        item["weixin_reason"] = existing or ""
-        stats["skipped"] += 1
+        stats["dropped"] = stats.get("dropped", 0) + 1
+        print(
+            "weixin: 无导读素材，跳过该条目并用候补补齐："
+            f"{str(item.get('title') or item.get('story_id') or '')[:48]}"
+        )
+    if not kept:
+        fallback = list(items)[:max_items] if max_items is not None else list(items)
+        print(
+            f"weixin: 全部 {len(items)} 条候选均无导读素材，"
+            f"退回未过滤的前 {len(fallback)} 条",
+            file=sys.stderr,
+        )
+        return fallback
+    return kept
 
 
 # ---------------------------------------------------------------------------
@@ -1828,7 +1919,11 @@ def main(argv: list[str] | None = None) -> int:
     output_dir = Path(args.output_dir)
     assets_dir = Path(args.assets_dir)
 
-    brief = load_push_brief(data_dir, cfg["max_items"])
+    # Over-selected pool: max_items + backup candidates, so items whose guide
+    # ends up empty can be dropped and backfilled (fill_reasons) without the
+    # issue shrinking below max_items.
+    pool_size = cfg["max_items"] + weekly_pool_extra()
+    brief = load_push_brief(data_dir, cfg["max_items"], pool_size=pool_size)
     if brief is None:
         print(
             f"weixin: no usable brief under {data_dir} "
@@ -1836,8 +1931,8 @@ def main(argv: list[str] | None = None) -> int:
         )
         return 0
 
-    items = select_items(brief, cfg["max_items"])
-    if not items:
+    candidates = select_items(brief, pool_size)
+    if not candidates:
         print("weixin: brief has no items, nothing to do")
         return 0
 
@@ -1848,22 +1943,28 @@ def main(argv: list[str] | None = None) -> int:
     session = create_session() if cfg["api_key"] else None
     cache_path = output_dir / "reason-cache.json"
     cache = load_cache(cache_path)
-    stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0}
+    stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0, "dropped": 0}
 
     # Translate leftover pure-English titles before guides are written so the
     # guides, the cover headline and the rendered titles all use Chinese.
-    ensure_zh_titles(items, cache, cfg, stats)
+    # Runs over the full candidate pool: translations are cached in the
+    # shared tt1| namespace, so promoted backups already have Chinese titles.
+    ensure_zh_titles(candidates, cache, cfg, stats)
 
     # Re-roll cached guides named via --regenerate. Runs AFTER title
     # translation so fragments can match whatever the maintainer reads in the
     # article (the Chinese display title or the kept-English original).
+    # Position specs beyond max_items now address backup candidates that may
+    # never enter the issue (harmless: their cache entry is dropped anyway).
     specs = parse_regenerate_specs(args.regenerate)
     if specs:
-        wanted, unmatched = match_regenerate(items, specs)
+        wanted, unmatched = match_regenerate(candidates, specs)
         dropped = drop_cache_entries(cache, wanted)
-        report_regenerate("weixin", items, wanted, unmatched, dropped)
+        report_regenerate("weixin", candidates, wanted, unmatched, dropped)
 
-    fill_reasons(items, cache, cfg, session, stats)
+    items = fill_reasons(
+        candidates, cache, cfg, session, stats, max_items=cfg["max_items"]
+    )
 
     headline = strip_english_tail(str(items[0].get("title") or "").strip())
     # Fixed template title 「AI 雷达 · X月X日｜本周精选N条」; it never depends
@@ -1914,7 +2015,7 @@ def main(argv: list[str] | None = None) -> int:
 
     print(
         "weixin: items={items} reasons reused={reused} cached={cached} "
-        "generated={generated} skipped={skipped} "
+        "generated={generated} skipped={skipped} dropped={dropped} "
         "titles translated={titles_translated} cached={titles_cached} "
         "kept_english={titles_skipped} "
         "cover_mode={cover_mode} cover_scene={cover_scene} "
@@ -1924,6 +2025,7 @@ def main(argv: list[str] | None = None) -> int:
             cached=stats["cached"],
             generated=stats["generated"],
             skipped=stats["skipped"],
+            dropped=stats.get("dropped", 0),
             titles_translated=stats.get("titles_translated", 0),
             titles_cached=stats.get("titles_cached", 0),
             titles_skipped=stats.get("titles_skipped", 0),

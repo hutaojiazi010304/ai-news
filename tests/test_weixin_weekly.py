@@ -513,3 +513,100 @@ def test_official_cap_env_override_and_disable(monkeypatch):
     assert uncapped is not None
     assert len(uncapped["items"]) == 2
     assert all(item["category"] == "official" for item in uncapped["items"])
+
+
+# ---------------------------------------------------------------------------
+# Over-selected guide-writing pool (WEIXIN_POOL_EXTRA / pool_size)
+#
+# The pool carries max_items + extra candidates so items whose guide ends up
+# empty can be dropped and backfilled (fill_reasons) without the issue
+# shrinking. pool_size=None keeps the former exact-max_items selection.
+# ---------------------------------------------------------------------------
+
+def test_weekly_pool_extra_resolution(monkeypatch):
+    monkeypatch.delenv("WEIXIN_POOL_EXTRA", raising=False)
+    assert gwa.weekly_pool_extra() == 10
+    monkeypatch.setenv("WEIXIN_POOL_EXTRA", "0")
+    assert gwa.weekly_pool_extra() == 0
+    monkeypatch.setenv("WEIXIN_POOL_EXTRA", "5")
+    assert gwa.weekly_pool_extra() == 5
+    monkeypatch.setenv("WEIXIN_POOL_EXTRA", "not-a-number")
+    assert gwa.weekly_pool_extra() == 10
+    monkeypatch.setenv("WEIXIN_POOL_EXTRA", "-3")
+    assert gwa.weekly_pool_extra() == 0
+
+
+# CAP_POOL_TITLES (18) plus six more pairwise-distinct official stories:
+# distinct vendors and wording keep title similarity below the merge/near-dup
+# thresholds, so the pool size — and not dedup — decides the selection count.
+OVERSELECT_TITLES = CAP_POOL_TITLES + [
+    "Oracle embeds AI agents into Fusion cloud apps",
+    "Adobe ships Firefly video editing assistant",
+    "Baidu releases Ernie 5 reasoning preview",
+    "Alibaba opens Qwen 3 multimodal model weights",
+    "Tencent adds AI coding helper to cloud dev tools",
+    "Sony unveils AI motion capture studio kit",
+]
+
+
+def test_build_weekly_brief_pool_size_overselects(monkeypatch):
+    assert len(OVERSELECT_TITLES) == 24
+    items = [
+        make_record(i + 1, title, f"https://example.com/pool-{i}", 40)
+        for i, title in enumerate(OVERSELECT_TITLES)
+    ]
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir = write_data_dir(tmp, items)
+        # Uncapped: the official cap must not trim the over-selected pool here.
+        monkeypatch.setenv("WEIXIN_OFFICIAL_CAP", "0")
+        default = gwa.build_weekly_brief(data_dir, NOW, 20)
+        oversel = gwa.build_weekly_brief(data_dir, NOW, 20, pool_size=24)
+
+    assert default is not None
+    assert oversel is not None
+    # pool_size=None keeps the former exact-max_items selection untouched.
+    assert len(default["items"]) == 20
+    assert len(oversel["items"]) == 24
+    assert oversel["total_items"] == 24
+    # Same greedy mechanism, bigger limit: the over-selected pool starts with
+    # exactly the exact-size selection (prefix property).
+    assert [i["title"] for i in oversel["items"][:20]] == [
+        i["title"] for i in default["items"]
+    ]
+
+
+def test_build_weekly_brief_pool_size_keeps_official_cap(monkeypatch):
+    # 18 officials + 5 industry; default cap 16. The cap still bounds the
+    # OVER-selected pool, so the final issue (a subset) stays within it.
+    # Officials come from distinct channels so the same-source penalty stays
+    # out of the picture and all of them rank ahead of the industry items.
+    officials = [
+        make_record(i + 1, title, f"https://example.com/cap-pool-{i}", 40,
+                    source=f"官方渠道 {i}")
+        for i, title in enumerate(CAP_POOL_TITLES)
+    ]
+    industry_titles = [
+        "Analysts say NVIDIA data-center revenue doubles on AI demand",
+        "AI startups raise record funding round in latest quarter",
+        "Researchers report breakthrough in LLM inference efficiency",
+        "Chipmakers race to ship lower-power AI accelerators",
+        "Cloud providers cut AI inference prices amid competition",
+    ]
+    industry = []
+    for offset, title in enumerate(industry_titles):
+        record = make_record(30 + offset, title, f"https://aihot.example/p{offset}", 40,
+                             site_id="aihot", source=f"AI Hot 观察{offset}")
+        record["aihot_score"] = 80
+        industry.append(record)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir = write_data_dir(tmp, officials + industry)
+        monkeypatch.delenv("WEIXIN_OFFICIAL_CAP", raising=False)
+        brief = gwa.build_weekly_brief(data_dir, NOW, 20, pool_size=20)
+
+    assert brief is not None
+    officials_in_pool = [
+        i for i in brief["items"] if i["category"] == "official"
+    ]
+    assert len(brief["items"]) == 20
+    assert len(officials_in_pool) == 16

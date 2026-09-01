@@ -1730,3 +1730,97 @@ def test_regenerate_miss_prints_menu_and_changes_nothing(capsys):
         assert "测试新闻标题 1" in err
 
 
+# ---------------------------------------------------------------------------
+# Guide-writing driver: drop items without guide material, backfill from the
+# over-selected candidate pool, stop once the issue is full
+# ---------------------------------------------------------------------------
+
+def _fill_stats() -> dict:
+    return {"reused": 0, "cached": 0, "generated": 0, "skipped": 0, "dropped": 0}
+
+
+def test_fill_reasons_keyless_drops_empty_and_backfills():
+    """An item with no guide material at all is dropped and the next
+    candidate with a usable guide moves up (keyless path, no network)."""
+    candidates = [
+        make_item(1, reason=LONG_EXISTING_REASON),
+        make_item(2),  # no upstream reason anywhere -> empty guide
+        make_item(3, reason=LONG_EXISTING_REASON),
+    ]
+    stats = _fill_stats()
+    kept = gwa.fill_reasons(
+        candidates, {"entries": {}}, {"api_key": ""}, None, stats, max_items=2
+    )
+    assert [it["story_id"] for it in kept] == ["story_1", "story_3"]
+    assert stats["dropped"] == 1
+    assert stats["reused"] == 2
+
+
+def test_fill_reasons_keyless_stops_at_max_items():
+    candidates = [make_item(i, reason=LONG_EXISTING_REASON) for i in (1, 2, 3)]
+    stats = _fill_stats()
+    kept = gwa.fill_reasons(
+        candidates, {"entries": {}}, {"api_key": ""}, None, stats, max_items=2
+    )
+    assert [it["story_id"] for it in kept] == ["story_1", "story_2"]
+    # Early stop: the third candidate is never processed (no API/fetch cost).
+    assert "weixin_reason" not in candidates[2]
+
+
+def test_fill_reasons_empty_fallback_returns_top_candidates():
+    """If EVERY candidate lacks guide material, render the unfiltered top
+    max_items as before — the article must never regress to zero items."""
+    candidates = [make_item(1), make_item(2), make_item(3)]
+    stats = _fill_stats()
+    kept = gwa.fill_reasons(
+        candidates, {"entries": {}}, {"api_key": ""}, None, stats, max_items=2
+    )
+    assert kept == candidates[:2]
+    assert stats["dropped"] == 3
+
+
+def test_main_drops_empty_guide_and_backfills_from_pool():
+    """E2E: candidate 1 has no grounding (no summary, offline fetch) and no
+    upstream reason -> dropped; candidate 21 moves up, so the issue keeps
+    its full 20 items."""
+    items = [make_item(1, title="新闻甲1号")] + [
+        make_item(
+            idx,
+            title=f"新闻甲{idx}号",
+            summary="这是一段足够长的摘要内容，用于生成推荐语。",
+        )
+        for idx in range(2, 26)
+    ]
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir, assets_dir = write_fixture(tmp, items)
+        make_static_asset(assets_dir)
+        output_dir = Path(tmp) / "weixin"
+        side_effect, calls = make_text_router(
+            reason=text_response(LONG_GENERATED_REASON),
+            scene=text_response(COVER_SCENE_TEXT),
+        )
+        rc = run_patched(
+            BASE_ENV,
+            side_effect,
+            offline_session(),
+            [
+                "--data-dir", str(data_dir),
+                "--output-dir", str(output_dir),
+                "--assets-dir", str(assets_dir),
+            ],
+        )
+
+        assert rc == 0
+        meta = read_json(output_dir / "meta.json")
+        assert meta["item_count"] == 20
+        assert "本周精选20条" in meta["title"]
+        html_text = (output_dir / "index.html").read_text(encoding="utf-8")
+        # Item 1 (no guide material) is gone; item 21 backfilled its slot.
+        assert "新闻甲1号" not in html_text
+        assert "新闻甲21号" in html_text
+        # Early stop: candidates past the 20 kept items never entered.
+        assert "新闻甲22号" not in html_text
+        # One generation per kept grounded item: candidates 2..21.
+        assert calls["reason"] == 20
+
+

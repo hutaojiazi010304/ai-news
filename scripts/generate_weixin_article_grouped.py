@@ -66,6 +66,7 @@ try:  # imported as part of the repo package (tests)
         save_cache,
         select_items,
         strip_english_tail,
+        weekly_pool_extra,
     )
 except ImportError:  # run directly as a script
     from generate_weixin_article import (
@@ -92,6 +93,7 @@ except ImportError:  # run directly as a script
         save_cache,
         select_items,
         strip_english_tail,
+        weekly_pool_extra,
     )
 
 # Display order for the sections: official first, then high-score industry
@@ -309,7 +311,11 @@ def main(argv: list[str] | None = None) -> int:
     main_output_dir = Path(args.main_output_dir)
     assets_dir = Path(args.assets_dir)
 
-    brief = load_push_brief(data_dir, cfg["max_items"])
+    # Over-selected pool: max_items + backup candidates, so items whose guide
+    # ends up empty can be dropped and backfilled (fill_reasons) without the
+    # issue shrinking below max_items.
+    pool_size = cfg["max_items"] + weekly_pool_extra()
+    brief = load_push_brief(data_dir, cfg["max_items"], pool_size=pool_size)
     if brief is None:
         print(
             f"weixin-grouped: no usable brief under {data_dir} "
@@ -317,8 +323,8 @@ def main(argv: list[str] | None = None) -> int:
         )
         return 0
 
-    items = select_items(brief, cfg["max_items"])
-    if not items:
+    candidates = select_items(brief, pool_size)
+    if not candidates:
         print("weixin-grouped: brief has no items, nothing to do")
         return 0
 
@@ -330,23 +336,27 @@ def main(argv: list[str] | None = None) -> int:
     # Shared with the main variant: guides are per-item and layout-agnostic.
     cache_path = main_output_dir / "reason-cache.json"
     cache = load_cache(cache_path)
-    stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0}
+    stats = {
+        "reused": 0, "cached": 0, "generated": 0, "skipped": 0, "dropped": 0,
+    }
 
     # Same English-title backfill as the main variant, before guide writing.
     # Translations live in the shared cache too, so both variants are
     # guaranteed to show identical titles.
-    ensure_zh_titles(items, cache, cfg, stats)
+    ensure_zh_titles(candidates, cache, cfg, stats)
 
     # Re-roll cached guides named via --regenerate (shared cache: the main
     # variant's copy updates too). Runs after title translation so fragments
     # can match the Chinese display titles the maintainer actually reads.
     specs = parse_regenerate_specs(args.regenerate)
     if specs:
-        wanted, unmatched = match_regenerate(items, specs)
+        wanted, unmatched = match_regenerate(candidates, specs)
         dropped = drop_cache_entries(cache, wanted)
-        report_regenerate("weixin-grouped", items, wanted, unmatched, dropped)
+        report_regenerate("weixin-grouped", candidates, wanted, unmatched, dropped)
 
-    fill_reasons(items, cache, cfg, session, stats)
+    items = fill_reasons(
+        candidates, cache, cfg, session, stats, max_items=cfg["max_items"]
+    )
 
     headline = strip_english_tail(str(items[0].get("title") or "").strip())
     # Identical to the main variant by design — the two versions must differ
@@ -408,7 +418,8 @@ def main(argv: list[str] | None = None) -> int:
     print(
         "weixin-grouped: items={items} sections={sections} "
         "reasons reused={reused} cached={cached} generated={generated} "
-        "skipped={skipped} titles translated={titles_translated} "
+        "skipped={skipped} dropped={dropped} "
+        "titles translated={titles_translated} "
         "cached={titles_cached} kept_english={titles_skipped} "
         "cover_mode={cover_mode} cover_scene={cover_scene} "
         "dry_run={dry_run}".format(
@@ -421,6 +432,7 @@ def main(argv: list[str] | None = None) -> int:
             cached=stats["cached"],
             generated=stats["generated"],
             skipped=stats["skipped"],
+            dropped=stats.get("dropped", 0),
             titles_translated=stats.get("titles_translated", 0),
             titles_cached=stats.get("titles_cached", 0),
             titles_skipped=stats.get("titles_skipped", 0),

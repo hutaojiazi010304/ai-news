@@ -1951,3 +1951,52 @@ def test_english_title_translated_before_deep_guides(tmp_path):
     deep_cache = read_json(deep_dir / "reason-cache.json")
     assert gwa.cache_key("story_1", zh_title) in deep_cache["entries"]
     assert gwa.cache_key("story_1", en_title) not in deep_cache["entries"]
+
+
+# ---------------------------------------------------------------------------
+# Guide-writing driver: drop items without guide material, backfill from the
+# over-selected candidate pool (mirror of the 1.0 fill_reasons driver)
+# ---------------------------------------------------------------------------
+
+def test_fill_deep_reasons_keyless_drops_empty_and_backfills():
+    """Keyless deep reuses ANY-LENGTH upstream reasons; an item without any
+    guide material is dropped and the next candidate moves up."""
+    short_reason = "上游已有的一句短评。"
+    candidates = [
+        make_item(1, reason=short_reason),
+        make_item(2),  # nothing anywhere -> empty deep guide -> dropped
+        make_item(3, reason=short_reason),
+    ]
+    stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0, "dropped": 0}
+    cache = {"version": gwad.DEEP_CACHE_VERSION, "entries": {}}
+    kept = gwad.fill_deep_reasons(
+        candidates, cache, {"api_key": ""}, None, stats, None, max_items=2
+    )
+    assert [it["story_id"] for it in kept] == ["story_1", "story_3"]
+    assert stats["dropped"] == 1
+    assert stats["reused"] == 2
+
+
+def test_fill_deep_reasons_empty_fallback_returns_top_candidates():
+    """All-empty pool renders the unfiltered top max_items, as before."""
+    candidates = [make_item(1), make_item(2), make_item(3)]
+    stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0, "dropped": 0}
+    cache = {"version": gwad.DEEP_CACHE_VERSION, "entries": {}}
+    kept = gwad.fill_deep_reasons(
+        candidates, cache, {"api_key": ""}, None, stats, None, max_items=2
+    )
+    assert kept == candidates[:2]
+    assert stats["dropped"] == 3
+
+
+def test_deep_pool_extra_resolution(monkeypatch):
+    monkeypatch.delenv("WEIXIN_DEEP_POOL_EXTRA", raising=False)
+    assert gwad.deep_pool_extra() == 10
+    monkeypatch.setenv("WEIXIN_DEEP_POOL_EXTRA", "3")
+    assert gwad.deep_pool_extra() == 3
+    monkeypatch.setenv("WEIXIN_DEEP_POOL_EXTRA", "not-a-number")
+    assert gwad.deep_pool_extra() == 10
+    # The 1.0/2.0 knob must have NO effect on the deep variant.
+    monkeypatch.setenv("WEIXIN_DEEP_POOL_EXTRA", "")
+    monkeypatch.setenv("WEIXIN_POOL_EXTRA", "35")
+    assert gwad.deep_pool_extra() == 10

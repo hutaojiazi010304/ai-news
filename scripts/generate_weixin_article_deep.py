@@ -170,6 +170,11 @@ except ImportError:  # run directly as a script
 DEFAULT_OUTPUT_DIR = "weixin-deep"
 DEFAULT_MAIN_OUTPUT_DIR = "weixin"
 DEFAULT_DEEP_MAX_ITEMS = 20
+# Backup candidates carried into deep-guide writing beyond max_items
+# (override via WEIXIN_DEEP_POOL_EXTRA). Deliberately NOT the 1.0/2.0
+# WEIXIN_POOL_EXTRA knob, same separation doctrine as the max-items one:
+# a 1.0/2.0 change must never affect this variant.
+DEFAULT_DEEP_POOL_EXTRA = 10
 # Reader fallback base URL (same "/<target-url>" API shape as r.jina.ai);
 # point at a self-hosted jina-ai/reader instance for fully local deployments.
 JINA_READER_BASE_URL = os.environ.get("JINA_READER_BASE_URL", "https://r.jina.ai").rstrip("/")
@@ -363,6 +368,23 @@ def resolve_deep_max_items(args: argparse.Namespace) -> int:
     except ValueError:
         value = DEFAULT_DEEP_MAX_ITEMS
     return max(1, value)
+
+
+def deep_pool_extra() -> int:
+    """WEIXIN_DEEP_POOL_EXTRA: backup candidates for deep-guide writing.
+
+    Same mechanism as 1.0/2.0's ``weekly_pool_extra`` but with its own knob:
+    an item whose deep guide ends up empty is dropped and the next backup
+    moves up (see ``fill_deep_reasons``), keeping the issue at its full size
+    whenever the pool allows. Garbage/negative values clamp to 0.
+    """
+    raw = os.environ.get("WEIXIN_DEEP_POOL_EXTRA", "").strip()
+    if not raw:
+        return DEFAULT_DEEP_POOL_EXTRA
+    try:
+        return max(0, int(raw))
+    except ValueError:
+        return DEFAULT_DEEP_POOL_EXTRA
 
 
 def load_deep_cache(path: Path) -> dict:
@@ -665,6 +687,64 @@ def generate_deep_reason(item: dict, context: str, cfg: dict) -> str | None:
     return None
 
 
+def _fill_one_deep_reason(
+    item: dict,
+    cache: dict,
+    cfg: dict,
+    session: requests.Session | None,
+    stats: dict,
+    net_state: dict | None = None,
+) -> str:
+    """Attach ``weixin_deep_reason`` to a single item; returns the outcome
+    label for the progress line (the former fill-loop body).
+
+    Keyed: deep-cache hit > fresh deep generation > upstream reason > "".
+    Keyless: upstream reason (any length) > deep cache > "". The cache is
+    the deep variant's own file — never the shared 1.0/2.0 one.
+    """
+    title = str(item.get("title") or "")
+    existing = existing_reason(item)
+
+    key = cache_key(str(item.get("story_id") or ""), title)
+    entry = cache.get("entries", {}).get(key)
+    cached_reason = ""
+    if isinstance(entry, dict) and entry.get("title_hash") == title_hash(title):
+        cached_reason = str(entry.get("reason") or "").strip()
+
+    if cfg["api_key"]:
+        if cached_reason:
+            item["weixin_deep_reason"] = cached_reason
+            stats["cached"] += 1
+            return "缓存"
+        context = deep_reason_context(item, session, net_state)
+        reason = generate_deep_reason(item, context, cfg) if context else None
+        if reason:
+            item["weixin_deep_reason"] = reason
+            cache["entries"][key] = {
+                "reason": reason,
+                "title_hash": title_hash(title),
+                "created_at": utcnow_iso(),
+            }
+            stats["generated"] += 1
+            return "生成"
+        item["weixin_deep_reason"] = existing or ""
+        stats["skipped"] += 1
+        # Distinguish the two silent-skip causes on the progress
+        # line itself (validation/API details go to stderr).
+        return "回退上游（无素材）" if not context else "回退上游（生成失败）"
+    if existing:
+        item["weixin_deep_reason"] = existing
+        stats["reused"] += 1
+        return "复用上游"
+    if cached_reason:
+        item["weixin_deep_reason"] = cached_reason
+        stats["cached"] += 1
+        return "缓存"
+    item["weixin_deep_reason"] = ""
+    stats["skipped"] += 1
+    return "跳过"
+
+
 def fill_deep_reasons(
     items: list[dict],
     cache: dict,
@@ -672,67 +752,48 @@ def fill_deep_reasons(
     session: requests.Session | None,
     stats: dict,
     net_state: dict | None = None,
-) -> None:
-    """Attach ``weixin_deep_reason`` to each item.
+    max_items: int | None = None,
+) -> list[dict]:
+    """Fill deep guides candidate by candidate; return the kept issue items.
 
-    Keyed: deep-cache hit > fresh deep generation > upstream reason > "".
-    Keyless: upstream reason (any length) > deep cache > "". The cache is
-    the deep variant's own file — never the shared 1.0/2.0 one.
+    Same drop-and-backfill driver as 1.0's ``fill_reasons``: a candidate
+    whose final ``weixin_deep_reason`` ends up empty is dropped
+    (``stats["dropped"]``, progress suffix 淘汰) and the next candidate
+    moves up; stops early once ``max_items`` items are kept, so candidates
+    past the cutoff cost no grounding fetches or API calls. Image fetching
+    downstream then only runs for kept items. Safety net: if EVERY candidate
+    ends up empty, fall back to the top ``max_items`` candidates rendered
+    as-is, so the article never regresses to zero items.
 
     Progress is logged per item (flushed): a run that stalls is then always
     identifiable by its last printed line.
     """
     total = len(items)
+    kept: list[dict] = []
     for i, item in enumerate(items, start=1):
+        if max_items is not None and len(kept) >= max_items:
+            break
+        outcome = _fill_one_deep_reason(item, cache, cfg, session, stats, net_state)
+        if not str(item.get("weixin_deep_reason") or "").strip():
+            stats["dropped"] = stats.get("dropped", 0) + 1
+            outcome += "→淘汰"
+        else:
+            kept.append(item)
         title = str(item.get("title") or "")
         story_id = str(item.get("story_id") or "")
-        existing = existing_reason(item)
-
-        key = cache_key(story_id, title)
-        entry = cache.get("entries", {}).get(key)
-        cached_reason = ""
-        if isinstance(entry, dict) and entry.get("title_hash") == title_hash(title):
-            cached_reason = str(entry.get("reason") or "").strip()
-
-        if cfg["api_key"]:
-            if cached_reason:
-                item["weixin_deep_reason"] = cached_reason
-                stats["cached"] += 1
-                outcome = "缓存"
-            else:
-                context = deep_reason_context(item, session, net_state)
-                reason = generate_deep_reason(item, context, cfg) if context else None
-                if reason:
-                    item["weixin_deep_reason"] = reason
-                    cache["entries"][key] = {
-                        "reason": reason,
-                        "title_hash": title_hash(title),
-                        "created_at": utcnow_iso(),
-                    }
-                    stats["generated"] += 1
-                    outcome = "生成"
-                else:
-                    item["weixin_deep_reason"] = existing or ""
-                    stats["skipped"] += 1
-                    # Distinguish the two silent-skip causes on the progress
-                    # line itself (validation/API details go to stderr).
-                    outcome = "回退上游（无素材）" if not context else "回退上游（生成失败）"
-        elif existing:
-            item["weixin_deep_reason"] = existing
-            stats["reused"] += 1
-            outcome = "复用上游"
-        elif cached_reason:
-            item["weixin_deep_reason"] = cached_reason
-            stats["cached"] += 1
-            outcome = "缓存"
-        else:
-            item["weixin_deep_reason"] = ""
-            stats["skipped"] += 1
-            outcome = "跳过"
         print(
             f"weixin-deep: [{i}/{total}] 导读：{outcome}｜{(title or story_id)[:24]}",
             flush=True,
         )
+    if not kept:
+        fallback = list(items)[:max_items] if max_items is not None else list(items)
+        print(
+            f"weixin-deep: 全部 {len(items)} 条候选均无导读素材，"
+            f"退回未过滤的前 {len(fallback)} 条",
+            file=sys.stderr,
+        )
+        return fallback
+    return kept
 
 
 # ---------------------------------------------------------------------------
@@ -1685,7 +1746,11 @@ def main(argv: list[str] | None = None) -> int:
     main_output_dir = Path(args.main_output_dir)
     assets_dir = Path(args.assets_dir)
 
-    brief = load_push_brief(data_dir, cfg["max_items"])
+    # Over-selected pool: max_items + backup candidates, so items whose deep
+    # guide ends up empty can be dropped and backfilled (fill_deep_reasons)
+    # without the issue shrinking below max_items.
+    pool_size = cfg["max_items"] + deep_pool_extra()
+    brief = load_push_brief(data_dir, cfg["max_items"], pool_size=pool_size)
     if brief is None:
         print(
             f"weixin-deep: no usable brief under {data_dir} "
@@ -1693,8 +1758,8 @@ def main(argv: list[str] | None = None) -> int:
         )
         return 0
 
-    items = select_items(brief, cfg["max_items"])
-    if not items:
+    candidates = select_items(brief, pool_size)
+    if not candidates:
         print("weixin-deep: brief has no items, nothing to do")
         return 0
 
@@ -1713,11 +1778,13 @@ def main(argv: list[str] | None = None) -> int:
     # different style and would otherwise hit stale short guides forever.
     cache_path = output_dir / "reason-cache.json"
     cache = load_deep_cache(cache_path)
-    stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0}
+    stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0, "dropped": 0}
 
     # Translate leftover pure-English titles before deep guides are written,
     # so guides, the cover headline and the rendered titles all use Chinese.
-    ensure_zh_titles(items, cache, cfg, stats)
+    # Runs over the full candidate pool: translations are cached, so promoted
+    # backups already have Chinese titles.
+    ensure_zh_titles(candidates, cache, cfg, stats)
 
     # Re-roll cached guides named via --regenerate. Runs AFTER title
     # translation so fragments can match the Chinese display titles the
@@ -1725,11 +1792,14 @@ def main(argv: list[str] | None = None) -> int:
     # kept on the item and matches too).
     specs = parse_regenerate_specs(args.regenerate)
     if specs:
-        wanted, unmatched = match_regenerate(items, specs)
+        wanted, unmatched = match_regenerate(candidates, specs)
         dropped = drop_cache_entries(cache, wanted)
-        report_regenerate("weixin-deep", items, wanted, unmatched, dropped)
+        report_regenerate("weixin-deep", candidates, wanted, unmatched, dropped)
 
-    fill_deep_reasons(items, cache, cfg, session, stats, net_state)
+    items = fill_deep_reasons(
+        candidates, cache, cfg, session, stats, net_state,
+        max_items=cfg["max_items"],
+    )
 
     images_found = images_missed = 0
     if not args.dry_run and not args.no_images:
@@ -1820,7 +1890,8 @@ def main(argv: list[str] | None = None) -> int:
     print(
         "weixin-deep: items={items} sections={sections} "
         "reasons reused={reused} cached={cached} generated={generated} "
-        "skipped={skipped} titles translated={titles_translated} "
+        "skipped={skipped} dropped={dropped} "
+        "titles translated={titles_translated} "
         "cached={titles_cached} kept_english={titles_skipped} "
         "images found={found} missed={missed} "
         "cover_mode={cover_mode} cover_scene={cover_scene} "
@@ -1834,6 +1905,7 @@ def main(argv: list[str] | None = None) -> int:
             cached=stats["cached"],
             generated=stats["generated"],
             skipped=stats["skipped"],
+            dropped=stats.get("dropped", 0),
             titles_translated=stats.get("titles_translated", 0),
             titles_cached=stats.get("titles_cached", 0),
             titles_skipped=stats.get("titles_skipped", 0),

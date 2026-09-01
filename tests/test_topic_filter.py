@@ -390,10 +390,6 @@ class TopicFilterTests(unittest.TestCase):
         self.assertEqual(items[0].meta["provided_title_en"], "High score item")
 
     def test_bilingual_fields_preserve_source_provided_title_pair_and_summary(self):
-        class NoNetworkSession:
-            def get(self, *args, **kwargs):
-                raise AssertionError("source-provided bilingual titles must not be translated again")
-
         item = {
             "title": "Codex 加入 ChatGPT 桌面应用",
             "provided_title_zh": "Codex 加入 ChatGPT 桌面应用",
@@ -401,7 +397,7 @@ class TopicFilterTests(unittest.TestCase):
             "summary": "中文编辑摘要",
             "url": "https://example.com/codex",
         }
-        ai_items, _, _ = add_bilingual_fields([item], [item], NoNetworkSession(), {}, 80)
+        ai_items, _, _ = add_bilingual_fields([item], [item], {}, 80)
         self.assertEqual(ai_items[0]["title_zh"], "Codex 加入 ChatGPT 桌面应用")
         self.assertEqual(ai_items[0]["title_en"], "Codex joins the ChatGPT desktop app")
         self.assertEqual(ai_items[0]["title_original"], "Codex joins the ChatGPT desktop app")
@@ -414,7 +410,7 @@ class TopicFilterTests(unittest.TestCase):
             "provided_title_en": "Show HN：如何在我的低配置电脑上运行 GLM-5.2",
             "url": "https://example.com/glm",
         }
-        pseudo_items, _, _ = add_bilingual_fields([pseudo_english], [pseudo_english], NoNetworkSession(), {}, 80)
+        pseudo_items, _, _ = add_bilingual_fields([pseudo_english], [pseudo_english], {}, 80)
         self.assertIsNone(pseudo_items[0]["title_en"])
         self.assertEqual(pseudo_items[0]["title_zh"], "如何在低配置电脑运行 GLM-5.2")
 
