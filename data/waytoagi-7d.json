@@ -1,57 +1,111 @@
 {
-  "generated_at": "2026-09-01T11:55:17.044035Z",
+  "generated_at": "2026-09-01T16:48:38.126062Z",
   "timezone": "Asia/Shanghai",
   "root_url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview",
   "history_url": "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc",
   "window_days": 7,
-  "latest_date": "2026-08-31",
-  "count_today": 7,
+  "latest_date": "2026-09-01",
+  "count_today": 8,
   "updates_today": [
     {
-      "date": "2026-08-31",
-      "title": "快速学习的原则",
-      "summary": "很多人学AI、编程、写作时收藏教程、刷视频、记笔记，真要动手还是卡住。问题往往不在学得少，而是没有把知识变成可用能力。作者这篇文章把如何快速学习拆成7个原则：先动手做，尽快拿反馈；遇到问题先挣扎几分钟，再去问 AI；在真实问题里即时学习；用复述和教学检查自己是否真的懂了。快来从今天开始实操起来！",
-      "url": "https://waytoagi.feishu.cn/wiki/GV9SwlGNriE8F5kx93lc9yASnub?from=from_copylink"
+      "date": "2026-09-01",
+      "title": "豆包工作接上飞书后怎么用？我整理了10个办公场景",
+      "summary": "豆包工作接上飞书后怎么用？小歪整理了10个办公场景：周报、项目排期、客户方案PPT、渠道分析、客服FAQ、经营会准备，再到商品素材、日历、朋友圈去AI味、用户访谈提纲。快来看看有没有你能用得到的？",
+      "url": "https://waytoagi.feishu.cn/wiki/TeT3wiDIPimfipk2CCLcYFAmnge?from=from_copylink"
     },
     {
-      "date": "2026-08-31",
-      "title": "开源：350套排版布局 x 知识图鉴",
-      "summary": "做海报、封面、PPT、网页时，想让 AI 画得更准，或者和设计同事沟通得更清楚，都缺一套能直接指认的版式宝典。作者把原来整理的100种排版扩展到350种，按构图逻辑、视觉原则、网页UI、影视画面、中国传统构图、演示文稿等8类整理，还提供高清图、缩略图和CSV/JSON数据。找灵感、学构图、写提示词，都可以直接收藏这套开源图鉴。",
-      "url": "https://waytoagi.feishu.cn/wiki/SVg0wvyiqiFZ4Ckz20HcvRSMnAb?from=from_copylink"
+      "date": "2026-09-01",
+      "title": "详解大语言模型中的静态、动态与连续批处理",
+      "summary": "这篇文章把大语言模型中的静态、动态、连续批处理讲得很清楚：静态适合分类/Embedding 这类固定输出，动态用于等待窗口减少排队，连续批处理则更适合输出长度不稳定的实时流量。或许可以帮你理解为何你的 GPU 在负载下闲置，以及哪种批处理策略能解决此问题。",
+      "url": "https://waytoagi.feishu.cn/wiki/H6STwP6lViTWUJkPUVTc6Lr0npg?from=from_copylink"
     },
     {
-      "date": "2026-08-31",
-      "title": "基于 MiniMax H3 Max 的 24 小时 AI 直播网站上线了",
-      "summary": "MiniMax H3 Max凭借超快的音视频生成速度，跨过实时AI直播的技术门槛。海外开发者借此打造出24 小时AI直播网站，观众发布弹幕指令即可实时改写剧情走向。虽然实时直播仍存在并发、画面一致性等等问题，但它把AI视频从一次性制作工具变成持续响应的动态内容系统，给创作者们也打开了全新交互的想象空间！",
-      "url": "https://waytoagi.feishu.cn/wiki/SixAw5cnjiz7fCkToQzc90Xyn2b?from=from_copylink"
+      "date": "2026-09-01",
+      "title": "每位 AI 工程师都应了解的关于智能体沙箱的 5 件事",
+      "summary": "这篇来自谷歌云官方的分享戳破了Agent沙箱不少宣传误区，同时还给出实用的性能优化思路与四步选型准则，搭配可直接落地的部署方案，可以帮你搭建安全高效的智能体运行环境。",
+      "url": "https://waytoagi.feishu.cn/wiki/Xe2Xw27puiJFsTkPZdzcpxGendc?from=from_copylink"
     },
     {
-      "date": "2026-08-31",
-      "title": "在Uber规模下高效运营软件工厂",
-      "summary": "很多团队一用上Coding Agent，最先感受到的不是“效率飞升”，而是 token 成本、工具上下文、模型选择和会话失控一起冒出来。Uber 则是把AI 编程真正当成一座“软件工厂”来运营。这篇博客将介绍他们如何思考软件工厂：智能体会话运行的四个层次、他们用于分解支出的成本公式、他们如何衡量每一项，以及如何在每一层优化这些项。",
-      "url": "https://waytoagi.feishu.cn/wiki/XNNnwj5ypiAM9BkP9I7cR5uYnwc?from=from_copylink"
+      "date": "2026-09-01",
+      "title": "小龙虾又又又来了，OpenClaw 2.0 版大更新！新版本界面全览",
+      "summary": "OpenClaw 2.0迎来大规模迭代，大量社区贡献重构了整套底座，新增了共享会话，可以支持任务交接与多成员协作。已经在用的人，这次更新值得试一下。曾经装过又卸载的人，也可以重新看一眼，从一项低风险、重复出现、结果容易检查的任务开始。",
+      "url": "https://waytoagi.feishu.cn/wiki/QCqZwml2hiJpYbkWSnwct0yon9D?from=from_copylink"
     },
     {
-      "date": "2026-08-31",
-      "title": "从 ReAct 到 Agent Teams：一个工程师视角的 Agent 协作机制思考",
-      "summary": "这篇文章是作者两个月的 Agent 开发实践沉淀，从第一性原理出发，探讨 Agent 的本质、当前多 Agent 协作架构的不足，以及如何借鉴人类组织经验设计真正的 Agent Team 机制。",
-      "url": "https://waytoagi.feishu.cn/wiki/P6p1wDQ3yipgrUk6KEEcuTU5nIb?from=from_copylink"
+      "date": "2026-09-01",
+      "title": "套了110个思维模型到AI之后，我帮你整理了最好用的24个（附提示词）。",
+      "summary": "很多人学思维模型，是想把AI调得更聪明：第一性原理、二阶思维、逆向思维全塞进提示词，结果发现没有明显的改善。作者借助AI搜集了 110 个思维模型：横跨决策、系统、心理学、统计学，每个都带出处，最后筛选出了24个比较好用的。一起来看看！",
+      "url": "https://waytoagi.feishu.cn/wiki/YXENwsiS6i0hZFkKBimcjCN6nIc?from=from_copylink"
     },
     {
-      "date": "2026-08-31",
-      "title": "AI音乐周刊 W.A 043",
-      "summary": "AI 音乐行业正迎来版权风暴与产品创新的激烈碰撞。多起高额版权诉讼搅动行业根基，合规已经成为所有从业者绕不开的命题。Stability AI 获得巨头加持完成融资，多款工具落地分段编辑、对话修歌、实时音频生成等实用能力，还有多篇前沿音频论文发布。一起来看看AI音乐赛道的最新变化。",
-      "url": "https://waytoagi.feishu.cn/wiki/HBvnwPbDPiZ8Yokrhx8cBKAinrb?from=from_copylink"
+      "date": "2026-09-01",
+      "title": "万字长文｜Hugging Face从入门到精通",
+      "summary": "很多人找开源模型都会刷到Hugging Face，但第一次打开很容易被各种英文、模型名劝退：资源很多，却不知道哪个能直接用、哪个要下载。这篇文章适合想试试开源AI工具、下载本地模型、找数据集和论文的小白。",
+      "url": "https://waytoagi.feishu.cn/wiki/EQwbwkD3tiSTXrkwxJycmmDgn8f?from=from_copylink"
     },
     {
-      "date": "2026-08-31",
-      "title": "AI视频入门——剪辑思维-转场-拉片提升审美",
-      "summary": "这篇文章非常适合AI视频新手、短剧创作者看。作者用《大话西游》《盗梦空间》《闪灵》等经典片段做拉片，拆解了正反打、交叉剪辑、跳切、空镜、匹配剪辑、闪回这些常用手法，再落回到在AI漫剧里到底怎么用。快来一起探索下！",
-      "url": "https://waytoagi.feishu.cn/wiki/BSQUwrvyMi87ejkbw4Hc4jwnnOe?from=from_copylink"
+      "date": "2026-09-01",
+      "title": "万字长文！读懂模型微调的基本概念和名词",
+      "summary": "很多人准备做模型微调，第一反应是找教程、配环境、堆显卡，真上手才发现，很多基础概念还没搞明白：Base、SFT、LoRA、QLoRA、adapter、loss，这些名字都见过，但不知道各自解决什么问题。这篇文章可以作为“微调入门词典”收藏，会少走很多弯路。",
+      "url": "https://waytoagi.feishu.cn/wiki/JJpTwoNgSie45wkkVjZc3IT8n4N?from=from_copylink"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "《100 个问题》系列丛书",
+      "summary": "作者整理了关于Agent Skill的100个问题，从技能加载机制、触发排查、描述写法、脚本/参考文件拆分，讲到跨 Claude/Codex/Gemini 迁移、安全审查和未来趋势。建议可以当工具书时常翻一翻。",
+      "url": "https://waytoagi.feishu.cn/wiki/YTt3wPPIeixEK5kbJPnc0YL7nTf"
     }
   ],
-  "count_7d": 35,
+  "count_7d": 36,
   "updates_7d": [
+    {
+      "date": "2026-09-01",
+      "title": "豆包工作接上飞书后怎么用？我整理了10个办公场景",
+      "summary": "豆包工作接上飞书后怎么用？小歪整理了10个办公场景：周报、项目排期、客户方案PPT、渠道分析、客服FAQ、经营会准备，再到商品素材、日历、朋友圈去AI味、用户访谈提纲。快来看看有没有你能用得到的？",
+      "url": "https://waytoagi.feishu.cn/wiki/TeT3wiDIPimfipk2CCLcYFAmnge?from=from_copylink"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "详解大语言模型中的静态、动态与连续批处理",
+      "summary": "这篇文章把大语言模型中的静态、动态、连续批处理讲得很清楚：静态适合分类/Embedding 这类固定输出，动态用于等待窗口减少排队，连续批处理则更适合输出长度不稳定的实时流量。或许可以帮你理解为何你的 GPU 在负载下闲置，以及哪种批处理策略能解决此问题。",
+      "url": "https://waytoagi.feishu.cn/wiki/H6STwP6lViTWUJkPUVTc6Lr0npg?from=from_copylink"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "每位 AI 工程师都应了解的关于智能体沙箱的 5 件事",
+      "summary": "这篇来自谷歌云官方的分享戳破了Agent沙箱不少宣传误区，同时还给出实用的性能优化思路与四步选型准则，搭配可直接落地的部署方案，可以帮你搭建安全高效的智能体运行环境。",
+      "url": "https://waytoagi.feishu.cn/wiki/Xe2Xw27puiJFsTkPZdzcpxGendc?from=from_copylink"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "小龙虾又又又来了，OpenClaw 2.0 版大更新！新版本界面全览",
+      "summary": "OpenClaw 2.0迎来大规模迭代，大量社区贡献重构了整套底座，新增了共享会话，可以支持任务交接与多成员协作。已经在用的人，这次更新值得试一下。曾经装过又卸载的人，也可以重新看一眼，从一项低风险、重复出现、结果容易检查的任务开始。",
+      "url": "https://waytoagi.feishu.cn/wiki/QCqZwml2hiJpYbkWSnwct0yon9D?from=from_copylink"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "套了110个思维模型到AI之后，我帮你整理了最好用的24个（附提示词）。",
+      "summary": "很多人学思维模型，是想把AI调得更聪明：第一性原理、二阶思维、逆向思维全塞进提示词，结果发现没有明显的改善。作者借助AI搜集了 110 个思维模型：横跨决策、系统、心理学、统计学，每个都带出处，最后筛选出了24个比较好用的。一起来看看！",
+      "url": "https://waytoagi.feishu.cn/wiki/YXENwsiS6i0hZFkKBimcjCN6nIc?from=from_copylink"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "万字长文｜Hugging Face从入门到精通",
+      "summary": "很多人找开源模型都会刷到Hugging Face，但第一次打开很容易被各种英文、模型名劝退：资源很多，却不知道哪个能直接用、哪个要下载。这篇文章适合想试试开源AI工具、下载本地模型、找数据集和论文的小白。",
+      "url": "https://waytoagi.feishu.cn/wiki/EQwbwkD3tiSTXrkwxJycmmDgn8f?from=from_copylink"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "万字长文！读懂模型微调的基本概念和名词",
+      "summary": "很多人准备做模型微调，第一反应是找教程、配环境、堆显卡，真上手才发现，很多基础概念还没搞明白：Base、SFT、LoRA、QLoRA、adapter、loss，这些名字都见过，但不知道各自解决什么问题。这篇文章可以作为“微调入门词典”收藏，会少走很多弯路。",
+      "url": "https://waytoagi.feishu.cn/wiki/JJpTwoNgSie45wkkVjZc3IT8n4N?from=from_copylink"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "《100 个问题》系列丛书",
+      "summary": "作者整理了关于Agent Skill的100个问题，从技能加载机制、触发排查、描述写法、脚本/参考文件拆分，讲到跨 Claude/Codex/Gemini 迁移、安全审查和未来趋势。建议可以当工具书时常翻一翻。",
+      "url": "https://waytoagi.feishu.cn/wiki/YTt3wPPIeixEK5kbJPnc0YL7nTf"
+    },
     {
       "date": "2026-08-31",
       "title": "快速学习的原则",
@@ -219,48 +273,6 @@
       "title": "AI 做海报、HTML 构图手册：16 种控制网格、图文关系与信息密度的海报构图——下册",
       "summary": "这篇下册会同时给你两套表达：一套写给图像模型，一套写给 HTML / CSS。读完以后，你应该能从第 17–32 种里选出一个主构图，再把它落成可检查的网格、图文层级或节奏规则。",
       "url": "https://waytoagi.feishu.cn/wiki/DPKZw4T8wiWN00kmewxcItRXnLD?from=from_copylink"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "这9个Skill，把我的图像审美拉到了一个新高度",
-      "summary": "作者整理了下面这9个Skill，带你一次性理解图像背后的审美逻辑：哪些适合一句话出海报，哪些必须上传原图；纸刊、像素、低饱和、解构、手绘、抽象、旅行手账各自怎么选。",
-      "url": "https://waytoagi.feishu.cn/wiki/RpAHwVbImi6Q2HkvZ9qcPRMWnHg?from=from_copylink"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "万字长文：Deepseek Harness 一文全看懂！！",
-      "summary": "本文附有很多名词解释与图片表达，可以让想学AI但苦于不懂术语、基础不好的人或懂技术但不太了解DSH的人，都能获得对Deepseek Harness的深度认知！",
-      "url": "https://waytoagi.feishu.cn/wiki/Aj1rw6AyWiqFPGkEdTFcJglwnId?from=from_copylink"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "一篇讲透Agent自进化飞轮怎么搭：评测→记忆→落地→控制",
-      "summary": "2026 年Agent自进化开始从论文和框架走向工程现场，但很多团队还在把评测、记忆、Skill更新拆开做，结果就是Agent 用了半年还像新手。作者这篇文章基于对 Anthropic 递归自改进报告、斯坦福 CS329A 课程、EvoAgentX 等开源框架的深度研读，结合业界多个团队已验证的优秀实践，提炼出一个完整的、可落地的、经过验证的工程闭环。",
-      "url": "https://waytoagi.feishu.cn/wiki/RAmOw0hiqikA9ukMTxOcvv2Vnhf?from=from_copylink"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "Tutti · VM 首发 ｜多人、多 Agents 协作的 Google docs 时刻",
-      "summary": "Tutti· VM是行业首个【实况级】多人多agent并行协作空间，在不迁移现有工具和使用习惯的前提下，将个人、临时的 Agent 运行环境，升级为持续存在的团队共享工作现场；并且把串行交接变成实时并行协作。文中附有内测邀请码，感兴趣的小伙伴儿可以来体验下！",
-      "url": "https://waytoagi.feishu.cn/wiki/H5s7w5iD8i4IsdkgZrJcn75ZnCf?from=from_copylink"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "Hello Plugin：我把 DeepSeek Harness 插件开发全链路跑了一遍",
-      "summary": "或许大家也看过不少 DeepSeek Harness 的分析文章和架构介绍，但只要没有亲手把插件跑起来，对它的理解就总像隔着一层皮。作者沿着官方文档亲手做了一个Hello Plugin：从最小插件、工具注册和配置校验，到组合包安装、profile 加载、发布与卸载，把插件开发的完整链路实操了一遍。快一起上手实操试试！",
-      "url": "https://waytoagi.feishu.cn/wiki/H3OMwxGJZiKB0HksfGBcfTgVndg?from=from_copylink"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "GLM-5.3-Flash：前沿智能进入普惠时代",
-      "summary": "GLM-5系列的首个原生多模态模型：GLM-5.3-Flash (320B-A18B)正式上线并开源。320B 总参数、18B激活，编程体感对齐Claude Opus 4.8，价格却压到Opus 4.8 的1/40。更值得关注的是背后的工程路线：混合注意力机制降低成本，视觉反馈进入代码循环，还跑在国产芯片集群上。一起来测试下真实效果如何？",
-      "url": "https://waytoagi.feishu.cn/wiki/Bdx6wt9VziLbqIkM1L8cMDSJnXd?from=from_copylink"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "Anthropic 官方指南：AI Native 开发手册",
-      "summary": "Anthropic 官方发布的AI Native 开发手册，适合研发团队、技术负责人和正在把Claude/Codex接进工作流的人看。他们把软件从一个想法变成线上产品的完整过程：规划、设计、构建、测试、部署、运维 详细拆解了下。",
-      "url": "https://waytoagi.feishu.cn/wiki/Epowwhkb2i0M5pkJ3HJcXCqZnHf?from=from_copylink"
     }
   ],
   "warning": null,
