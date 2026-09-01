@@ -175,9 +175,10 @@ ROWS = [
     # ---------------- 辅助服务 ----------------
     ("辅助服务·非信源", "Jina Reader", "r.jina.ai",
      "https://r.jina.ai/<目标页>", "网页转 Markdown 读取服务",
-     "用于 AI Breakfast 抓取与条目标题/正文上下文兜底"),
-    ("辅助服务·非信源", "Google Translate", "translate.googleapis.com",
-     "翻译接口", "翻译支持", "文章生成链路使用，非新闻信源"),
+     "用于 AI Breakfast 抓取与条目标题/正文上下文兜底；JINA_READER_BASE_URL 可指向自托管 jina-ai/reader"),
+    ("辅助服务·非信源", "Qwen DashScope", "dashscope.aliyuncs.com",
+     "https://dashscope.aliyuncs.com/compatible-mode/v1", "LLM 接口",
+     "weixin 推文写作与翻译使用，非新闻信源"),
     ("辅助服务·非信源", "DeepSeek API", "api.deepseek.com",
      "LLM 接口", "LLM 辅助写作", "文章生成链路使用，非新闻信源"),
 

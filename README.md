@@ -79,7 +79,7 @@ v0.8 的三视图（伯乐精选 / AI信号流 / 热点榜）合并成了一层�
 - **当前热点**：不设固定条数，只要满足多信源热度阈值就上榜，跟主列表分开单独看
 - **推荐理由真实化**：精选条目的一句话推荐理由由管线侧真实生成——对过了 AI 相关性筛选的条目抓取全文，交给 DeepSeek 写一句「为什么值得读」（需要 `DEEPSEEK_API_KEY`）；没有真实理由时前端直接隐藏这个区块，不再用模板句撑场面
 - **同一事件展开**：同一事件被 2 家以上信源报道时，卡片上出现「多源 N」标签，点开看每家独立标题、来源和相对时间
-- **标题增强**：标题过短或黑话过多时，会拿原文上下文（自家抓取失败时回退到 r.jina.ai）交给 LLM 改写得更完整；配 `DEEPSEEK_API_KEY` 才生效，没配就保留原标题，不影响其余流程
+- **标题增强**：标题过短或黑话过多时，会拿原文上下文（自家抓取失败时回退到 reader 兜底，默认 r.jina.ai，可用 `JINA_READER_BASE_URL` 指向自托管 jina-ai/reader）交给 LLM 改写得更完整；配 `DEEPSEEK_API_KEY` 才生效，没配就保留原标题，不影响其余流程
 - **源质量加固**：聚合源 zeli（Hacker News 24h 热榜）取消整榜白名单放行，改成和其他聚合源一样过同一套 AI 相关性打分；双语标题翻译新增校验，拒答文案（比如「抱歉，我无法处理链接内容」）和退化输出会被识别并回退到原文标题，不会把车轱辘话当标题显示
 - **数据同源开关**：给页面 URL 加 `?data=<data目录地址>` 可以让前端读取另一份 `data/`（比如验证另一个分支或 PR 生成的数据），选择会记在浏览器本地，方便多分支开发时来回切换
 - **聚合源子来源分类**：聚合站点条目会按原始平台再细分成 X / 公众号 / HN / RSS 小标签，紧跟在来源 chip 之后
@@ -214,7 +214,7 @@ AI News Radar学习了现代新闻学的技术，不是简单堆信息源，一�
 
 1. **Fork** [LearnPrompt/ai-news-radar](https://github.com/LearnPrompt/ai-news-radar)。
 2. **开 Actions**：fork 后 GitHub 默认暂停 workflow，去 Actions 页点一下启用，`update-news.yml` 每30分钟自动跑。
-3. **（可选）配 `DEEPSEEK_API_KEY`**：Settings → Secrets and variables → Actions 加一个 secret，就能获得 persona 锐评、标题增强、精选条目的真实推荐理由，以及更可靠的中文标题翻译（拒答文案和退化输出会自动回退原标题）。不配也全流程能跑，自动降级成规则分、原始标题加谷歌翻译，推荐理由区块直接不显示。默认模型是 `deepseek-v4-flash`，需要换模型可以另配一个 Variable `DEEPSEEK_MODEL` 覆盖。想控制每次运行改写多少条标题，可以再配一个 `TITLE_ENHANCE_MAX_PER_RUN`（不配默认 30）。
+3. **（可选）配 `DEEPSEEK_API_KEY`**：Settings → Secrets and variables → Actions 加一个 secret，就能获得 persona 锐评、标题增强、精选条目的真实推荐理由，以及更可靠的中文标题翻译（拒答文案和退化输出会自动回退原标题）。不配也全流程能跑，自动降级成规则分、原始标题（英文标题保留原文），推荐理由区块直接不显示。默认模型是 `deepseek-v4-flash`，需要换模型可以另配一个 Variable `DEEPSEEK_MODEL` 覆盖。想控制每次运行改写多少条标题，可以再配一个 `TITLE_ENHANCE_MAX_PER_RUN`（不配默认 30）。
 4. **开 GitHub Pages**：Settings → Pages，选 master 分支根目录。几分钟后你的雷达就活了。
 5. **改 skill 一行**：把 `skills/radar/SKILL.md` 顶部的 `BASE_URL` 换成 `https://<你的用户名>.github.io/ai-news-radar/data`，你的 Agent 从此读你自己的数据。
 
@@ -235,6 +235,8 @@ pip install -r requirements.txt
 python scripts/update_news.py --output-dir data --window-hours 24
 python -m http.server 8080
 ```
+
+完全本地部署（无代理）提示：翻译链走 DeepSeek（配 `DEEPSEEK_API_KEY`，weixin 脚本走 Qwen DashScope，二者国内直连可达）；reader 兜底默认 r.jina.ai，本地不可达时设 `JINA_READER_BASE_URL` 指向自托管的 [jina-ai/reader](https://github.com/jina-ai/reader) 实例（接口格式与 r.jina.ai 相同，`<base>/https://目标页`）。
 
 打开：
 
@@ -278,7 +280,7 @@ python scripts/update_news.py --output-dir data --window-hours 24 --rss-opml fee
 - 支持手动触发 `workflow_dispatch`；需要忽略 TikHub 的正常付费源间隔时，显式传入 `force_tikhub=true`
 - 默认每 30 分钟运行一次：`*/30 * * * *`
 - 自动生成并提交 `data/*.json`；工作流使用 `git add data/`，避免新增 JSON 文件因为白名单遗漏而停留在旧更新时间
-- 如果设置 `DEEPSEEK_API_KEY`，会给每日精选打 persona 分、生成三口味 TOP3 点评、启用标题增强、生成精选条目的真实推荐理由，并给出更可靠的中文翻译（拒答文案和退化输出会自动回退原标题）；不设置时自动降级为规则分、原始标题和谷歌翻译，推荐理由区块不显示，核心流程照样跑
+- 如果设置 `DEEPSEEK_API_KEY`，会给每日精选打 persona 分、生成三口味 TOP3 点评、启用标题增强、生成精选条目的真实推荐理由，并给出更可靠的中文翻译（拒答文案和退化输出会自动回退原标题）；不设置时自动降级为规则分和原始标题（翻译走 DeepSeek，weixin 脚本走 Qwen），推荐理由区块不显示，核心流程照样跑
 - 默认 DeepSeek 模型是 `deepseek-v4-flash`（DeepSeek 官方将于 2026-07-24 弃用 `deepseek-chat` 别名），可以设置仓库 Variable `DEEPSEEK_MODEL` 覆盖
 - 如果设置 `TITLE_ENHANCE_MAX_PER_RUN`，会限制每次运行最多改写的标题条数；不设置默认 30
 - 如果没有设置 `FOLLOW_OPML_B64`，线上工作流会自动使用公开示例 `feeds/follow.example.opml`，让页面展示 RSS/OPML 能力

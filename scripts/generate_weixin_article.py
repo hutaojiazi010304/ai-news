@@ -76,6 +76,9 @@ DEFAULT_TEXT_MODEL = "qwen3.8-max"
 DEFAULT_IMAGE_MODEL = "qwen-image-2.0-pro"
 DEFAULT_BRAND_NAME = "AI 雷达"
 DEFAULT_RADAR_URL = "https://hutaojiazi010304.github.io/ai-news-radar/"
+# Reader fallback base URL (same "/<target-url>" API shape as r.jina.ai);
+# point at a self-hosted jina-ai/reader instance for fully local deployments.
+JINA_READER_BASE_URL = os.environ.get("JINA_READER_BASE_URL", "https://r.jina.ai").rstrip("/")
 DEFAULT_MAX_ITEMS = 20
 
 # Weekly push cadence: the issue is selected from the pipeline's 21-day
@@ -806,11 +809,11 @@ def create_session() -> requests.Session:
 
 
 def fetch_full_text(session: requests.Session, url: str, timeout: float = 20.0) -> str | None:
-    """Direct fetch first, r.jina.ai reader fallback. Returns cleaned text."""
+    """Direct fetch first, reader fallback (JINA_READER_BASE_URL). Returns cleaned text."""
     url = str(url or "").strip()
     if not url.startswith(("http://", "https://")):
         return None
-    for candidate in (url, f"https://r.jina.ai/{url}"):
+    for candidate in (url, f"{JINA_READER_BASE_URL}/{url}"):
         try:
             response = session.get(candidate, timeout=timeout)
             if response.status_code != 200:

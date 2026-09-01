@@ -15,7 +15,7 @@ and ``generate_weixin_article_grouped.py`` (2.0, grouped boxes). It keeps the
   1.0/2.0 cache keys only on story_id+title, so reusing it would hit the
   stale short guides forever and the new style would never take effect.
 - Images: each item gets ONE real illustration pulled from its original
-  article page at publish time (direct fetch, r.jina.ai fallback).
+  article page at publish time (direct fetch, self-hostable reader fallback).
   Extraction is scoped to the article body (<article> element, or the page
   cut at a recommendation heading) so related-news thumbnails can never
   substitute for body art. When the body has NO image at all and the
@@ -170,6 +170,9 @@ except ImportError:  # run directly as a script
 DEFAULT_OUTPUT_DIR = "weixin-deep"
 DEFAULT_MAIN_OUTPUT_DIR = "weixin"
 DEFAULT_DEEP_MAX_ITEMS = 20
+# Reader fallback base URL (same "/<target-url>" API shape as r.jina.ai);
+# point at a self-hosted jina-ai/reader instance for fully local deployments.
+JINA_READER_BASE_URL = os.environ.get("JINA_READER_BASE_URL", "https://r.jina.ai").rstrip("/")
 
 # Independent cache version: bumped only when the deep prompt/bounds change
 # in a way that invalidates EXISTING entries. v8 drops the source line from
@@ -445,7 +448,7 @@ def deep_reason_context(
     150-350-char report needs real substance: summaries under 120 chars
     degrade to a live fetch of the article, whose text is usually richer.
 
-    The fetch goes through fetch_page_html (direct → r.jina.ai, both under
+    The fetch goes through fetch_page_html (direct → reader fallback, both under
     hard wall-clock deadlines) and is scoped to the article body, so
     recommendation widgets below it can never leak into the grounding. When
     the direct HTML cannot be scoped at all (JS-shell pages whose <article>
@@ -789,7 +792,7 @@ def fetch_jina_bytes(
     max_bytes: int,
     net_state: dict | None = None,
 ) -> bytes | None:
-    """r.jina.ai reader fallback with a run-wide circuit breaker.
+    """Reader fallback (JINA_READER_BASE_URL, default r.jina.ai) with a run-wide circuit breaker.
 
     The proxy needs no key but is rate-limited, and on networks that cannot
     reach it at all every fallback burns the full connect timeout (observed:
@@ -800,13 +803,13 @@ def fetch_jina_bytes(
     if session is None or (net_state is not None and net_state.get("jina_down")):
         return None
     try:
-        payload = bounded_get(session, f"https://r.jina.ai/{url}", timeout, max_bytes)
+        payload = bounded_get(session, f"{JINA_READER_BASE_URL}/{url}", timeout, max_bytes)
     except requests.RequestException:
         payload = None
     if payload is None and net_state is not None and not net_state.get("jina_down"):
         net_state["jina_down"] = True
         print(
-            "weixin-deep: r.jina.ai 本次不可用，后续条目跳过 reader 兜底",
+            "weixin-deep: reader 兜底本次不可用，后续条目跳过",
             file=sys.stderr,
             flush=True,
         )
@@ -864,7 +867,7 @@ def fetch_page_html(
     """(payload, kind) with kind in {"html", "markdown"}, or None.
 
     Direct fetch first; non-200, request errors and suspiciously short
-    bodies (bot walls) fall back to the r.jina.ai reader, whose markdown
+    bodies (bot walls) fall back to the reader (r.jina.ai by default), whose markdown
     keeps image links as ``![alt](url)``.
     """
     url = str(url or "").strip()
@@ -876,7 +879,7 @@ def fetch_page_html(
         payload = None
     if payload is None:
         # The env proxy can break domestic hosts; try the direct route
-        # before spending the r.jina.ai fallback on it.
+        # before spending the reader fallback on it.
         payload = bounded_get_alt_route(session, url, timeout, PAGE_MAX_BYTES)
     if payload is not None:
         text = payload.decode("utf-8", errors="replace")
@@ -1704,7 +1707,7 @@ def main(argv: list[str] | None = None) -> int:
     # exists unconditionally (1.0 gates it on the key only because all its
     # network use is key-bound).
     session = create_session()
-    # Run-wide network state (currently the r.jina.ai circuit breaker).
+    # Run-wide network state (currently the reader circuit breaker).
     net_state: dict = {}
     # Deliberately NOT the shared weixin/reason-cache.json: deep guides are a
     # different style and would otherwise hit stale short guides forever.

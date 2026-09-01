@@ -1,5 +1,5 @@
-"""Tests for the DeepSeek-first title translation path: provider priority,
-Google fallback, and the ds1| versioned cache-key compatibility strategy."""
+"""Tests for the DeepSeek title translation path: key gating, validation
+gating, and the ds1| versioned cache-key compatibility strategy."""
 
 from __future__ import annotations
 
@@ -19,6 +19,8 @@ from scripts.update_news import (
 
 EN_TITLE = "OpenAI launches new Codex agent for developers"
 DS_ZH = "OpenAI 为开发者推出全新 Codex 智能体"
+# A Google-era translation cached under the bare key; bare-key entries stay
+# readable offline now that the live Google fallback is gone.
 GOOGLE_ZH = "OpenAI 为开发人员推出新的 Codex 代理"
 
 DS_ENV = {"DEEPSEEK_API_KEY": "sk-test"}
@@ -41,56 +43,38 @@ def deepseek_error_response(status: int = 500) -> MagicMock:
     return resp
 
 
-def google_session(translated: str = GOOGLE_ZH) -> MagicMock:
-    session = MagicMock()
-    resp = MagicMock()
-    resp.status_code = 200
-    resp.json.return_value = [[[translated, EN_TITLE]]]
-    resp.raise_for_status.return_value = None
-    session.get.return_value = resp
-    return session
-
-
-def run_enrich(session: MagicMock, cache: dict) -> tuple[list[dict], dict]:
+def run_enrich(cache: dict) -> tuple[list[dict], dict]:
     items_ai, _, cache_out = add_bilingual_fields(
-        [make_item()], [], session, cache, max_new_translations=10
+        [make_item()], [], cache, max_new_translations=10
     )
     return items_ai, cache_out
 
 
-class TestDeepSeekPriority(unittest.TestCase):
-    def test_deepseek_success_skips_google(self):
-        session = google_session()
+class TestDeepSeekTranslation(unittest.TestCase):
+    def test_deepseek_success_translates(self):
         with patch.dict("os.environ", DS_ENV, clear=True), patch(
             "scripts.update_news.requests.post", return_value=deepseek_ok_response()
         ) as mock_post:
-            items, cache = run_enrich(session, {})
+            items, cache = run_enrich({})
         mock_post.assert_called_once()
-        session.get.assert_not_called()
         self.assertEqual(items[0]["title_zh"], DS_ZH)
 
-    def test_deepseek_failure_falls_back_to_google(self):
-        session = google_session()
+    def test_deepseek_failure_leaves_title_untranslated(self):
         with patch.dict("os.environ", DS_ENV, clear=True), patch(
             "scripts.update_news.requests.post", return_value=deepseek_error_response()
         ) as mock_post:
-            items, cache = run_enrich(session, {})
+            items, cache = run_enrich({})
         mock_post.assert_called_once()
-        session.get.assert_called_once()
-        self.assertEqual(items[0]["title_zh"], GOOGLE_ZH)
-        # Google translations keep the bare cache key.
-        self.assertEqual(cache.get(EN_TITLE), GOOGLE_ZH)
+        self.assertIsNone(items[0]["title_zh"])
         self.assertNotIn(ZH_CACHE_DS_PREFIX + EN_TITLE, cache)
 
-    def test_no_key_goes_straight_to_google(self):
-        session = google_session()
+    def test_no_key_leaves_title_untranslated(self):
         with patch.dict("os.environ", {}, clear=True), patch(
             "scripts.update_news.requests.post"
         ) as mock_post:
-            items, cache = run_enrich(session, {})
+            items, cache = run_enrich({})
         mock_post.assert_not_called()
-        session.get.assert_called_once()
-        self.assertEqual(items[0]["title_zh"], GOOGLE_ZH)
+        self.assertIsNone(items[0]["title_zh"])
 
 
 class TestTranslateToZhDeepseek(unittest.TestCase):
@@ -119,32 +103,28 @@ class TestTranslateToZhDeepseek(unittest.TestCase):
 
 class TestCacheKeyVersioning(unittest.TestCase):
     def test_deepseek_translation_cached_with_prefix(self):
-        session = google_session()
         with patch.dict("os.environ", DS_ENV, clear=True), patch(
             "scripts.update_news.requests.post", return_value=deepseek_ok_response()
         ):
-            _, cache = run_enrich(session, {})
+            _, cache = run_enrich({})
         self.assertEqual(cache.get(ZH_CACHE_DS_PREFIX + EN_TITLE), DS_ZH)
         self.assertNotIn(EN_TITLE, cache)
 
     def test_prefixed_cache_hit_skips_all_network(self):
-        session = google_session()
         cache = {ZH_CACHE_DS_PREFIX + EN_TITLE: DS_ZH}
         with patch.dict("os.environ", DS_ENV, clear=True), patch(
             "scripts.update_news.requests.post"
         ) as mock_post:
-            items, _ = run_enrich(session, cache)
+            items, _ = run_enrich(cache)
         mock_post.assert_not_called()
-        session.get.assert_not_called()
         self.assertEqual(items[0]["title_zh"], DS_ZH)
 
     def test_bare_key_cache_is_miss_when_deepseek_key_present(self):
-        session = google_session()
         cache = {EN_TITLE: GOOGLE_ZH}
         with patch.dict("os.environ", DS_ENV, clear=True), patch(
             "scripts.update_news.requests.post", return_value=deepseek_ok_response()
         ) as mock_post:
-            items, cache_out = run_enrich(session, cache)
+            items, cache_out = run_enrich(cache)
         mock_post.assert_called_once()
         self.assertEqual(items[0]["title_zh"], DS_ZH)
         # Old bare-key entry stays untouched; new entry lands under ds1| prefix.
@@ -152,14 +132,12 @@ class TestCacheKeyVersioning(unittest.TestCase):
         self.assertEqual(cache_out.get(ZH_CACHE_DS_PREFIX + EN_TITLE), DS_ZH)
 
     def test_bare_key_cache_hits_when_no_deepseek_key(self):
-        session = google_session()
         cache = {EN_TITLE: GOOGLE_ZH}
         with patch.dict("os.environ", {}, clear=True), patch(
             "scripts.update_news.requests.post"
         ) as mock_post:
-            items, _ = run_enrich(session, cache)
+            items, _ = run_enrich(cache)
         mock_post.assert_not_called()
-        session.get.assert_not_called()
         self.assertEqual(items[0]["title_zh"], GOOGLE_ZH)
 
 
@@ -193,7 +171,6 @@ class TestGlossaryParsing(unittest.TestCase):
     def test_parses_terms_and_repairs_with_guard(self):
         content = (
             "# 注释行\n"
-            "\n"
             "## 保护术语\n"
             "Claude\n"
             "Hugging Face\n"
@@ -234,7 +211,6 @@ class TestGlossaryRepairCacheHit(unittest.TestCase):
     """三个线上实证坏翻译（谷歌时代缓存）：缓存命中后也要被词表 repair 修复。"""
 
     def run_cached(self, en_title: str, cached_zh: str) -> str:
-        session = MagicMock()
         cache = {ZH_CACHE_DS_PREFIX + en_title: cached_zh}
         with patch.dict("os.environ", DS_ENV, clear=True), patch(
             "scripts.update_news.requests.post"
@@ -242,7 +218,6 @@ class TestGlossaryRepairCacheHit(unittest.TestCase):
             items, _, _ = add_bilingual_fields(
                 [{"title": en_title, "url": "https://example.com/news/g"}],
                 [],
-                session,
                 cache,
                 max_new_translations=10,
             )
@@ -300,15 +275,6 @@ REFUSAL_ZH = "抱歉，我无法处理链接内容。请直接提供英文标题
 DEGENERATE_ZH = "前体"
 
 
-def failing_google_session() -> MagicMock:
-    """A session whose .get() blows up, so translate_to_zh_cn() returns None
-    (mirrors its except-Exception-return-None behavior) and the fallback
-    chain bottoms out instead of masking the DeepSeek-side rejection."""
-    session = MagicMock()
-    session.get.side_effect = Exception("network down")
-    return session
-
-
 class TestIsValidZhTranslation(unittest.TestCase):
     def test_rejects_refusal_message(self):
         self.assertFalse(is_valid_zh_translation(EN_TITLE, REFUSAL_ZH))
@@ -362,48 +328,31 @@ class TestTranslationValidationGating(unittest.TestCase):
     """End-to-end: bad DeepSeek output must not leak into title_zh or the cache."""
 
     def test_refusal_response_is_not_cached_or_shown(self):
-        session = failing_google_session()
         with patch.dict("os.environ", DS_ENV, clear=True), patch(
             "scripts.update_news.requests.post", return_value=deepseek_ok_response(REFUSAL_ZH)
         ) as mock_post:
-            items, cache = run_enrich(session, {})
+            items, cache = run_enrich({})
         mock_post.assert_called_once()
-        session.get.assert_called_once()  # falls through to Google, which also fails
         self.assertIsNone(items[0]["title_zh"])
         self.assertNotIn(ZH_CACHE_DS_PREFIX + EN_TITLE, cache)
         self.assertNotIn(REFUSAL_ZH, cache.values())
 
     def test_degenerate_response_is_not_cached_or_shown(self):
-        session = failing_google_session()
         with patch.dict("os.environ", DS_ENV, clear=True), patch(
             "scripts.update_news.requests.post", return_value=deepseek_ok_response(DEGENERATE_ZH)
         ) as mock_post:
-            items, cache = run_enrich(session, {})
+            items, cache = run_enrich({})
         mock_post.assert_called_once()
         self.assertIsNone(items[0]["title_zh"])
         self.assertNotIn(ZH_CACHE_DS_PREFIX + EN_TITLE, cache)
         self.assertNotIn(DEGENERATE_ZH, cache.values())
 
-    def test_deepseek_refusal_falls_back_to_valid_google_translation(self):
-        session = google_session()
-        with patch.dict("os.environ", DS_ENV, clear=True), patch(
-            "scripts.update_news.requests.post", return_value=deepseek_ok_response(REFUSAL_ZH)
-        ) as mock_post:
-            items, cache = run_enrich(session, {})
-        mock_post.assert_called_once()
-        session.get.assert_called_once()
-        self.assertEqual(items[0]["title_zh"], GOOGLE_ZH)
-        self.assertEqual(cache.get(EN_TITLE), GOOGLE_ZH)
-        self.assertNotIn(ZH_CACHE_DS_PREFIX + EN_TITLE, cache)
-
     def test_normal_translation_still_passes_happy_path(self):
-        session = google_session()
         with patch.dict("os.environ", DS_ENV, clear=True), patch(
             "scripts.update_news.requests.post", return_value=deepseek_ok_response()
         ) as mock_post:
-            items, cache = run_enrich(session, {})
+            items, cache = run_enrich({})
         mock_post.assert_called_once()
-        session.get.assert_not_called()
         self.assertEqual(items[0]["title_zh"], DS_ZH)
         self.assertEqual(cache.get(ZH_CACHE_DS_PREFIX + EN_TITLE), DS_ZH)
 
@@ -413,24 +362,21 @@ class TestBroadPoolTranslationBudget(unittest.TestCase):
     independent from items_ai's, instead of always being cache-only."""
 
     def test_broad_pool_stays_cache_only_when_budget_is_zero_by_default(self):
-        session = google_session()
         with patch.dict("os.environ", DS_ENV, clear=True), patch(
             "scripts.update_news.requests.post"
         ) as mock_post:
             _, items_all, cache = add_bilingual_fields(
-                [], [make_item()], session, {}, max_new_translations=0
+                [], [make_item()], {}, max_new_translations=0
             )
         mock_post.assert_not_called()
-        session.get.assert_not_called()
         self.assertIsNone(items_all[0]["title_zh"])
 
     def test_broad_pool_live_translates_when_given_its_own_budget(self):
-        session = google_session()
         with patch.dict("os.environ", DS_ENV, clear=True), patch(
             "scripts.update_news.requests.post", return_value=deepseek_ok_response()
         ) as mock_post:
             _, items_all, cache = add_bilingual_fields(
-                [], [make_item()], session, {}, max_new_translations=0, max_new_translations_all=10
+                [], [make_item()], {}, max_new_translations=0, max_new_translations_all=10
             )
         mock_post.assert_called_once()
         self.assertEqual(items_all[0]["title_zh"], DS_ZH)
@@ -438,12 +384,11 @@ class TestBroadPoolTranslationBudget(unittest.TestCase):
 
     def test_items_ai_budget_is_independent_and_unaffected(self):
         # items_ai keeps getting its full budget regardless of the broad pool's.
-        session = google_session()
         with patch.dict("os.environ", DS_ENV, clear=True), patch(
             "scripts.update_news.requests.post", return_value=deepseek_ok_response()
         ) as mock_post:
             items_ai, _, cache = add_bilingual_fields(
-                [make_item()], [], session, {}, max_new_translations=10, max_new_translations_all=0
+                [make_item()], [], {}, max_new_translations=10, max_new_translations_all=0
             )
         mock_post.assert_called_once()
         self.assertEqual(items_ai[0]["title_zh"], DS_ZH)

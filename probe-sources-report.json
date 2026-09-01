@@ -1,0 +1,560 @@
+[
+ {
+  "mode": "direct",
+  "group": "adapter",
+  "name": "AI Breakfast",
+  "ok": false,
+  "items": 0,
+  "ms": 21084,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='r.jina.ai', port=443): Max retries exceeded with url: /https://aibreakfast.beehiiv.com/ (Caused by ConnectTimeoutE"
+ },
+ {
+  "mode": "direct",
+  "group": "adapter",
+  "name": "Follow Builders",
+  "ok": true,
+  "items": 23,
+  "ms": 20478,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "adapter",
+  "name": "TechURLs",
+  "ok": true,
+  "items": 405,
+  "ms": 1539,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "adapter",
+  "name": "Buzzing",
+  "ok": true,
+  "items": 50,
+  "ms": 561,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "adapter",
+  "name": "Info Flow (iris)",
+  "ok": false,
+  "items": 0,
+  "ms": 349,
+  "error": "HTTPError: 502 Server Error: Bad Gateway for url: https://iris.findtruman.io/web/info_flow"
+ },
+ {
+  "mode": "direct",
+  "group": "adapter",
+  "name": "BestBlogs",
+  "ok": true,
+  "items": 1,
+  "ms": 2719,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "adapter",
+  "name": "Zeli",
+  "ok": true,
+  "items": 70,
+  "ms": 744,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "adapter",
+  "name": "Hacker News (Algolia)",
+  "ok": true,
+  "items": 5,
+  "ms": 9510,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "adapter",
+  "name": "AI HubToday",
+  "ok": true,
+  "items": 31,
+  "ms": 623,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "adapter",
+  "name": "AIbase",
+  "ok": true,
+  "items": 20,
+  "ms": 477,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "adapter",
+  "name": "AI HOT",
+  "ok": true,
+  "items": 62,
+  "ms": 284,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "adapter",
+  "name": "NewsNow",
+  "ok": false,
+  "items": 0,
+  "ms": 189,
+  "error": "HTTPError: 403 Client Error: Forbidden for url: https://newsnow.busiyi.world/"
+ },
+ {
+  "mode": "direct",
+  "group": "official_feed",
+  "name": "OpenAI News",
+  "ok": true,
+  "items": 76,
+  "ms": 544,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "official_feed",
+  "name": "Google DeepMind",
+  "ok": true,
+  "items": 13,
+  "ms": 20610,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "official_feed",
+  "name": "Google AI Blog",
+  "ok": false,
+  "items": 0,
+  "ms": 39120,
+  "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))"
+ },
+ {
+  "mode": "direct",
+  "group": "official_feed",
+  "name": "Hugging Face Blog",
+  "ok": false,
+  "items": 0,
+  "ms": 20041,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /blog/feed.xml (Caused by ConnectTimeoutError(<HTTPSCon"
+ },
+ {
+  "mode": "direct",
+  "group": "official_feed",
+  "name": "GitHub AI & ML",
+  "ok": true,
+  "items": 10,
+  "ms": 251,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "official_feed",
+  "name": "OpenAI Skills",
+  "ok": false,
+  "items": 0,
+  "ms": 20008,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /openai/skills/commits/main.atom (Caused by ConnectTimeoutE"
+ },
+ {
+  "mode": "direct",
+  "group": "official_page",
+  "name": "Anthropic News (page)",
+  "ok": true,
+  "items": 3,
+  "ms": 758,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "official_page",
+  "name": "OpenAI Codex Changelog (page)",
+  "ok": true,
+  "items": 0,
+  "ms": 139,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "curated_feed",
+  "name": "The Decoder AI News",
+  "ok": true,
+  "items": 10,
+  "ms": 1411,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "curated_feed",
+  "name": "TechCrunch AI",
+  "ok": true,
+  "items": 8,
+  "ms": 156,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "curated_feed",
+  "name": "The Verge",
+  "ok": true,
+  "items": 2,
+  "ms": 331,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "curated_feed",
+  "name": "MarkTechPost Research",
+  "ok": true,
+  "items": 6,
+  "ms": 997,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "curated_feed",
+  "name": "VentureBeat AI",
+  "ok": true,
+  "items": 4,
+  "ms": 169,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "curated_feed",
+  "name": "Artificial Intelligence News",
+  "ok": true,
+  "items": 8,
+  "ms": 1629,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "curated_feed",
+  "name": "Claude Code Releases",
+  "ok": false,
+  "items": 0,
+  "ms": 20029,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /anthropics/claude-code/releases.atom (Caused by ConnectTim"
+ },
+ {
+  "mode": "direct",
+  "group": "curated_feed",
+  "name": "OpenRouter Announcements",
+  "ok": true,
+  "items": 6,
+  "ms": 181,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "curated_feed",
+  "name": "量子位",
+  "ok": true,
+  "items": 10,
+  "ms": 154,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "curated_feed",
+  "name": "新智元",
+  "ok": true,
+  "items": 15,
+  "ms": 159,
+  "error": ""
+ },
+ {
+  "mode": "direct",
+  "group": "adapter",
+  "name": "WayToAGI (feishu)",
+  "ok": true,
+  "items": 0,
+  "ms": 3643,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "adapter",
+  "name": "AI Breakfast",
+  "ok": false,
+  "items": 0,
+  "ms": 5576,
+  "error": "HTTPError: 403 Client Error: Forbidden for url: https://r.jina.ai/https://aibreakfast.beehiiv.com/"
+ },
+ {
+  "mode": "proxy",
+  "group": "adapter",
+  "name": "Follow Builders",
+  "ok": true,
+  "items": 23,
+  "ms": 1450,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "adapter",
+  "name": "TechURLs",
+  "ok": true,
+  "items": 405,
+  "ms": 9311,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "adapter",
+  "name": "Buzzing",
+  "ok": true,
+  "items": 50,
+  "ms": 3391,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "adapter",
+  "name": "Info Flow (iris)",
+  "ok": false,
+  "items": 0,
+  "ms": 973,
+  "error": "HTTPError: 502 Server Error: Bad Gateway for url: https://iris.findtruman.io/web/info_flow"
+ },
+ {
+  "mode": "proxy",
+  "group": "adapter",
+  "name": "BestBlogs",
+  "ok": true,
+  "items": 1,
+  "ms": 4844,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "adapter",
+  "name": "Zeli",
+  "ok": true,
+  "items": 70,
+  "ms": 1400,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "adapter",
+  "name": "Hacker News (Algolia)",
+  "ok": true,
+  "items": 5,
+  "ms": 15928,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "adapter",
+  "name": "AI HubToday",
+  "ok": true,
+  "items": 31,
+  "ms": 1427,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "adapter",
+  "name": "AIbase",
+  "ok": true,
+  "items": 20,
+  "ms": 30796,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "adapter",
+  "name": "AI HOT",
+  "ok": false,
+  "items": 0,
+  "ms": 3290,
+  "error": "SSLError: HTTPSConnectionPool(host='aihot.virxact.com', port=443): Max retries exceeded with url: /api/public/items?mode=selected&take=100 (Caused by "
+ },
+ {
+  "mode": "proxy",
+  "group": "adapter",
+  "name": "NewsNow",
+  "ok": false,
+  "items": 0,
+  "ms": 19453,
+  "error": "HTTPError: 403 Client Error: Forbidden for url: https://newsnow.busiyi.world/"
+ },
+ {
+  "mode": "proxy",
+  "group": "official_feed",
+  "name": "OpenAI News",
+  "ok": true,
+  "items": 76,
+  "ms": 704,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "official_feed",
+  "name": "Google DeepMind",
+  "ok": true,
+  "items": 13,
+  "ms": 11371,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "official_feed",
+  "name": "Google AI Blog",
+  "ok": true,
+  "items": 13,
+  "ms": 4842,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "official_feed",
+  "name": "Hugging Face Blog",
+  "ok": true,
+  "items": 25,
+  "ms": 3113,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "official_feed",
+  "name": "GitHub AI & ML",
+  "ok": true,
+  "items": 10,
+  "ms": 1620,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "official_feed",
+  "name": "OpenAI Skills",
+  "ok": true,
+  "items": 0,
+  "ms": 3075,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "official_page",
+  "name": "Anthropic News (page)",
+  "ok": true,
+  "items": 3,
+  "ms": 2751,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "official_page",
+  "name": "OpenAI Codex Changelog (page)",
+  "ok": true,
+  "items": 0,
+  "ms": 377,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "curated_feed",
+  "name": "The Decoder AI News",
+  "ok": true,
+  "items": 10,
+  "ms": 2160,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "curated_feed",
+  "name": "TechCrunch AI",
+  "ok": true,
+  "items": 8,
+  "ms": 694,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "curated_feed",
+  "name": "The Verge",
+  "ok": true,
+  "items": 2,
+  "ms": 1287,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "curated_feed",
+  "name": "MarkTechPost Research",
+  "ok": true,
+  "items": 6,
+  "ms": 3138,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "curated_feed",
+  "name": "VentureBeat AI",
+  "ok": true,
+  "items": 4,
+  "ms": 1139,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "curated_feed",
+  "name": "Artificial Intelligence News",
+  "ok": true,
+  "items": 8,
+  "ms": 6059,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "curated_feed",
+  "name": "Claude Code Releases",
+  "ok": true,
+  "items": 6,
+  "ms": 1763,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "curated_feed",
+  "name": "OpenRouter Announcements",
+  "ok": true,
+  "items": 6,
+  "ms": 328,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "curated_feed",
+  "name": "量子位",
+  "ok": true,
+  "items": 10,
+  "ms": 4277,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "curated_feed",
+  "name": "新智元",
+  "ok": true,
+  "items": 15,
+  "ms": 2544,
+  "error": ""
+ },
+ {
+  "mode": "proxy",
+  "group": "adapter",
+  "name": "WayToAGI (feishu)",
+  "ok": true,
+  "items": 0,
+  "ms": 49721,
+  "error": ""
+ }
+]

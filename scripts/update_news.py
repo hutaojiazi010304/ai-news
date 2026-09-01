@@ -230,7 +230,11 @@ CURATED_AI_MEDIA_FEEDS: tuple[dict[str, Any], ...] = (
         "max_entries": 15,
     },
 )
-AIBREAKFAST_JINA_URL = "https://r.jina.ai/https://aibreakfast.beehiiv.com/"
+# Reader fallback base URL (same "/<target-url>" API shape as r.jina.ai).
+# Point JINA_READER_BASE_URL at a self-hosted jina-ai/reader instance for
+# fully local deployments (e.g. http://127.0.0.1:3000).
+JINA_READER_BASE_URL = os.environ.get("JINA_READER_BASE_URL", "https://r.jina.ai").rstrip("/")
+AIBREAKFAST_JINA_URL = f"{JINA_READER_BASE_URL}/https://aibreakfast.beehiiv.com/"
 AIHOT_ITEMS_API_URL = "https://aihot.virxact.com/api/public/items"
 AIHOT_MIN_SCORE = 60
 AIHOT_API_TAKE = 100
@@ -5085,38 +5089,6 @@ def load_title_zh_cache(path: Path) -> dict[str, str]:
     return {}
 
 
-def translate_to_zh_cn(session: requests.Session, text: str) -> str | None:
-    s = (text or "").strip()
-    if not s:
-        return None
-    try:
-        r = session.get(
-            "https://translate.googleapis.com/translate_a/single",
-            params={
-                "client": "gtx",
-                "sl": "auto",
-                "tl": "zh-CN",
-                "dt": "t",
-                "q": s,
-            },
-            timeout=12,
-        )
-        r.raise_for_status()
-        payload = r.json()
-        if not isinstance(payload, list) or not payload:
-            return None
-        segs = payload[0]
-        if not isinstance(segs, list):
-            return None
-        translated = "".join(str(seg[0]) for seg in segs if isinstance(seg, list) and seg and seg[0])
-        translated = translated.strip()
-        if translated and translated != s:
-            return translated
-    except Exception:
-        return None
-    return None
-
-
 ZH_CACHE_DS_PREFIX = "ds1|"
 
 TRANSLATION_GLOSSARY_FILENAME = "translation-glossary.txt"
@@ -5350,7 +5322,6 @@ def is_valid_zh_translation(original: str, translated: str, *, strict: bool = Tr
 def add_bilingual_fields(
     items_ai: list[dict[str, Any]],
     items_all: list[dict[str, Any]],
-    session: requests.Session,
     cache: dict[str, str],
     max_new_translations: int,
     max_new_translations_all: int = 0,
@@ -5424,15 +5395,6 @@ def add_bilingual_fields(
                         translated_now_ai += 1
                     else:
                         translated_now_all += 1
-                else:
-                    tr = translate_to_zh_cn(session, title)
-                    if tr and is_valid_zh_translation(title, tr):
-                        zh_title = repair_zh_title_translation(title, tr)
-                        cache[title] = zh_title
-                        if is_ai_pool:
-                            translated_now_ai += 1
-                        else:
-                            translated_now_all += 1
 
         if zh_title:
             zh_title = repair_zh_title_translation(title, zh_title)
@@ -5624,10 +5586,12 @@ def fetch_title_context(session: requests.Session, url: str) -> str:
 
     Some sources (e.g. ProductHunt) sit behind Cloudflare and 403 a direct
     crawl. When the direct fetch yields no usable context, fall back to a
-    single request through r.jina.ai — a free, keyless third-party reader
-    proxy (~20 rpm) that renders the page to markdown. This only fires on
-    direct-fetch failure and is gated by the same TITLE_ENHANCE_MAX_PER_RUN
-    cap as the LLM call, so it stays well under the reader's rate limit.
+    single request through the configured reader (``JINA_READER_BASE_URL``,
+    default r.jina.ai — a free, keyless third-party reader proxy that renders
+    the page to markdown; self-host jina-ai/reader for local deployments).
+    This only fires on direct-fetch failure and is gated by the same
+    TITLE_ENHANCE_MAX_PER_RUN cap as the LLM call, so it stays well under the
+    reader's rate limit.
     """
     u = str(url or "").strip()
     if not u:
@@ -5645,7 +5609,7 @@ def fetch_title_context(session: requests.Session, url: str) -> str:
         return context[:800]
 
     jina_headers = {"Accept": "text/plain"}
-    jina_raw = _fetch_context_bytes(session, f"https://r.jina.ai/{u}", jina_headers, timeout=15)
+    jina_raw = _fetch_context_bytes(session, f"{JINA_READER_BASE_URL}/{u}", jina_headers, timeout=15)
     jina_context = _parse_jina_reader_context(jina_raw)
     return jina_context[:800]
 
@@ -5657,7 +5621,7 @@ def fetch_full_text_context(session: requests.Session, url: str) -> str:
     """Micro-crawl the source page for real article body text (not just a
     short snippet) so an LLM can write a genuine, fact-grounded "why this is
     worth reading" reason. Shares the same fetch machinery as
-    `fetch_title_context()` (byte-stream cap, direct-fetch-then-jina-fallback
+    `fetch_title_context()` (byte-stream cap, direct-fetch-then-reader-fallback
     strategy) but with much higher paragraph/line extraction limits and a
     larger char cap, since we want real body content rather than a
     description-length snippet. Any failure or empty extraction returns ""
@@ -5679,7 +5643,7 @@ def fetch_full_text_context(session: requests.Session, url: str) -> str:
         return context[:FULL_TEXT_CONTEXT_CHAR_CAP]
 
     jina_headers = {"Accept": "text/plain"}
-    jina_raw = _fetch_context_bytes(session, f"https://r.jina.ai/{u}", jina_headers, timeout=15)
+    jina_raw = _fetch_context_bytes(session, f"{JINA_READER_BASE_URL}/{u}", jina_headers, timeout=15)
     jina_context = _parse_jina_reader_context(jina_raw, max_lines=400, max_prose_lines=60)
     return jina_context[:FULL_TEXT_CONTEXT_CHAR_CAP]
 
@@ -7082,7 +7046,6 @@ def main() -> int:
     latest_items, latest_items_all, title_cache = add_bilingual_fields(
         latest_items,
         latest_items_all,
-        session,
         title_cache,
         max_new_translations=max(0, args.translate_max_new),
         max_new_translations_all=max(0, args.translate_max_new_broad),
@@ -7092,7 +7055,6 @@ def main() -> int:
     creator_items_ai, creator_items_all, title_cache = add_bilingual_fields(
         creator_items_ai,
         creator_items_all,
-        session,
         title_cache,
         max_new_translations=0,
     )
