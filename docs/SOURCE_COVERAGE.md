@@ -69,10 +69,34 @@ The public site should directly track these high-signal official sources:
 
 - OpenAI News RSS
 - Anthropic News page
+- OpenAI Codex Changelog page
 - Google DeepMind RSS
 - Google AI Blog RSS
 - Hugging Face Blog RSS
 - GitHub AI & ML RSS
+- DeepSeek news page (`deepseek.com/news`, Next.js flight payload:
+  `title`/`date`/`slug` JSON embedded in `self.__next_f` chunks)
+- MiniMax news (`www.minimaxi.com/api/news`, public JSON API with
+  millisecond `publishDate`)
+- ByteDance Seed blog (`seed.bytedance.com/blog`, inline `article_list`
+  JSON; only `Status == 2` published articles; zh titles preferred)
+- Zhipu AI news (`www.zhipuai.cn/news`, Next.js RSC payload fetched with
+  the `RSC: 1` request header; `navConfig` article ids/titles/createAt)
+- Moonshot AI / Kimi blog (`www.kimi.com/blog/`, rendered card anchors
+  with `aria-label` plus `card-date` publish dates; moonshot.cn research
+  routes to the kimi.com international site)
+
+These page-based CN sources have no RSS/Atom feeds, so they use dedicated
+single-request parsers (see `CN_OFFICIAL_PAGE_FETCHERS` in
+`scripts/update_news.py`). They share the official-layer ingestion rules:
+45-day freshness window, at most 10 items per source, and they flow into
+the `Official AI Updates` feed. They can be switched off locally through
+`DISABLED_SOURCES` like every other built-in source.
+
+Qwen (qwen.ai) was evaluated on 2026-09-01 and NOT adopted: the site is a
+pure SPA whose `/api/v2/article` endpoint redirects to an internal
+`:8080` host that is unreachable from the public internet, and no public
+RSS/sitemap exists. Re-evaluate if Alibaba publishes an official feed.
 
 Aggregator sites may already surface some of these updates, but they are not
 guaranteed to be complete or timely. Keep these official sources as a stable

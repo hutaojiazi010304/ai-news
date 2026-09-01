@@ -18,7 +18,7 @@ from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 from difflib import SequenceMatcher
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 from zoneinfo import ZoneInfo
 
@@ -1662,6 +1662,204 @@ def parse_openai_codex_changelog_items(page_html: str, now: datetime) -> list[Ra
     return out
 
 
+def _json_unescape(value: str) -> str:
+    """Decode JSON string escapes (\\uXXXX, \\" etc.) found in flight/RSC payloads."""
+    if "\\" not in value:
+        return value
+    try:
+        return json.loads('"' + value + '"')
+    except Exception:
+        return value
+
+
+def _official_page_raw_item(source: str, provider: str, title: str, url: str, published: datetime) -> RawItem:
+    return RawItem(
+        site_id="official_ai",
+        site_name="Official AI Updates",
+        source=source,
+        title=title,
+        url=url,
+        published_at=published,
+        meta={"provider": provider},
+    )
+
+
+def _within_official_window(published: datetime | None, now: datetime) -> bool:
+    return bool(published) and not (now and published < now - timedelta(days=OFFICIAL_AI_MAX_AGE_DAYS))
+
+
+def parse_deepseek_news_items(page_html: str, now: datetime, max_entries: int = 10) -> list[RawItem]:
+    """Parse the DeepSeek /news page: Next.js flight chunks embed JSON objects
+    with title/date/slug per announcement."""
+    chunks = re.findall(r'self\.__next_f\.push\(\[1,"(.*?)"\]\)</script>', page_html, re.S)
+    blob = "".join(_json_unescape(c) for c in chunks) if chunks else page_html
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for m in re.finditer(
+        r'\{"title":"((?:[^"\\]|\\.)*)","date":"(\d{4}-\d{2}-\d{2})",'
+        r'"description":"(?:[^"\\]|\\.)*","slug":"([^"\\]+)"',
+        blob,
+    ):
+        slug = m.group(3)
+        if slug in seen:
+            continue
+        seen.add(slug)
+        title = maybe_fix_mojibake(_json_unescape(m.group(1))).strip()
+        published = parse_date_any(m.group(2), now)
+        if not title or not _within_official_window(published, now):
+            continue
+        out.append(
+            _official_page_raw_item("DeepSeek", "DeepSeek", title, f"https://deepseek.com/news/{slug}/", published)
+        )
+        if len(out) >= max_entries:
+            break
+    return out
+
+
+def parse_minimax_news_items(payload_text: str, now: datetime, max_entries: int = 10) -> list[RawItem]:
+    """Parse MiniMax's public /api/news JSON payload."""
+    try:
+        payload = json.loads(payload_text)
+    except Exception:
+        return []
+    out: list[RawItem] = []
+    for entry in payload.get("data") or []:
+        title = str(entry.get("title") or "").strip()
+        slug = str(entry.get("slug") or "").strip()
+        published = parse_unix_timestamp(entry.get("publishDate"))
+        if not title or not slug or not _within_official_window(published, now):
+            continue
+        out.append(
+            _official_page_raw_item("MiniMax", "MiniMax", title, f"https://www.minimaxi.com/news/{slug}", published)
+        )
+        if len(out) >= max_entries:
+            break
+    return out
+
+
+def parse_seed_blog_items(page_html: str, now: datetime, max_entries: int = 10) -> list[RawItem]:
+    """Parse the ByteDance Seed blog page: inline JSON carries article_list with
+    ArticleMeta (ID/Status/PublishDate) plus zh/en sub-content titles."""
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for m in re.finditer(
+        r'"ID":(\d+),"ArticleID":\d+,"ArticleType":\d+,"Author":"[^"]*","Status":(\d+),"PublishDate":(\d{13})',
+        page_html,
+    ):
+        article_id = m.group(1)
+        if m.group(2) != "2" or article_id in seen:
+            continue
+        seen.add(article_id)
+        window = page_html[m.end():m.end() + 4000]
+        zh = re.search(r'"ArticleSubContentZh":\{"Title":"((?:[^"\\]|\\.)*)"', window)
+        en = re.search(r'"ArticleSubContentEn":\{"Title":"((?:[^"\\]|\\.)*)"', window)
+        title = _json_unescape((zh or en).group(1)).strip() if (zh or en) else ""
+        published = parse_unix_timestamp(int(m.group(3)))
+        if not title or not _within_official_window(published, now):
+            continue
+        out.append(
+            _official_page_raw_item(
+                "ByteDance Seed", "ByteDance Seed", title, f"https://seed.bytedance.com/zh/blog/{article_id}", published
+            )
+        )
+        if len(out) >= max_entries:
+            break
+    return out
+
+
+def parse_zhipu_news_items(rsc_text: str, now: datetime, max_entries: int = 10) -> list[RawItem]:
+    """Parse the Zhipu /news RSC payload (request header RSC: 1): navConfig
+    articles carry id/title_zh/title_en/createAt."""
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for m in re.finditer(
+        r'"article":\{"id":(\d+),"title_zh":"((?:[^"\\]|\\.)*)","title_en":"((?:[^"\\]|\\.)*)","createAt":"([^"]+)"',
+        rsc_text,
+    ):
+        article_id = m.group(1)
+        if article_id in seen:
+            continue
+        seen.add(article_id)
+        title = _json_unescape(m.group(2)).strip() or _json_unescape(m.group(3)).strip()
+        title = maybe_fix_mojibake(title).strip()
+        published = parse_date_any(m.group(4), now)
+        if not title or not _within_official_window(published, now):
+            continue
+        out.append(
+            _official_page_raw_item("Zhipu AI", "Zhipu AI", title, f"https://www.zhipuai.cn/news/{article_id}", published)
+        )
+        if len(out) >= max_entries:
+            break
+    return out
+
+
+def parse_kimi_blog_items(page_html: str, now: datetime, max_entries: int = 10) -> list[RawItem]:
+    """Parse the kimi.com (Moonshot AI) blog list: each card renders an anchor
+    with aria-label plus a card-date paragraph holding the publish date."""
+    out: list[RawItem] = []
+    seen: set[str] = set()
+    for m in re.finditer(r'href="((?:/[a-z]{2})?/blog/[^"]+)"\s+aria-label="([^"]+)"', page_html):
+        href, title = m.group(1), m.group(2).strip()
+        if href in seen:
+            continue
+        seen.add(href)
+        segment = page_html[m.end():m.end() + 2000]
+        date_m = re.search(r'card-date[^>]*>\s*(20\d\d-\d{2}-\d{2})', segment)
+        published = parse_date_any(date_m.group(1), now) if date_m else None
+        if not title or not _within_official_window(published, now):
+            continue
+        out.append(
+            _official_page_raw_item("Moonshot AI (Kimi)", "Moonshot AI", title, f"https://www.kimi.com{href}", published)
+        )
+        if len(out) >= max_entries:
+            break
+    return out
+
+
+def fetch_deepseek_news(session: requests.Session, now: datetime) -> list[RawItem]:
+    r = session.get("https://deepseek.com/news", timeout=20)
+    r.raise_for_status()
+    return parse_deepseek_news_items(r.text, now)
+
+
+def fetch_minimax_news(session: requests.Session, now: datetime) -> list[RawItem]:
+    r = session.get(
+        "https://www.minimaxi.com/api/news", timeout=20, headers={"Accept": "application/json"}
+    )
+    r.raise_for_status()
+    return parse_minimax_news_items(r.text, now)
+
+
+def fetch_seed_blog(session: requests.Session, now: datetime) -> list[RawItem]:
+    r = session.get("https://seed.bytedance.com/blog", timeout=20)
+    r.raise_for_status()
+    return parse_seed_blog_items(r.text, now)
+
+
+def fetch_zhipu_news(session: requests.Session, now: datetime) -> list[RawItem]:
+    # The Next.js RSC flight payload (RSC: 1) embeds the full article list;
+    # the plain HTML shell carries no data.
+    r = session.get("https://www.zhipuai.cn/news", timeout=20, headers={"RSC": "1"})
+    r.raise_for_status()
+    return parse_zhipu_news_items(r.text, now)
+
+
+def fetch_kimi_blog(session: requests.Session, now: datetime) -> list[RawItem]:
+    # moonshot.cn routes research/news to the international kimi.com blog.
+    r = session.get("https://www.kimi.com/blog/", timeout=20)
+    r.raise_for_status()
+    return parse_kimi_blog_items(r.text, now)
+
+
+CN_OFFICIAL_PAGE_FETCHERS: tuple[tuple[str, Callable[[requests.Session, datetime], list[RawItem]]], ...] = (
+    ("DeepSeek", fetch_deepseek_news),
+    ("MiniMax", fetch_minimax_news),
+    ("ByteDance Seed", fetch_seed_blog),
+    ("Zhipu AI", fetch_zhipu_news),
+    ("Moonshot AI (Kimi)", fetch_kimi_blog),
+)
+
+
 def clean_feed_summary(raw: Any) -> str:
     """Normalize an RSS/Atom entry summary (<description>) to plain text.
 
@@ -1888,6 +2086,14 @@ def fetch_official_ai_updates(session: requests.Session, now: datetime) -> list[
         out.extend(parse_openai_codex_changelog_items(r.text, now))
     except Exception:
         pass
+
+    for cn_title, cn_fetcher in CN_OFFICIAL_PAGE_FETCHERS:
+        if is_disabled_source(disabled, title=cn_title):
+            continue
+        try:
+            out.extend(cn_fetcher(session, now))
+        except Exception:
+            continue
 
     if not out:
         raise ValueError("No official AI update sources returned items")

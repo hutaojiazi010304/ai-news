@@ -30,6 +30,21 @@ ROWS = [
     ("内置·官方AI动态", "OpenAI Codex Changelog", "developers.openai.com",
      "https://developers.openai.com/codex/changelog", "HTML 页面解析",
      "解析 li[id] + time/h3"),
+    ("内置·官方AI动态", "DeepSeek", "deepseek.com",
+     "https://deepseek.com/news", "HTML 页面解析（Next.js flight payload）",
+     "title/date/slug 内嵌 JSON；最多 10 条；保留窗口 45 天"),
+    ("内置·官方AI动态", "MiniMax", "minimaxi.com",
+     "https://www.minimaxi.com/api/news", "公开 JSON API",
+     "publishDate 毫秒时间戳；最多 10 条"),
+    ("内置·官方AI动态", "ByteDance Seed", "seed.bytedance.com",
+     "https://seed.bytedance.com/blog", "HTML 页面解析（内嵌 article_list JSON）",
+     "ArticleMeta ID/Status/PublishDate；最多 10 条"),
+    ("内置·官方AI动态", "智谱 AI", "zhipuai.cn",
+     "https://www.zhipuai.cn/news", "Next.js RSC payload（RSC: 1 头）",
+     "navConfig article id/title/createAt；最多 10 条"),
+    ("内置·官方AI动态", "月之暗面 Moonshot", "kimi.com",
+     "https://www.kimi.com/blog/", "HTML 页面解析（卡片 aria-label + card-date）",
+     "moonshot.cn 研究/新闻路由至国际站 kimi.com；最多 10 条"),
 
     # ---------------- 内置 · 精选 AI 媒体 ----------------
     ("内置·精选媒体", "The Decoder AI News", "the-decoder.com",
@@ -178,6 +193,9 @@ ROWS = [
      "/feed.xml", "RSS（未接入）", "仅 2021 年 Jekyll 占位条目"),
     ("已评估未接入", "Substack 类 newsletter", "substack.com",
      "各刊 RSS", "RSS（未入公开示例）", "GitHub Actions 常收 403，本地可能正常"),
+    ("已评估未接入", "通义千问 Qwen", "qwen.ai",
+     "SPA + 私有 API", "—（未接入）",
+     "2026-09-01 评估：纯 SPA，/api/v2/article 重定向到内网 8080 端口，外网无稳定抓取路径；待官方公开 feed 再议"),
 ]
 
 CATEGORY_COLORS = {
