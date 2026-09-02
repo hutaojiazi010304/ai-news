@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T16:43:29.028551Z",
+  "generated_at": "2026-09-02T19:55:38.124370Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8398,
-      "importance": 0.8398,
-      "importance_score": 0.8398,
+      "score": 0.8353,
+      "importance": 0.8353,
+      "importance_score": 0.8353,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8323,
+        "recency": 0.807,
         "story_heat": 0.0
       },
       "category": "official",
@@ -84,148 +84,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
-      }
-    },
-    {
-      "story_id": "story_d4b725b4f72d",
-      "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "primary_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "source": "Anthropic：Newsroom（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "ce63be131b37945285411d9f6a59acbd508fd131",
-          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
-          "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-          "title_original": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-          "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型但安全防护级别不同，Mythos 5.1 仅通过可信访问计划提供给网络安全和生命科学领域的受审机构。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-          "source": "Anthropic：Newsroom（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-02T03:33:48.237000Z"
-        },
-        {
-          "id": "6a3f79aae3b6d9e8943054897087b1fa6542c772",
-          "title": "Claude Fable 5.1 和 Claude Mythos 5.1",
-          "title_zh": "Claude Fable 5.1 和 Claude Mythos 5.1",
-          "title_en": null,
-          "title_original": "Claude Fable 5.1 和 Claude Mythos 5.1",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-          "source": "www.anthropic.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-01T18:25:13.352000Z"
-        },
-        {
-          "id": "90bfdfed4fd679019c3bdfa5ed7583ca0e8682ec",
-          "title": "Claude Fable 5.1 和 Claude Mythos 5.1 / Claude Fable 5.1 and Claude Mythos 5.1",
-          "title_zh": "Claude Fable 5.1 和 Claude Mythos 5.1",
-          "title_en": "Claude Fable 5.1 and Claude Mythos 5.1",
-          "title_original": "Claude Fable 5.1 and Claude Mythos 5.1",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-01T18:01:24Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Anthropic：Newsroom（网页）",
-        "Hacker News",
-        "www.anthropic.com"
-      ],
-      "items": [
-        {
-          "id": "ce63be131b37945285411d9f6a59acbd508fd131",
-          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
-          "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-          "title_original": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-          "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型但安全防护级别不同，Mythos 5.1 仅通过可信访问计划提供给网络安全和生命科学领域的受审机构。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-          "source": "Anthropic：Newsroom（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-02T03:33:48.237000Z"
-        },
-        {
-          "id": "6a3f79aae3b6d9e8943054897087b1fa6542c772",
-          "title": "Claude Fable 5.1 和 Claude Mythos 5.1",
-          "title_zh": "Claude Fable 5.1 和 Claude Mythos 5.1",
-          "title_en": null,
-          "title_original": "Claude Fable 5.1 和 Claude Mythos 5.1",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-          "source": "www.anthropic.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-01T18:25:13.352000Z"
-        },
-        {
-          "id": "90bfdfed4fd679019c3bdfa5ed7583ca0e8682ec",
-          "title": "Claude Fable 5.1 和 Claude Mythos 5.1 / Claude Fable 5.1 and Claude Mythos 5.1",
-          "title_zh": "Claude Fable 5.1 和 Claude Mythos 5.1",
-          "title_en": "Claude Fable 5.1 and Claude Mythos 5.1",
-          "title_original": "Claude Fable 5.1 and Claude Mythos 5.1",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-01T18:01:24Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.8396,
-      "importance": 0.8396,
-      "importance_score": 0.8396,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.87,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.881,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-01T18:01:24Z",
-      "latest_at": "2026-09-02T03:33:48.237000Z",
-      "primary_item": {
-        "id": "ce63be131b37945285411d9f6a59acbd508fd131",
-        "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-        "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
-        "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-        "title_original": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-        "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型但安全防护级别不同，Mythos 5.1 仅通过可信访问计划提供给网络安全和生命科学领域的受审机构。",
-        "recommend_reason_zh": null,
-        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-        "source": "Anthropic：Newsroom（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8567,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -273,15 +132,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8513,
-      "importance": 0.8513,
-      "importance_score": 0.8513,
+      "score": 0.8458,
+      "importance": 0.8458,
+      "importance_score": 0.8458,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.996,
+        "recency": 0.9658,
         "story_heat": 0.0
       },
       "category": "official",
@@ -309,91 +168,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
-      }
-    },
-    {
-      "story_id": "story_ad13bde463ce",
-      "title": "How AI-native companies turn workflows into operating capability",
-      "url": "https://openai.com/index/ai-native-company-workflows",
-      "primary_url": "https://openai.com/index/ai-native-company-workflows",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "d2442e95c27315c0dc37c732237ceff1d778958a",
-          "title": "How AI-native companies turn workflows into operating capability",
-          "title_zh": null,
-          "title_en": "How AI-native companies turn workflows into operating capability",
-          "title_original": "How AI-native companies turn workflows into operating capability",
-          "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/ai-native-company-workflows",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-01T17:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "d2442e95c27315c0dc37c732237ceff1d778958a",
-          "title": "How AI-native companies turn workflows into operating capability",
-          "title_zh": null,
-          "title_en": "How AI-native companies turn workflows into operating capability",
-          "title_original": "How AI-native companies turn workflows into operating capability",
-          "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/ai-native-company-workflows",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-01T17:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8152,
-      "importance": 0.8152,
-      "importance_score": 0.8152,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.7958,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-01T17:00:00Z",
-      "latest_at": "2026-09-01T17:00:00Z",
-      "primary_item": {
-        "id": "d2442e95c27315c0dc37c732237ceff1d778958a",
-        "title": "How AI-native companies turn workflows into operating capability",
-        "title_zh": null,
-        "title_en": "How AI-native companies turn workflows into operating capability",
-        "title_original": "How AI-native companies turn workflows into operating capability",
-        "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/ai-native-company-workflows",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8468,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -441,15 +216,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8422,
-      "importance": 0.8422,
-      "importance_score": 0.8422,
+      "score": 0.8368,
+      "importance": 0.8368,
+      "importance_score": 0.8368,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9899,
+        "recency": 0.9598,
         "story_heat": 0.0
       },
       "category": "official",
@@ -477,7 +252,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
+      }
+    },
+    {
+      "story_id": "story_f465e2b91312",
+      "title": "GitHub Copilot 如何在不牺牲任务质量的前提下降低 AI 编码成本 / How we make AI coding more cost efficient without sacrificing task quality",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality",
+      "primary_url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality",
+      "source": "GitHub AI & ML",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "264bb763f013e5868a70b4c5afb1043560d1c225",
+          "title": "GitHub Copilot 如何在不牺牲任务质量的前提下降低 AI 编码成本 / How we make AI coding more cost efficient without sacrificing task quality",
+          "title_zh": "GitHub Copilot 如何在不牺牲任务质量的前提下降低 AI 编码成本",
+          "title_en": "How we make AI coding more cost efficient without sacrificing task quality",
+          "title_original": "How we make AI coding more cost efficient without sacrificing task quality",
+          "summary": "Why shorter outputs can cost more, and how GitHub Copilot reduces wasted work across the complete coding task. The post How we make AI coding more cost efficient without sacrificing task quality appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-02T18:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub AI & ML"
+      ],
+      "items": [
+        {
+          "id": "264bb763f013e5868a70b4c5afb1043560d1c225",
+          "title": "GitHub Copilot 如何在不牺牲任务质量的前提下降低 AI 编码成本 / How we make AI coding more cost efficient without sacrificing task quality",
+          "title_zh": "GitHub Copilot 如何在不牺牲任务质量的前提下降低 AI 编码成本",
+          "title_en": "How we make AI coding more cost efficient without sacrificing task quality",
+          "title_original": "How we make AI coding more cost efficient without sacrificing task quality",
+          "summary": "Why shorter outputs can cost more, and how GitHub Copilot reduces wasted work across the complete coding task. The post How we make AI coding more cost efficient without sacrificing task quality appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-02T18:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8407,
+      "importance": 0.8407,
+      "importance_score": 0.8407,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.9816,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-02T18:00:00Z",
+      "latest_at": "2026-09-02T18:00:00Z",
+      "primary_item": {
+        "id": "264bb763f013e5868a70b4c5afb1043560d1c225",
+        "title": "GitHub Copilot 如何在不牺牲任务质量的前提下降低 AI 编码成本 / How we make AI coding more cost efficient without sacrificing task quality",
+        "title_zh": "GitHub Copilot 如何在不牺牲任务质量的前提下降低 AI 编码成本",
+        "title_en": "How we make AI coding more cost efficient without sacrificing task quality",
+        "title_original": "How we make AI coding more cost efficient without sacrificing task quality",
+        "summary": "Why shorter outputs can cost more, and how GitHub Copilot reduces wasted work across the complete coding task. The post How we make AI coding more cost efficient without sacrificing task quality appeared first on The GitHub Blog .",
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality",
+        "source": "GitHub AI & ML",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8407,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -485,11 +344,11 @@
       "title": "Improving our alignment and security efforts",
       "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
       "primary_url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
-      "source": "Hacker News",
-      "source_name": "TechURLs",
+      "source": "Hacker News · 24h最热",
+      "source_name": "Zeli",
       "sources": [
         {
-          "id": "3957bd4e7cd33e4ca088704aa5105417a4a990bd",
+          "id": "c5231c3ec2d65a1878e5585aac645a9837b92082",
           "title": "Improving our alignment and security efforts",
           "title_zh": null,
           "title_en": "Improving our alignment and security efforts",
@@ -497,19 +356,19 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
           "published_at": "2026-09-01T23:12:45Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hacker News"
+        "Hacker News · 24h最热"
       ],
       "items": [
         {
-          "id": "3957bd4e7cd33e4ca088704aa5105417a4a990bd",
+          "id": "c5231c3ec2d65a1878e5585aac645a9837b92082",
           "title": "Improving our alignment and security efforts",
           "title_zh": null,
           "title_en": "Improving our alignment and security efforts",
@@ -517,23 +376,23 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
           "published_at": "2026-09-01T23:12:45Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.4929,
-      "importance": 0.4929,
-      "importance_score": 0.4929,
+      "score": 0.4883,
+      "importance": 0.4883,
+      "importance_score": 0.4883,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8449,
+        "recency": 0.8192,
         "story_heat": 0.0
       },
       "category": "watch",
@@ -543,7 +402,7 @@
       "earliest_at": "2026-09-01T23:12:45Z",
       "latest_at": "2026-09-01T23:12:45Z",
       "primary_item": {
-        "id": "3957bd4e7cd33e4ca088704aa5105417a4a990bd",
+        "id": "c5231c3ec2d65a1878e5585aac645a9837b92082",
         "title": "Improving our alignment and security efforts",
         "title_zh": null,
         "title_en": "Improving our alignment and security efforts",
@@ -551,15 +410,15 @@
         "summary": null,
         "recommend_reason_zh": null,
         "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
-        "source": "Hacker News",
-        "source_name": "TechURLs"
+        "source": "Hacker News · 24h最热",
+        "source_name": "Zeli"
       },
       "peak_score": 0.8371,
       "persona_id": "pragmatic",
       "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -585,7 +444,7 @@
           "published_at": "2026-09-02T03:13:14.351000Z"
         },
         {
-          "id": "af59126bb24fdaa4e1ca2f47a81649c42bc75363",
+          "id": "b6807c6b55b9d40ec21b8b15f1d88a1df23cd9d7",
           "title": "通往“阿斯特拉”之路：关键能力与前沿保障措施 / Path to Astra: critical capabilities and frontier safeguards",
           "title_zh": "通往“阿斯特拉”之路：关键能力与前沿保障措施",
           "title_en": "Path to Astra: critical capabilities and frontier safeguards",
@@ -593,15 +452,15 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://openai.com/index/path-to-astra",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
           "published_at": "2026-09-01T20:20:41Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hacker News (黑客新闻)",
+        "Hacker News · 24h最热",
         "openai.com"
       ],
       "items": [
@@ -620,7 +479,7 @@
           "published_at": "2026-09-02T03:13:14.351000Z"
         },
         {
-          "id": "af59126bb24fdaa4e1ca2f47a81649c42bc75363",
+          "id": "b6807c6b55b9d40ec21b8b15f1d88a1df23cd9d7",
           "title": "通往“阿斯特拉”之路：关键能力与前沿保障措施 / Path to Astra: critical capabilities and frontier safeguards",
           "title_zh": "通往“阿斯特拉”之路：关键能力与前沿保障措施",
           "title_en": "Path to Astra: critical capabilities and frontier safeguards",
@@ -628,23 +487,23 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://openai.com/index/path-to-astra",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
           "published_at": "2026-09-01T20:20:41Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.4989,
-      "importance": 0.4989,
-      "importance_score": 0.4989,
+      "score": 0.4941,
+      "importance": 0.4941,
+      "importance_score": 0.4941,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.8781,
+        "recency": 0.8514,
         "story_heat": 0.0
       },
       "category": "watch",
@@ -670,7 +529,90 @@
       "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
+      }
+    },
+    {
+      "story_id": "story_2a70e38b6ec4",
+      "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "primary_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "source": "Anthropic：Newsroom（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "ce63be131b37945285411d9f6a59acbd508fd131",
+          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+          "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+          "title_original": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+          "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型但安全防护级别不同，Mythos 5.1 仅通过可信访问计划提供给网络安全和生命科学领域的受审机构。",
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "source": "Anthropic：Newsroom（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T03:33:48.237000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Anthropic：Newsroom（网页）"
+      ],
+      "items": [
+        {
+          "id": "ce63be131b37945285411d9f6a59acbd508fd131",
+          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+          "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+          "title_original": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+          "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型但安全防护级别不同，Mythos 5.1 仅通过可信访问计划提供给网络安全和生命科学领域的受审机构。",
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "source": "Anthropic：Newsroom（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T03:33:48.237000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8348,
+      "importance": 0.8348,
+      "importance_score": 0.8348,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.87,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.8542,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-02T03:33:48.237000Z",
+      "latest_at": "2026-09-02T03:33:48.237000Z",
+      "primary_item": {
+        "id": "ce63be131b37945285411d9f6a59acbd508fd131",
+        "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+        "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+        "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+        "title_original": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+        "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型但安全防护级别不同，Mythos 5.1 仅通过可信访问计划提供给网络安全和生命科学领域的受审机构。",
+        "recommend_reason_zh": null,
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "source": "Anthropic：Newsroom（网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8348,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -718,15 +660,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.855,
-      "importance": 0.855,
-      "importance_score": 0.855,
+      "score": 0.8497,
+      "importance": 0.8497,
+      "importance_score": 0.8497,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9724,
+        "recency": 0.9429,
         "story_heat": 0.0
       },
       "category": "official",
@@ -754,91 +696,90 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
-      "story_id": "story_7ec800fd62d3",
-      "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能 / Introducing agentic video understanding with Gemini",
-      "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
-      "primary_url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
-      "source": "Google DeepMind",
-      "source_name": "Official AI Updates",
+      "story_id": "story_bbd546f9bbd7",
+      "title": "Claude 在 Cowork 和 Claude Code 中支持后台操作电脑 / Claude can now use your computer in the background in Claude Cowork and Claude Code. Give it someth…",
+      "url": "https://x.com/claudeai/status/2095226833293685100",
+      "primary_url": "https://x.com/claudeai/status/2095226833293685100",
+      "source": "X：Claude (@claudeai)",
+      "source_name": "AI HOT",
       "sources": [
         {
-          "id": "a6473259f31904c8b2a5ec6e629746de582bf604",
-          "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能 / Introducing agentic video understanding with Gemini",
-          "title_zh": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能",
-          "title_en": "Introducing agentic video understanding with Gemini",
-          "title_original": "Introducing agentic video understanding with Gemini",
-          "summary": null,
+          "id": "0ce46662b32840e889b83f1ce4f580a14d2d3ab2",
+          "title": "Claude 在 Cowork 和 Claude Code 中支持后台操作电脑 / Claude can now use your computer in the background in Claude Cowork and Claude Code. Give it someth…",
+          "title_zh": "Claude 在 Cowork 和 Claude Code 中支持后台操作电脑",
+          "title_en": "Claude can now use your computer in the background in Claude Cowork and Claude Code. Give it someth…",
+          "title_original": "Claude can now use your computer in the background in Claude Cowork and Claude Code. Give it someth…",
+          "summary": "Claude 官方宣布 Claude Cowork 和 Claude Code 新增后台使用电脑的能力。用户把任务交给 Claude 后，它会像人一样点击、输入和打开应用，用户可同时去做其他事。",
           "recommend_reason_zh": null,
-          "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
-          "source": "Google DeepMind",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-01T17:08:51Z"
+          "url": "https://x.com/claudeai/status/2095226833293685100",
+          "source": "X：Claude (@claudeai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T19:06:19Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Google DeepMind"
+        "X：Claude (@claudeai)"
       ],
       "items": [
         {
-          "id": "a6473259f31904c8b2a5ec6e629746de582bf604",
-          "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能 / Introducing agentic video understanding with Gemini",
-          "title_zh": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能",
-          "title_en": "Introducing agentic video understanding with Gemini",
-          "title_original": "Introducing agentic video understanding with Gemini",
-          "summary": null,
+          "id": "0ce46662b32840e889b83f1ce4f580a14d2d3ab2",
+          "title": "Claude 在 Cowork 和 Claude Code 中支持后台操作电脑 / Claude can now use your computer in the background in Claude Cowork and Claude Code. Give it someth…",
+          "title_zh": "Claude 在 Cowork 和 Claude Code 中支持后台操作电脑",
+          "title_en": "Claude can now use your computer in the background in Claude Cowork and Claude Code. Give it someth…",
+          "title_original": "Claude can now use your computer in the background in Claude Cowork and Claude Code. Give it someth…",
+          "summary": "Claude 官方宣布 Claude Cowork 和 Claude Code 新增后台使用电脑的能力。用户把任务交给 Claude 后，它会像人一样点击、输入和打开应用，用户可同时去做其他事。",
           "recommend_reason_zh": null,
-          "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
-          "source": "Google DeepMind",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-01T17:08:51Z"
+          "url": "https://x.com/claudeai/status/2095226833293685100",
+          "source": "X：Claude (@claudeai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T19:06:19Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8154,
-      "importance": 0.8154,
-      "importance_score": 0.8154,
+      "score": 0.8116,
+      "importance": 0.8116,
+      "importance_score": 0.8116,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.9,
+        "editorial": 0.71,
         "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.7969,
+        "ai_relevance": 1.0,
+        "recency": 0.9921,
         "story_heat": 0.0
       },
       "category": "official",
       "reasons": [
-        "official_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-01T17:08:51Z",
-      "latest_at": "2026-09-01T17:08:51Z",
+      "earliest_at": "2026-09-02T19:06:19Z",
+      "latest_at": "2026-09-02T19:06:19Z",
       "primary_item": {
-        "id": "a6473259f31904c8b2a5ec6e629746de582bf604",
-        "title": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能 / Introducing agentic video understanding with Gemini",
-        "title_zh": "Google DeepMind 为 Gemini 推出 agentic 视频理解功能",
-        "title_en": "Introducing agentic video understanding with Gemini",
-        "title_original": "Introducing agentic video understanding with Gemini",
-        "summary": null,
+        "id": "0ce46662b32840e889b83f1ce4f580a14d2d3ab2",
+        "title": "Claude 在 Cowork 和 Claude Code 中支持后台操作电脑 / Claude can now use your computer in the background in Claude Cowork and Claude Code. Give it someth…",
+        "title_zh": "Claude 在 Cowork 和 Claude Code 中支持后台操作电脑",
+        "title_en": "Claude can now use your computer in the background in Claude Cowork and Claude Code. Give it someth…",
+        "title_original": "Claude can now use your computer in the background in Claude Cowork and Claude Code. Give it someth…",
+        "summary": "Claude 官方宣布 Claude Cowork 和 Claude Code 新增后台使用电脑的能力。用户把任务交给 Claude 后，它会像人一样点击、输入和打开应用，用户可同时去做其他事。",
         "recommend_reason_zh": null,
-        "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini",
-        "source": "Google DeepMind",
-        "source_name": "Official AI Updates"
+        "url": "https://x.com/claudeai/status/2095226833293685100",
+        "source": "X：Claude (@claudeai)",
+        "source_name": "AI HOT"
       },
-      "peak_score": 0.8471,
+      "peak_score": 0.8116,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -886,15 +827,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8125,
-      "importance": 0.8125,
-      "importance_score": 0.8125,
+      "score": 0.808,
+      "importance": 0.808,
+      "importance_score": 0.808,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8251,
+        "recency": 0.8,
         "story_heat": 0.0
       },
       "category": "official",
@@ -922,7 +863,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -970,15 +911,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7776,
-      "importance": 0.7776,
-      "importance_score": 0.7776,
+      "score": 0.773,
+      "importance": 0.773,
+      "importance_score": 0.773,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.85,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8389,
+        "recency": 0.8135,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1005,7 +946,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -1053,15 +994,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8048,
-      "importance": 0.8048,
-      "importance_score": 0.8048,
+      "score": 0.7994,
+      "importance": 0.7994,
+      "importance_score": 0.7994,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.988,
+        "recency": 0.958,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1088,7 +1029,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -1136,15 +1077,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7816,
-      "importance": 0.7816,
-      "importance_score": 0.7816,
+      "score": 0.7769,
+      "importance": 0.7769,
+      "importance_score": 0.7769,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8758,
+        "recency": 0.8492,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1171,7 +1112,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -1219,15 +1160,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7745,
-      "importance": 0.7745,
-      "importance_score": 0.7745,
+      "score": 0.7697,
+      "importance": 0.7697,
+      "importance_score": 0.7697,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8715,
+        "recency": 0.8451,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1254,7 +1195,173 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
+      }
+    },
+    {
+      "story_id": "story_2231837c4c72",
+      "title": "Cursor 推出 Self-Hosted Machines，云智能体可在企业自有机器上执行 / Run cloud agents on machines you manage",
+      "url": "https://cursor.com/blog/self-hosted-machines",
+      "primary_url": "https://cursor.com/blog/self-hosted-machines",
+      "source": "Cursor Blog",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "29c087e84a96ef0afb443300502841764996e854",
+          "title": "Cursor 推出 Self-Hosted Machines，云智能体可在企业自有机器上执行 / Run cloud agents on machines you manage",
+          "title_zh": "Cursor 推出 Self-Hosted Machines，云智能体可在企业自有机器上执行",
+          "title_en": "Run cloud agents on machines you manage",
+          "title_original": "Run cloud agents on machines you manage",
+          "summary": "Cursor 发布 Self-Hosted Machines，让云智能体的工具执行迁移到企业自有网络内的机器，智能体循环、推理和规划仍留在 Cursor 云端，通过 worker 的出站 HTTPS 连接对接，Cursor 不会主动连入企业网络。",
+          "recommend_reason_zh": null,
+          "url": "https://cursor.com/blog/self-hosted-machines",
+          "source": "Cursor Blog",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T12:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Cursor Blog"
+      ],
+      "items": [
+        {
+          "id": "29c087e84a96ef0afb443300502841764996e854",
+          "title": "Cursor 推出 Self-Hosted Machines，云智能体可在企业自有机器上执行 / Run cloud agents on machines you manage",
+          "title_zh": "Cursor 推出 Self-Hosted Machines，云智能体可在企业自有机器上执行",
+          "title_en": "Run cloud agents on machines you manage",
+          "title_original": "Run cloud agents on machines you manage",
+          "summary": "Cursor 发布 Self-Hosted Machines，让云智能体的工具执行迁移到企业自有网络内的机器，智能体循环、推理和规划仍留在 Cursor 云端，通过 worker 的出站 HTTPS 连接对接，Cursor 不会主动连入企业网络。",
+          "recommend_reason_zh": null,
+          "url": "https://cursor.com/blog/self-hosted-machines",
+          "source": "Cursor Blog",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T12:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7878,
+      "importance": 0.7878,
+      "importance_score": 0.7878,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.67,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9265,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-02T12:00:00Z",
+      "latest_at": "2026-09-02T12:00:00Z",
+      "primary_item": {
+        "id": "29c087e84a96ef0afb443300502841764996e854",
+        "title": "Cursor 推出 Self-Hosted Machines，云智能体可在企业自有机器上执行 / Run cloud agents on machines you manage",
+        "title_zh": "Cursor 推出 Self-Hosted Machines，云智能体可在企业自有机器上执行",
+        "title_en": "Run cloud agents on machines you manage",
+        "title_original": "Run cloud agents on machines you manage",
+        "summary": "Cursor 发布 Self-Hosted Machines，让云智能体的工具执行迁移到企业自有网络内的机器，智能体循环、推理和规划仍留在 Cursor 云端，通过 worker 的出站 HTTPS 连接对接，Cursor 不会主动连入企业网络。",
+        "recommend_reason_zh": null,
+        "url": "https://cursor.com/blog/self-hosted-machines",
+        "source": "Cursor Blog",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7878,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-02T19:59:06.430564Z"
+      }
+    },
+    {
+      "story_id": "story_e268caebd4a8",
+      "title": "Anthropic 发布电商 Agent 架构与生产实践指南，并开源 commerce-agents 参考实现 / A guide to the anatomy of effective commerce agents",
+      "url": "https://claude.com/blog/the-anatomy-of-effective-commerce-agents",
+      "primary_url": "https://claude.com/blog/the-anatomy-of-effective-commerce-agents",
+      "source": "Claude：Blog（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "4412454dd688c3a4ee72a55e79c694aa7d64f400",
+          "title": "Anthropic 发布电商 Agent 架构与生产实践指南，并开源 commerce-agents 参考实现 / A guide to the anatomy of effective commerce agents",
+          "title_zh": "Anthropic 发布电商 Agent 架构与生产实践指南，并开源 commerce-agents 参考实现",
+          "title_en": "A guide to the anatomy of effective commerce agents",
+          "title_original": "A guide to the anatomy of effective commerce agents",
+          "summary": "Anthropic 发布电商 Agent 构建指南，基于与零售、旅游、电信等团队的落地经验，核心架构是单个 Claude 在标准 Agent 循环中配合技能与工具，而非按领域拆分子智能体，并开源了 anthropics/commerce-agents 参考实现，含购物与商家 Agent。",
+          "recommend_reason_zh": null,
+          "url": "https://claude.com/blog/the-anatomy-of-effective-commerce-agents",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T17:01:34.540000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Claude：Blog（网页）"
+      ],
+      "items": [
+        {
+          "id": "4412454dd688c3a4ee72a55e79c694aa7d64f400",
+          "title": "Anthropic 发布电商 Agent 架构与生产实践指南，并开源 commerce-agents 参考实现 / A guide to the anatomy of effective commerce agents",
+          "title_zh": "Anthropic 发布电商 Agent 架构与生产实践指南，并开源 commerce-agents 参考实现",
+          "title_en": "A guide to the anatomy of effective commerce agents",
+          "title_original": "A guide to the anatomy of effective commerce agents",
+          "summary": "Anthropic 发布电商 Agent 构建指南，基于与零售、旅游、电信等团队的落地经验，核心架构是单个 Claude 在标准 Agent 循环中配合技能与工具，而非按领域拆分子智能体，并开源了 anthropics/commerce-agents 参考实现，含购物与商家 Agent。",
+          "recommend_reason_zh": null,
+          "url": "https://claude.com/blog/the-anatomy-of-effective-commerce-agents",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T17:01:34.540000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.784,
+      "importance": 0.784,
+      "importance_score": 0.784,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.63,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9725,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-02T17:01:34.540000Z",
+      "latest_at": "2026-09-02T17:01:34.540000Z",
+      "primary_item": {
+        "id": "4412454dd688c3a4ee72a55e79c694aa7d64f400",
+        "title": "Anthropic 发布电商 Agent 架构与生产实践指南，并开源 commerce-agents 参考实现 / A guide to the anatomy of effective commerce agents",
+        "title_zh": "Anthropic 发布电商 Agent 架构与生产实践指南，并开源 commerce-agents 参考实现",
+        "title_en": "A guide to the anatomy of effective commerce agents",
+        "title_original": "A guide to the anatomy of effective commerce agents",
+        "summary": "Anthropic 发布电商 Agent 构建指南，基于与零售、旅游、电信等团队的落地经验，核心架构是单个 Claude 在标准 Agent 循环中配合技能与工具，而非按领域拆分子智能体，并开源了 anthropics/commerce-agents 参考实现，含购物与商家 Agent。",
+        "recommend_reason_zh": null,
+        "url": "https://claude.com/blog/the-anatomy-of-effective-commerce-agents",
+        "source": "Claude：Blog（网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.784,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -1302,15 +1409,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7826,
-      "importance": 0.7826,
-      "importance_score": 0.7826,
+      "score": 0.7772,
+      "importance": 0.7772,
+      "importance_score": 0.7772,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.61,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9978,
+        "recency": 0.9675,
         "story_heat": 0.0
       },
       "category": "official",
@@ -1337,7 +1444,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -1385,21 +1492,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7533,
-      "importance": 0.7533,
-      "importance_score": 0.7533,
+      "score": 0.7489,
+      "importance": 0.7489,
+      "importance_score": 0.7489,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8208,
+        "recency": 0.7959,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-01T20:12:46Z",
       "latest_at": "2026-09-01T20:12:46Z",
@@ -1420,7 +1526,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -1497,15 +1603,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7789,
-      "importance": 0.7789,
-      "importance_score": 0.7789,
+      "score": 0.7736,
+      "importance": 0.7736,
+      "importance_score": 0.7736,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9796,
+        "recency": 0.9499,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1532,7 +1638,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     },
     {
@@ -1580,21 +1686,20 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.75,
-      "importance": 0.75,
-      "importance_score": 0.75,
+      "score": 0.7451,
+      "importance": 0.7451,
+      "importance_score": 0.7451,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9024,
+        "recency": 0.875,
         "story_heat": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-02T06:03:05.792701Z",
       "latest_at": "2026-09-02T06:03:05.792701Z",
@@ -1615,201 +1720,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
-      }
-    },
-    {
-      "story_id": "story_81b03dbe87b3",
-      "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议 / it's a very good model， I spent a lot of time diving into it- longer write up coming but try it on…",
-      "url": "https://x.com/trq212/status/2094945951865520458",
-      "primary_url": "https://x.com/trq212/status/2094945951865520458",
-      "source": "X：Thariq (@trq212)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "09ed22f42bb30c08b2fb58f26c5bb790f27c1f98",
-          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议 / it's a very good model， I spent a lot of time diving into it- longer write up coming but try it on…",
-          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议",
-          "title_en": "it's a very good model， I spent a lot of time diving into it- longer write up coming but try it on…",
-          "title_original": "it's a very good model， I spent a lot of time diving into it- longer write up coming but try it on…",
-          "summary": "Anthropic 宣布推出 Claude Fable 5.1 和 Claude Mythos 5.1，称其为编码和知识工作领域最先进的模型。作者 Thariq 表示花了很多时间深入研究，认为模型很好，长文评测后续发布；建议对需要较少验证或边缘用例较少的任务使用较低 effort，且切换 effort 不再破坏 prompt cache。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/trq212/status/2094945951865520458",
-          "source": "X：Thariq (@trq212)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-02T00:30:11Z"
-        },
-        {
-          "id": "cf37ba90da698123f9afa9e93fe59bfaa9747783",
-          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议 / it’s a very good model, I spent a lot of time diving into it- longer write up coming but try it on lower effort for tasks that need less verification or have fewer edge cases, switching effort no longer breaks prompt...",
-          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议",
-          "title_en": "it’s a very good model, I spent a lot of time diving into it- longer write up coming but try it on lower effort for tasks that need less verification or have fewer edge cases, switching effort no longer breaks prompt...",
-          "title_original": "it’s a very good model, I spent a lot of time diving into it- longer write up coming but try it on lower effort for tasks that need less verification or have fewer edge cases, switching effort no longer breaks prompt...",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://x.com/trq212/status/2094945951865520458",
-          "source": "Follow Builders · X · Thariq",
-          "source_name": "Follow Builders",
-          "site_id": "followbuilders",
-          "published_at": "2026-09-02T00:30:11Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Follow Builders · X · Thariq",
-        "X：Thariq (@trq212)"
-      ],
-      "items": [
-        {
-          "id": "09ed22f42bb30c08b2fb58f26c5bb790f27c1f98",
-          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议 / it's a very good model， I spent a lot of time diving into it- longer write up coming but try it on…",
-          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议",
-          "title_en": "it's a very good model， I spent a lot of time diving into it- longer write up coming but try it on…",
-          "title_original": "it's a very good model， I spent a lot of time diving into it- longer write up coming but try it on…",
-          "summary": "Anthropic 宣布推出 Claude Fable 5.1 和 Claude Mythos 5.1，称其为编码和知识工作领域最先进的模型。作者 Thariq 表示花了很多时间深入研究，认为模型很好，长文评测后续发布；建议对需要较少验证或边缘用例较少的任务使用较低 effort，且切换 effort 不再破坏 prompt cache。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/trq212/status/2094945951865520458",
-          "source": "X：Thariq (@trq212)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-02T00:30:11Z"
-        },
-        {
-          "id": "cf37ba90da698123f9afa9e93fe59bfaa9747783",
-          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议 / it’s a very good model, I spent a lot of time diving into it- longer write up coming but try it on lower effort for tasks that need less verification or have fewer edge cases, switching effort no longer breaks prompt...",
-          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议",
-          "title_en": "it’s a very good model, I spent a lot of time diving into it- longer write up coming but try it on lower effort for tasks that need less verification or have fewer edge cases, switching effort no longer breaks prompt...",
-          "title_original": "it’s a very good model, I spent a lot of time diving into it- longer write up coming but try it on lower effort for tasks that need less verification or have fewer edge cases, switching effort no longer breaks prompt...",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://x.com/trq212/status/2094945951865520458",
-          "source": "Follow Builders · X · Thariq",
-          "source_name": "Follow Builders",
-          "site_id": "followbuilders",
-          "published_at": "2026-09-02T00:30:11Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.7356,
-      "importance": 0.7356,
-      "importance_score": 0.7356,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.7,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8554,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-02T00:30:11Z",
-      "latest_at": "2026-09-02T00:30:11Z",
-      "primary_item": {
-        "id": "09ed22f42bb30c08b2fb58f26c5bb790f27c1f98",
-        "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议 / it's a very good model， I spent a lot of time diving into it- longer write up coming but try it on…",
-        "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议",
-        "title_en": "it's a very good model， I spent a lot of time diving into it- longer write up coming but try it on…",
-        "title_original": "it's a very good model， I spent a lot of time diving into it- longer write up coming but try it on…",
-        "summary": "Anthropic 宣布推出 Claude Fable 5.1 和 Claude Mythos 5.1，称其为编码和知识工作领域最先进的模型。作者 Thariq 表示花了很多时间深入研究，认为模型很好，长文评测后续发布；建议对需要较少验证或边缘用例较少的任务使用较低 effort，且切换 effort 不再破坏 prompt cache。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/trq212/status/2094945951865520458",
-        "source": "X：Thariq (@trq212)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7604,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
-      }
-    },
-    {
-      "story_id": "story_5537a1603458",
-      "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-      "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "541ec9d2c0068956dc4cb240382160f9f8e409f3",
-          "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-          "title_zh": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
-          "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-          "title_original": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-          "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-01T19:43:09Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Rohan Paul (@rohanpaul_ai)"
-      ],
-      "items": [
-        {
-          "id": "541ec9d2c0068956dc4cb240382160f9f8e409f3",
-          "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-          "title_zh": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
-          "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-          "title_original": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-          "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-01T19:43:09Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7556,
-      "importance": 0.7556,
-      "importance_score": 0.7556,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.79,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8169,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-01T19:43:09Z",
-      "latest_at": "2026-09-01T19:43:09Z",
-      "primary_item": {
-        "id": "541ec9d2c0068956dc4cb240382160f9f8e409f3",
-        "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-        "title_zh": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
-        "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-        "title_original": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-        "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7881,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-02T16:44:19.218892Z"
+        "scored_at": "2026-09-02T19:59:06.430564Z"
       }
     }
   ]
