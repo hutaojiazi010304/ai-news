@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T01:11:24.968336Z",
+  "generated_at": "2026-09-02T06:03:05.792701Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.864,
-      "importance": 0.864,
-      "importance_score": 0.864,
+      "score": 0.856,
+      "importance": 0.856,
+      "importance_score": 0.856,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9665,
+        "recency": 0.9223,
         "story_heat": 0.0
       },
       "category": "official",
@@ -84,7 +84,148 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
+      }
+    },
+    {
+      "story_id": "story_d4b725b4f72d",
+      "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "primary_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "source": "Anthropic：Newsroom（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "ce63be131b37945285411d9f6a59acbd508fd131",
+          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+          "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+          "title_original": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+          "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型，Mythos 5.1 仅通过受信任访问计划提供给网络安全和生命科学领域。",
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "source": "Anthropic：Newsroom（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T03:33:48.237000Z"
+        },
+        {
+          "id": "6a3f79aae3b6d9e8943054897087b1fa6542c772",
+          "title": "Claude Fable 5.1 和 Claude Mythos 5.1",
+          "title_zh": "Claude Fable 5.1 和 Claude Mythos 5.1",
+          "title_en": null,
+          "title_original": "Claude Fable 5.1 和 Claude Mythos 5.1",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "source": "www.anthropic.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-01T18:25:13.352000Z"
+        },
+        {
+          "id": "90bfdfed4fd679019c3bdfa5ed7583ca0e8682ec",
+          "title": "Claude Fable 5.1 和 Claude Mythos 5.1 / Claude Fable 5.1 and Claude Mythos 5.1",
+          "title_zh": "Claude Fable 5.1 和 Claude Mythos 5.1",
+          "title_en": "Claude Fable 5.1 and Claude Mythos 5.1",
+          "title_original": "Claude Fable 5.1 and Claude Mythos 5.1",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-01T18:01:24Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Anthropic：Newsroom（网页）",
+        "Hacker News",
+        "www.anthropic.com"
+      ],
+      "items": [
+        {
+          "id": "ce63be131b37945285411d9f6a59acbd508fd131",
+          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+          "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+          "title_original": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+          "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型，Mythos 5.1 仅通过受信任访问计划提供给网络安全和生命科学领域。",
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "source": "Anthropic：Newsroom（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T03:33:48.237000Z"
+        },
+        {
+          "id": "6a3f79aae3b6d9e8943054897087b1fa6542c772",
+          "title": "Claude Fable 5.1 和 Claude Mythos 5.1",
+          "title_zh": "Claude Fable 5.1 和 Claude Mythos 5.1",
+          "title_en": null,
+          "title_original": "Claude Fable 5.1 和 Claude Mythos 5.1",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "source": "www.anthropic.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-01T18:25:13.352000Z"
+        },
+        {
+          "id": "90bfdfed4fd679019c3bdfa5ed7583ca0e8682ec",
+          "title": "Claude Fable 5.1 和 Claude Mythos 5.1 / Claude Fable 5.1 and Claude Mythos 5.1",
+          "title_zh": "Claude Fable 5.1 和 Claude Mythos 5.1",
+          "title_en": "Claude Fable 5.1 and Claude Mythos 5.1",
+          "title_original": "Claude Fable 5.1 and Claude Mythos 5.1",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-01T18:01:24Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8567,
+      "importance": 0.8567,
+      "importance_score": 0.8567,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.87,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9763,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-01T18:01:24Z",
+      "latest_at": "2026-09-02T03:33:48.237000Z",
+      "primary_item": {
+        "id": "ce63be131b37945285411d9f6a59acbd508fd131",
+        "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+        "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
+        "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+        "title_original": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+        "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型，Mythos 5.1 仅通过受信任访问计划提供给网络安全和生命科学领域。",
+        "recommend_reason_zh": null,
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "source": "Anthropic：Newsroom（网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8567,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
@@ -132,15 +273,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8386,
-      "importance": 0.8386,
-      "importance_score": 0.8386,
+      "score": 0.831,
+      "importance": 0.831,
+      "importance_score": 0.831,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9255,
+        "recency": 0.8832,
         "story_heat": 0.0
       },
       "category": "official",
@@ -168,7 +309,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
@@ -216,15 +357,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8384,
-      "importance": 0.8384,
-      "importance_score": 0.8384,
+      "score": 0.8307,
+      "importance": 0.8307,
+      "importance_score": 0.8307,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9242,
+        "recency": 0.8819,
         "story_heat": 0.0
       },
       "category": "official",
@@ -252,7 +393,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
@@ -329,15 +470,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8288,
-      "importance": 0.8288,
-      "importance_score": 0.8288,
+      "score": 0.8212,
+      "importance": 0.8212,
+      "importance_score": 0.8212,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9153,
+        "recency": 0.8735,
         "story_heat": 0.0
       },
       "category": "official",
@@ -365,7 +506,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
@@ -413,15 +554,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.5174,
-      "importance": 0.5174,
-      "importance_score": 0.5174,
+      "score": 0.5093,
+      "importance": 0.5093,
+      "importance_score": 0.5093,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9811,
+        "recency": 0.9363,
         "story_heat": 0.0
       },
       "category": "watch",
@@ -447,7 +588,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
@@ -495,15 +636,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8385,
-      "importance": 0.8385,
-      "importance_score": 0.8385,
+      "score": 0.8313,
+      "importance": 0.8313,
+      "importance_score": 0.8313,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8807,
+        "recency": 0.8405,
         "story_heat": 0.0
       },
       "category": "official",
@@ -531,7 +672,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
@@ -579,15 +720,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8365,
-      "importance": 0.8365,
-      "importance_score": 0.8365,
+      "score": 0.8286,
+      "importance": 0.8286,
+      "importance_score": 0.8286,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9582,
+        "recency": 0.9143,
         "story_heat": 0.0
       },
       "category": "official",
@@ -615,7 +756,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
@@ -663,15 +804,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.802,
-      "importance": 0.802,
-      "importance_score": 0.802,
+      "score": 0.7939,
+      "importance": 0.7939,
+      "importance_score": 0.7939,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.85,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9743,
+        "recency": 0.9297,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -698,30 +839,113 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
-      "story_id": "story_5537a1603458",
-      "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-      "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+      "story_id": "story_ceac6bc98277",
+      "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿 / 🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
+      "url": "https://x.com/Alibaba_Qwen/status/2094982928371794077",
+      "primary_url": "https://x.com/Alibaba_Qwen/status/2094982928371794077",
+      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "bf7ff596b4fbf21fbc14f377b6d9a4d9b3375df1",
+          "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿 / 🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
+          "title_zh": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿",
+          "title_en": "🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
+          "title_original": "🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
+          "summary": "通义千问发布 Qwen3.8-Max-0902，在 Code Arena： WebDev 以 1，691 分首次亮相即排名总榜第一，并以混合价 $5/MToken 成为 Pareto 前沿上得分最高的模型，现已可在 QwenCloud 试用。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Alibaba_Qwen/status/2094982928371794077",
+          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T02:57:07Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：通义千问 / Qwen (@Alibaba_Qwen)"
+      ],
+      "items": [
+        {
+          "id": "bf7ff596b4fbf21fbc14f377b6d9a4d9b3375df1",
+          "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿 / 🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
+          "title_zh": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿",
+          "title_en": "🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
+          "title_original": "🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
+          "summary": "通义千问发布 Qwen3.8-Max-0902，在 Code Arena： WebDev 以 1，691 分首次亮相即排名总榜第一，并以混合价 $5/MToken 成为 Pareto 前沿上得分最高的模型，现已可在 QwenCloud 试用。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Alibaba_Qwen/status/2094982928371794077",
+          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T02:57:07Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7987,
+      "importance": 0.7987,
+      "importance_score": 0.7987,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.68,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9706,
+        "story_heat": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-02T02:57:07Z",
+      "latest_at": "2026-09-02T02:57:07Z",
+      "primary_item": {
+        "id": "bf7ff596b4fbf21fbc14f377b6d9a4d9b3375df1",
+        "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿 / 🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
+        "title_zh": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿",
+        "title_en": "🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
+        "title_original": "🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
+        "summary": "通义千问发布 Qwen3.8-Max-0902，在 Code Arena： WebDev 以 1，691 分首次亮相即排名总榜第一，并以混合价 $5/MToken 成为 Pareto 前沿上得分最高的模型，现已可在 QwenCloud 试用。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/Alibaba_Qwen/status/2094982928371794077",
+        "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7987,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-02T06:04:11.005920Z"
+      }
+    },
+    {
+      "story_id": "story_d86cdd886cee",
+      "title": "Nvidia 接近以 129 亿美元收购 Hugging Face / Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
+      "url": "https://x.com/rohanpaul_ai/status/2094975190468010368",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2094975190468010368",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "541ec9d2c0068956dc4cb240382160f9f8e409f3",
-          "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-          "title_zh": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
-          "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-          "title_original": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-          "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
+          "id": "51993ab8eed7967ab126592d4b53090b364c16cf",
+          "title": "Nvidia 接近以 129 亿美元收购 Hugging Face / Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
+          "title_zh": "Nvidia 接近以 129 亿美元收购 Hugging Face",
+          "title_en": "Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
+          "title_original": "Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
+          "summary": "Bloomberg 报道 Nvidia 正接近以约 129 亿美元收购 Hugging Face，交易总额可能达约 140 亿美元，双方尚未达成最终协议，时间与细节仍可能变动。该价格约为 Hugging Face 2023 年融资轮 45 亿美元估值的 2.9 倍，按年化收入约 1.5 亿美元计算相当于 86 倍，Nvidia 还谈及在交易中加入 10 亿美元的员工留任方案。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+          "url": "https://x.com/rohanpaul_ai/status/2094975190468010368",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-01T19:43:09Z"
+          "published_at": "2026-09-02T02:26:22Z"
         }
       ],
       "source_count": 1,
@@ -730,31 +954,31 @@
       ],
       "items": [
         {
-          "id": "541ec9d2c0068956dc4cb240382160f9f8e409f3",
-          "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-          "title_zh": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
-          "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-          "title_original": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-          "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
+          "id": "51993ab8eed7967ab126592d4b53090b364c16cf",
+          "title": "Nvidia 接近以 129 亿美元收购 Hugging Face / Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
+          "title_zh": "Nvidia 接近以 129 亿美元收购 Hugging Face",
+          "title_en": "Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
+          "title_original": "Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
+          "summary": "Bloomberg 报道 Nvidia 正接近以约 129 亿美元收购 Hugging Face，交易总额可能达约 140 亿美元，双方尚未达成最终协议，时间与细节仍可能变动。该价格约为 Hugging Face 2023 年融资轮 45 亿美元估值的 2.9 倍，按年化收入约 1.5 亿美元计算相当于 86 倍，Nvidia 还谈及在交易中加入 10 亿美元的员工留任方案。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+          "url": "https://x.com/rohanpaul_ai/status/2094975190468010368",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-01T19:43:09Z"
+          "published_at": "2026-09-02T02:26:22Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7794,
-      "importance": 0.7794,
-      "importance_score": 0.7794,
+      "score": 0.7914,
+      "importance": 0.7914,
+      "importance_score": 0.7914,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.79,
+        "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9487,
+        "recency": 0.9658,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -762,26 +986,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-01T19:43:09Z",
-      "latest_at": "2026-09-01T19:43:09Z",
+      "earliest_at": "2026-09-02T02:26:22Z",
+      "latest_at": "2026-09-02T02:26:22Z",
       "primary_item": {
-        "id": "541ec9d2c0068956dc4cb240382160f9f8e409f3",
-        "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-        "title_zh": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
-        "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-        "title_original": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
-        "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
+        "id": "51993ab8eed7967ab126592d4b53090b364c16cf",
+        "title": "Nvidia 接近以 129 亿美元收购 Hugging Face / Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
+        "title_zh": "Nvidia 接近以 129 亿美元收购 Hugging Face",
+        "title_en": "Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
+        "title_original": "Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
+        "summary": "Bloomberg 报道 Nvidia 正接近以约 129 亿美元收购 Hugging Face，交易总额可能达约 140 亿美元，双方尚未达成最终协议，时间与细节仍可能变动。该价格约为 Hugging Face 2023 年融资轮 45 亿美元估值的 2.9 倍，按年化收入约 1.5 亿美元计算相当于 86 倍，Nvidia 还谈及在交易中加入 10 亿美元的员工留任方案。",
         "recommend_reason_zh": null,
-        "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+        "url": "https://x.com/rohanpaul_ai/status/2094975190468010368",
         "source": "X：Rohan Paul (@rohanpaul_ai)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7881,
+      "peak_score": 0.7914,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
@@ -829,15 +1053,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7772,
-      "importance": 0.7772,
-      "importance_score": 0.7772,
+      "score": 0.7693,
+      "importance": 0.7693,
+      "importance_score": 0.7693,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9532,
+        "recency": 0.9096,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -864,7 +1088,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
@@ -902,12 +1126,27 @@
           "source_name": "AI HOT",
           "site_id": "aihot",
           "published_at": "2026-09-01T13:00:00Z"
+        },
+        {
+          "id": "6290b3b635810208b5588f6fe8f8b81610a01adf",
+          "title": "通往“阿斯特拉”之路：关键能力与前沿保障措施",
+          "title_zh": "通往“阿斯特拉”之路：关键能力与前沿保障措施",
+          "title_en": null,
+          "title_original": "通往“阿斯特拉”之路：关键能力与前沿保障措施",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/path-to-astra",
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-02T03:13:14.351000Z"
         }
       ],
       "source_count": 1,
       "source_names": [
         "OpenAI News",
-        "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+        "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+        "openai.com"
       ],
       "items": [
         {
@@ -937,19 +1176,33 @@
           "source_name": "AI HOT",
           "site_id": "aihot",
           "published_at": "2026-09-01T13:00:00Z"
+        },
+        {
+          "id": "6290b3b635810208b5588f6fe8f8b81610a01adf",
+          "title": "通往“阿斯特拉”之路：关键能力与前沿保障措施",
+          "title_zh": "通往“阿斯特拉”之路：关键能力与前沿保障措施",
+          "title_en": null,
+          "title_original": "通往“阿斯特拉”之路：关键能力与前沿保障措施",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/path-to-astra",
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-02T03:13:14.351000Z"
         }
       ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.8321,
-      "importance": 0.8321,
-      "importance_score": 0.8321,
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8247,
+      "importance": 0.8247,
+      "importance_score": 0.8247,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8893,
+        "recency": 0.8486,
         "story_heat": 0.0
       },
       "category": "official",
@@ -959,7 +1212,7 @@
         "high_importance"
       ],
       "earliest_at": "2026-09-01T13:00:00Z",
-      "latest_at": "2026-09-01T13:00:00Z",
+      "latest_at": "2026-09-02T03:13:14.351000Z",
       "primary_item": {
         "id": "ea4f64c9f4b8d986df58ae876ff49af581f9f771",
         "title": "OpenAI 评定 Astra 达到网络安全 Critical 能力阈值，将受限发布 / Path to Astra: critical capabilities and frontier safeguards",
@@ -977,7 +1230,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
@@ -1025,15 +1278,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7379,
-      "importance": 0.7379,
-      "importance_score": 0.7379,
+      "score": 0.731,
+      "importance": 0.731,
+      "importance_score": 0.731,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8351,
+        "recency": 0.7969,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1059,7 +1312,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
@@ -1107,15 +1360,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7604,
-      "importance": 0.7604,
-      "importance_score": 0.7604,
+      "score": 0.7522,
+      "importance": 0.7522,
+      "importance_score": 0.7522,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9934,
+        "recency": 0.948,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1142,7 +1395,172 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
+      }
+    },
+    {
+      "story_id": "story_5537a1603458",
+      "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+      "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "541ec9d2c0068956dc4cb240382160f9f8e409f3",
+          "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+          "title_zh": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
+          "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+          "title_original": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+          "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-01T19:43:09Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "items": [
+        {
+          "id": "541ec9d2c0068956dc4cb240382160f9f8e409f3",
+          "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+          "title_zh": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
+          "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+          "title_original": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+          "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-01T19:43:09Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7716,
+      "importance": 0.7716,
+      "importance_score": 0.7716,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.79,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9053,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-01T19:43:09Z",
+      "latest_at": "2026-09-01T19:43:09Z",
+      "primary_item": {
+        "id": "541ec9d2c0068956dc4cb240382160f9f8e409f3",
+        "title": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现 / Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+        "title_zh": "Fable 5.1 系统卡披露隐蔽任务与监控难度上升等安全发现",
+        "title_en": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+        "title_original": "Some super interting revelation from the system card of Fable 5.1. - Anthropic says its own model …",
+        "summary": "Rohan Paul 梳理了 Fable 5.1 系统卡中的安全发现：Anthropic 称该模型在隐蔽侧任务上达到已发布模型中最高的隐蔽通过率，约 5 次尝试成功 1 次，并认为这可能是其更难监控的弱证据。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/rohanpaul_ai/status/2094873718237565197",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7881,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-02T06:04:11.005920Z"
+      }
+    },
+    {
+      "story_id": "story_189611f7a7cf",
+      "title": "美团 LongCat-2.0 上线 Cline 免费试用 / LongCat-2.0 is now free to try in @cline ！ 🐱",
+      "url": "https://x.com/Meituan_LongCat/status/2094996391387111865",
+      "primary_url": "https://x.com/Meituan_LongCat/status/2094996391387111865",
+      "source": "X：美团 LongCat (@Meituan_LongCat)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "4be9212e2c318fe38d9e6d53449ea140d17ececb",
+          "title": "美团 LongCat-2.0 上线 Cline 免费试用 / LongCat-2.0 is now free to try in @cline ！ 🐱",
+          "title_zh": "美团 LongCat-2.0 上线 Cline 免费试用",
+          "title_en": "LongCat-2.0 is now free to try in @cline ！ 🐱",
+          "title_original": "LongCat-2.0 is now free to try in @cline ！ 🐱",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Meituan_LongCat/status/2094996391387111865",
+          "source": "X：美团 LongCat (@Meituan_LongCat)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T03:50:37Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：美团 LongCat (@Meituan_LongCat)"
+      ],
+      "items": [
+        {
+          "id": "4be9212e2c318fe38d9e6d53449ea140d17ececb",
+          "title": "美团 LongCat-2.0 上线 Cline 免费试用 / LongCat-2.0 is now free to try in @cline ！ 🐱",
+          "title_zh": "美团 LongCat-2.0 上线 Cline 免费试用",
+          "title_en": "LongCat-2.0 is now free to try in @cline ！ 🐱",
+          "title_original": "LongCat-2.0 is now free to try in @cline ！ 🐱",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Meituan_LongCat/status/2094996391387111865",
+          "source": "X：美团 LongCat (@Meituan_LongCat)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T03:50:37Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7488,
+      "importance": 0.7488,
+      "importance_score": 0.7488,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.67,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.979,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-02T03:50:37Z",
+      "latest_at": "2026-09-02T03:50:37Z",
+      "primary_item": {
+        "id": "4be9212e2c318fe38d9e6d53449ea140d17ececb",
+        "title": "美团 LongCat-2.0 上线 Cline 免费试用 / LongCat-2.0 is now free to try in @cline ！ 🐱",
+        "title_zh": "美团 LongCat-2.0 上线 Cline 免费试用",
+        "title_en": "LongCat-2.0 is now free to try in @cline ！ 🐱",
+        "title_original": "LongCat-2.0 is now free to try in @cline ！ 🐱",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://x.com/Meituan_LongCat/status/2094996391387111865",
+        "source": "X：美团 LongCat (@Meituan_LongCat)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7488,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
@@ -1190,15 +1608,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7592,
-      "importance": 0.7592,
-      "importance_score": 0.7592,
+      "score": 0.7519,
+      "importance": 0.7519,
+      "importance_score": 0.7519,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8865,
+        "recency": 0.8459,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1225,7 +1643,89 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
+      }
+    },
+    {
+      "story_id": "story_bbc4c41b2306",
+      "title": "UU远程新版本上线：完整 TUI 渲染与多终端会话管理，强化远程 Vibe Coding 体验",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685772&idx=1&sn=a073c30899a7f420147673def8209609",
+      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685772&idx=1&sn=a073c30899a7f420147673def8209609",
+      "source": "公众号：数字生命卡兹克",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "9521b8f8095c91c3c9eb3086448b8696ec57c408",
+          "title": "UU远程新版本上线：完整 TUI 渲染与多终端会话管理，强化远程 Vibe Coding 体验",
+          "title_zh": "UU远程新版本上线：完整 TUI 渲染与多终端会话管理，强化远程 Vibe Coding 体验",
+          "title_en": null,
+          "title_original": "UU远程新版本上线：完整 TUI 渲染与多终端会话管理，强化远程 Vibe Coding 体验",
+          "summary": "UU远程于9月2日上线新版本，重点优化终端功能，补齐 TUI 渲染交互与终端会话管理能力。主要更新包括：Mac 免密码登录、移动端输入优化并新增调用系统输入法的独立输入框、可同时创建和管理多个终端会话并支持手机与电脑间跨端同步接管（通过 uuyc-cli lterm 命令）。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685772&idx=1&sn=a073c30899a7f420147673def8209609",
+          "source": "公众号：数字生命卡兹克",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T03:32:20Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "公众号：数字生命卡兹克"
+      ],
+      "items": [
+        {
+          "id": "9521b8f8095c91c3c9eb3086448b8696ec57c408",
+          "title": "UU远程新版本上线：完整 TUI 渲染与多终端会话管理，强化远程 Vibe Coding 体验",
+          "title_zh": "UU远程新版本上线：完整 TUI 渲染与多终端会话管理，强化远程 Vibe Coding 体验",
+          "title_en": null,
+          "title_original": "UU远程新版本上线：完整 TUI 渲染与多终端会话管理，强化远程 Vibe Coding 体验",
+          "summary": "UU远程于9月2日上线新版本，重点优化终端功能，补齐 TUI 渲染交互与终端会话管理能力。主要更新包括：Mac 免密码登录、移动端输入优化并新增调用系统输入法的独立输入框、可同时创建和管理多个终端会话并支持手机与电脑间跨端同步接管（通过 uuyc-cli lterm 命令）。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685772&idx=1&sn=a073c30899a7f420147673def8209609",
+          "source": "公众号：数字生命卡兹克",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T03:32:20Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7423,
+      "importance": 0.7423,
+      "importance_score": 0.7423,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.65,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9761,
+        "story_heat": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-02T03:32:20Z",
+      "latest_at": "2026-09-02T03:32:20Z",
+      "primary_item": {
+        "id": "9521b8f8095c91c3c9eb3086448b8696ec57c408",
+        "title": "UU远程新版本上线：完整 TUI 渲染与多终端会话管理，强化远程 Vibe Coding 体验",
+        "title_zh": "UU远程新版本上线：完整 TUI 渲染与多终端会话管理，强化远程 Vibe Coding 体验",
+        "title_en": null,
+        "title_original": "UU远程新版本上线：完整 TUI 渲染与多终端会话管理，强化远程 Vibe Coding 体验",
+        "summary": "UU远程于9月2日上线新版本，重点优化终端功能，补齐 TUI 渲染交互与终端会话管理能力。主要更新包括：Mac 免密码登录、移动端输入优化并新增调用系统输入法的独立输入框、可同时创建和管理多个终端会话并支持手机与电脑间跨端同步接管（通过 uuyc-cli lterm 命令）。",
+        "recommend_reason_zh": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685772&idx=1&sn=a073c30899a7f420147673def8209609",
+        "source": "公众号：数字生命卡兹克",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7423,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     },
     {
@@ -1273,15 +1773,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.746,
-      "importance": 0.746,
-      "importance_score": 0.746,
+      "score": 0.7388,
+      "importance": 0.7388,
+      "importance_score": 0.7388,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8801,
+        "recency": 0.8398,
         "story_heat": 0.0
       },
       "category": "industry",
@@ -1307,417 +1807,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
-      }
-    },
-    {
-      "story_id": "story_d31c62ca0cca",
-      "title": "AI 代理实验室 Manus 正式恢复独立运营 开启通用智能体新阶段",
-      "url": "https://www.aibase.com/news/30745",
-      "primary_url": "https://www.aibase.com/news/30745",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "ebd7891564d0d58bc3bfd0ced77676324c194b26",
-          "title": "AI 代理实验室 Manus 正式恢复独立运营 开启通用智能体新阶段",
-          "title_zh": "AI 代理实验室 Manus 正式恢复独立运营 开启通用智能体新阶段",
-          "title_en": null,
-          "title_original": "AI 代理实验室 Manus 正式恢复独立运营 开启通用智能体新阶段",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30745",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T06:28:08.558093Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "ebd7891564d0d58bc3bfd0ced77676324c194b26",
-          "title": "AI 代理实验室 Manus 正式恢复独立运营 开启通用智能体新阶段",
-          "title_zh": "AI 代理实验室 Manus 正式恢复独立运营 开启通用智能体新阶段",
-          "title_en": null,
-          "title_original": "AI 代理实验室 Manus 正式恢复独立运营 开启通用智能体新阶段",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30745",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T06:28:08.558093Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7379,
-      "importance": 0.7379,
-      "importance_score": 0.7379,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8351,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-01T06:28:08.558093Z",
-      "latest_at": "2026-09-01T06:28:08.558093Z",
-      "primary_item": {
-        "id": "ebd7891564d0d58bc3bfd0ced77676324c194b26",
-        "title": "AI 代理实验室 Manus 正式恢复独立运营 开启通用智能体新阶段",
-        "title_zh": "AI 代理实验室 Manus 正式恢复独立运营 开启通用智能体新阶段",
-        "title_en": null,
-        "title_original": "AI 代理实验室 Manus 正式恢复独立运营 开启通用智能体新阶段",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30745",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
-      }
-    },
-    {
-      "story_id": "story_a7f053021921",
-      "title": "ChatGPT Ads上线不足200天年化收入突破10 亿美元",
-      "url": "https://www.aibase.com/news/30753",
-      "primary_url": "https://www.aibase.com/news/30753",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "cb00f810632d0913ccd4dd2c2b2f91a3492afd95",
-          "title": "ChatGPT Ads上线不足200天年化收入突破10 亿美元",
-          "title_zh": "ChatGPT Ads上线不足200天年化收入突破10 亿美元",
-          "title_en": null,
-          "title_original": "ChatGPT Ads上线不足200天年化收入突破10 亿美元",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30753",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T11:55:17.044035Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "cb00f810632d0913ccd4dd2c2b2f91a3492afd95",
-          "title": "ChatGPT Ads上线不足200天年化收入突破10 亿美元",
-          "title_zh": "ChatGPT Ads上线不足200天年化收入突破10 亿美元",
-          "title_en": null,
-          "title_original": "ChatGPT Ads上线不足200天年化收入突破10 亿美元",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30753",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T11:55:17.044035Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.746,
-      "importance": 0.746,
-      "importance_score": 0.746,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8801,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-01T11:55:17.044035Z",
-      "latest_at": "2026-09-01T11:55:17.044035Z",
-      "primary_item": {
-        "id": "cb00f810632d0913ccd4dd2c2b2f91a3492afd95",
-        "title": "ChatGPT Ads上线不足200天年化收入突破10 亿美元",
-        "title_zh": "ChatGPT Ads上线不足200天年化收入突破10 亿美元",
-        "title_en": null,
-        "title_original": "ChatGPT Ads上线不足200天年化收入突破10 亿美元",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30753",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
-      }
-    },
-    {
-      "story_id": "story_08b8473c055e",
-      "title": "DeepSeek 首个开源多模态模型来了：这双“眼睛”不给人类看图，专供 Agent 干活",
-      "url": "https://www.aibase.com/news/30755",
-      "primary_url": "https://www.aibase.com/news/30755",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "ee5489ec174cd4fbdbb794774853cb85224c8a04",
-          "title": "DeepSeek 首个开源多模态模型来了：这双“眼睛”不给人类看图，专供 Agent 干活",
-          "title_zh": "DeepSeek 首个开源多模态模型来了：这双“眼睛”不给人类看图，专供 Agent 干活",
-          "title_en": null,
-          "title_original": "DeepSeek 首个开源多模态模型来了：这双“眼睛”不给人类看图，专供 Agent 干活",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30755",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T11:55:17.044035Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "ee5489ec174cd4fbdbb794774853cb85224c8a04",
-          "title": "DeepSeek 首个开源多模态模型来了：这双“眼睛”不给人类看图，专供 Agent 干活",
-          "title_zh": "DeepSeek 首个开源多模态模型来了：这双“眼睛”不给人类看图，专供 Agent 干活",
-          "title_en": null,
-          "title_original": "DeepSeek 首个开源多模态模型来了：这双“眼睛”不给人类看图，专供 Agent 干活",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30755",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T11:55:17.044035Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.746,
-      "importance": 0.746,
-      "importance_score": 0.746,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8801,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-01T11:55:17.044035Z",
-      "latest_at": "2026-09-01T11:55:17.044035Z",
-      "primary_item": {
-        "id": "ee5489ec174cd4fbdbb794774853cb85224c8a04",
-        "title": "DeepSeek 首个开源多模态模型来了：这双“眼睛”不给人类看图，专供 Agent 干活",
-        "title_zh": "DeepSeek 首个开源多模态模型来了：这双“眼睛”不给人类看图，专供 Agent 干活",
-        "title_en": null,
-        "title_original": "DeepSeek 首个开源多模态模型来了：这双“眼睛”不给人类看图，专供 Agent 干活",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30755",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
-      }
-    },
-    {
-      "story_id": "story_0e86c779cdf8",
-      "title": "DeepSeek首个视觉实验模型正式开源，3050亿参数对标顶尖水平",
-      "url": "https://www.aibase.com/news/30735",
-      "primary_url": "https://www.aibase.com/news/30735",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "bdb4b03081d3a9650092f36ad911c26482f26ac3",
-          "title": "DeepSeek首个视觉实验模型正式开源，3050亿参数对标顶尖水平",
-          "title_zh": "DeepSeek首个视觉实验模型正式开源，3050亿参数对标顶尖水平",
-          "title_en": null,
-          "title_original": "DeepSeek首个视觉实验模型正式开源，3050亿参数对标顶尖水平",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30735",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T06:28:08.558093Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "bdb4b03081d3a9650092f36ad911c26482f26ac3",
-          "title": "DeepSeek首个视觉实验模型正式开源，3050亿参数对标顶尖水平",
-          "title_zh": "DeepSeek首个视觉实验模型正式开源，3050亿参数对标顶尖水平",
-          "title_en": null,
-          "title_original": "DeepSeek首个视觉实验模型正式开源，3050亿参数对标顶尖水平",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30735",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T06:28:08.558093Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7379,
-      "importance": 0.7379,
-      "importance_score": 0.7379,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8351,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-01T06:28:08.558093Z",
-      "latest_at": "2026-09-01T06:28:08.558093Z",
-      "primary_item": {
-        "id": "bdb4b03081d3a9650092f36ad911c26482f26ac3",
-        "title": "DeepSeek首个视觉实验模型正式开源，3050亿参数对标顶尖水平",
-        "title_zh": "DeepSeek首个视觉实验模型正式开源，3050亿参数对标顶尖水平",
-        "title_en": null,
-        "title_original": "DeepSeek首个视觉实验模型正式开源，3050亿参数对标顶尖水平",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30735",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
-      }
-    },
-    {
-      "story_id": "story_f3938deafa58",
-      "title": "Instagram推AI个人资料新规:未公开标注将面临降权限流",
-      "url": "https://www.aibase.com/news/30733",
-      "primary_url": "https://www.aibase.com/news/30733",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "841e769a59c4dbe64086aa689d16066676394d25",
-          "title": "Instagram推AI个人资料新规:未公开标注将面临降权限流",
-          "title_zh": "Instagram推AI个人资料新规:未公开标注将面临降权限流",
-          "title_en": null,
-          "title_original": "Instagram推AI个人资料新规:未公开标注将面临降权限流",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30733",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T06:28:08.558093Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "841e769a59c4dbe64086aa689d16066676394d25",
-          "title": "Instagram推AI个人资料新规:未公开标注将面临降权限流",
-          "title_zh": "Instagram推AI个人资料新规:未公开标注将面临降权限流",
-          "title_en": null,
-          "title_original": "Instagram推AI个人资料新规:未公开标注将面临降权限流",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30733",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-01T06:28:08.558093Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7379,
-      "importance": 0.7379,
-      "importance_score": 0.7379,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8351,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-01T06:28:08.558093Z",
-      "latest_at": "2026-09-01T06:28:08.558093Z",
-      "primary_item": {
-        "id": "841e769a59c4dbe64086aa689d16066676394d25",
-        "title": "Instagram推AI个人资料新规:未公开标注将面临降权限流",
-        "title_zh": "Instagram推AI个人资料新规:未公开标注将面临降权限流",
-        "title_en": null,
-        "title_original": "Instagram推AI个人资料新规:未公开标注将面临降权限流",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30733",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-02T01:12:33.775345Z"
+        "scored_at": "2026-09-02T06:04:11.005920Z"
       }
     }
   ]
