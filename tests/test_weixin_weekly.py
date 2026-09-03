@@ -597,3 +597,45 @@ def test_build_weekly_brief_pool_size_keeps_official_cap(monkeypatch):
     ]
     assert len(brief["items"]) == 20
     assert len(officials_in_pool) == 16
+
+
+def test_build_weekly_brief_pool_carries_per_category_backups(monkeypatch):
+    # With the cap active, the over-selected pool carries backups for BOTH
+    # categories, so a dropped official is replaced by the next official —
+    # not by an industry story (observed: six dropped officials promoted
+    # six industry candidates and shipped a 16/4 issue as 10/10).
+    # 18 officials + 5 industry, cap 16, max_items 20, pool_size 30:
+    # core = 16 officials + 4 industry; backups are supply-limited to the
+    # remaining 2 officials + 1 industry.
+    officials = [
+        make_record(i + 1, title, f"https://example.com/cat-pool-{i}", 40,
+                    source=f"官方渠道 {i}")
+        for i, title in enumerate(CAP_POOL_TITLES)
+    ]
+    industry_titles = [
+        "Analysts say NVIDIA data-center revenue doubles on AI demand",
+        "AI startups raise record funding round in latest quarter",
+        "Researchers report breakthrough in LLM inference efficiency",
+        "Chipmakers race to ship lower-power AI accelerators",
+        "Cloud providers cut AI inference prices amid competition",
+    ]
+    industry = []
+    for offset, title in enumerate(industry_titles):
+        record = make_record(30 + offset, title, f"https://aihot.example/c{offset}",
+                             40, site_id="aihot", source=f"AI Hot 观察{offset}")
+        record["aihot_score"] = 80
+        industry.append(record)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir = write_data_dir(tmp, officials + industry)
+        monkeypatch.delenv("WEIXIN_OFFICIAL_CAP", raising=False)
+        brief = gwa.build_weekly_brief(data_dir, NOW, 20, pool_size=30)
+
+    assert brief is not None
+    items = brief["items"]
+    assert len(items) == 23
+    core, backups = items[:20], items[20:]
+    assert sum(1 for i in core if i["category"] == "official") == 16
+    assert sum(1 for i in core if i["category"] != "official") == 4
+    assert sum(1 for i in backups if i["category"] == "official") == 2
+    assert sum(1 for i in backups if i["category"] != "official") == 1

@@ -1573,9 +1573,9 @@ def test_fill_deep_images_borrows_rec_card_image(tmp_path):
     ]
     item = make_item(1, title="谷歌 Gemma 下载量突破十亿")
 
-    found, missed = gwad.fill_deep_images([item], session, tmp_path, {})
+    found, missed, dup_avoided = gwad.fill_deep_images([item], session, tmp_path, {})
 
-    assert (found, missed) == (1, 0)
+    assert (found, missed, dup_avoided) == (1, 0, 0)
     assert item["deep_image"] == "images/story_1.jpg"
     assert item["deep_image_credit"] == "example.com"
     assert item.get("deep_image_borrowed") is True
@@ -1602,12 +1602,117 @@ def test_fill_deep_images_body_image_preempts_borrow(tmp_path):
     ]
     item = make_item(2, title="谷歌 Gemma 下载量突破十亿")
 
-    found, missed = gwad.fill_deep_images([item], session, tmp_path, {})
+    found, missed, dup_avoided = gwad.fill_deep_images([item], session, tmp_path, {})
 
-    assert (found, missed) == (1, 0)
+    assert (found, missed, dup_avoided) == (1, 0, 0)
     assert item["deep_image"] == "images/story_2.jpg"
     assert "deep_image_borrowed" not in item
     assert session.get.call_args_list[1].args[0] == "https://cdn.example.com/body.jpg"
+
+
+def shell_page() -> str:
+    """github.blog-style JS shell: every <article> is a short author or
+    related-post card, there is no recommendation heading, and the real
+    body is client-rendered — so body_scope_degraded(…, 300) is True and a
+    whole-page image scan would return card chrome."""
+    return (
+        "<html><head><title>title</title></head><body>"
+        "<h1>How we make AI coding more cost efficient</h1>"
+        "<nav>" + "menu item " * 40 + "</nav>"
+        '<article class="author-card"><p>Cassidy is a senior director.</p></article>'
+        '<article class="related-post"><a href="/p/1">'
+        '<img alt="GitHub Copilot app for Beginners" '
+        'src="https://cdn.example.com/card-thumb.jpg"></a></article>'
+        '<div id="app"></div>'
+        "</body></html>"
+    )
+
+
+def test_fill_deep_images_shell_page_uses_reader_body(tmp_path):
+    # On a JS shell the reader-rendered body supplies the candidates; the
+    # whole-page card thumbnail must never become a candidate.
+    page = shell_page()
+    jina_md = (
+        "Title: How we make AI coding more cost efficiency\n\n"
+        "Intro paragraph.\n\n"
+        "![Chart of A/B results](https://cdn.example.com/blog-graphic.png)\n\n"
+        "More body text.\n"
+    )
+    session = MagicMock()
+    session.get.side_effect = [
+        html_response(page),                       # direct page fetch
+        html_response(jina_md),                    # reader render of the body
+        image_response(make_png_bytes(600, 400)),  # body figure download
+    ]
+    item = make_item(1, title="如何在保证任务质量的前提下降低 AI 编程成本")
+
+    found, missed, dup_avoided = gwad.fill_deep_images([item], session, tmp_path, {})
+
+    assert (found, missed, dup_avoided) == (1, 0, 0)
+    assert item["deep_image"] == "images/story_1.jpg"
+    assert "deep_image_borrowed" not in item
+    urls = [call.args[0] for call in session.get.call_args_list]
+    assert urls == [
+        "https://example.com/story/1",
+        f"{gwad.JINA_READER_BASE_URL}/https://example.com/story/1",
+        "https://cdn.example.com/blog-graphic.png",  # NOT card-thumb.jpg
+    ]
+
+
+def test_fill_deep_images_shell_page_jina_down_no_image(tmp_path):
+    # Shell page + reader unavailable: the card thumbnail is chrome, not a
+    # body image and not a title-matched rec card — the item stays
+    # image-less (宁缺毋错).
+    session = MagicMock()
+    session.get.side_effect = [html_response(shell_page())]
+    item = make_item(2, title="AI 编程成本优化")
+
+    found, missed, dup_avoided = gwad.fill_deep_images(
+        [item], session, tmp_path, {"jina_down": True}
+    )
+
+    assert (found, missed, dup_avoided) == (0, 1, 0)
+    assert "deep_image" not in item
+    assert session.get.call_count == 1  # no reader attempt, no image fetch
+
+
+def test_download_item_image_dedup_url_and_digest(tmp_path):
+    # Same-issue dedup: a claimed URL is skipped without a request, and
+    # byte-identical content from another URL (CDN mirror / reused card)
+    # is rejected after download.
+    bytes_a = make_png_bytes(600, 400)
+    bytes_b = make_png_bytes(500, 300)
+    dedupe = gwad.ImageDedup()
+    session = MagicMock()
+    session.get.side_effect = [
+        image_response(bytes_a),  # story A claims a.jpg
+        image_response(bytes_b),  # story B falls through to b.jpg
+        image_response(bytes_a),  # story C's mirror serves A's exact bytes
+    ]
+    images_dir = tmp_path / "images"
+
+    res_a = gwad.download_item_image(
+        session, ["https://cdn.example.com/a.jpg"],
+        images_dir, "story_a", "https://site.example/a", dedupe,
+    )
+    assert res_a is not None
+
+    res_b = gwad.download_item_image(
+        session,
+        ["https://cdn.example.com/a.jpg", "https://cdn.example.com/b.jpg"],
+        images_dir, "story_b", "https://site.example/b", dedupe,
+    )
+    assert res_b is not None
+    assert session.get.call_args_list[1].args[0] == "https://cdn.example.com/b.jpg"
+    assert dedupe.skips == 1  # URL-level skip, no request spent
+
+    res_c = gwad.download_item_image(
+        session, ["https://cdn.example.com/mirror.jpg"],
+        images_dir, "story_c", "https://site.example/c", dedupe,
+    )
+    assert res_c is None
+    assert dedupe.skips == 2  # digest-level skip after download
+    assert not (images_dir / "story_c.jpg").exists()
 
 
 # ---------------------------------------------------------------------------
@@ -1807,7 +1912,8 @@ def test_bounded_get_enforces_budget_and_deadline():
 
 
 def test_jina_breaker_skips_after_first_failure():
-    """Once r.jina.ai fails, the rest of the run must not pay its timeout."""
+    """Once the reader refuses connections, the rest of the run must not
+    pay its timeout. Connection errors trip the breaker immediately."""
     session = MagicMock()
     not_found = MagicMock()
     not_found.status_code = 404
@@ -1821,13 +1927,106 @@ def test_jina_breaker_skips_after_first_failure():
     assert gwad.fetch_page_html(session, "https://a.example/1", net_state) is None
     assert gwad.fetch_page_html(session, "https://a.example/2", net_state) is None
 
-    assert net_state == {"jina_down": True}
+    assert net_state.get("jina_down") is True
+    # Failed attempts are not memoized — the breaker alone stops retries.
+    assert "https://a.example/1" not in net_state.get("jina_cache", {})
     urls = [call.args[0] for call in session.get.call_args_list]
     assert urls == [
         "https://a.example/1",
         "https://r.jina.ai/https://a.example/1",
         "https://a.example/2",  # item B: jina attempt skipped entirely
     ]
+
+
+def test_jina_payload_memoized_per_url():
+    """Guide grounding and image extraction both read the same shell page's
+    reader render; the second request must hit the memo, not the rate limit."""
+    session = MagicMock()
+    session.get.return_value = html_response("markdown body")
+    net_state: dict = {}
+
+    first = gwad.fetch_jina_bytes(session, "https://a.example/1", 100000, net_state)
+    second = gwad.fetch_jina_bytes(session, "https://a.example/1", 100000, net_state)
+
+    assert first == second == b"markdown body"
+    assert session.get.call_count == 1
+
+
+def test_jina_soft_failures_trip_breaker_after_limit():
+    """Timeouts/non-200 are 'slow render' shaped: one does not predict the
+    next URL. The breaker trips only after READER_SOFT_FAILURE_LIMIT of them
+    in a row (observed failure mode: a 16.8s warm render behind a 15s
+    budget tripped the old first-failure breaker and blanked every later
+    fallback of the run)."""
+    session = MagicMock()
+    not_found = MagicMock()
+    not_found.status_code = 404
+    session.get.return_value = not_found
+    net_state: dict = {}
+
+    for i in range(gwad.READER_SOFT_FAILURE_LIMIT - 1):
+        assert gwad.fetch_jina_bytes(session, f"https://a.example/{i}", 100000, net_state) is None
+        assert not net_state.get("jina_down")
+
+    assert gwad.fetch_jina_bytes(session, "https://a.example/x", 100000, net_state) is None
+    assert net_state.get("jina_down") is True
+    assert session.get.call_count == gwad.READER_SOFT_FAILURE_LIMIT
+
+
+def test_jina_success_resets_soft_failure_counter():
+    session = MagicMock()
+    not_found = MagicMock()
+    not_found.status_code = 404
+    session.get.side_effect = [
+        not_found,                  # soft failure 1
+        not_found,                  # soft failure 2
+        html_response("markdown"),  # success: counter back to zero
+        not_found,                  # soft failure 1 again
+        not_found,                  # soft failure 2 again
+    ]
+    net_state: dict = {}
+
+    assert gwad.fetch_jina_bytes(session, "https://a.example/1", 100000, net_state) is None
+    assert gwad.fetch_jina_bytes(session, "https://a.example/2", 100000, net_state) is None
+    assert gwad.fetch_jina_bytes(session, "https://a.example/3", 100000, net_state) == b"markdown"
+    assert gwad.fetch_jina_bytes(session, "https://a.example/4", 100000, net_state) is None
+    assert gwad.fetch_jina_bytes(session, "https://a.example/5", 100000, net_state) is None
+    assert not net_state.get("jina_down")
+
+
+def test_jina_timeout_counts_as_soft_failure():
+    """A read timeout is a slow render, not a dead service: it counts
+    toward the soft limit instead of tripping the breaker at once."""
+    session = MagicMock()
+    session.get.side_effect = requests.Timeout("render still running")
+    net_state: dict = {}
+
+    assert gwad.fetch_jina_bytes(session, "https://a.example/1", 100000, net_state) is None
+    assert not net_state.get("jina_down")
+    assert net_state.get("jina_soft_failures") == 1
+
+
+def test_parse_attrs_unescapes_entities():
+    # Server HTML entity-encodes attribute values; the literal &amp; in the
+    # download URL 404s (observed: anthropic's /_next/image candidates).
+    attrs = gwad._parse_attrs(
+        '<img src="/_next/image?url=https%3A%2F%2Fcdn.example%2Fa.png&amp;w=3840&amp;q=75">'
+    )
+    assert attrs["src"] == "/_next/image?url=https%3A%2F%2Fcdn.example%2Fa.png&w=3840&q=75"
+
+
+def test_image_candidates_lazy_attr_beats_placeholder_src():
+    # ithome-style lazy loading: src is a 1x1 tracking pixel, the real
+    # image URL sits in data-original and must win.
+    page = (
+        "<html><body><article>"
+        "<p>" + "正文内容 " * 80 + "</p>"
+        '<img src="//img.example/t.png" '
+        'data-original="https://img.example/news/real.jpg">'
+        "</article></body></html>"
+    )
+    candidates = gwad.extract_image_candidates(page, "https://www.ithome.com/0/1.htm", "html")
+    assert candidates == ["https://img.example/news/real.jpg"]
 
 
 # ---------------------------------------------------------------------------
@@ -2129,6 +2328,88 @@ def test_fill_deep_reasons_empty_fallback_returns_top_candidates():
     )
     assert kept == candidates[:2]
     assert stats["dropped"] == 3
+
+
+def guide_item(idx: int, category: str, has_guide: bool) -> dict:
+    """Keyless-controllable candidate: an upstream reason keeps the item,
+    none drops it (see fill_deep_reasons' keyless reuse behavior)."""
+    item = make_item(idx, reason="上游已有的一句短评。" if has_guide else None)
+    item["category"] = category
+    return item
+
+
+def test_fill_deep_reasons_official_drops_backfill_with_officials(monkeypatch):
+    """A dropped official is replaced by the next OFFICIAL backup: the
+    issue's category composition survives guide failures instead of
+    drifting toward the backup pool's majority category."""
+    monkeypatch.setenv("WEIXIN_OFFICIAL_CAP", "3")
+    candidates = [
+        guide_item(1, "official", False),  # dropped
+        guide_item(2, "official", True),
+        guide_item(3, "official", False),  # dropped
+        guide_item(4, "industry", True),
+        guide_item(5, "industry", True),
+        guide_item(6, "official", True),   # official backup
+        guide_item(7, "official", True),   # official backup
+        guide_item(8, "industry", True),   # industry backup, never reached
+    ]
+    stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0, "dropped": 0}
+    cache = {"version": gwad.DEEP_CACHE_VERSION, "entries": {}}
+
+    kept = gwad.fill_deep_reasons(
+        candidates, cache, {"api_key": ""}, None, stats, None, max_items=5
+    )
+
+    assert [it["story_id"] for it in kept] == [
+        "story_2", "story_6", "story_7",  # official quota (3) intact
+        "story_4", "story_5",              # industry quota (2) intact
+    ]
+    assert stats["dropped"] == 2
+    assert "weixin_deep_reason" not in candidates[7]  # early stop preserved
+
+
+def test_fill_deep_reasons_cross_fills_when_stream_exhausts(monkeypatch):
+    """When one category runs out of candidates the other cross-fills, so
+    the issue still ships at its full size."""
+    monkeypatch.setenv("WEIXIN_OFFICIAL_CAP", "3")
+    candidates = [
+        guide_item(1, "official", False),  # dropped
+        guide_item(2, "official", False),  # dropped; officials exhausted
+        guide_item(3, "industry", True),
+        guide_item(4, "industry", True),
+        guide_item(5, "industry", True),
+        guide_item(6, "industry", True),
+    ]
+    stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0, "dropped": 0}
+    cache = {"version": gwad.DEEP_CACHE_VERSION, "entries": {}}
+
+    kept = gwad.fill_deep_reasons(
+        candidates, cache, {"api_key": ""}, None, stats, None, max_items=5
+    )
+
+    assert [it["story_id"] for it in kept] == [
+        "story_3", "story_4", "story_5", "story_6"
+    ]
+    assert stats["dropped"] == 2
+
+
+def test_fill_deep_reasons_cap_zero_keeps_flat_backfill(monkeypatch):
+    """No cap = no quotas: the pool is consumed flat in score order."""
+    monkeypatch.setenv("WEIXIN_OFFICIAL_CAP", "0")
+    candidates = [
+        guide_item(1, "official", False),  # dropped
+        guide_item(2, "industry", True),   # promoted regardless of category
+        guide_item(3, "official", True),
+    ]
+    stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0, "dropped": 0}
+    cache = {"version": gwad.DEEP_CACHE_VERSION, "entries": {}}
+
+    kept = gwad.fill_deep_reasons(
+        candidates, cache, {"api_key": ""}, None, stats, None, max_items=2
+    )
+
+    assert [it["story_id"] for it in kept] == ["story_2", "story_3"]
+    assert stats["dropped"] == 1
 
 
 def test_deep_pool_extra_resolution(monkeypatch):

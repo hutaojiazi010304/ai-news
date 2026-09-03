@@ -16,11 +16,17 @@ are laid out in grouped sections and upgraded for close reading:
   article page at publish time (direct fetch, self-hostable reader fallback).
   Extraction is scoped to the article body (<article> element, or the page
   cut at a recommendation heading) so related-news thumbnails can never
-  substitute for body art. When the body has NO image at all and the
-  page's recommendation widget carries a card whose title clearly reports
-  the same story (matched against the page's own headline, double-gated
-  by score and margin), that card's image is borrowed — a same-topic
-  illustration beats none; near-misses keep the item image-less. No
+  substitute for body art. On JS-shell pages whose server HTML has no body
+  (every <article> is an author/related-post card, github.blog observed),
+  a whole-page scan would ship shared card chrome, so the reader proxy's
+  markdown (which renders the real body) supplies the candidates instead.
+  Only when the body yields NO image at all does the page's recommendation
+  widget get a chance: a card whose title clearly reports the same story
+  (matched against the page's own headline, double-gated by score and
+  margin) lends its image — a same-topic illustration beats none;
+  near-misses keep the item image-less. An image is never used twice in one
+  issue (same URL or identical bytes): the next candidate is tried, else
+  the item stays image-less. No
   AI-generated filler. Images are saved under ``images/`` (committed,
   served by Pages) with a 「图源：domain」credit line for internal
   redistribution. Rendered AFTER the guide, centered at
@@ -164,6 +170,11 @@ WEEKLY_NEAR_DUP_WINDOW_HOURS = 168.0
 # slots go to the next non-official stories. (Trimming the pool beforehand
 # removed the fresh-channel tail that feeds the source penalty and changed
 # which officials survive — the opposite of the intended effect.)
+# The cap doubles as the COMPOSITION target: with cap 16 and 20 items the
+# issue aims for 官方 16 + 行业 4, and the drop-and-backfill stage is
+# category-aware (each category keeps its own backup candidates and fills
+# its own quota), so guide failures preserve that split instead of turning
+# dropped officials into promoted industry stories.
 WEEKLY_OFFICIAL_CAP_DEFAULT = 16
 
 
@@ -394,7 +405,10 @@ def _weekly_official_cap() -> int:
     ``_select_with_official_cap``): the uncapped mechanism runs unchanged,
     the issue's first N officials in display order stay untouched, and the
     freed slots go to the next non-official stories. The candidate pool is
-    never trimmed."""
+    never trimmed. The cap doubles as the composition target for the
+    drop-and-backfill stage: ``fill_deep_reasons`` fills an official stream
+    up to the cap and an everything-else stream up to the remaining slots,
+    so guide failures preserve the official/non-official split."""
     raw = os.environ.get("WEIXIN_OFFICIAL_CAP", "").strip()
     if not raw:
         return WEEKLY_OFFICIAL_CAP_DEFAULT
@@ -404,7 +418,9 @@ def _weekly_official_cap() -> int:
         return WEEKLY_OFFICIAL_CAP_DEFAULT
 
 
-def _select_with_official_cap(gated: list[dict], max_items: int, cap: int) -> list[dict]:
+def _select_with_official_cap(
+    gated: list[dict], max_items: int, cap: int, extra: int = 0
+) -> list[dict]:
     """Uncapped selection mechanism, official cap applied only at the end.
 
     Runs the same greedy diversity selection over the FULL pool that the
@@ -415,33 +431,70 @@ def _select_with_official_cap(gated: list[dict], max_items: int, cap: int) -> li
     trimmed from the pool beforehand: the greedy sees exactly the candidates
     of the uncapped run, so the surviving officials are literally the
     uncapped issue's first officials, untouched.
+
+    With ``extra`` > 0 the returned pool additionally carries per-category
+    backup candidates for the drop-and-backfill stage: up to ``extra`` more
+    officials beyond the ``cap`` quota and up to ``extra`` more
+    non-officials beyond the remaining ``max_items - cap`` slots, drawn in
+    the greedy order past the issue cutoff. A dropped item is then replaced
+    by one of ITS OWN category (see ``fill_deep_reasons``), so the issue's
+    composition (official quota vs the rest) survives guide failures —
+    without these, an all-non-official backup pool turned six dropped
+    officials into six promoted industry stories (observed: a 16/4 issue
+    shipping as 10/10).
     """
     full_order = _un.select_diverse_stories(gated, len(gated))
     article = full_order[:max_items]
     officials = [s for s in article if str(s.get("category") or "") == "official"]
     if len(officials) <= cap:
-        return article
-    kept_ids = {
-        id(s)
-        for s in sorted(
-            officials,
-            key=lambda s: (-_un.story_gate_score(s), str(s.get("title") or "")),
-        )[:cap]
-    }
-    kept = [s for s in article if id(s) in kept_ids]
-    nonofficials = [
-        s
-        for s in article
-        if id(s) not in kept_ids and str(s.get("category") or "") != "official"
-    ]
-    backfill: list[dict] = []
-    for story in full_order[max_items:]:
-        if len(nonofficials) + len(backfill) >= max_items - len(kept):
-            break
-        if str(story.get("category") or "") == "official":
+        core = list(article)
+    else:
+        kept_ids = {
+            id(s)
+            for s in sorted(
+                officials,
+                key=lambda s: (-_un.story_gate_score(s), str(s.get("title") or "")),
+            )[:cap]
+        }
+        kept = [s for s in article if id(s) in kept_ids]
+        nonofficials = [
+            s
+            for s in article
+            if id(s) not in kept_ids and str(s.get("category") or "") != "official"
+        ]
+        core = kept + nonofficials
+        core_ids = {id(s) for s in core}
+        for story in full_order[max_items:]:
+            if len(core) >= max_items:
+                break
+            if str(story.get("category") or "") == "official":
+                continue
+            core.append(story)
+            core_ids.add(id(story))
+    if extra <= 0:
+        return core
+    official_quota = min(cap, max_items)
+    core_officials = sum(
+        1 for s in core if str(s.get("category") or "") == "official"
+    )
+    official_backups: list[dict] = []
+    other_backups: list[dict] = []
+    official_budget = official_quota + extra - core_officials
+    other_budget = (max_items - official_quota) + extra - (len(core) - core_officials)
+    core_ids = {id(s) for s in core}
+    # Scan the WHOLE greedy order: officials trimmed by the cap sit INSIDE
+    # the cutoff and are the first official backups.
+    for story in full_order:
+        if id(story) in core_ids:
             continue
-        backfill.append(story)
-    return kept + nonofficials + backfill
+        if str(story.get("category") or "") == "official":
+            if len(official_backups) < official_budget:
+                official_backups.append(story)
+        elif len(other_backups) < other_budget:
+            other_backups.append(story)
+        if len(official_backups) >= official_budget and len(other_backups) >= other_budget:
+            break
+    return core + official_backups + other_backups
 
 
 def _apply_pipeline_enhance_cache(items: list[dict], cache: dict[str, str]) -> None:
@@ -492,12 +545,16 @@ def build_weekly_brief(
     archive missing/corrupt/empty, or no story passes the quality gate) —
     the caller then falls back to daily-brief.json.
 
-    ``pool_size`` over-selects the guide-writing pool: the selection
-    mechanism returns up to ``pool_size`` candidates (at least ``max_items``)
-    so items whose guide ends up empty can be dropped and backfilled before
-    the issue narrows back to ``max_items`` (see ``fill_reasons``). None
-    keeps the former exact-``max_items`` selection. The official cap still
-    bounds the pool, so the final issue (a subset of it) stays ≤ cap too.
+    ``pool_size`` over-selects the guide-writing pool so items whose guide
+    ends up empty can be dropped and backfilled before the issue narrows
+    back to ``max_items`` (see ``fill_deep_reasons``). None keeps the exact
+    ``max_items`` selection. With the official cap active the pool carries
+    up to ``pool_size - max_items`` backup candidates PER category
+    (officials beyond the cap quota AND non-officials beyond their
+    remaining slots), so a dropped item is replaced by one of its own
+    category and the issue's composition survives guide failures; the pool
+    then holds up to ``2 * (pool_size - max_items) + max_items`` items.
+    Without the cap the extra budget is shared as before.
     """
     if _un is None:
         return None
@@ -600,11 +657,11 @@ def build_weekly_brief(
     if not gated:
         return None
     cap = _weekly_official_cap()
-    limit = max_items if pool_size is None else max(pool_size, max_items)
-    if cap > 0:
-        items = _select_with_official_cap(gated, limit, cap)
+    extra = max(0, (pool_size or max_items) - max_items)
+    if 0 < cap < max_items:
+        items = _select_with_official_cap(gated, max_items, cap, extra)
     else:
-        items = _un.select_diverse_stories(gated, limit)
+        items = _un.select_diverse_stories(gated, max_items + extra)
     if not items:
         return None
     return {
@@ -1629,7 +1686,11 @@ DEEP_SUMMARY_MIN_GROUNDING_CHARS = 120
 # clears this floor; otherwise extraction falls back to the recommendation
 # heading cut / whole page. 300 keeps every real article (thousands of
 # chars) while clearing the largest observed card with >2x margin. Image
-# scoping stays unguarded so card thumbnails still never leak in.
+# extraction additionally treats such a degraded html page as a JS shell and
+# takes its candidates from the reader-proxy markdown instead of a
+# whole-page scan (see fill_deep_images): on github.blog the longest
+# <article> IS a related-post card, and whole-page scanning shipped that
+# card's shared thumbnail into two different stories.
 DEEP_ARTICLE_MIN_BODY_CHARS = 300
 
 # All three values are HARD WALL-CLOCK DEADLINES per request (enforced by
@@ -1638,6 +1699,17 @@ DEEP_ARTICLE_MIN_BODY_CHARS = 300
 # indefinitely.
 PAGE_FETCH_TIMEOUT = 15.0
 IMAGE_DOWNLOAD_TIMEOUT = 20.0
+# The reader renders pages in a headless browser and is far slower than a
+# direct fetch (observed on the self-hosted instance: ~17s warm, slower
+# cold). The page timeout above used to cut renders short, and one such
+# timeout tripped the run-wide circuit breaker, killing every later
+# fallback. Reader calls therefore run under their own generous budget with
+# a softer breaker (see fetch_jina_bytes).
+READER_FETCH_TIMEOUT = 90.0
+# Consecutive soft failures (timeout, non-200, over-budget) tolerated before
+# the run concludes the reader is unusable; a pure connection error trips
+# the breaker immediately.
+READER_SOFT_FAILURE_LIMIT = 3
 # Pages under 300 chars are almost certainly bot walls/redirect stubs;
 # fall back to the reader proxy for those too.
 PAGE_MIN_HTML_CHARS = 300
@@ -1691,7 +1763,11 @@ MD_IMAGE_RE = re.compile(r"!\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 H1_TAG_RE = re.compile(r"<h1\b[^>]*>(.*?)</h1>", re.IGNORECASE | re.DOTALL)
 
 # Attribute precedence for lazy-loaded pages; the first non-empty wins.
-IMAGE_SRC_ATTRS = ("src", "data-src", "data-original", "data-lazy-src")
+# Lazy-load attributes FIRST: on lazy pages (ithome is the observed case)
+# src/data-src hold a 1x1 tracking pixel while data-original carries the
+# real image URL. Plain pages have no lazy attribute, so src still wins by
+# being the only one present.
+IMAGE_SRC_ATTRS = ("data-original", "data-src", "data-lazy-src", "src")
 IMAGE_SRCSET_ATTRS = ("srcset", "data-srcset")
 # Substring skip-list applied to the whole URL. Deliberately excludes
 # "banner" (Chinese sites often name the article hero image banner.*),
@@ -1785,7 +1861,10 @@ def deep_pool_extra() -> int:
 
     An item whose deep guide ends up empty is dropped and the next backup
     moves up (see ``fill_deep_reasons``), keeping the issue at its full size
-    whenever the pool allows. Garbage/negative values clamp to 0.
+    whenever the pool allows. With the official cap active each category
+    (official vs the rest) gets its own budget of this many backups, so the
+    backfill replaces a dropped item with one of its own category.
+    Garbage/negative values clamp to 0.
     """
     raw = os.environ.get("WEIXIN_DEEP_POOL_EXTRA", "").strip()
     if not raw:
@@ -1933,7 +2012,7 @@ def deep_reason_context(
         # reader proxy renders the actual article, so try it before settling
         # for chrome (costs one extra call, and only on unscopable pages).
         jina_payload = fetch_jina_bytes(
-            session, url, PAGE_FETCH_TIMEOUT, PAGE_MAX_BYTES, net_state
+            session, url, PAGE_MAX_BYTES, net_state
         )
         if jina_payload is not None:
             jina_text = jina_payload.decode("utf-8", errors="replace")
@@ -2186,24 +2265,64 @@ def fill_deep_reasons(
     ends up empty, fall back to the top ``max_items`` candidates rendered
     as-is, so the article never regresses to zero items.
 
+    With the official cap active the consumption is category-aware: the
+    pool is split into an official stream and an everything-else stream,
+    each filling ITS OWN quota (``cap`` and ``max_items - cap``), so a
+    dropped official is replaced by the next OFFICIAL backup — the issue's
+    composition (e.g. 官方 16 + 行业 4) survives guide failures instead of
+    drifting toward whichever category the backups happen to be. Only when
+    a stream runs out of candidates does the other stream cross-fill, so
+    the issue still ships at its full size. Without the cap (or when the
+    cap is at/above ``max_items``) the pool is consumed flat, in order.
+
     Progress is logged per item (flushed): a run that stalls is then always
     identifiable by its last printed line.
     """
     total = len(items)
+    limit = max_items if max_items is not None else total
+    cap = _weekly_official_cap()
+    if 0 < cap < limit:
+        streams = (
+            [it for it in items if str(it.get("category") or "") == "official"],
+            [it for it in items if str(it.get("category") or "") != "official"],
+        )
+        stream_quotas = (cap, limit - cap)
+    else:
+        streams = (list(items),)
+        stream_quotas = (limit,)
+    cursors = [0] * len(streams)
+    kept_counts = [0] * len(streams)
     kept: list[dict] = []
-    for i, item in enumerate(items, start=1):
-        if max_items is not None and len(kept) >= max_items:
+    processed = 0
+    while len(kept) < limit:
+        stream_idx = None
+        for si in range(len(streams)):
+            if kept_counts[si] < stream_quotas[si] and cursors[si] < len(streams[si]):
+                stream_idx = si
+                break
+        if stream_idx is None:
+            # Cross-fill: no stream with quota remaining still has
+            # candidates; take whatever is left so the issue stays full.
+            for si in range(len(streams)):
+                if cursors[si] < len(streams[si]):
+                    stream_idx = si
+                    break
+        if stream_idx is None:
             break
+        item = streams[stream_idx][cursors[stream_idx]]
+        cursors[stream_idx] += 1
+        processed += 1
         outcome = _fill_one_deep_reason(item, cache, cfg, session, stats, net_state)
         if not str(item.get("weixin_deep_reason") or "").strip():
             stats["dropped"] = stats.get("dropped", 0) + 1
             outcome += "→淘汰"
         else:
             kept.append(item)
+            kept_counts[stream_idx] += 1
         title = str(item.get("title") or "")
         story_id = str(item.get("story_id") or "")
         print(
-            f"weixin-deep: [{i}/{total}] 导读：{outcome}｜{(title or story_id)[:24]}",
+            f"weixin-deep: [{processed}/{total}] 导读：{outcome}｜{(title or story_id)[:24]}",
             flush=True,
         )
     if not kept:
@@ -2270,7 +2389,6 @@ def bounded_get(
 def fetch_jina_bytes(
     session: requests.Session | None,
     url: str,
-    timeout: float,
     max_bytes: int,
     net_state: dict | None = None,
 ) -> bytes | None:
@@ -2278,24 +2396,60 @@ def fetch_jina_bytes(
 
     The proxy needs no key but is rate-limited, and on networks that cannot
     reach it at all every fallback burns the full connect timeout (observed:
-    15s each, dozens of times per run). After the first failure the rest of
-    the run skips it outright; jina availability is effectively all-or-nothing
-    per network, so one failure predicts the rest.
+    15s each, dozens of times per run). Breaker policy: a pure connection
+    error (service unreachable) marks the reader down for the whole run
+    immediately — availability is effectively all-or-nothing per network, so
+    one refused connection predicts the rest. Softer failures (timeouts,
+    non-200, over-budget) get READER_SOFT_FAILURE_LIMIT consecutive attempts
+    before the same verdict: a headless render is slow and one exhausted
+    READER_FETCH_TIMEOUT budget on a heavy page does not predict the next
+    URL (observed: ~17s warm renders that a 15s budget would have killed,
+    tripping the old first-failure breaker and blanking every later
+    fallback in the run). Any success resets the counter.
+
+    Successful payloads are memoized per URL in ``net_state``: guide
+    grounding and image extraction both need the reader-rendered body of the
+    same shell page, and the second request would just burn rate limit.
+    Failed attempts are NOT memoized, so a later item retries the URL only
+    if the breaker has not tripped.
     """
     if session is None or (net_state is not None and net_state.get("jina_down")):
         return None
+    memo = net_state.setdefault("jina_cache", {}) if isinstance(net_state, dict) else None
+    if memo is not None and url in memo:
+        return memo[url]
     try:
-        payload = bounded_get(session, f"{JINA_READER_BASE_URL}/{url}", timeout, max_bytes)
-    except requests.RequestException:
-        payload = None
-    if payload is None and net_state is not None and not net_state.get("jina_down"):
-        net_state["jina_down"] = True
-        print(
-            "weixin-deep: reader 兜底本次不可用，后续条目跳过",
-            file=sys.stderr,
-            flush=True,
+        payload = bounded_get(
+            session, f"{JINA_READER_BASE_URL}/{url}", READER_FETCH_TIMEOUT, max_bytes
         )
-    return payload
+        failure = None if payload is not None else "slow"
+    except requests.Timeout:
+        payload, failure = None, "slow"
+    except requests.ConnectionError:
+        payload, failure = None, "down"
+    except requests.RequestException:
+        payload, failure = None, "slow"
+    if payload is not None:
+        if net_state is not None:
+            net_state["jina_soft_failures"] = 0
+        if memo is not None:
+            memo[url] = payload
+        return payload
+    if isinstance(net_state, dict) and not net_state.get("jina_down"):
+        if failure == "down":
+            net_state["jina_down"] = True
+        else:
+            soft = int(net_state.get("jina_soft_failures") or 0) + 1
+            net_state["jina_soft_failures"] = soft
+            if soft >= READER_SOFT_FAILURE_LIMIT:
+                net_state["jina_down"] = True
+        if net_state.get("jina_down"):
+            print(
+                "weixin-deep: reader 兜底本次不可用，后续条目跳过",
+                file=sys.stderr,
+                flush=True,
+            )
+    return None
 
 
 # When the publisher's terminal exports HTTPS_PROXY (needed for overseas
@@ -2367,7 +2521,7 @@ def fetch_page_html(
         text = payload.decode("utf-8", errors="replace")
         if len(text) >= PAGE_MIN_HTML_CHARS:
             return text, "html"
-    payload = fetch_jina_bytes(session, url, timeout, PAGE_MAX_BYTES, net_state)
+    payload = fetch_jina_bytes(session, url, PAGE_MAX_BYTES, net_state)
     if payload is not None:
         text = payload.decode("utf-8", errors="replace")
         if text.strip():
@@ -2382,7 +2536,10 @@ def _parse_attrs(tag: str) -> dict[str, str]:
         value = match.group(2).strip()
         if len(value) >= 2 and value[0] in "\"'" and value[-1] == value[0]:
             value = value[1:-1]
-        attrs.setdefault(name, value.strip())
+        # Server HTML entity-encodes attribute values (&amp; in query
+        # strings is the observed case — anthropic's /_next/image URLs);
+        # downloading the literal &amp; gets a 404, so unescape first.
+        attrs.setdefault(name, html_mod.unescape(value.strip()))
     return attrs
 
 
@@ -2462,8 +2619,11 @@ def scope_to_article_body(
     outside every one, so "longest wins" returned ~100 chars of card text
     and guides were grounded on it (or got no grounding at all). Such a
     page is then treated like one without semantic markup and falls back
-    to the heading cut / whole page. Image scoping keeps the unguarded
-    behavior so card thumbnails still never leak into the candidate list.
+    to the heading cut / whole page. Image extraction calls this unguarded,
+    but only after checking body_scope_degraded(): a degraded html page is
+    a JS shell whose whole-page candidates would be card chrome, so the
+    reader-proxy markdown supplies the image candidates instead (see
+    fill_deep_images).
     """
     if kind == "html":
         articles = ARTICLE_TAG_RE.findall(str(text or ""))
@@ -2754,15 +2914,41 @@ def _looks_like_image_response(response) -> bool:
     return content_type.startswith("image/") and "svg" not in content_type
 
 
+class ImageDedup:
+    """Per-run guard against shipping one illustration twice in an issue.
+
+    Tracks the candidate URLs and content digests earlier items claimed;
+    ``skips`` counts the candidates rejected as duplicates (each rejection
+    is logged where it happens). See download_item_image.
+    """
+
+    __slots__ = ("urls", "digests", "skips")
+
+    def __init__(self) -> None:
+        self.urls: set[str] = set()
+        self.digests: set[str] = set()
+        self.skips = 0
+
+
 def download_item_image(
     session: requests.Session | None,
     candidates: list[str],
     images_dir: Path,
     story_id: str,
     article_url: str,
+    dedupe: ImageDedup | None = None,
 ) -> tuple[str, str] | None:
-    """First candidate that downloads as a real image; ("images/…", credit)
-    or None. Never raises — every failure just means "no image today".
+    """First candidate that downloads as a real image and is unique within
+    the issue; ("images/…", credit) or None. Never raises — every failure
+    just means "no image today".
+
+    With a ``dedupe`` state, a candidate whose URL was already claimed by an
+    earlier item — or whose bytes are identical to an image already saved
+    this run (CDN alias or reused card thumbnail; observed: two github.blog
+    stories shipping the SAME related-post card image) — is skipped in favor
+    of the next candidate, so two stories can never share an illustration;
+    the state is updated when this item claims an image. Pass None to opt
+    out (single-item/test runs).
 
     Downloads are bounded (wall-clock deadline + byte budget, budget enforced
     mid-stream), so one hostile candidate can stall neither the run nor RAM.
@@ -2778,6 +2964,13 @@ def download_item_image(
         pass
     credit = credit_domain(article_url)
     for candidate in candidates:
+        if dedupe is not None and candidate in dedupe.urls:
+            dedupe.skips += 1
+            print(
+                f"weixin-deep: 插图去重：候选图已被本期其他条目使用，跳过 {candidate[:80]}",
+                flush=True,
+            )
+            continue
         try:
             data = bounded_get(
                 session,
@@ -2800,8 +2993,19 @@ def download_item_image(
             )
         if data is None or len(data) < IMAGE_MIN_BYTES:
             continue
+        digest = hashlib.md5(data).hexdigest()
+        if dedupe is not None and digest in dedupe.digests:
+            dedupe.skips += 1
+            print(
+                f"weixin-deep: 插图去重：候选图内容与本期其他条目相同，跳过 {candidate[:80]}",
+                flush=True,
+            )
+            continue
         saved = save_image_bytes(data, candidate, images_dir, story_id)
         if saved:
+            if dedupe is not None:
+                dedupe.urls.add(candidate)
+                dedupe.digests.add(digest)
             return saved, credit
     return None
 
@@ -2811,14 +3015,28 @@ def fill_deep_images(
     session: requests.Session | None,
     output_dir: Path,
     net_state: dict | None = None,
-) -> tuple[int, int]:
-    """Fetch one article image per item; returns (found, missed).
+) -> tuple[int, int, int]:
+    """Fetch one article image per item; returns (found, missed, dup_avoided).
 
-    Misses (bot walls, text-only articles, flaky proxies) simply leave the
-    item image-less — that is the agreed product behavior, not an error.
+    Body images first: candidates come from the article body scope only. On
+    JS-shell pages (github.blog is the observed case) the server HTML has no
+    body — every <article> is an author/related-post card — so the
+    reader-proxy markdown (which renders the actual body) supplies the
+    candidates instead of a whole-page scan, which shipped shared card
+    thumbnails (observed: two stories carrying the SAME related-post image).
+    Only when the body yields nothing does the title-matched recommendation
+    borrow run.
+
+    An image is never used twice in one issue (same candidate URL or
+    byte-identical content): the next candidate is tried, and the item
+    stays image-less when nothing unique remains. ``dup_avoided`` counts
+    those skips. Misses (bot walls, text-only articles, flaky proxies)
+    simply leave the item image-less — that is the agreed product behavior,
+    not an error.
     """
     images_dir = Path(output_dir) / "images"
     found = missed = 0
+    dedupe = ImageDedup()
     written: set[str] = set()
     total = len(items)
     print(f"weixin-deep: 开始抓取原文插图（共 {total} 条）…", flush=True)
@@ -2831,7 +3049,24 @@ def fill_deep_images(
         borrowed_alt = ""
         if payload is not None:
             body, kind = payload
-            candidates = extract_image_candidates(body, article_url, kind)
+            if kind == "html" and body_scope_degraded(
+                body, kind, DEEP_ARTICLE_MIN_BODY_CHARS
+            ):
+                # Shell page: no identifiable body in the server HTML, so its
+                # image candidates would be navigation/card chrome. The reader
+                # proxy renders the real body — its images ARE the body images
+                # (memoized: guide grounding may have fetched it already).
+                jina_payload = fetch_jina_bytes(
+                    session, article_url, PAGE_MAX_BYTES, net_state
+                )
+                if jina_payload is not None:
+                    jina_text = jina_payload.decode("utf-8", errors="replace")
+                    if jina_text.strip():
+                        candidates = extract_image_candidates(
+                            jina_text, article_url, "markdown"
+                        )
+            else:
+                candidates = extract_image_candidates(body, article_url, kind)
             if not candidates:
                 # No body image: when the recommendation widget carries a
                 # card that clearly reports the same story, borrow ITS image
@@ -2844,7 +3079,9 @@ def fill_deep_images(
         story_id = str(item.get("story_id") or "").strip() or title_hash(
             str(item.get("title") or "")
         )
-        result = download_item_image(session, candidates, images_dir, story_id, article_url)
+        result = download_item_image(
+            session, candidates, images_dir, story_id, article_url, dedupe
+        )
         if result:
             rel_path, credit = result
             item["deep_image"] = rel_path
@@ -2873,7 +3110,7 @@ def fill_deep_images(
                     path.unlink()
                 except OSError:
                     pass
-    return found, missed
+    return found, missed, dedupe.skips
 
 
 def resolve_deep_cover(
@@ -3171,7 +3408,9 @@ def main(argv: list[str] | None = None) -> int:
 
     # Over-selected pool: max_items + backup candidates, so items whose deep
     # guide ends up empty can be dropped and backfilled (fill_deep_reasons)
-    # without the issue shrinking below max_items.
+    # without the issue shrinking below max_items. With the official cap
+    # active the pool carries that many backups PER category, so it can hold
+    # up to max_items + 2*extra items (build_weekly_brief).
     pool_size = cfg["max_items"] + deep_pool_extra()
     brief = load_push_brief(data_dir, cfg["max_items"], pool_size=pool_size)
     if brief is None:
@@ -3181,7 +3420,12 @@ def main(argv: list[str] | None = None) -> int:
         )
         return 0
 
-    candidates = select_items(brief, pool_size)
+    # The brief already carries exactly the candidate pool (weekly rebuild
+    # or the ≤20-item daily fallback); never truncate it back to pool_size,
+    # or the per-category backups would be dropped before they can serve.
+    candidates = select_items(
+        brief, max(pool_size, int(brief.get("total_items") or 0))
+    )
     if not candidates:
         print("weixin-deep: brief has no items, nothing to do")
         return 0
@@ -3222,9 +3466,11 @@ def main(argv: list[str] | None = None) -> int:
         max_items=cfg["max_items"],
     )
 
-    images_found = images_missed = 0
+    images_found = images_missed = images_dup_avoided = 0
     if not args.dry_run and not args.no_images:
-        images_found, images_missed = fill_deep_images(items, session, output_dir, net_state)
+        images_found, images_missed, images_dup_avoided = fill_deep_images(
+            items, session, output_dir, net_state
+        )
 
     headline = strip_english_tail(str(items[0].get("title") or "").strip())
     title = deep_title(cfg["brand"], range_label, len(items))
@@ -3310,7 +3556,7 @@ def main(argv: list[str] | None = None) -> int:
         "skipped={skipped} dropped={dropped} "
         "titles translated={titles_translated} "
         "cached={titles_cached} kept_english={titles_skipped} "
-        "images found={found} missed={missed} "
+        "images found={found} missed={missed} dup_avoided={dup_avoided} "
         "cover_mode={cover_mode} cover_scene={cover_scene} "
         "elapsed={elapsed:.0f}s dry_run={dry_run}".format(
             items=len(items),
@@ -3328,6 +3574,7 @@ def main(argv: list[str] | None = None) -> int:
             titles_skipped=stats.get("titles_skipped", 0),
             found=images_found,
             missed=images_missed,
+            dup_avoided=images_dup_avoided,
             cover_mode=cover_mode,
             cover_scene=1 if cover_scene else 0,
             elapsed=time.monotonic() - started,

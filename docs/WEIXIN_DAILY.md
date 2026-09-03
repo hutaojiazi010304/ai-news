@@ -100,7 +100,8 @@ pip install -r requirements.txt
 
 ### 2. 千问 API key 保存在本地
 
-key 有 IP 白名单限制，只在本地网络可用。建议设为系统环境变量，或每次运行前在终端临时
+key 有 IP 白名单限制，只在本地网络可用（2026-09-03 实测云服务器
+36.111.148.123 也可调用，无代理出刊依赖这一点）。建议设为系统环境变量，或每次运行前在终端临时
 设置（见下文）。**不要把 key 写进任何会提交的文件**（`.env*` 已被 gitignore）。
 仓库里的 GitHub Secret `DASHSCOPE_API_KEY` 与 `WEIXIN_*` Variables 已无工作流
 使用，可以删除。
@@ -118,14 +119,15 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
 | `WEIXIN_BRAND_NAME` | `AI 雷达` | 公众号名定了以后改这里 |
 | `WEIXIN_RADAR_URL` | `https://hutaojiazi010304.github.io/ai-news-radar/` | 「阅读原文」链接 |
 | `WEIXIN_DEEP_MAX_ITEMS` | `20` | 每期条数（`--max-items` 同义，CLI 优先） |
-| `WEIXIN_DEEP_POOL_EXTRA` | `10` | 每期条数之外的候补候选数：最终导读写不出来（为空）的条目会被跳过，由候补按序顶上，池子足够时成刊条数不掉；设为 `0` 关闭候补 |
+| `WEIXIN_DEEP_POOL_EXTRA` | `10` | 每期条数之外的候补候选数：最终导读写不出来（为空）的条目会被跳过，由候补按序顶上，池子足够时成刊条数不掉。官方上限开启时**每个类别各有一份**该数量的候补（官方超额度的 + 非官方超名额的），被淘汰的条目由**同类别**候补顶上，成刊的官方/行业比例不因淘汰漂移；设为 `0` 关闭候补 |
 | `WEIXIN_TEXT_MODEL` | `qwen3.8-max` | 文本模型 |
 | `WEIXIN_IMAGE_MODEL` | `qwen-image-2.0-pro` | 生图模型（Qwen-Image 同步接口系列，如 `qwen-image-max`） |
 | `DASHSCOPE_API_BASE_URL` | DashScope 兼容模式地址 | 一般不用改 |
 | `WEIXIN_ENABLED` | （开启） | 设为 `0` 临时停刊 |
 | `WEIXIN_LOOKBACK_DAYS` | `7` | 周更选稿回溯天数（钳制 1–20；存档保留 21 天） |
 | `WEIXIN_FORCE_DAILY` | （关闭） | 设为 `1` 强制用 `daily-brief.json`（24h），跳过周更重建（调试逃生门） |
-| `WEIXIN_OFFICIAL_CAP` | `16` | 每期官方源条目上限。选稿机制与不封顶时完全一致（全量池子走同样的贪心筛选），只是选满 16 条官方后跳过其余官方条目，空出的名额由行业动态等类别按原排序补齐；设为 `0` 不封顶 |
+| `WEIXIN_OFFICIAL_CAP` | `16` | 每期官方源条目上限，同时也是成刊的**构成目标**（20 条 = 官方 16 + 行业等 4）。选稿机制与不封顶时完全一致（全量池子走同样的贪心筛选），只是选满 16 条官方后跳过其余官方条目，空出的名额由行业动态等类别按原排序补齐；淘汰递补阶段按类别配额补充（见 `WEIXIN_DEEP_POOL_EXTRA`），导读失败不改变官方/行业比例；设为 `0` 不封顶（此时淘汰递补也不分类别） |
+| `JINA_READER_BASE_URL` | `https://r.jina.ai` | reader 兜底地址。无代理网络下可指向自托管 reader：云服务器 `/opt/ai-news/.env` 已设 `http://127.0.0.1:3003`（容器 `jina-reader`）；本地想借用需先开 SSH 隧道 `ssh -N -L 3003:127.0.0.1:3003 root@36.111.148.123` 再 `set JINA_READER_BASE_URL=http://127.0.0.1:3003`（但直连抓页/下图仍看本地出口，见步骤 2 的无代理出刊） |
 
 ## 每周出刊流程（手动，每周一次，约 5 分钟）
 
@@ -177,6 +179,36 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
    PowerShell 用 `$env:DASHSCOPE_API_KEY="你的key"`（代理同理
    `$env:HTTPS_PROXY=…`），macOS/Linux 用 `export …`。
 
+   **无代理出刊（云服务器，推荐长期方案）**：本地没有可用代理时，整条
+   出刊链可以搬到云主机 36.111.148.123 上跑，全程不碰代理——服务器直连
+   多数境外站点（github.blog/anthropic/blog.google 实测 200），openai
+   （直连 403 防爬墙）与 deepmind.google（直连不通）由服务器自托管
+   reader（`jina-reader` 容器，`.env` 已配 `JINA_READER_BASE_URL`）渲染
+   兜底，实测两者都能取回正文与图片链接；数据摄入（`ai-news-update.timer`，
+   每小时）与千问 key 也都在服务器上可用。步骤：先把本地最新代码同步上去
+   （服务器无 .git 且够不着 github，只能推送），再出刊、取回产物：
+
+   ```cmd
+   rem 以下全部在【本地终端】执行（cmd/PowerShell/Git Bash 均可；ssh 把命令
+   rem 包到服务器上跑），也可先 ssh root@36.111.148.123 登进去手动跑
+   rem ./publish_weixin.sh，效果相同。单次出刊约 9 分钟，日志直接流回本地终端。
+
+   rem 1) 同步代码（仅代码有改动时需要；注意 --exclude 不要加引号）
+   tar -cf - --exclude=__pycache__ scripts tests | ssh root@36.111.148.123 "cd /opt/ai-news && tar -xf -"
+
+   rem 2) 出刊（参数透传，如 --regenerate 9 只重掷第 9 条、--dry-run 不写文件）
+   ssh root@36.111.148.123 "cd /opt/ai-news && ./publish_weixin.sh"
+
+   rem 3) 取回产物（产物在服务器可随时重生成，本地旧的可直接删；想留就改名）
+   rmdir /s /q weixin-deep
+   scp -r root@36.111.148.123:/opt/ai-news/weixin-deep .
+   ```
+
+   已知边界：服务器够不着 github.com（仓库类条目无图）、x.com 等图片
+   CDN 被墙（相应条目按无图降级）；导读缓存与本地不互通，首次运行全部
+   重新生成。本地经 SSH 隧道借用服务器 reader（见 `JINA_READER_BASE_URL`）
+   只解决壳页渲染一半问题，直连抓页与图片下载仍走本地出口，不作为主方案。
+
 3. 生成推文：
 
    ```bash
@@ -191,12 +223,14 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
    `weixin-deep: items=20 sections=官方更新×8,行业动态×9,值得关注×3
    reasons reused=… cached=… generated=… skipped=… dropped=…
    titles translated=… cached=… kept_english=… images found=N missed=M
-   cover_mode=item|headline|brand|static cover_scene=1|0 elapsed=…s`，
+   dup_avoided=K cover_mode=item|headline|brand|static cover_scene=1|0 elapsed=…s`，
    可据此确认 key 生效：
    `generated>0` 且 `cover_mode=item|headline|brand` 说明千问生效；
    `cover_mode=static` 说明 key 没生效或生图失败（见 FAQ）；
    `cover_scene=0` 说明场景翻译失败、封面主题回退为原始头条；
    `images missed` 是抓不到原文插图的条数（正常现象，该条无图出刊）；
+   `dup_avoided` 是同期图片去重跳过的次数（正常为 0，见插图一节的
+   「同期去重」）；
    `cover_mode=item` 表示封面取自头条（或按评分降序第一个有图的）条目插图。
 
 4. 打开 `weixin-deep/index.html` 检查各条导读、插图与「图源」行、原文链接
@@ -230,9 +264,15 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
 
 ## 精读版行为细节
 
-- **选条**：周更故事池（回退日更精选），纯按评分取全局前 20 条——有
-  `peak_score` 时用它，周更故事没有该字段时用 `importance_score`（即周更
-  重算分）（`WEIXIN_DEEP_MAX_ITEMS` / `--max-items` 可调）。分组沿用
+- **选条**：周更故事池（回退日更精选）。候选池 = 成刊 20 条 + 候补
+  （官方上限开启时官方、非官方各带 `WEIXIN_DEEP_POOL_EXTRA` 份候补）。
+  导读写作按类别配额消耗候选：官方流填满官方上限（默认 16）、其余类别流
+  填满剩余名额（20-16=4），即成刊构成目标为**官方 16 + 行业 4**；某条
+  导读为空被淘汰时，由**同类别**的下一条候补顶上，构成不漂移；某类别
+  候选耗尽时才由另一类别跨补，保证成刊条数不掉。无官方上限时候选池按
+  评分顺序整体消耗（旧行为）。排序依据：有 `peak_score` 时用它，周更
+  故事没有该字段时用 `importance_score`（即周更重算分）
+  （`WEIXIN_DEEP_MAX_ITEMS` / `--max-items` 可调）。分组沿用
   官方更新 → 行业动态 → 多源热议 → 值得关注，空组直接跳过
 - **导读**：转述式报道体（直接复述原文事实、不编造，无「据 X 报道」固定
   开头），控制在约 150–350 字、信息密度优先：正文抓取再全也只挑最核心
@@ -287,13 +327,26 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
   序号按整期排名数）、**标题片段**（看到什么输什么，中文显示标题或英文
   原标题都行、忽略大小写）、**story_id**；`all` 全部重掷。未命中会打印
   本期编号清单供重试
-- **插图**：出刊时逐条抓原文页（直连，403/空页走 r.jina.ai 兜底；直连
+- **插图**：出刊时逐条抓原文页（直连，403/空页/过短走 reader 兜底；直连
   成功但整页定位不到正文的 JS 壳页——如 github.blog 前端渲染、`<article>`
-  全是作者卡/推荐卡——也会再走一次 reader 代理，避免拿导航文字当导读
-  素材），先定位正文范围（优先取 `<article>` 元素；页面没有该标签时按
+  全是作者卡/推荐卡——会再走一次 reader 代理：导读拿 reader 渲染出的正文
+  当素材，**插图也从 reader 渲染正文的图片链接取候选**——壳页的服务端 HTML
+  没有正文，整页扫描抓到的是导航/推荐卡的图（实例：两篇 github.blog 文章
+  曾共用同一张「相关文章」卡片缩略图；同一页的 reader 渲染在导读与插图间
+  有记忆化，不会重复请求）。**reader 兜底的时限与熔断**：渲染用独立时限
+  `READER_FETCH_TIMEOUT`（headless 渲染比直连慢得多，实测单页可到 17s+，
+  页面抓取的时限会把它掐断）；熔断分两级——连接错误（服务不可达）立即停用
+  本次运行的兜底，超时/非 200 等软失败连续 `READER_SOFT_FAILURE_LIMIT` 次
+  才停用，任一成功即重置计数（旧逻辑一次失败即熔断，一次慢渲染曾把整期
+  兜底全部打死）。服务端 HTML 能定位正文的页面则先定位正文范围
+  （优先取 `<article>` 元素；页面没有该标签时按
   「AI News Recommendations / 推荐阅读 / 相关推荐」等推荐区标题截断），再取正文内
-  第一张合格大图——推荐区缩略图不进候选（旧逻辑整页扫描，正文图下载
-  一旦抖动就会错抓推荐新闻的图），跳过 logo/图标/追踪像素等，存到
+  第一张合格大图——正文图永远优先，推荐区缩略图不进候选（旧逻辑整页扫描，
+  正文图下载一旦抖动就会错抓推荐新闻的图）。取候选时图片属性值先做 HTML
+  实体反转义（服务端 HTML 把 `&` 编成 `&amp;`，不反转义下载会 404，实例：
+  anthropic 的 `/_next/image` 链接），懒加载属性 `data-original`/`data-src`/
+  `data-lazy-src` 优先于 `src`（实例：ithome 的 `src` 是 1×1 占位图，真图在
+  `data-original`），跳过 logo/图标/追踪像素等，存到
   `weixin-deep/images/` 并在图下自动加「图源：{域名}」。排版上图片放在
   该条**导读之后**，按 65% 宽等比缩小、居中显示、不带圆角（宽度用脚本
   常量 `DEEP_IMAGE_WIDTH_PERCENT` 调整）。**正文完全没图时的推荐区借用**：
@@ -301,7 +354,11 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
   ≥ 0.65 且领先第二名 ≥ 0.08（`REC_BORROW_MIN_SCORE` /
   `REC_BORROW_MIN_MARGIN`）才借用该卡的图，日志注明「推荐区同题报道」，
   `meta.json` 里该图标 `borrowed: true`；比对用页面 H1 而非中文标题
-  （推荐卡标题是页面语言，aibase 为英文，跨语言永远配不上）。宁缺毋错：
+  （推荐卡标题是页面语言，aibase 为英文，跨语言永远配不上）。**同期去重**：
+  同一张图不会出现在本期两个条目——候选 URL 已被前面条目占用、或下载内容与
+  已存图片字节相同（MD5；CDN 别名、同一推荐卡缩略图复用）都会按序跳到下一个
+  候选，没有可用候选即保持无图，跳过次数计入汇总日志 `dup_avoided`。
+  宁缺毋错：
   同产品不同事件、两张图难分伯仲等情况一律保持无图。正文没图且无可借用
   → 该条无图，属正常降级；不做 AI 补图。有 Pillow 时统一压到 ≤1080 宽、
   JPEG q82，每期约增长 1–3MB
@@ -370,8 +427,9 @@ python -m pytest tests/test_weixin_article_deep.py tests/test_weixin_weekly.py -
     插图 CDN 同属国内，走代理也会 SSL 失败、插图整批抓空（脚本已内置
     直连重试兜底）。代理开启后境外页面与 r.jina.ai 可达，境外条目也能
     取图、生成导读；浏览器打不开原文页不影响脚本（脚本不依赖你的浏
-    览器，直连被拒时由 r.jina.ai 在它自己的服务器上取回正文和图片链
-    接）。
+    览器，直连被拒时由 reader 在它自己的服务器上取回正文和图片链
+    接）。**完全没有代理时**改走云服务器出刊（见步骤 2「无代理出刊」），
+    不要硬跑：境外条目会整批无图、导读退化。
 - **改了白名单，为什么旧故事的标签也变了？** 类别由云端管线在故事创建时
   落盘，白名单改动不会改写已在盘上的旧数据；但出刊时推文脚本会按当前白名单
   复核并纠正（只升为「官方更新」），所以精读版立即生效。云端管线本身
