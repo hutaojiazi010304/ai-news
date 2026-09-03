@@ -33,9 +33,7 @@ data/email-digest.json
 .gstack/
 ~$*
 
-# Local debug output of generate_weixin_article*.py --output-dir weixin-test*
-weixin-test/
-weixin-test-grouped/
+# Local debug output of generate_weixin_article_deep.py --output-dir weixin-test-deep
 weixin-test-deep/
 
 # Local deploy tooling (contains private server address / key paths)

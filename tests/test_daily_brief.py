@@ -388,8 +388,8 @@ def test_importance_flat_hours_passthrough():
 
 # ---------------------------------------------------------------------------
 # Official-feed summaries: the pipeline persists the RSS <description> as
-# clean plain text so downstream guide writing (weixin daily push) can use
-# it as offline grounding instead of fetching bot-blocked live pages.
+# clean plain text so downstream guide writing (weixin-deep 精读版 push) can
+# use it as offline grounding instead of fetching bot-blocked live pages.
 # ---------------------------------------------------------------------------
 
 def test_clean_feed_summary_strips_html_and_truncates():

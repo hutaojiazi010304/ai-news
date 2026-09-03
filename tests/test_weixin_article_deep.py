@@ -1,11 +1,10 @@
 """Tests for scripts/generate_weixin_article_deep.py (3.0 精读版).
 
-Pins the three upgrades over the grouped variant: top-20 selection, longer
-repeated-news style guides in an INDEPENDENT cache (the shared 1.0/2.0 cache
-must never leak in), and one real article image per item with graceful
-no-image degradation. Mock plumbing mirrors test_weixin_article.py: text
-completions through module-level requests.post, everything else through the
-session returned by create_session — nothing touches the real network.
+Pins the deep-read behavior: top-20 selection, longer repeated-news style
+guides in the deep cache, and one real article image per item with graceful
+no-image degradation. Mock plumbing: text completions through module-level
+requests.post, everything else through the session returned by
+create_session — nothing touches the real network.
 """
 
 from __future__ import annotations
@@ -13,6 +12,7 @@ from __future__ import annotations
 import io
 import json
 import sys
+import tempfile
 import warnings
 from datetime import datetime
 from pathlib import Path
@@ -24,19 +24,130 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from scripts import generate_weixin_article as gwa
 from scripts import generate_weixin_article_deep as gwad
 
-from test_weixin_article import (
-    BASE_ENV,
-    make_item,
-    make_png_bytes,
-    make_static_asset,
-    offline_session,
-    read_json,
-    text_response,
-    write_fixture,
-)
+
+# ---------------------------------------------------------------------------
+# Fixture builders (self-contained)
+# ---------------------------------------------------------------------------
+
+BASE_ENV = {"DASHSCOPE_API_KEY": "test-key"}
+
+
+def _write_png(path: Path, width: int, height: int, pixel_fn) -> None:
+    """Minimal pure-Python PNG writer (RGB, no font / Pillow needed)."""
+    import struct
+    import zlib
+
+    def chunk(tag: bytes, data: bytes) -> bytes:
+        block = tag + data
+        return struct.pack(">I", len(data)) + block + struct.pack(">I", zlib.crc32(block))
+
+    raw = bytearray()
+    for y in range(height):
+        raw.append(0)  # filter type: none
+        for x in range(width):
+            r, g, b = pixel_fn(x, y)
+            raw.extend((r, g, b))
+    ihdr = struct.pack(">IIBBBBB", width, height, 8, 2, 0, 0, 0)
+    png = (
+        b"\x89PNG\r\n\x1a\n"
+        + chunk(b"IHDR", ihdr)
+        + chunk(b"IDAT", zlib.compress(bytes(raw), 9))
+        + chunk(b"IEND", b"")
+    )
+    path.write_bytes(png)
+
+
+def make_item(
+    idx: int,
+    *,
+    title: str | None = None,
+    score: float = 50.0,
+    reason: str | None = None,
+    summary: str | None = None,
+    sources: list[dict] | None = None,
+) -> dict:
+    return {
+        "story_id": f"story_{idx}",
+        "title": title or f"测试新闻标题 {idx}",
+        "url": f"https://example.com/story/{idx}",
+        "primary_url": f"https://example.com/story/{idx}",
+        "importance_score": score,
+        "importance_label": "high",
+        "category": "model",
+        "source_name": "Example Source",
+        "source_count": 1,
+        "source_names": ["Example Source"],
+        "sources": sources
+        or [
+            {
+                "title": title or f"测试新闻标题 {idx}",
+                "url": f"https://example.com/story/{idx}",
+                "source_name": "Example Source",
+                "summary": summary,
+                "recommend_reason_zh": reason,
+            }
+        ],
+        "primary_item": {
+            "title": title or f"测试新闻标题 {idx}",
+            "url": f"https://example.com/story/{idx}",
+            "source_name": "Example Source",
+            "summary": summary,
+            "recommend_reason_zh": reason,
+        },
+    }
+
+
+def write_fixture(tmp: str | Path, items: list[dict]) -> tuple[Path, Path]:
+    root = Path(tmp)
+    data_dir = root / "data"
+    data_dir.mkdir(parents=True, exist_ok=True)
+    brief = {
+        "generated_at": "2026-08-13T00:00:00Z",
+        "window_hours": 24,
+        "total_items": len(items),
+        "items": items,
+    }
+    (data_dir / "daily-brief.json").write_text(
+        json.dumps(brief, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    assets_dir = root / "assets"
+    assets_dir.mkdir(parents=True, exist_ok=True)
+    return data_dir, assets_dir
+
+
+def make_static_asset(assets_dir: Path) -> None:
+    _write_png(
+        assets_dir / "weixin-cover-fallback.png", 120, 51, lambda x, y: (1, 2, 3)
+    )
+
+
+def make_png_bytes(width: int = 1000, height: int = 500) -> bytes:
+    with tempfile.TemporaryDirectory() as tmp:
+        path = Path(tmp) / "probe.png"
+        _write_png(path, width, height, lambda x, y: (x % 256, y % 256, 30))
+        return path.read_bytes()
+
+
+def text_response(content: str) -> MagicMock:
+    response = MagicMock()
+    response.status_code = 200
+    response.raise_for_status.return_value = None
+    response.json.return_value = {"choices": [{"message": {"content": content}}]}
+    return response
+
+
+def offline_session() -> MagicMock:
+    """Session mock that refuses all network I/O: cover/fetch degrade cleanly."""
+    session = MagicMock()
+    session.get.side_effect = requests.ConnectionError("offline")
+    session.post.side_effect = requests.ConnectionError("offline")
+    return session
+
+
+def read_json(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def make_categorized_item(idx: int, category: str, score: float) -> dict:
@@ -70,11 +181,13 @@ THIN_SUMMARY = "这是一段很短的摘要，不足以支撑精读导读。"
 def make_deep_text_router(reason=None, scene=None, mark=None, translate=None):
     """Route text completions by system-prompt markers.
 
-    「精读」marks the deep guide prompt (NOT 「转述」 — 1.0's prompt contains
-    「转述其观点」 and would collide); 「插画设计师」 marks the cover scene;
+    「精读」marks the deep guide prompt (not 「转述」, which appears in other
+    pipeline prompts and would collide); 「插画设计师」 marks the cover scene;
     「校对员」 marks the highlight pass, which by default (mark=None) echoes
     the guide back unchanged — no highlights, text preserved verbatim;
     「地道的简体中文」 marks the English-title backfill translation.
+    A cover-scene call with no scene spec (scene=None) fails like an offline
+    text endpoint, so runs without a seeded scene degrade to the static cover.
     Any other call fails the test.
     """
     calls = {"reason": 0, "scene": 0, "mark": 0, "translate": 0}
@@ -97,6 +210,10 @@ def make_deep_text_router(reason=None, scene=None, mark=None, translate=None):
         if which == "mark" and spec is None:
             user = str(((messages or [{}])[-1] or {}).get("content") or "")
             return text_response(user)
+        if which == "scene" and spec is None:
+            # Simulate an unreachable text endpoint: resolve_cover then
+            # degrades to the static fallback cover.
+            raise requests.ConnectionError("offline")
         if isinstance(spec, BaseException):
             raise spec
         if isinstance(spec, MagicMock):
@@ -111,24 +228,11 @@ def make_deep_text_router(reason=None, scene=None, mark=None, translate=None):
 def run_deep_patched(env: dict, post_side_effect, session, args_list) -> int:
     """Run deep main with the text post router + a mocked session factory."""
     with patch.dict("os.environ", env, clear=True), patch(
-        "scripts.generate_weixin_article.requests.post", side_effect=post_side_effect
+        "scripts.generate_weixin_article_deep.requests.post", side_effect=post_side_effect
     ), patch(
         "scripts.generate_weixin_article_deep.create_session", return_value=session
-    ), patch("scripts.generate_weixin_article.time.sleep"):
+    ), patch("scripts.generate_weixin_article_deep.time.sleep"):
         return gwad.main(args_list)
-
-
-def seed_main_cover(main_dir: Path, cover_bytes: bytes = b"\xff\xd8fake-jpeg-bytes") -> bytes:
-    """Pre-seed the main variant's output so the deep run REUSES its cover
-    (keeps the image-generation API out of the test)."""
-    main_dir.mkdir(parents=True, exist_ok=True)
-    issue_date = datetime.now(gwa.TZ_CN).strftime("%Y-%m-%d")
-    (main_dir / "cover.jpg").write_bytes(cover_bytes)
-    (main_dir / "meta.json").write_text(
-        json.dumps({"issue_date": issue_date, "cover": "cover.jpg"}),
-        encoding="utf-8",
-    )
-    return cover_bytes
 
 
 def page_response(img_tag: str) -> MagicMock:
@@ -172,7 +276,7 @@ class FakeResponse:
 
 
 class FakeSession:
-    """Records GETs; serves one fixed body (mirrors test_weixin_article)."""
+    """Records GETs; serves one fixed body."""
 
     def __init__(self, text: str = ""):
         self.calls: list[str] = []
@@ -195,10 +299,6 @@ def test_resolve_deep_max_items_precedence():
         assert gwad.resolve_deep_max_items(args) == 20
     with patch.dict("os.environ", {"WEIXIN_DEEP_MAX_ITEMS": "7"}, clear=True):
         assert gwad.resolve_deep_max_items(args) == 7
-    # The 1.0/2.0 knob must have NO effect on the deep variant (use a value
-    # unlike the deep default so an accidental read-through cannot pass).
-    with patch.dict("os.environ", {"WEIXIN_MAX_ITEMS": "35"}, clear=True):
-        assert gwad.resolve_deep_max_items(args) == 20
     # CLI beats env.
     args.max_items = 3
     with patch.dict("os.environ", {"WEIXIN_DEEP_MAX_ITEMS": "7"}, clear=True):
@@ -213,7 +313,6 @@ def test_top20_selection_cap_and_ranking(tmp_path):
     args = [
         "--data-dir", str(data_dir),
         "--output-dir", str(out_dir),
-        "--main-output-dir", str(tmp_path / "weixin"),
         "--assets-dir", str(assets_dir),
         "--no-images",
     ]
@@ -239,7 +338,7 @@ def test_top20_selection_cap_and_ranking(tmp_path):
 # ---------------------------------------------------------------------------
 
 def test_issue_range_label_follows_brief_window():
-    now_cn = datetime(2026, 8, 28, 10, 0, tzinfo=gwa.TZ_CN)
+    now_cn = datetime(2026, 8, 28, 10, 0, tzinfo=gwad.TZ_CN)
     assert gwad.issue_range_label({"window_hours": 168}, now_cn) == "8月22日-8月28日"
     assert gwad.issue_range_label({"window_hours": 72}, now_cn) == "8月26日-8月28日"
     # Daily fallback window collapses to the single issue day.
@@ -264,7 +363,6 @@ def test_publish_info_file_replaces_helper_block(tmp_path):
     args = [
         "--data-dir", str(data_dir),
         "--output-dir", str(out_dir),
-        "--main-output-dir", str(tmp_path / "weixin"),
         "--assets-dir", str(assets_dir),
         "--no-images",
     ]
@@ -286,42 +384,22 @@ def test_publish_info_file_replaces_helper_block(tmp_path):
 
 
 # ---------------------------------------------------------------------------
-# Deep guide: cache isolation, generation, validation, grounding
+# Deep guide: cache versioning, generation, validation, grounding
 # ---------------------------------------------------------------------------
 
-def test_deep_cache_ignores_main_cache(tmp_path):
-    title = "缓存隔离测试标题"
+def test_deep_reason_cache_written_under_deep_version(tmp_path):
+    """The deep guide cache is written into the deep output dir under its
+    own version tag, so entries can never be confused with other caches."""
+    title = "缓存版本测试标题"
     item = make_item(1, title=title, summary=DEEP_SUMMARY)
     data_dir, assets_dir = write_fixture(tmp_path, [item])
     make_static_asset(assets_dir)
-    main_dir = tmp_path / "weixin"
-    seed_main_cover(main_dir)
-    # Pre-fill the SHARED 1.0-format cache with a matching entry: the deep
-    # variant must ignore it entirely and still generate.
-    key = gwa.cache_key("story_1", title)
-    stale_reason = "旧版短导读缓存内容，风格不同，不得被精读版使用。"
-    (main_dir / "reason-cache.json").write_text(
-        json.dumps(
-            {
-                "version": gwa.CACHE_VERSION,
-                "entries": {
-                    key: {
-                        "reason": stale_reason,
-                        "title_hash": gwa.title_hash(title),
-                        "created_at": "2026-08-24T00:00:00Z",
-                    }
-                },
-            },
-            ensure_ascii=False,
-        ),
-        encoding="utf-8",
-    )
     deep_dir = tmp_path / "weixin-deep"
+    key = gwad.cache_key("story_1", title)
     side_effect, calls = make_deep_text_router(reason=text_response(LONG_DEEP_REASON))
     args = [
         "--data-dir", str(data_dir),
         "--output-dir", str(deep_dir),
-        "--main-output-dir", str(main_dir),
         "--assets-dir", str(assets_dir),
         "--no-images",
     ]
@@ -329,18 +407,12 @@ def test_deep_cache_ignores_main_cache(tmp_path):
     rc = run_deep_patched(BASE_ENV, side_effect, offline_session(), args)
 
     assert rc == 0
-    # The stale shared-cache hit did NOT suppress generation.
     assert calls["reason"] == 1
     html_text = (deep_dir / "index.html").read_text(encoding="utf-8")
     assert LONG_DEEP_REASON in html_text
-    assert stale_reason not in html_text
-    # Deep cache lives in the deep dir under its own version.
     deep_cache = read_json(deep_dir / "reason-cache.json")
     assert deep_cache["version"] == gwad.DEEP_CACHE_VERSION
     assert deep_cache["entries"][key]["reason"] == LONG_DEEP_REASON
-    # The shared cache file is untouched.
-    main_cache = read_json(main_dir / "reason-cache.json")
-    assert main_cache["entries"][key]["reason"] == stale_reason
 
 
 def test_deep_reason_generated_and_cached(tmp_path):
@@ -348,13 +420,10 @@ def test_deep_reason_generated_and_cached(tmp_path):
         tmp_path, [make_item(1, summary=DEEP_SUMMARY)]
     )
     make_static_asset(assets_dir)
-    main_dir = tmp_path / "weixin"
-    seed_main_cover(main_dir)
     deep_dir = tmp_path / "weixin-deep"
     args = [
         "--data-dir", str(data_dir),
         "--output-dir", str(deep_dir),
-        "--main-output-dir", str(main_dir),
         "--assets-dir", str(assets_dir),
         "--no-images",
     ]
@@ -393,13 +462,10 @@ def test_regenerate_flag_forces_regeneration(tmp_path):
         tmp_path, [make_item(1, summary=DEEP_SUMMARY)]
     )
     make_static_asset(assets_dir)
-    main_dir = tmp_path / "weixin"
-    seed_main_cover(main_dir)
     deep_dir = tmp_path / "weixin-deep"
     args = [
         "--data-dir", str(data_dir),
         "--output-dir", str(deep_dir),
-        "--main-output-dir", str(main_dir),
         "--assets-dir", str(assets_dir),
         "--no-images",
     ]
@@ -428,13 +494,10 @@ def test_regenerate_by_number_and_chinese_fragment(tmp_path):
         tmp_path, [make_item(1, title=en_title, summary=DEEP_SUMMARY)]
     )
     make_static_asset(assets_dir)
-    main_dir = tmp_path / "weixin"
-    seed_main_cover(main_dir)
     deep_dir = tmp_path / "weixin-deep"
     args = [
         "--data-dir", str(data_dir),
         "--output-dir", str(deep_dir),
-        "--main-output-dir", str(main_dir),
         "--assets-dir", str(assets_dir),
         "--no-images",
     ]
@@ -503,7 +566,7 @@ def test_generate_deep_reason_rejection_is_diagnosed(capsys):
     )
 
     with patch(
-        "scripts.generate_weixin_article.requests.post",
+        "scripts.generate_weixin_article_deep.requests.post",
         return_value=text_response(content_with_url),
     ):
         assert gwad.generate_deep_reason(item, "正文内容若干", cfg) is None
@@ -520,7 +583,7 @@ def test_generate_deep_reason_rejects_overlong(capsys):
     long_content = "该团队发布了新版本，" + "这是用于凑字数的测试句子内容。" * 40  # ~600 字
 
     with patch(
-        "scripts.generate_weixin_article.requests.post",
+        "scripts.generate_weixin_article_deep.requests.post",
         return_value=text_response(long_content),
     ):
         result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
@@ -540,7 +603,7 @@ def test_generate_deep_reason_retries_once_after_rejection(capsys):
         reason=lambda c: text_response(overlong if c["reason"] == 1 else LONG_DEEP_REASON)
     )
 
-    with patch("scripts.generate_weixin_article.requests.post", side_effect=router):
+    with patch("scripts.generate_weixin_article_deep.requests.post", side_effect=router):
         result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
 
     assert result == LONG_DEEP_REASON
@@ -558,7 +621,7 @@ def test_generate_deep_reason_rejects_after_retry_also_fails(capsys):
     overlong = "该团队发布了新版本，" + "这是用于凑字数的测试句子内容。" * 40
     router, calls = make_deep_text_router(reason=text_response(overlong))
 
-    with patch("scripts.generate_weixin_article.requests.post", side_effect=router):
+    with patch("scripts.generate_weixin_article_deep.requests.post", side_effect=router):
         result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
 
     assert result is None
@@ -612,7 +675,7 @@ def test_generate_deep_reason_keeps_valid_marks():
     )
 
     with patch(
-        "scripts.generate_weixin_article.requests.post",
+        "scripts.generate_weixin_article_deep.requests.post",
         side_effect=[text_response(plain), text_response(marked)],
     ):
         result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
@@ -634,7 +697,7 @@ def test_generate_deep_reason_salvages_bad_marks():
         + "这是用于补足字数的测试句子。" * 7
     )
     with patch(
-        "scripts.generate_weixin_article.requests.post",
+        "scripts.generate_weixin_article_deep.requests.post",
         side_effect=[text_response(body), text_response(over_marked_response)],
     ):
         over_marked = gwad.generate_deep_reason(item, "正文内容若干", cfg)
@@ -647,7 +710,7 @@ def test_generate_deep_reason_salvages_bad_marks():
 
     marked_body = body.replace("发布说明正文", "【发布说明正文】", 1)
     with patch(
-        "scripts.generate_weixin_article.requests.post",
+        "scripts.generate_weixin_article_deep.requests.post",
         side_effect=[
             text_response(body),
             text_response(marked_body + "（完）"),  # 改写了原文，但片段可锚定
@@ -666,21 +729,21 @@ def test_add_deep_marks_verbatim_and_failures():
     marked = guide.replace("全面开源", "【全面开源】")
 
     with patch(
-        "scripts.generate_weixin_article.requests.post",
+        "scripts.generate_weixin_article_deep.requests.post",
         return_value=text_response(marked),
     ):
         assert gwad.add_deep_marks(guide, cfg) == marked
 
     with patch(
-        "scripts.generate_weixin_article.requests.post",
+        "scripts.generate_weixin_article_deep.requests.post",
         return_value=text_response(marked + "（补充）"),  # 改动原文 → 重锚定后只留片段
     ):
         assert gwad.add_deep_marks(guide, cfg) == marked
 
     with patch(
-        "scripts.generate_weixin_article.requests.post",
+        "scripts.generate_weixin_article_deep.requests.post",
         return_value=text_response("")), patch(  # 调用失败 → 弃标注
-        "scripts.generate_weixin_article.time.sleep"
+        "scripts.generate_weixin_article_deep.time.sleep"
     ):
         assert gwad.add_deep_marks(guide, cfg) == guide
 
@@ -693,7 +756,7 @@ def test_add_deep_marks_salvages_rewritten_punctuation():
     response = guide.replace("全面开源", "【全面开源】") + "。"  # 模型补了句号
 
     with patch(
-        "scripts.generate_weixin_article.requests.post",
+        "scripts.generate_weixin_article_deep.requests.post",
         return_value=text_response(response),
     ):
         result = gwad.add_deep_marks(guide, cfg)
@@ -707,7 +770,7 @@ def test_add_deep_marks_unanchorable_spans_drop(capsys):
     guide = "该团队发布了新一代模型，" + "这是用于补足字数的测试句子。" * 8 + "官方确认全面开源。"
 
     with patch(
-        "scripts.generate_weixin_article.requests.post",
+        "scripts.generate_weixin_article_deep.requests.post",
         return_value=text_response("【完全找不到出处的片段】"),
     ):
         assert gwad.add_deep_marks(guide, cfg, "锚定失败测试") == guide
@@ -726,7 +789,7 @@ def test_add_deep_marks_retry_recovers(capsys):
     marked = guide.replace("全面开源", "【全面开源】")
 
     with patch(
-        "scripts.generate_weixin_article.requests.post",
+        "scripts.generate_weixin_article_deep.requests.post",
         side_effect=[
             text_response(guide + "。"),  # 第一次只改写、没加标记 → 无片段可锚定
             text_response(marked),
@@ -1039,9 +1102,9 @@ def test_deep_meta_line_shows_channel_for_umbrella_bucket():
 
 
 def test_deep_single_origin_meta_shows_source_and_reposts():
-    # Same split as 1.0: a single-origin story (source_count == 1, several
-    # entries linking the same article) names the primary as 来源 and the
-    # other channels as 转载; the channel-list line is dropped.
+    # A single-origin story (source_count == 1, several entries linking the
+    # same article) names the primary as 来源 and the other channels as 转载;
+    # the channel-list line is dropped.
     url = "https://qwen.ai/blog?id=qwen3.8-flash-next"
     sources = [
         {"id": "p1", "title": "官方博客", "url": url,
@@ -1065,10 +1128,10 @@ def test_deep_single_origin_meta_shows_source_and_reposts():
 
 
 def test_deep_mixed_origins_split_by_url_not_entry_count():
-    # Same generalization as 1.0: entries outnumber distinct URLs (official
-    # post + mirror + a second origin such as the HN discussion page) →
-    # 「M 个来源 · N 个转载」 with M = distinct canonical URLs and
-    # N = entries − URLs, instead of listing every channel as a 来源.
+    # Entries outnumber distinct URLs (official post + mirror + a second
+    # origin such as the HN discussion page) → 「M 个来源 · N 个转载」 with
+    # M = distinct canonical URLs and N = entries − URLs, instead of listing
+    # every channel as a 来源.
     openai_url = "https://openai.com/index/hugging-face-incident"
     sources = [
         {"id": "m1", "title": "镜像", "url": openai_url, "source_name": "Buzzing"},
@@ -1108,7 +1171,7 @@ def test_deep_reason_user_content_has_no_source_line():
         captured.append(kwargs.get("json") or {})
         return router(url, **kwargs)
 
-    with patch("scripts.generate_weixin_article.requests.post", side_effect=side_effect):
+    with patch("scripts.generate_weixin_article_deep.requests.post", side_effect=side_effect):
         result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
 
     assert result
@@ -1133,7 +1196,6 @@ def test_keyless_degradation_uses_upstream_reason(tmp_path):
     args = [
         "--data-dir", str(data_dir),
         "--output-dir", str(deep_dir),
-        "--main-output-dir", str(tmp_path / "weixin"),
         "--assets-dir", str(assets_dir),
         "--no-images",
     ]
@@ -1450,7 +1512,7 @@ def test_resolve_deep_cover_prefers_first_item_with_image(tmp_path):
         from PIL import Image
 
         img = Image.open(io.BytesIO(cover_bytes))
-        assert img.size == (gwa.COVER_W, gwa.COVER_H)  # 2.35:1 crop
+        assert img.size == (gwad.COVER_W, gwad.COVER_H)  # 2.35:1 crop
     except ImportError:
         pass
 
@@ -1472,13 +1534,10 @@ def test_e2e_deep_cover_uses_top_item_illustration(tmp_path):
         tmp_path, [make_item(1, summary=DEEP_SUMMARY)]
     )
     make_static_asset(assets_dir)
-    main_dir = tmp_path / "weixin"
-    seeded = seed_main_cover(main_dir)
     deep_dir = tmp_path / "weixin-deep"
     args = [
         "--data-dir", str(data_dir),
         "--output-dir", str(deep_dir),
-        "--main-output-dir", str(main_dir),
         "--assets-dir", str(assets_dir),
     ]
     session = MagicMock()
@@ -1491,12 +1550,10 @@ def test_e2e_deep_cover_uses_top_item_illustration(tmp_path):
     rc = run_deep_patched(BASE_ENV, side_effect, session, args)
 
     assert rc == 0
-    # The cover is the headline item's own illustration cropped to 2.35:1 —
-    # NOT the seeded same-day main-variant cover.
+    # The cover is the headline item's own illustration cropped to 2.35:1.
     saved = (deep_dir / "images" / "story_1.jpg").read_bytes()
     cover = (deep_dir / "cover.jpg").read_bytes()
-    assert cover == gwa.crop_cover(saved)
-    assert cover != seeded
+    assert cover == gwad.crop_cover(saved)
     meta = read_json(deep_dir / "meta.json")
     assert meta["cover"] == "cover.jpg"
 
@@ -1866,13 +1923,10 @@ def test_e2e_keyless_writes_deep_layout_no_images(tmp_path):
         ],
     )
     make_static_asset(assets_dir)
-    main_dir = tmp_path / "weixin"
-    cover_bytes = seed_main_cover(main_dir)
     deep_dir = tmp_path / "weixin-deep"
     args = [
         "--data-dir", str(data_dir),
         "--output-dir", str(deep_dir),
-        "--main-output-dir", str(main_dir),
         "--assets-dir", str(assets_dir),
         "--no-images",
     ]
@@ -1899,10 +1953,12 @@ def test_e2e_keyless_writes_deep_layout_no_images(tmp_path):
     for idx in (1, 2, 3, 4):
         assert f"精读分类新闻 {idx}" in html_text
     assert html_text.index(">官方更新</p>") < html_text.index(">行业动态</p>")
-    # Cover reused verbatim from the main variant.
-    assert meta["cover"] == "cover.jpg"
-    assert (deep_dir / "cover.jpg").read_bytes() == cover_bytes
-    # The deep cache file is written into the deep dir (not the main dir).
+    # Keyless run: the cover degrades to the static fallback asset.
+    assert meta["cover"] == "cover.png"
+    assert (deep_dir / "cover.png").read_bytes() == (
+        assets_dir / "weixin-cover-fallback.png"
+    ).read_bytes()
+    # The deep cache file is written into the deep output dir.
     assert (deep_dir / "reason-cache.json").exists()
     assert not (deep_dir / "images").exists()
 
@@ -1912,8 +1968,6 @@ def test_e2e_keyed_run_with_images(tmp_path):
         tmp_path, [make_item(1, summary=DEEP_SUMMARY)]
     )
     make_static_asset(assets_dir)
-    main_dir = tmp_path / "weixin"
-    seed_main_cover(main_dir)
     deep_dir = tmp_path / "weixin-deep"
     # A stale image from a previous day must be pruned.
     (deep_dir / "images").mkdir(parents=True)
@@ -1921,7 +1975,6 @@ def test_e2e_keyed_run_with_images(tmp_path):
     args = [
         "--data-dir", str(data_dir),
         "--output-dir", str(deep_dir),
-        "--main-output-dir", str(main_dir),
         "--assets-dir", str(assets_dir),
     ]
 
@@ -1960,7 +2013,6 @@ def test_dry_run_writes_nothing(tmp_path):
     args = [
         "--data-dir", str(data_dir),
         "--output-dir", str(deep_dir),
-        "--main-output-dir", str(tmp_path / "weixin"),
         "--assets-dir", str(assets_dir),
         "--dry-run",
     ]
@@ -2019,13 +2071,10 @@ def test_english_title_translated_before_deep_guides(tmp_path):
         tmp_path, [make_item(1, title=en_title, summary=DEEP_SUMMARY)]
     )
     make_static_asset(assets_dir)
-    main_dir = tmp_path / "weixin"
-    seed_main_cover(main_dir)
     deep_dir = tmp_path / "weixin-deep"
     args = [
         "--data-dir", str(data_dir),
         "--output-dir", str(deep_dir),
-        "--main-output-dir", str(main_dir),
         "--assets-dir", str(assets_dir),
         "--no-images",
     ]
@@ -2042,13 +2091,13 @@ def test_english_title_translated_before_deep_guides(tmp_path):
     assert zh_title in html_text
     assert en_title not in html_text
     deep_cache = read_json(deep_dir / "reason-cache.json")
-    assert gwa.cache_key("story_1", zh_title) in deep_cache["entries"]
-    assert gwa.cache_key("story_1", en_title) not in deep_cache["entries"]
+    assert gwad.cache_key("story_1", zh_title) in deep_cache["entries"]
+    assert gwad.cache_key("story_1", en_title) not in deep_cache["entries"]
 
 
 # ---------------------------------------------------------------------------
 # Guide-writing driver: drop items without guide material, backfill from the
-# over-selected candidate pool (mirror of the 1.0 fill_reasons driver)
+# over-selected candidate pool
 # ---------------------------------------------------------------------------
 
 def test_fill_deep_reasons_keyless_drops_empty_and_backfills():
@@ -2088,8 +2137,4 @@ def test_deep_pool_extra_resolution(monkeypatch):
     monkeypatch.setenv("WEIXIN_DEEP_POOL_EXTRA", "3")
     assert gwad.deep_pool_extra() == 3
     monkeypatch.setenv("WEIXIN_DEEP_POOL_EXTRA", "not-a-number")
-    assert gwad.deep_pool_extra() == 10
-    # The 1.0/2.0 knob must have NO effect on the deep variant.
-    monkeypatch.setenv("WEIXIN_DEEP_POOL_EXTRA", "")
-    monkeypatch.setenv("WEIXIN_POOL_EXTRA", "35")
     assert gwad.deep_pool_extra() == 10

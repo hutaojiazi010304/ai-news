@@ -1,4 +1,4 @@
-"""Tests for the weekly push path of scripts/generate_weixin_article.py.
+"""Tests for the weekly push path of scripts/generate_weixin_article_deep.py.
 
 Covers ``build_weekly_brief`` (the 7-day story pool rebuilt from
 ``data/archive.json``) and ``load_push_brief`` (weekly pool with automatic
@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from scripts import generate_weixin_article as gwa
+from scripts import generate_weixin_article_deep as gwa
 from scripts import update_news as un
 
 NOW = datetime(2026, 8, 27, 12, 0, tzinfo=timezone.utc)
@@ -516,25 +516,12 @@ def test_official_cap_env_override_and_disable(monkeypatch):
 
 
 # ---------------------------------------------------------------------------
-# Over-selected guide-writing pool (WEIXIN_POOL_EXTRA / pool_size)
+# Over-selected guide-writing pool (pool_size)
 #
 # The pool carries max_items + extra candidates so items whose guide ends up
-# empty can be dropped and backfilled (fill_reasons) without the issue
-# shrinking. pool_size=None keeps the former exact-max_items selection.
+# empty can be dropped and backfilled without the issue shrinking.
+# pool_size=None keeps the exact-max_items selection.
 # ---------------------------------------------------------------------------
-
-def test_weekly_pool_extra_resolution(monkeypatch):
-    monkeypatch.delenv("WEIXIN_POOL_EXTRA", raising=False)
-    assert gwa.weekly_pool_extra() == 10
-    monkeypatch.setenv("WEIXIN_POOL_EXTRA", "0")
-    assert gwa.weekly_pool_extra() == 0
-    monkeypatch.setenv("WEIXIN_POOL_EXTRA", "5")
-    assert gwa.weekly_pool_extra() == 5
-    monkeypatch.setenv("WEIXIN_POOL_EXTRA", "not-a-number")
-    assert gwa.weekly_pool_extra() == 10
-    monkeypatch.setenv("WEIXIN_POOL_EXTRA", "-3")
-    assert gwa.weekly_pool_extra() == 0
-
 
 # CAP_POOL_TITLES (18) plus six more pairwise-distinct official stories:
 # distinct vendors and wording keep title similarity below the merge/near-dup

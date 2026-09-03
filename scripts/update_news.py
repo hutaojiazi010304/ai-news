@@ -142,7 +142,7 @@ OFFICIAL_AI_FEEDS: tuple[dict[str, str], ...] = (
 )
 OFFICIAL_AI_MAX_AGE_DAYS = 45
 # RSS/Atom entry summaries (<description>) are kept as grounding text for
-# downstream guide/recommendation writing (see generate_weixin_article.py):
+# downstream guide/recommendation writing (see generate_weixin_article_deep.py):
 # they let consumers work offline instead of fetching the live page, which
 # is often bot-blocked. Truncated to bound data/*.json size.
 FEED_SUMMARY_MAX_CHARS = 800

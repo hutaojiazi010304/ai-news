@@ -1,19 +1,17 @@
-"""Deep-read (精读版) variant of the WeChat weekly article generator.
+"""Deep-read (精读版) WeChat weekly article generator.
 
-Third layout variant beside ``generate_weixin_article.py`` (1.0, flat list)
-and ``generate_weixin_article_grouped.py`` (2.0, grouped boxes). It keeps the
-2.0 grouped layout but upgrades the content for close reading:
+The only remaining WeChat push variant (the older flat and grouped layouts
+were retired and their shared infrastructure merged into this file). Stories
+are laid out in grouped sections and upgraded for close reading:
 
-- Selection: the top 20 stories by ``peak_score`` (or ``importance_score``
-  for the weekly pool, which carries no peak) only (default; override via
-  ``--max-items`` or ``WEIXIN_DEEP_MAX_ITEMS`` — deliberately NOT
-  ``WEIXIN_MAX_ITEMS``, so 1.0/2.0 stay untouched). Empty sections are
-  skipped, exactly like 2.0.
+- Selection: the weekly story pool rebuilt from ``data/archive.json``
+  (falling back to ``daily-brief.json``), top stories by ``peak_score``
+  (or ``importance_score`` for the weekly pool, which carries no peak)
+  only (default 20; override via ``--max-items`` or
+  ``WEIXIN_DEEP_MAX_ITEMS``). Empty sections are skipped.
 - Guides: longer, written in a relayed-news style (facts and numbers only,
-  no fabrication, no fixed "据 X 报道" opening). Stored in an INDEPENDENT cache
-  (``weixin-deep/reason-cache.json``, ``DEEP_CACHE_VERSION``): the shared
-  1.0/2.0 cache keys only on story_id+title, so reusing it would hit the
-  stale short guides forever and the new style would never take effect.
+  no fabrication, no fixed "据 X 报道" opening). Stored in
+  ``weixin-deep/reason-cache.json`` (``DEEP_CACHE_VERSION``).
 - Images: each item gets ONE real illustration pulled from its original
   article page at publish time (direct fetch, self-hostable reader fallback).
   Extraction is scoped to the article body (<article> element, or the page
@@ -27,22 +25,23 @@ and ``generate_weixin_article_grouped.py`` (2.0, grouped boxes). It keeps the
   served by Pages) with a 「图源：domain」credit line for internal
   redistribution. Rendered AFTER the guide, centered at
   ``DEEP_IMAGE_WIDTH_PERCENT`` of the column width.
-- Title/digest: fixed templates ("X月X日-X月X日｜本周精读N条"), no LLM, as
-  in 1.0/2.0. The publish helper block (title/digest/read-more URL) is NOT
+- Title/digest: fixed templates ("X月X日-X月X日｜本周精读N条"), no LLM.
+  The publish helper block (title/digest/read-more URL) is NOT
   rendered into the page body (it kept getting pasted into the editor by
   accident); it is written to ``publish-info.txt`` next to the article.
-  Per-story titles get the shared ``ensure_zh_titles`` backfill (1.0 logic):
+  Per-story titles get the ``ensure_zh_titles`` backfill:
   pure-English titles left over by a broken upstream translation chain are
-  translated with Qwen before guides and rendering, cached in this variant's
-  own cache (``tt1|`` entries); failures keep the English title as-is.
+  translated with Qwen before guides and rendering, cached in this
+  variant's own cache (``tt1|`` entries); failures keep the English title
+  as-is.
 - Cover: the top story's own downloaded illustration, center-cropped to
   2.35:1; when the top story has no image, the next item in selection
   order (score-descending) that has one. Only when NO item carries an
-  image does it fall back to same-day reuse from the main variant (2.0
-  logic) / the identical 1.0 ``resolve_cover`` pipeline.
+  image does it fall back to ``resolve_cover`` (Qwen image generation
+  with the static brand cover as the last resort).
 
-Design constraints mirror 1.0/2.0: standalone JSON-file interface, exit 0 on
-every graceful path, keyless runs degrade (upstream reasons, static cover,
+Design constraints: standalone JSON-file interface, exit 0 on every
+graceful path, keyless runs degrade (upstream reasons, static cover,
 no images only when the network refuses them — image fetching itself needs
 no API key, so the session is created unconditionally).
 
@@ -53,9 +52,9 @@ Output (default ``weixin-deep/``):
                         strips external images and they are re-inserted
                         manually for the internal service account)
 - ``meta.json``         layout="deep", sections census, per-story images map
-- ``cover.jpg|.png``    2.35:1 cover (top item's illustration first; reused
-                        or regenerated only when no item has an image)
-- ``reason-cache.json`` deep-guide cache (21-day TTL, independent)
+- ``cover.jpg|.png``    2.35:1 cover (top item's illustration first;
+                        generated or static only when no item has an image)
+- ``reason-cache.json`` deep-guide cache (21-day TTL)
 - ``publish-info.txt``  title/digest/read-more URL for manual publishing
 - ``images/``           one downloaded article image per story that has one
 """
@@ -63,6 +62,8 @@ Output (default ``weixin-deep/``):
 from __future__ import annotations
 
 import argparse
+import hashlib
+import html as html_mod
 import io
 import json
 import os
@@ -76,104 +77,1505 @@ from urllib.parse import urljoin, urlparse
 
 import requests
 
+# Shared WeChat push infrastructure, merged from the retired flat
+# (1.0) and grouped (2.0) layout scripts so this file stands alone:
+# weekly story-pool selection, cache plumbing, English-title
+# translation, cover generation and meta/config building.
+
+
+# The pipeline module (update_news.py), reused at push time: the first-party
+# source whitelist that refreshes story categories (see
+# first_party_category_override), and the weekly selection pipeline (see
+# build_weekly_brief) which rebuilds the story pool from data/archive.json.
+# Guarded so a minimal environment (requests only) still runs — it then falls
+# back to daily-brief.json and trusts the persisted categories as before.
 try:  # imported as part of the repo package (tests)
-    from scripts.generate_weixin_article import (
-        CATEGORY_LABEL_ZH,
-        DIGEST_MAX_CHARS,
-        FULL_TEXT_MAX_CHARS,
-        FULL_TEXT_MIN_CHARS,
-        REFUSAL_MARKERS,
-        TZ_CN,
-        WEEKDAY_CN,
-        _weekly_lookback_days,
-        build_config,
-        build_meta,
-        cache_key,
-        call_text_api,
-        circled_number,
-        create_session,
-        crop_cover,
-        drop_cache_entries,
-        ensure_zh_titles,
-        esc,
-        existing_reason,
-        has_cjk,
-        item_display_source,
-        item_original_url,
-        load_brief,
-        load_push_brief,
-        match_regenerate,
-        parse_regenerate_specs,
-        report_regenerate,
-        resolve_cover,
-        save_cache,
-        select_items,
-        split_origin_sources,
-        strip_english_tail,
-        strip_html_text,
-        summary_grounding,
-        title_hash,
-        utcnow_iso,
+    from scripts import update_news as _un
+except ImportError:
+    try:  # run directly as a script next to update_news.py
+        import update_news as _un
+    except ImportError:  # update_news deps (bs4, dateutil, ...) not installed
+        _un = None
+
+
+_source_tier_for_record = getattr(_un, "source_tier_for_record", None) if _un is not None else None
+
+
+DEFAULT_API_BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+
+
+DEFAULT_TEXT_MODEL = "qwen3.8-max"
+
+
+# Sync-capable Qwen-Image model; qwen-image-max / qwen-image-plus also work
+# (override via WEIXIN_IMAGE_MODEL).
+DEFAULT_IMAGE_MODEL = "qwen-image-2.0-pro"
+
+
+DEFAULT_BRAND_NAME = "AI 雷达"
+
+
+DEFAULT_RADAR_URL = "https://hutaojiazi010304.github.io/ai-news-radar/"
+
+
+DEFAULT_MAX_ITEMS = 20
+
+
+# Weekly push cadence: the issue is selected from the pipeline's 21-day
+# archive (data/archive.json) instead of the daily brief's 24h window.
+# Overridable via WEIXIN_LOOKBACK_DAYS (clamped to 1..20 days).
+WEEKLY_LOOKBACK_DAYS_DEFAULT = 7
+
+
+WEEKLY_LOOKBACK_DAYS_MIN = 1
+
+
+WEEKLY_LOOKBACK_DAYS_MAX = 20  # the archive keeps 21 days; leave headroom
+
+
+# Weekly freshness curve: a story keeps full recency for the first 6 days
+# (flat segment) and only then decays with a gentle 48h half-life, so an
+# important event published earlier in the week is not down-ranked by age
+# at push time. The daily pipeline keeps the default 72h half-life with no
+# flat segment (update_news.py headline_freshness_score).
+WEEKLY_FRESHNESS_FLAT_HOURS = 144.0
+
+
+WEEKLY_FRESHNESS_HALF_LIFE_HOURS = 48.0
+
+
+# Merge/dedup windows wider than the daily pipeline (6h): follow-up
+# reporting across days belongs to the same story, and same-site rewrites
+# syndicated days apart must still collapse.
+WEEKLY_TITLE_WINDOW_HOURS = 72
+
+
+WEEKLY_NEAR_DUP_WINDOW_HOURS = 168.0
+
+
+# Default per-issue cap on official-tier stories (override via
+# WEIXIN_OFFICIAL_CAP; set 0 for no cap). Official changelogs easily fill an
+# entire 7-day pool (a typical week: 40+ of the ~60 gated stories are
+# official, and their fixed editorial/tier floor keeps every one of them
+# above the best industry story), crowding industry/multi-source/watch items
+# out of the issue entirely. The cap applies at the very END of selection:
+# the uncapped mechanism runs over the full pool exactly as before, the
+# issue's first 16 officials in display order stay untouched, and the freed
+# slots go to the next non-official stories. (Trimming the pool beforehand
+# removed the fresh-channel tail that feeds the source penalty and changed
+# which officials survive — the opposite of the intended effect.)
+WEEKLY_OFFICIAL_CAP_DEFAULT = 16
+
+
+TZ_CN = timezone(timedelta(hours=8))
+
+
+WEEKDAY_CN = ("周一", "周二", "周三", "周四", "周五", "周六", "周日")
+
+
+# Chinese labels for the story category keys produced by update_news.py's
+# story_category(); unknown keys pass through unchanged.
+CATEGORY_LABEL_ZH = {
+    "official": "官方更新",
+    "multi_source": "多源热议",
+    "industry": "行业动态",
+    "watch": "值得关注",
+}
+
+
+CACHE_VERSION = 6  # v5 cached guides before the absolute no-annotation rule; regen
+
+
+# Item numbers as circled digits. The filled ❶–❿ glyphs render thin on web
+# views, so use the single outlined ①–⑳ set (same style as ⑪) for all 20
+# items — consistent weight, always legible.
+CIRCLED_NUMS = tuple("①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳")
+
+
+CACHE_MAX_AGE_DAYS = 21
+
+
+REASON_RETRY_BACKOFF_SECONDS = 2.0
+
+
+# Keyless degradation only: an upstream reason must be this long to be
+# preferred over a cached long-format reason; with an API key Qwen writes
+# every guide itself (see fill_reasons).
+REASON_MIN_REUSE_CHARS = 120
+
+
+FULL_TEXT_MAX_CHARS = 3500
+
+
+FULL_TEXT_MIN_CHARS = 120
+
+
+# A persisted summary (the RSS description captured by the pipeline) is the
+# preferred grounding for guide writing: it is an offline, deterministic
+# asset, while fetching the live page depends on the local network and is
+# frequently bot-blocked (403 / timeouts). Summaries below this length — or
+# reduced to nothing once boilerplate is stripped — degrade to a full-text
+# fetch instead. The bound is low because CJK summaries are dense.
+SUMMARY_MIN_GROUNDING_CHARS = 20
+
+
+# WordPress feeds append "The post <title> appeared first on <blog>." —
+# pure boilerplate that must never ground a guide.
+SUMMARY_BOILERPLATE_RE = re.compile(
+    r"\s*\bthe post\b.*?appeared first on.*$", re.IGNORECASE | re.DOTALL
+)
+
+
+COVER_W, COVER_H = 1664, 708  # 2.35:1
+
+
+# qwen-image-2.0 series recommended 16:9 size (total pixels must stay within
+# the 512*512..2048*2048 range); crop_cover then trims it to the 2.35:1 banner.
+IMAGE_REQUEST_SIZE = "2688*1536"
+
+
+# Qwen-Image models are not served under the OpenAI-compatible routes
+# (POST .../compatible-mode/v1/images/generations 404s); the native sync
+# multimodal-generation API is required instead.
+IMAGE_API_PATH = "/api/v1/services/aigc/multimodal-generation/generation"
+
+
+# WeChat title length budget; the fixed template title must stay within it.
+TITLE_MAX_CHARS = 30
+
+
+DIGEST_MAX_CHARS = 120
+
+
+USER_AGENT = (
+    "Mozilla/5.0 (compatible; ai-news-radar-weixin/1.0; +https://github.com)"
+)
+
+
+# Headlines containing any of these words are treated as negative news; the
+# cover falls back to the neutral brand template prompt instead of drawing
+# imagery from such a headline.
+NEGATIVE_WORDS = (
+    "事故", "裁员", "泄露", "去世", "逝世", "诉讼", "起诉", "处罚",
+    "罚款", "宕机", "漏洞", "攻击", "黑客", "诈骗", "破产", "倒闭",
+    "亏损", "暴跌", "崩盘", "封禁", "下架", "召回", "丑闻", "危机",
+)
+
+
+IMAGE_NEGATIVE_PROMPT = "文字, 字母, 数字, 水印, 低质量, 模糊, 变形"
+
+
+TAG_RE = re.compile(r"<[^>]+>")
+
+
+BLOCK_TAG_RE = re.compile(r"(?is)<(script|style|noscript|svg|head)[^>]*>.*?</\1>")
+
+
+CJK_RE = re.compile(r"[一-鿿]")
+
+
+WHITESPACE_RE = re.compile(r"\s+")
+
+
+BILINGUAL_TITLE_RE = re.compile(r"\s+/\s+")
+
+
+BRAND_COVER_PROMPT = (
+    "编辑插画风格横幅封面图，主题：AI 科技日报。"
+    "深色背景上的雷达屏幕扫描出光点与数据流，扁平插画，科技感，干净留白。"
+    "不要出现任何文字、字母、数字或水印。"
+)
+
+
+# The text model rewrites the headline into a concrete drawing prompt:
+# keep the scene tied to the actual AI subject (repos, models, data flows),
+# allow brand marks when the headline names them, and avoid stock metaphors
+# (ships, mountains) that read as unrelated scenery.
+COVER_SCENE_SYSTEM_PROMPT = (
+    "你是插画设计师，把一条 AI 新闻标题翻译成一句话的封面画面描述，"
+    "供文生图模型绘制扁平插画横幅封面。"
+    "画面直接描绘新闻报道的具体内容：产品、技术动作、数据流向，"
+    "并紧贴 AI 主题（代码、模型、服务器、机器人、芯片等科技元素）。"
+    "可以直接出现标题中提到的公司或产品商标元素（如 GitHub 的猫形标志）；"
+    "少用航海、登山、过河之类的隐喻画面，不描绘具体真实人物。"
+    "画面中不要出现任何文字、字母、数字。"
+    "输出一句 30 到 60 字的中文，只输出描述本身。"
+)
+
+
+COVER_SCENE_MIN_CHARS = 10
+
+
+COVER_SCENE_MAX_CHARS = 80
+
+
+class Config(dict):
+    """Plain dict of runtime settings; alias for readability."""
+
+
+def utcnow_iso() -> str:
+    return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+
+def has_cjk(text: str) -> bool:
+    return bool(CJK_RE.search(str(text or "")))
+
+
+def strip_english_tail(title: str) -> str:
+    """Keep only the leading Chinese part of a bilingual "中文标题 / English
+    Title" headline.
+
+    Upstream sources (AI HOT and friends) join the Chinese title with the
+    English original using " / "; the WeChat article shows the Chinese part
+    only. Titles are left untouched unless the split yields at least two
+    segments and the first one carries CJK text, so pure-English titles and
+    other uses of " / " survive as-is.
+    """
+    text = str(title or "").strip()
+    parts = [part.strip() for part in BILINGUAL_TITLE_RE.split(text) if part.strip()]
+    if len(parts) < 2 or not has_cjk(parts[0]):
+        return text
+    return parts[0]
+
+
+def esc(value) -> str:
+    return html_mod.escape(str(value or ""), quote=True)
+
+
+def strip_html_text(html_text: str) -> str:
+    text = BLOCK_TAG_RE.sub(" ", str(html_text or ""))
+    text = TAG_RE.sub(" ", text)
+    text = html_mod.unescape(text)
+    return WHITESPACE_RE.sub(" ", text).strip()
+
+
+def title_hash(title: str) -> str:
+    return hashlib.sha1(str(title).encode("utf-8")).hexdigest()[:8]
+
+
+def cache_key(story_id: str, title: str) -> str:
+    return f"{story_id}|{title_hash(title)}"
+
+
+# ---------------------------------------------------------------------------
+# Input loading / selection
+# ---------------------------------------------------------------------------
+
+def load_brief(path: Path) -> dict | None:
+    try:
+        brief = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, ValueError):
+        return None
+    if not isinstance(brief, dict) or not isinstance(brief.get("items"), list):
+        return None
+    return brief
+
+
+# ---------------------------------------------------------------------------
+# Weekly story pool (rebuilt from the pipeline archive)
+# ---------------------------------------------------------------------------
+
+def _weekly_lookback_days() -> int:
+    raw = os.environ.get("WEIXIN_LOOKBACK_DAYS", "").strip()
+    if not raw:
+        return WEEKLY_LOOKBACK_DAYS_DEFAULT
+    try:
+        value = int(raw)
+    except ValueError:
+        return WEEKLY_LOOKBACK_DAYS_DEFAULT
+    return max(WEEKLY_LOOKBACK_DAYS_MIN, min(WEEKLY_LOOKBACK_DAYS_MAX, value))
+
+
+def _weekly_official_cap() -> int:
+    """WEIXIN_OFFICIAL_CAP: max official-tier stories per issue.
+
+    Defaults to ``WEEKLY_OFFICIAL_CAP_DEFAULT`` (16); set ``0`` to disable
+    the cap entirely. The cap is applied at the very END of selection (see
+    ``_select_with_official_cap``): the uncapped mechanism runs unchanged,
+    the issue's first N officials in display order stay untouched, and the
+    freed slots go to the next non-official stories. The candidate pool is
+    never trimmed."""
+    raw = os.environ.get("WEIXIN_OFFICIAL_CAP", "").strip()
+    if not raw:
+        return WEEKLY_OFFICIAL_CAP_DEFAULT
+    try:
+        return max(0, int(raw))
+    except ValueError:
+        return WEEKLY_OFFICIAL_CAP_DEFAULT
+
+
+def _select_with_official_cap(gated: list[dict], max_items: int, cap: int) -> list[dict]:
+    """Uncapped selection mechanism, official cap applied only at the end.
+
+    Runs the same greedy diversity selection over the FULL pool that the
+    uncapped version uses, then — if the resulting issue carries more than
+    ``cap`` official stories — keeps the first ``cap`` officials in the
+    issue's display (score-descending) order and backfills the freed slots
+    with the non-official stories the same mechanism picks next. Nothing is
+    trimmed from the pool beforehand: the greedy sees exactly the candidates
+    of the uncapped run, so the surviving officials are literally the
+    uncapped issue's first officials, untouched.
+    """
+    full_order = _un.select_diverse_stories(gated, len(gated))
+    article = full_order[:max_items]
+    officials = [s for s in article if str(s.get("category") or "") == "official"]
+    if len(officials) <= cap:
+        return article
+    kept_ids = {
+        id(s)
+        for s in sorted(
+            officials,
+            key=lambda s: (-_un.story_gate_score(s), str(s.get("title") or "")),
+        )[:cap]
+    }
+    kept = [s for s in article if id(s) in kept_ids]
+    nonofficials = [
+        s
+        for s in article
+        if id(s) not in kept_ids and str(s.get("category") or "") != "official"
+    ]
+    backfill: list[dict] = []
+    for story in full_order[max_items:]:
+        if len(nonofficials) + len(backfill) >= max_items - len(kept):
+            break
+        if str(story.get("category") or "") == "official":
+            continue
+        backfill.append(story)
+    return kept + nonofficials + backfill
+
+
+def _apply_pipeline_enhance_cache(items: list[dict], cache: dict[str, str]) -> None:
+    """Restore title_enhanced_zh / recommend_reason_zh from the pipeline's
+    persisted cache entries (``te1|`` / ``re1|`` key namespaces).
+
+    update_news.py's add_title_enhancements()/add_recommend_reasons() return
+    before even reading the cache when DEEPSEEK_API_KEY is absent — and the
+    local weekly push only carries the Qwen key — so the entries are looked
+    up directly with the pipeline's key formula:
+    ``prefix + sha1(normalize_url(url) + "|" + title)`` where title is the
+    bilingual pass's ``title_en or title_original or title``. Empty values
+    are negative-cache entries and are skipped. Must run after
+    add_bilingual_fields so the key titles exist.
+    """
+    for item in items:
+        url = _un.normalize_url(str(item.get("url") or ""))
+        title = str(
+            item.get("title_en") or item.get("title_original") or item.get("title") or ""
+        ).strip()
+        key_body = hashlib.sha1(f"{url}|{title}".encode("utf-8")).hexdigest()
+        enhanced = cache.get(_un.TITLE_ENHANCE_CACHE_PREFIX + key_body) or ""
+        if enhanced:
+            item["title_enhanced_zh"] = enhanced
+        reason = cache.get(_un.RECOMMEND_REASON_CACHE_PREFIX + key_body) or ""
+        if reason:
+            item["recommend_reason_zh"] = reason
+
+
+def build_weekly_brief(
+    data_dir: Path, now: datetime, max_items: int, pool_size: int | None = None
+) -> dict | None:
+    """Rebuild the story pool for the weekly push from the pipeline archive.
+
+    daily-brief.json only covers the pipeline's 24h window, so the weekly
+    issue rebuilds stories from ``data/archive.json`` (the 21-day item
+    store): filter to the lookback window, replay the pipeline
+    normalisation / AI filter / dedup / story merge with week-wide windows,
+    then rescore every story with the weekly freshness curve (flat for the
+    first 6 days, gentle half-life after) so an important event published
+    earlier in the week is not out-ranked by fresher mid-tier items.
+
+    Strictly read-only: nothing under ``data_dir`` is ever written; in
+    particular the in-memory title-cache mutations from the bilingual and
+    enhance passes are never persisted. Returns a brief-shaped payload
+    (``generated_at`` / ``window_hours`` / ``total_items`` / ``items``), or
+    None when the weekly pool cannot be built (pipeline module unavailable,
+    archive missing/corrupt/empty, or no story passes the quality gate) —
+    the caller then falls back to daily-brief.json.
+
+    ``pool_size`` over-selects the guide-writing pool: the selection
+    mechanism returns up to ``pool_size`` candidates (at least ``max_items``)
+    so items whose guide ends up empty can be dropped and backfilled before
+    the issue narrows back to ``max_items`` (see ``fill_reasons``). None
+    keeps the former exact-``max_items`` selection. The official cap still
+    bounds the pool, so the final issue (a subset of it) stays ≤ cap too.
+    """
+    if _un is None:
+        return None
+    try:
+        payload = json.loads((data_dir / "archive.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, ValueError):
+        return None
+    records = payload.get("items") if isinstance(payload, dict) else None
+    if not isinstance(records, list) or not records:
+        return None
+
+    lookback_days = _weekly_lookback_days()
+    window_hours = lookback_days * 24
+    cutoff = now - timedelta(days=lookback_days)
+
+    pool: list[dict] = []
+    for record in records:
+        if not isinstance(record, dict):
+            continue
+        ts = _un.event_time(record)
+        if not ts or ts < cutoff:
+            continue
+        item = dict(record)
+        item["title"] = _un.maybe_fix_mojibake(str(item.get("title") or ""))
+        item["source"] = _un.maybe_fix_mojibake(
+            _un.normalize_source_for_display(
+                str(item.get("site_id") or ""),
+                str(item.get("source") or ""),
+                str(item.get("url") or ""),
+            )
+        )
+        if (
+            str(item.get("site_id") or "") == "aihubtoday"
+            and _un.is_hubtoday_placeholder_title(str(item.get("title") or ""))
+        ):
+            continue
+        item = _un.add_ai_relevance_fields(item)
+        if not item.get("ai_is_related", False):
+            continue
+        item = _un.add_source_tier_fields(item)
+        pool.append(item)
+
+    if not pool:
+        return None
+    pool = _un.normalize_aihubtoday_records(pool)
+    # Cache-only bilingual pass: zero translation budgets make this a pure
+    # offline cache lookup. The returned cache dict may gain entries in
+    # memory; it is never written back — data/ stays read-only for the
+    # weekly push.
+    title_cache = _un.load_title_zh_cache(data_dir / "title-zh-cache.json")
+    pool, _unused_all, title_cache = _un.add_bilingual_fields(
+        pool, [], title_cache, 0
     )
-    from scripts.generate_weixin_article_grouped import (
-        CATEGORY_STYLES,
-        DEFAULT_STYLE,
-        group_items,
-        reuse_cover,
+    _apply_pipeline_enhance_cache(pool, title_cache)
+
+    # Rescoring below needs the FULL original items: the truncated
+    # primary_item copied into story records lacks site_id/published_at/
+    # ai_score and would collapse the score. Index before dedupe drops any.
+    by_id = {str(item.get("id") or ""): item for item in pool if item.get("id")}
+
+    deduped = _un.dedupe_items_by_title_url(pool, random_pick=False)
+    deduped = _un.suppress_near_duplicate_items(
+        deduped, window_hours=WEEKLY_NEAR_DUP_WINDOW_HOURS
     )
-except ImportError:  # run directly as a script
-    from generate_weixin_article import (
-        CATEGORY_LABEL_ZH,
-        DIGEST_MAX_CHARS,
-        FULL_TEXT_MAX_CHARS,
-        FULL_TEXT_MIN_CHARS,
-        REFUSAL_MARKERS,
-        TZ_CN,
-        WEEKDAY_CN,
-        _weekly_lookback_days,
-        build_config,
-        build_meta,
-        cache_key,
-        call_text_api,
-        circled_number,
-        create_session,
-        crop_cover,
-        drop_cache_entries,
-        ensure_zh_titles,
-        esc,
-        existing_reason,
-        has_cjk,
-        item_display_source,
-        item_original_url,
-        load_brief,
-        load_push_brief,
-        match_regenerate,
-        parse_regenerate_specs,
-        report_regenerate,
-        resolve_cover,
-        save_cache,
-        select_items,
-        split_origin_sources,
-        strip_english_tail,
-        strip_html_text,
-        summary_grounding,
-        title_hash,
-        utcnow_iso,
-    )
-    from generate_weixin_article_grouped import (
-        CATEGORY_STYLES,
-        DEFAULT_STYLE,
-        group_items,
-        reuse_cover,
+    stories, _events = _un.merge_story_items(
+        deduped,
+        now,
+        window_hours=window_hours,
+        title_window_hours=WEEKLY_TITLE_WINDOW_HOURS,
     )
 
+    for story in stories:
+        primary_item = story.get("primary_item") or {}
+        full = by_id.get(str(primary_item.get("id") or ""))
+        if not isinstance(full, dict):
+            continue
+        try:
+            source_count = int(story.get("source_count") or 1)
+        except (TypeError, ValueError):
+            source_count = 1
+        importance = _un.calculate_item_importance(
+            full,
+            now,
+            window_hours,
+            duplicate_count=source_count,
+            half_life_hours=WEEKLY_FRESHNESS_HALF_LIFE_HOURS,
+            flat_hours=WEEKLY_FRESHNESS_FLAT_HOURS,
+        )
+        score = importance["score"]
+        story["score"] = score
+        story["importance"] = score
+        story["importance_score"] = score
+        story["importance_breakdown"] = importance["breakdown"]
+        category = _un.story_category(score, full, source_count)
+        story["category"] = category
+        story["importance_label"] = _un.importance_label(category)
+        story["reasons"] = _un.story_reasons(full, score, source_count)
+
+    gated = [story for story in stories if _un.story_passes_brief_gate(story)]
+    if not gated:
+        return None
+    cap = _weekly_official_cap()
+    limit = max_items if pool_size is None else max(pool_size, max_items)
+    if cap > 0:
+        items = _select_with_official_cap(gated, limit, cap)
+    else:
+        items = _un.select_diverse_stories(gated, limit)
+    if not items:
+        return None
+    return {
+        "generated_at": now.astimezone(timezone.utc).isoformat(),
+        "window_hours": window_hours,
+        "total_items": len(items),
+        "items": items,
+    }
+
+
+def load_push_brief(
+    data_dir: Path, max_items: int, pool_size: int | None = None
+) -> dict | None:
+    """Unified input for the push scripts: the weekly story pool rebuilt
+    from the pipeline archive, falling back to the 24h daily brief.
+
+    Fallback (logged) when the pipeline module is unavailable,
+    ``WEIXIN_FORCE_DAILY=1`` is set, archive.json is missing/corrupt/empty,
+    or no story passes the quality gate. Fixtures that ship only a
+    daily-brief.json therefore keep working unchanged.
+
+    ``pool_size`` is forwarded to ``build_weekly_brief`` (over-selected
+    guide-writing pool); the daily-brief fallback ignores it — the daily
+    snapshot carries at most 20 items, so backfill is best-effort there.
+    """
+    data_dir = Path(data_dir)
+    if str(os.environ.get("WEIXIN_FORCE_DAILY") or "").strip() == "1":
+        print("weixin: WEIXIN_FORCE_DAILY=1, using daily-brief.json")
+        return load_brief(data_dir / "daily-brief.json")
+    brief = build_weekly_brief(
+        data_dir, datetime.now(timezone.utc), max_items, pool_size
+    )
+    if brief is not None:
+        print(
+            "weixin: weekly brief from archive: "
+            f"{brief.get('total_items')} items over {brief.get('window_hours')}h"
+        )
+        return brief
+    print("weixin: weekly brief unavailable, falling back to daily-brief.json")
+    return load_brief(data_dir / "daily-brief.json")
+
+
+def first_party_category_override(item: dict) -> str | None:
+    """Return ``"official"`` when the story's primary source is a first-party
+    channel per the live aihot whitelist, otherwise ``None``.
+
+    The category persisted in daily-brief.json was computed by the cloud
+    pipeline when the story was created. Stories created before a whitelist
+    change (or while the cloud still runs an older commit) keep their stale
+    label — e.g. an official company blog stuck on 行业动态. Re-deriving the
+    category from the *current* whitelist at push time keeps the article
+    in sync without waiting for the story to be re-created. Only
+    promotes to "official"; never alters any other category.
+    """
+    if _source_tier_for_record is None:
+        return None
+    primary = item.get("primary_item")
+    primary = primary if isinstance(primary, dict) else {}
+    primary_source = str(item.get("source") or primary.get("source") or "").strip()
+    if not primary_source:
+        return None
+    site_id = str(primary.get("site_id") or "").strip()
+    if not site_id:
+        # Story-level primary_item may lack site_id; find the sources[] ref
+        # matching the primary source string to recover it.
+        for ref in item.get("sources") or []:
+            if not isinstance(ref, dict):
+                continue
+            if str(ref.get("source") or "").strip() != primary_source:
+                continue
+            ref_site = str(ref.get("site_id") or "").strip()
+            if ref_site:
+                site_id = ref_site
+                break
+    if not site_id:
+        return None
+    if _source_tier_for_record(site_id, primary_source) is not None:
+        return "official"
+    return None
+
+
+def select_items(brief: dict, max_items: int) -> list[dict]:
+    """Items sorted by peak_score DESC (the brief is not pre-sorted).
+
+    ``peak_score`` is the best importance the story reached during the
+    24h window (persisted by update_news.py). Ranking the daily push by it
+    keeps an important story published early in the window from sinking
+    below fresher mid-tier items just because its recency component has
+    decayed by push time. Falls back to importance_score for briefs
+    produced before peak tracking existed."""
+    items = [item for item in brief.get("items", []) if isinstance(item, dict)]
+    items.sort(
+        key=lambda it: -(
+            float(it.get("peak_score"))
+            if it.get("peak_score") is not None
+            else float(it.get("importance_score") or 0)
+        )
+    )
+    selected = items[:max_items]
+    # Refresh categories against the current first-party whitelist so stories
+    # persisted before a whitelist change are not mislabelled. Shared entry
+    # point of selection — one fix covers the whole article.
+    for item in selected:
+        override = first_party_category_override(item)
+        if override:
+            item["category"] = override
+    return selected
+
+
+def existing_reason(item: dict) -> str | None:
+    """Reuse an upstream-generated recommend reason when present."""
+    primary = item.get("primary_item")
+    if isinstance(primary, dict):
+        reason = str(primary.get("recommend_reason_zh") or "").strip()
+        if reason:
+            return reason
+    for src in item.get("sources") or []:
+        if not isinstance(src, dict):
+            continue
+        reason = str(src.get("recommend_reason_zh") or "").strip()
+        if reason:
+            return reason
+    return None
+
+
+# Umbrella ``source_name``s label an aggregate adapter, not a publisher:
+# "Official AI Updates" bundles every first-party channel (OpenAI News,
+# GitHub Changelog, Google AI Blog, Hugging Face Blog, …) and "AI HOT"
+# bundles the trending-channel aggregate. Displaying the bucket repeats a
+# generic label; the specific channel (``source``) is the meaningful name,
+# so display resolves buckets to their channel (real publishers pass
+# through unchanged).
+UMBRELLA_SOURCE_NAMES = {"Official AI Updates", "AI HOT"}
+
+
+def item_channel_source(item: dict) -> str:
+    """The specific feed/channel an item came from (``source``)."""
+    channel = str(item.get("source") or "").strip()
+    if channel:
+        return channel
+    primary = item.get("primary_item")
+    if isinstance(primary, dict):
+        channel = str(primary.get("source") or "").strip()
+        if channel:
+            return channel
+    for src in item.get("sources") or []:
+        if isinstance(src, dict):
+            channel = str(src.get("source") or "").strip()
+            if channel:
+                return channel
+    return ""
+
+
+def origin_url_key(entry: dict, fallback_index: int) -> str:
+    """Canonical URL key that decides origin identity for a pipeline entry.
+
+    Mirrors ``update_news.distinct_story_source_count``: entries linking the
+    same canonical URL are copies of one origin; entries without a URL each
+    get their own key since they cannot be proven copies of anything. Falls
+    back to plain string comparison when the pipeline module is unavailable.
+    """
+    url = str(entry.get("url") or "")
+    if _un is not None:
+        canonical = _un.canonical_story_url(url)
+    else:
+        canonical = url.strip().lower().rstrip("/")
+    return canonical or f"__no_url__{entry.get('id') or fallback_index}"
+
+
+def split_origin_sources(item: dict) -> tuple[list[str], int, list[str]]:
+    """Origin vs repost display names for any story.
+
+    Generalizes the former single-origin split to every story: one pipeline
+    entry per distinct canonical URL is a credited origin (``M`` in the meta
+    line's 「M 个来源 · N 个转载」), every extra entry that repeats an
+    already-credited URL is a repost (转载), so ``N`` is the pipeline entry
+    count minus the origin count. Entries are tier-sorted upstream, so a
+    URL's first representative is its highest-priority channel; the
+    pipeline-chosen primary entry (id match, else the first entry for
+    id-less data) opens the origin list under the item-level display name,
+    exactly as the old single-origin branch did. Returns ``(origin names,
+    origin count, repost names)``; names are deduped — a channel fetched
+    twice never shows up as its own repost — and the origin count tracks
+    URLs, not names, so it always equals the pipeline's ``source_count``.
+    """
+    sources = [s for s in (item.get("sources") or []) if isinstance(s, dict)]
+    if not sources:
+        return [], 0, []
+    primary = item.get("primary_item")
+    primary_id = str(primary.get("id") or "") if isinstance(primary, dict) else ""
+    primary_index: int | None = 0
+    if primary_id:
+        primary_index = None
+        for index, entry in enumerate(sources):
+            if str(entry.get("id") or "") == primary_id:
+                primary_index = index
+                break
+    order = list(range(len(sources)))
+    if primary_index:
+        order.insert(0, order.pop(primary_index))
+    origin_names: list[str] = []
+    repost_names: list[str] = []
+    claimed: set[str] = set()
+    origin_count = 0
+    for index in order:
+        entry = sources[index]
+        key = origin_url_key(entry, index)
+        name = (
+            item_display_source(item)
+            if index == primary_index
+            else item_display_source(entry)
+        )
+        if key in claimed:
+            if name and name not in origin_names and name not in repost_names:
+                repost_names.append(name)
+            continue
+        claimed.add(key)
+        origin_count += 1
+        if name and name not in origin_names:
+            origin_names.append(name)
+    return origin_names, origin_count, repost_names
+
+
+def trim_source_annotation(name: str) -> str:
+    """Drop the trailing fetch-method / provenance annotation from a channel
+    name: "Hacker News 热门（buzzing.cc 中文翻译）" → "Hacker News 热门",
+    "Qwen：Blog Retrieval（API）" → "Qwen：Blog Retrieval". Every item shows
+    its 原文 link right under the meta line, so the real publisher is one tap
+    away and the annotation is noise for readers. Display-only: the data
+    keeps the full name (tier overrides match on it)."""
+    trimmed = re.sub(r"[（(][^（）()]*[）)]\s*$", "", name).strip()
+    return trimmed or name
+
+
+def item_display_source(item: dict) -> str:
+    """Source name for display: umbrella buckets resolve to their channel."""
+    source_name = str(item.get("source_name") or "").strip()
+    if not source_name:
+        for src in item.get("sources") or []:
+            if isinstance(src, dict):
+                source_name = str(src.get("source_name") or "").strip()
+                if source_name:
+                    break
+    if source_name in UMBRELLA_SOURCE_NAMES:
+        channel = item_channel_source(item)
+        if channel:
+            return trim_source_annotation(channel)
+    return trim_source_annotation(source_name)
+
+
+# ---------------------------------------------------------------------------
+# Cache (mirrors scripts/persona_score.py)
+# ---------------------------------------------------------------------------
+
+def load_cache(path: Path) -> dict:
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, ValueError):
+        return {"version": CACHE_VERSION, "entries": {}}
+    if not isinstance(data, dict) or data.get("version") != CACHE_VERSION:
+        return {"version": CACHE_VERSION, "entries": {}}
+    entries = data.get("entries")
+    if not isinstance(entries, dict):
+        entries = {}
+    return {"version": CACHE_VERSION, "entries": entries}
+
+
+def prune_cache(cache: dict, now: datetime) -> None:
+    cutoff = now - timedelta(days=CACHE_MAX_AGE_DAYS)
+    kept = {}
+    for key, entry in cache.get("entries", {}).items():
+        if not isinstance(entry, dict):
+            continue
+        created_at = entry.get("created_at")
+        try:
+            when = datetime.fromisoformat(str(created_at).replace("Z", "+00:00"))
+        except (TypeError, ValueError):
+            continue
+        if when.tzinfo is None:
+            when = when.replace(tzinfo=timezone.utc)
+        if when >= cutoff:
+            kept[key] = entry
+    cache["entries"] = kept
+
+
+def save_cache(path: Path, cache: dict, now: datetime) -> None:
+    prune_cache(cache, now)
+    path.write_text(
+        json.dumps(cache, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+
+
+# ---------------------------------------------------------------------------
+# Network helpers
+# ---------------------------------------------------------------------------
+
+def create_session() -> requests.Session:
+    session = requests.Session()
+    session.headers.update({"User-Agent": USER_AGENT})
+    return session
+
+
+def summary_grounding(summary: str, title: str) -> str | None:
+    """Return ``summary`` as grounding text, or None if it is not usable.
+
+    Rejects empty text, title duplicates, and anything too short to ground a
+    guide; strips WordPress boilerplate ("The post … appeared first on …")
+    so only editorial content is kept.
+    """
+    s = re.sub(r"\s+", " ", str(summary or "")).strip()
+    if not s or s == str(title or "").strip():
+        return None
+    s = SUMMARY_BOILERPLATE_RE.sub("", s).strip()
+    if len(s) < SUMMARY_MIN_GROUNDING_CHARS or s == str(title or "").strip():
+        return None
+    return s
+
+
+def call_text_api(
+    messages: list[dict], cfg: Config, *, temperature: float = 0.3, timeout: float = 120.0
+) -> str | None:
+    """One Qwen chat completion with a single retry (2s backoff).
+
+    ``enable_thinking`` is switched off: Qwen3 thinking mode stalls
+    non-streaming requests on DashScope (read timeouts) and adds minutes
+    of latency even when it does answer — neither helps with writing
+    short guides. If an endpoint rejects the parameter (HTTP 400), the
+    retry drops it and tries again.
+    """
+    url = f"{cfg['base_url'].rstrip('/')}/chat/completions"
+    headers = {
+        "Authorization": f"Bearer {cfg['api_key']}",
+        "Content-Type": "application/json",
+    }
+    payload = {
+        "model": cfg["text_model"],
+        "temperature": temperature,
+        "messages": messages,
+        "enable_thinking": False,
+    }
+    last_error = None
+    for attempt in range(2):
+        if attempt:
+            time.sleep(REASON_RETRY_BACKOFF_SECONDS)
+        try:
+            response = requests.post(url, json=payload, headers=headers, timeout=timeout)
+            if response.status_code == 400 and "enable_thinking" in payload:
+                # Model/endpoint does not know the parameter: retry without it.
+                payload = {k: v for k, v in payload.items() if k != "enable_thinking"}
+                last_error = f"HTTP 400: {response.text[:200]}"
+                continue
+            if response.status_code != 200:
+                # Include the server's message: it distinguishes an invalid
+                # key (401) from a model/permission/region denial (403).
+                last_error = f"HTTP {response.status_code}: {response.text[:200]}"
+                continue
+            body = response.json()
+            choices = body.get("choices") if isinstance(body, dict) else None
+            if not isinstance(choices, list) or not choices:
+                last_error = "empty choices"
+                continue
+            content = str(((choices[0] or {}).get("message") or {}).get("content") or "")
+            content = content.strip().strip("\"'“”「」").strip()
+            if content:
+                return content
+            last_error = "empty content"
+        except (requests.RequestException, ValueError, KeyError, IndexError, TypeError) as exc:
+            last_error = str(exc)
+    print(f"weixin: text api failed: {last_error}", file=sys.stderr)
+    return None
+
+
+# Phrases a model uses when it refuses to summarize (e.g. the fetched "full
+# text" was only site navigation). A refusal must never render as a guide.
+REFUSAL_MARKERS = (
+    "无法据此", "无法提取", "无法生成导读", "有效导读", "导航菜单",
+    "栏目索引", "正文内容仅", "未提供正文",
+)
+
+
+# ---------------------------------------------------------------------------
+# English-title backfill translation
+# ---------------------------------------------------------------------------
+
+# Upstream (update_news.py add_bilingual_fields) translates English headlines
+# into bilingual "中文 / English" titles, but when that chain is down stories
+# reach the brief with pure-English titles. The article is Chinese-first, so
+# translate the residue here with the same Qwen text model that writes the
+# guides. Mirrors the upstream translation prompt: Chinese output, entities
+# (products/companies/models/people) kept verbatim in English.
+TITLE_TRANSLATE_SYSTEM_PROMPT = (
+    "你是科技新闻编辑，把英文 AI/科技新闻标题翻译成地道的简体中文，"
+    "用作微信公众号推文里的条目标题。"
+    "产品名、公司名、模型名、媒体名、人名一律保留英文原文，不翻译也不音译。"
+    "用自然的中文新闻标题表达，避免翻译腔，信息量贴近原标题。"
+    "只返回译文本身，不加引号，不加任何解释。"
+)
+TITLE_TRANSLATE_CACHE_PREFIX = "tt1|"
+TITLE_TRANSLATE_MIN_CJK = 4
+TITLE_TRANSLATE_MAX_CHARS = 90
+
+
+def title_needs_translation(title: str) -> bool:
+    """True when no Chinese survives ``strip_english_tail`` and the rest
+    still reads as English prose.
+
+    Bare version tags ("v2.1.245") and other non-prose strings are skipped:
+    translating them produces garbage, so they pass through untranslated.
+    The letter-count rule mirrors update_news.py's ``is_mostly_english``.
+    """
+    text = strip_english_tail(str(title or "").strip())
+    if not text or has_cjk(text):
+        return False
+    letters = re.findall(r"[A-Za-z]", text)
+    return len(letters) >= max(6, len(text) // 4)
+
+
+def validate_title_translation(original: str, translated: str) -> bool:
+    """Sanity bounds on a title translation candidate (fresh or cached)."""
+    text = str(translated or "").strip()
+    if not text or not has_cjk(text):
+        return False
+    if text == str(original or "").strip():
+        return False
+    if len(CJK_RE.findall(text)) < TITLE_TRANSLATE_MIN_CJK:
+        return False
+    if len(text) > TITLE_TRANSLATE_MAX_CHARS:
+        return False
+    if "http" in text:
+        return False
+    return True
+
+
+def translate_title_to_zh(title: str, cfg: Config) -> str | None:
+    """One Qwen call translating a pure-English headline; None on failure."""
+    content = call_text_api(
+        [
+            {"role": "system", "content": TITLE_TRANSLATE_SYSTEM_PROMPT},
+            {"role": "user", "content": str(title or "").strip()},
+        ],
+        cfg,
+        temperature=0.2,
+        timeout=60.0,
+    )
+    if content and validate_title_translation(title, content):
+        return content.strip()
+    return None
+
+
+def ensure_zh_titles(items: list[dict], cache: dict, cfg: Config, stats: dict) -> None:
+    """Translate pure-English story titles in place.
+
+    Runs after select_items and before guide generation in every article
+    variant, so guides, the cover headline and the rendered titles all see
+    the Chinese form. Translations are cached per original title — they are
+    layout-agnostic and live in this variant's own reason cache. Failures
+    degrade to the original English title; without an API
+    key this is a no-op (the article still renders, English titles intact).
+
+    Note: rewriting ``item["title"]`` changes the guide cache key of the
+    affected stories once (story_id|title_hash), so their guides regenerate
+    on the first run after the switch — a one-time cost.
+    """
+    for item in items:
+        title = str(item.get("title") or "").strip()
+        if not title_needs_translation(title):
+            continue
+        if not cfg.get("api_key"):
+            # Keyless: nothing can translate; count so the summary line
+            # still reports how many titles stay English.
+            stats["titles_skipped"] = stats.get("titles_skipped", 0) + 1
+            continue
+        key = TITLE_TRANSLATE_CACHE_PREFIX + title_hash(title)
+        entry = cache.get("entries", {}).get(key)
+        cached = str(entry.get("zh_title") or "").strip() if isinstance(entry, dict) else ""
+        if cached and validate_title_translation(title, cached):
+            item["title_pre_translate"] = title  # keeps --regenerate fragments working
+            item["title"] = cached
+            stats["titles_cached"] = stats.get("titles_cached", 0) + 1
+            continue
+        translated = translate_title_to_zh(title, cfg)
+        if translated:
+            item["title_pre_translate"] = title  # keeps --regenerate fragments working
+            item["title"] = translated
+            cache["entries"][key] = {
+                "zh_title": translated,
+                "created_at": utcnow_iso(),
+            }
+            stats["titles_translated"] = stats.get("titles_translated", 0) + 1
+            print(f"weixin: 标题翻译：{title[:48]} → {translated}")
+        else:
+            stats["titles_skipped"] = stats.get("titles_skipped", 0) + 1
+            print(f"weixin: 标题翻译失败，保留英文原标题：{title[:48]}", file=sys.stderr)
+
+
+# ---------------------------------------------------------------------------
+# --regenerate: re-roll cached guides by display number / fragment / story id
+# ---------------------------------------------------------------------------
+
+def parse_regenerate_specs(value: str) -> list[str]:
+    """Comma-separated ``--regenerate`` value into individual specs."""
+    return [s.strip() for s in str(value or "").split(",") if s.strip()]
+
+
+def _regenerate_position(spec: str) -> int | None:
+    """Spec as a 1-based display position (``3`` or ``③``); None otherwise.
+
+    NB: ``isdigit()`` is True for ``③`` too but ``int()`` rejects it, so
+    plain digits are identified via ``isdecimal()``.
+    """
+    if spec.isdecimal():
+        return int(spec)
+    if len(spec) == 1 and spec in CIRCLED_NUMS:
+        return CIRCLED_NUMS.index(spec) + 1
+    return None
+
+
+def match_regenerate(items: list[dict], specs: list[str]) -> tuple[set, list]:
+    """Resolve ``--regenerate`` specs to story ids.
+
+    A spec may be: a display position as shown in the article (``3`` or
+    ``③`` — the selection order, which is also the display order),
+    an exact story_id, or a title fragment. Fragments match
+    case-insensitively against the current display title AND the pre-
+    translation English title, so whatever a maintainer reads — in the
+    article or in the brief — works. ``all`` selects every picked item.
+    Returns ``(matched story_ids, unmatched specs)``.
+    """
+    wanted: set = set()
+    unmatched: list = []
+    for spec in specs:
+        if spec.lower() == "all":
+            wanted.update(str(it.get("story_id") or "") for it in items)
+            continue
+        position = _regenerate_position(spec)
+        if position is not None:
+            if 1 <= position <= len(items):
+                wanted.add(str(items[position - 1].get("story_id") or ""))
+            else:
+                unmatched.append(spec)
+            continue
+        lowered = spec.lower()
+        hits = []
+        for it in items:
+            story_id = str(it.get("story_id") or "")
+            if spec == story_id:
+                hits.append(story_id)
+                continue
+            haystacks = (
+                str(it.get("title") or ""),
+                str(it.get("title_pre_translate") or ""),
+                str(it.get("title_original") or ""),
+            )
+            if any(lowered in text.lower() for text in haystacks if text):
+                hits.append(story_id)
+        if hits:
+            wanted.update(hits)
+        else:
+            unmatched.append(spec)
+    wanted.discard("")
+    return wanted, unmatched
+
+
+def drop_cache_entries(cache: dict, story_ids: set) -> int:
+    """Drop cached guides for the given story ids; returns count dropped.
+
+    Used by ``--regenerate``: guide generation is stochastic sampling, so
+    quality varies run to run under an identical prompt. Re-rolling the
+    specific entries a maintainer is unhappy with is the practical quality
+    lever — no need to lower standards or regenerate the whole issue.
+    Keys are matched on the ``story_id|`` prefix only, so ``tt1|`` title
+    translations are never dropped.
+    """
+    entries = cache.get("entries") or {}
+    doomed = [k for k in entries if k.split("|", 1)[0] in story_ids]
+    for key in doomed:
+        del entries[key]
+    return len(doomed)
+
+
+def report_regenerate(
+    prefix: str, items: list[dict], wanted: set, unmatched: list, dropped: int
+) -> None:
+    """Print what --regenerate matched (or the item menu when nothing did).
+
+    A mistyped spec must not fail silently: when nothing matched, the full
+    numbered item list is printed so the maintainer can retry with a number.
+    """
+    for spec in unmatched:
+        print(f"{prefix}: --regenerate 未命中：{spec}", file=sys.stderr)
+    matched = [
+        (num, it)
+        for num, it in enumerate(items, 1)
+        if str(it.get("story_id") or "") in wanted
+    ]
+    if matched:
+        print(f"{prefix}: --regenerate 已清除 {dropped} 条缓存导读，将重新生成：")
+        for num, it in matched:
+            print(f"  {circled_number(num)} {str(it.get('title') or '')[:60]}")
+    elif unmatched:
+        print(f"{prefix}: 本期条目如下，可用序号或标题片段重试：", file=sys.stderr)
+        for num, it in enumerate(items, 1):
+            print(
+                f"  {circled_number(num)} {str(it.get('title') or '')[:60]}",
+                file=sys.stderr,
+            )
+
+
+# ---------------------------------------------------------------------------
+# Cover image
+# ---------------------------------------------------------------------------
+
+def is_negative_headline(headline: str) -> bool:
+    return any(word in str(headline or "") for word in NEGATIVE_WORDS)
+
+
+def build_cover_prompt(headline: str, scene: str | None = None) -> tuple[str, str]:
+    """Returns (prompt, mode). Negative headlines use the brand template.
+
+    ``scene`` is the text model's brand-free visual description; it replaces
+    the raw headline as the theme so the image model never sees brand names.
+    """
+    headline = str(headline or "").strip()
+    if not headline or is_negative_headline(headline):
+        return BRAND_COVER_PROMPT, "brand"
+    prompt = (
+        f"编辑插画风格横幅封面图，主题：{(scene or headline)[:60]}。"
+        "扁平插画，科技感，明亮配色，干净留白，适合公众号头图。"
+        "不要出现任何文字、字母、数字或水印。"
+    )
+    return prompt, "headline"
+
+
+def validate_cover_scene(content: str) -> bool:
+    content = str(content or "").strip()
+    if not content or not has_cjk(content):
+        return False
+    if len(content) < COVER_SCENE_MIN_CHARS or len(content) > COVER_SCENE_MAX_CHARS:
+        return False
+    if "http" in content:
+        return False
+    return True
+
+
+def generate_cover_scene(headline: str, cfg: Config) -> str | None:
+    """One text-model pass rewriting the headline as a drawable, brand-free
+    scene; raw headlines make the image model draw literal logos."""
+    headline = str(headline or "").strip()
+    if not headline:
+        return None
+    content = call_text_api(
+        [
+            {"role": "system", "content": COVER_SCENE_SYSTEM_PROMPT},
+            {"role": "user", "content": f"标题：{headline}"},
+        ],
+        cfg,
+    )
+    if content and validate_cover_scene(content):
+        return content
+    return None
+
+
+def image_api_url(base_url: str) -> str:
+    """Native DashScope sync image endpoint derived from the text base URL.
+
+    Strips a trailing ``/compatible-mode/v1`` so custom workspace domains
+    (``{WorkspaceId}.cn-beijing.maas.aliyuncs.com``) keep working.
+    """
+    root = base_url.strip().rstrip("/")
+    for suffix in ("/compatible-mode/v1", "/compatible-mode"):
+        if root.endswith(suffix):
+            root = root[: -len(suffix)]
+            break
+    return root.rstrip("/") + IMAGE_API_PATH
+
+
+def extract_image_url(body) -> str | None:
+    """Generated image URL from a native multimodal-generation response:
+    ``output.choices[0].message.content[].image`` (valid for 24h)."""
+    if not isinstance(body, dict):
+        return None
+    output = body.get("output")
+    if not isinstance(output, dict):
+        return None
+    choices = output.get("choices")
+    if not isinstance(choices, list) or not choices or not isinstance(choices[0], dict):
+        return None
+    message = choices[0].get("message")
+    content = message.get("content") if isinstance(message, dict) else None
+    if isinstance(content, list):
+        for part in content:
+            if isinstance(part, dict):
+                image = str(part.get("image") or "")
+                if image.startswith("http"):
+                    return image
+    return None
+
+
+def call_qwen_image(prompt: str, cfg: Config, session: requests.Session) -> bytes | None:
+    """POST the native sync image API; defensive payload shrink on 400;
+    downloads the result bytes immediately (result URLs expire in 24h)."""
+    url = image_api_url(cfg["base_url"])
+    headers = {
+        "Authorization": f"Bearer {cfg['api_key']}",
+        "Content-Type": "application/json",
+    }
+    base_payload = {
+        "model": cfg["image_model"],
+        "input": {
+            "messages": [{"role": "user", "content": [{"text": prompt}]}],
+        },
+    }
+    full_params = {
+        "negative_prompt": IMAGE_NEGATIVE_PROMPT,
+        # Keep prompt rewriting off: cover prompts carry a hard "no text"
+        # constraint we don't want the model to rephrase away.
+        "prompt_extend": False,
+        "watermark": False,
+        "size": IMAGE_REQUEST_SIZE,
+    }
+    payloads = [
+        {**base_payload, "parameters": dict(full_params)},
+        {
+            **base_payload,
+            "parameters": {k: v for k, v in full_params.items() if k != "size"},
+        },
+        dict(base_payload),
+    ]
+    for index, payload in enumerate(payloads):
+        try:
+            response = session.post(
+                url, json=payload, headers=headers, timeout=cfg["image_timeout"]
+            )
+            if response.status_code == 400 and index < len(payloads) - 1:
+                print(
+                    f"weixin: image api rejected payload ({response.status_code}): "
+                    f"{response.text[:200]} — retrying with smaller payload",
+                    file=sys.stderr,
+                )
+                continue
+            if response.status_code != 200:
+                print(
+                    f"weixin: image api HTTP {response.status_code}: {response.text[:200]}",
+                    file=sys.stderr,
+                )
+                continue
+            image_url = extract_image_url(response.json())
+            if not image_url:
+                continue
+            download = session.get(image_url, timeout=cfg["download_timeout"])
+            if download.status_code == 200 and download.content:
+                return download.content
+        except (requests.RequestException, ValueError, TypeError, KeyError) as exc:
+            print(f"weixin: image api error: {exc}", file=sys.stderr)
+            continue
+    return None
+
+
+def crop_cover(image_bytes: bytes) -> bytes | None:
+    """Center-crop to 2.35:1 (1664x708) and re-encode as JPEG."""
+    try:
+        from PIL import Image
+    except ImportError:
+        print("weixin: Pillow not installed, skipping cover crop", file=sys.stderr)
+        return None
+    try:
+        img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
+        target_ratio = COVER_W / COVER_H
+        width, height = img.size
+        if width / height > target_ratio:
+            new_w = int(height * target_ratio)
+            left = (width - new_w) // 2
+            img = img.crop((left, 0, left + new_w, height))
+        else:
+            new_h = int(width / target_ratio)
+            top = (height - new_h) // 2
+            img = img.crop((0, top, width, top + new_h))
+        img = img.resize((COVER_W, COVER_H))
+        buf = io.BytesIO()
+        img.save(buf, format="JPEG", quality=88)
+        return buf.getvalue()
+    except Exception as exc:  # noqa: BLE001 - never fail the run on cover issues
+        print(f"weixin: cover crop failed: {exc}", file=sys.stderr)
+        return None
+
+
+def static_cover_bytes(assets_dir: Path) -> bytes | None:
+    path = assets_dir / "weixin-cover-fallback.png"
+    try:
+        data = path.read_bytes()
+    except OSError:
+        return None
+    return data or None
+
+
+def resolve_cover(
+    headline: str, cfg: Config, session: requests.Session | None, assets_dir: Path
+) -> tuple[bytes | None, str, str, bool]:
+    """Returns (bytes, filename, mode, scene_used). Mode: headline | brand | static."""
+    static = static_cover_bytes(assets_dir)
+    if not cfg["api_key"] or session is None:
+        return static, "cover.png", "static", False
+    prompt, mode = build_cover_prompt(headline)
+    scene_used = False
+    if mode == "headline":
+        scene = generate_cover_scene(headline, cfg)
+        if scene:
+            prompt, _ = build_cover_prompt(headline, scene)
+            scene_used = True
+    image_bytes = call_qwen_image(prompt, cfg, session)
+    if image_bytes is None and mode == "headline":
+        # Level B: brand template prompt retry.
+        image_bytes = call_qwen_image(BRAND_COVER_PROMPT, cfg, session)
+        mode = "brand"
+    if image_bytes is not None:
+        cropped = crop_cover(image_bytes)
+        if cropped is not None:
+            return cropped, "cover.jpg", mode, scene_used
+    return static, "cover.png", "static", False
+
+
+# ---------------------------------------------------------------------------
+# HTML rendering (inline styles only; no <a>/<img>/<table>/flex/float/position)
+# ---------------------------------------------------------------------------
+
+def item_original_url(item: dict) -> str:
+    """Best original-article URL for an item: primary > url > first source."""
+    url = str(item.get("primary_url") or item.get("url") or "").strip()
+    if url.startswith(("http://", "https://")):
+        return url
+    for src in item.get("sources") or []:
+        if not isinstance(src, dict):
+            continue
+        candidate = str(src.get("url") or "").strip()
+        if candidate.startswith(("http://", "https://")):
+            return candidate
+    return ""
+
+
+def circled_number(num: int) -> str:
+    """Circled item number in the unified outlined ①–⑳ style."""
+    if 1 <= num <= len(CIRCLED_NUMS):
+        return CIRCLED_NUMS[num - 1]
+    return str(num)
+
+
+def build_meta(
+    *,
+    issue_date: str,
+    brand: str,
+    title: str,
+    digest: str,
+    cover_filename: str | None,
+    radar_url: str,
+    item_count: int,
+    cfg: Config,
+) -> dict:
+    return {
+        "generated_at": utcnow_iso(),
+        "issue_date": issue_date,
+        "brand": brand,
+        "title": title,
+        "digest": digest,
+        "cover": cover_filename,
+        "read_more_url": radar_url,
+        "item_count": item_count,
+        "delivery": "manual_copy",
+        "text_model": cfg["text_model"],
+        "image_model": cfg["image_model"],
+    }
+
+
+def build_config(args: argparse.Namespace) -> Config:
+    max_items = args.max_items
+    if max_items is None:
+        try:
+            max_items = int(os.environ.get("WEIXIN_MAX_ITEMS") or DEFAULT_MAX_ITEMS)
+        except ValueError:
+            max_items = DEFAULT_MAX_ITEMS
+    return Config(
+        api_key=os.environ.get("DASHSCOPE_API_KEY", "").strip(),
+        base_url=(
+            os.environ.get("DASHSCOPE_API_BASE_URL", "").strip() or DEFAULT_API_BASE_URL
+        ),
+        text_model=os.environ.get("WEIXIN_TEXT_MODEL", "").strip() or DEFAULT_TEXT_MODEL,
+        image_model=(
+            os.environ.get("WEIXIN_IMAGE_MODEL", "").strip() or DEFAULT_IMAGE_MODEL
+        ),
+        brand=os.environ.get("WEIXIN_BRAND_NAME", "").strip() or DEFAULT_BRAND_NAME,
+        radar_url=os.environ.get("WEIXIN_RADAR_URL", "").strip() or DEFAULT_RADAR_URL,
+        max_items=max(1, max_items),
+        image_timeout=120.0,
+        download_timeout=60.0,
+    )
+
+
+# Section grouping + colour styles (from the retired grouped layout;
+# still the deep layout's section/box rendering basis).
+
+
+# Display order for the sections: official first, then high-score industry
+# news, multi-source discussions and the watchlist. Empty sections are
+# skipped entirely; unknown categories (should not happen) go last.
+CATEGORY_ORDER = ("official", "industry", "multi_source", "watch")
+
+
+# Per-section title colors (deep, brand-like tones). The large enclosing box
+# is drawn in the SAME hue at higher transparency (rgba) so each section reads
+# as one color family. Inline styles only — the WeChat editor strips classes
+# and <style> blocks.
+CATEGORY_COLORS = {
+    "official": "#13501B",
+    "industry": "#215F9A",
+    "multi_source": "#C04F15",
+    "watch": "#595959",
+}
+
+
+# Box transparency: border is the hue at moderate alpha, background a faint
+# wash of the same hue.
+BOX_BORDER_ALPHA = 0.45
+
+
+BOX_BACKGROUND_ALPHA = 0.08
+
+
+def with_alpha(hex_color: str, alpha: float) -> str:
+    """Return ``rgba(r, g, b, alpha)`` for a ``#rrggbb`` color."""
+    h = hex_color.lstrip("#")
+    r, g, b = int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+    return f"rgba({r}, {g}, {b}, {alpha})"
+
+
+def _build_styles() -> dict[str, dict[str, str]]:
+    styles = {}
+    for category, color in CATEGORY_COLORS.items():
+        styles[category] = {
+            "color": color,
+            "border": with_alpha(color, BOX_BORDER_ALPHA),
+            "background": with_alpha(color, BOX_BACKGROUND_ALPHA),
+        }
+    return styles
+
+
+CATEGORY_STYLES = _build_styles()
+
+
+DEFAULT_STYLE = CATEGORY_STYLES["watch"]
+
+
+def group_items(items: list[dict]) -> list[tuple[str, list[dict]]]:
+    """Group the picked items by story category, preserving in-group order.
+
+    ``select_items`` already ranks by peak_score DESC; grouping keeps that
+    order inside each section so nothing about the selection changes.
+    """
+    grouped: dict[str, list[dict]] = {}
+    for item in items:
+        category = str(item.get("category") or "watch").strip() or "watch"
+        grouped.setdefault(category, []).append(item)
+    ordered = [(cat, grouped[cat]) for cat in CATEGORY_ORDER if cat in grouped]
+    ordered.extend(
+        (cat, grouped[cat]) for cat in grouped if cat not in CATEGORY_ORDER
+    )
+    return ordered
+
+
 DEFAULT_OUTPUT_DIR = "weixin-deep"
-DEFAULT_MAIN_OUTPUT_DIR = "weixin"
 DEFAULT_DEEP_MAX_ITEMS = 20
 # Backup candidates carried into deep-guide writing beyond max_items
-# (override via WEIXIN_DEEP_POOL_EXTRA). Deliberately NOT the 1.0/2.0
-# WEIXIN_POOL_EXTRA knob, same separation doctrine as the max-items one:
-# a 1.0/2.0 change must never affect this variant.
+# (override via WEIXIN_DEEP_POOL_EXTRA).
 DEFAULT_DEEP_POOL_EXTRA = 10
 # Reader fallback base URL (same "/<target-url>" API shape as r.jina.ai);
 # point at a self-hosted jina-ai/reader instance for fully local deployments.
@@ -191,12 +1593,11 @@ JINA_READER_BASE_URL = os.environ.get("JINA_READER_BASE_URL", "https://r.jina.ai
 # permission revoked — v5 entries read noticeably longer/padded. v5:
 # generation reverted to the pre-highlight prompt and marking moved to a
 # separate second call — the combined prompt degraded guide quality, so v4
-# entries had to go too.)
-# 1.0 bumping its own CACHE_VERSION never invalidates this cache and vice
-# versa (load_deep_cache rejects mismatched versions, forcing regeneration).
+# entries had to go too.) Mismatched versions are rejected by
+# load_deep_cache, forcing regeneration.
 DEEP_CACHE_VERSION = 8
 
-# Deep guides are longer than 1.0's 40-260 window. The prompt targets
+# The prompt targets
 # 150-350 chars and the ceiling is enforced too: full-text grounding is
 # often rich enough that the model overshoots into padded, multi-topic
 # recaps without a hard bound (the brief "可适当写长" experiment drifted
@@ -214,7 +1615,7 @@ DEEP_REASON_MAX_MARKS = 4
 DEEP_REASON_MARK_MAX_COVERAGE = 0.8
 # A persisted summary must be this long before it alone can ground a
 # 150-350-char report; anything thinner falls back to a full-text fetch
-# (deliberate inversion of 1.0's 20-char summary-first policy — the item
+# (the item
 # count is small and bounded, so per-item fetching is affordable). A thin
 # summary is NOT thrown away, though: it is kept as the last-resort
 # grounding when the fetch yields nothing usable (real facts still beat
@@ -369,12 +1770,7 @@ DEEP_MARK_SYSTEM_PROMPT = (
 # ---------------------------------------------------------------------------
 
 def resolve_deep_max_items(args: argparse.Namespace) -> int:
-    """--max-items > WEIXIN_DEEP_MAX_ITEMS > 20.
-
-    ``WEIXIN_MAX_ITEMS`` is deliberately ignored even though both defaults
-    are 20 now: the knobs must stay separate so a 1.0/2.0 change never
-    affects this variant.
-    """
+    """--max-items > WEIXIN_DEEP_MAX_ITEMS > 20."""
     if args.max_items is not None:
         return max(1, args.max_items)
     try:
@@ -387,8 +1783,7 @@ def resolve_deep_max_items(args: argparse.Namespace) -> int:
 def deep_pool_extra() -> int:
     """WEIXIN_DEEP_POOL_EXTRA: backup candidates for deep-guide writing.
 
-    Same mechanism as 1.0/2.0's ``weekly_pool_extra`` but with its own knob:
-    an item whose deep guide ends up empty is dropped and the next backup
+    An item whose deep guide ends up empty is dropped and the next backup
     moves up (see ``fill_deep_reasons``), keeping the issue at its full size
     whenever the pool allows. Garbage/negative values clamp to 0.
     """
@@ -402,7 +1797,7 @@ def deep_pool_extra() -> int:
 
 
 def load_deep_cache(path: Path) -> dict:
-    """Same shape as 1.0's load_cache but versioned independently."""
+    """Same shape as ``load_cache`` but versioned independently."""
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError, ValueError):
@@ -480,7 +1875,7 @@ def deep_reason_context(
 ) -> str | None:
     """Grounding for deep guides: long summary first, full-text fetch second.
 
-    Unlike 1.0 (any summary ≥20 chars is enough for a short guide), a deep
+    A deep
     150-350-char report needs real substance: summaries under 120 chars
     degrade to a live fetch of the article, whose text is usually richer.
 
@@ -726,8 +2121,7 @@ def _fill_one_deep_reason(
     label for the progress line (the former fill-loop body).
 
     Keyed: deep-cache hit > fresh deep generation > upstream reason > "".
-    Keyless: upstream reason (any length) > deep cache > "". The cache is
-    the deep variant's own file — never the shared 1.0/2.0 one.
+    Keyless: upstream reason (any length) > deep cache > "".
     """
     title = str(item.get("title") or "")
     existing = existing_reason(item)
@@ -783,7 +2177,7 @@ def fill_deep_reasons(
 ) -> list[dict]:
     """Fill deep guides candidate by candidate; return the kept issue items.
 
-    Same drop-and-backfill driver as 1.0's ``fill_reasons``: a candidate
+    Drop-and-backfill driver: a candidate
     whose final ``weixin_deep_reason`` ends up empty is dropped
     (``stats["dropped"]``, progress suffix 淘汰) and the next candidate
     moves up; stops early once ``max_items`` items are kept, so candidates
@@ -1486,13 +2880,12 @@ def resolve_deep_cover(
     items: list[dict], output_dir: Path
 ) -> tuple[bytes, str, str] | None:
     """(bytes, "cover.jpg", rel image path) for the deep cover; None if no
-    item carries an illustration (caller falls back to the 1.0 chain).
+    item carries an illustration (caller falls back to ``resolve_cover``).
 
     The deep cover IS a real article image: the top story's illustration
     first, else the next item in selection order (score-descending) that
     has one, center-cropped to the shared 2.35:1 cover format. Readers see
-    the day's headline art, not a generated scene or another variant's
-    cover.
+    the day's headline art, not a generated scene or the static fallback.
     """
     for item in items:
         rel = str(item.get("deep_image") or "").strip()
@@ -1588,7 +2981,7 @@ def render_deep_item_html(item: dict, idx: int, accent_color: str) -> str:
                 '<p style="margin:6px 0 0;font-size:13px;line-height:1.6;'
                 f'color:#999999;">{esc(line_title)}</p>'
             )
-    # Meta line: same rules as 1.0 — origins (one per distinct canonical
+    # Meta line: origins (one per distinct canonical
     # URL) are credited as 来源, pipeline entries repeating an
     # already-credited URL as 转载 ("官方更新 · OpenAI News, NewsNow ·
     # 2 个来源 · Buzzing · 1 个转载"); a single origin collapses to
@@ -1625,8 +3018,8 @@ def render_deep_item_html(item: dict, idx: int, accent_color: str) -> str:
 
 
 def render_deep_group_section(category: str, items: list[dict]) -> str:
-    """2.0's section frame (centered color title + enclosing box) with the
-    deep item renderer; 2.0 itself stays byte-identical."""
+    """Section frame (centered color title + enclosing box) around the
+    deep item renderer."""
     label = CATEGORY_LABEL_ZH.get(category, category)
     style = CATEGORY_STYLES.get(category, DEFAULT_STYLE)
     parts = [
@@ -1642,7 +3035,7 @@ def render_deep_group_section(category: str, items: list[dict]) -> str:
             'padding:2px 14px 14px;">'
         ),
     ]
-    # Per-section numbering restarts at ① (2.0 convention).
+    # Per-section numbering restarts at ①.
     for idx, item in enumerate(items):
         parts.append(render_deep_item_html(item, idx, style["color"]))
     parts.append("</section>")
@@ -1734,14 +3127,6 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         default=DEFAULT_OUTPUT_DIR,
         help=f"output directory (default {DEFAULT_OUTPUT_DIR})",
     )
-    parser.add_argument(
-        "--main-output-dir",
-        default=DEFAULT_MAIN_OUTPUT_DIR,
-        help=(
-            "main variant output dir used for same-day cover reuse "
-            f"(default {DEFAULT_MAIN_OUTPUT_DIR})"
-        ),
-    )
     parser.add_argument("--assets-dir", default="assets", help="assets directory")
     parser.add_argument(
         "--max-items",
@@ -1782,7 +3167,6 @@ def main(argv: list[str] | None = None) -> int:
     cfg["max_items"] = resolve_deep_max_items(args)
     data_dir = Path(args.data_dir)
     output_dir = Path(args.output_dir)
-    main_output_dir = Path(args.main_output_dir)
     assets_dir = Path(args.assets_dir)
 
     # Over-selected pool: max_items + backup candidates, so items whose deep
@@ -1808,13 +3192,11 @@ def main(argv: list[str] | None = None) -> int:
     range_label = issue_range_label(brief, now_cn)
 
     # Images and grounding fetches do not need the Qwen key, so the session
-    # exists unconditionally (1.0 gates it on the key only because all its
-    # network use is key-bound).
+    # exists unconditionally.
     session = create_session()
     # Run-wide network state (currently the reader circuit breaker).
     net_state: dict = {}
-    # Deliberately NOT the shared weixin/reason-cache.json: deep guides are a
-    # different style and would otherwise hit stale short guides forever.
+    # Deep-guide cache lives next to the article output (21-day TTL).
     cache_path = output_dir / "reason-cache.json"
     cache = load_deep_cache(cache_path)
     stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0, "dropped": 0}
@@ -1854,13 +3236,9 @@ def main(argv: list[str] | None = None) -> int:
         cover_mode, cover_scene = "item", False
         print(f"weixin-deep: 封面：采用条目插图 {cover_rel}", flush=True)
     else:
-        cover_bytes, cover_filename = reuse_cover(main_output_dir, issue_date)
-        if cover_bytes is not None:
-            cover_mode, cover_scene = "reused", False
-        else:
-            cover_bytes, cover_filename, cover_mode, cover_scene = resolve_cover(
-                headline, cfg, session, assets_dir
-            )
+        cover_bytes, cover_filename, cover_mode, cover_scene = resolve_cover(
+            headline, cfg, session, assets_dir
+        )
 
     groups = group_items(items)
     html_text = render_deep_article_html(
