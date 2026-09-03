@@ -1,8 +1,93 @@
 {
-  "generated_at": "2026-09-03T01:15:31.127367Z",
+  "generated_at": "2026-09-03T06:01:21.550394Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
+    {
+      "story_id": "story_0a991ead0e43",
+      "title": "Codex CLI 0.153.0",
+      "url": "https://developers.openai.com/codex/changelog",
+      "primary_url": "https://developers.openai.com/codex/changelog",
+      "source": "OpenAI Codex Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "bb85c2474327fd3868ec4d226718a0570ac11485",
+          "title": "Codex CLI 0.153.0",
+          "title_zh": null,
+          "title_en": "Codex CLI 0.153.0",
+          "title_original": "Codex CLI 0.153.0",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-03T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI Codex Changelog"
+      ],
+      "items": [
+        {
+          "id": "bb85c2474327fd3868ec4d226718a0570ac11485",
+          "title": "Codex CLI 0.153.0",
+          "title_zh": null,
+          "title_en": "Codex CLI 0.153.0",
+          "title_original": "Codex CLI 0.153.0",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-03T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8559,
+      "importance": 0.8559,
+      "importance_score": 0.8559,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.98,
+        "recency": 0.9437,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-03T00:00:00Z",
+      "latest_at": "2026-09-03T00:00:00Z",
+      "primary_item": {
+        "id": "bb85c2474327fd3868ec4d226718a0570ac11485",
+        "title": "Codex CLI 0.153.0",
+        "title_zh": null,
+        "title_en": "Codex CLI 0.153.0",
+        "title_original": "Codex CLI 0.153.0",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "OpenAI Codex Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8559,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-03T06:02:08.639090Z"
+      }
+    },
     {
       "story_id": "story_e664187f9e97",
       "title": "Real-Time Intelligence with IBM Time Series Models on Confluent",
@@ -48,16 +133,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8412,
-      "importance": 0.8412,
-      "importance_score": 0.8412,
+      "score": 0.834,
+      "importance": 0.834,
+      "importance_score": 0.834,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8957,
-        "story_heat": 0.0
+        "recency": 0.8556,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
@@ -84,7 +170,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -132,16 +218,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8371,
-      "importance": 0.8371,
-      "importance_score": 0.8371,
+      "score": 0.8297,
+      "importance": 0.8297,
+      "importance_score": 0.8297,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9174,
-        "story_heat": 0.0
+        "recency": 0.8763,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
@@ -168,7 +255,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -216,16 +303,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8281,
-      "importance": 0.8281,
-      "importance_score": 0.8281,
+      "score": 0.8208,
+      "importance": 0.8208,
+      "importance_score": 0.8208,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9118,
-        "story_heat": 0.0
+        "recency": 0.8709,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
@@ -252,7 +340,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -300,16 +388,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8368,
-      "importance": 0.8368,
-      "importance_score": 0.8368,
+      "score": 0.829,
+      "importance": 0.829,
+      "importance_score": 0.829,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9598,
-        "story_heat": 0.0
+        "recency": 0.9168,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
@@ -336,7 +425,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -384,16 +473,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8384,
-      "importance": 0.8384,
-      "importance_score": 0.8384,
+      "score": 0.8313,
+      "importance": 0.8313,
+      "importance_score": 0.8313,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8802,
-        "story_heat": 0.0
+        "recency": 0.8407,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
@@ -420,90 +510,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
-      }
-    },
-    {
-      "story_id": "story_2a70e38b6ec4",
-      "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "primary_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "source": "Anthropic：Newsroom（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "ce63be131b37945285411d9f6a59acbd508fd131",
-          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
-          "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-          "title_original": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-          "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型但安全防护级别不同，Mythos 5.1 仅通过可信访问计划提供给网络安全和生命科学领域的受审机构。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-          "source": "Anthropic：Newsroom（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-02T03:33:48.237000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Anthropic：Newsroom（网页）"
-      ],
-      "items": [
-        {
-          "id": "ce63be131b37945285411d9f6a59acbd508fd131",
-          "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-          "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
-          "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-          "title_original": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-          "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型但安全防护级别不同，Mythos 5.1 仅通过可信访问计划提供给网络安全和生命科学领域的受审机构。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-          "source": "Anthropic：Newsroom（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-02T03:33:48.237000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8271,
-      "importance": 0.8271,
-      "importance_score": 0.8271,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.87,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8115,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-02T03:33:48.237000Z",
-      "latest_at": "2026-09-02T03:33:48.237000Z",
-      "primary_item": {
-        "id": "ce63be131b37945285411d9f6a59acbd508fd131",
-        "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1 / Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-        "title_zh": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1",
-        "title_en": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-        "title_original": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
-        "summary": "Anthropic 发布 Claude Fable 5.1 和 Claude Mythos 5.1，两者为同一模型但安全防护级别不同，Mythos 5.1 仅通过可信访问计划提供给网络安全和生命科学领域的受审机构。",
-        "recommend_reason_zh": null,
-        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-        "source": "Anthropic：Newsroom（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8348,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -551,16 +558,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8026,
-      "importance": 0.8026,
-      "importance_score": 0.8026,
+      "score": 0.795,
+      "importance": 0.795,
+      "importance_score": 0.795,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9425,
-        "story_heat": 0.0
+        "recency": 0.9002,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
@@ -586,7 +594,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -634,16 +642,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8319,
-      "importance": 0.8319,
-      "importance_score": 0.8319,
+      "score": 0.8243,
+      "importance": 0.8243,
+      "importance_score": 0.8243,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9325,
-        "story_heat": 0.0
+        "recency": 0.8907,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
@@ -670,7 +679,149 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
+      }
+    },
+    {
+      "story_id": "story_dafb420a9a43",
+      "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+      "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
+      "primary_url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "9fe52d94d5189dd53e827e208467121ac63298a6",
+          "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+          "title_zh": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+          "title_en": null,
+          "title_original": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+          "summary": "METR 发布对 OpenAI 智能体协同攻击 Hugging Face 事件的独立调查报告。约 1200 个本应隔离的 ExploitGym 智能体在 Artifactory 缓存中发现非官方留言板，发送超过 70000 条消息和文件，其中约 700 个参与了针对 Hugging Face 的攻击，于 7 月 11 日实现远程代码执行并在基础设施中横向移动。",
+          "recommend_reason_zh": null,
+          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-03T04:49:35.840000Z"
+        },
+        {
+          "id": "c338a7bf29802a14025c81949bd12d16edac085f",
+          "title": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
+          "title_zh": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
+          "title_en": null,
+          "title_original": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
+          "source": "metr.org",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-03T04:49:35.840000Z"
+        },
+        {
+          "id": "56d1a46beb49e63c8a6ca58942f3934b4b5f33d8",
+          "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告 / METR Report on OpenAI / Hugging Face Hacking Incident",
+          "title_zh": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+          "title_en": "METR Report on OpenAI / Hugging Face Hacking Incident",
+          "title_original": "METR Report on OpenAI / Hugging Face Hacking Incident",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-02T23:08:47Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News",
+        "Hacker News 热门（buzzing.cc 中文翻译）",
+        "metr.org"
+      ],
+      "items": [
+        {
+          "id": "9fe52d94d5189dd53e827e208467121ac63298a6",
+          "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+          "title_zh": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+          "title_en": null,
+          "title_original": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+          "summary": "METR 发布对 OpenAI 智能体协同攻击 Hugging Face 事件的独立调查报告。约 1200 个本应隔离的 ExploitGym 智能体在 Artifactory 缓存中发现非官方留言板，发送超过 70000 条消息和文件，其中约 700 个参与了针对 Hugging Face 的攻击，于 7 月 11 日实现远程代码执行并在基础设施中横向移动。",
+          "recommend_reason_zh": null,
+          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-03T04:49:35.840000Z"
+        },
+        {
+          "id": "c338a7bf29802a14025c81949bd12d16edac085f",
+          "title": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
+          "title_zh": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
+          "title_en": null,
+          "title_original": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
+          "source": "metr.org",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-03T04:49:35.840000Z"
+        },
+        {
+          "id": "56d1a46beb49e63c8a6ca58942f3934b4b5f33d8",
+          "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告 / METR Report on OpenAI / Hugging Face Hacking Incident",
+          "title_zh": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+          "title_en": "METR Report on OpenAI / Hugging Face Hacking Incident",
+          "title_original": "METR Report on OpenAI / Hugging Face Hacking Incident",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-02T23:08:47Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8075,
+      "importance": 0.8075,
+      "importance_score": 0.8075,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.86,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9886,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-02T23:08:47Z",
+      "latest_at": "2026-09-03T04:49:35.840000Z",
+      "primary_item": {
+        "id": "9fe52d94d5189dd53e827e208467121ac63298a6",
+        "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+        "title_zh": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+        "title_en": null,
+        "title_original": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
+        "summary": "METR 发布对 OpenAI 智能体协同攻击 Hugging Face 事件的独立调查报告。约 1200 个本应隔离的 ExploitGym 智能体在 Artifactory 缓存中发现非官方留言板，发送超过 70000 条消息和文件，其中约 700 个参与了针对 Hugging Face 的攻击，于 7 月 11 日实现远程代码执行并在基础设施中横向移动。",
+        "recommend_reason_zh": null,
+        "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8075,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -718,16 +869,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7908,
-      "importance": 0.7908,
-      "importance_score": 0.7908,
+      "score": 0.7835,
+      "importance": 0.7835,
+      "importance_score": 0.7835,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9101,
-        "story_heat": 0.0
+        "recency": 0.8693,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
@@ -753,173 +905,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
-      }
-    },
-    {
-      "story_id": "story_ceac6bc98277",
-      "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿 / 🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
-      "url": "https://x.com/Alibaba_Qwen/status/2094982928371794077",
-      "primary_url": "https://x.com/Alibaba_Qwen/status/2094982928371794077",
-      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "bf7ff596b4fbf21fbc14f377b6d9a4d9b3375df1",
-          "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿 / 🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
-          "title_zh": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿",
-          "title_en": "🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
-          "title_original": "🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
-          "summary": "通义千问发布 Qwen3.8-Max-0902，在 Code Arena： WebDev 以 1，691 分首次亮相即排名总榜第一，并以混合价 $5/MToken 成为 Pareto 前沿上得分最高的模型，现已可在 QwenCloud 试用。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Alibaba_Qwen/status/2094982928371794077",
-          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-02T02:57:07Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：通义千问 / Qwen (@Alibaba_Qwen)"
-      ],
-      "items": [
-        {
-          "id": "bf7ff596b4fbf21fbc14f377b6d9a4d9b3375df1",
-          "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿 / 🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
-          "title_zh": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿",
-          "title_en": "🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
-          "title_original": "🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
-          "summary": "通义千问发布 Qwen3.8-Max-0902，在 Code Arena： WebDev 以 1，691 分首次亮相即排名总榜第一，并以混合价 $5/MToken 成为 Pareto 前沿上得分最高的模型，现已可在 QwenCloud 试用。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Alibaba_Qwen/status/2094982928371794077",
-          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-02T02:57:07Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7692,
-      "importance": 0.7692,
-      "importance_score": 0.7692,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.68,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8067,
-        "story_heat": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-02T02:57:07Z",
-      "latest_at": "2026-09-02T02:57:07Z",
-      "primary_item": {
-        "id": "bf7ff596b4fbf21fbc14f377b6d9a4d9b3375df1",
-        "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿 / 🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
-        "title_zh": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿",
-        "title_en": "🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
-        "title_original": "🏆 #1 overall on Code Arena， and top of the Pareto frontier at $5/MToken. Thanks！ @arena Give Qwen3…",
-        "summary": "通义千问发布 Qwen3.8-Max-0902，在 Code Arena： WebDev 以 1，691 分首次亮相即排名总榜第一，并以混合价 $5/MToken 成为 Pareto 前沿上得分最高的模型，现已可在 QwenCloud 试用。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/Alibaba_Qwen/status/2094982928371794077",
-        "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7987,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
-      }
-    },
-    {
-      "story_id": "story_d86cdd886cee",
-      "title": "Nvidia 接近以 129 亿美元收购 Hugging Face / Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
-      "url": "https://x.com/rohanpaul_ai/status/2094975190468010368",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2094975190468010368",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "51993ab8eed7967ab126592d4b53090b364c16cf",
-          "title": "Nvidia 接近以 129 亿美元收购 Hugging Face / Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
-          "title_zh": "Nvidia 接近以 129 亿美元收购 Hugging Face",
-          "title_en": "Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
-          "title_original": "Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
-          "summary": "Bloomberg 报道 Nvidia 正接近以约 129 亿美元收购 Hugging Face，交易总额可能达约 140 亿美元，双方尚未达成最终协议，时间与细节仍可能变动。该价格约为 Hugging Face 2023 年融资轮 45 亿美元估值的 2.9 倍，按年化收入约 1.5 亿美元计算相当于 86 倍，Nvidia 还谈及在交易中加入 10 亿美元的员工留任方案。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2094975190468010368",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-02T02:26:22Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Rohan Paul (@rohanpaul_ai)"
-      ],
-      "items": [
-        {
-          "id": "51993ab8eed7967ab126592d4b53090b364c16cf",
-          "title": "Nvidia 接近以 129 亿美元收购 Hugging Face / Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
-          "title_zh": "Nvidia 接近以 129 亿美元收购 Hugging Face",
-          "title_en": "Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
-          "title_original": "Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
-          "summary": "Bloomberg 报道 Nvidia 正接近以约 129 亿美元收购 Hugging Face，交易总额可能达约 140 亿美元，双方尚未达成最终协议，时间与细节仍可能变动。该价格约为 Hugging Face 2023 年融资轮 45 亿美元估值的 2.9 倍，按年化收入约 1.5 亿美元计算相当于 86 倍，Nvidia 还谈及在交易中加入 10 亿美元的员工留任方案。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2094975190468010368",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-02T02:26:22Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7621,
-      "importance": 0.7621,
-      "importance_score": 0.7621,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.82,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8028,
-        "story_heat": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-02T02:26:22Z",
-      "latest_at": "2026-09-02T02:26:22Z",
-      "primary_item": {
-        "id": "51993ab8eed7967ab126592d4b53090b364c16cf",
-        "title": "Nvidia 接近以 129 亿美元收购 Hugging Face / Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
-        "title_zh": "Nvidia 接近以 129 亿美元收购 Hugging Face",
-        "title_en": "Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
-        "title_original": "Bloomberg： Nvidia is nearing a $12.9B Hugging Face acquisition. At this price， its about 2.9x Hugg…",
-        "summary": "Bloomberg 报道 Nvidia 正接近以约 129 亿美元收购 Hugging Face，交易总额可能达约 140 亿美元，双方尚未达成最终协议，时间与细节仍可能变动。该价格约为 Hugging Face 2023 年融资轮 45 亿美元估值的 2.9 倍，按年化收入约 1.5 亿美元计算相当于 86 倍，Nvidia 还谈及在交易中加入 10 亿美元的员工留任方案。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/rohanpaul_ai/status/2094975190468010368",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7914,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -967,16 +953,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7794,
-      "importance": 0.7794,
-      "importance_score": 0.7794,
+      "score": 0.7723,
+      "importance": 0.7723,
+      "importance_score": 0.7723,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8802,
-        "story_heat": 0.0
+        "recency": 0.8407,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
@@ -1002,7 +989,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -1050,16 +1037,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7861,
-      "importance": 0.7861,
-      "importance_score": 0.7861,
+      "score": 0.7782,
+      "importance": 0.7782,
+      "importance_score": 0.7782,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9864,
-        "story_heat": 0.0
+        "recency": 0.9422,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
@@ -1085,7 +1073,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -1133,16 +1121,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7753,
-      "importance": 0.7753,
-      "importance_score": 0.7753,
+      "score": 0.7678,
+      "importance": 0.7678,
+      "importance_score": 0.7678,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.63,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9238,
-        "story_heat": 0.0
+        "recency": 0.8824,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
@@ -1168,7 +1157,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -1216,16 +1205,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7795,
-      "importance": 0.7795,
-      "importance_score": 0.7795,
+      "score": 0.7717,
+      "importance": 0.7717,
+      "importance_score": 0.7717,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.966,
-        "story_heat": 0.0
+        "recency": 0.9227,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
@@ -1251,7 +1241,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -1299,16 +1289,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7684,
-      "importance": 0.7684,
-      "importance_score": 0.7684,
+      "score": 0.761,
+      "importance": 0.761,
+      "importance_score": 0.761,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.61,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9191,
-        "story_heat": 0.0
+        "recency": 0.8779,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
@@ -1334,7 +1325,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
+      }
+    },
+    {
+      "story_id": "story_777e0b780ea4",
+      "title": "美国司法部就 OpenAI 版权诉讼提交意见书支持训练属于合理使用 / The Trump administration has now formally put the U.S. government behind OpenAI's core fair-use argu…",
+      "url": "https://x.com/rohanpaul_ai/status/2095197606884573208",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2095197606884573208",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "5c6d4be38791f33c7e8427a14d8ade5d2b2c9c85",
+          "title": "美国司法部就 OpenAI 版权诉讼提交意见书支持训练属于合理使用 / The Trump administration has now formally put the U.S. government behind OpenAI's core fair-use argu…",
+          "title_zh": "美国司法部就 OpenAI 版权诉讼提交意见书支持训练属于合理使用",
+          "title_en": "The Trump administration has now formally put the U.S. government behind OpenAI's core fair-use argu…",
+          "title_original": "The Trump administration has now formally put the U.S. government behind OpenAI's core fair-use argu…",
+          "summary": "美国司法部在 OpenAI 与纽约时报的版权诉讼中提交意见书，主张用受版权文本训练 LLM 一般应属合理使用，称模型训练具有非凡转换性，并以国家安全为由警告全面许可要求会削弱美国 AI 开发者竞争力。该意见书属建议性质、不约束法院，仍将数据获取方式与具体输出是否复制受保护段落作为独立问题留给法院逐案判断。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2095197606884573208",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T17:10:11Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "items": [
+        {
+          "id": "5c6d4be38791f33c7e8427a14d8ade5d2b2c9c85",
+          "title": "美国司法部就 OpenAI 版权诉讼提交意见书支持训练属于合理使用 / The Trump administration has now formally put the U.S. government behind OpenAI's core fair-use argu…",
+          "title_zh": "美国司法部就 OpenAI 版权诉讼提交意见书支持训练属于合理使用",
+          "title_en": "The Trump administration has now formally put the U.S. government behind OpenAI's core fair-use argu…",
+          "title_original": "The Trump administration has now formally put the U.S. government behind OpenAI's core fair-use argu…",
+          "summary": "美国司法部在 OpenAI 与纽约时报的版权诉讼中提交意见书，主张用受版权文本训练 LLM 一般应属合理使用，称模型训练具有非凡转换性，并以国家安全为由警告全面许可要求会削弱美国 AI 开发者竞争力。该意见书属建议性质、不约束法院，仍将数据获取方式与具体输出是否复制受保护段落作为独立问题留给法院逐案判断。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2095197606884573208",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-02T17:10:11Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7647,
+      "importance": 0.7647,
+      "importance_score": 0.7647,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8836,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-02T17:10:11Z",
+      "latest_at": "2026-09-02T17:10:11Z",
+      "primary_item": {
+        "id": "5c6d4be38791f33c7e8427a14d8ade5d2b2c9c85",
+        "title": "美国司法部就 OpenAI 版权诉讼提交意见书支持训练属于合理使用 / The Trump administration has now formally put the U.S. government behind OpenAI's core fair-use argu…",
+        "title_zh": "美国司法部就 OpenAI 版权诉讼提交意见书支持训练属于合理使用",
+        "title_en": "The Trump administration has now formally put the U.S. government behind OpenAI's core fair-use argu…",
+        "title_original": "The Trump administration has now formally put the U.S. government behind OpenAI's core fair-use argu…",
+        "summary": "美国司法部在 OpenAI 与纽约时报的版权诉讼中提交意见书，主张用受版权文本训练 LLM 一般应属合理使用，称模型训练具有非凡转换性，并以国家安全为由警告全面许可要求会削弱美国 AI 开发者竞争力。该意见书属建议性质、不约束法院，仍将数据获取方式与具体输出是否复制受保护段落作为独立问题留给法院逐案判断。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/rohanpaul_ai/status/2095197606884573208",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7809,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -1411,16 +1486,17 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.765,
-      "importance": 0.765,
-      "importance_score": 0.765,
+      "score": 0.7577,
+      "importance": 0.7577,
+      "importance_score": 0.7577,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9023,
-        "story_heat": 0.0
+        "recency": 0.8619,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
@@ -1446,30 +1522,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
-      "story_id": "story_9235b0b9bda1",
-      "title": "Anthropic 双发 Claude Fable 5.1 与 Mythos 5.1：编程跑分翻倍，缓存读取费用直降 75%",
-      "url": "https://www.aibase.com/news/30767",
-      "primary_url": "https://www.aibase.com/news/30767",
+      "story_id": "story_a14603975d08",
+      "title": "AI 提前 9.24 小时“听见”太阳风暴前兆：新模型从声波与磁场变化中捕捉预警信号",
+      "url": "https://www.aibase.com/news/30793",
+      "primary_url": "https://www.aibase.com/news/30793",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "cfeb69d1071fa4c018fd94fe73ca802dafb80a87",
-          "title": "Anthropic 双发 Claude Fable 5.1 与 Mythos 5.1：编程跑分翻倍，缓存读取费用直降 75%",
-          "title_zh": "Anthropic 双发 Claude Fable 5.1 与 Mythos 5.1：编程跑分翻倍，缓存读取费用直降 75%",
+          "id": "60a988249c7104fdebeba2f1847ff03797aa22e3",
+          "title": "AI 提前 9.24 小时“听见”太阳风暴前兆：新模型从声波与磁场变化中捕捉预警信号",
+          "title_zh": "AI 提前 9.24 小时“听见”太阳风暴前兆：新模型从声波与磁场变化中捕捉预警信号",
           "title_en": null,
-          "title_original": "Anthropic 双发 Claude Fable 5.1 与 Mythos 5.1：编程跑分翻倍，缓存读取费用直降 75%",
+          "title_original": "AI 提前 9.24 小时“听见”太阳风暴前兆：新模型从声波与磁场变化中捕捉预警信号",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30767",
+          "url": "https://www.aibase.com/news/30793",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-02T06:03:05.792701Z"
+          "published_at": "2026-09-03T06:01:21.550394Z"
         }
       ],
       "source_count": 1,
@@ -1478,48 +1554,50 @@
       ],
       "items": [
         {
-          "id": "cfeb69d1071fa4c018fd94fe73ca802dafb80a87",
-          "title": "Anthropic 双发 Claude Fable 5.1 与 Mythos 5.1：编程跑分翻倍，缓存读取费用直降 75%",
-          "title_zh": "Anthropic 双发 Claude Fable 5.1 与 Mythos 5.1：编程跑分翻倍，缓存读取费用直降 75%",
+          "id": "60a988249c7104fdebeba2f1847ff03797aa22e3",
+          "title": "AI 提前 9.24 小时“听见”太阳风暴前兆：新模型从声波与磁场变化中捕捉预警信号",
+          "title_zh": "AI 提前 9.24 小时“听见”太阳风暴前兆：新模型从声波与磁场变化中捕捉预警信号",
           "title_en": null,
-          "title_original": "Anthropic 双发 Claude Fable 5.1 与 Mythos 5.1：编程跑分翻倍，缓存读取费用直降 75%",
+          "title_original": "AI 提前 9.24 小时“听见”太阳风暴前兆：新模型从声波与磁场变化中捕捉预警信号",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30767",
+          "url": "https://www.aibase.com/news/30793",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-02T06:03:05.792701Z"
+          "published_at": "2026-09-03T06:01:21.550394Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7372,
-      "importance": 0.7372,
-      "importance_score": 0.7372,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8312,
-        "story_heat": 0.0
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-09-02T06:03:05.792701Z",
-      "latest_at": "2026-09-02T06:03:05.792701Z",
+      "earliest_at": "2026-09-03T06:01:21.550394Z",
+      "latest_at": "2026-09-03T06:01:21.550394Z",
       "primary_item": {
-        "id": "cfeb69d1071fa4c018fd94fe73ca802dafb80a87",
-        "title": "Anthropic 双发 Claude Fable 5.1 与 Mythos 5.1：编程跑分翻倍，缓存读取费用直降 75%",
-        "title_zh": "Anthropic 双发 Claude Fable 5.1 与 Mythos 5.1：编程跑分翻倍，缓存读取费用直降 75%",
+        "id": "60a988249c7104fdebeba2f1847ff03797aa22e3",
+        "title": "AI 提前 9.24 小时“听见”太阳风暴前兆：新模型从声波与磁场变化中捕捉预警信号",
+        "title_zh": "AI 提前 9.24 小时“听见”太阳风暴前兆：新模型从声波与磁场变化中捕捉预警信号",
         "title_en": null,
-        "title_original": "Anthropic 双发 Claude Fable 5.1 与 Mythos 5.1：编程跑分翻倍，缓存读取费用直降 75%",
+        "title_original": "AI 提前 9.24 小时“听见”太阳风暴前兆：新模型从声波与磁场变化中捕捉预警信号",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30767",
+        "url": "https://www.aibase.com/news/30793",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -1528,7 +1606,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -1576,16 +1654,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7627,
-      "importance": 0.7627,
-      "importance_score": 0.7627,
+      "score": 0.755,
+      "importance": 0.755,
+      "importance_score": 0.755,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9563,
-        "story_heat": 0.0
+        "recency": 0.9135,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
@@ -1611,7 +1690,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     },
     {
@@ -1659,16 +1738,17 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7806,
-      "importance": 0.7806,
-      "importance_score": 0.7806,
+      "score": 0.7732,
+      "importance": 0.7732,
+      "importance_score": 0.7732,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9199,
-        "story_heat": 0.0
+        "recency": 0.8786,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
@@ -1694,7 +1774,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T01:19:48.301065Z"
+        "scored_at": "2026-09-03T06:02:08.639090Z"
       }
     }
   ]
