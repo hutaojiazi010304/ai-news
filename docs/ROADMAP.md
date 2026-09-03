@@ -54,8 +54,14 @@ Status: implemented as the default topic-filtering layer.
 
 - `scripts/ai_relevance.py`
   - Scores each normalized record with `score_ai_relevance(record)`.
-  - Emits `is_ai_related`, `score`, `label`, `reason`, `signals`, and `noise`.
+  - Emits `is_ai_related`, `score`, `label`, `reason`, `signals`, `noise`,
+    and `content_flags`.
   - Keeps `is_ai_related_record(record)` as a backward-compatible boolean wrapper.
+  - `content_flags` marks soft content (`promo_deal` / `vendor_roundup` /
+    `soft_study` — survey conclusions, vendor monthly roundups, product
+    promos) without changing the relevance verdict; the importance scorer in
+    `update_news.py` subtracts `SOFT_CONTENT_PENALTY` (0.25) so flagged items
+    miss the curated brief gate while staying in the broad pool.
 - `scripts/update_news.py`
   - Uses the new scorer before writing the 24h Signal payload.
   - Adds AI relevance fields to kept records so downstream UI and audits can explain why an item passed.

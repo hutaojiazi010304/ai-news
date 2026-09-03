@@ -1,0 +1,84 @@
+{
+ "total_items": 12927,
+ "kept_baseline": 3110,
+ "kept_candidate": 3110,
+ "keep_rate_baseline": 0.2406,
+ "keep_rate_candidate": 0.2406,
+ "flips_to_drop_count": 0,
+ "flips_to_keep_count": 0,
+ "flips_to_drop_samples": [],
+ "flips_to_keep_samples": [],
+ "label_moves": {},
+ "per_site": {
+  "techurls": {
+   "total": 4506,
+   "kept_baseline": 997,
+   "kept_candidate": 997
+  },
+  "newsnow": {
+   "total": 2164,
+   "kept_baseline": 334,
+   "kept_candidate": 334
+  },
+  "iris": {
+   "total": 1821,
+   "kept_baseline": 177,
+   "kept_candidate": 177
+  },
+  "buzzing": {
+   "total": 1653,
+   "kept_baseline": 110,
+   "kept_candidate": 110
+  },
+  "zeli": {
+   "total": 1185,
+   "kept_baseline": 237,
+   "kept_candidate": 237
+  },
+  "curated_media": {
+   "total": 374,
+   "kept_baseline": 359,
+   "kept_candidate": 359
+  },
+  "followbuilders": {
+   "total": 351,
+   "kept_baseline": 145,
+   "kept_candidate": 145
+  },
+  "aibase": {
+   "total": 266,
+   "kept_baseline": 266,
+   "kept_candidate": 266
+  },
+  "opmlrss": {
+   "total": 265,
+   "kept_baseline": 182,
+   "kept_candidate": 182
+  },
+  "aihot": {
+   "total": 119,
+   "kept_baseline": 119,
+   "kept_candidate": 119
+  },
+  "waytoagi": {
+   "total": 86,
+   "kept_baseline": 47,
+   "kept_candidate": 47
+  },
+  "official_ai": {
+   "total": 81,
+   "kept_baseline": 81,
+   "kept_candidate": 81
+  },
+  "hackernews": {
+   "total": 54,
+   "kept_baseline": 54,
+   "kept_candidate": 54
+  },
+  "aihubtoday": {
+   "total": 2,
+   "kept_baseline": 2,
+   "kept_candidate": 2
+  }
+ }
+}

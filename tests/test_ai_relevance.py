@@ -4,6 +4,7 @@ from scripts.ai_relevance import (
     AI_BROAD_RELEVANCE_FLOOR,
     AI_RELEVANCE_THRESHOLD,
     add_ai_relevance_fields,
+    detect_soft_content_flags,
     is_ai_related_record,
     score_ai_relevance,
 )
@@ -264,6 +265,120 @@ class AiRelevanceScoringTests(unittest.TestCase):
         self.assertIn("ai_relevance_reason", out)
         self.assertIn("ai_signals", out)
         self.assertTrue(is_ai_related_record(rec))
+
+
+class SoftContentFlagTests(unittest.TestCase):
+    """Detection of marketing-shaped content (survey conclusions, vendor
+    roundups, product promos) that should be down-weighted out of the
+    curated pool. Flags must not change ai_score / is_ai_related."""
+
+    def test_flags_vendor_study_conclusion(self):
+        rec = {
+            "site_id": "official_ai",
+            "source": "OpenAI News",
+            "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+            "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality.",
+        }
+        self.assertEqual(detect_soft_content_flags(rec), ["soft_study"])
+
+    def test_flags_vendor_roundup_with_student_promo(self):
+        rec = {
+            "site_id": "official_ai",
+            "source": "Google AI Blog",
+            "title": "The latest AI news we announced in August 2026",
+            "summary": 'Claim your student plan for 1 year at no cost',
+        }
+        self.assertEqual(detect_soft_content_flags(rec), ["promo_deal", "vendor_roundup"])
+
+    def test_flags_promotion_with_limits_context(self):
+        rec = {
+            "site_id": "hackernews",
+            "source": "HN Algolia · AI 24h",
+            "title": "Claude Code May–August 2026 weekly limits promotion",
+        }
+        self.assertEqual(detect_soft_content_flags(rec), ["promo_deal"])
+
+    def test_flags_free_credit_promo(self):
+        rec = {
+            "site_id": "aibase",
+            "source": "AIbase",
+            "title": "腾讯 WorkBuddy 启动开学季 AI 普惠专项，师生可免费领取1000积分",
+        }
+        self.assertEqual(detect_soft_content_flags(rec), ["promo_deal"])
+
+    def test_flags_survey_finds_headline(self):
+        rec = {
+            "site_id": "curated_media",
+            "source": "The Decoder AI News",
+            "title": "One in five US workers now delegates tasks to AI instead of colleagues, survey finds",
+        }
+        self.assertEqual(detect_soft_content_flags(rec), ["soft_study"])
+
+    def test_does_not_flag_model_release_with_discount_summary(self):
+        rec = {
+            "site_id": "aihot",
+            "source": "公众号：智谱（GLM）",
+            "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+            "summary": "其定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40。",
+        }
+        self.assertEqual(detect_soft_content_flags(rec), [])
+
+    def test_does_not_flag_business_deal_coverage(self):
+        rec = {
+            "site_id": "curated_media",
+            "source": "The Decoder AI News",
+            "title": "Anthropic locks in 45-billion-dollar compute deal with Nscale ahead of IPO",
+        }
+        self.assertEqual(detect_soft_content_flags(rec), [])
+
+    def test_does_not_flag_promotional_video_mention(self):
+        rec = {
+            "site_id": "official_ai",
+            "source": "Google AI Blog",
+            "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
+            "summary": "AMIE promotional video",
+        }
+        self.assertEqual(detect_soft_content_flags(rec), [])
+
+    def test_does_not_flag_pure_technical_paper(self):
+        rec = {
+            "site_id": "official_ai",
+            "source": "OpenAI News",
+            "title": "#Exploration: A study of count-based exploration for deep reinforcement learning",
+        }
+        self.assertEqual(detect_soft_content_flags(rec), [])
+
+    def test_does_not_flag_open_weights_big_deal_comment(self):
+        rec = {
+            "site_id": "followbuilders",
+            "source": "Follow Builders · X · Aaron Levie",
+            "title": "Meta releasing Muse Spark 1.2 as open weights is a *very* big deal.",
+        }
+        self.assertEqual(detect_soft_content_flags(rec), [])
+
+    def test_flags_are_additive_and_do_not_change_relevance(self):
+        rec = {
+            "site_id": "official_ai",
+            "source": "OpenAI News",
+            "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+            "summary": "A randomized study of more than 1,000 students examines ChatGPT.",
+        }
+        result = score_ai_relevance(rec)
+        self.assertEqual(result["content_flags"], ["soft_study"])
+        # Relevance semantics unchanged: still AI-related with the same score
+        # the core scorer produces.
+        self.assertTrue(result["is_ai_related"])
+        out = add_ai_relevance_fields(rec)
+        self.assertEqual(out["ai_content_flags"], ["soft_study"])
+
+    def test_clean_item_has_no_content_flags_field(self):
+        rec = {
+            "site_id": "official_ai",
+            "source": "OpenAI News",
+            "title": "OpenAI ships new reasoning model",
+        }
+        out = add_ai_relevance_fields(rec)
+        self.assertEqual(out["ai_content_flags"], [])
 
 
 if __name__ == "__main__":

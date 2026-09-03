@@ -24,6 +24,10 @@ data/archive.json（现有管线产物，21 天条目存档，云端每小时更
   │     跨天跟进报道并入同一故事）→ 按周更时效重算评分 → 质量门槛
   │     （0.72 / 多源 0.65）→ 多样性选条。全程内存计算、不写 data/，
   │     本地构建约 1 分钟
+  ├─ 软内容降权：重算评分时，命中「调研结论 / 厂商月度盘点 / 产品推广」
+  │     的条目（按内容类型识别，不区分官方还是媒体）统一扣 0.25——
+  │     跌出两道精选门槛，但仍高于全量池下限，条目留在广义池可见。
+  │     检测规则见 scripts/ai_relevance.py:detect_soft_content_flags
   ├─ 周更时效评分：前 6 天（144h）不衰减、满分保持，第 6~7 天按 48h
   │     半衰期缓衰——周初发布的重要事件不会在出刊时被更新鲜的中档
   │     条目压下去（日主管线仍是默认 72h 半衰期、无平段，前端页面
@@ -121,7 +125,7 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
 
    ```
    git config --global http.proxy http://127.0.0.1:7897
-   git config --global https.proxy http://127.0.0.1:789
+   git config --global https.proxy http://127.0.0.1:7897
    git config --global --unset http.proxy
    git config --global --unset https.proxy
    ```
@@ -260,6 +264,14 @@ python scripts/generate_weixin_article_grouped.py --data-dir data --output-dir w
   `weixin-deep/reason-cache.json`
   （自己的版本号）。不能共享 `weixin/reason-cache.json`——缓存 key 只有
   条目+标题，共享会永远命中旧短导读，新风格无法生效
+- **导读取材**：数据里的 summary 满 120 字直接当素材（精读导读信息密度
+  高，短摘要撑不起 150–350 字）；不满则实时抓原文（直连，失败走 reader
+  兜底）。原文抓取**无果**时——请求失败、正文不足 120 字、或抓回来的是
+  「环境异常，完成验证后即可继续访问」一类反爬验证墙（reader 兜底会给
+  验证墙加上自己的 Title/URL/Warning 头，凑够长度冒充正文，须按标记识
+  别）——放宽门槛改用那条短摘要当素材：真实事实按素材量成文（可能短于
+  目标区间），好过拿验证墙废话或光杆标题硬编（腾讯混元 Hy4 公众号原文
+  即此情形：正文只在微信端渲染，直连是壳页、reader 是验证墙）
 - **信源行**：精读导读正文不提信源名——生成时不注入「信源：X」行，提示词
   明确正文不要提及信源（此前注入的信源行让官方更新板块的导读开头清一色
   "Official AI Updates 发布/披露"）。信源归属只在条目下方 meta 行显示；

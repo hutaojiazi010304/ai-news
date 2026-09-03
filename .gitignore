@@ -37,3 +37,6 @@ data/email-digest.json
 weixin-test/
 weixin-test-grouped/
 weixin-test-deep/
+
+# Local deploy tooling (contains private server address / key paths)
+sync-to-server.sh

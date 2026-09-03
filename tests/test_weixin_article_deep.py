@@ -910,6 +910,99 @@ def test_deep_grounding_skips_reader_proxy_when_body_scopes():
     assert session.calls == ["https://example.com/story/2"]
 
 
+def test_is_wall_text_markers():
+    wall_zh = "## 环境异常\n当前环境异常，完成验证后即可继续访问。"
+    wall_en = "Warning: This page maybe requiring CAPTCHA, make sure you are authorized."
+    assert gwad.is_wall_text(wall_zh)
+    assert gwad.is_wall_text(wall_en)
+    assert not gwad.is_wall_text("这是正常的文章正文，介绍了一次模型发布。")
+    assert not gwad.is_wall_text("")
+    assert not gwad.is_wall_text(None)
+
+
+def test_deep_grounding_thin_summary_when_no_fetch():
+    # No usable session/URL: the thin summary still grounds the guide
+    # instead of nothing.
+    item = make_item(2, summary=THIN_SUMMARY)
+    assert gwad.deep_reason_context(item, None) == THIN_SUMMARY
+
+
+def test_deep_grounding_thin_summary_when_fetch_returns_wall():
+    # WeChat case: the reader proxy comes back with a CAPTCHA wall that
+    # clears FULL_TEXT_MIN_CHARS (padded by the proxy's own headers). The
+    # wall must count as a failed fetch, so the thin summary wins.
+    wall = (
+        "Title: Weixin Official Accounts Platform\n\n"
+        "URL Source: https://example.com/story/2\n\n"
+        "Warning: This page maybe requiring CAPTCHA, please make sure you "
+        "are authorized to access this page.\n\n"
+        "Markdown Content:\n## 环境异常\n当前环境异常，完成验证后即可继续访问。\n"
+    )
+    session = FakeSession(text=wall)
+    item = make_item(2, summary=THIN_SUMMARY)
+
+    grounding = gwad.deep_reason_context(item, session, {})
+
+    assert grounding == THIN_SUMMARY
+
+
+def test_deep_grounding_thin_summary_on_shell_page_and_wall_proxy():
+    # The observed incident end to end: mp.weixin.qq.com serves a JS shell
+    # (no article in the server HTML), the reader proxy then returns the
+    # CAPTCHA wall instead of the article. Both routes are unusable, so
+    # the thin summary becomes the grounding.
+    shell = (
+        "<html><body><div>"
+        + "： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看 " * 10
+        + "</div></body></html>"
+    )
+    wall = (
+        "Title: Weixin Official Accounts Platform\n\n"
+        "URL Source: https://mp.weixin.example/s?x=1\n\n"
+        "Warning: This page maybe requiring CAPTCHA, please make sure you "
+        "are authorized to access this page.\n\n"
+        "Markdown Content:\n## 环境异常\n当前环境异常，完成验证后即可继续访问。\n"
+    )
+    session = PerUrlSession({
+        "https://mp.weixin.example/s?x=1": shell,
+        "https://r.jina.ai/https://mp.weixin.example/s?x=1": wall,
+    })
+    item = make_item(1, summary=THIN_SUMMARY)
+    item["url"] = "https://mp.weixin.example/s?x=1"
+    item["primary_url"] = "https://mp.weixin.example/s?x=1"
+
+    grounding = gwad.deep_reason_context(item, session, {})
+
+    assert grounding == THIN_SUMMARY
+    assert session.calls == [
+        "https://mp.weixin.example/s?x=1",
+        "https://r.jina.ai/https://mp.weixin.example/s?x=1",
+    ]
+
+
+def test_deep_grounding_thin_summary_when_fetch_empty():
+    # Fetch yields nothing usable (empty body): thin summary still grounds.
+    session = FakeSession(text="")
+    item = make_item(2, summary=THIN_SUMMARY)
+
+    grounding = gwad.deep_reason_context(item, session, {})
+
+    assert grounding == THIN_SUMMARY
+
+
+def test_deep_grounding_prefers_real_body_over_thin_summary():
+    # A successful full-text fetch still wins over the thin summary; the
+    # fallback only fires when the fetch produces nothing usable.
+    body = f"<p>{'这是抓回来的正文内容，用来补足摘要的信息量。' * 20}</p>"
+    session = FakeSession(text=body)
+    item = make_item(2, summary=THIN_SUMMARY)
+
+    grounding = gwad.deep_reason_context(item, session, {})
+
+    assert grounding and "抓回来的正文内容" in grounding
+    assert THIN_SUMMARY not in grounding
+
+
 def test_deep_meta_line_shows_channel_for_umbrella_bucket():
     # "Official AI Updates" and "AI HOT" are aggregate buckets, not
     # publishers: the meta line resolves them to the specific channel

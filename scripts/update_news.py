@@ -6231,7 +6231,11 @@ def calculate_item_importance(
     recency = headline_freshness_score(item, now, half_life_hours, flat_hours)
     editorial = editorial_score(item)
     heat = min(1.0, max(0, duplicate_count - 1) / 4)
+    # 软内容降权：带 ai_content_flags（promo_deal / vendor_roundup /
+    # soft_study）的条目统一扣 SOFT_CONTENT_PENALTY，多标志不叠加。
+    soft_penalty = SOFT_CONTENT_PENALTY if item.get("ai_content_flags") else 0.0
     score = (editorial * 0.3) + (source_score * 0.22) + (relevance * 0.2) + (recency * 0.18) + (heat * 0.1)
+    score = max(0.0, score - soft_penalty)
     return {
         "score": round(max(0.0, min(1.0, score)), 4),
         "breakdown": {
@@ -6240,6 +6244,7 @@ def calculate_item_importance(
             "ai_relevance": round(relevance, 4),
             "recency": round(recency, 4),
             "story_heat": round(heat, 4),
+            "soft_content_penalty": round(soft_penalty, 4),
         },
     }
 
@@ -6483,6 +6488,11 @@ BRIEF_SCORE_GATE = 0.72
 # 多源印证路径的质量下限：来源数达标但分数太低（例如一个论坛帖被多个
 # 镜像通道刷出"多来源"假象）不允许仅凭来源数进入精选池。
 BRIEF_MULTI_SOURCE_SCORE_GATE = 0.65
+# 软内容（调研结论/厂商月度盘点/产品推广）重要度扣分：官方一手源自带的高
+# editorial 与来源层级分会让这类营销内容轻松越过精选门槛，统一扣到两道门槛
+# 之下，但仍高于全量池下限，条目留在"全量"可见。按内容类型识别、不区分
+# 来源，检测规则见 scripts/ai_relevance.py:detect_soft_content_flags。
+SOFT_CONTENT_PENALTY = 0.25
 # Peak-score state: stories only live ~24h in the window, so entries unseen
 # for this many days are dropped. Kept slightly above the window so a story
 # that ages out mid-run still has its peak available until the next prune.

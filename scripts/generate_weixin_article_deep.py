@@ -215,7 +215,10 @@ DEEP_REASON_MARK_MAX_COVERAGE = 0.8
 # A persisted summary must be this long before it alone can ground a
 # 150-350-char report; anything thinner falls back to a full-text fetch
 # (deliberate inversion of 1.0's 20-char summary-first policy — the item
-# count is small and bounded, so per-item fetching is affordable).
+# count is small and bounded, so per-item fetching is affordable). A thin
+# summary is NOT thrown away, though: it is kept as the last-resort
+# grounding when the fetch yields nothing usable (real facts still beat
+# wall pages or no grounding at all).
 DEEP_SUMMARY_MIN_GROUNDING_CHARS = 120
 # Same idea for the scoped <article> element: huggingface.co blog pages
 # wrap ONLY sidebar/model cards in <article> (the post sits outside every
@@ -237,6 +240,17 @@ IMAGE_DOWNLOAD_TIMEOUT = 20.0
 # Pages under 300 chars are almost certainly bot walls/redirect stubs;
 # fall back to the reader proxy for those too.
 PAGE_MIN_HTML_CHARS = 300
+# Anti-bot wall pages can STILL clear FULL_TEXT_MIN_CHARS — WeChat's
+# 「环境异常」CAPTCHA gate, once fetched through the reader proxy, is padded
+# by the proxy's own Title:/URL Source:/Warning: headers past the floor, and
+# the length check alone would happily feed that boilerplate to a guide
+# (observed: a guide grounded on nothing but the wall, which the model could
+# only answer by restating the title). Such pages count as fetch failures,
+# so deep_reason_context degrades to the thin summary, if any.
+WALL_TEXT_MARKERS = (
+    "环境异常，完成验证后即可继续访问",
+    "maybe requiring CAPTCHA",
+)
 # Body budgets (bytes): bounded_get stops reading once exceeded, so a
 # mislabelled huge file can never be buffered fully into RAM.
 PAGE_MAX_BYTES = 8_000_000
@@ -476,6 +490,12 @@ def deep_reason_context(
     the direct HTML cannot be scoped at all (JS-shell pages whose <article>
     elements are all chrome), the reader proxy gets a second chance so the
     guide is grounded on the real article instead of navigation text.
+
+    When the fetch yields nothing usable — request failure, text under the
+    floor, or an anti-bot wall page (is_wall_text) — the meatiest thin
+    summary is returned instead of nothing: real facts let the model write a
+    proportionally shorter but grounded report, instead of improvising over
+    wall boilerplate or the bare title.
     """
     title = str(item.get("title") or "").strip()
     # ensure_zh_titles may have replaced item["title"] with a Chinese
@@ -490,18 +510,25 @@ def deep_reason_context(
     for src in item.get("sources") or []:
         if isinstance(src, dict):
             candidates.append(str(src.get("summary") or ""))
+    thin_grounding: str | None = None
     for candidate in candidates:
         grounding = summary_grounding(candidate, title)
         if title_original and grounding == title_original:
             grounding = None
-        if grounding and len(grounding) >= DEEP_SUMMARY_MIN_GROUNDING_CHARS:
+        if not grounding:
+            continue
+        if len(grounding) >= DEEP_SUMMARY_MIN_GROUNDING_CHARS:
             return grounding[:FULL_TEXT_MAX_CHARS]
+        # Keep the meatiest thin summary as the last-resort grounding for
+        # when the full-text fetch comes back empty or walled off.
+        if thin_grounding is None or len(grounding) > len(thin_grounding):
+            thin_grounding = grounding
     url = str(item.get("primary_url") or item.get("url") or "").strip()
     if not url.startswith(("http://", "https://")) or session is None:
-        return None
+        return thin_grounding
     payload = fetch_page_html(session, url, net_state)
     if payload is None:
-        return None
+        return thin_grounding
     body, kind = payload
     if kind == "html" and body_scope_degraded(body, kind, DEEP_ARTICLE_MIN_BODY_CHARS):
         # JS-shell pages (github.blog is the observed case): the article body
@@ -520,9 +547,9 @@ def deep_reason_context(
     text = strip_html_text(
         scope_to_article_body(body, kind, DEEP_ARTICLE_MIN_BODY_CHARS)
     )
-    if len(text) >= FULL_TEXT_MIN_CHARS:
+    if len(text) >= FULL_TEXT_MIN_CHARS and not is_wall_text(text):
         return text[:FULL_TEXT_MAX_CHARS]
-    return None
+    return thin_grounding
 
 
 def _anchor_deep_marks(text: str, fragments: list[str]) -> list[tuple[int, int]]:
@@ -1075,6 +1102,18 @@ def body_scope_degraded(body: str, kind: str, min_body_chars: int = 0) -> bool:
                 return False
         return REC_HEADING_HTML_RE.search(text) is None
     return REC_HEADING_MD_RE.search(text) is None
+
+
+def is_wall_text(text: str) -> bool:
+    """True when the fetched payload is an anti-bot wall, not an article.
+
+    Walls are long enough to clear FULL_TEXT_MIN_CHARS (reader proxies pad
+    them with their own Title:/URL Source:/Warning: headers), so the length
+    check alone would pass them to the guide as "the body". Matching any
+    marker treats the fetch as failed.
+    """
+    text = str(text or "")
+    return any(marker in text for marker in WALL_TEXT_MARKERS)
 
 
 def extract_image_candidates(

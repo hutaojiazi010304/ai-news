@@ -210,6 +210,111 @@ LABEL_KEYWORDS = [
     ("ai_product_update", ["openai", "anthropic", "google", "perplexity", "cursor", "产品", "上线", "更新"]),
 ]
 
+# ---------------------------------------------------------------------------
+# Soft-content detection (survey conclusions / vendor roundups / product promos)
+# ---------------------------------------------------------------------------
+# These flags never change ai_score / is_ai_related. The importance scorer in
+# update_news.py (calculate_item_importance) subtracts SOFT_CONTENT_PENALTY
+# when ai_content_flags is non-empty, so marketing-shaped content drops below
+# the curated brief gate while staying in the broad "all" pool. Detection is
+# content-type based, not source-based: vendor self-posts and media coverage
+# of the same content type are both flagged.
+
+_MONTHS = r"(?:january|february|march|april|may|june|july|august|september|october|november|december)"
+
+VENDOR_ROUNDUP_TITLE_RES = [
+    # "The latest AI news we announced in August 2026"
+    re.compile(
+        rf"(?i)\b(?:the )?latest\b[^.!?]{{0,60}}\b(?:we announced|we shipped|we launched|announced|updates?|news)\b[^.!?]{{0,30}}\b{_MONTHS}\b\s+\d{{4}}"
+    ),
+    # "August 2026 roundup / recap / in review / highlights / digest"
+    re.compile(rf"(?i)\b{_MONTHS}\s+\d{{4}}\s+(?:roundup|recap|in review|updates?|highlights|digest)\b"),
+    re.compile(r"(?i)\b(?:monthly|weekly)\s+(?:roundup|recap|update|digest)\b"),
+]
+FIRST_PERSON_ROUNDUP_RE = re.compile(r"(?i)\bwe (?:announced|shipped|launched)\b")
+
+# Strong promo signals. Note: sale/deal/bargain are intentionally excluded —
+# business-deal coverage ("$45B compute deal") is real industry news.
+PROMO_STRONG_RES = [
+    re.compile(r"(?i)\bdiscount code\b|\bcoupon code\b|\bpromo code\b"),
+    re.compile(r"(?i)\b(?:up to )?\d+% off\b"),
+    re.compile(r"(?i)\bfree trial\b|\bclaim your\b|\bat no cost\b"),
+    re.compile(r"(?i)\b(?:student|family) plan\b|\bfree for (?:students|teachers)\b"),
+    re.compile(r"(?i)\blimited[- ]time (?:offer|deal|discount)\b|\bspecial offer\b"),
+]
+# Chinese promo words only count in the title: CN summaries routinely mention
+# incidental pricing ("限时折扣") on genuine launches.
+PROMO_STRONG_ZH_RE = re.compile(r"优惠|促销|折扣|免费领|立减|特惠|限时免费|学生专享|首月免费")
+# "promotion/promotional" alone is ambiguous ("AMIE promotional video") — only
+# counts alongside a pricing/free context.
+PROMO_CONTEXT_RES = [re.compile(r"(?i)\b(?:promo|promotion|promotional)\b")]
+PROMO_PRICE_CONTEXT_RE = re.compile(
+    r"(?i)price|pricing|free|offer|discount|cost|plan|trial|subscription|deal|save|%|limits|bonus"
+)
+# When promo words appear only in the summary of a release-shaped title, treat
+# the item as a launch, not a promotion ("GLM-5.3-Flash 开源：…定价为 …1/40"
+# whose summary says "限时折扣").
+RELEASE_TITLE_GUARD_RE = re.compile(
+    r"(?i)开源|开放权重|open[- ]?weight|open[- ]?source|发布|上线|launch|releas|unveil|debut|introduc"
+)
+
+_EDUCATION_CONTEXT = (
+    r"(?:students?|teachers?|classrooms?|universit\w+|schools?|education(?:al)?|"
+    r"assignments?|critical[- ]thinking|originality|homework|academic performance)"
+)
+SOFT_STUDY_RES = [
+    re.compile(r"(?i)\brandomized (?:controlled )?stud(?:y|ies)\b|\bcontrolled stud(?:y|ies)\b"),
+    re.compile(r"(?i)\b(?:stud(?:y|ies)|survey|research)\b[^.!?]{0,50}\bfind(?:s|ing)?\b"),
+    re.compile(rf"(?i)\b(?:stud(?:y|ies)|survey|research)\b[^.!?]{{0,60}}{_EDUCATION_CONTEXT}"),
+    re.compile(r"(?i)\bwhat (?:students|teachers|users) (?:gain|learn)\b"),
+    re.compile(r"调研报告|问卷调查|随机对照"),
+]
+
+
+def detect_soft_content_flags(record: dict[str, Any]) -> list[str]:
+    """Classify marketing-shaped content that should not reach the curated pool.
+
+    Returns a sorted subset of ``["promo_deal", "soft_study", "vendor_roundup"]``
+    based on title + summary. Pure and side-effect free; relevance scoring
+    (ai_score / is_ai_related) is untouched — the penalty is applied downstream
+    in update_news.py's calculate_item_importance().
+    """
+    title = str(record.get("title") or "")
+    summary = str(record.get("summary") or "")[:500]
+    text = f"{title} {summary}"
+    if not text.strip():
+        return []
+
+    flags: set[str] = set()
+
+    # Vendor monthly roundups: first-person recap posts ("The latest AI news
+    # we announced in August 2026"). Media-published recaps stay unflagged
+    # unless the item comes from the official feed itself.
+    if any(r.search(title) for r in VENDOR_ROUNDUP_TITLE_RES):
+        if FIRST_PERSON_ROUNDUP_RE.search(text) or str(record.get("site_id") or "") == "official_ai":
+            flags.add("vendor_roundup")
+
+    # Product promotions / subscription deals.
+    promo_in_title = any(r.search(title) for r in PROMO_STRONG_RES) or bool(PROMO_STRONG_ZH_RE.search(title))
+    promo_in_summary = any(r.search(summary) for r in PROMO_STRONG_RES)
+    if promo_in_title or promo_in_summary:
+        release_title = bool(RELEASE_TITLE_GUARD_RE.search(title))
+        if promo_in_title or not release_title:
+            flags.add("promo_deal")
+    else:
+        ctx_in_title = any(r.search(title) for r in PROMO_CONTEXT_RES)
+        ctx_match = ctx_in_title or any(r.search(summary) for r in PROMO_CONTEXT_RES)
+        if ctx_match and PROMO_PRICE_CONTEXT_RE.search(text):
+            if ctx_in_title or not bool(RELEASE_TITLE_GUARD_RE.search(title)):
+                flags.add("promo_deal")
+
+    # Survey / study-conclusion pieces ("What students gain from ...",
+    # "..., study finds"). Plain technical papers do not match.
+    if any(r.search(text) for r in SOFT_STUDY_RES):
+        flags.add("soft_study")
+
+    return sorted(flags)
+
 
 def contains_any_keyword(haystack: str, keywords: list[str]) -> bool:
     h = haystack.lower()
@@ -265,7 +370,7 @@ def _result(
     }
 
 
-def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
+def _score_ai_relevance_core(record: dict[str, Any]) -> dict[str, Any]:
     """Return an explainable relevance score while preserving the old keep/drop behavior."""
     site_id = str(record.get("site_id") or "")
     title = str(record.get("title") or "")
@@ -410,6 +515,17 @@ def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
     )
 
 
+def score_ai_relevance(record: dict[str, Any]) -> dict[str, Any]:
+    """Relevance verdict plus soft-content flags.
+
+    ``content_flags`` is additive metadata for the downstream importance
+    penalty; it never alters ``score``/``is_ai_related``.
+    """
+    result = _score_ai_relevance_core(record)
+    result["content_flags"] = detect_soft_content_flags(record)
+    return result
+
+
 def is_ai_related_record(record: dict[str, Any]) -> bool:
     return bool(score_ai_relevance(record)["is_ai_related"])
 
@@ -433,4 +549,5 @@ def add_ai_relevance_fields(record: dict[str, Any]) -> dict[str, Any]:
     out["ai_relevance_reason"] = relevance["reason"]
     out["ai_signals"] = relevance["signals"]
     out["ai_noise"] = relevance["noise"]
+    out["ai_content_flags"] = relevance["content_flags"]
     return out

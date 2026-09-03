@@ -39,9 +39,10 @@ def load_scorer_from_rev(rev: str):
         cwd=REPO_ROOT,
         capture_output=True,
         text=True,
+        encoding="utf-8",
         check=True,
     ).stdout
-    with tempfile.NamedTemporaryFile("w", suffix="_ai_relevance_baseline.py", delete=False) as fh:
+    with tempfile.NamedTemporaryFile("w", suffix="_ai_relevance_baseline.py", encoding="utf-8", delete=False) as fh:
         fh.write(source)
         path = fh.name
     spec = importlib.util.spec_from_file_location("ai_relevance_baseline", path)
@@ -165,7 +166,7 @@ def main() -> int:
     args = parser.parse_args()
 
     archive_path = REPO_ROOT / args.archive if not Path(args.archive).is_absolute() else Path(args.archive)
-    payload = json.loads(archive_path.read_text())
+    payload = json.loads(archive_path.read_text(encoding="utf-8"))
     records = payload.get("items") if isinstance(payload, dict) else payload
     if isinstance(records, dict):
         records = list(records.values())
@@ -182,8 +183,8 @@ def main() -> int:
     stamp = datetime.now(UTC).strftime("%Y%m%d-%H%M")
     json_path = out_dir / f"scoring-backtest-{stamp}.json"
     md_path = out_dir / f"scoring-backtest-{stamp}.md"
-    json_path.write_text(json.dumps(report, ensure_ascii=False, indent=1))
-    md_path.write_text(render_markdown(report, args.days, args.baseline_rev))
+    json_path.write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
+    md_path.write_text(render_markdown(report, args.days, args.baseline_rev), encoding="utf-8")
 
     print(f"Kept: {report['kept_baseline']} -> {report['kept_candidate']}")
     print(f"Flips AI->not_ai: {report['flips_to_drop_count']} | not_ai->AI: {report['flips_to_keep_count']}")

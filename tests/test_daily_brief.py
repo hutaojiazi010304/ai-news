@@ -71,6 +71,43 @@ def test_importance_score_uses_aihot_editorial_score():
     assert "editorial" in strong_importance["breakdown"]
 
 
+def test_soft_content_flags_subtract_penalty_from_importance():
+    clean = make_item(1, site_id="official_ai", hours_ago=1, ai_score=0.95)
+    flagged = make_item(2, site_id="official_ai", hours_ago=1, ai_score=0.95)
+    flagged["ai_content_flags"] = ["soft_study"]
+
+    clean_importance = calculate_item_importance(clean, NOW, 24)
+    flagged_importance = calculate_item_importance(flagged, NOW, 24)
+
+    assert clean_importance["breakdown"]["soft_content_penalty"] == 0.0
+    assert flagged_importance["breakdown"]["soft_content_penalty"] == 0.25
+    assert clean_importance["score"] - flagged_importance["score"] == 0.25
+
+
+def test_soft_content_penalty_is_flat_for_multiple_flags():
+    single = make_item(1, site_id="official_ai", hours_ago=1, ai_score=0.95)
+    single["ai_content_flags"] = ["promo_deal"]
+    multi = make_item(2, site_id="official_ai", hours_ago=1, ai_score=0.95)
+    multi["ai_content_flags"] = ["promo_deal", "vendor_roundup"]
+
+    assert calculate_item_importance(single, NOW, 24)["score"] == calculate_item_importance(multi, NOW, 24)["score"]
+
+
+def test_soft_content_penalty_keeps_flagged_official_story_out_of_brief():
+    """A fresh official soft-content story (vendor study / promo roundup) must
+    miss both the single-source gate (0.72) and the multi-source quality floor
+    (0.65), while an equivalent hard-news official story passes."""
+    hard = make_item(1, site_id="official_ai", hours_ago=1, ai_score=0.95)
+    soft = make_item(2, site_id="official_ai", hours_ago=1, ai_score=0.95)
+    soft["ai_content_flags"] = ["promo_deal", "vendor_roundup"]
+
+    hard_score = calculate_item_importance(hard, NOW, 24)["score"]
+    soft_score = calculate_item_importance(soft, NOW, 24)["score"]
+
+    assert hard_score >= 0.72
+    assert soft_score < 0.65
+
+
 def test_waytoagi_latest_updates_become_community_raw_items():
     payload = {
         "root_url": "https://waytoagi.example/wiki",
