@@ -1,176 +1,91 @@
 {
-  "generated_at": "2026-09-04T14:26:33.348889Z",
+  "generated_at": "2026-09-04T17:41:31.253359Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
     {
-      "story_id": "story_9dd7043831a5",
-      "title": "GitHub Copilot app for Beginners: Run several agents at once",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once",
-      "primary_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once",
+      "story_id": "story_0f3277bac9d6",
+      "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本 / Project HydraFusion: Frontier quality via multi-model orchestration",
+      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
+      "primary_url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
       "source": "GitHub AI & ML",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "f989ccabdf30490b91437d7eac958d0034f29c12",
-          "title": "GitHub Copilot app for Beginners: Run several agents at once",
-          "title_zh": null,
-          "title_en": "GitHub Copilot app for Beginners: Run several agents at once",
-          "title_original": "GitHub Copilot app for Beginners: Run several agents at once",
-          "summary": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful. The post GitHub Copilot app for Beginners: Run several agents at once appeared first on The GitHub Blog .",
+          "id": "176d3dc0bd094aa366d311fdf1f135ee2da187bb",
+          "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本 / Project HydraFusion: Frontier quality via multi-model orchestration",
+          "title_zh": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
+          "title_en": "Project HydraFusion: Frontier quality via multi-model orchestration",
+          "title_original": "Project HydraFusion: Frontier quality via multi-model orchestration",
+          "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The GitHub Blog .",
           "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once",
+          "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
           "source": "GitHub AI & ML",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-03T16:00:00Z"
+          "published_at": "2026-09-04T16:04:14Z"
+        },
+        {
+          "id": "6566ef8a87cc0287e3b9e392afb77dec635dc956",
+          "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本 / Project HydraFusion： Frontier quality via multi-model orchestration",
+          "title_zh": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
+          "title_en": "Project HydraFusion： Frontier quality via multi-model orchestration",
+          "title_original": "Project HydraFusion： Frontier quality via multi-model orchestration",
+          "summary": "GitHub 推出 Project HydraFusion 研究预览，通过运行时多模型编排，在 Single、Cascade、Critique 三种执行模式间为每个任务选择工作流，以平衡质量、成本和延迟。",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
+          "source": "GitHub Blog",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-04T16:04:14Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "GitHub AI & ML"
+        "GitHub AI & ML",
+        "GitHub Blog"
       ],
       "items": [
         {
-          "id": "f989ccabdf30490b91437d7eac958d0034f29c12",
-          "title": "GitHub Copilot app for Beginners: Run several agents at once",
-          "title_zh": null,
-          "title_en": "GitHub Copilot app for Beginners: Run several agents at once",
-          "title_original": "GitHub Copilot app for Beginners: Run several agents at once",
-          "summary": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful. The post GitHub Copilot app for Beginners: Run several agents at once appeared first on The GitHub Blog .",
+          "id": "176d3dc0bd094aa366d311fdf1f135ee2da187bb",
+          "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本 / Project HydraFusion: Frontier quality via multi-model orchestration",
+          "title_zh": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
+          "title_en": "Project HydraFusion: Frontier quality via multi-model orchestration",
+          "title_original": "Project HydraFusion: Frontier quality via multi-model orchestration",
+          "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The GitHub Blog .",
           "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once",
+          "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
           "source": "GitHub AI & ML",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-03T16:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.817,
-      "importance": 0.817,
-      "importance_score": 0.817,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8057,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-03T16:00:00Z",
-      "latest_at": "2026-09-03T16:00:00Z",
-      "primary_item": {
-        "id": "f989ccabdf30490b91437d7eac958d0034f29c12",
-        "title": "GitHub Copilot app for Beginners: Run several agents at once",
-        "title_zh": null,
-        "title_en": "GitHub Copilot app for Beginners: Run several agents at once",
-        "title_original": "GitHub Copilot app for Beginners: Run several agents at once",
-        "summary": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful. The post GitHub Copilot app for Beginners: Run several agents at once appeared first on The GitHub Blog .",
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once",
-        "source": "GitHub AI & ML",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8472,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
-      }
-    },
-    {
-      "story_id": "story_a0931d161b21",
-      "title": "Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型， hourly 更新且分辨率较上一代提升约 5 倍 / Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-      "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
-      "primary_url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
-      "source": "Google DeepMind",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "afa803390cdebde1bac464b957ac4ea1b8e326ac",
-          "title": "Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型， hourly 更新且分辨率较上一代提升约 5 倍 / Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-          "title_zh": "Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型， hourly 更新且分辨率较上一代提升约 5 倍",
-          "title_en": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-          "title_original": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
-          "source": "Google DeepMind",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-03T15:02:08Z"
+          "published_at": "2026-09-04T16:04:14Z"
         },
         {
-          "id": "2ce61cfe8316633c46e8daecde2604beec30c201",
-          "title": "Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型， hourly 更新且分辨率较上一代提升约 5 倍 / Introducing WeatherNext 3， our most advanced and accurate global weather AI model",
-          "title_zh": "Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型， hourly 更新且分辨率较上一代提升约 5 倍",
-          "title_en": "Introducing WeatherNext 3， our most advanced and accurate global weather AI model",
-          "title_original": "Introducing WeatherNext 3， our most advanced and accurate global weather AI model",
-          "summary": "Google DeepMind 与 Google Research 发布 WeatherNext 3，称其为迄今最先进的全球天气 AI 模型，经 Brightband 独立实时评估。",
+          "id": "6566ef8a87cc0287e3b9e392afb77dec635dc956",
+          "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本 / Project HydraFusion： Frontier quality via multi-model orchestration",
+          "title_zh": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
+          "title_en": "Project HydraFusion： Frontier quality via multi-model orchestration",
+          "title_original": "Project HydraFusion： Frontier quality via multi-model orchestration",
+          "summary": "GitHub 推出 Project HydraFusion 研究预览，通过运行时多模型编排，在 Single、Cascade、Critique 三种执行模式间为每个任务选择工作流，以平衡质量、成本和延迟。",
           "recommend_reason_zh": null,
-          "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
-          "source": "Google DeepMind：Blog（RSS）",
+          "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
+          "source": "GitHub Blog",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-03T15:02:08Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Google DeepMind",
-        "Google DeepMind：Blog（RSS）"
-      ],
-      "items": [
-        {
-          "id": "afa803390cdebde1bac464b957ac4ea1b8e326ac",
-          "title": "Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型， hourly 更新且分辨率较上一代提升约 5 倍 / Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-          "title_zh": "Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型， hourly 更新且分辨率较上一代提升约 5 倍",
-          "title_en": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-          "title_original": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
-          "source": "Google DeepMind",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-03T15:02:08Z"
-        },
-        {
-          "id": "2ce61cfe8316633c46e8daecde2604beec30c201",
-          "title": "Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型， hourly 更新且分辨率较上一代提升约 5 倍 / Introducing WeatherNext 3， our most advanced and accurate global weather AI model",
-          "title_zh": "Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型， hourly 更新且分辨率较上一代提升约 5 倍",
-          "title_en": "Introducing WeatherNext 3， our most advanced and accurate global weather AI model",
-          "title_original": "Introducing WeatherNext 3， our most advanced and accurate global weather AI model",
-          "summary": "Google DeepMind 与 Google Research 发布 WeatherNext 3，称其为迄今最先进的全球天气 AI 模型，经 Brightband 独立实时评估。",
-          "recommend_reason_zh": null,
-          "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
-          "source": "Google DeepMind：Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-03T15:02:08Z"
+          "published_at": "2026-09-04T16:04:14Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8077,
-      "importance": 0.8077,
-      "importance_score": 0.8077,
+      "score": 0.8412,
+      "importance": 0.8412,
+      "importance_score": 0.8412,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.7982,
+        "recency": 0.9845,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -180,26 +95,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-03T15:02:08Z",
-      "latest_at": "2026-09-03T15:02:08Z",
+      "earliest_at": "2026-09-04T16:04:14Z",
+      "latest_at": "2026-09-04T16:04:14Z",
       "primary_item": {
-        "id": "afa803390cdebde1bac464b957ac4ea1b8e326ac",
-        "title": "Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型， hourly 更新且分辨率较上一代提升约 5 倍 / Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-        "title_zh": "Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型， hourly 更新且分辨率较上一代提升约 5 倍",
-        "title_en": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-        "title_original": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-        "summary": null,
+        "id": "176d3dc0bd094aa366d311fdf1f135ee2da187bb",
+        "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本 / Project HydraFusion: Frontier quality via multi-model orchestration",
+        "title_zh": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
+        "title_en": "Project HydraFusion: Frontier quality via multi-model orchestration",
+        "title_original": "Project HydraFusion: Frontier quality via multi-model orchestration",
+        "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The GitHub Blog .",
         "recommend_reason_zh": null,
-        "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model",
-        "source": "Google DeepMind",
+        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
+        "source": "GitHub AI & ML",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8439,
+      "peak_score": 0.8412,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -247,15 +162,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8087,
-      "importance": 0.8087,
-      "importance_score": 0.8087,
+      "score": 0.8039,
+      "importance": 0.8039,
+      "importance_score": 0.8039,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.93,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8786,
+        "recency": 0.8515,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -283,7 +198,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -331,15 +246,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7801,
-      "importance": 0.7801,
-      "importance_score": 0.7801,
+      "score": 0.7756,
+      "importance": 0.7756,
+      "importance_score": 0.7756,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.87,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8197,
+        "recency": 0.7945,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -367,7 +282,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -415,15 +330,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7795,
-      "importance": 0.7795,
-      "importance_score": 0.7795,
+      "score": 0.7749,
+      "importance": 0.7749,
+      "importance_score": 0.7749,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.86,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8327,
+        "recency": 0.8071,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -451,91 +366,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
-      }
-    },
-    {
-      "story_id": "story_3550a4d29815",
-      "title": "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent / Build a Long-Running Agent in the Cloud for $5.70/Month",
-      "url": "https://dev.to/googleai/build-a-long-running-agent-in-the-cloud-for-570month-113c",
-      "primary_url": "https://dev.to/googleai/build-a-long-running-agent-in-the-cloud-for-570month-113c",
-      "source": "Google AI：DEV 作者专属（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "7644cc4f7c123462364a8d80cc849d1979a28df8",
-          "title": "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent / Build a Long-Running Agent in the Cloud for $5.70/Month",
-          "title_zh": "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent",
-          "title_en": "Build a Long-Running Agent in the Cloud for $5.70/Month",
-          "title_original": "Build a Long-Running Agent in the Cloud for $5.70/Month",
-          "summary": "Shir Meir Lador 在 Google AI 开发者博客介绍如何用 Cloud Run instances 以每月 $5.70（1 vCPU、1Gi 内存、共享 CPU）在云端 24/7 运行常驻 Agent。",
-          "recommend_reason_zh": null,
-          "url": "https://dev.to/googleai/build-a-long-running-agent-in-the-cloud-for-570month-113c",
-          "source": "Google AI：DEV 作者专属（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-03T15:54:57Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Google AI：DEV 作者专属（RSS）"
-      ],
-      "items": [
-        {
-          "id": "7644cc4f7c123462364a8d80cc849d1979a28df8",
-          "title": "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent / Build a Long-Running Agent in the Cloud for $5.70/Month",
-          "title_zh": "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent",
-          "title_en": "Build a Long-Running Agent in the Cloud for $5.70/Month",
-          "title_original": "Build a Long-Running Agent in the Cloud for $5.70/Month",
-          "summary": "Shir Meir Lador 在 Google AI 开发者博客介绍如何用 Cloud Run instances 以每月 $5.70（1 vCPU、1Gi 内存、共享 CPU）在云端 24/7 运行常驻 Agent。",
-          "recommend_reason_zh": null,
-          "url": "https://dev.to/googleai/build-a-long-running-agent-in-the-cloud-for-570month-113c",
-          "source": "Google AI：DEV 作者专属（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-03T15:54:57Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7749,
-      "importance": 0.7749,
-      "importance_score": 0.7749,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.7,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.805,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-03T15:54:57Z",
-      "latest_at": "2026-09-03T15:54:57Z",
-      "primary_item": {
-        "id": "7644cc4f7c123462364a8d80cc849d1979a28df8",
-        "title": "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent / Build a Long-Running Agent in the Cloud for $5.70/Month",
-        "title_zh": "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent",
-        "title_en": "Build a Long-Running Agent in the Cloud for $5.70/Month",
-        "title_original": "Build a Long-Running Agent in the Cloud for $5.70/Month",
-        "summary": "Shir Meir Lador 在 Google AI 开发者博客介绍如何用 Cloud Run instances 以每月 $5.70（1 vCPU、1Gi 内存、共享 CPU）在云端 24/7 运行常驻 Agent。",
-        "recommend_reason_zh": null,
-        "url": "https://dev.to/googleai/build-a-long-running-agent-in-the-cloud-for-570month-113c",
-        "source": "Google AI：DEV 作者专属（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8051,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -670,15 +501,15 @@
       ],
       "item_count": 4,
       "duplicate_count": 4,
-      "score": 0.7874,
-      "importance": 0.7874,
-      "importance_score": 0.7874,
+      "score": 0.7826,
+      "importance": 0.7826,
+      "importance_score": 0.7826,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8713,
+        "recency": 0.8445,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -707,7 +538,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -755,15 +586,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7872,
-      "importance": 0.7872,
-      "importance_score": 0.7872,
+      "score": 0.7824,
+      "importance": 0.7824,
+      "importance_score": 0.7824,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.86,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8756,
+        "recency": 0.8487,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -791,7 +622,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -839,15 +670,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7852,
-      "importance": 0.7852,
-      "importance_score": 0.7852,
+      "score": 0.7803,
+      "importance": 0.7803,
+      "importance_score": 0.7803,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.85,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.881,
+        "recency": 0.8539,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -875,7 +706,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -923,15 +754,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7728,
-      "importance": 0.7728,
-      "importance_score": 0.7728,
+      "score": 0.7682,
+      "importance": 0.7682,
+      "importance_score": 0.7682,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8291,
+        "recency": 0.8035,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -959,7 +790,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -1007,15 +838,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7706,
-      "importance": 0.7706,
-      "importance_score": 0.7706,
+      "score": 0.766,
+      "importance": 0.766,
+      "importance_score": 0.766,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8335,
+        "recency": 0.8078,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1043,7 +874,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -1120,15 +951,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7688,
-      "importance": 0.7688,
-      "importance_score": 0.7688,
+      "score": 0.7641,
+      "importance": 0.7641,
+      "importance_score": 0.7641,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8398,
+        "recency": 0.814,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1156,7 +987,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -1233,15 +1064,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7684,
-      "importance": 0.7684,
-      "importance_score": 0.7684,
+      "score": 0.7639,
+      "importance": 0.7639,
+      "importance_score": 0.7639,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8214,
+        "recency": 0.7961,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1269,7 +1100,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -1317,15 +1148,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7631,
-      "importance": 0.7631,
-      "importance_score": 0.7631,
+      "score": 0.7585,
+      "importance": 0.7585,
+      "importance_score": 0.7585,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8247,
+        "recency": 0.7993,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1353,7 +1184,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -1430,15 +1261,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7672,
-      "importance": 0.7672,
-      "importance_score": 0.7672,
+      "score": 0.7625,
+      "importance": 0.7625,
+      "importance_score": 0.7625,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8476,
+        "recency": 0.8215,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1466,7 +1297,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -1543,15 +1374,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7625,
-      "importance": 0.7625,
-      "importance_score": 0.7625,
+      "score": 0.7579,
+      "importance": 0.7579,
+      "importance_score": 0.7579,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8216,
+        "recency": 0.7963,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1579,7 +1410,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -1627,15 +1458,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7649,
-      "importance": 0.7649,
-      "importance_score": 0.7649,
+      "score": 0.7603,
+      "importance": 0.7603,
+      "importance_score": 0.7603,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.835,
+        "recency": 0.8093,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1663,7 +1494,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -1711,15 +1542,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.775,
-      "importance": 0.775,
-      "importance_score": 0.775,
+      "score": 0.7701,
+      "importance": 0.7701,
+      "importance_score": 0.7701,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8914,
+        "recency": 0.8639,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1747,7 +1578,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -1795,15 +1626,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7867,
-      "importance": 0.7867,
-      "importance_score": 0.7867,
+      "score": 0.7813,
+      "importance": 0.7813,
+      "importance_score": 0.7813,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9727,
+        "recency": 0.9427,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1831,7 +1662,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     },
     {
@@ -1879,15 +1710,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7577,
-      "importance": 0.7577,
-      "importance_score": 0.7577,
+      "score": 0.753,
+      "importance": 0.753,
+      "importance_score": 0.753,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8449,
+        "recency": 0.8188,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1915,7 +1746,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-04T14:29:31.480928Z"
+        "scored_at": "2026-09-04T17:42:20.505123Z"
+      }
+    },
+    {
+      "story_id": "story_409e126945bc",
+      "title": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA / The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+      "url": "https://x.com/sherwinwu/status/2095608486940086448",
+      "primary_url": "https://x.com/sherwinwu/status/2095608486940086448",
+      "source": "X：Sherwin Wu（@sherwinwu）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "b3320940f76fda57c1e2b38ffd21ed9404e2152e",
+          "title": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA / The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+          "title_zh": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA",
+          "title_en": "The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+          "title_original": "The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+          "summary": "OpenAI 发布 GPT-6 Astra，在 FrontierMath Tier 4、ARC-AGI 3、TerminalBench-4.0 上达到 SOTA，并在 Terminal-Bench Science 0.1 和 HealthBench Pro 上取得领先成绩。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/sherwinwu/status/2095608486940086448",
+          "source": "X：Sherwin Wu（@sherwinwu）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-03T20:22:52Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Sherwin Wu（@sherwinwu）"
+      ],
+      "items": [
+        {
+          "id": "b3320940f76fda57c1e2b38ffd21ed9404e2152e",
+          "title": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA / The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+          "title_zh": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA",
+          "title_en": "The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+          "title_original": "The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+          "summary": "OpenAI 发布 GPT-6 Astra，在 FrontierMath Tier 4、ARC-AGI 3、TerminalBench-4.0 上达到 SOTA，并在 Terminal-Bench Science 0.1 和 HealthBench Pro 上取得领先成绩。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/sherwinwu/status/2095608486940086448",
+          "source": "X：Sherwin Wu（@sherwinwu）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-03T20:22:52Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7522,
+      "importance": 0.7522,
+      "importance_score": 0.7522,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8145,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-03T20:22:52Z",
+      "latest_at": "2026-09-03T20:22:52Z",
+      "primary_item": {
+        "id": "b3320940f76fda57c1e2b38ffd21ed9404e2152e",
+        "title": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA / The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+        "title_zh": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA",
+        "title_en": "The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+        "title_original": "The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+        "summary": "OpenAI 发布 GPT-6 Astra，在 FrontierMath Tier 4、ARC-AGI 3、TerminalBench-4.0 上达到 SOTA，并在 Terminal-Bench Science 0.1 和 HealthBench Pro 上取得领先成绩。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/sherwinwu/status/2095608486940086448",
+        "source": "X：Sherwin Wu（@sherwinwu）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7832,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-04T17:42:20.505123Z"
+      }
+    },
+    {
+      "story_id": "story_e62db571b707",
+      "title": "OpenAI 发布 GPT-6 Astra，主打 Computer Use 与 Agent 对齐进展 / GPT-6 Astra is here！ This is a big moment for our research team - years of work on pretraining， rein…",
+      "url": "https://x.com/markchen90/status/2095597534412673109",
+      "primary_url": "https://x.com/markchen90/status/2095597534412673109",
+      "source": "X：Mark Chen（OpenAI 首席研究官，@markchen90）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "47c91f47301a0d63023205a7f9987732cf04cc3d",
+          "title": "OpenAI 发布 GPT-6 Astra，主打 Computer Use 与 Agent 对齐进展 / GPT-6 Astra is here！ This is a big moment for our research team - years of work on pretraining， rein…",
+          "title_zh": "OpenAI 发布 GPT-6 Astra，主打 Computer Use 与 Agent 对齐进展",
+          "title_en": "GPT-6 Astra is here！ This is a big moment for our research team - years of work on pretraining， rein…",
+          "title_original": "GPT-6 Astra is here！ This is a big moment for our research team - years of work on pretraining， rein…",
+          "summary": "OpenAI 首席研究官 Mark Chen 宣布 GPT-6 Astra 发布，称其为团队多年预训练、强化学习和后训练工作的成果，是迄今能力最强、对齐最好的模型。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/markchen90/status/2095597534412673109",
+          "source": "X：Mark Chen（OpenAI 首席研究官，@markchen90）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-03T19:39:21Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Mark Chen（OpenAI 首席研究官，@markchen90）"
+      ],
+      "items": [
+        {
+          "id": "47c91f47301a0d63023205a7f9987732cf04cc3d",
+          "title": "OpenAI 发布 GPT-6 Astra，主打 Computer Use 与 Agent 对齐进展 / GPT-6 Astra is here！ This is a big moment for our research team - years of work on pretraining， rein…",
+          "title_zh": "OpenAI 发布 GPT-6 Astra，主打 Computer Use 与 Agent 对齐进展",
+          "title_en": "GPT-6 Astra is here！ This is a big moment for our research team - years of work on pretraining， rein…",
+          "title_original": "GPT-6 Astra is here！ This is a big moment for our research team - years of work on pretraining， rein…",
+          "summary": "OpenAI 首席研究官 Mark Chen 宣布 GPT-6 Astra 发布，称其为团队多年预训练、强化学习和后训练工作的成果，是迄今能力最强、对齐最好的模型。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/markchen90/status/2095597534412673109",
+          "source": "X：Mark Chen（OpenAI 首席研究官，@markchen90）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-03T19:39:21Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7512,
+      "importance": 0.7512,
+      "importance_score": 0.7512,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8088,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-03T19:39:21Z",
+      "latest_at": "2026-09-03T19:39:21Z",
+      "primary_item": {
+        "id": "47c91f47301a0d63023205a7f9987732cf04cc3d",
+        "title": "OpenAI 发布 GPT-6 Astra，主打 Computer Use 与 Agent 对齐进展 / GPT-6 Astra is here！ This is a big moment for our research team - years of work on pretraining， rein…",
+        "title_zh": "OpenAI 发布 GPT-6 Astra，主打 Computer Use 与 Agent 对齐进展",
+        "title_en": "GPT-6 Astra is here！ This is a big moment for our research team - years of work on pretraining， rein…",
+        "title_original": "GPT-6 Astra is here！ This is a big moment for our research team - years of work on pretraining， rein…",
+        "summary": "OpenAI 首席研究官 Mark Chen 宣布 GPT-6 Astra 发布，称其为团队多年预训练、强化学习和后训练工作的成果，是迄今能力最强、对齐最好的模型。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/markchen90/status/2095597534412673109",
+        "source": "X：Mark Chen（OpenAI 首席研究官，@markchen90）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.782,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-04T17:42:20.505123Z"
       }
     }
   ]
