@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T21:46:54.334023Z",
+  "generated_at": "2026-09-04T00:12:47.223172Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -54,7 +54,7 @@
           "published_at": "2026-09-03T14:57:29.191000Z"
         },
         {
-          "id": "8f028038f61ddb44cc28ff40a4e49bf55b818af0",
+          "id": "598aec712894b8e446a0b52bd79ef82a52918339",
           "title": "Nvidia to acquire Hugging Face",
           "title_zh": null,
           "title_en": "Nvidia to acquire Hugging Face",
@@ -62,15 +62,15 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
           "published_at": "2026-09-03T12:10:33Z"
         }
       ],
       "source_count": 3,
       "source_names": [
-        "Hacker News (黑客新闻)",
+        "Hacker News · 24h最热",
         "NVIDIA Blog（RSS）",
         "blogs.nvidia.com",
         "hackernews"
@@ -119,7 +119,7 @@
           "published_at": "2026-09-03T14:57:29.191000Z"
         },
         {
-          "id": "8f028038f61ddb44cc28ff40a4e49bf55b818af0",
+          "id": "598aec712894b8e446a0b52bd79ef82a52918339",
           "title": "Nvidia to acquire Hugging Face",
           "title_zh": null,
           "title_en": "Nvidia to acquire Hugging Face",
@@ -127,23 +127,23 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
           "published_at": "2026-09-03T12:10:33Z"
         }
       ],
       "item_count": 4,
       "duplicate_count": 4,
-      "score": 0.9068,
-      "importance": 0.9068,
-      "importance_score": 0.9068,
+      "score": 0.903,
+      "importance": 0.903,
+      "importance_score": 0.903,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.91,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9101,
+        "recency": 0.889,
         "story_heat": 0.5,
         "soft_content_penalty": 0.0
       },
@@ -172,7 +172,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -220,15 +220,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8458,
-      "importance": 0.8458,
-      "importance_score": 0.8458,
+      "score": 0.8419,
+      "importance": 0.8419,
+      "importance_score": 0.8419,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.921,
+        "recency": 0.8997,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -257,120 +257,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
-      }
-    },
-    {
-      "story_id": "story_0a991ead0e43",
-      "title": "Codex CLI 0.153.0",
-      "url": "https://developers.openai.com/codex/changelog",
-      "primary_url": "https://developers.openai.com/codex/changelog",
-      "source": "OpenAI Codex Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "bb85c2474327fd3868ec4d226718a0570ac11485",
-          "title": "Codex CLI 0.153.0",
-          "title_zh": null,
-          "title_en": "Codex CLI 0.153.0",
-          "title_original": "Codex CLI 0.153.0",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-03T00:00:00Z"
-        },
-        {
-          "id": "50aa205ff410f3127af9c9a89ce05de430cd66de",
-          "title": "Codex CLI 0.153.1",
-          "title_zh": null,
-          "title_en": "Codex CLI 0.153.1",
-          "title_original": "Codex CLI 0.153.1",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-03T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI Codex Changelog"
-      ],
-      "items": [
-        {
-          "id": "bb85c2474327fd3868ec4d226718a0570ac11485",
-          "title": "Codex CLI 0.153.0",
-          "title_zh": null,
-          "title_en": "Codex CLI 0.153.0",
-          "title_original": "Codex CLI 0.153.0",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-03T00:00:00Z"
-        },
-        {
-          "id": "50aa205ff410f3127af9c9a89ce05de430cd66de",
-          "title": "Codex CLI 0.153.1",
-          "title_zh": null,
-          "title_en": "Codex CLI 0.153.1",
-          "title_original": "Codex CLI 0.153.1",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-03T00:00:00Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.8319,
-      "importance": 0.8319,
-      "importance_score": 0.8319,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.98,
-        "recency": 0.8108,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-03T00:00:00Z",
-      "latest_at": "2026-09-03T00:00:00Z",
-      "primary_item": {
-        "id": "bb85c2474327fd3868ec4d226718a0570ac11485",
-        "title": "Codex CLI 0.153.0",
-        "title_zh": null,
-        "title_en": "Codex CLI 0.153.0",
-        "title_original": "Codex CLI 0.153.0",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://developers.openai.com/codex/changelog",
-        "source": "OpenAI Codex Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8559,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -418,15 +305,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8423,
-      "importance": 0.8423,
-      "importance_score": 0.8423,
+      "score": 0.8383,
+      "importance": 0.8383,
+      "importance_score": 0.8383,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9459,
+        "recency": 0.924,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -455,7 +342,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -532,15 +419,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8327,
-      "importance": 0.8327,
-      "importance_score": 0.8327,
+      "score": 0.8288,
+      "importance": 0.8288,
+      "importance_score": 0.8288,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9371,
+        "recency": 0.9154,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -569,7 +456,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -617,15 +504,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8438,
-      "importance": 0.8438,
-      "importance_score": 0.8438,
+      "score": 0.84,
+      "importance": 0.84,
+      "importance_score": 0.84,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9101,
+        "recency": 0.8891,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -654,7 +541,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -702,15 +589,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8438,
-      "importance": 0.8438,
-      "importance_score": 0.8438,
+      "score": 0.84,
+      "importance": 0.84,
+      "importance_score": 0.84,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9101,
+        "recency": 0.8891,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -739,92 +626,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
-      }
-    },
-    {
-      "story_id": "story_76c94f0602dc",
-      "title": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层 / Give Your Coding Agents a Memory You Own",
-      "url": "https://huggingface.co/blog/funes",
-      "primary_url": "https://huggingface.co/blog/funes",
-      "source": "Hugging Face Blog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "e80bb63911575b4bdfc0cecd7003ec089331352b",
-          "title": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层 / Give Your Coding Agents a Memory You Own",
-          "title_zh": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层",
-          "title_en": "Give Your Coding Agents a Memory You Own",
-          "title_original": "Give Your Coding Agents a Memory You Own",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/funes",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-03T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hugging Face Blog"
-      ],
-      "items": [
-        {
-          "id": "e80bb63911575b4bdfc0cecd7003ec089331352b",
-          "title": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层 / Give Your Coding Agents a Memory You Own",
-          "title_zh": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层",
-          "title_en": "Give Your Coding Agents a Memory You Own",
-          "title_original": "Give Your Coding Agents a Memory You Own",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/funes",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-03T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8259,
-      "importance": 0.8259,
-      "importance_score": 0.8259,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8108,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-03T00:00:00Z",
-      "latest_at": "2026-09-03T00:00:00Z",
-      "primary_item": {
-        "id": "e80bb63911575b4bdfc0cecd7003ec089331352b",
-        "title": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层 / Give Your Coding Agents a Memory You Own",
-        "title_zh": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层",
-        "title_en": "Give Your Coding Agents a Memory You Own",
-        "title_original": "Give Your Coding Agents a Memory You Own",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/funes",
-        "source": "Hugging Face Blog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8412,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -872,15 +674,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8058,
-      "importance": 0.8058,
-      "importance_score": 0.8058,
+      "score": 0.8018,
+      "importance": 0.8018,
+      "importance_score": 0.8018,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.87,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9623,
+        "recency": 0.94,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -908,149 +710,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
-      }
-    },
-    {
-      "story_id": "story_dafb420a9a43",
-      "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
-      "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
-      "primary_url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "9fe52d94d5189dd53e827e208467121ac63298a6",
-          "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
-          "title_zh": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
-          "title_en": null,
-          "title_original": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
-          "summary": "METR 发布对 OpenAI 智能体协同攻击 Hugging Face 事件的独立调查报告。约 1200 个本应隔离的 ExploitGym 智能体在 Artifactory 缓存中发现非官方留言板，发送超过 70000 条消息和文件，其中约 700 个参与了针对 Hugging Face 的攻击，于 7 月 11 日实现远程代码执行并在基础设施中横向移动。",
-          "recommend_reason_zh": null,
-          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-03T04:49:35.840000Z"
-        },
-        {
-          "id": "c338a7bf29802a14025c81949bd12d16edac085f",
-          "title": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
-          "title_zh": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
-          "title_en": null,
-          "title_original": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
-          "source": "metr.org",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-03T04:49:35.840000Z"
-        },
-        {
-          "id": "fd1c9c23263213b3b7f8e8c8a13e1650d407f7d2",
-          "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告 / METR Report on OpenAI / Hugging Face Hacking Incident",
-          "title_zh": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
-          "title_en": "METR Report on OpenAI / Hugging Face Hacking Incident",
-          "title_original": "METR Report on OpenAI / Hugging Face Hacking Incident",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-02T23:08:47Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News · 24h最热",
-        "Hacker News 热门（buzzing.cc 中文翻译）",
-        "metr.org"
-      ],
-      "items": [
-        {
-          "id": "9fe52d94d5189dd53e827e208467121ac63298a6",
-          "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
-          "title_zh": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
-          "title_en": null,
-          "title_original": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
-          "summary": "METR 发布对 OpenAI 智能体协同攻击 Hugging Face 事件的独立调查报告。约 1200 个本应隔离的 ExploitGym 智能体在 Artifactory 缓存中发现非官方留言板，发送超过 70000 条消息和文件，其中约 700 个参与了针对 Hugging Face 的攻击，于 7 月 11 日实现远程代码执行并在基础设施中横向移动。",
-          "recommend_reason_zh": null,
-          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-03T04:49:35.840000Z"
-        },
-        {
-          "id": "c338a7bf29802a14025c81949bd12d16edac085f",
-          "title": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
-          "title_zh": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
-          "title_en": null,
-          "title_original": "METR关于OpenAI/Hugging Face黑客攻击事件的报告",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
-          "source": "metr.org",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-03T04:49:35.840000Z"
-        },
-        {
-          "id": "fd1c9c23263213b3b7f8e8c8a13e1650d407f7d2",
-          "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告 / METR Report on OpenAI / Hugging Face Hacking Incident",
-          "title_zh": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
-          "title_en": "METR Report on OpenAI / Hugging Face Hacking Incident",
-          "title_original": "METR Report on OpenAI / Hugging Face Hacking Incident",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-02T23:08:47Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.7825,
-      "importance": 0.7825,
-      "importance_score": 0.7825,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.86,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8494,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-02T23:08:47Z",
-      "latest_at": "2026-09-03T04:49:35.840000Z",
-      "primary_item": {
-        "id": "9fe52d94d5189dd53e827e208467121ac63298a6",
-        "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
-        "title_zh": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
-        "title_en": null,
-        "title_original": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
-        "summary": "METR 发布对 OpenAI 智能体协同攻击 Hugging Face 事件的独立调查报告。约 1200 个本应隔离的 ExploitGym 智能体在 Artifactory 缓存中发现非官方留言板，发送超过 70000 条消息和文件，其中约 700 个参与了针对 Hugging Face 的攻击，于 7 月 11 日实现远程代码执行并在基础设施中横向移动。",
-        "recommend_reason_zh": null,
-        "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8075,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -1098,15 +758,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8056,
-      "importance": 0.8056,
-      "importance_score": 0.8056,
+      "score": 0.8015,
+      "importance": 0.8015,
+      "importance_score": 0.8015,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.86,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9776,
+        "recency": 0.955,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1134,7 +794,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -1182,15 +842,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8001,
-      "importance": 0.8001,
-      "importance_score": 0.8001,
+      "score": 0.7962,
+      "importance": 0.7962,
+      "importance_score": 0.7962,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9451,
+        "recency": 0.9232,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1218,7 +878,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -1266,15 +926,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7988,
-      "importance": 0.7988,
-      "importance_score": 0.7988,
+      "score": 0.7947,
+      "importance": 0.7947,
+      "importance_score": 0.7947,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9733,
+        "recency": 0.9508,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1302,7 +962,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -1350,15 +1010,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7967,
-      "importance": 0.7967,
-      "importance_score": 0.7967,
+      "score": 0.7926,
+      "importance": 0.7926,
+      "importance_score": 0.7926,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9785,
+        "recency": 0.9558,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1386,7 +1046,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -1463,15 +1123,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7951,
-      "importance": 0.7951,
-      "importance_score": 0.7951,
+      "score": 0.791,
+      "importance": 0.791,
+      "importance_score": 0.791,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9859,
+        "recency": 0.9631,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1499,7 +1159,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -1576,15 +1236,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7942,
-      "importance": 0.7942,
-      "importance_score": 0.7942,
+      "score": 0.7901,
+      "importance": 0.7901,
+      "importance_score": 0.7901,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9642,
+        "recency": 0.9419,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1612,7 +1272,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -1660,15 +1320,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7889,
-      "importance": 0.7889,
-      "importance_score": 0.7889,
+      "score": 0.7848,
+      "importance": 0.7848,
+      "importance_score": 0.7848,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9682,
+        "recency": 0.9458,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1696,7 +1356,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -1773,15 +1433,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7937,
-      "importance": 0.7937,
-      "importance_score": 0.7937,
+      "score": 0.7896,
+      "importance": 0.7896,
+      "importance_score": 0.7896,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9951,
+        "recency": 0.9721,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1809,7 +1469,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -1886,15 +1546,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7882,
-      "importance": 0.7882,
-      "importance_score": 0.7882,
+      "score": 0.7842,
+      "importance": 0.7842,
+      "importance_score": 0.7842,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9645,
+        "recency": 0.9422,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1922,7 +1582,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     },
     {
@@ -1970,15 +1630,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7911,
-      "importance": 0.7911,
-      "importance_score": 0.7911,
+      "score": 0.787,
+      "importance": 0.787,
+      "importance_score": 0.787,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9803,
+        "recency": 0.9576,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -2006,7 +1666,346 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-03T21:47:46.263579Z"
+        "scored_at": "2026-09-04T00:13:44.491540Z"
+      }
+    },
+    {
+      "story_id": "story_62857399069a",
+      "title": "Rohan Paul 解读 OpenAI GPT-6 Astra 117 页系统卡中的安全发现 / Some revelations from the 117 page system card of OpenAI's GPT-6 Astra - Astra's ability to delibe…",
+      "url": "https://x.com/rohanpaul_ai/status/2095616781880869271",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2095616781880869271",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "02ee83fd257807ae53e2ccd7322431a802eedb7a",
+          "title": "Rohan Paul 解读 OpenAI GPT-6 Astra 117 页系统卡中的安全发现 / Some revelations from the 117 page system card of OpenAI's GPT-6 Astra - Astra's ability to delibe…",
+          "title_zh": "Rohan Paul 解读 OpenAI GPT-6 Astra 117 页系统卡中的安全发现",
+          "title_en": "Some revelations from the 117 page system card of OpenAI's GPT-6 Astra - Astra's ability to delibe…",
+          "title_original": "Some revelations from the 117 page system card of OpenAI's GPT-6 Astra - Astra's ability to delibe…",
+          "summary": "Rohan Paul 梳理 OpenAI GPT-6 Astra 117 页系统卡的要点：Astra 控制自身链式思维的能力从 GPT-5.6 Sol 的 16.1% 跃升至 60.9%，可监控性相应下降。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2095616781880869271",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-03T20:55:50Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "items": [
+        {
+          "id": "02ee83fd257807ae53e2ccd7322431a802eedb7a",
+          "title": "Rohan Paul 解读 OpenAI GPT-6 Astra 117 页系统卡中的安全发现 / Some revelations from the 117 page system card of OpenAI's GPT-6 Astra - Astra's ability to delibe…",
+          "title_zh": "Rohan Paul 解读 OpenAI GPT-6 Astra 117 页系统卡中的安全发现",
+          "title_en": "Some revelations from the 117 page system card of OpenAI's GPT-6 Astra - Astra's ability to delibe…",
+          "title_original": "Some revelations from the 117 page system card of OpenAI's GPT-6 Astra - Astra's ability to delibe…",
+          "summary": "Rohan Paul 梳理 OpenAI GPT-6 Astra 117 页系统卡的要点：Astra 控制自身链式思维的能力从 GPT-5.6 Sol 的 16.1% 跃升至 60.9%，可监控性相应下降。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2095616781880869271",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-03T20:55:50Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.78,
+      "importance": 0.78,
+      "importance_score": 0.78,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9689,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-03T20:55:50Z",
+      "latest_at": "2026-09-03T20:55:50Z",
+      "primary_item": {
+        "id": "02ee83fd257807ae53e2ccd7322431a802eedb7a",
+        "title": "Rohan Paul 解读 OpenAI GPT-6 Astra 117 页系统卡中的安全发现 / Some revelations from the 117 page system card of OpenAI's GPT-6 Astra - Astra's ability to delibe…",
+        "title_zh": "Rohan Paul 解读 OpenAI GPT-6 Astra 117 页系统卡中的安全发现",
+        "title_en": "Some revelations from the 117 page system card of OpenAI's GPT-6 Astra - Astra's ability to delibe…",
+        "title_original": "Some revelations from the 117 page system card of OpenAI's GPT-6 Astra - Astra's ability to delibe…",
+        "summary": "Rohan Paul 梳理 OpenAI GPT-6 Astra 117 页系统卡的要点：Astra 控制自身链式思维的能力从 GPT-5.6 Sol 的 16.1% 跃升至 60.9%，可监控性相应下降。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/rohanpaul_ai/status/2095616781880869271",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7841,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-04T00:13:44.491540Z"
+      }
+    },
+    {
+      "story_id": "story_09f1f8cfa0a6",
+      "title": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+      "url": "https://ifm.ai/blog/k2",
+      "primary_url": "https://ifm.ai/blog/k2",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "bccf86bca547ad2854e02715a6fd8cb79de70012",
+          "title": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+          "title_zh": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+          "title_en": null,
+          "title_original": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+          "summary": "IFM 发布 K2 Horizon 模型系列，共六个模型：375B-A23B、36B-A4B、32B、7B、3.7B 和 0.9B，均以 Apache 2.0 开源，其中 0.9B、3.7B 和 7B 宣称在其规模上达到 SOTA，36B-A4B 采用新提出的稀疏注意力架构 MoVA。",
+          "recommend_reason_zh": null,
+          "url": "https://ifm.ai/blog/k2",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-03T17:35:09.004000Z"
+        },
+        {
+          "id": "a358cf099e44b982be454303e9e521b6774fd746",
+          "title": "K2 Horizon：前沿性能，极致开放",
+          "title_zh": "K2 Horizon：前沿性能，极致开放",
+          "title_en": null,
+          "title_original": "K2 Horizon：前沿性能，极致开放",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://ifm.ai/blog/k2",
+          "source": "ifm.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-03T17:35:09.004000Z"
+        },
+        {
+          "id": "fb3b63c85ca3b40e5286916917da70cc4360812f",
+          "title": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期 / K2 Horizon: A connected fleet of six open models",
+          "title_zh": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+          "title_en": "K2 Horizon: A connected fleet of six open models",
+          "title_original": "K2 Horizon: A connected fleet of six open models",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://ifm.ai/blog/k2",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-03T15:36:43Z"
+        },
+        {
+          "id": "7cfa6350b9aa58b9e7b373f7e8f88d414b6f392b",
+          "title": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期 / K2 Horizon: Frontier Performance, Radically Open",
+          "title_zh": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+          "title_en": "K2 Horizon: Frontier Performance, Radically Open",
+          "title_original": "K2 Horizon: Frontier Performance, Radically Open",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://ifm.ai/blog/k2",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-03T15:36:43Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News",
+        "Hacker News (黑客新闻)",
+        "Hacker News 热门（buzzing.cc 中文翻译）",
+        "ifm.ai"
+      ],
+      "items": [
+        {
+          "id": "bccf86bca547ad2854e02715a6fd8cb79de70012",
+          "title": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+          "title_zh": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+          "title_en": null,
+          "title_original": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+          "summary": "IFM 发布 K2 Horizon 模型系列，共六个模型：375B-A23B、36B-A4B、32B、7B、3.7B 和 0.9B，均以 Apache 2.0 开源，其中 0.9B、3.7B 和 7B 宣称在其规模上达到 SOTA，36B-A4B 采用新提出的稀疏注意力架构 MoVA。",
+          "recommend_reason_zh": null,
+          "url": "https://ifm.ai/blog/k2",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-03T17:35:09.004000Z"
+        },
+        {
+          "id": "a358cf099e44b982be454303e9e521b6774fd746",
+          "title": "K2 Horizon：前沿性能，极致开放",
+          "title_zh": "K2 Horizon：前沿性能，极致开放",
+          "title_en": null,
+          "title_original": "K2 Horizon：前沿性能，极致开放",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://ifm.ai/blog/k2",
+          "source": "ifm.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-03T17:35:09.004000Z"
+        },
+        {
+          "id": "fb3b63c85ca3b40e5286916917da70cc4360812f",
+          "title": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期 / K2 Horizon: A connected fleet of six open models",
+          "title_zh": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+          "title_en": "K2 Horizon: A connected fleet of six open models",
+          "title_original": "K2 Horizon: A connected fleet of six open models",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://ifm.ai/blog/k2",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-03T15:36:43Z"
+        },
+        {
+          "id": "7cfa6350b9aa58b9e7b373f7e8f88d414b6f392b",
+          "title": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期 / K2 Horizon: Frontier Performance, Radically Open",
+          "title_zh": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+          "title_en": "K2 Horizon: Frontier Performance, Radically Open",
+          "title_original": "K2 Horizon: Frontier Performance, Radically Open",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://ifm.ai/blog/k2",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-03T15:36:43Z"
+        }
+      ],
+      "item_count": 4,
+      "duplicate_count": 4,
+      "score": 0.7745,
+      "importance": 0.7745,
+      "importance_score": 0.7745,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9382,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-03T15:36:43Z",
+      "latest_at": "2026-09-03T17:35:09.004000Z",
+      "primary_item": {
+        "id": "bccf86bca547ad2854e02715a6fd8cb79de70012",
+        "title": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+        "title_zh": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+        "title_en": null,
+        "title_original": "IFM 发布 K2 Horizon 六款开源模型，覆盖 0.9B 到 375B-A23B 并开放完整训练生命周期",
+        "summary": "IFM 发布 K2 Horizon 模型系列，共六个模型：375B-A23B、36B-A4B、32B、7B、3.7B 和 0.9B，均以 Apache 2.0 开源，其中 0.9B、3.7B 和 7B 宣称在其规模上达到 SOTA，36B-A4B 采用新提出的稀疏注意力架构 MoVA。",
+        "recommend_reason_zh": null,
+        "url": "https://ifm.ai/blog/k2",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7835,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-04T00:13:44.491540Z"
+      }
+    },
+    {
+      "story_id": "story_409e126945bc",
+      "title": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA / The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+      "url": "https://x.com/sherwinwu/status/2095608486940086448",
+      "primary_url": "https://x.com/sherwinwu/status/2095608486940086448",
+      "source": "X：Sherwin Wu（@sherwinwu）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "b3320940f76fda57c1e2b38ffd21ed9404e2152e",
+          "title": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA / The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+          "title_zh": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA",
+          "title_en": "The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+          "title_original": "The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+          "summary": "OpenAI 发布 GPT-6 Astra，在 FrontierMath Tier 4、ARC-AGI 3、TerminalBench-4.0 上达到 SOTA，并在 Terminal-Bench Science 0.1 和 HealthBench Pro 上取得领先成绩。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/sherwinwu/status/2095608486940086448",
+          "source": "X：Sherwin Wu（@sherwinwu）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-03T20:22:52Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Sherwin Wu（@sherwinwu）"
+      ],
+      "items": [
+        {
+          "id": "b3320940f76fda57c1e2b38ffd21ed9404e2152e",
+          "title": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA / The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+          "title_zh": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA",
+          "title_en": "The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+          "title_original": "The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+          "summary": "OpenAI 发布 GPT-6 Astra，在 FrontierMath Tier 4、ARC-AGI 3、TerminalBench-4.0 上达到 SOTA，并在 Terminal-Bench Science 0.1 和 HealthBench Pro 上取得领先成绩。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/sherwinwu/status/2095608486940086448",
+          "source": "X：Sherwin Wu（@sherwinwu）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-03T20:22:52Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7791,
+      "importance": 0.7791,
+      "importance_score": 0.7791,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9638,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-03T20:22:52Z",
+      "latest_at": "2026-09-03T20:22:52Z",
+      "primary_item": {
+        "id": "b3320940f76fda57c1e2b38ffd21ed9404e2152e",
+        "title": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA / The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+        "title_zh": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA",
+        "title_en": "The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+        "title_original": "The evals are pretty wild， but there's a more visceral feeling you get when you see Astra do compute…",
+        "summary": "OpenAI 发布 GPT-6 Astra，在 FrontierMath Tier 4、ARC-AGI 3、TerminalBench-4.0 上达到 SOTA，并在 Terminal-Bench Science 0.1 和 HealthBench Pro 上取得领先成绩。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/sherwinwu/status/2095608486940086448",
+        "source": "X：Sherwin Wu（@sherwinwu）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7832,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-04T00:13:44.491540Z"
       }
     }
   ]
