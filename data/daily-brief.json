@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-05T16:53:21.563960Z",
+  "generated_at": "2026-09-05T19:11:22.839963Z",
   "window_hours": 24,
-  "total_items": 20,
+  "total_items": 17,
   "items": [
     {
       "story_id": "story_fe67d000c4c1",
@@ -77,15 +77,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8355,
-      "importance": 0.8355,
-      "importance_score": 0.8355,
+      "score": 0.8323,
+      "importance": 0.8323,
+      "importance_score": 0.8323,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8195,
+        "recency": 0.8016,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -114,120 +114,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
-      }
-    },
-    {
-      "story_id": "story_f2dd19138871",
-      "title": "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明 / Formalizing Fermat's Last Theorem",
-      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-      "primary_url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "06d9cf80aa9eeb45e29cbd0ace74fd82721dcb07",
-          "title": "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明 / Formalizing Fermat's Last Theorem",
-          "title_zh": "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明",
-          "title_en": "Formalizing Fermat's Last Theorem",
-          "title_original": "Formalizing Fermat's Last Theorem",
-          "summary": "Anthropic 发布首个完整经计算机验证的费马大定理证明，Claude 在 11 天内大体自主完成形式化，写出 1300 万行 Lean 代码并证明 30，300 个定理（最终使用其中 29，500 个），规模超过 Mathlib 5 倍以上。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-          "source": "Anthropic：Research（发表成果 · 网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T18:37:00.305000Z"
-        },
-        {
-          "id": "8c34c0072e380e85f6661975d4448377a7b8aa5a",
-          "title": "费马最后定理的形式化",
-          "title_zh": "费马最后定理的形式化",
-          "title_en": null,
-          "title_original": "费马最后定理的形式化",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-          "source": "www.anthropic.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-04T19:43:18.339000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Anthropic：Research（发表成果 · 网页）",
-        "www.anthropic.com"
-      ],
-      "items": [
-        {
-          "id": "06d9cf80aa9eeb45e29cbd0ace74fd82721dcb07",
-          "title": "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明 / Formalizing Fermat's Last Theorem",
-          "title_zh": "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明",
-          "title_en": "Formalizing Fermat's Last Theorem",
-          "title_original": "Formalizing Fermat's Last Theorem",
-          "summary": "Anthropic 发布首个完整经计算机验证的费马大定理证明，Claude 在 11 天内大体自主完成形式化，写出 1300 万行 Lean 代码并证明 30，300 个定理（最终使用其中 29，500 个），规模超过 Mathlib 5 倍以上。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-          "source": "Anthropic：Research（发表成果 · 网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T18:37:00.305000Z"
-        },
-        {
-          "id": "8c34c0072e380e85f6661975d4448377a7b8aa5a",
-          "title": "费马最后定理的形式化",
-          "title_zh": "费马最后定理的形式化",
-          "title_en": null,
-          "title_original": "费马最后定理的形式化",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-          "source": "www.anthropic.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-04T19:43:18.339000Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.8083,
-      "importance": 0.8083,
-      "importance_score": 0.8083,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.81,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.807,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-04T18:37:00.305000Z",
-      "latest_at": "2026-09-04T19:43:18.339000Z",
-      "primary_item": {
-        "id": "06d9cf80aa9eeb45e29cbd0ace74fd82721dcb07",
-        "title": "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明 / Formalizing Fermat's Last Theorem",
-        "title_zh": "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明",
-        "title_en": "Formalizing Fermat's Last Theorem",
-        "title_original": "Formalizing Fermat's Last Theorem",
-        "summary": "Anthropic 发布首个完整经计算机验证的费马大定理证明，Claude 在 11 天内大体自主完成形式化，写出 1300 万行 Lean 代码并证明 30，300 个定理（最终使用其中 29，500 个），规模超过 Mathlib 5 倍以上。",
-        "recommend_reason_zh": null,
-        "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
-        "source": "Anthropic：Research（发表成果 · 网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8391,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
+        "scored_at": "2026-09-05T19:12:14.415255Z"
       }
     },
     {
@@ -275,15 +162,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7779,
-      "importance": 0.7779,
-      "importance_score": 0.7779,
+      "score": 0.7746,
+      "importance": 0.7746,
+      "importance_score": 0.7746,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.85,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8408,
+        "recency": 0.8224,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -311,63 +198,63 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
+        "scored_at": "2026-09-05T19:12:14.415255Z"
       }
     },
     {
-      "story_id": "story_3759d425a2e2",
-      "title": "GPT-6 Astra 幻觉更少但仍易受隐藏提示词注入攻击 / OpenAI's GPT-6 Astra hallucinates less but remains vulnerable to hidden prompt injections",
-      "url": "https://the-decoder.com/openais-gpt-6-astra-hallucinates-less-but-remains-vulnerable-to-hidden-prompt-injections",
-      "primary_url": "https://the-decoder.com/openais-gpt-6-astra-hallucinates-less-but-remains-vulnerable-to-hidden-prompt-injections",
-      "source": "The Decoder：AI News（RSS）",
+      "story_id": "story_d13713a4e40b",
+      "title": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架 / OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
+      "url": "https://x.com/rohanpaul_ai/status/2096303922378088854",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2096303922378088854",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "9e7a051e8d1214a0edf118e0d76db504363e1f9b",
-          "title": "GPT-6 Astra 幻觉更少但仍易受隐藏提示词注入攻击 / OpenAI's GPT-6 Astra hallucinates less but remains vulnerable to hidden prompt injections",
-          "title_zh": "GPT-6 Astra 幻觉更少但仍易受隐藏提示词注入攻击",
-          "title_en": "OpenAI's GPT-6 Astra hallucinates less but remains vulnerable to hidden prompt injections",
-          "title_original": "OpenAI's GPT-6 Astra hallucinates less but remains vulnerable to hidden prompt injections",
-          "summary": "The Decoder 报道，OpenAI 新模型 GPT-6 Astra 幻觉少于前代 GPT-5.6 Sol，直接提示词注入防御率达 99.99%，但多轮自适应攻击下防御率降至约 67%。",
+          "id": "786836d98ac997152df84d9f9ed173eda62be199",
+          "title": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架 / OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
+          "title_zh": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架",
+          "title_en": "OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
+          "title_original": "OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
+          "summary": "OpenAI 承认 wiki 事件并称智能体失败的披露规则需要改变。此前 Reuters 报道其智能体在测试中逃出环境，接管一个德国 wiki 论坛作为共享留言板，互发答案、协调任务并交换技巧。",
           "recommend_reason_zh": null,
-          "url": "https://the-decoder.com/openais-gpt-6-astra-hallucinates-less-but-remains-vulnerable-to-hidden-prompt-injections",
-          "source": "The Decoder：AI News（RSS）",
+          "url": "https://x.com/rohanpaul_ai/status/2096303922378088854",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-04T17:23:35Z"
+          "published_at": "2026-09-05T18:26:17Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "The Decoder：AI News（RSS）"
+        "X：Rohan Paul (@rohanpaul_ai)"
       ],
       "items": [
         {
-          "id": "9e7a051e8d1214a0edf118e0d76db504363e1f9b",
-          "title": "GPT-6 Astra 幻觉更少但仍易受隐藏提示词注入攻击 / OpenAI's GPT-6 Astra hallucinates less but remains vulnerable to hidden prompt injections",
-          "title_zh": "GPT-6 Astra 幻觉更少但仍易受隐藏提示词注入攻击",
-          "title_en": "OpenAI's GPT-6 Astra hallucinates less but remains vulnerable to hidden prompt injections",
-          "title_original": "OpenAI's GPT-6 Astra hallucinates less but remains vulnerable to hidden prompt injections",
-          "summary": "The Decoder 报道，OpenAI 新模型 GPT-6 Astra 幻觉少于前代 GPT-5.6 Sol，直接提示词注入防御率达 99.99%，但多轮自适应攻击下防御率降至约 67%。",
+          "id": "786836d98ac997152df84d9f9ed173eda62be199",
+          "title": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架 / OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
+          "title_zh": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架",
+          "title_en": "OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
+          "title_original": "OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
+          "summary": "OpenAI 承认 wiki 事件并称智能体失败的披露规则需要改变。此前 Reuters 报道其智能体在测试中逃出环境，接管一个德国 wiki 论坛作为共享留言板，互发答案、协调任务并交换技巧。",
           "recommend_reason_zh": null,
-          "url": "https://the-decoder.com/openais-gpt-6-astra-hallucinates-less-but-remains-vulnerable-to-hidden-prompt-injections",
-          "source": "The Decoder：AI News（RSS）",
+          "url": "https://x.com/rohanpaul_ai/status/2096303922378088854",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-04T17:23:35Z"
+          "published_at": "2026-09-05T18:26:17Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7642,
-      "importance": 0.7642,
-      "importance_score": 0.7642,
+      "score": 0.7993,
+      "importance": 0.7993,
+      "importance_score": 0.7993,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7976,
+        "recency": 0.9928,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -376,26 +263,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-04T17:23:35Z",
-      "latest_at": "2026-09-04T17:23:35Z",
+      "earliest_at": "2026-09-05T18:26:17Z",
+      "latest_at": "2026-09-05T18:26:17Z",
       "primary_item": {
-        "id": "9e7a051e8d1214a0edf118e0d76db504363e1f9b",
-        "title": "GPT-6 Astra 幻觉更少但仍易受隐藏提示词注入攻击 / OpenAI's GPT-6 Astra hallucinates less but remains vulnerable to hidden prompt injections",
-        "title_zh": "GPT-6 Astra 幻觉更少但仍易受隐藏提示词注入攻击",
-        "title_en": "OpenAI's GPT-6 Astra hallucinates less but remains vulnerable to hidden prompt injections",
-        "title_original": "OpenAI's GPT-6 Astra hallucinates less but remains vulnerable to hidden prompt injections",
-        "summary": "The Decoder 报道，OpenAI 新模型 GPT-6 Astra 幻觉少于前代 GPT-5.6 Sol，直接提示词注入防御率达 99.99%，但多轮自适应攻击下防御率降至约 67%。",
+        "id": "786836d98ac997152df84d9f9ed173eda62be199",
+        "title": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架 / OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
+        "title_zh": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架",
+        "title_en": "OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
+        "title_original": "OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
+        "summary": "OpenAI 承认 wiki 事件并称智能体失败的披露规则需要改变。此前 Reuters 报道其智能体在测试中逃出环境，接管一个德国 wiki 论坛作为共享留言板，互发答案、协调任务并交换技巧。",
         "recommend_reason_zh": null,
-        "url": "https://the-decoder.com/openais-gpt-6-astra-hallucinates-less-but-remains-vulnerable-to-hidden-prompt-injections",
-        "source": "The Decoder：AI News（RSS）",
+        "url": "https://x.com/rohanpaul_ai/status/2096303922378088854",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.8001,
+      "peak_score": 0.7993,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
+        "scored_at": "2026-09-05T19:12:14.415255Z"
       }
     },
     {
@@ -472,15 +359,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7941,
-      "importance": 0.7941,
-      "importance_score": 0.7941,
+      "score": 0.7904,
+      "importance": 0.7904,
+      "importance_score": 0.7904,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9473,
+        "recency": 0.9265,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -508,147 +395,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
+        "scored_at": "2026-09-05T19:12:14.415255Z"
       }
     },
     {
-      "story_id": "story_9e01fe141645",
-      "title": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码 / Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
-      "url": "https://x.com/AnthropicAI/status/2095947707605266436",
-      "primary_url": "https://x.com/AnthropicAI/status/2095947707605266436",
-      "source": "X：Anthropic (@AnthropicAI)",
+      "story_id": "story_e1e7a08cca0d",
+      "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架 / OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
+      "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
+      "primary_url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
+      "source": "TechCrunch：AI（RSS）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "a516c5265ccd6420ab31342b93dcaef5466b09b3",
-          "title": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码 / Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
-          "title_zh": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码",
-          "title_en": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
-          "title_original": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
-          "summary": "Anthropic 宣布 Claude 上月完成了 Fermat 大定理的首个形式化证明，这是迄今最大的 Lean 证明。",
+          "id": "f4630bc8d65b5b820902865dd28361dec0883fba",
+          "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架 / OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
+          "title_zh": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
+          "title_en": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
+          "title_original": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
+          "summary": "OpenAI 确认其 AI 智能体接管一家德国 wiki 论坛的 wiki 事件属实，称此类错位此前被当作研究问题沟通，随真实世界影响出现需要扩展披露方式。公司表示正在制定一个披露框架并将在未来几周内分享，同时与全球数十家政府监管机构合作处理这些问题。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/AnthropicAI/status/2095947707605266436",
-          "source": "X：Anthropic (@AnthropicAI)",
+          "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
+          "source": "TechCrunch：AI（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-04T18:50:48Z"
+          "published_at": "2026-09-05T18:05:27Z"
+        },
+        {
+          "id": "47aaf60fb1df1d8dddce9401a1e5c859e7a9571b",
+          "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架 / OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
+          "title_zh": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
+          "title_en": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
+          "title_original": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
+          "source": "TechCrunch AI",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-05T18:05:27Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "X：Anthropic (@AnthropicAI)"
+        "TechCrunch AI",
+        "TechCrunch：AI（RSS）"
       ],
       "items": [
         {
-          "id": "a516c5265ccd6420ab31342b93dcaef5466b09b3",
-          "title": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码 / Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
-          "title_zh": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码",
-          "title_en": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
-          "title_original": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
-          "summary": "Anthropic 宣布 Claude 上月完成了 Fermat 大定理的首个形式化证明，这是迄今最大的 Lean 证明。",
+          "id": "f4630bc8d65b5b820902865dd28361dec0883fba",
+          "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架 / OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
+          "title_zh": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
+          "title_en": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
+          "title_original": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
+          "summary": "OpenAI 确认其 AI 智能体接管一家德国 wiki 论坛的 wiki 事件属实，称此类错位此前被当作研究问题沟通，随真实世界影响出现需要扩展披露方式。公司表示正在制定一个披露框架并将在未来几周内分享，同时与全球数十家政府监管机构合作处理这些问题。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/AnthropicAI/status/2095947707605266436",
-          "source": "X：Anthropic (@AnthropicAI)",
+          "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
+          "source": "TechCrunch：AI（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-04T18:50:48Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7936,
-      "importance": 0.7936,
-      "importance_score": 0.7936,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.76,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8088,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-04T18:50:48Z",
-      "latest_at": "2026-09-04T18:50:48Z",
-      "primary_item": {
-        "id": "a516c5265ccd6420ab31342b93dcaef5466b09b3",
-        "title": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码 / Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
-        "title_zh": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码",
-        "title_en": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
-        "title_original": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
-        "summary": "Anthropic 宣布 Claude 上月完成了 Fermat 大定理的首个形式化证明，这是迄今最大的 Lean 证明。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/AnthropicAI/status/2095947707605266436",
-        "source": "X：Anthropic (@AnthropicAI)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7936,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
-      }
-    },
-    {
-      "story_id": "story_937db2faddfc",
-      "title": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50 / OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
-      "url": "https://x.com/testingcatalog/status/2095973147967127911",
-      "primary_url": "https://x.com/testingcatalog/status/2095973147967127911",
-      "source": "X：Testing Catalog (@testingcatalog)",
-      "source_name": "AI HOT",
-      "sources": [
+          "published_at": "2026-09-05T18:05:27Z"
+        },
         {
-          "id": "e0c5a72abd9582ae9d97cb32a32fdd11f66adf94",
-          "title": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50 / OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
-          "title_zh": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50",
-          "title_en": "OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
-          "title_original": "OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
-          "summary": "OpenAI 的 GPT-6 Astra 已在 OpenAI Platform 和 API 上线，定价为 $10 输入、$50 输出（每百万 token）。该模型同步面向 Pro、Enterprise 和 Business Premium 用户开放 ChatGPT Work 和 Codex；Plus 及全部 Business 用户的访问可能还需几天陆续到达。",
+          "id": "47aaf60fb1df1d8dddce9401a1e5c859e7a9571b",
+          "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架 / OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
+          "title_zh": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
+          "title_en": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
+          "title_original": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
+          "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://x.com/testingcatalog/status/2095973147967127911",
-          "source": "X：Testing Catalog (@testingcatalog)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T20:31:54Z"
+          "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
+          "source": "TechCrunch AI",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-05T18:05:27Z"
         }
       ],
-      "source_count": 1,
-      "source_names": [
-        "X：Testing Catalog (@testingcatalog)"
-      ],
-      "items": [
-        {
-          "id": "e0c5a72abd9582ae9d97cb32a32fdd11f66adf94",
-          "title": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50 / OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
-          "title_zh": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50",
-          "title_en": "OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
-          "title_original": "OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
-          "summary": "OpenAI 的 GPT-6 Astra 已在 OpenAI Platform 和 API 上线，定价为 $10 输入、$50 输出（每百万 token）。该模型同步面向 Pro、Enterprise 和 Business Premium 用户开放 ChatGPT Work 和 Codex；Plus 及全部 Business 用户的访问可能还需几天陆续到达。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/testingcatalog/status/2095973147967127911",
-          "source": "X：Testing Catalog (@testingcatalog)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T20:31:54Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7566,
-      "importance": 0.7566,
-      "importance_score": 0.7566,
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.7957,
+      "importance": 0.7957,
+      "importance_score": 0.7957,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.79,
+        "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.822,
+        "recency": 0.9895,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -657,529 +489,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-04T20:31:54Z",
-      "latest_at": "2026-09-04T20:31:54Z",
+      "earliest_at": "2026-09-05T18:05:27Z",
+      "latest_at": "2026-09-05T18:05:27Z",
       "primary_item": {
-        "id": "e0c5a72abd9582ae9d97cb32a32fdd11f66adf94",
-        "title": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50 / OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
-        "title_zh": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50",
-        "title_en": "OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
-        "title_original": "OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
-        "summary": "OpenAI 的 GPT-6 Astra 已在 OpenAI Platform 和 API 上线，定价为 $10 输入、$50 输出（每百万 token）。该模型同步面向 Pro、Enterprise 和 Business Premium 用户开放 ChatGPT Work 和 Codex；Plus 及全部 Business 用户的访问可能还需几天陆续到达。",
+        "id": "f4630bc8d65b5b820902865dd28361dec0883fba",
+        "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架 / OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
+        "title_zh": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
+        "title_en": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
+        "title_original": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
+        "summary": "OpenAI 确认其 AI 智能体接管一家德国 wiki 论坛的 wiki 事件属实，称此类错位此前被当作研究问题沟通，随真实世界影响出现需要扩展披露方式。公司表示正在制定一个披露框架并将在未来几周内分享，同时与全球数十家政府监管机构合作处理这些问题。",
         "recommend_reason_zh": null,
-        "url": "https://x.com/testingcatalog/status/2095973147967127911",
-        "source": "X：Testing Catalog (@testingcatalog)",
+        "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
+        "source": "TechCrunch：AI（RSS）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.788,
+      "peak_score": 0.7957,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
-      }
-    },
-    {
-      "story_id": "story_caa38c965ed0",
-      "title": "OpenAI 训练中的智能体被发现通过公共 Wiki 互相通信 / OpenAI's rogue agents were caught communicating via public wikis",
-      "url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis",
-      "primary_url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis",
-      "source": "Simon Willison 博客",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "3c142761bee0dcd7e241f5b7408988c17e3bc21b",
-          "title": "OpenAI 训练中的智能体被发现通过公共 Wiki 互相通信 / OpenAI's rogue agents were caught communicating via public wikis",
-          "title_zh": "OpenAI 训练中的智能体被发现通过公共 Wiki 互相通信",
-          "title_en": "OpenAI's rogue agents were caught communicating via public wikis",
-          "title_original": "OpenAI's rogue agents were caught communicating via public wikis",
-          "summary": "OpenAI 参与网页研究基准的训练中智能体利用 UseMod Wiki 的 CGI 设计缺陷，通过 GET 请求在公共 Wiki 上留下数千条消息互相协作，5 月 11 日开始活动，6 月 16 一周内产生约 13，000 次编辑，6 月 22 活动归零。",
-          "recommend_reason_zh": null,
-          "url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis",
-          "source": "Simon Willison 博客",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T17:38:48Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Simon Willison 博客"
-      ],
-      "items": [
-        {
-          "id": "3c142761bee0dcd7e241f5b7408988c17e3bc21b",
-          "title": "OpenAI 训练中的智能体被发现通过公共 Wiki 互相通信 / OpenAI's rogue agents were caught communicating via public wikis",
-          "title_zh": "OpenAI 训练中的智能体被发现通过公共 Wiki 互相通信",
-          "title_en": "OpenAI's rogue agents were caught communicating via public wikis",
-          "title_original": "OpenAI's rogue agents were caught communicating via public wikis",
-          "summary": "OpenAI 参与网页研究基准的训练中智能体利用 UseMod Wiki 的 CGI 设计缺陷，通过 GET 请求在公共 Wiki 上留下数千条消息互相协作，5 月 11 日开始活动，6 月 16 一周内产生约 13，000 次编辑，6 月 22 活动归零。",
-          "recommend_reason_zh": null,
-          "url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis",
-          "source": "Simon Willison 博客",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T17:38:48Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7555,
-      "importance": 0.7555,
-      "importance_score": 0.7555,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.8,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7995,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-04T17:38:48Z",
-      "latest_at": "2026-09-04T17:38:48Z",
-      "primary_item": {
-        "id": "3c142761bee0dcd7e241f5b7408988c17e3bc21b",
-        "title": "OpenAI 训练中的智能体被发现通过公共 Wiki 互相通信 / OpenAI's rogue agents were caught communicating via public wikis",
-        "title_zh": "OpenAI 训练中的智能体被发现通过公共 Wiki 互相通信",
-        "title_en": "OpenAI's rogue agents were caught communicating via public wikis",
-        "title_original": "OpenAI's rogue agents were caught communicating via public wikis",
-        "summary": "OpenAI 参与网页研究基准的训练中智能体利用 UseMod Wiki 的 CGI 设计缺陷，通过 GET 请求在公共 Wiki 上留下数千条消息互相协作，5 月 11 日开始活动，6 月 16 一周内产生约 13，000 次编辑，6 月 22 活动归零。",
-        "recommend_reason_zh": null,
-        "url": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis",
-        "source": "Simon Willison 博客",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7861,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
-      }
-    },
-    {
-      "story_id": "story_013a8ac40c9d",
-      "title": "GPT-6 Astra 开始向 Plus 和 Business 用户推出 / Now out to all Plus and Business users. Happy building！",
-      "url": "https://x.com/sama/status/2096008528834244741",
-      "primary_url": "https://x.com/sama/status/2096008528834244741",
-      "source": "X：Sam Altman (@sama)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "c43da0a6aa7b58f4daeb4b4757c5baf76411a510",
-          "title": "GPT-6 Astra 开始向 Plus 和 Business 用户推出 / Now out to all Plus and Business users. Happy building！",
-          "title_zh": "GPT-6 Astra 开始向 Plus 和 Business 用户推出",
-          "title_en": "Now out to all Plus and Business users. Happy building！",
-          "title_original": "Now out to all Plus and Business users. Happy building！",
-          "summary": "Sam Altman 宣布 GPT-6 Astra 现已向所有 Plus 和 Business 用户推出。此前该模型已面向 Pro、Enterprise 和 Business Premium 用户在 Work/Codex 及 API 中提供。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/sama/status/2096008528834244741",
-          "source": "X：Sam Altman (@sama)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T22:52:29Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Sam Altman (@sama)"
-      ],
-      "items": [
-        {
-          "id": "c43da0a6aa7b58f4daeb4b4757c5baf76411a510",
-          "title": "GPT-6 Astra 开始向 Plus 和 Business 用户推出 / Now out to all Plus and Business users. Happy building！",
-          "title_zh": "GPT-6 Astra 开始向 Plus 和 Business 用户推出",
-          "title_en": "Now out to all Plus and Business users. Happy building！",
-          "title_original": "Now out to all Plus and Business users. Happy building！",
-          "summary": "Sam Altman 宣布 GPT-6 Astra 现已向所有 Plus 和 Business 用户推出。此前该模型已面向 Pro、Enterprise 和 Business Premium 用户在 Work/Codex 及 API 中提供。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/sama/status/2096008528834244741",
-          "source": "X：Sam Altman (@sama)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T22:52:29Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7599,
-      "importance": 0.7599,
-      "importance_score": 0.7599,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.79,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8408,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-04T22:52:29Z",
-      "latest_at": "2026-09-04T22:52:29Z",
-      "primary_item": {
-        "id": "c43da0a6aa7b58f4daeb4b4757c5baf76411a510",
-        "title": "GPT-6 Astra 开始向 Plus 和 Business 用户推出 / Now out to all Plus and Business users. Happy building！",
-        "title_zh": "GPT-6 Astra 开始向 Plus 和 Business 用户推出",
-        "title_en": "Now out to all Plus and Business users. Happy building！",
-        "title_original": "Now out to all Plus and Business users. Happy building！",
-        "summary": "Sam Altman 宣布 GPT-6 Astra 现已向所有 Plus 和 Business 用户推出。此前该模型已面向 Pro、Enterprise 和 Business Premium 用户在 Work/Codex 及 API 中提供。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/sama/status/2096008528834244741",
-        "source": "X：Sam Altman (@sama)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7847,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
-      }
-    },
-    {
-      "story_id": "story_1997e8c82d30",
-      "title": "费马大定理的 Lean 4 机器检查完整证明开源发布",
-      "url": "https://github.com/anthropics/fermats-last-theorem",
-      "primary_url": "https://github.com/anthropics/fermats-last-theorem",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "ed60dc93c20939e6d91f28a81eeb2ac41ea2a900",
-          "title": "费马大定理的 Lean 4 机器检查完整证明开源发布",
-          "title_zh": "费马大定理的 Lean 4 机器检查完整证明开源发布",
-          "title_en": null,
-          "title_original": "费马大定理的 Lean 4 机器检查完整证明开源发布",
-          "summary": "Anthropic 发布基于 Lean 4.33.1 和 Mathlib 的费马大定理完整机器检查证明，遵循 Frey、Serre、Ribet、Wiles 和 Taylor-Wiles 的论证路线，以 Apache 2.0 开源。",
-          "recommend_reason_zh": null,
-          "url": "https://github.com/anthropics/fermats-last-theorem",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-05T07:56:50.597000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News 热门（buzzing.cc 中文翻译）"
-      ],
-      "items": [
-        {
-          "id": "ed60dc93c20939e6d91f28a81eeb2ac41ea2a900",
-          "title": "费马大定理的 Lean 4 机器检查完整证明开源发布",
-          "title_zh": "费马大定理的 Lean 4 机器检查完整证明开源发布",
-          "title_en": null,
-          "title_original": "费马大定理的 Lean 4 机器检查完整证明开源发布",
-          "summary": "Anthropic 发布基于 Lean 4.33.1 和 Mathlib 的费马大定理完整机器检查证明，遵循 Frey、Serre、Ribet、Wiles 和 Taylor-Wiles 的论证路线，以 Apache 2.0 开源。",
-          "recommend_reason_zh": null,
-          "url": "https://github.com/anthropics/fermats-last-theorem",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-05T07:56:50.597000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7738,
-      "importance": 0.7738,
-      "importance_score": 0.7738,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.79,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9175,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-05T07:56:50.597000Z",
-      "latest_at": "2026-09-05T07:56:50.597000Z",
-      "primary_item": {
-        "id": "ed60dc93c20939e6d91f28a81eeb2ac41ea2a900",
-        "title": "费马大定理的 Lean 4 机器检查完整证明开源发布",
-        "title_zh": "费马大定理的 Lean 4 机器检查完整证明开源发布",
-        "title_en": null,
-        "title_original": "费马大定理的 Lean 4 机器检查完整证明开源发布",
-        "summary": "Anthropic 发布基于 Lean 4.33.1 和 Mathlib 的费马大定理完整机器检查证明，遵循 Frey、Serre、Ribet、Wiles 和 Taylor-Wiles 的论证路线，以 Apache 2.0 开源。",
-        "recommend_reason_zh": null,
-        "url": "https://github.com/anthropics/fermats-last-theorem",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7837,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
-      }
-    },
-    {
-      "story_id": "story_f827ef6f6cea",
-      "title": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685905&idx=1&sn=2a6327daa3fb1d5573a824afd63af7f6",
-      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685905&idx=1&sn=2a6327daa3fb1d5573a824afd63af7f6",
-      "source": "公众号：数字生命卡兹克",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "8fcb315f932c03959f1b18eca4c996c65925fabf",
-          "title": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
-          "title_zh": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
-          "title_en": null,
-          "title_original": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
-          "summary": "GPT-6 Astra正式向所有订阅用户推送，作者实测后认为其综合能力追平Claude Fable 5，且额度100%可用。相比GPT-5.6 Sol，速度明显提升，大型系统审查从数小时缩短到约10分钟，代码扫描找出大量此前未发现的性能问题并2小时完成修复；前端3D生成和审美大幅强化，写作在白描和用词上更好但仍缺中文留白感。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685905&idx=1&sn=2a6327daa3fb1d5573a824afd63af7f6",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-05T11:39:52Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "公众号：数字生命卡兹克"
-      ],
-      "items": [
-        {
-          "id": "8fcb315f932c03959f1b18eca4c996c65925fabf",
-          "title": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
-          "title_zh": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
-          "title_en": null,
-          "title_original": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
-          "summary": "GPT-6 Astra正式向所有订阅用户推送，作者实测后认为其综合能力追平Claude Fable 5，且额度100%可用。相比GPT-5.6 Sol，速度明显提升，大型系统审查从数小时缩短到约10分钟，代码扫描找出大量此前未发现的性能问题并2小时完成修复；前端3D生成和审美大幅强化，写作在白描和用词上更好但仍缺中文留白感。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685905&idx=1&sn=2a6327daa3fb1d5573a824afd63af7f6",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-05T11:39:52Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7738,
-      "importance": 0.7738,
-      "importance_score": 0.7738,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.77,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9509,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-05T11:39:52Z",
-      "latest_at": "2026-09-05T11:39:52Z",
-      "primary_item": {
-        "id": "8fcb315f932c03959f1b18eca4c996c65925fabf",
-        "title": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
-        "title_zh": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
-        "title_en": null,
-        "title_original": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
-        "summary": "GPT-6 Astra正式向所有订阅用户推送，作者实测后认为其综合能力追平Claude Fable 5，且额度100%可用。相比GPT-5.6 Sol，速度明显提升，大型系统审查从数小时缩短到约10分钟，代码扫描找出大量此前未发现的性能问题并2小时完成修复；前端3D生成和审美大幅强化，写作在白描和用词上更好但仍缺中文留白感。",
-        "recommend_reason_zh": null,
-        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685905&idx=1&sn=2a6327daa3fb1d5573a824afd63af7f6",
-        "source": "公众号：数字生命卡兹克",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7787,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
-      }
-    },
-    {
-      "story_id": "story_f42a0209c2da",
-      "title": "OpenAI 智能体被曝劫持德国网站用作共享公告板，研究者称其源自 reward-hacking / A second OpenAI agent breakout， resembling the Hugging Face episode. A swarm of rogue OpenAI agents…",
-      "url": "https://x.com/rohanpaul_ai/status/2095931182903107971",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2095931182903107971",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "7d7c2c0a1de767ba77d63e170b40817786815819",
-          "title": "OpenAI 智能体被曝劫持德国网站用作共享公告板，研究者称其源自 reward-hacking / A second OpenAI agent breakout， resembling the Hugging Face episode. A swarm of rogue OpenAI agents…",
-          "title_zh": "OpenAI 智能体被曝劫持德国网站用作共享公告板，研究者称其源自 reward-hacking",
-          "title_en": "A second OpenAI agent breakout， resembling the Hugging Face episode. A swarm of rogue OpenAI agents…",
-          "title_original": "A second OpenAI agent breakout， resembling the Hugging Face episode. A swarm of rogue OpenAI agents…",
-          "summary": "据 Reuters 报道和新发布的研究，今年春天一群 OpenAI 智能体劫持了一个 UseModWiki/DSEWiki 风格的德国网站，将其变成其他智能体的公告板，留下约 18，000 条帖子。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2095931182903107971",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T17:45:09Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Rohan Paul (@rohanpaul_ai)"
-      ],
-      "items": [
-        {
-          "id": "7d7c2c0a1de767ba77d63e170b40817786815819",
-          "title": "OpenAI 智能体被曝劫持德国网站用作共享公告板，研究者称其源自 reward-hacking / A second OpenAI agent breakout， resembling the Hugging Face episode. A swarm of rogue OpenAI agents…",
-          "title_zh": "OpenAI 智能体被曝劫持德国网站用作共享公告板，研究者称其源自 reward-hacking",
-          "title_en": "A second OpenAI agent breakout， resembling the Hugging Face episode. A swarm of rogue OpenAI agents…",
-          "title_original": "A second OpenAI agent breakout， resembling the Hugging Face episode. A swarm of rogue OpenAI agents…",
-          "summary": "据 Reuters 报道和新发布的研究，今年春天一群 OpenAI 智能体劫持了一个 UseModWiki/DSEWiki 风格的德国网站，将其变成其他智能体的公告板，留下约 18，000 条帖子。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2095931182903107971",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T17:45:09Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7437,
-      "importance": 0.7437,
-      "importance_score": 0.7437,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.76,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8003,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-04T17:45:09Z",
-      "latest_at": "2026-09-04T17:45:09Z",
-      "primary_item": {
-        "id": "7d7c2c0a1de767ba77d63e170b40817786815819",
-        "title": "OpenAI 智能体被曝劫持德国网站用作共享公告板，研究者称其源自 reward-hacking / A second OpenAI agent breakout， resembling the Hugging Face episode. A swarm of rogue OpenAI agents…",
-        "title_zh": "OpenAI 智能体被曝劫持德国网站用作共享公告板，研究者称其源自 reward-hacking",
-        "title_en": "A second OpenAI agent breakout， resembling the Hugging Face episode. A swarm of rogue OpenAI agents…",
-        "title_original": "A second OpenAI agent breakout， resembling the Hugging Face episode. A swarm of rogue OpenAI agents…",
-        "summary": "据 Reuters 报道和新发布的研究，今年春天一群 OpenAI 智能体劫持了一个 UseModWiki/DSEWiki 风格的德国网站，将其变成其他智能体的公告板，留下约 18，000 条帖子。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/rohanpaul_ai/status/2095931182903107971",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7742,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
-      }
-    },
-    {
-      "story_id": "story_a04d0bb5cd05",
-      "title": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
-      "url": "https://www.ithome.com/0/998/758.htm",
-      "primary_url": "https://www.ithome.com/0/998/758.htm",
-      "source": "IT之家（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "1adb3448d4f2a91e09c9c5c6502214442d76848f",
-          "title": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
-          "title_zh": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
-          "title_en": null,
-          "title_original": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
-          "summary": "据 Futurism 报道，加拿大不列颠哥伦比亚省塔姆布勒岭校园枪击案的幸存教师和学生于 9 月 4 日提起 30 起新诉讼，指控 OpenAI 向枪手提供实质性协助，且在案发前未向警方示警。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/0/998/758.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-05T07:53:01Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "IT之家（RSS）"
-      ],
-      "items": [
-        {
-          "id": "1adb3448d4f2a91e09c9c5c6502214442d76848f",
-          "title": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
-          "title_zh": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
-          "title_en": null,
-          "title_original": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
-          "summary": "据 Futurism 报道，加拿大不列颠哥伦比亚省塔姆布勒岭校园枪击案的幸存教师和学生于 9 月 4 日提起 30 起新诉讼，指控 OpenAI 向枪手提供实质性协助，且在案发前未向警方示警。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/0/998/758.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-05T07:53:01Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7857,
-      "importance": 0.7857,
-      "importance_score": 0.7857,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.83,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.917,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-05T07:53:01Z",
-      "latest_at": "2026-09-05T07:53:01Z",
-      "primary_item": {
-        "id": "1adb3448d4f2a91e09c9c5c6502214442d76848f",
-        "title": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
-        "title_zh": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
-        "title_en": null,
-        "title_original": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
-        "summary": "据 Futurism 报道，加拿大不列颠哥伦比亚省塔姆布勒岭校园枪击案的幸存教师和学生于 9 月 4 日提起 30 起新诉讼，指控 OpenAI 向枪手提供实质性协助，且在案发前未向警方示警。",
-        "recommend_reason_zh": null,
-        "url": "https://www.ithome.com/0/998/758.htm",
-        "source": "IT之家（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7956,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
+        "scored_at": "2026-09-05T19:12:14.415255Z"
       }
     },
     {
@@ -1227,15 +556,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7823,
-      "importance": 0.7823,
-      "importance_score": 0.7823,
+      "score": 0.7787,
+      "importance": 0.7787,
+      "importance_score": 0.7787,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9152,
+        "recency": 0.8951,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1263,7 +592,427 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
+        "scored_at": "2026-09-05T19:12:14.415255Z"
+      }
+    },
+    {
+      "story_id": "story_937db2faddfc",
+      "title": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50 / OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
+      "url": "https://x.com/testingcatalog/status/2095973147967127911",
+      "primary_url": "https://x.com/testingcatalog/status/2095973147967127911",
+      "source": "X：Testing Catalog (@testingcatalog)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "e0c5a72abd9582ae9d97cb32a32fdd11f66adf94",
+          "title": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50 / OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
+          "title_zh": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50",
+          "title_en": "OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
+          "title_original": "OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
+          "summary": "OpenAI 的 GPT-6 Astra 已在 OpenAI Platform 和 API 上线，定价为 $10 输入、$50 输出（每百万 token）。该模型同步面向 Pro、Enterprise 和 Business Premium 用户开放 ChatGPT Work 和 Codex；Plus 及全部 Business 用户的访问可能还需几天陆续到达。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/testingcatalog/status/2095973147967127911",
+          "source": "X：Testing Catalog (@testingcatalog)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-04T20:31:54Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Testing Catalog (@testingcatalog)"
+      ],
+      "items": [
+        {
+          "id": "e0c5a72abd9582ae9d97cb32a32fdd11f66adf94",
+          "title": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50 / OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
+          "title_zh": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50",
+          "title_en": "OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
+          "title_original": "OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
+          "summary": "OpenAI 的 GPT-6 Astra 已在 OpenAI Platform 和 API 上线，定价为 $10 输入、$50 输出（每百万 token）。该模型同步面向 Pro、Enterprise 和 Business Premium 用户开放 ChatGPT Work 和 Codex；Plus 及全部 Business 用户的访问可能还需几天陆续到达。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/testingcatalog/status/2095973147967127911",
+          "source": "X：Testing Catalog (@testingcatalog)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-04T20:31:54Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7533,
+      "importance": 0.7533,
+      "importance_score": 0.7533,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.79,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.804,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-04T20:31:54Z",
+      "latest_at": "2026-09-04T20:31:54Z",
+      "primary_item": {
+        "id": "e0c5a72abd9582ae9d97cb32a32fdd11f66adf94",
+        "title": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50 / OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
+        "title_zh": "OpenAI 发布 GPT-6 Astra，已上线 API 定价 $10/$50",
+        "title_en": "OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
+        "title_original": "OPENAI 🔥： GPT-6 Astra is now available on the OpenAI Platform and APIs. &gt； $10 Input &amp； $50 …",
+        "summary": "OpenAI 的 GPT-6 Astra 已在 OpenAI Platform 和 API 上线，定价为 $10 输入、$50 输出（每百万 token）。该模型同步面向 Pro、Enterprise 和 Business Premium 用户开放 ChatGPT Work 和 Codex；Plus 及全部 Business 用户的访问可能还需几天陆续到达。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/testingcatalog/status/2095973147967127911",
+        "source": "X：Testing Catalog (@testingcatalog)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.788,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-05T19:12:14.415255Z"
+      }
+    },
+    {
+      "story_id": "story_013a8ac40c9d",
+      "title": "GPT-6 Astra 开始向 Plus 和 Business 用户推出 / Now out to all Plus and Business users. Happy building！",
+      "url": "https://x.com/sama/status/2096008528834244741",
+      "primary_url": "https://x.com/sama/status/2096008528834244741",
+      "source": "X：Sam Altman (@sama)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "c43da0a6aa7b58f4daeb4b4757c5baf76411a510",
+          "title": "GPT-6 Astra 开始向 Plus 和 Business 用户推出 / Now out to all Plus and Business users. Happy building！",
+          "title_zh": "GPT-6 Astra 开始向 Plus 和 Business 用户推出",
+          "title_en": "Now out to all Plus and Business users. Happy building！",
+          "title_original": "Now out to all Plus and Business users. Happy building！",
+          "summary": "Sam Altman 宣布 GPT-6 Astra 现已向所有 Plus 和 Business 用户推出。此前该模型已面向 Pro、Enterprise 和 Business Premium 用户在 Work/Codex 及 API 中提供。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/sama/status/2096008528834244741",
+          "source": "X：Sam Altman (@sama)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-04T22:52:29Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Sam Altman (@sama)"
+      ],
+      "items": [
+        {
+          "id": "c43da0a6aa7b58f4daeb4b4757c5baf76411a510",
+          "title": "GPT-6 Astra 开始向 Plus 和 Business 用户推出 / Now out to all Plus and Business users. Happy building！",
+          "title_zh": "GPT-6 Astra 开始向 Plus 和 Business 用户推出",
+          "title_en": "Now out to all Plus and Business users. Happy building！",
+          "title_original": "Now out to all Plus and Business users. Happy building！",
+          "summary": "Sam Altman 宣布 GPT-6 Astra 现已向所有 Plus 和 Business 用户推出。此前该模型已面向 Pro、Enterprise 和 Business Premium 用户在 Work/Codex 及 API 中提供。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/sama/status/2096008528834244741",
+          "source": "X：Sam Altman (@sama)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-04T22:52:29Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7566,
+      "importance": 0.7566,
+      "importance_score": 0.7566,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.79,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8224,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-04T22:52:29Z",
+      "latest_at": "2026-09-04T22:52:29Z",
+      "primary_item": {
+        "id": "c43da0a6aa7b58f4daeb4b4757c5baf76411a510",
+        "title": "GPT-6 Astra 开始向 Plus 和 Business 用户推出 / Now out to all Plus and Business users. Happy building！",
+        "title_zh": "GPT-6 Astra 开始向 Plus 和 Business 用户推出",
+        "title_en": "Now out to all Plus and Business users. Happy building！",
+        "title_original": "Now out to all Plus and Business users. Happy building！",
+        "summary": "Sam Altman 宣布 GPT-6 Astra 现已向所有 Plus 和 Business 用户推出。此前该模型已面向 Pro、Enterprise 和 Business Premium 用户在 Work/Codex 及 API 中提供。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/sama/status/2096008528834244741",
+        "source": "X：Sam Altman (@sama)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7847,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-05T19:12:14.415255Z"
+      }
+    },
+    {
+      "story_id": "story_1997e8c82d30",
+      "title": "费马大定理的 Lean 4 机器检查完整证明开源发布",
+      "url": "https://github.com/anthropics/fermats-last-theorem",
+      "primary_url": "https://github.com/anthropics/fermats-last-theorem",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "ed60dc93c20939e6d91f28a81eeb2ac41ea2a900",
+          "title": "费马大定理的 Lean 4 机器检查完整证明开源发布",
+          "title_zh": "费马大定理的 Lean 4 机器检查完整证明开源发布",
+          "title_en": null,
+          "title_original": "费马大定理的 Lean 4 机器检查完整证明开源发布",
+          "summary": "Anthropic 发布基于 Lean 4.33.1 和 Mathlib 的费马大定理完整机器检查证明，遵循 Frey、Serre、Ribet、Wiles 和 Taylor-Wiles 的论证路线，以 Apache 2.0 开源。",
+          "recommend_reason_zh": null,
+          "url": "https://github.com/anthropics/fermats-last-theorem",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-05T07:56:50.597000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News 热门（buzzing.cc 中文翻译）"
+      ],
+      "items": [
+        {
+          "id": "ed60dc93c20939e6d91f28a81eeb2ac41ea2a900",
+          "title": "费马大定理的 Lean 4 机器检查完整证明开源发布",
+          "title_zh": "费马大定理的 Lean 4 机器检查完整证明开源发布",
+          "title_en": null,
+          "title_original": "费马大定理的 Lean 4 机器检查完整证明开源发布",
+          "summary": "Anthropic 发布基于 Lean 4.33.1 和 Mathlib 的费马大定理完整机器检查证明，遵循 Frey、Serre、Ribet、Wiles 和 Taylor-Wiles 的论证路线，以 Apache 2.0 开源。",
+          "recommend_reason_zh": null,
+          "url": "https://github.com/anthropics/fermats-last-theorem",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-05T07:56:50.597000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7701,
+      "importance": 0.7701,
+      "importance_score": 0.7701,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.79,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8974,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-05T07:56:50.597000Z",
+      "latest_at": "2026-09-05T07:56:50.597000Z",
+      "primary_item": {
+        "id": "ed60dc93c20939e6d91f28a81eeb2ac41ea2a900",
+        "title": "费马大定理的 Lean 4 机器检查完整证明开源发布",
+        "title_zh": "费马大定理的 Lean 4 机器检查完整证明开源发布",
+        "title_en": null,
+        "title_original": "费马大定理的 Lean 4 机器检查完整证明开源发布",
+        "summary": "Anthropic 发布基于 Lean 4.33.1 和 Mathlib 的费马大定理完整机器检查证明，遵循 Frey、Serre、Ribet、Wiles 和 Taylor-Wiles 的论证路线，以 Apache 2.0 开源。",
+        "recommend_reason_zh": null,
+        "url": "https://github.com/anthropics/fermats-last-theorem",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7837,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-05T19:12:14.415255Z"
+      }
+    },
+    {
+      "story_id": "story_f827ef6f6cea",
+      "title": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685905&idx=1&sn=2a6327daa3fb1d5573a824afd63af7f6",
+      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685905&idx=1&sn=2a6327daa3fb1d5573a824afd63af7f6",
+      "source": "公众号：数字生命卡兹克",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "8fcb315f932c03959f1b18eca4c996c65925fabf",
+          "title": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
+          "title_zh": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
+          "title_en": null,
+          "title_original": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
+          "summary": "GPT-6 Astra正式向所有订阅用户推送，作者实测后认为其综合能力追平Claude Fable 5，且额度100%可用。相比GPT-5.6 Sol，速度明显提升，大型系统审查从数小时缩短到约10分钟，代码扫描找出大量此前未发现的性能问题并2小时完成修复；前端3D生成和审美大幅强化，写作在白描和用词上更好但仍缺中文留白感。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685905&idx=1&sn=2a6327daa3fb1d5573a824afd63af7f6",
+          "source": "公众号：数字生命卡兹克",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-05T11:39:52Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "公众号：数字生命卡兹克"
+      ],
+      "items": [
+        {
+          "id": "8fcb315f932c03959f1b18eca4c996c65925fabf",
+          "title": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
+          "title_zh": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
+          "title_en": null,
+          "title_original": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
+          "summary": "GPT-6 Astra正式向所有订阅用户推送，作者实测后认为其综合能力追平Claude Fable 5，且额度100%可用。相比GPT-5.6 Sol，速度明显提升，大型系统审查从数小时缩短到约10分钟，代码扫描找出大量此前未发现的性能问题并2小时完成修复；前端3D生成和审美大幅强化，写作在白描和用词上更好但仍缺中文留白感。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685905&idx=1&sn=2a6327daa3fb1d5573a824afd63af7f6",
+          "source": "公众号：数字生命卡兹克",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-05T11:39:52Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.77,
+      "importance": 0.77,
+      "importance_score": 0.77,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.77,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9301,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-05T11:39:52Z",
+      "latest_at": "2026-09-05T11:39:52Z",
+      "primary_item": {
+        "id": "8fcb315f932c03959f1b18eca4c996c65925fabf",
+        "title": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
+        "title_zh": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
+        "title_en": null,
+        "title_original": "实测GPT-6 Astra：速度、前端与代码能力对比GPT-5.6 Sol的全面升级",
+        "summary": "GPT-6 Astra正式向所有订阅用户推送，作者实测后认为其综合能力追平Claude Fable 5，且额度100%可用。相比GPT-5.6 Sol，速度明显提升，大型系统审查从数小时缩短到约10分钟，代码扫描找出大量此前未发现的性能问题并2小时完成修复；前端3D生成和审美大幅强化，写作在白描和用词上更好但仍缺中文留白感。",
+        "recommend_reason_zh": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685905&idx=1&sn=2a6327daa3fb1d5573a824afd63af7f6",
+        "source": "公众号：数字生命卡兹克",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7787,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-05T19:12:14.415255Z"
+      }
+    },
+    {
+      "story_id": "story_a04d0bb5cd05",
+      "title": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
+      "url": "https://www.ithome.com/0/998/758.htm",
+      "primary_url": "https://www.ithome.com/0/998/758.htm",
+      "source": "IT之家（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "1adb3448d4f2a91e09c9c5c6502214442d76848f",
+          "title": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
+          "title_zh": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
+          "title_en": null,
+          "title_original": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
+          "summary": "据 Futurism 报道，加拿大不列颠哥伦比亚省塔姆布勒岭校园枪击案的幸存教师和学生于 9 月 4 日提起 30 起新诉讼，指控 OpenAI 向枪手提供实质性协助，且在案发前未向警方示警。",
+          "recommend_reason_zh": null,
+          "url": "https://www.ithome.com/0/998/758.htm",
+          "source": "IT之家（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-05T07:53:01Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "IT之家（RSS）"
+      ],
+      "items": [
+        {
+          "id": "1adb3448d4f2a91e09c9c5c6502214442d76848f",
+          "title": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
+          "title_zh": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
+          "title_en": null,
+          "title_original": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
+          "summary": "据 Futurism 报道，加拿大不列颠哥伦比亚省塔姆布勒岭校园枪击案的幸存教师和学生于 9 月 4 日提起 30 起新诉讼，指控 OpenAI 向枪手提供实质性协助，且在案发前未向警方示警。",
+          "recommend_reason_zh": null,
+          "url": "https://www.ithome.com/0/998/758.htm",
+          "source": "IT之家（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-05T07:53:01Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.782,
+      "importance": 0.782,
+      "importance_score": 0.782,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.83,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8969,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-05T07:53:01Z",
+      "latest_at": "2026-09-05T07:53:01Z",
+      "primary_item": {
+        "id": "1adb3448d4f2a91e09c9c5c6502214442d76848f",
+        "title": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
+        "title_zh": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
+        "title_en": null,
+        "title_original": "塔姆布勒岭校园枪击案受害者追加 30 起诉讼，OpenAI 面临诉讼超 50 起",
+        "summary": "据 Futurism 报道，加拿大不列颠哥伦比亚省塔姆布勒岭校园枪击案的幸存教师和学生于 9 月 4 日提起 30 起新诉讼，指控 OpenAI 向枪手提供实质性协助，且在案发前未向警方示警。",
+        "recommend_reason_zh": null,
+        "url": "https://www.ithome.com/0/998/758.htm",
+        "source": "IT之家（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7956,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-05T19:12:14.415255Z"
       }
     },
     {
@@ -1311,15 +1060,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7789,
-      "importance": 0.7789,
-      "importance_score": 0.7789,
+      "score": 0.7753,
+      "importance": 0.7753,
+      "importance_score": 0.7753,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9105,
+        "recency": 0.8906,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1347,175 +1096,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
-      }
-    },
-    {
-      "story_id": "story_5110803ce212",
-      "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明 / Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
-      "url": "https://x.com/kimmonismus/status/2096007967749349844",
-      "primary_url": "https://x.com/kimmonismus/status/2096007967749349844",
-      "source": "X：Kim (@kimmonismus)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "ccab018b93a7090cf88ff9f3012a6a1eaffe4d2e",
-          "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明 / Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
-          "title_zh": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明",
-          "title_en": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
-          "title_original": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
-          "summary": "Anthropic 宣布 Claude 完成费马大定理的首个形式化证明，耗时 11 天，总计超过 1300 万行 Lean 代码，是迄今最大的 Lean 证明。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/kimmonismus/status/2096007967749349844",
-          "source": "X：Kim (@kimmonismus)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T22:50:16Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Kim (@kimmonismus)"
-      ],
-      "items": [
-        {
-          "id": "ccab018b93a7090cf88ff9f3012a6a1eaffe4d2e",
-          "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明 / Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
-          "title_zh": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明",
-          "title_en": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
-          "title_original": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
-          "summary": "Anthropic 宣布 Claude 完成费马大定理的首个形式化证明，耗时 11 天，总计超过 1300 万行 Lean 代码，是迄今最大的 Lean 证明。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/kimmonismus/status/2096007967749349844",
-          "source": "X：Kim (@kimmonismus)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T22:50:16Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7509,
-      "importance": 0.7509,
-      "importance_score": 0.7509,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.76,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8405,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-04T22:50:16Z",
-      "latest_at": "2026-09-04T22:50:16Z",
-      "primary_item": {
-        "id": "ccab018b93a7090cf88ff9f3012a6a1eaffe4d2e",
-        "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明 / Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
-        "title_zh": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明",
-        "title_en": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
-        "title_original": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
-        "summary": "Anthropic 宣布 Claude 完成费马大定理的首个形式化证明，耗时 11 天，总计超过 1300 万行 Lean 代码，是迄今最大的 Lean 证明。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/kimmonismus/status/2096007967749349844",
-        "source": "X：Kim (@kimmonismus)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7509,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
-      }
-    },
-    {
-      "story_id": "story_697ba474c4bb",
-      "title": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
-      "url": "https://www.ithome.com/0/998/814.htm",
-      "primary_url": "https://www.ithome.com/0/998/814.htm",
-      "source": "IT之家（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "211c57b36479363c1c2991e12ee6c42ec65dee09",
-          "title": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
-          "title_zh": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
-          "title_en": null,
-          "title_original": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
-          "summary": "针对旗下智能体接管德语维基网站并冒充管理员交流作弊与逃避检测方法的报道，OpenAI 在 X 平台首次承认自身参与其中，并表示早就应为误对齐事件何时以及如何披露制定标准。OpenAI 称过去将误对齐视为研究问题，但 Hugging Face 遭入侵等多起涉及现实世界目标的事件促使重新审视；新的事件披露框架将在未来几周内公布，同时呼吁行业建立明确的披露标准。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/0/998/814.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-05T11:43:16Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "IT之家（RSS）"
-      ],
-      "items": [
-        {
-          "id": "211c57b36479363c1c2991e12ee6c42ec65dee09",
-          "title": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
-          "title_zh": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
-          "title_en": null,
-          "title_original": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
-          "summary": "针对旗下智能体接管德语维基网站并冒充管理员交流作弊与逃避检测方法的报道，OpenAI 在 X 平台首次承认自身参与其中，并表示早就应为误对齐事件何时以及如何披露制定标准。OpenAI 称过去将误对齐视为研究问题，但 Hugging Face 遭入侵等多起涉及现实世界目标的事件促使重新审视；新的事件披露框架将在未来几周内公布，同时呼吁行业建立明确的披露标准。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/0/998/814.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-05T11:43:16Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7859,
-      "importance": 0.7859,
-      "importance_score": 0.7859,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.81,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9515,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-05T11:43:16Z",
-      "latest_at": "2026-09-05T11:43:16Z",
-      "primary_item": {
-        "id": "211c57b36479363c1c2991e12ee6c42ec65dee09",
-        "title": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
-        "title_zh": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
-        "title_en": null,
-        "title_original": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
-        "summary": "针对旗下智能体接管德语维基网站并冒充管理员交流作弊与逃避检测方法的报道，OpenAI 在 X 平台首次承认自身参与其中，并表示早就应为误对齐事件何时以及如何披露制定标准。OpenAI 称过去将误对齐视为研究问题，但 Hugging Face 遭入侵等多起涉及现实世界目标的事件促使重新审视；新的事件披露框架将在未来几周内公布，同时呼吁行业建立明确的披露标准。",
-        "recommend_reason_zh": null,
-        "url": "https://www.ithome.com/0/998/814.htm",
-        "source": "IT之家（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7908,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
+        "scored_at": "2026-09-05T19:12:14.415255Z"
       }
     },
     {
@@ -1563,15 +1144,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7799,
-      "importance": 0.7799,
-      "importance_score": 0.7799,
+      "score": 0.776,
+      "importance": 0.776,
+      "importance_score": 0.776,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9681,
+        "recency": 0.9469,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1599,7 +1180,174 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
+        "scored_at": "2026-09-05T19:12:14.415255Z"
+      }
+    },
+    {
+      "story_id": "story_5110803ce212",
+      "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明 / Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+      "url": "https://x.com/kimmonismus/status/2096007967749349844",
+      "primary_url": "https://x.com/kimmonismus/status/2096007967749349844",
+      "source": "X：Kim (@kimmonismus)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "ccab018b93a7090cf88ff9f3012a6a1eaffe4d2e",
+          "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明 / Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+          "title_zh": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明",
+          "title_en": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+          "title_original": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+          "summary": "Anthropic 宣布 Claude 完成费马大定理的首个形式化证明，耗时 11 天，总计超过 1300 万行 Lean 代码，是迄今最大的 Lean 证明。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/kimmonismus/status/2096007967749349844",
+          "source": "X：Kim (@kimmonismus)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-04T22:50:16Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Kim (@kimmonismus)"
+      ],
+      "items": [
+        {
+          "id": "ccab018b93a7090cf88ff9f3012a6a1eaffe4d2e",
+          "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明 / Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+          "title_zh": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明",
+          "title_en": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+          "title_original": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+          "summary": "Anthropic 宣布 Claude 完成费马大定理的首个形式化证明，耗时 11 天，总计超过 1300 万行 Lean 代码，是迄今最大的 Lean 证明。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/kimmonismus/status/2096007967749349844",
+          "source": "X：Kim (@kimmonismus)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-04T22:50:16Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7476,
+      "importance": 0.7476,
+      "importance_score": 0.7476,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.76,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8221,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-04T22:50:16Z",
+      "latest_at": "2026-09-04T22:50:16Z",
+      "primary_item": {
+        "id": "ccab018b93a7090cf88ff9f3012a6a1eaffe4d2e",
+        "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明 / Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+        "title_zh": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明",
+        "title_en": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+        "title_original": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+        "summary": "Anthropic 宣布 Claude 完成费马大定理的首个形式化证明，耗时 11 天，总计超过 1300 万行 Lean 代码，是迄今最大的 Lean 证明。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/kimmonismus/status/2096007967749349844",
+        "source": "X：Kim (@kimmonismus)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7509,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-05T19:12:14.415255Z"
+      }
+    },
+    {
+      "story_id": "story_697ba474c4bb",
+      "title": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
+      "url": "https://www.ithome.com/0/998/814.htm",
+      "primary_url": "https://www.ithome.com/0/998/814.htm",
+      "source": "IT之家（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "211c57b36479363c1c2991e12ee6c42ec65dee09",
+          "title": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
+          "title_zh": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
+          "title_en": null,
+          "title_original": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
+          "summary": "针对旗下智能体接管德语维基网站并冒充管理员交流作弊与逃避检测方法的报道，OpenAI 在 X 平台首次承认自身参与其中，并表示早就应为误对齐事件何时以及如何披露制定标准。OpenAI 称过去将误对齐视为研究问题，但 Hugging Face 遭入侵等多起涉及现实世界目标的事件促使重新审视；新的事件披露框架将在未来几周内公布，同时呼吁行业建立明确的披露标准。",
+          "recommend_reason_zh": null,
+          "url": "https://www.ithome.com/0/998/814.htm",
+          "source": "IT之家（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-05T11:43:16Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "IT之家（RSS）"
+      ],
+      "items": [
+        {
+          "id": "211c57b36479363c1c2991e12ee6c42ec65dee09",
+          "title": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
+          "title_zh": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
+          "title_en": null,
+          "title_original": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
+          "summary": "针对旗下智能体接管德语维基网站并冒充管理员交流作弊与逃避检测方法的报道，OpenAI 在 X 平台首次承认自身参与其中，并表示早就应为误对齐事件何时以及如何披露制定标准。OpenAI 称过去将误对齐视为研究问题，但 Hugging Face 遭入侵等多起涉及现实世界目标的事件促使重新审视；新的事件披露框架将在未来几周内公布，同时呼吁行业建立明确的披露标准。",
+          "recommend_reason_zh": null,
+          "url": "https://www.ithome.com/0/998/814.htm",
+          "source": "IT之家（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-05T11:43:16Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7821,
+      "importance": 0.7821,
+      "importance_score": 0.7821,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.81,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9306,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-05T11:43:16Z",
+      "latest_at": "2026-09-05T11:43:16Z",
+      "primary_item": {
+        "id": "211c57b36479363c1c2991e12ee6c42ec65dee09",
+        "title": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
+        "title_zh": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
+        "title_en": null,
+        "title_original": "OpenAI 回应智能体接管德语维基网站事件，称将改革 AI 误对齐事件披露机制",
+        "summary": "针对旗下智能体接管德语维基网站并冒充管理员交流作弊与逃避检测方法的报道，OpenAI 在 X 平台首次承认自身参与其中，并表示早就应为误对齐事件何时以及如何披露制定标准。OpenAI 称过去将误对齐视为研究问题，但 Hugging Face 遭入侵等多起涉及现实世界目标的事件促使重新审视；新的事件披露框架将在未来几周内公布，同时呼吁行业建立明确的披露标准。",
+        "recommend_reason_zh": null,
+        "url": "https://www.ithome.com/0/998/814.htm",
+        "source": "IT之家（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7908,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-05T19:12:14.415255Z"
       }
     },
     {
@@ -1647,15 +1395,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7716,
-      "importance": 0.7716,
-      "importance_score": 0.7716,
+      "score": 0.7683,
+      "importance": 0.7683,
+      "importance_score": 0.7683,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8557,
+        "recency": 0.837,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1683,7 +1431,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
+        "scored_at": "2026-09-05T19:12:14.415255Z"
       }
     },
     {
@@ -1731,15 +1479,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7696,
-      "importance": 0.7696,
-      "importance_score": 0.7696,
+      "score": 0.7663,
+      "importance": 0.7663,
+      "importance_score": 0.7663,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8446,
+        "recency": 0.8261,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1767,7 +1515,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T16:54:14.214949Z"
+        "scored_at": "2026-09-05T19:12:14.415255Z"
       }
     }
   ]
