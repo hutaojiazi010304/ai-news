@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-05T13:56:16.275844Z",
+  "generated_at": "2026-09-05T16:53:21.563960Z",
   "window_hours": 24,
-  "total_items": 19,
+  "total_items": 20,
   "items": [
     {
       "story_id": "story_fe67d000c4c1",
@@ -77,15 +77,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8398,
-      "importance": 0.8398,
-      "importance_score": 0.8398,
+      "score": 0.8355,
+      "importance": 0.8355,
+      "importance_score": 0.8355,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8432,
+        "recency": 0.8195,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -114,121 +114,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
-      }
-    },
-    {
-      "story_id": "story_0f3277bac9d6",
-      "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本 / Project HydraFusion: Frontier quality via multi-model orchestration",
-      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
-      "primary_url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
-      "source": "GitHub AI & ML",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "176d3dc0bd094aa366d311fdf1f135ee2da187bb",
-          "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本 / Project HydraFusion: Frontier quality via multi-model orchestration",
-          "title_zh": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
-          "title_en": "Project HydraFusion: Frontier quality via multi-model orchestration",
-          "title_original": "Project HydraFusion: Frontier quality via multi-model orchestration",
-          "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-04T16:04:14Z"
-        },
-        {
-          "id": "6566ef8a87cc0287e3b9e392afb77dec635dc956",
-          "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本 / Project HydraFusion： Frontier quality via multi-model orchestration",
-          "title_zh": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
-          "title_en": "Project HydraFusion： Frontier quality via multi-model orchestration",
-          "title_original": "Project HydraFusion： Frontier quality via multi-model orchestration",
-          "summary": "GitHub 推出 Project HydraFusion 研究预览，通过运行时多模型编排，在 Single、Cascade、Critique 三种执行模式间为每个任务选择工作流，以平衡质量、成本和延迟。",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
-          "source": "GitHub Blog",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T16:04:14Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub AI & ML",
-        "GitHub Blog"
-      ],
-      "items": [
-        {
-          "id": "176d3dc0bd094aa366d311fdf1f135ee2da187bb",
-          "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本 / Project HydraFusion: Frontier quality via multi-model orchestration",
-          "title_zh": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
-          "title_en": "Project HydraFusion: Frontier quality via multi-model orchestration",
-          "title_original": "Project HydraFusion: Frontier quality via multi-model orchestration",
-          "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-04T16:04:14Z"
-        },
-        {
-          "id": "6566ef8a87cc0287e3b9e392afb77dec635dc956",
-          "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本 / Project HydraFusion： Frontier quality via multi-model orchestration",
-          "title_zh": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
-          "title_en": "Project HydraFusion： Frontier quality via multi-model orchestration",
-          "title_original": "Project HydraFusion： Frontier quality via multi-model orchestration",
-          "summary": "GitHub 推出 Project HydraFusion 研究预览，通过运行时多模型编排，在 Single、Cascade、Critique 三种执行模式间为每个任务选择工作流，以平衡质量、成本和延迟。",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
-          "source": "GitHub Blog",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-04T16:04:14Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.8098,
-      "importance": 0.8098,
-      "importance_score": 0.8098,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.8102,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-04T16:04:14Z",
-      "latest_at": "2026-09-04T16:04:14Z",
-      "primary_item": {
-        "id": "176d3dc0bd094aa366d311fdf1f135ee2da187bb",
-        "title": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本 / Project HydraFusion: Frontier quality via multi-model orchestration",
-        "title_zh": "GitHub 发布 Project HydraFusion 研究预览，用多模型运行时编排降低 Copilot 成本",
-        "title_en": "Project HydraFusion: Frontier quality via multi-model orchestration",
-        "title_original": "Project HydraFusion: Frontier quality via multi-model orchestration",
-        "summary": "In controlled offline evaluations, HydraFusion’s selective coding workflows matched or exceeded the evaluated Opus 5 baseline while reducing estimated workflow cost. Now available as a research preview in GitHub Copilot. The post Project HydraFusion: Frontier quality via multi-model orchestration appeared first on The GitHub Blog .",
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration",
-        "source": "GitHub AI & ML",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8412,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -305,15 +191,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8124,
-      "importance": 0.8124,
-      "importance_score": 0.8124,
+      "score": 0.8083,
+      "importance": 0.8083,
+      "importance_score": 0.8083,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8303,
+        "recency": 0.807,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -341,7 +227,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -389,15 +275,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7823,
-      "importance": 0.7823,
-      "importance_score": 0.7823,
+      "score": 0.7779,
+      "importance": 0.7779,
+      "importance_score": 0.7779,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.85,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.865,
+        "recency": 0.8408,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -425,7 +311,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -473,15 +359,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7683,
-      "importance": 0.7683,
-      "importance_score": 0.7683,
+      "score": 0.7642,
+      "importance": 0.7642,
+      "importance_score": 0.7642,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8205,
+        "recency": 0.7976,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -509,7 +395,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -586,15 +472,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.799,
-      "importance": 0.799,
-      "importance_score": 0.799,
+      "score": 0.7941,
+      "importance": 0.7941,
+      "importance_score": 0.7941,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9746,
+        "recency": 0.9473,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -622,7 +508,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
+      }
+    },
+    {
+      "story_id": "story_9e01fe141645",
+      "title": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码 / Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
+      "url": "https://x.com/AnthropicAI/status/2095947707605266436",
+      "primary_url": "https://x.com/AnthropicAI/status/2095947707605266436",
+      "source": "X：Anthropic (@AnthropicAI)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "a516c5265ccd6420ab31342b93dcaef5466b09b3",
+          "title": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码 / Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
+          "title_zh": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码",
+          "title_en": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
+          "title_original": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
+          "summary": "Anthropic 宣布 Claude 上月完成了 Fermat 大定理的首个形式化证明，这是迄今最大的 Lean 证明。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/AnthropicAI/status/2095947707605266436",
+          "source": "X：Anthropic (@AnthropicAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-04T18:50:48Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Anthropic (@AnthropicAI)"
+      ],
+      "items": [
+        {
+          "id": "a516c5265ccd6420ab31342b93dcaef5466b09b3",
+          "title": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码 / Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
+          "title_zh": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码",
+          "title_en": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
+          "title_original": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
+          "summary": "Anthropic 宣布 Claude 上月完成了 Fermat 大定理的首个形式化证明，这是迄今最大的 Lean 证明。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/AnthropicAI/status/2095947707605266436",
+          "source": "X：Anthropic (@AnthropicAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-04T18:50:48Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7936,
+      "importance": 0.7936,
+      "importance_score": 0.7936,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.76,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.8088,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-04T18:50:48Z",
+      "latest_at": "2026-09-04T18:50:48Z",
+      "primary_item": {
+        "id": "a516c5265ccd6420ab31342b93dcaef5466b09b3",
+        "title": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码 / Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
+        "title_zh": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码",
+        "title_en": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
+        "title_original": "Checking that a major mathematical proof is correct can take years. Formalization-converting the mat…",
+        "summary": "Anthropic 宣布 Claude 上月完成了 Fermat 大定理的首个形式化证明，这是迄今最大的 Lean 证明。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/AnthropicAI/status/2095947707605266436",
+        "source": "X：Anthropic (@AnthropicAI)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7936,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -670,15 +640,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7608,
-      "importance": 0.7608,
-      "importance_score": 0.7608,
+      "score": 0.7566,
+      "importance": 0.7566,
+      "importance_score": 0.7566,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8457,
+        "recency": 0.822,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -706,7 +676,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -754,15 +724,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7597,
-      "importance": 0.7597,
-      "importance_score": 0.7597,
+      "score": 0.7555,
+      "importance": 0.7555,
+      "importance_score": 0.7555,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8226,
+        "recency": 0.7995,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -790,7 +760,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -838,15 +808,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7643,
-      "importance": 0.7643,
-      "importance_score": 0.7643,
+      "score": 0.7599,
+      "importance": 0.7599,
+      "importance_score": 0.7599,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.865,
+        "recency": 0.8408,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -874,7 +844,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -922,15 +892,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7785,
-      "importance": 0.7785,
-      "importance_score": 0.7785,
+      "score": 0.7738,
+      "importance": 0.7738,
+      "importance_score": 0.7738,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.944,
+        "recency": 0.9175,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -958,7 +928,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -1006,15 +976,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7787,
-      "importance": 0.7787,
-      "importance_score": 0.7787,
+      "score": 0.7738,
+      "importance": 0.7738,
+      "importance_score": 0.7738,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9784,
+        "recency": 0.9509,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1042,7 +1012,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -1090,15 +1060,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7478,
-      "importance": 0.7478,
-      "importance_score": 0.7478,
+      "score": 0.7437,
+      "importance": 0.7437,
+      "importance_score": 0.7437,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8234,
+        "recency": 0.8003,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1125,7 +1095,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -1173,15 +1143,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7904,
-      "importance": 0.7904,
-      "importance_score": 0.7904,
+      "score": 0.7857,
+      "importance": 0.7857,
+      "importance_score": 0.7857,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9434,
+        "recency": 0.917,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1209,7 +1179,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -1257,15 +1227,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7871,
-      "importance": 0.7871,
-      "importance_score": 0.7871,
+      "score": 0.7823,
+      "importance": 0.7823,
+      "importance_score": 0.7823,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9416,
+        "recency": 0.9152,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1293,7 +1263,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -1341,15 +1311,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7836,
-      "importance": 0.7836,
-      "importance_score": 0.7836,
+      "score": 0.7789,
+      "importance": 0.7789,
+      "importance_score": 0.7789,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9368,
+        "recency": 0.9105,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1377,7 +1347,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
+      }
+    },
+    {
+      "story_id": "story_5110803ce212",
+      "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明 / Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+      "url": "https://x.com/kimmonismus/status/2096007967749349844",
+      "primary_url": "https://x.com/kimmonismus/status/2096007967749349844",
+      "source": "X：Kim (@kimmonismus)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "ccab018b93a7090cf88ff9f3012a6a1eaffe4d2e",
+          "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明 / Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+          "title_zh": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明",
+          "title_en": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+          "title_original": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+          "summary": "Anthropic 宣布 Claude 完成费马大定理的首个形式化证明，耗时 11 天，总计超过 1300 万行 Lean 代码，是迄今最大的 Lean 证明。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/kimmonismus/status/2096007967749349844",
+          "source": "X：Kim (@kimmonismus)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-04T22:50:16Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Kim (@kimmonismus)"
+      ],
+      "items": [
+        {
+          "id": "ccab018b93a7090cf88ff9f3012a6a1eaffe4d2e",
+          "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明 / Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+          "title_zh": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明",
+          "title_en": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+          "title_original": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+          "summary": "Anthropic 宣布 Claude 完成费马大定理的首个形式化证明，耗时 11 天，总计超过 1300 万行 Lean 代码，是迄今最大的 Lean 证明。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/kimmonismus/status/2096007967749349844",
+          "source": "X：Kim (@kimmonismus)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-04T22:50:16Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7509,
+      "importance": 0.7509,
+      "importance_score": 0.7509,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.76,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8405,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-04T22:50:16Z",
+      "latest_at": "2026-09-04T22:50:16Z",
+      "primary_item": {
+        "id": "ccab018b93a7090cf88ff9f3012a6a1eaffe4d2e",
+        "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明 / Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+        "title_zh": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明",
+        "title_en": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+        "title_original": "Respect where respect is due： Anthropic says Claude completed the first fully computer-checked proof…",
+        "summary": "Anthropic 宣布 Claude 完成费马大定理的首个形式化证明，耗时 11 天，总计超过 1300 万行 Lean 代码，是迄今最大的 Lean 证明。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/kimmonismus/status/2096007967749349844",
+        "source": "X：Kim (@kimmonismus)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7509,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -1425,15 +1479,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7908,
-      "importance": 0.7908,
-      "importance_score": 0.7908,
+      "score": 0.7859,
+      "importance": 0.7859,
+      "importance_score": 0.7859,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9789,
+        "recency": 0.9515,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1461,7 +1515,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -1509,15 +1563,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7849,
-      "importance": 0.7849,
-      "importance_score": 0.7849,
+      "score": 0.7799,
+      "importance": 0.7799,
+      "importance_score": 0.7799,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.996,
+        "recency": 0.9681,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1545,7 +1599,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
@@ -1593,15 +1647,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7761,
-      "importance": 0.7761,
-      "importance_score": 0.7761,
+      "score": 0.7716,
+      "importance": 0.7716,
+      "importance_score": 0.7716,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8804,
+        "recency": 0.8557,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1629,30 +1683,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     },
     {
-      "story_id": "story_0967e2ddb4a9",
-      "title": "英伟达两年从零建起近千亿美元股权投资组合",
-      "url": "https://www.ithome.com/0/998/620.htm",
-      "primary_url": "https://www.ithome.com/0/998/620.htm",
+      "story_id": "story_80b4b38cc5dc",
+      "title": "Anthropic 宣布 Claude 用 11 天完成费马大定理首个端到端形式化证明",
+      "url": "https://www.ithome.com/0/998/638.htm",
+      "primary_url": "https://www.ithome.com/0/998/638.htm",
       "source": "IT之家（RSS）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "338a000d6f21e45020f80ae7028e2e0535c8423e",
-          "title": "英伟达两年从零建起近千亿美元股权投资组合",
-          "title_zh": "英伟达两年从零建起近千亿美元股权投资组合",
+          "id": "ba3599c632e64a22de103d7b7daac52706c1f3fa",
+          "title": "Anthropic 宣布 Claude 用 11 天完成费马大定理首个端到端形式化证明",
+          "title_zh": "Anthropic 宣布 Claude 用 11 天完成费马大定理首个端到端形式化证明",
           "title_en": null,
-          "title_original": "英伟达两年从零建起近千亿美元股权投资组合",
-          "summary": "据《商业内幕》9月4日报道，英伟达最新财报显示，截至7月26日公司持有价值990亿美元的股权投资，一年内增长14倍、两年增长45倍。其中约480亿美元为上市公司股票、约480亿美元为非上市公司股份，另披露250亿美元股权投资承诺；持仓包括价值300亿美元的英特尔股份和210亿美元的SpaceX股份。",
+          "title_original": "Anthropic 宣布 Claude 用 11 天完成费马大定理首个端到端形式化证明",
+          "summary": "Anthropic 于 9 月 4 日宣布，Claude 在基本自主运行 11 天后，完成费马大定理首个端到端、经计算机检查的 Lean 形式化证明。",
           "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/0/998/620.htm",
+          "url": "https://www.ithome.com/0/998/638.htm",
           "source": "IT之家（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-04T14:59:33Z"
+          "published_at": "2026-09-04T23:20:46Z"
         }
       ],
       "source_count": 1,
@@ -1661,58 +1715,59 @@
       ],
       "items": [
         {
-          "id": "338a000d6f21e45020f80ae7028e2e0535c8423e",
-          "title": "英伟达两年从零建起近千亿美元股权投资组合",
-          "title_zh": "英伟达两年从零建起近千亿美元股权投资组合",
+          "id": "ba3599c632e64a22de103d7b7daac52706c1f3fa",
+          "title": "Anthropic 宣布 Claude 用 11 天完成费马大定理首个端到端形式化证明",
+          "title_zh": "Anthropic 宣布 Claude 用 11 天完成费马大定理首个端到端形式化证明",
           "title_en": null,
-          "title_original": "英伟达两年从零建起近千亿美元股权投资组合",
-          "summary": "据《商业内幕》9月4日报道，英伟达最新财报显示，截至7月26日公司持有价值990亿美元的股权投资，一年内增长14倍、两年增长45倍。其中约480亿美元为上市公司股票、约480亿美元为非上市公司股份，另披露250亿美元股权投资承诺；持仓包括价值300亿美元的英特尔股份和210亿美元的SpaceX股份。",
+          "title_original": "Anthropic 宣布 Claude 用 11 天完成费马大定理首个端到端形式化证明",
+          "summary": "Anthropic 于 9 月 4 日宣布，Claude 在基本自主运行 11 天后，完成费马大定理首个端到端、经计算机检查的 Lean 形式化证明。",
           "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/0/998/620.htm",
+          "url": "https://www.ithome.com/0/998/638.htm",
           "source": "IT之家（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-04T14:59:33Z"
+          "published_at": "2026-09-04T23:20:46Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7439,
-      "importance": 0.7439,
-      "importance_score": 0.7439,
+      "score": 0.7696,
+      "importance": 0.7696,
+      "importance_score": 0.7696,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.76,
+        "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8018,
+        "recency": 0.8446,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-09-04T14:59:33Z",
-      "latest_at": "2026-09-04T14:59:33Z",
+      "earliest_at": "2026-09-04T23:20:46Z",
+      "latest_at": "2026-09-04T23:20:46Z",
       "primary_item": {
-        "id": "338a000d6f21e45020f80ae7028e2e0535c8423e",
-        "title": "英伟达两年从零建起近千亿美元股权投资组合",
-        "title_zh": "英伟达两年从零建起近千亿美元股权投资组合",
+        "id": "ba3599c632e64a22de103d7b7daac52706c1f3fa",
+        "title": "Anthropic 宣布 Claude 用 11 天完成费马大定理首个端到端形式化证明",
+        "title_zh": "Anthropic 宣布 Claude 用 11 天完成费马大定理首个端到端形式化证明",
         "title_en": null,
-        "title_original": "英伟达两年从零建起近千亿美元股权投资组合",
-        "summary": "据《商业内幕》9月4日报道，英伟达最新财报显示，截至7月26日公司持有价值990亿美元的股权投资，一年内增长14倍、两年增长45倍。其中约480亿美元为上市公司股票、约480亿美元为非上市公司股份，另披露250亿美元股权投资承诺；持仓包括价值300亿美元的英特尔股份和210亿美元的SpaceX股份。",
+        "title_original": "Anthropic 宣布 Claude 用 11 天完成费马大定理首个端到端形式化证明",
+        "summary": "Anthropic 于 9 月 4 日宣布，Claude 在基本自主运行 11 天后，完成费马大定理首个端到端、经计算机检查的 Lean 形式化证明。",
         "recommend_reason_zh": null,
-        "url": "https://www.ithome.com/0/998/620.htm",
+        "url": "https://www.ithome.com/0/998/638.htm",
         "source": "IT之家（RSS）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.775,
+      "peak_score": 0.7696,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-05T13:59:46.668845Z"
+        "scored_at": "2026-09-05T16:54:14.214949Z"
       }
     }
   ]
