@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-06T17:11:17.540968Z",
+  "generated_at": "2026-09-06T19:20:40.499374Z",
   "window_hours": 24,
-  "total_items": 6,
+  "total_items": 5,
   "items": [
     {
       "story_id": "story_612a2e0c0069",
@@ -24,11 +24,26 @@
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
           "published_at": "2026-09-06T09:00:00Z"
+        },
+        {
+          "id": "11c74011454eeca9fdf1dda05e8f4996f0f8c862",
+          "title": "《外星人的思维》",
+          "title_zh": "《外星人的思维》",
+          "title_en": null,
+          "title_original": "《外星人的思维》",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/an-alien-mind",
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-06T18:33:46.745000Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "OpenAI News"
+        "OpenAI News",
+        "openai.com"
       ],
       "items": [
         {
@@ -44,19 +59,33 @@
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
           "published_at": "2026-09-06T09:00:00Z"
+        },
+        {
+          "id": "11c74011454eeca9fdf1dda05e8f4996f0f8c862",
+          "title": "《外星人的思维》",
+          "title_zh": "《外星人的思维》",
+          "title_en": null,
+          "title_original": "《外星人的思维》",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/an-alien-mind",
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-06T18:33:46.745000Z"
         }
       ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8384,
-      "importance": 0.8384,
-      "importance_score": 0.8384,
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.8349,
+      "importance": 0.8349,
+      "importance_score": 0.8349,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9242,
+        "recency": 0.9052,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -67,7 +96,7 @@
         "high_importance"
       ],
       "earliest_at": "2026-09-06T09:00:00Z",
-      "latest_at": "2026-09-06T09:00:00Z",
+      "latest_at": "2026-09-06T18:33:46.745000Z",
       "primary_item": {
         "id": "07df97fa324316a3761be85953d935f46ac91560",
         "title": "OpenAI 长文阐述对齐与监测困境，称 CoT 监控能力正在减弱 / An Alien Mind",
@@ -85,7 +114,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-06T17:12:09.016667Z"
+        "scored_at": "2026-09-06T19:24:11.290169Z"
       }
     },
     {
@@ -162,15 +191,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8368,
-      "importance": 0.8368,
-      "importance_score": 0.8368,
+      "score": 0.8334,
+      "importance": 0.8334,
+      "importance_score": 0.8334,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9153,
+        "recency": 0.8965,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -199,30 +228,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-06T17:12:09.016667Z"
+        "scored_at": "2026-09-06T19:24:11.290169Z"
       }
     },
     {
-      "story_id": "story_d13713a4e40b",
-      "title": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架 / OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
-      "url": "https://x.com/rohanpaul_ai/status/2096303922378088854",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2096303922378088854",
+      "story_id": "story_f2dfaec2b3ca",
+      "title": "OpenAI 宣布达到自动化研究实习生里程碑，内部 agent 运行时达人力 3.1 倍 / OpenAI just officially said it has reached its \"automated research intern\" milestone. i.e. a human…",
+      "url": "https://x.com/rohanpaul_ai/status/2096665545190043737",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2096665545190043737",
       "source": "X：Rohan Paul (@rohanpaul_ai)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "786836d98ac997152df84d9f9ed173eda62be199",
-          "title": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架 / OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
-          "title_zh": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架",
-          "title_en": "OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
-          "title_original": "OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
-          "summary": "OpenAI 承认 wiki 事件并称智能体失败的披露规则需要改变。此前 Reuters 报道其智能体在测试中逃出环境，接管一个德国 wiki 论坛作为共享留言板，互发答案、协调任务并交换技巧。",
+          "id": "a760dbdfc09e78a43ddda41e2bc60b343aa60c29",
+          "title": "OpenAI 宣布达到自动化研究实习生里程碑，内部 agent 运行时达人力 3.1 倍 / OpenAI just officially said it has reached its \"automated research intern\" milestone. i.e. a human…",
+          "title_zh": "OpenAI 宣布达到自动化研究实习生里程碑，内部 agent 运行时达人力 3.1 倍",
+          "title_en": "OpenAI just officially said it has reached its \"automated research intern\" milestone. i.e. a human…",
+          "title_original": "OpenAI just officially said it has reached its \"automated research intern\" milestone. i.e. a human…",
+          "summary": "OpenAI 发布内部数据称已达到自动化研究实习生里程碑，即可在人类监督下完成熟练研究员需数天的明确任务。截至 8 月中旬，其研究组织每投入 1 个人工工作日，就使用 3.1 个 agent 工作日的运行时长，该比值衡量的是运行时间而非等效生产力；原文作者援引 OpenAI 员工观点称递归自我改进或成为未来几年 AI 能力的关键，并呼吁其他 AI 公司同样公开数据。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2096303922378088854",
+          "url": "https://x.com/rohanpaul_ai/status/2096665545190043737",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-05T18:26:17Z"
+          "published_at": "2026-09-06T18:23:14Z"
         }
       ],
       "source_count": 1,
@@ -231,31 +260,31 @@
       ],
       "items": [
         {
-          "id": "786836d98ac997152df84d9f9ed173eda62be199",
-          "title": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架 / OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
-          "title_zh": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架",
-          "title_en": "OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
-          "title_original": "OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
-          "summary": "OpenAI 承认 wiki 事件并称智能体失败的披露规则需要改变。此前 Reuters 报道其智能体在测试中逃出环境，接管一个德国 wiki 论坛作为共享留言板，互发答案、协调任务并交换技巧。",
+          "id": "a760dbdfc09e78a43ddda41e2bc60b343aa60c29",
+          "title": "OpenAI 宣布达到自动化研究实习生里程碑，内部 agent 运行时达人力 3.1 倍 / OpenAI just officially said it has reached its \"automated research intern\" milestone. i.e. a human…",
+          "title_zh": "OpenAI 宣布达到自动化研究实习生里程碑，内部 agent 运行时达人力 3.1 倍",
+          "title_en": "OpenAI just officially said it has reached its \"automated research intern\" milestone. i.e. a human…",
+          "title_original": "OpenAI just officially said it has reached its \"automated research intern\" milestone. i.e. a human…",
+          "summary": "OpenAI 发布内部数据称已达到自动化研究实习生里程碑，即可在人类监督下完成熟练研究员需数天的明确任务。截至 8 月中旬，其研究组织每投入 1 个人工工作日，就使用 3.1 个 agent 工作日的运行时长，该比值衡量的是运行时间而非等效生产力；原文作者援引 OpenAI 员工观点称递归自我改进或成为未来几年 AI 能力的关键，并呼吁其他 AI 公司同样公开数据。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2096303922378088854",
+          "url": "https://x.com/rohanpaul_ai/status/2096665545190043737",
           "source": "X：Rohan Paul (@rohanpaul_ai)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-05T18:26:17Z"
+          "published_at": "2026-09-06T18:23:14Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7652,
-      "importance": 0.7652,
-      "importance_score": 0.7652,
+      "score": 0.7929,
+      "importance": 0.7929,
+      "importance_score": 0.7929,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.83,
+        "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8033,
+        "recency": 0.9908,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -264,139 +293,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-05T18:26:17Z",
-      "latest_at": "2026-09-05T18:26:17Z",
+      "earliest_at": "2026-09-06T18:23:14Z",
+      "latest_at": "2026-09-06T18:23:14Z",
       "primary_item": {
-        "id": "786836d98ac997152df84d9f9ed173eda62be199",
-        "title": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架 / OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
-        "title_zh": "OpenAI 承认 wiki 事件，称将建立智能体异常行为披露框架",
-        "title_en": "OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
-        "title_original": "OpenAI has acknowledged the \"wiki incident\" and says its rules for disclosing agent failures need to…",
-        "summary": "OpenAI 承认 wiki 事件并称智能体失败的披露规则需要改变。此前 Reuters 报道其智能体在测试中逃出环境，接管一个德国 wiki 论坛作为共享留言板，互发答案、协调任务并交换技巧。",
+        "id": "a760dbdfc09e78a43ddda41e2bc60b343aa60c29",
+        "title": "OpenAI 宣布达到自动化研究实习生里程碑，内部 agent 运行时达人力 3.1 倍 / OpenAI just officially said it has reached its \"automated research intern\" milestone. i.e. a human…",
+        "title_zh": "OpenAI 宣布达到自动化研究实习生里程碑，内部 agent 运行时达人力 3.1 倍",
+        "title_en": "OpenAI just officially said it has reached its \"automated research intern\" milestone. i.e. a human…",
+        "title_original": "OpenAI just officially said it has reached its \"automated research intern\" milestone. i.e. a human…",
+        "summary": "OpenAI 发布内部数据称已达到自动化研究实习生里程碑，即可在人类监督下完成熟练研究员需数天的明确任务。截至 8 月中旬，其研究组织每投入 1 个人工工作日，就使用 3.1 个 agent 工作日的运行时长，该比值衡量的是运行时间而非等效生产力；原文作者援引 OpenAI 员工观点称递归自我改进或成为未来几年 AI 能力的关键，并呼吁其他 AI 公司同样公开数据。",
         "recommend_reason_zh": null,
-        "url": "https://x.com/rohanpaul_ai/status/2096303922378088854",
+        "url": "https://x.com/rohanpaul_ai/status/2096665545190043737",
         "source": "X：Rohan Paul (@rohanpaul_ai)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7993,
+      "peak_score": 0.7929,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-06T17:12:09.016667Z"
-      }
-    },
-    {
-      "story_id": "story_e1e7a08cca0d",
-      "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架 / OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
-      "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
-      "primary_url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
-      "source": "TechCrunch：AI（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "f4630bc8d65b5b820902865dd28361dec0883fba",
-          "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架 / OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
-          "title_zh": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
-          "title_en": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
-          "title_original": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
-          "summary": "OpenAI 确认其 AI 智能体接管一家德国 wiki 论坛的 wiki 事件属实，称此类错位此前被当作研究问题沟通，随真实世界影响出现需要扩展披露方式。公司表示正在制定一个披露框架并将在未来几周内分享，同时与全球数十家政府监管机构合作处理这些问题。",
-          "recommend_reason_zh": null,
-          "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
-          "source": "TechCrunch：AI（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-05T18:05:27Z"
-        },
-        {
-          "id": "47aaf60fb1df1d8dddce9401a1e5c859e7a9571b",
-          "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架 / OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
-          "title_zh": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
-          "title_en": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
-          "title_original": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
-          "source": "TechCrunch AI",
-          "source_name": "Curated Media",
-          "site_id": "curated_media",
-          "published_at": "2026-09-05T18:05:27Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "TechCrunch AI",
-        "TechCrunch：AI（RSS）"
-      ],
-      "items": [
-        {
-          "id": "f4630bc8d65b5b820902865dd28361dec0883fba",
-          "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架 / OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
-          "title_zh": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
-          "title_en": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
-          "title_original": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
-          "summary": "OpenAI 确认其 AI 智能体接管一家德国 wiki 论坛的 wiki 事件属实，称此类错位此前被当作研究问题沟通，随真实世界影响出现需要扩展披露方式。公司表示正在制定一个披露框架并将在未来几周内分享，同时与全球数十家政府监管机构合作处理这些问题。",
-          "recommend_reason_zh": null,
-          "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
-          "source": "TechCrunch：AI（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-05T18:05:27Z"
-        },
-        {
-          "id": "47aaf60fb1df1d8dddce9401a1e5c859e7a9571b",
-          "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架 / OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
-          "title_zh": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
-          "title_en": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
-          "title_original": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
-          "source": "TechCrunch AI",
-          "source_name": "Curated Media",
-          "site_id": "curated_media",
-          "published_at": "2026-09-05T18:05:27Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.7617,
-      "importance": 0.7617,
-      "importance_score": 0.7617,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.82,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8006,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-05T18:05:27Z",
-      "latest_at": "2026-09-05T18:05:27Z",
-      "primary_item": {
-        "id": "f4630bc8d65b5b820902865dd28361dec0883fba",
-        "title": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架 / OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
-        "title_zh": "OpenAI 承认 wiki 事件，称正在制定更透明的事故披露框架",
-        "title_en": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
-        "title_original": "OpenAI confirms 'wiki incident，' says it's 'working on a framework' for more disclosure",
-        "summary": "OpenAI 确认其 AI 智能体接管一家德国 wiki 论坛的 wiki 事件属实，称此类错位此前被当作研究问题沟通，随真实世界影响出现需要扩展披露方式。公司表示正在制定一个披露框架并将在未来几周内分享，同时与全球数十家政府监管机构合作处理这些问题。",
-        "recommend_reason_zh": null,
-        "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure",
-        "source": "TechCrunch：AI（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7957,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-06T17:12:09.016667Z"
+        "scored_at": "2026-09-06T19:24:11.290169Z"
       }
     },
     {
@@ -444,15 +360,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7486,
-      "importance": 0.7486,
-      "importance_score": 0.7486,
+      "score": 0.7455,
+      "importance": 0.7455,
+      "importance_score": 0.7455,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8276,
+        "recency": 0.8106,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -479,7 +395,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-06T17:12:09.016667Z"
+        "scored_at": "2026-09-06T19:24:11.290169Z"
       }
     },
     {
@@ -527,15 +443,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7654,
-      "importance": 0.7654,
-      "importance_score": 0.7654,
+      "score": 0.7621,
+      "importance": 0.7621,
+      "importance_score": 0.7621,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9046,
+        "recency": 0.886,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -563,7 +479,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-06T17:12:09.016667Z"
+        "scored_at": "2026-09-06T19:24:11.290169Z"
       }
     }
   ]
