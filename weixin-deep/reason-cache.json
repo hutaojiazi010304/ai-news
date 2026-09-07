@@ -148,6 +148,78 @@
       "reason": "在无中央协调器的开放世界多智能体环境Station中，来自不同模型家族的AI智能体自主选择研究方向、开展实验并构建共享科学文献。针对AlphaEvolve目录的12个构造问题及两个额外案例研究，【该环境在五个问题上取得了超越现有文献的新结果】，具体包括有限域Kakeya集的新无限族和11维604点亲吻构型等，同时生成了可解释的定理与分析。所有原始智能体对话、证明和验证代码均已公开。",
       "title_hash": "ab00d0fc",
       "created_at": "2026-09-03T09:55:42.636683Z"
+    },
+    "story_0fd4fc0249e5|937e7c00": {
+      "reason": "【Gemini 3.8 Flash 与 Gemini 3.8 Flash Cyber 正式发布】，这是六周内的第三次 Flash 版本更新。Gemini 3.8 Flash 定价维持每百万输入 token 0.75 美元、输出 token 3.75 美元，【在 DeepSWE v1.1 长周期软件工程基准中超越多数更大规模前沿模型】，在 Vals Finance Agent V2 和 Harvey's Legal Agent Benchmark 上优于前代及其他前沿模型，HLE-Verified 得分达 54.9%。该模型通过执行额外推理步骤和迭代调用工具提升复杂任务表现。【Gemini 3.8 Flash Cyber 专攻网络安全】，具备漏洞检测与自动补丁修复能力，仅通过 Fairwind Program 向可信防御者开放。两款模型共享基础智能核心，并通过长周期代理循环递归评估优化，其编码与推理能力提升部分源于网络安全领域的高强度训练。",
+      "title_hash": "937e7c00",
+      "created_at": "2026-09-03T10:14:36.328505Z"
+    },
+    "tt1|323cd9a0": {
+      "zh_title": "加速科研：OpenAI 内部视角",
+      "created_at": "2026-09-07T01:49:09.499191Z"
+    },
+    "tt1|3dec15e3": {
+      "zh_title": "GPT-6 Astra：新一代智能来了",
+      "created_at": "2026-09-07T01:49:11.252535Z"
+    },
+    "tt1|761dd6ac": {
+      "zh_title": "GitHub Copilot 新手指南：如何同时运行多个 Agent",
+      "created_at": "2026-09-07T01:49:12.339794Z"
+    },
+    "story_6129f245443c|bd988f72": {
+      "reason": "【NVIDIA 宣布已同意以 129.303 亿美元收购 Hugging Face】，黄仁勋在官方博客公布了这一消息。Hugging Face 目前拥有【超过 1800 万开发者】，平台上托管着超过 300 万个模型、50 万个数据集和 100 万个应用，服务的企业客户数量超过 20 万家。",
+      "title_hash": "bd988f72",
+      "created_at": "2026-09-07T01:49:16.144999Z"
+    },
+    "story_cc153614bc7c|1c8c1447": {
+      "reason": "在 OpenAI 内部，【coding agents 正在重塑 AI 研究的方式】。围绕 agent 使用情况的早期数据，主要聚焦于四个维度：【agent 的使用情况、实验速度、任务复杂度以及科研加速效果】。",
+      "title_hash": "1c8c1447",
+      "created_at": "2026-09-07T01:49:18.756810Z"
+    },
+    "story_fe67d000c4c1|bedcc90e": {
+      "reason": "OpenAI 宣布 【GPT-6 Astra】 现已向所有 Pro、Enterprise 和 Business Premium 用户开放。该模型可在 ChatGPT Work 和 Codex 中使用，同时已上线 API。【Plus 和 Business 用户的推送可能需要几天时间】。",
+      "title_hash": "bedcc90e",
+      "created_at": "2026-09-07T01:49:55.435860Z"
+    },
+    "story_9dd7043831a5|eb352dde": {
+      "reason": "GitHub Copilot 应用支持【同时运行多个并行 Agent】。这篇新手指南的核心内容，是指导用户如何在 GitHub Copilot 应用中配置并执行并行 Agent 操作。原文指出，当用户实际体验这一功能后，【对它的感受会从最初的恐惧转变为觉得它非常强大】。",
+      "title_hash": "eb352dde",
+      "created_at": "2026-09-07T01:50:07.113611Z"
+    },
+    "story_f2dd19138871|a8d8cf0e": {
+      "reason": "Anthropic 发布了【首个完整经计算机验证的费马大定理证明】。整个形式化过程由 Claude 在 11 天内大体自主完成，最终产出 【1300 万行 Lean 代码】，共证明了 30,300 个定理，其中 29,500 个被用于最终的证明构建。这一代码规模【超过 Mathlib 现有体量的 5 倍以上】。",
+      "title_hash": "a8d8cf0e",
+      "created_at": "2026-09-07T01:50:12.748014Z"
+    },
+    "story_9e01fe141645|dbef713c": {
+      "reason": "Anthropic 宣布 Claude 在上个月完成了 【Fermat 大定理的首个形式化证明】，这也是【迄今规模最大的 Lean 证明】。该证明共生成超过 1300 万行 Lean 代码。\n\n数学领域验证一项重大证明的正确性通常需要耗费数年时间，而【形式化正是将数学证明转化为计算机可验证形式的过程】。此次 Claude 完成的成果，意味着 Fermat 大定理的证明逻辑已被完整转译为机器可读、可逐行校验的代码结构。整个形式化产出的代码量突破 1300 万行，使其成为目前基于 Lean 构建的所有形式化证明中体量最大的一个。",
+      "title_hash": "dbef713c",
+      "created_at": "2026-09-07T01:51:20.685323Z"
+    },
+    "story_26930d41a11d|87e429ea": {
+      "reason": "Nvidia 已同意以 【129.3 亿美元收购 Hugging Face】。Hugging Face 成立于 2016 年，是一个供 AI 开发者分享项目与数据的在线平台，托管开源机器学习模型、数据集和工具，常被称为 AI 领域的 GitHub。其最近一次官方估值为 2023 年融资后的 45 亿美元，Nvidia 曾参与该轮融资。此前 Financial Times 曾报道 Hugging Face 拒绝过 Nvidia 一笔 5 亿美元的投资提议。\n\nNvidia CEO Jensen Huang 在公告中表示，双方将共同扩展 Hugging Face 的平台规模并强化基础设施。他明确承诺，【Hugging Face 将继续作为面向整个 AI 生态的开放平台运行】，开发者可自主选择模型、框架、云服务、推理服务商及计算平台，在 Hugging Face 上构建或部署应用并不强制要求使用 Nvidia 的计算资源。",
+      "title_hash": "87e429ea",
+      "created_at": "2026-09-07T01:51:34.862986Z"
+    },
+    "story_d509bcb05e90|3881add3": {
+      "reason": "【黄仁勋宣布 NVIDIA 将收购 Hugging Face】。他表示，【开放模型能够强化安全与网络安全、加速创新与扩散，并支持主权 AI】，让开发者、初创公司、大学和各国都能构建并定制 AI。黄仁勋称 【NVIDIA 将成为 Hugging Face 及其社区和开放模型未来的好归宿】。文章作者 Peter Steinberger 转发该消息并评论认为这是绝佳组合。",
+      "title_hash": "3881add3",
+      "created_at": "2026-09-07T01:51:39.409397Z"
+    },
+    "story_963744988f2b|53134eda": {
+      "reason": "Hugging Face 联合创始人 Thomas Wolf 宣布，【NVIDIA 将以 12,930,300,000 美元收购 Hugging Face】。Wolf 表示，此次收购对用户而言当天不会有任何变化。\n\n他回顾了 Hugging Face 自 2016 年以来的发展历程，并明确【团队将继续把 Hub 打造为一个开放、独立、计算无关的平台】。同时，Hugging Face 将借助 NVIDIA 的资源【继续推进开源 AI】。",
+      "title_hash": "53134eda",
+      "created_at": "2026-09-07T01:51:44.658024Z"
+    },
+    "story_5cd952bee704|978d6938": {
+      "reason": "OpenAI 于 9 月 3 日上线 【GPT-6 Astra】，称其在电脑使用、浏览、软件工程、科学和专业工作方面达到最先进性能。由于企业安全客户先于 Pro 订阅者获得访问权限，引发高价 Pro 用户不满，CEO 奥尔特曼于 9 月 4 日在 X 平台致歉。作为补偿，从 9 月 4 日起，【付费用户每缺少一天 Astra 访问即获得一次额度重置】。目前该模型已面向所有 Plus、Pro 等付费用户推出。",
+      "title_hash": "978d6938",
+      "created_at": "2026-09-07T01:51:51.215687Z"
+    },
+    "story_76c94f0602dc|845c6e27": {
+      "reason": "Hugging Face 发布开源工具 funes，【为编码智能体提供可本地持有的记忆层】。该工具支持 Claude Code、Codex、pi、Hermes 等编码智能体，【核心机制是将已有的会话记录索引成 Lance 数据集】。使用时只需执行一条 funes add 命令，即可让 Agent 自主召回原始出处，召回信息包含具体的 Agent、时间戳、会话及轮次。",
+      "title_hash": "845c6e27",
+      "created_at": "2026-09-07T06:07:20.794869Z"
     }
   }
 }
