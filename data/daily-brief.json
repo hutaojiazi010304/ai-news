@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-06T23:00:52.882232Z",
+  "generated_at": "2026-09-07T01:09:25.445843Z",
   "window_hours": 24,
-  "total_items": 4,
+  "total_items": 6,
   "items": [
     {
       "story_id": "story_612a2e0c0069",
@@ -77,15 +77,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8293,
-      "importance": 0.8293,
-      "importance_score": 0.8293,
+      "score": 0.8261,
+      "importance": 0.8261,
+      "importance_score": 0.8261,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8738,
+        "recency": 0.8559,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -114,7 +114,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-06T23:01:43.568357Z"
+        "scored_at": "2026-09-07T01:10:13.498508Z"
       }
     },
     {
@@ -152,12 +152,27 @@
           "source_name": "AI HOT",
           "site_id": "aihot",
           "published_at": "2026-09-06T08:00:00Z"
+        },
+        {
+          "id": "b09e7b2e17b9cc5b075504ab9a74aef5f86d7f42",
+          "title": "研究加速：OpenAI内部视角",
+          "title_zh": "研究加速：OpenAI内部视角",
+          "title_en": null,
+          "title_original": "研究加速：OpenAI内部视角",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-07T00:17:54.906000Z"
         }
       ],
       "source_count": 1,
       "source_names": [
         "OpenAI News",
-        "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+        "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+        "openai.com"
       ],
       "items": [
         {
@@ -187,19 +202,33 @@
           "source_name": "AI HOT",
           "site_id": "aihot",
           "published_at": "2026-09-06T08:00:00Z"
+        },
+        {
+          "id": "b09e7b2e17b9cc5b075504ab9a74aef5f86d7f42",
+          "title": "研究加速：OpenAI内部视角",
+          "title_zh": "研究加速：OpenAI内部视角",
+          "title_en": null,
+          "title_original": "研究加速：OpenAI内部视角",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-07T00:17:54.906000Z"
         }
       ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.8278,
-      "importance": 0.8278,
-      "importance_score": 0.8278,
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8246,
+      "importance": 0.8246,
+      "importance_score": 0.8246,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8654,
+        "recency": 0.8477,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -210,7 +239,7 @@
         "high_importance"
       ],
       "earliest_at": "2026-09-06T08:00:00Z",
-      "latest_at": "2026-09-06T08:00:00Z",
+      "latest_at": "2026-09-07T00:17:54.906000Z",
       "primary_item": {
         "id": "e711677302e79fe09b249f41566da77e02ec6e8d",
         "title": "OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员 / Research acceleration: The view inside OpenAI",
@@ -228,7 +257,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-06T23:01:43.568357Z"
+        "scored_at": "2026-09-07T01:10:13.498508Z"
       }
     },
     {
@@ -276,15 +305,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7868,
-      "importance": 0.7868,
-      "importance_score": 0.7868,
+      "score": 0.7832,
+      "importance": 0.7832,
+      "importance_score": 0.7832,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9564,
+        "recency": 0.9369,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -312,7 +341,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-06T23:01:43.568357Z"
+        "scored_at": "2026-09-07T01:10:13.498508Z"
       }
     },
     {
@@ -360,15 +389,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7565,
-      "importance": 0.7565,
-      "importance_score": 0.7565,
+      "score": 0.7534,
+      "importance": 0.7534,
+      "importance_score": 0.7534,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8552,
+        "recency": 0.8378,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -396,7 +425,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-06T23:01:43.568357Z"
+        "scored_at": "2026-09-07T01:10:13.498508Z"
+      }
+    },
+    {
+      "story_id": "story_920f8b383ea8",
+      "title": "OpenAI证实“维基事件”智能体脱控，将制定安全信息披露新框架",
+      "url": "https://www.aibase.com/news/30851",
+      "primary_url": "https://www.aibase.com/news/30851",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "08211d91740c3dc8d3b27f4e720f29302ed01534",
+          "title": "OpenAI证实“维基事件”智能体脱控，将制定安全信息披露新框架",
+          "title_zh": "OpenAI证实“维基事件”智能体脱控，将制定安全信息披露新框架",
+          "title_en": null,
+          "title_original": "OpenAI证实“维基事件”智能体脱控，将制定安全信息披露新框架",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30851",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-07T01:09:25.445843Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "08211d91740c3dc8d3b27f4e720f29302ed01534",
+          "title": "OpenAI证实“维基事件”智能体脱控，将制定安全信息披露新框架",
+          "title_zh": "OpenAI证实“维基事件”智能体脱控，将制定安全信息披露新框架",
+          "title_en": null,
+          "title_original": "OpenAI证实“维基事件”智能体脱控，将制定安全信息披露新框架",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30851",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-07T01:09:25.445843Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-07T01:09:25.445843Z",
+      "latest_at": "2026-09-07T01:09:25.445843Z",
+      "primary_item": {
+        "id": "08211d91740c3dc8d3b27f4e720f29302ed01534",
+        "title": "OpenAI证实“维基事件”智能体脱控，将制定安全信息披露新框架",
+        "title_zh": "OpenAI证实“维基事件”智能体脱控，将制定安全信息披露新框架",
+        "title_en": null,
+        "title_original": "OpenAI证实“维基事件”智能体脱控，将制定安全信息披露新框架",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30851",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-07T01:10:13.498508Z"
+      }
+    },
+    {
+      "story_id": "story_28892a723564",
+      "title": "GPT-6 Astra爆火后，卡兹克谈执行能力贬值与判断力断层",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685960&idx=1&sn=df5885920be226f9514f47a7f2d30621",
+      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685960&idx=1&sn=df5885920be226f9514f47a7f2d30621",
+      "source": "公众号：数字生命卡兹克",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "729838c26f16f5e3ce99956ad2b014addedd79e2",
+          "title": "GPT-6 Astra爆火后，卡兹克谈执行能力贬值与判断力断层",
+          "title_zh": "GPT-6 Astra爆火后，卡兹克谈执行能力贬值与判断力断层",
+          "title_en": null,
+          "title_original": "GPT-6 Astra爆火后，卡兹克谈执行能力贬值与判断力断层",
+          "summary": "GPT-6 Astra上线后，大量用户用它自主操控Blender、Houdini、Unity、Aseprite等专业软件，做出游戏Demo、3D复刻旧金山艺术宫等作品，其中旧金山艺术宫案例里Astra自己搜索几百张参考图、翻到美国国会图书馆的老扫描文件找柱子尺寸，多数工作在夜间自主完成。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685960&idx=1&sn=df5885920be226f9514f47a7f2d30621",
+          "source": "公众号：数字生命卡兹克",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-07T00:08:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "公众号：数字生命卡兹克"
+      ],
+      "items": [
+        {
+          "id": "729838c26f16f5e3ce99956ad2b014addedd79e2",
+          "title": "GPT-6 Astra爆火后，卡兹克谈执行能力贬值与判断力断层",
+          "title_zh": "GPT-6 Astra爆火后，卡兹克谈执行能力贬值与判断力断层",
+          "title_en": null,
+          "title_original": "GPT-6 Astra爆火后，卡兹克谈执行能力贬值与判断力断层",
+          "summary": "GPT-6 Astra上线后，大量用户用它自主操控Blender、Houdini、Unity、Aseprite等专业软件，做出游戏Demo、3D复刻旧金山艺术宫等作品，其中旧金山艺术宫案例里Astra自己搜索几百张参考图、翻到美国国会图书馆的老扫描文件找柱子尺寸，多数工作在夜间自主完成。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685960&idx=1&sn=df5885920be226f9514f47a7f2d30621",
+          "source": "公众号：数字生命卡兹克",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-07T00:08:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7628,
+      "importance": 0.7628,
+      "importance_score": 0.7628,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.71,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9902,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-07T00:08:00Z",
+      "latest_at": "2026-09-07T00:08:00Z",
+      "primary_item": {
+        "id": "729838c26f16f5e3ce99956ad2b014addedd79e2",
+        "title": "GPT-6 Astra爆火后，卡兹克谈执行能力贬值与判断力断层",
+        "title_zh": "GPT-6 Astra爆火后，卡兹克谈执行能力贬值与判断力断层",
+        "title_en": null,
+        "title_original": "GPT-6 Astra爆火后，卡兹克谈执行能力贬值与判断力断层",
+        "summary": "GPT-6 Astra上线后，大量用户用它自主操控Blender、Houdini、Unity、Aseprite等专业软件，做出游戏Demo、3D复刻旧金山艺术宫等作品，其中旧金山艺术宫案例里Astra自己搜索几百张参考图、翻到美国国会图书馆的老扫描文件找柱子尺寸，多数工作在夜间自主完成。",
+        "recommend_reason_zh": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685960&idx=1&sn=df5885920be226f9514f47a7f2d30621",
+        "source": "公众号：数字生命卡兹克",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7628,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-07T01:10:13.498508Z"
       }
     }
   ]
