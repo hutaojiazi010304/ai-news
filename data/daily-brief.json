@@ -1,30 +1,16 @@
 {
-  "generated_at": "2026-09-07T06:18:00.261905Z",
+  "generated_at": "2026-09-07T12:50:27.800082Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
     {
       "story_id": "story_612a2e0c0069",
-      "title": "OpenAI 长文阐述对齐与监测困境，称 CoT 监控能力正在减弱 / An Alien Mind",
+      "title": "《外星人的思维》",
       "url": "https://openai.com/index/an-alien-mind",
       "primary_url": "https://openai.com/index/an-alien-mind",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
+      "source": "openai.com",
+      "source_name": "Buzzing",
       "sources": [
-        {
-          "id": "07df97fa324316a3761be85953d935f46ac91560",
-          "title": "OpenAI 长文阐述对齐与监测困境，称 CoT 监控能力正在减弱 / An Alien Mind",
-          "title_zh": "OpenAI 长文阐述对齐与监测困境，称 CoT 监控能力正在减弱",
-          "title_en": "An Alien Mind",
-          "title_original": "An Alien Mind",
-          "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/an-alien-mind",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-06T09:00:00Z"
-        },
         {
           "id": "11c74011454eeca9fdf1dda05e8f4996f0f8c862",
           "title": "《外星人的思维》",
@@ -38,28 +24,28 @@
           "source_name": "Buzzing",
           "site_id": "buzzing",
           "published_at": "2026-09-06T18:33:46.745000Z"
+        },
+        {
+          "id": "2aa8cbeff305e88294e6fa5501aa6aa192d41a5e",
+          "title": "《外星人的思维》 / An Alien Mind",
+          "title_zh": "《外星人的思维》",
+          "title_en": "An Alien Mind",
+          "title_original": "An Alien Mind",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/an-alien-mind",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-09-06T16:27:05Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "OpenAI News",
+        "Hacker News · 24h最热",
         "openai.com"
       ],
       "items": [
-        {
-          "id": "07df97fa324316a3761be85953d935f46ac91560",
-          "title": "OpenAI 长文阐述对齐与监测困境，称 CoT 监控能力正在减弱 / An Alien Mind",
-          "title_zh": "OpenAI 长文阐述对齐与监测困境，称 CoT 监控能力正在减弱",
-          "title_en": "An Alien Mind",
-          "title_original": "An Alien Mind",
-          "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/an-alien-mind",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-06T09:00:00Z"
-        },
         {
           "id": "11c74011454eeca9fdf1dda05e8f4996f0f8c862",
           "title": "《外星人的思维》",
@@ -73,162 +59,116 @@
           "source_name": "Buzzing",
           "site_id": "buzzing",
           "published_at": "2026-09-06T18:33:46.745000Z"
+        },
+        {
+          "id": "2aa8cbeff305e88294e6fa5501aa6aa192d41a5e",
+          "title": "《外星人的思维》 / An Alien Mind",
+          "title_zh": "《外星人的思维》",
+          "title_en": "An Alien Mind",
+          "title_original": "An Alien Mind",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/an-alien-mind",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-09-06T16:27:05Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8186,
-      "importance": 0.8186,
-      "importance_score": 0.8186,
-      "importance_label": "官方更新",
+      "score": 0.4918,
+      "importance": 0.4918,
+      "importance_score": 0.4918,
+      "importance_label": "值得关注",
       "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8146,
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.8386,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "official",
+      "category": "watch",
       "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
+        "recent_ai_signal"
       ],
-      "earliest_at": "2026-09-06T09:00:00Z",
+      "earliest_at": "2026-09-06T16:27:05Z",
       "latest_at": "2026-09-06T18:33:46.745000Z",
       "primary_item": {
-        "id": "07df97fa324316a3761be85953d935f46ac91560",
-        "title": "OpenAI 长文阐述对齐与监测困境，称 CoT 监控能力正在减弱 / An Alien Mind",
-        "title_zh": "OpenAI 长文阐述对齐与监测困境，称 CoT 监控能力正在减弱",
-        "title_en": "An Alien Mind",
-        "title_original": "An Alien Mind",
-        "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
+        "id": "11c74011454eeca9fdf1dda05e8f4996f0f8c862",
+        "title": "《外星人的思维》",
+        "title_zh": "《外星人的思维》",
+        "title_en": null,
+        "title_original": "《外星人的思维》",
+        "summary": null,
         "recommend_reason_zh": null,
         "url": "https://openai.com/index/an-alien-mind",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
+        "source": "openai.com",
+        "source_name": "Buzzing"
       },
       "peak_score": 0.8384,
       "persona_id": "pragmatic",
-      "persona_score": 1,
+      "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     },
     {
-      "story_id": "story_cc153614bc7c",
-      "title": "OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员 / Research acceleration: The view inside OpenAI",
-      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
-      "primary_url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "story_id": "story_002df950f741",
+      "title": "Supporting independent journalism in Ukraine",
+      "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
+      "primary_url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
       "source": "OpenAI News",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "e711677302e79fe09b249f41566da77e02ec6e8d",
-          "title": "OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员 / Research acceleration: The view inside OpenAI",
-          "title_zh": "OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员",
-          "title_en": "Research acceleration: The view inside OpenAI",
-          "title_original": "Research acceleration: The view inside OpenAI",
-          "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
+          "id": "6302cd534c94b9343d8c6428096c99f57e4984ac",
+          "title": "Supporting independent journalism in Ukraine",
+          "title_zh": null,
+          "title_en": "Supporting independent journalism in Ukraine",
+          "title_original": "Supporting independent journalism in Ukraine",
+          "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+          "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-06T08:00:00Z"
-        },
-        {
-          "id": "f5a8de608c35a9e40fd19ca0e5310a1a10493dae",
-          "title": "OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员 / Research acceleration： The view inside OpenAI",
-          "title_zh": "OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员",
-          "title_en": "Research acceleration： The view inside OpenAI",
-          "title_original": "Research acceleration： The view inside OpenAI",
-          "summary": "OpenAI 发文披露自动化研究进展，宣布已达成去年秋天设定的今年 9 月拥有自动化研究实习生（可在人类指导下完成耗时数天的明确研究任务）的目标，并计划在 2028 年 3 月前造出自动化 AI 研究员。",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
-          "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-06T08:00:00Z"
-        },
-        {
-          "id": "b09e7b2e17b9cc5b075504ab9a74aef5f86d7f42",
-          "title": "研究加速：OpenAI内部视角",
-          "title_zh": "研究加速：OpenAI内部视角",
-          "title_en": null,
-          "title_original": "研究加速：OpenAI内部视角",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
-          "source": "openai.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-07T00:17:54.906000Z"
+          "published_at": "2026-09-07T00:00:00Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "OpenAI News",
-        "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-        "openai.com"
+        "OpenAI News"
       ],
       "items": [
         {
-          "id": "e711677302e79fe09b249f41566da77e02ec6e8d",
-          "title": "OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员 / Research acceleration: The view inside OpenAI",
-          "title_zh": "OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员",
-          "title_en": "Research acceleration: The view inside OpenAI",
-          "title_original": "Research acceleration: The view inside OpenAI",
-          "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
+          "id": "6302cd534c94b9343d8c6428096c99f57e4984ac",
+          "title": "Supporting independent journalism in Ukraine",
+          "title_zh": null,
+          "title_en": "Supporting independent journalism in Ukraine",
+          "title_original": "Supporting independent journalism in Ukraine",
+          "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+          "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-06T08:00:00Z"
-        },
-        {
-          "id": "f5a8de608c35a9e40fd19ca0e5310a1a10493dae",
-          "title": "OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员 / Research acceleration： The view inside OpenAI",
-          "title_zh": "OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员",
-          "title_en": "Research acceleration： The view inside OpenAI",
-          "title_original": "Research acceleration： The view inside OpenAI",
-          "summary": "OpenAI 发文披露自动化研究进展，宣布已达成去年秋天设定的今年 9 月拥有自动化研究实习生（可在人类指导下完成耗时数天的明确研究任务）的目标，并计划在 2028 年 3 月前造出自动化 AI 研究员。",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
-          "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-06T08:00:00Z"
-        },
-        {
-          "id": "b09e7b2e17b9cc5b075504ab9a74aef5f86d7f42",
-          "title": "研究加速：OpenAI内部视角",
-          "title_zh": "研究加速：OpenAI内部视角",
-          "title_en": null,
-          "title_original": "研究加速：OpenAI内部视角",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
-          "source": "openai.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-07T00:17:54.906000Z"
+          "published_at": "2026-09-07T00:00:00Z"
         }
       ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.8172,
-      "importance": 0.8172,
-      "importance_score": 0.8172,
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8311,
+      "importance": 0.8311,
+      "importance_score": 0.8311,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8068,
+        "recency": 0.8837,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -238,26 +178,167 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-06T08:00:00Z",
-      "latest_at": "2026-09-07T00:17:54.906000Z",
+      "earliest_at": "2026-09-07T00:00:00Z",
+      "latest_at": "2026-09-07T00:00:00Z",
       "primary_item": {
-        "id": "e711677302e79fe09b249f41566da77e02ec6e8d",
-        "title": "OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员 / Research acceleration: The view inside OpenAI",
-        "title_zh": "OpenAI 发布内部研究加速报告：已达成自动化研究实习生目标，推进 2028 年 3 月自动化 AI 研究员",
-        "title_en": "Research acceleration: The view inside OpenAI",
-        "title_original": "Research acceleration: The view inside OpenAI",
-        "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
+        "id": "6302cd534c94b9343d8c6428096c99f57e4984ac",
+        "title": "Supporting independent journalism in Ukraine",
+        "title_zh": null,
+        "title_en": "Supporting independent journalism in Ukraine",
+        "title_original": "Supporting independent journalism in Ukraine",
+        "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+        "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8311,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-07T12:51:19.537448Z"
+      }
+    },
+    {
+      "story_id": "story_cc153614bc7c",
+      "title": "研究加速：OpenAI内部视角",
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "primary_url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "source": "openai.com",
+      "source_name": "Buzzing",
+      "sources": [
+        {
+          "id": "b09e7b2e17b9cc5b075504ab9a74aef5f86d7f42",
+          "title": "研究加速：OpenAI内部视角",
+          "title_zh": "研究加速：OpenAI内部视角",
+          "title_en": null,
+          "title_original": "研究加速：OpenAI内部视角",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-07T00:17:54.906000Z"
+        },
+        {
+          "id": "64d5243b62263771a4447effedb8cd9b0d4ddf39",
+          "title": "Research acceleration: The view inside OpenAI",
+          "title_zh": null,
+          "title_en": "Research acceleration: The view inside OpenAI",
+          "title_original": "Research acceleration: The view inside OpenAI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49587217",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-06T16:45:45.254000Z"
+        },
+        {
+          "id": "16cd7c2c31702130f91ae681c5f0361456eb1505",
+          "title": "研究加速：OpenAI内部视角 / Research acceleration: The view inside OpenAI",
+          "title_zh": "研究加速：OpenAI内部视角",
+          "title_en": "Research acceleration: The view inside OpenAI",
+          "title_original": "Research acceleration: The view inside OpenAI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-06T15:08:44Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Hacker News (黑客新闻)",
+        "hackernews",
+        "openai.com"
+      ],
+      "items": [
+        {
+          "id": "b09e7b2e17b9cc5b075504ab9a74aef5f86d7f42",
+          "title": "研究加速：OpenAI内部视角",
+          "title_zh": "研究加速：OpenAI内部视角",
+          "title_en": null,
+          "title_original": "研究加速：OpenAI内部视角",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-07T00:17:54.906000Z"
+        },
+        {
+          "id": "64d5243b62263771a4447effedb8cd9b0d4ddf39",
+          "title": "Research acceleration: The view inside OpenAI",
+          "title_zh": null,
+          "title_en": "Research acceleration: The view inside OpenAI",
+          "title_original": "Research acceleration: The view inside OpenAI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49587217",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-06T16:45:45.254000Z"
+        },
+        {
+          "id": "16cd7c2c31702130f91ae681c5f0361456eb1505",
+          "title": "研究加速：OpenAI内部视角 / Research acceleration: The view inside OpenAI",
+          "title_zh": "研究加速：OpenAI内部视角",
+          "title_en": "Research acceleration: The view inside OpenAI",
+          "title_original": "Research acceleration: The view inside OpenAI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-06T15:08:44Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.5253,
+      "importance": 0.5253,
+      "importance_score": 0.5253,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.8863,
+        "story_heat": 0.25,
+        "soft_content_penalty": 0.0
+      },
+      "category": "watch",
+      "reasons": [
+        "multi_source"
+      ],
+      "earliest_at": "2026-09-06T15:08:44Z",
+      "latest_at": "2026-09-07T00:17:54.906000Z",
+      "primary_item": {
+        "id": "b09e7b2e17b9cc5b075504ab9a74aef5f86d7f42",
+        "title": "研究加速：OpenAI内部视角",
+        "title_zh": "研究加速：OpenAI内部视角",
+        "title_en": null,
+        "title_original": "研究加速：OpenAI内部视角",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+        "source": "openai.com",
+        "source_name": "Buzzing"
       },
       "peak_score": 0.8368,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     },
     {
@@ -305,15 +386,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7751,
-      "importance": 0.7751,
-      "importance_score": 0.7751,
+      "score": 0.7653,
+      "importance": 0.7653,
+      "importance_score": 0.7653,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8916,
+        "recency": 0.8372,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -341,90 +422,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
-      }
-    },
-    {
-      "story_id": "story_5c53403fc048",
-      "title": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
-      "url": "https://www.ithome.com/0/998/927.htm",
-      "primary_url": "https://www.ithome.com/0/998/927.htm",
-      "source": "IT之家（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "cc99a11445f9699c502d014aa4878337b7229e6e",
-          "title": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
-          "title_zh": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
-          "title_en": null,
-          "title_original": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
-          "summary": "据 Fortune 报道，OpenAI 自 9 月 3 日发布 GPT-6 Astra 公告以来多次修改评测基准数据：Astra 幻觉率曾从 4.2% 降至 2% 后又改回。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/0/998/927.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-06T06:46:16Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "IT之家（RSS）"
-      ],
-      "items": [
-        {
-          "id": "cc99a11445f9699c502d014aa4878337b7229e6e",
-          "title": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
-          "title_zh": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
-          "title_en": null,
-          "title_original": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
-          "summary": "据 Fortune 报道，OpenAI 自 9 月 3 日发布 GPT-6 Astra 公告以来多次修改评测基准数据：Astra 幻觉率曾从 4.2% 降至 2% 后又改回。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/0/998/927.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-06T06:46:16Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7461,
-      "importance": 0.7461,
-      "importance_score": 0.7461,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.77,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7973,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-06T06:46:16Z",
-      "latest_at": "2026-09-06T06:46:16Z",
-      "primary_item": {
-        "id": "cc99a11445f9699c502d014aa4878337b7229e6e",
-        "title": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
-        "title_zh": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
-        "title_en": null,
-        "title_original": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
-        "summary": "据 Fortune 报道，OpenAI 自 9 月 3 日发布 GPT-6 Astra 公告以来多次修改评测基准数据：Astra 幻觉率曾从 4.2% 降至 2% 后又改回。",
-        "recommend_reason_zh": null,
-        "url": "https://www.ithome.com/0/998/927.htm",
-        "source": "IT之家（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7752,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     },
     {
@@ -472,15 +470,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7566,
+      "importance": 0.7566,
+      "importance_score": 0.7566,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.939,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -508,7 +506,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     },
     {
@@ -556,22 +554,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7542,
-      "importance": 0.7542,
-      "importance_score": 0.7542,
+      "score": 0.7439,
+      "importance": 0.7439,
+      "importance_score": 0.7439,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9424,
+        "recency": 0.8848,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-07T00:08:00Z",
       "latest_at": "2026-09-07T00:08:00Z",
@@ -592,7 +589,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     },
     {
@@ -640,15 +637,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7627,
-      "importance": 0.7627,
-      "importance_score": 0.7627,
+      "score": 0.752,
+      "importance": 0.752,
+      "importance_score": 0.752,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9729,
+        "recency": 0.9135,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -676,7 +673,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     },
     {
@@ -724,15 +721,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7566,
+      "importance": 0.7566,
+      "importance_score": 0.7566,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.939,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -760,7 +757,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
+      }
+    },
+    {
+      "story_id": "story_2ebcbcb9674f",
+      "title": "AI界的数学里程碑：Claude 仅用 11 天拿下费马大定理端到端形式化证明",
+      "url": "https://www.aibase.com/news/30876",
+      "primary_url": "https://www.aibase.com/news/30876",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "12314046d1a79786aaee1e833190c0810a0ca9ca",
+          "title": "AI界的数学里程碑：Claude 仅用 11 天拿下费马大定理端到端形式化证明",
+          "title_zh": "AI界的数学里程碑：Claude 仅用 11 天拿下费马大定理端到端形式化证明",
+          "title_en": null,
+          "title_original": "AI界的数学里程碑：Claude 仅用 11 天拿下费马大定理端到端形式化证明",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30876",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-07T12:50:27.800082Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "12314046d1a79786aaee1e833190c0810a0ca9ca",
+          "title": "AI界的数学里程碑：Claude 仅用 11 天拿下费马大定理端到端形式化证明",
+          "title_zh": "AI界的数学里程碑：Claude 仅用 11 天拿下费马大定理端到端形式化证明",
+          "title_en": null,
+          "title_original": "AI界的数学里程碑：Claude 仅用 11 天拿下费马大定理端到端形式化证明",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30876",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-07T12:50:27.800082Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-07T12:50:27.800082Z",
+      "latest_at": "2026-09-07T12:50:27.800082Z",
+      "primary_item": {
+        "id": "12314046d1a79786aaee1e833190c0810a0ca9ca",
+        "title": "AI界的数学里程碑：Claude 仅用 11 天拿下费马大定理端到端形式化证明",
+        "title_zh": "AI界的数学里程碑：Claude 仅用 11 天拿下费马大定理端到端形式化证明",
+        "title_en": null,
+        "title_original": "AI界的数学里程碑：Claude 仅用 11 天拿下费马大定理端到端形式化证明",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30876",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     },
     {
@@ -808,15 +889,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7566,
+      "importance": 0.7566,
+      "importance_score": 0.7566,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.939,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -844,7 +925,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     },
     {
@@ -892,15 +973,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7566,
+      "importance": 0.7566,
+      "importance_score": 0.7566,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.939,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -928,7 +1009,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     },
     {
@@ -976,15 +1057,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7566,
+      "importance": 0.7566,
+      "importance_score": 0.7566,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.939,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1012,7 +1093,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     },
     {
@@ -1060,15 +1141,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7566,
+      "importance": 0.7566,
+      "importance_score": 0.7566,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.939,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1096,7 +1177,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
+      }
+    },
+    {
+      "story_id": "story_e75491e5f031",
+      "title": "OpenAI 同日发布两份文件：AI 开始加速 AI 研发，但安全正在掉队",
+      "url": "https://www.aibase.com/news/30874",
+      "primary_url": "https://www.aibase.com/news/30874",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "81d1e83139db57503459d5f56aa14f80e767f09e",
+          "title": "OpenAI 同日发布两份文件：AI 开始加速 AI 研发，但安全正在掉队",
+          "title_zh": "OpenAI 同日发布两份文件：AI 开始加速 AI 研发，但安全正在掉队",
+          "title_en": null,
+          "title_original": "OpenAI 同日发布两份文件：AI 开始加速 AI 研发，但安全正在掉队",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30874",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-07T12:50:27.800082Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "81d1e83139db57503459d5f56aa14f80e767f09e",
+          "title": "OpenAI 同日发布两份文件：AI 开始加速 AI 研发，但安全正在掉队",
+          "title_zh": "OpenAI 同日发布两份文件：AI 开始加速 AI 研发，但安全正在掉队",
+          "title_en": null,
+          "title_original": "OpenAI 同日发布两份文件：AI 开始加速 AI 研发，但安全正在掉队",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30874",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-07T12:50:27.800082Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-07T12:50:27.800082Z",
+      "latest_at": "2026-09-07T12:50:27.800082Z",
+      "primary_item": {
+        "id": "81d1e83139db57503459d5f56aa14f80e767f09e",
+        "title": "OpenAI 同日发布两份文件：AI 开始加速 AI 研发，但安全正在掉队",
+        "title_zh": "OpenAI 同日发布两份文件：AI 开始加速 AI 研发，但安全正在掉队",
+        "title_en": null,
+        "title_original": "OpenAI 同日发布两份文件：AI 开始加速 AI 研发，但安全正在掉队",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30874",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     },
     {
@@ -1144,22 +1309,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7589,
-      "importance": 0.7589,
-      "importance_score": 0.7589,
+      "score": 0.7485,
+      "importance": 0.7485,
+      "importance_score": 0.7485,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9517,
+        "recency": 0.8936,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-07T01:09:25.445843Z",
       "latest_at": "2026-09-07T01:09:25.445843Z",
@@ -1180,7 +1344,259 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
+      }
+    },
+    {
+      "story_id": "story_6576f701bc03",
+      "title": "OpenAI达成自动化研究实习生里程碑，内部Agent运行时长达人力3.1倍",
+      "url": "https://www.aibase.com/news/30871",
+      "primary_url": "https://www.aibase.com/news/30871",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "276c577da33b6e68591d5ef85d892c00bdf8172c",
+          "title": "OpenAI达成自动化研究实习生里程碑，内部Agent运行时长达人力3.1倍",
+          "title_zh": "OpenAI达成自动化研究实习生里程碑，内部Agent运行时长达人力3.1倍",
+          "title_en": null,
+          "title_original": "OpenAI达成自动化研究实习生里程碑，内部Agent运行时长达人力3.1倍",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30871",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-07T12:50:27.800082Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "276c577da33b6e68591d5ef85d892c00bdf8172c",
+          "title": "OpenAI达成自动化研究实习生里程碑，内部Agent运行时长达人力3.1倍",
+          "title_zh": "OpenAI达成自动化研究实习生里程碑，内部Agent运行时长达人力3.1倍",
+          "title_en": null,
+          "title_original": "OpenAI达成自动化研究实习生里程碑，内部Agent运行时长达人力3.1倍",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30871",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-07T12:50:27.800082Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-07T12:50:27.800082Z",
+      "latest_at": "2026-09-07T12:50:27.800082Z",
+      "primary_item": {
+        "id": "276c577da33b6e68591d5ef85d892c00bdf8172c",
+        "title": "OpenAI达成自动化研究实习生里程碑，内部Agent运行时长达人力3.1倍",
+        "title_zh": "OpenAI达成自动化研究实习生里程碑，内部Agent运行时长达人力3.1倍",
+        "title_en": null,
+        "title_original": "OpenAI达成自动化研究实习生里程碑，内部Agent运行时长达人力3.1倍",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30871",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-07T12:51:19.537448Z"
+      }
+    },
+    {
+      "story_id": "story_c480607eabf3",
+      "title": "OpenAI首度承认维基越狱事件，将紧急制定智能体异常行为披露框架",
+      "url": "https://www.aibase.com/news/30872",
+      "primary_url": "https://www.aibase.com/news/30872",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "2690503e8ebf91a939d49d0b672dbe3191d1c471",
+          "title": "OpenAI首度承认维基越狱事件，将紧急制定智能体异常行为披露框架",
+          "title_zh": "OpenAI首度承认维基越狱事件，将紧急制定智能体异常行为披露框架",
+          "title_en": null,
+          "title_original": "OpenAI首度承认维基越狱事件，将紧急制定智能体异常行为披露框架",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30872",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-07T12:50:27.800082Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "2690503e8ebf91a939d49d0b672dbe3191d1c471",
+          "title": "OpenAI首度承认维基越狱事件，将紧急制定智能体异常行为披露框架",
+          "title_zh": "OpenAI首度承认维基越狱事件，将紧急制定智能体异常行为披露框架",
+          "title_en": null,
+          "title_original": "OpenAI首度承认维基越狱事件，将紧急制定智能体异常行为披露框架",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30872",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-07T12:50:27.800082Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-07T12:50:27.800082Z",
+      "latest_at": "2026-09-07T12:50:27.800082Z",
+      "primary_item": {
+        "id": "2690503e8ebf91a939d49d0b672dbe3191d1c471",
+        "title": "OpenAI首度承认维基越狱事件，将紧急制定智能体异常行为披露框架",
+        "title_zh": "OpenAI首度承认维基越狱事件，将紧急制定智能体异常行为披露框架",
+        "title_en": null,
+        "title_original": "OpenAI首度承认维基越狱事件，将紧急制定智能体异常行为披露框架",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30872",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-07T12:51:19.537448Z"
+      }
+    },
+    {
+      "story_id": "story_ba6959090466",
+      "title": "中国大模型调用量连续 19 周领跑全球，腾讯 Hy4 preview 单周暴涨 379%",
+      "url": "https://www.aibase.com/news/30875",
+      "primary_url": "https://www.aibase.com/news/30875",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "5965c1fd2c278050d8b5b820a9641bdcc6f04178",
+          "title": "中国大模型调用量连续 19 周领跑全球，腾讯 Hy4 preview 单周暴涨 379%",
+          "title_zh": "中国大模型调用量连续 19 周领跑全球，腾讯 Hy4 preview 单周暴涨 379%",
+          "title_en": null,
+          "title_original": "中国大模型调用量连续 19 周领跑全球，腾讯 Hy4 preview 单周暴涨 379%",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30875",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-07T12:50:27.800082Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "5965c1fd2c278050d8b5b820a9641bdcc6f04178",
+          "title": "中国大模型调用量连续 19 周领跑全球，腾讯 Hy4 preview 单周暴涨 379%",
+          "title_zh": "中国大模型调用量连续 19 周领跑全球，腾讯 Hy4 preview 单周暴涨 379%",
+          "title_en": null,
+          "title_original": "中国大模型调用量连续 19 周领跑全球，腾讯 Hy4 preview 单周暴涨 379%",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/30875",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-07T12:50:27.800082Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-07T12:50:27.800082Z",
+      "latest_at": "2026-09-07T12:50:27.800082Z",
+      "primary_item": {
+        "id": "5965c1fd2c278050d8b5b820a9641bdcc6f04178",
+        "title": "中国大模型调用量连续 19 周领跑全球，腾讯 Hy4 preview 单周暴涨 379%",
+        "title_zh": "中国大模型调用量连续 19 周领跑全球，腾讯 Hy4 preview 单周暴涨 379%",
+        "title_en": null,
+        "title_original": "中国大模型调用量连续 19 周领跑全球，腾讯 Hy4 preview 单周暴涨 379%",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/30875",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     },
     {
@@ -1228,15 +1644,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7566,
+      "importance": 0.7566,
+      "importance_score": 0.7566,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.939,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1264,7 +1680,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     },
     {
@@ -1312,15 +1728,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7566,
+      "importance": 0.7566,
+      "importance_score": 0.7566,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.939,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1348,427 +1764,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
-      }
-    },
-    {
-      "story_id": "story_a0689e4c8b0e",
-      "title": "千问开放平台再上新10+金融服务智能体，证券、基金、期货、保险一个入口直连",
-      "url": "https://www.aibase.com/news/30865",
-      "primary_url": "https://www.aibase.com/news/30865",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "f777308bb08f89b51b8661b25bc9f2116c88c185",
-          "title": "千问开放平台再上新10+金融服务智能体，证券、基金、期货、保险一个入口直连",
-          "title_zh": "千问开放平台再上新10+金融服务智能体，证券、基金、期货、保险一个入口直连",
-          "title_en": null,
-          "title_original": "千问开放平台再上新10+金融服务智能体，证券、基金、期货、保险一个入口直连",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30865",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-07T06:18:00.261905Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "f777308bb08f89b51b8661b25bc9f2116c88c185",
-          "title": "千问开放平台再上新10+金融服务智能体，证券、基金、期货、保险一个入口直连",
-          "title_zh": "千问开放平台再上新10+金融服务智能体，证券、基金、期货、保险一个入口直连",
-          "title_en": null,
-          "title_original": "千问开放平台再上新10+金融服务智能体，证券、基金、期货、保险一个入口直连",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30865",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-07T06:18:00.261905Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-07T06:18:00.261905Z",
-      "latest_at": "2026-09-07T06:18:00.261905Z",
-      "primary_item": {
-        "id": "f777308bb08f89b51b8661b25bc9f2116c88c185",
-        "title": "千问开放平台再上新10+金融服务智能体，证券、基金、期货、保险一个入口直连",
-        "title_zh": "千问开放平台再上新10+金融服务智能体，证券、基金、期货、保险一个入口直连",
-        "title_en": null,
-        "title_original": "千问开放平台再上新10+金融服务智能体，证券、基金、期货、保险一个入口直连",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30865",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
-      }
-    },
-    {
-      "story_id": "story_bf0426a9d378",
-      "title": "告别全屏交互，谷歌Gemini升级悬浮气泡推动AI助手轻量化演进",
-      "url": "https://www.aibase.com/news/30857",
-      "primary_url": "https://www.aibase.com/news/30857",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "606f256c98c054194ea97ac39e1a4ec8f820c2b3",
-          "title": "告别全屏交互，谷歌Gemini升级悬浮气泡推动AI助手轻量化演进",
-          "title_zh": "告别全屏交互，谷歌Gemini升级悬浮气泡推动AI助手轻量化演进",
-          "title_en": null,
-          "title_original": "告别全屏交互，谷歌Gemini升级悬浮气泡推动AI助手轻量化演进",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30857",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-07T06:18:00.261905Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "606f256c98c054194ea97ac39e1a4ec8f820c2b3",
-          "title": "告别全屏交互，谷歌Gemini升级悬浮气泡推动AI助手轻量化演进",
-          "title_zh": "告别全屏交互，谷歌Gemini升级悬浮气泡推动AI助手轻量化演进",
-          "title_en": null,
-          "title_original": "告别全屏交互，谷歌Gemini升级悬浮气泡推动AI助手轻量化演进",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30857",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-07T06:18:00.261905Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-07T06:18:00.261905Z",
-      "latest_at": "2026-09-07T06:18:00.261905Z",
-      "primary_item": {
-        "id": "606f256c98c054194ea97ac39e1a4ec8f820c2b3",
-        "title": "告别全屏交互，谷歌Gemini升级悬浮气泡推动AI助手轻量化演进",
-        "title_zh": "告别全屏交互，谷歌Gemini升级悬浮气泡推动AI助手轻量化演进",
-        "title_en": null,
-        "title_original": "告别全屏交互，谷歌Gemini升级悬浮气泡推动AI助手轻量化演进",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30857",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
-      }
-    },
-    {
-      "story_id": "story_2fabd48a7add",
-      "title": "微信内测“小微AI社交”新功能 支持原生AI助手跨账号代理沟通",
-      "url": "https://www.aibase.com/news/30869",
-      "primary_url": "https://www.aibase.com/news/30869",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "5a8b4794fd659159bb8bbd0315e6972862801359",
-          "title": "微信内测“小微AI社交”新功能 支持原生AI助手跨账号代理沟通",
-          "title_zh": "微信内测“小微AI社交”新功能 支持原生AI助手跨账号代理沟通",
-          "title_en": null,
-          "title_original": "微信内测“小微AI社交”新功能 支持原生AI助手跨账号代理沟通",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30869",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-07T06:18:00.261905Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "5a8b4794fd659159bb8bbd0315e6972862801359",
-          "title": "微信内测“小微AI社交”新功能 支持原生AI助手跨账号代理沟通",
-          "title_zh": "微信内测“小微AI社交”新功能 支持原生AI助手跨账号代理沟通",
-          "title_en": null,
-          "title_original": "微信内测“小微AI社交”新功能 支持原生AI助手跨账号代理沟通",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30869",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-07T06:18:00.261905Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-07T06:18:00.261905Z",
-      "latest_at": "2026-09-07T06:18:00.261905Z",
-      "primary_item": {
-        "id": "5a8b4794fd659159bb8bbd0315e6972862801359",
-        "title": "微信内测“小微AI社交”新功能 支持原生AI助手跨账号代理沟通",
-        "title_zh": "微信内测“小微AI社交”新功能 支持原生AI助手跨账号代理沟通",
-        "title_en": null,
-        "title_original": "微信内测“小微AI社交”新功能 支持原生AI助手跨账号代理沟通",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30869",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
-      }
-    },
-    {
-      "story_id": "story_1d5da5f6ecf7",
-      "title": "微信视觉团队开源通用多模态嵌入模型WeMM-Embedding，日调用量突破十亿量级",
-      "url": "https://www.aibase.com/news/30866",
-      "primary_url": "https://www.aibase.com/news/30866",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "e0ff566020e35871055507058e039095e3752046",
-          "title": "微信视觉团队开源通用多模态嵌入模型WeMM-Embedding，日调用量突破十亿量级",
-          "title_zh": "微信视觉团队开源通用多模态嵌入模型WeMM-Embedding，日调用量突破十亿量级",
-          "title_en": null,
-          "title_original": "微信视觉团队开源通用多模态嵌入模型WeMM-Embedding，日调用量突破十亿量级",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30866",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-07T06:18:00.261905Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "e0ff566020e35871055507058e039095e3752046",
-          "title": "微信视觉团队开源通用多模态嵌入模型WeMM-Embedding，日调用量突破十亿量级",
-          "title_zh": "微信视觉团队开源通用多模态嵌入模型WeMM-Embedding，日调用量突破十亿量级",
-          "title_en": null,
-          "title_original": "微信视觉团队开源通用多模态嵌入模型WeMM-Embedding，日调用量突破十亿量级",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30866",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-07T06:18:00.261905Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-07T06:18:00.261905Z",
-      "latest_at": "2026-09-07T06:18:00.261905Z",
-      "primary_item": {
-        "id": "e0ff566020e35871055507058e039095e3752046",
-        "title": "微信视觉团队开源通用多模态嵌入模型WeMM-Embedding，日调用量突破十亿量级",
-        "title_zh": "微信视觉团队开源通用多模态嵌入模型WeMM-Embedding，日调用量突破十亿量级",
-        "title_en": null,
-        "title_original": "微信视觉团队开源通用多模态嵌入模型WeMM-Embedding，日调用量突破十亿量级",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30866",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
-      }
-    },
-    {
-      "story_id": "story_0611fb23ee21",
-      "title": "微软发布 MAI-Image-2.6-Flash:图像生成速度提升2.8倍，成本降低逾50%",
-      "url": "https://www.aibase.com/news/30853",
-      "primary_url": "https://www.aibase.com/news/30853",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "54c0098ec076fae6dd785ba33b8ee6215398952e",
-          "title": "微软发布 MAI-Image-2.6-Flash:图像生成速度提升2.8倍，成本降低逾50%",
-          "title_zh": "微软发布 MAI-Image-2.6-Flash:图像生成速度提升2.8倍，成本降低逾50%",
-          "title_en": null,
-          "title_original": "微软发布 MAI-Image-2.6-Flash:图像生成速度提升2.8倍，成本降低逾50%",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30853",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-07T06:18:00.261905Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "54c0098ec076fae6dd785ba33b8ee6215398952e",
-          "title": "微软发布 MAI-Image-2.6-Flash:图像生成速度提升2.8倍，成本降低逾50%",
-          "title_zh": "微软发布 MAI-Image-2.6-Flash:图像生成速度提升2.8倍，成本降低逾50%",
-          "title_en": null,
-          "title_original": "微软发布 MAI-Image-2.6-Flash:图像生成速度提升2.8倍，成本降低逾50%",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30853",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-07T06:18:00.261905Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-07T06:18:00.261905Z",
-      "latest_at": "2026-09-07T06:18:00.261905Z",
-      "primary_item": {
-        "id": "54c0098ec076fae6dd785ba33b8ee6215398952e",
-        "title": "微软发布 MAI-Image-2.6-Flash:图像生成速度提升2.8倍，成本降低逾50%",
-        "title_zh": "微软发布 MAI-Image-2.6-Flash:图像生成速度提升2.8倍，成本降低逾50%",
-        "title_en": null,
-        "title_original": "微软发布 MAI-Image-2.6-Flash:图像生成速度提升2.8倍，成本降低逾50%",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30853",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-07T06:21:43.560484Z"
+        "scored_at": "2026-09-07T12:51:19.537448Z"
       }
     }
   ]
