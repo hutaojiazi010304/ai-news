@@ -443,6 +443,59 @@ def test_deep_reason_generated_and_cached(tmp_path):
     assert LONG_DEEP_REASON in html_text
 
 
+def test_cached_refusal_guide_is_not_served_from_ttl():
+    """A cached guide that trips REFUSAL_MARKERS — the 403 「无法获取正文」
+    placeholders cached before the marker existed — must NOT ride the 21-day
+    TTL: it fails re-validation, falls through to regeneration, and with no
+    grounding offline ends up empty so fill_deep_reasons drops/backfills it.
+    A cached good guide is still served untouched."""
+    refusal = (
+        "【ChatGPT iOS 版更新至 1.2026.237】。原文页面返回 403 Forbidden 错误，"
+        "由于源页面访问受限，无法获取并转述本次更新的实质信息，"
+        "除标题所示版本号外无其他有效事实可供提取。"
+    )
+    title = "缓存淘汰测试标题"
+    stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0, "dropped": 0}
+
+    # (a) cached refusal -> rejected on re-validation -> not served, ends empty
+    bad_item = make_item(1, title=title)  # no summary, no upstream reason
+    bad_cache = {
+        "version": gwad.DEEP_CACHE_VERSION,
+        "entries": {
+            gwad.cache_key("story_1", title): {
+                "reason": refusal,
+                "title_hash": gwad.title_hash(title),
+                "created_at": "2026-09-03T00:00:00Z",
+            }
+        },
+    }
+    outcome = gwad._fill_one_deep_reason(
+        bad_item, bad_cache, {"api_key": "k"}, None, stats, None
+    )
+    assert bad_item.get("weixin_deep_reason", "") == ""  # placeholder not shipped
+    assert stats["cached"] == 0
+    assert outcome.startswith("回退上游")
+
+    # (b) cached good guide -> served as before
+    good_item = make_item(2, title=title)
+    good_cache = {
+        "version": gwad.DEEP_CACHE_VERSION,
+        "entries": {
+            gwad.cache_key("story_2", title): {
+                "reason": LONG_DEEP_REASON,
+                "title_hash": gwad.title_hash(title),
+                "created_at": "2026-09-03T00:00:00Z",
+            }
+        },
+    }
+    outcome2 = gwad._fill_one_deep_reason(
+        good_item, good_cache, {"api_key": "k"}, None, stats, None
+    )
+    assert good_item["weixin_deep_reason"] == LONG_DEEP_REASON
+    assert stats["cached"] == 1
+    assert outcome2 == "缓存"
+
+
 def test_drop_cache_entries():
     cache = {
         "version": gwad.DEEP_CACHE_VERSION,
@@ -554,6 +607,13 @@ def test_deep_validation_bounds():
     assert gwad.validate_deep_reason(title, title) is False
     assert gwad.validate_deep_reason("据某媒体报道，详情见 https://example.com 。" * 5, title) is False
     assert gwad.validate_deep_reason("很抱歉，无法生成导读。" + "填" * 100, title) is False
+    # fetch-blocked refusal (page 403'd / walled): no news, must be refused
+    # so the item is dropped and backfilled rather than shipping a placeholder
+    assert gwad.validate_deep_reason(
+        "原文页面返回 403 Forbidden 错误，源页面访问受限，无法获取并转述本次更新的"
+        "实质信息，除版本号外无其他有效事实可供提取。" + "填" * 60,
+        title,
+    ) is False
 
 
 def test_generate_deep_reason_rejection_is_diagnosed(capsys):
@@ -1232,6 +1292,29 @@ def test_extract_image_candidates_from_html():
     assert candidates == [
         "https://cdn.example.com/photo1.jpg",       # lazy data-src picked up
         "https://site.example.com/content/photo2.png",  # relative absolutized
+    ]
+
+
+def test_extract_image_candidates_drops_byline_headshot():
+    """The Verge puts the author headshot inside <article> ahead of the hero
+    art, and its first <img> declares no dimensions (the 36x36 copy comes
+    later), so only the URL skip-list can drop it — otherwise the byline
+    portrait ships as the article illustration (observed 2026-09-07)."""
+    base = "https://www.theverge.com/tech/985474/nvidia-buying-hugging-face"
+    html = (
+        '<img src="https://platform.theverge.com/wp-content/uploads/sites/2/'
+        'chorus/author_profile_images/195820/JESSICA_WEATHERBED.0.jpg" '
+        'alt="Jess Weatherbed">'
+        '<img src="https://platform.theverge.com/wp-content/uploads/sites/2/'
+        'chorus/uploads/chorus_asset/file/25835739/STKP210_JENSEN_HUANG_B.jpg" '
+        'alt="Digital photo collage of Nvidia CEO Jensen Huang.">'
+    )
+
+    candidates = gwad.extract_image_candidates(html, base, "html")
+
+    assert candidates == [
+        "https://platform.theverge.com/wp-content/uploads/sites/2/"
+        "chorus/uploads/chorus_asset/file/25835739/STKP210_JENSEN_HUANG_B.jpg"
     ]
 
 

@@ -1039,6 +1039,13 @@ def call_text_api(
 REFUSAL_MARKERS = (
     "无法据此", "无法提取", "无法生成导读", "有效导读", "导航菜单",
     "栏目索引", "正文内容仅", "未提供正文",
+    # Fetch-blocked refusals: the page 403'd / was bot-walled, so the model
+    # could only report that it got nothing (observed on the OpenAI Codex
+    # changelog and a Codex CLI release page). Such a guide carries no news —
+    # refuse it so fill_deep_reasons drops the item and backfills the next
+    # candidate, instead of shipping a "无法获取正文" placeholder.
+    "无法获取", "未能获取", "无法转述", "访问受限", "拒绝访问",
+    "403 Forbidden", "可供提取", "可供转述", "无其他有效事实", "暂无其他可确认",
 )
 
 
@@ -1777,6 +1784,13 @@ IMAGE_URL_SKIP_MARKERS = (
     "logo", "icon", "avatar", "favicon", "emoji", "qrcode", "badge",
     "button", "1x1", "1px", "pixel", "spacer", "blank", "placeholder",
     "loading", "spinner", "sprite", "tracking", "beacon",
+    # Byline headshots sit inside <article> AHEAD of the hero art and their
+    # first <img> carries no width/height (the small declared-size copy comes
+    # later in document order), so the URL is the only reliable handle to drop
+    # them. Observed: theverge.com .../chorus/author_profile_images/<id>/
+    # <NAME>.jpg shipped as the article illustration, beating the real hero
+    # collage that was candidate #2.
+    "author_profile", "profile_image", "byline", "headshot",
 )
 IMAGE_EXT_BLOCKLIST = (".svg", ".ico")
 
@@ -2209,7 +2223,15 @@ def _fill_one_deep_reason(
     entry = cache.get("entries", {}).get(key)
     cached_reason = ""
     if isinstance(entry, dict) and entry.get("title_hash") == title_hash(title):
-        cached_reason = str(entry.get("reason") or "").strip()
+        candidate = str(entry.get("reason") or "").strip()
+        # Re-validate a cached guide against the CURRENT rules before serving
+        # it. An entry cached before a refusal marker existed — the 403 「无法
+        # 获取正文」 guides — would otherwise ride the 21-day TTL forever and
+        # keep shipping a content-free placeholder. Failing the gate drops back
+        # to regeneration, so it is re-judged and (still ungrounded) refused →
+        # dropped → backfilled by the next candidate (see fill_deep_reasons).
+        if candidate and validate_deep_reason(candidate, title):
+            cached_reason = candidate
 
     if cfg["api_key"]:
         if cached_reason:
