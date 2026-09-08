@@ -72,6 +72,7 @@ import hashlib
 import html as html_mod
 import io
 import json
+import math
 import os
 import re
 import sys
@@ -524,6 +525,715 @@ def _apply_pipeline_enhance_cache(items: list[dict], cache: dict[str, str]) -> N
             item["recommend_reason_zh"] = reason
 
 
+# ---------------------------------------------------------------------------
+# Event-level merge (weekly deep issue only)
+# ---------------------------------------------------------------------------
+# One event can occupy several slots in the same issue: the NVIDIA/Hugging
+# Face acquisition shipped as 官方① (announcement) + 行业①②③ (The Verge
+# report, two X reactions), and the Fermat formalization as 官方⑬⑭ (research
+# page + announcement tweet). Every existing dedup layer compares TITLE
+# STRINGS (merge_story_items / suppress_near_duplicate_items /
+# select_diverse_stories, all ≥0.86 similarity), so rewrites, cross-language
+# pairs and different angles of the same event sail through.
+#
+# This pass clusters stories by an EVENT SIGNATURE (entities + bilingual
+# topic lexicon + normalized big numbers) instead of string similarity, then
+# folds each cluster into its most authoritative representative: the member
+# stories ride along in sources[] and event_cluster.members, and the deep
+# guide is synthesized from ALL angles into one paragraph (see
+# merged_event_context / DEEP_REASON_MERGED_SYSTEM_PROMPT). Absorbed members
+# are NOT deleted — they tail the pool as backups-of-last-resort so a merged
+# event whose guide fails can never vanish from the issue entirely.
+#
+# Weekly-only by construction: this runs inside build_weekly_brief, which no
+# other script consumes. Kill switch: WEIXIN_EVENT_MERGE=0.
+
+EVENT_MERGE_MEMBER_MIN_SCORE = 0.35
+# A member must clear this WEEKLY-curve score to be absorbed: the signature
+# gates already prove same-event, so the floor only keeps spam/mirror items
+# (whose summaries would pollute the synthesized guide) out of the cluster.
+
+EVENT_MERGE_MAX_CLUSTER = 24
+# Hard absorption cap — a safety valve, NOT an editorial limit: a genuine
+# story-of-the-week (a mega model release, a $13B acquisition) legitimately
+# draws 15-20 distinct stories, and refusing absorption would leave them in
+# the issue as duplicates. A cluster larger than this means the signature
+# rules are misfiring; refuse and warn instead of building a Frankenstein
+# guide. The GUIDE only ever sees the top EVENT_MERGE_CONTEXT_MEMBERS
+# members (absorption order = authority order), so cluster size never
+# inflates the prompt.
+
+EVENT_MERGE_CONTEXT_MEMBERS = 5
+# Member blocks fed to the merged-guide prompt, on top of the 【主源】
+# grounding: the first N absorbed in authority order. Syndicated repeats
+# beyond that add no angle, only tokens.
+
+EVENT_MERGE_MIN_RESIDUAL_SHARED = 2
+# On the non-distinctive path (generic topic + a single shared vendor — the
+# weakest evidence of "same event"), a single shared residual token is not
+# enough: it is usually a family/brand word ("muse") or a domain buzzword
+# ("agent"), not proof the two stories cover the same object. The 2026-09-07
+# dry run merged Meta's "Muse Spark 1.3" release with the unrelated "Muse
+# Voice Transcribe" release on the lone shared token "muse". Requiring >=2
+# shared residual tokens keeps the true pairs (Muse Spark share {muse,spark},
+# DOJ lawsuits share {administration,trump}, Apple lawsuit shares
+# {apple,reveals,evidence}) while blocking the one-family-token false merge.
+# The cost is a missed merge when bilingual/greedy-CJK tokenization leaves two
+# genuinely-same-event stories sharing only one coarse token (DeepSeek
+# open-source pair shares only "agent"); under 宁漏勿误 a missed merge (one
+# duplicate slot) is cheaper than a false merge (a corrupted guide).
+# Empty residual on either side still passes: a pure reaction/commentary title
+# carries no object words to compare and must remain absorbable.
+
+EVENT_MERGE_MIN_SHARED = 2  # shared signature signals required
+EVENT_MERGE_MIN_OVERLAP = 0.5  # |shared| / min(|sig_a|,|sig_b|)
+EVENT_MERGE_DF_WEAK_MIN = 6  # absolute weak-signal document-frequency floor
+EVENT_MERGE_DF_WEAK_RATIO = 0.05  # relative weak line: 5% of the pool
+
+# Topics too generic to identify an event: they span many unrelated stories
+# in a single week (the 2026-09-07 dry run merged Anthropic commerce-agents
+# with NVIDIA PAIR via {t:open-source, t:release}, and unrelated OpenAI
+# lawsuits via {t:lawsuit, v:openai}). A generic topic never skips the
+# residual-token gate on its own; only precise identifiers (model:/num:) or
+# a specific topic (fermat/acquire) anchored by a vendor do.
+GENERIC_EVENT_TOPICS = frozenset(
+    {"release", "update", "open-source", "lawsuit", "invest"}
+)
+
+# Vendor/person surfaces missing from update_news.VENDOR_ALIASES (which has
+# huggingface but NOT nvidia). Kept local so the shared daily pipeline is
+# untouched; values are canonical tokens ("person:" prefix marks people).
+EVENT_VENDOR_EXTRA = {
+    "nvidia": "nvidia",
+    "英伟达": "nvidia",
+    "jensen huang": "person:huang",
+    "黄仁勋": "person:huang",
+    "thomas wolf": "person:wolf",
+}
+
+# Bilingual topic lexicon, deliberately small (宁窄勿宽 — a missed merge
+# costs one duplicate slot, a false merge corrupts a guide). Surface forms
+# match case-insensitively; ASCII forms on word boundaries, CJK as
+# substrings. Extend as new recurring event types are observed.
+EVENT_TOPIC_ALIASES = {
+    "acquire": (
+        "收购", "并购",
+        "acquire", "acquires", "acquired", "acquisition",
+        "buy", "buys", "buying",
+    ),
+    "fermat": ("费马", "fermat"),
+    "formal-proof": (
+        "形式化", "formal proof", "formalization", "formalisation", "lean",
+    ),
+    "release": (
+        "发布", "推出", "开放",
+        "release", "releases", "released",
+        "launch", "launches", "launched",
+        "unveil", "unveils", "unveiled",
+    ),
+    "update": ("更新", "升级", "update", "updates", "updated", "upgrade", "upgrades"),
+    "open-source": ("开源", "open source", "open-source", "open sourced", "open-sourced"),
+    "lawsuit": ("诉讼", "起诉", "sue", "sues", "lawsuit"),
+    "invest": ("投资", "融资", "invest", "invests", "investment", "funding"),
+}
+
+# CJK measure words stripped during residual-token computation so leftover
+# fragments of money spans ("亿美元") do not pose as discriminating words.
+EVENT_RESIDUAL_CJK_STOPS = ("美元", "亿", "万", "元")
+
+# English function words + domain-generic nouns stripped from residuals.
+# Without this, two unrelated stories that both mention "ai" / "model" /
+# "it" / "time" look non-disjoint and slip past gate 5 (the 2026-09-07 pool
+# merged South Korea's sovereign-AI piece with Nvidia's MediaTek investment
+# purely on the shared token "ai"). Deliberately conservative: only words
+# that cannot name an event's object. Event-specific nouns (chip, robot,
+# pair, muse, spark, administration, evidence, ...) are NOT here.
+EVENT_RESIDUAL_EN_STOPS = frozenset(
+    """
+    the a an this that these those all any some many much more most less few
+    several both each every other another such only just even still very
+    really also no not
+    it its he she they them his her their we you your i me my who whom whose
+    which what
+    of to in on at by for from with into onto and or but as over under up down
+    out off about after before during while between among against through
+    across behind beyond within without per via vs etc like
+    is are was were be been being am has have had having do does did doing
+    will would can could should shall may might must
+    say says said tell tells told make makes made get gets got give gives gave
+    take takes took use uses used using claim claims claimed report reports
+    reported call calls called
+    one two three four five first second third last next new old
+    when where why how now then here there today yesterday tomorrow already
+    recently soon ever never
+    time times year years week weeks day days month months hour hours minute
+    minutes version
+    ai model models system systems tech technology app apps tool tools
+    feature features company companies people person user users way ways
+    thing things lot bit kind sort part parts case cases plan plans planned
+    effort efforts look looks amid
+    """.split()
+)
+
+_EVENT_NUM_PATTERNS = (
+    # 万/亿 accept comma-grouped integers too ("1,300万" is one number,
+    # not a comma group plus a stray 300).
+    (re.compile(r"(\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:[.,]\d+)?)\s*亿"), 1e8),
+    (re.compile(r"(\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:[.,]\d+)?)\s*万"), 1e4),
+    (re.compile(r"(?<![\d.,])\d{1,3}(?:,\d{3})+(?![\d.,]|\s*[万亿])"), 1.0),
+    (re.compile(r"(?<![\d.,$%])\d{4,}(?![\d.,]|\s*[万亿])"), 1.0),
+)
+_EVENT_MONEY_RE = re.compile(
+    r"\$\s*(\d+(?:\.\d+)?)\s*(bn|billion|m|million|k)?|"
+    r"\b(\d+(?:\.\d+)?)\s*(bn|billion)\b",
+    re.IGNORECASE,
+)
+_MONEY_MULTIPLIERS = {"bn": 1e9, "billion": 1e9, "m": 1e6, "million": 1e6, "k": 1e3}
+
+_EVENT_SURFACE_INDEX: tuple[list, list] | None = None
+
+
+def _event_merge_enabled() -> bool:
+    return str(os.environ.get("WEIXIN_EVENT_MERGE", "")).strip() != "0"
+
+
+def _event_surface_index() -> tuple[list[tuple[re.Pattern, str]], list[tuple[str, str]]]:
+    """(ascii regex, token) and (cjk substring, token) match tables, built
+    once from VENDOR_ALIASES + EVENT_VENDOR_EXTRA + EVENT_TOPIC_ALIASES."""
+    global _EVENT_SURFACE_INDEX
+    if _EVENT_SURFACE_INDEX is not None:
+        return _EVENT_SURFACE_INDEX
+    ascii_pairs: list[tuple[re.Pattern, str]] = []
+    cjk_pairs: list[tuple[str, str]] = []
+
+    def add(surface: str, token: str) -> None:
+        surface = str(surface or "").strip().lower()
+        if not surface:
+            return
+        if re.search(r"[一-鿿]", surface):
+            cjk_pairs.append((surface, token))
+        else:
+            # re.escape() escapes spaces too, so escape word-by-word and join
+            # with \s+ — the naive escape-then-replace leaves a literal
+            # backslash in the pattern and breaks EVERY multi-word surface
+            # ("hugging face", "jensen huang", "formal proof", …).
+            pattern = (
+                r"\b"
+                + r"\s+".join(re.escape(word) for word in surface.split())
+                + r"\b"
+            )
+            ascii_pairs.append((re.compile(pattern), token))
+
+    vendor_aliases = getattr(_un, "VENDOR_ALIASES", {}) if _un is not None else {}
+    for alias, canonical in vendor_aliases.items():
+        add(alias, f"v:{canonical}")
+    for surface, canonical in EVENT_VENDOR_EXTRA.items():
+        token = canonical if canonical.startswith("person:") else f"v:{canonical}"
+        add(surface, token)
+    for canonical, surfaces in EVENT_TOPIC_ALIASES.items():
+        for surface in surfaces:
+            add(surface, f"t:{canonical}")
+    _EVENT_SURFACE_INDEX = (ascii_pairs, cjk_pairs)
+    return _EVENT_SURFACE_INDEX
+
+
+def _event_texts(story: dict) -> list[str]:
+    """Title texts to scan: the display title (possibly bilingual "中 / En")
+    plus the primary item's original/English forms, so a Chinese translation
+    and its English source both contribute signals."""
+    texts = [story.get("title")]
+    primary = story.get("primary_item")
+    if isinstance(primary, dict):
+        texts.extend(
+            [primary.get("title_original"), primary.get("title_en"), primary.get("title")]
+        )
+    out: list[str] = []
+    seen = set()
+    for text in texts:
+        value = re.sub(r"\s+", " ", str(text or "")).strip()
+        if value and value.lower() not in seen:
+            seen.add(value.lower())
+            out.append(value)
+    return out
+
+
+def _event_num_add(tokens: set[str], value: float) -> None:
+    # Version strings ("1.2026.237") and years carry no event identity.
+    if value < 1000 or not math.isfinite(value):
+        return
+    if 1900 <= value <= 2100 and float(value).is_integer():
+        return
+    # Two-significant-figure bucket: 129.303亿 ≈ $12.9B ≈ "$13 billion"
+    # all normalize to num:1.3e+10.
+    tokens.add(f"num:{value:.1e}")
+
+
+def _event_num_tokens(text: str) -> set[str]:
+    tokens: set[str] = set()
+    normalized = re.sub(r"(?<=\d)，(?=\d)", ",", str(text or ""))
+    for pattern, multiplier in _EVENT_NUM_PATTERNS:
+        for match in pattern.finditer(normalized):
+            raw = match.group(1) if match.groups() else match.group(0)
+            try:
+                value = float(raw.replace(",", ""))
+            except ValueError:
+                continue
+            _event_num_add(tokens, value * multiplier)
+    for match in _EVENT_MONEY_RE.finditer(normalized):
+        if match.group(1) is not None:
+            raw, unit = match.group(1), (match.group(2) or "").lower()
+        else:
+            raw, unit = match.group(3), (match.group(4) or "").lower()
+        try:
+            value = float(raw)
+        except ValueError:
+            continue
+        _event_num_add(tokens, value * _MONEY_MULTIPLIERS.get(unit, 1.0))
+    return tokens
+
+
+def event_signature(story: dict) -> frozenset[str]:
+    """Event identity signals: v:endor, model:, person:, t:opic, num: tokens.
+
+    Computed from the title family only (never summaries): titles are what
+    the issue displays and what editors judge duplication by."""
+    if _un is None:
+        return frozenset()
+    ascii_pairs, cjk_pairs = _event_surface_index()
+    texts = _event_texts(story)
+    if not texts:
+        return frozenset()
+    joined = " ".join(texts)
+    lower = joined.lower()
+    tokens: set[str] = set()
+    for pattern, token in ascii_pairs:
+        if pattern.search(lower):
+            tokens.add(token)
+    for surface, token in cjk_pairs:
+        if surface in joined:
+            tokens.add(token)
+    for match in _un.MODEL_RE.finditer(lower):
+        tokens.add("model:" + re.sub(r"\s+", "-", match.group(0).lower()))
+    tokens.update(_event_num_tokens(joined))
+    return frozenset(tokens)
+
+
+def event_residual_tokens(story: dict) -> set[str]:
+    """Discriminating words left after removing every signature surface.
+
+    Gate 5 of the same-event test: when the shared signals are only
+    vendor(s) + generic action, two stories must also share residual
+    vocabulary to merge ("NVIDIA 发布新驱动" vs "NVIDIA 发布 CUDA 工具包"
+    keep disjoint residuals {新驱动} vs {cuda, 工具包} and stay separate).
+    A reaction/commentary title usually reduces to an EMPTY residual, which
+    passes the gate — reactions are exactly what merging should absorb."""
+    if _un is None:
+        return set()
+    ascii_pairs, _cjk_pairs = _event_surface_index()
+    text = " ".join(_event_texts(story))
+    lower = text.lower()
+    for pattern, _token in ascii_pairs:
+        lower = pattern.sub(" ", lower)
+    lower = _un.MODEL_RE.sub(" ", lower)
+    lower = _EVENT_MONEY_RE.sub(" ", lower)
+    for pattern, _multiplier in _EVENT_NUM_PATTERNS:
+        lower = pattern.sub(" ", lower)
+    out: set[str] = set()
+    cjk_surfaces = [s for s, _t in _event_surface_index()[1]]
+    for token in _un.title_tokens(lower):
+        if re.fullmatch(r"[\d.,$%]+", token):
+            continue
+        if re.fullmatch(r"[一-鿿]+", token):
+            # CJK tokens are greedy character runs ("发布新驱动"): strip the
+            # known surfaces out of the run and keep the remaining fragments.
+            remainder = token
+            for surface in cjk_surfaces + list(EVENT_RESIDUAL_CJK_STOPS):
+                remainder = remainder.replace(surface, "|")
+            for part in remainder.split("|"):
+                if len(part) >= 2 and not re.fullmatch(r"[\d.,$%]+", part):
+                    out.add(part)
+        elif token not in EVENT_RESIDUAL_EN_STOPS:
+            out.add(token)
+    return out
+
+
+def _event_strong_tokens(signatures: list[frozenset[str]], pool_size: int) -> set[str]:
+    """Tokens rare enough in THIS pool to identify an event.
+
+    weak = df >= max(6, ceil(5% of pool)): hot events inflate their own
+    entities' df (the NVIDIA week puts huggingface in 4+ stories), so the
+    absolute floor of 6 keeps a 4-story cluster's entity strong in a quiet
+    week, while the relative line demotes openai/nvidia/google in busy ones.
+    model:/person:/num: are unconditionally strong — they are naturally
+    low-frequency and precise."""
+    df: dict[str, int] = {}
+    for signature in signatures:
+        for token in signature:
+            df[token] = df.get(token, 0) + 1
+    weak_line = max(
+        EVENT_MERGE_DF_WEAK_MIN,
+        math.ceil(EVENT_MERGE_DF_WEAK_RATIO * max(1, pool_size)),
+    )
+    return {
+        token
+        for token, count in df.items()
+        if token.startswith(("model:", "person:", "num:")) or count < weak_line
+    }
+
+
+def _num_token_is_round(token: str) -> bool:
+    """True when a num: token normalizes to an exact power of ten (mantissa
+    1.0): $1B (1.0e+09), $10M (1.0e+07), 1,000, 10,000. Round figures collide
+    across unrelated stories — the 2026-09-07 pool merged OpenAI's "$1B ad
+    business" with two unrelated "$1B cyber-defence credit" offers on
+    num:1.0e+09 alone. A round number therefore never counts as a distinctive
+    identifier BY ITSELF (it still passes gates 1-4 as a shared strong signal);
+    a merge resting on one must also clear the residual-token gate. Precise
+    figures ($12.9B → 1.3e+10, $35B → 3.5e+10, 1,200 → 1.2e+03, $12.5M →
+    1.2e+07) stay distinctive."""
+    if not token.startswith("num:"):
+        return False
+    mantissa = token[4:].split("e", 1)[0]
+    try:
+        return abs(float(mantissa) - 1.0) < 1e-9
+    except ValueError:
+        return False
+
+
+def event_signals_match(
+    sig_a: frozenset[str],
+    sig_b: frozenset[str],
+    res_a: set[str],
+    res_b: set[str],
+    title_a: str,
+    title_b: str,
+    strong_tokens: set[str],
+) -> tuple[str, ...] | None:
+    """Same-event verdict: shared signals when the five gates pass, else None.
+
+    1. >= EVENT_MERGE_MIN_SHARED shared signals;
+    2. at least one shared signal is strong (rare in this pool);
+    3. overlap ratio >= EVENT_MERGE_MIN_OVERLAP;
+    4. update_news.story_titles_can_merge (model-entity conflict guard);
+    5. residual-token gate — SKIPPED only when the shared set pins a single
+       event: a precise identifier (model:, or a NON-round num: — see
+       _num_token_is_round), a SPECIFIC (non-generic) topic like
+       fermat/acquire, OR a vendor PAIR carrying at least one topic
+       (nvidia+huggingface+acquire). Two vendors with NO topic
+       (anthropic+meta, huggingface+openai) co-occur across many unrelated
+       stories, a lone generic topic (open-source+release, invest+nvidia)
+       does too, and a round figure ($1B, $10M) collides across unrelated
+       offers — for those the residual gate still runs and blocks when both
+       sides carry residual words but share fewer than
+       EVENT_MERGE_MIN_RESIDUAL_SHARED (2) of them."""
+    shared = sig_a & sig_b
+    if len(shared) < EVENT_MERGE_MIN_SHARED:
+        return None
+    # Two co-occurring vendors with NO shared action are not an event. The
+    # 2026-09-07 pool merged unrelated coverage on vendor pairs alone:
+    # OpenAI+HuggingFace (a hack incident drew commentary, a short film, a
+    # METR probe and a model-delay story that are NOT one event), Meta's
+    # model release with its Anthropic spend, SB Energy with OpenAI's chip.
+    # Require the shared set to carry an event-type token (topic / model /
+    # number / person); pure {v:x, v:y} is rejected here.
+    if not any(
+        token.startswith(("t:", "model:", "num:", "person:")) for token in shared
+    ):
+        return None
+    shared_strong = {token for token in shared if token in strong_tokens}
+    if not shared_strong:
+        return None
+    if len(shared) / max(1, min(len(sig_a), len(sig_b))) < EVENT_MERGE_MIN_OVERLAP:
+        return None
+    if _un is not None and not _un.story_titles_can_merge(title_a, title_b):
+        return None
+    identified = any(
+        token.startswith("model:")
+        or (token.startswith("num:") and not _num_token_is_round(token))
+        for token in shared_strong
+    )
+    specific_topic = any(
+        token.startswith("t:") and token[2:] not in GENERIC_EVENT_TOPICS
+        for token in shared_strong
+    )
+    vendor_pair = sum(1 for token in shared if token.startswith("v:")) >= 2
+    any_topic = any(token.startswith("t:") for token in shared)
+    distinctive = identified or specific_topic or (vendor_pair and any_topic)
+    if not distinctive:
+        # Both sides carry object words but agree on fewer than two of them →
+        # too weak to call the same event (the "muse"-family false merge).
+        # An empty residual on either side means a pure reaction title with
+        # nothing to compare; it stays absorbable.
+        if (
+            res_a
+            and res_b
+            and len(res_a & res_b) < EVENT_MERGE_MIN_RESIDUAL_SHARED
+        ):
+            return None
+    return tuple(sorted(shared))
+
+
+def _story_primary_ref(story: dict) -> dict | None:
+    """The sources[] ref backing primary_item (matched by item id).
+
+    Story dicts carry NO top-level site_id, so tier must come from the ref
+    (same lookup pattern as first_party_category_override)."""
+    primary = story.get("primary_item")
+    pid = str(primary.get("id") or "") if isinstance(primary, dict) else ""
+    refs = [r for r in (story.get("sources") or []) if isinstance(r, dict)]
+    if pid:
+        for ref in refs:
+            if str(ref.get("id") or "") == pid:
+                return ref
+    return refs[0] if refs else None
+
+
+def _story_tier_rank(story: dict) -> int:
+    if _un is None:
+        return 99
+    ref = _story_primary_ref(story) or {}
+    tier = _un.source_tier_for_site(str(ref.get("site_id") or ""))
+    try:
+        return int(tier.get("source_tier_rank", 99))
+    except (TypeError, ValueError):
+        return 99
+
+
+def _weekly_story_score(
+    story: dict, by_id: dict | None, now: datetime, window_hours: int
+) -> float:
+    """Story score on the WEEKLY freshness curve (flat 144h + 48h half-life).
+
+    merge_event_clusters runs BEFORE build_weekly_brief's rescoring loop, so
+    story["score"] is still the daily-curve value from build_story_record —
+    systematically too low for 5-6-day-old members. Recompute from the full
+    archive item (by_id) exactly like the rescoring loop does."""
+    primary = story.get("primary_item")
+    full = None
+    if isinstance(primary, dict) and by_id:
+        full = by_id.get(str(primary.get("id") or ""))
+    if isinstance(full, dict) and _un is not None:
+        try:
+            source_count = int(story.get("source_count") or 1)
+        except (TypeError, ValueError):
+            source_count = 1
+        importance = _un.calculate_item_importance(
+            full,
+            now,
+            window_hours,
+            duplicate_count=source_count,
+            half_life_hours=WEEKLY_FRESHNESS_HALF_LIFE_HOURS,
+            flat_hours=WEEKLY_FRESHNESS_FLAT_HOURS,
+        )
+        try:
+            return float(importance.get("score") or 0.0)
+        except (TypeError, ValueError):
+            return 0.0
+    try:
+        return float(story.get("score") or story.get("importance_score") or 0.0)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def _member_block(story: dict) -> dict:
+    """The labelled-context material for one absorbed member: title + site +
+    summary. aihot-sourced records (incl. x.com posts) carry Chinese
+    summaries; bare records (techurls/The Verge) have none — the context
+    builder then degrades to the title, which still carries the angle."""
+    primary = story.get("primary_item") if isinstance(story.get("primary_item"), dict) else {}
+    summary = str(primary.get("summary") or "").strip()
+    site = str(story.get("source_name") or story.get("source") or "").strip()
+    if not site or not summary:
+        for ref in story.get("sources") or []:
+            if not isinstance(ref, dict):
+                continue
+            if not site:
+                site = str(ref.get("source_name") or ref.get("site_id") or "").strip()
+            if not summary:
+                summary = str(ref.get("summary") or "").strip()
+            if site and summary:
+                break
+    return {
+        "story_id": str(story.get("story_id") or ""),
+        "title": str(story.get("title") or ""),
+        "site": site or "补充来源",
+        "url": str(story.get("primary_url") or story.get("url") or ""),
+        "summary": summary,
+    }
+
+
+def _absorb_story_into(rep: dict, member: dict) -> None:
+    """Fold one member story into the representative's record.
+
+    Invariants kept: story_id/primary_item/title/url of the rep are never
+    touched (by_id rescoring, cache keys, --regenerate all keep working);
+    sources[] and items[] stay THE SAME LIST OBJECT (build_story_record
+    aliases them); representative refs come FIRST, member refs are appended
+    (event_cluster.rep_source_count relies on that order — do not re-sort)."""
+    rep_refs = [r for r in (rep.get("sources") or []) if isinstance(r, dict)]
+    cluster = rep.get("event_cluster")
+    if not isinstance(cluster, dict):
+        cluster = {
+            "rep_source_count": len(rep_refs),
+            "members": [],
+            "fingerprint": "",
+        }
+        rep["event_cluster"] = cluster
+    seen = {origin_url_key(ref, idx) for idx, ref in enumerate(rep_refs)}
+    for idx, ref in enumerate(
+        r for r in (member.get("sources") or []) if isinstance(r, dict)
+    ):
+        key = origin_url_key(ref, idx)
+        if key in seen:
+            continue
+        seen.add(key)
+        rep_refs.append(ref)
+    rep["sources"] = rep_refs
+    rep["items"] = rep_refs
+    rep["item_count"] = len(rep_refs)
+    rep["duplicate_count"] = len(rep_refs)
+    rep["source_count"] = len(
+        {origin_url_key(ref, idx) for idx, ref in enumerate(rep_refs)}
+    )
+    rep["source_names"] = sorted(
+        {
+            str(ref.get("source") or ref.get("source_name") or "").strip()
+            for ref in rep_refs
+            if str(ref.get("source") or ref.get("source_name") or "").strip()
+        }
+    )
+    for key, pick in (("earliest_at", min), ("latest_at", max)):
+        values = [str(v) for v in (rep.get(key), member.get(key)) if v]
+        if values:
+            rep[key] = pick(values)
+    cluster["members"].append(_member_block(member))
+    # Fingerprint over member story_ids ONLY: story_id = sha1(canonical_url +
+    # title_original), fully stable across translation/enhance-cache states,
+    # while member titles are not (bilingual/enhanced forms depend on cache
+    # warmth and would churn the fingerprint into pointless regeneration).
+    member_ids = sorted(str(m.get("story_id") or "") for m in cluster["members"])
+    cluster["fingerprint"] = hashlib.sha1(
+        "\x1f".join(member_ids).encode("utf-8")
+    ).hexdigest()[:12]
+
+
+def merge_event_clusters(
+    stories: list[dict],
+    by_id: dict | None = None,
+    now: datetime | None = None,
+    window_hours: int = 168,
+) -> tuple[list[dict], list[dict], list[dict]]:
+    """Collapse same-event stories into their best representative.
+
+    Returns (surviving stories in original order, absorbed members, merge
+    log). Leader-anchored greedy instead of union-find: stories are ordered
+    by authority (official category → primary-ref tier → weekly-curve score)
+    and each story is compared ONLY against existing cluster leaders, then
+    against every member of the cluster it tries to join (full-connectivity
+    check), so an A~B, B~C, A!~C chain can never transitively merge
+    unrelated stories. Absorbed members get ``absorbed_into`` and must be
+    appended to the pool tail by the caller (backups-of-last-resort)."""
+    if _un is None or not _event_merge_enabled() or len(stories) < 2:
+        return list(stories), [], []
+    now = now or datetime.now(timezone.utc)
+    infos: list[dict] = []
+    for story in stories:
+        infos.append(
+            {
+                "story": story,
+                "sid": str(story.get("story_id") or ""),
+                "sig": event_signature(story),
+                "res": event_residual_tokens(story),
+                "title": " ".join(_event_texts(story)),
+                "score": _weekly_story_score(story, by_id, now, window_hours),
+                "official": str(story.get("category") or "") == "official",
+                "tier": _story_tier_rank(story),
+            }
+        )
+    strong_tokens = _event_strong_tokens([info["sig"] for info in infos], len(infos))
+    infos.sort(
+        key=lambda info: (
+            0 if info["official"] else 1,
+            info["tier"],
+            -info["score"],
+            info["title"],
+        )
+    )
+
+    clusters: list[dict] = []  # {"rep": info, "members": [(info, shared)], "rejected": []}
+    for info in infos:
+        placed = False
+        if info["score"] >= EVENT_MERGE_MEMBER_MIN_SCORE:
+            for cluster in clusters:
+                if len(cluster["members"]) + 1 >= EVENT_MERGE_MAX_CLUSTER:
+                    if not cluster.get("cap_warned"):
+                        cluster["cap_warned"] = True
+                        print(
+                            "weixin-deep: 事件合并：簇已达上限 "
+                            f"{EVENT_MERGE_MAX_CLUSTER}，后续同事件报道不再吸收 "
+                            f"（代表 {cluster['rep']['sid']}）——请检查签名规则",
+                            file=sys.stderr,
+                            flush=True,
+                        )
+                    continue
+                shared_pairs: list[tuple[dict, tuple[str, ...]]] = []
+                ok = True
+                for peer in [cluster["rep"]] + [m for m, _ in cluster["members"]]:
+                    shared = event_signals_match(
+                        info["sig"],
+                        peer["sig"],
+                        info["res"],
+                        peer["res"],
+                        info["title"],
+                        peer["title"],
+                        strong_tokens,
+                    )
+                    if shared is None:
+                        ok = False
+                        if peer is not cluster["rep"]:
+                            cluster["rejected"].append([peer["sid"], info["sid"]])
+                        break
+                    shared_pairs.append((peer, shared))
+                if ok:
+                    cluster["members"].append((info, shared_pairs[-1][1]))
+                    placed = True
+                    break
+        if not placed:
+            clusters.append({"rep": info, "members": [], "rejected": []})
+
+    absorbed: list[dict] = []
+    merge_log: list[dict] = []
+    for cluster in clusters:
+        if not cluster["members"]:
+            continue
+        rep_story = cluster["rep"]["story"]
+        merged_entries = []
+        for member_info, shared in cluster["members"]:
+            member_story = member_info["story"]
+            _absorb_story_into(rep_story, member_story)
+            member_story["absorbed_into"] = str(rep_story.get("story_id") or "")
+            absorbed.append(member_story)
+            merged_entries.append(
+                {
+                    "story_id": member_info["sid"],
+                    "title": str(member_story.get("title") or "")[:80],
+                    "shared_signals": list(shared),
+                }
+            )
+        entry = {
+            "representative": str(rep_story.get("story_id") or ""),
+            "rep_title": str(rep_story.get("title") or "")[:80],
+            "merged": merged_entries,
+            "reason": "event_signature",
+        }
+        if cluster["rejected"]:
+            entry["rejected_pairs"] = cluster["rejected"]
+        merge_log.append(entry)
+    absorbed_ids = {id(story) for story in absorbed}
+    surviving = [story for story in stories if id(story) not in absorbed_ids]
+    return surviving, absorbed, merge_log
+
+
 def build_weekly_brief(
     data_dir: Path, now: datetime, max_items: int, pool_size: int | None = None
 ) -> dict | None:
@@ -540,10 +1250,10 @@ def build_weekly_brief(
     Strictly read-only: nothing under ``data_dir`` is ever written; in
     particular the in-memory title-cache mutations from the bilingual and
     enhance passes are never persisted. Returns a brief-shaped payload
-    (``generated_at`` / ``window_hours`` / ``total_items`` / ``items``), or
-    None when the weekly pool cannot be built (pipeline module unavailable,
-    archive missing/corrupt/empty, or no story passes the quality gate) —
-    the caller then falls back to daily-brief.json.
+    (``generated_at`` / ``window_hours`` / ``total_items`` / ``items`` /
+    ``event_merges``), or None when the weekly pool cannot be built
+    (pipeline module unavailable, archive missing/corrupt/empty, or no story
+    passes the quality gate) — the caller then falls back to daily-brief.json.
 
     ``pool_size`` over-selects the guide-writing pool so items whose guide
     ends up empty can be dropped and backfilled before the issue narrows
@@ -626,7 +1336,20 @@ def build_weekly_brief(
         title_window_hours=WEEKLY_TITLE_WINDOW_HOURS,
     )
 
-    for story in stories:
+    # Event-level merge: collapse same-event stories (the NVIDIA/HF
+    # acquisition across 官方①+行业①②③, the Fermat pair across 官方⑬⑭) that
+    # title-similarity dedup cannot catch, into their most authoritative
+    # representative. Runs BEFORE rescoring so the representative is
+    # re-scored with its new multi-source source_count, and before the gate
+    # so a decayed follow-up report (e.g. The Verge's, already sub-gate on
+    # replay) can still be absorbed as an angle. Absorbed members are NOT
+    # dropped — they ride at the pool tail as backups-of-last-resort (see
+    # select_items) so a merged event whose guide fails can never vanish.
+    stories, absorbed, event_merges = merge_event_clusters(
+        stories, by_id, now, window_hours
+    )
+
+    for story in stories + absorbed:
         primary_item = story.get("primary_item") or {}
         full = by_id.get(str(primary_item.get("id") or ""))
         if not isinstance(full, dict):
@@ -664,11 +1387,16 @@ def build_weekly_brief(
         items = _un.select_diverse_stories(gated, max_items + extra)
     if not items:
         return None
+    # Absorbed members tail the pool: select_items keeps them last regardless
+    # of score, and fill_deep_reasons consumes them only after every regular
+    # candidate, so they serve purely as the merged event's safety net.
+    items = items + absorbed
     return {
         "generated_at": now.astimezone(timezone.utc).isoformat(),
         "window_hours": window_hours,
         "total_items": len(items),
         "items": items,
+        "event_merges": event_merges,
     }
 
 
@@ -760,6 +1488,14 @@ def select_items(brief: dict, max_items: int) -> list[dict]:
             else float(it.get("importance_score") or 0)
         )
     )
+    # Event-cluster members absorbed by merge_event_clusters are backups of
+    # LAST resort: force them behind every regular candidate regardless of
+    # score, or a high-scoring absorbed member (the steipete reaction scored
+    # 0.83) would sort back into the pack and re-enter the issue as a
+    # duplicate angle of its own representative.
+    items = [it for it in items if not it.get("absorbed_into")] + [
+        it for it in items if it.get("absorbed_into")
+    ]
     selected = items[:max_items]
     # Refresh categories against the current first-party whitelist so stories
     # persisted before a whitelist change are not mislabelled. Shared entry
@@ -1836,6 +2572,38 @@ DEEP_REASON_SYSTEM_PROMPT = (
     "只输出这段导读本身，不加引号，不加任何解释或前缀。"
 )
 
+# Variant for MERGED EVENT clusters (see merge_event_clusters): the context
+# carries one 【主源】 block (the representative's full grounding) plus one
+# labelled 【补充·site】 block per absorbed member (title + summary; members
+# are never full-text fetched — x.com is bot-walled and the title/summary
+# already carry the angle). The single-article prompt explicitly forbids
+# 外界反应 and any source mention, which is exactly what a merged guide must
+# weave in, so merged items get their own system prompt instead.
+DEEP_REASON_MERGED_SYSTEM_PROMPT = (
+    "你是科技新闻编辑，负责把同一事件的多来源素材综合成一段「精读导读」，"
+    "用于微信公众号每周 AI 精选的深度版（精读版）推文。"
+    "素材按来源分块标注：【主源】是事件核心事实的来源，"
+    "【补充】是其他渠道的报道或当事人的反应。"
+    "用转述式报道的口吻写一段话：以主源的核心事实为主线，"
+    "把补充素材中不同的角度、细节、数字与各方反应自然地织入同一段，"
+    "同一信息只写一次，不要按来源逐块复述；"
+    "若素材没有【主源】块，以补充素材中信息最完整的一条为主线。"
+    "反应与评论必须写明行为主体（如某公司创始人、某高管），"
+    "转述者的个人评论与当事人原话严格区分，主体不明确时改用被动句式，"
+    "不得张冠李戴；不要点名媒体或网站名称（不写「据某某报道」），只转述其内容。"
+    "只复述素材中明确出现的信息，不得编造、推断或补充任何素材之外的事实、"
+    "数字、日期与意义。"
+    "不要添加「展示了……」「标志着……」「为……开启了新篇章」之类的意义话术。"
+    "字数控制在一百五十到三百八十之间，信息密度优先，不要为凑字数注水，"
+    "素材再多也只按重要性取舍，不逐点罗列次要细节。"
+    "导读中不得出现任何网址、链接或链接文字，"
+    "需要提及页面时只描述它是什么（如「官方公告」）。"
+    "公司名、产品名一律只用素材中出现的形式（通常是英文），"
+    "绝不要附加中文翻译、音译或括号注释，哪怕你自认为知道官方中文名；"
+    "人名按国籍写：华人用中文名（如黄仁勋），拿不准时保留英文，同样不得自行音译。"
+    "只输出这段导读本身，不加引号，不加任何解释或前缀。"
+)
+
 # Highlighting runs as a SEPARATE second call over the finished guide:
 # folding these instructions into the generation prompt measurably degraded
 # guide quality (lost punctuation, leaked meta commentary about the source
@@ -2040,6 +2808,70 @@ def deep_reason_context(
     return thin_grounding
 
 
+# Per-member summary budget inside a merged-event context: long enough for
+# an aihot Chinese summary (typically <200 chars), short enough that a
+# full EVENT_MERGE_CONTEXT_MEMBERS-member prompt stays within the model's
+# comfortable grounding window.
+EVENT_MERGE_MEMBER_SUMMARY_CHARS = 400
+
+
+def merged_event_context(
+    item: dict, session: requests.Session | None, net_state: dict | None = None
+) -> str | None:
+    """Grounding for a merged event cluster: ONE paragraph's worth of
+    labelled multi-source material.
+
+    Block 1 【主源】 is the representative's normal deep grounding — a
+    shallow copy truncated to ``event_cluster.rep_source_count`` sources is
+    passed to deep_reason_context, so its first-long-summary early return
+    can only fire on the representative's OWN summaries (the full list would
+    let a member's summary masquerade as the main grounding) and the
+    full-text fetch targets the representative's URL.
+
+    Blocks 2..N 【补充·site】 are the absorbed members: title + summary only.
+    Members are NEVER full-text fetched — x.com is bot-walled (the 403s
+    this pipeline already drops items for) and the aihot summary / bilingual
+    title already carry the angle ("黄仁勋称开放模型将受益…"). Members
+    without a summary (bare techurls records like The Verge's) degrade to
+    their title, which still states the angle.
+
+    Returns None only when there is no material at all — the caller then
+    drops the item and the absorbed members serve as tail backups."""
+    cluster = item.get("event_cluster")
+    if not isinstance(cluster, dict):
+        return deep_reason_context(item, session, net_state)
+    members = [m for m in (cluster.get("members") or []) if isinstance(m, dict)]
+    try:
+        rep_count = int(cluster.get("rep_source_count") or 0)
+    except (TypeError, ValueError):
+        rep_count = 0
+    rep_view = dict(item)
+    if rep_count > 0:
+        # Order invariant from _absorb_story_into: representative refs first.
+        rep_view["sources"] = [
+            s for s in (item.get("sources") or []) if isinstance(s, dict)
+        ][:rep_count]
+    base = deep_reason_context(rep_view, session, net_state)
+    blocks: list[str] = []
+    if base:
+        blocks.append(f"【主源】{base}")
+    for member in members[:EVENT_MERGE_CONTEXT_MEMBERS]:
+        title = re.sub(r"\s+", " ", str(member.get("title") or "")).strip()
+        summary = re.sub(r"\s+", " ", str(member.get("summary") or "")).strip()
+        site = str(member.get("site") or "").strip() or "补充来源"
+        if not title and not summary:
+            continue
+        line = f"【补充·{site}】{title}".rstrip()
+        if summary:
+            line += f"：{summary[:EVENT_MERGE_MEMBER_SUMMARY_CHARS]}"
+        blocks.append(line)
+    if not blocks:
+        return None
+    rendered = min(len(members), EVENT_MERGE_CONTEXT_MEMBERS)
+    budget = FULL_TEXT_MAX_CHARS + EVENT_MERGE_MEMBER_SUMMARY_CHARS * max(1, rendered)
+    return "\n\n".join(blocks)[:budget]
+
+
 def _anchor_deep_marks(text: str, fragments: list[str]) -> list[tuple[int, int]]:
     """Locate the model's chosen spans in the ORIGINAL guide, in order.
 
@@ -2160,12 +2992,19 @@ def generate_deep_reason(item: dict, context: str, cfg: dict) -> str | None:
     title = str(item.get("title") or "").strip()
     if not title or not context:
         return None
+    # Merged event clusters get the multi-source synthesis prompt (weave all
+    # labelled angles into one paragraph); single-article items keep the
+    # original prompt untouched.
+    merged = isinstance(item.get("event_cluster"), dict)
+    system_prompt = (
+        DEEP_REASON_MERGED_SYSTEM_PROMPT if merged else DEEP_REASON_SYSTEM_PROMPT
+    )
     user_content = f"标题：{title}\n\n正文：\n{context}"
     reminder = ""
     for attempt in (1, 2):
         content = call_text_api(
             [
-                {"role": "system", "content": DEEP_REASON_SYSTEM_PROMPT},
+                {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_content + reminder},
             ],
             cfg,
@@ -2188,6 +3027,9 @@ def generate_deep_reason(item: dict, context: str, cfg: dict) -> str | None:
             )
             reminder = (
                 "\n\n（严格遵守要求：只输出导读本身，不加任何解释、前缀或对"
+                "素材质量的评价；字数控制在一百五十到三百八十之间。）"
+                if merged
+                else "\n\n（严格遵守要求：只输出导读本身，不加任何解释、前缀或对"
                 "正文质量的评价；字数控制在一百五十到三百五十之间。）"
             )
             continue
@@ -2217,7 +3059,15 @@ def _fill_one_deep_reason(
     Keyless: upstream reason (any length) > deep cache > "".
     """
     title = str(item.get("title") or "")
-    existing = existing_reason(item)
+    cluster = item.get("event_cluster")
+    merged = isinstance(cluster, dict)
+    # A merged item ships ONLY as a multi-angle synthesis: falling back to
+    # existing_reason would scan the ABSORBED MEMBERS' recommend_reason_zh
+    # too and sneak a single-angle (or a retweeter's personal comment)
+    # upstream reason into the issue under the representative's title —
+    # more insidious than dropping, which the member tail-backups cover.
+    existing = None if merged else existing_reason(item)
+    item_fp = str(cluster.get("fingerprint") or "") if merged else ""
 
     key = cache_key(str(item.get("story_id") or ""), title)
     entry = cache.get("entries", {}).get(key)
@@ -2230,7 +3080,15 @@ def _fill_one_deep_reason(
         # keep shipping a content-free placeholder. Failing the gate drops back
         # to regeneration, so it is re-judged and (still ungrounded) refused →
         # dropped → backfilled by the next candidate (see fill_deep_reasons).
-        if candidate and validate_deep_reason(candidate, title):
+        #
+        # SYMMETRIC cluster-fingerprint check ("" counts as a value): an
+        # entry cached before the cluster formed carries no fingerprint and
+        # is a single-angle guide — it must not serve the merged item (first
+        # merged run therefore re-rolls the representative's old guide, by
+        # design); conversely a stale merged entry must not serve an item
+        # whose cluster dissolved or changed members.
+        entry_fp = str(entry.get("cluster_fingerprint") or "")
+        if candidate and entry_fp == item_fp and validate_deep_reason(candidate, title):
             cached_reason = candidate
 
     if cfg["api_key"]:
@@ -2238,21 +3096,30 @@ def _fill_one_deep_reason(
             item["weixin_deep_reason"] = cached_reason
             stats["cached"] += 1
             return "缓存"
-        context = deep_reason_context(item, session, net_state)
+        if merged:
+            context = merged_event_context(item, session, net_state)
+        else:
+            context = deep_reason_context(item, session, net_state)
         reason = generate_deep_reason(item, context, cfg) if context else None
         if reason:
             item["weixin_deep_reason"] = reason
-            cache["entries"][key] = {
+            new_entry = {
                 "reason": reason,
                 "title_hash": title_hash(title),
                 "created_at": utcnow_iso(),
             }
+            if item_fp:
+                new_entry["cluster_fingerprint"] = item_fp
+            cache["entries"][key] = new_entry
             stats["generated"] += 1
             return "生成"
         item["weixin_deep_reason"] = existing or ""
         stats["skipped"] += 1
-        # Distinguish the two silent-skip causes on the progress
-        # line itself (validation/API details go to stderr).
+        # Distinguish the silent-skip causes on the progress line itself
+        # (validation/API details go to stderr). Merged items have no
+        # upstream fallback — they drop and the tail backups cover the event.
+        if merged:
+            return "合并素材缺失" if not context else "合并导读生成失败"
         return "回退上游（无素材）" if not context else "回退上游（生成失败）"
     if existing:
         item["weixin_deep_reason"] = existing
@@ -3467,6 +4334,20 @@ def main(argv: list[str] | None = None) -> int:
     cache = load_deep_cache(cache_path)
     stats = {"reused": 0, "cached": 0, "generated": 0, "skipped": 0, "dropped": 0}
 
+    # Event-level merges performed while rebuilding the weekly pool (the
+    # daily-fallback brief carries no such key). Absorbed-member count goes
+    # to stats; the full audit trail to meta.json.
+    event_merges = [
+        m for m in (brief.get("event_merges") or []) if isinstance(m, dict)
+    ]
+    stats["merged"] = sum(len(m.get("merged") or []) for m in event_merges)
+    if event_merges:
+        print(
+            f"weixin-deep: 事件合并：{len(event_merges)} 簇吸收 "
+            f"{stats['merged']} 条（明细见 meta.event_merges）",
+            flush=True,
+        )
+
     # Translate leftover pure-English titles before deep guides are written,
     # so guides, the cover headline and the rendered titles all use Chinese.
     # Runs over the full candidate pool: translations are cached, so promoted
@@ -3547,6 +4428,12 @@ def main(argv: list[str] | None = None) -> int:
         for item in items
         if item.get("deep_image")
     }
+    if event_merges:
+        # Audit trail for event-level merging: which stories were folded
+        # into which representative and the shared signals that justified
+        # it. A false merge is more visible in print than a missed one, so
+        # this is reviewed per issue.
+        meta["event_merges"] = event_merges
 
     if not args.dry_run:
         output_dir.mkdir(parents=True, exist_ok=True)
@@ -3575,7 +4462,7 @@ def main(argv: list[str] | None = None) -> int:
     print(
         "weixin-deep: items={items} sections={sections} "
         "reasons reused={reused} cached={cached} generated={generated} "
-        "skipped={skipped} dropped={dropped} "
+        "skipped={skipped} dropped={dropped} merged={merged} "
         "titles translated={titles_translated} "
         "cached={titles_cached} kept_english={titles_skipped} "
         "images found={found} missed={missed} dup_avoided={dup_avoided} "
@@ -3591,6 +4478,7 @@ def main(argv: list[str] | None = None) -> int:
             generated=stats["generated"],
             skipped=stats["skipped"],
             dropped=stats.get("dropped", 0),
+            merged=stats.get("merged", 0),
             titles_translated=stats.get("titles_translated", 0),
             titles_cached=stats.get("titles_cached", 0),
             titles_skipped=stats.get("titles_skipped", 0),

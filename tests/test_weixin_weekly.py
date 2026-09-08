@@ -639,3 +639,137 @@ def test_build_weekly_brief_pool_carries_per_category_backups(monkeypatch):
     assert sum(1 for i in core if i["category"] != "official") == 4
     assert sum(1 for i in backups if i["category"] == "official") == 2
     assert sum(1 for i in backups if i["category"] != "official") == 1
+
+
+# ---------------------------------------------------------------------------
+# Event-level merge end-to-end (the NVIDIA/Hugging Face acquisition cluster)
+#
+# Three DIFFERENT-domain records of one event whose titles are pairwise far
+# below the 0.86 string-similarity line (so dedupe / suppress_near_dup /
+# merge_story_items all leave them as three stories) must still collapse into
+# ONE representative story via merge_event_clusters — the official channel wins
+# the rep, the other two ride along as absorbed members at the pool tail, and
+# the payload records the merge in ``event_merges``.
+# ---------------------------------------------------------------------------
+
+def make_event_record(
+    idx: int, title: str, url: str, hours_ago: float, *,
+    site_id: str, source: str, summary: str | None = None,
+) -> dict:
+    ts = NOW - timedelta(hours=hours_ago)
+    iso = ts.isoformat().replace("+00:00", "Z")
+    record = {
+        "id": f"item-{idx}", "site_id": site_id, "site_name": source,
+        "source": source, "title": title, "url": url,
+        "published_at": iso, "first_seen_at": iso,
+    }
+    if summary is not None:
+        record["summary"] = summary
+    return record
+
+
+# Official announcement (EN) + Chinese social reaction + bare Verge follow-up:
+# three domains, three angles, one event. Titles are lexically far apart
+# (EN↔ZH, and the two EN titles share only the vendor/topic surface words) so
+# every string-similarity layer keeps them separate.
+EVENT_MERGE_TITLES = {
+    "official": "NVIDIA to acquire Hugging Face in $12.9 billion deal",
+    "social": "英伟达宣布收购 Hugging Face，黄仁勋称将加速 AI 民主化",
+    "media": "Hugging Face team to join NVIDIA AI group after landmark acquisition",
+}
+
+
+def _event_merge_records() -> list[dict]:
+    return [
+        make_event_record(1, EVENT_MERGE_TITLES["official"],
+                          "https://blogs.nvidia.com/hf-acquire", 40,
+                          site_id="official_ai", source="NVIDIA Blog"),
+        # aihot carries a Chinese summary (the angle the merged guide weaves in)
+        make_event_record(2, EVENT_MERGE_TITLES["social"],
+                          "https://x.com/steipete/status/1", 44,
+                          site_id="aihot", source="AI Hot",
+                          summary="黄仁勋表示这桩收购将加速 AI 民主化，Hugging Face 团队会保持开源承诺。"),
+        # techurls bare record: no summary, exercises the title-only degradation
+        make_event_record(3, EVENT_MERGE_TITLES["media"],
+                          "https://theverge.com/nvidia-hf", 50,
+                          site_id="techurls", source="The Verge"),
+    ]
+
+
+def test_event_merge_titles_survive_string_dedup():
+    # Guard the fixture's whole premise: if any pair ever crosses 0.86 the
+    # collapse would be merge_story_items' doing, not the event merge's.
+    titles = list(EVENT_MERGE_TITLES.values())
+    for i in range(len(titles)):
+        for j in range(i + 1, len(titles)):
+            assert un.title_similarity(titles[i], titles[j]) < 0.86
+
+
+def test_weekly_event_merge_folds_three_sources_into_one_story(monkeypatch):
+    monkeypatch.delenv("WEIXIN_EVENT_MERGE", raising=False)
+    items = _event_merge_records()
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir = write_data_dir(tmp, items)
+        brief = gwa.build_weekly_brief(data_dir, NOW, 20)
+
+    assert brief is not None
+    survivors = [s for s in brief["items"] if not s.get("absorbed_into")]
+    absorbed = [s for s in brief["items"] if s.get("absorbed_into")]
+
+    # exactly one representative survives; the other two are absorbed members
+    assert len(survivors) == 1
+    rep = survivors[0]
+    assert len(absorbed) == 2
+
+    # the OFFICIAL channel wins the representative slot
+    assert rep["category"] == "official"
+    assert rep["title"] == EVENT_MERGE_TITLES["official"]
+    assert "blogs.nvidia.com" in rep["url"]
+
+    # three distinct sources folded into the rep; sources IS items (same object)
+    assert rep["source_count"] == 3
+    assert rep["sources"] is rep["items"]
+    assert len(rep["sources"]) == 3
+    # rep refs FIRST, member refs appended
+    assert "blogs.nvidia.com" in rep["sources"][0]["url"]
+
+    # event_cluster carries both member blocks + a non-empty fingerprint
+    cluster = rep.get("event_cluster")
+    assert isinstance(cluster, dict)
+    assert len(cluster["members"]) == 2
+    assert cluster.get("fingerprint")
+    member_titles = {m["title"] for m in cluster["members"]}
+    assert EVENT_MERGE_TITLES["social"] in member_titles
+    assert EVENT_MERGE_TITLES["media"] in member_titles
+
+    # absorbed members tail the pool and point back at the rep
+    assert all(s["absorbed_into"] == rep["story_id"] for s in absorbed)
+    assert brief["items"][-2:] == absorbed  # they ride at the very tail
+
+    # payload records the merge for the meta audit log
+    merges = brief.get("event_merges") or []
+    assert len(merges) == 1
+    assert merges[0]["representative"] == rep["story_id"]
+    assert {m["story_id"] for m in merges[0]["merged"]} == {
+        s["story_id"] for s in absorbed
+    }
+
+
+def test_weekly_event_merge_kill_switch_keeps_sources_separate(monkeypatch):
+    monkeypatch.setenv("WEIXIN_EVENT_MERGE", "0")
+    items = _event_merge_records()
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir = write_data_dir(tmp, items)
+        brief = gwa.build_weekly_brief(data_dir, NOW, 20)
+
+    assert brief is not None
+    # no merging: nothing is absorbed, no event_cluster, no event_merges
+    assert not [s for s in brief["items"] if s.get("absorbed_into")]
+    assert all(not s.get("event_cluster") for s in brief["items"])
+    assert not brief.get("event_merges")
+    # the official rep keeps its single source (the Verge follow-up is sub-gate
+    # on replay and simply never enters the selection)
+    officials = [s for s in brief["items"]
+                 if s["title"] == EVENT_MERGE_TITLES["official"]]
+    assert len(officials) == 1
+    assert officials[0]["source_count"] == 1

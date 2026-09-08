@@ -2502,3 +2502,657 @@ def test_deep_pool_extra_resolution(monkeypatch):
     assert gwad.deep_pool_extra() == 3
     monkeypatch.setenv("WEIXIN_DEEP_POOL_EXTRA", "not-a-number")
     assert gwad.deep_pool_extra() == 10
+
+
+# ---------------------------------------------------------------------------
+# Same-event merge (weekly deep): signature, six gates, clustering, context.
+# Fixtures mirror the real story-record shape merge_event_clusters consumes:
+# sources[]/items[] are THE SAME list object, primary_item.id matches a ref,
+# refs carry site_id (tier lookup) and the title family drives the signature.
+# ---------------------------------------------------------------------------
+
+MERGE_NOW = datetime(2026, 9, 7, 1, 9)
+
+
+def make_event_story(
+    sid: str,
+    title: str,
+    *,
+    title_original: str | None = None,
+    category: str = "industry",
+    site_id: str = "aihot",
+    source: str | None = None,
+    score: float = 0.5,
+    summary: str | None = None,
+    url: str | None = None,
+) -> dict:
+    source = source or site_id
+    url = url or f"https://{site_id}.test/{sid}"
+    item_id = f"item_{sid}"
+    ref = {
+        "id": item_id,
+        "title": title,
+        "title_original": title_original,
+        "url": url,
+        "site_id": site_id,
+        "source": source,
+        "source_name": source,
+        "summary": summary,
+        "published_at": "2026-09-05T00:00:00Z",
+    }
+    refs = [ref]  # sources and items alias ONE list object (build_story_record)
+    primary = {
+        "id": item_id,
+        "title": title,
+        "title_original": title_original,
+        "url": url,
+        "source_name": source,
+        "summary": summary,
+    }
+    return {
+        "story_id": sid,
+        "title": title,
+        "title_original": title_original,
+        "url": url,
+        "primary_url": url,
+        "category": category,
+        "source_name": source,
+        "source": source,
+        "site_id": site_id,
+        "source_count": 1,
+        "item_count": 1,
+        "duplicate_count": 1,
+        "score": score,
+        "importance_score": score,
+        "sources": refs,
+        "items": refs,
+        "primary_item": primary,
+    }
+
+
+def _match(sig_a, sig_b, res_a, res_b, title_a, title_b, strong=None):
+    """event_signals_match with hand-built signal/residual sets. ``strong``
+    defaults to every token in both signatures (isolate gates 1/1b/3/5)."""
+    if strong is None:
+        strong = set(sig_a) | set(sig_b)
+    return gwad.event_signals_match(
+        frozenset(sig_a),
+        frozenset(sig_b),
+        set(res_a),
+        set(res_b),
+        title_a,
+        title_b,
+        set(strong),
+    )
+
+
+# --- _num_token_is_round: round figures collide, precise figures identify ---
+
+def test_num_token_is_round():
+    assert gwad._num_token_is_round("num:1.0e+09")  # $1B
+    assert gwad._num_token_is_round("num:1.0e+07")  # $10M
+    assert gwad._num_token_is_round("num:1.0e+04")  # 10,000
+    assert not gwad._num_token_is_round("num:1.3e+10")  # $12.9B
+    assert not gwad._num_token_is_round("num:3.5e+10")  # $35B
+    assert not gwad._num_token_is_round("num:1.2e+03")  # 1,200
+    assert not gwad._num_token_is_round("num:1.2e+07")  # $12.5M
+    assert not gwad._num_token_is_round("model:gpt-6")  # not a num token
+    assert not gwad._num_token_is_round("num:garbage")  # unparseable → safe
+
+
+# --- event_signature: vendor / topic / model / number extraction ---
+
+def test_event_signature_nvidia_acquisition():
+    story = make_event_story(
+        "s1", "NVIDIA to Acquire Hugging Face for $12.9 billion"
+    )
+    sig = gwad.event_signature(story)
+    assert {"v:nvidia", "v:huggingface", "t:acquire", "num:1.3e+10"} <= sig
+
+
+def test_event_signature_bilingual_both_sides_contribute():
+    # Chinese display title + English original each feed the signature.
+    story = make_event_story(
+        "s1",
+        "NVIDIA 宣布以 129.303 亿美元收购 Hugging Face",
+        title_original="NVIDIA to Acquire Hugging Face",
+    )
+    sig = gwad.event_signature(story)
+    assert "t:acquire" in sig  # 收购 + acquire
+    assert "v:nvidia" in sig and "v:huggingface" in sig
+    assert "num:1.3e+10" in sig  # 129.303 亿美元 ≈ $12.9B
+
+
+def test_event_signature_fermat_specific_topic():
+    story = make_event_story(
+        "s1",
+        "Anthropic 用 Claude 完成费马大定理首个 Lean 形式化证明",
+        title_original="Formalizing Fermat's Last Theorem",
+    )
+    sig = gwad.event_signature(story)
+    assert "t:fermat" in sig and "t:formal-proof" in sig
+    assert "v:anthropic" in sig
+
+
+# --- event_residual_tokens: stopword + vendor/topic surface stripping ---
+
+def test_event_residual_strips_english_stops_and_surfaces():
+    story = make_event_story(
+        "s1", "NVIDIA releases a new AI model for the data center this year"
+    )
+    res = gwad.event_residual_tokens(story)
+    # vendor + topic surfaces and generic function/domain words are gone
+    assert "nvidia" not in res
+    assert "ai" not in res and "model" not in res
+    assert "the" not in res and "this" not in res and "year" not in res
+    # discriminating object words survive
+    assert "data" in res and "center" in res
+
+
+def test_event_residual_reaction_title_can_be_empty():
+    # A pure vendor+topic title leaves no object words → empty residual,
+    # which the residual gate treats as absorbable (reactions/commentary).
+    story = make_event_story("s1", "OpenAI 发布更新")
+    assert gwad.event_residual_tokens(story) == set()
+
+
+# --- _event_strong_tokens: DF weak line scales with the pool ---
+
+def test_event_strong_tokens_df_line():
+    # n=40 → weak_line = max(6, ceil(0.05*40)=2) = 6: df>=6 is weak.
+    sigs = [frozenset({"v:openai"})] * 6 + [frozenset({"v:huggingface"})] * 5
+    sigs += [frozenset({"model:gpt-6"})] * 40
+    strong = gwad._event_strong_tokens(sigs, pool_size=40)
+    assert "v:openai" not in strong  # df 6 >= weak line 6 → weak
+    assert "v:huggingface" in strong  # df 5 < 6 → strong
+    assert "model:gpt-6" in strong  # model: unconditionally strong
+
+    # n=200 → weak_line = max(6, ceil(10)) = 10: a 6-df vendor is now strong.
+    sigs2 = [frozenset({"v:openai"})] * 6 + [frozenset({"v:filler"})] * 10
+    strong2 = gwad._event_strong_tokens(sigs2, pool_size=200)
+    assert "v:openai" in strong2  # df 6 < 10 → strong in a big pool
+    assert "v:filler" not in strong2  # df 10 >= 10 → weak
+
+
+# --- event_signals_match: the six gates ---
+
+def test_gate1_requires_two_shared_signals():
+    assert _match(
+        {"v:nvidia", "t:acquire"},
+        {"v:nvidia", "t:release"},
+        set(), set(),
+        "Nvidia buys Hugging Face", "Nvidia releases driver",
+    ) is None  # only v:nvidia shared
+
+
+def test_gate1b_vendor_pair_without_event_type_is_not_an_event():
+    # anthropic+meta co-occur across unrelated stories; no shared action.
+    assert _match(
+        {"v:anthropic", "v:meta"},
+        {"v:anthropic", "v:meta"},
+        {"spend", "compute"}, {"film", "festival"},
+        "Meta and Anthropic compute spend", "Anthropic at Meta film festival",
+    ) is None
+
+
+def test_gate2_requires_a_shared_strong_signal():
+    assert _match(
+        {"v:openai", "t:release"},
+        {"v:openai", "t:release"},
+        set(), set(),
+        "OpenAI releases ChatGPT update", "OpenAI launches new feature",
+        strong=set(),  # nothing is strong in this pool
+    ) is None
+
+
+def test_gate3_overlap_ratio_floor():
+    # shared 2 of 5 → 0.4 < 0.5: same vendor+action, different products.
+    assert _match(
+        {"v:x", "t:release", "model:m1", "num:1.1e+10", "person:p1"},
+        {"v:x", "t:release", "model:m2", "num:1.2e+10", "person:p2"},
+        set(), set(),
+        "X releases m1", "X releases m2",
+        strong={"v:x", "t:release"},
+    ) is None
+
+
+def test_gate5_distinctive_specific_topic_skips_residual():
+    # fermat is a SPECIFIC topic → residual gate skipped even though the
+    # two titles share no object words.
+    shared = _match(
+        {"v:anthropic", "t:fermat", "t:formal-proof"},
+        {"v:anthropic", "t:fermat", "t:formal-proof"},
+        {"lean", "proof"}, {"机器", "验证"},
+        "Anthropic 费马大定理形式化证明",
+        "Anthropic formalizes Fermat in Lean",
+    )
+    assert shared is not None and "t:fermat" in shared
+
+
+def test_gate5_distinctive_vendor_pair_plus_topic_skips_residual():
+    shared = _match(
+        {"v:nvidia", "v:huggingface", "t:acquire", "num:1.3e+10"},
+        {"v:nvidia", "v:huggingface", "t:acquire"},
+        {"宣布以"}, {"buys", "front", "door"},
+        "NVIDIA to Acquire Hugging Face for $12.9 billion",
+        "Nvidia buys Hugging Face, the GitHub of AI",
+    )
+    assert shared is not None and "t:acquire" in shared
+
+
+def test_gate5_round_number_collision_is_blocked():
+    # Two unrelated OpenAI "$1 billion" offers: num:1.0e+09 is ROUND → not a
+    # distinctive identifier → residual gate runs → disjoint residuals block.
+    assert _match(
+        {"num:1.0e+09", "v:openai"},
+        {"num:1.0e+09", "v:openai"},
+        {"ad", "business", "chatgpt", "annual"},
+        {"cyber", "defence", "water", "banks"},
+        "OpenAI says its ChatGPT ad business hits a $1 billion annual run rate",
+        "OpenAI puts $1bn behind cyber defence for water utilities",
+    ) is None
+
+
+def test_gate5_precise_number_skips_residual():
+    # num:1.2e+03 (1,200) is precise → distinctive → merges despite disjoint
+    # residuals (the 1200-agents jailbreak story, two phrasings).
+    shared = _match(
+        {"num:1.2e+03", "v:openai"},
+        {"num:1.2e+03", "v:openai"},
+        {"智能体集体越狱攻击", "社区"}, {"agent", "秘密交流", "暴走"},
+        "1200 个 AI 智能体集体越狱攻击开源社区",
+        "1200个 Agent 秘密交流集体攻击 Hugging Face",
+    )
+    assert shared is not None and "num:1.2e+03" in shared
+
+
+def test_gate5_residual_two_shared_tokens_merges():
+    # Generic topic + single vendor → residual gate runs; {muse, spark} (2)
+    # shared tokens confirm the same product (Muse Spark true pair).
+    shared = _match(
+        {"t:release", "v:meta"},
+        {"t:release", "v:meta"},
+        {"muse", "spark", "coding"},
+        {"muse", "spark", "agentic"},
+        "Meta 发布 Muse Spark 1.3 智能体能力提升",
+        "Meta 发布 Muse Spark 1.3 编码能力",
+    )
+    assert shared is not None
+
+
+def test_gate5_residual_single_family_token_is_blocked():
+    # Muse Spark vs Muse Voice Transcribe: same vendor+release, but only the
+    # family word "muse" is shared (1 < 2) → blocked (different products).
+    assert _match(
+        {"t:release", "v:meta"},
+        {"t:release", "v:meta"},
+        {"muse", "spark"},
+        {"muse", "voice", "transcribe"},
+        "Meta 发布 Muse Spark 1.3",
+        "Meta Superintelligence Labs Releases Muse Voice Transcribe",
+    ) is None
+
+
+def test_gate5_empty_residual_reaction_passes():
+    # A pure reaction (empty residual) merging into a generic vendor+topic
+    # cluster is allowed: there are no object words to contradict.
+    shared = _match(
+        {"t:release", "v:meta"},
+        {"t:release", "v:meta"},
+        set(),  # reaction title reduced to nothing
+        {"muse", "spark"},
+        "Meta 发布 Muse Spark 1.3",
+        "Meta 发布 Muse Spark 1.3 智能体能力提升",
+    )
+    assert shared is not None
+
+
+# --- merge_event_clusters: clustering, record merge, invariants ---
+
+def test_merge_picks_official_rep_and_folds_members():
+    rep = make_event_story(
+        "rep", "NVIDIA to Acquire Hugging Face for $12.9 billion",
+        category="official", site_id="blogs.nvidia.com", source="NVIDIA Blog",
+        score=0.90,
+    )
+    media = make_event_story(
+        "media", "Nvidia buys Hugging Face, the GitHub of AI",
+        site_id="theverge", source="The Verge", score=0.70,
+    )
+    social = make_event_story(
+        "social", "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型将受益",
+        site_id="aihot", source="aihot", score=0.60,
+    )
+    surviving, absorbed, log = gwad.merge_event_clusters(
+        [rep, media, social], by_id=None, now=MERGE_NOW, window_hours=168
+    )
+    assert [s["story_id"] for s in surviving] == ["rep"]
+    assert {a["story_id"] for a in absorbed} == {"media", "social"}
+    assert media["absorbed_into"] == "rep" and social["absorbed_into"] == "rep"
+    # record merge: rep refs FIRST, members appended; sources IS items
+    assert rep["sources"] is rep["items"]
+    assert len(rep["sources"]) == 3
+    assert rep["sources"][0]["id"] == "item_rep"
+    assert rep["source_count"] == 3 and rep["item_count"] == 3
+    cluster = rep["event_cluster"]
+    assert cluster["rep_source_count"] == 1
+    assert len(cluster["members"]) == 2
+    assert cluster["fingerprint"]  # non-empty sha1 prefix
+    # rep identity untouched (by_id rescoring / cache / --regenerate rely on it)
+    assert rep["story_id"] == "rep" and rep["primary_item"]["id"] == "item_rep"
+    assert len(log) == 1 and log[0]["representative"] == "rep"
+    assert {m["story_id"] for m in log[0]["merged"]} == {"media", "social"}
+
+
+def test_merge_kill_switch_passthrough(monkeypatch):
+    monkeypatch.setenv("WEIXIN_EVENT_MERGE", "0")
+    a = make_event_story("a", "NVIDIA to Acquire Hugging Face for $12.9 billion")
+    b = make_event_story("b", "Nvidia buys Hugging Face, the GitHub of AI")
+    surviving, absorbed, log = gwad.merge_event_clusters(
+        [a, b], by_id=None, now=MERGE_NOW, window_hours=168
+    )
+    assert len(surviving) == 2 and absorbed == [] and log == []
+    assert "absorbed_into" not in a and "absorbed_into" not in b
+
+
+def test_merge_member_score_floor(monkeypatch):
+    monkeypatch.delenv("WEIXIN_EVENT_MERGE", raising=False)
+    rep = make_event_story(
+        "rep", "NVIDIA to Acquire Hugging Face for $12.9 billion",
+        category="official", score=0.90,
+    )
+    weak = make_event_story(
+        "weak", "Nvidia buys Hugging Face, the GitHub of AI",
+        score=gwad.EVENT_MERGE_MEMBER_MIN_SCORE - 0.05,  # below the floor
+    )
+    surviving, absorbed, log = gwad.merge_event_clusters(
+        [rep, weak], by_id=None, now=MERGE_NOW, window_hours=168
+    )
+    assert {s["story_id"] for s in surviving} == {"rep", "weak"}
+    assert absorbed == [] and log == []
+    assert "absorbed_into" not in weak
+
+
+def test_merge_full_connectivity_rejects_third_wheel():
+    # A~B and A~C, but B!~C (B is a thin {model:gpt-6, t:release} title that
+    # shares only model:gpt-6 with C's {model:gpt-6, v:openai}). The leader
+    # cluster absorbs one; the other is rejected and survives on its own.
+    a = make_event_story(
+        "a", "OpenAI 发布 GPT-6 Astra", category="official", score=0.90
+    )
+    b = make_event_story("b", "GPT-6 Astra 正式推出", score=0.70)
+    c = make_event_story(
+        "c", "OpenAI says GPT-6 Astra is SOTA on benchmarks", score=0.60
+    )
+    surviving, absorbed, log = gwad.merge_event_clusters(
+        [a, b, c], by_id=None, now=MERGE_NOW, window_hours=168
+    )
+    assert len(absorbed) == 1 and absorbed[0]["story_id"] == "b"
+    assert {s["story_id"] for s in surviving} == {"a", "c"}
+    assert a["event_cluster"]["rep_source_count"] == 1
+    # the rejected pair is audited
+    assert log and log[0].get("rejected_pairs") == [["b", "c"]]
+
+
+def test_merge_max_cluster_cap(monkeypatch):
+    monkeypatch.setattr(gwad, "EVENT_MERGE_MAX_CLUSTER", 2)
+    stories = [
+        make_event_story(
+            sid, title, category="official" if sid == "r" else "industry",
+            score=score,
+        )
+        for sid, title, score in [
+            ("r", "NVIDIA to Acquire Hugging Face for $12.9 billion", 0.90),
+            ("m1", "Nvidia buys Hugging Face, the GitHub of AI", 0.80),
+            ("m2", "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型将受益", 0.70),
+        ]
+    ]
+    surviving, absorbed, log = gwad.merge_event_clusters(
+        stories, by_id=None, now=MERGE_NOW, window_hours=168
+    )
+    # cap 2 == rep + 1 member; the third matching story is refused
+    assert len(absorbed) == 1
+    assert len(surviving) == 2
+
+
+# --- merged_event_context: labelled blocks, degradation, member cap ---
+
+def make_merged_item(rep_summary: str, members: list[dict]) -> dict:
+    rep_ref = {
+        "id": "item_rep", "title": "代表标题", "url": "https://rep.test/r",
+        "site_id": "blogs.nvidia.com", "source": "NVIDIA Blog",
+        "source_name": "NVIDIA Blog", "summary": rep_summary,
+    }
+    refs = [rep_ref]
+    blocks = []
+    for i, m in enumerate(members):
+        site = m.get("site", "aihot")
+        mref = {
+            "id": f"item_m{i}", "title": m["title"],
+            "url": f"https://m.test/{i}", "site_id": site,
+            "source": site, "source_name": site, "summary": m.get("summary"),
+        }
+        refs.append(mref)
+        blocks.append(
+            {
+                "story_id": f"story_m{i}", "title": m["title"], "site": site,
+                "url": mref["url"], "summary": m.get("summary") or "",
+            }
+        )
+    return {
+        "story_id": "story_rep", "title": "代表标题",
+        "url": "https://rep.test/r", "primary_url": "https://rep.test/r",
+        "category": "official", "source_name": "NVIDIA Blog",
+        "source_count": len(refs), "sources": refs, "items": refs,
+        "primary_item": {
+            "id": "item_rep", "title": "代表标题", "url": "https://rep.test/r",
+            "source_name": "NVIDIA Blog", "summary": rep_summary,
+        },
+        "event_cluster": {
+            "rep_source_count": 1, "members": blocks, "fingerprint": "abc123def456",
+        },
+    }
+
+
+def test_merged_event_context_labels_and_degrades():
+    item = make_merged_item(
+        DEEP_SUMMARY,
+        [
+            {"title": "黄仁勋称开放模型将受益", "site": "x.com",
+             "summary": "NVIDIA CEO 表示这桩联姻很合适"},
+            {"title": "Verge: Nvidia buys HF", "site": "theverge"},  # no summary
+        ],
+    )
+    ctx = gwad.merged_event_context(item, offline_session(), None)
+    assert ctx is not None
+    assert "【主源】" in ctx
+    assert "【补充·x.com】黄仁勋称开放模型将受益" in ctx
+    assert "NVIDIA CEO 表示" in ctx  # member summary woven in
+    assert "【补充·theverge】Verge: Nvidia buys HF" in ctx
+    # the no-summary member degrades to its title (no trailing colon+summary)
+    assert "Verge: Nvidia buys HF：" not in ctx
+
+
+def test_merged_event_context_caps_member_blocks(monkeypatch):
+    monkeypatch.setattr(gwad, "EVENT_MERGE_CONTEXT_MEMBERS", 2)
+    members = [
+        {"title": f"成员标题{i}", "site": "aihot", "summary": f"摘要{i}"}
+        for i in range(6)
+    ]
+    item = make_merged_item(DEEP_SUMMARY, members)
+    ctx = gwad.merged_event_context(item, offline_session(), None)
+    assert "成员标题0" in ctx and "成员标题1" in ctx
+    assert "成员标题2" not in ctx  # beyond the CONTEXT_MEMBERS cap
+
+
+def test_merged_event_context_truncates_to_rep_sources():
+    # rep's OWN summary is short (< early-return floor) while a member carries
+    # a long one: the 【主源】 grounding must come from the rep view (truncated
+    # to rep_source_count), never from a member's summary masquerading as main.
+    item = make_merged_item(
+        "短摘要",  # rep summary too short to early-return on its own
+        [{"title": "成员", "site": "aihot", "summary": DEEP_SUMMARY}],
+    )
+    ctx = gwad.merged_event_context(item, offline_session(), None)
+    assert ctx is not None
+    # the long member summary appears ONLY in its labelled 【补充】 block
+    assert "【补充·aihot】成员" in ctx
+    main_block = ctx.split("【补充")[0]
+    assert DEEP_SUMMARY[:40] not in main_block
+
+
+# --- prompt selection: merged clusters get the synthesis prompt ---
+
+def _capture_reason_system(item):
+    """Run generate_deep_reason offline, returning the system prompt used for
+    the REASON call (the highlight pass is echoed)."""
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    captured: dict = {}
+
+    def side_effect(url, **kwargs):
+        messages = (kwargs.get("json") or {}).get("messages") or [{}]
+        system = str((messages[0] or {}).get("content") or "")
+        if "校对员" in system:  # highlight pass echoes the guide verbatim
+            user = str((messages[-1] or {}).get("content") or "")
+            return text_response(user)
+        captured.setdefault("reason_system", system)
+        return text_response(LONG_DEEP_REASON)
+
+    with patch(
+        "scripts.generate_weixin_article_deep.requests.post", side_effect=side_effect
+    ):
+        result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
+    return result, captured.get("reason_system")
+
+
+def test_generate_deep_reason_uses_merged_prompt_for_clusters():
+    item = make_event_story("rep", "NVIDIA 宣布以 129.303 亿美元收购 Hugging Face")
+    item["event_cluster"] = {
+        "rep_source_count": 1,
+        "members": [
+            {"story_id": "m1", "title": "成员", "site": "aihot",
+             "url": "https://m.test/1", "summary": "角度"}
+        ],
+        "fingerprint": "fp1",
+    }
+    result, system = _capture_reason_system(item)
+    assert result == LONG_DEEP_REASON
+    assert system == gwad.DEEP_REASON_MERGED_SYSTEM_PROMPT
+
+
+def test_generate_deep_reason_uses_single_prompt_without_cluster():
+    item = make_event_story("s1", "NVIDIA 发布新驱动")  # no event_cluster
+    _result, system = _capture_reason_system(item)
+    assert system == gwad.DEEP_REASON_SYSTEM_PROMPT
+
+
+# --- cache: symmetric cluster-fingerprint invalidation + no existing fallback ---
+
+def _merged_cache_item(sid, title, fp, summary=DEEP_SUMMARY):
+    item = make_event_story(sid, title, summary=summary)
+    item["event_cluster"] = {
+        "rep_source_count": 1,
+        "members": [
+            {"story_id": "m1", "title": "成员角度", "site": "aihot",
+             "url": "https://m.test/1", "summary": "黄仁勋表示这桩联姻很合适"}
+        ],
+        "fingerprint": fp,
+    }
+    return item
+
+
+def _empty_stats():
+    return {"reused": 0, "cached": 0, "generated": 0, "skipped": 0, "dropped": 0}
+
+
+def test_cache_fingerprint_match_serves_cached():
+    title = "NVIDIA 宣布收购 Hugging Face"
+    item = _merged_cache_item("rep", title, "fp1")
+    key = gwad.cache_key("rep", title)
+    cache = {
+        "version": gwad.DEEP_CACHE_VERSION,
+        "entries": {
+            key: {"reason": LONG_DEEP_REASON, "title_hash": gwad.title_hash(title),
+                  "cluster_fingerprint": "fp1", "created_at": "2026-09-03T00:00:00Z"}
+        },
+    }
+    stats = _empty_stats()
+    with patch(
+        "scripts.generate_weixin_article_deep.requests.post",
+        side_effect=AssertionError("cache hit must not call the API"),
+    ):
+        outcome = gwad._fill_one_deep_reason(
+            item, cache, {"api_key": "k"}, None, stats, None
+        )
+    assert outcome == "缓存"
+    assert item["weixin_deep_reason"] == LONG_DEEP_REASON
+    assert stats["cached"] == 1
+
+
+def test_cache_stale_fingerprint_regenerates():
+    title = "NVIDIA 宣布收购 Hugging Face"
+    item = _merged_cache_item("rep", title, "fp2")  # cluster membership changed
+    key = gwad.cache_key("rep", title)
+    stale = "这是一条过期的单角度缓存导读，指纹与当前事件簇不符，必须重新生成而非直接命中缓存。"
+    cache = {
+        "version": gwad.DEEP_CACHE_VERSION,
+        "entries": {
+            key: {"reason": stale, "title_hash": gwad.title_hash(title),
+                  "cluster_fingerprint": "fp1", "created_at": "2026-09-03T00:00:00Z"}
+        },
+    }
+    stats = _empty_stats()
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    router, calls = make_deep_text_router(reason=text_response(LONG_DEEP_REASON))
+    with patch("scripts.generate_weixin_article_deep.requests.post", side_effect=router):
+        outcome = gwad._fill_one_deep_reason(item, cache, cfg, None, stats, None)
+    assert outcome == "生成"
+    assert stats["generated"] == 1 and stats["cached"] == 0
+    assert item["weixin_deep_reason"] == LONG_DEEP_REASON
+    # entry rewritten with the CURRENT fingerprint, stale reason replaced
+    assert cache["entries"][key]["cluster_fingerprint"] == "fp2"
+    assert cache["entries"][key]["reason"] == LONG_DEEP_REASON
+
+
+def test_cache_symmetric_dissolved_cluster_misses():
+    # Item whose cluster dissolved (no fingerprint) must NOT be served a stale
+    # MERGED entry (which carries one) — the check is symmetric ("" is a value).
+    title = "NVIDIA 宣布收购 Hugging Face"
+    item = make_event_story("rep", title, summary=DEEP_SUMMARY)  # NO event_cluster
+    key = gwad.cache_key("rep", title)
+    cache = {
+        "version": gwad.DEEP_CACHE_VERSION,
+        "entries": {
+            key: {"reason": LONG_DEEP_REASON, "title_hash": gwad.title_hash(title),
+                  "cluster_fingerprint": "fp1", "created_at": "2026-09-03T00:00:00Z"}
+        },
+    }
+    stats = _empty_stats()
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    router, calls = make_deep_text_router(reason=text_response(LONG_DEEP_REASON))
+    with patch("scripts.generate_weixin_article_deep.requests.post", side_effect=router):
+        outcome = gwad._fill_one_deep_reason(item, cache, cfg, None, stats, None)
+    assert outcome == "生成"  # regenerated as a SINGLE item, not served stale
+    assert stats["generated"] == 1
+    # single-item regeneration writes no cluster_fingerprint
+    assert "cluster_fingerprint" not in cache["entries"][key]
+
+
+def test_merged_generation_failure_never_uses_existing_reason():
+    title = "NVIDIA 宣布收购 Hugging Face"
+    item = _merged_cache_item("rep", title, "fp1")
+    # Plant an upstream single-angle reason that MUST NOT backfill a merged
+    # item (it would sneak a member's lone angle under the rep's title).
+    item["primary_item"]["recommend_reason_zh"] = "上游单角度理由不应被采用"
+    item["sources"][0]["recommend_reason_zh"] = "上游单角度理由不应被采用"
+    cache = {"version": gwad.DEEP_CACHE_VERSION, "entries": {}}
+    stats = _empty_stats()
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    overlong = "该团队发布了新版本，" + "这是用于凑字数的测试句子内容。" * 40  # rejected
+    router, calls = make_deep_text_router(reason=text_response(overlong))
+    with patch("scripts.generate_weixin_article_deep.requests.post", side_effect=router):
+        outcome = gwad._fill_one_deep_reason(item, cache, cfg, None, stats, None)
+    assert item.get("weixin_deep_reason", "") == ""  # empty → fill_deep_reasons drops it
+    assert "上游单角度理由" not in str(item.get("weixin_deep_reason"))
+    assert outcome == "合并导读生成失败"
+    assert stats["skipped"] == 1 and stats["generated"] == 0
