@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-07T06:11:45.748132Z",
-  "issue_date": "2026-09-07",
+  "generated_at": "2026-09-09T06:44:49.964454Z",
+  "issue_date": "2026-09-09",
   "brand": "AI 雷达",
-  "title": "AI 雷达 · 9月1日-9月7日｜本周精读20条",
-  "digest": "AI 雷达9月7日 周一精读 20 条 AI 要闻：NVIDIA 宣布以 129.303 亿美元收购 Hugging Face。更多条目见「阅读原文」。",
+  "title": "AI 雷达 · 9月3日-9月9日｜本周精读20条",
+  "digest": "AI 雷达9月9日 周三精读 20 条 AI 要闻：NVIDIA 宣布以 129.303 亿美元收购 Hugging Face。更多条目见「阅读原文」。",
   "cover": "cover.jpg",
   "read_more_url": "https://hutaojiazi010304.github.io/ai-news-radar/",
   "item_count": 20,
@@ -20,7 +20,12 @@
     {
       "category": "industry",
       "label": "行业动态",
-      "count": 4
+      "count": 1
+    },
+    {
+      "category": "multi_source",
+      "label": "多源热议",
+      "count": 3
     }
   ],
   "images": {
@@ -29,18 +34,13 @@
       "credit": "nvidia.com",
       "borrowed": false
     },
-    "story_cc153614bc7c": {
-      "file": "images/story_cc153614bc7c.jpg",
-      "credit": "openai.com",
+    "story_f2dd19138871": {
+      "file": "images/story_f2dd19138871.jpg",
+      "credit": "anthropic.com",
       "borrowed": false
     },
-    "story_1a90c856fc66": {
-      "file": "images/story_1a90c856fc66.jpg",
-      "credit": "openai.com",
-      "borrowed": false
-    },
-    "story_9dd7043831a5": {
-      "file": "images/story_9dd7043831a5.jpg",
+    "story_0f3277bac9d6": {
+      "file": "images/story_0f3277bac9d6.jpg",
       "credit": "github.blog",
       "borrowed": false
     },
@@ -49,20 +49,1436 @@
       "credit": "github.blog",
       "borrowed": false
     },
-    "story_f2dd19138871": {
-      "file": "images/story_f2dd19138871.jpg",
-      "credit": "anthropic.com",
+    "story_3550a4d29815": {
+      "file": "images/story_3550a4d29815.jpg",
+      "credit": "dev.to",
       "borrowed": false
     },
-    "story_b69e2792fc70": {
-      "file": "images/story_b69e2792fc70.jpg",
-      "credit": "anthropic.com",
-      "borrowed": false
-    },
-    "story_26930d41a11d": {
-      "file": "images/story_26930d41a11d.jpg",
-      "credit": "theverge.com",
+    "story_2231837c4c72": {
+      "file": "images/story_2231837c4c72.jpg",
+      "credit": "cursor.com",
       "borrowed": false
     }
-  }
+  },
+  "event_merges": [
+    {
+      "representative": "story_0fd4fc0249e5",
+      "rep_title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+      "merged": [
+        {
+          "story_id": "story_49efdff27ea0",
+          "title": "Gemini 3.8 Flash正式接入B.AI API，聚焦长周期编程与自主Agent",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_2e845457e6c6",
+          "title": "Gemini 3.8 Flash发布 六周三连更但干活不灵光",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_7365e3783fc4",
+          "title": "Gemini 3.8，明日登场！",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_9825b1c3f980",
+          "title": "Gemini 3.8 Flash is Google's third budget model in six weeks while frontier mode",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_ea7af97b820f",
+          "title": "Google says its new Gemini 3.8 Flash model ‘works harder’ but might cost more",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_125ca9cbb4d2",
+          "title": "Google DeepMind Releases Gemini 3.8 Flash and Gemini 3.8 Flash Cyber: One Core M",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_1ca386d9ec13",
+          "title": "Google Releases Gemini 3.8 Flash, Its Third Flash Model In Six Weeks",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "t:release",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_bf09ed9630e9",
+          "title": "Gemini 3.8 Flash",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_4667a4b9a616",
+          "title": "Google Gemini 3.8 Flash and Cyber",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_653d28b16ad1",
+          "title": "派早报：Google 发布 Gemini 3.8 Flash、理想推出新一代 MEGA 等",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_afeb4fc7ab8a",
+          "title": "Google releases Gemini 3.8 Flash and a cybersecurity variant limited to governme",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "t:release",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_2fd7b5a3a64c",
+          "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_02e699fe4997",
+          "title": "Gemini 3.8 Flash",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_2c075f3ed719",
+          "title": "Gemini 3.8 Flash",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_1c58befd6aa7",
+          "title": "Google launches Gemini 3.8 Flash Cyber for partners in its new Fairwind Program,",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_4139c4b5ea82",
+          "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_268f6103e5a8",
+          "title": "Google launches Gemini 3.8 Flash, three weeks after 3.7 Flash launch, for an int",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        },
+        {
+          "story_id": "story_969f51f96125",
+          "title": "Gemini 3.8 Flash Model card [pdf]",
+          "shared_signals": [
+            "model:gemini-3.8",
+            "v:google"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_6129f245443c",
+      "rep_title": "NVIDIA 宣布以 129.303 亿美元收购 Hugging Face / NVIDIA to Acquire Hugging Face",
+      "merged": [
+        {
+          "story_id": "story_26930d41a11d",
+          "title": "Nvidia 以约 129.3 亿美元收购 Hugging Face / Nvidia is buying Hugging Face for almost $1",
+          "shared_signals": [
+            "num:1.3e+10",
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_d509bcb05e90",
+          "title": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型将受益于这桩联姻 / brilliant fit.",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_963744988f2b",
+          "title": "Hugging Face 联创 Thomas Wolf 宣布 NVIDIA 以 $12，930，300，000 收购 Hugging Face / So hap",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_54312260ed93",
+          "title": "Nvidia 确认以 129 亿美元收购 Hugging Face / Nvidia confirms it will buy Hugging Face for",
+          "shared_signals": [
+            "num:1.3e+10",
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_63f2faec5fce",
+          "title": "NVIDIA 宣布收购 Hugging Face，Perplexity CEO 表态支持开放模型生态 / A repository of open models",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_1fe06f40e69a",
+          "title": "NVIDIA 宣布收购 Hugging Face，Jensen Huang 称其为开源模型的归宿 / Hugging Face is in great hand",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_235f042960d6",
+          "title": "NVIDIA 宣布收购 Hugging Face，作者分析其对开源 AI 的影响 / NVIDIA buying Hugging Face could be o",
+          "shared_signals": [
+            "t:acquire",
+            "t:open-source",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_541586af3618",
+          "title": "Hugging Face 宣布拟以 $12，930，300，000 被 NVIDIA 收购 / Super happy to share our intenti",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_999000e5a49c",
+          "title": "NVIDIA 宣布收购 Hugging Face，Sundar Pichai 祝贺并称将强化开源模型生态 / Congrats @JensenHuang @Cl",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_12b83da438b4",
+          "title": "Nvidia 以约 129 亿美元收购 Hugging Face，承诺保持开放与硬件中立 / Nvidia buys the front door to ope",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_846d8880b7e5",
+          "title": "英伟达宣布以约 129.3 亿美元收购 Hugging Face，预计 2027 年上半年完成",
+          "shared_signals": [
+            "num:1.3e+10",
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_6747e2e44672",
+          "title": "NVIDIA 官宣以 129.3 亿美元收购 Hugging Face / Nvidia officially announced that they are ",
+          "shared_signals": [
+            "num:1.3e+10",
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_aeed872d72c5",
+          "title": "NVIDIA 宣布收购 Hugging Face / Exciting day for NVIDIA and @huggingface. Open models",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_3a8b076122b4",
+          "title": "Nvidia 以 130 亿美元收购 AI 模型平台 Hugging Face / Nvidia buys Hugging Face， the Github o",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_c5c8bde45089",
+          "title": "英伟达拟以 129.3 亿美元收购 Hugging Face，黄仁勋承诺维持开放平台",
+          "shared_signals": [
+            "num:1.3e+10",
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_b6d924c28440",
+          "title": "NVIDIA 宣布收购 Hugging Face，Cohere CEO Aidan Gomez 称其为开源 AI 的强力组合 / Congrats to Jen",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_e6a6758f70a2",
+          "title": "NVIDIA 宣布收购 Hugging Face，黄仁勋与纳德拉表态开放模型生态 / Looking forward to this ecosystem wit",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_240b6aee9f97",
+          "title": "英伟达129亿美元收购Hugging Face，黄仁勋给出最新承诺",
+          "shared_signals": [
+            "person:huang",
+            "t:acquire",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_dc7b75c9a375",
+          "title": "黄仁勋回应 129 亿美元收购 Hugging Face：不是要把 AI 关进英伟达",
+          "shared_signals": [
+            "num:1.3e+10",
+            "person:huang",
+            "t:acquire",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_c40bd5837670",
+          "title": "NVIDIA 以 129.3 亿美元收购 Hugging Face / NVIDIA to acquire Hugging Face for $12.93B",
+          "shared_signals": [
+            "num:1.3e+10",
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_23979b587949",
+          "title": "Georgi Gerganov on llama.cpp/ggml future after Nvidia acquisition of HuggingFace",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_b3daea924b47",
+          "title": "It's official: Nvidia is buying Hugging Face for $13 billion",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_49c51a325244",
+          "title": "NVIDIA 以 129.3 亿美元收购 Hugging Face",
+          "shared_signals": [
+            "num:1.3e+10",
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        }
+      ],
+      "reason": "event_signature",
+      "rejected_pairs": [
+        [
+          "story_1fe06f40e69a",
+          "story_fb5409474b02"
+        ],
+        [
+          "story_240b6aee9f97",
+          "story_ec45db759edd"
+        ],
+        [
+          "story_d509bcb05e90",
+          "story_a54ffefb9fa2"
+        ]
+      ]
+    },
+    {
+      "representative": "story_fe67d000c4c1",
+      "rep_title": "OpenAI 发布 GPT-6 Astra，面向 Pro、Enterprise 和 Business Premium 用户开放 / GPT-6 Astra is",
+      "merged": [
+        {
+          "story_id": "story_5cd952bee704",
+          "title": "奥尔特曼致歉 GPT-6 Astra 发布混乱，现已面向所有 Plus / Pro 等用户推出",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release"
+          ]
+        },
+        {
+          "story_id": "story_5b7123eb810c",
+          "title": "OpenAI 发布 GPT-6 Astra，并首次将其列为 Preparedness Framework 下关键级网络安全模型 / GPT-6 Astra is",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release"
+          ]
+        },
+        {
+          "story_id": "story_15513cdb6d25",
+          "title": "OpenAI 发布 GPT-6 Astra，主打电脑操作并触发网络安全 Critical 红线",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_c7ee1ec9b2ef",
+          "title": "OpenAI 发布 GPT-6 Astra，称已进入 AGI 时代 / OpenAI's next big AI model has 'entered the ",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_ec9d66feb5a5",
+          "title": "OpenAI 发布 GPT-6 Astra，ARC-AGI 3 得分 99.9% / GPT-6 Astra",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_bf4a1e858a01",
+          "title": "OpenAI 向 Pro、Enterprise 和 Business Premium 用户推出 GPT-6 Astra，消息额度约为 GPT-5.6 Sol 的",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_28ff2f732cd6",
+          "title": "OpenAI 发布 GPT-6 Astra，主打桌面自动化与网络安全 Critical 档位",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_70d9ce14ce30",
+          "title": "OpenAI 发布 GPT-6 Astra，主打电脑操作与对齐能力",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_92d6f576b32f",
+          "title": "OpenAI 发布 GPT-6 Astra，初期仅向 Daybreak Access 组织开放 / OPENAI 🔥： GPT-6 Astra will ini",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_9a9faf27130f",
+          "title": "OpenAI 发布 GPT-6 Astra：1.05M 上下文的计算机操作模型，因触及 Critical 网络安全阈值而限制访问 / OpenAI Releas",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_013a8ac40c9d",
+          "title": "GPT-6 Astra 开始向 Plus 和 Business 用户推出 / Now out to all Plus and Business users. H",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release"
+          ]
+        },
+        {
+          "story_id": "story_2da377cbca14",
+          "title": "OpenAI 发布 GPT-6 Astra，先向受限网络安全客户开放 / OpenAI is rolling GPT-6 Astra out first to ",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release"
+          ]
+        },
+        {
+          "story_id": "story_a23ce047f1f9",
+          "title": "OpenAI 发布 GPT-6 Astra 提示词指南，含 slop 词屏蔽清单 / OpenAI shares prompting tips for GPT-",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_e62db571b707",
+          "title": "OpenAI 发布 GPT-6 Astra，主打 Computer Use 与 Agent 对齐进展 / GPT-6 Astra is here！ This i",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_409e126945bc",
+          "title": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA / The evals are pretty wild， but there's a mor",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_0c498e2f09fb",
+          "title": "OpenAI 开始发布 GPT-6 Astra，面向全部 Plus 用户开放 / We are starting to release GPT-6 Astra ",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_fe74bb9995af",
+          "title": "OpenAI 发布 GPT-6 Astra，官方基准显示 ARC-AGI-3 得分 99.9% / Official GPT-6 Astra Benchmark",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_2b2808fe9126",
+          "title": "OpenAI 发布 GPT-6 Astra，首个达到关键级网络安全能力门槛的模型",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_4d1ff3880451",
+          "title": "OpenAI GPT-6 Astra 登顶 Code Arena WebDev 榜首，领先 Claude Fable 5.1 达 35 分 / GPT-6 As",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_9e59e695def8",
+          "title": "OpenAI 发布 GPT-6 Astra，基准全面超越 Claude Fable 5.1 / At this point， they completely c",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:anthropic",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_2b40d2f1f8e5",
+          "title": "OpenAI 发布 GPT-6 Astra / GPT-6 Astra is here. We hope it will begin to enable a n",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_4fcf9f54308f",
+          "title": "GPT-6 is a major jump in capabilities and will unlock new use-cases. Will launch",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release"
+          ]
+        },
+        {
+          "story_id": "story_89755f2f2a3d",
+          "title": "刚刚，GPT-6 Astra全量开放！",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release"
+          ]
+        }
+      ],
+      "reason": "event_signature",
+      "rejected_pairs": [
+        [
+          "story_5cd952bee704",
+          "story_3af91fe6473f"
+        ],
+        [
+          "story_5cd952bee704",
+          "story_3759d425a2e2"
+        ],
+        [
+          "story_5cd952bee704",
+          "story_62857399069a"
+        ],
+        [
+          "story_5cd952bee704",
+          "story_5c53403fc048"
+        ],
+        [
+          "story_5cd952bee704",
+          "story_ab8534f6f073"
+        ],
+        [
+          "story_5cd952bee704",
+          "story_739cce828d83"
+        ]
+      ]
+    },
+    {
+      "representative": "story_f2dd19138871",
+      "rep_title": "Anthropic 用 Claude 在 11 天内完成费马大定理首个机器验证的 Lean 形式化证明 / Formalizing Fermat's Last ",
+      "merged": [
+        {
+          "story_id": "story_9e01fe141645",
+          "title": "Claude 完成 Fermat 大定理的形式化证明，生成超 1300 万行 Lean 代码 / Checking that a major mathemati",
+          "shared_signals": [
+            "t:fermat",
+            "t:formal-proof",
+            "v:anthropic"
+          ]
+        },
+        {
+          "story_id": "story_80b4b38cc5dc",
+          "title": "Anthropic 宣布 Claude 用 11 天完成费马大定理首个端到端形式化证明",
+          "shared_signals": [
+            "t:fermat",
+            "t:formal-proof",
+            "v:anthropic"
+          ]
+        },
+        {
+          "story_id": "story_1997e8c82d30",
+          "title": "费马大定理的 Lean 4 机器检查完整证明开源发布",
+          "shared_signals": [
+            "t:fermat",
+            "t:formal-proof"
+          ]
+        },
+        {
+          "story_id": "story_5110803ce212",
+          "title": "Claude 完成 Fermat 大定理的首个全机器校验形式化证明 / Respect where respect is due： Anthropic says",
+          "shared_signals": [
+            "t:fermat",
+            "t:formal-proof"
+          ]
+        },
+        {
+          "story_id": "story_2ebcbcb9674f",
+          "title": "AI界的数学里程碑：Claude 仅用 11 天拿下费马大定理端到端形式化证明",
+          "shared_signals": [
+            "t:fermat",
+            "t:formal-proof",
+            "v:anthropic"
+          ]
+        },
+        {
+          "story_id": "story_021c5fbdd14b",
+          "title": "姚班校友主导，Claude攻克费马大定理首个完整形式化证明",
+          "shared_signals": [
+            "t:fermat",
+            "t:formal-proof"
+          ]
+        },
+        {
+          "story_id": "story_43d6fda12fd3",
+          "title": "Anthropic says Claude worked \"largely autonomously\" over 11 days to formalize th",
+          "shared_signals": [
+            "t:fermat",
+            "t:formal-proof"
+          ]
+        }
+      ],
+      "reason": "event_signature",
+      "rejected_pairs": [
+        [
+          "story_1997e8c82d30",
+          "story_a79c472c43a5"
+        ],
+        [
+          "story_1997e8c82d30",
+          "story_657eb9f9d824"
+        ],
+        [
+          "story_1997e8c82d30",
+          "story_ce34dfe9d75e"
+        ]
+      ]
+    },
+    {
+      "representative": "story_93b4d1afb6fc",
+      "rep_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元 / Mistral raises €3B to make sovereign， open",
+      "merged": [
+        {
+          "story_id": "story_b16389bef877",
+          "title": "AI 数据中心新贵 Crusoe 融资 30 亿美元：估值 300 亿，刚签下 130 亿美元大单",
+          "shared_signals": [
+            "num:3.0e+09",
+            "t:invest"
+          ]
+        }
+      ],
+      "reason": "event_signature",
+      "rejected_pairs": [
+        [
+          "story_b16389bef877",
+          "story_9077b29618d0"
+        ]
+      ]
+    },
+    {
+      "representative": "story_3af91fe6473f",
+      "rep_title": "OpenAI GPT-6 Astra 在 ARC-AGI-3 上取得 SOTA 并超越人类动作效率基线",
+      "merged": [
+        {
+          "story_id": "story_3759d425a2e2",
+          "title": "GPT-6 Astra 幻觉更少但仍易受隐藏提示词注入攻击 / OpenAI's GPT-6 Astra hallucinates less but remai",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_62857399069a",
+          "title": "Rohan Paul 解读 OpenAI GPT-6 Astra 117 页系统卡中的安全发现 / Some revelations from the 117 ",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_5c53403fc048",
+          "title": "Fortune 报道 OpenAI 多次修改 GPT-6 Astra 基准测试数据，部分成绩大幅变化",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_ab8534f6f073",
+          "title": "OpenAI GPT-6 Astra 开始推送，ChatGPT Pro 和 Business 账号率先可用 / OPENAI 🔥： GPT-6 Astra is",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_739cce828d83",
+          "title": "Perplexity 宣布将接入 OpenAI GPT-6 Astra，称其在 WANDR 评测中居首 / Congrats to @OpenAI on bui",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_0a1b9bfed3fe",
+          "title": "'Welcome to the AGI Era,' OpenAI Says As GPT-6 Astra Debuts",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_98b02c32c249",
+          "title": "OpenAI prices GPT-6 Astra at $10/1M input tokens and $50/1M output tokens, match",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_21fb5bc348a2",
+          "title": "OpenAI 开始推出 GPT-6 Astra",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_f681aac6af0c",
+          "title": "OpenAI quietly updates its evaluation metrics for GPT-6 Astra, making changes th",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_5b8df58d4bfa",
+          "title": "By declaring GPT-6 Astra to be AGI, OpenAI is being flippant and cementing the t",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_b97a607a39f5",
+          "title": "GPT-6 Astra Is Here—and OpenAI Thinks It May Kick Off the AGI Era",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_e211e132964c",
+          "title": "GPT-6 Astra 发布：OpenAI 正式宣告“AGI 时代到来”",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_d0286157e22b",
+          "title": "GPT-6 Astra 重磅发布 这次 OpenAI 升级的不只是模型分数",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_febeba661337",
+          "title": "OpenAI calls GPT-6 Astra the \"world's best computer use model\"; in tests, it boo",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_4de84e6ae3e7",
+          "title": "OpenAI launches GPT-6 Astra, initially available to organizations in its Daybrea",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_e342df53e8ff",
+          "title": "OpenAI officially launches GPT-6 Astra, a boundary-breaking new model",
+          "shared_signals": [
+            "model:gpt-6",
+            "t:release",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_e95cf7302b62",
+          "title": "OpenAI rolls out GPT-6 Astra to Pro customers on the $100/month or $200/month pl",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_2384c7d4ba8c",
+          "title": "OpenAI rolls out GPT-6 Astra, and Greg Brockman says AGI has arrived",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_0cec39cfdf34",
+          "title": "OpenAI says GPT-6 Astra is 'the most intelligent and aligned model in the world'",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_9741cb7bb5b6",
+          "title": "OpenAI says an internal model \"significantly more capable than GPT-6 Astra\" solv",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_dc9481c7c734",
+          "title": "OpenAI ：GPT-6 开始你需要给 Skill 和 AGENTS.md 做一次大扫除了",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_93a89f7209a0",
+          "title": "OpenAI's GPT-6 Astra on ARC-AGI-3 Scored 99.95% with Provider Adapter Harness",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_d0b903d9b914",
+          "title": "派早报：OpenAI 发布 GPT-6 Astra 模型、Meta 发布 Muse Spark 1.3 模型等",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:openai"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_fb5409474b02",
+      "rep_title": "Hugging Face 宣布将以约 129.3 亿美元并入 NVIDIA，承诺保持平台开放独立 / Without Hugging Face the laun",
+      "merged": [
+        {
+          "story_id": "story_a54ffefb9fa2",
+          "title": "'The planets aligned': Nvidia confirms $12.9bn Hugging Face deal in potentially ",
+          "shared_signals": [
+            "num:1.3e+10",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_3fca31590788",
+          "title": "Nvidia Buys Hugging Face in $12.9 Billion Deal",
+          "shared_signals": [
+            "num:1.3e+10",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_11c099787f86",
+          "title": "Nvidia confirms it is buying Hugging Face for $12.93bn and promises to leave it ",
+          "shared_signals": [
+            "num:1.3e+10",
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_22ef532ede9d",
+          "title": "Nvidia strikes $12.9bn deal to buy AI platform Hugging Face",
+          "shared_signals": [
+            "num:1.3e+10",
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_baf5d5500714",
+          "title": "Nvidia’s Hugging Face Acquisition Is a $12.9 Billion Bet on Open-Source AI",
+          "shared_signals": [
+            "num:1.3e+10",
+            "t:acquire",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_ef24d54150c6",
+          "title": "Nvidia’s Hugging Face purchase confirmed at $13 billion",
+          "shared_signals": [
+            "num:1.3e+10",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        },
+        {
+          "story_id": "story_580674bcb19d",
+          "title": "There's an Easter egg hiding inside the $12.9303 billion price tag of the Nvidia",
+          "shared_signals": [
+            "num:1.3e+10",
+            "v:huggingface",
+            "v:nvidia"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_d83ab5c62da4",
+      "rep_title": "Anthropic 据报道签约高达 5170 亿美元算力协议，锁定至少 14.8 GW 算力 / Anthropic reportedly signs $517",
+      "merged": [
+        {
+          "story_id": "story_5c01fc225873",
+          "title": "Anthropic 11个月豪掷5170亿美元，狂揽14.8GW惊人算力",
+          "shared_signals": [
+            "num:5.2e+11",
+            "v:anthropic"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_292bbb5879c6",
+      "rep_title": "AI医疗版图大扩张：Anthropic 持续加码，密集收购与布局生物技术赛道",
+      "merged": [
+        {
+          "story_id": "story_1bff838f4feb",
+          "title": "Anthropic 放弃收购 AI 初创公司 Decart，这桩 60 亿美元交易最终告吹",
+          "shared_signals": [
+            "t:acquire",
+            "v:anthropic"
+          ]
+        },
+        {
+          "story_id": "story_daf904aa3b87",
+          "title": "Sources: Anthropic has walked away from talks to acquire Decart for ~$6B after p",
+          "shared_signals": [
+            "t:acquire",
+            "v:anthropic"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_bd838d3672c1",
+      "rep_title": "Anthropic 15 亿美元版权和解金开始发放，作者与出版社分配争议不断",
+      "merged": [
+        {
+          "story_id": "story_a066ab7865b9",
+          "title": "Authors Wrangle With Publishers Over $1.5 Billion Anthropic A.I. Settlement",
+          "shared_signals": [
+            "num:1.5e+09",
+            "v:anthropic"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_f26b362ac44b",
+      "rep_title": "OpenAI 发布 GPT-6Astra，黄仁勋称 AGI 已经到来",
+      "merged": [
+        {
+          "story_id": "story_a8e02e790ad9",
+          "title": "黄仁勋祝贺 OpenAI 发布 Astra：“AGI 已经到来”，学者当场泼冷水",
+          "shared_signals": [
+            "person:huang",
+            "t:release",
+            "v:openai"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_64c42db59176",
+      "rep_title": "英伟达开源 PAIR：把局域网里的 Mac 和 RTX PC 变成一支 AI 算力小队",
+      "merged": [
+        {
+          "story_id": "story_421a24f98b85",
+          "title": "NVIDIA Releases Personal AI Router (PAIR): An Open Source Virtual Inference Rout",
+          "shared_signals": [
+            "t:open-source",
+            "v:nvidia"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_11dab6202ba6",
+      "rep_title": "Meta 发布 Muse Spark 1.3，Intelligence Index 得 61-62 分逼近 Claude 与 GPT-5.6 / It's wo",
+      "merged": [
+        {
+          "story_id": "story_a73100441087",
+          "title": "Meta 最强模型 Muse Spark 1.3 发布：编码能力力压 GPT-5.6 Sol，价格维持不变",
+          "shared_signals": [
+            "model:gpt-5.6",
+            "t:release",
+            "v:meta"
+          ]
+        },
+        {
+          "story_id": "story_e87d399ddb1c",
+          "title": "Meta 发布 Muse Spark 1.3，智能体与科学推理能力提升 / i really hate to say it， but… gemini who？ ",
+          "shared_signals": [
+            "t:release",
+            "v:meta"
+          ]
+        },
+        {
+          "story_id": "story_7c8ecfa8d918",
+          "title": "Meta AI Released Muse Spark 1.3: An Agentic Coding Model That Uses ~20% Fewer To",
+          "shared_signals": [
+            "t:release",
+            "v:meta"
+          ]
+        }
+      ],
+      "reason": "event_signature",
+      "rejected_pairs": [
+        [
+          "story_a73100441087",
+          "story_03898b684841"
+        ]
+      ]
+    },
+    {
+      "representative": "story_777e0b780ea4",
+      "rep_title": "美国司法部就 OpenAI 版权诉讼提交意见书支持训练属于合理使用 / The Trump administration has now formally pu",
+      "merged": [
+        {
+          "story_id": "story_34d12128ed32",
+          "title": "The Trump administration is supporting OpenAI in the NYT copyright lawsuit",
+          "shared_signals": [
+            "t:lawsuit",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_213ba71be58a",
+          "title": "Trump Administration Sides With OpenAI in New York Times Copyright Lawsuit",
+          "shared_signals": [
+            "t:lawsuit",
+            "v:openai"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_bb164dc88d54",
+      "rep_title": "Mistral AI 宣布 30 亿欧元 D 轮融资 / Today marks a major step for Mistral： we're announc",
+      "merged": [
+        {
+          "story_id": "story_54f89ff5f5fa",
+          "title": "Mistral AI raises 3 billion euros in Europe's largest-ever tech funding round de",
+          "shared_signals": [
+            "model:mistral-ai",
+            "num:3.0e+09",
+            "t:invest",
+            "v:mistral"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_ec45db759edd",
+      "rep_title": "Hugging Face and @Thom_Wolf cannot stop winning, first the acquisition and now t",
+      "merged": [
+        {
+          "story_id": "story_9712a355da6b",
+          "title": "Nvidia agrees to buy Hugging Face for $12.9B, its second-biggest purchase after ",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface"
+          ]
+        },
+        {
+          "story_id": "story_11a2fb63b703",
+          "title": "Source: Betaworks has a 5.5% stake in Hugging Face, worth ~$650M at its $11.9B a",
+          "shared_signals": [
+            "t:acquire",
+            "v:huggingface"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_49392d8f50e8",
+      "rep_title": "To calibrate you all on which reasoning effort to use for Astra, know that GPT-6",
+      "merged": [
+        {
+          "story_id": "story_03898b684841",
+          "title": "GPT-6 Astra scores 62.7% on ARC-AGI-3 with the standard harness and 99.9% with a",
+          "shared_signals": [
+            "model:gpt-5.6",
+            "model:gpt-6"
+          ]
+        },
+        {
+          "story_id": "story_ca3ddf641b16",
+          "title": "GPT-6 Astra 来了，GPT-5.6 Sol 还值得用吗？聊聊 Coding、百万上下文、价格和 Plus/Pro",
+          "shared_signals": [
+            "model:gpt-5.6",
+            "model:gpt-6"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_79b7eda7bd05",
+      "rep_title": "Deepseek plans the largest known Huawei chip cluster with 160,000 processors in ",
+      "merged": [
+        {
+          "story_id": "story_8766be9a4500",
+          "title": "DeepSeek plans large Huawei chip order for new Inner Mongolia data centre",
+          "shared_signals": [
+            "model:deepseek-plans",
+            "v:deepseek"
+          ]
+        },
+        {
+          "story_id": "story_eff828d39dac",
+          "title": "Sources: DeepSeek plans to use 160K+ of Huawei's Ascend 950DT chips at an Inner ",
+          "shared_signals": [
+            "model:deepseek-plans",
+            "v:deepseek"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_af240640cdb7",
+      "rep_title": "Seattle Times and Newsday are the latest publications to sue OpenAI and Microsof",
+      "merged": [
+        {
+          "story_id": "story_5afbea8b9864",
+          "title": "Seattle Times and Newsday sue OpenAI and Microsoft for infringement",
+          "shared_signals": [
+            "t:lawsuit",
+            "v:microsoft",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_c0bc11718399",
+          "title": "OpenAI, Microsoft face copyright lawsuit from local newspapers",
+          "shared_signals": [
+            "t:lawsuit",
+            "v:microsoft",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_802493a30000",
+          "title": "The Seattle Times and Newsday sue OpenAI and Microsoft, alleging the companies t",
+          "shared_signals": [
+            "t:lawsuit",
+            "v:microsoft",
+            "v:openai"
+          ]
+        },
+        {
+          "story_id": "story_97e66f0e6f34",
+          "title": "Two more news organizations sue OpenAI and Microsoft for copyright infringement",
+          "shared_signals": [
+            "t:lawsuit",
+            "v:microsoft",
+            "v:openai"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_e1a139990198",
+      "rep_title": "Nvidia launches free tool that links idle computers into a personal AI data cent",
+      "merged": [
+        {
+          "story_id": "story_81fe31bce8d6",
+          "title": "Nvidia launches Personal AI Router (PAIR), a free tool that distributes local AI",
+          "shared_signals": [
+            "t:release",
+            "v:nvidia"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_8516f455402b",
+      "rep_title": "A new class action lawsuit questions whether Anthropic broke the law by misleadi",
+      "merged": [
+        {
+          "story_id": "story_300004bb7832",
+          "title": "In an expanded class action lawsuit, a group of Claude subscribers says Anthropi",
+          "shared_signals": [
+            "t:lawsuit",
+            "v:anthropic"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_5f9295bb7332",
+      "rep_title": "Nvidia's Jensen Huang says 'AGI has arrived' and congratulates OpenAI",
+      "merged": [
+        {
+          "story_id": "story_40cfe88bb9d2",
+          "title": "Jensen Huang once again declares that ‘AGI has arrived’ — but his GPT-6 celebrat",
+          "shared_signals": [
+            "person:huang",
+            "v:nvidia"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_959b9c35d5e6",
+      "rep_title": "AI Agent 的安全围栏：DeepSeek Harness 沙箱隔离策略全解析",
+      "merged": [
+        {
+          "story_id": "story_41e008043a3a",
+          "title": "DeepSeek Harness 从零上手：从认识到写出第一个插件",
+          "shared_signals": [
+            "model:deepseek-harness",
+            "v:deepseek"
+          ]
+        },
+        {
+          "story_id": "story_c31927bc3eb8",
+          "title": "你还在用浏览器使用 DeepSeek Harness 吗？为你的 DSH 打开一个客户端吧",
+          "shared_signals": [
+            "model:deepseek-harness",
+            "v:deepseek"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_9796580b8d66",
+      "rep_title": "AI startup micro1 bids $12.5M for Spirit’s records, topping Google’s agreed $10M",
+      "merged": [
+        {
+          "story_id": "story_c849d032a1b3",
+          "title": "Filing: AI training data startup Micro1 offers to pay $12.5M for Spirit Airlines",
+          "shared_signals": [
+            "num:1.0e+07",
+            "num:1.2e+07",
+            "v:google"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_f66778ed927e",
+      "rep_title": "Artificial Analysis Coding Agent Index: GPT-6 Astra scored 67, roughly equal to ",
+      "merged": [
+        {
+          "story_id": "story_696147dcac83",
+          "title": "Claude Fable 5.1 vs. GPT-6 Astra, who wins on the 3D modeling?",
+          "shared_signals": [
+            "model:gpt-6",
+            "v:anthropic"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_a79c472c43a5",
+      "rep_title": "Fermat's Last Theorem: Anthropic has beaten me to it",
+      "merged": [
+        {
+          "story_id": "story_657eb9f9d824",
+          "title": "Fermat's Last Theorem: Anthropic has beaten me to it",
+          "shared_signals": [
+            "t:fermat",
+            "v:anthropic"
+          ]
+        },
+        {
+          "story_id": "story_ce34dfe9d75e",
+          "title": "The man paid to prove Fermat by hand says Claude did it in 11 days",
+          "shared_signals": [
+            "t:fermat",
+            "v:anthropic"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_05fb2c4805c5",
+      "rep_title": "Meta Releases Muse, a Personal AI Agent With Privacy ‘Built Into It’",
+      "merged": [
+        {
+          "story_id": "story_7e6f206bc794",
+          "title": "Meta launches Muse, a personal AI agent that runs on a dedicated VM in Meta's cl",
+          "shared_signals": [
+            "t:release",
+            "v:meta"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    },
+    {
+      "representative": "story_0435168aac47",
+      "rep_title": "OpenAI puts $1bn behind cyber defence for water utilities and community banks",
+      "merged": [
+        {
+          "story_id": "story_83419a1843d5",
+          "title": "OpenAI puts its money where its mouth is, offers $1 billion in AI credits to cyb",
+          "shared_signals": [
+            "num:1.0e+09",
+            "v:openai"
+          ]
+        }
+      ],
+      "reason": "event_signature"
+    }
+  ]
 }

@@ -149,11 +149,6 @@
       "title_hash": "ab00d0fc",
       "created_at": "2026-09-03T09:55:42.636683Z"
     },
-    "story_0fd4fc0249e5|937e7c00": {
-      "reason": "【Gemini 3.8 Flash 与 Gemini 3.8 Flash Cyber 正式发布】，这是六周内的第三次 Flash 版本更新。Gemini 3.8 Flash 定价维持每百万输入 token 0.75 美元、输出 token 3.75 美元，【在 DeepSWE v1.1 长周期软件工程基准中超越多数更大规模前沿模型】，在 Vals Finance Agent V2 和 Harvey's Legal Agent Benchmark 上优于前代及其他前沿模型，HLE-Verified 得分达 54.9%。该模型通过执行额外推理步骤和迭代调用工具提升复杂任务表现。【Gemini 3.8 Flash Cyber 专攻网络安全】，具备漏洞检测与自动补丁修复能力，仅通过 Fairwind Program 向可信防御者开放。两款模型共享基础智能核心，并通过长周期代理循环递归评估优化，其编码与推理能力提升部分源于网络安全领域的高强度训练。",
-      "title_hash": "937e7c00",
-      "created_at": "2026-09-03T10:14:36.328505Z"
-    },
     "tt1|323cd9a0": {
       "zh_title": "加速科研：OpenAI 内部视角",
       "created_at": "2026-09-07T01:49:09.499191Z"
@@ -167,9 +162,10 @@
       "created_at": "2026-09-07T01:49:12.339794Z"
     },
     "story_6129f245443c|bd988f72": {
-      "reason": "【NVIDIA 宣布已同意以 129.303 亿美元收购 Hugging Face】，黄仁勋在官方博客公布了这一消息。Hugging Face 目前拥有【超过 1800 万开发者】，平台上托管着超过 300 万个模型、50 万个数据集和 100 万个应用，服务的企业客户数量超过 20 万家。",
+      "reason": "【NVIDIA 宣布以 129.303 亿美元收购开源 AI 模型与数据集托管平台 Hugging Face】，黄仁勋在官方博客公布了这一消息。Hugging Face 2023 年估值为 45 亿美元，目前拥有超过 1800 万开发者，托管超过 300 万个模型、50 万个数据集和 100 万个应用，服务超过 20 万家企业。黄仁勋表示，开放模型能强化安全与网络安全、加速创新与扩散、支持主权 AI，让开发者、初创公司、大学和各国都能构建并定制 AI，NVIDIA 将成为 Hugging Face 及其社区和开放模型未来的好归宿。Hugging Face 联创 Thomas Wolf 确认了这笔交易，回顾团队自 2016 年以来的历程，称对用户当天没有任何变化，将继续把 Hub 打造为开放、独立、计算无关的平台，并借助 NVIDIA 的资源推进开源 AI。Peter Steinberger 转发评论这是绝佳组合。Perplexity CEO Aravind Srinivas 则表示，【可便捷训练和部署开放模型的仓库对 AI 保持公众可及和有用至关重要】，乐见 NVIDIA 以此支持开源社区。",
       "title_hash": "bd988f72",
-      "created_at": "2026-09-07T01:49:16.144999Z"
+      "created_at": "2026-09-09T02:37:54.046030Z",
+      "cluster_fingerprint": "029a70e93b11"
     },
     "story_cc153614bc7c|1c8c1447": {
       "reason": "在 OpenAI 内部，【coding agents 正在重塑 AI 研究的方式】。围绕 agent 使用情况的早期数据，主要聚焦于四个维度：【agent 的使用情况、实验速度、任务复杂度以及科研加速效果】。",
@@ -177,9 +173,10 @@
       "created_at": "2026-09-07T01:49:18.756810Z"
     },
     "story_fe67d000c4c1|bedcc90e": {
-      "reason": "OpenAI 宣布 【GPT-6 Astra】 现已向所有 Pro、Enterprise 和 Business Premium 用户开放。该模型可在 ChatGPT Work 和 Codex 中使用，同时已上线 API。【Plus 和 Business 用户的推送可能需要几天时间】。",
+      "reason": "OpenAI 于 9 月 3 日发布【旗舰模型 GPT-6 Astra】，API 模型名为 gpt-6-astra，定价为每百万输入 Token 10 美元、输出 50 美元。该模型在电脑使用、浏览、软件工程及专业工作方面达到最先进性能，ARC-AGI 3 得分 99.9%，并被首次列为 Preparedness Framework 下关键级网络安全模型。总裁 Greg Brockman 称其【可能已接近 AGI】，并以 Welcome to the AGI era 结束发布。GPT-6 Astra 已在 ChatGPT Work 和 Codex 中向 Pro、Enterprise 和 Business Premium 用户开放，Plus 和 Business 用户的推送需数天时间，后续还将上线 AWS Bedrock。因企业安全客户先于高价 Pro 订阅者获得访问权限引发不满，CEO 奥尔特曼 9 月 4 日在 X 平台致歉，并提出补偿机制：【自 9 月 4 日起，付费用户每缺少一天 Astra 访问即获一次额度重置】。",
       "title_hash": "bedcc90e",
-      "created_at": "2026-09-07T01:49:55.435860Z"
+      "created_at": "2026-09-09T01:27:50.932799Z",
+      "cluster_fingerprint": "4b3c5855e6a6"
     },
     "story_9dd7043831a5|eb352dde": {
       "reason": "GitHub Copilot 应用支持【同时运行多个并行 Agent】。这篇新手指南的核心内容，是指导用户如何在 GitHub Copilot 应用中配置并执行并行 Agent 操作。原文指出，当用户实际体验这一功能后，【对它的感受会从最初的恐惧转变为觉得它非常强大】。",
@@ -187,9 +184,10 @@
       "created_at": "2026-09-07T01:50:07.113611Z"
     },
     "story_f2dd19138871|a8d8cf0e": {
-      "reason": "Anthropic 发布了【首个完整经计算机验证的费马大定理证明】。整个形式化过程由 Claude 在 11 天内大体自主完成，最终产出 【1300 万行 Lean 代码】，共证明了 30,300 个定理，其中 29,500 个被用于最终的证明构建。这一代码规模【超过 Mathlib 现有体量的 5 倍以上】。",
+      "reason": "Anthropic 于 9 月 4 日宣布，【Claude 在基本自主运行 11 天后】，完成了【费马大定理首个端到端、经计算机检查的 Lean 形式化证明】。该证明基于 Lean 4.33.1 和 Mathlib，遵循 Frey、Serre、Ribet、Wiles 及 Taylor-Wiles 的论证路线，以 Apache 2.0 协议开源发布。整个形式化过程生成了超过 1300 万行 Lean 代码，证明了 30,300 个定理，最终采用其中 29,500 个，整体规模达到 Mathlib 的五倍以上，是【迄今最大的 Lean 证明】。",
       "title_hash": "a8d8cf0e",
-      "created_at": "2026-09-07T01:50:12.748014Z"
+      "created_at": "2026-09-09T01:27:41.033713Z",
+      "cluster_fingerprint": "a8d657a2374e"
     },
     "story_9e01fe141645|dbef713c": {
       "reason": "Anthropic 宣布 Claude 在上个月完成了 【Fermat 大定理的首个形式化证明】，这也是【迄今规模最大的 Lean 证明】。该证明共生成超过 1300 万行 Lean 代码。\n\n数学领域验证一项重大证明的正确性通常需要耗费数年时间，而【形式化正是将数学证明转化为计算机可验证形式的过程】。此次 Claude 完成的成果，意味着 Fermat 大定理的证明逻辑已被完整转译为机器可读、可逐行校验的代码结构。整个形式化产出的代码量突破 1300 万行，使其成为目前基于 Lean 构建的所有形式化证明中体量最大的一个。",
@@ -220,6 +218,352 @@
       "reason": "Hugging Face 发布开源工具 funes，【为编码智能体提供可本地持有的记忆层】。该工具支持 Claude Code、Codex、pi、Hermes 等编码智能体，【核心机制是将已有的会话记录索引成 Lance 数据集】。使用时只需执行一条 funes add 命令，即可让 Agent 自主召回原始出处，召回信息包含具体的 Agent、时间戳、会话及轮次。",
       "title_hash": "845c6e27",
       "created_at": "2026-09-07T06:07:20.794869Z"
+    },
+    "tt1|188929f5": {
+      "zh_title": "1Password 用 Codex 让工程团队生产力提升 21%",
+      "created_at": "2026-09-09T01:26:21.851954Z"
+    },
+    "tt1|e1d1db2d": {
+      "zh_title": "GPT-5.6 Sol 如何助力运行量子计算实验",
+      "created_at": "2026-09-09T01:26:22.449981Z"
+    },
+    "tt1|b2a9fbbc": {
+      "zh_title": "AlphaGenome Atlas：预测人类基因组中每一个DNA碱基变化的图谱",
+      "created_at": "2026-09-09T01:26:23.114099Z"
+    },
+    "tt1|9972c2a5": {
+      "zh_title": "Project HydraFusion：多模型协同编排，实现前沿级质量",
+      "created_at": "2026-09-09T01:26:23.698843Z"
+    },
+    "tt1|c7199cdd": {
+      "zh_title": "WeatherNext 3 发布：我们迄今最先进、最精准的全球天气 AI 模型",
+      "created_at": "2026-09-09T01:26:24.399145Z"
+    },
+    "tt1|585dbf06": {
+      "zh_title": "GPT-6 能力大幅跃升，将解锁全新应用场景，即将登陆 Replit 供你体验！",
+      "created_at": "2026-09-09T01:26:25.124314Z"
+    },
+    "tt1|cfaeff7f": {
+      "zh_title": "尽管落后于竞争对手，Mistral AI 仍完成欧洲史上最大科技融资，募资30亿欧元",
+      "created_at": "2026-09-09T01:26:26.091275Z"
+    },
+    "tt1|b145cc94": {
+      "zh_title": "六周连发三款平价模型，Gemini 3.8 Flash 来了，但 Google 的前沿模型依然不见踪影",
+      "created_at": "2026-09-09T01:26:27.015597Z"
+    },
+    "tt1|1214e938": {
+      "zh_title": "Seattle Times 与 Newsday 起诉 OpenAI 和 Microsoft 侵权",
+      "created_at": "2026-09-09T01:26:27.632745Z"
+    },
+    "tt1|19308c6e": {
+      "zh_title": "Meta AI 发布 Muse Spark 1.3：智能体编程模型，工具调用量比 1.2 版减少约 20%，Token 消耗降低约 25%",
+      "created_at": "2026-09-09T01:26:28.584417Z"
+    },
+    "tt1|c124573b": {
+      "zh_title": "NVIDIA 发布开源个人 AI 路由器 PAIR：可将本地 AI 推理请求分发至 RTX、DGX Spark 和 Mac 节点",
+      "created_at": "2026-09-09T01:26:29.509798Z"
+    },
+    "tt1|bcf0e428": {
+      "zh_title": "Google 称新模型 Gemini 3.8 Flash “更卖力”，但成本可能更高",
+      "created_at": "2026-09-09T01:26:30.438140Z"
+    },
+    "tt1|0215eafe": {
+      "zh_title": "Google DeepMind 发布 Gemini 3.8 Flash 与 Gemini 3.8 Flash Cyber：同一核心模型，两套访问权限",
+      "created_at": "2026-09-09T01:26:31.280420Z"
+    },
+    "tt1|9392f1f4": {
+      "zh_title": "特朗普政府力挺 OpenAI，介入《纽约时报》版权诉讼",
+      "created_at": "2026-09-09T01:26:32.368963Z"
+    },
+    "tt1|f58d9b15": {
+      "zh_title": "Google 发布 Gemini 3.8 Flash，六周内连推三款 Flash 模型",
+      "created_at": "2026-09-09T01:26:33.274772Z"
+    },
+    "tt1|ddd4e85d": {
+      "zh_title": "Nvidia 收购 HuggingFace 后，Georgi Gerganov 谈 llama.cpp/ggml 的未来",
+      "created_at": "2026-09-09T01:26:34.189455Z"
+    },
+    "tt1|5caa8bd0": {
+      "zh_title": "OpenAI 发布 GPT-6 Astra，宣告“欢迎来到 AGI 时代",
+      "created_at": "2026-09-09T01:26:34.938361Z"
+    },
+    "tt1|3bd50561": {
+      "zh_title": "OpenAI 悄悄修改 GPT-6 Astra 评测指标，疑似为其“量身定制”，上线后仍在持续调整其他指标（Emily Forlini/Fortune）",
+      "created_at": "2026-09-09T01:26:37.370342Z"
+    },
+    "tt1|9ae91794": {
+      "zh_title": "官宣：Nvidia 130亿美元收购 Hugging Face",
+      "created_at": "2026-09-09T01:26:40.243419Z"
+    },
+    "tt1|c68125c6": {
+      "zh_title": "Anthropic：Claude 用 Lean 编程语言形式化证明费马大定理，11天里几乎全程自主完成",
+      "created_at": "2026-09-09T01:26:41.282028Z"
+    },
+    "tt1|fabfc6a1": {
+      "zh_title": "M.G. Siegler：OpenAI 把 GPT-6 Astra 吹成 AGI 太轻率，彻底坐实了这词就是个营销噱头",
+      "created_at": "2026-09-09T01:26:42.556855Z"
+    },
+    "tt1|a3008268": {
+      "zh_title": "GPT-6 Astra 来了，OpenAI 认为它或将开启 AGI 时代",
+      "created_at": "2026-09-09T01:26:43.519070Z"
+    },
+    "tt1|b47c68ea": {
+      "zh_title": "OpenAI 称 GPT-6 Astra 为“全球最强电脑操作模型”：测试中预约车管所、搜职位比普通人还快（Maxwell Zeff/Wired）",
+      "created_at": "2026-09-09T01:26:44.692309Z"
+    },
+    "tt1|71f63760": {
+      "zh_title": "OpenAI 正式发布 GPT-6 Astra，一款打破边界的全新模型",
+      "created_at": "2026-09-09T01:26:46.705628Z"
+    },
+    "tt1|96db4d2b": {
+      "zh_title": "OpenAI 向月费 100 美元或 200 美元的 Pro 用户开放 GPT-6 Astra（Zac Hall/9to5Mac）",
+      "created_at": "2026-09-09T01:26:47.682785Z"
+    },
+    "tt1|3a04b0b8": {
+      "zh_title": "OpenAI 发布 GPT-6 Astra，Greg Brockman 称 AGI 已经到来",
+      "created_at": "2026-09-09T01:26:48.433097Z"
+    },
+    "tt1|1c485115": {
+      "zh_title": "OpenAI 称 GPT-6 Astra 是“全球最智能、最对齐的模型",
+      "created_at": "2026-09-09T01:26:49.272475Z"
+    },
+    "tt1|277b34d7": {
+      "zh_title": "OpenAI：内部模型“能力远超 GPT-6 Astra”，1万个智能体并行工作88小时攻克纳维-斯托克斯问题（Madison Mills/Axios）",
+      "created_at": "2026-09-09T01:26:50.602594Z"
+    },
+    "tt1|e0c9e680": {
+      "zh_title": "OpenAI GPT-6 Astra 借助 Provider Adapter Harness 在 ARC-AGI-3 上拿下 99.95% 高分",
+      "created_at": "2026-09-09T01:26:51.712856Z"
+    },
+    "tt1|88e167d6": {
+      "zh_title": "天时地利”：Nvidia 确认 129 亿美元收购 Hugging Face，AI 格局或迎巨变",
+      "created_at": "2026-09-09T01:26:52.648883Z"
+    },
+    "tt1|19d858d9": {
+      "zh_title": "Nvidia 斥资 129 亿美元收购 Hugging Face",
+      "created_at": "2026-09-09T01:26:53.891994Z"
+    },
+    "tt1|6bc4faa5": {
+      "zh_title": "Nvidia 确认以 129.3 亿美元收购 Hugging Face，并承诺保持其开源",
+      "created_at": "2026-09-09T01:26:54.922620Z"
+    },
+    "tt1|1ead1c45": {
+      "zh_title": "Nvidia 斥资 129 亿美元收购 AI 平台 Hugging Face",
+      "created_at": "2026-09-09T01:26:55.709973Z"
+    },
+    "tt1|c830b373": {
+      "zh_title": "Nvidia 129亿美元收购 Hugging Face，豪赌开源AI",
+      "created_at": "2026-09-09T01:26:56.718945Z"
+    },
+    "tt1|07bbe02f": {
+      "zh_title": "Nvidia 130亿美元收购 Hugging Face 交易正式确认",
+      "created_at": "2026-09-09T01:26:57.612991Z"
+    },
+    "tt1|5854f6b8": {
+      "zh_title": "Nvidia 与 Hugging Face 那笔 129.303 亿美元的交易里，藏着一个彩蛋",
+      "created_at": "2026-09-09T01:26:58.688204Z"
+    },
+    "tt1|d6bfce19": {
+      "zh_title": "Bloomberg：完成尽调后，Anthropic 放弃约 60 亿美元收购 Decart 的谈判",
+      "created_at": "2026-09-09T01:26:59.550923Z"
+    },
+    "tt1|e4a62ffb": {
+      "zh_title": "作家与出版商就 Anthropic 15亿美元 AI 和解金展开争夺",
+      "created_at": "2026-09-09T01:27:00.431103Z"
+    },
+    "tt1|da5edb73": {
+      "zh_title": "Nvidia 同意以 129 亿美元收购 Hugging Face，规模仅次于去年底 200 亿美元买下 Groq 资产（Ari Levy/CNBC）",
+      "created_at": "2026-09-09T01:27:01.518722Z"
+    },
+    "tt1|cfa028ce": {
+      "zh_title": "DeepSeek 拟为内蒙古新数据中心大批量采购华为芯片",
+      "created_at": "2026-09-09T01:27:05.476608Z"
+    },
+    "tt1|be07ce5e": {
+      "zh_title": "Bloomberg：消息称 DeepSeek 计划在内蒙古数据中心部署超16万颗华为 Ascend 950DT 芯片，将建成最大规模华为芯片集群之一",
+      "created_at": "2026-09-09T01:27:06.734768Z"
+    },
+    "tt1|cadb6ca9": {
+      "zh_title": "OpenAI 和 Microsoft 遭地方报纸起诉侵犯版权",
+      "created_at": "2026-09-09T01:27:07.585389Z"
+    },
+    "tt1|fe4cf498": {
+      "zh_title": "又有两家新闻机构起诉 OpenAI 和 Microsoft 侵犯版权",
+      "created_at": "2026-09-09T01:27:09.359660Z"
+    },
+    "tt1|d32b7791": {
+      "zh_title": "集体诉讼范围扩大：一批 Claude 订阅用户指控 Anthropic 虚假宣传 Max 套餐的使用限制（Hayden Field/The Verge）",
+      "created_at": "2026-09-09T01:27:12.033483Z"
+    },
+    "tt1|081f380c": {
+      "zh_title": "黄仁勋再次宣称“AGI已来”，但这场GPT-6庆功宴怎么看都像是在给下一代Nvidia GPU带货",
+      "created_at": "2026-09-09T01:27:12.913824Z"
+    },
+    "tt1|7d832d65": {
+      "zh_title": "Bloomberg：AI训练数据初创公司Micro1拟斥资1250万美元收购Spirit Airlines数据，但后者已与Google签下千万美元合同",
+      "created_at": "2026-09-09T01:27:13.988774Z"
+    },
+    "tt1|1ad9a84a": {
+      "zh_title": "3D 建模实测：Claude Fable 5.1 和 GPT-6 Astra 谁更强？",
+      "created_at": "2026-09-09T01:27:14.806906Z"
+    },
+    "tt1|288dcdec": {
+      "zh_title": "费马大定理：Anthropic 抢在我前面了",
+      "created_at": "2026-09-09T01:27:15.628619Z"
+    },
+    "tt1|b488d3fb": {
+      "zh_title": "拿钱手算证明费马大定理的男人：Claude 11天就搞定了",
+      "created_at": "2026-09-09T01:27:16.494626Z"
+    },
+    "tt1|a93668b3": {
+      "zh_title": "Meta 推出个人 AI 智能体 Muse：运行在专属云端虚拟机上，美国首发，即将支持 AI 眼镜（Ina Fried/Axios）",
+      "created_at": "2026-09-09T01:27:17.461273Z"
+    },
+    "tt1|a0dbd0f2": {
+      "zh_title": "OpenAI 豪掷 10 亿美元 AI 额度，真金白银支持网络安全防御者",
+      "created_at": "2026-09-09T01:27:18.308023Z"
+    },
+    "tt1|5db387ff": {
+      "zh_title": "Google 发布 Gemini 3.8 Flash，并推出仅限政府使用的网络安全专用版",
+      "created_at": "2026-09-09T01:27:19.433975Z"
+    },
+    "tt1|8d96674f": {
+      "zh_title": "特朗普政府在《纽约时报》版权诉讼中站队 OpenAI",
+      "created_at": "2026-09-09T01:27:20.139389Z"
+    },
+    "tt1|b7b63615": {
+      "zh_title": "Gemini 3.8 Flash 模型说明卡 [pdf]",
+      "created_at": "2026-09-09T01:27:27.230284Z"
+    },
+    "story_53b776c9c7b0|a5c12d03": {
+      "reason": "1Password 的工程团队使用 Codex 快速构建新功能和内部工具，【使整体生产力提升了 21%】。在开发过程中，团队借助 Codex 【将代码推进至可投产状态】，同时维持了严格的安全策略。",
+      "title_hash": "a5c12d03",
+      "created_at": "2026-09-09T01:28:12.357128Z"
+    },
+    "story_6c71d9371c7c|d03db869": {
+      "reason": "一名 MIT 研究人员使用 【GPT-5.6 Sol】 搭配 Codex，实现了【量子计算实验的自主运行、结果分析与 qubit 校准】。整个流程中，GPT-5.6 Sol 与 Codex 协同工作，【无需人工逐步干预即可自动执行实验操作】，对产出的实验数据进行分析，并完成 qubit 的校准任务。",
+      "title_hash": "d03db869",
+      "created_at": "2026-09-09T01:28:18.827663Z"
+    },
+    "story_a927f6f1604a|44f78939": {
+      "reason": "AlphaGenome Atlas 是一个包含【人类基因组中全部 90 亿种单核苷酸变异预测结果】的平台，即覆盖了人类 DNA 中每一个可能的单字母变化。该数据集规模达 1PB，是 AlphaFold Database 的三十倍以上。\n\n此前用于预测基因变异如何影响生物过程的 AI 模型 AlphaGenome 主要用于分析特定变异，而 AlphaGenome Atlas 通过大规模预计算其预测结果，提供了覆盖整个基因组的整体视图。为帮助研究人员快速定位最具影响力的基因变化，平台同步发布了 【AlphaGenome Variant Impact（AVI）评分】。AVI 将 AlphaGenome 与专门预测蛋白质改变型 DNA 变异影响的 AlphaMissense 两个模型的预测结果合并为一个数值，使研究人员能够同时对变异进行排序并解读其分子效应。\n\n外部合作者已利用 AlphaGenome Atlas 【在未解决的罕见病研究中识别并经实验验证了关键变异】，同时找到了与常见性状相关的罕见变异。该平台目前通过网站门户、API 以及作为 Google Antigravity 中的一项技能向学术研究免费开放。",
+      "title_hash": "44f78939",
+      "created_at": "2026-09-09T01:28:45.185822Z"
+    },
+    "story_0f3277bac9d6|67964929": {
+      "reason": "【HydraFusion 是一个多模型协同编排项目】，旨在通过选择性编码工作流实现前沿级质量。在受控的离线评估中，【HydraFusion 的选择性编码工作流在表现上匹配或超过了作为基线的 Opus 5，同时降低了估算的工作流成本】。目前，该项目已作为【研究预览版集成至 GitHub Copilot】 中提供使用。",
+      "title_hash": "67964929",
+      "created_at": "2026-09-09T01:28:49.128028Z"
+    },
+    "story_a0931d161b21|b1d5eb8e": {
+      "reason": "【WeatherNext 3 已正式发布】，该模型直接利用实时卫星观测数据进行学习，每小时生成一次高分辨率预报，并新增了精确降水预测与清洁能源相关变量。在 Brightband 的独立实时评估中，它被评为【目前最先进、最精准的全球天气 AI 模型】。\n\n分辨率方面，WeatherNext 3 可在多个空间尺度上输出结果：温度、湿度等关键地表变量达到 5 公里分辨率，其他地表变量为 10 公里，风速等大气变量为 25 公里。相比上一代 WeatherNext 2 在 25 公里网格上每 6 小时更新一次的规格，【新模型提供的全球天气图景精细度提升了约五倍】。\n\n架构上，该系统将实时的一小时静止卫星图像拼接数据与传统历史分析数据共同输入一个 Functional Generative Network mesh transformer，能够同时输出密集的网格化气象场、离散的气旋路径，并原生支持站点级稀疏坐标的预测。目前 【WeatherNext 3 已集成至 Search、Gemini、Maps、Google Maps Platform 及 Cloud 等产品线】。",
+      "title_hash": "b1d5eb8e",
+      "created_at": "2026-09-09T01:29:33.191671Z"
+    },
+    "story_93b4d1afb6fc|1644750b": {
+      "reason": "Mistral 宣布完成 【30 亿欧元 D 轮融资】，投后估值超过 210 亿欧元。公司在官方公告中称，这是【欧洲科技公司有史以来最大的股权融资】，距其成立仅三年。本轮资金将用于推动 sovereign、open-weight AI 成为技术前沿。同一时期，AI 数据中心新贵 Crusoe 也完成了 30 亿美元融资，估值达到 300 亿美元，并刚签下 【130 亿美元大单】。",
+      "title_hash": "1644750b",
+      "created_at": "2026-09-09T01:30:10.796320Z",
+      "cluster_fingerprint": "c3b746ad9658"
+    },
+    "story_a4d86070440b|03b7c119": {
+      "reason": "OpenAI 宣布分享 【Navier-Stokes 千禧年大奖难题的一个解答】。该问题探讨 Navier-Stokes 方程描述的光滑三维流体运动是否会被破坏，已约 90 年未解。此次证明由【一组智能体】完成，它们使用的是一个 OpenAI 下一代模型，其能力【显著强于 GPT-6 Astra】。",
+      "title_hash": "03b7c119",
+      "created_at": "2026-09-09T01:30:14.885518Z"
+    },
+    "story_fb5409474b02|f0b31cf8": {
+      "reason": "Hugging Face CEO Clement Delangue 宣布【与 NVIDIA 达成约 129.3 亿美元的收购意向】，称【开源 AI 正处于拐点】，需要更多算力与支持。NVIDIA 方面确认了这笔交易，并承诺【收购后将保持 Hugging Face 平台的开放与独立运作】。有观点指出，若没有 Hugging Face，Stable Diffusion 的发布、规模化以及后续模型的涌现将难以实现。",
+      "title_hash": "f0b31cf8",
+      "created_at": "2026-09-09T01:30:53.026494Z",
+      "cluster_fingerprint": "d11e00ab071d"
+    },
+    "story_11dab6202ba6|597ceac7": {
+      "reason": "Meta 在五个月内发布了第四个 Muse Spark 版本 【Muse Spark 1.3】。其 max 变体目前仅向合作伙伴限时预览，在 Artificial Analysis Intelligence Index 上得 62 分；xhigh 版得 61 分，逼近 Claude 与 GPT-5.6。该模型被定位为【智能体编码模型】，相比 Muse Spark 1.2 【工具调用量减少约 20%，Token 消耗降低约 25%】，同时提升了科学推理能力，且价格维持不变。有评论指出，OpenAI 与 Anthropic 之间的竞争格局在短时间内已发生变化，并认为 【Gemini 已被甩开】。",
+      "title_hash": "597ceac7",
+      "created_at": "2026-09-09T01:31:50.129439Z",
+      "cluster_fingerprint": "1027f9834bd5"
+    },
+    "story_292bbb5879c6|1afb13a3": {
+      "reason": "【Anthropic 正加速向医疗与生命科学领域扩张】，通过专职招聘经理密集推进对 AI 生物技术公司的收购、投资与合作，战略覆盖从药物发现到临床开发的核心环节。此前，该公司以约四亿美元股票交易收购了成立仅八个月的 AI 生物技术初创公司 Coefficient Bio，原团队已并入其医疗与生命科学部门，此举意在快速获取实验室经验。在资本层面，Anthropic 在完成尽职调查后放弃了以约六十亿美元收购 AI 初创公司 Decart 的交易。技术工具方面，【Anthropic 推出了研究平台 Claude Science】，可整合多种研究工具并调用专业模型辅助研究人员；同时发布了 MHS 模型硬件标准的研究预览版，试图通过统一设备控制接口降低实验过程中的接入与协调成本，【使模型能力贯通软件、算力与物理设备】。该开放接口允许其他类似模型接入，但其复用性及能为一线研究者节省多少实际时间仍有待观察。",
+      "title_hash": "1afb13a3",
+      "created_at": "2026-09-09T01:31:59.712205Z",
+      "cluster_fingerprint": "d6caa330d44e"
+    },
+    "story_777e0b780ea4|5a27d2bc": {
+      "reason": "美国司法部在 OpenAI 与纽约时报的版权诉讼中提交意见书，正式代表美国政府支持 OpenAI 的核心合理使用主张。意见书认为，【用受版权文本训练 LLM 一般应属合理使用】，模型训练具有非凡转换性，并以国家安全为由警告【全面许可要求会削弱美国 AI 开发者竞争力】。该意见书属建议性质、不约束法院，仍将数据获取方式与具体输出是否复制受保护段落作为独立问题留给法院逐案判断。",
+      "title_hash": "5a27d2bc",
+      "created_at": "2026-09-09T01:32:04.679549Z",
+      "cluster_fingerprint": "23804ecb2f86"
+    },
+    "tt1|7cabfdaf": {
+      "zh_title": "Google Gemini 3.8 Flash 与网络安全",
+      "created_at": "2026-09-09T01:41:17.555691Z"
+    },
+    "story_2a70e38b6ec4|4f0cffd6": {
+      "reason": "Anthropic 发布了 【Claude Fable 5.1 与 Claude Mythos 5.1】，两者底层为同一模型，区别在于安全限制级别。Fable 5.1 已全面开放，Mythos 5.1 仅通过受信任访问计划提供，专为网络安全和生命科学领域设计。按 token 计费的典型工作负载成本比 Fable 5 降低约 25%，高度 agentic 的工作流节省可达约 45%。新推出的 Enterprise Frontier Safeguards（EFS）将数据存储在客户控制的云基础设施中实现【零数据留存】，将于今年秋季晚些时候分阶段向企业客户开放。安全防护误报率显著下降，网络安全领域误报拦截减少 60%，Fable 5.1 可用于发现软件漏洞但不能用于开发漏洞利用程序。Anthropic 与美国政府合作建立了访问计划，即将面向科学家开放 Mythos 5.1 的高级生物学能力。Fable 5.1 在 Low 或 Medium effort 设置下即可达到【接近或优于 Fable 5 的结果且成本更低】。",
+      "title_hash": "4f0cffd6",
+      "created_at": "2026-09-09T02:38:57.149338Z"
+    },
+    "story_3af91fe6473f|7cd5a15c": {
+      "reason": "OpenAI 的 【GPT-6 Astra】 在 ARC-AGI-3 Semi-Private 上取得 SOTA，Standard harness 得分 62.7%（成本 $26K），Provider Adapter harness 得分 99.9%（成本 $19K），超越人类动作效率基线。该模型正向 ChatGPT Pro 和 Business 推送，部分用户在 ChatGPT Work 和 Codex 中看到；OpenAI 员工 thsottiaux 表示将尽快推送至全部 Plus 用户，API 发布也在准备中。Perplexity CEO Aravind Srinivas 称 Astra 在 WANDR 评测居首，将向 Perplexity Computer 的 Pro 和 Max 用户开放。安全上，Astra 幻觉少于 GPT-5.6 Sol，直接提示词注入防御率 99.99%，多轮自适应攻击降至约 67%。Rohan Paul 梳理系统卡指出其【控制链式思维的能力从 16.1% 升至 60.9%，可监控性下降】。此外，【OpenAI 自 9 月 3 日发布官方公告以来多次修改评测基准数据】，幻觉率曾从 4.2% 降至 2% 后又改回。",
+      "title_hash": "7cd5a15c",
+      "created_at": "2026-09-09T01:42:13.964436Z",
+      "cluster_fingerprint": "7d561e498d96"
+    },
+    "story_3550a4d29815|52cf8934": {
+      "reason": "在云端全天候运行自主 AI Agent，【每月成本可控制在 5.70 美元】。标准 Serverless 容器无流量时缩容至零会终止后台循环并清空内存，多容器并发还会覆盖状态文件；常规虚拟机闲置也要 15 到 25 美元，fractional VM 需 7 美元且需自行管理基础设施。【Cloud Run instances 提供始终在线的单一容器】，共享 CPU 每月 5.70 美元，自带免费 HTTPS 端点并支持挂载云存储为本地磁盘。基于该方案搭建的个人科技简报 Agent 作为后台守护进程持续运行，每 30 分钟自动唤醒抓取 Hacker News 等资讯。Cloud Run instances 最长每 7 天自动重启一次，Agent 需在重启后恢复调度。它通过 POST /api/webhook 接收推送，过滤付费墙与广告后调用 【Gemini 2.5 Flash】 摘要，其输入 token 价格为每百万 0.30 美元，换用 Gemini 3.5 或 3.6 Flash 升至 1.50 美元。结果以 Markdown 格式连同已读 URL 存入挂载目录 /data，同时对外提供 Web 仪表盘供阅读。",
+      "title_hash": "52cf8934",
+      "created_at": "2026-09-09T02:39:15.986697Z"
+    },
+    "story_50c501aff857|ff56f8d0": {
+      "reason": "xAI 在 Grok Bot 的设计中，【将核心交互对象从单次会话重构为持久化智能体】。Grok Bot 以 Bot 为主体，每个 Bot 拥有独立的身份、记忆、专属计算机和工具。\n\n界面通过头像动效直观呈现 Bot 的六种运行状态：空闲、工作、等待、阻塞、思考和完成。用户在工作区对 Bot 的操作被划分为【三级访问权限】：状态查看、内容预览和直接接管。",
+      "title_hash": "ff56f8d0",
+      "created_at": "2026-09-09T02:39:22.165953Z"
+    },
+    "story_d7d617c533bb|06ca99ce": {
+      "reason": "Anthropic 团队在一篇文章中提出，【通过三种方法可以在不牺牲性能的前提下降低使用 Claude Platform 的成本】。第一种方法是优化 prompt cache 的命中率；第二种是清除在升级到前沿 Claude 模型后依然保留的提示词反模式；第三种是对 effort 进行校准。文章指出，【综合运用这三个手段即可实现降本增效的目标】。",
+      "title_hash": "06ca99ce",
+      "created_at": "2026-09-09T02:40:27.082632Z"
+    },
+    "story_20abcae7f739|7f23c07d": {
+      "reason": "Anthropic 预计最早于 10 月中旬启动 IPO 路演，计划在 11 月美国中期选举前数日完成上市，招股书公开时间推迟至 9 月下旬。部分投资者给出的估值预期高达 【2 万亿美元】，目标募资 1,000 亿美元。若按此规模达成，将超越 SpaceX 约 1.77 万亿美元的上市估值纪录。\n\n财务数据方面，【Anthropic 年化营收已超过 650 亿美元】，第二季度单季营收超过 115 亿美元，【调整后营业利润已实现盈利】。",
+      "title_hash": "7f23c07d",
+      "created_at": "2026-09-09T02:40:32.294089Z"
+    },
+    "story_0fd4fc0249e5|937e7c00": {
+      "reason": "Google DeepMind 在六周内第三次更新 Flash 系列，发布 【Gemini 3.8 Flash 与 3.8 Flash Cyber】。Gemini Security Lead Raluca Ada Popa 介绍，3.8 Flash 定价维持每百万输入 token 0.75 美元、输出 3.75 美元不变，【在 DeepSWE v1.1 上超越多数更大规模前沿模型】，并在 Vals Finance Agent V2、Harvey's Legal Agent Benchmark 及 HLE-Verified（得分 54.9%）等测试中领先前代。性能提升源于执行更多推理步骤并迭代调用工具，高努力模式下可能消耗更多 token，可切换至低努力级别。同步推出的 3.8 Flash Cyber 专注漏洞检测与自动修补，通过 Fairwind Program 仅向受信防御者开放。两变体共享同一基础智能并由长运行 agentic 循环递归评估优化，网络安全训练反哺了通用编码与推理能力。该模型已接入 B.AI API。外界注意到这是【六周内第三个预算级模型而前沿模型迟迟未更新】，也有声音质疑其实际表现是否匹配基准成绩。",
+      "title_hash": "937e7c00",
+      "created_at": "2026-09-09T02:47:44.638707Z",
+      "cluster_fingerprint": "e89e7419facb"
+    },
+    "story_76849f67b060|0566a0e1": {
+      "reason": "【Runway 发布了 Runway Plugins】，将新面板直接嵌入 Premiere Pro 和 After Effects。用户可以在时间线内直接生成图像和视频、重绘片段并放置结果。其中的 Edit Studio 功能可基于已有片段，【使用 Aleph 2 按原始时长重新渲染】。该插件支持 macOS 和 Windows，【提供免费下载】，生成功能面向所有付费计划开放，使用时消耗现有额度。",
+      "title_hash": "0566a0e1",
+      "created_at": "2026-09-09T03:07:55.699321Z"
+    },
+    "tt1|4db24b9f": {
+      "zh_title": "西雅图时报和 Newsday 起诉 OpenAI 与 Microsoft，指控其用新闻报道训练 AI；而这两家公司正是西雅图时报的资助方（Todd Bishop/GeekWire）",
+      "created_at": "2026-09-09T03:16:40.037253Z"
+    },
+    "story_433201069aa6|d919f5ce": {
+      "reason": "OpenAI 智能体团队宣布，【一组智能体使用一个能力显著超过 GPT-6 Astra 的下一代模型】，给出了 【Navier-Stokes 千禧年大奖难题的解】。该问题关注三维光滑流体运动的描述是否会失效，已悬置约九十年。\n\n团队同时向 Levent Alpöge 和 Tristan Buckmaster 的数学工作致贺。",
+      "title_hash": "d919f5ce",
+      "created_at": "2026-09-09T06:18:08.559471Z"
+    },
+    "story_ed5258c64646|6592b5bf": {
+      "reason": "xAI 让 Grok Bot 直接访问公司的供应商支出、合同和使用数据，并基于此创建了一个名为 【Haggle Bot】 的采购工具。该工具目前已识别出【超过 10 万美元的直接成本节省】。\n\n具体来看，Haggle Bot 在审查某款 SaaS 产品时，发现其中有 43 个付费席位在过去 90 天内没有任何活动记录，由此节省了 14,220 美元；同时在另一款产品中，找出了每年价值 85,662 美元的未使用 SKU。",
+      "title_hash": "6592b5bf",
+      "created_at": "2026-09-09T06:18:14.293939Z"
+    },
+    "story_bbd546f9bbd7|519448c5": {
+      "reason": "【Claude Cowork 和 Claude Code 新增了后台使用电脑的能力】。用户将任务交给 Claude 后，它会像人一样点击、输入和打开应用来执行操作，【用户在此期间可以去做其他事情】。",
+      "title_hash": "519448c5",
+      "created_at": "2026-09-09T06:30:09.656056Z"
+    },
+    "story_2231837c4c72|51bcc656": {
+      "reason": "Cursor 发布 【Self-Hosted Machines】，将云智能体的工具执行环节迁移到企业自有网络内的机器上运行。在该架构下，【智能体的循环、推理和规划过程依然保留在 Cursor 云端完成，只有具体的工具执行动作会下发到企业内部机器】。\n\n连接方式上，部署在企业机器上的 worker 通过出站的 HTTPS 连接与 Cursor 云端对接，【Cursor 不会主动发起任何连入企业网络的请求】。",
+      "title_hash": "51bcc656",
+      "created_at": "2026-09-09T06:38:09.917980Z"
     }
   }
 }
