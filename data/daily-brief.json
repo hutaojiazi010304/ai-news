@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T06:12:00.132767Z",
+  "generated_at": "2026-09-09T11:37:01.125158Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8346,
-      "importance": 0.8346,
-      "importance_score": 0.8346,
+      "score": 0.8267,
+      "importance": 0.8267,
+      "importance_score": 0.8267,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8588,
+        "recency": 0.8151,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     },
     {
@@ -109,10 +109,25 @@
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
           "published_at": "2026-09-08T17:00:00Z"
+        },
+        {
+          "id": "351a4ba2c29a5a061bc92b822eb300b89b6a46fe",
+          "title": "How GPT‑5.6 Sol helps run quantum computing experiments",
+          "title_zh": null,
+          "title_en": "How GPT‑5.6 Sol helps run quantum computing experiments",
+          "title_original": "How GPT‑5.6 Sol helps run quantum computing experiments",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/codex-quantum-computing-experiments",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-09T07:22:46Z"
         }
       ],
       "source_count": 1,
       "source_names": [
+        "Hacker News",
         "OpenAI News"
       ],
       "items": [
@@ -129,19 +144,33 @@
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
           "published_at": "2026-09-08T17:00:00Z"
+        },
+        {
+          "id": "351a4ba2c29a5a061bc92b822eb300b89b6a46fe",
+          "title": "How GPT‑5.6 Sol helps run quantum computing experiments",
+          "title_zh": null,
+          "title_en": "How GPT‑5.6 Sol helps run quantum computing experiments",
+          "title_original": "How GPT‑5.6 Sol helps run quantum computing experiments",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/codex-quantum-computing-experiments",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-09T07:22:46Z"
         }
       ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8385,
-      "importance": 0.8385,
-      "importance_score": 0.8385,
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.8305,
+      "importance": 0.8305,
+      "importance_score": 0.8305,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8807,
+        "recency": 0.8359,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -152,7 +181,7 @@
         "high_importance"
       ],
       "earliest_at": "2026-09-08T17:00:00Z",
-      "latest_at": "2026-09-08T17:00:00Z",
+      "latest_at": "2026-09-09T07:22:46Z",
       "primary_item": {
         "id": "13b2c55da9da69c3375d377db1ddbb2cd903e5ab",
         "title": "How GPT-5.6 Sol helps run quantum computing experiments",
@@ -170,7 +199,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     },
     {
@@ -218,15 +247,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.818,
-      "importance": 0.818,
-      "importance_score": 0.818,
+      "score": 0.8102,
+      "importance": 0.8102,
+      "importance_score": 0.8102,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8556,
+        "recency": 0.8122,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -255,92 +284,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     },
     {
-      "story_id": "story_16900b8aedbb",
-      "title": "OpenAI 发布 ChatGPT Images 2.5 图像模型 / Introducing ChatGPT Images 2.5",
-      "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
-      "primary_url": "https://openai.com/index/introducing-chatgpt-images-2-5",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
+      "story_id": "story_dc315e1882c1",
+      "title": "关于纳维-斯托克斯千禧奖问题",
+      "url": "https://openai.com/index/navier-stokes-solution",
+      "primary_url": "https://openai.com/index/navier-stokes-solution",
+      "source": "openai.com",
+      "source_name": "Buzzing",
       "sources": [
         {
-          "id": "e403851c39788b25d33193c78b15146edbe25fd8",
-          "title": "OpenAI 发布 ChatGPT Images 2.5 图像模型 / Introducing ChatGPT Images 2.5",
-          "title_zh": "OpenAI 发布 ChatGPT Images 2.5 图像模型",
-          "title_en": "Introducing ChatGPT Images 2.5",
-          "title_original": "Introducing ChatGPT Images 2.5",
-          "summary": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-08T11:30:00Z"
-        },
-        {
-          "id": "b38d0cf2066e85b3b2bd11f3b092d07b23275955",
-          "title": "OpenAI 发布 ChatGPT Images 2.5 图像模型 / ChatGPT Images 2.5",
-          "title_zh": "OpenAI 发布 ChatGPT Images 2.5 图像模型",
-          "title_en": "ChatGPT Images 2.5",
-          "title_original": "ChatGPT Images 2.5",
+          "id": "2939a41654030d09fc713c6f56cb393c55aefc77",
+          "title": "关于纳维-斯托克斯千禧奖问题",
+          "title_zh": "关于纳维-斯托克斯千禧奖问题",
+          "title_en": null,
+          "title_original": "关于纳维-斯托克斯千禧奖问题",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+          "url": "https://openai.com/index/navier-stokes-solution",
           "source": "openai.com",
           "source_name": "Buzzing",
           "site_id": "buzzing",
-          "published_at": "2026-09-08T19:14:22.077000Z"
+          "published_at": "2026-09-08T17:37:53.153000Z"
+        },
+        {
+          "id": "096479c6b13a772e6d8465c1b74d00dc4b3bf5de",
+          "title": "关于纳维-斯托克斯千禧奖问题 / On the Navier–Stokes Millennium Prize Problem",
+          "title_zh": "关于纳维-斯托克斯千禧奖问题",
+          "title_en": "On the Navier–Stokes Millennium Prize Problem",
+          "title_original": "On the Navier–Stokes Millennium Prize Problem",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/navier-stokes-solution",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-08T17:13:21Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "OpenAI News",
+        "Hacker News (黑客新闻)",
         "openai.com"
       ],
       "items": [
         {
-          "id": "e403851c39788b25d33193c78b15146edbe25fd8",
-          "title": "OpenAI 发布 ChatGPT Images 2.5 图像模型 / Introducing ChatGPT Images 2.5",
-          "title_zh": "OpenAI 发布 ChatGPT Images 2.5 图像模型",
-          "title_en": "Introducing ChatGPT Images 2.5",
-          "title_original": "Introducing ChatGPT Images 2.5",
-          "summary": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-08T11:30:00Z"
-        },
-        {
-          "id": "b38d0cf2066e85b3b2bd11f3b092d07b23275955",
-          "title": "OpenAI 发布 ChatGPT Images 2.5 图像模型 / ChatGPT Images 2.5",
-          "title_zh": "OpenAI 发布 ChatGPT Images 2.5 图像模型",
-          "title_en": "ChatGPT Images 2.5",
-          "title_original": "ChatGPT Images 2.5",
+          "id": "2939a41654030d09fc713c6f56cb393c55aefc77",
+          "title": "关于纳维-斯托克斯千禧奖问题",
+          "title_zh": "关于纳维-斯托克斯千禧奖问题",
+          "title_en": null,
+          "title_original": "关于纳维-斯托克斯千禧奖问题",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+          "url": "https://openai.com/index/navier-stokes-solution",
           "source": "openai.com",
           "source_name": "Buzzing",
           "site_id": "buzzing",
-          "published_at": "2026-09-08T19:14:22.077000Z"
+          "published_at": "2026-09-08T17:37:53.153000Z"
+        },
+        {
+          "id": "096479c6b13a772e6d8465c1b74d00dc4b3bf5de",
+          "title": "关于纳维-斯托克斯千禧奖问题 / On the Navier–Stokes Millennium Prize Problem",
+          "title_zh": "关于纳维-斯托克斯千禧奖问题",
+          "title_en": "On the Navier–Stokes Millennium Prize Problem",
+          "title_original": "On the Navier–Stokes Millennium Prize Problem",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/navier-stokes-solution",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-08T17:13:21Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8303,
-      "importance": 0.8303,
-      "importance_score": 0.8303,
+      "score": 0.4922,
+      "importance": 0.4922,
+      "importance_score": 0.4922,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.841,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-09-08T17:13:21Z",
+      "latest_at": "2026-09-08T17:37:53.153000Z",
+      "primary_item": {
+        "id": "2939a41654030d09fc713c6f56cb393c55aefc77",
+        "title": "关于纳维-斯托克斯千禧奖问题",
+        "title_zh": "关于纳维-斯托克斯千禧奖问题",
+        "title_en": null,
+        "title_original": "关于纳维-斯托克斯千禧奖问题",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/navier-stokes-solution",
+        "source": "openai.com",
+        "source_name": "Buzzing"
+      },
+      "peak_score": 0.8355,
+      "persona_id": "pragmatic",
+      "persona_score": 0,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-09T11:37:52.003286Z"
+      }
+    },
+    {
+      "story_id": "story_be047988843b",
+      "title": "The Work Now Within Reach",
+      "url": "https://openai.com/index/the-work-now-within-reach",
+      "primary_url": "https://openai.com/index/the-work-now-within-reach",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "0c225103d8bbdb274acb89884cf1925952614089",
+          "title": "The Work Now Within Reach",
+          "title_zh": null,
+          "title_en": "The Work Now Within Reach",
+          "title_original": "The Work Now Within Reach",
+          "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/the-work-now-within-reach",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-08T13:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "0c225103d8bbdb274acb89884cf1925952614089",
+          "title": "The Work Now Within Reach",
+          "title_zh": null,
+          "title_en": "The Work Now Within Reach",
+          "title_original": "The Work Now Within Reach",
+          "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/the-work-now-within-reach",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-08T13:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8168,
+      "importance": 0.8168,
+      "importance_score": 0.8168,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8352,
+        "ai_relevance": 0.91,
+        "recency": 0.8043,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -350,26 +462,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-08T11:30:00Z",
-      "latest_at": "2026-09-08T19:14:22.077000Z",
+      "earliest_at": "2026-09-08T13:00:00Z",
+      "latest_at": "2026-09-08T13:00:00Z",
       "primary_item": {
-        "id": "e403851c39788b25d33193c78b15146edbe25fd8",
-        "title": "OpenAI 发布 ChatGPT Images 2.5 图像模型 / Introducing ChatGPT Images 2.5",
-        "title_zh": "OpenAI 发布 ChatGPT Images 2.5 图像模型",
-        "title_en": "Introducing ChatGPT Images 2.5",
-        "title_original": "Introducing ChatGPT Images 2.5",
-        "summary": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
+        "id": "0c225103d8bbdb274acb89884cf1925952614089",
+        "title": "The Work Now Within Reach",
+        "title_zh": null,
+        "title_en": "The Work Now Within Reach",
+        "title_original": "The Work Now Within Reach",
+        "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+        "url": "https://openai.com/index/the-work-now-within-reach",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8459,
+      "peak_score": 0.8456,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     },
     {
@@ -417,15 +529,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7981,
-      "importance": 0.7981,
-      "importance_score": 0.7981,
+      "score": 0.79,
+      "importance": 0.79,
+      "importance_score": 0.79,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.884,
+        "recency": 0.8391,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -453,7 +565,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     },
     {
@@ -588,15 +700,15 @@
       ],
       "item_count": 4,
       "duplicate_count": 4,
-      "score": 0.7859,
-      "importance": 0.7859,
-      "importance_score": 0.7859,
+      "score": 0.7778,
+      "importance": 0.7778,
+      "importance_score": 0.7778,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.85,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8852,
+        "recency": 0.8403,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -624,7 +736,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
+      }
+    },
+    {
+      "story_id": "story_068c3c65edc6",
+      "title": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问 / OpenAI's millennium proof dispute raises the question of whether researchers can trust AI labs",
+      "url": "https://the-decoder.com/openais-millennium-proof-dispute-raises-the-question-of-whether-researchers-can-trust-ai-labs",
+      "primary_url": "https://the-decoder.com/openais-millennium-proof-dispute-raises-the-question-of-whether-researchers-can-trust-ai-labs",
+      "source": "The Decoder：AI News（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "ea5a1f529a9971983029913209e99c4c82b0c3c6",
+          "title": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问 / OpenAI's millennium proof dispute raises the question of whether researchers can trust AI labs",
+          "title_zh": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问",
+          "title_en": "OpenAI's millennium proof dispute raises the question of whether researchers can trust AI labs",
+          "title_original": "OpenAI's millennium proof dispute raises the question of whether researchers can trust AI labs",
+          "summary": "数学家 Tristan Buckmaster 指控 OpenAI 施压、拒绝其合作者 Levent Alpöge（任职于 Anthropic）署名，且可能用两人上传到 Codex 的草稿训练模型，称其为绝对学术不端。",
+          "recommend_reason_zh": null,
+          "url": "https://the-decoder.com/openais-millennium-proof-dispute-raises-the-question-of-whether-researchers-can-trust-ai-labs",
+          "source": "The Decoder：AI News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-09T10:27:37Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "The Decoder：AI News（RSS）"
+      ],
+      "items": [
+        {
+          "id": "ea5a1f529a9971983029913209e99c4c82b0c3c6",
+          "title": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问 / OpenAI's millennium proof dispute raises the question of whether researchers can trust AI labs",
+          "title_zh": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问",
+          "title_en": "OpenAI's millennium proof dispute raises the question of whether researchers can trust AI labs",
+          "title_original": "OpenAI's millennium proof dispute raises the question of whether researchers can trust AI labs",
+          "summary": "数学家 Tristan Buckmaster 指控 OpenAI 施压、拒绝其合作者 Levent Alpöge（任职于 Anthropic）署名，且可能用两人上传到 Codex 的草稿训练模型，称其为绝对学术不端。",
+          "recommend_reason_zh": null,
+          "url": "https://the-decoder.com/openais-millennium-proof-dispute-raises-the-question-of-whether-researchers-can-trust-ai-labs",
+          "source": "The Decoder：AI News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-09T10:27:37Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7986,
+      "importance": 0.7986,
+      "importance_score": 0.7986,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.83,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9889,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-09T10:27:37Z",
+      "latest_at": "2026-09-09T10:27:37Z",
+      "primary_item": {
+        "id": "ea5a1f529a9971983029913209e99c4c82b0c3c6",
+        "title": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问 / OpenAI's millennium proof dispute raises the question of whether researchers can trust AI labs",
+        "title_zh": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问",
+        "title_en": "OpenAI's millennium proof dispute raises the question of whether researchers can trust AI labs",
+        "title_original": "OpenAI's millennium proof dispute raises the question of whether researchers can trust AI labs",
+        "summary": "数学家 Tristan Buckmaster 指控 OpenAI 施压、拒绝其合作者 Levent Alpöge（任职于 Anthropic）署名，且可能用两人上传到 Codex 的草稿训练模型，称其为绝对学术不端。",
+        "recommend_reason_zh": null,
+        "url": "https://the-decoder.com/openais-millennium-proof-dispute-raises-the-question-of-whether-researchers-can-trust-ai-labs",
+        "source": "The Decoder：AI News（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7986,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     },
     {
@@ -672,15 +868,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7796,
-      "importance": 0.7796,
-      "importance_score": 0.7796,
+      "score": 0.7715,
+      "importance": 0.7715,
+      "importance_score": 0.7715,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8809,
+        "recency": 0.8361,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -708,7 +904,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
+      }
+    },
+    {
+      "story_id": "story_e9165c96a062",
+      "title": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
+      "url": "https://www.ithome.com/1/000/353.htm",
+      "primary_url": "https://www.ithome.com/1/000/353.htm",
+      "source": "IT之家（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "79e7c8a25c55bd9ca8ac193f1a315addc16fbdd4",
+          "title": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
+          "title_zh": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
+          "title_en": null,
+          "title_original": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
+          "summary": "纽约大学教授Tristan Buckmaster与Anthropic数学家Levent Alpöge使用Codex和Claude在纳维-斯托克斯存在性与光滑性问题上取得初步进展，随后OpenAI公布了该千禧年大奖难题的完整证明，称其由一个尚未发布的新一代模型发现，研究始于9月1日，总计消耗3000亿个输出Token，按Astra价格计算约2250万美元。",
+          "recommend_reason_zh": null,
+          "url": "https://www.ithome.com/1/000/353.htm",
+          "source": "IT之家（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-09T09:34:47Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "IT之家（RSS）"
+      ],
+      "items": [
+        {
+          "id": "79e7c8a25c55bd9ca8ac193f1a315addc16fbdd4",
+          "title": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
+          "title_zh": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
+          "title_en": null,
+          "title_original": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
+          "summary": "纽约大学教授Tristan Buckmaster与Anthropic数学家Levent Alpöge使用Codex和Claude在纳维-斯托克斯存在性与光滑性问题上取得初步进展，随后OpenAI公布了该千禧年大奖难题的完整证明，称其由一个尚未发布的新一代模型发现，研究始于9月1日，总计消耗3000亿个输出Token，按Astra价格计算约2250万美元。",
+          "recommend_reason_zh": null,
+          "url": "https://www.ithome.com/1/000/353.htm",
+          "source": "IT之家（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-09T09:34:47Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7941,
+      "importance": 0.7941,
+      "importance_score": 0.7941,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.82,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9806,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-09T09:34:47Z",
+      "latest_at": "2026-09-09T09:34:47Z",
+      "primary_item": {
+        "id": "79e7c8a25c55bd9ca8ac193f1a315addc16fbdd4",
+        "title": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
+        "title_zh": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
+        "title_en": null,
+        "title_original": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
+        "summary": "纽约大学教授Tristan Buckmaster与Anthropic数学家Levent Alpöge使用Codex和Claude在纳维-斯托克斯存在性与光滑性问题上取得初步进展，随后OpenAI公布了该千禧年大奖难题的完整证明，称其由一个尚未发布的新一代模型发现，研究始于9月1日，总计消耗3000亿个输出Token，按Astra价格计算约2250万美元。",
+        "recommend_reason_zh": null,
+        "url": "https://www.ithome.com/1/000/353.htm",
+        "source": "IT之家（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7941,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-09T11:37:52.003286Z"
+      }
+    },
+    {
+      "story_id": "story_406d0c1436b1",
+      "title": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面等六家中国 AI 公司大规模提取美国模型知识 / The NSA， FBI and CISA accused DeepSeek， Moonshot AI， Alibaba， MiniMax， StepFun and http://Z.ai of ex…",
+      "url": "https://x.com/thexpin/status/2097615997616406833",
+      "primary_url": "https://x.com/thexpin/status/2097615997616406833",
+      "source": "X：X.PIN (@thexpin)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "b74cae62cb6d9683e680062af57fec87e33d22fb",
+          "title": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面等六家中国 AI 公司大规模提取美国模型知识 / The NSA， FBI and CISA accused DeepSeek， Moonshot AI， Alibaba， MiniMax， StepFun and http://Z.ai of ex…",
+          "title_zh": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面等六家中国 AI 公司大规模提取美国模型知识",
+          "title_en": "The NSA， FBI and CISA accused DeepSeek， Moonshot AI， Alibaba， MiniMax， StepFun and http://Z.ai of ex…",
+          "title_original": "The NSA， FBI and CISA accused DeepSeek， Moonshot AI， Alibaba， MiniMax， StepFun and http://Z.ai of ex…",
+          "summary": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面（Moonshot AI）、阿里巴巴、MiniMax、阶跃星辰（StepFun）和 Z.ai 至少自 2024 年起以产业规模从美国模型中提取知识。机构称其通过多渠道路由请求以绕过规则并提升数学与编码能力；蒸馏在获授权时合法，争议核心在于访问与同意。美国开发商被敦促立即行动并共享情报，相关公司暂未回应。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/thexpin/status/2097615997616406833",
+          "source": "X：X.PIN (@thexpin)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-09T09:20:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：X.PIN (@thexpin)"
+      ],
+      "items": [
+        {
+          "id": "b74cae62cb6d9683e680062af57fec87e33d22fb",
+          "title": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面等六家中国 AI 公司大规模提取美国模型知识 / The NSA， FBI and CISA accused DeepSeek， Moonshot AI， Alibaba， MiniMax， StepFun and http://Z.ai of ex…",
+          "title_zh": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面等六家中国 AI 公司大规模提取美国模型知识",
+          "title_en": "The NSA， FBI and CISA accused DeepSeek， Moonshot AI， Alibaba， MiniMax， StepFun and http://Z.ai of ex…",
+          "title_original": "The NSA， FBI and CISA accused DeepSeek， Moonshot AI， Alibaba， MiniMax， StepFun and http://Z.ai of ex…",
+          "summary": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面（Moonshot AI）、阿里巴巴、MiniMax、阶跃星辰（StepFun）和 Z.ai 至少自 2024 年起以产业规模从美国模型中提取知识。机构称其通过多渠道路由请求以绕过规则并提升数学与编码能力；蒸馏在获授权时合法，争议核心在于访问与同意。美国开发商被敦促立即行动并共享情报，相关公司暂未回应。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/thexpin/status/2097615997616406833",
+          "source": "X：X.PIN (@thexpin)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-09T09:20:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7937,
+      "importance": 0.7937,
+      "importance_score": 0.7937,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.82,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9783,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-09T09:20:00Z",
+      "latest_at": "2026-09-09T09:20:00Z",
+      "primary_item": {
+        "id": "b74cae62cb6d9683e680062af57fec87e33d22fb",
+        "title": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面等六家中国 AI 公司大规模提取美国模型知识 / The NSA， FBI and CISA accused DeepSeek， Moonshot AI， Alibaba， MiniMax， StepFun and http://Z.ai of ex…",
+        "title_zh": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面等六家中国 AI 公司大规模提取美国模型知识",
+        "title_en": "The NSA， FBI and CISA accused DeepSeek， Moonshot AI， Alibaba， MiniMax， StepFun and http://Z.ai of ex…",
+        "title_original": "The NSA， FBI and CISA accused DeepSeek， Moonshot AI， Alibaba， MiniMax， StepFun and http://Z.ai of ex…",
+        "summary": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面（Moonshot AI）、阿里巴巴、MiniMax、阶跃星辰（StepFun）和 Z.ai 至少自 2024 年起以产业规模从美国模型中提取知识。机构称其通过多渠道路由请求以绕过规则并提升数学与编码能力；蒸馏在获授权时合法，争议核心在于访问与同意。美国开发商被敦促立即行动并共享情报，相关公司暂未回应。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/thexpin/status/2097615997616406833",
+        "source": "X：X.PIN (@thexpin)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7937,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     },
     {
@@ -756,15 +1120,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7813,
-      "importance": 0.7813,
-      "importance_score": 0.7813,
+      "score": 0.7728,
+      "importance": 0.7728,
+      "importance_score": 0.7728,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9238,
+        "recency": 0.8769,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -792,7 +1156,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     },
     {
@@ -840,15 +1204,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.784,
-      "importance": 0.784,
-      "importance_score": 0.784,
+      "score": 0.7754,
+      "importance": 0.7754,
+      "importance_score": 0.7754,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9413,
+        "recency": 0.8935,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -876,63 +1240,63 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     },
     {
-      "story_id": "story_c12e0d8f1817",
-      "title": "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
-      "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
-      "primary_url": "https://cims.nyu.edu/~tristanb/statement.pdf",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "story_id": "story_625fc1a7b32c",
+      "title": "美国政府指控 DeepSeek 等 6 家中国 AI 公司工业规模蒸馏美国模型 / In a new allegation， the U.S. government has accused 6 Chinese AI firms of using large-scale distill…",
+      "url": "https://x.com/rohanpaul_ai/status/2097605329123147987",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2097605329123147987",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "ab134c36a54fea581c80987fa5900787b6c80ef1",
-          "title": "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
-          "title_zh": "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
-          "title_en": null,
-          "title_original": "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
-          "summary": "特里斯坦·巴克马斯特（Tristan Buckmaster）与 Levent Alpöge 公开三项有限时间 blowup 结果，涵盖带光滑强迫的不可压缩多孔介质方程。",
+          "id": "1620b5faa9067f76aea6d138ef3d777192a6a077",
+          "title": "美国政府指控 DeepSeek 等 6 家中国 AI 公司工业规模蒸馏美国模型 / In a new allegation， the U.S. government has accused 6 Chinese AI firms of using large-scale distill…",
+          "title_zh": "美国政府指控 DeepSeek 等 6 家中国 AI 公司工业规模蒸馏美国模型",
+          "title_en": "In a new allegation， the U.S. government has accused 6 Chinese AI firms of using large-scale distill…",
+          "title_original": "In a new allegation， the U.S. government has accused 6 Chinese AI firms of using large-scale distill…",
+          "summary": "NSA、CISA 和 FBI 发布联合公告 AA26-251A，指控 DeepSeek、月之暗面、阿里、MiniMax、阶跃星辰和 Z .AI 自 2024 年底起对美国前沿模型进行工业规模蒸馏。",
           "recommend_reason_zh": null,
-          "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://x.com/rohanpaul_ai/status/2097605329123147987",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-08T07:20:02.739000Z"
+          "published_at": "2026-09-09T08:37:36Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hacker News 热门（buzzing.cc 中文翻译）"
+        "X：Rohan Paul (@rohanpaul_ai)"
       ],
       "items": [
         {
-          "id": "ab134c36a54fea581c80987fa5900787b6c80ef1",
-          "title": "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
-          "title_zh": "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
-          "title_en": null,
-          "title_original": "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
-          "summary": "特里斯坦·巴克马斯特（Tristan Buckmaster）与 Levent Alpöge 公开三项有限时间 blowup 结果，涵盖带光滑强迫的不可压缩多孔介质方程。",
+          "id": "1620b5faa9067f76aea6d138ef3d777192a6a077",
+          "title": "美国政府指控 DeepSeek 等 6 家中国 AI 公司工业规模蒸馏美国模型 / In a new allegation， the U.S. government has accused 6 Chinese AI firms of using large-scale distill…",
+          "title_zh": "美国政府指控 DeepSeek 等 6 家中国 AI 公司工业规模蒸馏美国模型",
+          "title_en": "In a new allegation， the U.S. government has accused 6 Chinese AI firms of using large-scale distill…",
+          "title_original": "In a new allegation， the U.S. government has accused 6 Chinese AI firms of using large-scale distill…",
+          "summary": "NSA、CISA 和 FBI 发布联合公告 AA26-251A，指控 DeepSeek、月之暗面、阿里、MiniMax、阶跃星辰和 Z .AI 自 2024 年底起对美国前沿模型进行工业规模蒸馏。",
           "recommend_reason_zh": null,
-          "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://x.com/rohanpaul_ai/status/2097605329123147987",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-08T07:20:02.739000Z"
+          "published_at": "2026-09-09T08:37:36Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.762,
-      "importance": 0.762,
-      "importance_score": 0.762,
+      "score": 0.7895,
+      "importance": 0.7895,
+      "importance_score": 0.7895,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.82,
+        "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8024,
+        "recency": 0.9716,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -941,111 +1305,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-08T07:20:02.739000Z",
-      "latest_at": "2026-09-08T07:20:02.739000Z",
+      "earliest_at": "2026-09-09T08:37:36Z",
+      "latest_at": "2026-09-09T08:37:36Z",
       "primary_item": {
-        "id": "ab134c36a54fea581c80987fa5900787b6c80ef1",
-        "title": "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
-        "title_zh": "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
-        "title_en": null,
-        "title_original": "数学家巴克马斯特宣布多项方程 blowup 结果并公开与 OpenAI 沟通经过",
-        "summary": "特里斯坦·巴克马斯特（Tristan Buckmaster）与 Levent Alpöge 公开三项有限时间 blowup 结果，涵盖带光滑强迫的不可压缩多孔介质方程。",
+        "id": "1620b5faa9067f76aea6d138ef3d777192a6a077",
+        "title": "美国政府指控 DeepSeek 等 6 家中国 AI 公司工业规模蒸馏美国模型 / In a new allegation， the U.S. government has accused 6 Chinese AI firms of using large-scale distill…",
+        "title_zh": "美国政府指控 DeepSeek 等 6 家中国 AI 公司工业规模蒸馏美国模型",
+        "title_en": "In a new allegation， the U.S. government has accused 6 Chinese AI firms of using large-scale distill…",
+        "title_original": "In a new allegation， the U.S. government has accused 6 Chinese AI firms of using large-scale distill…",
+        "summary": "NSA、CISA 和 FBI 发布联合公告 AA26-251A，指控 DeepSeek、月之暗面、阿里、MiniMax、阶跃星辰和 Z .AI 自 2024 年底起对美国前沿模型进行工业规模蒸馏。",
         "recommend_reason_zh": null,
-        "url": "https://cims.nyu.edu/~tristanb/statement.pdf",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "url": "https://x.com/rohanpaul_ai/status/2097605329123147987",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7905,
+      "peak_score": 0.7895,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
-      }
-    },
-    {
-      "story_id": "story_be047988843b",
-      "title": "The Work Now Within Reach",
-      "url": "https://openai.com/index/the-work-now-within-reach",
-      "primary_url": "https://openai.com/index/the-work-now-within-reach",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "0c225103d8bbdb274acb89884cf1925952614089",
-          "title": "The Work Now Within Reach",
-          "title_zh": null,
-          "title_en": "The Work Now Within Reach",
-          "title_original": "The Work Now Within Reach",
-          "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/the-work-now-within-reach",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-08T13:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "0c225103d8bbdb274acb89884cf1925952614089",
-          "title": "The Work Now Within Reach",
-          "title_zh": null,
-          "title_en": "The Work Now Within Reach",
-          "title_original": "The Work Now Within Reach",
-          "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/the-work-now-within-reach",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-08T13:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8245,
-      "importance": 0.8245,
-      "importance_score": 0.8245,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8474,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-08T13:00:00Z",
-      "latest_at": "2026-09-08T13:00:00Z",
-      "primary_item": {
-        "id": "0c225103d8bbdb274acb89884cf1925952614089",
-        "title": "The Work Now Within Reach",
-        "title_zh": null,
-        "title_en": "The Work Now Within Reach",
-        "title_original": "The Work Now Within Reach",
-        "summary": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/the-work-now-within-reach",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8456,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     },
     {
@@ -1093,15 +1372,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.768,
-      "importance": 0.768,
-      "importance_score": 0.768,
+      "score": 0.7599,
+      "importance": 0.7599,
+      "importance_score": 0.7599,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8856,
+        "recency": 0.8406,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1129,7 +1408,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     },
     {
@@ -1177,15 +1456,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7648,
-      "importance": 0.7648,
-      "importance_score": 0.7648,
+      "score": 0.7567,
+      "importance": 0.7567,
+      "importance_score": 0.7567,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8843,
+        "recency": 0.8394,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1213,7 +1492,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
+      }
+    },
+    {
+      "story_id": "story_b5338694e8b0",
+      "title": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明 / friends are regularly surprised when i say i don't think math is （yet） \"solved，\" so in the wake of t…",
+      "url": "https://x.com/Thom_Wolf/status/2097615465698713666",
+      "primary_url": "https://x.com/Thom_Wolf/status/2097615465698713666",
+      "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "3adda3a872f085d2c23f9bf62e204fd40aa91aa4",
+          "title": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明 / friends are regularly surprised when i say i don't think math is （yet） \"solved，\" so in the wake of t…",
+          "title_zh": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明",
+          "title_en": "friends are regularly surprised when i say i don't think math is （yet） \"solved，\" so in the wake of t…",
+          "title_original": "friends are regularly surprised when i say i don't think math is （yet） \"solved，\" so in the wake of t…",
+          "summary": "Hugging Face 联创 Thomas Wolf 回应 OpenAI 用下一代模型（强于 GPT-6 Astra）的 agent 群组证明 Navier-Stokes 千禧年问题猜想为假的结果，称其令人印象深刻。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Thom_Wolf/status/2097615465698713666",
+          "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-09T09:17:53Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)"
+      ],
+      "items": [
+        {
+          "id": "3adda3a872f085d2c23f9bf62e204fd40aa91aa4",
+          "title": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明 / friends are regularly surprised when i say i don't think math is （yet） \"solved，\" so in the wake of t…",
+          "title_zh": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明",
+          "title_en": "friends are regularly surprised when i say i don't think math is （yet） \"solved，\" so in the wake of t…",
+          "title_original": "friends are regularly surprised when i say i don't think math is （yet） \"solved，\" so in the wake of t…",
+          "summary": "Hugging Face 联创 Thomas Wolf 回应 OpenAI 用下一代模型（强于 GPT-6 Astra）的 agent 群组证明 Navier-Stokes 千禧年问题猜想为假的结果，称其令人印象深刻。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Thom_Wolf/status/2097615465698713666",
+          "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-09T09:17:53Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7786,
+      "importance": 0.7786,
+      "importance_score": 0.7786,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.77,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9779,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-09T09:17:53Z",
+      "latest_at": "2026-09-09T09:17:53Z",
+      "primary_item": {
+        "id": "3adda3a872f085d2c23f9bf62e204fd40aa91aa4",
+        "title": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明 / friends are regularly surprised when i say i don't think math is （yet） \"solved，\" so in the wake of t…",
+        "title_zh": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明",
+        "title_en": "friends are regularly surprised when i say i don't think math is （yet） \"solved，\" so in the wake of t…",
+        "title_original": "friends are regularly surprised when i say i don't think math is （yet） \"solved，\" so in the wake of t…",
+        "summary": "Hugging Face 联创 Thomas Wolf 回应 OpenAI 用下一代模型（强于 GPT-6 Astra）的 agent 群组证明 Navier-Stokes 千禧年问题猜想为假的结果，称其令人印象深刻。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/Thom_Wolf/status/2097615465698713666",
+        "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7786,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     },
     {
@@ -1261,15 +1624,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7729,
-      "importance": 0.7729,
-      "importance_score": 0.7729,
+      "score": 0.7643,
+      "importance": 0.7643,
+      "importance_score": 0.7643,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9461,
+        "recency": 0.8981,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1297,7 +1660,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
+      }
+    },
+    {
+      "story_id": "story_81a955344f56",
+      "title": "Simon Willison 评纳维-斯托克斯千禧年问题求解背后的 OpenAI 与 Anthropic 争议",
+      "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes",
+      "primary_url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "4ca6399dafe0adffa194169ae0a6d73115a35b73",
+          "title": "Simon Willison 评纳维-斯托克斯千禧年问题求解背后的 OpenAI 与 Anthropic 争议",
+          "title_zh": "Simon Willison 评纳维-斯托克斯千禧年问题求解背后的 OpenAI 与 Anthropic 争议",
+          "title_en": null,
+          "title_original": "Simon Willison 评纳维-斯托克斯千禧年问题求解背后的 OpenAI 与 Anthropic 争议",
+          "summary": "Simon Willison 评论 OpenAI 用未发布模型在约 88 小时内求解纳维-斯托克斯存在性与光滑性问题，并经 GPT-6 Astra 完成 17 小时 Lean 形式化验证。",
+          "recommend_reason_zh": null,
+          "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-09T07:10:03.765000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News 热门（buzzing.cc 中文翻译）"
+      ],
+      "items": [
+        {
+          "id": "4ca6399dafe0adffa194169ae0a6d73115a35b73",
+          "title": "Simon Willison 评纳维-斯托克斯千禧年问题求解背后的 OpenAI 与 Anthropic 争议",
+          "title_zh": "Simon Willison 评纳维-斯托克斯千禧年问题求解背后的 OpenAI 与 Anthropic 争议",
+          "title_en": null,
+          "title_original": "Simon Willison 评纳维-斯托克斯千禧年问题求解背后的 OpenAI 与 Anthropic 争议",
+          "summary": "Simon Willison 评论 OpenAI 用未发布模型在约 88 小时内求解纳维-斯托克斯存在性与光滑性问题，并经 GPT-6 Astra 完成 17 小时 Lean 形式化验证。",
+          "recommend_reason_zh": null,
+          "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-09T07:10:03.765000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7721,
+      "importance": 0.7721,
+      "importance_score": 0.7721,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.76,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9581,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-09T07:10:03.765000Z",
+      "latest_at": "2026-09-09T07:10:03.765000Z",
+      "primary_item": {
+        "id": "4ca6399dafe0adffa194169ae0a6d73115a35b73",
+        "title": "Simon Willison 评纳维-斯托克斯千禧年问题求解背后的 OpenAI 与 Anthropic 争议",
+        "title_zh": "Simon Willison 评纳维-斯托克斯千禧年问题求解背后的 OpenAI 与 Anthropic 争议",
+        "title_en": null,
+        "title_original": "Simon Willison 评纳维-斯托克斯千禧年问题求解背后的 OpenAI 与 Anthropic 争议",
+        "summary": "Simon Willison 评论 OpenAI 用未发布模型在约 88 小时内求解纳维-斯托克斯存在性与光滑性问题，并经 GPT-6 Astra 完成 17 小时 Lean 形式化验证。",
+        "recommend_reason_zh": null,
+        "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7721,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     },
     {
@@ -1345,15 +1792,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7594,
-      "importance": 0.7594,
-      "importance_score": 0.7594,
+      "score": 0.7506,
+      "importance": 0.7506,
+      "importance_score": 0.7506,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9542,
+        "recency": 0.9057,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1381,484 +1828,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
-      }
-    },
-    {
-      "story_id": "story_8bc5596ddee1",
-      "title": "Sam Altman 回应与 Anthropic 研究员的 Navier-Stokes 证明发布争议 / I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted w…",
-      "url": "https://x.com/sama/status/2097385167002415140",
-      "primary_url": "https://x.com/sama/status/2097385167002415140",
-      "source": "X：Sam Altman (@sama)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "4d4d3f72ee65c0125c3bdd2e78058da395b37929",
-          "title": "Sam Altman 回应与 Anthropic 研究员的 Navier-Stokes 证明发布争议 / I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted w…",
-          "title_zh": "Sam Altman 回应与 Anthropic 研究员的 Navier-Stokes 证明发布争议",
-          "title_en": "I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted w…",
-          "title_original": "I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted w…",
-          "summary": "Sam Altman 发文回应与 Anthropic 一方围绕 Euler/Navier-Stokes 证明发布的争议，称对方只有 Euler 结果、双方协调失败，并称对方以抄袭指控相威胁。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/sama/status/2097385167002415140",
-          "source": "X：Sam Altman (@sama)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-08T18:02:46Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Sam Altman (@sama)"
-      ],
-      "items": [
-        {
-          "id": "4d4d3f72ee65c0125c3bdd2e78058da395b37929",
-          "title": "Sam Altman 回应与 Anthropic 研究员的 Navier-Stokes 证明发布争议 / I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted w…",
-          "title_zh": "Sam Altman 回应与 Anthropic 研究员的 Navier-Stokes 证明发布争议",
-          "title_en": "I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted w…",
-          "title_original": "I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted w…",
-          "summary": "Sam Altman 发文回应与 Anthropic 一方围绕 Euler/Navier-Stokes 证明发布的争议，称对方只有 Euler 结果、双方协调失败，并称对方以抄袭指控相威胁。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/sama/status/2097385167002415140",
-          "source": "X：Sam Altman (@sama)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-08T18:02:46Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7477,
-      "importance": 0.7477,
-      "importance_score": 0.7477,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8896,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-08T18:02:46Z",
-      "latest_at": "2026-09-08T18:02:46Z",
-      "primary_item": {
-        "id": "4d4d3f72ee65c0125c3bdd2e78058da395b37929",
-        "title": "Sam Altman 回应与 Anthropic 研究员的 Navier-Stokes 证明发布争议 / I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted w…",
-        "title_zh": "Sam Altman 回应与 Anthropic 研究员的 Navier-Stokes 证明发布争议",
-        "title_en": "I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted w…",
-        "title_original": "I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted w…",
-        "summary": "Sam Altman 发文回应与 Anthropic 一方围绕 Euler/Navier-Stokes 证明发布的争议，称对方只有 Euler 结果、双方协调失败，并称对方以抄袭指控相威胁。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/sama/status/2097385167002415140",
-        "source": "X：Sam Altman (@sama)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7643,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
-      }
-    },
-    {
-      "story_id": "story_87d7018b33e2",
-      "title": "OpenAI 向 Plus、Pro、Business 和 Enterprise 用户全面推送 Astra / Astra is fully rolled out to Plus， Pro， Business， and Enterprise users in Codex and ChatGPT Work. G…",
-      "url": "https://x.com/OpenAI/status/2097431322117476423",
-      "primary_url": "https://x.com/OpenAI/status/2097431322117476423",
-      "source": "X：OpenAI (@OpenAI)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "6d724d8711f62543908c9eaf826f1446fef061a4",
-          "title": "OpenAI 向 Plus、Pro、Business 和 Enterprise 用户全面推送 Astra / Astra is fully rolled out to Plus， Pro， Business， and Enterprise users in Codex and ChatGPT Work. G…",
-          "title_zh": "OpenAI 向 Plus、Pro、Business 和 Enterprise 用户全面推送 Astra",
-          "title_en": "Astra is fully rolled out to Plus， Pro， Business， and Enterprise users in Codex and ChatGPT Work. G…",
-          "title_original": "Astra is fully rolled out to Plus， Pro， Business， and Enterprise users in Codex and ChatGPT Work. G…",
-          "summary": "OpenAI 宣布 Astra 已全面推送给 Codex 和 ChatGPT Work 中的 Plus、Pro、Business 和 Enterprise 用户。用户可以直接使用，并可通过 openai.com/gpt-tv/ 观看 Astra 的实机演示。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/OpenAI/status/2097431322117476423",
-          "source": "X：OpenAI (@OpenAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-08T21:06:10Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：OpenAI (@OpenAI)"
-      ],
-      "items": [
-        {
-          "id": "6d724d8711f62543908c9eaf826f1446fef061a4",
-          "title": "OpenAI 向 Plus、Pro、Business 和 Enterprise 用户全面推送 Astra / Astra is fully rolled out to Plus， Pro， Business， and Enterprise users in Codex and ChatGPT Work. G…",
-          "title_zh": "OpenAI 向 Plus、Pro、Business 和 Enterprise 用户全面推送 Astra",
-          "title_en": "Astra is fully rolled out to Plus， Pro， Business， and Enterprise users in Codex and ChatGPT Work. G…",
-          "title_original": "Astra is fully rolled out to Plus， Pro， Business， and Enterprise users in Codex and ChatGPT Work. G…",
-          "summary": "OpenAI 宣布 Astra 已全面推送给 Codex 和 ChatGPT Work 中的 Plus、Pro、Business 和 Enterprise 用户。用户可以直接使用，并可通过 openai.com/gpt-tv/ 观看 Astra 的实机演示。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/OpenAI/status/2097431322117476423",
-          "source": "X：OpenAI (@OpenAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-08T21:06:10Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7799,
-      "importance": 0.7799,
-      "importance_score": 0.7799,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.65,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.9161,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-08T21:06:10Z",
-      "latest_at": "2026-09-08T21:06:10Z",
-      "primary_item": {
-        "id": "6d724d8711f62543908c9eaf826f1446fef061a4",
-        "title": "OpenAI 向 Plus、Pro、Business 和 Enterprise 用户全面推送 Astra / Astra is fully rolled out to Plus， Pro， Business， and Enterprise users in Codex and ChatGPT Work. G…",
-        "title_zh": "OpenAI 向 Plus、Pro、Business 和 Enterprise 用户全面推送 Astra",
-        "title_en": "Astra is fully rolled out to Plus， Pro， Business， and Enterprise users in Codex and ChatGPT Work. G…",
-        "title_original": "Astra is fully rolled out to Plus， Pro， Business， and Enterprise users in Codex and ChatGPT Work. G…",
-        "summary": "OpenAI 宣布 Astra 已全面推送给 Codex 和 ChatGPT Work 中的 Plus、Pro、Business 和 Enterprise 用户。用户可以直接使用，并可通过 openai.com/gpt-tv/ 观看 Astra 的实机演示。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/OpenAI/status/2097431322117476423",
-        "source": "X：OpenAI (@OpenAI)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7921,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
-      }
-    },
-    {
-      "story_id": "story_33c74780fd74",
-      "title": "GPT-6 Astra推理等级怎么选才最省Token",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686094&idx=1&sn=c06c40993f7ab28f2302619e4b89986b",
-      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686094&idx=1&sn=c06c40993f7ab28f2302619e4b89986b",
-      "source": "公众号：数字生命卡兹克",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "0cda3bb8339290894f2a93fddbc220fedf4130ed",
-          "title": "GPT-6 Astra推理等级怎么选才最省Token",
-          "title_zh": "GPT-6 Astra推理等级怎么选才最省Token",
-          "title_en": null,
-          "title_original": "GPT-6 Astra推理等级怎么选才最省Token",
-          "summary": "卡兹克发文讲解GPT-6 Astra的推理强度等级（Reasoning Effort）含义，指出各档位是同一模型的不同思考预算，Ultra则类似拉起多个智能体协作的专项工作组。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686094&idx=1&sn=c06c40993f7ab28f2302619e4b89986b",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-09T00:09:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "公众号：数字生命卡兹克"
-      ],
-      "items": [
-        {
-          "id": "0cda3bb8339290894f2a93fddbc220fedf4130ed",
-          "title": "GPT-6 Astra推理等级怎么选才最省Token",
-          "title_zh": "GPT-6 Astra推理等级怎么选才最省Token",
-          "title_en": null,
-          "title_original": "GPT-6 Astra推理等级怎么选才最省Token",
-          "summary": "卡兹克发文讲解GPT-6 Astra的推理强度等级（Reasoning Effort）含义，指出各档位是同一模型的不同思考预算，Ultra则类似拉起多个智能体协作的专项工作组。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686094&idx=1&sn=c06c40993f7ab28f2302619e4b89986b",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-09T00:09:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7514,
-      "importance": 0.7514,
-      "importance_score": 0.7514,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.7,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9434,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-09T00:09:00Z",
-      "latest_at": "2026-09-09T00:09:00Z",
-      "primary_item": {
-        "id": "0cda3bb8339290894f2a93fddbc220fedf4130ed",
-        "title": "GPT-6 Astra推理等级怎么选才最省Token",
-        "title_zh": "GPT-6 Astra推理等级怎么选才最省Token",
-        "title_en": null,
-        "title_original": "GPT-6 Astra推理等级怎么选才最省Token",
-        "summary": "卡兹克发文讲解GPT-6 Astra的推理强度等级（Reasoning Effort）含义，指出各档位是同一模型的不同思考预算，Ultra则类似拉起多个智能体协作的专项工作组。",
-        "recommend_reason_zh": null,
-        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686094&idx=1&sn=c06c40993f7ab28f2302619e4b89986b",
-        "source": "公众号：数字生命卡兹克",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7596,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
-      }
-    },
-    {
-      "story_id": "story_33e4963166e2",
-      "title": "Meta 智能体产品 Muse 开放体验，官方回应用户好评 / the team poured their heart and souls into it， and it warms our hearts to see the response ❤️ we ar…",
-      "url": "https://x.com/alexandr_wang/status/2097472059077202339",
-      "primary_url": "https://x.com/alexandr_wang/status/2097472059077202339",
-      "source": "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "bf28f950568eb6826b103487d4ec936908d83df8",
-          "title": "Meta 智能体产品 Muse 开放体验，官方回应用户好评 / the team poured their heart and souls into it， and it warms our hearts to see the response ❤️ we ar…",
-          "title_zh": "Meta 智能体产品 Muse 开放体验，官方回应用户好评",
-          "title_en": "the team poured their heart and souls into it， and it warms our hearts to see the response ❤️ we ar…",
-          "title_original": "the team poured their heart and souls into it， and it warms our hearts to see the response ❤️ we ar…",
-          "summary": "Meta 的 Muse 智能体产品开放更多用户试用，入口为 https://muse.ai/join，Meta 首席 AI 官 Alexandr Wang 称团队为产品倾注心血并感谢用户反响。引用的评价称其设计、速度和浏览器等智能体流程表现出色，具备 Instagram 等 Meta 产品原生集成优势，但也指出 soul.md 等命名对普通用户不直观、feed 内容相关性不足等问题。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/alexandr_wang/status/2097472059077202339",
-          "source": "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-08T23:48:02Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)"
-      ],
-      "items": [
-        {
-          "id": "bf28f950568eb6826b103487d4ec936908d83df8",
-          "title": "Meta 智能体产品 Muse 开放体验，官方回应用户好评 / the team poured their heart and souls into it， and it warms our hearts to see the response ❤️ we ar…",
-          "title_zh": "Meta 智能体产品 Muse 开放体验，官方回应用户好评",
-          "title_en": "the team poured their heart and souls into it， and it warms our hearts to see the response ❤️ we ar…",
-          "title_original": "the team poured their heart and souls into it， and it warms our hearts to see the response ❤️ we ar…",
-          "summary": "Meta 的 Muse 智能体产品开放更多用户试用，入口为 https://muse.ai/join，Meta 首席 AI 官 Alexandr Wang 称团队为产品倾注心血并感谢用户反响。引用的评价称其设计、速度和浏览器等智能体流程表现出色，具备 Instagram 等 Meta 产品原生集成优势，但也指出 soul.md 等命名对普通用户不直观、feed 内容相关性不足等问题。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/alexandr_wang/status/2097472059077202339",
-          "source": "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-08T23:48:02Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7418,
-      "importance": 0.7418,
-      "importance_score": 0.7418,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.67,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9403,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-08T23:48:02Z",
-      "latest_at": "2026-09-08T23:48:02Z",
-      "primary_item": {
-        "id": "bf28f950568eb6826b103487d4ec936908d83df8",
-        "title": "Meta 智能体产品 Muse 开放体验，官方回应用户好评 / the team poured their heart and souls into it， and it warms our hearts to see the response ❤️ we ar…",
-        "title_zh": "Meta 智能体产品 Muse 开放体验，官方回应用户好评",
-        "title_en": "the team poured their heart and souls into it， and it warms our hearts to see the response ❤️ we ar…",
-        "title_original": "the team poured their heart and souls into it， and it warms our hearts to see the response ❤️ we ar…",
-        "summary": "Meta 的 Muse 智能体产品开放更多用户试用，入口为 https://muse.ai/join，Meta 首席 AI 官 Alexandr Wang 称团队为产品倾注心血并感谢用户反响。引用的评价称其设计、速度和浏览器等智能体流程表现出色，具备 Instagram 等 Meta 产品原生集成优势，但也指出 soul.md 等命名对普通用户不直观、feed 内容相关性不足等问题。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/alexandr_wang/status/2097472059077202339",
-        "source": "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.75,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
-      }
-    },
-    {
-      "story_id": "story_dc315e1882c1",
-      "title": "OpenAI 宣布以内部 AI 系统给出 Navier-Stokes 千禧年问题解答 / On the Navier–Stokes Millennium Prize Problem",
-      "url": "https://openai.com/index/navier-stokes-solution",
-      "primary_url": "https://openai.com/index/navier-stokes-solution",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "fc178d7640328bd881374f099f4ed158e8bb1540",
-          "title": "OpenAI 宣布以内部 AI 系统给出 Navier-Stokes 千禧年问题解答 / On the Navier–Stokes Millennium Prize Problem",
-          "title_zh": "OpenAI 宣布以内部 AI 系统给出 Navier-Stokes 千禧年问题解答",
-          "title_en": "On the Navier–Stokes Millennium Prize Problem",
-          "title_original": "On the Navier–Stokes Millennium Prize Problem",
-          "summary": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/navier-stokes-solution",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-08T10:00:00Z"
-        },
-        {
-          "id": "bc52c016828eb7a34ebb943def2c26ed1f82d172",
-          "title": "OpenAI 宣布以内部 AI 系统给出 Navier-Stokes 千禧年问题解答 / On the Navier-Stokes Millennium Prize Problem",
-          "title_zh": "OpenAI 宣布以内部 AI 系统给出 Navier-Stokes 千禧年问题解答",
-          "title_en": "On the Navier-Stokes Millennium Prize Problem",
-          "title_original": "On the Navier-Stokes Millennium Prize Problem",
-          "summary": "OpenAI 宣布其内部 AI 系统给出 Navier-Stokes 存在与光滑性问题的解答，证明初始光滑的流体可在有限时间内形成奇点，并附证明文稿与 Lean 形式化验证。",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/navier-stokes-solution",
-          "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-08T10:00:00Z"
-        },
-        {
-          "id": "2939a41654030d09fc713c6f56cb393c55aefc77",
-          "title": "关于纳维-斯托克斯千禧奖问题",
-          "title_zh": "关于纳维-斯托克斯千禧奖问题",
-          "title_en": null,
-          "title_original": "关于纳维-斯托克斯千禧奖问题",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/navier-stokes-solution",
-          "source": "openai.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-08T17:37:53.153000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News",
-        "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-        "openai.com"
-      ],
-      "items": [
-        {
-          "id": "fc178d7640328bd881374f099f4ed158e8bb1540",
-          "title": "OpenAI 宣布以内部 AI 系统给出 Navier-Stokes 千禧年问题解答 / On the Navier–Stokes Millennium Prize Problem",
-          "title_zh": "OpenAI 宣布以内部 AI 系统给出 Navier-Stokes 千禧年问题解答",
-          "title_en": "On the Navier–Stokes Millennium Prize Problem",
-          "title_original": "On the Navier–Stokes Millennium Prize Problem",
-          "summary": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/navier-stokes-solution",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-08T10:00:00Z"
-        },
-        {
-          "id": "bc52c016828eb7a34ebb943def2c26ed1f82d172",
-          "title": "OpenAI 宣布以内部 AI 系统给出 Navier-Stokes 千禧年问题解答 / On the Navier-Stokes Millennium Prize Problem",
-          "title_zh": "OpenAI 宣布以内部 AI 系统给出 Navier-Stokes 千禧年问题解答",
-          "title_en": "On the Navier-Stokes Millennium Prize Problem",
-          "title_original": "On the Navier-Stokes Millennium Prize Problem",
-          "summary": "OpenAI 宣布其内部 AI 系统给出 Navier-Stokes 存在与光滑性问题的解答，证明初始光滑的流体可在有限时间内形成奇点，并附证明文稿与 Lean 形式化验证。",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/navier-stokes-solution",
-          "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-08T10:00:00Z"
-        },
-        {
-          "id": "2939a41654030d09fc713c6f56cb393c55aefc77",
-          "title": "关于纳维-斯托克斯千禧奖问题",
-          "title_zh": "关于纳维-斯托克斯千禧奖问题",
-          "title_en": null,
-          "title_original": "关于纳维-斯托克斯千禧奖问题",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/navier-stokes-solution",
-          "source": "openai.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-08T17:37:53.153000Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.8202,
-      "importance": 0.8202,
-      "importance_score": 0.8202,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8233,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-08T10:00:00Z",
-      "latest_at": "2026-09-08T17:37:53.153000Z",
-      "primary_item": {
-        "id": "fc178d7640328bd881374f099f4ed158e8bb1540",
-        "title": "OpenAI 宣布以内部 AI 系统给出 Navier-Stokes 千禧年问题解答 / On the Navier–Stokes Millennium Prize Problem",
-        "title_zh": "OpenAI 宣布以内部 AI 系统给出 Navier-Stokes 千禧年问题解答",
-        "title_en": "On the Navier–Stokes Millennium Prize Problem",
-        "title_original": "On the Navier–Stokes Millennium Prize Problem",
-        "summary": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/navier-stokes-solution",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8355,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-09T06:12:51.461545Z"
+        "scored_at": "2026-09-09T11:37:52.003286Z"
       }
     }
   ]
