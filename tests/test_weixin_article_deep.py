@@ -601,8 +601,9 @@ def test_deep_validation_bounds():
     title = "校验测试标题"
     assert gwad.validate_deep_reason(good, title) is True
     assert gwad.validate_deep_reason("据某媒体报道，这是一条很短的消息。", title) is False  # <80
-    assert gwad.validate_deep_reason("好" * 450, title) is True  # == 上限
-    assert gwad.validate_deep_reason("好" * 451, title) is False  # 超出上限
+    assert gwad.validate_deep_reason("好" * 450, title) is True  # 旧上限，仍合法
+    assert gwad.validate_deep_reason("好" * 530, title) is True  # == 上限
+    assert gwad.validate_deep_reason("好" * 531, title) is False  # 超出上限
     assert gwad.validate_deep_reason("a" * 120, title) is False  # no CJK
     assert gwad.validate_deep_reason(title, title) is False
     assert gwad.validate_deep_reason("据某媒体报道，详情见 https://example.com 。" * 5, title) is False
@@ -653,30 +654,41 @@ def test_generate_deep_reason_rejects_overlong(capsys):
     assert "超出上限" in err
 
 
-def test_generate_deep_reason_retries_once_after_rejection(capsys):
-    """A stochastic overshoot gets one reinforced retry: the valid second
-    draft flows on into the marking pass instead of dropping the item."""
-    item = make_item(1, title="重试成功测试标题")
+def test_generate_deep_reason_compresses_overlong_draft(capsys):
+    """An over-length draft is COMPRESSED (delete-only), not regenerated from
+    scratch — the second call uses the compress prompt, and the compressed,
+    valid guide flows on into the marking pass instead of dropping the item."""
+    item = make_item(1, title="压缩兜底测试标题")
     cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
-    overlong = "该团队发布了新版本，" + "这是用于凑字数的测试句子内容。" * 40
-    router, calls = make_deep_text_router(
-        reason=lambda c: text_response(overlong if c["reason"] == 1 else LONG_DEEP_REASON)
-    )
+    overlong = "该团队发布了新版本，" + "这是用于凑字数的测试句子内容。" * 40  # ~609 字
+    reason_systems: list[str] = []
 
-    with patch("scripts.generate_weixin_article_deep.requests.post", side_effect=router):
+    def side_effect(url, **kwargs):
+        messages = (kwargs.get("json") or {}).get("messages") or [{}]
+        system = str((messages[0] or {}).get("content") or "")
+        if "校对员" in system:  # highlight pass echoes the guide verbatim
+            user = str((messages[-1] or {}).get("content") or "")
+            return text_response(user)
+        reason_systems.append(system)
+        # 1st reason call = fresh generation (overshoots); 2nd = compression.
+        return text_response(overlong if len(reason_systems) == 1 else LONG_DEEP_REASON)
+
+    with patch("scripts.generate_weixin_article_deep.requests.post", side_effect=side_effect):
         result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
 
     assert result == LONG_DEEP_REASON
-    assert calls["reason"] == 2   # overshoot + reinforced retry
-    assert calls["mark"] == 1     # the valid retry still gets highlighted
+    assert reason_systems[0] == gwad.DEEP_REASON_SYSTEM_PROMPT
+    assert reason_systems[1] == gwad.DEEP_REASON_COMPRESS_SYSTEM_PROMPT
     err = capsys.readouterr().err
-    assert "强化重试" in err
+    assert "压缩重试" in err
+    assert "强化重试" not in err   # over-length never takes the regen path
     assert "被校验拒绝" not in err
 
 
-def test_generate_deep_reason_rejects_after_retry_also_fails(capsys):
-    """When the retry trips the same bound, the item degrades as before."""
-    item = make_item(1, title="重试失败测试标题")
+def test_generate_deep_reason_drops_when_compression_keeps_overshooting(capsys):
+    """When both compression passes still overshoot the ceiling, the item
+    degrades as before (empty reason → dropped/backfilled)."""
+    item = make_item(1, title="压缩仍超长测试标题")
     cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
     overlong = "该团队发布了新版本，" + "这是用于凑字数的测试句子内容。" * 40
     router, calls = make_deep_text_router(reason=text_response(overlong))
@@ -685,10 +697,88 @@ def test_generate_deep_reason_rejects_after_retry_also_fails(capsys):
         result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
 
     assert result is None
-    assert calls["reason"] == 2
+    assert calls["reason"] == 3   # generation + two compression passes
+    assert calls["mark"] == 0     # never reached the highlight pass
+    err = capsys.readouterr().err
+    assert "压缩重试" in err
+    assert "超出上限" in err
+    assert "压缩后仍未过校验" in err
+
+
+def test_generate_deep_reason_two_stage_compression_recovers_merged(capsys):
+    """A merged big-story cluster whose draft overshoots, and whose FIRST
+    compression still overshoots, is recovered by the second (tighter) pass —
+    exactly the NVIDIA/GPT-6 case that used to drop with no fallback."""
+    item = make_event_story(
+        "rep", "NVIDIA 宣布以 129.303 亿美元收购 Hugging Face", summary=DEEP_SUMMARY
+    )
+    item["event_cluster"] = {
+        "rep_source_count": 1,
+        "members": [
+            {"story_id": "m1", "title": "成员角度", "site": "aihot",
+             "url": "https://m.test/1", "summary": "黄仁勋表示这桩联姻很合适"}
+        ],
+        "fingerprint": "fp1",
+    }
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    overlong = "该团队发布了新版本，" + "这是用于凑字数的测试句子内容。" * 40    # ~609 (>530)
+    still_over = "该团队发布了新版本，" + "这是用于凑字数的测试句子内容。" * 36  # ~549 (>530)
+    reason_systems: list[str] = []
+
+    def side_effect(url, **kwargs):
+        messages = (kwargs.get("json") or {}).get("messages") or [{}]
+        system = str((messages[0] or {}).get("content") or "")
+        if "校对员" in system:
+            user = str((messages[-1] or {}).get("content") or "")
+            return text_response(user)
+        reason_systems.append(system)
+        if len(reason_systems) == 1:
+            return text_response(overlong)      # merged generation overshoots
+        if len(reason_systems) == 2:
+            return text_response(still_over)    # compression #1 still >530
+        return text_response(LONG_DEEP_REASON)  # compression #2 lands it
+
+    with patch("scripts.generate_weixin_article_deep.requests.post", side_effect=side_effect):
+        result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
+
+    assert result == LONG_DEEP_REASON
+    assert reason_systems[0] == gwad.DEEP_REASON_MERGED_SYSTEM_PROMPT
+    assert reason_systems[1] == gwad.DEEP_REASON_COMPRESS_SYSTEM_PROMPT
+    assert reason_systems[2] == gwad.DEEP_REASON_COMPRESS_SYSTEM_PROMPT
+    err = capsys.readouterr().err
+    assert "压缩重试 #2" in err   # both passes were needed
+
+
+def test_generate_deep_reason_too_short_regenerates_not_compresses(capsys):
+    """A too-SHORT draft needs MORE content, not compression — it takes the
+    original reinforced regeneration; the compress prompt is never used."""
+    item = make_item(1, title="过短强化重试测试")
+    cfg = {"api_key": "k", "base_url": "https://api.example/v1", "text_model": "m"}
+    short = "据 Example Source 报道，该团队发布了新版本。"  # <80 字, otherwise valid
+    reason_systems: list[str] = []
+
+    def side_effect(url, **kwargs):
+        messages = (kwargs.get("json") or {}).get("messages") or [{}]
+        system = str((messages[0] or {}).get("content") or "")
+        if "校对员" in system:
+            user = str((messages[-1] or {}).get("content") or "")
+            return text_response(user)
+        reason_systems.append(system)
+        return text_response(short if len(reason_systems) == 1 else LONG_DEEP_REASON)
+
+    with patch("scripts.generate_weixin_article_deep.requests.post", side_effect=side_effect):
+        result = gwad.generate_deep_reason(item, "正文内容若干", cfg)
+
+    assert result == LONG_DEEP_REASON
+    # Both reason calls use the SINGLE generation prompt (fresh regen with a
+    # reminder in the USER turn), never the compress prompt.
+    assert reason_systems == [
+        gwad.DEEP_REASON_SYSTEM_PROMPT, gwad.DEEP_REASON_SYSTEM_PROMPT
+    ]
+    assert gwad.DEEP_REASON_COMPRESS_SYSTEM_PROMPT not in reason_systems
     err = capsys.readouterr().err
     assert "强化重试" in err
-    assert "超出上限" in err
+    assert "压缩重试" not in err
 
 
 def test_parse_deep_marks():

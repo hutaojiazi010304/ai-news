@@ -2397,13 +2397,18 @@ JINA_READER_BASE_URL = os.environ.get("JINA_READER_BASE_URL", "https://r.jina.ai
 # load_deep_cache, forcing regeneration.
 DEEP_CACHE_VERSION = 8
 
-# The prompt targets
-# 150-350 chars and the ceiling is enforced too: full-text grounding is
-# often rich enough that the model overshoots into padded, multi-topic
-# recaps without a hard bound (the brief "可适当写长" experiment drifted
-# every guide ~50-200 chars longer and pulled in peripheral reactions).
+# The prompts target 150-350 chars (single) / 150-380 (merged), but qwen
+# routinely overshoots on dense material — and on information-rich MERGED
+# clusters it has an effective "compression floor" around 450-530 chars:
+# delete-only compression trims a 600-char draft to ~470-524 and then stops
+# (the model won't cut what it judges to be core facts, so a 2nd pass often
+# returns the SAME length). The old 450 ceiling sat BELOW that floor, so the
+# biggest stories (NVIDIA/HF, GPT-6 Astra, Gemini 3.8) were dropped with no
+# fallback. Compression (see generate_deep_reason) still pulls gross overshoot
+# down; 530 is the acceptance gate that lets a compressed dense cluster land
+# instead of being culled. Trade guide length vs drop rate by moving this.
 DEEP_REASON_MIN_CHARS = 80
-DEEP_REASON_MAX_CHARS = 450
+DEEP_REASON_MAX_CHARS = 530
 # Highlight marks: the model brackets the most worth-reading fragments with
 # 【】 while generating (summaries/conclusions first, then theme-tied names
 # or numbers); rendering turns them into bold spans in the section color.
@@ -2602,6 +2607,29 @@ DEEP_REASON_MERGED_SYSTEM_PROMPT = (
     "绝不要附加中文翻译、音译或括号注释，哪怕你自认为知道官方中文名；"
     "人名按国籍写：华人用中文名（如黄仁勋），拿不准时保留英文，同样不得自行音译。"
     "只输出这段导读本身，不加引号，不加任何解释或前缀。"
+)
+
+# Fallback for OVER-LENGTH drafts — the dominant real-world failure. On dense
+# material qwen routinely overshoots the char target (observed 450-620 chars),
+# and regenerating from scratch is unreliable: the second draft often comes
+# back LONGER (471→493, 459→510, 497→509, 504→528). So instead of rewriting we
+# hand the SAME draft back and ask only for compression: shrink to budget,
+# delete-only, no new facts. Compression is a far more constrained task than
+# concise generation and reliably lands under the ceiling, recovering big
+# merged clusters that have no existing reason to fall back on (they would
+# otherwise be dropped, leaving member backfills to ship a single angle).
+# Shares the 「精读」 marker so the test router treats it as a deep-guide call.
+DEEP_REASON_COMPRESS_SYSTEM_PROMPT = (
+    "你是科技新闻编辑，负责把一段偏长的精读导读压缩到规定字数以内。"
+    "铁律：只删减、不改写、不新增——不得引入原导读没有的任何事实、数字、日期、"
+    "评价或意义话术，不得改变原意，不得改变主体归属（谁说了什么、谁做了什么"
+    "必须与原导读保持一致）。优先保留最关键的核心事实与各方反应，"
+    "删去次要细节、重复信息、背景铺垫与修饰性从句。"
+    "压缩后仍是一段连贯的话，不分点、不分段、不加小标题。"
+    "公司名、产品名、模型名、人名一律保持原导读的写法（英文保持英文，"
+    "不附加中文翻译、音译或括号注释）。"
+    "不得出现任何网址、链接或链接文字。"
+    "只输出压缩后的导读本身，不加引号、解释、前后缀或字数说明。"
 )
 
 # Highlighting runs as a SEPARATE second call over the finished guide:
@@ -3000,47 +3028,117 @@ def generate_deep_reason(item: dict, context: str, cfg: dict) -> str | None:
         DEEP_REASON_MERGED_SYSTEM_PROMPT if merged else DEEP_REASON_SYSTEM_PROMPT
     )
     user_content = f"标题：{title}\n\n正文：\n{context}"
-    reminder = ""
-    for attempt in (1, 2):
-        content = call_text_api(
-            [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_content + reminder},
-            ],
-            cfg,
-        )
-        if not content:
-            print("weixin-deep: 深度导读：API 未返回内容", file=sys.stderr, flush=True)
-            return None
-        stripped = str(content).strip()
-        if validate_deep_reason(stripped, title):
-            return add_deep_marks(stripped, cfg, title)
-        cause = _deep_reject_cause(stripped, title)
-        if attempt == 1:
-            # Most rejections are stochastic overshoots (length, meta
-            # commentary about the body); one reinforced retry recovers
-            # them — mirrors the marking pass's single retry.
+    content = call_text_api(
+        [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_content},
+        ],
+        cfg,
+    )
+    if not content:
+        print("weixin-deep: 深度导读：API 未返回内容", file=sys.stderr, flush=True)
+        return None
+    draft = str(content).strip()
+    if validate_deep_reason(draft, title):
+        return add_deep_marks(draft, cfg, title)
+    cause = _deep_reject_cause(draft, title)
+
+    # OVER-LENGTH is the dominant real-world failure: on dense material qwen
+    # overshoots the char target, and regenerating from scratch is unreliable
+    # (the retry often comes back LONGER). So we do NOT rewrite — we hand the
+    # draft back for COMPRESSION (delete-only, shrink to budget). But qwen has
+    # an effective "compression floor" of ~450-530 chars on dense merged
+    # clusters: once the remaining facts all read as core, it refuses to cut
+    # further (a 2nd pass often returns the SAME length — observed 470→470,
+    # 468→468, 454→454). So compression alone can't reach an arbitrary bound;
+    # DEEP_REASON_MAX_CHARS is therefore set just ABOVE that floor (530). The
+    # two work together — compression pulls a gross overshoot (600+) down toward
+    # the floor, and the ceiling accepts the settled floor — recovering big
+    # merged clusters that have no existing reason to fall back on and would
+    # otherwise be dropped. Two passes with a tightening budget cover a first
+    # compression that still lands above the ceiling (e.g. 631→531→524).
+    if len(draft) > DEEP_REASON_MAX_CHARS:
+        current = draft
+        for comp_attempt, budget in ((1, 300), (2, 260)):
             print(
-                f"weixin-deep: 深度导读初稿未过校验（{cause}），强化重试：{title[:24]}",
+                f"weixin-deep: 深度导读初稿超长（{cause}），压缩重试 #{comp_attempt}"
+                f"（目标≤{budget}字）：{title[:24]}",
                 file=sys.stderr,
                 flush=True,
             )
-            reminder = (
-                "\n\n（严格遵守要求：只输出导读本身，不加任何解释、前缀或对"
-                "素材质量的评价；字数控制在一百五十到三百八十之间。）"
-                if merged
-                else "\n\n（严格遵守要求：只输出导读本身，不加任何解释、前缀或对"
-                "正文质量的评价；字数控制在一百五十到三百五十之间。）"
+            compressed = call_text_api(
+                [
+                    {"role": "system", "content": DEEP_REASON_COMPRESS_SYSTEM_PROMPT},
+                    {
+                        "role": "user",
+                        "content": (
+                            f"把下面这段精读导读压缩到{budget}字以内，"
+                            f"只删减不新增、保持一段话：\n\n{current}"
+                        ),
+                    },
+                ],
+                cfg,
             )
-            continue
-        # Silent rejects made failures impossible to diagnose; show what the
-        # model returned and which bound it tripped, even after the retry.
+            if not compressed:
+                print(
+                    "weixin-deep: 深度导读压缩：API 未返回内容",
+                    file=sys.stderr,
+                    flush=True,
+                )
+                return None
+            current = str(compressed).strip()
+            if validate_deep_reason(current, title):
+                return add_deep_marks(current, cfg, title)
+            cause = _deep_reject_cause(current, title)
+            if len(current) <= DEEP_REASON_MAX_CHARS:
+                # Now under the ceiling but tripped a DIFFERENT bound (over-
+                # compressed → too short, or a stray URL/refusal): another
+                # compression pass can't fix that, so stop here and drop.
+                break
         print(
-            f"weixin-deep: 深度导读被校验拒绝（{cause}）：{stripped[:60]}…",
+            f"weixin-deep: 深度导读压缩后仍未过校验（{cause}）：{current[:60]}…",
             file=sys.stderr,
             flush=True,
         )
         return None
+
+    # NON-length failure (too short / refusal / stray URL / no CJK): one
+    # reinforced from-scratch retry, as before — compression can't help these
+    # (a too-short draft needs MORE content, not less; a refusal needs a clean
+    # regeneration). Mirrors the marking pass's single retry.
+    print(
+        f"weixin-deep: 深度导读初稿未过校验（{cause}），强化重试：{title[:24]}",
+        file=sys.stderr,
+        flush=True,
+    )
+    reminder = (
+        "\n\n（严格遵守要求：只输出导读本身，不加任何解释、前缀或对"
+        "素材质量的评价；字数控制在一百五十到三百八十之间。）"
+        if merged
+        else "\n\n（严格遵守要求：只输出导读本身，不加任何解释、前缀或对"
+        "正文质量的评价；字数控制在一百五十到三百五十之间。）"
+    )
+    content = call_text_api(
+        [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_content + reminder},
+        ],
+        cfg,
+    )
+    if not content:
+        print("weixin-deep: 深度导读：API 未返回内容", file=sys.stderr, flush=True)
+        return None
+    retry = str(content).strip()
+    if validate_deep_reason(retry, title):
+        return add_deep_marks(retry, cfg, title)
+    # Silent rejects made failures impossible to diagnose; show what the model
+    # returned and which bound it tripped, even after the retry.
+    cause = _deep_reject_cause(retry, title)
+    print(
+        f"weixin-deep: 深度导读被校验拒绝（{cause}）：{retry[:60]}…",
+        file=sys.stderr,
+        flush=True,
+    )
     return None
 
 
