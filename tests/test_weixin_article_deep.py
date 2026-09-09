@@ -596,6 +596,77 @@ def test_regenerate_by_number_and_chinese_fragment(tmp_path):
     assert fourth_calls["reason"] == 0
 
 
+def test_exclude_candidates_removes_match_and_absorbed_members(capsys):
+    """--exclude drops the matched candidate AND the absorbed members of an
+    excluded merged representative (else the same event would re-enter via
+    the last-resort backup tail); unrelated members and the rest keep pool
+    order. Positional specs work like --regenerate's."""
+    rep = {"story_id": "rep", "title": "NVIDIA 宣布收购 Hugging Face"}
+    member = {
+        "story_id": "m1",
+        "title": "Nvidia to buy Hugging Face",
+        "absorbed_into": "rep",
+    }
+    other_member = {
+        "story_id": "m2",
+        "title": "Hugging Face 发布 funes",
+        "absorbed_into": "rep2",
+    }
+    plain = {"story_id": "s2", "title": "OpenAI 更新 Codex CLI"}
+    candidates = [rep, plain, member, other_member]
+
+    kept = gwad.exclude_candidates("t", candidates, ["收购"])
+    assert [it["story_id"] for it in kept] == ["s2", "m2"]
+    out = capsys.readouterr().out
+    assert "剔除 2 条" in out and "被吸收成员" in out
+
+    # Positional spec (2 → the second candidate) removes exactly one.
+    kept = gwad.exclude_candidates("t", candidates, ["2"])
+    assert [it["story_id"] for it in kept] == ["rep", "m1", "m2"]
+
+    # story_id spec.
+    kept = gwad.exclude_candidates("t", candidates, ["s2"])
+    assert [it["story_id"] for it in kept] == ["rep", "m1", "m2"]
+
+
+def test_exclude_candidates_unmatched_keeps_pool_and_prints_menu(capsys):
+    """A mistyped veto must not silently drop anything: the pool survives
+    intact and the numbered candidate menu is printed for a retry."""
+    a = {"story_id": "s1", "title": "标题一"}
+    kept = gwad.exclude_candidates("t", [a], ["不存在的片段"])
+    assert kept == [a]
+    err = capsys.readouterr().err
+    assert "未命中" in err and "标题一" in err
+
+
+def test_exclude_flag_drops_item_and_next_candidate_takes_slot(tmp_path):
+    """End-to-end: the vetoed item never reaches guide generation (no API
+    cost, no cache write) and the next candidate is promoted into the
+    rendered article in its place."""
+    data_dir, assets_dir = write_fixture(
+        tmp_path,
+        [make_item(1, summary=DEEP_SUMMARY), make_item(2, summary=DEEP_SUMMARY)],
+    )
+    make_static_asset(assets_dir)
+    deep_dir = tmp_path / "weixin-deep"
+    args = [
+        "--data-dir", str(data_dir),
+        "--output-dir", str(deep_dir),
+        "--assets-dir", str(assets_dir),
+        "--no-images",
+    ]
+
+    side_effect, calls = make_deep_text_router(reason=text_response(LONG_DEEP_REASON))
+    rc = run_deep_patched(
+        BASE_ENV, side_effect, offline_session(), args + ["--exclude", "story_1"]
+    )
+    assert rc == 0
+    assert calls["reason"] == 1  # 只有补位条目消耗导读生成
+    html_text = (deep_dir / "index.html").read_text(encoding="utf-8")
+    assert "测试新闻标题 2" in html_text
+    assert "测试新闻标题 1" not in html_text
+
+
 def test_deep_validation_bounds():
     good = LONG_DEEP_REASON
     title = "校验测试标题"

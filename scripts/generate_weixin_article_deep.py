@@ -2013,6 +2013,59 @@ def report_regenerate(
             )
 
 
+def exclude_candidates(
+    prefix: str, candidates: list[dict], specs: list[str]
+) -> list[dict]:
+    """Remove ``--exclude`` matches from the candidate pool; returns the rest.
+
+    Reuses the ``--regenerate`` spec syntax (display position, story_id or
+    title fragment, 中英文均可). Matched candidates are dropped BEFORE
+    ``fill_deep_reasons`` runs, so its existing category-aware
+    drop-and-backfill simply promotes the next-ranked candidates — the
+    pool carries up to ``DEFAULT_DEEP_POOL_EXTRA`` backups per category,
+    so an excluded official is replaced by the next OFFICIAL backup and
+    the issue's composition (e.g. 16+4) survives manual vetoes too.
+
+    Absorbed members of an excluded merged representative are removed
+    with it, otherwise the same event could slip back in through the
+    last-resort backup tail with a single-angle guide.
+
+    Per-run only: neither the cache nor the archive is touched, so a
+    later run without the flag sees the full pool again.
+    """
+    wanted, unmatched = match_regenerate(candidates, specs)
+    for spec in unmatched:
+        print(f"{prefix}: --exclude 未命中：{spec}", file=sys.stderr)
+    if unmatched and not wanted:
+        print(f"{prefix}: 本期候选如下，可用序号或标题片段重试：", file=sys.stderr)
+        for num, it in enumerate(candidates, 1):
+            print(
+                f"  {circled_number(num)} {str(it.get('title') or '')[:60]}",
+                file=sys.stderr,
+            )
+    doomed = set(wanted)
+    doomed.update(
+        str(it.get("story_id") or "")
+        for it in candidates
+        if str(it.get("absorbed_into") or "") in wanted
+    )
+    doomed.discard("")
+    if not doomed:
+        return list(candidates)
+    kept: list[dict] = []
+    removed: list[dict] = []
+    for it in candidates:
+        if str(it.get("story_id") or "") in doomed:
+            removed.append(it)
+        else:
+            kept.append(it)
+    print(f"{prefix}: --exclude 剔除 {len(removed)} 条候选，后排候选依次补位：")
+    for it in removed:
+        tag = "（被吸收成员，随代表一并剔除）" if it.get("absorbed_into") else ""
+        print(f"  ✗ {str(it.get('title') or '')[:60]}{tag}")
+    return kept
+
+
 # ---------------------------------------------------------------------------
 # Cover image
 # ---------------------------------------------------------------------------
@@ -4374,6 +4427,17 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         ),
     )
     parser.add_argument(
+        "--exclude",
+        default="",
+        help=(
+            "comma-separated display numbers (3 or ③), story ids or title "
+            "fragments (中英文均可，忽略大小写): matching candidates are "
+            "removed from THIS run's pool so the next-ranked backups move "
+            "up (absorbed members of an excluded merged story go too). "
+            "Per-run only — cache and archive are untouched"
+        ),
+    )
+    parser.add_argument(
         "--dry-run", action="store_true", help="run without writing any files"
     )
     return parser.parse_args(argv)
@@ -4451,6 +4515,20 @@ def main(argv: list[str] | None = None) -> int:
     # Runs over the full candidate pool: translations are cached, so promoted
     # backups already have Chinese titles.
     ensure_zh_titles(candidates, cache, cfg, stats)
+
+    # Manually vetoed items (--exclude): removed BEFORE any guide is
+    # written, so fill_deep_reasons' category-aware backfill promotes the
+    # next-ranked candidates and the 16/4 composition survives. Runs after
+    # title translation so fragments match the Chinese display titles the
+    # maintainer reads in the article. Runs before --regenerate so a veto
+    # wins over a re-roll of the same item.
+    if str(args.exclude or "").strip():
+        candidates = exclude_candidates(
+            "weixin-deep", candidates, parse_regenerate_specs(args.exclude)
+        )
+        if not candidates:
+            print("weixin-deep: --exclude 剔除了全部候选，nothing to do")
+            return 0
 
     # Re-roll cached guides named via --regenerate. Runs AFTER title
     # translation so fragments can match the Chinese display titles the

@@ -178,6 +178,8 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
 
    PowerShell 用 `$env:DASHSCOPE_API_KEY="你的key"`（代理同理
    `$env:HTTPS_PROXY=…`），macOS/Linux 用 `export …`。
+     
+     
 
    **无代理出刊（云服务器，推荐长期方案）**：本地没有可用代理时，整条
    出刊链可以搬到云主机 36.111.148.123 上跑，全程不碰代理——服务器直连
@@ -196,8 +198,12 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
    rem 1) 同步代码（仅代码有改动时需要；注意 --exclude 不要加引号）
    tar -cf - --exclude=__pycache__ scripts tests | ssh root@36.111.148.123 "cd /opt/ai-news && tar -xf -"
 
-   rem 2) 出刊（参数透传，如 --regenerate 9 只重掷第 9 条、--dry-run 不写文件）
+   rem 2) 出刊（参数透传，如 --regenerate 9 只重掷第 9 条、--dry-run 不写文件；
+   rem    参数值含空格/中文标点时必须加引号：外层双引号包 ssh 命令、内层
+   rem    单引号包参数值，否则被 shell 按空格拆散报 unrecognized arguments。
+   rem    未命中会打印候选清单、不会误删，照清单重试即可）
    ssh root@36.111.148.123 "cd /opt/ai-news && ./publish_weixin.sh"
+   ssh root@36.111.148.123 "cd /opt/ai-news && ./publish_weixin.sh --exclude '加速科研,美国司法部'"
 
    rem 3) 取回产物（产物在服务器可随时重生成，本地旧的可直接删；想留就改名）
    rmdir /s /q weixin-deep
@@ -327,6 +333,15 @@ Settings → Pages → Source：Deploy from a branch → Branch: `master` / `(ro
   序号按整期排名数）、**标题片段**（看到什么输什么，中文显示标题或英文
   原标题都行、忽略大小写）、**story_id**；`all` 全部重掷。未命中会打印
   本期编号清单供重试
+- **手动剔除与补位**：某几条不想上本期，用 `--exclude`（参数写法与
+  `--regenerate` 完全相同：显示序号 / 标题片段（中英文均可）/ story_id，
+  逗号分隔可混写）。被剔除的条目本次运行**直接不进候选池**，后排候选
+  自动依次补位——备份按类目分池（官方与非官方各 `WEIXIN_DEEP_POOL_EXTRA`
+  条，默认 10），剔掉官方条目顶上来的仍是下一条官方，16+4 的构成不变；
+  剔除合并条目时，它吸收的成员备份一并移除（否则同一事件会从末位备份
+  绕回来）。**只对当次运行生效**：不改缓存、不改 archive，下次不带参数
+  重跑又是完整候选池。可与 `--regenerate` 同用：先剔除、重掷只作用于
+  剩下的条目；未命中同样打印候选清单供重试
 - **插图**：出刊时逐条抓原文页（直连，403/空页/过短走 reader 兜底；直连
   成功但整页定位不到正文的 JS 壳页——如 github.blog 前端渲染、`<article>`
   全是作者卡/推荐卡——会再走一次 reader 代理：导读拿 reader 渲染出的正文
@@ -389,6 +404,10 @@ python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weix
 # 未命中会打印本期编号清单，照着重试即可）
 python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-deep --regenerate 3
 python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-deep --regenerate 连线、运行
+
+# 手动剔除某几条重跑，后排候选自动补位（参数写法同 --regenerate：
+# 序号 / 标题片段 / story_id；只对当次运行生效，不改缓存与 archive）
+python scripts/generate_weixin_article_deep.py --data-dir data --output-dir weixin-deep --exclude 术语,story_3
 
 # 强制走日更回退（跳过周更池重建；Windows cmd 先 set WEIXIN_FORCE_DAILY=1，
 # macOS/Linux 用 WEIXIN_FORCE_DAILY=1 python ...）
