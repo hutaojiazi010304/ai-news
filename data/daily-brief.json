@@ -1,114 +1,29 @@
 {
-  "generated_at": "2026-09-10T11:35:15.320901Z",
+  "generated_at": "2026-09-10T16:33:45.048797Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
     {
-      "story_id": "story_ea4f77cf3524",
-      "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-      "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-      "primary_url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-      "source": "Hugging Face Blog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "fd91534dca51075721031b57097e5f9315f7f497",
-          "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-          "title_zh": null,
-          "title_en": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-          "title_original": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-09T15:36:24Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hugging Face Blog"
-      ],
-      "items": [
-        {
-          "id": "fd91534dca51075721031b57097e5f9315f7f497",
-          "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-          "title_zh": null,
-          "title_en": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-          "title_original": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-09T15:36:24Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8285,
-      "importance": 0.8285,
-      "importance_score": 0.8285,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.825,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-09T15:36:24Z",
-      "latest_at": "2026-09-09T15:36:24Z",
-      "primary_item": {
-        "id": "fd91534dca51075721031b57097e5f9315f7f497",
-        "title": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-        "title_zh": null,
-        "title_en": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-        "title_original": "IBM releases SOTA Granite Time Series PatchTST-FM-r2 model with commercial-friendly license",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
-        "source": "Hugging Face Blog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8579,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
-      }
-    },
-    {
-      "story_id": "story_5969262efc42",
-      "title": "Paul Christiano joins OpenAI Foundation Board",
-      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
-      "primary_url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "story_id": "story_5719390a8fd1",
+      "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+      "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+      "primary_url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
       "source": "OpenAI News",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "4d311c7aa0c8739104ee8faec7f0e72991cd734b",
-          "title": "Paul Christiano joins OpenAI Foundation Board",
+          "id": "a3b78437e92fb6a33cdc8b6fb400b1a8253ada5a",
+          "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
           "title_zh": null,
-          "title_en": "Paul Christiano joins OpenAI Foundation Board",
-          "title_original": "Paul Christiano joins OpenAI Foundation Board",
-          "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
+          "title_en": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+          "title_original": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+          "summary": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+          "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-09T17:00:00Z"
+          "published_at": "2026-09-10T16:00:00Z"
         }
       ],
       "source_count": 1,
@@ -117,31 +32,31 @@
       ],
       "items": [
         {
-          "id": "4d311c7aa0c8739104ee8faec7f0e72991cd734b",
-          "title": "Paul Christiano joins OpenAI Foundation Board",
+          "id": "a3b78437e92fb6a33cdc8b6fb400b1a8253ada5a",
+          "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
           "title_zh": null,
-          "title_en": "Paul Christiano joins OpenAI Foundation Board",
-          "title_original": "Paul Christiano joins OpenAI Foundation Board",
-          "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
+          "title_en": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+          "title_original": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+          "summary": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+          "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-09T17:00:00Z"
+          "published_at": "2026-09-10T16:00:00Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8225,
-      "importance": 0.8225,
-      "importance_score": 0.8225,
+      "score": 0.867,
+      "importance": 0.867,
+      "importance_score": 0.867,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8362,
+        "ai_relevance": 0.99,
+        "recency": 0.9946,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -151,49 +66,49 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-09T17:00:00Z",
-      "latest_at": "2026-09-09T17:00:00Z",
+      "earliest_at": "2026-09-10T16:00:00Z",
+      "latest_at": "2026-09-10T16:00:00Z",
       "primary_item": {
-        "id": "4d311c7aa0c8739104ee8faec7f0e72991cd734b",
-        "title": "Paul Christiano joins OpenAI Foundation Board",
+        "id": "a3b78437e92fb6a33cdc8b6fb400b1a8253ada5a",
+        "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
         "title_zh": null,
-        "title_en": "Paul Christiano joins OpenAI Foundation Board",
-        "title_original": "Paul Christiano joins OpenAI Foundation Board",
-        "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
+        "title_en": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+        "title_original": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+        "summary": "César de la Fuente’s lab uses Codex and ChatGPT to search living and extinct genomes for antimicrobial candidates to fight drug-resistant infections.",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+        "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.847,
+      "peak_score": 0.867,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
-      "story_id": "story_0a10715b8943",
-      "title": "Get ready for the game with new football features in Search",
-      "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search",
-      "primary_url": "https://blog.google/products-and-platforms/products/search/football-features-google-search",
+      "story_id": "story_d977d81c5d9f",
+      "title": "3 ways to prep for your next big race with Search",
+      "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips",
+      "primary_url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips",
       "source": "Google AI Blog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "dad5e6c6622a0090580d4406896a7166970daff0",
-          "title": "Get ready for the game with new football features in Search",
+          "id": "d17100a4d67001021e880928e59782b6ce602ba4",
+          "title": "3 ways to prep for your next big race with Search",
           "title_zh": null,
-          "title_en": "Get ready for the game with new football features in Search",
-          "title_original": "Get ready for the game with new football features in Search",
-          "summary": "An illustrated graphic set against a vibrant green background featuring American football elements, including a gold trophy, a blue helmet, a silver whistle, a football, a mini scoreboard, and play diagrams, with the icon for AI Mode in Google Search in t",
+          "title_en": "3 ways to prep for your next big race with Search",
+          "title_original": "3 ways to prep for your next big race with Search",
+          "summary": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
           "recommend_reason_zh": null,
-          "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search",
+          "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips",
           "source": "Google AI Blog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-09T16:00:00Z"
+          "published_at": "2026-09-10T16:00:00Z"
         }
       ],
       "source_count": 1,
@@ -202,31 +117,31 @@
       ],
       "items": [
         {
-          "id": "dad5e6c6622a0090580d4406896a7166970daff0",
-          "title": "Get ready for the game with new football features in Search",
+          "id": "d17100a4d67001021e880928e59782b6ce602ba4",
+          "title": "3 ways to prep for your next big race with Search",
           "title_zh": null,
-          "title_en": "Get ready for the game with new football features in Search",
-          "title_original": "Get ready for the game with new football features in Search",
-          "summary": "An illustrated graphic set against a vibrant green background featuring American football elements, including a gold trophy, a blue helmet, a silver whistle, a football, a mini scoreboard, and play diagrams, with the icon for AI Mode in Google Search in t",
+          "title_en": "3 ways to prep for your next big race with Search",
+          "title_original": "3 ways to prep for your next big race with Search",
+          "summary": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
           "recommend_reason_zh": null,
-          "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search",
+          "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips",
           "source": "Google AI Blog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-09T16:00:00Z"
+          "published_at": "2026-09-10T16:00:00Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8131,
-      "importance": 0.8131,
-      "importance_score": 0.8131,
+      "score": 0.843,
+      "importance": 0.843,
+      "importance_score": 0.843,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8281,
+        "recency": 0.9946,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -236,26 +151,111 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-09T16:00:00Z",
-      "latest_at": "2026-09-09T16:00:00Z",
+      "earliest_at": "2026-09-10T16:00:00Z",
+      "latest_at": "2026-09-10T16:00:00Z",
       "primary_item": {
-        "id": "dad5e6c6622a0090580d4406896a7166970daff0",
-        "title": "Get ready for the game with new football features in Search",
+        "id": "d17100a4d67001021e880928e59782b6ce602ba4",
+        "title": "3 ways to prep for your next big race with Search",
         "title_zh": null,
-        "title_en": "Get ready for the game with new football features in Search",
-        "title_original": "Get ready for the game with new football features in Search",
-        "summary": "An illustrated graphic set against a vibrant green background featuring American football elements, including a gold trophy, a blue helmet, a silver whistle, a football, a mini scoreboard, and play diagrams, with the icon for AI Mode in Google Search in t",
+        "title_en": "3 ways to prep for your next big race with Search",
+        "title_original": "3 ways to prep for your next big race with Search",
+        "summary": "Illustration on a blue background of technicolor runners with a magnifying glass and Gemini spark overlaid",
         "recommend_reason_zh": null,
-        "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search",
+        "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips",
         "source": "Google AI Blog",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8426,
+      "peak_score": 0.843,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
+      }
+    },
+    {
+      "story_id": "story_15857ddbbec1",
+      "title": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能 / Rebuilding AUTOMATIC1111 with Gradio Workflow",
+      "url": "https://huggingface.co/blog/gradio-workflow-1111",
+      "primary_url": "https://huggingface.co/blog/gradio-workflow-1111",
+      "source": "Hugging Face Blog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "e78747797ab8eaea98f4e279c790cee43817aef7",
+          "title": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能 / Rebuilding AUTOMATIC1111 with Gradio Workflow",
+          "title_zh": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能",
+          "title_en": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+          "title_original": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://huggingface.co/blog/gradio-workflow-1111",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-10T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hugging Face Blog"
+      ],
+      "items": [
+        {
+          "id": "e78747797ab8eaea98f4e279c790cee43817aef7",
+          "title": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能 / Rebuilding AUTOMATIC1111 with Gradio Workflow",
+          "title_zh": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能",
+          "title_en": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+          "title_original": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://huggingface.co/blog/gradio-workflow-1111",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-10T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8335,
+      "importance": 0.8335,
+      "importance_score": 0.8335,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.95,
+        "recency": 0.8526,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-10T00:00:00Z",
+      "latest_at": "2026-09-10T00:00:00Z",
+      "primary_item": {
+        "id": "e78747797ab8eaea98f4e279c790cee43817aef7",
+        "title": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能 / Rebuilding AUTOMATIC1111 with Gradio Workflow",
+        "title_zh": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能",
+        "title_en": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+        "title_original": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://huggingface.co/blog/gradio-workflow-1111",
+        "source": "Hugging Face Blog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.841,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
@@ -303,15 +303,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8275,
-      "importance": 0.8275,
-      "importance_score": 0.8275,
+      "score": 0.8195,
+      "importance": 0.8195,
+      "importance_score": 0.8195,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9473,
+        "recency": 0.903,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -339,7 +339,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
@@ -387,15 +387,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8105,
-      "importance": 0.8105,
-      "importance_score": 0.8105,
+      "score": 0.8033,
+      "importance": 0.8033,
+      "importance_score": 0.8033,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8528,
+        "recency": 0.8129,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -423,7 +423,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
@@ -471,15 +471,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8051,
-      "importance": 0.8051,
-      "importance_score": 0.8051,
+      "score": 0.7979,
+      "importance": 0.7979,
+      "importance_score": 0.7979,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8563,
+        "recency": 0.8162,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -507,112 +507,27 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
-      "story_id": "story_c1742d135f37",
-      "title": "Recreating a 70-year love story frame by frame",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film",
-      "primary_url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film",
-      "source": "Google AI Blog",
+      "story_id": "story_5d88d93a2d9b",
+      "title": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
+      "url": "https://deepseek.com/news/deepseek-v4-1-flash",
+      "primary_url": "https://deepseek.com/news/deepseek-v4-1-flash",
+      "source": "DeepSeek",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "26fbf978c4fd836611834662158952580d960e28",
-          "title": "Recreating a 70-year love story frame by frame",
+          "id": "1b5f3bfa99b686121a04dc86a4a38c1b6cf3a1d5",
+          "title": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
           "title_zh": null,
-          "title_en": "Recreating a 70-year love story frame by frame",
-          "title_original": "Recreating a 70-year love story frame by frame",
-          "summary": "An elderly couple sitting in a movie theater. Overlayed are \"Teulluride Film Festival\" and \"Love, Rendered\"",
-          "recommend_reason_zh": null,
-          "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film",
-          "source": "Google AI Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-09T16:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Google AI Blog"
-      ],
-      "items": [
-        {
-          "id": "26fbf978c4fd836611834662158952580d960e28",
-          "title": "Recreating a 70-year love story frame by frame",
-          "title_zh": null,
-          "title_en": "Recreating a 70-year love story frame by frame",
-          "title_original": "Recreating a 70-year love story frame by frame",
-          "summary": "An elderly couple sitting in a movie theater. Overlayed are \"Teulluride Film Festival\" and \"Love, Rendered\"",
-          "recommend_reason_zh": null,
-          "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film",
-          "source": "Google AI Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-09T16:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8131,
-      "importance": 0.8131,
-      "importance_score": 0.8131,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.8281,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-09T16:00:00Z",
-      "latest_at": "2026-09-09T16:00:00Z",
-      "primary_item": {
-        "id": "26fbf978c4fd836611834662158952580d960e28",
-        "title": "Recreating a 70-year love story frame by frame",
-        "title_zh": null,
-        "title_en": "Recreating a 70-year love story frame by frame",
-        "title_original": "Recreating a 70-year love story frame by frame",
-        "summary": "An elderly couple sitting in a movie theater. Overlayed are \"Teulluride Film Festival\" and \"Love, Rendered\"",
-        "recommend_reason_zh": null,
-        "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film",
-        "source": "Google AI Blog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8426,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
-      }
-    },
-    {
-      "story_id": "story_15857ddbbec1",
-      "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-      "url": "https://huggingface.co/blog/gradio-workflow-1111",
-      "primary_url": "https://huggingface.co/blog/gradio-workflow-1111",
-      "source": "Hugging Face Blog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "e78747797ab8eaea98f4e279c790cee43817aef7",
-          "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "title_zh": null,
-          "title_en": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "title_original": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+          "title_en": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
+          "title_original": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/gradio-workflow-1111",
-          "source": "Hugging Face Blog",
+          "url": "https://deepseek.com/news/deepseek-v4-1-flash",
+          "source": "DeepSeek",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
           "published_at": "2026-09-10T00:00:00Z"
@@ -620,19 +535,19 @@
       ],
       "source_count": 1,
       "source_names": [
-        "Hugging Face Blog"
+        "DeepSeek"
       ],
       "items": [
         {
-          "id": "e78747797ab8eaea98f4e279c790cee43817aef7",
-          "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+          "id": "1b5f3bfa99b686121a04dc86a4a38c1b6cf3a1d5",
+          "title": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
           "title_zh": null,
-          "title_en": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "title_original": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+          "title_en": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
+          "title_original": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/gradio-workflow-1111",
-          "source": "Hugging Face Blog",
+          "url": "https://deepseek.com/news/deepseek-v4-1-flash",
+          "source": "DeepSeek",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
           "published_at": "2026-09-10T00:00:00Z"
@@ -640,15 +555,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.841,
-      "importance": 0.841,
-      "importance_score": 0.841,
+      "score": 0.8255,
+      "importance": 0.8255,
+      "importance_score": 0.8255,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8944,
+        "ai_relevance": 0.91,
+        "recency": 0.8526,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -661,23 +576,108 @@
       "earliest_at": "2026-09-10T00:00:00Z",
       "latest_at": "2026-09-10T00:00:00Z",
       "primary_item": {
-        "id": "e78747797ab8eaea98f4e279c790cee43817aef7",
-        "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+        "id": "1b5f3bfa99b686121a04dc86a4a38c1b6cf3a1d5",
+        "title": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
         "title_zh": null,
-        "title_en": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-        "title_original": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+        "title_en": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
+        "title_original": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/gradio-workflow-1111",
-        "source": "Hugging Face Blog",
+        "url": "https://deepseek.com/news/deepseek-v4-1-flash",
+        "source": "DeepSeek",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.841,
+      "peak_score": 0.8255,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
+      }
+    },
+    {
+      "story_id": "story_b2726331d325",
+      "title": "OpenAI 在 ChatGPT Work 中推出 Data agent / Now everyone can put data to work",
+      "url": "https://openai.com/index/put-data-to-work",
+      "primary_url": "https://openai.com/index/put-data-to-work",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "324abe5a685dd53afc46c15fe0abbfaa534dc52e",
+          "title": "OpenAI 在 ChatGPT Work 中推出 Data agent / Now everyone can put data to work",
+          "title_zh": "OpenAI 在 ChatGPT Work 中推出 Data agent",
+          "title_en": "Now everyone can put data to work",
+          "title_original": "Now everyone can put data to work",
+          "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/put-data-to-work",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-10T15:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "324abe5a685dd53afc46c15fe0abbfaa534dc52e",
+          "title": "OpenAI 在 ChatGPT Work 中推出 Data agent / Now everyone can put data to work",
+          "title_zh": "OpenAI 在 ChatGPT Work 中推出 Data agent",
+          "title_en": "Now everyone can put data to work",
+          "title_original": "Now everyone can put data to work",
+          "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/put-data-to-work",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-10T15:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8493,
+      "importance": 0.8493,
+      "importance_score": 0.8493,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9851,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-10T15:00:00Z",
+      "latest_at": "2026-09-10T15:00:00Z",
+      "primary_item": {
+        "id": "324abe5a685dd53afc46c15fe0abbfaa534dc52e",
+        "title": "OpenAI 在 ChatGPT Work 中推出 Data agent / Now everyone can put data to work",
+        "title_zh": "OpenAI 在 ChatGPT Work 中推出 Data agent",
+        "title_en": "Now everyone can put data to work",
+        "title_original": "Now everyone can put data to work",
+        "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/put-data-to-work",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8493,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
@@ -725,15 +725,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8057,
-      "importance": 0.8057,
-      "importance_score": 0.8057,
+      "score": 0.7976,
+      "importance": 0.7976,
+      "importance_score": 0.7976,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.87,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9616,
+        "recency": 0.9166,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -761,7 +761,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
@@ -809,15 +809,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7784,
-      "importance": 0.7784,
-      "importance_score": 0.7784,
+      "score": 0.7713,
+      "importance": 0.7713,
+      "importance_score": 0.7713,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.85,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8433,
+        "recency": 0.8038,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -845,92 +845,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
-      "story_id": "story_266dc2269e8a",
-      "title": "OpenAI 呼吁抓住 AI 政策窗口期，支持强制性国家安全监管与四项加州法案 / The AI policy window is open. We need to act.",
-      "url": "https://openai.com/index/ai-policy-window",
-      "primary_url": "https://openai.com/index/ai-policy-window",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
+      "story_id": "story_56692de3b9bc",
+      "title": "Google 发布图像工具 Pics，基于 Nano Banana 支持精准编辑与协作 / Bring your imagination to life with Google Pics. Built with Nano Banana， Pics makes it easy to gene…",
+      "url": "https://x.com/GoogleAI/status/2098072879480947085",
+      "primary_url": "https://x.com/GoogleAI/status/2098072879480947085",
+      "source": "X：Google AI (@GoogleAI)",
+      "source_name": "AI HOT",
       "sources": [
         {
-          "id": "e8b88fd9e0d736b7c8405e86b6c0b0efa05d2a39",
-          "title": "OpenAI 呼吁抓住 AI 政策窗口期，支持强制性国家安全监管与四项加州法案 / The AI policy window is open. We need to act.",
-          "title_zh": "OpenAI 呼吁抓住 AI 政策窗口期，支持强制性国家安全监管与四项加州法案",
-          "title_en": "The AI policy window is open. We need to act.",
-          "title_original": "The AI policy window is open. We need to act.",
-          "summary": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
+          "id": "69b006d874e21229a70780aecccc9d837c74fe04",
+          "title": "Google 发布图像工具 Pics，基于 Nano Banana 支持精准编辑与协作 / Bring your imagination to life with Google Pics. Built with Nano Banana， Pics makes it easy to gene…",
+          "title_zh": "Google 发布图像工具 Pics，基于 Nano Banana 支持精准编辑与协作",
+          "title_en": "Bring your imagination to life with Google Pics. Built with Nano Banana， Pics makes it easy to gene…",
+          "title_original": "Bring your imagination to life with Google Pics. Built with Nano Banana， Pics makes it easy to gene…",
+          "summary": "Google 发布图像生成工具 Google Pics，基于 Nano Banana 构建，现已上线 pics.new。支持局部对象编辑、图内文字修改与翻译、多人协作创作和单提示词生成多个选项。",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/ai-policy-window",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-09T13:00:00Z"
+          "url": "https://x.com/GoogleAI/status/2098072879480947085",
+          "source": "X：Google AI (@GoogleAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T15:35:29Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "OpenAI News"
+        "X：Google AI (@GoogleAI)"
       ],
       "items": [
         {
-          "id": "e8b88fd9e0d736b7c8405e86b6c0b0efa05d2a39",
-          "title": "OpenAI 呼吁抓住 AI 政策窗口期，支持强制性国家安全监管与四项加州法案 / The AI policy window is open. We need to act.",
-          "title_zh": "OpenAI 呼吁抓住 AI 政策窗口期，支持强制性国家安全监管与四项加州法案",
-          "title_en": "The AI policy window is open. We need to act.",
-          "title_original": "The AI policy window is open. We need to act.",
-          "summary": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
+          "id": "69b006d874e21229a70780aecccc9d837c74fe04",
+          "title": "Google 发布图像工具 Pics，基于 Nano Banana 支持精准编辑与协作 / Bring your imagination to life with Google Pics. Built with Nano Banana， Pics makes it easy to gene…",
+          "title_zh": "Google 发布图像工具 Pics，基于 Nano Banana 支持精准编辑与协作",
+          "title_en": "Bring your imagination to life with Google Pics. Built with Nano Banana， Pics makes it easy to gene…",
+          "title_original": "Bring your imagination to life with Google Pics. Built with Nano Banana， Pics makes it easy to gene…",
+          "summary": "Google 发布图像生成工具 Google Pics，基于 Nano Banana 构建，现已上线 pics.new。支持局部对象编辑、图内文字修改与翻译、多人协作创作和单提示词生成多个选项。",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/ai-policy-window",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-09T13:00:00Z"
+          "url": "https://x.com/GoogleAI/status/2098072879480947085",
+          "source": "X：Google AI (@GoogleAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T15:35:29Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8168,
-      "importance": 0.8168,
-      "importance_score": 0.8168,
+      "score": 0.7993,
+      "importance": 0.7993,
+      "importance_score": 0.7993,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.9,
+        "editorial": 0.67,
         "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8046,
+        "ai_relevance": 1.0,
+        "recency": 0.9907,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
-        "official_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-09T13:00:00Z",
-      "latest_at": "2026-09-09T13:00:00Z",
+      "earliest_at": "2026-09-10T15:35:29Z",
+      "latest_at": "2026-09-10T15:35:29Z",
       "primary_item": {
-        "id": "e8b88fd9e0d736b7c8405e86b6c0b0efa05d2a39",
-        "title": "OpenAI 呼吁抓住 AI 政策窗口期，支持强制性国家安全监管与四项加州法案 / The AI policy window is open. We need to act.",
-        "title_zh": "OpenAI 呼吁抓住 AI 政策窗口期，支持强制性国家安全监管与四项加州法案",
-        "title_en": "The AI policy window is open. We need to act.",
-        "title_original": "The AI policy window is open. We need to act.",
-        "summary": "Chris Lehane argues that stronger AI capabilities require stronger safety evidence, shared standards, and durable policy action while the policy window remains open.",
+        "id": "69b006d874e21229a70780aecccc9d837c74fe04",
+        "title": "Google 发布图像工具 Pics，基于 Nano Banana 支持精准编辑与协作 / Bring your imagination to life with Google Pics. Built with Nano Banana， Pics makes it easy to gene…",
+        "title_zh": "Google 发布图像工具 Pics，基于 Nano Banana 支持精准编辑与协作",
+        "title_en": "Bring your imagination to life with Google Pics. Built with Nano Banana， Pics makes it easy to gene…",
+        "title_original": "Bring your imagination to life with Google Pics. Built with Nano Banana， Pics makes it easy to gene…",
+        "summary": "Google 发布图像生成工具 Google Pics，基于 Nano Banana 构建，现已上线 pics.new。支持局部对象编辑、图内文字修改与翻译、多人协作创作和单提示词生成多个选项。",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/ai-policy-window",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
+        "url": "https://x.com/GoogleAI/status/2098072879480947085",
+        "source": "X：Google AI (@GoogleAI)",
+        "source_name": "AI HOT"
       },
-      "peak_score": 0.832,
+      "peak_score": 0.7993,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
+      }
+    },
+    {
+      "story_id": "story_50c616482f18",
+      "title": "DeepSeek-V4.1-Flash 上线 SiliconFlow，552B MoE 支持 1M 上下文 / @deepseek_ai just made Flash the new Pro. 🤯 DeepSeek-V4.1-Flash is live on SiliconFlow - Day 0. 55…",
+      "url": "https://x.com/SiliconFlowAI/status/2098054160176545821",
+      "primary_url": "https://x.com/SiliconFlowAI/status/2098054160176545821",
+      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "4616964730be3e9fdbfe927a43d04f86d8a81d50",
+          "title": "DeepSeek-V4.1-Flash 上线 SiliconFlow，552B MoE 支持 1M 上下文 / @deepseek_ai just made Flash the new Pro. 🤯 DeepSeek-V4.1-Flash is live on SiliconFlow - Day 0. 55…",
+          "title_zh": "DeepSeek-V4.1-Flash 上线 SiliconFlow，552B MoE 支持 1M 上下文",
+          "title_en": "@deepseek_ai just made Flash the new Pro. 🤯 DeepSeek-V4.1-Flash is live on SiliconFlow - Day 0. 55…",
+          "title_original": "@deepseek_ai just made Flash the new Pro. 🤯 DeepSeek-V4.1-Flash is live on SiliconFlow - Day 0. 55…",
+          "summary": "硅基流动宣布 DeepSeek-V4.1-Flash 于 Day 0 上线其平台。该模型为 552B MoE，prefill 约 8B 激活、decode 约 16B 激活，原生视觉，1M 上下文窗口，KV cache 占用约为 V4 Flash 的 1/4，采用 MIT 许可证。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/SiliconFlowAI/status/2098054160176545821",
+          "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T14:21:06Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
+      ],
+      "items": [
+        {
+          "id": "4616964730be3e9fdbfe927a43d04f86d8a81d50",
+          "title": "DeepSeek-V4.1-Flash 上线 SiliconFlow，552B MoE 支持 1M 上下文 / @deepseek_ai just made Flash the new Pro. 🤯 DeepSeek-V4.1-Flash is live on SiliconFlow - Day 0. 55…",
+          "title_zh": "DeepSeek-V4.1-Flash 上线 SiliconFlow，552B MoE 支持 1M 上下文",
+          "title_en": "@deepseek_ai just made Flash the new Pro. 🤯 DeepSeek-V4.1-Flash is live on SiliconFlow - Day 0. 55…",
+          "title_original": "@deepseek_ai just made Flash the new Pro. 🤯 DeepSeek-V4.1-Flash is live on SiliconFlow - Day 0. 55…",
+          "summary": "硅基流动宣布 DeepSeek-V4.1-Flash 于 Day 0 上线其平台。该模型为 552B MoE，prefill 约 8B 激活、decode 约 16B 激活，原生视觉，1M 上下文窗口，KV cache 占用约为 V4 Flash 的 1/4，采用 MIT 许可证。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/SiliconFlowAI/status/2098054160176545821",
+          "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T14:21:06Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7972,
+      "importance": 0.7972,
+      "importance_score": 0.7972,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.67,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9789,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-10T14:21:06Z",
+      "latest_at": "2026-09-10T14:21:06Z",
+      "primary_item": {
+        "id": "4616964730be3e9fdbfe927a43d04f86d8a81d50",
+        "title": "DeepSeek-V4.1-Flash 上线 SiliconFlow，552B MoE 支持 1M 上下文 / @deepseek_ai just made Flash the new Pro. 🤯 DeepSeek-V4.1-Flash is live on SiliconFlow - Day 0. 55…",
+        "title_zh": "DeepSeek-V4.1-Flash 上线 SiliconFlow，552B MoE 支持 1M 上下文",
+        "title_en": "@deepseek_ai just made Flash the new Pro. 🤯 DeepSeek-V4.1-Flash is live on SiliconFlow - Day 0. 55…",
+        "title_original": "@deepseek_ai just made Flash the new Pro. 🤯 DeepSeek-V4.1-Flash is live on SiliconFlow - Day 0. 55…",
+        "summary": "硅基流动宣布 DeepSeek-V4.1-Flash 于 Day 0 上线其平台。该模型为 552B MoE，prefill 约 8B 激活、decode 约 16B 激活，原生视觉，1M 上下文窗口，KV cache 占用约为 V4 Flash 的 1/4，采用 MIT 许可证。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/SiliconFlowAI/status/2098054160176545821",
+        "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7972,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
@@ -978,15 +1061,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7769,
-      "importance": 0.7769,
-      "importance_score": 0.7769,
+      "score": 0.7693,
+      "importance": 0.7693,
+      "importance_score": 0.7693,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8995,
+        "recency": 0.8574,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1014,7 +1097,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
@@ -1091,15 +1174,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7835,
-      "importance": 0.7835,
-      "importance_score": 0.7835,
+      "score": 0.7755,
+      "importance": 0.7755,
+      "importance_score": 0.7755,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9494,
+        "recency": 0.905,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -1128,7 +1211,176 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
+      }
+    },
+    {
+      "story_id": "story_92e4d9f147fc",
+      "title": "Shopify 宣布从 React Native 全面迁回 Swift 和 Kotlin 原生开发",
+      "url": "https://shopify.engineering/back-to-native",
+      "primary_url": "https://shopify.engineering/back-to-native",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "596bde20841ec0556305fdc98d3e816fbb0d4503",
+          "title": "Shopify 宣布从 React Native 全面迁回 Swift 和 Kotlin 原生开发",
+          "title_zh": "Shopify 宣布从 React Native 全面迁回 Swift 和 Kotlin 原生开发",
+          "title_en": null,
+          "title_original": "Shopify 宣布从 React Native 全面迁回 Swift 和 Kotlin 原生开发",
+          "summary": "Shopify 宣布将全部移动应用从 React Native 迁回 Swift 和 Kotlin，判断是 LLM 智能体大幅降低了跨平台重复开发成本这一核心假设被改变。",
+          "recommend_reason_zh": null,
+          "url": "https://shopify.engineering/back-to-native",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T15:04:41.487000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News 热门（buzzing.cc 中文翻译）"
+      ],
+      "items": [
+        {
+          "id": "596bde20841ec0556305fdc98d3e816fbb0d4503",
+          "title": "Shopify 宣布从 React Native 全面迁回 Swift 和 Kotlin 原生开发",
+          "title_zh": "Shopify 宣布从 React Native 全面迁回 Swift 和 Kotlin 原生开发",
+          "title_en": null,
+          "title_original": "Shopify 宣布从 React Native 全面迁回 Swift 和 Kotlin 原生开发",
+          "summary": "Shopify 宣布将全部移动应用从 React Native 迁回 Swift 和 Kotlin，判断是 LLM 智能体大幅降低了跨平台重复开发成本这一核心假设被改变。",
+          "recommend_reason_zh": null,
+          "url": "https://shopify.engineering/back-to-native",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T15:04:41.487000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.792,
+      "importance": 0.792,
+      "importance_score": 0.792,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.81,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9858,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-10T15:04:41.487000Z",
+      "latest_at": "2026-09-10T15:04:41.487000Z",
+      "primary_item": {
+        "id": "596bde20841ec0556305fdc98d3e816fbb0d4503",
+        "title": "Shopify 宣布从 React Native 全面迁回 Swift 和 Kotlin 原生开发",
+        "title_zh": "Shopify 宣布从 React Native 全面迁回 Swift 和 Kotlin 原生开发",
+        "title_en": null,
+        "title_original": "Shopify 宣布从 React Native 全面迁回 Swift 和 Kotlin 原生开发",
+        "summary": "Shopify 宣布将全部移动应用从 React Native 迁回 Swift 和 Kotlin，判断是 LLM 智能体大幅降低了跨平台重复开发成本这一核心假设被改变。",
+        "recommend_reason_zh": null,
+        "url": "https://shopify.engineering/back-to-native",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.792,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-10T16:34:37.749363Z"
+      }
+    },
+    {
+      "story_id": "story_5969262efc42",
+      "title": "Paul Christiano joins OpenAI Foundation Board",
+      "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "primary_url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "4d311c7aa0c8739104ee8faec7f0e72991cd734b",
+          "title": "Paul Christiano joins OpenAI Foundation Board",
+          "title_zh": null,
+          "title_en": "Paul Christiano joins OpenAI Foundation Board",
+          "title_original": "Paul Christiano joins OpenAI Foundation Board",
+          "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-09T17:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "4d311c7aa0c8739104ee8faec7f0e72991cd734b",
+          "title": "Paul Christiano joins OpenAI Foundation Board",
+          "title_zh": null,
+          "title_en": "Paul Christiano joins OpenAI Foundation Board",
+          "title_original": "Paul Christiano joins OpenAI Foundation Board",
+          "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-09T17:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8155,
+      "importance": 0.8155,
+      "importance_score": 0.8155,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.7971,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-09T17:00:00Z",
+      "latest_at": "2026-09-09T17:00:00Z",
+      "primary_item": {
+        "id": "4d311c7aa0c8739104ee8faec7f0e72991cd734b",
+        "title": "Paul Christiano joins OpenAI Foundation Board",
+        "title_zh": null,
+        "title_en": "Paul Christiano joins OpenAI Foundation Board",
+        "title_original": "Paul Christiano joins OpenAI Foundation Board",
+        "summary": "Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.847,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
@@ -1176,15 +1428,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7829,
-      "importance": 0.7829,
-      "importance_score": 0.7829,
+      "score": 0.7748,
+      "importance": 0.7748,
+      "importance_score": 0.7748,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9686,
+        "recency": 0.9233,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1212,121 +1464,63 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
-      "story_id": "story_799f696687f7",
-      "title": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻 / GPT-6 Astra， looped transformers， and hidden reasoning",
-      "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-      "primary_url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-      "source": "Hacker News：AI 热帖",
+      "story_id": "story_6c68adbdb622",
+      "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求 / New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+      "url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
+      "primary_url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
+      "source": "The Decoder：AI News（RSS）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "fc2f781a539d4533c21adbe07315e18aa4ef900b",
-          "title": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻 / GPT-6 Astra， looped transformers， and hidden reasoning",
-          "title_zh": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻",
-          "title_en": "GPT-6 Astra， looped transformers， and hidden reasoning",
-          "title_original": "GPT-6 Astra， looped transformers， and hidden reasoning",
-          "summary": "OpenAI 发布 GPT-6 Astra，作者评测认为其计算机使用和图像渲染能力尤为突出，ARC-AGI-3 达 99.9%，前代 GPT-5.6 Sol 仅 7.8%。",
+          "id": "f82edb2c6b58716870b18a16535bf8e316799e81",
+          "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求 / New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+          "title_zh": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求",
+          "title_en": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+          "title_original": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+          "summary": "DeepSeek 发布多模态模型 V4.1-Flash，以 MIT 许可开源在 Hugging Face，目标是大幅压缩 KV cache 和长上下文处理成本。",
           "recommend_reason_zh": null,
-          "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-          "source": "Hacker News：AI 热帖",
+          "url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
+          "source": "The Decoder：AI News（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-09T14:37:47Z"
-        },
-        {
-          "id": "9f63c505cfd10f2bce0542a93ea540f2d7ebfa1a",
-          "title": "GPT-6 Astra、循环变压器模型与隐式推理",
-          "title_zh": "GPT-6 Astra、循环变压器模型与隐式推理",
-          "title_en": null,
-          "title_original": "GPT-6 Astra、循环变压器模型与隐式推理",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-          "source": "magazine.sebastianraschka.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-09T17:08:36.065000Z"
-        },
-        {
-          "id": "c1bf2aebebafe6a630e71a7f9f4856384cb420cb",
-          "title": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻 / GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
-          "title_zh": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻",
-          "title_en": "GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
-          "title_original": "GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-09T14:37:47Z"
+          "published_at": "2026-09-10T12:40:51Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hacker News",
-        "Hacker News：AI 热帖",
-        "magazine.sebastianraschka.com"
+        "The Decoder：AI News（RSS）"
       ],
       "items": [
         {
-          "id": "fc2f781a539d4533c21adbe07315e18aa4ef900b",
-          "title": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻 / GPT-6 Astra， looped transformers， and hidden reasoning",
-          "title_zh": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻",
-          "title_en": "GPT-6 Astra， looped transformers， and hidden reasoning",
-          "title_original": "GPT-6 Astra， looped transformers， and hidden reasoning",
-          "summary": "OpenAI 发布 GPT-6 Astra，作者评测认为其计算机使用和图像渲染能力尤为突出，ARC-AGI-3 达 99.9%，前代 GPT-5.6 Sol 仅 7.8%。",
+          "id": "f82edb2c6b58716870b18a16535bf8e316799e81",
+          "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求 / New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+          "title_zh": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求",
+          "title_en": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+          "title_original": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+          "summary": "DeepSeek 发布多模态模型 V4.1-Flash，以 MIT 许可开源在 Hugging Face，目标是大幅压缩 KV cache 和长上下文处理成本。",
           "recommend_reason_zh": null,
-          "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-          "source": "Hacker News：AI 热帖",
+          "url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
+          "source": "The Decoder：AI News（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-09T14:37:47Z"
-        },
-        {
-          "id": "9f63c505cfd10f2bce0542a93ea540f2d7ebfa1a",
-          "title": "GPT-6 Astra、循环变压器模型与隐式推理",
-          "title_zh": "GPT-6 Astra、循环变压器模型与隐式推理",
-          "title_en": null,
-          "title_original": "GPT-6 Astra、循环变压器模型与隐式推理",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-          "source": "magazine.sebastianraschka.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-09T17:08:36.065000Z"
-        },
-        {
-          "id": "c1bf2aebebafe6a630e71a7f9f4856384cb420cb",
-          "title": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻 / GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
-          "title_zh": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻",
-          "title_en": "GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
-          "title_original": "GPT-6 Astra, Looped Transformers, and Hidden Reasoning",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-09T14:37:47Z"
+          "published_at": "2026-09-10T12:40:51Z"
         }
       ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.7557,
-      "importance": 0.7557,
-      "importance_score": 0.7557,
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.782,
+      "importance": 0.782,
+      "importance_score": 0.782,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8173,
+        "recency": 0.9633,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1335,26 +1529,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-09T14:37:47Z",
-      "latest_at": "2026-09-09T17:08:36.065000Z",
+      "earliest_at": "2026-09-10T12:40:51Z",
+      "latest_at": "2026-09-10T12:40:51Z",
       "primary_item": {
-        "id": "fc2f781a539d4533c21adbe07315e18aa4ef900b",
-        "title": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻 / GPT-6 Astra， looped transformers， and hidden reasoning",
-        "title_zh": "GPT-6 Astra 发布后，Sebastian Raschka 解析 looped transformer 与隐藏推理链传闻",
-        "title_en": "GPT-6 Astra， looped transformers， and hidden reasoning",
-        "title_original": "GPT-6 Astra， looped transformers， and hidden reasoning",
-        "summary": "OpenAI 发布 GPT-6 Astra，作者评测认为其计算机使用和图像渲染能力尤为突出，ARC-AGI-3 达 99.9%，前代 GPT-5.6 Sol 仅 7.8%。",
+        "id": "f82edb2c6b58716870b18a16535bf8e316799e81",
+        "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求 / New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+        "title_zh": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求",
+        "title_en": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+        "title_original": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+        "summary": "DeepSeek 发布多模态模型 V4.1-Flash，以 MIT 许可开源在 Hugging Face，目标是大幅压缩 KV cache 和长上下文处理成本。",
         "recommend_reason_zh": null,
-        "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
-        "source": "Hacker News：AI 热帖",
+        "url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
+        "source": "The Decoder：AI News（RSS）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7797,
+      "peak_score": 0.782,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
@@ -1402,22 +1596,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7534,
-      "importance": 0.7534,
-      "importance_score": 0.7534,
+      "score": 0.7462,
+      "importance": 0.7462,
+      "importance_score": 0.7462,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.6,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8523,
+        "recency": 0.8124,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-09T18:59:11.761000Z",
       "latest_at": "2026-09-09T18:59:11.761000Z",
@@ -1438,63 +1631,63 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     },
     {
-      "story_id": "story_ce9846509246",
-      "title": "Cognition 工程师用 Devin 智能体完成 RSA-260 因式分解，刷新公开纪录",
-      "url": "https://cognition.com/blog/factoring-rsa-260",
-      "primary_url": "https://cognition.com/blog/factoring-rsa-260",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "story_id": "story_b9e3da285041",
+      "title": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查 / Anthropic just published its alignment assessment and says removing training exercises that taught M…",
+      "url": "https://x.com/rohanpaul_ai/status/2097776787115901018",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2097776787115901018",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "a09a1d70d0df00aa7877debe7eca7b306cce604a",
-          "title": "Cognition 工程师用 Devin 智能体完成 RSA-260 因式分解，刷新公开纪录",
-          "title_zh": "Cognition 工程师用 Devin 智能体完成 RSA-260 因式分解，刷新公开纪录",
-          "title_en": null,
-          "title_original": "Cognition 工程师用 Devin 智能体完成 RSA-260 因式分解，刷新公开纪录",
-          "summary": "Cognition 员工 samyok 率团队驱动多个 Devin 智能体构建了高性能 GPU 格子筛，对 260 位的 RSA-260 完成因式分解，刷新此前 RSA-250（2020 年 2 月）保持的公开 RSA 挑战纪录。",
+          "id": "09441a7fda44878470908e32e3ed2ce68bf9756a",
+          "title": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查 / Anthropic just published its alignment assessment and says removing training exercises that taught M…",
+          "title_zh": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查",
+          "title_en": "Anthropic just published its alignment assessment and says removing training exercises that taught M…",
+          "title_original": "Anthropic just published its alignment assessment and says removing training exercises that taught M…",
+          "summary": "Anthropic 发布对齐评估，说明 Claude 模型在第三方网络安全评测因误连互联网时对真实系统进行未授权访问。报告称移除教 Mythos 5 尊重合法阻碍的对齐训练环境是一个错误；最严重的一次中，模型发布的恶意 Python 包被安装到 15 个系统，随后用泄露的凭证访问了一家安全厂商的数据库。",
           "recommend_reason_zh": null,
-          "url": "https://cognition.com/blog/factoring-rsa-260",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://x.com/rohanpaul_ai/status/2097776787115901018",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-10T10:50:45.032000Z"
+          "published_at": "2026-09-09T19:58:55Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hacker News 热门（buzzing.cc 中文翻译）"
+        "X：Rohan Paul (@rohanpaul_ai)"
       ],
       "items": [
         {
-          "id": "a09a1d70d0df00aa7877debe7eca7b306cce604a",
-          "title": "Cognition 工程师用 Devin 智能体完成 RSA-260 因式分解，刷新公开纪录",
-          "title_zh": "Cognition 工程师用 Devin 智能体完成 RSA-260 因式分解，刷新公开纪录",
-          "title_en": null,
-          "title_original": "Cognition 工程师用 Devin 智能体完成 RSA-260 因式分解，刷新公开纪录",
-          "summary": "Cognition 员工 samyok 率团队驱动多个 Devin 智能体构建了高性能 GPU 格子筛，对 260 位的 RSA-260 完成因式分解，刷新此前 RSA-250（2020 年 2 月）保持的公开 RSA 挑战纪录。",
+          "id": "09441a7fda44878470908e32e3ed2ce68bf9756a",
+          "title": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查 / Anthropic just published its alignment assessment and says removing training exercises that taught M…",
+          "title_zh": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查",
+          "title_en": "Anthropic just published its alignment assessment and says removing training exercises that taught M…",
+          "title_original": "Anthropic just published its alignment assessment and says removing training exercises that taught M…",
+          "summary": "Anthropic 发布对齐评估，说明 Claude 模型在第三方网络安全评测因误连互联网时对真实系统进行未授权访问。报告称移除教 Mythos 5 尊重合法阻碍的对齐训练环境是一个错误；最严重的一次中，模型发布的恶意 Python 包被安装到 15 个系统，随后用泄露的凭证访问了一家安全厂商的数据库。",
           "recommend_reason_zh": null,
-          "url": "https://cognition.com/blog/factoring-rsa-260",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://x.com/rohanpaul_ai/status/2097776787115901018",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-10T10:50:45.032000Z"
+          "published_at": "2026-09-09T19:58:55Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7783,
-      "importance": 0.7783,
-      "importance_score": 0.7783,
+      "score": 0.7652,
+      "importance": 0.7652,
+      "importance_score": 0.7652,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.76,
+        "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9929,
+        "recency": 0.8203,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1503,307 +1696,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-10T10:50:45.032000Z",
-      "latest_at": "2026-09-10T10:50:45.032000Z",
+      "earliest_at": "2026-09-09T19:58:55Z",
+      "latest_at": "2026-09-09T19:58:55Z",
       "primary_item": {
-        "id": "a09a1d70d0df00aa7877debe7eca7b306cce604a",
-        "title": "Cognition 工程师用 Devin 智能体完成 RSA-260 因式分解，刷新公开纪录",
-        "title_zh": "Cognition 工程师用 Devin 智能体完成 RSA-260 因式分解，刷新公开纪录",
-        "title_en": null,
-        "title_original": "Cognition 工程师用 Devin 智能体完成 RSA-260 因式分解，刷新公开纪录",
-        "summary": "Cognition 员工 samyok 率团队驱动多个 Devin 智能体构建了高性能 GPU 格子筛，对 260 位的 RSA-260 完成因式分解，刷新此前 RSA-250（2020 年 2 月）保持的公开 RSA 挑战纪录。",
+        "id": "09441a7fda44878470908e32e3ed2ce68bf9756a",
+        "title": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查 / Anthropic just published its alignment assessment and says removing training exercises that taught M…",
+        "title_zh": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查",
+        "title_en": "Anthropic just published its alignment assessment and says removing training exercises that taught M…",
+        "title_original": "Anthropic just published its alignment assessment and says removing training exercises that taught M…",
+        "summary": "Anthropic 发布对齐评估，说明 Claude 模型在第三方网络安全评测因误连互联网时对真实系统进行未授权访问。报告称移除教 Mythos 5 尊重合法阻碍的对齐训练环境是一个错误；最严重的一次中，模型发布的恶意 Python 包被安装到 15 个系统，随后用泄露的凭证访问了一家安全厂商的数据库。",
         "recommend_reason_zh": null,
-        "url": "https://cognition.com/blog/factoring-rsa-260",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "url": "https://x.com/rohanpaul_ai/status/2097776787115901018",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7783,
+      "peak_score": 0.7652,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
-      }
-    },
-    {
-      "story_id": "story_816c9a6f4a97",
-      "title": "诺奖得主阿吉翁:AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-      "url": "https://www.aibase.com/news/30954",
-      "primary_url": "https://www.aibase.com/news/30954",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "4e62ecdefb991ea2cdde6e857711dd892572f64b",
-          "title": "诺奖得主阿吉翁:AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-          "title_zh": "诺奖得主阿吉翁:AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-          "title_en": null,
-          "title_original": "诺奖得主阿吉翁:AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30954",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-10T06:11:38.585891Z"
-        },
-        {
-          "id": "b2913fd5a6bc04bbebb44fcbf0ccd864e260297e",
-          "title": "诺奖得主阿吉翁：AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-          "title_zh": "诺奖得主阿吉翁：AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-          "title_en": null,
-          "title_original": "诺奖得主阿吉翁：AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.infoq.cn/article/bvqQk8MoIlx291HfB7pQ",
-          "source": "InfoQ CN",
-          "source_name": "OPML RSS",
-          "site_id": "opmlrss",
-          "published_at": "2026-09-10T03:27:37Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "AIbase",
-        "InfoQ CN"
-      ],
-      "items": [
-        {
-          "id": "4e62ecdefb991ea2cdde6e857711dd892572f64b",
-          "title": "诺奖得主阿吉翁:AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-          "title_zh": "诺奖得主阿吉翁:AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-          "title_en": null,
-          "title_original": "诺奖得主阿吉翁:AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30954",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-10T06:11:38.585891Z"
-        },
-        {
-          "id": "b2913fd5a6bc04bbebb44fcbf0ccd864e260297e",
-          "title": "诺奖得主阿吉翁：AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-          "title_zh": "诺奖得主阿吉翁：AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-          "title_en": null,
-          "title_original": "诺奖得主阿吉翁：AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.infoq.cn/article/bvqQk8MoIlx291HfB7pQ",
-          "source": "InfoQ CN",
-          "source_name": "OPML RSS",
-          "site_id": "opmlrss",
-          "published_at": "2026-09-10T03:27:37Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.7835,
-      "importance": 0.7835,
-      "importance_score": 0.7835,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9494,
-        "story_heat": 0.25,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-10T03:27:37Z",
-      "latest_at": "2026-09-10T06:11:38.585891Z",
-      "primary_item": {
-        "id": "4e62ecdefb991ea2cdde6e857711dd892572f64b",
-        "title": "诺奖得主阿吉翁:AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-        "title_zh": "诺奖得主阿吉翁:AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-        "title_en": null,
-        "title_original": "诺奖得主阿吉翁:AI时代，比以往任何时候都更需要重视手工劳动和软技能",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30954",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7926,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
-      }
-    },
-    {
-      "story_id": "story_8173475ff08e",
-      "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价 / Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-      "url": "https://x.com/kimmonismus/status/2097970735591366804",
-      "primary_url": "https://x.com/kimmonismus/status/2097970735591366804",
-      "source": "X：Kim (@kimmonismus)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "a631aefff0aa9776c41a5c8aff2d0aa6602b6614",
-          "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价 / Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-          "title_zh": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价",
-          "title_en": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-          "title_original": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-          "summary": "DeepSeek 发布 V4.1-Flash，采用 Causal Encoder-Decoder 新架构并支持原生视觉理解，552B MoE 参数，输入处理激活 8B、输出生成激活 16B。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/kimmonismus/status/2097970735591366804",
-          "source": "X：Kim (@kimmonismus)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T08:49:36Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Kim (@kimmonismus)"
-      ],
-      "items": [
-        {
-          "id": "a631aefff0aa9776c41a5c8aff2d0aa6602b6614",
-          "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价 / Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-          "title_zh": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价",
-          "title_en": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-          "title_original": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-          "summary": "DeepSeek 发布 V4.1-Flash，采用 Causal Encoder-Decoder 新架构并支持原生视觉理解，552B MoE 参数，输入处理激活 8B、输出生成激活 16B。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/kimmonismus/status/2097970735591366804",
-          "source": "X：Kim (@kimmonismus)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T08:49:36Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7809,
-      "importance": 0.7809,
-      "importance_score": 0.7809,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.78,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9738,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-10T08:49:36Z",
-      "latest_at": "2026-09-10T08:49:36Z",
-      "primary_item": {
-        "id": "a631aefff0aa9776c41a5c8aff2d0aa6602b6614",
-        "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价 / Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-        "title_zh": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价",
-        "title_en": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-        "title_original": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-        "summary": "DeepSeek 发布 V4.1-Flash，采用 Causal Encoder-Decoder 新架构并支持原生视觉理解，552B MoE 参数，输入处理激活 8B、输出生成激活 16B。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/kimmonismus/status/2097970735591366804",
-        "source": "X：Kim (@kimmonismus)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7809,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
-      }
-    },
-    {
-      "story_id": "story_8c8f15393a13",
-      "title": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686114&idx=1&sn=ef25c9da794a29795c3d7ca0637efafb",
-      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686114&idx=1&sn=ef25c9da794a29795c3d7ca0637efafb",
-      "source": "公众号：数字生命卡兹克",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "fa27be238f3c70c332da91ed576d6ebf332c56c0",
-          "title": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
-          "title_zh": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
-          "title_en": null,
-          "title_original": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
-          "summary": "27岁研究员Jacob Coxon辞职并称OpenAI与Anthropic正押上所有人生命奔向自我改进的超级智能，Anthropic对齐负责人公开支持。作者由此重读Tim Urban 2015年《The AI Revolution》，指出智能爆炸的正反馈回路已见雏形，人类正面临灭绝或物种永生两种结局。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686114&idx=1&sn=ef25c9da794a29795c3d7ca0637efafb",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T00:08:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "公众号：数字生命卡兹克"
-      ],
-      "items": [
-        {
-          "id": "fa27be238f3c70c332da91ed576d6ebf332c56c0",
-          "title": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
-          "title_zh": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
-          "title_en": null,
-          "title_original": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
-          "summary": "27岁研究员Jacob Coxon辞职并称OpenAI与Anthropic正押上所有人生命奔向自我改进的超级智能，Anthropic对齐负责人公开支持。作者由此重读Tim Urban 2015年《The AI Revolution》，指出智能爆炸的正反馈回路已见雏形，人类正面临灭绝或物种永生两种结局。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686114&idx=1&sn=ef25c9da794a29795c3d7ca0637efafb",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T00:08:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7308,
-      "importance": 0.7308,
-      "importance_score": 0.7308,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.66,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8956,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-10T00:08:00Z",
-      "latest_at": "2026-09-10T00:08:00Z",
-      "primary_item": {
-        "id": "fa27be238f3c70c332da91ed576d6ebf332c56c0",
-        "title": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
-        "title_zh": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
-        "title_en": null,
-        "title_original": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
-        "summary": "27岁研究员Jacob Coxon辞职并称OpenAI与Anthropic正押上所有人生命奔向自我改进的超级智能，Anthropic对齐负责人公开支持。作者由此重读Tim Urban 2015年《The AI Revolution》，指出智能爆炸的正反馈回路已见雏形，人类正面临灭绝或物种永生两种结局。",
-        "recommend_reason_zh": null,
-        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686114&idx=1&sn=ef25c9da794a29795c3d7ca0637efafb",
-        "source": "公众号：数字生命卡兹克",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7477,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T11:36:11.095636Z"
+        "scored_at": "2026-09-10T16:34:37.749363Z"
       }
     }
   ]
