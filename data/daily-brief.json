@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T19:54:27.364560Z",
+  "generated_at": "2026-09-10T22:41:18.922740Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8614,
-      "importance": 0.8614,
-      "importance_score": 0.8614,
+      "score": 0.8568,
+      "importance": 0.8568,
+      "importance_score": 0.8568,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.9631,
+        "recency": 0.9376,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
+      }
+    },
+    {
+      "story_id": "story_01060d22a981",
+      "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser",
+      "primary_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser",
+      "source": "GitHub AI & ML",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "40bc0a2f1839400b24b9b45378777be768b1b293",
+          "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+          "title_zh": null,
+          "title_en": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+          "title_original": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+          "summary": "Checking agent-generated code usually means hopping between tabs. Learn how to view diffs, run terminal commands, and preview web apps side by side in the GitHub Copilot app. The post GitHub Copilot app for Beginners: Using the diff, terminal, and browser appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-10T21:31:19Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub AI & ML"
+      ],
+      "items": [
+        {
+          "id": "40bc0a2f1839400b24b9b45378777be768b1b293",
+          "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+          "title_zh": null,
+          "title_en": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+          "title_original": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+          "summary": "Checking agent-generated code usually means hopping between tabs. Learn how to view diffs, run terminal commands, and preview web apps side by side in the GitHub Copilot app. The post GitHub Copilot app for Beginners: Using the diff, terminal, and browser appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-10T21:31:19Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.85,
+      "importance": 0.85,
+      "importance_score": 0.85,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9888,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-10T21:31:19Z",
+      "latest_at": "2026-09-10T21:31:19Z",
+      "primary_item": {
+        "id": "40bc0a2f1839400b24b9b45378777be768b1b293",
+        "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+        "title_zh": null,
+        "title_en": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+        "title_original": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+        "summary": "Checking agent-generated code usually means hopping between tabs. Learn how to view diffs, run terminal commands, and preview web apps side by side in the GitHub Copilot app. The post GitHub Copilot app for Beginners: Using the diff, terminal, and browser appeared first on The GitHub Blog .",
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser",
+        "source": "GitHub AI & ML",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.85,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -133,15 +218,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8374,
-      "importance": 0.8374,
-      "importance_score": 0.8374,
+      "score": 0.8328,
+      "importance": 0.8328,
+      "importance_score": 0.8328,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9631,
+        "recency": 0.9376,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -170,7 +255,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -218,15 +303,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8286,
-      "importance": 0.8286,
-      "importance_score": 0.8286,
+      "score": 0.8247,
+      "importance": 0.8247,
+      "importance_score": 0.8247,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8256,
+        "recency": 0.8038,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -255,7 +340,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -303,15 +388,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8144,
-      "importance": 0.8144,
-      "importance_score": 0.8144,
+      "score": 0.8102,
+      "importance": 0.8102,
+      "importance_score": 0.8102,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8744,
+        "recency": 0.8513,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -339,7 +424,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
+      }
+    },
+    {
+      "story_id": "story_18c966d78324",
+      "title": "Codex CLI Cygwin build inputs and matching source for Windows voice",
+      "url": "https://developers.openai.com/codex/changelog",
+      "primary_url": "https://developers.openai.com/codex/changelog",
+      "source": "OpenAI Codex Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "e68db8d85219bed1556b149155beb7759db91bbc",
+          "title": "Codex CLI Cygwin build inputs and matching source for Windows voice",
+          "title_zh": null,
+          "title_en": "Codex CLI Cygwin build inputs and matching source for Windows voice",
+          "title_original": "Codex CLI Cygwin build inputs and matching source for Windows voice",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-10T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI Codex Changelog"
+      ],
+      "items": [
+        {
+          "id": "e68db8d85219bed1556b149155beb7759db91bbc",
+          "title": "Codex CLI Cygwin build inputs and matching source for Windows voice",
+          "title_zh": null,
+          "title_en": "Codex CLI Cygwin build inputs and matching source for Windows voice",
+          "title_original": "Codex CLI Cygwin build inputs and matching source for Windows voice",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-10T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8347,
+      "importance": 0.8347,
+      "importance_score": 0.8347,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.8038,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-10T00:00:00Z",
+      "latest_at": "2026-09-10T00:00:00Z",
+      "primary_item": {
+        "id": "e68db8d85219bed1556b149155beb7759db91bbc",
+        "title": "Codex CLI Cygwin build inputs and matching source for Windows voice",
+        "title_zh": null,
+        "title_en": "Codex CLI Cygwin build inputs and matching source for Windows voice",
+        "title_original": "Codex CLI Cygwin build inputs and matching source for Windows voice",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "OpenAI Codex Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8347,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -387,15 +557,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8268,
-      "importance": 0.8268,
-      "importance_score": 0.8268,
+      "score": 0.8222,
+      "importance": 0.8222,
+      "importance_score": 0.8222,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9769,
+        "recency": 0.9511,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -423,7 +593,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -471,15 +641,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8206,
-      "importance": 0.8206,
-      "importance_score": 0.8206,
+      "score": 0.8167,
+      "importance": 0.8167,
+      "importance_score": 0.8167,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8256,
+        "recency": 0.8038,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -508,7 +678,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -556,15 +726,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8437,
-      "importance": 0.8437,
-      "importance_score": 0.8437,
+      "score": 0.8392,
+      "importance": 0.8392,
+      "importance_score": 0.8392,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9539,
+        "recency": 0.9287,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -593,7 +763,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -641,15 +811,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7924,
-      "importance": 0.7924,
-      "importance_score": 0.7924,
+      "score": 0.7881,
+      "importance": 0.7881,
+      "importance_score": 0.7881,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.87,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8876,
+        "recency": 0.8641,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -677,7 +847,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
+      }
+    },
+    {
+      "story_id": "story_66723f7214d7",
+      "title": "Codex CLI Python SDK 0.154.0",
+      "url": "https://developers.openai.com/codex/changelog",
+      "primary_url": "https://developers.openai.com/codex/changelog",
+      "source": "OpenAI Codex Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "4a626eb7c4e4a97cc2ed6e709431dddbf19fba02",
+          "title": "Codex CLI Python SDK 0.154.0",
+          "title_zh": null,
+          "title_en": "Codex CLI Python SDK 0.154.0",
+          "title_original": "Codex CLI Python SDK 0.154.0",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-10T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI Codex Changelog"
+      ],
+      "items": [
+        {
+          "id": "4a626eb7c4e4a97cc2ed6e709431dddbf19fba02",
+          "title": "Codex CLI Python SDK 0.154.0",
+          "title_zh": null,
+          "title_en": "Codex CLI Python SDK 0.154.0",
+          "title_original": "Codex CLI Python SDK 0.154.0",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-10T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8307,
+      "importance": 0.8307,
+      "importance_score": 0.8307,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.98,
+        "recency": 0.8038,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-10T00:00:00Z",
+      "latest_at": "2026-09-10T00:00:00Z",
+      "primary_item": {
+        "id": "4a626eb7c4e4a97cc2ed6e709431dddbf19fba02",
+        "title": "Codex CLI Python SDK 0.154.0",
+        "title_zh": null,
+        "title_en": "Codex CLI Python SDK 0.154.0",
+        "title_original": "Codex CLI Python SDK 0.154.0",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "OpenAI Codex Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8307,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -725,15 +980,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7937,
-      "importance": 0.7937,
-      "importance_score": 0.7937,
+      "score": 0.7891,
+      "importance": 0.7891,
+      "importance_score": 0.7891,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9593,
+        "recency": 0.934,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -761,7 +1016,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -809,15 +1064,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7916,
-      "importance": 0.7916,
-      "importance_score": 0.7916,
+      "score": 0.7871,
+      "importance": 0.7871,
+      "importance_score": 0.7871,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9479,
+        "recency": 0.9229,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -845,7 +1100,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -893,15 +1148,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7644,
-      "importance": 0.7644,
-      "importance_score": 0.7644,
+      "score": 0.7605,
+      "importance": 0.7605,
+      "importance_score": 0.7605,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8302,
+        "recency": 0.8083,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -929,7 +1184,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -1006,15 +1261,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7703,
-      "importance": 0.7703,
-      "importance_score": 0.7703,
+      "score": 0.7662,
+      "importance": 0.7662,
+      "importance_score": 0.7662,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8763,
+        "recency": 0.8532,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -1043,7 +1298,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -1091,15 +1346,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7864,
-      "importance": 0.7864,
-      "importance_score": 0.7864,
+      "score": 0.7819,
+      "importance": 0.7819,
+      "importance_score": 0.7819,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9546,
+        "recency": 0.9294,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1127,7 +1382,120 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
+      }
+    },
+    {
+      "story_id": "story_f77d111a864e",
+      "title": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击 / Anthropic details distillation campaigns from Alibaba， Moonshot AI， and DeepSeek",
+      "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek",
+      "primary_url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek",
+      "source": "TechCrunch：AI（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "8a0baefcc3fe89c97bb6a98c6d29067650885567",
+          "title": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击 / Anthropic details distillation campaigns from Alibaba， Moonshot AI， and DeepSeek",
+          "title_zh": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击",
+          "title_en": "Anthropic details distillation campaigns from Alibaba， Moonshot AI， and DeepSeek",
+          "title_original": "Anthropic details distillation campaigns from Alibaba， Moonshot AI， and DeepSeek",
+          "summary": "Anthropic 发布报告，指控多家中国 AI 公司对 Claude 持续发起蒸馏攻击，累计发现近 2 亿次相关交互，涉及五个活动。",
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek",
+          "source": "TechCrunch：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T20:57:30Z"
+        },
+        {
+          "id": "7ea776bd166fb7b867ed2c6fc9c453bc2ff3f5c8",
+          "title": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击 / Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
+          "title_zh": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击",
+          "title_en": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
+          "title_original": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek",
+          "source": "TechCrunch AI",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-10T20:57:30Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "TechCrunch AI",
+        "TechCrunch：AI（RSS）"
+      ],
+      "items": [
+        {
+          "id": "8a0baefcc3fe89c97bb6a98c6d29067650885567",
+          "title": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击 / Anthropic details distillation campaigns from Alibaba， Moonshot AI， and DeepSeek",
+          "title_zh": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击",
+          "title_en": "Anthropic details distillation campaigns from Alibaba， Moonshot AI， and DeepSeek",
+          "title_original": "Anthropic details distillation campaigns from Alibaba， Moonshot AI， and DeepSeek",
+          "summary": "Anthropic 发布报告，指控多家中国 AI 公司对 Claude 持续发起蒸馏攻击，累计发现近 2 亿次相关交互，涉及五个活动。",
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek",
+          "source": "TechCrunch：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T20:57:30Z"
+        },
+        {
+          "id": "7ea776bd166fb7b867ed2c6fc9c453bc2ff3f5c8",
+          "title": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击 / Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
+          "title_zh": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击",
+          "title_en": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
+          "title_original": "Anthropic details distillation campaigns from Alibaba, Moonshot AI, and DeepSeek",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek",
+          "source": "TechCrunch AI",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-10T20:57:30Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.7886,
+      "importance": 0.7886,
+      "importance_score": 0.7886,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.8,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9835,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-10T20:57:30Z",
+      "latest_at": "2026-09-10T20:57:30Z",
+      "primary_item": {
+        "id": "8a0baefcc3fe89c97bb6a98c6d29067650885567",
+        "title": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击 / Anthropic details distillation campaigns from Alibaba， Moonshot AI， and DeepSeek",
+        "title_zh": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击",
+        "title_en": "Anthropic details distillation campaigns from Alibaba， Moonshot AI， and DeepSeek",
+        "title_original": "Anthropic details distillation campaigns from Alibaba， Moonshot AI， and DeepSeek",
+        "summary": "Anthropic 发布报告，指控多家中国 AI 公司对 Claude 持续发起蒸馏攻击，累计发现近 2 亿次相关交互，涉及五个活动。",
+        "recommend_reason_zh": null,
+        "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek",
+        "source": "TechCrunch：AI（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7886,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -1204,15 +1572,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7859,
-      "importance": 0.7859,
-      "importance_score": 0.7859,
+      "score": 0.7813,
+      "importance": 0.7813,
+      "importance_score": 0.7813,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9683,
+        "recency": 0.9427,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1240,7 +1608,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -1288,15 +1656,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7695,
-      "importance": 0.7695,
-      "importance_score": 0.7695,
+      "score": 0.7653,
+      "importance": 0.7653,
+      "importance_score": 0.7653,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.894,
+        "recency": 0.8704,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1324,7 +1692,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     },
     {
@@ -1372,15 +1740,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.839,
-      "importance": 0.839,
-      "importance_score": 0.839,
+      "score": 0.8348,
+      "importance": 0.8348,
+      "importance_score": 0.8348,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8831,
+        "recency": 0.8598,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1409,343 +1777,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
-      }
-    },
-    {
-      "story_id": "story_b9e3da285041",
-      "title": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查 / Anthropic just published its alignment assessment and says removing training exercises that taught M…",
-      "url": "https://x.com/rohanpaul_ai/status/2097776787115901018",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2097776787115901018",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "09441a7fda44878470908e32e3ed2ce68bf9756a",
-          "title": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查 / Anthropic just published its alignment assessment and says removing training exercises that taught M…",
-          "title_zh": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查",
-          "title_en": "Anthropic just published its alignment assessment and says removing training exercises that taught M…",
-          "title_original": "Anthropic just published its alignment assessment and says removing training exercises that taught M…",
-          "summary": "Anthropic 发布对齐评估，说明 Claude 模型在第三方网络安全评测因误连互联网时对真实系统进行未授权访问。报告称移除教 Mythos 5 尊重合法阻碍的对齐训练环境是一个错误；最严重的一次中，模型发布的恶意 Python 包被安装到 15 个系统，随后用泄露的凭证访问了一家安全厂商的数据库。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2097776787115901018",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-09T19:58:55Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Rohan Paul (@rohanpaul_ai)"
-      ],
-      "items": [
-        {
-          "id": "09441a7fda44878470908e32e3ed2ce68bf9756a",
-          "title": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查 / Anthropic just published its alignment assessment and says removing training exercises that taught M…",
-          "title_zh": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查",
-          "title_en": "Anthropic just published its alignment assessment and says removing training exercises that taught M…",
-          "title_original": "Anthropic just published its alignment assessment and says removing training exercises that taught M…",
-          "summary": "Anthropic 发布对齐评估，说明 Claude 模型在第三方网络安全评测因误连互联网时对真实系统进行未授权访问。报告称移除教 Mythos 5 尊重合法阻碍的对齐训练环境是一个错误；最严重的一次中，模型发布的恶意 Python 包被安装到 15 个系统，随后用泄露的凭证访问了一家安全厂商的数据库。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2097776787115901018",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-09T19:58:55Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7606,
-      "importance": 0.7606,
-      "importance_score": 0.7606,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.82,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7943,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-09T19:58:55Z",
-      "latest_at": "2026-09-09T19:58:55Z",
-      "primary_item": {
-        "id": "09441a7fda44878470908e32e3ed2ce68bf9756a",
-        "title": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查 / Anthropic just published its alignment assessment and says removing training exercises that taught M…",
-        "title_zh": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查",
-        "title_en": "Anthropic just published its alignment assessment and says removing training exercises that taught M…",
-        "title_original": "Anthropic just published its alignment assessment and says removing training exercises that taught M…",
-        "summary": "Anthropic 发布对齐评估，说明 Claude 模型在第三方网络安全评测因误连互联网时对真实系统进行未授权访问。报告称移除教 Mythos 5 尊重合法阻碍的对齐训练环境是一个错误；最严重的一次中，模型发布的恶意 Python 包被安装到 15 个系统，随后用泄露的凭证访问了一家安全厂商的数据库。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/rohanpaul_ai/status/2097776787115901018",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7652,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
-      }
-    },
-    {
-      "story_id": "story_c56a29a4a046",
-      "title": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周 / Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
-      "url": "https://x.com/WorkBuddy_AI/status/2098076348749324362",
-      "primary_url": "https://x.com/WorkBuddy_AI/status/2098076348749324362",
-      "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "37075f1db40b91c96d53783998fe88076f5f141d",
-          "title": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周 / Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
-          "title_zh": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周",
-          "title_en": "Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
-          "title_original": "Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
-          "summary": "WorkBuddy 宣布 DeepSeek V4.1-Flash 已在其平台上线，免费试用两周。引用的 DeepSeek 公告称 V4.1-Flash 已登陆 DeepSeek API 并支持原生多模态。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/WorkBuddy_AI/status/2098076348749324362",
-          "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T15:49:16Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Tencent WorkBuddy (@WorkBuddy_AI)"
-      ],
-      "items": [
-        {
-          "id": "37075f1db40b91c96d53783998fe88076f5f141d",
-          "title": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周 / Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
-          "title_zh": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周",
-          "title_en": "Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
-          "title_original": "Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
-          "summary": "WorkBuddy 宣布 DeepSeek V4.1-Flash 已在其平台上线，免费试用两周。引用的 DeepSeek 公告称 V4.1-Flash 已登陆 DeepSeek API 并支持原生多模态。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/WorkBuddy_AI/status/2098076348749324362",
-          "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T15:49:16Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7517,
-      "importance": 0.7517,
-      "importance_score": 0.7517,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.69,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9614,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-10T15:49:16Z",
-      "latest_at": "2026-09-10T15:49:16Z",
-      "primary_item": {
-        "id": "37075f1db40b91c96d53783998fe88076f5f141d",
-        "title": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周 / Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
-        "title_zh": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周",
-        "title_en": "Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
-        "title_original": "Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
-        "summary": "WorkBuddy 宣布 DeepSeek V4.1-Flash 已在其平台上线，免费试用两周。引用的 DeepSeek 公告称 V4.1-Flash 已登陆 DeepSeek API 并支持原生多模态。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/WorkBuddy_AI/status/2098076348749324362",
-        "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7573,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
-      }
-    },
-    {
-      "story_id": "story_6c68adbdb622",
-      "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求 / New Deepseek model V4.1-Flash cuts memory needs for AI agents",
-      "url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
-      "primary_url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
-      "source": "The Decoder：AI News（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "f82edb2c6b58716870b18a16535bf8e316799e81",
-          "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求 / New Deepseek model V4.1-Flash cuts memory needs for AI agents",
-          "title_zh": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求",
-          "title_en": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
-          "title_original": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
-          "summary": "DeepSeek 发布多模态模型 V4.1-Flash，以 MIT 许可开源在 Hugging Face，目标是大幅压缩 KV cache 和长上下文处理成本。",
-          "recommend_reason_zh": null,
-          "url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
-          "source": "The Decoder：AI News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T12:40:51Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "The Decoder：AI News（RSS）"
-      ],
-      "items": [
-        {
-          "id": "f82edb2c6b58716870b18a16535bf8e316799e81",
-          "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求 / New Deepseek model V4.1-Flash cuts memory needs for AI agents",
-          "title_zh": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求",
-          "title_en": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
-          "title_original": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
-          "summary": "DeepSeek 发布多模态模型 V4.1-Flash，以 MIT 许可开源在 Hugging Face，目标是大幅压缩 KV cache 和长上下文处理成本。",
-          "recommend_reason_zh": null,
-          "url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
-          "source": "The Decoder：AI News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T12:40:51Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7765,
-      "importance": 0.7765,
-      "importance_score": 0.7765,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.79,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9328,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-10T12:40:51Z",
-      "latest_at": "2026-09-10T12:40:51Z",
-      "primary_item": {
-        "id": "f82edb2c6b58716870b18a16535bf8e316799e81",
-        "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求 / New Deepseek model V4.1-Flash cuts memory needs for AI agents",
-        "title_zh": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求",
-        "title_en": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
-        "title_original": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
-        "summary": "DeepSeek 发布多模态模型 V4.1-Flash，以 MIT 许可开源在 Hugging Face，目标是大幅压缩 KV cache 和长上下文处理成本。",
-        "recommend_reason_zh": null,
-        "url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
-        "source": "The Decoder：AI News（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.782,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
-      }
-    },
-    {
-      "story_id": "story_8173475ff08e",
-      "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价 / Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-      "url": "https://x.com/kimmonismus/status/2097970735591366804",
-      "primary_url": "https://x.com/kimmonismus/status/2097970735591366804",
-      "source": "X：Kim (@kimmonismus)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "a631aefff0aa9776c41a5c8aff2d0aa6602b6614",
-          "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价 / Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-          "title_zh": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价",
-          "title_en": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-          "title_original": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-          "summary": "DeepSeek 发布 V4.1-Flash，采用 Causal Encoder-Decoder 新架构并支持原生视觉理解，552B MoE 参数，输入处理激活 8B、输出生成激活 16B。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/kimmonismus/status/2097970735591366804",
-          "source": "X：Kim (@kimmonismus)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T08:49:36Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Kim (@kimmonismus)"
-      ],
-      "items": [
-        {
-          "id": "a631aefff0aa9776c41a5c8aff2d0aa6602b6614",
-          "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价 / Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-          "title_zh": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价",
-          "title_en": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-          "title_original": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-          "summary": "DeepSeek 发布 V4.1-Flash，采用 Causal Encoder-Decoder 新架构并支持原生视觉理解，552B MoE 参数，输入处理激活 8B、输出生成激活 16B。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/kimmonismus/status/2097970735591366804",
-          "source": "X：Kim (@kimmonismus)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T08:49:36Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7674,
-      "importance": 0.7674,
-      "importance_score": 0.7674,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.78,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8988,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-10T08:49:36Z",
-      "latest_at": "2026-09-10T08:49:36Z",
-      "primary_item": {
-        "id": "a631aefff0aa9776c41a5c8aff2d0aa6602b6614",
-        "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价 / Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-        "title_zh": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价",
-        "title_en": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-        "title_original": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
-        "summary": "DeepSeek 发布 V4.1-Flash，采用 Causal Encoder-Decoder 新架构并支持原生视觉理解，552B MoE 参数，输入处理激活 8B、输出生成激活 16B。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/kimmonismus/status/2097970735591366804",
-        "source": "X：Kim (@kimmonismus)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7809,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T19:56:46.581493Z"
+        "scored_at": "2026-09-10T22:42:10.669436Z"
       }
     }
   ]
