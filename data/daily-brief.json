@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T22:41:18.922740Z",
+  "generated_at": "2026-09-11T01:15:48.594179Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8568,
-      "importance": 0.8568,
-      "importance_score": 0.8568,
+      "score": 0.8526,
+      "importance": 0.8526,
+      "importance_score": 0.8526,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.9376,
+        "recency": 0.9147,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -133,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.85,
-      "importance": 0.85,
-      "importance_score": 0.85,
+      "score": 0.8456,
+      "importance": 0.8456,
+      "importance_score": 0.8456,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9888,
+        "recency": 0.9646,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -170,7 +170,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -218,15 +218,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8328,
-      "importance": 0.8328,
-      "importance_score": 0.8328,
+      "score": 0.8286,
+      "importance": 0.8286,
+      "importance_score": 0.8286,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9376,
+        "recency": 0.9147,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -255,92 +255,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
-      }
-    },
-    {
-      "story_id": "story_15857ddbbec1",
-      "title": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能 / Rebuilding AUTOMATIC1111 with Gradio Workflow",
-      "url": "https://huggingface.co/blog/gradio-workflow-1111",
-      "primary_url": "https://huggingface.co/blog/gradio-workflow-1111",
-      "source": "Hugging Face Blog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "e78747797ab8eaea98f4e279c790cee43817aef7",
-          "title": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能 / Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "title_zh": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能",
-          "title_en": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "title_original": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/gradio-workflow-1111",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-10T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hugging Face Blog"
-      ],
-      "items": [
-        {
-          "id": "e78747797ab8eaea98f4e279c790cee43817aef7",
-          "title": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能 / Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "title_zh": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能",
-          "title_en": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "title_original": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/gradio-workflow-1111",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-10T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8247,
-      "importance": 0.8247,
-      "importance_score": 0.8247,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8038,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-10T00:00:00Z",
-      "latest_at": "2026-09-10T00:00:00Z",
-      "primary_item": {
-        "id": "e78747797ab8eaea98f4e279c790cee43817aef7",
-        "title": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能 / Rebuilding AUTOMATIC1111 with Gradio Workflow",
-        "title_zh": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能",
-        "title_en": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-        "title_original": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/gradio-workflow-1111",
-        "source": "Hugging Face Blog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.841,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -388,15 +303,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8102,
-      "importance": 0.8102,
-      "importance_score": 0.8102,
+      "score": 0.8065,
+      "importance": 0.8065,
+      "importance_score": 0.8065,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8513,
+        "recency": 0.8305,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -424,92 +339,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
-      }
-    },
-    {
-      "story_id": "story_18c966d78324",
-      "title": "Codex CLI Cygwin build inputs and matching source for Windows voice",
-      "url": "https://developers.openai.com/codex/changelog",
-      "primary_url": "https://developers.openai.com/codex/changelog",
-      "source": "OpenAI Codex Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "e68db8d85219bed1556b149155beb7759db91bbc",
-          "title": "Codex CLI Cygwin build inputs and matching source for Windows voice",
-          "title_zh": null,
-          "title_en": "Codex CLI Cygwin build inputs and matching source for Windows voice",
-          "title_original": "Codex CLI Cygwin build inputs and matching source for Windows voice",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-10T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI Codex Changelog"
-      ],
-      "items": [
-        {
-          "id": "e68db8d85219bed1556b149155beb7759db91bbc",
-          "title": "Codex CLI Cygwin build inputs and matching source for Windows voice",
-          "title_zh": null,
-          "title_en": "Codex CLI Cygwin build inputs and matching source for Windows voice",
-          "title_original": "Codex CLI Cygwin build inputs and matching source for Windows voice",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-10T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8347,
-      "importance": 0.8347,
-      "importance_score": 0.8347,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8038,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-10T00:00:00Z",
-      "latest_at": "2026-09-10T00:00:00Z",
-      "primary_item": {
-        "id": "e68db8d85219bed1556b149155beb7759db91bbc",
-        "title": "Codex CLI Cygwin build inputs and matching source for Windows voice",
-        "title_zh": null,
-        "title_en": "Codex CLI Cygwin build inputs and matching source for Windows voice",
-        "title_original": "Codex CLI Cygwin build inputs and matching source for Windows voice",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://developers.openai.com/codex/changelog",
-        "source": "OpenAI Codex Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8347,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -557,15 +387,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8222,
-      "importance": 0.8222,
-      "importance_score": 0.8222,
+      "score": 0.818,
+      "importance": 0.818,
+      "importance_score": 0.818,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9511,
+        "recency": 0.9278,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -593,92 +423,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
-      }
-    },
-    {
-      "story_id": "story_5d88d93a2d9b",
-      "title": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
-      "url": "https://deepseek.com/news/deepseek-v4-1-flash",
-      "primary_url": "https://deepseek.com/news/deepseek-v4-1-flash",
-      "source": "DeepSeek",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "1b5f3bfa99b686121a04dc86a4a38c1b6cf3a1d5",
-          "title": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
-          "title_zh": null,
-          "title_en": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
-          "title_original": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://deepseek.com/news/deepseek-v4-1-flash",
-          "source": "DeepSeek",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-10T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "DeepSeek"
-      ],
-      "items": [
-        {
-          "id": "1b5f3bfa99b686121a04dc86a4a38c1b6cf3a1d5",
-          "title": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
-          "title_zh": null,
-          "title_en": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
-          "title_original": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://deepseek.com/news/deepseek-v4-1-flash",
-          "source": "DeepSeek",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-10T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8167,
-      "importance": 0.8167,
-      "importance_score": 0.8167,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8038,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-10T00:00:00Z",
-      "latest_at": "2026-09-10T00:00:00Z",
-      "primary_item": {
-        "id": "1b5f3bfa99b686121a04dc86a4a38c1b6cf3a1d5",
-        "title": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
-        "title_zh": null,
-        "title_en": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
-        "title_original": "DeepSeek V4.1 Flashï¼æ´å¼ºãæ´å¿«ãæ´æ®æ",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://deepseek.com/news/deepseek-v4-1-flash",
-        "source": "DeepSeek",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8255,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -726,15 +471,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8392,
-      "importance": 0.8392,
-      "importance_score": 0.8392,
+      "score": 0.8351,
+      "importance": 0.8351,
+      "importance_score": 0.8351,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9287,
+        "recency": 0.9059,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -763,7 +508,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
+      }
+    },
+    {
+      "story_id": "story_70812b09fc4a",
+      "title": "Cursor 推出 Projects：协调者智能体管理数千个子智能体处理大型开发任务 / Introducing Projects",
+      "url": "https://cursor.com/blog/projects",
+      "primary_url": "https://cursor.com/blog/projects",
+      "source": "Cursor Blog",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "8ec9b3812a8146933a1db2cb12577e46772a3dcb",
+          "title": "Cursor 推出 Projects：协调者智能体管理数千个子智能体处理大型开发任务 / Introducing Projects",
+          "title_zh": "Cursor 推出 Projects：协调者智能体管理数千个子智能体处理大型开发任务",
+          "title_en": "Introducing Projects",
+          "title_original": "Introducing Projects",
+          "summary": "Cursor 发布 Projects（beta），让用户通过协调者智能体处理功能开发、迁移和持续性维护等大型工作，协调者本身不写代码，而是调度数千个子智能体并行执行。",
+          "recommend_reason_zh": null,
+          "url": "https://cursor.com/blog/projects",
+          "source": "Cursor Blog",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T12:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Cursor Blog"
+      ],
+      "items": [
+        {
+          "id": "8ec9b3812a8146933a1db2cb12577e46772a3dcb",
+          "title": "Cursor 推出 Projects：协调者智能体管理数千个子智能体处理大型开发任务 / Introducing Projects",
+          "title_zh": "Cursor 推出 Projects：协调者智能体管理数千个子智能体处理大型开发任务",
+          "title_en": "Introducing Projects",
+          "title_original": "Introducing Projects",
+          "summary": "Cursor 发布 Projects（beta），让用户通过协调者智能体处理功能开发、迁移和持续性维护等大型工作，协调者本身不写代码，而是调度数千个子智能体并行执行。",
+          "recommend_reason_zh": null,
+          "url": "https://cursor.com/blog/projects",
+          "source": "Cursor Blog",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T12:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8094,
+      "importance": 0.8094,
+      "importance_score": 0.8094,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.77,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.8801,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-10T12:00:00Z",
+      "latest_at": "2026-09-10T12:00:00Z",
+      "primary_item": {
+        "id": "8ec9b3812a8146933a1db2cb12577e46772a3dcb",
+        "title": "Cursor 推出 Projects：协调者智能体管理数千个子智能体处理大型开发任务 / Introducing Projects",
+        "title_zh": "Cursor 推出 Projects：协调者智能体管理数千个子智能体处理大型开发任务",
+        "title_en": "Introducing Projects",
+        "title_original": "Introducing Projects",
+        "summary": "Cursor 发布 Projects（beta），让用户通过协调者智能体处理功能开发、迁移和持续性维护等大型工作，协调者本身不写代码，而是调度数千个子智能体并行执行。",
+        "recommend_reason_zh": null,
+        "url": "https://cursor.com/blog/projects",
+        "source": "Cursor Blog",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8094,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -811,15 +640,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7881,
-      "importance": 0.7881,
-      "importance_score": 0.7881,
+      "score": 0.7843,
+      "importance": 0.7843,
+      "importance_score": 0.7843,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.87,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8641,
+        "recency": 0.843,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -847,92 +676,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
-      }
-    },
-    {
-      "story_id": "story_66723f7214d7",
-      "title": "Codex CLI Python SDK 0.154.0",
-      "url": "https://developers.openai.com/codex/changelog",
-      "primary_url": "https://developers.openai.com/codex/changelog",
-      "source": "OpenAI Codex Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "4a626eb7c4e4a97cc2ed6e709431dddbf19fba02",
-          "title": "Codex CLI Python SDK 0.154.0",
-          "title_zh": null,
-          "title_en": "Codex CLI Python SDK 0.154.0",
-          "title_original": "Codex CLI Python SDK 0.154.0",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-10T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI Codex Changelog"
-      ],
-      "items": [
-        {
-          "id": "4a626eb7c4e4a97cc2ed6e709431dddbf19fba02",
-          "title": "Codex CLI Python SDK 0.154.0",
-          "title_zh": null,
-          "title_en": "Codex CLI Python SDK 0.154.0",
-          "title_original": "Codex CLI Python SDK 0.154.0",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-10T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8307,
-      "importance": 0.8307,
-      "importance_score": 0.8307,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.98,
-        "recency": 0.8038,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-10T00:00:00Z",
-      "latest_at": "2026-09-10T00:00:00Z",
-      "primary_item": {
-        "id": "4a626eb7c4e4a97cc2ed6e709431dddbf19fba02",
-        "title": "Codex CLI Python SDK 0.154.0",
-        "title_zh": null,
-        "title_en": "Codex CLI Python SDK 0.154.0",
-        "title_original": "Codex CLI Python SDK 0.154.0",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://developers.openai.com/codex/changelog",
-        "source": "OpenAI Codex Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8307,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -980,15 +724,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7891,
-      "importance": 0.7891,
-      "importance_score": 0.7891,
+      "score": 0.785,
+      "importance": 0.785,
+      "importance_score": 0.785,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.934,
+        "recency": 0.9111,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1016,7 +760,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -1064,15 +808,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7871,
-      "importance": 0.7871,
-      "importance_score": 0.7871,
+      "score": 0.7831,
+      "importance": 0.7831,
+      "importance_score": 0.7831,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9229,
+        "recency": 0.9003,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1100,91 +844,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
-      }
-    },
-    {
-      "story_id": "story_5e84ca349926",
-      "title": "Suno v6 发布，支持图片、视频和语音备忘录生成音乐 / Suno v6 is here. Turn images， videos， and voice memos into music. Make precise changes to songs you…",
-      "url": "https://x.com/suno/status/2097846245540888664",
-      "primary_url": "https://x.com/suno/status/2097846245540888664",
-      "source": "X：Suno (@suno)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "48e41dbf33fcc23427f28bb186c12e2ac359c31f",
-          "title": "Suno v6 发布，支持图片、视频和语音备忘录生成音乐 / Suno v6 is here. Turn images， videos， and voice memos into music. Make precise changes to songs you…",
-          "title_zh": "Suno v6 发布，支持图片、视频和语音备忘录生成音乐",
-          "title_en": "Suno v6 is here. Turn images， videos， and voice memos into music. Make precise changes to songs you…",
-          "title_original": "Suno v6 is here. Turn images， videos， and voice memos into music. Make precise changes to songs you…",
-          "summary": "Suno 发布 v6 模型，可将图片、视频和语音备忘录转化为音乐，并对已创建的歌曲进行精确修改。同时提供 v6-wild 版本供探索更多可能性，官方附有 2 分钟以内的功能演示视频。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/suno/status/2097846245540888664",
-          "source": "X：Suno (@suno)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T00:34:55Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Suno (@suno)"
-      ],
-      "items": [
-        {
-          "id": "48e41dbf33fcc23427f28bb186c12e2ac359c31f",
-          "title": "Suno v6 发布，支持图片、视频和语音备忘录生成音乐 / Suno v6 is here. Turn images， videos， and voice memos into music. Make precise changes to songs you…",
-          "title_zh": "Suno v6 发布，支持图片、视频和语音备忘录生成音乐",
-          "title_en": "Suno v6 is here. Turn images， videos， and voice memos into music. Make precise changes to songs you…",
-          "title_original": "Suno v6 is here. Turn images， videos， and voice memos into music. Make precise changes to songs you…",
-          "summary": "Suno 发布 v6 模型，可将图片、视频和语音备忘录转化为音乐，并对已创建的歌曲进行精确修改。同时提供 v6-wild 版本供探索更多可能性，官方附有 2 分钟以内的功能演示视频。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/suno/status/2097846245540888664",
-          "source": "X：Suno (@suno)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T00:34:55Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7605,
-      "importance": 0.7605,
-      "importance_score": 0.7605,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.65,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8083,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-10T00:34:55Z",
-      "latest_at": "2026-09-10T00:34:55Z",
-      "primary_item": {
-        "id": "48e41dbf33fcc23427f28bb186c12e2ac359c31f",
-        "title": "Suno v6 发布，支持图片、视频和语音备忘录生成音乐 / Suno v6 is here. Turn images， videos， and voice memos into music. Make precise changes to songs you…",
-        "title_zh": "Suno v6 发布，支持图片、视频和语音备忘录生成音乐",
-        "title_en": "Suno v6 is here. Turn images， videos， and voice memos into music. Make precise changes to songs you…",
-        "title_original": "Suno v6 is here. Turn images， videos， and voice memos into music. Make precise changes to songs you…",
-        "summary": "Suno 发布 v6 模型，可将图片、视频和语音备忘录转化为音乐，并对已创建的歌曲进行精确修改。同时提供 v6-wild 版本供探索更多可能性，官方附有 2 分钟以内的功能演示视频。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/suno/status/2097846245540888664",
-        "source": "X：Suno (@suno)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7939,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -1261,15 +921,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7662,
-      "importance": 0.7662,
-      "importance_score": 0.7662,
+      "score": 0.7624,
+      "importance": 0.7624,
+      "importance_score": 0.7624,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8532,
+        "recency": 0.8323,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -1298,7 +958,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -1346,15 +1006,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7819,
-      "importance": 0.7819,
-      "importance_score": 0.7819,
+      "score": 0.7778,
+      "importance": 0.7778,
+      "importance_score": 0.7778,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9294,
+        "recency": 0.9066,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1382,7 +1042,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -1459,15 +1119,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7886,
-      "importance": 0.7886,
-      "importance_score": 0.7886,
+      "score": 0.7843,
+      "importance": 0.7843,
+      "importance_score": 0.7843,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9835,
+        "recency": 0.9594,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1495,7 +1155,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -1572,15 +1232,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7813,
-      "importance": 0.7813,
-      "importance_score": 0.7813,
+      "score": 0.7771,
+      "importance": 0.7771,
+      "importance_score": 0.7771,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9427,
+        "recency": 0.9196,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1608,7 +1268,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -1656,15 +1316,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7653,
-      "importance": 0.7653,
-      "importance_score": 0.7653,
+      "score": 0.7614,
+      "importance": 0.7614,
+      "importance_score": 0.7614,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8704,
+        "recency": 0.8491,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1692,7 +1352,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     },
     {
@@ -1740,15 +1400,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8348,
-      "importance": 0.8348,
-      "importance_score": 0.8348,
+      "score": 0.831,
+      "importance": 0.831,
+      "importance_score": 0.831,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8598,
+        "recency": 0.8388,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1777,7 +1437,341 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-10T22:42:10.669436Z"
+        "scored_at": "2026-09-11T01:16:41.552380Z"
+      }
+    },
+    {
+      "story_id": "story_c56a29a4a046",
+      "title": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周 / Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
+      "url": "https://x.com/WorkBuddy_AI/status/2098076348749324362",
+      "primary_url": "https://x.com/WorkBuddy_AI/status/2098076348749324362",
+      "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "37075f1db40b91c96d53783998fe88076f5f141d",
+          "title": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周 / Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
+          "title_zh": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周",
+          "title_en": "Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
+          "title_original": "Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
+          "summary": "WorkBuddy 宣布 DeepSeek V4.1-Flash 已在其平台上线，免费试用两周。引用的 DeepSeek 公告称 V4.1-Flash 已登陆 DeepSeek API 并支持原生多模态。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/WorkBuddy_AI/status/2098076348749324362",
+          "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T15:49:16Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Tencent WorkBuddy (@WorkBuddy_AI)"
+      ],
+      "items": [
+        {
+          "id": "37075f1db40b91c96d53783998fe88076f5f141d",
+          "title": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周 / Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
+          "title_zh": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周",
+          "title_en": "Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
+          "title_original": "Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
+          "summary": "WorkBuddy 宣布 DeepSeek V4.1-Flash 已在其平台上线，免费试用两周。引用的 DeepSeek 公告称 V4.1-Flash 已登陆 DeepSeek API 并支持原生多模态。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/WorkBuddy_AI/status/2098076348749324362",
+          "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T15:49:16Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.743,
+      "importance": 0.743,
+      "importance_score": 0.743,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.69,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9131,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-10T15:49:16Z",
+      "latest_at": "2026-09-10T15:49:16Z",
+      "primary_item": {
+        "id": "37075f1db40b91c96d53783998fe88076f5f141d",
+        "title": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周 / Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
+        "title_zh": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周",
+        "title_en": "Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
+        "title_original": "Now live on WorkBuddy ⚡ DeepSeek V4.1-Flash， free to try for 2 weeks.",
+        "summary": "WorkBuddy 宣布 DeepSeek V4.1-Flash 已在其平台上线，免费试用两周。引用的 DeepSeek 公告称 V4.1-Flash 已登陆 DeepSeek API 并支持原生多模态。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/WorkBuddy_AI/status/2098076348749324362",
+        "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7573,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-11T01:16:41.552380Z"
+      }
+    },
+    {
+      "story_id": "story_6c68adbdb622",
+      "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求 / New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+      "url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
+      "primary_url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
+      "source": "The Decoder：AI News（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "f82edb2c6b58716870b18a16535bf8e316799e81",
+          "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求 / New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+          "title_zh": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求",
+          "title_en": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+          "title_original": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+          "summary": "DeepSeek 发布多模态模型 V4.1-Flash，以 MIT 许可开源在 Hugging Face，目标是大幅压缩 KV cache 和长上下文处理成本。",
+          "recommend_reason_zh": null,
+          "url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
+          "source": "The Decoder：AI News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T12:40:51Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "The Decoder：AI News（RSS）"
+      ],
+      "items": [
+        {
+          "id": "f82edb2c6b58716870b18a16535bf8e316799e81",
+          "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求 / New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+          "title_zh": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求",
+          "title_en": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+          "title_original": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+          "summary": "DeepSeek 发布多模态模型 V4.1-Flash，以 MIT 许可开源在 Hugging Face，目标是大幅压缩 KV cache 和长上下文处理成本。",
+          "recommend_reason_zh": null,
+          "url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
+          "source": "The Decoder：AI News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T12:40:51Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7681,
+      "importance": 0.7681,
+      "importance_score": 0.7681,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.79,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8859,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-10T12:40:51Z",
+      "latest_at": "2026-09-10T12:40:51Z",
+      "primary_item": {
+        "id": "f82edb2c6b58716870b18a16535bf8e316799e81",
+        "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求 / New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+        "title_zh": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求",
+        "title_en": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+        "title_original": "New Deepseek model V4.1-Flash cuts memory needs for AI agents",
+        "summary": "DeepSeek 发布多模态模型 V4.1-Flash，以 MIT 许可开源在 Hugging Face，目标是大幅压缩 KV cache 和长上下文处理成本。",
+        "recommend_reason_zh": null,
+        "url": "https://the-decoder.com/new-deepseek-model-v4-1-flash-cuts-memory-needs-for-ai-agents",
+        "source": "The Decoder：AI News（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.782,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-11T01:16:41.552380Z"
+      }
+    },
+    {
+      "story_id": "story_8173475ff08e",
+      "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价 / Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
+      "url": "https://x.com/kimmonismus/status/2097970735591366804",
+      "primary_url": "https://x.com/kimmonismus/status/2097970735591366804",
+      "source": "X：Kim (@kimmonismus)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "a631aefff0aa9776c41a5c8aff2d0aa6602b6614",
+          "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价 / Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
+          "title_zh": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价",
+          "title_en": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
+          "title_original": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
+          "summary": "DeepSeek 发布 V4.1-Flash，采用 Causal Encoder-Decoder 新架构并支持原生视觉理解，552B MoE 参数，输入处理激活 8B、输出生成激活 16B。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/kimmonismus/status/2097970735591366804",
+          "source": "X：Kim (@kimmonismus)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T08:49:36Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Kim (@kimmonismus)"
+      ],
+      "items": [
+        {
+          "id": "a631aefff0aa9776c41a5c8aff2d0aa6602b6614",
+          "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价 / Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
+          "title_zh": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价",
+          "title_en": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
+          "title_original": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
+          "summary": "DeepSeek 发布 V4.1-Flash，采用 Causal Encoder-Decoder 新架构并支持原生视觉理解，552B MoE 参数，输入处理激活 8B、输出生成激活 16B。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/kimmonismus/status/2097970735591366804",
+          "source": "X：Kim (@kimmonismus)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-10T08:49:36Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7593,
+      "importance": 0.7593,
+      "importance_score": 0.7593,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8536,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-10T08:49:36Z",
+      "latest_at": "2026-09-10T08:49:36Z",
+      "primary_item": {
+        "id": "a631aefff0aa9776c41a5c8aff2d0aa6602b6614",
+        "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价 / Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
+        "title_zh": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价",
+        "title_en": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
+        "title_original": "Whats really exciting about DeepSeek 4.1 Flash its insane efficiency and pricing. It matches or be…",
+        "summary": "DeepSeek 发布 V4.1-Flash，采用 Causal Encoder-Decoder 新架构并支持原生视觉理解，552B MoE 参数，输入处理激活 8B、输出生成激活 16B。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/kimmonismus/status/2097970735591366804",
+        "source": "X：Kim (@kimmonismus)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7809,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-11T01:16:41.552380Z"
+      }
+    },
+    {
+      "story_id": "story_5026558c852c",
+      "title": "Grok Bot 摘要 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 的演讲要点 / Grok @Bot summary of SpaceX CFO talk",
+      "url": "https://x.com/elonmusk/status/2098217236771295567",
+      "primary_url": "https://x.com/elonmusk/status/2098217236771295567",
+      "source": "X：Elon Musk (@elonmusk, xAI)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "f9183098768f67ec68f0e13db499958386d6c247",
+          "title": "Grok Bot 摘要 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 的演讲要点 / Grok @Bot summary of SpaceX CFO talk",
+          "title_zh": "Grok Bot 摘要 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 的演讲要点",
+          "title_en": "Grok @Bot summary of SpaceX CFO talk",
+          "title_original": "Grok @Bot summary of SpaceX CFO talk",
+          "summary": "Elon Musk 转发 Grok Bot 对 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 演讲的摘要。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/elonmusk/status/2098217236771295567",
+          "source": "X：Elon Musk (@elonmusk, xAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-11T01:09:06Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Elon Musk (@elonmusk, xAI)"
+      ],
+      "items": [
+        {
+          "id": "f9183098768f67ec68f0e13db499958386d6c247",
+          "title": "Grok Bot 摘要 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 的演讲要点 / Grok @Bot summary of SpaceX CFO talk",
+          "title_zh": "Grok Bot 摘要 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 的演讲要点",
+          "title_en": "Grok @Bot summary of SpaceX CFO talk",
+          "title_original": "Grok @Bot summary of SpaceX CFO talk",
+          "summary": "Elon Musk 转发 Grok Bot 对 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 演讲的摘要。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/elonmusk/status/2098217236771295567",
+          "source": "X：Elon Musk (@elonmusk, xAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-11T01:09:06Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7494,
+      "importance": 0.7494,
+      "importance_score": 0.7494,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9989,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-11T01:09:06Z",
+      "latest_at": "2026-09-11T01:09:06Z",
+      "primary_item": {
+        "id": "f9183098768f67ec68f0e13db499958386d6c247",
+        "title": "Grok Bot 摘要 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 的演讲要点 / Grok @Bot summary of SpaceX CFO talk",
+        "title_zh": "Grok Bot 摘要 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 的演讲要点",
+        "title_en": "Grok @Bot summary of SpaceX CFO talk",
+        "title_original": "Grok @Bot summary of SpaceX CFO talk",
+        "summary": "Elon Musk 转发 Grok Bot 对 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 演讲的摘要。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/elonmusk/status/2098217236771295567",
+        "source": "X：Elon Musk (@elonmusk, xAI)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7494,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-11T01:16:41.552380Z"
       }
     }
   ]
