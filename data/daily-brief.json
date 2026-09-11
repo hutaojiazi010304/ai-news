@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T16:38:29.110552Z",
+  "generated_at": "2026-09-11T19:53:41.526633Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8217,
-      "importance": 0.8217,
-      "importance_score": 0.8217,
+      "score": 0.8171,
+      "importance": 0.8171,
+      "importance_score": 0.8171,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8319,
+        "recency": 0.8062,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,91 +85,206 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
-      "story_id": "story_86ba7807178e",
-      "title": "Anthropic 评估 AI 模型的战术情报定位与常规武器能力 / Measuring tactical intelligence targeting and conventional weapons capabilities of AI models",
-      "url": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
-      "primary_url": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "source_name": "AI HOT",
+      "story_id": "story_e0d5d5d34cc3",
+      "title": "OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇） / Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "primary_url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "085ec09dfd0dae533196b8be7ab563d8743dc396",
-          "title": "Anthropic 评估 AI 模型的战术情报定位与常规武器能力 / Measuring tactical intelligence targeting and conventional weapons capabilities of AI models",
-          "title_zh": "Anthropic 评估 AI 模型的战术情报定位与常规武器能力",
-          "title_en": "Measuring tactical intelligence targeting and conventional weapons capabilities of AI models",
-          "title_original": "Measuring tactical intelligence targeting and conventional weapons capabilities of AI models",
-          "summary": "Anthropic Frontier Red Team 发布新评测，衡量模型在战术情报定位（账户关联、照片与文本地理定位）和常规武器开发（无人机末段制导、投送、GPS 干扰下导航）上的能力。",
+          "id": "9fa69dd2432ab59881aac0c5b1ccd0936f65064b",
+          "title": "OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇） / Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+          "title_zh": "OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇）",
+          "title_en": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+          "title_original": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+          "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
           "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
-          "source": "Anthropic：Research（发表成果 · 网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T17:28:52.100000Z"
+          "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-11T10:00:00Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Anthropic：Research（发表成果 · 网页）"
+        "OpenAI News"
       ],
       "items": [
         {
-          "id": "085ec09dfd0dae533196b8be7ab563d8743dc396",
-          "title": "Anthropic 评估 AI 模型的战术情报定位与常规武器能力 / Measuring tactical intelligence targeting and conventional weapons capabilities of AI models",
-          "title_zh": "Anthropic 评估 AI 模型的战术情报定位与常规武器能力",
-          "title_en": "Measuring tactical intelligence targeting and conventional weapons capabilities of AI models",
-          "title_original": "Measuring tactical intelligence targeting and conventional weapons capabilities of AI models",
-          "summary": "Anthropic Frontier Red Team 发布新评测，衡量模型在战术情报定位（账户关联、照片与文本地理定位）和常规武器开发（无人机末段制导、投送、GPS 干扰下导航）上的能力。",
+          "id": "9fa69dd2432ab59881aac0c5b1ccd0936f65064b",
+          "title": "OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇） / Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+          "title_zh": "OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇）",
+          "title_en": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+          "title_original": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+          "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
           "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
-          "source": "Anthropic：Research（发表成果 · 网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-10T17:28:52.100000Z"
+          "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-11T10:00:00Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.795,
-      "importance": 0.795,
-      "importance_score": 0.795,
+      "score": 0.8436,
+      "importance": 0.8436,
+      "importance_score": 0.8436,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.77,
+        "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8001,
+        "ai_relevance": 0.95,
+        "recency": 0.9091,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
+        "official_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-10T17:28:52.100000Z",
-      "latest_at": "2026-09-10T17:28:52.100000Z",
+      "earliest_at": "2026-09-11T10:00:00Z",
+      "latest_at": "2026-09-11T10:00:00Z",
       "primary_item": {
-        "id": "085ec09dfd0dae533196b8be7ab563d8743dc396",
-        "title": "Anthropic 评估 AI 模型的战术情报定位与常规武器能力 / Measuring tactical intelligence targeting and conventional weapons capabilities of AI models",
-        "title_zh": "Anthropic 评估 AI 模型的战术情报定位与常规武器能力",
-        "title_en": "Measuring tactical intelligence targeting and conventional weapons capabilities of AI models",
-        "title_original": "Measuring tactical intelligence targeting and conventional weapons capabilities of AI models",
-        "summary": "Anthropic Frontier Red Team 发布新评测，衡量模型在战术情报定位（账户关联、照片与文本地理定位）和常规武器开发（无人机末段制导、投送、GPS 干扰下导航）上的能力。",
+        "id": "9fa69dd2432ab59881aac0c5b1ccd0936f65064b",
+        "title": "OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇） / Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+        "title_zh": "OpenAI 详解存储平台 Habitat 如何扩展支撑超 10 亿 ChatGPT 用户（上篇）",
+        "title_en": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+        "title_original": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+        "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
         "recommend_reason_zh": null,
-        "url": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
-        "source": "Anthropic：Research（发表成果 · 网页）",
-        "source_name": "AI HOT"
+        "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8268,
+      "peak_score": 0.8436,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
+      }
+    },
+    {
+      "story_id": "story_d30641cfac8b",
+      "title": "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化 / Marketing ops as code: Automating events from planning to follow-up on GitHub",
+      "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github",
+      "primary_url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github",
+      "source": "GitHub AI & ML",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "d180e9307ad6108eb08f57f88bc0238030d71ce7",
+          "title": "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化 / Marketing ops as code: Automating events from planning to follow-up on GitHub",
+          "title_zh": "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化",
+          "title_en": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
+          "title_original": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
+          "summary": "If you can write down how you do your work, you can automate it. Here's what I did to support GitHub's APAC marketing team. The post Marketing ops as code: Automating events from planning to follow-up on GitHub appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-11T18:26:10Z"
+        },
+        {
+          "id": "84d095da089a6bbac567518186a311edae283570",
+          "title": "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化 / Marketing ops as code： Automating events from planning to follow-up on GitHub",
+          "title_zh": "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化",
+          "title_en": "Marketing ops as code： Automating events from planning to follow-up on GitHub",
+          "title_original": "Marketing ops as code： Automating events from planning to follow-up on GitHub",
+          "summary": "GitHub 日韩地区营销负责人 Tomoko Tanaka 分享如何不写代码，把活动运营交给 GitHub Copilot 自动化。",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github",
+          "source": "GitHub Blog",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-11T18:26:10Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub AI & ML",
+        "GitHub Blog"
+      ],
+      "items": [
+        {
+          "id": "d180e9307ad6108eb08f57f88bc0238030d71ce7",
+          "title": "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化 / Marketing ops as code: Automating events from planning to follow-up on GitHub",
+          "title_zh": "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化",
+          "title_en": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
+          "title_original": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
+          "summary": "If you can write down how you do your work, you can automate it. Here's what I did to support GitHub's APAC marketing team. The post Marketing ops as code: Automating events from planning to follow-up on GitHub appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-11T18:26:10Z"
+        },
+        {
+          "id": "84d095da089a6bbac567518186a311edae283570",
+          "title": "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化 / Marketing ops as code： Automating events from planning to follow-up on GitHub",
+          "title_zh": "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化",
+          "title_en": "Marketing ops as code： Automating events from planning to follow-up on GitHub",
+          "title_original": "Marketing ops as code： Automating events from planning to follow-up on GitHub",
+          "summary": "GitHub 日韩地区营销负责人 Tomoko Tanaka 分享如何不写代码，把活动运营交给 GitHub Copilot 自动化。",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github",
+          "source": "GitHub Blog",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-11T18:26:10Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.8415,
+      "importance": 0.8415,
+      "importance_score": 0.8415,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.9861,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-11T18:26:10Z",
+      "latest_at": "2026-09-11T18:26:10Z",
+      "primary_item": {
+        "id": "d180e9307ad6108eb08f57f88bc0238030d71ce7",
+        "title": "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化 / Marketing ops as code: Automating events from planning to follow-up on GitHub",
+        "title_zh": "GitHub 日韩营销负责人如何用 GitHub Copilot 把活动运营自动化",
+        "title_en": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
+        "title_original": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
+        "summary": "If you can write down how you do your work, you can automate it. Here's what I did to support GitHub's APAC marketing team. The post Marketing ops as code: Automating events from planning to follow-up on GitHub appeared first on The GitHub Blog .",
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github",
+        "source": "GitHub AI & ML",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8415,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -246,15 +361,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7958,
-      "importance": 0.7958,
-      "importance_score": 0.7958,
+      "score": 0.7904,
+      "importance": 0.7904,
+      "importance_score": 0.7904,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9734,
+        "recency": 0.9434,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -282,7 +397,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -358,15 +473,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7755,
-      "importance": 0.7755,
-      "importance_score": 0.7755,
+      "score": 0.7704,
+      "importance": 0.7704,
+      "importance_score": 0.7704,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9048,
+        "recency": 0.8769,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -395,7 +510,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -472,15 +587,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7605,
-      "importance": 0.7605,
-      "importance_score": 0.7605,
+      "score": 0.7559,
+      "importance": 0.7559,
+      "importance_score": 0.7559,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8274,
+        "recency": 0.8019,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -508,7 +623,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -556,15 +671,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7596,
-      "importance": 0.7596,
-      "importance_score": 0.7596,
+      "score": 0.7547,
+      "importance": 0.7547,
+      "importance_score": 0.7547,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8889,
+        "recency": 0.8615,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -592,7 +707,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -640,19 +755,19 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7247,
-      "importance": 0.7247,
-      "importance_score": 0.7247,
-      "importance_label": "行业动态",
+      "score": 0.7199,
+      "importance": 0.7199,
+      "importance_score": 0.7199,
+      "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8615,
+        "recency": 0.8349,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "industry",
+      "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
@@ -675,7 +790,90 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
+      }
+    },
+    {
+      "story_id": "story_e95b34cb28f9",
+      "title": "Beren Millidge、John Schulman、Charlie O'Neill 对谈递归自我改进离我们还有多远 / AI researchers debate how close we are to recursive self-improvement",
+      "url": "https://www.dwarkesh.com/p/john-beren-charlie",
+      "primary_url": "https://www.dwarkesh.com/p/john-beren-charlie",
+      "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "debdcd3ab4b77ad631f8ed5a47f1216b9e46a1f0",
+          "title": "Beren Millidge、John Schulman、Charlie O'Neill 对谈递归自我改进离我们还有多远 / AI researchers debate how close we are to recursive self-improvement",
+          "title_zh": "Beren Millidge、John Schulman、Charlie O'Neill 对谈递归自我改进离我们还有多远",
+          "title_en": "AI researchers debate how close we are to recursive self-improvement",
+          "title_original": "AI researchers debate how close we are to recursive self-improvement",
+          "summary": "Dwarkesh Patel 与 Zyphra CTO Beren Millidge、Thinking Machines 首席科学家 John Schulman、Baseten 模型训练负责人 Charlie O'Neill 三位研究者对谈递归自我改进（RSI）的前景。",
+          "recommend_reason_zh": null,
+          "url": "https://www.dwarkesh.com/p/john-beren-charlie",
+          "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-11T16:28:11Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Dwarkesh Patel：Podcast & Blog（RSS）"
+      ],
+      "items": [
+        {
+          "id": "debdcd3ab4b77ad631f8ed5a47f1216b9e46a1f0",
+          "title": "Beren Millidge、John Schulman、Charlie O'Neill 对谈递归自我改进离我们还有多远 / AI researchers debate how close we are to recursive self-improvement",
+          "title_zh": "Beren Millidge、John Schulman、Charlie O'Neill 对谈递归自我改进离我们还有多远",
+          "title_en": "AI researchers debate how close we are to recursive self-improvement",
+          "title_original": "AI researchers debate how close we are to recursive self-improvement",
+          "summary": "Dwarkesh Patel 与 Zyphra CTO Beren Millidge、Thinking Machines 首席科学家 John Schulman、Baseten 模型训练负责人 Charlie O'Neill 三位研究者对谈递归自我改进（RSI）的前景。",
+          "recommend_reason_zh": null,
+          "url": "https://www.dwarkesh.com/p/john-beren-charlie",
+          "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-11T16:28:11Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7438,
+      "importance": 0.7438,
+      "importance_score": 0.7438,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9676,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-11T16:28:11Z",
+      "latest_at": "2026-09-11T16:28:11Z",
+      "primary_item": {
+        "id": "debdcd3ab4b77ad631f8ed5a47f1216b9e46a1f0",
+        "title": "Beren Millidge、John Schulman、Charlie O'Neill 对谈递归自我改进离我们还有多远 / AI researchers debate how close we are to recursive self-improvement",
+        "title_zh": "Beren Millidge、John Schulman、Charlie O'Neill 对谈递归自我改进离我们还有多远",
+        "title_en": "AI researchers debate how close we are to recursive self-improvement",
+        "title_original": "AI researchers debate how close we are to recursive self-improvement",
+        "summary": "Dwarkesh Patel 与 Zyphra CTO Beren Millidge、Thinking Machines 首席科学家 John Schulman、Baseten 模型训练负责人 Charlie O'Neill 三位研究者对谈递归自我改进（RSI）的前景。",
+        "recommend_reason_zh": null,
+        "url": "https://www.dwarkesh.com/p/john-beren-charlie",
+        "source": "Dwarkesh Patel：Podcast & Blog（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7438,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -723,22 +921,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7505,
-      "importance": 0.7505,
-      "importance_score": 0.7505,
+      "score": 0.7454,
+      "importance": 0.7454,
+      "importance_score": 0.7454,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9048,
+        "recency": 0.8769,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-11T06:15:04.390409Z",
       "latest_at": "2026-09-11T06:15:04.390409Z",
@@ -759,7 +956,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -807,15 +1004,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7591,
-      "importance": 0.7591,
-      "importance_score": 0.7591,
+      "score": 0.7538,
+      "importance": 0.7538,
+      "importance_score": 0.7538,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9528,
+        "recency": 0.9234,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -843,7 +1040,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -891,22 +1088,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7505,
-      "importance": 0.7505,
-      "importance_score": 0.7505,
+      "score": 0.7454,
+      "importance": 0.7454,
+      "importance_score": 0.7454,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9048,
+        "recency": 0.8769,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-11T06:15:04.390409Z",
       "latest_at": "2026-09-11T06:15:04.390409Z",
@@ -927,7 +1123,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -975,15 +1171,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7591,
-      "importance": 0.7591,
-      "importance_score": 0.7591,
+      "score": 0.7538,
+      "importance": 0.7538,
+      "importance_score": 0.7538,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9528,
+        "recency": 0.9234,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1011,7 +1207,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -1059,15 +1255,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7428,
-      "importance": 0.7428,
-      "importance_score": 0.7428,
+      "score": 0.738,
+      "importance": 0.738,
+      "importance_score": 0.738,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8624,
+        "recency": 0.8358,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1094,7 +1290,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -1142,15 +1338,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7591,
-      "importance": 0.7591,
-      "importance_score": 0.7591,
+      "score": 0.7538,
+      "importance": 0.7538,
+      "importance_score": 0.7538,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9528,
+        "recency": 0.9234,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1178,7 +1374,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -1226,22 +1422,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7505,
-      "importance": 0.7505,
-      "importance_score": 0.7505,
+      "score": 0.7454,
+      "importance": 0.7454,
+      "importance_score": 0.7454,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9048,
+        "recency": 0.8769,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-11T06:15:04.390409Z",
       "latest_at": "2026-09-11T06:15:04.390409Z",
@@ -1262,7 +1457,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -1310,22 +1505,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7505,
-      "importance": 0.7505,
-      "importance_score": 0.7505,
+      "score": 0.7454,
+      "importance": 0.7454,
+      "importance_score": 0.7454,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9048,
+        "recency": 0.8769,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-11T06:15:04.390409Z",
       "latest_at": "2026-09-11T06:15:04.390409Z",
@@ -1346,7 +1540,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -1394,15 +1588,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7428,
-      "importance": 0.7428,
-      "importance_score": 0.7428,
+      "score": 0.738,
+      "importance": 0.738,
+      "importance_score": 0.738,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8624,
+        "recency": 0.8358,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1429,7 +1623,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -1477,15 +1671,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.762,
+      "importance": 0.762,
+      "importance_score": 0.762,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9692,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1513,7 +1707,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     },
     {
@@ -1561,15 +1755,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7591,
-      "importance": 0.7591,
-      "importance_score": 0.7591,
+      "score": 0.7538,
+      "importance": 0.7538,
+      "importance_score": 0.7538,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9528,
+        "recency": 0.9234,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1597,175 +1791,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
-      }
-    },
-    {
-      "story_id": "story_44bb404d78d0",
-      "title": "商汤 AI 办公智能体“小浣熊”移动端上线：手机发指令，电脑持续执行",
-      "url": "https://www.aibase.com/news/30981",
-      "primary_url": "https://www.aibase.com/news/30981",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "a4acb664cc8f54000dd4deb8010593ce25648f68",
-          "title": "商汤 AI 办公智能体“小浣熊”移动端上线：手机发指令，电脑持续执行",
-          "title_zh": "商汤 AI 办公智能体“小浣熊”移动端上线：手机发指令，电脑持续执行",
-          "title_en": null,
-          "title_original": "商汤 AI 办公智能体“小浣熊”移动端上线：手机发指令，电脑持续执行",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30981",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-11T06:15:04.390409Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "a4acb664cc8f54000dd4deb8010593ce25648f68",
-          "title": "商汤 AI 办公智能体“小浣熊”移动端上线：手机发指令，电脑持续执行",
-          "title_zh": "商汤 AI 办公智能体“小浣熊”移动端上线：手机发指令，电脑持续执行",
-          "title_en": null,
-          "title_original": "商汤 AI 办公智能体“小浣熊”移动端上线：手机发指令，电脑持续执行",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/30981",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-11T06:15:04.390409Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7505,
-      "importance": 0.7505,
-      "importance_score": 0.7505,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9048,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-11T06:15:04.390409Z",
-      "latest_at": "2026-09-11T06:15:04.390409Z",
-      "primary_item": {
-        "id": "a4acb664cc8f54000dd4deb8010593ce25648f68",
-        "title": "商汤 AI 办公智能体“小浣熊”移动端上线：手机发指令，电脑持续执行",
-        "title_zh": "商汤 AI 办公智能体“小浣熊”移动端上线：手机发指令，电脑持续执行",
-        "title_en": null,
-        "title_original": "商汤 AI 办公智能体“小浣熊”移动端上线：手机发指令，电脑持续执行",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/30981",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
-      }
-    },
-    {
-      "story_id": "story_f62bfdadd23e",
-      "title": "外滩大会热议 AI 时代女性力量，从“为她所用”到“由她创造”",
-      "url": "https://www.aibase.com/news/31003",
-      "primary_url": "https://www.aibase.com/news/31003",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "caddf093f0dd4f9fa4d7fb5c3ca4f2649d9b28e5",
-          "title": "外滩大会热议 AI 时代女性力量，从“为她所用”到“由她创造”",
-          "title_zh": "外滩大会热议 AI 时代女性力量，从“为她所用”到“由她创造”",
-          "title_en": null,
-          "title_original": "外滩大会热议 AI 时代女性力量，从“为她所用”到“由她创造”",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31003",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-11T16:38:29.110552Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "caddf093f0dd4f9fa4d7fb5c3ca4f2649d9b28e5",
-          "title": "外滩大会热议 AI 时代女性力量，从“为她所用”到“由她创造”",
-          "title_zh": "外滩大会热议 AI 时代女性力量，从“为她所用”到“由她创造”",
-          "title_en": null,
-          "title_original": "外滩大会热议 AI 时代女性力量，从“为她所用”到“由她创造”",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31003",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-11T16:38:29.110552Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-11T16:38:29.110552Z",
-      "latest_at": "2026-09-11T16:38:29.110552Z",
-      "primary_item": {
-        "id": "caddf093f0dd4f9fa4d7fb5c3ca4f2649d9b28e5",
-        "title": "外滩大会热议 AI 时代女性力量，从“为她所用”到“由她创造”",
-        "title_zh": "外滩大会热议 AI 时代女性力量，从“为她所用”到“由她创造”",
-        "title_en": null,
-        "title_original": "外滩大会热议 AI 时代女性力量，从“为她所用”到“由她创造”",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31003",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-11T16:39:18.251861Z"
+        "scored_at": "2026-09-11T19:55:32.911223Z"
       }
     }
   ]
