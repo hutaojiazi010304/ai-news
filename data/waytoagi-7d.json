@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-12T19:30:42.503545Z",
+  "generated_at": "2026-09-12T22:25:30.698764Z",
   "timezone": "Asia/Shanghai",
   "root_url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview",
   "history_url": "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc",
   "window_days": 7,
   "latest_date": "2026-09-12",
-  "count_today": 4,
+  "count_today": 6,
   "updates_today": [
     {
       "date": "2026-09-12",
@@ -30,9 +30,21 @@
       "title": "万字长文 | Agent 工程解析（一）：上下文管理",
       "summary": "最近 OpenAI 和 Anthropic 相继把上下文窗口干到了1M，但上下文窗口是不是越大越好？作者这篇文章就从底层原理出发，以 Claude Code 为例，彻底揭开大模型的上下文管理的神秘面纱。",
       "url": "https://waytoagi.feishu.cn/wiki/O3VAwaZmnihXt6k9Fdjc4WKFnoh?from=from_copylink"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "OpenAI 亲自教你，如何用好 GPT-6 Astra",
+      "summary": "作者结合 OpenAI 的最新指南，拆解了“少写提示词”的具体做法：删掉无用的 Skill，让描述只保留精确触发条件，主文件做路由、按需加载细节；任务里少规定每一步，多写清完成标准、可自主操作和必须询问的边界。作者还给了一段提示词，能让 Astra 盘点机器级和项目级配置。一起上手试试！",
+      "url": "https://waytoagi.feishu.cn/wiki/QzLawwHeBisiXbkVeXDcd9WMn0e?from=from_copylink"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "GPT-6 Astra 社区作品集",
+      "summary": "关于GPT-6 Astra，OpenAI 发布了来自其社区的一些开发者案例合集，一起来看看！",
+      "url": "https://waytoagi.feishu.cn/wiki/LXQuwJTPQiA0e8kn2TvcyWFQnAh?from=from_copylink"
     }
   ],
-  "count_7d": 28,
+  "count_7d": 30,
   "updates_7d": [
     {
       "date": "2026-09-12",
@@ -57,6 +69,18 @@
       "title": "万字长文 | Agent 工程解析（一）：上下文管理",
       "summary": "最近 OpenAI 和 Anthropic 相继把上下文窗口干到了1M，但上下文窗口是不是越大越好？作者这篇文章就从底层原理出发，以 Claude Code 为例，彻底揭开大模型的上下文管理的神秘面纱。",
       "url": "https://waytoagi.feishu.cn/wiki/O3VAwaZmnihXt6k9Fdjc4WKFnoh?from=from_copylink"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "OpenAI 亲自教你，如何用好 GPT-6 Astra",
+      "summary": "作者结合 OpenAI 的最新指南，拆解了“少写提示词”的具体做法：删掉无用的 Skill，让描述只保留精确触发条件，主文件做路由、按需加载细节；任务里少规定每一步，多写清完成标准、可自主操作和必须询问的边界。作者还给了一段提示词，能让 Astra 盘点机器级和项目级配置。一起上手试试！",
+      "url": "https://waytoagi.feishu.cn/wiki/QzLawwHeBisiXbkVeXDcd9WMn0e?from=from_copylink"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "GPT-6 Astra 社区作品集",
+      "summary": "关于GPT-6 Astra，OpenAI 发布了来自其社区的一些开发者案例合集，一起来看看！",
+      "url": "https://waytoagi.feishu.cn/wiki/LXQuwJTPQiA0e8kn2TvcyWFQnAh?from=from_copylink"
     },
     {
       "date": "2026-09-11",
