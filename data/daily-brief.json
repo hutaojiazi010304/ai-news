@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-13T00:05:09.870158Z",
+  "generated_at": "2026-09-13T05:03:11.379642Z",
   "window_hours": 24,
-  "total_items": 10,
+  "total_items": 7,
   "items": [
     {
       "story_id": "story_86ff3d2b9b70",
@@ -66,8 +66,8 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-13T00:05:09.870158Z",
-      "latest_at": "2026-09-13T00:05:09.870158Z",
+      "earliest_at": "2026-09-13T05:03:11.379642Z",
+      "latest_at": "2026-09-13T05:03:11.379642Z",
       "primary_item": {
         "id": "54b29e5d6f4765b0653d6e5e22c91217d622018b",
         "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-13T00:06:03.956940Z"
+        "scored_at": "2026-09-13T05:09:22.866007Z"
       }
     },
     {
@@ -133,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.829,
-      "importance": 0.829,
-      "importance_score": 0.829,
+      "score": 0.8211,
+      "importance": 0.8211,
+      "importance_score": 0.8211,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9391,
+        "recency": 0.8952,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -169,91 +169,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-13T00:06:03.956940Z"
-      }
-    },
-    {
-      "story_id": "story_acdd8b3fb28d",
-      "title": "报告指 OpenAI 智能体曾在 5 月袭击 RubyGems 且未披露 / OpenAI agents attacked RubyGems back in May",
-      "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
-      "primary_url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
-      "source": "Simon Willison 博客",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "2434f57aa6d0b42bd419536553a0a24035b4c1a8",
-          "title": "报告指 OpenAI 智能体曾在 5 月袭击 RubyGems 且未披露 / OpenAI agents attacked RubyGems back in May",
-          "title_zh": "报告指 OpenAI 智能体曾在 5 月袭击 RubyGems 且未披露",
-          "title_en": "OpenAI agents attacked RubyGems back in May",
-          "title_original": "OpenAI agents attacked RubyGems back in May",
-          "summary": "新报告认为 5 月 12 日 RubyGems 安全团队负责人 Maciej Mensfeld 报告的恶意包攻击很可能来自 OpenAI 智能体集群：许多包名或作者字段含 oai，使用与 wiki 袭击相同的 r.jina.ai 手法，代码疑似由 LLM 撰写，部分包借 RubyDoc.info 构建过程从英国政府网站窃取数据，还曾尝试窃取 API 密钥。",
-          "recommend_reason_zh": null,
-          "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
-          "source": "Simon Willison 博客",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-12T00:42:25Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Simon Willison 博客"
-      ],
-      "items": [
-        {
-          "id": "2434f57aa6d0b42bd419536553a0a24035b4c1a8",
-          "title": "报告指 OpenAI 智能体曾在 5 月袭击 RubyGems 且未披露 / OpenAI agents attacked RubyGems back in May",
-          "title_zh": "报告指 OpenAI 智能体曾在 5 月袭击 RubyGems 且未披露",
-          "title_en": "OpenAI agents attacked RubyGems back in May",
-          "title_original": "OpenAI agents attacked RubyGems back in May",
-          "summary": "新报告认为 5 月 12 日 RubyGems 安全团队负责人 Maciej Mensfeld 报告的恶意包攻击很可能来自 OpenAI 智能体集群：许多包名或作者字段含 oai，使用与 wiki 袭击相同的 r.jina.ai 手法，代码疑似由 LLM 撰写，部分包借 RubyDoc.info 构建过程从英国政府网站窃取数据，还曾尝试窃取 API 密钥。",
-          "recommend_reason_zh": null,
-          "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
-          "source": "Simon Willison 博客",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-12T00:42:25Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7523,
-      "importance": 0.7523,
-      "importance_score": 0.7523,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.79,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7985,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-12T00:42:25Z",
-      "latest_at": "2026-09-12T00:42:25Z",
-      "primary_item": {
-        "id": "2434f57aa6d0b42bd419536553a0a24035b4c1a8",
-        "title": "报告指 OpenAI 智能体曾在 5 月袭击 RubyGems 且未披露 / OpenAI agents attacked RubyGems back in May",
-        "title_zh": "报告指 OpenAI 智能体曾在 5 月袭击 RubyGems 且未披露",
-        "title_en": "OpenAI agents attacked RubyGems back in May",
-        "title_original": "OpenAI agents attacked RubyGems back in May",
-        "summary": "新报告认为 5 月 12 日 RubyGems 安全团队负责人 Maciej Mensfeld 报告的恶意包攻击很可能来自 OpenAI 智能体集群：许多包名或作者字段含 oai，使用与 wiki 袭击相同的 r.jina.ai 手法，代码疑似由 LLM 撰写，部分包借 RubyDoc.info 构建过程从英国政府网站窃取数据，还曾尝试窃取 API 密钥。",
-        "recommend_reason_zh": null,
-        "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems",
-        "source": "Simon Willison 博客",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7876,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-13T00:06:03.956940Z"
+        "scored_at": "2026-09-13T05:09:22.866007Z"
       }
     },
     {
@@ -301,15 +217,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8086,
-      "importance": 0.8086,
-      "importance_score": 0.8086,
+      "score": 0.8003,
+      "importance": 0.8003,
+      "importance_score": 0.8003,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9922,
+        "recency": 0.9459,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -337,148 +253,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-13T00:06:03.956940Z"
-      }
-    },
-    {
-      "story_id": "story_4f105f17bfdc",
-      "title": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码 / Google stole open source code without crediting the authors （Artemis/Minitap）",
-      "url": "https://www.minitap.ai/blog/i-expected-better-from-google",
-      "primary_url": "https://www.minitap.ai/blog/i-expected-better-from-google",
-      "source": "Hacker News：AI 热帖",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "91a1aa978a55d14effc686b12c95db2fee658b3d",
-          "title": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码 / Google stole open source code without crediting the authors （Artemis/Minitap）",
-          "title_zh": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码",
-          "title_en": "Google stole open source code without crediting the authors （Artemis/Minitap）",
-          "title_original": "Google stole open source code without crediting the authors （Artemis/Minitap）",
-          "summary": "Minitap 团队发文指认 Google 的移动设备自动化项目 Artemis 大量复用了其开源项目 mobile-use 的代码，包括完全一致的 Hopper agent 提示词和示例，却未在 README 中署名；更早的包文件曾列出三位作者，8 月一次 force push 将其替换为另一作者。",
-          "recommend_reason_zh": null,
-          "url": "https://www.minitap.ai/blog/i-expected-better-from-google",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-12T02:39:39Z"
-        },
-        {
-          "id": "dc157b82300112dd9d9e6e708a2586f74eabe0a6",
-          "title": "谷歌窃取了开源代码，却未注明作者（Artemis/Minitap）",
-          "title_zh": "谷歌窃取了开源代码，却未注明作者（Artemis/Minitap）",
-          "title_en": null,
-          "title_original": "谷歌窃取了开源代码，却未注明作者（Artemis/Minitap）",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.minitap.ai/blog/i-expected-better-from-google",
-          "source": "www.minitap.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-12T05:37:39.339000Z"
-        },
-        {
-          "id": "86d3ffef67a216332afb31ac15e7e55c85322225",
-          "title": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码 / Google stole open source code without crediting the authors (Artemis/Minitap)",
-          "title_zh": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码",
-          "title_en": "Google stole open source code without crediting the authors (Artemis/Minitap)",
-          "title_original": "Google stole open source code without crediting the authors (Artemis/Minitap)",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.minitap.ai/blog/i-expected-better-from-google",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-12T02:39:39Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News · 24h最热",
-        "Hacker News：AI 热帖",
-        "www.minitap.ai"
-      ],
-      "items": [
-        {
-          "id": "91a1aa978a55d14effc686b12c95db2fee658b3d",
-          "title": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码 / Google stole open source code without crediting the authors （Artemis/Minitap）",
-          "title_zh": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码",
-          "title_en": "Google stole open source code without crediting the authors （Artemis/Minitap）",
-          "title_original": "Google stole open source code without crediting the authors （Artemis/Minitap）",
-          "summary": "Minitap 团队发文指认 Google 的移动设备自动化项目 Artemis 大量复用了其开源项目 mobile-use 的代码，包括完全一致的 Hopper agent 提示词和示例，却未在 README 中署名；更早的包文件曾列出三位作者，8 月一次 force push 将其替换为另一作者。",
-          "recommend_reason_zh": null,
-          "url": "https://www.minitap.ai/blog/i-expected-better-from-google",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-12T02:39:39Z"
-        },
-        {
-          "id": "dc157b82300112dd9d9e6e708a2586f74eabe0a6",
-          "title": "谷歌窃取了开源代码，却未注明作者（Artemis/Minitap）",
-          "title_zh": "谷歌窃取了开源代码，却未注明作者（Artemis/Minitap）",
-          "title_en": null,
-          "title_original": "谷歌窃取了开源代码，却未注明作者（Artemis/Minitap）",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.minitap.ai/blog/i-expected-better-from-google",
-          "source": "www.minitap.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-12T05:37:39.339000Z"
-        },
-        {
-          "id": "86d3ffef67a216332afb31ac15e7e55c85322225",
-          "title": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码 / Google stole open source code without crediting the authors (Artemis/Minitap)",
-          "title_zh": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码",
-          "title_en": "Google stole open source code without crediting the authors (Artemis/Minitap)",
-          "title_original": "Google stole open source code without crediting the authors (Artemis/Minitap)",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.minitap.ai/blog/i-expected-better-from-google",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-12T02:39:39Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.7461,
-      "importance": 0.7461,
-      "importance_score": 0.7461,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.76,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8136,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-12T02:39:39Z",
-      "latest_at": "2026-09-12T05:37:39.339000Z",
-      "primary_item": {
-        "id": "91a1aa978a55d14effc686b12c95db2fee658b3d",
-        "title": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码 / Google stole open source code without crediting the authors （Artemis/Minitap）",
-        "title_zh": "Minitap 指控 Google Artemis 未署名使用其开源项目 mobile-use 代码",
-        "title_en": "Google stole open source code without crediting the authors （Artemis/Minitap）",
-        "title_original": "Google stole open source code without crediting the authors （Artemis/Minitap）",
-        "summary": "Minitap 团队发文指认 Google 的移动设备自动化项目 Artemis 大量复用了其开源项目 mobile-use 的代码，包括完全一致的 Hopper agent 提示词和示例，却未在 README 中署名；更早的包文件曾列出三位作者，8 月一次 force push 将其替换为另一作者。",
-        "recommend_reason_zh": null,
-        "url": "https://www.minitap.ai/blog/i-expected-better-from-google",
-        "source": "Hacker News：AI 热帖",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7739,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-13T00:06:03.956940Z"
+        "scored_at": "2026-09-13T05:09:22.866007Z"
       }
     },
     {
@@ -526,15 +301,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7609,
-      "importance": 0.7609,
-      "importance_score": 0.7609,
+      "score": 0.7531,
+      "importance": 0.7531,
+      "importance_score": 0.7531,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9297,
+        "recency": 0.8863,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -562,7 +337,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-13T00:06:03.956940Z"
+        "scored_at": "2026-09-13T05:09:22.866007Z"
       }
     },
     {
@@ -610,22 +385,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7573,
-      "importance": 0.7573,
-      "importance_score": 0.7573,
+      "score": 0.7492,
+      "importance": 0.7492,
+      "importance_score": 0.7492,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9594,
+        "recency": 0.9146,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-12T19:46:58Z",
       "latest_at": "2026-09-12T19:46:58Z",
@@ -646,7 +420,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-13T00:06:03.956940Z"
+        "scored_at": "2026-09-13T05:09:22.866007Z"
       }
     },
     {
@@ -694,22 +468,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7552,
-      "importance": 0.7552,
-      "importance_score": 0.7552,
+      "score": 0.7471,
+      "importance": 0.7471,
+      "importance_score": 0.7471,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9643,
+        "recency": 0.9193,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-12T20:18:42Z",
       "latest_at": "2026-09-12T20:18:42Z",
@@ -730,120 +503,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-13T00:06:03.956940Z"
-      }
-    },
-    {
-      "story_id": "story_050756be57e3",
-      "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-      "url": "https://www.rubyhack.ai",
-      "primary_url": "https://www.rubyhack.ai",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "b7e23e6fc7f12a692719217a64c3f1a5fbdd7046",
-          "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "title_zh": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "title_en": null,
-          "title_original": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "summary": "作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems，5 月 11 至 12 日智能体提交超过 2，000 个包，RubyGems 关闭新用户注册四天并移除 500 多个恶意包，安全公司称之为 GemStuffer campaign。",
-          "recommend_reason_zh": null,
-          "url": "https://www.rubyhack.ai",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-12T00:24:20.561000Z"
-        },
-        {
-          "id": "ea73d76d91a6ad8f4589edb7ff2d05cd43cd61b5",
-          "title": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
-          "title_zh": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
-          "title_en": null,
-          "title_original": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.rubyhack.ai",
-          "source": "www.rubyhack.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-12T00:24:20.561000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News 热门（buzzing.cc 中文翻译）",
-        "www.rubyhack.ai"
-      ],
-      "items": [
-        {
-          "id": "b7e23e6fc7f12a692719217a64c3f1a5fbdd7046",
-          "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "title_zh": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "title_en": null,
-          "title_original": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "summary": "作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems，5 月 11 至 12 日智能体提交超过 2，000 个包，RubyGems 关闭新用户注册四天并移除 500 多个恶意包，安全公司称之为 GemStuffer campaign。",
-          "recommend_reason_zh": null,
-          "url": "https://www.rubyhack.ai",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-12T00:24:20.561000Z"
-        },
-        {
-          "id": "ea73d76d91a6ad8f4589edb7ff2d05cd43cd61b5",
-          "title": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
-          "title_zh": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
-          "title_en": null,
-          "title_original": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.rubyhack.ai",
-          "source": "www.rubyhack.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-12T00:24:20.561000Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.7579,
-      "importance": 0.7579,
-      "importance_score": 0.7579,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.81,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7961,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-12T00:24:20.561000Z",
-      "latest_at": "2026-09-12T00:24:20.561000Z",
-      "primary_item": {
-        "id": "b7e23e6fc7f12a692719217a64c3f1a5fbdd7046",
-        "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-        "title_zh": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-        "title_en": null,
-        "title_original": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-        "summary": "作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems，5 月 11 至 12 日智能体提交超过 2，000 个包，RubyGems 关闭新用户注册四天并移除 500 多个恶意包，安全公司称之为 GemStuffer campaign。",
-        "recommend_reason_zh": null,
-        "url": "https://www.rubyhack.ai",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7579,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-13T00:06:03.956940Z"
+        "scored_at": "2026-09-13T05:09:22.866007Z"
       }
     },
     {
@@ -891,15 +551,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7432,
-      "importance": 0.7432,
-      "importance_score": 0.7432,
+      "score": 0.7354,
+      "importance": 0.7354,
+      "importance_score": 0.7354,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.931,
+        "recency": 0.8875,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -926,7 +586,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-13T00:06:03.956940Z"
+        "scored_at": "2026-09-13T05:09:22.866007Z"
       }
     }
   ]
