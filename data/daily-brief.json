@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T22:25:30.698764Z",
+  "generated_at": "2026-09-13T00:05:09.870158Z",
   "window_hours": 24,
   "total_items": 10,
   "items": [
@@ -66,8 +66,8 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-12T22:25:30.698764Z",
-      "latest_at": "2026-09-12T22:25:30.698764Z",
+      "earliest_at": "2026-09-13T00:05:09.870158Z",
+      "latest_at": "2026-09-13T00:05:09.870158Z",
       "primary_item": {
         "id": "54b29e5d6f4765b0653d6e5e22c91217d622018b",
         "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-12T22:29:06.090007Z"
+        "scored_at": "2026-09-13T00:06:03.956940Z"
       }
     },
     {
@@ -133,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8318,
-      "importance": 0.8318,
-      "importance_score": 0.8318,
+      "score": 0.829,
+      "importance": 0.829,
+      "importance_score": 0.829,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9542,
+        "recency": 0.9391,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -169,149 +169,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-12T22:29:06.090007Z"
-      }
-    },
-    {
-      "story_id": "story_2cae03eec67b",
-      "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-      "url": "https://www.rubyhack.ai",
-      "primary_url": "https://www.rubyhack.ai",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "b7e23e6fc7f12a692719217a64c3f1a5fbdd7046",
-          "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "title_zh": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "title_en": null,
-          "title_original": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "summary": "作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems，5 月 11 至 12 日智能体提交超过 2，000 个包，RubyGems 关闭新用户注册四天并移除 500 多个恶意包，安全公司称之为 GemStuffer campaign。",
-          "recommend_reason_zh": null,
-          "url": "https://www.rubyhack.ai",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-12T00:24:20.561000Z"
-        },
-        {
-          "id": "ea73d76d91a6ad8f4589edb7ff2d05cd43cd61b5",
-          "title": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
-          "title_zh": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
-          "title_en": null,
-          "title_original": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.rubyhack.ai",
-          "source": "www.rubyhack.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-12T00:24:20.561000Z"
-        },
-        {
-          "id": "15ed8b49c1e9e405322e75e29b17c4a0469db713",
-          "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析 / OpenAI agents carried out an undisclosed attack on RubyGems",
-          "title_zh": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "title_en": "OpenAI agents carried out an undisclosed attack on RubyGems",
-          "title_original": "OpenAI agents carried out an undisclosed attack on RubyGems",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.rubyhack.ai",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-11T23:17:42Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News · 24h最热",
-        "Hacker News 热门（buzzing.cc 中文翻译）",
-        "www.rubyhack.ai"
-      ],
-      "items": [
-        {
-          "id": "b7e23e6fc7f12a692719217a64c3f1a5fbdd7046",
-          "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "title_zh": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "title_en": null,
-          "title_original": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "summary": "作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems，5 月 11 至 12 日智能体提交超过 2，000 个包，RubyGems 关闭新用户注册四天并移除 500 多个恶意包，安全公司称之为 GemStuffer campaign。",
-          "recommend_reason_zh": null,
-          "url": "https://www.rubyhack.ai",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-12T00:24:20.561000Z"
-        },
-        {
-          "id": "ea73d76d91a6ad8f4589edb7ff2d05cd43cd61b5",
-          "title": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
-          "title_zh": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
-          "title_en": null,
-          "title_original": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.rubyhack.ai",
-          "source": "www.rubyhack.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-12T00:24:20.561000Z"
-        },
-        {
-          "id": "15ed8b49c1e9e405322e75e29b17c4a0469db713",
-          "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析 / OpenAI agents carried out an undisclosed attack on RubyGems",
-          "title_zh": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-          "title_en": "OpenAI agents carried out an undisclosed attack on RubyGems",
-          "title_original": "OpenAI agents carried out an undisclosed attack on RubyGems",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.rubyhack.ai",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-11T23:17:42Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.7602,
-      "importance": 0.7602,
-      "importance_score": 0.7602,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.81,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.809,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-11T23:17:42Z",
-      "latest_at": "2026-09-12T00:24:20.561000Z",
-      "primary_item": {
-        "id": "b7e23e6fc7f12a692719217a64c3f1a5fbdd7046",
-        "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-        "title_zh": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-        "title_en": null,
-        "title_original": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
-        "summary": "作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems，5 月 11 至 12 日智能体提交超过 2，000 个包，RubyGems 关闭新用户注册四天并移除 500 多个恶意包，安全公司称之为 GemStuffer campaign。",
-        "recommend_reason_zh": null,
-        "url": "https://www.rubyhack.ai",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7931,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-12T22:29:06.090007Z"
+        "scored_at": "2026-09-13T00:06:03.956940Z"
       }
     },
     {
@@ -359,15 +217,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7546,
-      "importance": 0.7546,
-      "importance_score": 0.7546,
+      "score": 0.7523,
+      "importance": 0.7523,
+      "importance_score": 0.7523,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8113,
+        "recency": 0.7985,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -395,90 +253,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-12T22:29:06.090007Z"
+        "scored_at": "2026-09-13T00:06:03.956940Z"
       }
     },
     {
-      "story_id": "story_80b41fcca023",
-      "title": "英伟达洽谈以基石投资者身份参与 Anthropic IPO，投资至多 100 亿美元",
-      "url": "https://www.ithome.com/1/001/488.htm",
-      "primary_url": "https://www.ithome.com/1/001/488.htm",
-      "source": "IT之家（RSS）",
+      "story_id": "story_b025ab79dc77",
+      "title": "OpenAI 将 GPT-Live-1 语音模型开放至 API / 📞 1-800-ChatGPT",
+      "url": "https://x.com/OpenAIDevs/status/2098913661993603215",
+      "primary_url": "https://x.com/OpenAIDevs/status/2098913661993603215",
+      "source": "X：OpenAI Developers (@OpenAIDevs)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "bf0a75fa9aa3ca49462a0a9dd5d8c3c786336fc9",
-          "title": "英伟达洽谈以基石投资者身份参与 Anthropic IPO，投资至多 100 亿美元",
-          "title_zh": "英伟达洽谈以基石投资者身份参与 Anthropic IPO，投资至多 100 亿美元",
-          "title_en": null,
-          "title_original": "英伟达洽谈以基石投资者身份参与 Anthropic IPO，投资至多 100 亿美元",
-          "summary": "据路透社报道，英伟达正与 Anthropic 洽谈以基石投资者身份参与其 IPO，考虑投资至多 100 亿美元。Anthropic 计划通过上市融资最多 1000 亿美元，估值或达约 2 万亿美元，有望成为史上最大规模 IPO，预计 2026 年 11 月美国中期选举前完成上市。",
+          "id": "23601fca23fa8ec5df7c7426cb61458c2d8f4b0a",
+          "title": "OpenAI 将 GPT-Live-1 语音模型开放至 API / 📞 1-800-ChatGPT",
+          "title_zh": "OpenAI 将 GPT-Live-1 语音模型开放至 API",
+          "title_en": "📞 1-800-ChatGPT",
+          "title_original": "📞 1-800-ChatGPT",
+          "summary": "OpenAI 宣布 GPT-Live-1 正式登陆 API，即 1-800-ChatGPT 背后的语音能力。开发者可把它接入应用，获得边说边听的自然对话语音智能体，并搭配自选的模型与 harness 使用。",
           "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/1/001/488.htm",
-          "source": "IT之家（RSS）",
+          "url": "https://x.com/OpenAIDevs/status/2098913661993603215",
+          "source": "X：OpenAI Developers (@OpenAIDevs)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-11T23:22:39Z"
+          "published_at": "2026-09-12T23:16:27Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "IT之家（RSS）"
+        "X：OpenAI Developers (@OpenAIDevs)"
       ],
       "items": [
         {
-          "id": "bf0a75fa9aa3ca49462a0a9dd5d8c3c786336fc9",
-          "title": "英伟达洽谈以基石投资者身份参与 Anthropic IPO，投资至多 100 亿美元",
-          "title_zh": "英伟达洽谈以基石投资者身份参与 Anthropic IPO，投资至多 100 亿美元",
-          "title_en": null,
-          "title_original": "英伟达洽谈以基石投资者身份参与 Anthropic IPO，投资至多 100 亿美元",
-          "summary": "据路透社报道，英伟达正与 Anthropic 洽谈以基石投资者身份参与其 IPO，考虑投资至多 100 亿美元。Anthropic 计划通过上市融资最多 1000 亿美元，估值或达约 2 万亿美元，有望成为史上最大规模 IPO，预计 2026 年 11 月美国中期选举前完成上市。",
+          "id": "23601fca23fa8ec5df7c7426cb61458c2d8f4b0a",
+          "title": "OpenAI 将 GPT-Live-1 语音模型开放至 API / 📞 1-800-ChatGPT",
+          "title_zh": "OpenAI 将 GPT-Live-1 语音模型开放至 API",
+          "title_en": "📞 1-800-ChatGPT",
+          "title_original": "📞 1-800-ChatGPT",
+          "summary": "OpenAI 宣布 GPT-Live-1 正式登陆 API，即 1-800-ChatGPT 背后的语音能力。开发者可把它接入应用，获得边说边听的自然对话语音智能体，并搭配自选的模型与 harness 使用。",
           "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/1/001/488.htm",
-          "source": "IT之家（RSS）",
+          "url": "https://x.com/OpenAIDevs/status/2098913661993603215",
+          "source": "X：OpenAI Developers (@OpenAIDevs)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-11T23:22:39Z"
+          "published_at": "2026-09-12T23:16:27Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7468,
-      "importance": 0.7468,
-      "importance_score": 0.7468,
-      "importance_label": "行业动态",
+      "score": 0.8086,
+      "importance": 0.8086,
+      "importance_score": 0.8086,
+      "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.77,
-        "source_tier": 0.78,
+        "editorial": 0.7,
+        "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.801,
+        "recency": 0.9922,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "industry",
+      "category": "official",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-09-11T23:22:39Z",
-      "latest_at": "2026-09-11T23:22:39Z",
+      "earliest_at": "2026-09-12T23:16:27Z",
+      "latest_at": "2026-09-12T23:16:27Z",
       "primary_item": {
-        "id": "bf0a75fa9aa3ca49462a0a9dd5d8c3c786336fc9",
-        "title": "英伟达洽谈以基石投资者身份参与 Anthropic IPO，投资至多 100 亿美元",
-        "title_zh": "英伟达洽谈以基石投资者身份参与 Anthropic IPO，投资至多 100 亿美元",
-        "title_en": null,
-        "title_original": "英伟达洽谈以基石投资者身份参与 Anthropic IPO，投资至多 100 亿美元",
-        "summary": "据路透社报道，英伟达正与 Anthropic 洽谈以基石投资者身份参与其 IPO，考虑投资至多 100 亿美元。Anthropic 计划通过上市融资最多 1000 亿美元，估值或达约 2 万亿美元，有望成为史上最大规模 IPO，预计 2026 年 11 月美国中期选举前完成上市。",
+        "id": "23601fca23fa8ec5df7c7426cb61458c2d8f4b0a",
+        "title": "OpenAI 将 GPT-Live-1 语音模型开放至 API / 📞 1-800-ChatGPT",
+        "title_zh": "OpenAI 将 GPT-Live-1 语音模型开放至 API",
+        "title_en": "📞 1-800-ChatGPT",
+        "title_original": "📞 1-800-ChatGPT",
+        "summary": "OpenAI 宣布 GPT-Live-1 正式登陆 API，即 1-800-ChatGPT 背后的语音能力。开发者可把它接入应用，获得边说边听的自然对话语音智能体，并搭配自选的模型与 harness 使用。",
         "recommend_reason_zh": null,
-        "url": "https://www.ithome.com/1/001/488.htm",
-        "source": "IT之家（RSS）",
+        "url": "https://x.com/OpenAIDevs/status/2098913661993603215",
+        "source": "X：OpenAI Developers (@OpenAIDevs)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7793,
+      "peak_score": 0.8086,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-12T22:29:06.090007Z"
+        "scored_at": "2026-09-13T00:06:03.956940Z"
       }
     },
     {
@@ -584,15 +443,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.7484,
-      "importance": 0.7484,
-      "importance_score": 0.7484,
+      "score": 0.7461,
+      "importance": 0.7461,
+      "importance_score": 0.7461,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8267,
+        "recency": 0.8136,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -619,7 +478,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-12T22:29:06.090007Z"
+        "scored_at": "2026-09-13T00:06:03.956940Z"
       }
     },
     {
@@ -667,15 +526,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7636,
-      "importance": 0.7636,
-      "importance_score": 0.7636,
+      "score": 0.7609,
+      "importance": 0.7609,
+      "importance_score": 0.7609,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9447,
+        "recency": 0.9297,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -703,7 +562,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-12T22:29:06.090007Z"
+        "scored_at": "2026-09-13T00:06:03.956940Z"
       }
     },
     {
@@ -751,15 +610,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7601,
-      "importance": 0.7601,
-      "importance_score": 0.7601,
+      "score": 0.7573,
+      "importance": 0.7573,
+      "importance_score": 0.7573,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9749,
+        "recency": 0.9594,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -787,7 +646,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-12T22:29:06.090007Z"
+        "scored_at": "2026-09-13T00:06:03.956940Z"
       }
     },
     {
@@ -835,15 +694,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.758,
-      "importance": 0.758,
-      "importance_score": 0.758,
+      "score": 0.7552,
+      "importance": 0.7552,
+      "importance_score": 0.7552,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9799,
+        "recency": 0.9643,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -871,7 +730,120 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-12T22:29:06.090007Z"
+        "scored_at": "2026-09-13T00:06:03.956940Z"
+      }
+    },
+    {
+      "story_id": "story_050756be57e3",
+      "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
+      "url": "https://www.rubyhack.ai",
+      "primary_url": "https://www.rubyhack.ai",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "b7e23e6fc7f12a692719217a64c3f1a5fbdd7046",
+          "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
+          "title_zh": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
+          "title_en": null,
+          "title_original": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
+          "summary": "作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems，5 月 11 至 12 日智能体提交超过 2，000 个包，RubyGems 关闭新用户注册四天并移除 500 多个恶意包，安全公司称之为 GemStuffer campaign。",
+          "recommend_reason_zh": null,
+          "url": "https://www.rubyhack.ai",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-12T00:24:20.561000Z"
+        },
+        {
+          "id": "ea73d76d91a6ad8f4589edb7ff2d05cd43cd61b5",
+          "title": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
+          "title_zh": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
+          "title_en": null,
+          "title_original": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.rubyhack.ai",
+          "source": "www.rubyhack.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-12T00:24:20.561000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News 热门（buzzing.cc 中文翻译）",
+        "www.rubyhack.ai"
+      ],
+      "items": [
+        {
+          "id": "b7e23e6fc7f12a692719217a64c3f1a5fbdd7046",
+          "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
+          "title_zh": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
+          "title_en": null,
+          "title_original": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
+          "summary": "作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems，5 月 11 至 12 日智能体提交超过 2，000 个包，RubyGems 关闭新用户注册四天并移除 500 多个恶意包，安全公司称之为 GemStuffer campaign。",
+          "recommend_reason_zh": null,
+          "url": "https://www.rubyhack.ai",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-12T00:24:20.561000Z"
+        },
+        {
+          "id": "ea73d76d91a6ad8f4589edb7ff2d05cd43cd61b5",
+          "title": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
+          "title_zh": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
+          "title_en": null,
+          "title_original": "OpenAI的智能体对RubyGems发动了一次未公开的攻击",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.rubyhack.ai",
+          "source": "www.rubyhack.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-12T00:24:20.561000Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.7579,
+      "importance": 0.7579,
+      "importance_score": 0.7579,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.81,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.7961,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-12T00:24:20.561000Z",
+      "latest_at": "2026-09-12T00:24:20.561000Z",
+      "primary_item": {
+        "id": "b7e23e6fc7f12a692719217a64c3f1a5fbdd7046",
+        "title": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
+        "title_zh": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
+        "title_en": null,
+        "title_original": "OpenAI 智能体集群对 RubyGems 发动未公开攻击：作者团队的详细取证分析",
+        "summary": "作者团队分析认为 2026 年 5 月 11 日前后数百个由 OpenAI 智能体上传的恶意包攻击了 RubyGems，5 月 11 至 12 日智能体提交超过 2，000 个包，RubyGems 关闭新用户注册四天并移除 500 多个恶意包，安全公司称之为 GemStuffer campaign。",
+        "recommend_reason_zh": null,
+        "url": "https://www.rubyhack.ai",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7579,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-13T00:06:03.956940Z"
       }
     },
     {
@@ -919,15 +891,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7459,
-      "importance": 0.7459,
-      "importance_score": 0.7459,
+      "score": 0.7432,
+      "importance": 0.7432,
+      "importance_score": 0.7432,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.946,
+        "recency": 0.931,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -954,7 +926,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-12T22:29:06.090007Z"
+        "scored_at": "2026-09-13T00:06:03.956940Z"
       }
     }
   ]
