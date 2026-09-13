@@ -1,51 +1,111 @@
 {
-  "generated_at": "2026-09-13T14:30:22.141276Z",
+  "generated_at": "2026-09-13T18:15:51.463107Z",
   "timezone": "Asia/Shanghai",
   "root_url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview",
   "history_url": "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc",
   "window_days": 7,
-  "latest_date": "2026-09-12",
-  "count_today": 6,
+  "latest_date": "2026-09-13",
+  "count_today": 8,
   "updates_today": [
     {
-      "date": "2026-09-12",
-      "title": "开源协议完全指南：有哪些、怎么用、应该怎么选",
-      "summary": "还在为上传 GitHub 项目该选什么开源协议发愁？这篇文章拆解了MIT、Apache、GPL 等主流许可证的规则，以及开源、免费、源码可见三者的区别。不管是开发小工具、制作Skill，都能快速匹配合适的协议，守住知识产权边界。",
-      "url": "https://waytoagi.feishu.cn/wiki/OcAQwSrJfi77ozkO1HvckIDIn6b?from=from_copylink"
+      "date": "2026-09-13",
+      "title": "高密度页面怎么组织：一份信息呈现指南",
+      "summary": "高密度页面怎么组织：一份信息呈现指南",
+      "url": "https://waytoagi.feishu.cn/wiki/YrB2wWEj2i85uCkcBdmcID7Snnh?from=from_copylink"
     },
     {
-      "date": "2026-09-12",
-      "title": "如何让 GPT-6 Astra 顺利跑完任务（AGENTS.md 设置指南）",
-      "summary": "大家给 Agent 配规则，核心都在防止它把任务跑偏。可GPT-6 Astra的问题恰好翻转了——它更容易因为边界不够清楚而提前停下，旧配置里的“刹车”反而成了完成任务的障碍。作者从 AGENTS.md 入手，详解了关于GPT-6 Astra，哪些规则该删、怎样把模糊限制改成明确的完成标准和审批边界，再配合验证机制，少打断Agent。",
-      "url": "https://waytoagi.feishu.cn/wiki/NtSWwGf4niHJGhkOyxEctcEsn5f?from=from_copylink"
+      "date": "2026-09-13",
+      "title": "系统设计入门：如何从 HLD 和 LLD 开始",
+      "summary": "系统设计入门：如何从 HLD 和 LLD 开始",
+      "url": "https://waytoagi.feishu.cn/wiki/MjlMwNLsxild82krb9CcVGBWnoc?from=from_copylink"
     },
     {
-      "date": "2026-09-12",
-      "title": "吴恩达老师「AI 工程技能地图」系列完整解读：构建 AI 应用 × 软件工程基础 × 驾驭编程智能体 × 塑造构建",
-      "summary": "AI 让软件开发发生了根本性变化，但在充满炒作和噪音的环境中，开发者很难判断哪些技能真正值得投入学习，团队同样难以判断该招聘什么样的人。吴恩达这套技能地图很适合想补齐 AI 工程能力的开发者，也适合带团队的人做学习和招聘参考。",
-      "url": "https://waytoagi.feishu.cn/wiki/BskMwL7Pbi7GxAkOfuqcD2cYnVU?from=from_copylink"
+      "date": "2026-09-13",
+      "title": "图解 KV Cache——DS V4.1-Flash的制胜秘密",
+      "summary": "DeepSeek V1 到 V4.1-Flash，单 token 的 global KV 如何从 389,000 B 压缩到 890 B的？这篇文章对于 Agent 的使用者、本地模型部署者、模型开发者都有一定帮助。",
+      "url": "https://waytoagi.feishu.cn/wiki/Ny3awPIcWig9bCkQdLYcHbabnKd?from=from_copylink"
     },
     {
-      "date": "2026-09-12",
-      "title": "万字长文 | Agent 工程解析（一）：上下文管理",
-      "summary": "最近 OpenAI 和 Anthropic 相继把上下文窗口干到了1M，但上下文窗口是不是越大越好？作者这篇文章就从底层原理出发，以 Claude Code 为例，彻底揭开大模型的上下文管理的神秘面纱。",
-      "url": "https://waytoagi.feishu.cn/wiki/O3VAwaZmnihXt6k9Fdjc4WKFnoh?from=from_copylink"
+      "date": "2026-09-13",
+      "title": "《100 个问题》系列丛书",
+      "summary": "《100 个问题》系列丛书",
+      "url": "https://waytoagi.feishu.cn/wiki/YTt3wPPIeixEK5kbJPnc0YL7nTf"
     },
     {
-      "date": "2026-09-12",
-      "title": "OpenAI 亲自教你，如何用好 GPT-6 Astra",
-      "summary": "作者结合 OpenAI 的最新指南，拆解了“少写提示词”的具体做法：删掉无用的 Skill，让描述只保留精确触发条件，主文件做路由、按需加载细节；任务里少规定每一步，多写清完成标准、可自主操作和必须询问的边界。作者还给了一段提示词，能让 Astra 盘点机器级和项目级配置。一起上手试试！",
-      "url": "https://waytoagi.feishu.cn/wiki/QzLawwHeBisiXbkVeXDcd9WMn0e?from=from_copylink"
+      "date": "2026-09-13",
+      "title": "LLM 为什么缓存 K 和 V，却通常不缓存 Q？",
+      "summary": "LLM 为什么缓存 K 和 V，却通常不缓存 Q？",
+      "url": "https://waytoagi.feishu.cn/wiki/L9DSw8RPdibYPDkIThrcO8C6nzg?from=from_copylink"
     },
     {
-      "date": "2026-09-12",
-      "title": "GPT-6 Astra 社区作品集",
-      "summary": "关于GPT-6 Astra，OpenAI 发布了来自其社区的一些开发者案例合集，一起来看看！",
-      "url": "https://waytoagi.feishu.cn/wiki/LXQuwJTPQiA0e8kn2TvcyWFQnAh?from=from_copylink"
+      "date": "2026-09-13",
+      "title": "Grok Bot 应用指南实操案例：闲鱼上架、小红书做图、找工具、做短视频、整理收藏",
+      "summary": "这份指南给出了Grok Bot的五种独立用法：整理商品上架资料、制作六张知识图卡、筛选工具做简报、制作教学工具并录成配音视频、把收藏转成选题素材。每个案例都附有提示词和成品展示，也讲清了要提供哪些材料、拿到什么文件。运营和内容创作者们可以挑一个手头任务，跟着试一试。",
+      "url": "https://waytoagi.feishu.cn/wiki/AyupwGFq0i73bfkIFw9cuuwvnyg?from=from_copylink"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "AI 写代码越快，企业越需要自己的 Harness",
+      "summary": "AI 写代码越快，企业越需要自己的 Harness",
+      "url": "https://waytoagi.feishu.cn/wiki/CPWDw9UKfio1XbkIWofcHcPvnUg?from=from_copylink"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "9.7—9.13｜本周顶级 AI 论文",
+      "summary": "Agent 做长任务容易跑偏，读长文漏掉关键证据，多开几个助手又越来越费钱——本周精选的10篇 AI 论文，集中回应了这些实际难题。用程序图帮助 Agent 安排步骤，利用文档目录提高检索准确率，通过并行阅读和精简协作方式提升效率；还有只改设计文档、让 AI 重新生成代码的尝试，以及智能体群体作弊的案例。在做Agent、知识库或 AI 产品的，可以从自己遇到的问题切入，找找下一步值得尝试的方法。",
+      "url": "https://waytoagi.feishu.cn/wiki/WDu3wV8X9iWmVjkLbTmczksvnig?from=from_copylink"
     }
   ],
-  "count_7d": 30,
+  "count_7d": 34,
   "updates_7d": [
+    {
+      "date": "2026-09-13",
+      "title": "高密度页面怎么组织：一份信息呈现指南",
+      "summary": "高密度页面怎么组织：一份信息呈现指南",
+      "url": "https://waytoagi.feishu.cn/wiki/YrB2wWEj2i85uCkcBdmcID7Snnh?from=from_copylink"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "系统设计入门：如何从 HLD 和 LLD 开始",
+      "summary": "系统设计入门：如何从 HLD 和 LLD 开始",
+      "url": "https://waytoagi.feishu.cn/wiki/MjlMwNLsxild82krb9CcVGBWnoc?from=from_copylink"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "图解 KV Cache——DS V4.1-Flash的制胜秘密",
+      "summary": "DeepSeek V1 到 V4.1-Flash，单 token 的 global KV 如何从 389,000 B 压缩到 890 B的？这篇文章对于 Agent 的使用者、本地模型部署者、模型开发者都有一定帮助。",
+      "url": "https://waytoagi.feishu.cn/wiki/Ny3awPIcWig9bCkQdLYcHbabnKd?from=from_copylink"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "《100 个问题》系列丛书",
+      "summary": "《100 个问题》系列丛书",
+      "url": "https://waytoagi.feishu.cn/wiki/YTt3wPPIeixEK5kbJPnc0YL7nTf"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "LLM 为什么缓存 K 和 V，却通常不缓存 Q？",
+      "summary": "LLM 为什么缓存 K 和 V，却通常不缓存 Q？",
+      "url": "https://waytoagi.feishu.cn/wiki/L9DSw8RPdibYPDkIThrcO8C6nzg?from=from_copylink"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "Grok Bot 应用指南实操案例：闲鱼上架、小红书做图、找工具、做短视频、整理收藏",
+      "summary": "这份指南给出了Grok Bot的五种独立用法：整理商品上架资料、制作六张知识图卡、筛选工具做简报、制作教学工具并录成配音视频、把收藏转成选题素材。每个案例都附有提示词和成品展示，也讲清了要提供哪些材料、拿到什么文件。运营和内容创作者们可以挑一个手头任务，跟着试一试。",
+      "url": "https://waytoagi.feishu.cn/wiki/AyupwGFq0i73bfkIFw9cuuwvnyg?from=from_copylink"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "AI 写代码越快，企业越需要自己的 Harness",
+      "summary": "AI 写代码越快，企业越需要自己的 Harness",
+      "url": "https://waytoagi.feishu.cn/wiki/CPWDw9UKfio1XbkIWofcHcPvnUg?from=from_copylink"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "9.7—9.13｜本周顶级 AI 论文",
+      "summary": "Agent 做长任务容易跑偏，读长文漏掉关键证据，多开几个助手又越来越费钱——本周精选的10篇 AI 论文，集中回应了这些实际难题。用程序图帮助 Agent 安排步骤，利用文档目录提高检索准确率，通过并行阅读和精简协作方式提升效率；还有只改设计文档、让 AI 重新生成代码的尝试，以及智能体群体作弊的案例。在做Agent、知识库或 AI 产品的，可以从自己遇到的问题切入，找找下一步值得尝试的方法。",
+      "url": "https://waytoagi.feishu.cn/wiki/WDu3wV8X9iWmVjkLbTmczksvnig?from=from_copylink"
+    },
     {
       "date": "2026-09-12",
       "title": "开源协议完全指南：有哪些、怎么用、应该怎么选",
@@ -201,30 +261,6 @@
       "title": "1天通关游戏，1周造城：GPT-6 Astra 这7个玩法太上头",
       "summary": "GPT-6 Astra已经可以直接接管电脑、操控各类软件，一系列实测案例极具冲击力。它能独立通关解谜游戏、搭建虚幻引擎中的曼哈顿城市，破解验证码小游戏；还能操作 Blender 完成三维建模、预演视频镜头，甚至在 PS 中临摹经典画作。一起上手玩玩看！",
       "url": "https://waytoagi.feishu.cn/wiki/Wd2Dwp5lnizVkrkTQAxchCgmnV7?from=from_copylink"
-    },
-    {
-      "date": "2026-09-07",
-      "title": "从一次 LLM 调用到完整 Harness，Agent 到底经历了什么？",
-      "summary": "从一次 LLM 调用到完整 Harness，Agent 到底经历了什么？读懂这套层层堆砌的演化逻辑，能帮你看透Agent各类组件的存在意义，避开架构设计误区，更理性地做智能体方案选型与搭建。",
-      "url": "https://waytoagi.feishu.cn/wiki/SXbSwZdLRi5Dd8kqWQEcWfgmn4g?from=from_copylink"
-    },
-    {
-      "date": "2026-09-07",
-      "title": "GPT-6 Astra 提示词大师课",
-      "summary": "很多人升级 GPT-6 Astra 后，最容易犯的错就是把旧的 AGENTS.md、超长的Skill继续塞进去，结果模型变强了，提示词反而拖后腿。作者把 Astra需要重新控制的点讲得很清楚：自主性、指令优先级、写作风格、子Agent委派、验证尺度。然后又用8个模块拆出了提示词框架——目标、上下文、优先级、自主边界、工具、输出、验证、停止条件。",
-      "url": "https://waytoagi.feishu.cn/wiki/AyyuwpgrYiSzJNkdRhjciTk4nlh?from=from_copylink"
-    },
-    {
-      "date": "2026-09-07",
-      "title": "GEO 排名因子之一：Entity 和主题权重",
-      "summary": "做SEO/GEO，最容易一上来盯着热词和流量：内容越写越散，AI 反而搞不清你的网站究竟解决什么问题，还可能引来一堆无效访问。在作者看来，核心是先做好网站 Entity 实体定义。先把身份定稳，后续SEO/GEO 才不会跑偏，收获真正有转化价值的流量。",
-      "url": "https://waytoagi.feishu.cn/wiki/FZMkwK579i9aChko8tNcqQ5snpc?from=from_copylink"
-    },
-    {
-      "date": "2026-09-07",
-      "title": "6000字故事｜带你入门 GPT-6 Astra ，小白直接照着做",
-      "summary": "最近GPT-6 Astra + 3D的玩法疯狂刷屏。如果你还不太清楚怎么玩儿，作者这篇文章可以带你入门GPT-6 Astra：怎么交代要求，怎么给材料，怎么看截图，答案不对时怎么改，最后拿到什么结果才算做完。",
-      "url": "https://waytoagi.feishu.cn/wiki/F0kAwUNd7ioTYnkJUGac3BLWnBd?from=from_copylink"
     }
   ],
   "warning": null,
