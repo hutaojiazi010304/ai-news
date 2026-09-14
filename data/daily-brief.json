@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-14T01:17:34.625099Z",
+  "generated_at": "2026-09-14T06:35:34.095335Z",
   "window_hours": 24,
-  "total_items": 9,
+  "total_items": 20,
   "items": [
     {
       "story_id": "story_86ff3d2b9b70",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8578,
-      "importance": 0.8578,
-      "importance_score": 0.8578,
+      "score": 0.8489,
+      "importance": 0.8489,
+      "importance_score": 0.8489,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9876,
+        "recency": 0.9385,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T01:18:29.772116Z"
+        "scored_at": "2026-09-14T06:36:24.343855Z"
       }
     },
     {
@@ -162,15 +162,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7885,
-      "importance": 0.7885,
-      "importance_score": 0.7885,
+      "score": 0.7804,
+      "importance": 0.7804,
+      "importance_score": 0.7804,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.85,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8992,
+        "recency": 0.8545,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -198,91 +198,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T01:18:29.772116Z"
-      }
-    },
-    {
-      "story_id": "story_1ab0f86554fa",
-      "title": "Agent 长任务上下文工程解析：用预算控制、压缩、todo-state 和记忆对抗上下文溢出与目标丢失 / Context Engineering Inside the Harness： 4 Mechanisms That Beat Context Overflow and Goal Loss on Long-Horizon Tasks",
-      "url": "https://www.marktechpost.com/2026/09/12/context-engineering-inside-the-harness-4-mechanisms-that-beat-context-overflow-and-goal-loss-on-long-horizon-tasks",
-      "primary_url": "https://www.marktechpost.com/2026/09/12/context-engineering-inside-the-harness-4-mechanisms-that-beat-context-overflow-and-goal-loss-on-long-horizon-tasks",
-      "source": "MarkTechPost（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "4b8e45d73d6f9168d6f30f8fa97f8c8e80e018f0",
-          "title": "Agent 长任务上下文工程解析：用预算控制、压缩、todo-state 和记忆对抗上下文溢出与目标丢失 / Context Engineering Inside the Harness： 4 Mechanisms That Beat Context Overflow and Goal Loss on Long-Horizon Tasks",
-          "title_zh": "Agent 长任务上下文工程解析：用预算控制、压缩、todo-state 和记忆对抗上下文溢出与目标丢失",
-          "title_en": "Context Engineering Inside the Harness： 4 Mechanisms That Beat Context Overflow and Goal Loss on Long-Horizon Tasks",
-          "title_original": "Context Engineering Inside the Harness： 4 Mechanisms That Beat Context Overflow and Goal Loss on Long-Horizon Tasks",
-          "summary": "文章解析 Agent harness 层应对长任务中上下文溢出与目标丢失的四类机制：上下文预算与卸载、压缩、todo-state 复述和跨会话记忆。",
-          "recommend_reason_zh": null,
-          "url": "https://www.marktechpost.com/2026/09/12/context-engineering-inside-the-harness-4-mechanisms-that-beat-context-overflow-and-goal-loss-on-long-horizon-tasks",
-          "source": "MarkTechPost（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-13T05:56:03Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "MarkTechPost（RSS）"
-      ],
-      "items": [
-        {
-          "id": "4b8e45d73d6f9168d6f30f8fa97f8c8e80e018f0",
-          "title": "Agent 长任务上下文工程解析：用预算控制、压缩、todo-state 和记忆对抗上下文溢出与目标丢失 / Context Engineering Inside the Harness： 4 Mechanisms That Beat Context Overflow and Goal Loss on Long-Horizon Tasks",
-          "title_zh": "Agent 长任务上下文工程解析：用预算控制、压缩、todo-state 和记忆对抗上下文溢出与目标丢失",
-          "title_en": "Context Engineering Inside the Harness： 4 Mechanisms That Beat Context Overflow and Goal Loss on Long-Horizon Tasks",
-          "title_original": "Context Engineering Inside the Harness： 4 Mechanisms That Beat Context Overflow and Goal Loss on Long-Horizon Tasks",
-          "summary": "文章解析 Agent harness 层应对长任务中上下文溢出与目标丢失的四类机制：上下文预算与卸载、压缩、todo-state 复述和跨会话记忆。",
-          "recommend_reason_zh": null,
-          "url": "https://www.marktechpost.com/2026/09/12/context-engineering-inside-the-harness-4-mechanisms-that-beat-context-overflow-and-goal-loss-on-long-horizon-tasks",
-          "source": "MarkTechPost（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-13T05:56:03Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.755,
-      "importance": 0.755,
-      "importance_score": 0.755,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.78,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.83,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-13T05:56:03Z",
-      "latest_at": "2026-09-13T05:56:03Z",
-      "primary_item": {
-        "id": "4b8e45d73d6f9168d6f30f8fa97f8c8e80e018f0",
-        "title": "Agent 长任务上下文工程解析：用预算控制、压缩、todo-state 和记忆对抗上下文溢出与目标丢失 / Context Engineering Inside the Harness： 4 Mechanisms That Beat Context Overflow and Goal Loss on Long-Horizon Tasks",
-        "title_zh": "Agent 长任务上下文工程解析：用预算控制、压缩、todo-state 和记忆对抗上下文溢出与目标丢失",
-        "title_en": "Context Engineering Inside the Harness： 4 Mechanisms That Beat Context Overflow and Goal Loss on Long-Horizon Tasks",
-        "title_original": "Context Engineering Inside the Harness： 4 Mechanisms That Beat Context Overflow and Goal Loss on Long-Horizon Tasks",
-        "summary": "文章解析 Agent harness 层应对长任务中上下文溢出与目标丢失的四类机制：上下文预算与卸载、压缩、todo-state 复述和跨会话记忆。",
-        "recommend_reason_zh": null,
-        "url": "https://www.marktechpost.com/2026/09/12/context-engineering-inside-the-harness-4-mechanisms-that-beat-context-overflow-and-goal-loss-on-long-horizon-tasks",
-        "source": "MarkTechPost（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.778,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-14T01:18:29.772116Z"
+        "scored_at": "2026-09-14T06:36:24.343855Z"
       }
     },
     {
@@ -330,15 +246,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7586,
+      "importance": 0.7586,
+      "importance_score": 0.7586,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9503,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -366,30 +282,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T01:18:29.772116Z"
+        "scored_at": "2026-09-14T06:36:24.343855Z"
       }
     },
     {
-      "story_id": "story_ebd0e66ec1cc",
-      "title": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-      "url": "https://www.aibase.com/news/31004",
-      "primary_url": "https://www.aibase.com/news/31004",
+      "story_id": "story_fcde66dea627",
+      "title": "Anthropic 牵手 Rum Group 签下 137 亿美元算力大单，背后是特朗普关联的社交老玩家",
+      "url": "https://www.aibase.com/news/31019",
+      "primary_url": "https://www.aibase.com/news/31019",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "b7b7ed5c17d41064ae28afdfd8a38b9456c7ffe7",
-          "title": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-          "title_zh": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+          "id": "2250cec3f8841cd321ff5e073a6989776485c372",
+          "title": "Anthropic 牵手 Rum Group 签下 137 亿美元算力大单，背后是特朗普关联的社交老玩家",
+          "title_zh": "Anthropic 牵手 Rum Group 签下 137 亿美元算力大单，背后是特朗普关联的社交老玩家",
           "title_en": null,
-          "title_original": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+          "title_original": "Anthropic 牵手 Rum Group 签下 137 亿美元算力大单，背后是特朗普关联的社交老玩家",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31004",
+          "url": "https://www.aibase.com/news/31019",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-14T01:17:34.625099Z"
+          "published_at": "2026-09-14T06:35:34.095335Z"
         }
       ],
       "source_count": 1,
@@ -398,18 +314,18 @@
       ],
       "items": [
         {
-          "id": "b7b7ed5c17d41064ae28afdfd8a38b9456c7ffe7",
-          "title": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-          "title_zh": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+          "id": "2250cec3f8841cd321ff5e073a6989776485c372",
+          "title": "Anthropic 牵手 Rum Group 签下 137 亿美元算力大单，背后是特朗普关联的社交老玩家",
+          "title_zh": "Anthropic 牵手 Rum Group 签下 137 亿美元算力大单，背后是特朗普关联的社交老玩家",
           "title_en": null,
-          "title_original": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+          "title_original": "Anthropic 牵手 Rum Group 签下 137 亿美元算力大单，背后是特朗普关联的社交老玩家",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31004",
+          "url": "https://www.aibase.com/news/31019",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-14T01:17:34.625099Z"
+          "published_at": "2026-09-14T06:35:34.095335Z"
         }
       ],
       "item_count": 1,
@@ -431,17 +347,17 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-14T01:17:34.625099Z",
-      "latest_at": "2026-09-14T01:17:34.625099Z",
+      "earliest_at": "2026-09-14T06:35:34.095335Z",
+      "latest_at": "2026-09-14T06:35:34.095335Z",
       "primary_item": {
-        "id": "b7b7ed5c17d41064ae28afdfd8a38b9456c7ffe7",
-        "title": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-        "title_zh": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+        "id": "2250cec3f8841cd321ff5e073a6989776485c372",
+        "title": "Anthropic 牵手 Rum Group 签下 137 亿美元算力大单，背后是特朗普关联的社交老玩家",
+        "title_zh": "Anthropic 牵手 Rum Group 签下 137 亿美元算力大单，背后是特朗普关联的社交老玩家",
         "title_en": null,
-        "title_original": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+        "title_original": "Anthropic 牵手 Rum Group 签下 137 亿美元算力大单，背后是特朗普关联的社交老玩家",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31004",
+        "url": "https://www.aibase.com/news/31019",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -450,7 +366,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T01:18:29.772116Z"
+        "scored_at": "2026-09-14T06:36:24.343855Z"
       }
     },
     {
@@ -498,19 +414,19 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7263,
-      "importance": 0.7263,
-      "importance_score": 0.7263,
-      "importance_label": "行业动态",
+      "score": 0.7179,
+      "importance": 0.7179,
+      "importance_score": 0.7179,
+      "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.62,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9374,
+        "recency": 0.8907,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "industry",
+      "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
@@ -533,7 +449,259 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T01:18:29.772116Z"
+        "scored_at": "2026-09-14T06:36:24.343855Z"
+      }
+    },
+    {
+      "story_id": "story_0ba17f82df93",
+      "title": "OpenAI 关停史上最快模型 GPT-5.3-Codex-Spark：从发布到下线只活了 7 个月",
+      "url": "https://www.aibase.com/news/31021",
+      "primary_url": "https://www.aibase.com/news/31021",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "dad28f17f7891b987089bc575296dd47b77433e3",
+          "title": "OpenAI 关停史上最快模型 GPT-5.3-Codex-Spark：从发布到下线只活了 7 个月",
+          "title_zh": "OpenAI 关停史上最快模型 GPT-5.3-Codex-Spark：从发布到下线只活了 7 个月",
+          "title_en": null,
+          "title_original": "OpenAI 关停史上最快模型 GPT-5.3-Codex-Spark：从发布到下线只活了 7 个月",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31021",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "dad28f17f7891b987089bc575296dd47b77433e3",
+          "title": "OpenAI 关停史上最快模型 GPT-5.3-Codex-Spark：从发布到下线只活了 7 个月",
+          "title_zh": "OpenAI 关停史上最快模型 GPT-5.3-Codex-Spark：从发布到下线只活了 7 个月",
+          "title_en": null,
+          "title_original": "OpenAI 关停史上最快模型 GPT-5.3-Codex-Spark：从发布到下线只活了 7 个月",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31021",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T06:35:34.095335Z",
+      "latest_at": "2026-09-14T06:35:34.095335Z",
+      "primary_item": {
+        "id": "dad28f17f7891b987089bc575296dd47b77433e3",
+        "title": "OpenAI 关停史上最快模型 GPT-5.3-Codex-Spark：从发布到下线只活了 7 个月",
+        "title_zh": "OpenAI 关停史上最快模型 GPT-5.3-Codex-Spark：从发布到下线只活了 7 个月",
+        "title_en": null,
+        "title_original": "OpenAI 关停史上最快模型 GPT-5.3-Codex-Spark：从发布到下线只活了 7 个月",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31021",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T06:36:24.343855Z"
+      }
+    },
+    {
+      "story_id": "story_b01914df6cf3",
+      "title": "OpenAI 推出 Agents API：把 Codex 拆成云端服务，\"造 Agent\" 变成一次 API 调用",
+      "url": "https://www.aibase.com/news/31025",
+      "primary_url": "https://www.aibase.com/news/31025",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "8811fabcaec4719137fe03427f39243b127ec160",
+          "title": "OpenAI 推出 Agents API：把 Codex 拆成云端服务，\"造 Agent\" 变成一次 API 调用",
+          "title_zh": "OpenAI 推出 Agents API：把 Codex 拆成云端服务，\"造 Agent\" 变成一次 API 调用",
+          "title_en": null,
+          "title_original": "OpenAI 推出 Agents API：把 Codex 拆成云端服务，\"造 Agent\" 变成一次 API 调用",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31025",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "8811fabcaec4719137fe03427f39243b127ec160",
+          "title": "OpenAI 推出 Agents API：把 Codex 拆成云端服务，\"造 Agent\" 变成一次 API 调用",
+          "title_zh": "OpenAI 推出 Agents API：把 Codex 拆成云端服务，\"造 Agent\" 变成一次 API 调用",
+          "title_en": null,
+          "title_original": "OpenAI 推出 Agents API：把 Codex 拆成云端服务，\"造 Agent\" 变成一次 API 调用",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31025",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T06:35:34.095335Z",
+      "latest_at": "2026-09-14T06:35:34.095335Z",
+      "primary_item": {
+        "id": "8811fabcaec4719137fe03427f39243b127ec160",
+        "title": "OpenAI 推出 Agents API：把 Codex 拆成云端服务，\"造 Agent\" 变成一次 API 调用",
+        "title_zh": "OpenAI 推出 Agents API：把 Codex 拆成云端服务，\"造 Agent\" 变成一次 API 调用",
+        "title_en": null,
+        "title_original": "OpenAI 推出 Agents API：把 Codex 拆成云端服务，\"造 Agent\" 变成一次 API 调用",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31025",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T06:36:24.343855Z"
+      }
+    },
+    {
+      "story_id": "story_ebd0e66ec1cc",
+      "title": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+      "url": "https://www.aibase.com/news/31004",
+      "primary_url": "https://www.aibase.com/news/31004",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "b7b7ed5c17d41064ae28afdfd8a38b9456c7ffe7",
+          "title": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+          "title_zh": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+          "title_en": null,
+          "title_original": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31004",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T01:17:34.625099Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "b7b7ed5c17d41064ae28afdfd8a38b9456c7ffe7",
+          "title": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+          "title_zh": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+          "title_en": null,
+          "title_original": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31004",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T01:17:34.625099Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7586,
+      "importance": 0.7586,
+      "importance_score": 0.7586,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9503,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T01:17:34.625099Z",
+      "latest_at": "2026-09-14T01:17:34.625099Z",
+      "primary_item": {
+        "id": "b7b7ed5c17d41064ae28afdfd8a38b9456c7ffe7",
+        "title": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+        "title_zh": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+        "title_en": null,
+        "title_original": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31004",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T06:36:24.343855Z"
       }
     },
     {
@@ -581,15 +749,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7586,
+      "importance": 0.7586,
+      "importance_score": 0.7586,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9503,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -617,7 +785,511 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T01:18:29.772116Z"
+        "scored_at": "2026-09-14T06:36:24.343855Z"
+      }
+    },
+    {
+      "story_id": "story_fe9bcb863f7c",
+      "title": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
+      "url": "https://www.aibase.com/news/31010",
+      "primary_url": "https://www.aibase.com/news/31010",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "403252cf441295b0d8d11183dffe2cfb6b895d1a",
+          "title": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
+          "title_zh": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
+          "title_en": null,
+          "title_original": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31010",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "403252cf441295b0d8d11183dffe2cfb6b895d1a",
+          "title": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
+          "title_zh": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
+          "title_en": null,
+          "title_original": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31010",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T06:35:34.095335Z",
+      "latest_at": "2026-09-14T06:35:34.095335Z",
+      "primary_item": {
+        "id": "403252cf441295b0d8d11183dffe2cfb6b895d1a",
+        "title": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
+        "title_zh": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
+        "title_en": null,
+        "title_original": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31010",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T06:36:24.343855Z"
+      }
+    },
+    {
+      "story_id": "story_d1b8ebea311d",
+      "title": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
+      "url": "https://www.aibase.com/news/31014",
+      "primary_url": "https://www.aibase.com/news/31014",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "27500cf7fcea39565c4ece3a32c5148d912c9b91",
+          "title": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
+          "title_zh": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
+          "title_en": null,
+          "title_original": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31014",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "27500cf7fcea39565c4ece3a32c5148d912c9b91",
+          "title": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
+          "title_zh": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
+          "title_en": null,
+          "title_original": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31014",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T06:35:34.095335Z",
+      "latest_at": "2026-09-14T06:35:34.095335Z",
+      "primary_item": {
+        "id": "27500cf7fcea39565c4ece3a32c5148d912c9b91",
+        "title": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
+        "title_zh": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
+        "title_en": null,
+        "title_original": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31014",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T06:36:24.343855Z"
+      }
+    },
+    {
+      "story_id": "story_55918f87707d",
+      "title": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
+      "url": "https://www.aibase.com/news/31016",
+      "primary_url": "https://www.aibase.com/news/31016",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "868a5d2aa1f0ea08327a290a9db73ce5c970c2e6",
+          "title": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
+          "title_zh": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
+          "title_en": null,
+          "title_original": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31016",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "868a5d2aa1f0ea08327a290a9db73ce5c970c2e6",
+          "title": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
+          "title_zh": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
+          "title_en": null,
+          "title_original": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31016",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T06:35:34.095335Z",
+      "latest_at": "2026-09-14T06:35:34.095335Z",
+      "primary_item": {
+        "id": "868a5d2aa1f0ea08327a290a9db73ce5c970c2e6",
+        "title": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
+        "title_zh": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
+        "title_en": null,
+        "title_original": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31016",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T06:36:24.343855Z"
+      }
+    },
+    {
+      "story_id": "story_957795ac8f90",
+      "title": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
+      "url": "https://www.aibase.com/news/31024",
+      "primary_url": "https://www.aibase.com/news/31024",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "5a29f2b0809bcca290431411fb5c87e26eb22cca",
+          "title": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
+          "title_zh": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
+          "title_en": null,
+          "title_original": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31024",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "5a29f2b0809bcca290431411fb5c87e26eb22cca",
+          "title": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
+          "title_zh": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
+          "title_en": null,
+          "title_original": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31024",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T06:35:34.095335Z",
+      "latest_at": "2026-09-14T06:35:34.095335Z",
+      "primary_item": {
+        "id": "5a29f2b0809bcca290431411fb5c87e26eb22cca",
+        "title": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
+        "title_zh": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
+        "title_en": null,
+        "title_original": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31024",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T06:36:24.343855Z"
+      }
+    },
+    {
+      "story_id": "story_15b86697dbdc",
+      "title": "全新 Apple TV 或今秋低调发布：换上更强芯片，Siri 成核心升级",
+      "url": "https://www.aibase.com/news/31011",
+      "primary_url": "https://www.aibase.com/news/31011",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "2e769589ebb3788ee3726b9f491cea69da47c04b",
+          "title": "全新 Apple TV 或今秋低调发布：换上更强芯片，Siri 成核心升级",
+          "title_zh": "全新 Apple TV 或今秋低调发布：换上更强芯片，Siri 成核心升级",
+          "title_en": null,
+          "title_original": "全新 Apple TV 或今秋低调发布：换上更强芯片，Siri 成核心升级",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31011",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "2e769589ebb3788ee3726b9f491cea69da47c04b",
+          "title": "全新 Apple TV 或今秋低调发布：换上更强芯片，Siri 成核心升级",
+          "title_zh": "全新 Apple TV 或今秋低调发布：换上更强芯片，Siri 成核心升级",
+          "title_en": null,
+          "title_original": "全新 Apple TV 或今秋低调发布：换上更强芯片，Siri 成核心升级",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31011",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T06:35:34.095335Z",
+      "latest_at": "2026-09-14T06:35:34.095335Z",
+      "primary_item": {
+        "id": "2e769589ebb3788ee3726b9f491cea69da47c04b",
+        "title": "全新 Apple TV 或今秋低调发布：换上更强芯片，Siri 成核心升级",
+        "title_zh": "全新 Apple TV 或今秋低调发布：换上更强芯片，Siri 成核心升级",
+        "title_en": null,
+        "title_original": "全新 Apple TV 或今秋低调发布：换上更强芯片，Siri 成核心升级",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31011",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T06:36:24.343855Z"
+      }
+    },
+    {
+      "story_id": "story_d8481b3089e2",
+      "title": "微软扩展 Copilot 模型库:SpaceXAI Grok 正式上线 Word、Excel 与 PowerPoint",
+      "url": "https://www.aibase.com/news/31013",
+      "primary_url": "https://www.aibase.com/news/31013",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "c806e3884099760dcb6a3a15dcf2dc2e85515c6b",
+          "title": "微软扩展 Copilot 模型库:SpaceXAI Grok 正式上线 Word、Excel 与 PowerPoint",
+          "title_zh": "微软扩展 Copilot 模型库:SpaceXAI Grok 正式上线 Word、Excel 与 PowerPoint",
+          "title_en": null,
+          "title_original": "微软扩展 Copilot 模型库:SpaceXAI Grok 正式上线 Word、Excel 与 PowerPoint",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31013",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "c806e3884099760dcb6a3a15dcf2dc2e85515c6b",
+          "title": "微软扩展 Copilot 模型库:SpaceXAI Grok 正式上线 Word、Excel 与 PowerPoint",
+          "title_zh": "微软扩展 Copilot 模型库:SpaceXAI Grok 正式上线 Word、Excel 与 PowerPoint",
+          "title_en": null,
+          "title_original": "微软扩展 Copilot 模型库:SpaceXAI Grok 正式上线 Word、Excel 与 PowerPoint",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31013",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T06:35:34.095335Z",
+      "latest_at": "2026-09-14T06:35:34.095335Z",
+      "primary_item": {
+        "id": "c806e3884099760dcb6a3a15dcf2dc2e85515c6b",
+        "title": "微软扩展 Copilot 模型库:SpaceXAI Grok 正式上线 Word、Excel 与 PowerPoint",
+        "title_zh": "微软扩展 Copilot 模型库:SpaceXAI Grok 正式上线 Word、Excel 与 PowerPoint",
+        "title_en": null,
+        "title_original": "微软扩展 Copilot 模型库:SpaceXAI Grok 正式上线 Word、Excel 与 PowerPoint",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31013",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T06:36:24.343855Z"
       }
     },
     {
@@ -665,15 +1337,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7586,
+      "importance": 0.7586,
+      "importance_score": 0.7586,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9503,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -701,30 +1373,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T01:18:29.772116Z"
+        "scored_at": "2026-09-14T06:36:24.343855Z"
       }
     },
     {
-      "story_id": "story_1e32cab69036",
-      "title": "苹果新 CEO 谈 Meta“变态眼镜”风波：AI 设备要让旁人也安心",
-      "url": "https://www.aibase.com/news/31006",
-      "primary_url": "https://www.aibase.com/news/31006",
+      "story_id": "story_029362550b0e",
+      "title": "智能体跑长任务为何\"失忆跑题\"：AWS、Claude Code、Manus 们用四套框架机制给出答案",
+      "url": "https://www.aibase.com/news/31020",
+      "primary_url": "https://www.aibase.com/news/31020",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "7060d51fc7b9b40326efbae7897f69515cd76db8",
-          "title": "苹果新 CEO 谈 Meta“变态眼镜”风波：AI 设备要让旁人也安心",
-          "title_zh": "苹果新 CEO 谈 Meta“变态眼镜”风波：AI 设备要让旁人也安心",
+          "id": "76af0c7d656443bc8aca74060926a032258e5938",
+          "title": "智能体跑长任务为何\"失忆跑题\"：AWS、Claude Code、Manus 们用四套框架机制给出答案",
+          "title_zh": "智能体跑长任务为何\"失忆跑题\"：AWS、Claude Code、Manus 们用四套框架机制给出答案",
           "title_en": null,
-          "title_original": "苹果新 CEO 谈 Meta“变态眼镜”风波：AI 设备要让旁人也安心",
+          "title_original": "智能体跑长任务为何\"失忆跑题\"：AWS、Claude Code、Manus 们用四套框架机制给出答案",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31006",
+          "url": "https://www.aibase.com/news/31020",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-14T01:17:34.625099Z"
+          "published_at": "2026-09-14T06:35:34.095335Z"
         }
       ],
       "source_count": 1,
@@ -733,18 +1405,18 @@
       ],
       "items": [
         {
-          "id": "7060d51fc7b9b40326efbae7897f69515cd76db8",
-          "title": "苹果新 CEO 谈 Meta“变态眼镜”风波：AI 设备要让旁人也安心",
-          "title_zh": "苹果新 CEO 谈 Meta“变态眼镜”风波：AI 设备要让旁人也安心",
+          "id": "76af0c7d656443bc8aca74060926a032258e5938",
+          "title": "智能体跑长任务为何\"失忆跑题\"：AWS、Claude Code、Manus 们用四套框架机制给出答案",
+          "title_zh": "智能体跑长任务为何\"失忆跑题\"：AWS、Claude Code、Manus 们用四套框架机制给出答案",
           "title_en": null,
-          "title_original": "苹果新 CEO 谈 Meta“变态眼镜”风波：AI 设备要让旁人也安心",
+          "title_original": "智能体跑长任务为何\"失忆跑题\"：AWS、Claude Code、Manus 们用四套框架机制给出答案",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31006",
+          "url": "https://www.aibase.com/news/31020",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-14T01:17:34.625099Z"
+          "published_at": "2026-09-14T06:35:34.095335Z"
         }
       ],
       "item_count": 1,
@@ -766,17 +1438,17 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-14T01:17:34.625099Z",
-      "latest_at": "2026-09-14T01:17:34.625099Z",
+      "earliest_at": "2026-09-14T06:35:34.095335Z",
+      "latest_at": "2026-09-14T06:35:34.095335Z",
       "primary_item": {
-        "id": "7060d51fc7b9b40326efbae7897f69515cd76db8",
-        "title": "苹果新 CEO 谈 Meta“变态眼镜”风波：AI 设备要让旁人也安心",
-        "title_zh": "苹果新 CEO 谈 Meta“变态眼镜”风波：AI 设备要让旁人也安心",
+        "id": "76af0c7d656443bc8aca74060926a032258e5938",
+        "title": "智能体跑长任务为何\"失忆跑题\"：AWS、Claude Code、Manus 们用四套框架机制给出答案",
+        "title_zh": "智能体跑长任务为何\"失忆跑题\"：AWS、Claude Code、Manus 们用四套框架机制给出答案",
         "title_en": null,
-        "title_original": "苹果新 CEO 谈 Meta“变态眼镜”风波：AI 设备要让旁人也安心",
+        "title_original": "智能体跑长任务为何\"失忆跑题\"：AWS、Claude Code、Manus 们用四套框架机制给出答案",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31006",
+        "url": "https://www.aibase.com/news/31020",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -785,7 +1457,259 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T01:18:29.772116Z"
+        "scored_at": "2026-09-14T06:36:24.343855Z"
+      }
+    },
+    {
+      "story_id": "story_a798179e52d0",
+      "title": "智谱获50亿美元新融资 全面加速下一代GLM递归自我改进",
+      "url": "https://www.aibase.com/news/31009",
+      "primary_url": "https://www.aibase.com/news/31009",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "cd53cce9b0e6e633c63928af1396172c9ee9e472",
+          "title": "智谱获50亿美元新融资 全面加速下一代GLM递归自我改进",
+          "title_zh": "智谱获50亿美元新融资 全面加速下一代GLM递归自我改进",
+          "title_en": null,
+          "title_original": "智谱获50亿美元新融资 全面加速下一代GLM递归自我改进",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31009",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "cd53cce9b0e6e633c63928af1396172c9ee9e472",
+          "title": "智谱获50亿美元新融资 全面加速下一代GLM递归自我改进",
+          "title_zh": "智谱获50亿美元新融资 全面加速下一代GLM递归自我改进",
+          "title_en": null,
+          "title_original": "智谱获50亿美元新融资 全面加速下一代GLM递归自我改进",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31009",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T06:35:34.095335Z",
+      "latest_at": "2026-09-14T06:35:34.095335Z",
+      "primary_item": {
+        "id": "cd53cce9b0e6e633c63928af1396172c9ee9e472",
+        "title": "智谱获50亿美元新融资 全面加速下一代GLM递归自我改进",
+        "title_zh": "智谱获50亿美元新融资 全面加速下一代GLM递归自我改进",
+        "title_en": null,
+        "title_original": "智谱获50亿美元新融资 全面加速下一代GLM递归自我改进",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31009",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T06:36:24.343855Z"
+      }
+    },
+    {
+      "story_id": "story_8a47d1096a15",
+      "title": "月费10美元!开源AI编码工具 OpenCode Go 宣布实现收支平衡",
+      "url": "https://www.aibase.com/news/31022",
+      "primary_url": "https://www.aibase.com/news/31022",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "68bea4b5d4df51e758b5c7dc8d521fb3144dec96",
+          "title": "月费10美元!开源AI编码工具 OpenCode Go 宣布实现收支平衡",
+          "title_zh": "月费10美元!开源AI编码工具 OpenCode Go 宣布实现收支平衡",
+          "title_en": null,
+          "title_original": "月费10美元!开源AI编码工具 OpenCode Go 宣布实现收支平衡",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31022",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "68bea4b5d4df51e758b5c7dc8d521fb3144dec96",
+          "title": "月费10美元!开源AI编码工具 OpenCode Go 宣布实现收支平衡",
+          "title_zh": "月费10美元!开源AI编码工具 OpenCode Go 宣布实现收支平衡",
+          "title_en": null,
+          "title_original": "月费10美元!开源AI编码工具 OpenCode Go 宣布实现收支平衡",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31022",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T06:35:34.095335Z",
+      "latest_at": "2026-09-14T06:35:34.095335Z",
+      "primary_item": {
+        "id": "68bea4b5d4df51e758b5c7dc8d521fb3144dec96",
+        "title": "月费10美元!开源AI编码工具 OpenCode Go 宣布实现收支平衡",
+        "title_zh": "月费10美元!开源AI编码工具 OpenCode Go 宣布实现收支平衡",
+        "title_en": null,
+        "title_original": "月费10美元!开源AI编码工具 OpenCode Go 宣布实现收支平衡",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31022",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T06:36:24.343855Z"
+      }
+    },
+    {
+      "story_id": "story_f1e6b95ca9c3",
+      "title": "爆料称 DeepSeek 下一波大模型将至：3 万亿参数，性能剑指 GPT-6 Astra",
+      "url": "https://www.aibase.com/news/31026",
+      "primary_url": "https://www.aibase.com/news/31026",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "bd07b217956dd8a67c767e0e3ec20a2fbea80989",
+          "title": "爆料称 DeepSeek 下一波大模型将至：3 万亿参数，性能剑指 GPT-6 Astra",
+          "title_zh": "爆料称 DeepSeek 下一波大模型将至：3 万亿参数，性能剑指 GPT-6 Astra",
+          "title_en": null,
+          "title_original": "爆料称 DeepSeek 下一波大模型将至：3 万亿参数，性能剑指 GPT-6 Astra",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31026",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "bd07b217956dd8a67c767e0e3ec20a2fbea80989",
+          "title": "爆料称 DeepSeek 下一波大模型将至：3 万亿参数，性能剑指 GPT-6 Astra",
+          "title_zh": "爆料称 DeepSeek 下一波大模型将至：3 万亿参数，性能剑指 GPT-6 Astra",
+          "title_en": null,
+          "title_original": "爆料称 DeepSeek 下一波大模型将至：3 万亿参数，性能剑指 GPT-6 Astra",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31026",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-14T06:35:34.095335Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T06:35:34.095335Z",
+      "latest_at": "2026-09-14T06:35:34.095335Z",
+      "primary_item": {
+        "id": "bd07b217956dd8a67c767e0e3ec20a2fbea80989",
+        "title": "爆料称 DeepSeek 下一波大模型将至：3 万亿参数，性能剑指 GPT-6 Astra",
+        "title_zh": "爆料称 DeepSeek 下一波大模型将至：3 万亿参数，性能剑指 GPT-6 Astra",
+        "title_en": null,
+        "title_original": "爆料称 DeepSeek 下一波大模型将至：3 万亿参数，性能剑指 GPT-6 Astra",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31026",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T06:36:24.343855Z"
       }
     }
   ]
