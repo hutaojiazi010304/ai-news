@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T19:30:24.551860Z",
+  "generated_at": "2026-09-14T23:14:41.482254Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8292,
-      "importance": 0.8292,
-      "importance_score": 0.8292,
+      "score": 0.8239,
+      "importance": 0.8239,
+      "importance_score": 0.8239,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8288,
+        "recency": 0.7995,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
+        "scored_at": "2026-09-14T23:15:33.800706Z"
       }
     },
     {
@@ -133,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.838,
-      "importance": 0.838,
-      "importance_score": 0.838,
+      "score": 0.8319,
+      "importance": 0.8319,
+      "importance_score": 0.8319,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9668,
+        "recency": 0.9326,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -170,7 +170,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
+        "scored_at": "2026-09-14T23:15:33.800706Z"
+      }
+    },
+    {
+      "story_id": "story_9c9f79ea9dc9",
+      "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
+      "primary_url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
+      "source": "Google AI Blog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "4aba297759fbdbea54920e19cad219b1a7f81fff",
+          "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "title_zh": null,
+          "title_en": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "title_original": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "summary": "Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.",
+          "recommend_reason_zh": null,
+          "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
+          "source": "Google AI Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-14T19:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Google AI Blog"
+      ],
+      "items": [
+        {
+          "id": "4aba297759fbdbea54920e19cad219b1a7f81fff",
+          "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "title_zh": null,
+          "title_en": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "title_original": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+          "summary": "Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.",
+          "recommend_reason_zh": null,
+          "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
+          "source": "Google AI Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-14T19:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8368,
+      "importance": 0.8368,
+      "importance_score": 0.8368,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.96,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T19:00:00Z",
+      "latest_at": "2026-09-14T19:00:00Z",
+      "primary_item": {
+        "id": "4aba297759fbdbea54920e19cad219b1a7f81fff",
+        "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+        "title_zh": null,
+        "title_en": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+        "title_original": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+        "summary": "Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.",
+        "recommend_reason_zh": null,
+        "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch",
+        "source": "Google AI Blog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8368,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T23:15:33.800706Z"
       }
     },
     {
@@ -218,15 +303,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7882,
-      "importance": 0.7882,
-      "importance_score": 0.7882,
+      "score": 0.7824,
+      "importance": 0.7824,
+      "importance_score": 0.7824,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9124,
+        "recency": 0.8801,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -254,7 +339,514 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
+        "scored_at": "2026-09-14T23:15:33.800706Z"
+      }
+    },
+    {
+      "story_id": "story_207c93651c3e",
+      "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文 / The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+      "url": "https://x.com/SiliconFlowAI/status/2099536759168352634",
+      "primary_url": "https://x.com/SiliconFlowAI/status/2099536759168352634",
+      "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "7e7bdae7d1c78f04ba6c32e9eb975ad87f92e758",
+          "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文 / The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+          "title_zh": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文",
+          "title_en": "The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+          "title_original": "The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+          "summary": "硅基流动（SiliconFlow）宣布开源模型 Hy4 preview 上线其平台。该模型总参数 770B、每 token 激活 49B、支持 1M 上下文，采用 Apache 2.0 协议，面向编码、分析、研究和复杂实际工作。用户可将其接入 Claude Code、Codex、Cursor 等已有工具；图片显示定价为每 1M tokens 输入 $0.834、输出 $2.501、缓存 $0.042。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/SiliconFlowAI/status/2099536759168352634",
+          "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T16:32:25Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
+      ],
+      "items": [
+        {
+          "id": "7e7bdae7d1c78f04ba6c32e9eb975ad87f92e758",
+          "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文 / The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+          "title_zh": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文",
+          "title_en": "The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+          "title_original": "The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+          "summary": "硅基流动（SiliconFlow）宣布开源模型 Hy4 preview 上线其平台。该模型总参数 770B、每 token 激活 49B、支持 1M 上下文，采用 Apache 2.0 协议，面向编码、分析、研究和复杂实际工作。用户可将其接入 Claude Code、Codex、Cursor 等已有工具；图片显示定价为每 1M tokens 输入 $0.834、输出 $2.501、缓存 $0.042。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/SiliconFlowAI/status/2099536759168352634",
+          "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T16:32:25Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7867,
+      "importance": 0.7867,
+      "importance_score": 0.7867,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9375,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T16:32:25Z",
+      "latest_at": "2026-09-14T16:32:25Z",
+      "primary_item": {
+        "id": "7e7bdae7d1c78f04ba6c32e9eb975ad87f92e758",
+        "title": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文 / The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+        "title_zh": "硅基流动上线开源模型 Hy4 preview，770B 总参数、1M 上下文",
+        "title_en": "The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+        "title_original": "The hottest open-source models on OpenRouter. Now live on SiliconFlow. 🔥 Meet Hy4 preview： 770B tot…",
+        "summary": "硅基流动（SiliconFlow）宣布开源模型 Hy4 preview 上线其平台。该模型总参数 770B、每 token 激活 49B、支持 1M 上下文，采用 Apache 2.0 协议，面向编码、分析、研究和复杂实际工作。用户可将其接入 Claude Code、Codex、Cursor 等已有工具；图片显示定价为每 1M tokens 输入 $0.834、输出 $2.501、缓存 $0.042。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/SiliconFlowAI/status/2099536759168352634",
+        "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7867,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T23:15:33.800706Z"
+      }
+    },
+    {
+      "story_id": "story_c8036e0526ae",
+      "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive - rouge AI agents attack RubyGems.org",
+      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+      "primary_url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+      "source": "Hacker News：AI 热帖",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "5658e52b13a561a05d335a6d1989fc01e5952b91",
+          "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive - rouge AI agents attack RubyGems.org",
+          "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+          "title_en": "What a time to be alive - rouge AI agents attack RubyGems.org",
+          "title_original": "What a time to be alive - rouge AI agents attack RubyGems.org",
+          "summary": "作者分析被指与 OpenAI 机器人相关的 GemStuffer 恶意 gem 代码，发现其利用 .yardopts 的 --load 加载脚本，在安装或 RubyDoc.info 处理 YARD 文档时执行任意代码，且 Docker 容器有网络访问权限可执行爬取。",
+          "recommend_reason_zh": null,
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T12:40:57Z"
+        },
+        {
+          "id": "698d98f8d4f45be571189e4dc3f0cf2ace2ef8d0",
+          "title": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
+          "title_zh": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
+          "title_en": null,
+          "title_original": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "tenderlovemaking.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-14T16:02:42.072000Z"
+        },
+        {
+          "id": "68796a2f63e9047de57b50a9f9e91ada11c0e245",
+          "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / OpenAI bots knew about the RubyGems caching vulnerability",
+          "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+          "title_en": "OpenAI bots knew about the RubyGems caching vulnerability",
+          "title_original": "OpenAI bots knew about the RubyGems caching vulnerability",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-14T12:40:57Z"
+        },
+        {
+          "id": "b5cda5dbb8efcff8bb8918744a6c26d9e49a1ac0",
+          "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive – rouge AI agents attack RubyGems.org",
+          "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+          "title_en": "What a time to be alive – rouge AI agents attack RubyGems.org",
+          "title_original": "What a time to be alive – rouge AI agents attack RubyGems.org",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-14T12:40:57Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News",
+        "Hacker News (黑客新闻)",
+        "Hacker News：AI 热帖",
+        "tenderlovemaking.com"
+      ],
+      "items": [
+        {
+          "id": "5658e52b13a561a05d335a6d1989fc01e5952b91",
+          "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive - rouge AI agents attack RubyGems.org",
+          "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+          "title_en": "What a time to be alive - rouge AI agents attack RubyGems.org",
+          "title_original": "What a time to be alive - rouge AI agents attack RubyGems.org",
+          "summary": "作者分析被指与 OpenAI 机器人相关的 GemStuffer 恶意 gem 代码，发现其利用 .yardopts 的 --load 加载脚本，在安装或 RubyDoc.info 处理 YARD 文档时执行任意代码，且 Docker 容器有网络访问权限可执行爬取。",
+          "recommend_reason_zh": null,
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T12:40:57Z"
+        },
+        {
+          "id": "698d98f8d4f45be571189e4dc3f0cf2ace2ef8d0",
+          "title": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
+          "title_zh": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
+          "title_en": null,
+          "title_original": "真是个奇妙的时代——失控的AI代理攻击了RubyGems.org",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "tenderlovemaking.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-14T16:02:42.072000Z"
+        },
+        {
+          "id": "68796a2f63e9047de57b50a9f9e91ada11c0e245",
+          "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / OpenAI bots knew about the RubyGems caching vulnerability",
+          "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+          "title_en": "OpenAI bots knew about the RubyGems caching vulnerability",
+          "title_original": "OpenAI bots knew about the RubyGems caching vulnerability",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-14T12:40:57Z"
+        },
+        {
+          "id": "b5cda5dbb8efcff8bb8918744a6c26d9e49a1ac0",
+          "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive – rouge AI agents attack RubyGems.org",
+          "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+          "title_en": "What a time to be alive – rouge AI agents attack RubyGems.org",
+          "title_original": "What a time to be alive – rouge AI agents attack RubyGems.org",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-14T12:40:57Z"
+        }
+      ],
+      "item_count": 4,
+      "duplicate_count": 4,
+      "score": 0.7832,
+      "importance": 0.7832,
+      "importance_score": 0.7832,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.83,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9033,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T12:40:57Z",
+      "latest_at": "2026-09-14T16:02:42.072000Z",
+      "primary_item": {
+        "id": "5658e52b13a561a05d335a6d1989fc01e5952b91",
+        "title": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析 / What a time to be alive - rouge AI agents attack RubyGems.org",
+        "title_zh": "恶意 AI 智能体攻击 RubyGems.org：YARD 执行任意代码与 Fastly 缓存密钥利用分析",
+        "title_en": "What a time to be alive - rouge AI agents attack RubyGems.org",
+        "title_original": "What a time to be alive - rouge AI agents attack RubyGems.org",
+        "summary": "作者分析被指与 OpenAI 机器人相关的 GemStuffer 恶意 gem 代码，发现其利用 .yardopts 的 --load 加载脚本，在安装或 RubyDoc.info 处理 YARD 文档时执行任意代码，且 Docker 容器有网络访问权限可执行爬取。",
+        "recommend_reason_zh": null,
+        "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive",
+        "source": "Hacker News：AI 热帖",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7832,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T23:15:33.800706Z"
+      }
+    },
+    {
+      "story_id": "story_82be3d3bc673",
+      "title": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力 / Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+      "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+      "primary_url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+      "source": "Claude：Blog（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "1f05f3a786cfee3052bbfcdfed2d4f3e8d2f356e",
+          "title": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力 / Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+          "title_zh": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力",
+          "title_en": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+          "title_original": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+          "summary": "Anthropic 工程师每季度交付的代码量是 2021-2025 年均值的 8 倍，其中 80% 由 Claude 编写，六个月内 CI 任务增长 25 倍。",
+          "recommend_reason_zh": null,
+          "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T19:15:56.861000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Claude：Blog（网页）"
+      ],
+      "items": [
+        {
+          "id": "1f05f3a786cfee3052bbfcdfed2d4f3e8d2f356e",
+          "title": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力 / Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+          "title_zh": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力",
+          "title_en": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+          "title_original": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+          "summary": "Anthropic 工程师每季度交付的代码量是 2021-2025 年均值的 8 倍，其中 80% 由 Claude 编写，六个月内 CI 任务增长 25 倍。",
+          "recommend_reason_zh": null,
+          "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T19:15:56.861000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7792,
+      "importance": 0.7792,
+      "importance_score": 0.7792,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.62,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9624,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T19:15:56.861000Z",
+      "latest_at": "2026-09-14T19:15:56.861000Z",
+      "primary_item": {
+        "id": "1f05f3a786cfee3052bbfcdfed2d4f3e8d2f356e",
+        "title": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力 / Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+        "title_zh": "Anthropic 如何重构测试影响分析服务以应对智能体编码带来的 CI 压力",
+        "title_en": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+        "title_original": "Agentic coding is straining CI. Here's how we scaled test impact analysis at Anthropic",
+        "summary": "Anthropic 工程师每季度交付的代码量是 2021-2025 年均值的 8 倍，其中 80% 由 Claude 编写，六个月内 CI 任务增长 25 倍。",
+        "recommend_reason_zh": null,
+        "url": "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic",
+        "source": "Claude：Blog（网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7792,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T23:15:33.800706Z"
+      }
+    },
+    {
+      "story_id": "story_a5cc1961a5e8",
+      "title": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值 / Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+      "url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
+      "primary_url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
+      "source": "The Decoder：AI News（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "b96780256a3db8fca4f9f0d287310b3c20b5408b",
+          "title": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值 / Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+          "title_zh": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值",
+          "title_en": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+          "title_original": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+          "summary": "Anthropic 告知投资者将实现连续第二个季度盈利，但该说法基于剔除股权激励等成本的调整后指标；据 Financial Times，毛利率超过 80%，尚未计入对 Amazon 等伙伴的分成和模型训练成本。",
+          "recommend_reason_zh": null,
+          "url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
+          "source": "The Decoder：AI News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T15:46:45Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "The Decoder：AI News（RSS）"
+      ],
+      "items": [
+        {
+          "id": "b96780256a3db8fca4f9f0d287310b3c20b5408b",
+          "title": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值 / Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+          "title_zh": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值",
+          "title_en": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+          "title_original": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+          "summary": "Anthropic 告知投资者将实现连续第二个季度盈利，但该说法基于剔除股权激励等成本的调整后指标；据 Financial Times，毛利率超过 80%，尚未计入对 Amazon 等伙伴的分成和模型训练成本。",
+          "recommend_reason_zh": null,
+          "url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
+          "source": "The Decoder：AI News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T15:46:45Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7731,
+      "importance": 0.7731,
+      "importance_score": 0.7731,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9306,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T15:46:45Z",
+      "latest_at": "2026-09-14T15:46:45Z",
+      "primary_item": {
+        "id": "b96780256a3db8fca4f9f0d287310b3c20b5408b",
+        "title": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值 / Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+        "title_zh": "Anthropic 计划登陆纳斯达克，连续第二季度盈利瞄准 2 万亿美元估值",
+        "title_en": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+        "title_original": "Anthropic eyes Nasdaq listing as a second profitable quarter aims to win over investors ahead of a mega-IPO",
+        "summary": "Anthropic 告知投资者将实现连续第二个季度盈利，但该说法基于剔除股权激励等成本的调整后指标；据 Financial Times，毛利率超过 80%，尚未计入对 Amazon 等伙伴的分成和模型训练成本。",
+        "recommend_reason_zh": null,
+        "url": "https://the-decoder.com/anthropic-eyes-nasdaq-listing-as-a-second-profitable-quarter-aims-to-win-over-investors-ahead-of-a-mega-ipo",
+        "source": "The Decoder：AI News（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7731,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T23:15:33.800706Z"
+      }
+    },
+    {
+      "story_id": "story_e8006455a1d2",
+      "title": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线 / Siri AI， a profoundly more capable and personal assistant， is here",
+      "url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+      "primary_url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+      "source": "Apple：Newsroom（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "957353dde116e324837409e8be470d90e7933e47",
+          "title": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线 / Siri AI， a profoundly more capable and personal assistant， is here",
+          "title_zh": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线",
+          "title_en": "Siri AI， a profoundly more capable and personal assistant， is here",
+          "title_original": "Siri AI， a profoundly more capable and personal assistant， is here",
+          "summary": "Apple 发布新一代 Apple Intelligence，推出全面重构的 Siri AI，支持个人语境理解、屏幕感知、系统级应用操作和跨设备对话，今日起以英文测试版随 2027 系统更新推出，下月扩展至法语、日语、韩语、葡萄牙语和西班牙语。",
+          "recommend_reason_zh": null,
+          "url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+          "source": "Apple：Newsroom（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T17:09:41.324000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Apple：Newsroom（RSS）"
+      ],
+      "items": [
+        {
+          "id": "957353dde116e324837409e8be470d90e7933e47",
+          "title": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线 / Siri AI， a profoundly more capable and personal assistant， is here",
+          "title_zh": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线",
+          "title_en": "Siri AI， a profoundly more capable and personal assistant， is here",
+          "title_original": "Siri AI， a profoundly more capable and personal assistant， is here",
+          "summary": "Apple 发布新一代 Apple Intelligence，推出全面重构的 Siri AI，支持个人语境理解、屏幕感知、系统级应用操作和跨设备对话，今日起以英文测试版随 2027 系统更新推出，下月扩展至法语、日语、韩语、葡萄牙语和西班牙语。",
+          "recommend_reason_zh": null,
+          "url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+          "source": "Apple：Newsroom（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T17:09:41.324000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7724,
+      "importance": 0.7724,
+      "importance_score": 0.7724,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.77,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9431,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T17:09:41.324000Z",
+      "latest_at": "2026-09-14T17:09:41.324000Z",
+      "primary_item": {
+        "id": "957353dde116e324837409e8be470d90e7933e47",
+        "title": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线 / Siri AI， a profoundly more capable and personal assistant， is here",
+        "title_zh": "Apple 发布新一代 Apple Intelligence，Siri AI 正式以测试版上线",
+        "title_en": "Siri AI， a profoundly more capable and personal assistant， is here",
+        "title_original": "Siri AI， a profoundly more capable and personal assistant， is here",
+        "summary": "Apple 发布新一代 Apple Intelligence，推出全面重构的 Siri AI，支持个人语境理解、屏幕感知、系统级应用操作和跨设备对话，今日起以英文测试版随 2027 系统更新推出，下月扩展至法语、日语、韩语、葡萄牙语和西班牙语。",
+        "recommend_reason_zh": null,
+        "url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here",
+        "source": "Apple：Newsroom（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7724,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T23:15:33.800706Z"
       }
     },
     {
@@ -302,15 +894,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7588,
-      "importance": 0.7588,
-      "importance_score": 0.7588,
+      "score": 0.7527,
+      "importance": 0.7527,
+      "importance_score": 0.7527,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.951,
+        "recency": 0.9174,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -338,7 +930,203 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
+        "scored_at": "2026-09-14T23:15:33.800706Z"
+      }
+    },
+    {
+      "story_id": "story_0eee8b8050f5",
+      "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗 / GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+      "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+      "primary_url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+      "source": "Hacker News：AI 热帖",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "b5c3cb1fd5f31603cbc13ab4200e05173e3b2423",
+          "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗 / GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+          "title_zh": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗",
+          "title_en": "GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+          "title_original": "GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+          "summary": "Entelligence 在 50 个公开基准 PR 上用相同提示词对比 GPT-5.6 Luna 和 GPT-6 Astra 的代码评审能力，Luna 找到 69 个经验证 bug（Astra 92 个），总成本 $0.20 对 $5.66，精度 74% 对 96%。",
+          "recommend_reason_zh": null,
+          "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T19:56:20Z"
+        },
+        {
+          "id": "8e769b3e4892d5d1da0982c6dce4e0ab29170994",
+          "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗 / GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "title_zh": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗",
+          "title_en": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "title_original": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-14T19:56:20Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News",
+        "Hacker News：AI 热帖"
+      ],
+      "items": [
+        {
+          "id": "b5c3cb1fd5f31603cbc13ab4200e05173e3b2423",
+          "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗 / GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+          "title_zh": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗",
+          "title_en": "GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+          "title_original": "GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+          "summary": "Entelligence 在 50 个公开基准 PR 上用相同提示词对比 GPT-5.6 Luna 和 GPT-6 Astra 的代码评审能力，Luna 找到 69 个经验证 bug（Astra 92 个），总成本 $0.20 对 $5.66，精度 74% 对 96%。",
+          "recommend_reason_zh": null,
+          "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T19:56:20Z"
+        },
+        {
+          "id": "8e769b3e4892d5d1da0982c6dce4e0ab29170994",
+          "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗 / GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "title_zh": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗",
+          "title_en": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "title_original": "GPT-5.6 Luna vs. GPT-6 Astra: Is a $1.20 Model Good Enough for Code Review?",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-14T19:56:20Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.777,
+      "importance": 0.777,
+      "importance_score": 0.777,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.77,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9687,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-14T19:56:20Z",
+      "latest_at": "2026-09-14T19:56:20Z",
+      "primary_item": {
+        "id": "b5c3cb1fd5f31603cbc13ab4200e05173e3b2423",
+        "title": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗 / GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+        "title_zh": "GPT-5.6 Luna 对比 GPT-6 Astra：$1.20 的模型做代码评审够用吗",
+        "title_en": "GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+        "title_original": "GPT-5.6 Luna vs. GPT-6 Astra： Is a $1.20 Model Good Enough for Code Review？",
+        "summary": "Entelligence 在 50 个公开基准 PR 上用相同提示词对比 GPT-5.6 Luna 和 GPT-6 Astra 的代码评审能力，Luna 找到 69 个经验证 bug（Astra 92 个），总成本 $0.20 对 $5.66，精度 74% 对 96%。",
+        "recommend_reason_zh": null,
+        "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+        "source": "Hacker News：AI 热帖",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.777,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T23:15:33.800706Z"
+      }
+    },
+    {
+      "story_id": "story_098c8c345e0d",
+      "title": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名 / Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+      "url": "https://x.com/arena/status/2099549108013006958",
+      "primary_url": "https://x.com/arena/status/2099549108013006958",
+      "source": "X：Arena (@arena)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "d0417de2ad3c894d37359950c13deddcf6755d82",
+          "title": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名 / Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+          "title_zh": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名",
+          "title_en": "Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+          "title_original": "Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+          "summary": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名，净提升 +4.87%，每任务中位成本 $0.07，重塑 Pareto 前沿。其成本比第 2 名 Hy4 preview 低 68%、成绩仅差 0.09 个百分点；总榜排名第 12，Confirmed Success 信号排名 第 4（+13.75%）。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2099549108013006958",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T17:21:29Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Arena (@arena)"
+      ],
+      "items": [
+        {
+          "id": "d0417de2ad3c894d37359950c13deddcf6755d82",
+          "title": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名 / Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+          "title_zh": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名",
+          "title_en": "Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+          "title_original": "Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+          "summary": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名，净提升 +4.87%，每任务中位成本 $0.07，重塑 Pareto 前沿。其成本比第 2 名 Hy4 preview 低 68%、成绩仅差 0.09 个百分点；总榜排名第 12，Confirmed Success 信号排名 第 4（+13.75%）。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2099549108013006958",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T17:21:29Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7397,
+      "importance": 0.7397,
+      "importance_score": 0.7397,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9449,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-14T17:21:29Z",
+      "latest_at": "2026-09-14T17:21:29Z",
+      "primary_item": {
+        "id": "d0417de2ad3c894d37359950c13deddcf6755d82",
+        "title": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名 / Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+        "title_zh": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名",
+        "title_en": "Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+        "title_original": "Exciting news： DeepSeek-V4.1-Flash （Max） by @deepseek_ai just landed in Agent Arena at #3 among open…",
+        "summary": "DeepSeek-V4.1-Flash （Max） 进入 Agent Arena 开源模型第 3 名，净提升 +4.87%，每任务中位成本 $0.07，重塑 Pareto 前沿。其成本比第 2 名 Hy4 preview 低 68%、成绩仅差 0.09 个百分点；总榜排名第 12，Confirmed Success 信号排名 第 4（+13.75%）。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/arena/status/2099549108013006958",
+        "source": "X：Arena (@arena)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7397,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T23:15:33.800706Z"
       }
     },
     {
@@ -386,15 +1174,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7387,
-      "importance": 0.7387,
-      "importance_score": 0.7387,
+      "score": 0.7333,
+      "importance": 0.7333,
+      "importance_score": 0.7333,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8392,
+        "recency": 0.8095,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -421,7 +1209,90 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
+        "scored_at": "2026-09-14T23:15:33.800706Z"
+      }
+    },
+    {
+      "story_id": "story_1d8bc1bf95e9",
+      "title": "Tomer Tunguz 解析 Amodei 放缓前沿提议背后的五派立场与算力监管难题 / What Does Pacing Mean？",
+      "url": "https://tomtunguz.com/what-does-the-pause-mean",
+      "primary_url": "https://tomtunguz.com/what-does-the-pause-mean",
+      "source": "Tomer Tunguz 博客（VC 分析）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "3870d1e14f1834f62ee6620309e18cd0c3a65aa4",
+          "title": "Tomer Tunguz 解析 Amodei 放缓前沿提议背后的五派立场与算力监管难题 / What Does Pacing Mean？",
+          "title_zh": "Tomer Tunguz 解析 Amodei 放缓前沿提议背后的五派立场与算力监管难题",
+          "title_en": "What Does Pacing Mean？",
+          "title_original": "What Does Pacing Mean？",
+          "summary": "Tomer Tunguz 分析 Dario Amodei 提出的放缓前沿 AI 发展号召，梳理出可解释性、劳工、经济、地缘政治和监管俘获五派立场，并指出没有任何一派给出具体速度。",
+          "recommend_reason_zh": null,
+          "url": "https://tomtunguz.com/what-does-the-pause-mean",
+          "source": "Tomer Tunguz 博客（VC 分析）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Tomer Tunguz 博客（VC 分析）"
+      ],
+      "items": [
+        {
+          "id": "3870d1e14f1834f62ee6620309e18cd0c3a65aa4",
+          "title": "Tomer Tunguz 解析 Amodei 放缓前沿提议背后的五派立场与算力监管难题 / What Does Pacing Mean？",
+          "title_zh": "Tomer Tunguz 解析 Amodei 放缓前沿提议背后的五派立场与算力监管难题",
+          "title_en": "What Does Pacing Mean？",
+          "title_original": "What Does Pacing Mean？",
+          "summary": "Tomer Tunguz 分析 Dario Amodei 提出的放缓前沿 AI 发展号召，梳理出可解释性、劳工、经济、地缘政治和监管俘获五派立场，并指出没有任何一派给出具体速度。",
+          "recommend_reason_zh": null,
+          "url": "https://tomtunguz.com/what-does-the-pause-mean",
+          "source": "Tomer Tunguz 博客（VC 分析）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-14T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7225,
+      "importance": 0.7225,
+      "importance_score": 0.7225,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.69,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.7995,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-14T00:00:00Z",
+      "latest_at": "2026-09-14T00:00:00Z",
+      "primary_item": {
+        "id": "3870d1e14f1834f62ee6620309e18cd0c3a65aa4",
+        "title": "Tomer Tunguz 解析 Amodei 放缓前沿提议背后的五派立场与算力监管难题 / What Does Pacing Mean？",
+        "title_zh": "Tomer Tunguz 解析 Amodei 放缓前沿提议背后的五派立场与算力监管难题",
+        "title_en": "What Does Pacing Mean？",
+        "title_original": "What Does Pacing Mean？",
+        "summary": "Tomer Tunguz 分析 Dario Amodei 提出的放缓前沿 AI 发展号召，梳理出可解释性、劳工、经济、地缘政治和监管俘获五派立场，并指出没有任何一派给出具体速度。",
+        "recommend_reason_zh": null,
+        "url": "https://tomtunguz.com/what-does-the-pause-mean",
+        "source": "Tomer Tunguz 博客（VC 分析）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7225,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-14T23:15:33.800706Z"
       }
     },
     {
@@ -469,15 +1340,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7466,
-      "importance": 0.7466,
-      "importance_score": 0.7466,
+      "score": 0.7409,
+      "importance": 0.7409,
+      "importance_score": 0.7409,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8831,
+        "recency": 0.8519,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -504,7 +1375,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
+        "scored_at": "2026-09-14T23:15:33.800706Z"
       }
     },
     {
@@ -552,15 +1423,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7588,
-      "importance": 0.7588,
-      "importance_score": 0.7588,
+      "score": 0.7527,
+      "importance": 0.7527,
+      "importance_score": 0.7527,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.951,
+        "recency": 0.9174,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -588,7 +1459,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
+        "scored_at": "2026-09-14T23:15:33.800706Z"
       }
     },
     {
@@ -636,15 +1507,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7588,
-      "importance": 0.7588,
-      "importance_score": 0.7588,
+      "score": 0.7527,
+      "importance": 0.7527,
+      "importance_score": 0.7527,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.951,
+        "recency": 0.9174,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -672,7 +1543,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
+        "scored_at": "2026-09-14T23:15:33.800706Z"
       }
     },
     {
@@ -720,15 +1591,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7588,
-      "importance": 0.7588,
-      "importance_score": 0.7588,
+      "score": 0.7527,
+      "importance": 0.7527,
+      "importance_score": 0.7527,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.951,
+        "recency": 0.9174,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -756,7 +1627,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
+        "scored_at": "2026-09-14T23:15:33.800706Z"
       }
     },
     {
@@ -804,15 +1675,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7466,
-      "importance": 0.7466,
-      "importance_score": 0.7466,
+      "score": 0.7409,
+      "importance": 0.7409,
+      "importance_score": 0.7409,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8831,
+        "recency": 0.8519,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -839,7 +1710,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
+        "scored_at": "2026-09-14T23:15:33.800706Z"
       }
     },
     {
@@ -887,15 +1758,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7466,
-      "importance": 0.7466,
-      "importance_score": 0.7466,
+      "score": 0.7409,
+      "importance": 0.7409,
+      "importance_score": 0.7409,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8831,
+        "recency": 0.8519,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -922,757 +1793,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
-      }
-    },
-    {
-      "story_id": "story_ebd0e66ec1cc",
-      "title": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-      "url": "https://www.aibase.com/news/31004",
-      "primary_url": "https://www.aibase.com/news/31004",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "b7b7ed5c17d41064ae28afdfd8a38b9456c7ffe7",
-          "title": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-          "title_zh": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-          "title_en": null,
-          "title_original": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31004",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T01:17:34.625099Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "b7b7ed5c17d41064ae28afdfd8a38b9456c7ffe7",
-          "title": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-          "title_zh": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-          "title_en": null,
-          "title_original": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31004",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T01:17:34.625099Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7387,
-      "importance": 0.7387,
-      "importance_score": 0.7387,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8392,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-14T01:17:34.625099Z",
-      "latest_at": "2026-09-14T01:17:34.625099Z",
-      "primary_item": {
-        "id": "b7b7ed5c17d41064ae28afdfd8a38b9456c7ffe7",
-        "title": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-        "title_zh": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-        "title_en": null,
-        "title_original": "OpenAI 确认年内不上市：风险警示引发科技板块震动，软银股价重挫 13%",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31004",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
-      }
-    },
-    {
-      "story_id": "story_0fe0151f08d9",
-      "title": "OpenAI确认暂缓上市计划 Sam Altman称2026年IPO并不明智",
-      "url": "https://www.aibase.com/news/31005",
-      "primary_url": "https://www.aibase.com/news/31005",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "da0bf8b28b3bc705e329dd4cd0fe10e2f79b8fbf",
-          "title": "OpenAI确认暂缓上市计划 Sam Altman称2026年IPO并不明智",
-          "title_zh": "OpenAI确认暂缓上市计划 Sam Altman称2026年IPO并不明智",
-          "title_en": null,
-          "title_original": "OpenAI确认暂缓上市计划 Sam Altman称2026年IPO并不明智",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31005",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T01:17:34.625099Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "da0bf8b28b3bc705e329dd4cd0fe10e2f79b8fbf",
-          "title": "OpenAI确认暂缓上市计划 Sam Altman称2026年IPO并不明智",
-          "title_zh": "OpenAI确认暂缓上市计划 Sam Altman称2026年IPO并不明智",
-          "title_en": null,
-          "title_original": "OpenAI确认暂缓上市计划 Sam Altman称2026年IPO并不明智",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31005",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T01:17:34.625099Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7387,
-      "importance": 0.7387,
-      "importance_score": 0.7387,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8392,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-14T01:17:34.625099Z",
-      "latest_at": "2026-09-14T01:17:34.625099Z",
-      "primary_item": {
-        "id": "da0bf8b28b3bc705e329dd4cd0fe10e2f79b8fbf",
-        "title": "OpenAI确认暂缓上市计划 Sam Altman称2026年IPO并不明智",
-        "title_zh": "OpenAI确认暂缓上市计划 Sam Altman称2026年IPO并不明智",
-        "title_en": null,
-        "title_original": "OpenAI确认暂缓上市计划 Sam Altman称2026年IPO并不明智",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31005",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
-      }
-    },
-    {
-      "story_id": "story_8d38aba00a88",
-      "title": "Suno发布v6音乐模型：联合华纳、BMG 共创，自然语言就能改歌、混音、采样",
-      "url": "https://www.aibase.com/news/31033",
-      "primary_url": "https://www.aibase.com/news/31033",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "e8f08078b8e71f8fa3fa222dc446dc661877bec9",
-          "title": "Suno发布v6音乐模型：联合华纳、BMG 共创，自然语言就能改歌、混音、采样",
-          "title_zh": "Suno发布v6音乐模型：联合华纳、BMG 共创，自然语言就能改歌、混音、采样",
-          "title_en": null,
-          "title_original": "Suno发布v6音乐模型：联合华纳、BMG 共创，自然语言就能改歌、混音、采样",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31033",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T14:17:18.718724Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "e8f08078b8e71f8fa3fa222dc446dc661877bec9",
-          "title": "Suno发布v6音乐模型：联合华纳、BMG 共创，自然语言就能改歌、混音、采样",
-          "title_zh": "Suno发布v6音乐模型：联合华纳、BMG 共创，自然语言就能改歌、混音、采样",
-          "title_en": null,
-          "title_original": "Suno发布v6音乐模型：联合华纳、BMG 共创，自然语言就能改歌、混音、采样",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31033",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T14:17:18.718724Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7588,
-      "importance": 0.7588,
-      "importance_score": 0.7588,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.951,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-14T14:17:18.718724Z",
-      "latest_at": "2026-09-14T14:17:18.718724Z",
-      "primary_item": {
-        "id": "e8f08078b8e71f8fa3fa222dc446dc661877bec9",
-        "title": "Suno发布v6音乐模型：联合华纳、BMG 共创，自然语言就能改歌、混音、采样",
-        "title_zh": "Suno发布v6音乐模型：联合华纳、BMG 共创，自然语言就能改歌、混音、采样",
-        "title_en": null,
-        "title_original": "Suno发布v6音乐模型：联合华纳、BMG 共创，自然语言就能改歌、混音、采样",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31033",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
-      }
-    },
-    {
-      "story_id": "story_906bc814a899",
-      "title": "WorkBuddy 升级 PPT 能力:一句话生成可上台版，原文件可续改",
-      "url": "https://www.aibase.com/news/31036",
-      "primary_url": "https://www.aibase.com/news/31036",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "4ec9865629999878aa081ea717c64b628ce9c445",
-          "title": "WorkBuddy 升级 PPT 能力:一句话生成可上台版，原文件可续改",
-          "title_zh": "WorkBuddy 升级 PPT 能力:一句话生成可上台版，原文件可续改",
-          "title_en": null,
-          "title_original": "WorkBuddy 升级 PPT 能力:一句话生成可上台版，原文件可续改",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31036",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T14:17:18.718724Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "4ec9865629999878aa081ea717c64b628ce9c445",
-          "title": "WorkBuddy 升级 PPT 能力:一句话生成可上台版，原文件可续改",
-          "title_zh": "WorkBuddy 升级 PPT 能力:一句话生成可上台版，原文件可续改",
-          "title_en": null,
-          "title_original": "WorkBuddy 升级 PPT 能力:一句话生成可上台版，原文件可续改",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31036",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T14:17:18.718724Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7588,
-      "importance": 0.7588,
-      "importance_score": 0.7588,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.951,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-14T14:17:18.718724Z",
-      "latest_at": "2026-09-14T14:17:18.718724Z",
-      "primary_item": {
-        "id": "4ec9865629999878aa081ea717c64b628ce9c445",
-        "title": "WorkBuddy 升级 PPT 能力:一句话生成可上台版，原文件可续改",
-        "title_zh": "WorkBuddy 升级 PPT 能力:一句话生成可上台版，原文件可续改",
-        "title_en": null,
-        "title_original": "WorkBuddy 升级 PPT 能力:一句话生成可上台版，原文件可续改",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31036",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
-      }
-    },
-    {
-      "story_id": "story_d4545e7d3db9",
-      "title": "YC 总裁反对封杀蒸馏：与其禁，不如让开源实验室走“正门”合法获取能力",
-      "url": "https://www.aibase.com/news/31037",
-      "primary_url": "https://www.aibase.com/news/31037",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "fd8aa902d1168231ed3252fcada6912a59d70915",
-          "title": "YC 总裁反对封杀蒸馏：与其禁，不如让开源实验室走“正门”合法获取能力",
-          "title_zh": "YC 总裁反对封杀蒸馏：与其禁，不如让开源实验室走“正门”合法获取能力",
-          "title_en": null,
-          "title_original": "YC 总裁反对封杀蒸馏：与其禁，不如让开源实验室走“正门”合法获取能力",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31037",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T14:17:18.718724Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "fd8aa902d1168231ed3252fcada6912a59d70915",
-          "title": "YC 总裁反对封杀蒸馏：与其禁，不如让开源实验室走“正门”合法获取能力",
-          "title_zh": "YC 总裁反对封杀蒸馏：与其禁，不如让开源实验室走“正门”合法获取能力",
-          "title_en": null,
-          "title_original": "YC 总裁反对封杀蒸馏：与其禁，不如让开源实验室走“正门”合法获取能力",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31037",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T14:17:18.718724Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7588,
-      "importance": 0.7588,
-      "importance_score": 0.7588,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.951,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-14T14:17:18.718724Z",
-      "latest_at": "2026-09-14T14:17:18.718724Z",
-      "primary_item": {
-        "id": "fd8aa902d1168231ed3252fcada6912a59d70915",
-        "title": "YC 总裁反对封杀蒸馏：与其禁，不如让开源实验室走“正门”合法获取能力",
-        "title_zh": "YC 总裁反对封杀蒸馏：与其禁，不如让开源实验室走“正门”合法获取能力",
-        "title_en": null,
-        "title_original": "YC 总裁反对封杀蒸馏：与其禁，不如让开源实验室走“正门”合法获取能力",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31037",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
-      }
-    },
-    {
-      "story_id": "story_fe9bcb863f7c",
-      "title": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
-      "url": "https://www.aibase.com/news/31010",
-      "primary_url": "https://www.aibase.com/news/31010",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "403252cf441295b0d8d11183dffe2cfb6b895d1a",
-          "title": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
-          "title_zh": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
-          "title_en": null,
-          "title_original": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31010",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T06:35:34.095335Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "403252cf441295b0d8d11183dffe2cfb6b895d1a",
-          "title": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
-          "title_zh": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
-          "title_en": null,
-          "title_original": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31010",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T06:35:34.095335Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7466,
-      "importance": 0.7466,
-      "importance_score": 0.7466,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8831,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-14T06:35:34.095335Z",
-      "latest_at": "2026-09-14T06:35:34.095335Z",
-      "primary_item": {
-        "id": "403252cf441295b0d8d11183dffe2cfb6b895d1a",
-        "title": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
-        "title_zh": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
-        "title_en": null,
-        "title_original": "vLLM-Omni 与 FastH3 助力 MiniMax H3 迈入实时服务时代",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31010",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
-      }
-    },
-    {
-      "story_id": "story_d1b8ebea311d",
-      "title": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
-      "url": "https://www.aibase.com/news/31014",
-      "primary_url": "https://www.aibase.com/news/31014",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "27500cf7fcea39565c4ece3a32c5148d912c9b91",
-          "title": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
-          "title_zh": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
-          "title_en": null,
-          "title_original": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31014",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T06:35:34.095335Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "27500cf7fcea39565c4ece3a32c5148d912c9b91",
-          "title": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
-          "title_zh": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
-          "title_en": null,
-          "title_original": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31014",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T06:35:34.095335Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7466,
-      "importance": 0.7466,
-      "importance_score": 0.7466,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8831,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-14T06:35:34.095335Z",
-      "latest_at": "2026-09-14T06:35:34.095335Z",
-      "primary_item": {
-        "id": "27500cf7fcea39565c4ece3a32c5148d912c9b91",
-        "title": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
-        "title_zh": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
-        "title_en": null,
-        "title_original": "​DeepSeek 传闻将推 3 万亿参数 Code 2.0，剑指 GPT-6 Astra",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31014",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
-      }
-    },
-    {
-      "story_id": "story_55918f87707d",
-      "title": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
-      "url": "https://www.aibase.com/news/31016",
-      "primary_url": "https://www.aibase.com/news/31016",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "868a5d2aa1f0ea08327a290a9db73ce5c970c2e6",
-          "title": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
-          "title_zh": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
-          "title_en": null,
-          "title_original": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31016",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T06:35:34.095335Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "868a5d2aa1f0ea08327a290a9db73ce5c970c2e6",
-          "title": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
-          "title_zh": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
-          "title_en": null,
-          "title_original": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31016",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T06:35:34.095335Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7466,
-      "importance": 0.7466,
-      "importance_score": 0.7466,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8831,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-14T06:35:34.095335Z",
-      "latest_at": "2026-09-14T06:35:34.095335Z",
-      "primary_item": {
-        "id": "868a5d2aa1f0ea08327a290a9db73ce5c970c2e6",
-        "title": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
-        "title_zh": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
-        "title_en": null,
-        "title_original": "​月之暗面王牌主力模型K2.8Preview全量上线，性能直逼旗舰K3",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31016",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
-      }
-    },
-    {
-      "story_id": "story_957795ac8f90",
-      "title": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
-      "url": "https://www.aibase.com/news/31024",
-      "primary_url": "https://www.aibase.com/news/31024",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "5a29f2b0809bcca290431411fb5c87e26eb22cca",
-          "title": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
-          "title_zh": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
-          "title_en": null,
-          "title_original": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31024",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T06:35:34.095335Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "5a29f2b0809bcca290431411fb5c87e26eb22cca",
-          "title": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
-          "title_zh": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
-          "title_en": null,
-          "title_original": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31024",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-14T06:35:34.095335Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7466,
-      "importance": 0.7466,
-      "importance_score": 0.7466,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8831,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-14T06:35:34.095335Z",
-      "latest_at": "2026-09-14T06:35:34.095335Z",
-      "primary_item": {
-        "id": "5a29f2b0809bcca290431411fb5c87e26eb22cca",
-        "title": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
-        "title_zh": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
-        "title_en": null,
-        "title_original": "京东在 JDD 上甩出可交互视听世界模型：EchoWM 开源，长视频生成同步冲到 10 分钟以上",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31024",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-14T19:31:17.221436Z"
+        "scored_at": "2026-09-14T23:15:33.800706Z"
       }
     }
   ]
