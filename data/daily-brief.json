@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T00:35:44.860490Z",
+  "generated_at": "2026-09-16T06:16:55.894845Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -40,7 +40,7 @@
           "published_at": "2026-09-15T19:53:25.270000Z"
         },
         {
-          "id": "cf725b67b440f5144425d90353029b5155003889",
+          "id": "d042d39e5041d2deb57549b43593b8db61b0083e",
           "title": "Gemini 3.8 Live 和 3.8 Live Extended Thinking / Gemini 3.8 Live and 3.8 Live Extended Thinking",
           "title_zh": "Gemini 3.8 Live 和 3.8 Live Extended Thinking",
           "title_en": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
@@ -48,17 +48,32 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-15T17:38:18Z"
+        },
+        {
+          "id": "51f2aedc3da6daf7a24b962f3bc92bee2cc9a453",
+          "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+          "title_zh": null,
+          "title_en": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+          "title_original": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49715947",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
           "published_at": "2026-09-15T17:38:18Z"
         }
       ],
-      "source_count": 2,
+      "source_count": 3,
       "source_names": [
         "Google DeepMind",
-        "Hacker News",
-        "blog.google"
+        "Hacker News (黑客新闻)",
+        "blog.google",
+        "hackernews"
       ],
       "items": [
         {
@@ -90,7 +105,7 @@
           "published_at": "2026-09-15T19:53:25.270000Z"
         },
         {
-          "id": "cf725b67b440f5144425d90353029b5155003889",
+          "id": "d042d39e5041d2deb57549b43593b8db61b0083e",
           "title": "Gemini 3.8 Live 和 3.8 Live Extended Thinking / Gemini 3.8 Live and 3.8 Live Extended Thinking",
           "title_zh": "Gemini 3.8 Live 和 3.8 Live Extended Thinking",
           "title_en": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
@@ -98,24 +113,38 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-15T17:38:18Z"
+        },
+        {
+          "id": "51f2aedc3da6daf7a24b962f3bc92bee2cc9a453",
+          "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+          "title_zh": null,
+          "title_en": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+          "title_original": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49715947",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
           "published_at": "2026-09-15T17:38:18Z"
         }
       ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.8645,
-      "importance": 0.8645,
-      "importance_score": 0.8645,
+      "item_count": 4,
+      "duplicate_count": 4,
+      "score": 0.8805,
+      "importance": 0.8805,
+      "importance_score": 0.8805,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9304,
-        "story_heat": 0.25,
+        "recency": 0.8808,
+        "story_heat": 0.5,
         "soft_content_penalty": 0.0
       },
       "category": "official",
@@ -139,12 +168,12 @@
         "source": "Google DeepMind",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8694,
+      "peak_score": 0.8805,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -192,15 +221,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8457,
-      "importance": 0.8457,
-      "importance_score": 0.8457,
+      "score": 0.8369,
+      "importance": 0.8369,
+      "importance_score": 0.8369,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9207,
+        "recency": 0.8716,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -229,7 +258,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -277,15 +306,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.825,
-      "importance": 0.825,
-      "importance_score": 0.825,
+      "score": 0.8164,
+      "importance": 0.8164,
+      "importance_score": 0.8164,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8944,
+        "recency": 0.8467,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -314,7 +343,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -362,15 +391,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8297,
-      "importance": 0.8297,
-      "importance_score": 0.8297,
+      "score": 0.8209,
+      "importance": 0.8209,
+      "importance_score": 0.8209,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9206,
+        "recency": 0.8715,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -399,7 +428,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -447,15 +476,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7738,
-      "importance": 0.7738,
-      "importance_score": 0.7738,
+      "score": 0.765,
+      "importance": 0.765,
+      "importance_score": 0.765,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9178,
+        "recency": 0.8689,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -483,7 +512,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -531,15 +560,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8297,
-      "importance": 0.8297,
-      "importance_score": 0.8297,
+      "score": 0.8209,
+      "importance": 0.8209,
+      "importance_score": 0.8209,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9206,
+        "recency": 0.8715,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -568,7 +597,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -616,15 +645,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7679,
-      "importance": 0.7679,
-      "importance_score": 0.7679,
+      "score": 0.7589,
+      "importance": 0.7589,
+      "importance_score": 0.7589,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.6,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9327,
+        "recency": 0.883,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -652,7 +681,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -700,15 +729,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7587,
-      "importance": 0.7587,
-      "importance_score": 0.7587,
+      "score": 0.7503,
+      "importance": 0.7503,
+      "importance_score": 0.7503,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8841,
+        "recency": 0.837,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -736,7 +765,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -813,22 +842,21 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7576,
-      "importance": 0.7576,
-      "importance_score": 0.7576,
+      "score": 0.7494,
+      "importance": 0.7494,
+      "importance_score": 0.7494,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8612,
+        "recency": 0.8153,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-15T09:04:36Z",
       "latest_at": "2026-09-15T09:04:36Z",
@@ -849,90 +877,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
-      }
-    },
-    {
-      "story_id": "story_592b799d103e",
-      "title": "Fireworks 评测 DeepSeek-V4.1-Flash：DeepSWE 达 GPT-6 Astra 水准、成本仅 1/15 / DeepSeek-V4.1-Flash on Fireworks： Astra-level DeepSWE at 1/15th the cost",
-      "url": "https://fireworks.ai/blog/DeepSeek-V4.1-Flash-Astra",
-      "primary_url": "https://fireworks.ai/blog/DeepSeek-V4.1-Flash-Astra",
-      "source": "Fireworks AI（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "77dfca4bd63b8550aeaefa4f5609a1cf82b44415",
-          "title": "Fireworks 评测 DeepSeek-V4.1-Flash：DeepSWE 达 GPT-6 Astra 水准、成本仅 1/15 / DeepSeek-V4.1-Flash on Fireworks： Astra-level DeepSWE at 1/15th the cost",
-          "title_zh": "Fireworks 评测 DeepSeek-V4.1-Flash：DeepSWE 达 GPT-6 Astra 水准、成本仅 1/15",
-          "title_en": "DeepSeek-V4.1-Flash on Fireworks： Astra-level DeepSWE at 1/15th the cost",
-          "title_original": "DeepSeek-V4.1-Flash on Fireworks： Astra-level DeepSWE at 1/15th the cost",
-          "summary": "Fireworks 发布 DeepSeek-V4.1-Flash 并公布完整基准结果：在 DeepSWE 上以 max 档取得 74.34% pass@1，与 GPT-6 Astra 同一水平，但每任务成本 $0.43，约为 Astra 的 1/15。",
-          "recommend_reason_zh": null,
-          "url": "https://fireworks.ai/blog/DeepSeek-V4.1-Flash-Astra",
-          "source": "Fireworks AI（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-15T00:36:35.301000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Fireworks AI（网页）"
-      ],
-      "items": [
-        {
-          "id": "77dfca4bd63b8550aeaefa4f5609a1cf82b44415",
-          "title": "Fireworks 评测 DeepSeek-V4.1-Flash：DeepSWE 达 GPT-6 Astra 水准、成本仅 1/15 / DeepSeek-V4.1-Flash on Fireworks： Astra-level DeepSWE at 1/15th the cost",
-          "title_zh": "Fireworks 评测 DeepSeek-V4.1-Flash：DeepSWE 达 GPT-6 Astra 水准、成本仅 1/15",
-          "title_en": "DeepSeek-V4.1-Flash on Fireworks： Astra-level DeepSWE at 1/15th the cost",
-          "title_original": "DeepSeek-V4.1-Flash on Fireworks： Astra-level DeepSWE at 1/15th the cost",
-          "summary": "Fireworks 发布 DeepSeek-V4.1-Flash 并公布完整基准结果：在 DeepSWE 上以 max 档取得 74.34% pass@1，与 GPT-6 Astra 同一水平，但每任务成本 $0.43，约为 Astra 的 1/15。",
-          "recommend_reason_zh": null,
-          "url": "https://fireworks.ai/blog/DeepSeek-V4.1-Flash-Astra",
-          "source": "Fireworks AI（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-15T00:36:35.301000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7365,
-      "importance": 0.7365,
-      "importance_score": 0.7365,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.74,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7938,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-15T00:36:35.301000Z",
-      "latest_at": "2026-09-15T00:36:35.301000Z",
-      "primary_item": {
-        "id": "77dfca4bd63b8550aeaefa4f5609a1cf82b44415",
-        "title": "Fireworks 评测 DeepSeek-V4.1-Flash：DeepSWE 达 GPT-6 Astra 水准、成本仅 1/15 / DeepSeek-V4.1-Flash on Fireworks： Astra-level DeepSWE at 1/15th the cost",
-        "title_zh": "Fireworks 评测 DeepSeek-V4.1-Flash：DeepSWE 达 GPT-6 Astra 水准、成本仅 1/15",
-        "title_en": "DeepSeek-V4.1-Flash on Fireworks： Astra-level DeepSWE at 1/15th the cost",
-        "title_original": "DeepSeek-V4.1-Flash on Fireworks： Astra-level DeepSWE at 1/15th the cost",
-        "summary": "Fireworks 发布 DeepSeek-V4.1-Flash 并公布完整基准结果：在 DeepSWE 上以 max 档取得 74.34% pass@1，与 GPT-6 Astra 同一水平，但每任务成本 $0.43，约为 Astra 的 1/15。",
-        "recommend_reason_zh": null,
-        "url": "https://fireworks.ai/blog/DeepSeek-V4.1-Flash-Astra",
-        "source": "Fireworks AI（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7718,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -980,15 +925,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7409,
-      "importance": 0.7409,
-      "importance_score": 0.7409,
+      "score": 0.7327,
+      "importance": 0.7327,
+      "importance_score": 0.7327,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8517,
+        "recency": 0.8063,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1015,7 +960,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -1063,22 +1008,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7501,
-      "importance": 0.7501,
-      "importance_score": 0.7501,
+      "score": 0.7408,
+      "importance": 0.7408,
+      "importance_score": 0.7408,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9692,
+        "recency": 0.9176,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-15T21:20:53Z",
       "latest_at": "2026-09-15T21:20:53Z",
@@ -1099,7 +1043,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -1147,15 +1091,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7485,
-      "importance": 0.7485,
-      "importance_score": 0.7485,
+      "score": 0.7393,
+      "importance": 0.7393,
+      "importance_score": 0.7393,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9603,
+        "recency": 0.9092,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1182,7 +1126,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -1230,15 +1174,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8297,
-      "importance": 0.8297,
-      "importance_score": 0.8297,
+      "score": 0.8209,
+      "importance": 0.8209,
+      "importance_score": 0.8209,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9206,
+        "recency": 0.8715,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1267,7 +1211,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -1315,15 +1259,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7193,
-      "importance": 0.7193,
-      "importance_score": 0.7193,
+      "score": 0.7111,
+      "importance": 0.7111,
+      "importance_score": 0.7111,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8482,
+        "recency": 0.8031,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1350,7 +1294,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -1398,15 +1342,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.733,
-      "importance": 0.733,
-      "importance_score": 0.733,
+      "score": 0.7243,
+      "importance": 0.7243,
+      "importance_score": 0.7243,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9075,
+        "recency": 0.8592,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1433,113 +1377,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
-      "story_id": "story_78a102a840ba",
-      "title": "Artificial Analysis 评测：GPT-Live-1 以 81.5 分登顶 Speech to Speech Index / OpenAI's GPT-Live-1 debuts at #1 on the Artificial Analysis Speech to Speech Index at a score of 81….",
-      "url": "https://x.com/ArtificialAnlys/status/2099698254414029207",
-      "primary_url": "https://x.com/ArtificialAnlys/status/2099698254414029207",
-      "source": "X：Artificial Analysis (@ArtificialAnlys)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "6b1923544a77677e55f0ac65b1ffa522007a8768",
-          "title": "Artificial Analysis 评测：GPT-Live-1 以 81.5 分登顶 Speech to Speech Index / OpenAI's GPT-Live-1 debuts at #1 on the Artificial Analysis Speech to Speech Index at a score of 81….",
-          "title_zh": "Artificial Analysis 评测：GPT-Live-1 以 81.5 分登顶 Speech to Speech Index",
-          "title_en": "OpenAI's GPT-Live-1 debuts at #1 on the Artificial Analysis Speech to Speech Index at a score of 81….",
-          "title_original": "OpenAI's GPT-Live-1 debuts at #1 on the Artificial Analysis Speech to Speech Index at a score of 81….",
-          "summary": "Artificial Analysis 发布 Speech to Speech Index，OpenAI 的 GPT-Live-1 以 81.5 分（Astra 后端，medium 推理强度）排名第一，超过 Grok Voice Think Fast 2.0 High 的 81.3；Sol 后端配置得 80.1 排第三。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ArtificialAnlys/status/2099698254414029207",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-15T03:14:09Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Artificial Analysis (@ArtificialAnlys)"
-      ],
-      "items": [
-        {
-          "id": "6b1923544a77677e55f0ac65b1ffa522007a8768",
-          "title": "Artificial Analysis 评测：GPT-Live-1 以 81.5 分登顶 Speech to Speech Index / OpenAI's GPT-Live-1 debuts at #1 on the Artificial Analysis Speech to Speech Index at a score of 81….",
-          "title_zh": "Artificial Analysis 评测：GPT-Live-1 以 81.5 分登顶 Speech to Speech Index",
-          "title_en": "OpenAI's GPT-Live-1 debuts at #1 on the Artificial Analysis Speech to Speech Index at a score of 81….",
-          "title_original": "OpenAI's GPT-Live-1 debuts at #1 on the Artificial Analysis Speech to Speech Index at a score of 81….",
-          "summary": "Artificial Analysis 发布 Speech to Speech Index，OpenAI 的 GPT-Live-1 以 81.5 分（Astra 后端，medium 推理强度）排名第一，超过 Grok Voice Think Fast 2.0 High 的 81.3；Sol 后端配置得 80.1 排第三。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ArtificialAnlys/status/2099698254414029207",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-15T03:14:09Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7161,
-      "importance": 0.7161,
-      "importance_score": 0.7161,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.66,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8141,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-15T03:14:09Z",
-      "latest_at": "2026-09-15T03:14:09Z",
-      "primary_item": {
-        "id": "6b1923544a77677e55f0ac65b1ffa522007a8768",
-        "title": "Artificial Analysis 评测：GPT-Live-1 以 81.5 分登顶 Speech to Speech Index / OpenAI's GPT-Live-1 debuts at #1 on the Artificial Analysis Speech to Speech Index at a score of 81….",
-        "title_zh": "Artificial Analysis 评测：GPT-Live-1 以 81.5 分登顶 Speech to Speech Index",
-        "title_en": "OpenAI's GPT-Live-1 debuts at #1 on the Artificial Analysis Speech to Speech Index at a score of 81….",
-        "title_original": "OpenAI's GPT-Live-1 debuts at #1 on the Artificial Analysis Speech to Speech Index at a score of 81….",
-        "summary": "Artificial Analysis 发布 Speech to Speech Index，OpenAI 的 GPT-Live-1 以 81.5 分（Astra 后端，medium 推理强度）排名第一，超过 Grok Voice Think Fast 2.0 High 的 81.3；Sol 后端配置得 80.1 排第三。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/ArtificialAnlys/status/2099698254414029207",
-        "source": "X：Artificial Analysis (@ArtificialAnlys)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7417,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
-      }
-    },
-    {
-      "story_id": "story_91f8402e7f4d",
-      "title": "Claude Opus 5.2 在 Claude Code 悄然灰度测试，Anthropic 内部\"核武级\"模型 2 号浮出水面",
-      "url": "https://www.aibase.com/news/31040",
-      "primary_url": "https://www.aibase.com/news/31040",
+      "story_id": "story_c447b2fec530",
+      "title": "DeepSeek Harness 官方桌面端即将就绪：三大平台支持，用 V4.1 Flash 还是自家最香",
+      "url": "https://www.aibase.com/news/31057",
+      "primary_url": "https://www.aibase.com/news/31057",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "82cdb6eeabe94e6ec6b66bea0ad57a9b0e149aea",
-          "title": "Claude Opus 5.2 在 Claude Code 悄然灰度测试，Anthropic 内部\"核武级\"模型 2 号浮出水面",
-          "title_zh": "Claude Opus 5.2 在 Claude Code 悄然灰度测试，Anthropic 内部\"核武级\"模型 2 号浮出水面",
+          "id": "c9f956e2abc3242c93e86adc5d6a856e77cb2c55",
+          "title": "DeepSeek Harness 官方桌面端即将就绪：三大平台支持，用 V4.1 Flash 还是自家最香",
+          "title_zh": "DeepSeek Harness 官方桌面端即将就绪：三大平台支持，用 V4.1 Flash 还是自家最香",
           "title_en": null,
-          "title_original": "Claude Opus 5.2 在 Claude Code 悄然灰度测试，Anthropic 内部\"核武级\"模型 2 号浮出水面",
+          "title_original": "DeepSeek Harness 官方桌面端即将就绪：三大平台支持，用 V4.1 Flash 还是自家最香",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31040",
+          "url": "https://www.aibase.com/news/31057",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-15T01:37:42.211034Z"
+          "published_at": "2026-09-15T07:55:15.969509Z"
         }
       ],
       "source_count": 1,
@@ -1548,31 +1409,31 @@
       ],
       "items": [
         {
-          "id": "82cdb6eeabe94e6ec6b66bea0ad57a9b0e149aea",
-          "title": "Claude Opus 5.2 在 Claude Code 悄然灰度测试，Anthropic 内部\"核武级\"模型 2 号浮出水面",
-          "title_zh": "Claude Opus 5.2 在 Claude Code 悄然灰度测试，Anthropic 内部\"核武级\"模型 2 号浮出水面",
+          "id": "c9f956e2abc3242c93e86adc5d6a856e77cb2c55",
+          "title": "DeepSeek Harness 官方桌面端即将就绪：三大平台支持，用 V4.1 Flash 还是自家最香",
+          "title_zh": "DeepSeek Harness 官方桌面端即将就绪：三大平台支持，用 V4.1 Flash 还是自家最香",
           "title_en": null,
-          "title_original": "Claude Opus 5.2 在 Claude Code 悄然灰度测试，Anthropic 内部\"核武级\"模型 2 号浮出水面",
+          "title_original": "DeepSeek Harness 官方桌面端即将就绪：三大平台支持，用 V4.1 Flash 还是自家最香",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31040",
+          "url": "https://www.aibase.com/news/31057",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-15T01:37:42.211034Z"
+          "published_at": "2026-09-15T07:55:15.969509Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7319,
-      "importance": 0.7319,
-      "importance_score": 0.7319,
+      "score": 0.7327,
+      "importance": 0.7327,
+      "importance_score": 0.7327,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8016,
+        "recency": 0.8063,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1580,17 +1441,17 @@
       "reasons": [
         "high_ai_relevance"
       ],
-      "earliest_at": "2026-09-15T01:37:42.211034Z",
-      "latest_at": "2026-09-15T01:37:42.211034Z",
+      "earliest_at": "2026-09-15T07:55:15.969509Z",
+      "latest_at": "2026-09-15T07:55:15.969509Z",
       "primary_item": {
-        "id": "82cdb6eeabe94e6ec6b66bea0ad57a9b0e149aea",
-        "title": "Claude Opus 5.2 在 Claude Code 悄然灰度测试，Anthropic 内部\"核武级\"模型 2 号浮出水面",
-        "title_zh": "Claude Opus 5.2 在 Claude Code 悄然灰度测试，Anthropic 内部\"核武级\"模型 2 号浮出水面",
+        "id": "c9f956e2abc3242c93e86adc5d6a856e77cb2c55",
+        "title": "DeepSeek Harness 官方桌面端即将就绪：三大平台支持，用 V4.1 Flash 还是自家最香",
+        "title_zh": "DeepSeek Harness 官方桌面端即将就绪：三大平台支持，用 V4.1 Flash 还是自家最香",
         "title_en": null,
-        "title_original": "Claude Opus 5.2 在 Claude Code 悄然灰度测试，Anthropic 内部\"核武级\"模型 2 号浮出水面",
+        "title_original": "DeepSeek Harness 官方桌面端即将就绪：三大平台支持，用 V4.1 Flash 还是自家最香",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31040",
+        "url": "https://www.aibase.com/news/31057",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -1599,7 +1460,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
@@ -1647,15 +1508,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7095,
-      "importance": 0.7095,
-      "importance_score": 0.7095,
+      "score": 0.7011,
+      "importance": 0.7011,
+      "importance_score": 0.7011,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.6,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8773,
+        "recency": 0.8306,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1682,30 +1543,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     },
     {
-      "story_id": "story_7ca2db178349",
-      "title": "Claude Opus 5.2 深夜灰度上线：响应更快，还治好了“偷懒病”",
-      "url": "https://www.aibase.com/news/31039",
-      "primary_url": "https://www.aibase.com/news/31039",
+      "story_id": "story_4d0ea0b44ad0",
+      "title": "GPT-6 Astra 模拟经营售货机一年狂赚 1.5 万美元，成绩碾压 Claude 近 3 倍",
+      "url": "https://www.aibase.com/news/31049",
+      "primary_url": "https://www.aibase.com/news/31049",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "eba9ee5f8cf8fea7709d2f16a2a2536f4a31104a",
-          "title": "Claude Opus 5.2 深夜灰度上线：响应更快，还治好了“偷懒病”",
-          "title_zh": "Claude Opus 5.2 深夜灰度上线：响应更快，还治好了“偷懒病”",
+          "id": "eaaf97148a9645c3b91d5c5421412a074ece94ee",
+          "title": "GPT-6 Astra 模拟经营售货机一年狂赚 1.5 万美元，成绩碾压 Claude 近 3 倍",
+          "title_zh": "GPT-6 Astra 模拟经营售货机一年狂赚 1.5 万美元，成绩碾压 Claude 近 3 倍",
           "title_en": null,
-          "title_original": "Claude Opus 5.2 深夜灰度上线：响应更快，还治好了“偷懒病”",
+          "title_original": "GPT-6 Astra 模拟经营售货机一年狂赚 1.5 万美元，成绩碾压 Claude 近 3 倍",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31039",
+          "url": "https://www.aibase.com/news/31049",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-15T01:37:42.211034Z"
+          "published_at": "2026-09-15T07:55:15.969509Z"
         }
       ],
       "source_count": 1,
@@ -1714,31 +1575,31 @@
       ],
       "items": [
         {
-          "id": "eba9ee5f8cf8fea7709d2f16a2a2536f4a31104a",
-          "title": "Claude Opus 5.2 深夜灰度上线：响应更快，还治好了“偷懒病”",
-          "title_zh": "Claude Opus 5.2 深夜灰度上线：响应更快，还治好了“偷懒病”",
+          "id": "eaaf97148a9645c3b91d5c5421412a074ece94ee",
+          "title": "GPT-6 Astra 模拟经营售货机一年狂赚 1.5 万美元，成绩碾压 Claude 近 3 倍",
+          "title_zh": "GPT-6 Astra 模拟经营售货机一年狂赚 1.5 万美元，成绩碾压 Claude 近 3 倍",
           "title_en": null,
-          "title_original": "Claude Opus 5.2 深夜灰度上线：响应更快，还治好了“偷懒病”",
+          "title_original": "GPT-6 Astra 模拟经营售货机一年狂赚 1.5 万美元，成绩碾压 Claude 近 3 倍",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31039",
+          "url": "https://www.aibase.com/news/31049",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-15T01:37:42.211034Z"
+          "published_at": "2026-09-15T07:55:15.969509Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7319,
-      "importance": 0.7319,
-      "importance_score": 0.7319,
+      "score": 0.7327,
+      "importance": 0.7327,
+      "importance_score": 0.7327,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8016,
+        "recency": 0.8063,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1746,17 +1607,17 @@
       "reasons": [
         "high_ai_relevance"
       ],
-      "earliest_at": "2026-09-15T01:37:42.211034Z",
-      "latest_at": "2026-09-15T01:37:42.211034Z",
+      "earliest_at": "2026-09-15T07:55:15.969509Z",
+      "latest_at": "2026-09-15T07:55:15.969509Z",
       "primary_item": {
-        "id": "eba9ee5f8cf8fea7709d2f16a2a2536f4a31104a",
-        "title": "Claude Opus 5.2 深夜灰度上线：响应更快，还治好了“偷懒病”",
-        "title_zh": "Claude Opus 5.2 深夜灰度上线：响应更快，还治好了“偷懒病”",
+        "id": "eaaf97148a9645c3b91d5c5421412a074ece94ee",
+        "title": "GPT-6 Astra 模拟经营售货机一年狂赚 1.5 万美元，成绩碾压 Claude 近 3 倍",
+        "title_zh": "GPT-6 Astra 模拟经营售货机一年狂赚 1.5 万美元，成绩碾压 Claude 近 3 倍",
         "title_en": null,
-        "title_original": "Claude Opus 5.2 深夜灰度上线：响应更快，还治好了“偷懒病”",
+        "title_original": "GPT-6 Astra 模拟经营售货机一年狂赚 1.5 万美元，成绩碾压 Claude 近 3 倍",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31039",
+        "url": "https://www.aibase.com/news/31049",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -1765,7 +1626,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-16T00:39:33.208322Z"
+        "scored_at": "2026-09-16T06:17:47.605267Z"
+      }
+    },
+    {
+      "story_id": "story_8489d5c88f74",
+      "title": "Gemini3.8Live升级语音智能:对话、推理与任务执行进一步融合",
+      "url": "https://www.aibase.com/news/31073",
+      "primary_url": "https://www.aibase.com/news/31073",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "c4b7d648b3185fe251e14ac07102f9f948366294",
+          "title": "Gemini3.8Live升级语音智能:对话、推理与任务执行进一步融合",
+          "title_zh": "Gemini3.8Live升级语音智能:对话、推理与任务执行进一步融合",
+          "title_en": null,
+          "title_original": "Gemini3.8Live升级语音智能:对话、推理与任务执行进一步融合",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31073",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-16T06:16:55.894845Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "c4b7d648b3185fe251e14ac07102f9f948366294",
+          "title": "Gemini3.8Live升级语音智能:对话、推理与任务执行进一步融合",
+          "title_zh": "Gemini3.8Live升级语音智能:对话、推理与任务执行进一步融合",
+          "title_en": null,
+          "title_original": "Gemini3.8Live升级语音智能:对话、推理与任务执行进一步融合",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31073",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-16T06:16:55.894845Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-16T06:16:55.894845Z",
+      "latest_at": "2026-09-16T06:16:55.894845Z",
+      "primary_item": {
+        "id": "c4b7d648b3185fe251e14ac07102f9f948366294",
+        "title": "Gemini3.8Live升级语音智能:对话、推理与任务执行进一步融合",
+        "title_zh": "Gemini3.8Live升级语音智能:对话、推理与任务执行进一步融合",
+        "title_en": null,
+        "title_original": "Gemini3.8Live升级语音智能:对话、推理与任务执行进一步融合",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31073",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-16T06:17:47.605267Z"
+      }
+    },
+    {
+      "story_id": "story_23bd01795005",
+      "title": "Meta推出Meta One订阅服务:最高499美元，覆盖AI与商业工具",
+      "url": "https://www.aibase.com/news/31068",
+      "primary_url": "https://www.aibase.com/news/31068",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "33ee95b39ec920aa173bac762ec02e52efb29daa",
+          "title": "Meta推出Meta One订阅服务:最高499美元，覆盖AI与商业工具",
+          "title_zh": "Meta推出Meta One订阅服务:最高499美元，覆盖AI与商业工具",
+          "title_en": null,
+          "title_original": "Meta推出Meta One订阅服务:最高499美元，覆盖AI与商业工具",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31068",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-16T06:16:55.894845Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "33ee95b39ec920aa173bac762ec02e52efb29daa",
+          "title": "Meta推出Meta One订阅服务:最高499美元，覆盖AI与商业工具",
+          "title_zh": "Meta推出Meta One订阅服务:最高499美元，覆盖AI与商业工具",
+          "title_en": null,
+          "title_original": "Meta推出Meta One订阅服务:最高499美元，覆盖AI与商业工具",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31068",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-16T06:16:55.894845Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-16T06:16:55.894845Z",
+      "latest_at": "2026-09-16T06:16:55.894845Z",
+      "primary_item": {
+        "id": "33ee95b39ec920aa173bac762ec02e52efb29daa",
+        "title": "Meta推出Meta One订阅服务:最高499美元，覆盖AI与商业工具",
+        "title_zh": "Meta推出Meta One订阅服务:最高499美元，覆盖AI与商业工具",
+        "title_en": null,
+        "title_original": "Meta推出Meta One订阅服务:最高499美元，覆盖AI与商业工具",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31068",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-16T06:17:47.605267Z"
       }
     }
   ]
