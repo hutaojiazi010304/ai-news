@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T07:52:16.279832Z",
+  "generated_at": "2026-09-17T13:39:02.904329Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -135,15 +135,15 @@
       ],
       "item_count": 4,
       "duplicate_count": 4,
-      "score": 0.8568,
-      "importance": 0.8568,
-      "importance_score": 0.8568,
+      "score": 0.8484,
+      "importance": 0.8484,
+      "importance_score": 0.8484,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8655,
+        "recency": 0.8186,
         "story_heat": 0.5,
         "soft_content_penalty": 0.0
       },
@@ -172,7 +172,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
+        "scored_at": "2026-09-17T13:42:39.379784Z"
       }
     },
     {
@@ -249,15 +249,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8396,
-      "importance": 0.8396,
-      "importance_score": 0.8396,
+      "score": 0.8305,
+      "importance": 0.8305,
+      "importance_score": 0.8305,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.931,
+        "recency": 0.8806,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -286,7 +286,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
+        "scored_at": "2026-09-17T13:42:39.379784Z"
       }
     },
     {
@@ -334,15 +334,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8265,
-      "importance": 0.8265,
-      "importance_score": 0.8265,
+      "score": 0.8181,
+      "importance": 0.8181,
+      "importance_score": 0.8181,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8583,
+        "recency": 0.8119,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -371,121 +371,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
+        "scored_at": "2026-09-17T13:42:39.379784Z"
       }
     },
     {
-      "story_id": "story_2b45947d7367",
-      "title": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify / Reimagining advertising with AI",
-      "url": "https://openai.com/index/reimagining-advertising-with-ai",
-      "primary_url": "https://openai.com/index/reimagining-advertising-with-ai",
+      "story_id": "story_76db13fd8fea",
+      "title": "OpenAI 发布模型失准披露框架并公开六份失准报告 / Our framework for reporting model misalignment",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework",
+      "primary_url": "https://openai.com/index/model-misalignment-reporting-framework",
       "source": "OpenAI News",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "1e1aa16f656edc3f5d9d467b70353312655c1c5a",
-          "title": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify / Reimagining advertising with AI",
-          "title_zh": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify",
-          "title_en": "Reimagining advertising with AI",
-          "title_original": "Reimagining advertising with AI",
-          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
+          "id": "9bd9c39f2ea2df15db99f22e470944b351e04a12",
+          "title": "OpenAI 发布模型失准披露框架并公开六份失准报告 / Our framework for reporting model misalignment",
+          "title_zh": "OpenAI 发布模型失准披露框架并公开六份失准报告",
+          "title_en": "Our framework for reporting model misalignment",
+          "title_original": "Our framework for reporting model misalignment",
+          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/reimagining-advertising-with-ai",
+          "url": "https://openai.com/index/model-misalignment-reporting-framework",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-16T13:00:00Z"
+          "published_at": "2026-09-16T17:00:00Z"
         },
         {
-          "id": "a4d2c1667014a737766721c70d32e2515d30a289",
-          "title": "OpenAI 通过“赞助代理”扩展 ChatGPT 广告业务",
-          "title_zh": "OpenAI 通过“赞助代理”扩展 ChatGPT 广告业务",
-          "title_en": null,
-          "title_original": "OpenAI 通过“赞助代理”扩展 ChatGPT 广告业务",
+          "id": "ddf487534f86392e80ce691138ba49ca5e365c0b",
+          "title": "OpenAI 发布模型失准披露框架并公开六份失准报告 / OpenAI Model Misalignment Report",
+          "title_zh": "OpenAI 发布模型失准披露框架并公开六份失准报告",
+          "title_en": "OpenAI Model Misalignment Report",
+          "title_original": "OpenAI Model Misalignment Report",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/reimagining-advertising-with-ai",
-          "source": "openai.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-16T16:06:24.581000Z"
-        },
-        {
-          "id": "f8008f4078dcfae8553880f8d47c537c4f1159f1",
-          "title": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify / OpenAI Expands ChatGPT Ads with Sponsored Agents",
-          "title_zh": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify",
-          "title_en": "OpenAI Expands ChatGPT Ads with Sponsored Agents",
-          "title_original": "OpenAI Expands ChatGPT Ads with Sponsored Agents",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/reimagining-advertising-with-ai",
+          "url": "https://openai.com/index/model-misalignment-reporting-framework",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-09-16T13:51:15Z"
+          "published_at": "2026-09-17T07:21:19Z"
         }
       ],
       "source_count": 1,
       "source_names": [
         "Hacker News",
-        "OpenAI News",
-        "openai.com"
+        "OpenAI News"
       ],
       "items": [
         {
-          "id": "1e1aa16f656edc3f5d9d467b70353312655c1c5a",
-          "title": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify / Reimagining advertising with AI",
-          "title_zh": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify",
-          "title_en": "Reimagining advertising with AI",
-          "title_original": "Reimagining advertising with AI",
-          "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
+          "id": "9bd9c39f2ea2df15db99f22e470944b351e04a12",
+          "title": "OpenAI 发布模型失准披露框架并公开六份失准报告 / Our framework for reporting model misalignment",
+          "title_zh": "OpenAI 发布模型失准披露框架并公开六份失准报告",
+          "title_en": "Our framework for reporting model misalignment",
+          "title_original": "Our framework for reporting model misalignment",
+          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/reimagining-advertising-with-ai",
+          "url": "https://openai.com/index/model-misalignment-reporting-framework",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-16T13:00:00Z"
+          "published_at": "2026-09-16T17:00:00Z"
         },
         {
-          "id": "a4d2c1667014a737766721c70d32e2515d30a289",
-          "title": "OpenAI 通过“赞助代理”扩展 ChatGPT 广告业务",
-          "title_zh": "OpenAI 通过“赞助代理”扩展 ChatGPT 广告业务",
-          "title_en": null,
-          "title_original": "OpenAI 通过“赞助代理”扩展 ChatGPT 广告业务",
+          "id": "ddf487534f86392e80ce691138ba49ca5e365c0b",
+          "title": "OpenAI 发布模型失准披露框架并公开六份失准报告 / OpenAI Model Misalignment Report",
+          "title_zh": "OpenAI 发布模型失准披露框架并公开六份失准报告",
+          "title_en": "OpenAI Model Misalignment Report",
+          "title_original": "OpenAI Model Misalignment Report",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/reimagining-advertising-with-ai",
-          "source": "openai.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-16T16:06:24.581000Z"
-        },
-        {
-          "id": "f8008f4078dcfae8553880f8d47c537c4f1159f1",
-          "title": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify / OpenAI Expands ChatGPT Ads with Sponsored Agents",
-          "title_zh": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify",
-          "title_en": "OpenAI Expands ChatGPT Ads with Sponsored Agents",
-          "title_original": "OpenAI Expands ChatGPT Ads with Sponsored Agents",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/reimagining-advertising-with-ai",
+          "url": "https://openai.com/index/model-misalignment-reporting-framework",
           "source": "Hacker News",
           "source_name": "TechURLs",
           "site_id": "techurls",
-          "published_at": "2026-09-16T13:51:15Z"
+          "published_at": "2026-09-17T07:21:19Z"
         }
       ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.8221,
-      "importance": 0.8221,
-      "importance_score": 0.8221,
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.8195,
+      "importance": 0.8195,
+      "importance_score": 0.8195,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8339,
+        "recency": 0.8197,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -495,26 +466,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-16T13:00:00Z",
-      "latest_at": "2026-09-16T16:06:24.581000Z",
+      "earliest_at": "2026-09-16T17:00:00Z",
+      "latest_at": "2026-09-17T07:21:19Z",
       "primary_item": {
-        "id": "1e1aa16f656edc3f5d9d467b70353312655c1c5a",
-        "title": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify / Reimagining advertising with AI",
-        "title_zh": "OpenAI 推出 ChatGPT Ads 新功能：Sponsored Agents 测试并集成 HubSpot 与 Shopify",
-        "title_en": "Reimagining advertising with AI",
-        "title_original": "Reimagining advertising with AI",
-        "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
+        "id": "9bd9c39f2ea2df15db99f22e470944b351e04a12",
+        "title": "OpenAI 发布模型失准披露框架并公开六份失准报告 / Our framework for reporting model misalignment",
+        "title_zh": "OpenAI 发布模型失准披露框架并公开六份失准报告",
+        "title_en": "Our framework for reporting model misalignment",
+        "title_original": "Our framework for reporting model misalignment",
+        "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/reimagining-advertising-with-ai",
+        "url": "https://openai.com/index/model-misalignment-reporting-framework",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8449,
+      "peak_score": 0.8418,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
+        "scored_at": "2026-09-17T13:42:39.379784Z"
       }
     },
     {
@@ -562,15 +533,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7858,
-      "importance": 0.7858,
-      "importance_score": 0.7858,
+      "score": 0.7769,
+      "importance": 0.7769,
+      "importance_score": 0.7769,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.918,
+        "recency": 0.8683,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -598,115 +569,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
+        "scored_at": "2026-09-17T13:42:39.379784Z"
       }
     },
     {
-      "story_id": "story_76db13fd8fea",
-      "title": "OpenAI 发布模型失准披露框架并公开六份失准报告 / Our framework for reporting model misalignment",
-      "url": "https://openai.com/index/model-misalignment-reporting-framework",
-      "primary_url": "https://openai.com/index/model-misalignment-reporting-framework",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "9bd9c39f2ea2df15db99f22e470944b351e04a12",
-          "title": "OpenAI 发布模型失准披露框架并公开六份失准报告 / Our framework for reporting model misalignment",
-          "title_zh": "OpenAI 发布模型失准披露框架并公开六份失准报告",
-          "title_en": "Our framework for reporting model misalignment",
-          "title_original": "Our framework for reporting model misalignment",
-          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/model-misalignment-reporting-framework",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-16T17:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "9bd9c39f2ea2df15db99f22e470944b351e04a12",
-          "title": "OpenAI 发布模型失准披露框架并公开六份失准报告 / Our framework for reporting model misalignment",
-          "title_zh": "OpenAI 发布模型失准披露框架并公开六份失准报告",
-          "title_en": "Our framework for reporting model misalignment",
-          "title_original": "Our framework for reporting model misalignment",
-          "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/model-misalignment-reporting-framework",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-16T17:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.828,
-      "importance": 0.828,
-      "importance_score": 0.828,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8666,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-16T17:00:00Z",
-      "latest_at": "2026-09-16T17:00:00Z",
-      "primary_item": {
-        "id": "9bd9c39f2ea2df15db99f22e470944b351e04a12",
-        "title": "OpenAI 发布模型失准披露框架并公开六份失准报告 / Our framework for reporting model misalignment",
-        "title_zh": "OpenAI 发布模型失准披露框架并公开六份失准报告",
-        "title_en": "Our framework for reporting model misalignment",
-        "title_original": "Our framework for reporting model misalignment",
-        "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/model-misalignment-reporting-framework",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8418,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
-      }
-    },
-    {
-      "story_id": "story_85ca850a8a98",
-      "title": "AI智能体手机进入量产商用阶段:努比亚NaviX Ultra正式开售 搭载豆包手机助手",
-      "url": "https://www.aibase.com/news/31097",
-      "primary_url": "https://www.aibase.com/news/31097",
+      "story_id": "story_c1ae6ddc6337",
+      "title": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
+      "url": "https://www.aibase.com/news/31125",
+      "primary_url": "https://www.aibase.com/news/31125",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "e92271620587a2843b98b8f04f8fb68367ff5bea",
-          "title": "AI智能体手机进入量产商用阶段:努比亚NaviX Ultra正式开售 搭载豆包手机助手",
-          "title_zh": "AI智能体手机进入量产商用阶段:努比亚NaviX Ultra正式开售 搭载豆包手机助手",
+          "id": "bd2df3ff800c7b60f55cd5b79780943be7f2d28f",
+          "title": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
+          "title_zh": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
           "title_en": null,
-          "title_original": "AI智能体手机进入量产商用阶段:努比亚NaviX Ultra正式开售 搭载豆包手机助手",
+          "title_original": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31097",
+          "url": "https://www.aibase.com/news/31125",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-16T11:52:12.340647Z"
+          "published_at": "2026-09-17T07:52:16.279832Z"
         }
       ],
       "source_count": 1,
@@ -715,49 +601,50 @@
       ],
       "items": [
         {
-          "id": "e92271620587a2843b98b8f04f8fb68367ff5bea",
-          "title": "AI智能体手机进入量产商用阶段:努比亚NaviX Ultra正式开售 搭载豆包手机助手",
-          "title_zh": "AI智能体手机进入量产商用阶段:努比亚NaviX Ultra正式开售 搭载豆包手机助手",
+          "id": "bd2df3ff800c7b60f55cd5b79780943be7f2d28f",
+          "title": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
+          "title_zh": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
           "title_en": null,
-          "title_original": "AI智能体手机进入量产商用阶段:努比亚NaviX Ultra正式开售 搭载豆包手机助手",
+          "title_original": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31097",
+          "url": "https://www.aibase.com/news/31125",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-16T11:52:12.340647Z"
+          "published_at": "2026-09-17T07:52:16.279832Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7361,
-      "importance": 0.7361,
-      "importance_score": 0.7361,
+      "score": 0.7579,
+      "importance": 0.7579,
+      "importance_score": 0.7579,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8249,
+        "recency": 0.9459,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-09-16T11:52:12.340647Z",
-      "latest_at": "2026-09-16T11:52:12.340647Z",
+      "earliest_at": "2026-09-17T07:52:16.279832Z",
+      "latest_at": "2026-09-17T07:52:16.279832Z",
       "primary_item": {
-        "id": "e92271620587a2843b98b8f04f8fb68367ff5bea",
-        "title": "AI智能体手机进入量产商用阶段:努比亚NaviX Ultra正式开售 搭载豆包手机助手",
-        "title_zh": "AI智能体手机进入量产商用阶段:努比亚NaviX Ultra正式开售 搭载豆包手机助手",
+        "id": "bd2df3ff800c7b60f55cd5b79780943be7f2d28f",
+        "title": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
+        "title_zh": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
         "title_en": null,
-        "title_original": "AI智能体手机进入量产商用阶段:努比亚NaviX Ultra正式开售 搭载豆包手机助手",
+        "title_original": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31097",
+        "url": "https://www.aibase.com/news/31125",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -766,90 +653,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
-      }
-    },
-    {
-      "story_id": "story_1615464a9e77",
-      "title": "何夕2077 AI 深度信号周报 2026 W37",
-      "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-09-13-ai-weekly-2026-w37",
-      "primary_url": "https://hex2077.dev/zh-CN/blog/weekly/2026-09-13-ai-weekly-2026-w37",
-      "source": "Daily Digest",
-      "source_name": "AI HubToday",
-      "sources": [
-        {
-          "id": "3703ae8214f1c05ff68fa1cfae5f845d4f7db147",
-          "title": "何夕2077 AI 深度信号周报 2026 W37",
-          "title_zh": "何夕2077 AI 深度信号周报 2026 W37",
-          "title_en": null,
-          "title_original": "何夕2077 AI 深度信号周报 2026 W37",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-09-13-ai-weekly-2026-w37",
-          "source": "Daily Digest",
-          "source_name": "AI HubToday",
-          "site_id": "aihubtoday",
-          "published_at": "2026-09-16T13:29:54Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Daily Digest"
-      ],
-      "items": [
-        {
-          "id": "3703ae8214f1c05ff68fa1cfae5f845d4f7db147",
-          "title": "何夕2077 AI 深度信号周报 2026 W37",
-          "title_zh": "何夕2077 AI 深度信号周报 2026 W37",
-          "title_en": null,
-          "title_original": "何夕2077 AI 深度信号周报 2026 W37",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-09-13-ai-weekly-2026-w37",
-          "source": "Daily Digest",
-          "source_name": "AI HubToday",
-          "site_id": "aihubtoday",
-          "published_at": "2026-09-16T13:29:54Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7384,
-      "importance": 0.7384,
-      "importance_score": 0.7384,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8379,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-16T13:29:54Z",
-      "latest_at": "2026-09-16T13:29:54Z",
-      "primary_item": {
-        "id": "3703ae8214f1c05ff68fa1cfae5f845d4f7db147",
-        "title": "何夕2077 AI 深度信号周报 2026 W37",
-        "title_zh": "何夕2077 AI 深度信号周报 2026 W37",
-        "title_en": null,
-        "title_original": "何夕2077 AI 深度信号周报 2026 W37",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-09-13-ai-weekly-2026-w37",
-        "source": "Daily Digest",
-        "source_name": "AI HubToday"
-      },
-      "peak_score": 0.7613,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
+        "scored_at": "2026-09-17T13:42:39.379784Z"
       }
     },
     {
@@ -926,15 +730,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7338,
-      "importance": 0.7338,
-      "importance_score": 0.7338,
+      "score": 0.7254,
+      "importance": 0.7254,
+      "importance_score": 0.7254,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8622,
+        "recency": 0.8156,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -961,7 +765,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
+        "scored_at": "2026-09-17T13:42:39.379784Z"
       }
     },
     {
@@ -1009,19 +813,19 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7272,
-      "importance": 0.7272,
-      "importance_score": 0.7272,
-      "importance_label": "行业动态",
+      "score": 0.719,
+      "importance": 0.719,
+      "importance_score": 0.719,
+      "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8422,
+        "recency": 0.7966,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "industry",
+      "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
@@ -1044,92 +848,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
-      }
-    },
-    {
-      "story_id": "story_20d27da6a9f4",
-      "title": "How workers are unlocking new ways of working",
-      "url": "https://openai.com/index/unlocking-new-ways-of-working",
-      "primary_url": "https://openai.com/index/unlocking-new-ways-of-working",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "f8d3a08c3fc26b24d1b8bfacd22d569ddb26f73a",
-          "title": "How workers are unlocking new ways of working",
-          "title_zh": null,
-          "title_en": "How workers are unlocking new ways of working",
-          "title_original": "How workers are unlocking new ways of working",
-          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/unlocking-new-ways-of-working",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-16T09:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "f8d3a08c3fc26b24d1b8bfacd22d569ddb26f73a",
-          "title": "How workers are unlocking new ways of working",
-          "title_zh": null,
-          "title_en": "How workers are unlocking new ways of working",
-          "title_original": "How workers are unlocking new ways of working",
-          "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/unlocking-new-ways-of-working",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-16T09:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8164,
-      "importance": 0.8164,
-      "importance_score": 0.8164,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8024,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-16T09:00:00Z",
-      "latest_at": "2026-09-16T09:00:00Z",
-      "primary_item": {
-        "id": "f8d3a08c3fc26b24d1b8bfacd22d569ddb26f73a",
-        "title": "How workers are unlocking new ways of working",
-        "title_zh": null,
-        "title_en": "How workers are unlocking new ways of working",
-        "title_original": "How workers are unlocking new ways of working",
-        "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/unlocking-new-ways-of-working",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8384,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
+        "scored_at": "2026-09-17T13:42:39.379784Z"
       }
     },
     {
@@ -1177,15 +896,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7337,
-      "importance": 0.7337,
-      "importance_score": 0.7337,
+      "score": 0.7247,
+      "importance": 0.7247,
+      "importance_score": 0.7247,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9284,
+        "recency": 0.8781,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1212,259 +931,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
-      }
-    },
-    {
-      "story_id": "story_c1ae6ddc6337",
-      "title": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
-      "url": "https://www.aibase.com/news/31125",
-      "primary_url": "https://www.aibase.com/news/31125",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "bd2df3ff800c7b60f55cd5b79780943be7f2d28f",
-          "title": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
-          "title_zh": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
-          "title_en": null,
-          "title_original": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31125",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "bd2df3ff800c7b60f55cd5b79780943be7f2d28f",
-          "title": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
-          "title_zh": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
-          "title_en": null,
-          "title_original": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31125",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-17T07:52:16.279832Z",
-      "latest_at": "2026-09-17T07:52:16.279832Z",
-      "primary_item": {
-        "id": "bd2df3ff800c7b60f55cd5b79780943be7f2d28f",
-        "title": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
-        "title_zh": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
-        "title_en": null,
-        "title_original": "Anthropic 合并 Claude 产品线：Cowork 与 Chat 合为一体，打造统一办公入口",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31125",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
-      }
-    },
-    {
-      "story_id": "story_8c35cf0772a6",
-      "title": "How to connect AI usage to business value",
-      "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-      "primary_url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "240870ecd56cd902b085ad5440133358690656e0",
-          "title": "How to connect AI usage to business value",
-          "title_zh": null,
-          "title_en": "How to connect AI usage to business value",
-          "title_original": "How to connect AI usage to business value",
-          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-16T12:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "240870ecd56cd902b085ad5440133358690656e0",
-          "title": "How to connect AI usage to business value",
-          "title_zh": null,
-          "title_en": "How to connect AI usage to business value",
-          "title_original": "How to connect AI usage to business value",
-          "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-16T12:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8207,
-      "importance": 0.8207,
-      "importance_score": 0.8207,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8259,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-16T12:00:00Z",
-      "latest_at": "2026-09-16T12:00:00Z",
-      "primary_item": {
-        "id": "240870ecd56cd902b085ad5440133358690656e0",
-        "title": "How to connect AI usage to business value",
-        "title_zh": null,
-        "title_en": "How to connect AI usage to business value",
-        "title_original": "How to connect AI usage to business value",
-        "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8382,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
-      }
-    },
-    {
-      "story_id": "story_d140633e4958",
-      "title": "Anthropic 签下澳大利亚首份数据中心协议：锁定 2.16 吉瓦容量，2027 年投运",
-      "url": "https://www.aibase.com/news/31099",
-      "primary_url": "https://www.aibase.com/news/31099",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "c0523e50fa28d4845b6b6890ad09d93940d8ae66",
-          "title": "Anthropic 签下澳大利亚首份数据中心协议：锁定 2.16 吉瓦容量，2027 年投运",
-          "title_zh": "Anthropic 签下澳大利亚首份数据中心协议：锁定 2.16 吉瓦容量，2027 年投运",
-          "title_en": null,
-          "title_original": "Anthropic 签下澳大利亚首份数据中心协议：锁定 2.16 吉瓦容量，2027 年投运",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31099",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-16T11:52:12.340647Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "c0523e50fa28d4845b6b6890ad09d93940d8ae66",
-          "title": "Anthropic 签下澳大利亚首份数据中心协议：锁定 2.16 吉瓦容量，2027 年投运",
-          "title_zh": "Anthropic 签下澳大利亚首份数据中心协议：锁定 2.16 吉瓦容量，2027 年投运",
-          "title_en": null,
-          "title_original": "Anthropic 签下澳大利亚首份数据中心协议：锁定 2.16 吉瓦容量，2027 年投运",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31099",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-16T11:52:12.340647Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7361,
-      "importance": 0.7361,
-      "importance_score": 0.7361,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8249,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-16T11:52:12.340647Z",
-      "latest_at": "2026-09-16T11:52:12.340647Z",
-      "primary_item": {
-        "id": "c0523e50fa28d4845b6b6890ad09d93940d8ae66",
-        "title": "Anthropic 签下澳大利亚首份数据中心协议：锁定 2.16 吉瓦容量，2027 年投运",
-        "title_zh": "Anthropic 签下澳大利亚首份数据中心协议：锁定 2.16 吉瓦容量，2027 年投运",
-        "title_en": null,
-        "title_original": "Anthropic 签下澳大利亚首份数据中心协议：锁定 2.16 吉瓦容量，2027 年投运",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31099",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
+        "scored_at": "2026-09-17T13:42:39.379784Z"
       }
     },
     {
@@ -1512,15 +979,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7579,
+      "importance": 0.7579,
+      "importance_score": 0.7579,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9459,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1548,7 +1015,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
+        "scored_at": "2026-09-17T13:42:39.379784Z"
       }
     },
     {
@@ -1596,22 +1063,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.757,
-      "importance": 0.757,
-      "importance_score": 0.757,
+      "score": 0.7478,
+      "importance": 0.7478,
+      "importance_score": 0.7478,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.941,
+        "recency": 0.8901,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-17T01:33:30.420052Z",
       "latest_at": "2026-09-17T01:33:30.420052Z",
@@ -1632,90 +1098,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
-      }
-    },
-    {
-      "story_id": "story_c040e7b4b4c9",
-      "title": "Claude 发布重大升级：43 项全能工作流与 27 个巨头应用深度打通",
-      "url": "https://www.aibase.com/news/31092",
-      "primary_url": "https://www.aibase.com/news/31092",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "5ec81647345a6aee5604d12455ee4d5eddea2d93",
-          "title": "Claude 发布重大升级：43 项全能工作流与 27 个巨头应用深度打通",
-          "title_zh": "Claude 发布重大升级：43 项全能工作流与 27 个巨头应用深度打通",
-          "title_en": null,
-          "title_original": "Claude 发布重大升级：43 项全能工作流与 27 个巨头应用深度打通",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31092",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-16T11:52:12.340647Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "5ec81647345a6aee5604d12455ee4d5eddea2d93",
-          "title": "Claude 发布重大升级：43 项全能工作流与 27 个巨头应用深度打通",
-          "title_zh": "Claude 发布重大升级：43 项全能工作流与 27 个巨头应用深度打通",
-          "title_en": null,
-          "title_original": "Claude 发布重大升级：43 项全能工作流与 27 个巨头应用深度打通",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31092",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-16T11:52:12.340647Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7361,
-      "importance": 0.7361,
-      "importance_score": 0.7361,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8249,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-16T11:52:12.340647Z",
-      "latest_at": "2026-09-16T11:52:12.340647Z",
-      "primary_item": {
-        "id": "5ec81647345a6aee5604d12455ee4d5eddea2d93",
-        "title": "Claude 发布重大升级：43 项全能工作流与 27 个巨头应用深度打通",
-        "title_zh": "Claude 发布重大升级：43 项全能工作流与 27 个巨头应用深度打通",
-        "title_en": null,
-        "title_original": "Claude 发布重大升级：43 项全能工作流与 27 个巨头应用深度打通",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31092",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
+        "scored_at": "2026-09-17T13:42:39.379784Z"
       }
     },
     {
@@ -1763,15 +1146,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7579,
+      "importance": 0.7579,
+      "importance_score": 0.7579,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9459,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1799,30 +1182,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
+        "scored_at": "2026-09-17T13:42:39.379784Z"
       }
     },
     {
-      "story_id": "story_13603bf46f67",
-      "title": "Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练",
-      "url": "https://www.aibase.com/news/31098",
-      "primary_url": "https://www.aibase.com/news/31098",
+      "story_id": "story_c7c89a0dc84d",
+      "title": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
+      "url": "https://www.aibase.com/news/31119",
+      "primary_url": "https://www.aibase.com/news/31119",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "cbf286c5bbdd880856b9c9cc1b102263bb040a04",
-          "title": "Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练",
-          "title_zh": "Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练",
+          "id": "4c7f260624f3c00d9797b18331776eedca8d8037",
+          "title": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
+          "title_zh": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
           "title_en": null,
-          "title_original": "Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练",
+          "title_original": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31098",
+          "url": "https://www.aibase.com/news/31119",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-16T11:52:12.340647Z"
+          "published_at": "2026-09-17T07:52:16.279832Z"
         }
       ],
       "source_count": 1,
@@ -1831,49 +1214,50 @@
       ],
       "items": [
         {
-          "id": "cbf286c5bbdd880856b9c9cc1b102263bb040a04",
-          "title": "Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练",
-          "title_zh": "Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练",
+          "id": "4c7f260624f3c00d9797b18331776eedca8d8037",
+          "title": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
+          "title_zh": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
           "title_en": null,
-          "title_original": "Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练",
+          "title_original": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31098",
+          "url": "https://www.aibase.com/news/31119",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-16T11:52:12.340647Z"
+          "published_at": "2026-09-17T07:52:16.279832Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7361,
-      "importance": 0.7361,
-      "importance_score": 0.7361,
+      "score": 0.7579,
+      "importance": 0.7579,
+      "importance_score": 0.7579,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8249,
+        "recency": 0.9459,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-09-16T11:52:12.340647Z",
-      "latest_at": "2026-09-16T11:52:12.340647Z",
+      "earliest_at": "2026-09-17T07:52:16.279832Z",
+      "latest_at": "2026-09-17T07:52:16.279832Z",
       "primary_item": {
-        "id": "cbf286c5bbdd880856b9c9cc1b102263bb040a04",
-        "title": "Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练",
-        "title_zh": "Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练",
+        "id": "4c7f260624f3c00d9797b18331776eedca8d8037",
+        "title": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
+        "title_zh": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
         "title_en": null,
-        "title_original": "Cloudflare 上线新设置：允许搜索引擎爬取，同时拒绝 AI 训练",
+        "title_original": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31098",
+        "url": "https://www.aibase.com/news/31119",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -1882,7 +1266,594 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T07:55:45.973860Z"
+        "scored_at": "2026-09-17T13:42:39.379784Z"
+      }
+    },
+    {
+      "story_id": "story_8bf736325a82",
+      "title": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
+      "url": "https://www.aibase.com/news/31132",
+      "primary_url": "https://www.aibase.com/news/31132",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "4f989f66b4ba45a00a82c5521365b3c808ab00a0",
+          "title": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
+          "title_zh": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
+          "title_en": null,
+          "title_original": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31132",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T07:52:16.279832Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "4f989f66b4ba45a00a82c5521365b3c808ab00a0",
+          "title": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
+          "title_zh": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
+          "title_en": null,
+          "title_original": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31132",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T07:52:16.279832Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7579,
+      "importance": 0.7579,
+      "importance_score": 0.7579,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9459,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T07:52:16.279832Z",
+      "latest_at": "2026-09-17T07:52:16.279832Z",
+      "primary_item": {
+        "id": "4f989f66b4ba45a00a82c5521365b3c808ab00a0",
+        "title": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
+        "title_zh": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
+        "title_en": null,
+        "title_original": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31132",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T13:42:39.379784Z"
+      }
+    },
+    {
+      "story_id": "story_1aad29691f35",
+      "title": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
+      "url": "https://www.aibase.com/news/31115",
+      "primary_url": "https://www.aibase.com/news/31115",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "0bf394595f22f1642f8955d6a76187b323ed628e",
+          "title": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
+          "title_zh": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
+          "title_en": null,
+          "title_original": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31115",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T07:52:16.279832Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "0bf394595f22f1642f8955d6a76187b323ed628e",
+          "title": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
+          "title_zh": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
+          "title_en": null,
+          "title_original": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31115",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T07:52:16.279832Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7579,
+      "importance": 0.7579,
+      "importance_score": 0.7579,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9459,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T07:52:16.279832Z",
+      "latest_at": "2026-09-17T07:52:16.279832Z",
+      "primary_item": {
+        "id": "0bf394595f22f1642f8955d6a76187b323ed628e",
+        "title": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
+        "title_zh": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
+        "title_en": null,
+        "title_original": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31115",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T13:42:39.379784Z"
+      }
+    },
+    {
+      "story_id": "story_d1e99996f746",
+      "title": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
+      "url": "https://www.aibase.com/news/31108",
+      "primary_url": "https://www.aibase.com/news/31108",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "c93d7aa20c48ca8eec64879619c63c251389db46",
+          "title": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
+          "title_zh": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
+          "title_en": null,
+          "title_original": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31108",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T01:33:30.420052Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "c93d7aa20c48ca8eec64879619c63c251389db46",
+          "title": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
+          "title_zh": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
+          "title_en": null,
+          "title_original": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31108",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T01:33:30.420052Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7478,
+      "importance": 0.7478,
+      "importance_score": 0.7478,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8901,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-17T01:33:30.420052Z",
+      "latest_at": "2026-09-17T01:33:30.420052Z",
+      "primary_item": {
+        "id": "c93d7aa20c48ca8eec64879619c63c251389db46",
+        "title": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
+        "title_zh": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
+        "title_en": null,
+        "title_original": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31108",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T13:42:39.379784Z"
+      }
+    },
+    {
+      "story_id": "story_901f7b75a9c5",
+      "title": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
+      "url": "https://www.aibase.com/news/31122",
+      "primary_url": "https://www.aibase.com/news/31122",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "cfbd3d5ec25b05171243e43a477599ef057dec04",
+          "title": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
+          "title_zh": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
+          "title_en": null,
+          "title_original": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31122",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T07:52:16.279832Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "cfbd3d5ec25b05171243e43a477599ef057dec04",
+          "title": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
+          "title_zh": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
+          "title_en": null,
+          "title_original": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31122",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T07:52:16.279832Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7579,
+      "importance": 0.7579,
+      "importance_score": 0.7579,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9459,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T07:52:16.279832Z",
+      "latest_at": "2026-09-17T07:52:16.279832Z",
+      "primary_item": {
+        "id": "cfbd3d5ec25b05171243e43a477599ef057dec04",
+        "title": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
+        "title_zh": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
+        "title_en": null,
+        "title_original": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31122",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T13:42:39.379784Z"
+      }
+    },
+    {
+      "story_id": "story_7b5be1e6de80",
+      "title": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
+      "url": "https://www.aibase.com/news/31123",
+      "primary_url": "https://www.aibase.com/news/31123",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "44e5ed43767b72bac685170d2e11cfb0352f1f46",
+          "title": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
+          "title_zh": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
+          "title_en": null,
+          "title_original": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31123",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T07:52:16.279832Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "44e5ed43767b72bac685170d2e11cfb0352f1f46",
+          "title": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
+          "title_zh": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
+          "title_en": null,
+          "title_original": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31123",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T07:52:16.279832Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7579,
+      "importance": 0.7579,
+      "importance_score": 0.7579,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9459,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T07:52:16.279832Z",
+      "latest_at": "2026-09-17T07:52:16.279832Z",
+      "primary_item": {
+        "id": "44e5ed43767b72bac685170d2e11cfb0352f1f46",
+        "title": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
+        "title_zh": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
+        "title_en": null,
+        "title_original": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31123",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T13:42:39.379784Z"
+      }
+    },
+    {
+      "story_id": "story_52a7858a1b06",
+      "title": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
+      "url": "https://www.aibase.com/news/31134",
+      "primary_url": "https://www.aibase.com/news/31134",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "3f1aca2baf650fb511f98091068f781cf2822fbe",
+          "title": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
+          "title_zh": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
+          "title_en": null,
+          "title_original": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31134",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T13:39:02.904329Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "3f1aca2baf650fb511f98091068f781cf2822fbe",
+          "title": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
+          "title_zh": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
+          "title_en": null,
+          "title_original": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31134",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T13:39:02.904329Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T13:39:02.904329Z",
+      "latest_at": "2026-09-17T13:39:02.904329Z",
+      "primary_item": {
+        "id": "3f1aca2baf650fb511f98091068f781cf2822fbe",
+        "title": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
+        "title_zh": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
+        "title_en": null,
+        "title_original": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31134",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T13:42:39.379784Z"
+      }
+    },
+    {
+      "story_id": "story_3a1393b95d3a",
+      "title": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
+      "url": "https://www.aibase.com/news/31117",
+      "primary_url": "https://www.aibase.com/news/31117",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "780fe706a06cfbb82e9033441c2e53b71a444452",
+          "title": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
+          "title_zh": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
+          "title_en": null,
+          "title_original": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31117",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T07:52:16.279832Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "780fe706a06cfbb82e9033441c2e53b71a444452",
+          "title": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
+          "title_zh": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
+          "title_en": null,
+          "title_original": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31117",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-17T07:52:16.279832Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7579,
+      "importance": 0.7579,
+      "importance_score": 0.7579,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9459,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T07:52:16.279832Z",
+      "latest_at": "2026-09-17T07:52:16.279832Z",
+      "primary_item": {
+        "id": "780fe706a06cfbb82e9033441c2e53b71a444452",
+        "title": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
+        "title_zh": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
+        "title_en": null,
+        "title_original": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31117",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T13:42:39.379784Z"
       }
     }
   ]
