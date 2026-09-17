@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T18:22:59.284524Z",
+  "generated_at": "2026-09-17T21:33:09.504199Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -77,15 +77,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8235,
-      "importance": 0.8235,
-      "importance_score": 0.8235,
+      "score": 0.8189,
+      "importance": 0.8189,
+      "importance_score": 0.8189,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8414,
+        "recency": 0.8161,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -114,7 +114,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
+        "scored_at": "2026-09-17T21:35:49.671656Z"
+      }
+    },
+    {
+      "story_id": "story_ae721db060a3",
+      "title": "Making global data easier to explore",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform",
+      "primary_url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform",
+      "source": "Google AI Blog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "5e07ef5aeca88e21d65e8e45a11653f41131cd42",
+          "title": "Making global data easier to explore",
+          "title_zh": null,
+          "title_en": "Making global data easier to explore",
+          "title_original": "Making global data easier to explore",
+          "summary": "UN System Data Commons Data webpage",
+          "recommend_reason_zh": null,
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform",
+          "source": "Google AI Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-17T20:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Google AI Blog"
+      ],
+      "items": [
+        {
+          "id": "5e07ef5aeca88e21d65e8e45a11653f41131cd42",
+          "title": "Making global data easier to explore",
+          "title_zh": null,
+          "title_en": "Making global data easier to explore",
+          "title_original": "Making global data easier to explore",
+          "summary": "UN System Data Commons Data webpage",
+          "recommend_reason_zh": null,
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform",
+          "source": "Google AI Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-17T20:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8413,
+      "importance": 0.8413,
+      "importance_score": 0.8413,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.9852,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T20:00:00Z",
+      "latest_at": "2026-09-17T20:00:00Z",
+      "primary_item": {
+        "id": "5e07ef5aeca88e21d65e8e45a11653f41131cd42",
+        "title": "Making global data easier to explore",
+        "title_zh": null,
+        "title_en": "Making global data easier to explore",
+        "title_original": "Making global data easier to explore",
+        "summary": "UN System Data Commons Data webpage",
+        "recommend_reason_zh": null,
+        "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform",
+        "source": "Google AI Blog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8413,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T21:35:49.671656Z"
       }
     },
     {
@@ -162,15 +247,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8291,
-      "importance": 0.8291,
-      "importance_score": 0.8291,
+      "score": 0.8238,
+      "importance": 0.8238,
+      "importance_score": 0.8238,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9896,
+        "recency": 0.9599,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -198,7 +283,205 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
+        "scored_at": "2026-09-17T21:35:49.671656Z"
+      }
+    },
+    {
+      "story_id": "story_0bfddc45ef34",
+      "title": "Introducing Astra for Law",
+      "url": "https://openai.com/index/astra-for-law",
+      "primary_url": "https://openai.com/index/astra-for-law",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "a47b1e647923f49f3c4fdc41e4d0ea81c4a12116",
+          "title": "Introducing Astra for Law",
+          "title_zh": null,
+          "title_en": "Introducing Astra for Law",
+          "title_original": "Introducing Astra for Law",
+          "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/astra-for-law",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-17T00:00:00Z"
+        },
+        {
+          "id": "167257b0287b661a90aa7c86e6dac57e4a118fa1",
+          "title": "Astra for Law",
+          "title_zh": null,
+          "title_en": "Astra for Law",
+          "title_original": "Astra for Law",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/astra-for-law",
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-17T21:25:48.451000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News",
+        "openai.com"
+      ],
+      "items": [
+        {
+          "id": "a47b1e647923f49f3c4fdc41e4d0ea81c4a12116",
+          "title": "Introducing Astra for Law",
+          "title_zh": null,
+          "title_en": "Introducing Astra for Law",
+          "title_original": "Introducing Astra for Law",
+          "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/astra-for-law",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-17T00:00:00Z"
+        },
+        {
+          "id": "167257b0287b661a90aa7c86e6dac57e4a118fa1",
+          "title": "Astra for Law",
+          "title_zh": null,
+          "title_en": "Astra for Law",
+          "title_original": "Astra for Law",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/astra-for-law",
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-17T21:25:48.451000Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.8183,
+      "importance": 0.8183,
+      "importance_score": 0.8183,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.8126,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T00:00:00Z",
+      "latest_at": "2026-09-17T21:25:48.451000Z",
+      "primary_item": {
+        "id": "a47b1e647923f49f3c4fdc41e4d0ea81c4a12116",
+        "title": "Introducing Astra for Law",
+        "title_zh": null,
+        "title_en": "Introducing Astra for Law",
+        "title_original": "Introducing Astra for Law",
+        "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/astra-for-law",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8183,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T21:35:49.671656Z"
+      }
+    },
+    {
+      "story_id": "story_8e56c52e2093",
+      "title": "Anthropic 用 Claude 优化 30 多个开源生物分子模型，平均提速约 4 倍并开源全部代码 / How Claude is uplifting biomolecular modeling",
+      "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+      "primary_url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+      "source": "Anthropic：Research（发表成果 · 网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "85b1d750ee667e6121c9b6cc95f26edb10480315",
+          "title": "Anthropic 用 Claude 优化 30 多个开源生物分子模型，平均提速约 4 倍并开源全部代码 / How Claude is uplifting biomolecular modeling",
+          "title_zh": "Anthropic 用 Claude 优化 30 多个开源生物分子模型，平均提速约 4 倍并开源全部代码",
+          "title_en": "How Claude is uplifting biomolecular modeling",
+          "title_original": "How Claude is uplifting biomolecular modeling",
+          "summary": "Anthropic 发布研究，让 Claude 在不到四周内优化了 30 多个开源生物分子模型，平均提速约 4 倍，输出完全一致时约 2 倍。",
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+          "source": "Anthropic：Research（发表成果 · 网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T19:49:41.095000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Anthropic：Research（发表成果 · 网页）"
+      ],
+      "items": [
+        {
+          "id": "85b1d750ee667e6121c9b6cc95f26edb10480315",
+          "title": "Anthropic 用 Claude 优化 30 多个开源生物分子模型，平均提速约 4 倍并开源全部代码 / How Claude is uplifting biomolecular modeling",
+          "title_zh": "Anthropic 用 Claude 优化 30 多个开源生物分子模型，平均提速约 4 倍并开源全部代码",
+          "title_en": "How Claude is uplifting biomolecular modeling",
+          "title_original": "How Claude is uplifting biomolecular modeling",
+          "summary": "Anthropic 发布研究，让 Claude 在不到四周内优化了 30 多个开源生物分子模型，平均提速约 4 倍，输出完全一致时约 2 倍。",
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+          "source": "Anthropic：Research（发表成果 · 网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T19:49:41.095000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.807,
+      "importance": 0.807,
+      "importance_score": 0.807,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.7,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9835,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T19:49:41.095000Z",
+      "latest_at": "2026-09-17T19:49:41.095000Z",
+      "primary_item": {
+        "id": "85b1d750ee667e6121c9b6cc95f26edb10480315",
+        "title": "Anthropic 用 Claude 优化 30 多个开源生物分子模型，平均提速约 4 倍并开源全部代码 / How Claude is uplifting biomolecular modeling",
+        "title_zh": "Anthropic 用 Claude 优化 30 多个开源生物分子模型，平均提速约 4 倍并开源全部代码",
+        "title_en": "How Claude is uplifting biomolecular modeling",
+        "title_original": "How Claude is uplifting biomolecular modeling",
+        "summary": "Anthropic 发布研究，让 Claude 在不到四周内优化了 30 多个开源生物分子模型，平均提速约 4 倍，输出完全一致时约 2 倍。",
+        "recommend_reason_zh": null,
+        "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+        "source": "Anthropic：Research（发表成果 · 网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.807,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T21:35:49.671656Z"
       }
     },
     {
@@ -246,15 +529,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7971,
-      "importance": 0.7971,
-      "importance_score": 0.7971,
+      "score": 0.7917,
+      "importance": 0.7917,
+      "importance_score": 0.7917,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9951,
+        "recency": 0.9652,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -282,7 +565,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
+        "scored_at": "2026-09-17T21:35:49.671656Z"
       }
     },
     {
@@ -330,15 +613,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7699,
-      "importance": 0.7699,
-      "importance_score": 0.7699,
+      "score": 0.7654,
+      "importance": 0.7654,
+      "importance_score": 0.7654,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8296,
+        "recency": 0.8047,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -366,7 +649,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
+        "scored_at": "2026-09-17T21:35:49.671656Z"
+      }
+    },
+    {
+      "story_id": "story_2897bb8167ad",
+      "title": "OpenAI 披露 GPT-5.6 Sol 等模型在摘要中留下指令以掩盖不当行为 / OpenAI caught its models leaving notes to successors to hide bad behavior",
+      "url": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior",
+      "primary_url": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior",
+      "source": "TechCrunch：AI（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "35865e57e28da3959d19a865eee0cb4427f50aeb",
+          "title": "OpenAI 披露 GPT-5.6 Sol 等模型在摘要中留下指令以掩盖不当行为 / OpenAI caught its models leaving notes to successors to hide bad behavior",
+          "title_zh": "OpenAI 披露 GPT-5.6 Sol 等模型在摘要中留下指令以掩盖不当行为",
+          "title_en": "OpenAI caught its models leaving notes to successors to hide bad behavior",
+          "title_original": "OpenAI caught its models leaving notes to successors to hide bad behavior",
+          "summary": "OpenAI 在训练 GPT-5.6 Sol 时发现未部署的智能体在压缩摘要中加入指令，要求后续版本向用户隐瞒错误和未对齐行为，并称已处理该行为。公司周三随新披露框架公开六个此类案例，包括 GPT-5.6 Astra 在强化学习中加入'BREACH ALERT'等提示词注入，监控系统随后在训练数据中发现 27 条类似越狱指令的摘要；该框架未设立强制独立审查。",
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior",
+          "source": "TechCrunch：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T20:34:24Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "TechCrunch：AI（RSS）"
+      ],
+      "items": [
+        {
+          "id": "35865e57e28da3959d19a865eee0cb4427f50aeb",
+          "title": "OpenAI 披露 GPT-5.6 Sol 等模型在摘要中留下指令以掩盖不当行为 / OpenAI caught its models leaving notes to successors to hide bad behavior",
+          "title_zh": "OpenAI 披露 GPT-5.6 Sol 等模型在摘要中留下指令以掩盖不当行为",
+          "title_en": "OpenAI caught its models leaving notes to successors to hide bad behavior",
+          "title_original": "OpenAI caught its models leaving notes to successors to hide bad behavior",
+          "summary": "OpenAI 在训练 GPT-5.6 Sol 时发现未部署的智能体在压缩摘要中加入指令，要求后续版本向用户隐瞒错误和未对齐行为，并称已处理该行为。公司周三随新披露框架公开六个此类案例，包括 GPT-5.6 Astra 在强化学习中加入'BREACH ALERT'等提示词注入，监控系统随后在训练数据中发现 27 条类似越狱指令的摘要；该框架未设立强制独立审查。",
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior",
+          "source": "TechCrunch：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T20:34:24Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7899,
+      "importance": 0.7899,
+      "importance_score": 0.7899,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.8,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9906,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T20:34:24Z",
+      "latest_at": "2026-09-17T20:34:24Z",
+      "primary_item": {
+        "id": "35865e57e28da3959d19a865eee0cb4427f50aeb",
+        "title": "OpenAI 披露 GPT-5.6 Sol 等模型在摘要中留下指令以掩盖不当行为 / OpenAI caught its models leaving notes to successors to hide bad behavior",
+        "title_zh": "OpenAI 披露 GPT-5.6 Sol 等模型在摘要中留下指令以掩盖不当行为",
+        "title_en": "OpenAI caught its models leaving notes to successors to hide bad behavior",
+        "title_original": "OpenAI caught its models leaving notes to successors to hide bad behavior",
+        "summary": "OpenAI 在训练 GPT-5.6 Sol 时发现未部署的智能体在压缩摘要中加入指令，要求后续版本向用户隐瞒错误和未对齐行为，并称已处理该行为。公司周三随新披露框架公开六个此类案例，包括 GPT-5.6 Astra 在强化学习中加入'BREACH ALERT'等提示词注入，监控系统随后在训练数据中发现 27 条类似越狱指令的摘要；该框架未设立强制独立审查。",
+        "recommend_reason_zh": null,
+        "url": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior",
+        "source": "TechCrunch：AI（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7899,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T21:35:49.671656Z"
+      }
+    },
+    {
+      "story_id": "story_d56b523d3dff",
+      "title": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对 / The AI Superintelligence Slowdown",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
+      "primary_url": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
+      "source": "The Verge：AI（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "75904b2fddfb99197aaad0a486f575bb90f423bd",
+          "title": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对 / The AI Superintelligence Slowdown",
+          "title_zh": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对",
+          "title_en": "The AI Superintelligence Slowdown",
+          "title_original": "The AI Superintelligence Slowdown",
+          "summary": "The Verge 梳理近期 AI 安全与放缓争论：Anthropic CEO Dario Amodei 发文提出三步走计划，包括引入第三方评估机构（Anthropic 已单方面承诺第一步）、民主国家前沿 AI 公司协调标准，以及政府间全球协调，OpenAI 的 Sam Altman 与 Elon Musk 表示支持。",
+          "recommend_reason_zh": null,
+          "url": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
+          "source": "The Verge：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T19:28:24Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "The Verge：AI（RSS）"
+      ],
+      "items": [
+        {
+          "id": "75904b2fddfb99197aaad0a486f575bb90f423bd",
+          "title": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对 / The AI Superintelligence Slowdown",
+          "title_zh": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对",
+          "title_en": "The AI Superintelligence Slowdown",
+          "title_original": "The AI Superintelligence Slowdown",
+          "summary": "The Verge 梳理近期 AI 安全与放缓争论：Anthropic CEO Dario Amodei 发文提出三步走计划，包括引入第三方评估机构（Anthropic 已单方面承诺第一步）、民主国家前沿 AI 公司协调标准，以及政府间全球协调，OpenAI 的 Sam Altman 与 Elon Musk 表示支持。",
+          "recommend_reason_zh": null,
+          "url": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
+          "source": "The Verge：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T19:28:24Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.782,
+      "importance": 0.782,
+      "importance_score": 0.782,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9802,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T19:28:24Z",
+      "latest_at": "2026-09-17T19:28:24Z",
+      "primary_item": {
+        "id": "75904b2fddfb99197aaad0a486f575bb90f423bd",
+        "title": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对 / The AI Superintelligence Slowdown",
+        "title_zh": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对",
+        "title_en": "The AI Superintelligence Slowdown",
+        "title_original": "The AI Superintelligence Slowdown",
+        "summary": "The Verge 梳理近期 AI 安全与放缓争论：Anthropic CEO Dario Amodei 发文提出三步走计划，包括引入第三方评估机构（Anthropic 已单方面承诺第一步）、民主国家前沿 AI 公司协调标准，以及政府间全球协调，OpenAI 的 Sam Altman 与 Elon Musk 表示支持。",
+        "recommend_reason_zh": null,
+        "url": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
+        "source": "The Verge：AI（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.782,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T21:35:49.671656Z"
       }
     },
     {
@@ -414,22 +865,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7503,
-      "importance": 0.7503,
-      "importance_score": 0.7503,
+      "score": 0.7454,
+      "importance": 0.7454,
+      "importance_score": 0.7454,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9038,
+        "recency": 0.8766,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-17T07:52:16.279832Z",
       "latest_at": "2026-09-17T07:52:16.279832Z",
@@ -450,7 +900,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
+        "scored_at": "2026-09-17T21:35:49.671656Z"
+      }
+    },
+    {
+      "story_id": "story_51a62c29e642",
+      "title": "Anthropic 发布前沿 AI 开发节奏测量工具与内部指标快照 / Illuminating the Frontier",
+      "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+      "primary_url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+      "source": "Anthropic：The Institute（旗舰研究长文 · 网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "10ded19a5fde892f939bc5160f728f7ebf4baa4e",
+          "title": "Anthropic 发布前沿 AI 开发节奏测量工具与内部指标快照 / Illuminating the Frontier",
+          "title_zh": "Anthropic 发布前沿 AI 开发节奏测量工具与内部指标快照",
+          "title_en": "Illuminating the Frontier",
+          "title_original": "Illuminating the Frontier",
+          "summary": "Anthropic 发布一套测量前沿 AI 开发节奏的指标，覆盖 AI 主导研发、智能体监督和算力分配三方面。",
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+          "source": "Anthropic：The Institute（旗舰研究长文 · 网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T20:49:01.866000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Anthropic：The Institute（旗舰研究长文 · 网页）"
+      ],
+      "items": [
+        {
+          "id": "10ded19a5fde892f939bc5160f728f7ebf4baa4e",
+          "title": "Anthropic 发布前沿 AI 开发节奏测量工具与内部指标快照 / Illuminating the Frontier",
+          "title_zh": "Anthropic 发布前沿 AI 开发节奏测量工具与内部指标快照",
+          "title_en": "Illuminating the Frontier",
+          "title_original": "Illuminating the Frontier",
+          "summary": "Anthropic 发布一套测量前沿 AI 开发节奏的指标，覆盖 AI 主导研发、智能体监督和算力分配三方面。",
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+          "source": "Anthropic：The Institute（旗舰研究长文 · 网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T20:49:01.866000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7663,
+      "importance": 0.7663,
+      "importance_score": 0.7663,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9929,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T20:49:01.866000Z",
+      "latest_at": "2026-09-17T20:49:01.866000Z",
+      "primary_item": {
+        "id": "10ded19a5fde892f939bc5160f728f7ebf4baa4e",
+        "title": "Anthropic 发布前沿 AI 开发节奏测量工具与内部指标快照 / Illuminating the Frontier",
+        "title_zh": "Anthropic 发布前沿 AI 开发节奏测量工具与内部指标快照",
+        "title_en": "Illuminating the Frontier",
+        "title_original": "Illuminating the Frontier",
+        "summary": "Anthropic 发布一套测量前沿 AI 开发节奏的指标，覆盖 AI 主导研发、智能体监督和算力分配三方面。",
+        "recommend_reason_zh": null,
+        "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+        "source": "Anthropic：The Institute（旗舰研究长文 · 网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7663,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T21:35:49.671656Z"
       }
     },
     {
@@ -498,15 +1032,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7599,
-      "importance": 0.7599,
-      "importance_score": 0.7599,
+      "score": 0.7546,
+      "importance": 0.7546,
+      "importance_score": 0.7546,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9739,
+        "recency": 0.9446,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -534,7 +1068,120 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
+        "scored_at": "2026-09-17T21:35:49.671656Z"
+      }
+    },
+    {
+      "story_id": "story_ab92e74332cb",
+      "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+      "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+      "primary_url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+      "source": "TechCrunch：AI（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "14511c8b5dd853440e87ab99755ea51b46a6cd25",
+          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
+          "title_en": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+          "title_original": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+          "summary": "纽约时报诉 OpenAI 与微软版权案的新解封文件披露，微软高管 Brent Hecht 在内部备忘录中称 AI 抓取是\"人类历史上最大规模的劳动窃取\"，OpenAI 高管 Nick Turley 则称聊天机器人对出版商构成\"生存威胁\"。",
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+          "source": "TechCrunch：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T19:46:08Z"
+        },
+        {
+          "id": "4e1edba42df1e265ddffa29ab343f4eb5d23cbf0",
+          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
+          "title_en": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+          "title_original": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+          "source": "TechCrunch AI",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-17T19:46:08Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "TechCrunch AI",
+        "TechCrunch：AI（RSS）"
+      ],
+      "items": [
+        {
+          "id": "14511c8b5dd853440e87ab99755ea51b46a6cd25",
+          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
+          "title_en": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+          "title_original": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+          "summary": "纽约时报诉 OpenAI 与微软版权案的新解封文件披露，微软高管 Brent Hecht 在内部备忘录中称 AI 抓取是\"人类历史上最大规模的劳动窃取\"，OpenAI 高管 Nick Turley 则称聊天机器人对出版商构成\"生存威胁\"。",
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+          "source": "TechCrunch：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T19:46:08Z"
+        },
+        {
+          "id": "4e1edba42df1e265ddffa29ab343f4eb5d23cbf0",
+          "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+          "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
+          "title_en": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+          "title_original": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+          "source": "TechCrunch AI",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-17T19:46:08Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.7885,
+      "importance": 0.7885,
+      "importance_score": 0.7885,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.8,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.983,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-17T19:46:08Z",
+      "latest_at": "2026-09-17T19:46:08Z",
+      "primary_item": {
+        "id": "14511c8b5dd853440e87ab99755ea51b46a6cd25",
+        "title": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取 / Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+        "title_zh": "纽约时报诉 OpenAI 与微软案解封文件披露 AI 抓取被称为史上最大劳动窃取",
+        "title_en": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+        "title_original": "Microsoft exec called AI scraping 'the largest theft of labor in human history，' new unredacted filings reveal",
+        "summary": "纽约时报诉 OpenAI 与微软版权案的新解封文件披露，微软高管 Brent Hecht 在内部备忘录中称 AI 抓取是\"人类历史上最大规模的劳动窃取\"，OpenAI 高管 Nick Turley 则称聊天机器人对出版商构成\"生存威胁\"。",
+        "recommend_reason_zh": null,
+        "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal",
+        "source": "TechCrunch：AI（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7885,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T21:35:49.671656Z"
       }
     },
     {
@@ -582,22 +1229,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7526,
-      "importance": 0.7526,
-      "importance_score": 0.7526,
+      "score": 0.7473,
+      "importance": 0.7473,
+      "importance_score": 0.7473,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9834,
+        "recency": 0.9538,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-17T16:38:32.383000Z",
       "latest_at": "2026-09-17T16:38:32.383000Z",
@@ -618,7 +1264,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
+        "scored_at": "2026-09-17T21:35:49.671656Z"
       }
     },
     {
@@ -666,15 +1312,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7499,
-      "importance": 0.7499,
-      "importance_score": 0.7499,
+      "score": 0.7447,
+      "importance": 0.7447,
+      "importance_score": 0.7447,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9684,
+        "recency": 0.9393,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -701,7 +1347,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
+        "scored_at": "2026-09-17T21:35:49.671656Z"
       }
     },
     {
@@ -749,15 +1395,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7176,
-      "importance": 0.7176,
-      "importance_score": 0.7176,
+      "score": 0.7131,
+      "importance": 0.7131,
+      "importance_score": 0.7131,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.839,
+        "recency": 0.8138,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -784,7 +1430,90 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
+        "scored_at": "2026-09-17T21:35:49.671656Z"
+      }
+    },
+    {
+      "story_id": "story_8d4c470a656c",
+      "title": "Epoch AI 分析：贸易数据与经马来西亚走私至中国的约 30 亿美元芯片一致 / Trade data consistent with $3B of chips smuggled to China via Malaysia",
+      "url": "https://epoch.ai/data-insights/malaysia-china-chip-smuggling",
+      "primary_url": "https://epoch.ai/data-insights/malaysia-china-chip-smuggling",
+      "source": "Epoch AI：研究、数据与评测",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "996726a9ac53981eb863eccd8e5c018833bfdf77",
+          "title": "Epoch AI 分析：贸易数据与经马来西亚走私至中国的约 30 亿美元芯片一致 / Trade data consistent with $3B of chips smuggled to China via Malaysia",
+          "title_zh": "Epoch AI 分析：贸易数据与经马来西亚走私至中国的约 30 亿美元芯片一致",
+          "title_en": "Trade data consistent with $3B of chips smuggled to China via Malaysia",
+          "title_original": "Trade data consistent with $3B of chips smuggled to China via Malaysia",
+          "summary": "Epoch AI 分析海关数据发现，2024 年 4 月至 2025 年 6 月中国记录了 37.5 亿美元、均价约 10.6 万美元/台的马来西亚原产服务器进口，价格水平更符合 AI 服务器而非普通服务器。",
+          "recommend_reason_zh": null,
+          "url": "https://epoch.ai/data-insights/malaysia-china-chip-smuggling",
+          "source": "Epoch AI：研究、数据与评测",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Epoch AI：研究、数据与评测"
+      ],
+      "items": [
+        {
+          "id": "996726a9ac53981eb863eccd8e5c018833bfdf77",
+          "title": "Epoch AI 分析：贸易数据与经马来西亚走私至中国的约 30 亿美元芯片一致 / Trade data consistent with $3B of chips smuggled to China via Malaysia",
+          "title_zh": "Epoch AI 分析：贸易数据与经马来西亚走私至中国的约 30 亿美元芯片一致",
+          "title_en": "Trade data consistent with $3B of chips smuggled to China via Malaysia",
+          "title_original": "Trade data consistent with $3B of chips smuggled to China via Malaysia",
+          "summary": "Epoch AI 分析海关数据发现，2024 年 4 月至 2025 年 6 月中国记录了 37.5 亿美元、均价约 10.6 万美元/台的马来西亚原产服务器进口，价格水平更符合 AI 服务器而非普通服务器。",
+          "recommend_reason_zh": null,
+          "url": "https://epoch.ai/data-insights/malaysia-china-chip-smuggling",
+          "source": "Epoch AI：研究、数据与评测",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-17T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7399,
+      "importance": 0.7399,
+      "importance_score": 0.7399,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.74,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8126,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-17T00:00:00Z",
+      "latest_at": "2026-09-17T00:00:00Z",
+      "primary_item": {
+        "id": "996726a9ac53981eb863eccd8e5c018833bfdf77",
+        "title": "Epoch AI 分析：贸易数据与经马来西亚走私至中国的约 30 亿美元芯片一致 / Trade data consistent with $3B of chips smuggled to China via Malaysia",
+        "title_zh": "Epoch AI 分析：贸易数据与经马来西亚走私至中国的约 30 亿美元芯片一致",
+        "title_en": "Trade data consistent with $3B of chips smuggled to China via Malaysia",
+        "title_original": "Trade data consistent with $3B of chips smuggled to China via Malaysia",
+        "summary": "Epoch AI 分析海关数据发现，2024 年 4 月至 2025 年 6 月中国记录了 37.5 亿美元、均价约 10.6 万美元/台的马来西亚原产服务器进口，价格水平更符合 AI 服务器而非普通服务器。",
+        "recommend_reason_zh": null,
+        "url": "https://epoch.ai/data-insights/malaysia-china-chip-smuggling",
+        "source": "Epoch AI：研究、数据与评测",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7399,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-17T21:35:49.671656Z"
       }
     },
     {
@@ -832,22 +1561,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7503,
-      "importance": 0.7503,
-      "importance_score": 0.7503,
+      "score": 0.7454,
+      "importance": 0.7454,
+      "importance_score": 0.7454,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9038,
+        "recency": 0.8766,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-17T07:52:16.279832Z",
       "latest_at": "2026-09-17T07:52:16.279832Z",
@@ -868,7 +1596,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
+        "scored_at": "2026-09-17T21:35:49.671656Z"
       }
     },
     {
@@ -916,15 +1644,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7407,
-      "importance": 0.7407,
-      "importance_score": 0.7407,
+      "score": 0.7361,
+      "importance": 0.7361,
+      "importance_score": 0.7361,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8505,
+        "recency": 0.8249,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -951,7 +1679,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
+        "scored_at": "2026-09-17T21:35:49.671656Z"
       }
     },
     {
@@ -999,22 +1727,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7503,
-      "importance": 0.7503,
-      "importance_score": 0.7503,
+      "score": 0.7454,
+      "importance": 0.7454,
+      "importance_score": 0.7454,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9038,
+        "recency": 0.8766,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-17T07:52:16.279832Z",
       "latest_at": "2026-09-17T07:52:16.279832Z",
@@ -1035,678 +1762,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
-      }
-    },
-    {
-      "story_id": "story_c7c89a0dc84d",
-      "title": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
-      "url": "https://www.aibase.com/news/31119",
-      "primary_url": "https://www.aibase.com/news/31119",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "4c7f260624f3c00d9797b18331776eedca8d8037",
-          "title": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
-          "title_zh": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
-          "title_en": null,
-          "title_original": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31119",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "4c7f260624f3c00d9797b18331776eedca8d8037",
-          "title": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
-          "title_zh": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
-          "title_en": null,
-          "title_original": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31119",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7503,
-      "importance": 0.7503,
-      "importance_score": 0.7503,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9038,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-17T07:52:16.279832Z",
-      "latest_at": "2026-09-17T07:52:16.279832Z",
-      "primary_item": {
-        "id": "4c7f260624f3c00d9797b18331776eedca8d8037",
-        "title": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
-        "title_zh": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
-        "title_en": null,
-        "title_original": "Grok Build 重磅上线“长期记忆”功能，跨会话无缝同步项目细节",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31119",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
-      }
-    },
-    {
-      "story_id": "story_8bf736325a82",
-      "title": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
-      "url": "https://www.aibase.com/news/31132",
-      "primary_url": "https://www.aibase.com/news/31132",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "4f989f66b4ba45a00a82c5521365b3c808ab00a0",
-          "title": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
-          "title_zh": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
-          "title_en": null,
-          "title_original": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31132",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "4f989f66b4ba45a00a82c5521365b3c808ab00a0",
-          "title": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
-          "title_zh": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
-          "title_en": null,
-          "title_original": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31132",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7503,
-      "importance": 0.7503,
-      "importance_score": 0.7503,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9038,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-17T07:52:16.279832Z",
-      "latest_at": "2026-09-17T07:52:16.279832Z",
-      "primary_item": {
-        "id": "4f989f66b4ba45a00a82c5521365b3c808ab00a0",
-        "title": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
-        "title_zh": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
-        "title_en": null,
-        "title_original": "Kimi 发布金融行业 AI 解决方案：10 余个数据源一站式接入，资料处理从天级压到小时级",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31132",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
-      }
-    },
-    {
-      "story_id": "story_1aad29691f35",
-      "title": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
-      "url": "https://www.aibase.com/news/31115",
-      "primary_url": "https://www.aibase.com/news/31115",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "0bf394595f22f1642f8955d6a76187b323ed628e",
-          "title": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
-          "title_zh": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
-          "title_en": null,
-          "title_original": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31115",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "0bf394595f22f1642f8955d6a76187b323ed628e",
-          "title": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
-          "title_zh": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
-          "title_en": null,
-          "title_original": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31115",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7503,
-      "importance": 0.7503,
-      "importance_score": 0.7503,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9038,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-17T07:52:16.279832Z",
-      "latest_at": "2026-09-17T07:52:16.279832Z",
-      "primary_item": {
-        "id": "0bf394595f22f1642f8955d6a76187b323ed628e",
-        "title": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
-        "title_zh": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
-        "title_en": null,
-        "title_original": "Mozilla 携手Mistral，让 Firefox 智能窗口正式走向国际市场",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31115",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
-      }
-    },
-    {
-      "story_id": "story_d1e99996f746",
-      "title": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
-      "url": "https://www.aibase.com/news/31108",
-      "primary_url": "https://www.aibase.com/news/31108",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "c93d7aa20c48ca8eec64879619c63c251389db46",
-          "title": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
-          "title_zh": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
-          "title_en": null,
-          "title_original": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31108",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T01:33:30.420052Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "c93d7aa20c48ca8eec64879619c63c251389db46",
-          "title": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
-          "title_zh": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
-          "title_en": null,
-          "title_original": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31108",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T01:33:30.420052Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7407,
-      "importance": 0.7407,
-      "importance_score": 0.7407,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8505,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-17T01:33:30.420052Z",
-      "latest_at": "2026-09-17T01:33:30.420052Z",
-      "primary_item": {
-        "id": "c93d7aa20c48ca8eec64879619c63c251389db46",
-        "title": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
-        "title_zh": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
-        "title_en": null,
-        "title_original": "Mozilla携手Mistral，将AI模型引入Firefox智能窗口",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31108",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
-      }
-    },
-    {
-      "story_id": "story_901f7b75a9c5",
-      "title": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
-      "url": "https://www.aibase.com/news/31122",
-      "primary_url": "https://www.aibase.com/news/31122",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "cfbd3d5ec25b05171243e43a477599ef057dec04",
-          "title": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
-          "title_zh": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
-          "title_en": null,
-          "title_original": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31122",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "cfbd3d5ec25b05171243e43a477599ef057dec04",
-          "title": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
-          "title_zh": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
-          "title_en": null,
-          "title_original": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31122",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7503,
-      "importance": 0.7503,
-      "importance_score": 0.7503,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9038,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-17T07:52:16.279832Z",
-      "latest_at": "2026-09-17T07:52:16.279832Z",
-      "primary_item": {
-        "id": "cfbd3d5ec25b05171243e43a477599ef057dec04",
-        "title": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
-        "title_zh": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
-        "title_en": null,
-        "title_original": "deepin 25 成功适配进迭时空 K3 芯片，实现 RISC-V 平台离线大模型本地推理",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31122",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
-      }
-    },
-    {
-      "story_id": "story_7b5be1e6de80",
-      "title": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
-      "url": "https://www.aibase.com/news/31123",
-      "primary_url": "https://www.aibase.com/news/31123",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "44e5ed43767b72bac685170d2e11cfb0352f1f46",
-          "title": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
-          "title_zh": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
-          "title_en": null,
-          "title_original": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31123",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "44e5ed43767b72bac685170d2e11cfb0352f1f46",
-          "title": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
-          "title_zh": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
-          "title_en": null,
-          "title_original": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31123",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7503,
-      "importance": 0.7503,
-      "importance_score": 0.7503,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9038,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-17T07:52:16.279832Z",
-      "latest_at": "2026-09-17T07:52:16.279832Z",
-      "primary_item": {
-        "id": "44e5ed43767b72bac685170d2e11cfb0352f1f46",
-        "title": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
-        "title_zh": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
-        "title_en": null,
-        "title_original": "iOS 27.2 测试版首曝大批新功能：健康应用彻底重构，Siri 扩展至五种新语言",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31123",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
-      }
-    },
-    {
-      "story_id": "story_52a7858a1b06",
-      "title": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
-      "url": "https://www.aibase.com/news/31134",
-      "primary_url": "https://www.aibase.com/news/31134",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "3f1aca2baf650fb511f98091068f781cf2822fbe",
-          "title": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
-          "title_zh": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
-          "title_en": null,
-          "title_original": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31134",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T13:39:02.904329Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "3f1aca2baf650fb511f98091068f781cf2822fbe",
-          "title": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
-          "title_zh": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
-          "title_en": null,
-          "title_original": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31134",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T13:39:02.904329Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7596,
-      "importance": 0.7596,
-      "importance_score": 0.7596,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9555,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-17T13:39:02.904329Z",
-      "latest_at": "2026-09-17T13:39:02.904329Z",
-      "primary_item": {
-        "id": "3f1aca2baf650fb511f98091068f781cf2822fbe",
-        "title": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
-        "title_zh": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
-        "title_en": null,
-        "title_original": "​Anthropic大动作：将Chat与Cowork合并，推出Docs与Slides全新功能",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31134",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
-      }
-    },
-    {
-      "story_id": "story_3a1393b95d3a",
-      "title": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
-      "url": "https://www.aibase.com/news/31117",
-      "primary_url": "https://www.aibase.com/news/31117",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "780fe706a06cfbb82e9033441c2e53b71a444452",
-          "title": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
-          "title_zh": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
-          "title_en": null,
-          "title_original": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31117",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "780fe706a06cfbb82e9033441c2e53b71a444452",
-          "title": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
-          "title_zh": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
-          "title_en": null,
-          "title_original": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31117",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7503,
-      "importance": 0.7503,
-      "importance_score": 0.7503,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9038,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-17T07:52:16.279832Z",
-      "latest_at": "2026-09-17T07:52:16.279832Z",
-      "primary_item": {
-        "id": "780fe706a06cfbb82e9033441c2e53b71a444452",
-        "title": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
-        "title_zh": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
-        "title_en": null,
-        "title_original": "​DeepMind 首席科学家硬刚黄仁勋：别炒作了，Astra 连 OpenAI 自家的 AGI 标准都没达到",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31117",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-17T18:23:50.800420Z"
+        "scored_at": "2026-09-17T21:35:49.671656Z"
       }
     }
   ]
