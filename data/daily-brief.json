@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T16:35:41.022395Z",
+  "generated_at": "2026-09-18T19:48:29.898127Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8493,
-      "importance": 0.8493,
-      "importance_score": 0.8493,
+      "score": 0.8439,
+      "importance": 0.8439,
+      "importance_score": 0.8439,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9848,
+        "recency": 0.9548,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -133,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8116,
-      "importance": 0.8116,
-      "importance_score": 0.8116,
+      "score": 0.8071,
+      "importance": 0.8071,
+      "importance_score": 0.8071,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8202,
+        "recency": 0.7952,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -170,178 +170,150 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
-      "story_id": "story_4bc3dd239911",
-      "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.",
-      "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-      "primary_url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-      "source": "Qwen：Blog Retrieval（API）",
+      "story_id": "story_fc4b3a26f87c",
+      "title": "美军因 AI 幻觉情报报告险些拦截中国船只 / US Military had close call after using AI for hallucinated intelligence report",
+      "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
+      "primary_url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
+      "source": "Hacker News：AI 热帖",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "5d8ede19dc693db11ad653c8305b3412ee6fe9da",
-          "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.",
-          "title_zh": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
-          "title_en": "Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.",
-          "title_original": "Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.",
-          "summary": "Qwen 发布下一代原生全模态模型 Qwen3.8-Omni-Flash，支持文本、图像、音频和视频输入及 1M token 上下文窗口，29 项评测平均分较 Qwen3.5-Omni-Plus 提升超过 25%，音频输入每小时价格下降超过 98%，音视频输入每小时价格下降超过 93%。",
+          "id": "2decbef3c0728a852ea1e5b34fc103fa36eb94a1",
+          "title": "美军因 AI 幻觉情报报告险些拦截中国船只 / US Military had close call after using AI for hallucinated intelligence report",
+          "title_zh": "美军因 AI 幻觉情报报告险些拦截中国船只",
+          "title_en": "US Military had close call after using AI for hallucinated intelligence report",
+          "title_original": "US Military had close call after using AI for hallucinated intelligence report",
+          "summary": "据 CNN 报道，今年春天美伊战争期间，一份由特种作战司令部分析师借助聊天机器人生成的情报报告错误称一艘中东中国船只运输核武器部件，美军一度准备武装登船拦截，行动前才发现报告内容完全不实。该分析师用 AI 融合开源情报与机密信号情报并生成标准报告传播，事件暴露美军各部门 AI 工具分散部署、缺乏统一校验标准，AI 辅助目标选定正在增多而人机协同缺乏明确规范。",
           "recommend_reason_zh": null,
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "source": "Qwen：Blog Retrieval（API）",
+          "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
+          "source": "Hacker News：AI 热帖",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-17T17:18:08.568000Z"
+          "published_at": "2026-09-18T17:28:01Z"
         },
         {
-          "id": "1fffd1feade9fb636c1acc9d54d20f5cb236ca78",
-          "title": "阿里巴巴发布Qwen 3.8 Omni Flash",
-          "title_zh": "阿里巴巴发布Qwen 3.8 Omni Flash",
+          "id": "0ea33f912b37b9f311ade659916c1b113c8861c6",
+          "title": "美军因使用人工智能生成虚假情报报告，险些酿成大祸",
+          "title_zh": "美军因使用人工智能生成虚假情报报告，险些酿成大祸",
           "title_en": null,
-          "title_original": "阿里巴巴发布Qwen 3.8 Omni Flash",
+          "title_original": "美军因使用人工智能生成虚假情报报告，险些酿成大祸",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "source": "qwen.ai",
+          "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
+          "source": "www.cnn.com",
           "source_name": "Buzzing",
           "site_id": "buzzing",
-          "published_at": "2026-09-18T04:45:46.234000Z"
+          "published_at": "2026-09-18T18:48:49.722000Z"
         },
         {
-          "id": "5506e775b22e613d112ed24bedbc02b2de69fa67",
-          "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Alibaba releases Qwen 3.8 Omni Flash",
-          "title_zh": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
-          "title_en": "Alibaba releases Qwen 3.8 Omni Flash",
-          "title_original": "Alibaba releases Qwen 3.8 Omni Flash",
+          "id": "a7cd35ddcee1fa17fab498fce1164576639f9162",
+          "title": "US Military had close call after using AI for hallucinated intelligence report",
+          "title_zh": null,
+          "title_en": "US Military had close call after using AI for hallucinated intelligence report",
+          "title_original": "US Military had close call after using AI for hallucinated intelligence report",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-17T23:05:48Z"
-        },
-        {
-          "id": "4f1be5c84a80e2ffead5ac3376c67f878048ee28",
-          "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Qwen 3.8 Omni Flash",
-          "title_zh": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
-          "title_en": "Qwen 3.8 Omni Flash",
-          "title_original": "Qwen 3.8 Omni Flash",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-17T23:05:48Z"
+          "url": "https://news.ycombinator.com/item?id=49757520",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-18T17:28:01Z"
         }
       ],
-      "source_count": 1,
+      "source_count": 2,
       "source_names": [
-        "Hacker News",
-        "Hacker News (黑客新闻)",
-        "Qwen：Blog Retrieval（API）",
-        "qwen.ai"
+        "Hacker News：AI 热帖",
+        "hackernews",
+        "www.cnn.com"
       ],
       "items": [
         {
-          "id": "5d8ede19dc693db11ad653c8305b3412ee6fe9da",
-          "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.",
-          "title_zh": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
-          "title_en": "Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.",
-          "title_original": "Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.",
-          "summary": "Qwen 发布下一代原生全模态模型 Qwen3.8-Omni-Flash，支持文本、图像、音频和视频输入及 1M token 上下文窗口，29 项评测平均分较 Qwen3.5-Omni-Plus 提升超过 25%，音频输入每小时价格下降超过 98%，音视频输入每小时价格下降超过 93%。",
+          "id": "2decbef3c0728a852ea1e5b34fc103fa36eb94a1",
+          "title": "美军因 AI 幻觉情报报告险些拦截中国船只 / US Military had close call after using AI for hallucinated intelligence report",
+          "title_zh": "美军因 AI 幻觉情报报告险些拦截中国船只",
+          "title_en": "US Military had close call after using AI for hallucinated intelligence report",
+          "title_original": "US Military had close call after using AI for hallucinated intelligence report",
+          "summary": "据 CNN 报道，今年春天美伊战争期间，一份由特种作战司令部分析师借助聊天机器人生成的情报报告错误称一艘中东中国船只运输核武器部件，美军一度准备武装登船拦截，行动前才发现报告内容完全不实。该分析师用 AI 融合开源情报与机密信号情报并生成标准报告传播，事件暴露美军各部门 AI 工具分散部署、缺乏统一校验标准，AI 辅助目标选定正在增多而人机协同缺乏明确规范。",
           "recommend_reason_zh": null,
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "source": "Qwen：Blog Retrieval（API）",
+          "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
+          "source": "Hacker News：AI 热帖",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-17T17:18:08.568000Z"
+          "published_at": "2026-09-18T17:28:01Z"
         },
         {
-          "id": "1fffd1feade9fb636c1acc9d54d20f5cb236ca78",
-          "title": "阿里巴巴发布Qwen 3.8 Omni Flash",
-          "title_zh": "阿里巴巴发布Qwen 3.8 Omni Flash",
+          "id": "0ea33f912b37b9f311ade659916c1b113c8861c6",
+          "title": "美军因使用人工智能生成虚假情报报告，险些酿成大祸",
+          "title_zh": "美军因使用人工智能生成虚假情报报告，险些酿成大祸",
           "title_en": null,
-          "title_original": "阿里巴巴发布Qwen 3.8 Omni Flash",
+          "title_original": "美军因使用人工智能生成虚假情报报告，险些酿成大祸",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "source": "qwen.ai",
+          "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
+          "source": "www.cnn.com",
           "source_name": "Buzzing",
           "site_id": "buzzing",
-          "published_at": "2026-09-18T04:45:46.234000Z"
+          "published_at": "2026-09-18T18:48:49.722000Z"
         },
         {
-          "id": "5506e775b22e613d112ed24bedbc02b2de69fa67",
-          "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Alibaba releases Qwen 3.8 Omni Flash",
-          "title_zh": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
-          "title_en": "Alibaba releases Qwen 3.8 Omni Flash",
-          "title_original": "Alibaba releases Qwen 3.8 Omni Flash",
+          "id": "a7cd35ddcee1fa17fab498fce1164576639f9162",
+          "title": "US Military had close call after using AI for hallucinated intelligence report",
+          "title_zh": null,
+          "title_en": "US Military had close call after using AI for hallucinated intelligence report",
+          "title_original": "US Military had close call after using AI for hallucinated intelligence report",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-17T23:05:48Z"
-        },
-        {
-          "id": "4f1be5c84a80e2ffead5ac3376c67f878048ee28",
-          "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Qwen 3.8 Omni Flash",
-          "title_zh": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
-          "title_en": "Qwen 3.8 Omni Flash",
-          "title_original": "Qwen 3.8 Omni Flash",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-17T23:05:48Z"
+          "url": "https://news.ycombinator.com/item?id=49757520",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-18T17:28:01Z"
         }
       ],
-      "item_count": 4,
-      "duplicate_count": 4,
-      "score": 0.7948,
-      "importance": 0.7948,
-      "importance_score": 0.7948,
-      "importance_label": "官方更新",
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8306,
+      "importance": 0.8306,
+      "importance_score": 0.8306,
+      "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.77,
-        "source_tier": 1.0,
+        "editorial": 0.86,
+        "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7991,
-        "story_heat": 0.0,
+        "recency": 0.9777,
+        "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
-      "category": "official",
+      "category": "industry",
       "reasons": [
+        "multi_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-17T17:18:08.568000Z",
-      "latest_at": "2026-09-18T04:45:46.234000Z",
+      "earliest_at": "2026-09-18T17:28:01Z",
+      "latest_at": "2026-09-18T18:48:49.722000Z",
       "primary_item": {
-        "id": "5d8ede19dc693db11ad653c8305b3412ee6fe9da",
-        "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.",
-        "title_zh": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
-        "title_en": "Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.",
-        "title_original": "Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.",
-        "summary": "Qwen 发布下一代原生全模态模型 Qwen3.8-Omni-Flash，支持文本、图像、音频和视频输入及 1M token 上下文窗口，29 项评测平均分较 Qwen3.5-Omni-Plus 提升超过 25%，音频输入每小时价格下降超过 98%，音视频输入每小时价格下降超过 93%。",
+        "id": "2decbef3c0728a852ea1e5b34fc103fa36eb94a1",
+        "title": "美军因 AI 幻觉情报报告险些拦截中国船只 / US Military had close call after using AI for hallucinated intelligence report",
+        "title_zh": "美军因 AI 幻觉情报报告险些拦截中国船只",
+        "title_en": "US Military had close call after using AI for hallucinated intelligence report",
+        "title_original": "US Military had close call after using AI for hallucinated intelligence report",
+        "summary": "据 CNN 报道，今年春天美伊战争期间，一份由特种作战司令部分析师借助聊天机器人生成的情报报告错误称一艘中东中国船只运输核武器部件，美军一度准备武装登船拦截，行动前才发现报告内容完全不实。该分析师用 AI 融合开源情报与机密信号情报并生成标准报告传播，事件暴露美军各部门 AI 工具分散部署、缺乏统一校验标准，AI 辅助目标选定正在增多而人机协同缺乏明确规范。",
         "recommend_reason_zh": null,
-        "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
-        "source": "Qwen：Blog Retrieval（API）",
+        "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
+        "source": "Hacker News：AI 热帖",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.8291,
+      "peak_score": 0.8306,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -533,15 +505,15 @@
       ],
       "item_count": 6,
       "duplicate_count": 6,
-      "score": 0.8092,
-      "importance": 0.8092,
-      "importance_score": 0.8092,
+      "score": 0.8043,
+      "importance": 0.8043,
+      "importance_score": 0.8043,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8923,
+        "recency": 0.8652,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -570,7 +542,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -618,15 +590,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8396,
-      "importance": 0.8396,
-      "importance_score": 0.8396,
+      "score": 0.8342,
+      "importance": 0.8342,
+      "importance_score": 0.8342,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9753,
+        "recency": 0.9456,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -655,7 +627,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -703,15 +675,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7774,
-      "importance": 0.7774,
-      "importance_score": 0.7774,
+      "score": 0.7729,
+      "importance": 0.7729,
+      "importance_score": 0.7729,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8188,
+        "recency": 0.7939,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -739,233 +711,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
-      }
-    },
-    {
-      "story_id": "story_96a1341fc9d6",
-      "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS / ZCode， the GLM coding agent， silently uploads your Git history",
-      "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
-      "primary_url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
-      "source": "Hacker News：AI 热帖",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "656596878735c4bdcb0c5b7cf3549b7dd602f588",
-          "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS / ZCode， the GLM coding agent， silently uploads your Git history",
-          "title_zh": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS",
-          "title_en": "ZCode， the GLM coding agent， silently uploads your Git history",
-          "title_original": "ZCode， the GLM coding agent， silently uploads your Git history",
-          "summary": "开发者 ferstar 逆向 Z.ai 的 AI 编程桌面应用 ZCode，发现其登录后会静默把整个工作区打包（含完整 .git 历史、LFS 缓存、reflogs 和全局配置）加密上传至 Aliyun OSS，实测一次快照为 42，411 个文件、313MB，且 .git 目录占载荷的 86.6%。",
-          "recommend_reason_zh": null,
-          "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T10:35:28Z"
-        },
-        {
-          "id": "122f082e8323a0950fa23608bf1f059274bd894f",
-          "title": "ZCode 是一款基于 GLM 的编码代理，它会自动上传您的 Git 历史记录",
-          "title_zh": "ZCode 是一款基于 GLM 的编码代理，它会自动上传您的 Git 历史记录",
-          "title_en": null,
-          "title_original": "ZCode 是一款基于 GLM 的编码代理，它会自动上传您的 Git 历史记录",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
-          "source": "tokenstead.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-18T12:33:41.989000Z"
-        },
-        {
-          "id": "e6a768ba0ed92a451c40d1e0233143913a0c9b9c",
-          "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS / ZCode, the GLM coding agent, silently uploads your Git history",
-          "title_zh": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS",
-          "title_en": "ZCode, the GLM coding agent, silently uploads your Git history",
-          "title_original": "ZCode, the GLM coding agent, silently uploads your Git history",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-18T10:35:28Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News (黑客新闻)",
-        "Hacker News：AI 热帖",
-        "tokenstead.ai"
-      ],
-      "items": [
-        {
-          "id": "656596878735c4bdcb0c5b7cf3549b7dd602f588",
-          "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS / ZCode， the GLM coding agent， silently uploads your Git history",
-          "title_zh": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS",
-          "title_en": "ZCode， the GLM coding agent， silently uploads your Git history",
-          "title_original": "ZCode， the GLM coding agent， silently uploads your Git history",
-          "summary": "开发者 ferstar 逆向 Z.ai 的 AI 编程桌面应用 ZCode，发现其登录后会静默把整个工作区打包（含完整 .git 历史、LFS 缓存、reflogs 和全局配置）加密上传至 Aliyun OSS，实测一次快照为 42，411 个文件、313MB，且 .git 目录占载荷的 86.6%。",
-          "recommend_reason_zh": null,
-          "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T10:35:28Z"
-        },
-        {
-          "id": "122f082e8323a0950fa23608bf1f059274bd894f",
-          "title": "ZCode 是一款基于 GLM 的编码代理，它会自动上传您的 Git 历史记录",
-          "title_zh": "ZCode 是一款基于 GLM 的编码代理，它会自动上传您的 Git 历史记录",
-          "title_en": null,
-          "title_original": "ZCode 是一款基于 GLM 的编码代理，它会自动上传您的 Git 历史记录",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
-          "source": "tokenstead.ai",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-18T12:33:41.989000Z"
-        },
-        {
-          "id": "e6a768ba0ed92a451c40d1e0233143913a0c9b9c",
-          "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS / ZCode, the GLM coding agent, silently uploads your Git history",
-          "title_zh": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS",
-          "title_en": "ZCode, the GLM coding agent, silently uploads your Git history",
-          "title_original": "ZCode, the GLM coding agent, silently uploads your Git history",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-18T10:35:28Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.7995,
-      "importance": 0.7995,
-      "importance_score": 0.7995,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.86,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9438,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-18T10:35:28Z",
-      "latest_at": "2026-09-18T12:33:41.989000Z",
-      "primary_item": {
-        "id": "656596878735c4bdcb0c5b7cf3549b7dd602f588",
-        "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS / ZCode， the GLM coding agent， silently uploads your Git history",
-        "title_zh": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS",
-        "title_en": "ZCode， the GLM coding agent， silently uploads your Git history",
-        "title_original": "ZCode， the GLM coding agent， silently uploads your Git history",
-        "summary": "开发者 ferstar 逆向 Z.ai 的 AI 编程桌面应用 ZCode，发现其登录后会静默把整个工作区打包（含完整 .git 历史、LFS 缓存、reflogs 和全局配置）加密上传至 Aliyun OSS，实测一次快照为 42，411 个文件、313MB，且 .git 目录占载荷的 86.6%。",
-        "recommend_reason_zh": null,
-        "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
-        "source": "Hacker News：AI 热帖",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7995,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
-      }
-    },
-    {
-      "story_id": "story_e8d939d02589",
-      "title": "Claude Code 重构 Projects：从文件夹变为可托管多线程的对话式项目 / Projects redesigned： from folder to conversation",
-      "url": "https://claude.com/blog/projects-redesigned",
-      "primary_url": "https://claude.com/blog/projects-redesigned",
-      "source": "Claude：Blog（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "e15cbacd1d3ae0b2677e76abd75ee832320eeb88",
-          "title": "Claude Code 重构 Projects：从文件夹变为可托管多线程的对话式项目 / Projects redesigned： from folder to conversation",
-          "title_zh": "Claude Code 重构 Projects：从文件夹变为可托管多线程的对话式项目",
-          "title_en": "Projects redesigned： from folder to conversation",
-          "title_original": "Projects redesigned： from folder to conversation",
-          "summary": "Anthropic 重构 Claude Code 的 Projects，用户设定目标后由 Claude 拆解任务、并行调度多个线程、审查输出并汇总结果，线程本质上是各自独立分支的 Claude Code 云端会话。",
-          "recommend_reason_zh": null,
-          "url": "https://claude.com/blog/projects-redesigned",
-          "source": "Claude：Blog（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-17T17:52:08.951000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Claude：Blog（网页）"
-      ],
-      "items": [
-        {
-          "id": "e15cbacd1d3ae0b2677e76abd75ee832320eeb88",
-          "title": "Claude Code 重构 Projects：从文件夹变为可托管多线程的对话式项目 / Projects redesigned： from folder to conversation",
-          "title_zh": "Claude Code 重构 Projects：从文件夹变为可托管多线程的对话式项目",
-          "title_en": "Projects redesigned： from folder to conversation",
-          "title_original": "Projects redesigned： from folder to conversation",
-          "summary": "Anthropic 重构 Claude Code 的 Projects，用户设定目标后由 Claude 拆解任务、并行调度多个线程、审查输出并汇总结果，线程本质上是各自独立分支的 Claude Code 云端会话。",
-          "recommend_reason_zh": null,
-          "url": "https://claude.com/blog/projects-redesigned",
-          "source": "Claude：Blog（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-17T17:52:08.951000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7626,
-      "importance": 0.7626,
-      "importance_score": 0.7626,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.66,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8035,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-17T17:52:08.951000Z",
-      "latest_at": "2026-09-17T17:52:08.951000Z",
-      "primary_item": {
-        "id": "e15cbacd1d3ae0b2677e76abd75ee832320eeb88",
-        "title": "Claude Code 重构 Projects：从文件夹变为可托管多线程的对话式项目 / Projects redesigned： from folder to conversation",
-        "title_zh": "Claude Code 重构 Projects：从文件夹变为可托管多线程的对话式项目",
-        "title_en": "Projects redesigned： from folder to conversation",
-        "title_original": "Projects redesigned： from folder to conversation",
-        "summary": "Anthropic 重构 Claude Code 的 Projects，用户设定目标后由 Claude 拆解任务、并行调度多个线程、审查输出并汇总结果，线程本质上是各自独立分支的 Claude Code 云端会话。",
-        "recommend_reason_zh": null,
-        "url": "https://claude.com/blog/projects-redesigned",
-        "source": "Claude：Blog（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7971,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -1013,15 +759,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7926,
-      "importance": 0.7926,
-      "importance_score": 0.7926,
+      "score": 0.7872,
+      "importance": 0.7872,
+      "importance_score": 0.7872,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9891,
+        "recency": 0.959,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1049,7 +795,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
+      }
+    },
+    {
+      "story_id": "story_3aa5ba65c799",
+      "title": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒 / Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
+      "url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
+      "primary_url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
+      "source": "Qwen：Blog Retrieval（API）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "d907b5933a2452eb2e9b90d441cd40832fa56fb2",
+          "title": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒 / Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
+          "title_zh": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒",
+          "title_en": "Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
+          "title_original": "Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
+          "summary": "Qwen 发布 Qwen3.8-LiveTranslate，采用 Interleave 架构与 Hybrid-MoE Thinker-Talker 设计重构实时同声传译，平均滞后（LAAL）从上一代的 2.8 秒降至 2.3 秒。",
+          "recommend_reason_zh": null,
+          "url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
+          "source": "Qwen：Blog Retrieval（API）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-18T09:30:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Qwen：Blog Retrieval（API）"
+      ],
+      "items": [
+        {
+          "id": "d907b5933a2452eb2e9b90d441cd40832fa56fb2",
+          "title": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒 / Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
+          "title_zh": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒",
+          "title_en": "Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
+          "title_original": "Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
+          "summary": "Qwen 发布 Qwen3.8-LiveTranslate，采用 Interleave 架构与 Hybrid-MoE Thinker-Talker 设计重构实时同声传译，平均滞后（LAAL）从上一代的 2.8 秒降至 2.3 秒。",
+          "recommend_reason_zh": null,
+          "url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
+          "source": "Qwen：Blog Retrieval（API）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-18T09:30:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.787,
+      "importance": 0.787,
+      "importance_score": 0.787,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.68,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9055,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-18T09:30:00Z",
+      "latest_at": "2026-09-18T09:30:00Z",
+      "primary_item": {
+        "id": "d907b5933a2452eb2e9b90d441cd40832fa56fb2",
+        "title": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒 / Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
+        "title_zh": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒",
+        "title_en": "Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
+        "title_original": "Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
+        "summary": "Qwen 发布 Qwen3.8-LiveTranslate，采用 Interleave 架构与 Hybrid-MoE Thinker-Talker 设计重构实时同声传译，平均滞后（LAAL）从上一代的 2.8 秒降至 2.3 秒。",
+        "recommend_reason_zh": null,
+        "url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
+        "source": "Qwen：Blog Retrieval（API）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7921,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -1097,15 +927,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.76,
-      "importance": 0.76,
-      "importance_score": 0.76,
+      "score": 0.7555,
+      "importance": 0.7555,
+      "importance_score": 0.7555,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8247,
+        "recency": 0.7996,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1133,7 +963,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -1181,15 +1011,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7603,
-      "importance": 0.7603,
-      "importance_score": 0.7603,
+      "score": 0.7557,
+      "importance": 0.7557,
+      "importance_score": 0.7557,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.63,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8406,
+        "recency": 0.815,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1217,7 +1047,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -1294,15 +1124,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7834,
-      "importance": 0.7834,
-      "importance_score": 0.7834,
+      "score": 0.7787,
+      "importance": 0.7787,
+      "importance_score": 0.7787,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8523,
+        "recency": 0.8264,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1330,91 +1160,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
-      }
-    },
-    {
-      "story_id": "story_d56b523d3dff",
-      "title": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对 / The AI Superintelligence Slowdown",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
-      "primary_url": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
-      "source": "The Verge：AI（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "75904b2fddfb99197aaad0a486f575bb90f423bd",
-          "title": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对 / The AI Superintelligence Slowdown",
-          "title_zh": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对",
-          "title_en": "The AI Superintelligence Slowdown",
-          "title_original": "The AI Superintelligence Slowdown",
-          "summary": "The Verge 梳理近期 AI 安全与放缓争论：Anthropic CEO Dario Amodei 发文提出三步走计划，包括引入第三方评估机构（Anthropic 已单方面承诺第一步）、民主国家前沿 AI 公司协调标准，以及政府间全球协调，OpenAI 的 Sam Altman 与 Elon Musk 表示支持。",
-          "recommend_reason_zh": null,
-          "url": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
-          "source": "The Verge：AI（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-17T19:28:24Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "The Verge：AI（RSS）"
-      ],
-      "items": [
-        {
-          "id": "75904b2fddfb99197aaad0a486f575bb90f423bd",
-          "title": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对 / The AI Superintelligence Slowdown",
-          "title_zh": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对",
-          "title_en": "The AI Superintelligence Slowdown",
-          "title_original": "The AI Superintelligence Slowdown",
-          "summary": "The Verge 梳理近期 AI 安全与放缓争论：Anthropic CEO Dario Amodei 发文提出三步走计划，包括引入第三方评估机构（Anthropic 已单方面承诺第一步）、民主国家前沿 AI 公司协调标准，以及政府间全球协调，OpenAI 的 Sam Altman 与 Elon Musk 表示支持。",
-          "recommend_reason_zh": null,
-          "url": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
-          "source": "The Verge：AI（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-17T19:28:24Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7525,
-      "importance": 0.7525,
-      "importance_score": 0.7525,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.78,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.816,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-17T19:28:24Z",
-      "latest_at": "2026-09-17T19:28:24Z",
-      "primary_item": {
-        "id": "75904b2fddfb99197aaad0a486f575bb90f423bd",
-        "title": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对 / The AI Superintelligence Slowdown",
-        "title_zh": "The Verge 汇总 AI 超级智能放缓争论：Amodei 倡议放缓，Altman、Musk 附议，Meta 反对",
-        "title_en": "The AI Superintelligence Slowdown",
-        "title_original": "The AI Superintelligence Slowdown",
-        "summary": "The Verge 梳理近期 AI 安全与放缓争论：Anthropic CEO Dario Amodei 发文提出三步走计划，包括引入第三方评估机构（Anthropic 已单方面承诺第一步）、民主国家前沿 AI 公司协调标准，以及政府间全球协调，OpenAI 的 Sam Altman 与 Elon Musk 表示支持。",
-        "recommend_reason_zh": null,
-        "url": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
-        "source": "The Verge：AI（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.782,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -1462,15 +1208,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7561,
-      "importance": 0.7561,
-      "importance_score": 0.7561,
+      "score": 0.7516,
+      "importance": 0.7516,
+      "importance_score": 0.7516,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8363,
+        "recency": 0.8108,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1498,7 +1244,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -1546,15 +1292,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8379,
-      "importance": 0.8379,
-      "importance_score": 0.8379,
+      "score": 0.8326,
+      "importance": 0.8326,
+      "importance_score": 0.8326,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.966,
+        "recency": 0.9366,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1583,7 +1329,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -1631,15 +1377,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7604,
-      "importance": 0.7604,
-      "importance_score": 0.7604,
+      "score": 0.7555,
+      "importance": 0.7555,
+      "importance_score": 0.7555,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8933,
+        "recency": 0.8661,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1667,7 +1413,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -1715,15 +1461,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7644,
-      "importance": 0.7644,
-      "importance_score": 0.7644,
+      "score": 0.7594,
+      "importance": 0.7594,
+      "importance_score": 0.7594,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9155,
+        "recency": 0.8876,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1751,7 +1497,149 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
+      }
+    },
+    {
+      "story_id": "story_96a1341fc9d6",
+      "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS / ZCode， the GLM coding agent， silently uploads your Git history",
+      "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+      "primary_url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+      "source": "Hacker News：AI 热帖",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "656596878735c4bdcb0c5b7cf3549b7dd602f588",
+          "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS / ZCode， the GLM coding agent， silently uploads your Git history",
+          "title_zh": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS",
+          "title_en": "ZCode， the GLM coding agent， silently uploads your Git history",
+          "title_original": "ZCode， the GLM coding agent， silently uploads your Git history",
+          "summary": "开发者 ferstar 逆向 Z.ai 的 AI 编程桌面应用 ZCode，发现其登录后会静默把整个工作区打包（含完整 .git 历史、LFS 缓存、reflogs 和全局配置）加密上传至 Aliyun OSS，实测一次快照为 42，411 个文件、313MB，且 .git 目录占载荷的 86.6%。",
+          "recommend_reason_zh": null,
+          "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-18T10:35:28Z"
+        },
+        {
+          "id": "122f082e8323a0950fa23608bf1f059274bd894f",
+          "title": "ZCode 是一款基于 GLM 的编码代理，它会自动上传您的 Git 历史记录",
+          "title_zh": "ZCode 是一款基于 GLM 的编码代理，它会自动上传您的 Git 历史记录",
+          "title_en": null,
+          "title_original": "ZCode 是一款基于 GLM 的编码代理，它会自动上传您的 Git 历史记录",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+          "source": "tokenstead.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-18T12:33:41.989000Z"
+        },
+        {
+          "id": "4ad10fc6005b36c3310ea4cae93fa937cf564062",
+          "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS / ZCode, the GLM coding agent, silently uploads your Git history",
+          "title_zh": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS",
+          "title_en": "ZCode, the GLM coding agent, silently uploads your Git history",
+          "title_original": "ZCode, the GLM coding agent, silently uploads your Git history",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-09-18T10:35:28Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News · 24h最热",
+        "Hacker News：AI 热帖",
+        "tokenstead.ai"
+      ],
+      "items": [
+        {
+          "id": "656596878735c4bdcb0c5b7cf3549b7dd602f588",
+          "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS / ZCode， the GLM coding agent， silently uploads your Git history",
+          "title_zh": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS",
+          "title_en": "ZCode， the GLM coding agent， silently uploads your Git history",
+          "title_original": "ZCode， the GLM coding agent， silently uploads your Git history",
+          "summary": "开发者 ferstar 逆向 Z.ai 的 AI 编程桌面应用 ZCode，发现其登录后会静默把整个工作区打包（含完整 .git 历史、LFS 缓存、reflogs 和全局配置）加密上传至 Aliyun OSS，实测一次快照为 42，411 个文件、313MB，且 .git 目录占载荷的 86.6%。",
+          "recommend_reason_zh": null,
+          "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-18T10:35:28Z"
+        },
+        {
+          "id": "122f082e8323a0950fa23608bf1f059274bd894f",
+          "title": "ZCode 是一款基于 GLM 的编码代理，它会自动上传您的 Git 历史记录",
+          "title_zh": "ZCode 是一款基于 GLM 的编码代理，它会自动上传您的 Git 历史记录",
+          "title_en": null,
+          "title_original": "ZCode 是一款基于 GLM 的编码代理，它会自动上传您的 Git 历史记录",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+          "source": "tokenstead.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-18T12:33:41.989000Z"
+        },
+        {
+          "id": "4ad10fc6005b36c3310ea4cae93fa937cf564062",
+          "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS / ZCode, the GLM coding agent, silently uploads your Git history",
+          "title_zh": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS",
+          "title_en": "ZCode, the GLM coding agent, silently uploads your Git history",
+          "title_original": "ZCode, the GLM coding agent, silently uploads your Git history",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-09-18T10:35:28Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.7943,
+      "importance": 0.7943,
+      "importance_score": 0.7943,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.86,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9151,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-18T10:35:28Z",
+      "latest_at": "2026-09-18T12:33:41.989000Z",
+      "primary_item": {
+        "id": "656596878735c4bdcb0c5b7cf3549b7dd602f588",
+        "title": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS / ZCode， the GLM coding agent， silently uploads your Git history",
+        "title_zh": "逆向分析指 ZCode 登录后静默打包 Git 历史并加密上传至 Aliyun OSS",
+        "title_en": "ZCode， the GLM coding agent， silently uploads your Git history",
+        "title_original": "ZCode， the GLM coding agent， silently uploads your Git history",
+        "summary": "开发者 ferstar 逆向 Z.ai 的 AI 编程桌面应用 ZCode，发现其登录后会静默把整个工作区打包（含完整 .git 历史、LFS 缓存、reflogs 和全局配置）加密上传至 Aliyun OSS，实测一次快照为 42，411 个文件、313MB，且 .git 目录占载荷的 86.6%。",
+        "recommend_reason_zh": null,
+        "url": "https://tokenstead.ai/guides/zcode-silent-git-history-upload",
+        "source": "Hacker News：AI 热帖",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7995,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -1799,22 +1687,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7504,
-      "importance": 0.7504,
-      "importance_score": 0.7504,
+      "score": 0.7454,
+      "importance": 0.7454,
+      "importance_score": 0.7454,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9043,
+        "recency": 0.8768,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-18T06:09:00.862059Z",
       "latest_at": "2026-09-18T06:09:00.862059Z",
@@ -1835,7 +1722,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
@@ -1883,15 +1770,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7364,
-      "importance": 0.7364,
-      "importance_score": 0.7364,
+      "score": 0.7319,
+      "importance": 0.7319,
+      "importance_score": 0.7319,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8266,
+        "recency": 0.8014,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1918,91 +1805,173 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     },
     {
-      "story_id": "story_3aa5ba65c799",
-      "title": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒 / Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
-      "url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
-      "primary_url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
-      "source": "Qwen：Blog Retrieval（API）",
+      "story_id": "story_604df0a8861f",
+      "title": "ChatGPT for Word 上线，OpenAI 员工称 Excel 和 PowerPoint 用量近期激增 / ChatGPT for Word is here！！ Tap into the power of ChatGPT / Codex directly in Microsoft Word. The us…",
+      "url": "https://x.com/sherwinwu/status/2100730628673065040",
+      "primary_url": "https://x.com/sherwinwu/status/2100730628673065040",
+      "source": "X：Sherwin Wu（@sherwinwu）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "d907b5933a2452eb2e9b90d441cd40832fa56fb2",
-          "title": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒 / Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
-          "title_zh": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒",
-          "title_en": "Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
-          "title_original": "Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
-          "summary": "Qwen 发布 Qwen3.8-LiveTranslate，采用 Interleave 架构与 Hybrid-MoE Thinker-Talker 设计重构实时同声传译，平均滞后（LAAL）从上一代的 2.8 秒降至 2.3 秒。",
+          "id": "698408c02cad1284bbc95137884d418e5e7541d0",
+          "title": "ChatGPT for Word 上线，OpenAI 员工称 Excel 和 PowerPoint 用量近期激增 / ChatGPT for Word is here！！ Tap into the power of ChatGPT / Codex directly in Microsoft Word. The us…",
+          "title_zh": "ChatGPT for Word 上线，OpenAI 员工称 Excel 和 PowerPoint 用量近期激增",
+          "title_en": "ChatGPT for Word is here！！ Tap into the power of ChatGPT / Codex directly in Microsoft Word. The us…",
+          "title_original": "ChatGPT for Word is here！！ Tap into the power of ChatGPT / Codex directly in Microsoft Word. The us…",
+          "summary": "ChatGPT 正式集成进 Microsoft Word，可在文档内把粗略笔记转成初稿、理顺段落、校对、给出修改建议，还能发现格式问题。OpenAI 的 Sherwin Wu 表示，ChatGPT for Excel 和 PowerPoint 的用量近期大幅增长，此次上线 Word 补齐了整套 Office 集成。",
           "recommend_reason_zh": null,
-          "url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
-          "source": "Qwen：Blog Retrieval（API）",
+          "url": "https://x.com/sherwinwu/status/2100730628673065040",
+          "source": "X：Sherwin Wu（@sherwinwu）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-18T09:30:00Z"
+          "published_at": "2026-09-17T23:36:26Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Qwen：Blog Retrieval（API）"
+        "X：Sherwin Wu（@sherwinwu）"
       ],
       "items": [
         {
-          "id": "d907b5933a2452eb2e9b90d441cd40832fa56fb2",
-          "title": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒 / Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
-          "title_zh": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒",
-          "title_en": "Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
-          "title_original": "Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
-          "summary": "Qwen 发布 Qwen3.8-LiveTranslate，采用 Interleave 架构与 Hybrid-MoE Thinker-Talker 设计重构实时同声传译，平均滞后（LAAL）从上一代的 2.8 秒降至 2.3 秒。",
+          "id": "698408c02cad1284bbc95137884d418e5e7541d0",
+          "title": "ChatGPT for Word 上线，OpenAI 员工称 Excel 和 PowerPoint 用量近期激增 / ChatGPT for Word is here！！ Tap into the power of ChatGPT / Codex directly in Microsoft Word. The us…",
+          "title_zh": "ChatGPT for Word 上线，OpenAI 员工称 Excel 和 PowerPoint 用量近期激增",
+          "title_en": "ChatGPT for Word is here！！ Tap into the power of ChatGPT / Codex directly in Microsoft Word. The us…",
+          "title_original": "ChatGPT for Word is here！！ Tap into the power of ChatGPT / Codex directly in Microsoft Word. The us…",
+          "summary": "ChatGPT 正式集成进 Microsoft Word，可在文档内把粗略笔记转成初稿、理顺段落、校对、给出修改建议，还能发现格式问题。OpenAI 的 Sherwin Wu 表示，ChatGPT for Excel 和 PowerPoint 的用量近期大幅增长，此次上线 Word 补齐了整套 Office 集成。",
           "recommend_reason_zh": null,
-          "url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
-          "source": "Qwen：Blog Retrieval（API）",
+          "url": "https://x.com/sherwinwu/status/2100730628673065040",
+          "source": "X：Sherwin Wu（@sherwinwu）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-18T09:30:00Z"
+          "published_at": "2026-09-17T23:36:26Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7921,
-      "importance": 0.7921,
-      "importance_score": 0.7921,
-      "importance_label": "官方更新",
+      "score": 0.7298,
+      "importance": 0.7298,
+      "importance_score": 0.7298,
+      "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.68,
-        "source_tier": 1.0,
+        "editorial": 0.7,
+        "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.934,
+        "recency": 0.8233,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "official",
+      "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
-      "earliest_at": "2026-09-18T09:30:00Z",
-      "latest_at": "2026-09-18T09:30:00Z",
+      "earliest_at": "2026-09-17T23:36:26Z",
+      "latest_at": "2026-09-17T23:36:26Z",
       "primary_item": {
-        "id": "d907b5933a2452eb2e9b90d441cd40832fa56fb2",
-        "title": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒 / Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
-        "title_zh": "Qwen 发布 Qwen3.8-LiveTranslate 实时同传模型，LAAL 降至 2.3 秒",
-        "title_en": "Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
-        "title_original": "Qwen3.8-LiveTranslate： Names the speaker. Carries the meaning.",
-        "summary": "Qwen 发布 Qwen3.8-LiveTranslate，采用 Interleave 架构与 Hybrid-MoE Thinker-Talker 设计重构实时同声传译，平均滞后（LAAL）从上一代的 2.8 秒降至 2.3 秒。",
+        "id": "698408c02cad1284bbc95137884d418e5e7541d0",
+        "title": "ChatGPT for Word 上线，OpenAI 员工称 Excel 和 PowerPoint 用量近期激增 / ChatGPT for Word is here！！ Tap into the power of ChatGPT / Codex directly in Microsoft Word. The us…",
+        "title_zh": "ChatGPT for Word 上线，OpenAI 员工称 Excel 和 PowerPoint 用量近期激增",
+        "title_en": "ChatGPT for Word is here！！ Tap into the power of ChatGPT / Codex directly in Microsoft Word. The us…",
+        "title_original": "ChatGPT for Word is here！！ Tap into the power of ChatGPT / Codex directly in Microsoft Word. The us…",
+        "summary": "ChatGPT 正式集成进 Microsoft Word，可在文档内把粗略笔记转成初稿、理顺段落、校对、给出修改建议，还能发现格式问题。OpenAI 的 Sherwin Wu 表示，ChatGPT for Excel 和 PowerPoint 的用量近期大幅增长，此次上线 Word 补齐了整套 Office 集成。",
         "recommend_reason_zh": null,
-        "url": "https://qwen.ai/blog?id=qwen3.8-livetranslate",
-        "source": "Qwen：Blog Retrieval（API）",
+        "url": "https://x.com/sherwinwu/status/2100730628673065040",
+        "source": "X：Sherwin Wu（@sherwinwu）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7921,
+      "peak_score": 0.76,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T16:39:10.473765Z"
+        "scored_at": "2026-09-18T19:49:20.603921Z"
+      }
+    },
+    {
+      "story_id": "story_6f86f224d94a",
+      "title": "TypeSafe AI 发布只做高频决策的大模型 Jev，作者实测其分类判断性价比",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686475&idx=1&sn=1d9d43036b6d72fd83b9d5658b351215",
+      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686475&idx=1&sn=1d9d43036b6d72fd83b9d5658b351215",
+      "source": "公众号：数字生命卡兹克",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "2dcd15b2ec58e7927a02657d7d294e3e4a49793e",
+          "title": "TypeSafe AI 发布只做高频决策的大模型 Jev，作者实测其分类判断性价比",
+          "title_zh": "TypeSafe AI 发布只做高频决策的大模型 Jev，作者实测其分类判断性价比",
+          "title_en": null,
+          "title_original": "TypeSafe AI 发布只做高频决策的大模型 Jev，作者实测其分类判断性价比",
+          "summary": "TypeSafe AI 推出专注高频决策的大模型 Jev，不做对话和文字生成，只输出判断，速度比传统大模型快20~200倍，成本0.042美元/百万Token且输出Token免费。作者实测预筛任务中Jev准确性第二且更便宜，在并行判断任务上达到最高准确率和最快速度；模型采用RLCD训练方法优化决策校准，可在官网 https://typesafe.ai/ 申请资格，Vercel 已首发接入。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686475&idx=1&sn=1d9d43036b6d72fd83b9d5658b351215",
+          "source": "公众号：数字生命卡兹克",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-18T00:08:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "公众号：数字生命卡兹克"
+      ],
+      "items": [
+        {
+          "id": "2dcd15b2ec58e7927a02657d7d294e3e4a49793e",
+          "title": "TypeSafe AI 发布只做高频决策的大模型 Jev，作者实测其分类判断性价比",
+          "title_zh": "TypeSafe AI 发布只做高频决策的大模型 Jev，作者实测其分类判断性价比",
+          "title_en": null,
+          "title_original": "TypeSafe AI 发布只做高频决策的大模型 Jev，作者实测其分类判断性价比",
+          "summary": "TypeSafe AI 推出专注高频决策的大模型 Jev，不做对话和文字生成，只输出判断，速度比传统大模型快20~200倍，成本0.042美元/百万Token且输出Token免费。作者实测预筛任务中Jev准确性第二且更便宜，在并行判断任务上达到最高准确率和最快速度；模型采用RLCD训练方法优化决策校准，可在官网 https://typesafe.ai/ 申请资格，Vercel 已首发接入。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686475&idx=1&sn=1d9d43036b6d72fd83b9d5658b351215",
+          "source": "公众号：数字生命卡兹克",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-18T00:08:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7215,
+      "importance": 0.7215,
+      "importance_score": 0.7215,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.67,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8274,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-18T00:08:00Z",
+      "latest_at": "2026-09-18T00:08:00Z",
+      "primary_item": {
+        "id": "2dcd15b2ec58e7927a02657d7d294e3e4a49793e",
+        "title": "TypeSafe AI 发布只做高频决策的大模型 Jev，作者实测其分类判断性价比",
+        "title_zh": "TypeSafe AI 发布只做高频决策的大模型 Jev，作者实测其分类判断性价比",
+        "title_en": null,
+        "title_original": "TypeSafe AI 发布只做高频决策的大模型 Jev，作者实测其分类判断性价比",
+        "summary": "TypeSafe AI 推出专注高频决策的大模型 Jev，不做对话和文字生成，只输出判断，速度比传统大模型快20~200倍，成本0.042美元/百万Token且输出Token免费。作者实测预筛任务中Jev准确性第二且更便宜，在并行判断任务上达到最高准确率和最快速度；模型采用RLCD训练方法优化决策校准，可在官网 https://typesafe.ai/ 申请资格，Vercel 已首发接入。",
+        "recommend_reason_zh": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686475&idx=1&sn=1d9d43036b6d72fd83b9d5658b351215",
+        "source": "公众号：数字生命卡兹克",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7519,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-18T19:49:20.603921Z"
       }
     }
   ]
