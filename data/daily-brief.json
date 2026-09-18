@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T00:31:51.970692Z",
+  "generated_at": "2026-09-18T06:09:00.862059Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8363,
-      "importance": 0.8363,
-      "importance_score": 0.8363,
+      "score": 0.8272,
+      "importance": 0.8272,
+      "importance_score": 0.8272,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9573,
+        "recency": 0.9069,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -133,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8395,
-      "importance": 0.8395,
-      "importance_score": 0.8395,
+      "score": 0.8311,
+      "importance": 0.8311,
+      "importance_score": 0.8311,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8864,
+        "recency": 0.8397,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -170,7 +170,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -194,11 +194,56 @@
           "source_name": "AI HOT",
           "site_id": "aihot",
           "published_at": "2026-09-17T17:18:08.568000Z"
+        },
+        {
+          "id": "1fffd1feade9fb636c1acc9d54d20f5cb236ca78",
+          "title": "阿里巴巴发布Qwen 3.8 Omni Flash",
+          "title_zh": "阿里巴巴发布Qwen 3.8 Omni Flash",
+          "title_en": null,
+          "title_original": "阿里巴巴发布Qwen 3.8 Omni Flash",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+          "source": "qwen.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-18T04:45:46.234000Z"
+        },
+        {
+          "id": "5506e775b22e613d112ed24bedbc02b2de69fa67",
+          "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Alibaba releases Qwen 3.8 Omni Flash",
+          "title_zh": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
+          "title_en": "Alibaba releases Qwen 3.8 Omni Flash",
+          "title_original": "Alibaba releases Qwen 3.8 Omni Flash",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-17T23:05:48Z"
+        },
+        {
+          "id": "4f1be5c84a80e2ffead5ac3376c67f878048ee28",
+          "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Qwen 3.8 Omni Flash",
+          "title_zh": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
+          "title_en": "Qwen 3.8 Omni Flash",
+          "title_original": "Qwen 3.8 Omni Flash",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-17T23:05:48Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Qwen：Blog Retrieval（API）"
+        "Hacker News",
+        "Hacker News (黑客新闻)",
+        "Qwen：Blog Retrieval（API）",
+        "qwen.ai"
       ],
       "items": [
         {
@@ -214,19 +259,61 @@
           "source_name": "AI HOT",
           "site_id": "aihot",
           "published_at": "2026-09-17T17:18:08.568000Z"
+        },
+        {
+          "id": "1fffd1feade9fb636c1acc9d54d20f5cb236ca78",
+          "title": "阿里巴巴发布Qwen 3.8 Omni Flash",
+          "title_zh": "阿里巴巴发布Qwen 3.8 Omni Flash",
+          "title_en": null,
+          "title_original": "阿里巴巴发布Qwen 3.8 Omni Flash",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+          "source": "qwen.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-18T04:45:46.234000Z"
+        },
+        {
+          "id": "5506e775b22e613d112ed24bedbc02b2de69fa67",
+          "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Alibaba releases Qwen 3.8 Omni Flash",
+          "title_zh": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
+          "title_en": "Alibaba releases Qwen 3.8 Omni Flash",
+          "title_original": "Alibaba releases Qwen 3.8 Omni Flash",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-17T23:05:48Z"
+        },
+        {
+          "id": "4f1be5c84a80e2ffead5ac3376c67f878048ee28",
+          "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Qwen 3.8 Omni Flash",
+          "title_zh": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付",
+          "title_en": "Qwen 3.8 Omni Flash",
+          "title_original": "Qwen 3.8 Omni Flash",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-17T23:05:48Z"
         }
       ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8189,
-      "importance": 0.8189,
-      "importance_score": 0.8189,
+      "item_count": 4,
+      "duplicate_count": 4,
+      "score": 0.8101,
+      "importance": 0.8101,
+      "importance_score": 0.8101,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9328,
+        "recency": 0.8837,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -236,7 +323,7 @@
         "high_importance"
       ],
       "earliest_at": "2026-09-17T17:18:08.568000Z",
-      "latest_at": "2026-09-17T17:18:08.568000Z",
+      "latest_at": "2026-09-18T04:45:46.234000Z",
       "primary_item": {
         "id": "5d8ede19dc693db11ad653c8305b3412ee6fe9da",
         "title": "Qwen 发布原生全模态模型 Qwen3.8-Omni-Flash，主打音视频智能体任务交付 / Qwen3.8-Omni-Flash： Omni Senses. Agentic Delivery.",
@@ -254,7 +341,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -302,15 +389,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.802,
-      "importance": 0.802,
-      "importance_score": 0.802,
+      "score": 0.793,
+      "importance": 0.793,
+      "importance_score": 0.793,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9557,
+        "recency": 0.9054,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -338,7 +425,149 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
+      }
+    },
+    {
+      "story_id": "story_ad6315db9660",
+      "title": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+      "url": "https://www.hacktron.ai/blog/hacking-openai",
+      "primary_url": "https://www.hacktron.ai/blog/hacking-openai",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "7d2e860c12e91824b743f2cd0766b4a7888011b4",
+          "title": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+          "title_zh": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+          "title_en": null,
+          "title_original": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+          "summary": "Hacktron 团队披露 2026 年 7 月 25 日 chained libheif 堆缓冲区溢出与 OpenAI SSO 身份缺陷，攻破 community.openai.com 并接管多名员工 ChatGPT/Codex 账号，用员工 Codex 在 OpenAI 内部 monorepo 开出无害 PR 作为证明，全程不到 72 小时。",
+          "recommend_reason_zh": null,
+          "url": "https://www.hacktron.ai/blog/hacking-openai",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-18T04:45:46.237000Z"
+        },
+        {
+          "id": "670084e32196613c0b728bbf7574fe486402723a",
+          "title": "入侵OpenAI",
+          "title_zh": "入侵OpenAI",
+          "title_en": null,
+          "title_original": "入侵OpenAI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.hacktron.ai/blog/hacking-openai",
+          "source": "www.hacktron.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-18T04:45:46.237000Z"
+        },
+        {
+          "id": "f1c9b0381aefb14e4c119c7114915aa4ed9c8f45",
+          "title": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号 / Hacking OpenAI",
+          "title_zh": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+          "title_en": "Hacking OpenAI",
+          "title_original": "Hacking OpenAI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.hacktron.ai/blog/hacking-openai",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-18T02:47:24Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News",
+        "Hacker News 热门（buzzing.cc 中文翻译）",
+        "www.hacktron.ai"
+      ],
+      "items": [
+        {
+          "id": "7d2e860c12e91824b743f2cd0766b4a7888011b4",
+          "title": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+          "title_zh": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+          "title_en": null,
+          "title_original": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+          "summary": "Hacktron 团队披露 2026 年 7 月 25 日 chained libheif 堆缓冲区溢出与 OpenAI SSO 身份缺陷，攻破 community.openai.com 并接管多名员工 ChatGPT/Codex 账号，用员工 Codex 在 OpenAI 内部 monorepo 开出无害 PR 作为证明，全程不到 72 小时。",
+          "recommend_reason_zh": null,
+          "url": "https://www.hacktron.ai/blog/hacking-openai",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-18T04:45:46.237000Z"
+        },
+        {
+          "id": "670084e32196613c0b728bbf7574fe486402723a",
+          "title": "入侵OpenAI",
+          "title_zh": "入侵OpenAI",
+          "title_en": null,
+          "title_original": "入侵OpenAI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.hacktron.ai/blog/hacking-openai",
+          "source": "www.hacktron.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-18T04:45:46.237000Z"
+        },
+        {
+          "id": "f1c9b0381aefb14e4c119c7114915aa4ed9c8f45",
+          "title": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号 / Hacking OpenAI",
+          "title_zh": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+          "title_en": "Hacking OpenAI",
+          "title_original": "Hacking OpenAI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.hacktron.ai/blog/hacking-openai",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-18T02:47:24Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8012,
+      "importance": 0.8012,
+      "importance_score": 0.8012,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.84,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9867,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-18T02:47:24Z",
+      "latest_at": "2026-09-18T04:45:46.237000Z",
+      "primary_item": {
+        "id": "7d2e860c12e91824b743f2cd0766b4a7888011b4",
+        "title": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+        "title_zh": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+        "title_en": null,
+        "title_original": "Hacktron 复盘利用 libheif 漏洞与 OpenAI SSO 缺陷入侵 OpenAI 论坛并接管员工 ChatGPT 账号",
+        "summary": "Hacktron 团队披露 2026 年 7 月 25 日 chained libheif 堆缓冲区溢出与 OpenAI SSO 身份缺陷，攻破 community.openai.com 并接管多名员工 ChatGPT/Codex 账号，用员工 Codex 在 OpenAI 内部 monorepo 开出无害 PR 作为证明，全程不到 72 小时。",
+        "recommend_reason_zh": null,
+        "url": "https://www.hacktron.ai/blog/hacking-openai",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8012,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -386,15 +615,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7868,
-      "importance": 0.7868,
-      "importance_score": 0.7868,
+      "score": 0.7779,
+      "importance": 0.7779,
+      "importance_score": 0.7779,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9379,
+        "recency": 0.8885,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -422,7 +651,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -470,15 +699,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7849,
-      "importance": 0.7849,
-      "importance_score": 0.7849,
+      "score": 0.7757,
+      "importance": 0.7757,
+      "importance_score": 0.7757,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9626,
+        "recency": 0.9119,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -506,7 +735,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -554,15 +783,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7856,
-      "importance": 0.7856,
-      "importance_score": 0.7856,
+      "score": 0.7763,
+      "importance": 0.7763,
+      "importance_score": 0.7763,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.63,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9812,
+        "recency": 0.9295,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -590,7 +819,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -638,15 +867,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.777,
-      "importance": 0.777,
-      "importance_score": 0.777,
+      "score": 0.768,
+      "importance": 0.768,
+      "importance_score": 0.768,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9525,
+        "recency": 0.9023,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -674,7 +903,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -722,15 +951,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7813,
-      "importance": 0.7813,
-      "importance_score": 0.7813,
+      "score": 0.7721,
+      "importance": 0.7721,
+      "importance_score": 0.7721,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9762,
+        "recency": 0.9248,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -758,7 +987,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
+      }
+    },
+    {
+      "story_id": "story_fc1ed202b107",
+      "title": "WSJ：三名研究人员用 Claude Opus 5 借 Discourse 漏洞访问 OpenAI 私有代码 / WSJ： Three researchers used Claude Opus 5 to chain a Discourse flaw into access to OpenAI's private …",
+      "url": "https://x.com/rohanpaul_ai/status/2100810101145891305",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2100810101145891305",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "c017261554a68948464c8f4051893143337aa4b2",
+          "title": "WSJ：三名研究人员用 Claude Opus 5 借 Discourse 漏洞访问 OpenAI 私有代码 / WSJ： Three researchers used Claude Opus 5 to chain a Discourse flaw into access to OpenAI's private …",
+          "title_zh": "WSJ：三名研究人员用 Claude Opus 5 借 Discourse 漏洞访问 OpenAI 私有代码",
+          "title_en": "WSJ： Three researchers used Claude Opus 5 to chain a Discourse flaw into access to OpenAI's private …",
+          "title_original": "WSJ： Three researchers used Claude Opus 5 to chain a Discourse flaw into access to OpenAI's private …",
+          "summary": "据 WSJ 报道，三名研究人员使用 Claude Opus 5 将 Discourse 的一个漏洞串联成对 OpenAI 私有代码的访问。 researchers 在 Discourse 服务器上获得了包括 OpenAI 员工在内的认证 token，部分 forum token 可用于 ChatGPT 并触达 OpenAI 的 GitHub 服务。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2100810101145891305",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-18T04:52:13Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "items": [
+        {
+          "id": "c017261554a68948464c8f4051893143337aa4b2",
+          "title": "WSJ：三名研究人员用 Claude Opus 5 借 Discourse 漏洞访问 OpenAI 私有代码 / WSJ： Three researchers used Claude Opus 5 to chain a Discourse flaw into access to OpenAI's private …",
+          "title_zh": "WSJ：三名研究人员用 Claude Opus 5 借 Discourse 漏洞访问 OpenAI 私有代码",
+          "title_en": "WSJ： Three researchers used Claude Opus 5 to chain a Discourse flaw into access to OpenAI's private …",
+          "title_original": "WSJ： Three researchers used Claude Opus 5 to chain a Discourse flaw into access to OpenAI's private …",
+          "summary": "据 WSJ 报道，三名研究人员使用 Claude Opus 5 将 Discourse 的一个漏洞串联成对 OpenAI 私有代码的访问。 researchers 在 Discourse 服务器上获得了包括 OpenAI 员工在内的认证 token，部分 forum token 可用于 ChatGPT 并触达 OpenAI 的 GitHub 服务。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2100810101145891305",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-18T04:52:13Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7774,
+      "importance": 0.7774,
+      "importance_score": 0.7774,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.76,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9878,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-18T04:52:13Z",
+      "latest_at": "2026-09-18T04:52:13Z",
+      "primary_item": {
+        "id": "c017261554a68948464c8f4051893143337aa4b2",
+        "title": "WSJ：三名研究人员用 Claude Opus 5 借 Discourse 漏洞访问 OpenAI 私有代码 / WSJ： Three researchers used Claude Opus 5 to chain a Discourse flaw into access to OpenAI's private …",
+        "title_zh": "WSJ：三名研究人员用 Claude Opus 5 借 Discourse 漏洞访问 OpenAI 私有代码",
+        "title_en": "WSJ： Three researchers used Claude Opus 5 to chain a Discourse flaw into access to OpenAI's private …",
+        "title_original": "WSJ： Three researchers used Claude Opus 5 to chain a Discourse flaw into access to OpenAI's private …",
+        "summary": "据 WSJ 报道，三名研究人员使用 Claude Opus 5 将 Discourse 的一个漏洞串联成对 OpenAI 私有代码的访问。 researchers 在 Discourse 服务器上获得了包括 OpenAI 员工在内的认证 token，部分 forum token 可用于 ChatGPT 并触达 OpenAI 的 GitHub 服务。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/rohanpaul_ai/status/2100810101145891305",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7774,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -806,15 +1119,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7409,
-      "importance": 0.7409,
-      "importance_score": 0.7409,
+      "score": 0.7329,
+      "importance": 0.7329,
+      "importance_score": 0.7329,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8518,
+        "recency": 0.807,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -841,7 +1154,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -889,15 +1202,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7613,
-      "importance": 0.7613,
-      "importance_score": 0.7613,
+      "score": 0.7521,
+      "importance": 0.7521,
+      "importance_score": 0.7521,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9649,
+        "recency": 0.9141,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -925,7 +1238,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -973,15 +1286,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.76,
-      "importance": 0.76,
-      "importance_score": 0.76,
+      "score": 0.7506,
+      "importance": 0.7506,
+      "importance_score": 0.7506,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9911,
+        "recency": 0.939,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1009,7 +1322,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -1057,15 +1370,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7498,
-      "importance": 0.7498,
-      "importance_score": 0.7498,
+      "score": 0.7411,
+      "importance": 0.7411,
+      "importance_score": 0.7411,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9179,
+        "recency": 0.8696,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1092,7 +1405,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -1169,15 +1482,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7835,
-      "importance": 0.7835,
-      "importance_score": 0.7835,
+      "score": 0.7745,
+      "importance": 0.7745,
+      "importance_score": 0.7745,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9552,
+        "recency": 0.9049,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1205,7 +1518,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -1253,15 +1566,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7424,
-      "importance": 0.7424,
-      "importance_score": 0.7424,
+      "score": 0.7337,
+      "importance": 0.7337,
+      "importance_score": 0.7337,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9269,
+        "recency": 0.8781,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1288,7 +1601,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -1336,22 +1649,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7519,
-      "importance": 0.7519,
-      "importance_score": 0.7519,
+      "score": 0.7425,
+      "importance": 0.7425,
+      "importance_score": 0.7425,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9962,
+        "recency": 0.9437,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-18T00:08:00Z",
       "latest_at": "2026-09-18T00:08:00Z",
@@ -1372,7 +1684,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
@@ -1420,15 +1732,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7399,
-      "importance": 0.7399,
-      "importance_score": 0.7399,
+      "score": 0.7313,
+      "importance": 0.7313,
+      "importance_score": 0.7313,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9128,
+        "recency": 0.8647,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1455,30 +1767,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     },
     {
-      "story_id": "story_93ada1416ace",
-      "title": "Anthropic 算力首次落子澳大利亚：租赁 2.16GW 数据中心园区",
-      "url": "https://www.aibase.com/news/31116",
-      "primary_url": "https://www.aibase.com/news/31116",
+      "story_id": "story_572ac9f647ce",
+      "title": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
+      "url": "https://www.aibase.com/news/31152",
+      "primary_url": "https://www.aibase.com/news/31152",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "9e0ec7f79bce9a0ec739c65261307d2a3aaee25f",
-          "title": "Anthropic 算力首次落子澳大利亚：租赁 2.16GW 数据中心园区",
-          "title_zh": "Anthropic 算力首次落子澳大利亚：租赁 2.16GW 数据中心园区",
+          "id": "6ddf4bccfedf28761f7f3ec504b66c20cacc05d5",
+          "title": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
+          "title_zh": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
           "title_en": null,
-          "title_original": "Anthropic 算力首次落子澳大利亚：租赁 2.16GW 数据中心园区",
+          "title_original": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31116",
+          "url": "https://www.aibase.com/news/31152",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
+          "published_at": "2026-09-18T06:09:00.862059Z"
         }
       ],
       "source_count": 1,
@@ -1487,49 +1799,50 @@
       ],
       "items": [
         {
-          "id": "9e0ec7f79bce9a0ec739c65261307d2a3aaee25f",
-          "title": "Anthropic 算力首次落子澳大利亚：租赁 2.16GW 数据中心园区",
-          "title_zh": "Anthropic 算力首次落子澳大利亚：租赁 2.16GW 数据中心园区",
+          "id": "6ddf4bccfedf28761f7f3ec504b66c20cacc05d5",
+          "title": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
+          "title_zh": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
           "title_en": null,
-          "title_original": "Anthropic 算力首次落子澳大利亚：租赁 2.16GW 数据中心园区",
+          "title_original": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31116",
+          "url": "https://www.aibase.com/news/31152",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
+          "published_at": "2026-09-18T06:09:00.862059Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7409,
-      "importance": 0.7409,
-      "importance_score": 0.7409,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8518,
+        "recency": 1.0,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-09-17T07:52:16.279832Z",
-      "latest_at": "2026-09-17T07:52:16.279832Z",
+      "earliest_at": "2026-09-18T06:09:00.862059Z",
+      "latest_at": "2026-09-18T06:09:00.862059Z",
       "primary_item": {
-        "id": "9e0ec7f79bce9a0ec739c65261307d2a3aaee25f",
-        "title": "Anthropic 算力首次落子澳大利亚：租赁 2.16GW 数据中心园区",
-        "title_zh": "Anthropic 算力首次落子澳大利亚：租赁 2.16GW 数据中心园区",
+        "id": "6ddf4bccfedf28761f7f3ec504b66c20cacc05d5",
+        "title": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
+        "title_zh": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
         "title_en": null,
-        "title_original": "Anthropic 算力首次落子澳大利亚：租赁 2.16GW 数据中心园区",
+        "title_original": "Anthropic 推出生命科学认证计划，三款主力模型纳入统一授权条款",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31116",
+        "url": "https://www.aibase.com/news/31152",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -1538,173 +1851,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
-      }
-    },
-    {
-      "story_id": "story_fe2e25c6840c",
-      "title": "Anthropic合并Claude Cowork与Chat，统一AI任务工作空间",
-      "url": "https://www.aibase.com/news/31106",
-      "primary_url": "https://www.aibase.com/news/31106",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "e427042515a287d551be8dd06efd671d331d825e",
-          "title": "Anthropic合并Claude Cowork与Chat，统一AI任务工作空间",
-          "title_zh": "Anthropic合并Claude Cowork与Chat，统一AI任务工作空间",
-          "title_en": null,
-          "title_original": "Anthropic合并Claude Cowork与Chat，统一AI任务工作空间",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31106",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T01:33:30.420052Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "e427042515a287d551be8dd06efd671d331d825e",
-          "title": "Anthropic合并Claude Cowork与Chat，统一AI任务工作空间",
-          "title_zh": "Anthropic合并Claude Cowork与Chat，统一AI任务工作空间",
-          "title_en": null,
-          "title_original": "Anthropic合并Claude Cowork与Chat，统一AI任务工作空间",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31106",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T01:33:30.420052Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7319,
-      "importance": 0.7319,
-      "importance_score": 0.7319,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8016,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-17T01:33:30.420052Z",
-      "latest_at": "2026-09-17T01:33:30.420052Z",
-      "primary_item": {
-        "id": "e427042515a287d551be8dd06efd671d331d825e",
-        "title": "Anthropic合并Claude Cowork与Chat，统一AI任务工作空间",
-        "title_zh": "Anthropic合并Claude Cowork与Chat，统一AI任务工作空间",
-        "title_en": null,
-        "title_original": "Anthropic合并Claude Cowork与Chat，统一AI任务工作空间",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31106",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
-      }
-    },
-    {
-      "story_id": "story_e356524096ff",
-      "title": "Claude 宣布重磅合并：化身“唯一入口”，正面硬刚微软",
-      "url": "https://www.aibase.com/news/31121",
-      "primary_url": "https://www.aibase.com/news/31121",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "6385b186684e3bd8987ed87649e02d588768933a",
-          "title": "Claude 宣布重磅合并：化身“唯一入口”，正面硬刚微软",
-          "title_zh": "Claude 宣布重磅合并：化身“唯一入口”，正面硬刚微软",
-          "title_en": null,
-          "title_original": "Claude 宣布重磅合并：化身“唯一入口”，正面硬刚微软",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31121",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "6385b186684e3bd8987ed87649e02d588768933a",
-          "title": "Claude 宣布重磅合并：化身“唯一入口”，正面硬刚微软",
-          "title_zh": "Claude 宣布重磅合并：化身“唯一入口”，正面硬刚微软",
-          "title_en": null,
-          "title_original": "Claude 宣布重磅合并：化身“唯一入口”，正面硬刚微软",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31121",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-17T07:52:16.279832Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7409,
-      "importance": 0.7409,
-      "importance_score": 0.7409,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8518,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-17T07:52:16.279832Z",
-      "latest_at": "2026-09-17T07:52:16.279832Z",
-      "primary_item": {
-        "id": "6385b186684e3bd8987ed87649e02d588768933a",
-        "title": "Claude 宣布重磅合并：化身“唯一入口”，正面硬刚微软",
-        "title_zh": "Claude 宣布重磅合并：化身“唯一入口”，正面硬刚微软",
-        "title_en": null,
-        "title_original": "Claude 宣布重磅合并：化身“唯一入口”，正面硬刚微软",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31121",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-18T00:35:22.399219Z"
+        "scored_at": "2026-09-18T06:15:25.913300Z"
       }
     }
   ]
