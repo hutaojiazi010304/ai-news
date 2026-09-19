@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T14:34:45.329106Z",
+  "generated_at": "2026-09-19T18:07:56.604314Z",
   "timezone": "Asia/Shanghai",
   "root_url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview",
   "history_url": "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc",
@@ -44,7 +44,7 @@
       "url": "https://waytoagi.feishu.cn/wiki/KqDfwTwVFihTgYkutbwcHDornXc?from=from_copylink"
     }
   ],
-  "count_7d": 37,
+  "count_7d": 29,
   "updates_7d": [
     {
       "date": "2026-09-18",
@@ -219,54 +219,6 @@
       "title": "Stripe CEO 对谈 Replit 创始人：历史上创业的最佳时机",
       "summary": "AI 让做产品更容易了，创业的难题也随之转向：客户从哪里来，代码人人能写，生意又靠什么留住人？Stripe CEO 与 Replit 创始人从溜冰场软件、教师工具和乡村瑜伽项目聊起，指出了普通人的机会：熟悉行业里的具体麻烦，服务被大公司忽略的小需求。产品可以快速做出来，客户关系、使用体验和持续经营仍要自己积累。",
       "url": "https://waytoagi.feishu.cn/wiki/MgzlwRMS5itqiAkOluTcKBtrnsc?from=from_copylink"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "高密度页面怎么组织：一份信息呈现指南",
-      "summary": "AI 能快速生成网页，但常常会忽略信息层级，导致用户难以抓取重点、找不到操作路径。作者基于自身的前端实践，整理出了一套页面信息组织指南，还配套开源了覆盖 19 种页面形态的Demo。这份指南还可以直接交给 AI，用来评审、迭代前端页面，帮你产出逻辑清晰、贴合业务的后台界面。",
-      "url": "https://waytoagi.feishu.cn/wiki/YrB2wWEj2i85uCkcBdmcID7Snnh?from=from_copylink"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "系统设计入门：如何从 HLD 和 LLD 开始",
-      "summary": "这份系统设计入门指南专为零基础开发者打造，清晰区分了高层 HLD 架构与底层 LLD 代码设计两大模块。覆盖负载均衡、缓存、数据库选型、CAP 定理等核心概念，搭配 SOLID 原则、常用设计模式与 UML 类图，附带完整练习框架。可以帮你循序渐进地建立完整系统设计思维。",
-      "url": "https://waytoagi.feishu.cn/wiki/MjlMwNLsxild82krb9CcVGBWnoc?from=from_copylink"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "图解 KV Cache——DS V4.1-Flash的制胜秘密",
-      "summary": "DeepSeek V1 到 V4.1-Flash，单 token 的 global KV 如何从 389,000 B 压缩到 890 B的？这篇文章对于 Agent 的使用者、本地模型部署者、模型开发者都有一定帮助。",
-      "url": "https://waytoagi.feishu.cn/wiki/Ny3awPIcWig9bCkQdLYcHbabnKd?from=from_copylink"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "《100 个问题》系列丛书",
-      "summary": "作者整理了《关于豆包工作的 100 个问题》，主要聚焦一些用户的真实疑问：豆包工作和 Kimi 会员哪个划算？额度消耗能不能查账单？面对千问办公、WorkBuddy 竞品，豆包工作表现如何。",
-      "url": "https://waytoagi.feishu.cn/wiki/YTt3wPPIeixEK5kbJPnc0YL7nTf"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "LLM 为什么缓存 K 和 V，却通常不缓存 Q？",
-      "summary": "KV 缓存让模型保留了一部分已经完成的计算。 但它为什么保留 K 和 V？同样参与 attention 的 Q，为什么通常可以用完就放下？这篇就来讨论这个问题，帮你理解 KV缓存。",
-      "url": "https://waytoagi.feishu.cn/wiki/L9DSw8RPdibYPDkIThrcO8C6nzg?from=from_copylink"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "Grok Bot 应用指南实操案例：闲鱼上架、小红书做图、找工具、做短视频、整理收藏",
-      "summary": "这份指南给出了Grok Bot的五种独立用法：整理商品上架资料、制作六张知识图卡、筛选工具做简报、制作教学工具并录成配音视频、把收藏转成选题素材。每个案例都附有提示词和成品展示，也讲清了要提供哪些材料、拿到什么文件。运营和内容创作者们可以挑一个手头任务，跟着试一试。",
-      "url": "https://waytoagi.feishu.cn/wiki/AyupwGFq0i73bfkIFw9cuuwvnyg?from=from_copylink"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "AI 写代码越快，企业越需要自己的 Harness",
-      "summary": "这篇文章是作者关于 Harness Coding 的现场分享文稿，拆解了 AI 编码落地的四大核心难题，并给出了完整的工程闭环方案。",
-      "url": "https://waytoagi.feishu.cn/wiki/CPWDw9UKfio1XbkIWofcHcPvnUg?from=from_copylink"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "9.7—9.13｜本周顶级 AI 论文",
-      "summary": "Agent 做长任务容易跑偏，读长文漏掉关键证据，多开几个助手又越来越费钱——本周精选的10篇 AI 论文，集中回应了这些实际难题。用程序图帮助 Agent 安排步骤，利用文档目录提高检索准确率，通过并行阅读和精简协作方式提升效率；还有只改设计文档、让 AI 重新生成代码的尝试，以及智能体群体作弊的案例。在做Agent、知识库或 AI 产品的，可以从自己遇到的问题切入，找找下一步值得尝试的方法。",
-      "url": "https://waytoagi.feishu.cn/wiki/WDu3wV8X9iWmVjkLbTmczksvnig?from=from_copylink"
     }
   ],
   "warning": null,

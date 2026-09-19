@@ -1,236 +1,8 @@
 {
-  "generated_at": "2026-09-19T14:34:45.329106Z",
+  "generated_at": "2026-09-19T18:07:56.604314Z",
   "window_hours": 24,
-  "total_items": 14,
+  "total_items": 9,
   "items": [
-    {
-      "story_id": "story_55ec4d48c198",
-      "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
-      "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp",
-      "primary_url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp",
-      "source": "GitHub AI & ML",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "b2a33477c6a92e94e343ae83b5c74e9663d09bdc",
-          "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
-          "title_zh": null,
-          "title_en": "Should you read the code, is RAG dead, and did Skills kill MCP?",
-          "title_original": "Should you read the code, is RAG dead, and did Skills kill MCP?",
-          "summary": "We dive into these questions and other AI hot takes on the latest episode of the GitHub Podcast. The post Should you read the code, is RAG dead, and did Skills kill MCP? appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-18T15:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub AI & ML"
-      ],
-      "items": [
-        {
-          "id": "b2a33477c6a92e94e343ae83b5c74e9663d09bdc",
-          "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
-          "title_zh": null,
-          "title_en": "Should you read the code, is RAG dead, and did Skills kill MCP?",
-          "title_original": "Should you read the code, is RAG dead, and did Skills kill MCP?",
-          "summary": "We dive into these questions and other AI hot takes on the latest episode of the GitHub Podcast. The post Should you read the code, is RAG dead, and did Skills kill MCP? appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-18T15:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8154,
-      "importance": 0.8154,
-      "importance_score": 0.8154,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.7969,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-18T15:00:00Z",
-      "latest_at": "2026-09-18T15:00:00Z",
-      "primary_item": {
-        "id": "b2a33477c6a92e94e343ae83b5c74e9663d09bdc",
-        "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
-        "title_zh": null,
-        "title_en": "Should you read the code, is RAG dead, and did Skills kill MCP?",
-        "title_original": "Should you read the code, is RAG dead, and did Skills kill MCP?",
-        "summary": "We dive into these questions and other AI hot takes on the latest episode of the GitHub Podcast. The post Should you read the code, is RAG dead, and did Skills kill MCP? appeared first on The GitHub Blog .",
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp",
-        "source": "GitHub AI & ML",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8493,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
-      }
-    },
-    {
-      "story_id": "story_fc4b3a26f87c",
-      "title": "美军因 AI 幻觉情报报告险些拦截中国船只 / US Military had close call after using AI for hallucinated intelligence report",
-      "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
-      "primary_url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
-      "source": "Hacker News：AI 热帖",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "2decbef3c0728a852ea1e5b34fc103fa36eb94a1",
-          "title": "美军因 AI 幻觉情报报告险些拦截中国船只 / US Military had close call after using AI for hallucinated intelligence report",
-          "title_zh": "美军因 AI 幻觉情报报告险些拦截中国船只",
-          "title_en": "US Military had close call after using AI for hallucinated intelligence report",
-          "title_original": "US Military had close call after using AI for hallucinated intelligence report",
-          "summary": "据 CNN 报道，今年春天美伊战争期间，一份由特种作战司令部分析师借助聊天机器人生成的情报报告错误称一艘中东中国船只运输核武器部件，美军一度准备武装登船拦截，行动前才发现报告内容完全不实。该分析师用 AI 融合开源情报与机密信号情报并生成标准报告传播，事件暴露美军各部门 AI 工具分散部署、缺乏统一校验标准，AI 辅助目标选定正在增多而人机协同缺乏明确规范。",
-          "recommend_reason_zh": null,
-          "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T17:28:01Z"
-        },
-        {
-          "id": "0ea33f912b37b9f311ade659916c1b113c8861c6",
-          "title": "美军因使用人工智能生成虚假情报报告，险些酿成大祸",
-          "title_zh": "美军因使用人工智能生成虚假情报报告，险些酿成大祸",
-          "title_en": null,
-          "title_original": "美军因使用人工智能生成虚假情报报告，险些酿成大祸",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
-          "source": "www.cnn.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-18T18:48:49.722000Z"
-        },
-        {
-          "id": "a7cd35ddcee1fa17fab498fce1164576639f9162",
-          "title": "US Military had close call after using AI for hallucinated intelligence report",
-          "title_zh": null,
-          "title_en": "US Military had close call after using AI for hallucinated intelligence report",
-          "title_original": "US Military had close call after using AI for hallucinated intelligence report",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49757520",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-18T17:28:01Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News：AI 热帖",
-        "hackernews",
-        "www.cnn.com"
-      ],
-      "items": [
-        {
-          "id": "2decbef3c0728a852ea1e5b34fc103fa36eb94a1",
-          "title": "美军因 AI 幻觉情报报告险些拦截中国船只 / US Military had close call after using AI for hallucinated intelligence report",
-          "title_zh": "美军因 AI 幻觉情报报告险些拦截中国船只",
-          "title_en": "US Military had close call after using AI for hallucinated intelligence report",
-          "title_original": "US Military had close call after using AI for hallucinated intelligence report",
-          "summary": "据 CNN 报道，今年春天美伊战争期间，一份由特种作战司令部分析师借助聊天机器人生成的情报报告错误称一艘中东中国船只运输核武器部件，美军一度准备武装登船拦截，行动前才发现报告内容完全不实。该分析师用 AI 融合开源情报与机密信号情报并生成标准报告传播，事件暴露美军各部门 AI 工具分散部署、缺乏统一校验标准，AI 辅助目标选定正在增多而人机协同缺乏明确规范。",
-          "recommend_reason_zh": null,
-          "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T17:28:01Z"
-        },
-        {
-          "id": "0ea33f912b37b9f311ade659916c1b113c8861c6",
-          "title": "美军因使用人工智能生成虚假情报报告，险些酿成大祸",
-          "title_zh": "美军因使用人工智能生成虚假情报报告，险些酿成大祸",
-          "title_en": null,
-          "title_original": "美军因使用人工智能生成虚假情报报告，险些酿成大祸",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
-          "source": "www.cnn.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-18T18:48:49.722000Z"
-        },
-        {
-          "id": "a7cd35ddcee1fa17fab498fce1164576639f9162",
-          "title": "US Military had close call after using AI for hallucinated intelligence report",
-          "title_zh": null,
-          "title_en": "US Military had close call after using AI for hallucinated intelligence report",
-          "title_original": "US Military had close call after using AI for hallucinated intelligence report",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49757520",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-18T17:28:01Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.8015,
-      "importance": 0.8015,
-      "importance_score": 0.8015,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.86,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8161,
-        "story_heat": 0.25,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-18T17:28:01Z",
-      "latest_at": "2026-09-18T18:48:49.722000Z",
-      "primary_item": {
-        "id": "2decbef3c0728a852ea1e5b34fc103fa36eb94a1",
-        "title": "美军因 AI 幻觉情报报告险些拦截中国船只 / US Military had close call after using AI for hallucinated intelligence report",
-        "title_zh": "美军因 AI 幻觉情报报告险些拦截中国船只",
-        "title_en": "US Military had close call after using AI for hallucinated intelligence report",
-        "title_original": "US Military had close call after using AI for hallucinated intelligence report",
-        "summary": "据 CNN 报道，今年春天美伊战争期间，一份由特种作战司令部分析师借助聊天机器人生成的情报报告错误称一艘中东中国船只运输核武器部件，美军一度准备武装登船拦截，行动前才发现报告内容完全不实。该分析师用 AI 融合开源情报与机密信号情报并生成标准报告传播，事件暴露美军各部门 AI 工具分散部署、缺乏统一校验标准，AI 辅助目标选定正在增多而人机协同缺乏明确规范。",
-        "recommend_reason_zh": null,
-        "url": "https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship",
-        "source": "Hacker News：AI 热帖",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8306,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
-      }
-    },
     {
       "story_id": "story_de3b2aa2df19",
       "title": "WSJ 报道：Gemini 在 Irregular 网络安全评测中越出测试环境并入侵三家公司 / google is so back gemini broke out of its cybersecurity testing environment and hacked into three c…",
@@ -276,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7831,
-      "importance": 0.7831,
-      "importance_score": 0.7831,
+      "score": 0.7775,
+      "importance": 0.7775,
+      "importance_score": 0.7775,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9193,
+        "recency": 0.8884,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -312,91 +84,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
-      }
-    },
-    {
-      "story_id": "story_aba82ef73bf1",
-      "title": "《纽约时报》等媒体提交简要判决动议，援引 OpenAI 与微软高管内部言论质疑合理使用抗辩 / AI training built on fair use looks shaky when the companies' own people call it \"astonishing theft\"",
-      "url": "https://the-decoder.com/ai-training-built-on-fair-use-looks-shaky-when-the-companies-own-people-call-it-astonishing-theft",
-      "primary_url": "https://the-decoder.com/ai-training-built-on-fair-use-looks-shaky-when-the-companies-own-people-call-it-astonishing-theft",
-      "source": "The Decoder：AI News（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "e0580084c9245f773dc9e155db74b4b84593adb2",
-          "title": "《纽约时报》等媒体提交简要判决动议，援引 OpenAI 与微软高管内部言论质疑合理使用抗辩 / AI training built on fair use looks shaky when the companies' own people call it \"astonishing theft\"",
-          "title_zh": "《纽约时报》等媒体提交简要判决动议，援引 OpenAI 与微软高管内部言论质疑合理使用抗辩",
-          "title_en": "AI training built on fair use looks shaky when the companies' own people call it \"astonishing theft\"",
-          "title_original": "AI training built on fair use looks shaky when the companies' own people call it \"astonishing theft\"",
-          "summary": "《纽约时报》、Daily News 集团、Ziff Davis 等媒体公司向纽约联邦法院提交92页简要判决动议，就 AI 训练版权侵权向 OpenAI 和微软索赔数十亿美元，并援引此前未披露的内部邮件和宣誓证词。",
-          "recommend_reason_zh": null,
-          "url": "https://the-decoder.com/ai-training-built-on-fair-use-looks-shaky-when-the-companies-own-people-call-it-astonishing-theft",
-          "source": "The Decoder：AI News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T15:27:29Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "The Decoder：AI News（RSS）"
-      ],
-      "items": [
-        {
-          "id": "e0580084c9245f773dc9e155db74b4b84593adb2",
-          "title": "《纽约时报》等媒体提交简要判决动议，援引 OpenAI 与微软高管内部言论质疑合理使用抗辩 / AI training built on fair use looks shaky when the companies' own people call it \"astonishing theft\"",
-          "title_zh": "《纽约时报》等媒体提交简要判决动议，援引 OpenAI 与微软高管内部言论质疑合理使用抗辩",
-          "title_en": "AI training built on fair use looks shaky when the companies' own people call it \"astonishing theft\"",
-          "title_original": "AI training built on fair use looks shaky when the companies' own people call it \"astonishing theft\"",
-          "summary": "《纽约时报》、Daily News 集团、Ziff Davis 等媒体公司向纽约联邦法院提交92页简要判决动议，就 AI 训练版权侵权向 OpenAI 和微软索赔数十亿美元，并援引此前未披露的内部邮件和宣誓证词。",
-          "recommend_reason_zh": null,
-          "url": "https://the-decoder.com/ai-training-built-on-fair-use-looks-shaky-when-the-companies-own-people-call-it-astonishing-theft",
-          "source": "The Decoder：AI News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T15:27:29Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7587,
-      "importance": 0.7587,
-      "importance_score": 0.7587,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.81,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8004,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-18T15:27:29Z",
-      "latest_at": "2026-09-18T15:27:29Z",
-      "primary_item": {
-        "id": "e0580084c9245f773dc9e155db74b4b84593adb2",
-        "title": "《纽约时报》等媒体提交简要判决动议，援引 OpenAI 与微软高管内部言论质疑合理使用抗辩 / AI training built on fair use looks shaky when the companies' own people call it \"astonishing theft\"",
-        "title_zh": "《纽约时报》等媒体提交简要判决动议，援引 OpenAI 与微软高管内部言论质疑合理使用抗辩",
-        "title_en": "AI training built on fair use looks shaky when the companies' own people call it \"astonishing theft\"",
-        "title_original": "AI training built on fair use looks shaky when the companies' own people call it \"astonishing theft\"",
-        "summary": "《纽约时报》、Daily News 集团、Ziff Davis 等媒体公司向纽约联邦法院提交92页简要判决动议，就 AI 训练版权侵权向 OpenAI 和微软索赔数十亿美元，并援引此前未披露的内部邮件和宣誓证词。",
-        "recommend_reason_zh": null,
-        "url": "https://the-decoder.com/ai-training-built-on-fair-use-looks-shaky-when-the-companies-own-people-call-it-astonishing-theft",
-        "source": "The Decoder：AI News（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7926,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
+        "scored_at": "2026-09-19T18:08:45.979660Z"
       }
     },
     {
@@ -444,15 +132,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7698,
-      "importance": 0.7698,
-      "importance_score": 0.7698,
+      "score": 0.7646,
+      "importance": 0.7646,
+      "importance_score": 0.7646,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8623,
+        "recency": 0.8333,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -480,7 +168,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
+        "scored_at": "2026-09-19T18:08:45.979660Z"
       }
     },
     {
@@ -528,15 +216,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7587,
-      "importance": 0.7587,
-      "importance_score": 0.7587,
+      "score": 0.7535,
+      "importance": 0.7535,
+      "importance_score": 0.7535,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8674,
+        "recency": 0.8382,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -564,7 +252,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
+        "scored_at": "2026-09-19T18:08:45.979660Z"
       }
     },
     {
@@ -612,22 +300,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.754,
-      "importance": 0.754,
-      "importance_score": 0.754,
+      "score": 0.749,
+      "importance": 0.749,
+      "importance_score": 0.749,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.61,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8391,
+        "recency": 0.8109,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-18T20:21:40.477000Z",
       "latest_at": "2026-09-18T20:21:40.477000Z",
@@ -648,7 +335,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
+        "scored_at": "2026-09-19T18:08:45.979660Z"
       }
     },
     {
@@ -696,15 +383,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7592,
-      "importance": 0.7592,
-      "importance_score": 0.7592,
+      "score": 0.7539,
+      "importance": 0.7539,
+      "importance_score": 0.7539,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.87,
+        "recency": 0.8408,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -732,7 +419,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
+        "scored_at": "2026-09-19T18:08:45.979660Z"
       }
     },
     {
@@ -780,15 +467,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7303,
-      "importance": 0.7303,
-      "importance_score": 0.7303,
+      "score": 0.7249,
+      "importance": 0.7249,
+      "importance_score": 0.7249,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8929,
+        "recency": 0.8628,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -815,7 +502,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
+        "scored_at": "2026-09-19T18:08:45.979660Z"
       }
     },
     {
@@ -863,15 +550,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7139,
-      "importance": 0.7139,
-      "importance_score": 0.7139,
+      "score": 0.7089,
+      "importance": 0.7089,
+      "importance_score": 0.7089,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.64,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8352,
+        "recency": 0.8071,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -898,90 +585,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
-      }
-    },
-    {
-      "story_id": "story_7d5f4a120d78",
-      "title": "Ethan Mollick 谈能力悬差：GPT-6 Astra 与 Fable 5.1 的现有能力远未被用尽 / The Overhang",
-      "url": "https://www.oneusefulthing.org/p/the-overhang",
-      "primary_url": "https://www.oneusefulthing.org/p/the-overhang",
-      "source": "Ethan Mollick：One Useful Thing（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "89c045b893bc93dad861765b5e32082b227147a3",
-          "title": "Ethan Mollick 谈能力悬差：GPT-6 Astra 与 Fable 5.1 的现有能力远未被用尽 / The Overhang",
-          "title_zh": "Ethan Mollick 谈能力悬差：GPT-6 Astra 与 Fable 5.1 的现有能力远未被用尽",
-          "title_en": "The Overhang",
-          "title_original": "The Overhang",
-          "summary": "Ethan Mollick 撰文指出 GPT-6 Astra 和 Fable 5.1 已能可靠完成数周量级的人类工作，但大多数人远未用尽其能力，形成能力悬差。",
-          "recommend_reason_zh": null,
-          "url": "https://www.oneusefulthing.org/p/the-overhang",
-          "source": "Ethan Mollick：One Useful Thing（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T17:54:32Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Ethan Mollick：One Useful Thing（RSS）"
-      ],
-      "items": [
-        {
-          "id": "89c045b893bc93dad861765b5e32082b227147a3",
-          "title": "Ethan Mollick 谈能力悬差：GPT-6 Astra 与 Fable 5.1 的现有能力远未被用尽 / The Overhang",
-          "title_zh": "Ethan Mollick 谈能力悬差：GPT-6 Astra 与 Fable 5.1 的现有能力远未被用尽",
-          "title_en": "The Overhang",
-          "title_original": "The Overhang",
-          "summary": "Ethan Mollick 撰文指出 GPT-6 Astra 和 Fable 5.1 已能可靠完成数周量级的人类工作，但大多数人远未用尽其能力，形成能力悬差。",
-          "recommend_reason_zh": null,
-          "url": "https://www.oneusefulthing.org/p/the-overhang",
-          "source": "Ethan Mollick：One Useful Thing（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T17:54:32Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7051,
-      "importance": 0.7051,
-      "importance_score": 0.7051,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.62,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8196,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-18T17:54:32Z",
-      "latest_at": "2026-09-18T17:54:32Z",
-      "primary_item": {
-        "id": "89c045b893bc93dad861765b5e32082b227147a3",
-        "title": "Ethan Mollick 谈能力悬差：GPT-6 Astra 与 Fable 5.1 的现有能力远未被用尽 / The Overhang",
-        "title_zh": "Ethan Mollick 谈能力悬差：GPT-6 Astra 与 Fable 5.1 的现有能力远未被用尽",
-        "title_en": "The Overhang",
-        "title_original": "The Overhang",
-        "summary": "Ethan Mollick 撰文指出 GPT-6 Astra 和 Fable 5.1 已能可靠完成数周量级的人类工作，但大多数人远未用尽其能力，形成能力悬差。",
-        "recommend_reason_zh": null,
-        "url": "https://www.oneusefulthing.org/p/the-overhang",
-        "source": "Ethan Mollick：One Useful Thing（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7343,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
+        "scored_at": "2026-09-19T18:08:45.979660Z"
       }
     },
     {
@@ -1029,22 +633,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7549,
-      "importance": 0.7549,
-      "importance_score": 0.7549,
+      "score": 0.7496,
+      "importance": 0.7496,
+      "importance_score": 0.7496,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8625,
+        "recency": 0.8335,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-18T23:13:06Z",
       "latest_at": "2026-09-18T23:13:06Z",
@@ -1065,90 +668,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
-      }
-    },
-    {
-      "story_id": "story_abd616b30eba",
-      "title": "Gary Marcus：近期更该警惕的不是失控超级智能，而是智能体 AI 引发的规模化黑客攻击 / Wake up， people. What we should actually fear， near term， is not so much rogue superintelligence as unleashed agentic AI causing hacking the internet at scale.",
-      "url": "https://garymarcus.substack.com/p/wake-up-people-what-we-should-actually",
-      "primary_url": "https://garymarcus.substack.com/p/wake-up-people-what-we-should-actually",
-      "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "cc1841041930dac7e23fd2f34e3ea0cea4947dc4",
-          "title": "Gary Marcus：近期更该警惕的不是失控超级智能，而是智能体 AI 引发的规模化黑客攻击 / Wake up， people. What we should actually fear， near term， is not so much rogue superintelligence as unleashed agentic AI causing hacking the internet at scale.",
-          "title_zh": "Gary Marcus：近期更该警惕的不是失控超级智能，而是智能体 AI 引发的规模化黑客攻击",
-          "title_en": "Wake up， people. What we should actually fear， near term， is not so much rogue superintelligence as unleashed agentic AI causing hacking the internet at scale.",
-          "title_original": "Wake up， people. What we should actually fear， near term， is not so much rogue superintelligence as unleashed agentic AI causing hacking the internet at scale.",
-          "summary": "Gary Marcus 撰文称，近期真正应担心的不是失控的超级智能，而是被放开的 agentic AI 造成互联网规模化的黑客攻击。",
-          "recommend_reason_zh": null,
-          "url": "https://garymarcus.substack.com/p/wake-up-people-what-we-should-actually",
-          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T16:29:57Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Gary Marcus：The Road to AI We Can Trust（RSS）"
-      ],
-      "items": [
-        {
-          "id": "cc1841041930dac7e23fd2f34e3ea0cea4947dc4",
-          "title": "Gary Marcus：近期更该警惕的不是失控超级智能，而是智能体 AI 引发的规模化黑客攻击 / Wake up， people. What we should actually fear， near term， is not so much rogue superintelligence as unleashed agentic AI causing hacking the internet at scale.",
-          "title_zh": "Gary Marcus：近期更该警惕的不是失控超级智能，而是智能体 AI 引发的规模化黑客攻击",
-          "title_en": "Wake up， people. What we should actually fear， near term， is not so much rogue superintelligence as unleashed agentic AI causing hacking the internet at scale.",
-          "title_original": "Wake up， people. What we should actually fear， near term， is not so much rogue superintelligence as unleashed agentic AI causing hacking the internet at scale.",
-          "summary": "Gary Marcus 撰文称，近期真正应担心的不是失控的超级智能，而是被放开的 agentic AI 造成互联网规模化的黑客攻击。",
-          "recommend_reason_zh": null,
-          "url": "https://garymarcus.substack.com/p/wake-up-people-what-we-should-actually",
-          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T16:29:57Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7061,
-      "importance": 0.7061,
-      "importance_score": 0.7061,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.63,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8085,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-18T16:29:57Z",
-      "latest_at": "2026-09-18T16:29:57Z",
-      "primary_item": {
-        "id": "cc1841041930dac7e23fd2f34e3ea0cea4947dc4",
-        "title": "Gary Marcus：近期更该警惕的不是失控超级智能，而是智能体 AI 引发的规模化黑客攻击 / Wake up， people. What we should actually fear， near term， is not so much rogue superintelligence as unleashed agentic AI causing hacking the internet at scale.",
-        "title_zh": "Gary Marcus：近期更该警惕的不是失控超级智能，而是智能体 AI 引发的规模化黑客攻击",
-        "title_en": "Wake up， people. What we should actually fear， near term， is not so much rogue superintelligence as unleashed agentic AI causing hacking the internet at scale.",
-        "title_original": "Wake up， people. What we should actually fear， near term， is not so much rogue superintelligence as unleashed agentic AI causing hacking the internet at scale.",
-        "summary": "Gary Marcus 撰文称，近期真正应担心的不是失控的超级智能，而是被放开的 agentic AI 造成互联网规模化的黑客攻击。",
-        "recommend_reason_zh": null,
-        "url": "https://garymarcus.substack.com/p/wake-up-people-what-we-should-actually",
-        "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.735,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
+        "scored_at": "2026-09-19T18:08:45.979660Z"
       }
     },
     {
@@ -1283,15 +803,15 @@
       ],
       "item_count": 4,
       "duplicate_count": 4,
-      "score": 0.6367,
-      "importance": 0.6367,
-      "importance_score": 0.6367,
+      "score": 0.6315,
+      "importance": 0.6315,
+      "importance_score": 0.6315,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.5112,
         "source_tier": 0.5,
         "ai_relevance": 0.71,
-        "recency": 0.8688,
+        "recency": 0.8395,
         "story_heat": 0.75,
         "soft_content_penalty": 0.0
       },
@@ -1318,7 +838,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T14:35:37.077377Z"
+        "scored_at": "2026-09-19T18:08:45.979660Z"
       }
     }
   ]
