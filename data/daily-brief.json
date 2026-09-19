@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-19T18:07:56.604314Z",
+  "generated_at": "2026-09-19T20:52:10.509757Z",
   "window_hours": 24,
-  "total_items": 9,
+  "total_items": 7,
   "items": [
     {
       "story_id": "story_de3b2aa2df19",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7775,
-      "importance": 0.7775,
-      "importance_score": 0.7775,
+      "score": 0.7733,
+      "importance": 0.7733,
+      "importance_score": 0.7733,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8884,
+        "recency": 0.8653,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -84,7 +84,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T18:08:45.979660Z"
+        "scored_at": "2026-09-19T20:58:22.548393Z"
       }
     },
     {
@@ -132,15 +132,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7646,
-      "importance": 0.7646,
-      "importance_score": 0.7646,
+      "score": 0.7607,
+      "importance": 0.7607,
+      "importance_score": 0.7607,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8333,
+        "recency": 0.8116,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -168,7 +168,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T18:08:45.979660Z"
+        "scored_at": "2026-09-19T20:58:22.548393Z"
       }
     },
     {
@@ -216,22 +216,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7535,
-      "importance": 0.7535,
-      "importance_score": 0.7535,
+      "score": 0.7496,
+      "importance": 0.7496,
+      "importance_score": 0.7496,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8382,
+        "recency": 0.8164,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-18T23:47:57Z",
       "latest_at": "2026-09-18T23:47:57Z",
@@ -252,90 +251,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T18:08:45.979660Z"
-      }
-    },
-    {
-      "story_id": "story_b2e760c3e0a8",
-      "title": "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元 / Partnering with Accenture on embedded evaluation",
-      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-      "primary_url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-      "source": "Anthropic：Newsroom（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "25ff9fd2a3c7d3edb048d02aa98dd6c1d88bdb37",
-          "title": "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元 / Partnering with Accenture on embedded evaluation",
-          "title_zh": "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元",
-          "title_en": "Partnering with Accenture on embedded evaluation",
-          "title_original": "Partnering with Accenture on embedded evaluation",
-          "summary": "Anthropic 宣布与 Accenture 合作，对前沿模型进行嵌入式独立评估，合作由 Accenture 旗下 AI 业务 Faculty 主导，包括模型评估与红队测试、对齐评估和安全防护测试，双方预计未来五年各投入至少 10 亿美元。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-          "source": "Anthropic：Newsroom（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T20:21:40.477000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Anthropic：Newsroom（网页）"
-      ],
-      "items": [
-        {
-          "id": "25ff9fd2a3c7d3edb048d02aa98dd6c1d88bdb37",
-          "title": "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元 / Partnering with Accenture on embedded evaluation",
-          "title_zh": "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元",
-          "title_en": "Partnering with Accenture on embedded evaluation",
-          "title_original": "Partnering with Accenture on embedded evaluation",
-          "summary": "Anthropic 宣布与 Accenture 合作，对前沿模型进行嵌入式独立评估，合作由 Accenture 旗下 AI 业务 Faculty 主导，包括模型评估与红队测试、对齐评估和安全防护测试，双方预计未来五年各投入至少 10 亿美元。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-          "source": "Anthropic：Newsroom（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T20:21:40.477000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.749,
-      "importance": 0.749,
-      "importance_score": 0.749,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.61,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8109,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-18T20:21:40.477000Z",
-      "latest_at": "2026-09-18T20:21:40.477000Z",
-      "primary_item": {
-        "id": "25ff9fd2a3c7d3edb048d02aa98dd6c1d88bdb37",
-        "title": "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元 / Partnering with Accenture on embedded evaluation",
-        "title_zh": "Anthropic 与 Accenture 合作开展嵌入式独立评估，双方各投入至少 10 亿美元",
-        "title_en": "Partnering with Accenture on embedded evaluation",
-        "title_original": "Partnering with Accenture on embedded evaluation",
-        "summary": "Anthropic 宣布与 Accenture 合作，对前沿模型进行嵌入式独立评估，合作由 Accenture 旗下 AI 业务 Faculty 主导，包括模型评估与红队测试、对齐评估和安全防护测试，双方预计未来五年各投入至少 10 亿美元。",
-        "recommend_reason_zh": null,
-        "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-        "source": "Anthropic：Newsroom（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.779,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-19T18:08:45.979660Z"
+        "scored_at": "2026-09-19T20:58:22.548393Z"
       }
     },
     {
@@ -383,15 +299,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7539,
-      "importance": 0.7539,
-      "importance_score": 0.7539,
+      "score": 0.75,
+      "importance": 0.75,
+      "importance_score": 0.75,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8408,
+        "recency": 0.8189,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -419,7 +335,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T18:08:45.979660Z"
+        "scored_at": "2026-09-19T20:58:22.548393Z"
       }
     },
     {
@@ -467,15 +383,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7249,
-      "importance": 0.7249,
-      "importance_score": 0.7249,
+      "score": 0.7209,
+      "importance": 0.7209,
+      "importance_score": 0.7209,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8628,
+        "recency": 0.8404,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -502,90 +418,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T18:08:45.979660Z"
-      }
-    },
-    {
-      "story_id": "story_31aa9a922a1b",
-      "title": "Gary Marcus 评论 Trump 因经济原因淡化 AI 风险，AI 幻觉情报报告几乎引发战争 / The real reason Trump is standing behind AI - and the latest example of why that might turn out to be a bad idea",
-      "url": "https://garymarcus.substack.com/p/the-real-reason-trump-is-standing",
-      "primary_url": "https://garymarcus.substack.com/p/the-real-reason-trump-is-standing",
-      "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "7030441f46ca40a97a91922dddbfd6f57e12ec6e",
-          "title": "Gary Marcus 评论 Trump 因经济原因淡化 AI 风险，AI 幻觉情报报告几乎引发战争 / The real reason Trump is standing behind AI - and the latest example of why that might turn out to be a bad idea",
-          "title_zh": "Gary Marcus 评论 Trump 因经济原因淡化 AI 风险，AI 幻觉情报报告几乎引发战争",
-          "title_en": "The real reason Trump is standing behind AI - and the latest example of why that might turn out to be a bad idea",
-          "title_original": "The real reason Trump is standing behind AI - and the latest example of why that might turn out to be a bad idea",
-          "summary": "Gary Marcus 引用 NYT 报道称 Trump 出于经济考虑淡化 AI 恐慌、抵制监管，并转发 Katie Bo Lillis 的报道，一份 AI 辅助情报报告因模型幻觉误判一艘中国船只运载核武部件，美军紧急拦截，据称\"几乎引发战争\"。",
-          "recommend_reason_zh": null,
-          "url": "https://garymarcus.substack.com/p/the-real-reason-trump-is-standing",
-          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T19:52:12Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Gary Marcus：The Road to AI We Can Trust（RSS）"
-      ],
-      "items": [
-        {
-          "id": "7030441f46ca40a97a91922dddbfd6f57e12ec6e",
-          "title": "Gary Marcus 评论 Trump 因经济原因淡化 AI 风险，AI 幻觉情报报告几乎引发战争 / The real reason Trump is standing behind AI - and the latest example of why that might turn out to be a bad idea",
-          "title_zh": "Gary Marcus 评论 Trump 因经济原因淡化 AI 风险，AI 幻觉情报报告几乎引发战争",
-          "title_en": "The real reason Trump is standing behind AI - and the latest example of why that might turn out to be a bad idea",
-          "title_original": "The real reason Trump is standing behind AI - and the latest example of why that might turn out to be a bad idea",
-          "summary": "Gary Marcus 引用 NYT 报道称 Trump 出于经济考虑淡化 AI 恐慌、抵制监管，并转发 Katie Bo Lillis 的报道，一份 AI 辅助情报报告因模型幻觉误判一艘中国船只运载核武部件，美军紧急拦截，据称\"几乎引发战争\"。",
-          "recommend_reason_zh": null,
-          "url": "https://garymarcus.substack.com/p/the-real-reason-trump-is-standing",
-          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-18T19:52:12Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7089,
-      "importance": 0.7089,
-      "importance_score": 0.7089,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.64,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8071,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-18T19:52:12Z",
-      "latest_at": "2026-09-18T19:52:12Z",
-      "primary_item": {
-        "id": "7030441f46ca40a97a91922dddbfd6f57e12ec6e",
-        "title": "Gary Marcus 评论 Trump 因经济原因淡化 AI 风险，AI 幻觉情报报告几乎引发战争 / The real reason Trump is standing behind AI - and the latest example of why that might turn out to be a bad idea",
-        "title_zh": "Gary Marcus 评论 Trump 因经济原因淡化 AI 风险，AI 幻觉情报报告几乎引发战争",
-        "title_en": "The real reason Trump is standing behind AI - and the latest example of why that might turn out to be a bad idea",
-        "title_original": "The real reason Trump is standing behind AI - and the latest example of why that might turn out to be a bad idea",
-        "summary": "Gary Marcus 引用 NYT 报道称 Trump 出于经济考虑淡化 AI 恐慌、抵制监管，并转发 Katie Bo Lillis 的报道，一份 AI 辅助情报报告因模型幻觉误判一艘中国船只运载核武部件，美军紧急拦截，据称\"几乎引发战争\"。",
-        "recommend_reason_zh": null,
-        "url": "https://garymarcus.substack.com/p/the-real-reason-trump-is-standing",
-        "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7388,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-19T18:08:45.979660Z"
+        "scored_at": "2026-09-19T20:58:22.548393Z"
       }
     },
     {
@@ -633,15 +466,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7496,
-      "importance": 0.7496,
-      "importance_score": 0.7496,
+      "score": 0.7457,
+      "importance": 0.7457,
+      "importance_score": 0.7457,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8335,
+        "recency": 0.8119,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -668,7 +501,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T18:08:45.979660Z"
+        "scored_at": "2026-09-19T20:58:22.548393Z"
       }
     },
     {
@@ -694,20 +527,6 @@
           "published_at": "2026-09-18T23:57:57Z"
         },
         {
-          "id": "fe7af3ec9a5686403a56cf669928ce129657af46",
-          "title": "Gemini hacked three companies in first known breakout by Google's AI",
-          "title_zh": null,
-          "title_en": "Gemini hacked three companies in first known breakout by Google's AI",
-          "title_original": "Gemini hacked three companies in first known breakout by Google's AI",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-19T01:40:35Z"
-        },
-        {
           "id": "a9605f48985cce7effa736572178da8f2f62251e",
           "title": "Gemini hacked three companies in first known breakout by Google's AI, WSJ reports",
           "title_zh": null,
@@ -736,9 +555,8 @@
           "published_at": "2026-09-18T22:17:19Z"
         }
       ],
-      "source_count": 4,
+      "source_count": 3,
       "source_names": [
-        "Hacker News",
         "Hacker News · 24h最热",
         "Reddit (热门)",
         "Simon Willison"
@@ -759,20 +577,6 @@
           "published_at": "2026-09-18T23:57:57Z"
         },
         {
-          "id": "fe7af3ec9a5686403a56cf669928ce129657af46",
-          "title": "Gemini hacked three companies in first known breakout by Google's AI",
-          "title_zh": null,
-          "title_en": "Gemini hacked three companies in first known breakout by Google's AI",
-          "title_original": "Gemini hacked three companies in first known breakout by Google's AI",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-19T01:40:35Z"
-        },
-        {
           "id": "a9605f48985cce7effa736572178da8f2f62251e",
           "title": "Gemini hacked three companies in first known breakout by Google's AI, WSJ reports",
           "title_zh": null,
@@ -801,18 +605,18 @@
           "published_at": "2026-09-18T22:17:19Z"
         }
       ],
-      "item_count": 4,
-      "duplicate_count": 4,
-      "score": 0.6315,
-      "importance": 0.6315,
-      "importance_score": 0.6315,
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.6025,
+      "importance": 0.6025,
+      "importance_score": 0.6025,
       "importance_label": "多源热议",
       "importance_breakdown": {
         "editorial": 0.5112,
         "source_tier": 0.5,
         "ai_relevance": 0.71,
-        "recency": 0.8395,
-        "story_heat": 0.75,
+        "recency": 0.8177,
+        "story_heat": 0.5,
         "soft_content_penalty": 0.0
       },
       "category": "multi_source",
@@ -820,7 +624,7 @@
         "multi_source"
       ],
       "earliest_at": "2026-09-18T22:17:19Z",
-      "latest_at": "2026-09-19T01:40:35Z",
+      "latest_at": "2026-09-18T23:57:57Z",
       "primary_item": {
         "id": "1daa7bfa76bec3f78f74addda8bfcd0b4fe603fc",
         "title": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
@@ -838,7 +642,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-19T18:08:45.979660Z"
+        "scored_at": "2026-09-19T20:58:22.548393Z"
       }
     }
   ]
