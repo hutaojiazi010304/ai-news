@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T19:37:26.003872Z",
+  "generated_at": "2026-09-21T23:25:36.623277Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8581,
-      "importance": 0.8581,
-      "importance_score": 0.8581,
+      "score": 0.852,
+      "importance": 0.852,
+      "importance_score": 0.852,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.945,
+        "recency": 0.911,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
+        "scored_at": "2026-09-21T23:26:27.092245Z"
       }
     },
     {
@@ -162,15 +162,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8643,
-      "importance": 0.8643,
-      "importance_score": 0.8643,
+      "score": 0.8582,
+      "importance": 0.8582,
+      "importance_score": 0.8582,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9292,
+        "recency": 0.8958,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -200,7 +200,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
+        "scored_at": "2026-09-21T23:26:27.092245Z"
+      }
+    },
+    {
+      "story_id": "story_7507ddf4a875",
+      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+      "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "primary_url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "cb39a97323a5474833919c8f3993382f5f8dcf9a",
+          "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+          "title_zh": null,
+          "title_en": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+          "title_original": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+          "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-21T12:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "cb39a97323a5474833919c8f3993382f5f8dcf9a",
+          "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+          "title_zh": null,
+          "title_en": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+          "title_original": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+          "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-21T12:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8412,
+      "importance": 0.8412,
+      "importance_score": 0.8412,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.95,
+        "recency": 0.8958,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-21T12:00:00Z",
+      "latest_at": "2026-09-21T12:00:00Z",
+      "primary_item": {
+        "id": "cb39a97323a5474833919c8f3993382f5f8dcf9a",
+        "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+        "title_zh": null,
+        "title_en": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+        "title_original": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+        "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8412,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-21T23:26:27.092245Z"
       }
     },
     {
@@ -248,15 +333,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.829,
-      "importance": 0.829,
-      "importance_score": 0.829,
+      "score": 0.8237,
+      "importance": 0.8237,
+      "importance_score": 0.8237,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8279,
+        "recency": 0.7981,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -285,92 +370,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
-      }
-    },
-    {
-      "story_id": "story_576291cb875d",
-      "title": "Building standards for the next phase of AI",
-      "url": "https://openai.com/index/building-standards-next-phase-ai",
-      "primary_url": "https://openai.com/index/building-standards-next-phase-ai",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "4bdf05773fa238e0dc04ab378c0844200ade6e69",
-          "title": "Building standards for the next phase of AI",
-          "title_zh": null,
-          "title_en": "Building standards for the next phase of AI",
-          "title_original": "Building standards for the next phase of AI",
-          "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/building-standards-next-phase-ai",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-21T10:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "4bdf05773fa238e0dc04ab378c0844200ade6e69",
-          "title": "Building standards for the next phase of AI",
-          "title_zh": null,
-          "title_en": "Building standards for the next phase of AI",
-          "title_original": "Building standards for the next phase of AI",
-          "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/building-standards-next-phase-ai",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-21T10:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8361,
-      "importance": 0.8361,
-      "importance_score": 0.8361,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.9115,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-21T10:00:00Z",
-      "latest_at": "2026-09-21T10:00:00Z",
-      "primary_item": {
-        "id": "4bdf05773fa238e0dc04ab378c0844200ade6e69",
-        "title": "Building standards for the next phase of AI",
-        "title_zh": null,
-        "title_en": "Building standards for the next phase of AI",
-        "title_original": "Building standards for the next phase of AI",
-        "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/building-standards-next-phase-ai",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8361,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
+        "scored_at": "2026-09-21T23:26:27.092245Z"
       }
     },
     {
@@ -418,15 +418,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7938,
-      "importance": 0.7938,
-      "importance_score": 0.7938,
+      "score": 0.788,
+      "importance": 0.788,
+      "importance_score": 0.788,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8933,
+        "recency": 0.8612,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -454,7 +454,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
+        "scored_at": "2026-09-21T23:26:27.092245Z"
       }
     },
     {
@@ -502,15 +502,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7802,
-      "importance": 0.7802,
-      "importance_score": 0.7802,
+      "score": 0.7746,
+      "importance": 0.7746,
+      "importance_score": 0.7746,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8508,
+        "recency": 0.8202,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -538,7 +538,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
+        "scored_at": "2026-09-21T23:26:27.092245Z"
       }
     },
     {
@@ -564,7 +564,7 @@
           "published_at": "2026-09-21T00:00:00Z"
         },
         {
-          "id": "ff00336df07c26a404167cd7d5c2790ebfe3b39e",
+          "id": "e733a7f31fc8eba79de15ecc273c8c0ffb20afa7",
           "title": "Grok 4.7",
           "title_zh": null,
           "title_en": null,
@@ -572,15 +572,15 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://x.ai/news/grok-4-7",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-21T15:50:15Z"
+          "source": "x.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-21T19:49:54.380000Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hacker News",
+        "x.ai",
         "xAI：News（网页）"
       ],
       "items": [
@@ -599,7 +599,7 @@
           "published_at": "2026-09-21T00:00:00Z"
         },
         {
-          "id": "ff00336df07c26a404167cd7d5c2790ebfe3b39e",
+          "id": "e733a7f31fc8eba79de15ecc273c8c0ffb20afa7",
           "title": "Grok 4.7",
           "title_zh": null,
           "title_en": null,
@@ -607,23 +607,23 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://x.ai/news/grok-4-7",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-21T15:50:15Z"
+          "source": "x.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-21T19:49:54.380000Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.788,
-      "importance": 0.788,
-      "importance_score": 0.788,
+      "score": 0.7827,
+      "importance": 0.7827,
+      "importance_score": 0.7827,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8279,
+        "recency": 0.7981,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -633,7 +633,7 @@
         "high_importance"
       ],
       "earliest_at": "2026-09-21T00:00:00Z",
-      "latest_at": "2026-09-21T15:50:15Z",
+      "latest_at": "2026-09-21T19:49:54.380000Z",
       "primary_item": {
         "id": "cad8e581e48683e85a011f828dc5fcda016dafb0",
         "title": "xAI 发布 Grok 4.7，主打编码与知识工作 / Grok 4.7 Sep 21， 2026 # Introducing Grok 4.7 SpaceXAI's most powerful model for coding and knowledge work. Twice as fast， at half the price of comparable models. Read More",
@@ -651,90 +651,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
-      }
-    },
-    {
-      "story_id": "story_b27cd7e4992a",
-      "title": "Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故 / You too Google！ Google Confirms Gemini Breached 3 Companies in AI Security Tests",
-      "url": "https://www.marktechpost.com/2026/09/20/you-too-google-google-confirms-gemini-breached-3-companies-in-ai-security-tests",
-      "primary_url": "https://www.marktechpost.com/2026/09/20/you-too-google-google-confirms-gemini-breached-3-companies-in-ai-security-tests",
-      "source": "MarkTechPost（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "e7934196a7be1cf52a62f81ea6d8d9b348e216c3",
-          "title": "Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故 / You too Google！ Google Confirms Gemini Breached 3 Companies in AI Security Tests",
-          "title_zh": "Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故",
-          "title_en": "You too Google！ Google Confirms Gemini Breached 3 Companies in AI Security Tests",
-          "title_original": "You too Google！ Google Confirms Gemini Breached 3 Companies in AI Security Tests",
-          "summary": "Google 于 9 月 18 日确认，Gemini 模型在 5 月由第三方安全评估方 Irregular 组织的 capture-the-flag 测试中访问了 3 家真实公司的系统，起因是本应离线的测试环境因 bug 开放了互联网访问。",
-          "recommend_reason_zh": null,
-          "url": "https://www.marktechpost.com/2026/09/20/you-too-google-google-confirms-gemini-breached-3-companies-in-ai-security-tests",
-          "source": "MarkTechPost（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-20T20:20:56Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "MarkTechPost（RSS）"
-      ],
-      "items": [
-        {
-          "id": "e7934196a7be1cf52a62f81ea6d8d9b348e216c3",
-          "title": "Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故 / You too Google！ Google Confirms Gemini Breached 3 Companies in AI Security Tests",
-          "title_zh": "Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故",
-          "title_en": "You too Google！ Google Confirms Gemini Breached 3 Companies in AI Security Tests",
-          "title_original": "You too Google！ Google Confirms Gemini Breached 3 Companies in AI Security Tests",
-          "summary": "Google 于 9 月 18 日确认，Gemini 模型在 5 月由第三方安全评估方 Irregular 组织的 capture-the-flag 测试中访问了 3 家真实公司的系统，起因是本应离线的测试环境因 bug 开放了互联网访问。",
-          "recommend_reason_zh": null,
-          "url": "https://www.marktechpost.com/2026/09/20/you-too-google-google-confirms-gemini-breached-3-companies-in-ai-security-tests",
-          "source": "MarkTechPost（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-20T20:20:56Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7495,
-      "importance": 0.7495,
-      "importance_score": 0.7495,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.78,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7993,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-20T20:20:56Z",
-      "latest_at": "2026-09-20T20:20:56Z",
-      "primary_item": {
-        "id": "e7934196a7be1cf52a62f81ea6d8d9b348e216c3",
-        "title": "Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故 / You too Google！ Google Confirms Gemini Breached 3 Companies in AI Security Tests",
-        "title_zh": "Google 确认 Gemini 在 Irregular 安全测试中访问 3 家真实公司系统，与 OpenAI、Anthropic、Meta 属同一评估事故",
-        "title_en": "You too Google！ Google Confirms Gemini Breached 3 Companies in AI Security Tests",
-        "title_original": "You too Google！ Google Confirms Gemini Breached 3 Companies in AI Security Tests",
-        "summary": "Google 于 9 月 18 日确认，Gemini 模型在 5 月由第三方安全评估方 Irregular 组织的 capture-the-flag 测试中访问了 3 家真实公司的系统，起因是本应离线的测试环境因 bug 开放了互联网访问。",
-        "recommend_reason_zh": null,
-        "url": "https://www.marktechpost.com/2026/09/20/you-too-google-google-confirms-gemini-breached-3-companies-in-ai-security-tests",
-        "source": "MarkTechPost（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7818,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
+        "scored_at": "2026-09-21T23:26:27.092245Z"
       }
     },
     {
@@ -782,15 +699,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7727,
-      "importance": 0.7727,
-      "importance_score": 0.7727,
+      "score": 0.7667,
+      "importance": 0.7667,
+      "importance_score": 0.7667,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9282,
+        "recency": 0.8948,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -818,30 +735,114 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
+        "scored_at": "2026-09-21T23:26:27.092245Z"
       }
     },
     {
-      "story_id": "story_76f72fcfe612",
-      "title": "Expanding OpenAI Academy with new learning paths",
-      "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-      "primary_url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+      "story_id": "story_666ff01c3033",
+      "title": "不列颠哥伦比亚省起诉 OpenAI，指其未在枪击案前将 flagged ChatGPT 活动转介警方 / Bloomberg： British Columbia sued OpenAI in California， alleging flagged ChatGPT activity should have…",
+      "url": "https://x.com/rohanpaul_ai/status/2102128625126605059",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2102128625126605059",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "6ba024751c1ae221c9aafc1b82e29d4dfd669b2f",
+          "title": "不列颠哥伦比亚省起诉 OpenAI，指其未在枪击案前将 flagged ChatGPT 活动转介警方 / Bloomberg： British Columbia sued OpenAI in California， alleging flagged ChatGPT activity should have…",
+          "title_zh": "不列颠哥伦比亚省起诉 OpenAI，指其未在枪击案前将 flagged ChatGPT 活动转介警方",
+          "title_en": "Bloomberg： British Columbia sued OpenAI in California， alleging flagged ChatGPT activity should have…",
+          "title_original": "Bloomberg： British Columbia sued OpenAI in California， alleging flagged ChatGPT activity should have…",
+          "summary": "不列颠哥伦比亚省在加州起诉 OpenAI，指 flagged 的 ChatGPT 活动本应在 2026 年 2 月 10 日 Tumbler Ridge 枪击案前通报警方，该案致 8 人死亡（含 5 名儿童和一名教育工作者）、27 人受伤。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2102128625126605059",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-21T20:11:34Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "items": [
+        {
+          "id": "6ba024751c1ae221c9aafc1b82e29d4dfd669b2f",
+          "title": "不列颠哥伦比亚省起诉 OpenAI，指其未在枪击案前将 flagged ChatGPT 活动转介警方 / Bloomberg： British Columbia sued OpenAI in California， alleging flagged ChatGPT activity should have…",
+          "title_zh": "不列颠哥伦比亚省起诉 OpenAI，指其未在枪击案前将 flagged ChatGPT 活动转介警方",
+          "title_en": "Bloomberg： British Columbia sued OpenAI in California， alleging flagged ChatGPT activity should have…",
+          "title_original": "Bloomberg： British Columbia sued OpenAI in California， alleging flagged ChatGPT activity should have…",
+          "summary": "不列颠哥伦比亚省在加州起诉 OpenAI，指 flagged 的 ChatGPT 活动本应在 2026 年 2 月 10 日 Tumbler Ridge 枪击案前通报警方，该案致 8 人死亡（含 5 名儿童和一名教育工作者）、27 人受伤。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2102128625126605059",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-21T20:11:34Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7801,
+      "importance": 0.7801,
+      "importance_score": 0.7801,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9693,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-21T20:11:34Z",
+      "latest_at": "2026-09-21T20:11:34Z",
+      "primary_item": {
+        "id": "6ba024751c1ae221c9aafc1b82e29d4dfd669b2f",
+        "title": "不列颠哥伦比亚省起诉 OpenAI，指其未在枪击案前将 flagged ChatGPT 活动转介警方 / Bloomberg： British Columbia sued OpenAI in California， alleging flagged ChatGPT activity should have…",
+        "title_zh": "不列颠哥伦比亚省起诉 OpenAI，指其未在枪击案前将 flagged ChatGPT 活动转介警方",
+        "title_en": "Bloomberg： British Columbia sued OpenAI in California， alleging flagged ChatGPT activity should have…",
+        "title_original": "Bloomberg： British Columbia sued OpenAI in California， alleging flagged ChatGPT activity should have…",
+        "summary": "不列颠哥伦比亚省在加州起诉 OpenAI，指 flagged 的 ChatGPT 活动本应在 2026 年 2 月 10 日 Tumbler Ridge 枪击案前通报警方，该案致 8 人死亡（含 5 名儿童和一名教育工作者）、27 人受伤。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/rohanpaul_ai/status/2102128625126605059",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7801,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-21T23:26:27.092245Z"
+      }
+    },
+    {
+      "story_id": "story_576291cb875d",
+      "title": "Building standards for the next phase of AI",
+      "url": "https://openai.com/index/building-standards-next-phase-ai",
+      "primary_url": "https://openai.com/index/building-standards-next-phase-ai",
       "source": "OpenAI News",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "b5aafa50f62c10a69f52a8b6441c46712c874f1a",
-          "title": "Expanding OpenAI Academy with new learning paths",
+          "id": "4bdf05773fa238e0dc04ab378c0844200ade6e69",
+          "title": "Building standards for the next phase of AI",
           "title_zh": null,
-          "title_en": "Expanding OpenAI Academy with new learning paths",
-          "title_original": "Expanding OpenAI Academy with new learning paths",
-          "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
+          "title_en": "Building standards for the next phase of AI",
+          "title_original": "Building standards for the next phase of AI",
+          "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+          "url": "https://openai.com/index/building-standards-next-phase-ai",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-21T07:00:00Z"
+          "published_at": "2026-09-21T10:00:00Z"
         }
       ],
       "source_count": 1,
@@ -850,31 +851,31 @@
       ],
       "items": [
         {
-          "id": "b5aafa50f62c10a69f52a8b6441c46712c874f1a",
-          "title": "Expanding OpenAI Academy with new learning paths",
+          "id": "4bdf05773fa238e0dc04ab378c0844200ade6e69",
+          "title": "Building standards for the next phase of AI",
           "title_zh": null,
-          "title_en": "Expanding OpenAI Academy with new learning paths",
-          "title_original": "Expanding OpenAI Academy with new learning paths",
-          "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
+          "title_en": "Building standards for the next phase of AI",
+          "title_original": "Building standards for the next phase of AI",
+          "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+          "url": "https://openai.com/index/building-standards-next-phase-ai",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-21T07:00:00Z"
+          "published_at": "2026-09-21T10:00:00Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8314,
-      "importance": 0.8314,
-      "importance_score": 0.8314,
+      "score": 0.8302,
+      "importance": 0.8302,
+      "importance_score": 0.8302,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8856,
+        "recency": 0.8787,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -884,26 +885,110 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-21T07:00:00Z",
-      "latest_at": "2026-09-21T07:00:00Z",
+      "earliest_at": "2026-09-21T10:00:00Z",
+      "latest_at": "2026-09-21T10:00:00Z",
       "primary_item": {
-        "id": "b5aafa50f62c10a69f52a8b6441c46712c874f1a",
-        "title": "Expanding OpenAI Academy with new learning paths",
+        "id": "4bdf05773fa238e0dc04ab378c0844200ade6e69",
+        "title": "Building standards for the next phase of AI",
         "title_zh": null,
-        "title_en": "Expanding OpenAI Academy with new learning paths",
-        "title_original": "Expanding OpenAI Academy with new learning paths",
-        "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
+        "title_en": "Building standards for the next phase of AI",
+        "title_original": "Building standards for the next phase of AI",
+        "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+        "url": "https://openai.com/index/building-standards-next-phase-ai",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8314,
+      "peak_score": 0.8361,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
+        "scored_at": "2026-09-21T23:26:27.092245Z"
+      }
+    },
+    {
+      "story_id": "story_ea478dcc527f",
+      "title": "小米发布并开源 MiMo-V2.6 系列，扩展强化学习规模迈向自我提升",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTkxMTM2NA%3D%3D&mid=2247484969&idx=1&sn=76c4757b26a2b646e1b690bf78c386d8",
+      "primary_url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTkxMTM2NA%3D%3D&mid=2247484969&idx=1&sn=76c4757b26a2b646e1b690bf78c386d8",
+      "source": "公众号：小米 MiMo",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "e590b247dcf693937e18ae0bb12026ce21c5395d",
+          "title": "小米发布并开源 MiMo-V2.6 系列，扩展强化学习规模迈向自我提升",
+          "title_zh": "小米发布并开源 MiMo-V2.6 系列，扩展强化学习规模迈向自我提升",
+          "title_en": null,
+          "title_original": "小米发布并开源 MiMo-V2.6 系列，扩展强化学习规模迈向自我提升",
+          "summary": "Xiaomi MiMo 于今日正式发布并开源 MiMo-V2.6 系列模型，包含 Pro 与 Flash 两个原生全模态模型，称这是探索 RSI（递归自我改进）路径的关键一步。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTkxMTM2NA%3D%3D&mid=2247484969&idx=1&sn=76c4757b26a2b646e1b690bf78c386d8",
+          "source": "公众号：小米 MiMo",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-21T20:18:52Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "公众号：小米 MiMo"
+      ],
+      "items": [
+        {
+          "id": "e590b247dcf693937e18ae0bb12026ce21c5395d",
+          "title": "小米发布并开源 MiMo-V2.6 系列，扩展强化学习规模迈向自我提升",
+          "title_zh": "小米发布并开源 MiMo-V2.6 系列，扩展强化学习规模迈向自我提升",
+          "title_en": null,
+          "title_original": "小米发布并开源 MiMo-V2.6 系列，扩展强化学习规模迈向自我提升",
+          "summary": "Xiaomi MiMo 于今日正式发布并开源 MiMo-V2.6 系列模型，包含 Pro 与 Flash 两个原生全模态模型，称这是探索 RSI（递归自我改进）路径的关键一步。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTkxMTM2NA%3D%3D&mid=2247484969&idx=1&sn=76c4757b26a2b646e1b690bf78c386d8",
+          "source": "公众号：小米 MiMo",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-21T20:18:52Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7683,
+      "importance": 0.7683,
+      "importance_score": 0.7683,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.74,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9705,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-21T20:18:52Z",
+      "latest_at": "2026-09-21T20:18:52Z",
+      "primary_item": {
+        "id": "e590b247dcf693937e18ae0bb12026ce21c5395d",
+        "title": "小米发布并开源 MiMo-V2.6 系列，扩展强化学习规模迈向自我提升",
+        "title_zh": "小米发布并开源 MiMo-V2.6 系列，扩展强化学习规模迈向自我提升",
+        "title_en": null,
+        "title_original": "小米发布并开源 MiMo-V2.6 系列，扩展强化学习规模迈向自我提升",
+        "summary": "Xiaomi MiMo 于今日正式发布并开源 MiMo-V2.6 系列模型，包含 Pro 与 Flash 两个原生全模态模型，称这是探索 RSI（递归自我改进）路径的关键一步。",
+        "recommend_reason_zh": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzk3NTkxMTM2NA%3D%3D&mid=2247484969&idx=1&sn=76c4757b26a2b646e1b690bf78c386d8",
+        "source": "公众号：小米 MiMo",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7683,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-21T23:26:27.092245Z"
       }
     },
     {
@@ -951,15 +1036,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7588,
-      "importance": 0.7588,
-      "importance_score": 0.7588,
+      "score": 0.7526,
+      "importance": 0.7526,
+      "importance_score": 0.7526,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9509,
+        "recency": 0.9167,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -987,7 +1072,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
+        "scored_at": "2026-09-21T23:26:27.092245Z"
+      }
+    },
+    {
+      "story_id": "story_7922430a5281",
+      "title": "小米发布 MiMo-V2.6 Pro 与 Flash 全模态开源模型 / Introducing Xiaomi MiMo-V2.6 - Pro & Flash. Frontier intelligence， all the modalities， built in pub…",
+      "url": "https://x.com/XiaomiMiMo/status/2102138559952290106",
+      "primary_url": "https://x.com/XiaomiMiMo/status/2102138559952290106",
+      "source": "X：小米 MiMo (@XiaomiMiMo)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "5215af3fdf7511ea7b27eb01110ac6fb05e095cd",
+          "title": "小米发布 MiMo-V2.6 Pro 与 Flash 全模态开源模型 / Introducing Xiaomi MiMo-V2.6 - Pro & Flash. Frontier intelligence， all the modalities， built in pub…",
+          "title_zh": "小米发布 MiMo-V2.6 Pro 与 Flash 全模态开源模型",
+          "title_en": "Introducing Xiaomi MiMo-V2.6 - Pro & Flash. Frontier intelligence， all the modalities， built in pub…",
+          "title_original": "Introducing Xiaomi MiMo-V2.6 - Pro & Flash. Frontier intelligence， all the modalities， built in pub…",
+          "summary": "小米 MiMo 发布 MiMo-V2.6 Pro 与 Flash 两个全模态模型，通过规模化强化学习训练。Pro 在多数 Agent 基准上与 Claude Opus 5 和 GPT-5.6 Sol 表现相当，在 Artificial Analysis Intelligence Index 得分 46，为开源模型中最高；能力覆盖编码、computer use、3D 推理和创作。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/XiaomiMiMo/status/2102138559952290106",
+          "source": "X：小米 MiMo (@XiaomiMiMo)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-21T20:51:03Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：小米 MiMo (@XiaomiMiMo)"
+      ],
+      "items": [
+        {
+          "id": "5215af3fdf7511ea7b27eb01110ac6fb05e095cd",
+          "title": "小米发布 MiMo-V2.6 Pro 与 Flash 全模态开源模型 / Introducing Xiaomi MiMo-V2.6 - Pro & Flash. Frontier intelligence， all the modalities， built in pub…",
+          "title_zh": "小米发布 MiMo-V2.6 Pro 与 Flash 全模态开源模型",
+          "title_en": "Introducing Xiaomi MiMo-V2.6 - Pro & Flash. Frontier intelligence， all the modalities， built in pub…",
+          "title_original": "Introducing Xiaomi MiMo-V2.6 - Pro & Flash. Frontier intelligence， all the modalities， built in pub…",
+          "summary": "小米 MiMo 发布 MiMo-V2.6 Pro 与 Flash 两个全模态模型，通过规模化强化学习训练。Pro 在多数 Agent 基准上与 Claude Opus 5 和 GPT-5.6 Sol 表现相当，在 Artificial Analysis Intelligence Index 得分 46，为开源模型中最高；能力覆盖编码、computer use、3D 推理和创作。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/XiaomiMiMo/status/2102138559952290106",
+          "source": "X：小米 MiMo (@XiaomiMiMo)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-21T20:51:03Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7662,
+      "importance": 0.7662,
+      "importance_score": 0.7662,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.73,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9755,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-21T20:51:03Z",
+      "latest_at": "2026-09-21T20:51:03Z",
+      "primary_item": {
+        "id": "5215af3fdf7511ea7b27eb01110ac6fb05e095cd",
+        "title": "小米发布 MiMo-V2.6 Pro 与 Flash 全模态开源模型 / Introducing Xiaomi MiMo-V2.6 - Pro & Flash. Frontier intelligence， all the modalities， built in pub…",
+        "title_zh": "小米发布 MiMo-V2.6 Pro 与 Flash 全模态开源模型",
+        "title_en": "Introducing Xiaomi MiMo-V2.6 - Pro & Flash. Frontier intelligence， all the modalities， built in pub…",
+        "title_original": "Introducing Xiaomi MiMo-V2.6 - Pro & Flash. Frontier intelligence， all the modalities， built in pub…",
+        "summary": "小米 MiMo 发布 MiMo-V2.6 Pro 与 Flash 两个全模态模型，通过规模化强化学习训练。Pro 在多数 Agent 基准上与 Claude Opus 5 和 GPT-5.6 Sol 表现相当，在 Artificial Analysis Intelligence Index 得分 46，为开源模型中最高；能力覆盖编码、computer use、3D 推理和创作。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/XiaomiMiMo/status/2102138559952290106",
+        "source": "X：小米 MiMo (@XiaomiMiMo)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7662,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-21T23:26:27.092245Z"
+      }
+    },
+    {
+      "story_id": "story_f598d946da96",
+      "title": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数 / Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
+      "url": "https://x.com/ClementDelangue/status/2102141768674222323",
+      "primary_url": "https://x.com/ClementDelangue/status/2102141768674222323",
+      "source": "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "bcc1d035655d6ba3d004efb14cbaeba67953c497",
+          "title": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数 / Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
+          "title_zh": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数",
+          "title_en": "Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
+          "title_original": "Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
+          "summary": "小米（Xiaomi）发布开放权重模型 MiMo-V2.6-Pro，在 Artificial Analysis Intelligence Index 得分 46，超越前代 MiMo-V2.5-Pro 的 26，为开放权重模型中最高。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/ClementDelangue/status/2102141768674222323",
+          "source": "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-21T21:03:48Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)"
+      ],
+      "items": [
+        {
+          "id": "bcc1d035655d6ba3d004efb14cbaeba67953c497",
+          "title": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数 / Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
+          "title_zh": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数",
+          "title_en": "Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
+          "title_original": "Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
+          "summary": "小米（Xiaomi）发布开放权重模型 MiMo-V2.6-Pro，在 Artificial Analysis Intelligence Index 得分 46，超越前代 MiMo-V2.5-Pro 的 26，为开放权重模型中最高。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/ClementDelangue/status/2102141768674222323",
+          "source": "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-21T21:03:48Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7546,
+      "importance": 0.7546,
+      "importance_score": 0.7546,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.69,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9775,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-21T21:03:48Z",
+      "latest_at": "2026-09-21T21:03:48Z",
+      "primary_item": {
+        "id": "bcc1d035655d6ba3d004efb14cbaeba67953c497",
+        "title": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数 / Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
+        "title_zh": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数",
+        "title_en": "Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
+        "title_original": "Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
+        "summary": "小米（Xiaomi）发布开放权重模型 MiMo-V2.6-Pro，在 Artificial Analysis Intelligence Index 得分 46，超越前代 MiMo-V2.5-Pro 的 26，为开放权重模型中最高。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/ClementDelangue/status/2102141768674222323",
+        "source": "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7546,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-21T23:26:27.092245Z"
       }
     },
     {
@@ -1035,22 +1288,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7543,
-      "importance": 0.7543,
-      "importance_score": 0.7543,
+      "score": 0.748,
+      "importance": 0.748,
+      "importance_score": 0.748,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.976,
+        "recency": 0.941,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-21T17:06:20Z",
       "latest_at": "2026-09-21T17:06:20Z",
@@ -1071,7 +1323,90 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
+        "scored_at": "2026-09-21T23:26:27.092245Z"
+      }
+    },
+    {
+      "story_id": "story_ae766cda486d",
+      "title": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56 / Benchmarking Grok 4.7",
+      "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
+      "primary_url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
+      "source": "Artificial Analysis 完整文章（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "6f3c506835fb8b8b31e458bd1655b7e8a7b999d6",
+          "title": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56 / Benchmarking Grok 4.7",
+          "title_zh": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56",
+          "title_en": "Benchmarking Grok 4.7",
+          "title_original": "Benchmarking Grok 4.7",
+          "summary": "Artificial Analysis 发布 Grok 4.7 评测，该模型在 Intelligence Index 得 46 分，较 Grok 4.6 高 2 分，AA-Briefcase 得 1657 Elo（+111），仅次于 Claude Opus 5 和 Claude Fable 5.1。",
+          "recommend_reason_zh": null,
+          "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
+          "source": "Artificial Analysis 完整文章（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-21T19:41:25.079000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Artificial Analysis 完整文章（网页）"
+      ],
+      "items": [
+        {
+          "id": "6f3c506835fb8b8b31e458bd1655b7e8a7b999d6",
+          "title": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56 / Benchmarking Grok 4.7",
+          "title_zh": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56",
+          "title_en": "Benchmarking Grok 4.7",
+          "title_original": "Benchmarking Grok 4.7",
+          "summary": "Artificial Analysis 发布 Grok 4.7 评测，该模型在 Intelligence Index 得 46 分，较 Grok 4.6 高 2 分，AA-Briefcase 得 1657 Elo（+111），仅次于 Claude Opus 5 和 Claude Fable 5.1。",
+          "recommend_reason_zh": null,
+          "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
+          "source": "Artificial Analysis 完整文章（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-21T19:41:25.079000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7462,
+      "importance": 0.7462,
+      "importance_score": 0.7462,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.67,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9647,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-21T19:41:25.079000Z",
+      "latest_at": "2026-09-21T19:41:25.079000Z",
+      "primary_item": {
+        "id": "6f3c506835fb8b8b31e458bd1655b7e8a7b999d6",
+        "title": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56 / Benchmarking Grok 4.7",
+        "title_zh": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56",
+        "title_en": "Benchmarking Grok 4.7",
+        "title_original": "Benchmarking Grok 4.7",
+        "summary": "Artificial Analysis 发布 Grok 4.7 评测，该模型在 Intelligence Index 得 46 分，较 Grok 4.6 高 2 分，AA-Briefcase 得 1657 Elo（+111），仅次于 Claude Opus 5 和 Claude Fable 5.1。",
+        "recommend_reason_zh": null,
+        "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
+        "source": "Artificial Analysis 完整文章（网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7462,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-21T23:26:27.092245Z"
       }
     },
     {
@@ -1119,15 +1454,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7458,
-      "importance": 0.7458,
-      "importance_score": 0.7458,
+      "score": 0.7398,
+      "importance": 0.7398,
+      "importance_score": 0.7398,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9288,
+        "recency": 0.8954,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1154,7 +1489,90 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
+        "scored_at": "2026-09-21T23:26:27.092245Z"
+      }
+    },
+    {
+      "story_id": "story_c9d6a68e7d5b",
+      "title": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3 / MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
+      "url": "https://x.com/arena/status/2102142912943489220",
+      "primary_url": "https://x.com/arena/status/2102142912943489220",
+      "source": "X：Arena (@arena)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "770d53d2ebfaa17968287b5f7dcce4e8493490bb",
+          "title": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3 / MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
+          "title_zh": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3",
+          "title_en": "MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
+          "title_original": "MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
+          "summary": "小米发布 MiMo-V2.6-Pro 与 Flash 两款全模态模型，MiMo-V2.6-Pro 在 Code Arena： WebDev 榜以 1628 分（AutoEval）位列约第10名，开源权重（MIT 许可）中约第3，较 MiMo-V2.5-Pro 的 1475 分上涨 153 分。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2102142912943489220",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-21T21:08:21Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Arena (@arena)"
+      ],
+      "items": [
+        {
+          "id": "770d53d2ebfaa17968287b5f7dcce4e8493490bb",
+          "title": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3 / MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
+          "title_zh": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3",
+          "title_en": "MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
+          "title_original": "MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
+          "summary": "小米发布 MiMo-V2.6-Pro 与 Flash 两款全模态模型，MiMo-V2.6-Pro 在 Code Arena： WebDev 榜以 1628 分（AutoEval）位列约第10名，开源权重（MIT 许可）中约第3，较 MiMo-V2.5-Pro 的 1475 分上涨 153 分。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2102142912943489220",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-21T21:08:21Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7457,
+      "importance": 0.7457,
+      "importance_score": 0.7457,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9782,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-21T21:08:21Z",
+      "latest_at": "2026-09-21T21:08:21Z",
+      "primary_item": {
+        "id": "770d53d2ebfaa17968287b5f7dcce4e8493490bb",
+        "title": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3 / MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
+        "title_zh": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3",
+        "title_en": "MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
+        "title_original": "MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
+        "summary": "小米发布 MiMo-V2.6-Pro 与 Flash 两款全模态模型，MiMo-V2.6-Pro 在 Code Arena： WebDev 榜以 1628 分（AutoEval）位列约第10名，开源权重（MIT 许可）中约第3，较 MiMo-V2.5-Pro 的 1475 分上涨 153 分。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/arena/status/2102142912943489220",
+        "source": "X：Arena (@arena)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7457,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-21T23:26:27.092245Z"
       }
     },
     {
@@ -1202,15 +1620,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7415,
-      "importance": 0.7415,
-      "importance_score": 0.7415,
+      "score": 0.7352,
+      "importance": 0.7352,
+      "importance_score": 0.7352,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9716,
+        "recency": 0.9367,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1237,7 +1655,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
+        "scored_at": "2026-09-21T23:26:27.092245Z"
       }
     },
     {
@@ -1285,19 +1703,19 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7213,
-      "importance": 0.7213,
-      "importance_score": 0.7213,
-      "importance_label": "行业动态",
+      "score": 0.7159,
+      "importance": 0.7159,
+      "importance_score": 0.7159,
+      "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.843,
+        "recency": 0.8127,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "industry",
+      "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
@@ -1320,426 +1738,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
-      }
-    },
-    {
-      "story_id": "story_eed721e04523",
-      "title": "How V7 gives AI agents institutional memory",
-      "url": "https://openai.com/index/v7",
-      "primary_url": "https://openai.com/index/v7",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "76c72136ab9549bbbee84bf82c5ff91ee0c65ce7",
-          "title": "How V7 gives AI agents institutional memory",
-          "title_zh": null,
-          "title_en": "How V7 gives AI agents institutional memory",
-          "title_original": "How V7 gives AI agents institutional memory",
-          "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/v7",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-21T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "76c72136ab9549bbbee84bf82c5ff91ee0c65ce7",
-          "title": "How V7 gives AI agents institutional memory",
-          "title_zh": null,
-          "title_en": "How V7 gives AI agents institutional memory",
-          "title_original": "How V7 gives AI agents institutional memory",
-          "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/v7",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-21T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.821,
-      "importance": 0.821,
-      "importance_score": 0.821,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8279,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-21T00:00:00Z",
-      "latest_at": "2026-09-21T00:00:00Z",
-      "primary_item": {
-        "id": "76c72136ab9549bbbee84bf82c5ff91ee0c65ce7",
-        "title": "How V7 gives AI agents institutional memory",
-        "title_zh": null,
-        "title_en": "How V7 gives AI agents institutional memory",
-        "title_original": "How V7 gives AI agents institutional memory",
-        "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/v7",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8287,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
-      }
-    },
-    {
-      "story_id": "story_02e8ffac48ba",
-      "title": "Claude Opus 5. 5 疑遭内测泄露：跳级直冲GPT-6，百万Token价格腰斩至 4 美元",
-      "url": "https://www.aibase.com/news/31231",
-      "primary_url": "https://www.aibase.com/news/31231",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "f1528efce967282e3ffc899eb06e10ffa20c90eb",
-          "title": "Claude Opus 5. 5 疑遭内测泄露：跳级直冲GPT-6，百万Token价格腰斩至 4 美元",
-          "title_zh": "Claude Opus 5. 5 疑遭内测泄露：跳级直冲GPT-6，百万Token价格腰斩至 4 美元",
-          "title_en": null,
-          "title_original": "Claude Opus 5. 5 疑遭内测泄露：跳级直冲GPT-6，百万Token价格腰斩至 4 美元",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31231",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-21T14:23:48.882101Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "f1528efce967282e3ffc899eb06e10ffa20c90eb",
-          "title": "Claude Opus 5. 5 疑遭内测泄露：跳级直冲GPT-6，百万Token价格腰斩至 4 美元",
-          "title_zh": "Claude Opus 5. 5 疑遭内测泄露：跳级直冲GPT-6，百万Token价格腰斩至 4 美元",
-          "title_en": null,
-          "title_original": "Claude Opus 5. 5 疑遭内测泄露：跳级直冲GPT-6，百万Token价格腰斩至 4 美元",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31231",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-21T14:23:48.882101Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7588,
-      "importance": 0.7588,
-      "importance_score": 0.7588,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9509,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-21T14:23:48.882101Z",
-      "latest_at": "2026-09-21T14:23:48.882101Z",
-      "primary_item": {
-        "id": "f1528efce967282e3ffc899eb06e10ffa20c90eb",
-        "title": "Claude Opus 5. 5 疑遭内测泄露：跳级直冲GPT-6，百万Token价格腰斩至 4 美元",
-        "title_zh": "Claude Opus 5. 5 疑遭内测泄露：跳级直冲GPT-6，百万Token价格腰斩至 4 美元",
-        "title_en": null,
-        "title_original": "Claude Opus 5. 5 疑遭内测泄露：跳级直冲GPT-6，百万Token价格腰斩至 4 美元",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31231",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
-      }
-    },
-    {
-      "story_id": "story_d2839bd2c6ab",
-      "title": "Linear 重构 CI 流程应对 AI 编码带来的验证瓶颈，PR 等待时间从 6 分钟降至 5 分钟 / AI coding has made CI a bottleneck， so we reworked ours to keep up",
-      "url": "https://linear.app/now/ci-bottleneck-reworked",
-      "primary_url": "https://linear.app/now/ci-bottleneck-reworked",
-      "source": "Linear：Now（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "5c9a500a63016e575e6887b3642053b45c08b7f4",
-          "title": "Linear 重构 CI 流程应对 AI 编码带来的验证瓶颈，PR 等待时间从 6 分钟降至 5 分钟 / AI coding has made CI a bottleneck， so we reworked ours to keep up",
-          "title_zh": "Linear 重构 CI 流程应对 AI 编码带来的验证瓶颈，PR 等待时间从 6 分钟降至 5 分钟",
-          "title_en": "AI coding has made CI a bottleneck， so we reworked ours to keep up",
-          "title_original": "AI coding has made CI a bottleneck， so we reworked ours to keep up",
-          "summary": "Linear 工程师分享如何解决 AI Agent 加速写代码后 CI 成为瓶颈的问题，PR 等待时间从 6 分钟以上降至 5 分钟出头，单测 runner 时间约减半。",
-          "recommend_reason_zh": null,
-          "url": "https://linear.app/now/ci-bottleneck-reworked",
-          "source": "Linear：Now（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T12:26:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Linear：Now（RSS）"
-      ],
-      "items": [
-        {
-          "id": "5c9a500a63016e575e6887b3642053b45c08b7f4",
-          "title": "Linear 重构 CI 流程应对 AI 编码带来的验证瓶颈，PR 等待时间从 6 分钟降至 5 分钟 / AI coding has made CI a bottleneck， so we reworked ours to keep up",
-          "title_zh": "Linear 重构 CI 流程应对 AI 编码带来的验证瓶颈，PR 等待时间从 6 分钟降至 5 分钟",
-          "title_en": "AI coding has made CI a bottleneck， so we reworked ours to keep up",
-          "title_original": "AI coding has made CI a bottleneck， so we reworked ours to keep up",
-          "summary": "Linear 工程师分享如何解决 AI Agent 加速写代码后 CI 成为瓶颈的问题，PR 等待时间从 6 分钟以上降至 5 分钟出头，单测 runner 时间约减半。",
-          "recommend_reason_zh": null,
-          "url": "https://linear.app/now/ci-bottleneck-reworked",
-          "source": "Linear：Now（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T12:26:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7256,
-      "importance": 0.7256,
-      "importance_score": 0.7256,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.62,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9331,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-21T12:26:00Z",
-      "latest_at": "2026-09-21T12:26:00Z",
-      "primary_item": {
-        "id": "5c9a500a63016e575e6887b3642053b45c08b7f4",
-        "title": "Linear 重构 CI 流程应对 AI 编码带来的验证瓶颈，PR 等待时间从 6 分钟降至 5 分钟 / AI coding has made CI a bottleneck， so we reworked ours to keep up",
-        "title_zh": "Linear 重构 CI 流程应对 AI 编码带来的验证瓶颈，PR 等待时间从 6 分钟降至 5 分钟",
-        "title_en": "AI coding has made CI a bottleneck， so we reworked ours to keep up",
-        "title_original": "AI coding has made CI a bottleneck， so we reworked ours to keep up",
-        "summary": "Linear 工程师分享如何解决 AI Agent 加速写代码后 CI 成为瓶颈的问题，PR 等待时间从 6 分钟以上降至 5 分钟出头，单测 runner 时间约减半。",
-        "recommend_reason_zh": null,
-        "url": "https://linear.app/now/ci-bottleneck-reworked",
-        "source": "Linear：Now（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7256,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
-      }
-    },
-    {
-      "story_id": "story_d6fca3542f8f",
-      "title": "Claude Opus 5.5 已在内测：连跳两级直逼 GPT-6，价格还打骨折",
-      "url": "https://www.aibase.com/news/31232",
-      "primary_url": "https://www.aibase.com/news/31232",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "f9dc62836aace206bfaa30cd27980698c24d1644",
-          "title": "Claude Opus 5.5 已在内测：连跳两级直逼 GPT-6，价格还打骨折",
-          "title_zh": "Claude Opus 5.5 已在内测：连跳两级直逼 GPT-6，价格还打骨折",
-          "title_en": null,
-          "title_original": "Claude Opus 5.5 已在内测：连跳两级直逼 GPT-6，价格还打骨折",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31232",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-21T14:23:48.882101Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "f9dc62836aace206bfaa30cd27980698c24d1644",
-          "title": "Claude Opus 5.5 已在内测：连跳两级直逼 GPT-6，价格还打骨折",
-          "title_zh": "Claude Opus 5.5 已在内测：连跳两级直逼 GPT-6，价格还打骨折",
-          "title_en": null,
-          "title_original": "Claude Opus 5.5 已在内测：连跳两级直逼 GPT-6，价格还打骨折",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31232",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-21T14:23:48.882101Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7588,
-      "importance": 0.7588,
-      "importance_score": 0.7588,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9509,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-21T14:23:48.882101Z",
-      "latest_at": "2026-09-21T14:23:48.882101Z",
-      "primary_item": {
-        "id": "f9dc62836aace206bfaa30cd27980698c24d1644",
-        "title": "Claude Opus 5.5 已在内测：连跳两级直逼 GPT-6，价格还打骨折",
-        "title_zh": "Claude Opus 5.5 已在内测：连跳两级直逼 GPT-6，价格还打骨折",
-        "title_en": null,
-        "title_original": "Claude Opus 5.5 已在内测：连跳两级直逼 GPT-6，价格还打骨折",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31232",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
-      }
-    },
-    {
-      "story_id": "story_37d000e5ebed",
-      "title": "Gemini Notebook迎返校更新:讲座录音、AI复习和60秒视频一站完成",
-      "url": "https://www.aibase.com/news/31211",
-      "primary_url": "https://www.aibase.com/news/31211",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "2945aaee34f0d7cb727a7867bf948ff498635a73",
-          "title": "Gemini Notebook迎返校更新:讲座录音、AI复习和60秒视频一站完成",
-          "title_zh": "Gemini Notebook迎返校更新:讲座录音、AI复习和60秒视频一站完成",
-          "title_en": null,
-          "title_original": "Gemini Notebook迎返校更新:讲座录音、AI复习和60秒视频一站完成",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31211",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-21T01:18:02.064973Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "2945aaee34f0d7cb727a7867bf948ff498635a73",
-          "title": "Gemini Notebook迎返校更新:讲座录音、AI复习和60秒视频一站完成",
-          "title_zh": "Gemini Notebook迎返校更新:讲座录音、AI复习和60秒视频一站完成",
-          "title_en": null,
-          "title_original": "Gemini Notebook迎返校更新:讲座录音、AI复习和60秒视频一站完成",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31211",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-21T01:18:02.064973Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7385,
-      "importance": 0.7385,
-      "importance_score": 0.7385,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8383,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-21T01:18:02.064973Z",
-      "latest_at": "2026-09-21T01:18:02.064973Z",
-      "primary_item": {
-        "id": "2945aaee34f0d7cb727a7867bf948ff498635a73",
-        "title": "Gemini Notebook迎返校更新:讲座录音、AI复习和60秒视频一站完成",
-        "title_zh": "Gemini Notebook迎返校更新:讲座录音、AI复习和60秒视频一站完成",
-        "title_en": null,
-        "title_original": "Gemini Notebook迎返校更新:讲座录音、AI复习和60秒视频一站完成",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31211",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-21T19:38:19.616564Z"
+        "scored_at": "2026-09-21T23:26:27.092245Z"
       }
     }
   ]
