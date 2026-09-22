@@ -1,261 +1,148 @@
 {
-  "generated_at": "2026-09-22T13:31:22.514592Z",
+  "generated_at": "2026-09-22T18:10:45.773697Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
     {
-      "story_id": "story_017e418e0a89",
-      "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-      "primary_url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-      "source": "Hugging Face Blog",
-      "source_name": "Official AI Updates",
+      "story_id": "story_b742684d2aef",
+      "title": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40% / Introducing Claude Opus 5.5",
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "primary_url": "https://www.anthropic.com/claude-opus-5-5",
+      "source": "Anthropic：Newsroom（网页）",
+      "source_name": "AI HOT",
       "sources": [
         {
-          "id": "76c5c8f8fd875803fa668246b20e83f978e99cb5",
-          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "title_zh": null,
-          "title_en": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "title_original": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+          "id": "a58405996672d080264a33742ee41cde0d801b04",
+          "title": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40% / Introducing Claude Opus 5.5",
+          "title_zh": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40%",
+          "title_en": "Introducing Claude Opus 5.5",
+          "title_original": "Introducing Claude Opus 5.5",
+          "summary": "Anthropic 发布 Claude Opus 5.5，为 Claude 5.5 系列首个模型，在多数工作上达到 Fable 5.1 水平，典型负载成本较 Opus 5 低 40%。",
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/claude-opus-5-5",
+          "source": "Anthropic：Newsroom（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T16:53:30.664000Z"
+        },
+        {
+          "id": "9a2b419139d60d2fee2d5f5e93ec055dd8a3fd45",
+          "title": "克劳德 作品5.5",
+          "title_zh": "克劳德 作品5.5",
+          "title_en": null,
+          "title_original": "克劳德 作品5.5",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-21T13:44:34Z"
+          "url": "https://www.anthropic.com/claude-opus-5-5",
+          "source": "www.anthropic.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-22T16:51:25.134000Z"
+        },
+        {
+          "id": "7a1fbce1ee059d26946f834e682e7bce779b1eb6",
+          "title": "Claude 作品5.5 / Claude Opus 5.5",
+          "title_zh": "Claude 作品5.5",
+          "title_en": "Claude Opus 5.5",
+          "title_original": "Claude Opus 5.5",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/claude-opus-5-5",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-22T16:29:05Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hugging Face Blog"
+        "Anthropic：Newsroom（网页）",
+        "Hacker News",
+        "www.anthropic.com"
       ],
       "items": [
         {
-          "id": "76c5c8f8fd875803fa668246b20e83f978e99cb5",
-          "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "title_zh": null,
-          "title_en": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-          "title_original": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+          "id": "a58405996672d080264a33742ee41cde0d801b04",
+          "title": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40% / Introducing Claude Opus 5.5",
+          "title_zh": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40%",
+          "title_en": "Introducing Claude Opus 5.5",
+          "title_original": "Introducing Claude Opus 5.5",
+          "summary": "Anthropic 发布 Claude Opus 5.5，为 Claude 5.5 系列首个模型，在多数工作上达到 Fable 5.1 水平，典型负载成本较 Opus 5 低 40%。",
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/claude-opus-5-5",
+          "source": "Anthropic：Newsroom（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T16:53:30.664000Z"
+        },
+        {
+          "id": "9a2b419139d60d2fee2d5f5e93ec055dd8a3fd45",
+          "title": "克劳德 作品5.5",
+          "title_zh": "克劳德 作品5.5",
+          "title_en": null,
+          "title_original": "克劳德 作品5.5",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-21T13:44:34Z"
+          "url": "https://www.anthropic.com/claude-opus-5-5",
+          "source": "www.anthropic.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-22T16:51:25.134000Z"
+        },
+        {
+          "id": "7a1fbce1ee059d26946f834e682e7bce779b1eb6",
+          "title": "Claude 作品5.5 / Claude Opus 5.5",
+          "title_zh": "Claude 作品5.5",
+          "title_en": "Claude Opus 5.5",
+          "title_original": "Claude Opus 5.5",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/claude-opus-5-5",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-22T16:29:05Z"
         }
       ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8312,
-      "importance": 0.8312,
-      "importance_score": 0.8312,
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8558,
+      "importance": 0.8558,
+      "importance_score": 0.8558,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.9,
+        "editorial": 0.86,
         "source_tier": 1.0,
-        "ai_relevance": 0.99,
-        "recency": 0.7954,
+        "ai_relevance": 1.0,
+        "recency": 0.9877,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
-        "official_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-21T13:44:34Z",
-      "latest_at": "2026-09-21T13:44:34Z",
+      "earliest_at": "2026-09-22T16:29:05Z",
+      "latest_at": "2026-09-22T16:53:30.664000Z",
       "primary_item": {
-        "id": "76c5c8f8fd875803fa668246b20e83f978e99cb5",
-        "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-        "title_zh": null,
-        "title_en": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-        "title_original": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-        "summary": null,
+        "id": "a58405996672d080264a33742ee41cde0d801b04",
+        "title": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40% / Introducing Claude Opus 5.5",
+        "title_zh": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40%",
+        "title_en": "Introducing Claude Opus 5.5",
+        "title_original": "Introducing Claude Opus 5.5",
+        "summary": "Anthropic 发布 Claude Opus 5.5，为 Claude 5.5 系列首个模型，在多数工作上达到 Fable 5.1 水平，典型负载成本较 Opus 5 低 40%。",
         "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-        "source": "Hugging Face Blog",
-        "source_name": "Official AI Updates"
+        "url": "https://www.anthropic.com/claude-opus-5-5",
+        "source": "Anthropic：Newsroom（网页）",
+        "source_name": "AI HOT"
       },
-      "peak_score": 0.8669,
+      "peak_score": 0.8558,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
-      }
-    },
-    {
-      "story_id": "story_5b9140e8250f",
-      "title": "数学与人工智能咨询小组",
-      "url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence",
-      "primary_url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence",
-      "source": "terrytao.wordpress.com",
-      "source_name": "Buzzing",
-      "sources": [
-        {
-          "id": "b1071f69dd14e32f5d3c5c7a85d8985f1ed25c29",
-          "title": "数学与人工智能咨询小组",
-          "title_zh": "数学与人工智能咨询小组",
-          "title_en": null,
-          "title_original": "数学与人工智能咨询小组",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence",
-          "source": "terrytao.wordpress.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-22T03:47:37.312000Z"
-        },
-        {
-          "id": "55cde9aee77f616ea251a3ebb28023b776c6fe12",
-          "title": "数学与人工智能咨询小组 / The Advisory Group on Mathematics and Artificial Intelligence",
-          "title_zh": "数学与人工智能咨询小组",
-          "title_en": "The Advisory Group on Mathematics and Artificial Intelligence",
-          "title_original": "The Advisory Group on Mathematics and Artificial Intelligence",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-21T19:17:42Z"
-        },
-        {
-          "id": "eaac62b9b02276e56fed98f5c29a80bf860be068",
-          "title": "Advisory Group on Mathematics and Artificial Intelligence",
-          "title_zh": null,
-          "title_en": "Advisory Group on Mathematics and Artificial Intelligence",
-          "title_original": "Advisory Group on Mathematics and Artificial Intelligence",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-21T17:27:49Z"
-        },
-        {
-          "id": "30f630630151045c2204c0ce550da30b2ce3cc56",
-          "title": "Advisory Group on Mathematics and Artificial Intelligence",
-          "title_zh": null,
-          "title_en": "Advisory Group on Mathematics and Artificial Intelligence",
-          "title_original": "Advisory Group on Mathematics and Artificial Intelligence",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49790389",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-21T17:27:49Z"
-        }
-      ],
-      "source_count": 3,
-      "source_names": [
-        "Hacker News (黑客新闻)",
-        "Hacker News · 24h最热",
-        "hackernews",
-        "terrytao.wordpress.com"
-      ],
-      "items": [
-        {
-          "id": "b1071f69dd14e32f5d3c5c7a85d8985f1ed25c29",
-          "title": "数学与人工智能咨询小组",
-          "title_zh": "数学与人工智能咨询小组",
-          "title_en": null,
-          "title_original": "数学与人工智能咨询小组",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence",
-          "source": "terrytao.wordpress.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-22T03:47:37.312000Z"
-        },
-        {
-          "id": "55cde9aee77f616ea251a3ebb28023b776c6fe12",
-          "title": "数学与人工智能咨询小组 / The Advisory Group on Mathematics and Artificial Intelligence",
-          "title_zh": "数学与人工智能咨询小组",
-          "title_en": "The Advisory Group on Mathematics and Artificial Intelligence",
-          "title_original": "The Advisory Group on Mathematics and Artificial Intelligence",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-21T19:17:42Z"
-        },
-        {
-          "id": "eaac62b9b02276e56fed98f5c29a80bf860be068",
-          "title": "Advisory Group on Mathematics and Artificial Intelligence",
-          "title_zh": null,
-          "title_en": "Advisory Group on Mathematics and Artificial Intelligence",
-          "title_original": "Advisory Group on Mathematics and Artificial Intelligence",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-21T17:27:49Z"
-        },
-        {
-          "id": "30f630630151045c2204c0ce550da30b2ce3cc56",
-          "title": "Advisory Group on Mathematics and Artificial Intelligence",
-          "title_zh": null,
-          "title_en": "Advisory Group on Mathematics and Artificial Intelligence",
-          "title_original": "Advisory Group on Mathematics and Artificial Intelligence",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49790389",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-21T17:27:49Z"
-        }
-      ],
-      "item_count": 4,
-      "duplicate_count": 4,
-      "score": 0.5547,
-      "importance": 0.5547,
-      "importance_score": 0.5547,
-      "importance_label": "多源热议",
-      "importance_breakdown": {
-        "editorial": 0.468,
-        "source_tier": 0.32,
-        "ai_relevance": 0.65,
-        "recency": 0.9106,
-        "story_heat": 0.5,
-        "soft_content_penalty": 0.0
-      },
-      "category": "multi_source",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-09-21T17:27:49Z",
-      "latest_at": "2026-09-22T03:47:37.312000Z",
-      "primary_item": {
-        "id": "b1071f69dd14e32f5d3c5c7a85d8985f1ed25c29",
-        "title": "数学与人工智能咨询小组",
-        "title_zh": "数学与人工智能咨询小组",
-        "title_en": null,
-        "title_original": "数学与人工智能咨询小组",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence",
-        "source": "terrytao.wordpress.com",
-        "source_name": "Buzzing"
-      },
-      "peak_score": 0.8643,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
+        "scored_at": "2026-09-22T18:11:45.033744Z"
       }
     },
     {
@@ -303,15 +190,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.838,
-      "importance": 0.838,
-      "importance_score": 0.838,
+      "score": 0.8311,
+      "importance": 0.8311,
+      "importance_score": 0.8311,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8779,
+        "recency": 0.8394,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -340,7 +227,544 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
+        "scored_at": "2026-09-22T18:11:45.033744Z"
+      }
+    },
+    {
+      "story_id": "story_3de84024ac7c",
+      "title": "GPT-6 Sol and Luna in Codex and ChatGPT Work",
+      "url": "https://developers.openai.com/codex/changelog",
+      "primary_url": "https://developers.openai.com/codex/changelog",
+      "source": "OpenAI Codex Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "aa41c270e9d5431219a2c0938a23890bfb0e9678",
+          "title": "GPT-6 Sol and Luna in Codex and ChatGPT Work",
+          "title_zh": null,
+          "title_en": "GPT-6 Sol and Luna in Codex and ChatGPT Work",
+          "title_original": "GPT-6 Sol and Luna in Codex and ChatGPT Work",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-22T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI Codex Changelog"
+      ],
+      "items": [
+        {
+          "id": "aa41c270e9d5431219a2c0938a23890bfb0e9678",
+          "title": "GPT-6 Sol and Luna in Codex and ChatGPT Work",
+          "title_zh": null,
+          "title_en": "GPT-6 Sol and Luna in Codex and ChatGPT Work",
+          "title_original": "GPT-6 Sol and Luna in Codex and ChatGPT Work",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-22T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8411,
+      "importance": 0.8411,
+      "importance_score": 0.8411,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.8394,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-22T00:00:00Z",
+      "latest_at": "2026-09-22T00:00:00Z",
+      "primary_item": {
+        "id": "aa41c270e9d5431219a2c0938a23890bfb0e9678",
+        "title": "GPT-6 Sol and Luna in Codex and ChatGPT Work",
+        "title_zh": null,
+        "title_en": "GPT-6 Sol and Luna in Codex and ChatGPT Work",
+        "title_original": "GPT-6 Sol and Luna in Codex and ChatGPT Work",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "OpenAI Codex Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8411,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-22T18:11:45.033744Z"
+      }
+    },
+    {
+      "story_id": "story_dd6c00c25605",
+      "title": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58 / Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
+      "url": "https://artificialanalysis.ai/articles/claude-opus-5-5",
+      "primary_url": "https://artificialanalysis.ai/articles/claude-opus-5-5",
+      "source": "Artificial Analysis 完整文章（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "1541abae265f3c9579c862d5b6440dd57020c3bc",
+          "title": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58 / Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
+          "title_zh": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58",
+          "title_en": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
+          "title_original": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
+          "summary": "Artificial Analysis 评测显示 Claude Opus 5.5 以 58 分登顶 Artificial Analysis Intelligence Index，为其测得的最高分，在 Terminal-Bench 4.0 上与 GPT-6 Astra 持平（59.6%）。",
+          "recommend_reason_zh": null,
+          "url": "https://artificialanalysis.ai/articles/claude-opus-5-5",
+          "source": "Artificial Analysis 完整文章（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T17:41:36.934000Z"
+        },
+        {
+          "id": "6a8ca796a816ed8176056297a444a3d87cc9ef3d",
+          "title": "Claude Opus 5.5 登顶 Artificial Analysis Intelligence Index，并降价 20% / Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index， along with a 20% p…",
+          "title_zh": "Claude Opus 5.5 登顶 Artificial Analysis Intelligence Index，并降价 20%",
+          "title_en": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index， along with a 20% p…",
+          "title_original": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index， along with a 20% p…",
+          "summary": "Artificial Analysis 评测显示 Claude Opus 5.5 以 58 分登顶 Artificial Analysis Intelligence Index，为其实测最高分。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/ArtificialAnlys/status/2102438210798514391",
+          "source": "X：Artificial Analysis (@ArtificialAnlys)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T16:41:45Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Artificial Analysis 完整文章（网页）",
+        "X：Artificial Analysis (@ArtificialAnlys)"
+      ],
+      "items": [
+        {
+          "id": "1541abae265f3c9579c862d5b6440dd57020c3bc",
+          "title": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58 / Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
+          "title_zh": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58",
+          "title_en": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
+          "title_original": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
+          "summary": "Artificial Analysis 评测显示 Claude Opus 5.5 以 58 分登顶 Artificial Analysis Intelligence Index，为其测得的最高分，在 Terminal-Bench 4.0 上与 GPT-6 Astra 持平（59.6%）。",
+          "recommend_reason_zh": null,
+          "url": "https://artificialanalysis.ai/articles/claude-opus-5-5",
+          "source": "Artificial Analysis 完整文章（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T17:41:36.934000Z"
+        },
+        {
+          "id": "6a8ca796a816ed8176056297a444a3d87cc9ef3d",
+          "title": "Claude Opus 5.5 登顶 Artificial Analysis Intelligence Index，并降价 20% / Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index， along with a 20% p…",
+          "title_zh": "Claude Opus 5.5 登顶 Artificial Analysis Intelligence Index，并降价 20%",
+          "title_en": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index， along with a 20% p…",
+          "title_original": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index， along with a 20% p…",
+          "summary": "Artificial Analysis 评测显示 Claude Opus 5.5 以 58 分登顶 Artificial Analysis Intelligence Index，为其实测最高分。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/ArtificialAnlys/status/2102438210798514391",
+          "source": "X：Artificial Analysis (@ArtificialAnlys)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T16:41:45Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.8308,
+      "importance": 0.8308,
+      "importance_score": 0.8308,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.85,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9953,
+        "story_heat": 0.25,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "multi_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-22T16:41:45Z",
+      "latest_at": "2026-09-22T17:41:36.934000Z",
+      "primary_item": {
+        "id": "1541abae265f3c9579c862d5b6440dd57020c3bc",
+        "title": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58 / Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
+        "title_zh": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58",
+        "title_en": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
+        "title_original": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
+        "summary": "Artificial Analysis 评测显示 Claude Opus 5.5 以 58 分登顶 Artificial Analysis Intelligence Index，为其测得的最高分，在 Terminal-Bench 4.0 上与 GPT-6 Astra 持平（59.6%）。",
+        "recommend_reason_zh": null,
+        "url": "https://artificialanalysis.ai/articles/claude-opus-5-5",
+        "source": "Artificial Analysis 完整文章（网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8308,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-22T18:11:45.033744Z"
+      }
+    },
+    {
+      "story_id": "story_d73345def75c",
+      "title": "Priorities and principles for effective third party assessments",
+      "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+      "primary_url": "https://openai.com/index/priorities-principles-third-party-assessments",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "e5b7a13ffae3b8e3e84c903864a7d862db0206f1",
+          "title": "Priorities and principles for effective third party assessments",
+          "title_zh": null,
+          "title_en": "Priorities and principles for effective third party assessments",
+          "title_original": "Priorities and principles for effective third party assessments",
+          "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-22T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "e5b7a13ffae3b8e3e84c903864a7d862db0206f1",
+          "title": "Priorities and principles for effective third party assessments",
+          "title_zh": null,
+          "title_en": "Priorities and principles for effective third party assessments",
+          "title_original": "Priorities and principles for effective third party assessments",
+          "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-22T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8231,
+      "importance": 0.8231,
+      "importance_score": 0.8231,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.8394,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-22T00:00:00Z",
+      "latest_at": "2026-09-22T00:00:00Z",
+      "primary_item": {
+        "id": "e5b7a13ffae3b8e3e84c903864a7d862db0206f1",
+        "title": "Priorities and principles for effective third party assessments",
+        "title_zh": null,
+        "title_en": "Priorities and principles for effective third party assessments",
+        "title_original": "Priorities and principles for effective third party assessments",
+        "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/priorities-principles-third-party-assessments",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8231,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-22T18:11:45.033744Z"
+      }
+    },
+    {
+      "story_id": "story_9bf1a94971e8",
+      "title": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp / Transformers now runs llama.cpp quants",
+      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "primary_url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "source": "Hugging Face Blog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "3c1fc65cfd298780f4b01ac4d6f9d748cc450289",
+          "title": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp / Transformers now runs llama.cpp quants",
+          "title_zh": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp",
+          "title_en": "Transformers now runs llama.cpp quants",
+          "title_original": "Transformers now runs llama.cpp quants",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-22T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hugging Face Blog"
+      ],
+      "items": [
+        {
+          "id": "3c1fc65cfd298780f4b01ac4d6f9d748cc450289",
+          "title": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp / Transformers now runs llama.cpp quants",
+          "title_zh": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp",
+          "title_en": "Transformers now runs llama.cpp quants",
+          "title_original": "Transformers now runs llama.cpp quants",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-22T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8391,
+      "importance": 0.8391,
+      "importance_score": 0.8391,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.99,
+        "recency": 0.8394,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-22T00:00:00Z",
+      "latest_at": "2026-09-22T00:00:00Z",
+      "primary_item": {
+        "id": "3c1fc65cfd298780f4b01ac4d6f9d748cc450289",
+        "title": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp / Transformers now runs llama.cpp quants",
+        "title_zh": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp",
+        "title_en": "Transformers now runs llama.cpp quants",
+        "title_original": "Transformers now runs llama.cpp quants",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+        "source": "Hugging Face Blog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.846,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-22T18:11:45.033744Z"
+      }
+    },
+    {
+      "story_id": "story_26a88cfe2029",
+      "title": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5 / Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
+      "url": "https://x.com/OpenRouter/status/2102438921213014078",
+      "primary_url": "https://x.com/OpenRouter/status/2102438921213014078",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "532b9aafd26e50f01008c5b21312b333f57f8659",
+          "title": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5 / Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
+          "title_zh": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5",
+          "title_en": "Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
+          "title_original": "Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
+          "summary": "Anthropic 的 Claude Opus 5.5 上线 OpenRouter，是 Claude 5.5 系列首个模型，在智能体编码、知识工作和计算机使用上领先 Opus 5 和 Fable 5.1。提供 1M 上下文窗口，定价为每百万输入 token $4、输出 $20，比 Opus 5 低 20%。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/OpenRouter/status/2102438921213014078",
+          "source": "X：OpenRouter (@OpenRouter)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T16:44:34Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：OpenRouter (@OpenRouter)"
+      ],
+      "items": [
+        {
+          "id": "532b9aafd26e50f01008c5b21312b333f57f8659",
+          "title": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5 / Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
+          "title_zh": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5",
+          "title_en": "Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
+          "title_original": "Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
+          "summary": "Anthropic 的 Claude Opus 5.5 上线 OpenRouter，是 Claude 5.5 系列首个模型，在智能体编码、知识工作和计算机使用上领先 Opus 5 和 Fable 5.1。提供 1M 上下文窗口，定价为每百万输入 token $4、输出 $20，比 Opus 5 低 20%。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/OpenRouter/status/2102438921213014078",
+          "source": "X：OpenRouter (@OpenRouter)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T16:44:34Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8135,
+      "importance": 0.8135,
+      "importance_score": 0.8135,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9863,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-22T16:44:34Z",
+      "latest_at": "2026-09-22T16:44:34Z",
+      "primary_item": {
+        "id": "532b9aafd26e50f01008c5b21312b333f57f8659",
+        "title": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5 / Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
+        "title_zh": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5",
+        "title_en": "Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
+        "title_original": "Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
+        "summary": "Anthropic 的 Claude Opus 5.5 上线 OpenRouter，是 Claude 5.5 系列首个模型，在智能体编码、知识工作和计算机使用上领先 Opus 5 和 Fable 5.1。提供 1M 上下文窗口，定价为每百万输入 token $4、输出 $20，比 Opus 5 低 20%。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/OpenRouter/status/2102438921213014078",
+        "source": "X：OpenRouter (@OpenRouter)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8135,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-22T18:11:45.033744Z"
+      }
+    },
+    {
+      "story_id": "story_d55a152b616f",
+      "title": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型 / Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
+      "url": "https://x.com/claudeai/status/2102435511222890900",
+      "primary_url": "https://x.com/claudeai/status/2102435511222890900",
+      "source": "X：Claude (@claudeai)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "aa9d73d1a7f42cad7f0e52843e35b82a9eade57a",
+          "title": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型 / Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
+          "title_zh": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型",
+          "title_en": "Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
+          "title_original": "Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
+          "summary": "Anthropic 发布 Claude Opus 5.5，是 Claude 5.5 系列的首个模型。官方称其在多数任务上达到 Claude Fable 5.1 的水平，运行成本比 Opus 5 低 40%。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/claudeai/status/2102435511222890900",
+          "source": "X：Claude (@claudeai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T16:31:01Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Claude (@claudeai)"
+      ],
+      "items": [
+        {
+          "id": "aa9d73d1a7f42cad7f0e52843e35b82a9eade57a",
+          "title": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型 / Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
+          "title_zh": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型",
+          "title_en": "Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
+          "title_original": "Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
+          "summary": "Anthropic 发布 Claude Opus 5.5，是 Claude 5.5 系列的首个模型。官方称其在多数任务上达到 Claude Fable 5.1 的水平，运行成本比 Opus 5 低 40%。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/claudeai/status/2102435511222890900",
+          "source": "X：Claude (@claudeai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T16:31:01Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8071,
+      "importance": 0.8071,
+      "importance_score": 0.8071,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.7,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9841,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-22T16:31:01Z",
+      "latest_at": "2026-09-22T16:31:01Z",
+      "primary_item": {
+        "id": "aa9d73d1a7f42cad7f0e52843e35b82a9eade57a",
+        "title": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型 / Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
+        "title_zh": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型",
+        "title_en": "Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
+        "title_original": "Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
+        "summary": "Anthropic 发布 Claude Opus 5.5，是 Claude 5.5 系列的首个模型。官方称其在多数任务上达到 Claude Fable 5.1 的水平，运行成本比 Opus 5 低 40%。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/claudeai/status/2102435511222890900",
+        "source": "X：Claude (@claudeai)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8071,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-22T18:11:45.033744Z"
       }
     },
     {
@@ -388,15 +812,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8027,
-      "importance": 0.8027,
-      "importance_score": 0.8027,
+      "score": 0.795,
+      "importance": 0.795,
+      "importance_score": 0.795,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.976,
+        "recency": 0.9332,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -424,7 +848,204 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
+        "scored_at": "2026-09-22T18:11:45.033744Z"
+      }
+    },
+    {
+      "story_id": "story_b46d415284c7",
+      "title": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
+      "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
+      "source": "Claude Code：GitHub Releases（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "49af8e4a3e60816623ce83b00bca263c43131f79",
+          "title": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
+          "title_zh": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
+          "title_en": null,
+          "title_original": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
+          "summary": "Claude Code 发布 v2.1.280，新增 Claude Opus 5.5（claude-opus-5-5）为默认 Opus 模型，支持 1M 上下文，价格为 $4/$20 per Mtok、缓存读取 $0.20/Mtok；同时将 Pro 和 Team Standard 计划的默认模型从 Sonnet 改为 Opus。",
+          "recommend_reason_zh": null,
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
+          "source": "Claude Code：GitHub Releases（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T16:38:14Z"
+        },
+        {
+          "id": "a4de480d5f72865969ff27da32d2f90ad5dfadf1",
+          "title": "v2.1.280",
+          "title_zh": null,
+          "title_en": null,
+          "title_original": "v2.1.280",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
+          "source": "Claude Code Releases",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-22T16:38:14Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Claude Code Releases",
+        "Claude Code：GitHub Releases（RSS）"
+      ],
+      "items": [
+        {
+          "id": "49af8e4a3e60816623ce83b00bca263c43131f79",
+          "title": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
+          "title_zh": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
+          "title_en": null,
+          "title_original": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
+          "summary": "Claude Code 发布 v2.1.280，新增 Claude Opus 5.5（claude-opus-5-5）为默认 Opus 模型，支持 1M 上下文，价格为 $4/$20 per Mtok、缓存读取 $0.20/Mtok；同时将 Pro 和 Team Standard 计划的默认模型从 Sonnet 改为 Opus。",
+          "recommend_reason_zh": null,
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
+          "source": "Claude Code：GitHub Releases（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T16:38:14Z"
+        },
+        {
+          "id": "a4de480d5f72865969ff27da32d2f90ad5dfadf1",
+          "title": "v2.1.280",
+          "title_zh": null,
+          "title_en": null,
+          "title_original": "v2.1.280",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
+          "source": "Claude Code Releases",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-22T16:38:14Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.8013,
+      "importance": 0.8013,
+      "importance_score": 0.8013,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.68,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9853,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-22T16:38:14Z",
+      "latest_at": "2026-09-22T16:38:14Z",
+      "primary_item": {
+        "id": "49af8e4a3e60816623ce83b00bca263c43131f79",
+        "title": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
+        "title_zh": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
+        "title_en": null,
+        "title_original": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
+        "summary": "Claude Code 发布 v2.1.280，新增 Claude Opus 5.5（claude-opus-5-5）为默认 Opus 模型，支持 1M 上下文，价格为 $4/$20 per Mtok、缓存读取 $0.20/Mtok；同时将 Pro 和 Team Standard 计划的默认模型从 Sonnet 改为 Opus。",
+        "recommend_reason_zh": null,
+        "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
+        "source": "Claude Code：GitHub Releases（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8013,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-22T18:11:45.033744Z"
+      }
+    },
+    {
+      "story_id": "story_cd9dba942535",
+      "title": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30% / Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
+      "url": "https://x.com/mark_k/status/2102437510731219218",
+      "primary_url": "https://x.com/mark_k/status/2102437510731219218",
+      "source": "@mark_k",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "f954331306c3da6009c3265f549120d3121642d6",
+          "title": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30% / Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
+          "title_zh": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30%",
+          "title_en": "Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
+          "title_original": "Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
+          "summary": "Anthropic 发布 Claude Opus 5.5，官方称典型工作负载成本比 Opus 5 低 40%，输出速度提升超 30%。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/mark_k/status/2102437510731219218",
+          "source": "@mark_k",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T16:38:58Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "@mark_k"
+      ],
+      "items": [
+        {
+          "id": "f954331306c3da6009c3265f549120d3121642d6",
+          "title": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30% / Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
+          "title_zh": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30%",
+          "title_en": "Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
+          "title_original": "Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
+          "summary": "Anthropic 发布 Claude Opus 5.5，官方称典型工作负载成本比 Opus 5 低 40%，输出速度提升超 30%。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/mark_k/status/2102437510731219218",
+          "source": "@mark_k",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T16:38:58Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.798,
+      "importance": 0.798,
+      "importance_score": 0.798,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.83,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9854,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-22T16:38:58Z",
+      "latest_at": "2026-09-22T16:38:58Z",
+      "primary_item": {
+        "id": "f954331306c3da6009c3265f549120d3121642d6",
+        "title": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30% / Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
+        "title_zh": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30%",
+        "title_en": "Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
+        "title_original": "Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
+        "summary": "Anthropic 发布 Claude Opus 5.5，官方称典型工作负载成本比 Opus 5 低 40%，输出速度提升超 30%。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/mark_k/status/2102437510731219218",
+        "source": "@mark_k",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.798,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-22T18:11:45.033744Z"
       }
     },
     {
@@ -501,15 +1122,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.788,
-      "importance": 0.788,
-      "importance_score": 0.788,
+      "score": 0.7811,
+      "importance": 0.7811,
+      "importance_score": 0.7811,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8779,
+        "recency": 0.8394,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -537,26 +1158,26 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
+        "scored_at": "2026-09-22T18:11:45.033744Z"
       }
     },
     {
-      "story_id": "story_9bf1a94971e8",
-      "title": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp / Transformers now runs llama.cpp quants",
-      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
-      "primary_url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "story_id": "story_80632919d614",
+      "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+      "url": "https://huggingface.co/blog/evaleval-aisi",
+      "primary_url": "https://huggingface.co/blog/evaleval-aisi",
       "source": "Hugging Face Blog",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "3c1fc65cfd298780f4b01ac4d6f9d748cc450289",
-          "title": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp / Transformers now runs llama.cpp quants",
-          "title_zh": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp",
-          "title_en": "Transformers now runs llama.cpp quants",
-          "title_original": "Transformers now runs llama.cpp quants",
+          "id": "e7d08f8f91948d2957feff7eb391f84b3727aa4a",
+          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "title_zh": null,
+          "title_en": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "title_original": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+          "url": "https://huggingface.co/blog/evaleval-aisi",
           "source": "Hugging Face Blog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
@@ -569,14 +1190,14 @@
       ],
       "items": [
         {
-          "id": "3c1fc65cfd298780f4b01ac4d6f9d748cc450289",
-          "title": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp / Transformers now runs llama.cpp quants",
-          "title_zh": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp",
-          "title_en": "Transformers now runs llama.cpp quants",
-          "title_original": "Transformers now runs llama.cpp quants",
+          "id": "e7d08f8f91948d2957feff7eb391f84b3727aa4a",
+          "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "title_zh": null,
+          "title_en": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+          "title_original": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+          "url": "https://huggingface.co/blog/evaleval-aisi",
           "source": "Hugging Face Blog",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
@@ -585,15 +1206,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.846,
-      "importance": 0.846,
-      "importance_score": 0.846,
+      "score": 0.8411,
+      "importance": 0.8411,
+      "importance_score": 0.8411,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.99,
-        "recency": 0.8779,
+        "ai_relevance": 1.0,
+        "recency": 0.8394,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -606,23 +1227,23 @@
       "earliest_at": "2026-09-22T00:00:00Z",
       "latest_at": "2026-09-22T00:00:00Z",
       "primary_item": {
-        "id": "3c1fc65cfd298780f4b01ac4d6f9d748cc450289",
-        "title": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp / Transformers now runs llama.cpp quants",
-        "title_zh": "transformers 支持直接加载 GGUF 量化模型，本地推理性能接近 llama.cpp",
-        "title_en": "Transformers now runs llama.cpp quants",
-        "title_original": "Transformers now runs llama.cpp quants",
+        "id": "e7d08f8f91948d2957feff7eb391f84b3727aa4a",
+        "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+        "title_zh": null,
+        "title_en": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+        "title_original": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+        "url": "https://huggingface.co/blog/evaleval-aisi",
         "source": "Hugging Face Blog",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.846,
+      "peak_score": 0.8411,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
+        "scored_at": "2026-09-22T18:11:45.033744Z"
       }
     },
     {
@@ -670,15 +1291,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7579,
-      "importance": 0.7579,
-      "importance_score": 0.7579,
+      "score": 0.7513,
+      "importance": 0.7513,
+      "importance_score": 0.7513,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8463,
+        "recency": 0.8092,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -706,7 +1327,120 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
+        "scored_at": "2026-09-22T18:11:45.033744Z"
+      }
+    },
+    {
+      "story_id": "story_00b9cbed60be",
+      "title": "Meta AI 助手 Muse 曝出严重 0-day，可被本地应用窃取账户令牌 / Muse， Meta's extraordinarily privileged AI assistant， has a serious 0-day",
+      "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
+      "primary_url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
+      "source": "Hacker News：AI 热帖",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "ab5995d06b782bfdd43fe94bba41056bad108db1",
+          "title": "Meta AI 助手 Muse 曝出严重 0-day，可被本地应用窃取账户令牌 / Muse， Meta's extraordinarily privileged AI assistant， has a serious 0-day",
+          "title_zh": "Meta AI 助手 Muse 曝出严重 0-day，可被本地应用窃取账户令牌",
+          "title_en": "Muse， Meta's extraordinarily privileged AI assistant， has a serious 0-day",
+          "title_original": "Muse， Meta's extraordinarily privileged AI assistant， has a serious 0-day",
+          "summary": "Ars Technica 报道，安全专家 Patrick Wardle 披露 Meta 的 macOS AI 助手 Muse 存在 0-day 漏洞：任何本地应用或终端命令都能修改未公开设置，把语音转录端点指向攻击者服务器，从而获取 Muse 账户令牌和完整控制权。",
+          "recommend_reason_zh": null,
+          "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T14:35:15Z"
+        },
+        {
+          "id": "ceb0f008ed13e50c86b9a89e4f9741728f3ad224",
+          "title": "Meta AI 助手 Muse 曝出严重 0-day，可被本地应用窃取账户令牌 / Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+          "title_zh": "Meta AI 助手 Muse 曝出严重 0-day，可被本地应用窃取账户令牌",
+          "title_en": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+          "title_original": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
+          "source": "Ars Technica",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-21T22:24:38Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Ars Technica",
+        "Hacker News：AI 热帖"
+      ],
+      "items": [
+        {
+          "id": "ab5995d06b782bfdd43fe94bba41056bad108db1",
+          "title": "Meta AI 助手 Muse 曝出严重 0-day，可被本地应用窃取账户令牌 / Muse， Meta's extraordinarily privileged AI assistant， has a serious 0-day",
+          "title_zh": "Meta AI 助手 Muse 曝出严重 0-day，可被本地应用窃取账户令牌",
+          "title_en": "Muse， Meta's extraordinarily privileged AI assistant， has a serious 0-day",
+          "title_original": "Muse， Meta's extraordinarily privileged AI assistant， has a serious 0-day",
+          "summary": "Ars Technica 报道，安全专家 Patrick Wardle 披露 Meta 的 macOS AI 助手 Muse 存在 0-day 漏洞：任何本地应用或终端命令都能修改未公开设置，把语音转录端点指向攻击者服务器，从而获取 Muse 账户令牌和完整控制权。",
+          "recommend_reason_zh": null,
+          "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T14:35:15Z"
+        },
+        {
+          "id": "ceb0f008ed13e50c86b9a89e4f9741728f3ad224",
+          "title": "Meta AI 助手 Muse 曝出严重 0-day，可被本地应用窃取账户令牌 / Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+          "title_zh": "Meta AI 助手 Muse 曝出严重 0-day，可被本地应用窃取账户令牌",
+          "title_en": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+          "title_original": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
+          "source": "Ars Technica",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-09-21T22:24:38Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.7735,
+      "importance": 0.7735,
+      "importance_score": 0.7735,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.76,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.966,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-21T22:24:38Z",
+      "latest_at": "2026-09-22T14:35:15Z",
+      "primary_item": {
+        "id": "ab5995d06b782bfdd43fe94bba41056bad108db1",
+        "title": "Meta AI 助手 Muse 曝出严重 0-day，可被本地应用窃取账户令牌 / Muse， Meta's extraordinarily privileged AI assistant， has a serious 0-day",
+        "title_zh": "Meta AI 助手 Muse 曝出严重 0-day，可被本地应用窃取账户令牌",
+        "title_en": "Muse， Meta's extraordinarily privileged AI assistant， has a serious 0-day",
+        "title_original": "Muse， Meta's extraordinarily privileged AI assistant， has a serious 0-day",
+        "summary": "Ars Technica 报道，安全专家 Patrick Wardle 披露 Meta 的 macOS AI 助手 Muse 存在 0-day 漏洞：任何本地应用或终端命令都能修改未公开设置，把语音转录端点指向攻击者服务器，从而获取 Muse 账户令牌和完整控制权。",
+        "recommend_reason_zh": null,
+        "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
+        "source": "Hacker News：AI 热帖",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7735,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-22T18:11:45.033744Z"
       }
     },
     {
@@ -754,15 +1488,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7461,
-      "importance": 0.7461,
-      "importance_score": 0.7461,
+      "score": 0.7394,
+      "importance": 0.7394,
+      "importance_score": 0.7394,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8473,
+        "recency": 0.8102,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -789,7 +1523,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
+        "scored_at": "2026-09-22T18:11:45.033744Z"
       }
     },
     {
@@ -837,15 +1571,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.758,
-      "importance": 0.758,
-      "importance_score": 0.758,
+      "score": 0.7505,
+      "importance": 0.7505,
+      "importance_score": 0.7505,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9467,
+        "recency": 0.9052,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -873,7 +1607,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
+        "scored_at": "2026-09-22T18:11:45.033744Z"
+      }
+    },
+    {
+      "story_id": "story_beeb9d5822be",
+      "title": "Claude Opus 5.5 上架 Arena 的 Agent Arena 与 Battle Mode / Claude Opus 5.5 by @AnthropicAI is now in the Agent Arena！ Your votes drive the @arena leaderboards…",
+      "url": "https://x.com/arena/status/2102454952576868638",
+      "primary_url": "https://x.com/arena/status/2102454952576868638",
+      "source": "X：Arena (@arena)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "0fd214e4f72453ef7c9fa61303455d67e6f03f6e",
+          "title": "Claude Opus 5.5 上架 Arena 的 Agent Arena 与 Battle Mode / Claude Opus 5.5 by @AnthropicAI is now in the Agent Arena！ Your votes drive the @arena leaderboards…",
+          "title_zh": "Claude Opus 5.5 上架 Arena 的 Agent Arena 与 Battle Mode",
+          "title_en": "Claude Opus 5.5 by @AnthropicAI is now in the Agent Arena！ Your votes drive the @arena leaderboards…",
+          "title_original": "Claude Opus 5.5 by @AnthropicAI is now in the Agent Arena！ Your votes drive the @arena leaderboards…",
+          "summary": "Arena 宣布 Anthropic 的 Claude Opus 5.5 已进入 Agent Arena，用户可通过投票驱动排行榜。Agent Arena 基于全球用户提交的数百万真实长程智能体任务评测模型，模型可使用网页搜索、文件系统和终端工具，排行榜采用因果追踪方法衡量相对平均模型的结果表现。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2102454952576868638",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T17:48:17Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Arena (@arena)"
+      ],
+      "items": [
+        {
+          "id": "0fd214e4f72453ef7c9fa61303455d67e6f03f6e",
+          "title": "Claude Opus 5.5 上架 Arena 的 Agent Arena 与 Battle Mode / Claude Opus 5.5 by @AnthropicAI is now in the Agent Arena！ Your votes drive the @arena leaderboards…",
+          "title_zh": "Claude Opus 5.5 上架 Arena 的 Agent Arena 与 Battle Mode",
+          "title_en": "Claude Opus 5.5 by @AnthropicAI is now in the Agent Arena！ Your votes drive the @arena leaderboards…",
+          "title_original": "Claude Opus 5.5 by @AnthropicAI is now in the Agent Arena！ Your votes drive the @arena leaderboards…",
+          "summary": "Arena 宣布 Anthropic 的 Claude Opus 5.5 已进入 Agent Arena，用户可通过投票驱动排行榜。Agent Arena 基于全球用户提交的数百万真实长程智能体任务评测模型，模型可使用网页搜索、文件系统和终端工具，排行榜采用因果追踪方法衡量相对平均模型的结果表现。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2102454952576868638",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T17:48:17Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.767,
+      "importance": 0.767,
+      "importance_score": 0.767,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9964,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-22T17:48:17Z",
+      "latest_at": "2026-09-22T17:48:17Z",
+      "primary_item": {
+        "id": "0fd214e4f72453ef7c9fa61303455d67e6f03f6e",
+        "title": "Claude Opus 5.5 上架 Arena 的 Agent Arena 与 Battle Mode / Claude Opus 5.5 by @AnthropicAI is now in the Agent Arena！ Your votes drive the @arena leaderboards…",
+        "title_zh": "Claude Opus 5.5 上架 Arena 的 Agent Arena 与 Battle Mode",
+        "title_en": "Claude Opus 5.5 by @AnthropicAI is now in the Agent Arena！ Your votes drive the @arena leaderboards…",
+        "title_original": "Claude Opus 5.5 by @AnthropicAI is now in the Agent Arena！ Your votes drive the @arena leaderboards…",
+        "summary": "Arena 宣布 Anthropic 的 Claude Opus 5.5 已进入 Agent Arena，用户可通过投票驱动排行榜。Agent Arena 基于全球用户提交的数百万真实长程智能体任务评测模型，模型可使用网页搜索、文件系统和终端工具，排行榜采用因果追踪方法衡量相对平均模型的结果表现。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/arena/status/2102454952576868638",
+        "source": "X：Arena (@arena)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.767,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-22T18:11:45.033744Z"
       }
     },
     {
@@ -921,15 +1739,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7439,
-      "importance": 0.7439,
-      "importance_score": 0.7439,
+      "score": 0.7372,
+      "importance": 0.7372,
+      "importance_score": 0.7372,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8517,
+        "recency": 0.8144,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -956,146 +1774,63 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
+        "scored_at": "2026-09-22T18:11:45.033744Z"
       }
     },
     {
-      "story_id": "story_f8d02811f102",
-      "title": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686569&idx=1&sn=f716d3dd70259240800a67b9fabd53fd",
-      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686569&idx=1&sn=f716d3dd70259240800a67b9fabd53fd",
-      "source": "公众号：数字生命卡兹克",
+      "story_id": "story_acb3fe8a3aa9",
+      "title": "Boris Cherny 实测 Claude Opus 5.5：比 Fable 5.1 快且便宜 51% / Opus 5.5 is a really good model. It's been my daily driver the last few weeks. We had Opus 5.5 and …",
+      "url": "https://x.com/bcherny/status/2102439069053747549",
+      "primary_url": "https://x.com/bcherny/status/2102439069053747549",
+      "source": "X：Boris Cherny (@bcherny)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "3cd8fb2e9d00a81707071bd998749330ce15ee84",
-          "title": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
-          "title_zh": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
-          "title_en": null,
-          "title_original": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
-          "summary": "作者实测同日凌晨发布的 Grok 4.7 与小米 MiMo V2.6，认为 Grok 4.7 低于预期，MiMo V2.6 成为性能、价格、速度三角的当前版本答案。",
+          "id": "a2b659216292efe729e3b3f29c73140ed3cadc55",
+          "title": "Boris Cherny 实测 Claude Opus 5.5：比 Fable 5.1 快且便宜 51% / Opus 5.5 is a really good model. It's been my daily driver the last few weeks. We had Opus 5.5 and …",
+          "title_zh": "Boris Cherny 实测 Claude Opus 5.5：比 Fable 5.1 快且便宜 51%",
+          "title_en": "Opus 5.5 is a really good model. It's been my daily driver the last few weeks. We had Opus 5.5 and …",
+          "title_original": "Opus 5.5 is a really good model. It's been my daily driver the last few weeks. We had Opus 5.5 and …",
+          "summary": "Anthropic 的 Boris Cherny 称 Claude Opus 5.5 近几周是他的日常主力模型。他让 Opus 5.5 和 Fable 5.1 各自把 HAProxy 从 C 移植到 Rust，两者都通过了几乎所有测试，但 Opus 5.5 用时 9.5 小时，快于 Fable 5.1 的 12 小时，成本低 51%。引用的官方介绍称 Opus 5.5 是 Claude 5.5 家族首个模型，多数任务达到 Fable 5.1 水平，运行成本比 Opus 5 低 40%。",
           "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686569&idx=1&sn=f716d3dd70259240800a67b9fabd53fd",
-          "source": "公众号：数字生命卡兹克",
+          "url": "https://x.com/bcherny/status/2102439069053747549",
+          "source": "X：Boris Cherny (@bcherny)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-22T02:02:03Z"
+          "published_at": "2026-09-22T16:45:10Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "公众号：数字生命卡兹克"
+        "X：Boris Cherny (@bcherny)"
       ],
       "items": [
         {
-          "id": "3cd8fb2e9d00a81707071bd998749330ce15ee84",
-          "title": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
-          "title_zh": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
-          "title_en": null,
-          "title_original": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
-          "summary": "作者实测同日凌晨发布的 Grok 4.7 与小米 MiMo V2.6，认为 Grok 4.7 低于预期，MiMo V2.6 成为性能、价格、速度三角的当前版本答案。",
+          "id": "a2b659216292efe729e3b3f29c73140ed3cadc55",
+          "title": "Boris Cherny 实测 Claude Opus 5.5：比 Fable 5.1 快且便宜 51% / Opus 5.5 is a really good model. It's been my daily driver the last few weeks. We had Opus 5.5 and …",
+          "title_zh": "Boris Cherny 实测 Claude Opus 5.5：比 Fable 5.1 快且便宜 51%",
+          "title_en": "Opus 5.5 is a really good model. It's been my daily driver the last few weeks. We had Opus 5.5 and …",
+          "title_original": "Opus 5.5 is a really good model. It's been my daily driver the last few weeks. We had Opus 5.5 and …",
+          "summary": "Anthropic 的 Boris Cherny 称 Claude Opus 5.5 近几周是他的日常主力模型。他让 Opus 5.5 和 Fable 5.1 各自把 HAProxy 从 C 移植到 Rust，两者都通过了几乎所有测试，但 Opus 5.5 用时 9.5 小时，快于 Fable 5.1 的 12 小时，成本低 51%。引用的官方介绍称 Opus 5.5 是 Claude 5.5 家族首个模型，多数任务达到 Fable 5.1 水平，运行成本比 Opus 5 低 40%。",
           "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686569&idx=1&sn=f716d3dd70259240800a67b9fabd53fd",
-          "source": "公众号：数字生命卡兹克",
+          "url": "https://x.com/bcherny/status/2102439069053747549",
+          "source": "X：Boris Cherny (@bcherny)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-22T02:02:03Z"
+          "published_at": "2026-09-22T16:45:10Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7488,
-      "importance": 0.7488,
-      "importance_score": 0.7488,
+      "score": 0.7621,
+      "importance": 0.7621,
+      "importance_score": 0.7621,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.72,
+        "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8953,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-22T02:02:03Z",
-      "latest_at": "2026-09-22T02:02:03Z",
-      "primary_item": {
-        "id": "3cd8fb2e9d00a81707071bd998749330ce15ee84",
-        "title": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
-        "title_zh": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
-        "title_en": null,
-        "title_original": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
-        "summary": "作者实测同日凌晨发布的 Grok 4.7 与小米 MiMo V2.6，认为 Grok 4.7 低于预期，MiMo V2.6 成为性能、价格、速度三角的当前版本答案。",
-        "recommend_reason_zh": null,
-        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686569&idx=1&sn=f716d3dd70259240800a67b9fabd53fd",
-        "source": "公众号：数字生命卡兹克",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7578,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
-      }
-    },
-    {
-      "story_id": "story_d28e7788d36a",
-      "title": "何夕2077 AI 深度信号周报 2026 W38",
-      "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-09-20-ai-weekly-2026-w38",
-      "primary_url": "https://hex2077.dev/zh-CN/blog/weekly/2026-09-20-ai-weekly-2026-w38",
-      "source": "Daily Digest",
-      "source_name": "AI HubToday",
-      "sources": [
-        {
-          "id": "724b1642ab93d6bde79e43f35c4d874e6ae65c67",
-          "title": "何夕2077 AI 深度信号周报 2026 W38",
-          "title_zh": "何夕2077 AI 深度信号周报 2026 W38",
-          "title_en": null,
-          "title_original": "何夕2077 AI 深度信号周报 2026 W38",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-09-20-ai-weekly-2026-w38",
-          "source": "Daily Digest",
-          "source_name": "AI HubToday",
-          "site_id": "aihubtoday",
-          "published_at": "2026-09-22T07:16:08Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Daily Digest"
-      ],
-      "items": [
-        {
-          "id": "724b1642ab93d6bde79e43f35c4d874e6ae65c67",
-          "title": "何夕2077 AI 深度信号周报 2026 W38",
-          "title_zh": "何夕2077 AI 深度信号周报 2026 W38",
-          "title_en": null,
-          "title_original": "何夕2077 AI 深度信号周报 2026 W38",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-09-20-ai-weekly-2026-w38",
-          "source": "Daily Digest",
-          "source_name": "AI HubToday",
-          "site_id": "aihubtoday",
-          "published_at": "2026-09-22T07:16:08Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7571,
-      "importance": 0.7571,
-      "importance_score": 0.7571,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9416,
+        "recency": 0.9864,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1104,692 +1839,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-22T07:16:08Z",
-      "latest_at": "2026-09-22T07:16:08Z",
+      "earliest_at": "2026-09-22T16:45:10Z",
+      "latest_at": "2026-09-22T16:45:10Z",
       "primary_item": {
-        "id": "724b1642ab93d6bde79e43f35c4d874e6ae65c67",
-        "title": "何夕2077 AI 深度信号周报 2026 W38",
-        "title_zh": "何夕2077 AI 深度信号周报 2026 W38",
-        "title_en": null,
-        "title_original": "何夕2077 AI 深度信号周报 2026 W38",
-        "summary": null,
+        "id": "a2b659216292efe729e3b3f29c73140ed3cadc55",
+        "title": "Boris Cherny 实测 Claude Opus 5.5：比 Fable 5.1 快且便宜 51% / Opus 5.5 is a really good model. It's been my daily driver the last few weeks. We had Opus 5.5 and …",
+        "title_zh": "Boris Cherny 实测 Claude Opus 5.5：比 Fable 5.1 快且便宜 51%",
+        "title_en": "Opus 5.5 is a really good model. It's been my daily driver the last few weeks. We had Opus 5.5 and …",
+        "title_original": "Opus 5.5 is a really good model. It's been my daily driver the last few weeks. We had Opus 5.5 and …",
+        "summary": "Anthropic 的 Boris Cherny 称 Claude Opus 5.5 近几周是他的日常主力模型。他让 Opus 5.5 和 Fable 5.1 各自把 HAProxy 从 C 移植到 Rust，两者都通过了几乎所有测试，但 Opus 5.5 用时 9.5 小时，快于 Fable 5.1 的 12 小时，成本低 51%。引用的官方介绍称 Opus 5.5 是 Claude 5.5 家族首个模型，多数任务达到 Fable 5.1 水平，运行成本比 Opus 5 低 40%。",
         "recommend_reason_zh": null,
-        "url": "https://hex2077.dev/zh-CN/blog/weekly/2026-09-20-ai-weekly-2026-w38",
-        "source": "Daily Digest",
-        "source_name": "AI HubToday"
-      },
-      "peak_score": 0.7571,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
-      }
-    },
-    {
-      "story_id": "story_f598d946da96",
-      "title": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数 / Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
-      "url": "https://x.com/ClementDelangue/status/2102141768674222323",
-      "primary_url": "https://x.com/ClementDelangue/status/2102141768674222323",
-      "source": "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "bcc1d035655d6ba3d004efb14cbaeba67953c497",
-          "title": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数 / Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
-          "title_zh": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数",
-          "title_en": "Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
-          "title_original": "Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
-          "summary": "小米（Xiaomi）发布开放权重模型 MiMo-V2.6-Pro，在 Artificial Analysis Intelligence Index 得分 46，超越前代 MiMo-V2.5-Pro 的 26，为开放权重模型中最高。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ClementDelangue/status/2102141768674222323",
-          "source": "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T21:03:48Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)"
-      ],
-      "items": [
-        {
-          "id": "bcc1d035655d6ba3d004efb14cbaeba67953c497",
-          "title": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数 / Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
-          "title_zh": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数",
-          "title_en": "Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
-          "title_original": "Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
-          "summary": "小米（Xiaomi）发布开放权重模型 MiMo-V2.6-Pro，在 Artificial Analysis Intelligence Index 得分 46，超越前代 MiMo-V2.5-Pro 的 26，为开放权重模型中最高。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ClementDelangue/status/2102141768674222323",
-          "source": "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T21:03:48Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7322,
-      "importance": 0.7322,
-      "importance_score": 0.7322,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.69,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8535,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-21T21:03:48Z",
-      "latest_at": "2026-09-21T21:03:48Z",
-      "primary_item": {
-        "id": "bcc1d035655d6ba3d004efb14cbaeba67953c497",
-        "title": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数 / Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
-        "title_zh": "小米发布开放权重模型 MiMo-V2.6-Pro，登顶 Artificial Analysis 开放权重模型智能指数",
-        "title_en": "Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
-        "title_original": "Banger！ https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
-        "summary": "小米（Xiaomi）发布开放权重模型 MiMo-V2.6-Pro，在 Artificial Analysis Intelligence Index 得分 46，超越前代 MiMo-V2.5-Pro 的 26，为开放权重模型中最高。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/ClementDelangue/status/2102141768674222323",
-        "source": "X：Clément Delangue（Hugging Face CEO） (@ClementDelangue)",
+        "url": "https://x.com/bcherny/status/2102439069053747549",
+        "source": "X：Boris Cherny (@bcherny)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7546,
+      "peak_score": 0.7621,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
-      }
-    },
-    {
-      "story_id": "story_9500d7b13974",
-      "title": "马斯克称 Grok 4.7 使 xAI 在智能体编码领域位列第三 / Grok 4.7 places @SpaceXAI as third， after Anthropic &amp； OpenAI， for agentic coding. When factori…",
-      "url": "https://x.com/elonmusk/status/2102082011233931762",
-      "primary_url": "https://x.com/elonmusk/status/2102082011233931762",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "6795ace021f7be53c5997a411c80eadae2e86061",
-          "title": "马斯克称 Grok 4.7 使 xAI 在智能体编码领域位列第三 / Grok 4.7 places @SpaceXAI as third， after Anthropic &amp； OpenAI， for agentic coding. When factori…",
-          "title_zh": "马斯克称 Grok 4.7 使 xAI 在智能体编码领域位列第三",
-          "title_en": "Grok 4.7 places @SpaceXAI as third， after Anthropic &amp； OpenAI， for agentic coding. When factori…",
-          "title_original": "Grok 4.7 places @SpaceXAI as third， after Anthropic &amp； OpenAI， for agentic coding. When factori…",
-          "summary": "Elon Musk 引用 Artificial Analysis 评测称，Grok 4.7 使 xAI 在智能体编码上排名第三，仅次于 Anthropic 和 OpenAI。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/elonmusk/status/2102082011233931762",
-          "source": "X：Elon Musk (@elonmusk, xAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T17:06:20Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Elon Musk (@elonmusk, xAI)"
-      ],
-      "items": [
-        {
-          "id": "6795ace021f7be53c5997a411c80eadae2e86061",
-          "title": "马斯克称 Grok 4.7 使 xAI 在智能体编码领域位列第三 / Grok 4.7 places @SpaceXAI as third， after Anthropic &amp； OpenAI， for agentic coding. When factori…",
-          "title_zh": "马斯克称 Grok 4.7 使 xAI 在智能体编码领域位列第三",
-          "title_en": "Grok 4.7 places @SpaceXAI as third， after Anthropic &amp； OpenAI， for agentic coding. When factori…",
-          "title_original": "Grok 4.7 places @SpaceXAI as third， after Anthropic &amp； OpenAI， for agentic coding. When factori…",
-          "summary": "Elon Musk 引用 Artificial Analysis 评测称，Grok 4.7 使 xAI 在智能体编码上排名第三，仅次于 Anthropic 和 OpenAI。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/elonmusk/status/2102082011233931762",
-          "source": "X：Elon Musk (@elonmusk, xAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T17:06:20Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7265,
-      "importance": 0.7265,
-      "importance_score": 0.7265,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.69,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8216,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-21T17:06:20Z",
-      "latest_at": "2026-09-21T17:06:20Z",
-      "primary_item": {
-        "id": "6795ace021f7be53c5997a411c80eadae2e86061",
-        "title": "马斯克称 Grok 4.7 使 xAI 在智能体编码领域位列第三 / Grok 4.7 places @SpaceXAI as third， after Anthropic &amp； OpenAI， for agentic coding. When factori…",
-        "title_zh": "马斯克称 Grok 4.7 使 xAI 在智能体编码领域位列第三",
-        "title_en": "Grok 4.7 places @SpaceXAI as third， after Anthropic &amp； OpenAI， for agentic coding. When factori…",
-        "title_original": "Grok 4.7 places @SpaceXAI as third， after Anthropic &amp； OpenAI， for agentic coding. When factori…",
-        "summary": "Elon Musk 引用 Artificial Analysis 评测称，Grok 4.7 使 xAI 在智能体编码上排名第三，仅次于 Anthropic 和 OpenAI。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/elonmusk/status/2102082011233931762",
-        "source": "X：Elon Musk (@elonmusk, xAI)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7543,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
-      }
-    },
-    {
-      "story_id": "story_c26c69f45202",
-      "title": "OpenRouter 解读 NVIDIA Nemotron 3.5 Lightning 如何承担 Agent 高频执行调用 / What Is Nemotron 3.5 Lightning",
-      "url": "https://openrouter.ai/blog/insights/nemotron-3-5-lightning",
-      "primary_url": "https://openrouter.ai/blog/insights/nemotron-3-5-lightning",
-      "source": "OpenRouter：Announcements（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "ad4a4481da04768504888d3c19bbc26dfc93e381",
-          "title": "OpenRouter 解读 NVIDIA Nemotron 3.5 Lightning 如何承担 Agent 高频执行调用 / What Is Nemotron 3.5 Lightning",
-          "title_zh": "OpenRouter 解读 NVIDIA Nemotron 3.5 Lightning 如何承担 Agent 高频执行调用",
-          "title_en": "What Is Nemotron 3.5 Lightning",
-          "title_original": "What Is Nemotron 3.5 Lightning",
-          "summary": "OpenRouter 发文解读 NVIDIA 的 Nemotron 3.5 Lightning，这是一款 30B 总参数、约 3B 激活参数的混合专家开源权重模型，定位于工具调用、编码等高频、边界清晰的 Agent 执行步骤，与负责复杂推理的 Nemotron 3 Ultra（550B 总参数、55B 激活）形成分工。",
-          "recommend_reason_zh": null,
-          "url": "https://openrouter.ai/blog/insights/nemotron-3-5-lightning",
-          "source": "OpenRouter：Announcements（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenRouter：Announcements（RSS）"
-      ],
-      "items": [
-        {
-          "id": "ad4a4481da04768504888d3c19bbc26dfc93e381",
-          "title": "OpenRouter 解读 NVIDIA Nemotron 3.5 Lightning 如何承担 Agent 高频执行调用 / What Is Nemotron 3.5 Lightning",
-          "title_zh": "OpenRouter 解读 NVIDIA Nemotron 3.5 Lightning 如何承担 Agent 高频执行调用",
-          "title_en": "What Is Nemotron 3.5 Lightning",
-          "title_original": "What Is Nemotron 3.5 Lightning",
-          "summary": "OpenRouter 发文解读 NVIDIA 的 Nemotron 3.5 Lightning，这是一款 30B 总参数、约 3B 激活参数的混合专家开源权重模型，定位于工具调用、编码等高频、边界清晰的 Agent 执行步骤，与负责复杂推理的 Nemotron 3 Ultra（550B 总参数、55B 激活）形成分工。",
-          "recommend_reason_zh": null,
-          "url": "https://openrouter.ai/blog/insights/nemotron-3-5-lightning",
-          "source": "OpenRouter：Announcements（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.764,
-      "importance": 0.764,
-      "importance_score": 0.764,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.62,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8779,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-22T00:00:00Z",
-      "latest_at": "2026-09-22T00:00:00Z",
-      "primary_item": {
-        "id": "ad4a4481da04768504888d3c19bbc26dfc93e381",
-        "title": "OpenRouter 解读 NVIDIA Nemotron 3.5 Lightning 如何承担 Agent 高频执行调用 / What Is Nemotron 3.5 Lightning",
-        "title_zh": "OpenRouter 解读 NVIDIA Nemotron 3.5 Lightning 如何承担 Agent 高频执行调用",
-        "title_en": "What Is Nemotron 3.5 Lightning",
-        "title_original": "What Is Nemotron 3.5 Lightning",
-        "summary": "OpenRouter 发文解读 NVIDIA 的 Nemotron 3.5 Lightning，这是一款 30B 总参数、约 3B 激活参数的混合专家开源权重模型，定位于工具调用、编码等高频、边界清晰的 Agent 执行步骤，与负责复杂推理的 Nemotron 3 Ultra（550B 总参数、55B 激活）形成分工。",
-        "recommend_reason_zh": null,
-        "url": "https://openrouter.ai/blog/insights/nemotron-3-5-lightning",
-        "source": "OpenRouter：Announcements（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7831,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
-      }
-    },
-    {
-      "story_id": "story_ae766cda486d",
-      "title": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56 / Benchmarking Grok 4.7",
-      "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
-      "primary_url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
-      "source": "Artificial Analysis 完整文章（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "6f3c506835fb8b8b31e458bd1655b7e8a7b999d6",
-          "title": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56 / Benchmarking Grok 4.7",
-          "title_zh": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56",
-          "title_en": "Benchmarking Grok 4.7",
-          "title_original": "Benchmarking Grok 4.7",
-          "summary": "Artificial Analysis 发布 Grok 4.7 评测，该模型在 Intelligence Index 得 46 分，较 Grok 4.6 高 2 分，AA-Briefcase 得 1657 Elo（+111），仅次于 Claude Opus 5 和 Claude Fable 5.1。",
-          "recommend_reason_zh": null,
-          "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
-          "source": "Artificial Analysis 完整文章（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T19:41:25.079000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Artificial Analysis 完整文章（网页）"
-      ],
-      "items": [
-        {
-          "id": "6f3c506835fb8b8b31e458bd1655b7e8a7b999d6",
-          "title": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56 / Benchmarking Grok 4.7",
-          "title_zh": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56",
-          "title_en": "Benchmarking Grok 4.7",
-          "title_original": "Benchmarking Grok 4.7",
-          "summary": "Artificial Analysis 发布 Grok 4.7 评测，该模型在 Intelligence Index 得 46 分，较 Grok 4.6 高 2 分，AA-Briefcase 得 1657 Elo（+111），仅次于 Claude Opus 5 和 Claude Fable 5.1。",
-          "recommend_reason_zh": null,
-          "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
-          "source": "Artificial Analysis 完整文章（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T19:41:25.079000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7242,
-      "importance": 0.7242,
-      "importance_score": 0.7242,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.67,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8423,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-21T19:41:25.079000Z",
-      "latest_at": "2026-09-21T19:41:25.079000Z",
-      "primary_item": {
-        "id": "6f3c506835fb8b8b31e458bd1655b7e8a7b999d6",
-        "title": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56 / Benchmarking Grok 4.7",
-        "title_zh": "Artificial Analysis 评测 Grok 4.7：智能体知识工作跻身前沿，编码代理得分升至 56",
-        "title_en": "Benchmarking Grok 4.7",
-        "title_original": "Benchmarking Grok 4.7",
-        "summary": "Artificial Analysis 发布 Grok 4.7 评测，该模型在 Intelligence Index 得 46 分，较 Grok 4.6 高 2 分，AA-Briefcase 得 1657 Elo（+111），仅次于 Claude Opus 5 和 Claude Fable 5.1。",
-        "recommend_reason_zh": null,
-        "url": "https://artificialanalysis.ai/articles/benchmarking-grok-4-7",
-        "source": "Artificial Analysis 完整文章（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7462,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
-      }
-    },
-    {
-      "story_id": "story_c9d6a68e7d5b",
-      "title": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3 / MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
-      "url": "https://x.com/arena/status/2102142912943489220",
-      "primary_url": "https://x.com/arena/status/2102142912943489220",
-      "source": "X：Arena (@arena)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "770d53d2ebfaa17968287b5f7dcce4e8493490bb",
-          "title": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3 / MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
-          "title_zh": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3",
-          "title_en": "MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
-          "title_original": "MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
-          "summary": "小米发布 MiMo-V2.6-Pro 与 Flash 两款全模态模型，MiMo-V2.6-Pro 在 Code Arena： WebDev 榜以 1628 分（AutoEval）位列约第10名，开源权重（MIT 许可）中约第3，较 MiMo-V2.5-Pro 的 1475 分上涨 153 分。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/arena/status/2102142912943489220",
-          "source": "X：Arena (@arena)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T21:08:21Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Arena (@arena)"
-      ],
-      "items": [
-        {
-          "id": "770d53d2ebfaa17968287b5f7dcce4e8493490bb",
-          "title": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3 / MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
-          "title_zh": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3",
-          "title_en": "MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
-          "title_original": "MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
-          "summary": "小米发布 MiMo-V2.6-Pro 与 Flash 两款全模态模型，MiMo-V2.6-Pro 在 Code Arena： WebDev 榜以 1628 分（AutoEval）位列约第10名，开源权重（MIT 许可）中约第3，较 MiMo-V2.5-Pro 的 1475 分上涨 153 分。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/arena/status/2102142912943489220",
-          "source": "X：Arena (@arena)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T21:08:21Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7233,
-      "importance": 0.7233,
-      "importance_score": 0.7233,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.66,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8541,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-21T21:08:21Z",
-      "latest_at": "2026-09-21T21:08:21Z",
-      "primary_item": {
-        "id": "770d53d2ebfaa17968287b5f7dcce4e8493490bb",
-        "title": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3 / MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
-        "title_zh": "小米 MiMo-V2.6-Pro 登上 Code Arena： WebDev 榜约第10名，开源权重中约第3",
-        "title_en": "MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
-        "title_original": "MiMo-V2.6-Pro just landed @XiaomiMiMo back in the top 10 on Code Arena： WebDev， debuting at ~#10 ove…",
-        "summary": "小米发布 MiMo-V2.6-Pro 与 Flash 两款全模态模型，MiMo-V2.6-Pro 在 Code Arena： WebDev 榜以 1628 分（AutoEval）位列约第10名，开源权重（MIT 许可）中约第3，较 MiMo-V2.5-Pro 的 1475 分上涨 153 分。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/arena/status/2102142912943489220",
-        "source": "X：Arena (@arena)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7457,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
-      }
-    },
-    {
-      "story_id": "story_ed275edd4f01",
-      "title": "Apple 新款 Mac mini（M6/M5 Pro）与 Mac Studio（M5 Max/M5 Ultra）今日开售 / The new Mac mini and Mac Studio are available today",
-      "url": "https://www.apple.com/newsroom/2026/09/the-new-mac-mini-and-mac-studio-are-available-today",
-      "primary_url": "https://www.apple.com/newsroom/2026/09/the-new-mac-mini-and-mac-studio-are-available-today",
-      "source": "Apple：Newsroom（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "d90ec2511a7e6281853d03ce2c352f3e0a1e2b86",
-          "title": "Apple 新款 Mac mini（M6/M5 Pro）与 Mac Studio（M5 Max/M5 Ultra）今日开售 / The new Mac mini and Mac Studio are available today",
-          "title_zh": "Apple 新款 Mac mini（M6/M5 Pro）与 Mac Studio（M5 Max/M5 Ultra）今日开售",
-          "title_en": "The new Mac mini and Mac Studio are available today",
-          "title_original": "The new Mac mini and Mac Studio are available today",
-          "summary": "Apple 宣布新款 Mac mini 和 Mac Studio 于 9 月 22 日开售。Mac mini 搭载 M6 和 M5 Pro，AI 性能最高提升 4 倍。",
-          "recommend_reason_zh": null,
-          "url": "https://www.apple.com/newsroom/2026/09/the-new-mac-mini-and-mac-studio-are-available-today",
-          "source": "Apple：Newsroom（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T12:59:21.039000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Apple：Newsroom（RSS）"
-      ],
-      "items": [
-        {
-          "id": "d90ec2511a7e6281853d03ce2c352f3e0a1e2b86",
-          "title": "Apple 新款 Mac mini（M6/M5 Pro）与 Mac Studio（M5 Max/M5 Ultra）今日开售 / The new Mac mini and Mac Studio are available today",
-          "title_zh": "Apple 新款 Mac mini（M6/M5 Pro）与 Mac Studio（M5 Max/M5 Ultra）今日开售",
-          "title_en": "The new Mac mini and Mac Studio are available today",
-          "title_original": "The new Mac mini and Mac Studio are available today",
-          "summary": "Apple 宣布新款 Mac mini 和 Mac Studio 于 9 月 22 日开售。Mac mini 搭载 M6 和 M5 Pro，AI 性能最高提升 4 倍。",
-          "recommend_reason_zh": null,
-          "url": "https://www.apple.com/newsroom/2026/09/the-new-mac-mini-and-mac-studio-are-available-today",
-          "source": "Apple：Newsroom（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T12:59:21.039000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7427,
-      "importance": 0.7427,
-      "importance_score": 0.7427,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.64,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9949,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-22T12:59:21.039000Z",
-      "latest_at": "2026-09-22T12:59:21.039000Z",
-      "primary_item": {
-        "id": "d90ec2511a7e6281853d03ce2c352f3e0a1e2b86",
-        "title": "Apple 新款 Mac mini（M6/M5 Pro）与 Mac Studio（M5 Max/M5 Ultra）今日开售 / The new Mac mini and Mac Studio are available today",
-        "title_zh": "Apple 新款 Mac mini（M6/M5 Pro）与 Mac Studio（M5 Max/M5 Ultra）今日开售",
-        "title_en": "The new Mac mini and Mac Studio are available today",
-        "title_original": "The new Mac mini and Mac Studio are available today",
-        "summary": "Apple 宣布新款 Mac mini 和 Mac Studio 于 9 月 22 日开售。Mac mini 搭载 M6 和 M5 Pro，AI 性能最高提升 4 倍。",
-        "recommend_reason_zh": null,
-        "url": "https://www.apple.com/newsroom/2026/09/the-new-mac-mini-and-mac-studio-are-available-today",
-        "source": "Apple：Newsroom（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7427,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
-      }
-    },
-    {
-      "story_id": "story_db3fc7d3a025",
-      "title": "Artificial Analysis 评测 Grok 4.7：智能指数得分 46，编码智能体指数升至 56 / Grok 4.7 scores 46 on the Artificial Analysis Intelligence Index to bring SpaceXAI into the top 4 AI…",
-      "url": "https://x.com/ArtificialAnlys/status/2102074898327932987",
-      "primary_url": "https://x.com/ArtificialAnlys/status/2102074898327932987",
-      "source": "X：Artificial Analysis (@ArtificialAnlys)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "397e584e49e2023e90d5cff2f164faf899c31b35",
-          "title": "Artificial Analysis 评测 Grok 4.7：智能指数得分 46，编码智能体指数升至 56 / Grok 4.7 scores 46 on the Artificial Analysis Intelligence Index to bring SpaceXAI into the top 4 AI…",
-          "title_zh": "Artificial Analysis 评测 Grok 4.7：智能指数得分 46，编码智能体指数升至 56",
-          "title_en": "Grok 4.7 scores 46 on the Artificial Analysis Intelligence Index to bring SpaceXAI into the top 4 AI…",
-          "title_original": "Grok 4.7 scores 46 on the Artificial Analysis Intelligence Index to bring SpaceXAI into the top 4 AI…",
-          "summary": "Artificial Analysis 发布 Grok 4.7 评测，其在 Artificial Analysis Intelligence Index 得分 46，较 Grok 4.6 高 2 分，使 SpaceXAI 进入前四大 AI 实验室。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ArtificialAnlys/status/2102074898327932987",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T16:38:05Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Artificial Analysis (@ArtificialAnlys)"
-      ],
-      "items": [
-        {
-          "id": "397e584e49e2023e90d5cff2f164faf899c31b35",
-          "title": "Artificial Analysis 评测 Grok 4.7：智能指数得分 46，编码智能体指数升至 56 / Grok 4.7 scores 46 on the Artificial Analysis Intelligence Index to bring SpaceXAI into the top 4 AI…",
-          "title_zh": "Artificial Analysis 评测 Grok 4.7：智能指数得分 46，编码智能体指数升至 56",
-          "title_en": "Grok 4.7 scores 46 on the Artificial Analysis Intelligence Index to bring SpaceXAI into the top 4 AI…",
-          "title_original": "Grok 4.7 scores 46 on the Artificial Analysis Intelligence Index to bring SpaceXAI into the top 4 AI…",
-          "summary": "Artificial Analysis 发布 Grok 4.7 评测，其在 Artificial Analysis Intelligence Index 得分 46，较 Grok 4.6 高 2 分，使 SpaceXAI 进入前四大 AI 实验室。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ArtificialAnlys/status/2102074898327932987",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T16:38:05Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7138,
-      "importance": 0.7138,
-      "importance_score": 0.7138,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.65,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8178,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-21T16:38:05Z",
-      "latest_at": "2026-09-21T16:38:05Z",
-      "primary_item": {
-        "id": "397e584e49e2023e90d5cff2f164faf899c31b35",
-        "title": "Artificial Analysis 评测 Grok 4.7：智能指数得分 46，编码智能体指数升至 56 / Grok 4.7 scores 46 on the Artificial Analysis Intelligence Index to bring SpaceXAI into the top 4 AI…",
-        "title_zh": "Artificial Analysis 评测 Grok 4.7：智能指数得分 46，编码智能体指数升至 56",
-        "title_en": "Grok 4.7 scores 46 on the Artificial Analysis Intelligence Index to bring SpaceXAI into the top 4 AI…",
-        "title_original": "Grok 4.7 scores 46 on the Artificial Analysis Intelligence Index to bring SpaceXAI into the top 4 AI…",
-        "summary": "Artificial Analysis 发布 Grok 4.7 评测，其在 Artificial Analysis Intelligence Index 得分 46，较 Grok 4.6 高 2 分，使 SpaceXAI 进入前四大 AI 实验室。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/ArtificialAnlys/status/2102074898327932987",
-        "source": "X：Artificial Analysis (@ArtificialAnlys)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7415,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
-      }
-    },
-    {
-      "story_id": "story_93ae6596d014",
-      "title": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
-      "url": "https://www.aibase.com/news/31252",
-      "primary_url": "https://www.aibase.com/news/31252",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "400eba6a1854b2a671ccc05e104955aac3d3f88b",
-          "title": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
-          "title_zh": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
-          "title_en": null,
-          "title_original": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31252",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-22T07:49:50.067567Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "400eba6a1854b2a671ccc05e104955aac3d3f88b",
-          "title": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
-          "title_zh": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
-          "title_en": null,
-          "title_original": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31252",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-22T07:49:50.067567Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.758,
-      "importance": 0.758,
-      "importance_score": 0.758,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9467,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-22T07:49:50.067567Z",
-      "latest_at": "2026-09-22T07:49:50.067567Z",
-      "primary_item": {
-        "id": "400eba6a1854b2a671ccc05e104955aac3d3f88b",
-        "title": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
-        "title_zh": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
-        "title_en": null,
-        "title_original": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31252",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-22T13:32:12.384388Z"
+        "scored_at": "2026-09-22T18:11:45.033744Z"
       }
     }
   ]
