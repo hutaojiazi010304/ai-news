@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T01:41:17.377683Z",
+  "generated_at": "2026-09-22T07:49:50.067567Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8484,
-      "importance": 0.8484,
-      "importance_score": 0.8484,
+      "score": 0.8392,
+      "importance": 0.8392,
+      "importance_score": 0.8392,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.8914,
+        "recency": 0.8402,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -162,15 +162,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8548,
-      "importance": 0.8548,
-      "importance_score": 0.8548,
+      "score": 0.8457,
+      "importance": 0.8457,
+      "importance_score": 0.8457,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8765,
+        "recency": 0.8262,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -200,7 +200,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
+      }
+    },
+    {
+      "story_id": "story_ac443b4e8681",
+      "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+      "url": "https://huggingface.co/blog/omlx",
+      "primary_url": "https://huggingface.co/blog/omlx",
+      "source": "Hugging Face Blog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "8a538da6b9fd9dcde3329b7a1e4ee803555af05d",
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "title_zh": null,
+          "title_en": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "title_original": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://huggingface.co/blog/omlx",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-22T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hugging Face Blog"
+      ],
+      "items": [
+        {
+          "id": "8a538da6b9fd9dcde3329b7a1e4ee803555af05d",
+          "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "title_zh": null,
+          "title_en": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "title_original": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://huggingface.co/blog/omlx",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-22T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8469,
+      "importance": 0.8469,
+      "importance_score": 0.8469,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.95,
+        "recency": 0.9274,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-22T00:00:00Z",
+      "latest_at": "2026-09-22T00:00:00Z",
+      "primary_item": {
+        "id": "8a538da6b9fd9dcde3329b7a1e4ee803555af05d",
+        "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+        "title_zh": null,
+        "title_en": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+        "title_original": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://huggingface.co/blog/omlx",
+        "source": "Hugging Face Blog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8469,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -248,15 +333,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8378,
-      "importance": 0.8378,
-      "importance_score": 0.8378,
+      "score": 0.8287,
+      "importance": 0.8287,
+      "importance_score": 0.8287,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8765,
+        "recency": 0.8262,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -285,7 +370,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -333,15 +418,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7847,
-      "importance": 0.7847,
-      "importance_score": 0.7847,
+      "score": 0.776,
+      "importance": 0.776,
+      "importance_score": 0.776,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8427,
+        "recency": 0.7943,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -369,91 +454,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
-      }
-    },
-    {
-      "story_id": "story_1f933272e9f7",
-      "title": "通义千问发布 Qwen-Image-2.1：7B 单检查点同时支持图像生成与编辑 / Qwen-Image-2.1 × @HuggingApps： live demo on Spaces！ 🖼 One single checkpoint for generation and edit…",
-      "url": "https://x.com/Alibaba_Qwen/status/2101866671900401913",
-      "primary_url": "https://x.com/Alibaba_Qwen/status/2101866671900401913",
-      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "4cf683cc7925451046d7ac1a88797d6d30c01c54",
-          "title": "通义千问发布 Qwen-Image-2.1：7B 单检查点同时支持图像生成与编辑 / Qwen-Image-2.1 × @HuggingApps： live demo on Spaces！ 🖼 One single checkpoint for generation and edit…",
-          "title_zh": "通义千问发布 Qwen-Image-2.1：7B 单检查点同时支持图像生成与编辑",
-          "title_en": "Qwen-Image-2.1 × @HuggingApps： live demo on Spaces！ 🖼 One single checkpoint for generation and edit…",
-          "title_original": "Qwen-Image-2.1 × @HuggingApps： live demo on Spaces！ 🖼 One single checkpoint for generation and edit…",
-          "summary": "通义千问发布 Qwen-Image-2.1，一个 7B 参数的原生图像生成与编辑模型，生成和编辑共用单一检查点，最多支持 10 张参考图。模型自带提示词增强 LLM，已集成 diffusers 和 ComfyUI，并在 Hugging Face Spaces 提供免安装的浏览器在线 demo：https://huggingface.co/spaces/hugging-apps/qwen-image-2-1",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Alibaba_Qwen/status/2101866671900401913",
-          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T02:50:40Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：通义千问 / Qwen (@Alibaba_Qwen)"
-      ],
-      "items": [
-        {
-          "id": "4cf683cc7925451046d7ac1a88797d6d30c01c54",
-          "title": "通义千问发布 Qwen-Image-2.1：7B 单检查点同时支持图像生成与编辑 / Qwen-Image-2.1 × @HuggingApps： live demo on Spaces！ 🖼 One single checkpoint for generation and edit…",
-          "title_zh": "通义千问发布 Qwen-Image-2.1：7B 单检查点同时支持图像生成与编辑",
-          "title_en": "Qwen-Image-2.1 × @HuggingApps： live demo on Spaces！ 🖼 One single checkpoint for generation and edit…",
-          "title_original": "Qwen-Image-2.1 × @HuggingApps： live demo on Spaces！ 🖼 One single checkpoint for generation and edit…",
-          "summary": "通义千问发布 Qwen-Image-2.1，一个 7B 参数的原生图像生成与编辑模型，生成和编辑共用单一检查点，最多支持 10 张参考图。模型自带提示词增强 LLM，已集成 diffusers 和 ComfyUI，并在 Hugging Face Spaces 提供免安装的浏览器在线 demo：https://huggingface.co/spaces/hugging-apps/qwen-image-2-1",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Alibaba_Qwen/status/2101866671900401913",
-          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T02:50:40Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7715,
-      "importance": 0.7715,
-      "importance_score": 0.7715,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.69,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8026,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-21T02:50:40Z",
-      "latest_at": "2026-09-21T02:50:40Z",
-      "primary_item": {
-        "id": "4cf683cc7925451046d7ac1a88797d6d30c01c54",
-        "title": "通义千问发布 Qwen-Image-2.1：7B 单检查点同时支持图像生成与编辑 / Qwen-Image-2.1 × @HuggingApps： live demo on Spaces！ 🖼 One single checkpoint for generation and edit…",
-        "title_zh": "通义千问发布 Qwen-Image-2.1：7B 单检查点同时支持图像生成与编辑",
-        "title_en": "Qwen-Image-2.1 × @HuggingApps： live demo on Spaces！ 🖼 One single checkpoint for generation and edit…",
-        "title_original": "Qwen-Image-2.1 × @HuggingApps： live demo on Spaces！ 🖼 One single checkpoint for generation and edit…",
-        "summary": "通义千问发布 Qwen-Image-2.1，一个 7B 参数的原生图像生成与编辑模型，生成和编辑共用单一检查点，最多支持 10 张参考图。模型自带提示词增强 LLM，已集成 diffusers 和 ComfyUI，并在 Hugging Face Spaces 提供免安装的浏览器在线 demo：https://huggingface.co/spaces/hugging-apps/qwen-image-2-1",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/Alibaba_Qwen/status/2101866671900401913",
-        "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8005,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -501,15 +502,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7831,
-      "importance": 0.7831,
-      "importance_score": 0.7831,
+      "score": 0.7729,
+      "importance": 0.7729,
+      "importance_score": 0.7729,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.62,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9839,
+        "recency": 0.9274,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -537,7 +538,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -585,15 +586,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7632,
-      "importance": 0.7632,
-      "importance_score": 0.7632,
+      "score": 0.7541,
+      "importance": 0.7541,
+      "importance_score": 0.7541,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8755,
+        "recency": 0.8253,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -621,7 +622,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -669,15 +670,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7763,
-      "importance": 0.7763,
-      "importance_score": 0.7763,
+      "score": 0.7665,
+      "importance": 0.7665,
+      "importance_score": 0.7665,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9485,
+        "recency": 0.894,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -705,7 +706,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -753,15 +754,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8268,
-      "importance": 0.8268,
-      "importance_score": 0.8268,
+      "score": 0.8179,
+      "importance": 0.8179,
+      "importance_score": 0.8179,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8598,
+        "recency": 0.8105,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -790,7 +791,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -838,15 +839,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7645,
-      "importance": 0.7645,
-      "importance_score": 0.7645,
+      "score": 0.7547,
+      "importance": 0.7547,
+      "importance_score": 0.7547,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9496,
+        "recency": 0.8951,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -874,30 +875,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
-      "story_id": "story_9d9a168ee3fd",
-      "title": "AI 编程平台 Bitrig 支持 iPhone Duo：交互式 3D 模拟器可折叠、旋转测应用",
-      "url": "https://www.aibase.com/news/31246",
-      "primary_url": "https://www.aibase.com/news/31246",
+      "story_id": "story_297f0b86dc9f",
+      "title": "2026 上半年全球 AI 眼镜出货量暴增 263%，“无屏幕”成主流形态",
+      "url": "https://www.aibase.com/news/31259",
+      "primary_url": "https://www.aibase.com/news/31259",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "1223f77b0581afbc61db3543d160ea2f0fcd9eee",
-          "title": "AI 编程平台 Bitrig 支持 iPhone Duo：交互式 3D 模拟器可折叠、旋转测应用",
-          "title_zh": "AI 编程平台 Bitrig 支持 iPhone Duo：交互式 3D 模拟器可折叠、旋转测应用",
+          "id": "b836a750e675855d3d5e7ccfee0a3b3d079ffb68",
+          "title": "2026 上半年全球 AI 眼镜出货量暴增 263%，“无屏幕”成主流形态",
+          "title_zh": "2026 上半年全球 AI 眼镜出货量暴增 263%，“无屏幕”成主流形态",
           "title_en": null,
-          "title_original": "AI 编程平台 Bitrig 支持 iPhone Duo：交互式 3D 模拟器可折叠、旋转测应用",
+          "title_original": "2026 上半年全球 AI 眼镜出货量暴增 263%，“无屏幕”成主流形态",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31246",
+          "url": "https://www.aibase.com/news/31259",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-22T01:41:17.377683Z"
+          "published_at": "2026-09-22T07:49:50.067567Z"
         }
       ],
       "source_count": 1,
@@ -906,18 +907,18 @@
       ],
       "items": [
         {
-          "id": "1223f77b0581afbc61db3543d160ea2f0fcd9eee",
-          "title": "AI 编程平台 Bitrig 支持 iPhone Duo：交互式 3D 模拟器可折叠、旋转测应用",
-          "title_zh": "AI 编程平台 Bitrig 支持 iPhone Duo：交互式 3D 模拟器可折叠、旋转测应用",
+          "id": "b836a750e675855d3d5e7ccfee0a3b3d079ffb68",
+          "title": "2026 上半年全球 AI 眼镜出货量暴增 263%，“无屏幕”成主流形态",
+          "title_zh": "2026 上半年全球 AI 眼镜出货量暴增 263%，“无屏幕”成主流形态",
           "title_en": null,
-          "title_original": "AI 编程平台 Bitrig 支持 iPhone Duo：交互式 3D 模拟器可折叠、旋转测应用",
+          "title_original": "2026 上半年全球 AI 眼镜出货量暴增 263%，“无屏幕”成主流形态",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31246",
+          "url": "https://www.aibase.com/news/31259",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-09-22T01:41:17.377683Z"
+          "published_at": "2026-09-22T07:49:50.067567Z"
         }
       ],
       "item_count": 1,
@@ -939,17 +940,17 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-22T01:41:17.377683Z",
-      "latest_at": "2026-09-22T01:41:17.377683Z",
+      "earliest_at": "2026-09-22T07:49:50.067567Z",
+      "latest_at": "2026-09-22T07:49:50.067567Z",
       "primary_item": {
-        "id": "1223f77b0581afbc61db3543d160ea2f0fcd9eee",
-        "title": "AI 编程平台 Bitrig 支持 iPhone Duo：交互式 3D 模拟器可折叠、旋转测应用",
-        "title_zh": "AI 编程平台 Bitrig 支持 iPhone Duo：交互式 3D 模拟器可折叠、旋转测应用",
+        "id": "b836a750e675855d3d5e7ccfee0a3b3d079ffb68",
+        "title": "2026 上半年全球 AI 眼镜出货量暴增 263%，“无屏幕”成主流形态",
+        "title_zh": "2026 上半年全球 AI 眼镜出货量暴增 263%，“无屏幕”成主流形态",
         "title_en": null,
-        "title_original": "AI 编程平台 Bitrig 支持 iPhone Duo：交互式 3D 模拟器可折叠、旋转测应用",
+        "title_original": "2026 上半年全球 AI 眼镜出货量暴增 263%，“无屏幕”成主流形态",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31246",
+        "url": "https://www.aibase.com/news/31259",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -958,7 +959,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -1006,15 +1007,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7624,
-      "importance": 0.7624,
-      "importance_score": 0.7624,
+      "score": 0.7525,
+      "importance": 0.7525,
+      "importance_score": 0.7525,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9545,
+        "recency": 0.8997,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1042,7 +1043,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
+      }
+    },
+    {
+      "story_id": "story_f8d02811f102",
+      "title": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686569&idx=1&sn=f716d3dd70259240800a67b9fabd53fd",
+      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686569&idx=1&sn=f716d3dd70259240800a67b9fabd53fd",
+      "source": "公众号：数字生命卡兹克",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "3cd8fb2e9d00a81707071bd998749330ce15ee84",
+          "title": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
+          "title_zh": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
+          "title_en": null,
+          "title_original": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
+          "summary": "作者实测同日凌晨发布的 Grok 4.7 与小米 MiMo V2.6，认为 Grok 4.7 低于预期，MiMo V2.6 成为性能、价格、速度三角的当前版本答案。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686569&idx=1&sn=f716d3dd70259240800a67b9fabd53fd",
+          "source": "公众号：数字生命卡兹克",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T02:02:03Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "公众号：数字生命卡兹克"
+      ],
+      "items": [
+        {
+          "id": "3cd8fb2e9d00a81707071bd998749330ce15ee84",
+          "title": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
+          "title_zh": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
+          "title_en": null,
+          "title_original": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
+          "summary": "作者实测同日凌晨发布的 Grok 4.7 与小米 MiMo V2.6，认为 Grok 4.7 低于预期，MiMo V2.6 成为性能、价格、速度三角的当前版本答案。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686569&idx=1&sn=f716d3dd70259240800a67b9fabd53fd",
+          "source": "公众号：数字生命卡兹克",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T02:02:03Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7578,
+      "importance": 0.7578,
+      "importance_score": 0.7578,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9457,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-22T02:02:03Z",
+      "latest_at": "2026-09-22T02:02:03Z",
+      "primary_item": {
+        "id": "3cd8fb2e9d00a81707071bd998749330ce15ee84",
+        "title": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
+        "title_zh": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
+        "title_en": null,
+        "title_original": "卡兹克实测对比 Grok 4.7 与小米 MiMo V2.6：后者成不可能三角版本答案",
+        "summary": "作者实测同日凌晨发布的 Grok 4.7 与小米 MiMo V2.6，认为 Grok 4.7 低于预期，MiMo V2.6 成为性能、价格、速度三角的当前版本答案。",
+        "recommend_reason_zh": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686569&idx=1&sn=f716d3dd70259240800a67b9fabd53fd",
+        "source": "公众号：数字生命卡兹克",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7578,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -1090,22 +1175,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7508,
-      "importance": 0.7508,
-      "importance_score": 0.7508,
+      "score": 0.7409,
+      "importance": 0.7409,
+      "importance_score": 0.7409,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9565,
+        "recency": 0.9015,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-21T21:03:48Z",
       "latest_at": "2026-09-21T21:03:48Z",
@@ -1126,7 +1210,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -1174,15 +1258,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7443,
-      "importance": 0.7443,
-      "importance_score": 0.7443,
+      "score": 0.7348,
+      "importance": 0.7348,
+      "importance_score": 0.7348,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9207,
+        "recency": 0.8678,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1209,7 +1293,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -1257,15 +1341,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7425,
-      "importance": 0.7425,
-      "importance_score": 0.7425,
+      "score": 0.7327,
+      "importance": 0.7327,
+      "importance_score": 0.7327,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9439,
+        "recency": 0.8897,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1292,7 +1376,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -1340,15 +1424,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7363,
-      "importance": 0.7363,
-      "importance_score": 0.7363,
+      "score": 0.7272,
+      "importance": 0.7272,
+      "importance_score": 0.7272,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8761,
+        "recency": 0.8258,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1375,7 +1459,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -1423,15 +1507,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7419,
-      "importance": 0.7419,
-      "importance_score": 0.7419,
+      "score": 0.732,
+      "importance": 0.732,
+      "importance_score": 0.732,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9572,
+        "recency": 0.9022,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1458,7 +1542,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
@@ -1506,15 +1590,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7316,
-      "importance": 0.7316,
-      "importance_score": 0.7316,
+      "score": 0.7221,
+      "importance": 0.7221,
+      "importance_score": 0.7221,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9165,
+        "recency": 0.8639,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1541,175 +1625,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     },
     {
-      "story_id": "story_7b14ecd6d515",
-      "title": "数字生命卡兹克访谈汉化组：AI 时代字幕组与漫画组的真实处境",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686509&idx=1&sn=1b5ee8ab30c5825eaff76083e1f8dbcc",
-      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686509&idx=1&sn=1b5ee8ab30c5825eaff76083e1f8dbcc",
-      "source": "公众号：数字生命卡兹克",
-      "source_name": "AI HOT",
+      "story_id": "story_93ae6596d014",
+      "title": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
+      "url": "https://www.aibase.com/news/31252",
+      "primary_url": "https://www.aibase.com/news/31252",
+      "source": "AIbase",
+      "source_name": "AIbase",
       "sources": [
         {
-          "id": "08ae5b394d67c4d4e851880749e1ebfb5d6bc312",
-          "title": "数字生命卡兹克访谈汉化组：AI 时代字幕组与漫画组的真实处境",
-          "title_zh": "数字生命卡兹克访谈汉化组：AI 时代字幕组与漫画组的真实处境",
+          "id": "400eba6a1854b2a671ccc05e104955aac3d3f88b",
+          "title": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
+          "title_zh": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
           "title_en": null,
-          "title_original": "数字生命卡兹克访谈汉化组：AI 时代字幕组与漫画组的真实处境",
-          "summary": "作者访谈多位字幕组与漫画汉化组成员，发现他们并不抵触AI。Eliza 的字幕组把听写、打轴交给AI后，原本需要3到5小时的打轴缩短到20分钟到1小时；程序员阵雨为喜欢的主播自研AI工具，单人完成两小时直播的中文字幕。漫画汉化组则因嵌字质量等原因仍坚持人工制作，成员看重的是同好社群与爱好本身。",
+          "title_original": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
+          "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686509&idx=1&sn=1b5ee8ab30c5825eaff76083e1f8dbcc",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T01:52:57Z"
+          "url": "https://www.aibase.com/news/31252",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-22T07:49:50.067567Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "公众号：数字生命卡兹克"
+        "AIbase"
       ],
       "items": [
         {
-          "id": "08ae5b394d67c4d4e851880749e1ebfb5d6bc312",
-          "title": "数字生命卡兹克访谈汉化组：AI 时代字幕组与漫画组的真实处境",
-          "title_zh": "数字生命卡兹克访谈汉化组：AI 时代字幕组与漫画组的真实处境",
+          "id": "400eba6a1854b2a671ccc05e104955aac3d3f88b",
+          "title": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
+          "title_zh": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
           "title_en": null,
-          "title_original": "数字生命卡兹克访谈汉化组：AI 时代字幕组与漫画组的真实处境",
-          "summary": "作者访谈多位字幕组与漫画汉化组成员，发现他们并不抵触AI。Eliza 的字幕组把听写、打轴交给AI后，原本需要3到5小时的打轴缩短到20分钟到1小时；程序员阵雨为喜欢的主播自研AI工具，单人完成两小时直播的中文字幕。漫画汉化组则因嵌字质量等原因仍坚持人工制作，成员看重的是同好社群与爱好本身。",
+          "title_original": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
+          "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686509&idx=1&sn=1b5ee8ab30c5825eaff76083e1f8dbcc",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-21T01:52:57Z"
+          "url": "https://www.aibase.com/news/31252",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-09-22T07:49:50.067567Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7127,
-      "importance": 0.7127,
-      "importance_score": 0.7127,
-      "importance_label": "值得关注",
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.66,
+        "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7952,
+        "recency": 1.0,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "watch",
+      "category": "industry",
       "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-21T01:52:57Z",
-      "latest_at": "2026-09-21T01:52:57Z",
-      "primary_item": {
-        "id": "08ae5b394d67c4d4e851880749e1ebfb5d6bc312",
-        "title": "数字生命卡兹克访谈汉化组：AI 时代字幕组与漫画组的真实处境",
-        "title_zh": "数字生命卡兹克访谈汉化组：AI 时代字幕组与漫画组的真实处境",
-        "title_en": null,
-        "title_original": "数字生命卡兹克访谈汉化组：AI 时代字幕组与漫画组的真实处境",
-        "summary": "作者访谈多位字幕组与漫画汉化组成员，发现他们并不抵触AI。Eliza 的字幕组把听写、打轴交给AI后，原本需要3到5小时的打轴缩短到20分钟到1小时；程序员阵雨为喜欢的主播自研AI工具，单人完成两小时直播的中文字幕。漫画汉化组则因嵌字质量等原因仍坚持人工制作，成员看重的是同好社群与爱好本身。",
-        "recommend_reason_zh": null,
-        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686509&idx=1&sn=1b5ee8ab30c5825eaff76083e1f8dbcc",
-        "source": "公众号：数字生命卡兹克",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7415,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
-      }
-    },
-    {
-      "story_id": "story_76f72fcfe612",
-      "title": "Expanding OpenAI Academy with new learning paths",
-      "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-      "primary_url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "b5aafa50f62c10a69f52a8b6441c46712c874f1a",
-          "title": "Expanding OpenAI Academy with new learning paths",
-          "title_zh": null,
-          "title_en": "Expanding OpenAI Academy with new learning paths",
-          "title_original": "Expanding OpenAI Academy with new learning paths",
-          "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-21T07:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "b5aafa50f62c10a69f52a8b6441c46712c874f1a",
-          "title": "Expanding OpenAI Academy with new learning paths",
-          "title_zh": null,
-          "title_en": "Expanding OpenAI Academy with new learning paths",
-          "title_original": "Expanding OpenAI Academy with new learning paths",
-          "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-21T07:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8224,
-      "importance": 0.8224,
-      "importance_score": 0.8224,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8353,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-21T07:00:00Z",
-      "latest_at": "2026-09-21T07:00:00Z",
+      "earliest_at": "2026-09-22T07:49:50.067567Z",
+      "latest_at": "2026-09-22T07:49:50.067567Z",
       "primary_item": {
-        "id": "b5aafa50f62c10a69f52a8b6441c46712c874f1a",
-        "title": "Expanding OpenAI Academy with new learning paths",
-        "title_zh": null,
-        "title_en": "Expanding OpenAI Academy with new learning paths",
-        "title_original": "Expanding OpenAI Academy with new learning paths",
-        "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
+        "id": "400eba6a1854b2a671ccc05e104955aac3d3f88b",
+        "title": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
+        "title_zh": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
+        "title_en": null,
+        "title_original": "3.99万元起，宇树科技推出22自由度Dex5-S灵巧手",
+        "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
+        "url": "https://www.aibase.com/news/31252",
+        "source": "AIbase",
+        "source_name": "AIbase"
       },
-      "peak_score": 0.8314,
+      "peak_score": 0.7676,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-22T01:42:13.638358Z"
+        "scored_at": "2026-09-22T07:51:00.709497Z"
       }
     }
   ]
