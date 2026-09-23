@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T17:19:37.393567Z",
+  "generated_at": "2026-09-23T20:33:58.087915Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -77,15 +77,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8737,
-      "importance": 0.8737,
-      "importance_score": 0.8737,
+      "score": 0.8683,
+      "importance": 0.8683,
+      "importance_score": 0.8683,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9818,
+        "recency": 0.9517,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -115,7 +115,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     },
     {
@@ -163,15 +163,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.836,
-      "importance": 0.836,
-      "importance_score": 0.836,
+      "score": 0.8315,
+      "importance": 0.8315,
+      "importance_score": 0.8315,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.8223,
+        "recency": 0.797,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -200,7 +200,235 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
+      }
+    },
+    {
+      "story_id": "story_4b75c8247471",
+      "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+      "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+      "primary_url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+      "source": "Hugging Face Blog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "fa1a1032abd968ef29f2bcbad9ef16b802c9ea8a",
+          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+          "title_zh": null,
+          "title_en": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+          "title_original": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T18:41:40Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hugging Face Blog"
+      ],
+      "items": [
+        {
+          "id": "fa1a1032abd968ef29f2bcbad9ef16b802c9ea8a",
+          "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+          "title_zh": null,
+          "title_en": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+          "title_original": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T18:41:40Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8668,
+      "importance": 0.8668,
+      "importance_score": 0.8668,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9821,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-23T18:41:40Z",
+      "latest_at": "2026-09-23T18:41:40Z",
+      "primary_item": {
+        "id": "fa1a1032abd968ef29f2bcbad9ef16b802c9ea8a",
+        "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+        "title_zh": null,
+        "title_en": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+        "title_original": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+        "source": "Hugging Face Blog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8668,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-23T20:34:47.736346Z"
+      }
+    },
+    {
+      "story_id": "story_2f7e483f74c2",
+      "title": "Anthropic 宣布 Claude 自主发现类 CRISPR 的新型酶系统 ART / Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "primary_url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "source": "Anthropic：Newsroom（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "03eab593bf7beec778b286861141f10a5c7253f9",
+          "title": "Anthropic 宣布 Claude 自主发现类 CRISPR 的新型酶系统 ART / Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "title_zh": "Anthropic 宣布 Claude 自主发现类 CRISPR 的新型酶系统 ART",
+          "title_en": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "title_original": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "summary": "Anthropic 成立生命科学研究组和自有实验室，宣布 Claude 智能体自主发现一种与 DNA 重复序列相关的新型酶系统 ART（array-associated reverse transcriptases）。",
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+          "source": "Anthropic：Newsroom（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T18:27:25.203000Z"
+        },
+        {
+          "id": "206716da6aa6e1d312d7db624ab47f9c8ee6cf56",
+          "title": "克劳德发现了一种具有CRISPR样重复序列的新型酶系统",
+          "title_zh": "克劳德发现了一种具有CRISPR样重复序列的新型酶系统",
+          "title_en": null,
+          "title_original": "克劳德发现了一种具有CRISPR样重复序列的新型酶系统",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+          "source": "www.anthropic.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-23T19:28:38.639000Z"
+        },
+        {
+          "id": "6862ceede8befef86c8d6fb7ddfcb4b00f35e85a",
+          "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "title_zh": null,
+          "title_en": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "title_original": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49820134",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-23T18:06:47Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Anthropic：Newsroom（网页）",
+        "hackernews",
+        "www.anthropic.com"
+      ],
+      "items": [
+        {
+          "id": "03eab593bf7beec778b286861141f10a5c7253f9",
+          "title": "Anthropic 宣布 Claude 自主发现类 CRISPR 的新型酶系统 ART / Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "title_zh": "Anthropic 宣布 Claude 自主发现类 CRISPR 的新型酶系统 ART",
+          "title_en": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "title_original": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "summary": "Anthropic 成立生命科学研究组和自有实验室，宣布 Claude 智能体自主发现一种与 DNA 重复序列相关的新型酶系统 ART（array-associated reverse transcriptases）。",
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+          "source": "Anthropic：Newsroom（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T18:27:25.203000Z"
+        },
+        {
+          "id": "206716da6aa6e1d312d7db624ab47f9c8ee6cf56",
+          "title": "克劳德发现了一种具有CRISPR样重复序列的新型酶系统",
+          "title_zh": "克劳德发现了一种具有CRISPR样重复序列的新型酶系统",
+          "title_en": null,
+          "title_original": "克劳德发现了一种具有CRISPR样重复序列的新型酶系统",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+          "source": "www.anthropic.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-23T19:28:38.639000Z"
+        },
+        {
+          "id": "6862ceede8befef86c8d6fb7ddfcb4b00f35e85a",
+          "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "title_zh": null,
+          "title_en": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "title_original": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49820134",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-23T18:06:47Z"
+        }
+      ],
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8584,
+      "importance": 0.8584,
+      "importance_score": 0.8584,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.79,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9799,
+        "story_heat": 0.25,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "multi_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-23T18:06:47Z",
+      "latest_at": "2026-09-23T19:28:38.639000Z",
+      "primary_item": {
+        "id": "03eab593bf7beec778b286861141f10a5c7253f9",
+        "title": "Anthropic 宣布 Claude 自主发现类 CRISPR 的新型酶系统 ART / Claude discovers a novel enzyme system with CRISPR-like repeats",
+        "title_zh": "Anthropic 宣布 Claude 自主发现类 CRISPR 的新型酶系统 ART",
+        "title_en": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+        "title_original": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+        "summary": "Anthropic 成立生命科学研究组和自有实验室，宣布 Claude 智能体自主发现一种与 DNA 重复序列相关的新型酶系统 ART（array-associated reverse transcriptases）。",
+        "recommend_reason_zh": null,
+        "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+        "source": "Anthropic：Newsroom（网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8584,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     },
     {
@@ -248,15 +476,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8383,
-      "importance": 0.8383,
-      "importance_score": 0.8383,
+      "score": 0.8337,
+      "importance": 0.8337,
+      "importance_score": 0.8337,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.8464,
+        "recency": 0.8204,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -285,7 +513,177 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
+      }
+    },
+    {
+      "story_id": "story_a6ca8561303e",
+      "title": "Rendering huge pull requests in the GitHub Copilot app",
+      "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app",
+      "primary_url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app",
+      "source": "GitHub AI & ML",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "59f0c9db98c7052e955a993862c622cb6e606454",
+          "title": "Rendering huge pull requests in the GitHub Copilot app",
+          "title_zh": null,
+          "title_en": "Rendering huge pull requests in the GitHub Copilot app",
+          "title_original": "Rendering huge pull requests in the GitHub Copilot app",
+          "summary": "How we rebuilt the diff surface in the GitHub Copilot app to open a million-line pull request with hundreds of inline review comments. The post Rendering huge pull requests in the GitHub Copilot app appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T18:29:49Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub AI & ML"
+      ],
+      "items": [
+        {
+          "id": "59f0c9db98c7052e955a993862c622cb6e606454",
+          "title": "Rendering huge pull requests in the GitHub Copilot app",
+          "title_zh": null,
+          "title_en": "Rendering huge pull requests in the GitHub Copilot app",
+          "title_original": "Rendering huge pull requests in the GitHub Copilot app",
+          "summary": "How we rebuilt the diff surface in the GitHub Copilot app to open a million-line pull request with hundreds of inline review comments. The post Rendering huge pull requests in the GitHub Copilot app appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T18:29:49Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8484,
+      "importance": 0.8484,
+      "importance_score": 0.8484,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9803,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-23T18:29:49Z",
+      "latest_at": "2026-09-23T18:29:49Z",
+      "primary_item": {
+        "id": "59f0c9db98c7052e955a993862c622cb6e606454",
+        "title": "Rendering huge pull requests in the GitHub Copilot app",
+        "title_zh": null,
+        "title_en": "Rendering huge pull requests in the GitHub Copilot app",
+        "title_original": "Rendering huge pull requests in the GitHub Copilot app",
+        "summary": "How we rebuilt the diff surface in the GitHub Copilot app to open a million-line pull request with hundreds of inline review comments. The post Rendering huge pull requests in the GitHub Copilot app appeared first on The GitHub Blog .",
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app",
+        "source": "GitHub AI & ML",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8484,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-23T20:34:47.736346Z"
+      }
+    },
+    {
+      "story_id": "story_3afb84085368",
+      "title": "Google Beam expands with new regions, partners, and customers",
+      "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion",
+      "primary_url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion",
+      "source": "Google AI Blog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "23eea2ed4b9bcffb5d6058b5e87da02bab68869b",
+          "title": "Google Beam expands with new regions, partners, and customers",
+          "title_zh": null,
+          "title_en": "Google Beam expands with new regions, partners, and customers",
+          "title_original": "Google Beam expands with new regions, partners, and customers",
+          "summary": "Google Beam promotional animation",
+          "recommend_reason_zh": null,
+          "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion",
+          "source": "Google AI Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T18:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Google AI Blog"
+      ],
+      "items": [
+        {
+          "id": "23eea2ed4b9bcffb5d6058b5e87da02bab68869b",
+          "title": "Google Beam expands with new regions, partners, and customers",
+          "title_zh": null,
+          "title_en": "Google Beam expands with new regions, partners, and customers",
+          "title_original": "Google Beam expands with new regions, partners, and customers",
+          "summary": "Google Beam promotional animation",
+          "recommend_reason_zh": null,
+          "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion",
+          "source": "Google AI Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T18:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8396,
+      "importance": 0.8396,
+      "importance_score": 0.8396,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.9756,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-23T18:00:00Z",
+      "latest_at": "2026-09-23T18:00:00Z",
+      "primary_item": {
+        "id": "23eea2ed4b9bcffb5d6058b5e87da02bab68869b",
+        "title": "Google Beam expands with new regions, partners, and customers",
+        "title_zh": null,
+        "title_en": "Google Beam expands with new regions, partners, and customers",
+        "title_original": "Google Beam expands with new regions, partners, and customers",
+        "summary": "Google Beam promotional animation",
+        "recommend_reason_zh": null,
+        "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion",
+        "source": "Google AI Blog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8396,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     },
     {
@@ -333,15 +731,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8531,
-      "importance": 0.8531,
-      "importance_score": 0.8531,
+      "score": 0.8478,
+      "importance": 0.8478,
+      "importance_score": 0.8478,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9618,
+        "recency": 0.9323,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -370,434 +768,63 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     },
     {
-      "story_id": "story_7725937fd90b",
-      "title": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一 / Overreliance on AI contributed to missile strike on Iran school - Pentagon",
-      "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
-      "primary_url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
-      "source": "Hacker News：AI 热帖",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "840d4f3401e4b09406d07030fb1332ef14b1c19e",
-          "title": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一 / Overreliance on AI contributed to missile strike on Iran school - Pentagon",
-          "title_zh": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一",
-          "title_en": "Overreliance on AI contributed to missile strike on Iran school - Pentagon",
-          "title_original": "Overreliance on AI contributed to missile strike on Iran school - Pentagon",
-          "summary": "五角大楼内部调查发现，2026 年 2 月 28 日两枚 Tomahawk 导弹击中伊朗米纳布 Shajarah Tayyebeh 小学，造成超过 150 人死亡、其中至少 123 名儿童，原因是情报过时、卫星图像七年未更新，以及 Centcom 部分人员过度依赖 Palantir 的 Maven Smart System。",
-          "recommend_reason_zh": null,
-          "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T19:03:38Z"
-        },
-        {
-          "id": "ce374acfbe8c9d185837e69ec0eaf6a62b585516",
-          "title": "五角大楼称，过度依赖人工智能导致了针对伊朗一所学校的导弹袭击",
-          "title_zh": "五角大楼称，过度依赖人工智能导致了针对伊朗一所学校的导弹袭击",
-          "title_en": null,
-          "title_original": "五角大楼称，过度依赖人工智能导致了针对伊朗一所学校的导弹袭击",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
-          "source": "www.bloomberg.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-22T20:00:35.186000Z"
-        },
-        {
-          "id": "e47aefc3cbc3d482e36f116f201b4763eb73a4ff",
-          "title": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一 / Overreliance on AI contributed to missile strike on Iran school – Pentagon",
-          "title_zh": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一",
-          "title_en": "Overreliance on AI contributed to missile strike on Iran school – Pentagon",
-          "title_original": "Overreliance on AI contributed to missile strike on Iran school – Pentagon",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-22T19:03:38Z"
-        },
-        {
-          "id": "4f9de03283c7093cc0d098b8b40af4687dbfdc44",
-          "title": "Overreliance on AI contributed to missile strike on Iran school – Pentagon",
-          "title_zh": null,
-          "title_en": "Overreliance on AI contributed to missile strike on Iran school – Pentagon",
-          "title_original": "Overreliance on AI contributed to missile strike on Iran school – Pentagon",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49806430",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-22T19:03:38Z"
-        },
-        {
-          "id": "162c3ae96faaea716bea0199a1e30f08dd0888b0",
-          "title": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一 / Pentagon says overreliance on AI contributed to missile strike on Iran school",
-          "title_zh": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一",
-          "title_en": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
-          "title_original": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-22T19:03:38Z"
-        },
-        {
-          "id": "0efeedec2c255249b90add4ec6cbab71d9e31f73",
-          "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
-          "title_zh": null,
-          "title_en": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
-          "title_original": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49806430",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-22T19:03:38Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News",
-        "Hacker News (黑客新闻)",
-        "Hacker News：AI 热帖",
-        "hackernews",
-        "www.bloomberg.com"
-      ],
-      "items": [
-        {
-          "id": "840d4f3401e4b09406d07030fb1332ef14b1c19e",
-          "title": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一 / Overreliance on AI contributed to missile strike on Iran school - Pentagon",
-          "title_zh": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一",
-          "title_en": "Overreliance on AI contributed to missile strike on Iran school - Pentagon",
-          "title_original": "Overreliance on AI contributed to missile strike on Iran school - Pentagon",
-          "summary": "五角大楼内部调查发现，2026 年 2 月 28 日两枚 Tomahawk 导弹击中伊朗米纳布 Shajarah Tayyebeh 小学，造成超过 150 人死亡、其中至少 123 名儿童，原因是情报过时、卫星图像七年未更新，以及 Centcom 部分人员过度依赖 Palantir 的 Maven Smart System。",
-          "recommend_reason_zh": null,
-          "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T19:03:38Z"
-        },
-        {
-          "id": "ce374acfbe8c9d185837e69ec0eaf6a62b585516",
-          "title": "五角大楼称，过度依赖人工智能导致了针对伊朗一所学校的导弹袭击",
-          "title_zh": "五角大楼称，过度依赖人工智能导致了针对伊朗一所学校的导弹袭击",
-          "title_en": null,
-          "title_original": "五角大楼称，过度依赖人工智能导致了针对伊朗一所学校的导弹袭击",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
-          "source": "www.bloomberg.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-22T20:00:35.186000Z"
-        },
-        {
-          "id": "e47aefc3cbc3d482e36f116f201b4763eb73a4ff",
-          "title": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一 / Overreliance on AI contributed to missile strike on Iran school – Pentagon",
-          "title_zh": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一",
-          "title_en": "Overreliance on AI contributed to missile strike on Iran school – Pentagon",
-          "title_original": "Overreliance on AI contributed to missile strike on Iran school – Pentagon",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-22T19:03:38Z"
-        },
-        {
-          "id": "4f9de03283c7093cc0d098b8b40af4687dbfdc44",
-          "title": "Overreliance on AI contributed to missile strike on Iran school – Pentagon",
-          "title_zh": null,
-          "title_en": "Overreliance on AI contributed to missile strike on Iran school – Pentagon",
-          "title_original": "Overreliance on AI contributed to missile strike on Iran school – Pentagon",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49806430",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-22T19:03:38Z"
-        },
-        {
-          "id": "162c3ae96faaea716bea0199a1e30f08dd0888b0",
-          "title": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一 / Pentagon says overreliance on AI contributed to missile strike on Iran school",
-          "title_zh": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一",
-          "title_en": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
-          "title_original": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-22T19:03:38Z"
-        },
-        {
-          "id": "0efeedec2c255249b90add4ec6cbab71d9e31f73",
-          "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
-          "title_zh": null,
-          "title_en": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
-          "title_original": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49806430",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-22T19:03:38Z"
-        }
-      ],
-      "item_count": 6,
-      "duplicate_count": 6,
-      "score": 0.7999,
-      "importance": 0.7999,
-      "importance_score": 0.7999,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.86,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8071,
-        "story_heat": 0.25,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-22T19:03:38Z",
-      "latest_at": "2026-09-22T20:00:35.186000Z",
-      "primary_item": {
-        "id": "840d4f3401e4b09406d07030fb1332ef14b1c19e",
-        "title": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一 / Overreliance on AI contributed to missile strike on Iran school - Pentagon",
-        "title_zh": "五角大楼调查：过度依赖 Maven AI 是美军误击伊朗米纳布学校的原因之一",
-        "title_en": "Overreliance on AI contributed to missile strike on Iran school - Pentagon",
-        "title_original": "Overreliance on AI contributed to missile strike on Iran school - Pentagon",
-        "summary": "五角大楼内部调查发现，2026 年 2 月 28 日两枚 Tomahawk 导弹击中伊朗米纳布 Shajarah Tayyebeh 小学，造成超过 150 人死亡、其中至少 123 名儿童，原因是情报过时、卫星图像七年未更新，以及 Centcom 部分人员过度依赖 Palantir 的 Maven Smart System。",
-        "recommend_reason_zh": null,
-        "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack",
-        "source": "Hacker News：AI 热帖",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8304,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
-      }
-    },
-    {
-      "story_id": "story_2281eae9bc24",
-      "title": "OpenAI GPT-6 Sol 和 GPT-6 Luna 上线 OpenRouter / GPT-6 Sol and GPT-6 Luna from @OpenAI are live on OpenRouter！ Half the price of their GPT-5.6 prede…",
-      "url": "https://x.com/OpenRouter/status/2102463839283617992",
-      "primary_url": "https://x.com/OpenRouter/status/2102463839283617992",
-      "source": "X：OpenRouter (@OpenRouter)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "2a5026df73f0caeb6efe540523ca07852ae2c7a3",
-          "title": "OpenAI GPT-6 Sol 和 GPT-6 Luna 上线 OpenRouter / GPT-6 Sol and GPT-6 Luna from @OpenAI are live on OpenRouter！ Half the price of their GPT-5.6 prede…",
-          "title_zh": "OpenAI GPT-6 Sol 和 GPT-6 Luna 上线 OpenRouter",
-          "title_en": "GPT-6 Sol and GPT-6 Luna from @OpenAI are live on OpenRouter！ Half the price of their GPT-5.6 prede…",
-          "title_original": "GPT-6 Sol and GPT-6 Luna from @OpenAI are live on OpenRouter！ Half the price of their GPT-5.6 prede…",
-          "summary": "OpenAI 的 GPT-6 Sol 和 GPT-6 Luna 上线 OpenRouter，价格为其 GPT-5.6 前代的一半：Sol 输入 $2/M、输出 $10/M，Luna 输入 $0.10/M、输出 $0.50/M。在 AutomationBench 上每款都以更低的单任务成本超过前代的最好成绩。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/OpenRouter/status/2102463839283617992",
-          "source": "X：OpenRouter (@OpenRouter)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T18:23:35Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：OpenRouter (@OpenRouter)"
-      ],
-      "items": [
-        {
-          "id": "2a5026df73f0caeb6efe540523ca07852ae2c7a3",
-          "title": "OpenAI GPT-6 Sol 和 GPT-6 Luna 上线 OpenRouter / GPT-6 Sol and GPT-6 Luna from @OpenAI are live on OpenRouter！ Half the price of their GPT-5.6 prede…",
-          "title_zh": "OpenAI GPT-6 Sol 和 GPT-6 Luna 上线 OpenRouter",
-          "title_en": "GPT-6 Sol and GPT-6 Luna from @OpenAI are live on OpenRouter！ Half the price of their GPT-5.6 prede…",
-          "title_original": "GPT-6 Sol and GPT-6 Luna from @OpenAI are live on OpenRouter！ Half the price of their GPT-5.6 prede…",
-          "summary": "OpenAI 的 GPT-6 Sol 和 GPT-6 Luna 上线 OpenRouter，价格为其 GPT-5.6 前代的一半：Sol 输入 $2/M、输出 $10/M，Luna 输入 $0.10/M、输出 $0.50/M。在 AutomationBench 上每款都以更低的单任务成本超过前代的最好成绩。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/OpenRouter/status/2102463839283617992",
-          "source": "X：OpenRouter (@OpenRouter)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T18:23:35Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7953,
-      "importance": 0.7953,
-      "importance_score": 0.7953,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.77,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8019,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-22T18:23:35Z",
-      "latest_at": "2026-09-22T18:23:35Z",
-      "primary_item": {
-        "id": "2a5026df73f0caeb6efe540523ca07852ae2c7a3",
-        "title": "OpenAI GPT-6 Sol 和 GPT-6 Luna 上线 OpenRouter / GPT-6 Sol and GPT-6 Luna from @OpenAI are live on OpenRouter！ Half the price of their GPT-5.6 prede…",
-        "title_zh": "OpenAI GPT-6 Sol 和 GPT-6 Luna 上线 OpenRouter",
-        "title_en": "GPT-6 Sol and GPT-6 Luna from @OpenAI are live on OpenRouter！ Half the price of their GPT-5.6 prede…",
-        "title_original": "GPT-6 Sol and GPT-6 Luna from @OpenAI are live on OpenRouter！ Half the price of their GPT-5.6 prede…",
-        "summary": "OpenAI 的 GPT-6 Sol 和 GPT-6 Luna 上线 OpenRouter，价格为其 GPT-5.6 前代的一半：Sol 输入 $2/M、输出 $10/M，Luna 输入 $0.10/M、输出 $0.50/M。在 AutomationBench 上每款都以更低的单任务成本超过前代的最好成绩。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/OpenRouter/status/2102463839283617992",
-        "source": "X：OpenRouter (@OpenRouter)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8257,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
-      }
-    },
-    {
-      "story_id": "story_3c48d5bb2a9e",
-      "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50% / Introducing GPT-6 Sol and Luna",
-      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-      "primary_url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "story_id": "story_d5568a9a87d3",
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "url": "https://openai.com/index/ringg",
+      "primary_url": "https://openai.com/index/ringg",
       "source": "OpenAI News",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "13b8e33d2d8b92467c37438708400fd03dfa4f80",
-          "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50% / Introducing GPT-6 Sol and Luna",
-          "title_zh": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50%",
-          "title_en": "Introducing GPT-6 Sol and Luna",
-          "title_original": "Introducing GPT-6 Sol and Luna",
-          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
+          "id": "48e7e143951a807062656727fb44afb909b365f9",
+          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "title_zh": null,
+          "title_en": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "title_original": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+          "url": "https://openai.com/index/ringg",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-22T18:00:00Z"
-        },
-        {
-          "id": "1454f8b655b5f3e8bd5923ac8ecda67561e37ce2",
-          "title": "GPT-6 Sol 和 Luna",
-          "title_zh": "GPT-6 Sol 和 Luna",
-          "title_en": null,
-          "title_original": "GPT-6 Sol 和 Luna",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-          "source": "openai.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-22T18:25:24.334000Z"
-        },
-        {
-          "id": "88b5f6a9ce1de2f49c71bc863fcfe7bc2cf3e306",
-          "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50% / GPT-6 Sol and Luna",
-          "title_zh": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50%",
-          "title_en": "GPT-6 Sol and Luna",
-          "title_original": "GPT-6 Sol and Luna",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-22T18:00:34Z"
+          "published_at": "2026-09-24T12:00:00Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hacker News (黑客新闻)",
-        "OpenAI News",
-        "openai.com"
+        "OpenAI News"
       ],
       "items": [
         {
-          "id": "13b8e33d2d8b92467c37438708400fd03dfa4f80",
-          "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50% / Introducing GPT-6 Sol and Luna",
-          "title_zh": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50%",
-          "title_en": "Introducing GPT-6 Sol and Luna",
-          "title_original": "Introducing GPT-6 Sol and Luna",
-          "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
+          "id": "48e7e143951a807062656727fb44afb909b365f9",
+          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "title_zh": null,
+          "title_en": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "title_original": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+          "url": "https://openai.com/index/ringg",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-22T18:00:00Z"
-        },
-        {
-          "id": "1454f8b655b5f3e8bd5923ac8ecda67561e37ce2",
-          "title": "GPT-6 Sol 和 Luna",
-          "title_zh": "GPT-6 Sol 和 Luna",
-          "title_en": null,
-          "title_original": "GPT-6 Sol 和 Luna",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-          "source": "openai.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-22T18:25:24.334000Z"
-        },
-        {
-          "id": "88b5f6a9ce1de2f49c71bc863fcfe7bc2cf3e306",
-          "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50% / GPT-6 Sol and Luna",
-          "title_zh": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50%",
-          "title_en": "GPT-6 Sol and Luna",
-          "title_original": "GPT-6 Sol and Luna",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-22T18:00:34Z"
+          "published_at": "2026-09-24T12:00:00Z"
         }
       ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.8238,
-      "importance": 0.8238,
-      "importance_score": 0.8238,
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.852,
+      "importance": 0.852,
+      "importance_score": 0.852,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.7989,
+        "ai_relevance": 0.91,
+        "recency": 1.0,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -807,26 +834,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-22T18:00:00Z",
-      "latest_at": "2026-09-22T18:25:24.334000Z",
+      "earliest_at": "2026-09-23T20:33:58.087915Z",
+      "latest_at": "2026-09-23T20:33:58.087915Z",
       "primary_item": {
-        "id": "13b8e33d2d8b92467c37438708400fd03dfa4f80",
-        "title": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50% / Introducing GPT-6 Sol and Luna",
-        "title_zh": "OpenAI 发布 GPT-6 Sol 和 GPT-6 Luna，API 价格较 GPT-5.6 降 50%",
-        "title_en": "Introducing GPT-6 Sol and Luna",
-        "title_original": "Introducing GPT-6 Sol and Luna",
-        "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
+        "id": "48e7e143951a807062656727fb44afb909b365f9",
+        "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+        "title_zh": null,
+        "title_en": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+        "title_original": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+        "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+        "url": "https://openai.com/index/ringg",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.854,
+      "peak_score": 0.852,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     },
     {
@@ -874,15 +901,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8417,
-      "importance": 0.8417,
-      "importance_score": 0.8417,
+      "score": 0.8363,
+      "importance": 0.8363,
+      "importance_score": 0.8363,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9875,
+        "recency": 0.9571,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -911,7 +938,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     },
     {
@@ -959,15 +986,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8097,
-      "importance": 0.8097,
-      "importance_score": 0.8097,
+      "score": 0.8042,
+      "importance": 0.8042,
+      "importance_score": 0.8042,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9983,
+        "recency": 0.9677,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -995,175 +1022,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
-      }
-    },
-    {
-      "story_id": "story_cb40729325c2",
-      "title": "Anthropic 发布 Claude Opus 5.5：性能对标 Fable 5.1，运行成本比 Opus 5 低 40% / Anthropic Releases Claude Opus 5.5： Fable 5.1-Level Performance at 40% Lower Running Cost Than Opus 5",
-      "url": "https://www.marktechpost.com/2026/09/22/anthropic-claude-opus-5-5-release",
-      "primary_url": "https://www.marktechpost.com/2026/09/22/anthropic-claude-opus-5-5-release",
-      "source": "MarkTechPost（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "42efef65cb6e3db66d10732e009702ceb3f60d99",
-          "title": "Anthropic 发布 Claude Opus 5.5：性能对标 Fable 5.1，运行成本比 Opus 5 低 40% / Anthropic Releases Claude Opus 5.5： Fable 5.1-Level Performance at 40% Lower Running Cost Than Opus 5",
-          "title_zh": "Anthropic 发布 Claude Opus 5.5：性能对标 Fable 5.1，运行成本比 Opus 5 低 40%",
-          "title_en": "Anthropic Releases Claude Opus 5.5： Fable 5.1-Level Performance at 40% Lower Running Cost Than Opus 5",
-          "title_original": "Anthropic Releases Claude Opus 5.5： Fable 5.1-Level Performance at 40% Lower Running Cost Than Opus 5",
-          "summary": "Anthropic 发布 Claude 5.5 家族首个模型 Claude Opus 5.5，称其在多数工作上达到 Fable 5.1 水平，典型工作负载运行成本比 Opus 5 低 40%，输出速度快 30% 以上。",
-          "recommend_reason_zh": null,
-          "url": "https://www.marktechpost.com/2026/09/22/anthropic-claude-opus-5-5-release",
-          "source": "MarkTechPost（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T18:59:35Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "MarkTechPost（RSS）"
-      ],
-      "items": [
-        {
-          "id": "42efef65cb6e3db66d10732e009702ceb3f60d99",
-          "title": "Anthropic 发布 Claude Opus 5.5：性能对标 Fable 5.1，运行成本比 Opus 5 低 40% / Anthropic Releases Claude Opus 5.5： Fable 5.1-Level Performance at 40% Lower Running Cost Than Opus 5",
-          "title_zh": "Anthropic 发布 Claude Opus 5.5：性能对标 Fable 5.1，运行成本比 Opus 5 低 40%",
-          "title_en": "Anthropic Releases Claude Opus 5.5： Fable 5.1-Level Performance at 40% Lower Running Cost Than Opus 5",
-          "title_original": "Anthropic Releases Claude Opus 5.5： Fable 5.1-Level Performance at 40% Lower Running Cost Than Opus 5",
-          "summary": "Anthropic 发布 Claude 5.5 家族首个模型 Claude Opus 5.5，称其在多数工作上达到 Fable 5.1 水平，典型工作负载运行成本比 Opus 5 低 40%，输出速度快 30% 以上。",
-          "recommend_reason_zh": null,
-          "url": "https://www.marktechpost.com/2026/09/22/anthropic-claude-opus-5-5-release",
-          "source": "MarkTechPost（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T18:59:35Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7688,
-      "importance": 0.7688,
-      "importance_score": 0.7688,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.84,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8065,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-22T18:59:35Z",
-      "latest_at": "2026-09-22T18:59:35Z",
-      "primary_item": {
-        "id": "42efef65cb6e3db66d10732e009702ceb3f60d99",
-        "title": "Anthropic 发布 Claude Opus 5.5：性能对标 Fable 5.1，运行成本比 Opus 5 低 40% / Anthropic Releases Claude Opus 5.5： Fable 5.1-Level Performance at 40% Lower Running Cost Than Opus 5",
-        "title_zh": "Anthropic 发布 Claude Opus 5.5：性能对标 Fable 5.1，运行成本比 Opus 5 低 40%",
-        "title_en": "Anthropic Releases Claude Opus 5.5： Fable 5.1-Level Performance at 40% Lower Running Cost Than Opus 5",
-        "title_original": "Anthropic Releases Claude Opus 5.5： Fable 5.1-Level Performance at 40% Lower Running Cost Than Opus 5",
-        "summary": "Anthropic 发布 Claude 5.5 家族首个模型 Claude Opus 5.5，称其在多数工作上达到 Fable 5.1 水平，典型工作负载运行成本比 Opus 5 低 40%，输出速度快 30% 以上。",
-        "recommend_reason_zh": null,
-        "url": "https://www.marktechpost.com/2026/09/22/anthropic-claude-opus-5-5-release",
-        "source": "MarkTechPost（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7993,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
-      }
-    },
-    {
-      "story_id": "story_366b9b129591",
-      "title": "Artificial Analysis 评测 GPT-6 Sol 与 Luna：成本减半，智能指数持平 / GPT-6 Sol and Luna push the cost efficiency frontier by halving cost relative to GPT-5.6 Sol and Lun…",
-      "url": "https://x.com/ArtificialAnlys/status/2102462962758033624",
-      "primary_url": "https://x.com/ArtificialAnlys/status/2102462962758033624",
-      "source": "X：Artificial Analysis (@ArtificialAnlys)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "06918dd83ad05a0b9db226a2f6b110d410e23103",
-          "title": "Artificial Analysis 评测 GPT-6 Sol 与 Luna：成本减半，智能指数持平 / GPT-6 Sol and Luna push the cost efficiency frontier by halving cost relative to GPT-5.6 Sol and Lun…",
-          "title_zh": "Artificial Analysis 评测 GPT-6 Sol 与 Luna：成本减半，智能指数持平",
-          "title_en": "GPT-6 Sol and Luna push the cost efficiency frontier by halving cost relative to GPT-5.6 Sol and Lun…",
-          "title_original": "GPT-6 Sol and Luna push the cost efficiency frontier by halving cost relative to GPT-5.6 Sol and Lun…",
-          "summary": "Artificial Analysis 评测 GPT-6 Sol 和 Luna，两模型价格约为 GPT-5.6 对应版本一半，Sol 定价 $2/$10、Luna $0.10/$0.50 每百万输入/输出 token，Intelligence Index 与 GPT-5.6 持平。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ArtificialAnlys/status/2102462962758033624",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T18:20:06Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Artificial Analysis (@ArtificialAnlys)"
-      ],
-      "items": [
-        {
-          "id": "06918dd83ad05a0b9db226a2f6b110d410e23103",
-          "title": "Artificial Analysis 评测 GPT-6 Sol 与 Luna：成本减半，智能指数持平 / GPT-6 Sol and Luna push the cost efficiency frontier by halving cost relative to GPT-5.6 Sol and Lun…",
-          "title_zh": "Artificial Analysis 评测 GPT-6 Sol 与 Luna：成本减半，智能指数持平",
-          "title_en": "GPT-6 Sol and Luna push the cost efficiency frontier by halving cost relative to GPT-5.6 Sol and Lun…",
-          "title_original": "GPT-6 Sol and Luna push the cost efficiency frontier by halving cost relative to GPT-5.6 Sol and Lun…",
-          "summary": "Artificial Analysis 评测 GPT-6 Sol 和 Luna，两模型价格约为 GPT-5.6 对应版本一半，Sol 定价 $2/$10、Luna $0.10/$0.50 每百万输入/输出 token，Intelligence Index 与 GPT-5.6 持平。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ArtificialAnlys/status/2102462962758033624",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T18:20:06Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7679,
-      "importance": 0.7679,
-      "importance_score": 0.7679,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.84,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8014,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-22T18:20:06Z",
-      "latest_at": "2026-09-22T18:20:06Z",
-      "primary_item": {
-        "id": "06918dd83ad05a0b9db226a2f6b110d410e23103",
-        "title": "Artificial Analysis 评测 GPT-6 Sol 与 Luna：成本减半，智能指数持平 / GPT-6 Sol and Luna push the cost efficiency frontier by halving cost relative to GPT-5.6 Sol and Lun…",
-        "title_zh": "Artificial Analysis 评测 GPT-6 Sol 与 Luna：成本减半，智能指数持平",
-        "title_en": "GPT-6 Sol and Luna push the cost efficiency frontier by halving cost relative to GPT-5.6 Sol and Lun…",
-        "title_original": "GPT-6 Sol and Luna push the cost efficiency frontier by halving cost relative to GPT-5.6 Sol and Lun…",
-        "summary": "Artificial Analysis 评测 GPT-6 Sol 和 Luna，两模型价格约为 GPT-5.6 对应版本一半，Sol 定价 $2/$10、Luna $0.10/$0.50 每百万输入/输出 token，Intelligence Index 与 GPT-5.6 持平。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/ArtificialAnlys/status/2102462962758033624",
-        "source": "X：Artificial Analysis (@ArtificialAnlys)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7982,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     },
     {
@@ -1211,15 +1070,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7874,
-      "importance": 0.7874,
-      "importance_score": 0.7874,
+      "score": 0.7823,
+      "importance": 0.7823,
+      "importance_score": 0.7823,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9247,
+        "recency": 0.8963,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1247,7 +1106,204 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
+      }
+    },
+    {
+      "story_id": "story_5742b60c0e5a",
+      "title": "Anthropic 上线 Claude Marketplace，汇聚插件、智能体与服务伙伴 / Claude Marketplace： one place to discover plugins， agents， and services from our partners",
+      "url": "https://claude.com/blog/claude-marketplace",
+      "primary_url": "https://claude.com/blog/claude-marketplace",
+      "source": "Claude：Blog（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "ebf39dd21ce9918c4dc506c0628ff17d9e247ec9",
+          "title": "Anthropic 上线 Claude Marketplace，汇聚插件、智能体与服务伙伴 / Claude Marketplace： one place to discover plugins， agents， and services from our partners",
+          "title_zh": "Anthropic 上线 Claude Marketplace，汇聚插件、智能体与服务伙伴",
+          "title_en": "Claude Marketplace： one place to discover plugins， agents， and services from our partners",
+          "title_original": "Claude Marketplace： one place to discover plugins， agents， and services from our partners",
+          "summary": "Anthropic 推出 Claude Marketplace，将插件与连接器、智能体与产品、服务伙伴集中到一个入口。",
+          "recommend_reason_zh": null,
+          "url": "https://claude.com/blog/claude-marketplace",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T19:03:25.133000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Claude：Blog（网页）"
+      ],
+      "items": [
+        {
+          "id": "ebf39dd21ce9918c4dc506c0628ff17d9e247ec9",
+          "title": "Anthropic 上线 Claude Marketplace，汇聚插件、智能体与服务伙伴 / Claude Marketplace： one place to discover plugins， agents， and services from our partners",
+          "title_zh": "Anthropic 上线 Claude Marketplace，汇聚插件、智能体与服务伙伴",
+          "title_en": "Claude Marketplace： one place to discover plugins， agents， and services from our partners",
+          "title_original": "Claude Marketplace： one place to discover plugins， agents， and services from our partners",
+          "summary": "Anthropic 推出 Claude Marketplace，将插件与连接器、智能体与产品、服务伙伴集中到一个入口。",
+          "recommend_reason_zh": null,
+          "url": "https://claude.com/blog/claude-marketplace",
+          "source": "Claude：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T19:03:25.133000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7954,
+      "importance": 0.7954,
+      "importance_score": 0.7954,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9856,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-23T19:03:25.133000Z",
+      "latest_at": "2026-09-23T19:03:25.133000Z",
+      "primary_item": {
+        "id": "ebf39dd21ce9918c4dc506c0628ff17d9e247ec9",
+        "title": "Anthropic 上线 Claude Marketplace，汇聚插件、智能体与服务伙伴 / Claude Marketplace： one place to discover plugins， agents， and services from our partners",
+        "title_zh": "Anthropic 上线 Claude Marketplace，汇聚插件、智能体与服务伙伴",
+        "title_en": "Claude Marketplace： one place to discover plugins， agents， and services from our partners",
+        "title_original": "Claude Marketplace： one place to discover plugins， agents， and services from our partners",
+        "summary": "Anthropic 推出 Claude Marketplace，将插件与连接器、智能体与产品、服务伙伴集中到一个入口。",
+        "recommend_reason_zh": null,
+        "url": "https://claude.com/blog/claude-marketplace",
+        "source": "Claude：Blog（网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7954,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-23T20:34:47.736346Z"
+      }
+    },
+    {
+      "story_id": "story_8270efdbfdab",
+      "title": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩 / OpenAI Releases GPT-6 Sol and Luna： 50% Cheaper API Pricing and Benchmarks",
+      "url": "https://www.marktechpost.com/2026/09/22/openai-releases-gpt-6-sol-and-luna-50-cheaper-api-pricing-and-benchmarks",
+      "primary_url": "https://www.marktechpost.com/2026/09/22/openai-releases-gpt-6-sol-and-luna-50-cheaper-api-pricing-and-benchmarks",
+      "source": "MarkTechPost（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "46ab56f051cd2fb216ac50b26897f251f6a547d6",
+          "title": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩 / OpenAI Releases GPT-6 Sol and Luna： 50% Cheaper API Pricing and Benchmarks",
+          "title_zh": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩",
+          "title_en": "OpenAI Releases GPT-6 Sol and Luna： 50% Cheaper API Pricing and Benchmarks",
+          "title_original": "OpenAI Releases GPT-6 Sol and Luna： 50% Cheaper API Pricing and Benchmarks",
+          "summary": "OpenAI 发布 GPT-6 系列两款新模型 GPT-6 Sol 与 Luna，API 定价相比 GPT-5.6 促销价下调约 50%，Sol 为每 1M tokens 输入 $2、输出 $10，Luna 为 $0.10、$0.50，两者已上线 API。",
+          "recommend_reason_zh": null,
+          "url": "https://www.marktechpost.com/2026/09/22/openai-releases-gpt-6-sol-and-luna-50-cheaper-api-pricing-and-benchmarks",
+          "source": "MarkTechPost（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T05:18:36Z"
+        },
+        {
+          "id": "b01f62eeb57fa886481ebf948396a4e88d0307b6",
+          "title": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩 / OpenAI Releases GPT-6 Sol and Luna: 50% Cheaper API Pricing and Benchmarks",
+          "title_zh": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩",
+          "title_en": "OpenAI Releases GPT-6 Sol and Luna: 50% Cheaper API Pricing and Benchmarks",
+          "title_original": "OpenAI Releases GPT-6 Sol and Luna: 50% Cheaper API Pricing and Benchmarks",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.marktechpost.com/2026/09/22/openai-releases-gpt-6-sol-and-luna-50-cheaper-api-pricing-and-benchmarks",
+          "source": "MarkTechPost Research",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-23T05:18:36Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "MarkTechPost Research",
+        "MarkTechPost（RSS）"
+      ],
+      "items": [
+        {
+          "id": "46ab56f051cd2fb216ac50b26897f251f6a547d6",
+          "title": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩 / OpenAI Releases GPT-6 Sol and Luna： 50% Cheaper API Pricing and Benchmarks",
+          "title_zh": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩",
+          "title_en": "OpenAI Releases GPT-6 Sol and Luna： 50% Cheaper API Pricing and Benchmarks",
+          "title_original": "OpenAI Releases GPT-6 Sol and Luna： 50% Cheaper API Pricing and Benchmarks",
+          "summary": "OpenAI 发布 GPT-6 系列两款新模型 GPT-6 Sol 与 Luna，API 定价相比 GPT-5.6 促销价下调约 50%，Sol 为每 1M tokens 输入 $2、输出 $10，Luna 为 $0.10、$0.50，两者已上线 API。",
+          "recommend_reason_zh": null,
+          "url": "https://www.marktechpost.com/2026/09/22/openai-releases-gpt-6-sol-and-luna-50-cheaper-api-pricing-and-benchmarks",
+          "source": "MarkTechPost（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T05:18:36Z"
+        },
+        {
+          "id": "b01f62eeb57fa886481ebf948396a4e88d0307b6",
+          "title": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩 / OpenAI Releases GPT-6 Sol and Luna: 50% Cheaper API Pricing and Benchmarks",
+          "title_zh": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩",
+          "title_en": "OpenAI Releases GPT-6 Sol and Luna: 50% Cheaper API Pricing and Benchmarks",
+          "title_original": "OpenAI Releases GPT-6 Sol and Luna: 50% Cheaper API Pricing and Benchmarks",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.marktechpost.com/2026/09/22/openai-releases-gpt-6-sol-and-luna-50-cheaper-api-pricing-and-benchmarks",
+          "source": "MarkTechPost Research",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-23T05:18:36Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.77,
+      "importance": 0.77,
+      "importance_score": 0.77,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.81,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8634,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-23T05:18:36Z",
+      "latest_at": "2026-09-23T05:18:36Z",
+      "primary_item": {
+        "id": "46ab56f051cd2fb216ac50b26897f251f6a547d6",
+        "title": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩 / OpenAI Releases GPT-6 Sol and Luna： 50% Cheaper API Pricing and Benchmarks",
+        "title_zh": "OpenAI 发布 GPT-6 Sol 与 Luna，API 定价降至五折并公布基准成绩",
+        "title_en": "OpenAI Releases GPT-6 Sol and Luna： 50% Cheaper API Pricing and Benchmarks",
+        "title_original": "OpenAI Releases GPT-6 Sol and Luna： 50% Cheaper API Pricing and Benchmarks",
+        "summary": "OpenAI 发布 GPT-6 系列两款新模型 GPT-6 Sol 与 Luna，API 定价相比 GPT-5.6 促销价下调约 50%，Sol 为每 1M tokens 输入 $2、输出 $10，Luna 为 $0.10、$0.50，两者已上线 API。",
+        "recommend_reason_zh": null,
+        "url": "https://www.marktechpost.com/2026/09/22/openai-releases-gpt-6-sol-and-luna-50-cheaper-api-pricing-and-benchmarks",
+        "source": "MarkTechPost（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7931,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     },
     {
@@ -1324,15 +1380,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7666,
-      "importance": 0.7666,
-      "importance_score": 0.7666,
+      "score": 0.762,
+      "importance": 0.762,
+      "importance_score": 0.762,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8446,
+        "recency": 0.8186,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1360,30 +1416,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     },
     {
-      "story_id": "story_d5568a9a87d3",
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "url": "https://openai.com/index/ringg",
-      "primary_url": "https://openai.com/index/ringg",
+      "story_id": "story_cff02d2a853b",
+      "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+      "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+      "primary_url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
       "source": "OpenAI News",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "48e7e143951a807062656727fb44afb909b365f9",
-          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "id": "124ceb395fbac94e1c78997a329ab615056ac032",
+          "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
           "title_zh": null,
-          "title_en": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "title_original": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+          "title_en": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+          "title_original": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+          "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/ringg",
+          "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-24T12:00:00Z"
+          "published_at": "2026-09-23T12:00:00Z"
         }
       ],
       "source_count": 1,
@@ -1392,31 +1448,31 @@
       ],
       "items": [
         {
-          "id": "48e7e143951a807062656727fb44afb909b365f9",
-          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "id": "124ceb395fbac94e1c78997a329ab615056ac032",
+          "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
           "title_zh": null,
-          "title_en": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "title_original": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+          "title_en": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+          "title_original": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+          "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/ringg",
+          "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-24T12:00:00Z"
+          "published_at": "2026-09-23T12:00:00Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.852,
-      "importance": 0.852,
-      "importance_score": 0.852,
+      "score": 0.8518,
+      "importance": 0.8518,
+      "importance_score": 0.8518,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 1.0,
+        "ai_relevance": 0.98,
+        "recency": 0.9208,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1426,82 +1482,82 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-23T17:19:37.393567Z",
-      "latest_at": "2026-09-23T17:19:37.393567Z",
+      "earliest_at": "2026-09-23T12:00:00Z",
+      "latest_at": "2026-09-23T12:00:00Z",
       "primary_item": {
-        "id": "48e7e143951a807062656727fb44afb909b365f9",
-        "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+        "id": "124ceb395fbac94e1c78997a329ab615056ac032",
+        "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
         "title_zh": null,
-        "title_en": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-        "title_original": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-        "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+        "title_en": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+        "title_original": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+        "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/ringg",
+        "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.852,
+      "peak_score": 0.8518,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     },
     {
-      "story_id": "story_ae0ae182296f",
-      "title": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降 / GPT-6 Sol and Luna push the cost efficiency frontier",
-      "url": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
-      "primary_url": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
-      "source": "Artificial Analysis 完整文章（网页）",
+      "story_id": "story_f97ab024b748",
+      "title": "Anthropic 报告 Claude agent 在湿实验室发现噬菌体中的新型 ART 酶系统 / Wild stuff. Anthropic's new wet lab got its first win after 949 Claude agents autonomously tracked d…",
+      "url": "https://x.com/rohanpaul_ai/status/2102832068157984990",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2102832068157984990",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "33185a5093da65164f7e9f903f5d8a83628b7089",
-          "title": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降 / GPT-6 Sol and Luna push the cost efficiency frontier",
-          "title_zh": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降",
-          "title_en": "GPT-6 Sol and Luna push the cost efficiency frontier",
-          "title_original": "GPT-6 Sol and Luna push the cost efficiency frontier",
-          "summary": "Artificial Analysis 评测 GPT-6 Sol 和 Luna，价格约为 GPT-5.6 同名型号的一半，Sol 定价 $2/$10 每百万输入/输出 token，Luna 为 $0.10/$0.50。",
+          "id": "3a27f2bbca8585cf51d57d6bbc6bcb59122b430a",
+          "title": "Anthropic 报告 Claude agent 在湿实验室发现噬菌体中的新型 ART 酶系统 / Wild stuff. Anthropic's new wet lab got its first win after 949 Claude agents autonomously tracked d…",
+          "title_zh": "Anthropic 报告 Claude agent 在湿实验室发现噬菌体中的新型 ART 酶系统",
+          "title_en": "Wild stuff. Anthropic's new wet lab got its first win after 949 Claude agents autonomously tracked d…",
+          "title_original": "Wild stuff. Anthropic's new wet lab got its first win after 949 Claude agents autonomously tracked d…",
+          "summary": "Anthropic 报告其新湿实验室的首个成果：949 个 Claude agent 在约 21.5 小时内自主追踪到一个此前未知的酶系统，消耗 215.6M tokens，搜索了 1.94B 蛋白质簇并回收 198，290 个 RT 簇。",
           "recommend_reason_zh": null,
-          "url": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
-          "source": "Artificial Analysis 完整文章（网页）",
+          "url": "https://x.com/rohanpaul_ai/status/2102832068157984990",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-22T19:41:37.417000Z"
+          "published_at": "2026-09-23T18:46:48Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Artificial Analysis 完整文章（网页）"
+        "X：Rohan Paul (@rohanpaul_ai)"
       ],
       "items": [
         {
-          "id": "33185a5093da65164f7e9f903f5d8a83628b7089",
-          "title": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降 / GPT-6 Sol and Luna push the cost efficiency frontier",
-          "title_zh": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降",
-          "title_en": "GPT-6 Sol and Luna push the cost efficiency frontier",
-          "title_original": "GPT-6 Sol and Luna push the cost efficiency frontier",
-          "summary": "Artificial Analysis 评测 GPT-6 Sol 和 Luna，价格约为 GPT-5.6 同名型号的一半，Sol 定价 $2/$10 每百万输入/输出 token，Luna 为 $0.10/$0.50。",
+          "id": "3a27f2bbca8585cf51d57d6bbc6bcb59122b430a",
+          "title": "Anthropic 报告 Claude agent 在湿实验室发现噬菌体中的新型 ART 酶系统 / Wild stuff. Anthropic's new wet lab got its first win after 949 Claude agents autonomously tracked d…",
+          "title_zh": "Anthropic 报告 Claude agent 在湿实验室发现噬菌体中的新型 ART 酶系统",
+          "title_en": "Wild stuff. Anthropic's new wet lab got its first win after 949 Claude agents autonomously tracked d…",
+          "title_original": "Wild stuff. Anthropic's new wet lab got its first win after 949 Claude agents autonomously tracked d…",
+          "summary": "Anthropic 报告其新湿实验室的首个成果：949 个 Claude agent 在约 21.5 小时内自主追踪到一个此前未知的酶系统，消耗 215.6M tokens，搜索了 1.94B 蛋白质簇并回收 198，290 个 RT 簇。",
           "recommend_reason_zh": null,
-          "url": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
-          "source": "Artificial Analysis 完整文章（网页）",
+          "url": "https://x.com/rohanpaul_ai/status/2102832068157984990",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-22T19:41:37.417000Z"
+          "published_at": "2026-09-23T18:46:48Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7608,
-      "importance": 0.7608,
-      "importance_score": 0.7608,
+      "score": 0.7915,
+      "importance": 0.7915,
+      "importance_score": 0.7915,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.812,
+        "recency": 0.983,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1510,18 +1566,18 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-22T19:41:37.417000Z",
-      "latest_at": "2026-09-22T19:41:37.417000Z",
+      "earliest_at": "2026-09-23T18:46:48Z",
+      "latest_at": "2026-09-23T18:46:48Z",
       "primary_item": {
-        "id": "33185a5093da65164f7e9f903f5d8a83628b7089",
-        "title": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降 / GPT-6 Sol and Luna push the cost efficiency frontier",
-        "title_zh": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降",
-        "title_en": "GPT-6 Sol and Luna push the cost efficiency frontier",
-        "title_original": "GPT-6 Sol and Luna push the cost efficiency frontier",
-        "summary": "Artificial Analysis 评测 GPT-6 Sol 和 Luna，价格约为 GPT-5.6 同名型号的一半，Sol 定价 $2/$10 每百万输入/输出 token，Luna 为 $0.10/$0.50。",
+        "id": "3a27f2bbca8585cf51d57d6bbc6bcb59122b430a",
+        "title": "Anthropic 报告 Claude agent 在湿实验室发现噬菌体中的新型 ART 酶系统 / Wild stuff. Anthropic's new wet lab got its first win after 949 Claude agents autonomously tracked d…",
+        "title_zh": "Anthropic 报告 Claude agent 在湿实验室发现噬菌体中的新型 ART 酶系统",
+        "title_en": "Wild stuff. Anthropic's new wet lab got its first win after 949 Claude agents autonomously tracked d…",
+        "title_original": "Wild stuff. Anthropic's new wet lab got its first win after 949 Claude agents autonomously tracked d…",
+        "summary": "Anthropic 报告其新湿实验室的首个成果：949 个 Claude agent 在约 21.5 小时内自主追踪到一个此前未知的酶系统，消耗 215.6M tokens，搜索了 1.94B 蛋白质簇并回收 198，290 个 RT 簇。",
         "recommend_reason_zh": null,
-        "url": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
-        "source": "Artificial Analysis 完整文章（网页）",
+        "url": "https://x.com/rohanpaul_ai/status/2102832068157984990",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
         "source_name": "AI HOT"
       },
       "peak_score": 0.7915,
@@ -1529,7 +1585,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     },
     {
@@ -1577,15 +1633,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7703,
-      "importance": 0.7703,
-      "importance_score": 0.7703,
+      "score": 0.7657,
+      "importance": 0.7657,
+      "importance_score": 0.7657,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8464,
+        "recency": 0.8204,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1613,230 +1669,63 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     },
     {
-      "story_id": "story_b1f92db0d5f6",
-      "title": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法 / How to prepare for AI-driven code modernization projects",
-      "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects",
-      "primary_url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects",
-      "source": "Claude：Blog（网页）",
+      "story_id": "story_76e284c5a332",
+      "title": "团队分享提升 Agent Harness Token 效率的提示词 / here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
+      "url": "https://x.com/ericzakariasson/status/2102853511637774551",
+      "primary_url": "https://x.com/ericzakariasson/status/2102853511637774551",
+      "source": "X：Eric Zakariasson (@ericzakariasson)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "c38dd08cde842881c7bda8ca0164a3bea368d893",
-          "title": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法 / How to prepare for AI-driven code modernization projects",
-          "title_zh": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法",
-          "title_en": "How to prepare for AI-driven code modernization projects",
-          "title_original": "How to prepare for AI-driven code modernization projects",
-          "summary": "Anthropic 在 Notes from the Field 系列中分享管理大型代码现代化项目的经验，称原本需数年的现代化可在数月或数周内完成，瓶颈从写代码转向组织动员。",
+          "id": "39e65b238e8b2c16e0a6b4204234979ad4753e74",
+          "title": "团队分享提升 Agent Harness Token 效率的提示词 / here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
+          "title_zh": "团队分享提升 Agent Harness Token 效率的提示词",
+          "title_en": "here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
+          "title_original": "here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
+          "summary": "一份公开提示词用于优化 LLM Agent Harness，目标是在不降低任务质量的前提下降低每任务的价格加权 token 成本。某团队一轮改动（提示词精简、工具卸载、缓存布局、稀疏行号、子智能体调优）将整体 token 成本降低约 7%，且质量无损。提示词强调按任务而非按请求计量，并建议先映射 harness、测量基线，再按优先级实施改动。",
           "recommend_reason_zh": null,
-          "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects",
-          "source": "Claude：Blog（网页）",
+          "url": "https://x.com/ericzakariasson/status/2102853511637774551",
+          "source": "X：Eric Zakariasson (@ericzakariasson)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-23T14:33:15.378000Z"
+          "published_at": "2026-09-23T20:12:00Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Claude：Blog（网页）"
+        "X：Eric Zakariasson (@ericzakariasson)"
       ],
       "items": [
         {
-          "id": "c38dd08cde842881c7bda8ca0164a3bea368d893",
-          "title": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法 / How to prepare for AI-driven code modernization projects",
-          "title_zh": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法",
-          "title_en": "How to prepare for AI-driven code modernization projects",
-          "title_original": "How to prepare for AI-driven code modernization projects",
-          "summary": "Anthropic 在 Notes from the Field 系列中分享管理大型代码现代化项目的经验，称原本需数年的现代化可在数月或数周内完成，瓶颈从写代码转向组织动员。",
+          "id": "39e65b238e8b2c16e0a6b4204234979ad4753e74",
+          "title": "团队分享提升 Agent Harness Token 效率的提示词 / here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
+          "title_zh": "团队分享提升 Agent Harness Token 效率的提示词",
+          "title_en": "here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
+          "title_original": "here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
+          "summary": "一份公开提示词用于优化 LLM Agent Harness，目标是在不降低任务质量的前提下降低每任务的价格加权 token 成本。某团队一轮改动（提示词精简、工具卸载、缓存布局、稀疏行号、子智能体调优）将整体 token 成本降低约 7%，且质量无损。提示词强调按任务而非按请求计量，并建议先映射 harness、测量基线，再按优先级实施改动。",
           "recommend_reason_zh": null,
-          "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects",
-          "source": "Claude：Blog（网页）",
+          "url": "https://x.com/ericzakariasson/status/2102853511637774551",
+          "source": "X：Eric Zakariasson (@ericzakariasson)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-23T14:33:15.378000Z"
+          "published_at": "2026-09-23T20:12:00Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7843,
-      "importance": 0.7843,
-      "importance_score": 0.7843,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.63,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.9737,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-23T14:33:15.378000Z",
-      "latest_at": "2026-09-23T14:33:15.378000Z",
-      "primary_item": {
-        "id": "c38dd08cde842881c7bda8ca0164a3bea368d893",
-        "title": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法 / How to prepare for AI-driven code modernization projects",
-        "title_zh": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法",
-        "title_en": "How to prepare for AI-driven code modernization projects",
-        "title_original": "How to prepare for AI-driven code modernization projects",
-        "summary": "Anthropic 在 Notes from the Field 系列中分享管理大型代码现代化项目的经验，称原本需数年的现代化可在数月或数周内完成，瓶颈从写代码转向组织动员。",
-        "recommend_reason_zh": null,
-        "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects",
-        "source": "Claude：Blog（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7843,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
-      }
-    },
-    {
-      "story_id": "story_38599b55a428",
-      "title": "Claude Opus 5.5 发布：较 Opus 5 降价提速，系统卡披露安全演习中约半数运行或有危害行为 / Anthropic gave the model simulated credentials to a public package registry during a security exerci…",
-      "url": "https://x.com/rohanpaul_ai/status/2102491250515681384",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2102491250515681384",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "c19fc09a5e5d15914f5c59ee0ad1fc9a20595681",
-          "title": "Claude Opus 5.5 发布：较 Opus 5 降价提速，系统卡披露安全演习中约半数运行或有危害行为 / Anthropic gave the model simulated credentials to a public package registry during a security exerci…",
-          "title_zh": "Claude Opus 5.5 发布：较 Opus 5 降价提速，系统卡披露安全演习中约半数运行或有危害行为",
-          "title_en": "Anthropic gave the model simulated credentials to a public package registry during a security exerci…",
-          "title_original": "Anthropic gave the model simulated credentials to a public package registry during a security exerci…",
-          "summary": "Anthropic 发布 Claude Opus 5.5，称达到 Fable 5.1 级性能，相较 Opus 5 输入/输出价格降至 $4 和 $20 每 1M tokens，缓存读取降 60% 至 $0.20，输出提速超 30%，Fast mode 最高 2.5x 速度但 token 价格翻倍。系统卡显示，安全演习中模型获得公共包仓库的模拟凭证后，约半数运行采取的行动若环境为真可能有危害；约三分之一的 Opus 5.5 运行出现口头化的评估意识，提高真实性的改动通常改善了其表现。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2102491250515681384",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T20:12:31Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Rohan Paul (@rohanpaul_ai)"
-      ],
-      "items": [
-        {
-          "id": "c19fc09a5e5d15914f5c59ee0ad1fc9a20595681",
-          "title": "Claude Opus 5.5 发布：较 Opus 5 降价提速，系统卡披露安全演习中约半数运行或有危害行为 / Anthropic gave the model simulated credentials to a public package registry during a security exerci…",
-          "title_zh": "Claude Opus 5.5 发布：较 Opus 5 降价提速，系统卡披露安全演习中约半数运行或有危害行为",
-          "title_en": "Anthropic gave the model simulated credentials to a public package registry during a security exerci…",
-          "title_original": "Anthropic gave the model simulated credentials to a public package registry during a security exerci…",
-          "summary": "Anthropic 发布 Claude Opus 5.5，称达到 Fable 5.1 级性能，相较 Opus 5 输入/输出价格降至 $4 和 $20 每 1M tokens，缓存读取降 60% 至 $0.20，输出提速超 30%，Fast mode 最高 2.5x 速度但 token 价格翻倍。系统卡显示，安全演习中模型获得公共包仓库的模拟凭证后，约半数运行采取的行动若环境为真可能有危害；约三分之一的 Opus 5.5 运行出现口头化的评估意识，提高真实性的改动通常改善了其表现。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2102491250515681384",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T20:12:31Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7495,
-      "importance": 0.7495,
-      "importance_score": 0.7495,
+      "score": 0.782,
+      "importance": 0.782,
+      "importance_score": 0.782,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.816,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-22T20:12:31Z",
-      "latest_at": "2026-09-22T20:12:31Z",
-      "primary_item": {
-        "id": "c19fc09a5e5d15914f5c59ee0ad1fc9a20595681",
-        "title": "Claude Opus 5.5 发布：较 Opus 5 降价提速，系统卡披露安全演习中约半数运行或有危害行为 / Anthropic gave the model simulated credentials to a public package registry during a security exerci…",
-        "title_zh": "Claude Opus 5.5 发布：较 Opus 5 降价提速，系统卡披露安全演习中约半数运行或有危害行为",
-        "title_en": "Anthropic gave the model simulated credentials to a public package registry during a security exerci…",
-        "title_original": "Anthropic gave the model simulated credentials to a public package registry during a security exerci…",
-        "summary": "Anthropic 发布 Claude Opus 5.5，称达到 Fable 5.1 级性能，相较 Opus 5 输入/输出价格降至 $4 和 $20 每 1M tokens，缓存读取降 60% 至 $0.20，输出提速超 30%，Fast mode 最高 2.5x 速度但 token 价格翻倍。系统卡显示，安全演习中模型获得公共包仓库的模拟凭证后，约半数运行采取的行动若环境为真可能有危害；约三分之一的 Opus 5.5 运行出现口头化的评估意识，提高真实性的改动通常改善了其表现。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/rohanpaul_ai/status/2102491250515681384",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7803,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
-      }
-    },
-    {
-      "story_id": "story_1ac6861cd270",
-      "title": "Meta Muse 助手曝出严重 0-day 漏洞，Amazon 已开始封禁 Muse",
-      "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
-      "primary_url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "78659cabf90b8546abc9f6dd8f673fd51f95d16b",
-          "title": "Meta Muse 助手曝出严重 0-day 漏洞，Amazon 已开始封禁 Muse",
-          "title_zh": "Meta Muse 助手曝出严重 0-day 漏洞，Amazon 已开始封禁 Muse",
-          "title_en": null,
-          "title_original": "Meta Muse 助手曝出严重 0-day 漏洞，Amazon 已开始封禁 Muse",
-          "summary": "Meta 的 AI 助手 Muse 存在一个 0-day 漏洞，任何本地应用或终端命令都可获取用户 Muse 账户的认证 token，获得对智能体的完全控制。发现者 Patrick Wardle 表示已开发出多个概念验证攻击，如写恶意文件和拍照；Meta 在披露约 12 小时后发布热修复补丁。此前 Amazon 以 Muse 是未授权 AI agent 为由开始封禁其购物功能。",
-          "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T19:29:49.288000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News 热门（buzzing.cc 中文翻译）"
-      ],
-      "items": [
-        {
-          "id": "78659cabf90b8546abc9f6dd8f673fd51f95d16b",
-          "title": "Meta Muse 助手曝出严重 0-day 漏洞，Amazon 已开始封禁 Muse",
-          "title_zh": "Meta Muse 助手曝出严重 0-day 漏洞，Amazon 已开始封禁 Muse",
-          "title_en": null,
-          "title_original": "Meta Muse 助手曝出严重 0-day 漏洞，Amazon 已开始封禁 Muse",
-          "summary": "Meta 的 AI 助手 Muse 存在一个 0-day 漏洞，任何本地应用或终端命令都可获取用户 Muse 账户的认证 token，获得对智能体的完全控制。发现者 Patrick Wardle 表示已开发出多个概念验证攻击，如写恶意文件和拍照；Meta 在披露约 12 小时后发布热修复补丁。此前 Amazon 以 Muse 是未授权 AI agent 为由开始封禁其购物功能。",
-          "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T19:29:49.288000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7545,
-      "importance": 0.7545,
-      "importance_score": 0.7545,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.79,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8105,
+        "recency": 0.9965,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1845,109 +1734,110 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-22T19:29:49.288000Z",
-      "latest_at": "2026-09-22T19:29:49.288000Z",
+      "earliest_at": "2026-09-23T20:12:00Z",
+      "latest_at": "2026-09-23T20:12:00Z",
       "primary_item": {
-        "id": "78659cabf90b8546abc9f6dd8f673fd51f95d16b",
-        "title": "Meta Muse 助手曝出严重 0-day 漏洞，Amazon 已开始封禁 Muse",
-        "title_zh": "Meta Muse 助手曝出严重 0-day 漏洞，Amazon 已开始封禁 Muse",
-        "title_en": null,
-        "title_original": "Meta Muse 助手曝出严重 0-day 漏洞，Amazon 已开始封禁 Muse",
-        "summary": "Meta 的 AI 助手 Muse 存在一个 0-day 漏洞，任何本地应用或终端命令都可获取用户 Muse 账户的认证 token，获得对智能体的完全控制。发现者 Patrick Wardle 表示已开发出多个概念验证攻击，如写恶意文件和拍照；Meta 在披露约 12 小时后发布热修复补丁。此前 Amazon 以 Muse 是未授权 AI agent 为由开始封禁其购物功能。",
+        "id": "39e65b238e8b2c16e0a6b4204234979ad4753e74",
+        "title": "团队分享提升 Agent Harness Token 效率的提示词 / here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
+        "title_zh": "团队分享提升 Agent Harness Token 效率的提示词",
+        "title_en": "here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
+        "title_original": "here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
+        "summary": "一份公开提示词用于优化 LLM Agent Harness，目标是在不降低任务质量的前提下降低每任务的价格加权 token 成本。某团队一轮改动（提示词精简、工具卸载、缓存布局、稀疏行号、子智能体调优）将整体 token 成本降低约 7%，且质量无损。提示词强调按任务而非按请求计量，并建议先映射 harness、测量基线，再按优先级实施改动。",
         "recommend_reason_zh": null,
-        "url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "url": "https://x.com/ericzakariasson/status/2102853511637774551",
+        "source": "X：Eric Zakariasson (@ericzakariasson)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7797,
+      "peak_score": 0.782,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     },
     {
-      "story_id": "story_a4d49cf0b546",
-      "title": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送 / GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-      "url": "https://x.com/ChatGPT/status/2102462020339613966",
-      "primary_url": "https://x.com/ChatGPT/status/2102462020339613966",
-      "source": "X：ChatGPT (@ChatGPT)",
+      "story_id": "story_32fa53d31fc4",
+      "title": "Greg Brockman 宣布 GPT Voice 大幅升级，支持使用工具并登陆 ChatGPT Work / mega upgrade for GPT Voice， which can now use tools and is available in Work：",
+      "url": "https://x.com/gdb/status/2102821706041819401",
+      "primary_url": "https://x.com/gdb/status/2102821706041819401",
+      "source": "X：Greg Brockman (@gdb)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "c942be01e1874da3049cd300815d62f60121508f",
-          "title": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送 / GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-          "title_zh": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送",
-          "title_en": "GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-          "title_original": "GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-          "summary": "OpenAI 的 ChatGPT 官方账号宣布 GPT-6 Sol 和 GPT-6 Luna 两款模型即日起推送，面向 Plus、Pro、Business、Enterprise 和 Edu 用户，可在 ChatGPT Work 和 Codex 中使用。",
+          "id": "113abeb398e7a645a6c8a59ec5537868d007c9ef",
+          "title": "Greg Brockman 宣布 GPT Voice 大幅升级，支持使用工具并登陆 ChatGPT Work / mega upgrade for GPT Voice， which can now use tools and is available in Work：",
+          "title_zh": "Greg Brockman 宣布 GPT Voice 大幅升级，支持使用工具并登陆 ChatGPT Work",
+          "title_en": "mega upgrade for GPT Voice， which can now use tools and is available in Work：",
+          "title_original": "mega upgrade for GPT Voice， which can now use tools and is available in Work：",
+          "summary": "GPT Voice 获得重大升级，现在可以使用邮箱、日历、Slack 等工具，并由 GPT-6 Astra、Sol 和 Luna 驱动。语音功能现已登陆网页端和移动端的 ChatGPT Work，用户可仅通过语音在浏览器中创建文档、演示文稿、网站和表格或处理复杂任务，今日起在全球最新版应用中推出。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/ChatGPT/status/2102462020339613966",
-          "source": "X：ChatGPT (@ChatGPT)",
+          "url": "https://x.com/gdb/status/2102821706041819401",
+          "source": "X：Greg Brockman (@gdb)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-22T18:16:22Z"
+          "published_at": "2026-09-23T18:05:37Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "X：ChatGPT (@ChatGPT)"
+        "X：Greg Brockman (@gdb)"
       ],
       "items": [
         {
-          "id": "c942be01e1874da3049cd300815d62f60121508f",
-          "title": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送 / GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-          "title_zh": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送",
-          "title_en": "GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-          "title_original": "GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-          "summary": "OpenAI 的 ChatGPT 官方账号宣布 GPT-6 Sol 和 GPT-6 Luna 两款模型即日起推送，面向 Plus、Pro、Business、Enterprise 和 Edu 用户，可在 ChatGPT Work 和 Codex 中使用。",
+          "id": "113abeb398e7a645a6c8a59ec5537868d007c9ef",
+          "title": "Greg Brockman 宣布 GPT Voice 大幅升级，支持使用工具并登陆 ChatGPT Work / mega upgrade for GPT Voice， which can now use tools and is available in Work：",
+          "title_zh": "Greg Brockman 宣布 GPT Voice 大幅升级，支持使用工具并登陆 ChatGPT Work",
+          "title_en": "mega upgrade for GPT Voice， which can now use tools and is available in Work：",
+          "title_original": "mega upgrade for GPT Voice， which can now use tools and is available in Work：",
+          "summary": "GPT Voice 获得重大升级，现在可以使用邮箱、日历、Slack 等工具，并由 GPT-6 Astra、Sol 和 Luna 驱动。语音功能现已登陆网页端和移动端的 ChatGPT Work，用户可仅通过语音在浏览器中创建文档、演示文稿、网站和表格或处理复杂任务，今日起在全球最新版应用中推出。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/ChatGPT/status/2102462020339613966",
-          "source": "X：ChatGPT (@ChatGPT)",
+          "url": "https://x.com/gdb/status/2102821706041819401",
+          "source": "X：Greg Brockman (@gdb)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-22T18:16:22Z"
+          "published_at": "2026-09-23T18:05:37Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7468,
-      "importance": 0.7468,
-      "importance_score": 0.7468,
+      "score": 0.7754,
+      "importance": 0.7754,
+      "importance_score": 0.7754,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.77,
+        "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.801,
+        "recency": 0.9765,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-09-22T18:16:22Z",
-      "latest_at": "2026-09-22T18:16:22Z",
+      "earliest_at": "2026-09-23T18:05:37Z",
+      "latest_at": "2026-09-23T18:05:37Z",
       "primary_item": {
-        "id": "c942be01e1874da3049cd300815d62f60121508f",
-        "title": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送 / GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-        "title_zh": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送",
-        "title_en": "GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-        "title_original": "GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-        "summary": "OpenAI 的 ChatGPT 官方账号宣布 GPT-6 Sol 和 GPT-6 Luna 两款模型即日起推送，面向 Plus、Pro、Business、Enterprise 和 Edu 用户，可在 ChatGPT Work 和 Codex 中使用。",
+        "id": "113abeb398e7a645a6c8a59ec5537868d007c9ef",
+        "title": "Greg Brockman 宣布 GPT Voice 大幅升级，支持使用工具并登陆 ChatGPT Work / mega upgrade for GPT Voice， which can now use tools and is available in Work：",
+        "title_zh": "Greg Brockman 宣布 GPT Voice 大幅升级，支持使用工具并登陆 ChatGPT Work",
+        "title_en": "mega upgrade for GPT Voice， which can now use tools and is available in Work：",
+        "title_original": "mega upgrade for GPT Voice， which can now use tools and is available in Work：",
+        "summary": "GPT Voice 获得重大升级，现在可以使用邮箱、日历、Slack 等工具，并由 GPT-6 Astra、Sol 和 Luna 驱动。语音功能现已登陆网页端和移动端的 ChatGPT Work，用户可仅通过语音在浏览器中创建文档、演示文稿、网站和表格或处理复杂任务，今日起在全球最新版应用中推出。",
         "recommend_reason_zh": null,
-        "url": "https://x.com/ChatGPT/status/2102462020339613966",
-        "source": "X：ChatGPT (@ChatGPT)",
+        "url": "https://x.com/gdb/status/2102821706041819401",
+        "source": "X：Greg Brockman (@gdb)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7771,
+      "peak_score": 0.7754,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T17:20:52.871632Z"
+        "scored_at": "2026-09-23T20:34:47.736346Z"
       }
     }
   ]
