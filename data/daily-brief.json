@@ -1,8 +1,123 @@
 {
-  "generated_at": "2026-09-23T11:53:52.787718Z",
+  "generated_at": "2026-09-23T17:19:37.393567Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
+    {
+      "story_id": "story_ef9959cf1c4e",
+      "title": "Google DeepMind 发布 Gemini 3.8 Flash TTS 与 Flash-Lite TTS 语音生成模型 / Gemini 3.8 text-to-speech says hello",
+      "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+      "primary_url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+      "source": "Google DeepMind",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "893ea26945a167f32462040ced977e07c6e6fb19",
+          "title": "Google DeepMind 发布 Gemini 3.8 Flash TTS 与 Flash-Lite TTS 语音生成模型 / Gemini 3.8 text-to-speech says hello",
+          "title_zh": "Google DeepMind 发布 Gemini 3.8 Flash TTS 与 Flash-Lite TTS 语音生成模型",
+          "title_en": "Gemini 3.8 text-to-speech says hello",
+          "title_original": "Gemini 3.8 text-to-speech says hello",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T15:25:14Z"
+        },
+        {
+          "id": "9811fef985a6515daae09535331196c75370e63d",
+          "title": "Gemini 3.8 text-to-speech says hello",
+          "title_zh": null,
+          "title_en": "Gemini 3.8 text-to-speech says hello",
+          "title_original": "Gemini 3.8 text-to-speech says hello",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49817615",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-23T15:29:23Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Google DeepMind",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "893ea26945a167f32462040ced977e07c6e6fb19",
+          "title": "Google DeepMind 发布 Gemini 3.8 Flash TTS 与 Flash-Lite TTS 语音生成模型 / Gemini 3.8 text-to-speech says hello",
+          "title_zh": "Google DeepMind 发布 Gemini 3.8 Flash TTS 与 Flash-Lite TTS 语音生成模型",
+          "title_en": "Gemini 3.8 text-to-speech says hello",
+          "title_original": "Gemini 3.8 text-to-speech says hello",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T15:25:14Z"
+        },
+        {
+          "id": "9811fef985a6515daae09535331196c75370e63d",
+          "title": "Gemini 3.8 text-to-speech says hello",
+          "title_zh": null,
+          "title_en": "Gemini 3.8 text-to-speech says hello",
+          "title_original": "Gemini 3.8 text-to-speech says hello",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49817615",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-23T15:29:23Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.8737,
+      "importance": 0.8737,
+      "importance_score": 0.8737,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9818,
+        "story_heat": 0.25,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "multi_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-23T15:25:14Z",
+      "latest_at": "2026-09-23T15:29:23Z",
+      "primary_item": {
+        "id": "893ea26945a167f32462040ced977e07c6e6fb19",
+        "title": "Google DeepMind 发布 Gemini 3.8 Flash TTS 与 Flash-Lite TTS 语音生成模型 / Gemini 3.8 text-to-speech says hello",
+        "title_zh": "Google DeepMind 发布 Gemini 3.8 Flash TTS 与 Flash-Lite TTS 语音生成模型",
+        "title_en": "Gemini 3.8 text-to-speech says hello",
+        "title_original": "Gemini 3.8 text-to-speech says hello",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech",
+        "source": "Google DeepMind",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8737,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-23T17:20:52.871632Z"
+      }
+    },
     {
       "story_id": "story_a809a02e7e68",
       "title": "OpenAI 为 GPT-6 推出改进的提示词缓存系统与诊断工具 / Better prompt caching for GPT-6",
@@ -48,15 +163,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8439,
-      "importance": 0.8439,
-      "importance_score": 0.8439,
+      "score": 0.836,
+      "importance": 0.836,
+      "importance_score": 0.836,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.8664,
+        "recency": 0.8223,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,149 +200,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
-      }
-    },
-    {
-      "story_id": "story_b742684d2aef",
-      "title": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40% / Introducing Claude Opus 5.5",
-      "url": "https://www.anthropic.com/claude-opus-5-5",
-      "primary_url": "https://www.anthropic.com/claude-opus-5-5",
-      "source": "Anthropic：Newsroom（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "a58405996672d080264a33742ee41cde0d801b04",
-          "title": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40% / Introducing Claude Opus 5.5",
-          "title_zh": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40%",
-          "title_en": "Introducing Claude Opus 5.5",
-          "title_original": "Introducing Claude Opus 5.5",
-          "summary": "Anthropic 发布 Claude Opus 5.5，为 Claude 5.5 系列首个模型，在多数工作上达到 Fable 5.1 水平，典型负载成本较 Opus 5 低 40%。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-opus-5-5",
-          "source": "Anthropic：Newsroom（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T16:53:30.664000Z"
-        },
-        {
-          "id": "9a2b419139d60d2fee2d5f5e93ec055dd8a3fd45",
-          "title": "克劳德 作品5.5",
-          "title_zh": "克劳德 作品5.5",
-          "title_en": null,
-          "title_original": "克劳德 作品5.5",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-opus-5-5",
-          "source": "www.anthropic.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-22T16:51:25.134000Z"
-        },
-        {
-          "id": "cd5547068fd6105b5559404bf52b81bb857f3b81",
-          "title": "Claude 作品5.5 / Claude Opus 5.5",
-          "title_zh": "Claude 作品5.5",
-          "title_en": "Claude Opus 5.5",
-          "title_original": "Claude Opus 5.5",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-opus-5-5",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-22T16:29:05Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Anthropic：Newsroom（网页）",
-        "Hacker News (黑客新闻)",
-        "www.anthropic.com"
-      ],
-      "items": [
-        {
-          "id": "a58405996672d080264a33742ee41cde0d801b04",
-          "title": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40% / Introducing Claude Opus 5.5",
-          "title_zh": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40%",
-          "title_en": "Introducing Claude Opus 5.5",
-          "title_original": "Introducing Claude Opus 5.5",
-          "summary": "Anthropic 发布 Claude Opus 5.5，为 Claude 5.5 系列首个模型，在多数工作上达到 Fable 5.1 水平，典型负载成本较 Opus 5 低 40%。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-opus-5-5",
-          "source": "Anthropic：Newsroom（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T16:53:30.664000Z"
-        },
-        {
-          "id": "9a2b419139d60d2fee2d5f5e93ec055dd8a3fd45",
-          "title": "克劳德 作品5.5",
-          "title_zh": "克劳德 作品5.5",
-          "title_en": null,
-          "title_original": "克劳德 作品5.5",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-opus-5-5",
-          "source": "www.anthropic.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-22T16:51:25.134000Z"
-        },
-        {
-          "id": "cd5547068fd6105b5559404bf52b81bb857f3b81",
-          "title": "Claude 作品5.5 / Claude Opus 5.5",
-          "title_zh": "Claude 作品5.5",
-          "title_en": "Claude Opus 5.5",
-          "title_original": "Claude Opus 5.5",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/claude-opus-5-5",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-22T16:29:05Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.8279,
-      "importance": 0.8279,
-      "importance_score": 0.8279,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.86,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8328,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-22T16:29:05Z",
-      "latest_at": "2026-09-22T16:53:30.664000Z",
-      "primary_item": {
-        "id": "a58405996672d080264a33742ee41cde0d801b04",
-        "title": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40% / Introducing Claude Opus 5.5",
-        "title_zh": "Anthropic 发布 Claude Opus 5.5，成本较 Opus 5 降低 40%",
-        "title_en": "Introducing Claude Opus 5.5",
-        "title_original": "Introducing Claude Opus 5.5",
-        "summary": "Anthropic 发布 Claude Opus 5.5，为 Claude 5.5 系列首个模型，在多数工作上达到 Fable 5.1 水平，典型负载成本较 Opus 5 低 40%。",
-        "recommend_reason_zh": null,
-        "url": "https://www.anthropic.com/claude-opus-5-5",
-        "source": "Anthropic：Newsroom（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8558,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
@@ -275,15 +248,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8465,
-      "importance": 0.8465,
-      "importance_score": 0.8465,
+      "score": 0.8383,
+      "importance": 0.8383,
+      "importance_score": 0.8383,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.8918,
+        "recency": 0.8464,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -312,121 +285,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
-      "story_id": "story_dd6c00c25605",
-      "title": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58 / Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
-      "url": "https://artificialanalysis.ai/articles/claude-opus-5-5",
-      "primary_url": "https://artificialanalysis.ai/articles/claude-opus-5-5",
-      "source": "Artificial Analysis 完整文章（网页）",
-      "source_name": "AI HOT",
+      "story_id": "story_e8d7d86b4448",
+      "title": "**Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization**",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+      "primary_url": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+      "source": "Hugging Face Blog",
+      "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "1541abae265f3c9579c862d5b6440dd57020c3bc",
-          "title": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58 / Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
-          "title_zh": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58",
-          "title_en": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
-          "title_original": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
-          "summary": "Artificial Analysis 评测显示 Claude Opus 5.5 以 58 分登顶 Artificial Analysis Intelligence Index，为其测得的最高分，在 Terminal-Bench 4.0 上与 GPT-6 Astra 持平（59.6%）。",
+          "id": "23cce1b2008384ca31fa4e48dfdf1e5411098536",
+          "title": "**Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization**",
+          "title_zh": null,
+          "title_en": "**Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization**",
+          "title_original": "**Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization**",
+          "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://artificialanalysis.ai/articles/claude-opus-5-5",
-          "source": "Artificial Analysis 完整文章（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T17:41:36.934000Z"
-        },
-        {
-          "id": "6a8ca796a816ed8176056297a444a3d87cc9ef3d",
-          "title": "Claude Opus 5.5 登顶 Artificial Analysis Intelligence Index，并降价 20% / Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index， along with a 20% p…",
-          "title_zh": "Claude Opus 5.5 登顶 Artificial Analysis Intelligence Index，并降价 20%",
-          "title_en": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index， along with a 20% p…",
-          "title_original": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index， along with a 20% p…",
-          "summary": "Artificial Analysis 评测显示 Claude Opus 5.5 以 58 分登顶 Artificial Analysis Intelligence Index，为其实测最高分。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ArtificialAnlys/status/2102438210798514391",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T16:41:45Z"
+          "url": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T13:17:01Z"
         }
       ],
-      "source_count": 2,
+      "source_count": 1,
       "source_names": [
-        "Artificial Analysis 完整文章（网页）",
-        "X：Artificial Analysis (@ArtificialAnlys)"
+        "Hugging Face Blog"
       ],
       "items": [
         {
-          "id": "1541abae265f3c9579c862d5b6440dd57020c3bc",
-          "title": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58 / Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
-          "title_zh": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58",
-          "title_en": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
-          "title_original": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
-          "summary": "Artificial Analysis 评测显示 Claude Opus 5.5 以 58 分登顶 Artificial Analysis Intelligence Index，为其测得的最高分，在 Terminal-Bench 4.0 上与 GPT-6 Astra 持平（59.6%）。",
+          "id": "23cce1b2008384ca31fa4e48dfdf1e5411098536",
+          "title": "**Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization**",
+          "title_zh": null,
+          "title_en": "**Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization**",
+          "title_original": "**Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization**",
+          "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://artificialanalysis.ai/articles/claude-opus-5-5",
-          "source": "Artificial Analysis 完整文章（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T17:41:36.934000Z"
-        },
-        {
-          "id": "6a8ca796a816ed8176056297a444a3d87cc9ef3d",
-          "title": "Claude Opus 5.5 登顶 Artificial Analysis Intelligence Index，并降价 20% / Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index， along with a 20% p…",
-          "title_zh": "Claude Opus 5.5 登顶 Artificial Analysis Intelligence Index，并降价 20%",
-          "title_en": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index， along with a 20% p…",
-          "title_original": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index， along with a 20% p…",
-          "summary": "Artificial Analysis 评测显示 Claude Opus 5.5 以 58 分登顶 Artificial Analysis Intelligence Index，为其实测最高分。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ArtificialAnlys/status/2102438210798514391",
-          "source": "X：Artificial Analysis (@ArtificialAnlys)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T16:41:45Z"
+          "url": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T13:17:01Z"
         }
       ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.8027,
-      "importance": 0.8027,
-      "importance_score": 0.8027,
-      "importance_label": "行业动态",
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8531,
+      "importance": 0.8531,
+      "importance_score": 0.8531,
+      "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.85,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8392,
-        "story_heat": 0.25,
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.95,
+        "recency": 0.9618,
+        "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "industry",
+      "category": "official",
       "reasons": [
-        "multi_source",
+        "official_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-22T16:41:45Z",
-      "latest_at": "2026-09-22T17:41:36.934000Z",
+      "earliest_at": "2026-09-23T13:17:01Z",
+      "latest_at": "2026-09-23T13:17:01Z",
       "primary_item": {
-        "id": "1541abae265f3c9579c862d5b6440dd57020c3bc",
-        "title": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58 / Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
-        "title_zh": "Claude Opus 5.5 登顶 Artificial Analysis 智能指数，得分 58",
-        "title_en": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
-        "title_original": "Claude Opus 5.5 takes the top spot on the Artificial Analysis Intelligence Index",
-        "summary": "Artificial Analysis 评测显示 Claude Opus 5.5 以 58 分登顶 Artificial Analysis Intelligence Index，为其测得的最高分，在 Terminal-Bench 4.0 上与 GPT-6 Astra 持平（59.6%）。",
+        "id": "23cce1b2008384ca31fa4e48dfdf1e5411098536",
+        "title": "**Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization**",
+        "title_zh": null,
+        "title_en": "**Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization**",
+        "title_original": "**Know Who Spoke When: Build Real-Time, Multi-Speaker AI with NVIDIA Nemotron 3 Diarization**",
+        "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://artificialanalysis.ai/articles/claude-opus-5-5",
-        "source": "Artificial Analysis 完整文章（网页）",
-        "source_name": "AI HOT"
+        "url": "https://huggingface.co/blog/nvidia/nemotron-diarization",
+        "source": "Hugging Face Blog",
+        "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8308,
+      "peak_score": 0.8531,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
@@ -618,15 +562,15 @@
       ],
       "item_count": 6,
       "duplicate_count": 6,
-      "score": 0.8077,
-      "importance": 0.8077,
-      "importance_score": 0.8077,
+      "score": 0.7999,
+      "importance": 0.7999,
+      "importance_score": 0.7999,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.86,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8504,
+        "recency": 0.8071,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -655,7 +599,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
@@ -703,15 +647,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8031,
-      "importance": 0.8031,
-      "importance_score": 0.8031,
+      "score": 0.7953,
+      "importance": 0.7953,
+      "importance_score": 0.7953,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8449,
+        "recency": 0.8019,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -739,7 +683,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
@@ -845,15 +789,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.8315,
-      "importance": 0.8315,
-      "importance_score": 0.8315,
+      "score": 0.8238,
+      "importance": 0.8238,
+      "importance_score": 0.8238,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8417,
+        "recency": 0.7989,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -882,63 +826,148 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
-      "story_id": "story_d55a152b616f",
-      "title": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型 / Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
-      "url": "https://x.com/claudeai/status/2102435511222890900",
-      "primary_url": "https://x.com/claudeai/status/2102435511222890900",
-      "source": "X：Claude (@claudeai)",
-      "source_name": "AI HOT",
+      "story_id": "story_9326fab27bb2",
+      "title": "Advancing Private AI Compute with secure, server-side memory",
+      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory",
+      "primary_url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory",
+      "source": "Google DeepMind",
+      "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "aa9d73d1a7f42cad7f0e52843e35b82a9eade57a",
-          "title": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型 / Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
-          "title_zh": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型",
-          "title_en": "Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
-          "title_original": "Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
-          "summary": "Anthropic 发布 Claude Opus 5.5，是 Claude 5.5 系列的首个模型。官方称其在多数任务上达到 Claude Fable 5.1 的水平，运行成本比 Opus 5 低 40%。",
+          "id": "1076f771e7361676a84c00d4d0f97e44d0ab979e",
+          "title": "Advancing Private AI Compute with secure, server-side memory",
+          "title_zh": null,
+          "title_en": "Advancing Private AI Compute with secure, server-side memory",
+          "title_original": "Advancing Private AI Compute with secure, server-side memory",
+          "summary": "Introducing private, server-side memory to Private AI Compute for personal AI.",
           "recommend_reason_zh": null,
-          "url": "https://x.com/claudeai/status/2102435511222890900",
-          "source": "X：Claude (@claudeai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T16:31:01Z"
+          "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T16:00:57Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "X：Claude (@claudeai)"
+        "Google DeepMind"
       ],
       "items": [
         {
-          "id": "aa9d73d1a7f42cad7f0e52843e35b82a9eade57a",
-          "title": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型 / Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
-          "title_zh": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型",
-          "title_en": "Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
-          "title_original": "Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
-          "summary": "Anthropic 发布 Claude Opus 5.5，是 Claude 5.5 系列的首个模型。官方称其在多数任务上达到 Claude Fable 5.1 的水平，运行成本比 Opus 5 低 40%。",
+          "id": "1076f771e7361676a84c00d4d0f97e44d0ab979e",
+          "title": "Advancing Private AI Compute with secure, server-side memory",
+          "title_zh": null,
+          "title_en": "Advancing Private AI Compute with secure, server-side memory",
+          "title_original": "Advancing Private AI Compute with secure, server-side memory",
+          "summary": "Introducing private, server-side memory to Private AI Compute for personal AI.",
           "recommend_reason_zh": null,
-          "url": "https://x.com/claudeai/status/2102435511222890900",
-          "source": "X：Claude (@claudeai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T16:31:01Z"
+          "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T16:00:57Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7794,
-      "importance": 0.7794,
-      "importance_score": 0.7794,
+      "score": 0.8417,
+      "importance": 0.8417,
+      "importance_score": 0.8417,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.9875,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-23T16:00:57Z",
+      "latest_at": "2026-09-23T16:00:57Z",
+      "primary_item": {
+        "id": "1076f771e7361676a84c00d4d0f97e44d0ab979e",
+        "title": "Advancing Private AI Compute with secure, server-side memory",
+        "title_zh": null,
+        "title_en": "Advancing Private AI Compute with secure, server-side memory",
+        "title_original": "Advancing Private AI Compute with secure, server-side memory",
+        "summary": "Introducing private, server-side memory to Private AI Compute for personal AI.",
+        "recommend_reason_zh": null,
+        "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory",
+        "source": "Google DeepMind",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8417,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-23T17:20:52.871632Z"
+      }
+    },
+    {
+      "story_id": "story_0f3ada4f2787",
+      "title": "Antigravity SDK 支持本地模型，可完全离线运行智能体 / Introducing Support for Local AI Models in the Antigravity SDK",
+      "url": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk",
+      "primary_url": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk",
+      "source": "Google Developers Blog（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "16eb893ecde629842351ba32ee8d1b58080f12b8",
+          "title": "Antigravity SDK 支持本地模型，可完全离线运行智能体 / Introducing Support for Local AI Models in the Antigravity SDK",
+          "title_zh": "Antigravity SDK 支持本地模型，可完全离线运行智能体",
+          "title_en": "Introducing Support for Local AI Models in the Antigravity SDK",
+          "title_original": "Introducing Support for Local AI Models in the Antigravity SDK",
+          "summary": "Google 宣布 Antigravity SDK 支持本地模型工作流，首发通过 Google AI Edge 的 LiteRT 支持 Gemma 4 26B A4B，可完全离线运行智能体，建议机器配备 >24GB VRAM 或统一内存。",
+          "recommend_reason_zh": null,
+          "url": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk",
+          "source": "Google Developers Blog（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T17:09:01.108000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Google Developers Blog（RSS）"
+      ],
+      "items": [
+        {
+          "id": "16eb893ecde629842351ba32ee8d1b58080f12b8",
+          "title": "Antigravity SDK 支持本地模型，可完全离线运行智能体 / Introducing Support for Local AI Models in the Antigravity SDK",
+          "title_zh": "Antigravity SDK 支持本地模型，可完全离线运行智能体",
+          "title_en": "Introducing Support for Local AI Models in the Antigravity SDK",
+          "title_original": "Introducing Support for Local AI Models in the Antigravity SDK",
+          "summary": "Google 宣布 Antigravity SDK 支持本地模型工作流，首发通过 Google AI Edge 的 LiteRT 支持 Gemma 4 26B A4B，可完全离线运行智能体，建议机器配备 >24GB VRAM 或统一内存。",
+          "recommend_reason_zh": null,
+          "url": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk",
+          "source": "Google Developers Blog（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T17:09:01.108000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8097,
+      "importance": 0.8097,
+      "importance_score": 0.8097,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8298,
+        "recency": 0.9983,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -947,139 +976,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-22T16:31:01Z",
-      "latest_at": "2026-09-22T16:31:01Z",
+      "earliest_at": "2026-09-23T17:09:01.108000Z",
+      "latest_at": "2026-09-23T17:09:01.108000Z",
       "primary_item": {
-        "id": "aa9d73d1a7f42cad7f0e52843e35b82a9eade57a",
-        "title": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型 / Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
-        "title_zh": "Anthropic 发布 Claude Opus 5.5，Claude 5.5 系列首个模型",
-        "title_en": "Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
-        "title_original": "Introducing Claude Opus 5.5， the first model in our new Claude 5.5 family. It performs at the level…",
-        "summary": "Anthropic 发布 Claude Opus 5.5，是 Claude 5.5 系列的首个模型。官方称其在多数任务上达到 Claude Fable 5.1 的水平，运行成本比 Opus 5 低 40%。",
+        "id": "16eb893ecde629842351ba32ee8d1b58080f12b8",
+        "title": "Antigravity SDK 支持本地模型，可完全离线运行智能体 / Introducing Support for Local AI Models in the Antigravity SDK",
+        "title_zh": "Antigravity SDK 支持本地模型，可完全离线运行智能体",
+        "title_en": "Introducing Support for Local AI Models in the Antigravity SDK",
+        "title_original": "Introducing Support for Local AI Models in the Antigravity SDK",
+        "summary": "Google 宣布 Antigravity SDK 支持本地模型工作流，首发通过 Google AI Edge 的 LiteRT 支持 Gemma 4 26B A4B，可完全离线运行智能体，建议机器配备 >24GB VRAM 或统一内存。",
         "recommend_reason_zh": null,
-        "url": "https://x.com/claudeai/status/2102435511222890900",
-        "source": "X：Claude (@claudeai)",
+        "url": "https://developers.googleblog.com/introducing-support-for-local-ai-models-in-the-antigravity-sdk",
+        "source": "Google Developers Blog（RSS）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.8071,
+      "peak_score": 0.8097,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
-      }
-    },
-    {
-      "story_id": "story_b46d415284c7",
-      "title": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
-      "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
-      "source": "Claude Code：GitHub Releases（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "49af8e4a3e60816623ce83b00bca263c43131f79",
-          "title": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
-          "title_zh": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
-          "title_en": null,
-          "title_original": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
-          "summary": "Claude Code 发布 v2.1.280，新增 Claude Opus 5.5（claude-opus-5-5）为默认 Opus 模型，支持 1M 上下文，价格为 $4/$20 per Mtok、缓存读取 $0.20/Mtok；同时将 Pro 和 Team Standard 计划的默认模型从 Sonnet 改为 Opus。",
-          "recommend_reason_zh": null,
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
-          "source": "Claude Code：GitHub Releases（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T16:38:14Z"
-        },
-        {
-          "id": "a4de480d5f72865969ff27da32d2f90ad5dfadf1",
-          "title": "v2.1.280",
-          "title_zh": null,
-          "title_en": null,
-          "title_original": "v2.1.280",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
-          "source": "Claude Code Releases",
-          "source_name": "Curated Media",
-          "site_id": "curated_media",
-          "published_at": "2026-09-22T16:38:14Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Claude Code Releases",
-        "Claude Code：GitHub Releases（RSS）"
-      ],
-      "items": [
-        {
-          "id": "49af8e4a3e60816623ce83b00bca263c43131f79",
-          "title": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
-          "title_zh": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
-          "title_en": null,
-          "title_original": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
-          "summary": "Claude Code 发布 v2.1.280，新增 Claude Opus 5.5（claude-opus-5-5）为默认 Opus 模型，支持 1M 上下文，价格为 $4/$20 per Mtok、缓存读取 $0.20/Mtok；同时将 Pro 和 Team Standard 计划的默认模型从 Sonnet 改为 Opus。",
-          "recommend_reason_zh": null,
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
-          "source": "Claude Code：GitHub Releases（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T16:38:14Z"
-        },
-        {
-          "id": "a4de480d5f72865969ff27da32d2f90ad5dfadf1",
-          "title": "v2.1.280",
-          "title_zh": null,
-          "title_en": null,
-          "title_original": "v2.1.280",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
-          "source": "Claude Code Releases",
-          "source_name": "Curated Media",
-          "site_id": "curated_media",
-          "published_at": "2026-09-22T16:38:14Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.7735,
-      "importance": 0.7735,
-      "importance_score": 0.7735,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.68,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8308,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-22T16:38:14Z",
-      "latest_at": "2026-09-22T16:38:14Z",
-      "primary_item": {
-        "id": "49af8e4a3e60816623ce83b00bca263c43131f79",
-        "title": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
-        "title_zh": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
-        "title_en": null,
-        "title_original": "Claude Code v2.1.280 发布，新增 Claude Opus 5.5 为默认 Opus 模型",
-        "summary": "Claude Code 发布 v2.1.280，新增 Claude Opus 5.5（claude-opus-5-5）为默认 Opus 模型，支持 1M 上下文，价格为 $4/$20 per Mtok、缓存读取 $0.20/Mtok；同时将 Pro 和 Team Standard 计划的默认模型从 Sonnet 改为 Opus。",
-        "recommend_reason_zh": null,
-        "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.280",
-        "source": "Claude Code：GitHub Releases（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8013,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
@@ -1127,15 +1043,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7766,
-      "importance": 0.7766,
-      "importance_score": 0.7766,
+      "score": 0.7688,
+      "importance": 0.7688,
+      "importance_score": 0.7688,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8498,
+        "recency": 0.8065,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1163,7 +1079,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
@@ -1211,15 +1127,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7756,
-      "importance": 0.7756,
-      "importance_score": 0.7756,
+      "score": 0.7679,
+      "importance": 0.7679,
+      "importance_score": 0.7679,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8444,
+        "recency": 0.8014,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1247,91 +1163,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
-      }
-    },
-    {
-      "story_id": "story_cd9dba942535",
-      "title": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30% / Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
-      "url": "https://x.com/mark_k/status/2102437510731219218",
-      "primary_url": "https://x.com/mark_k/status/2102437510731219218",
-      "source": "@mark_k",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "f954331306c3da6009c3265f549120d3121642d6",
-          "title": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30% / Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
-          "title_zh": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30%",
-          "title_en": "Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
-          "title_original": "Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
-          "summary": "Anthropic 发布 Claude Opus 5.5，官方称典型工作负载成本比 Opus 5 低 40%，输出速度提升超 30%。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/mark_k/status/2102437510731219218",
-          "source": "@mark_k",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T16:38:58Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "@mark_k"
-      ],
-      "items": [
-        {
-          "id": "f954331306c3da6009c3265f549120d3121642d6",
-          "title": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30% / Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
-          "title_zh": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30%",
-          "title_en": "Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
-          "title_original": "Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
-          "summary": "Anthropic 发布 Claude Opus 5.5，官方称典型工作负载成本比 Opus 5 低 40%，输出速度提升超 30%。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/mark_k/status/2102437510731219218",
-          "source": "@mark_k",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T16:38:58Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7702,
-      "importance": 0.7702,
-      "importance_score": 0.7702,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.83,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8308,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-22T16:38:58Z",
-      "latest_at": "2026-09-22T16:38:58Z",
-      "primary_item": {
-        "id": "f954331306c3da6009c3265f549120d3121642d6",
-        "title": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30% / Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
-        "title_zh": "Anthropic 发布 Claude Opus 5.5，成本降低 40% 且速度提升 30%",
-        "title_en": "Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
-        "title_original": "Claude Opus 5.5 is here. More capable， faster， and substantially cheaper. @AnthropicAI keeps pushing…",
-        "summary": "Anthropic 发布 Claude Opus 5.5，官方称典型工作负载成本比 Opus 5 低 40%，输出速度提升超 30%。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/mark_k/status/2102437510731219218",
-        "source": "@mark_k",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.798,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
@@ -1379,15 +1211,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7964,
-      "importance": 0.7964,
-      "importance_score": 0.7964,
+      "score": 0.7874,
+      "importance": 0.7874,
+      "importance_score": 0.7874,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9743,
+        "recency": 0.9247,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1415,7 +1247,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
@@ -1492,15 +1324,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7748,
-      "importance": 0.7748,
-      "importance_score": 0.7748,
+      "score": 0.7666,
+      "importance": 0.7666,
+      "importance_score": 0.7666,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8899,
+        "recency": 0.8446,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1528,7 +1360,176 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
+      }
+    },
+    {
+      "story_id": "story_d5568a9a87d3",
+      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+      "url": "https://openai.com/index/ringg",
+      "primary_url": "https://openai.com/index/ringg",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "48e7e143951a807062656727fb44afb909b365f9",
+          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "title_zh": null,
+          "title_en": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "title_original": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/ringg",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-24T12:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "48e7e143951a807062656727fb44afb909b365f9",
+          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "title_zh": null,
+          "title_en": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "title_original": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/ringg",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-24T12:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.852,
+      "importance": 0.852,
+      "importance_score": 0.852,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-23T17:19:37.393567Z",
+      "latest_at": "2026-09-23T17:19:37.393567Z",
+      "primary_item": {
+        "id": "48e7e143951a807062656727fb44afb909b365f9",
+        "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+        "title_zh": null,
+        "title_en": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+        "title_original": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+        "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/ringg",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.852,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-23T17:20:52.871632Z"
+      }
+    },
+    {
+      "story_id": "story_ae0ae182296f",
+      "title": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降 / GPT-6 Sol and Luna push the cost efficiency frontier",
+      "url": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
+      "primary_url": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
+      "source": "Artificial Analysis 完整文章（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "33185a5093da65164f7e9f903f5d8a83628b7089",
+          "title": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降 / GPT-6 Sol and Luna push the cost efficiency frontier",
+          "title_zh": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降",
+          "title_en": "GPT-6 Sol and Luna push the cost efficiency frontier",
+          "title_original": "GPT-6 Sol and Luna push the cost efficiency frontier",
+          "summary": "Artificial Analysis 评测 GPT-6 Sol 和 Luna，价格约为 GPT-5.6 同名型号的一半，Sol 定价 $2/$10 每百万输入/输出 token，Luna 为 $0.10/$0.50。",
+          "recommend_reason_zh": null,
+          "url": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
+          "source": "Artificial Analysis 完整文章（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T19:41:37.417000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Artificial Analysis 完整文章（网页）"
+      ],
+      "items": [
+        {
+          "id": "33185a5093da65164f7e9f903f5d8a83628b7089",
+          "title": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降 / GPT-6 Sol and Luna push the cost efficiency frontier",
+          "title_zh": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降",
+          "title_en": "GPT-6 Sol and Luna push the cost efficiency frontier",
+          "title_original": "GPT-6 Sol and Luna push the cost efficiency frontier",
+          "summary": "Artificial Analysis 评测 GPT-6 Sol 和 Luna，价格约为 GPT-5.6 同名型号的一半，Sol 定价 $2/$10 每百万输入/输出 token，Luna 为 $0.10/$0.50。",
+          "recommend_reason_zh": null,
+          "url": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
+          "source": "Artificial Analysis 完整文章（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-22T19:41:37.417000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7608,
+      "importance": 0.7608,
+      "importance_score": 0.7608,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.81,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.812,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-22T19:41:37.417000Z",
+      "latest_at": "2026-09-22T19:41:37.417000Z",
+      "primary_item": {
+        "id": "33185a5093da65164f7e9f903f5d8a83628b7089",
+        "title": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降 / GPT-6 Sol and Luna push the cost efficiency frontier",
+        "title_zh": "Artificial Analysis 评测 GPT-6 Sol 和 Luna：成本减半但各评测有升有降",
+        "title_en": "GPT-6 Sol and Luna push the cost efficiency frontier",
+        "title_original": "GPT-6 Sol and Luna push the cost efficiency frontier",
+        "summary": "Artificial Analysis 评测 GPT-6 Sol 和 Luna，价格约为 GPT-5.6 同名型号的一半，Sol 定价 $2/$10 每百万输入/输出 token，Luna 为 $0.10/$0.50。",
+        "recommend_reason_zh": null,
+        "url": "https://artificialanalysis.ai/articles/gpt-6-sol-and-luna-push-the-cost-efficiency-frontier",
+        "source": "Artificial Analysis 完整文章（网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7915,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
@@ -1576,15 +1577,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7785,
-      "importance": 0.7785,
-      "importance_score": 0.7785,
+      "score": 0.7703,
+      "importance": 0.7703,
+      "importance_score": 0.7703,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8918,
+        "recency": 0.8464,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1612,63 +1613,63 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
-      "story_id": "story_26a88cfe2029",
-      "title": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5 / Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
-      "url": "https://x.com/OpenRouter/status/2102438921213014078",
-      "primary_url": "https://x.com/OpenRouter/status/2102438921213014078",
-      "source": "X：OpenRouter (@OpenRouter)",
+      "story_id": "story_b1f92db0d5f6",
+      "title": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法 / How to prepare for AI-driven code modernization projects",
+      "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects",
+      "primary_url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects",
+      "source": "Claude：Blog（网页）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "532b9aafd26e50f01008c5b21312b333f57f8659",
-          "title": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5 / Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
-          "title_zh": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5",
-          "title_en": "Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
-          "title_original": "Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
-          "summary": "Anthropic 的 Claude Opus 5.5 上线 OpenRouter，是 Claude 5.5 系列首个模型，在智能体编码、知识工作和计算机使用上领先 Opus 5 和 Fable 5.1。提供 1M 上下文窗口，定价为每百万输入 token $4、输出 $20，比 Opus 5 低 20%。",
+          "id": "c38dd08cde842881c7bda8ca0164a3bea368d893",
+          "title": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法 / How to prepare for AI-driven code modernization projects",
+          "title_zh": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法",
+          "title_en": "How to prepare for AI-driven code modernization projects",
+          "title_original": "How to prepare for AI-driven code modernization projects",
+          "summary": "Anthropic 在 Notes from the Field 系列中分享管理大型代码现代化项目的经验，称原本需数年的现代化可在数月或数周内完成，瓶颈从写代码转向组织动员。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/OpenRouter/status/2102438921213014078",
-          "source": "X：OpenRouter (@OpenRouter)",
+          "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects",
+          "source": "Claude：Blog（网页）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-22T16:44:34Z"
+          "published_at": "2026-09-23T14:33:15.378000Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "X：OpenRouter (@OpenRouter)"
+        "Claude：Blog（网页）"
       ],
       "items": [
         {
-          "id": "532b9aafd26e50f01008c5b21312b333f57f8659",
-          "title": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5 / Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
-          "title_zh": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5",
-          "title_en": "Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
-          "title_original": "Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
-          "summary": "Anthropic 的 Claude Opus 5.5 上线 OpenRouter，是 Claude 5.5 系列首个模型，在智能体编码、知识工作和计算机使用上领先 Opus 5 和 Fable 5.1。提供 1M 上下文窗口，定价为每百万输入 token $4、输出 $20，比 Opus 5 低 20%。",
+          "id": "c38dd08cde842881c7bda8ca0164a3bea368d893",
+          "title": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法 / How to prepare for AI-driven code modernization projects",
+          "title_zh": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法",
+          "title_en": "How to prepare for AI-driven code modernization projects",
+          "title_original": "How to prepare for AI-driven code modernization projects",
+          "summary": "Anthropic 在 Notes from the Field 系列中分享管理大型代码现代化项目的经验，称原本需数年的现代化可在数月或数周内完成，瓶颈从写代码转向组织动员。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/OpenRouter/status/2102438921213014078",
-          "source": "X：OpenRouter (@OpenRouter)",
+          "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects",
+          "source": "Claude：Blog（网页）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-22T16:44:34Z"
+          "published_at": "2026-09-23T14:33:15.378000Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7857,
-      "importance": 0.7857,
-      "importance_score": 0.7857,
+      "score": 0.7843,
+      "importance": 0.7843,
+      "importance_score": 0.7843,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.72,
+        "editorial": 0.63,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8316,
+        "recency": 0.9737,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1677,26 +1678,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-22T16:44:34Z",
-      "latest_at": "2026-09-22T16:44:34Z",
+      "earliest_at": "2026-09-23T14:33:15.378000Z",
+      "latest_at": "2026-09-23T14:33:15.378000Z",
       "primary_item": {
-        "id": "532b9aafd26e50f01008c5b21312b333f57f8659",
-        "title": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5 / Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
-        "title_zh": "Claude Opus 5.5 上线 OpenRouter，智能体编码等能力领先 Opus 5",
-        "title_en": "Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
-        "title_original": "Claude Opus 5.5 from @AnthropicAI is live on OpenRouter！ The first model in the Claude 5.5 family l…",
-        "summary": "Anthropic 的 Claude Opus 5.5 上线 OpenRouter，是 Claude 5.5 系列首个模型，在智能体编码、知识工作和计算机使用上领先 Opus 5 和 Fable 5.1。提供 1M 上下文窗口，定价为每百万输入 token $4、输出 $20，比 Opus 5 低 20%。",
+        "id": "c38dd08cde842881c7bda8ca0164a3bea368d893",
+        "title": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法 / How to prepare for AI-driven code modernization projects",
+        "title_zh": "Anthropic 前线工程师分享 AI 驱动代码现代化项目的六步准备方法",
+        "title_en": "How to prepare for AI-driven code modernization projects",
+        "title_original": "How to prepare for AI-driven code modernization projects",
+        "summary": "Anthropic 在 Notes from the Field 系列中分享管理大型代码现代化项目的经验，称原本需数年的现代化可在数月或数周内完成，瓶颈从写代码转向组织动员。",
         "recommend_reason_zh": null,
-        "url": "https://x.com/OpenRouter/status/2102438921213014078",
-        "source": "X：OpenRouter (@OpenRouter)",
+        "url": "https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects",
+        "source": "Claude：Blog（网页）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.8135,
+      "peak_score": 0.7843,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
@@ -1744,22 +1745,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7574,
-      "importance": 0.7574,
-      "importance_score": 0.7574,
+      "score": 0.7495,
+      "importance": 0.7495,
+      "importance_score": 0.7495,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8598,
+        "recency": 0.816,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-22T20:12:31Z",
       "latest_at": "2026-09-22T20:12:31Z",
@@ -1780,7 +1780,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
@@ -1828,15 +1828,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7623,
-      "importance": 0.7623,
-      "importance_score": 0.7623,
+      "score": 0.7545,
+      "importance": 0.7545,
+      "importance_score": 0.7545,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8539,
+        "recency": 0.8105,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1864,92 +1864,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
-      }
-    },
-    {
-      "story_id": "story_8242d9eaeeac",
-      "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-      "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-      "primary_url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "ceaf306e00250c6865fbfd0093a3e558a36e3749",
-          "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-          "title_zh": null,
-          "title_en": "Parallel cut research time and cost in half with GPT‑6 Astra",
-          "title_original": "Parallel cut research time and cost in half with GPT‑6 Astra",
-          "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-22T12:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "ceaf306e00250c6865fbfd0093a3e558a36e3749",
-          "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-          "title_zh": null,
-          "title_en": "Parallel cut research time and cost in half with GPT‑6 Astra",
-          "title_original": "Parallel cut research time and cost in half with GPT‑6 Astra",
-          "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-22T12:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.823,
-      "importance": 0.823,
-      "importance_score": 0.823,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.7945,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-22T12:00:00Z",
-      "latest_at": "2026-09-22T12:00:00Z",
-      "primary_item": {
-        "id": "ceaf306e00250c6865fbfd0093a3e558a36e3749",
-        "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-        "title_zh": null,
-        "title_en": "Parallel cut research time and cost in half with GPT‑6 Astra",
-        "title_original": "Parallel cut research time and cost in half with GPT‑6 Astra",
-        "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8392,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     },
     {
@@ -1997,22 +1912,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7545,
-      "importance": 0.7545,
-      "importance_score": 0.7545,
+      "score": 0.7468,
+      "importance": 0.7468,
+      "importance_score": 0.7468,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8439,
+        "recency": 0.801,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-22T18:16:22Z",
       "latest_at": "2026-09-22T18:16:22Z",
@@ -2033,7 +1947,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T11:54:47.219622Z"
+        "scored_at": "2026-09-23T17:20:52.871632Z"
       }
     }
   ]
