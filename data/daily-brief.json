@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T00:46:48.761725Z",
+  "generated_at": "2026-09-23T06:11:35.508578Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8616,
-      "importance": 0.8616,
-      "importance_score": 0.8616,
+      "score": 0.8528,
+      "importance": 0.8528,
+      "importance_score": 0.8528,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.9643,
+        "recency": 0.9153,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -191,15 +191,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.8448,
-      "importance": 0.8448,
-      "importance_score": 0.8448,
+      "score": 0.8364,
+      "importance": 0.8364,
+      "importance_score": 0.8364,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.86,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9269,
+        "recency": 0.8798,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -227,7 +227,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
+      }
+    },
+    {
+      "story_id": "story_bf530929af3e",
+      "title": "Codex CLI 0.156.1",
+      "url": "https://developers.openai.com/codex/changelog",
+      "primary_url": "https://developers.openai.com/codex/changelog",
+      "source": "OpenAI Codex Changelog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "1673cf098377ad515b7921904f29c746b731cb0a",
+          "title": "Codex CLI 0.156.1",
+          "title_zh": null,
+          "title_en": "Codex CLI 0.156.1",
+          "title_original": "Codex CLI 0.156.1",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI Codex Changelog"
+      ],
+      "items": [
+        {
+          "id": "1673cf098377ad515b7921904f29c746b731cb0a",
+          "title": "Codex CLI 0.156.1",
+          "title_zh": null,
+          "title_en": "Codex CLI 0.156.1",
+          "title_original": "Codex CLI 0.156.1",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://developers.openai.com/codex/changelog",
+          "source": "OpenAI Codex Changelog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-23T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8556,
+      "importance": 0.8556,
+      "importance_score": 0.8556,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.98,
+        "recency": 0.9421,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-23T00:00:00Z",
+      "latest_at": "2026-09-23T00:00:00Z",
+      "primary_item": {
+        "id": "1673cf098377ad515b7921904f29c746b731cb0a",
+        "title": "Codex CLI 0.156.1",
+        "title_zh": null,
+        "title_en": "Codex CLI 0.156.1",
+        "title_original": "Codex CLI 0.156.1",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://developers.openai.com/codex/changelog",
+        "source": "OpenAI Codex Changelog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8556,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -304,15 +389,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8197,
-      "importance": 0.8197,
-      "importance_score": 0.8197,
+      "score": 0.8112,
+      "importance": 0.8112,
+      "importance_score": 0.8112,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.85,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9341,
+        "recency": 0.8866,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -341,7 +426,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -533,15 +618,15 @@
       ],
       "item_count": 6,
       "duplicate_count": 6,
-      "score": 0.825,
-      "importance": 0.825,
-      "importance_score": 0.825,
+      "score": 0.8163,
+      "importance": 0.8163,
+      "importance_score": 0.8163,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.86,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9464,
+        "recency": 0.8984,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -570,7 +655,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -618,15 +703,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8203,
-      "importance": 0.8203,
-      "importance_score": 0.8203,
+      "score": 0.8117,
+      "importance": 0.8117,
+      "importance_score": 0.8117,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9404,
+        "recency": 0.8926,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -654,7 +739,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -760,15 +845,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.8486,
-      "importance": 0.8486,
-      "importance_score": 0.8486,
+      "score": 0.8401,
+      "importance": 0.8401,
+      "importance_score": 0.8401,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9368,
+        "recency": 0.8892,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -797,7 +882,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -845,15 +930,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7962,
-      "importance": 0.7962,
-      "importance_score": 0.7962,
+      "score": 0.7878,
+      "importance": 0.7878,
+      "importance_score": 0.7878,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9235,
+        "recency": 0.8766,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -881,7 +966,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -929,15 +1014,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7846,
-      "importance": 0.7846,
-      "importance_score": 0.7846,
+      "score": 0.7766,
+      "importance": 0.7766,
+      "importance_score": 0.7766,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8758,
+        "recency": 0.8313,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -965,7 +1050,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -1042,15 +1127,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7904,
-      "importance": 0.7904,
-      "importance_score": 0.7904,
+      "score": 0.782,
+      "importance": 0.782,
+      "importance_score": 0.782,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9246,
+        "recency": 0.8777,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1078,7 +1163,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -1126,15 +1211,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7938,
-      "importance": 0.7938,
-      "importance_score": 0.7938,
+      "score": 0.7852,
+      "importance": 0.7852,
+      "importance_score": 0.7852,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9458,
+        "recency": 0.8978,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1162,7 +1247,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -1210,15 +1295,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7928,
-      "importance": 0.7928,
-      "importance_score": 0.7928,
+      "score": 0.7842,
+      "importance": 0.7842,
+      "importance_score": 0.7842,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9398,
+        "recency": 0.8921,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1246,7 +1331,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -1294,15 +1379,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.787,
-      "importance": 0.787,
-      "importance_score": 0.787,
+      "score": 0.7786,
+      "importance": 0.7786,
+      "importance_score": 0.7786,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9247,
+        "recency": 0.8778,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1330,7 +1415,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -1407,15 +1492,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7929,
-      "importance": 0.7929,
-      "importance_score": 0.7929,
+      "score": 0.7838,
+      "importance": 0.7838,
+      "importance_score": 0.7838,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9904,
+        "recency": 0.9401,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1443,7 +1528,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
+      }
+    },
+    {
+      "story_id": "story_c2767647a96e",
+      "title": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目 / Best Embedding Models in 2026",
+      "url": "https://openrouter.ai/blog/insights/best-embedding-models-2026",
+      "primary_url": "https://openrouter.ai/blog/insights/best-embedding-models-2026",
+      "source": "OpenRouter：Announcements（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "7e70efe4fff955c49b8391eb19b1a160f6fa5e52",
+          "title": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目 / Best Embedding Models in 2026",
+          "title_zh": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目",
+          "title_en": "Best Embedding Models in 2026",
+          "title_original": "Best Embedding Models in 2026",
+          "summary": "OpenRouter 于 2026 年 9 月 11 日核实嵌入模型目录共 37 个条目，并通过自家 embeddings API 向 19 个模型发送批量请求、共 28 项检查，确认请求与响应行为。",
+          "recommend_reason_zh": null,
+          "url": "https://openrouter.ai/blog/insights/best-embedding-models-2026",
+          "source": "OpenRouter：Announcements（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenRouter：Announcements（RSS）"
+      ],
+      "items": [
+        {
+          "id": "7e70efe4fff955c49b8391eb19b1a160f6fa5e52",
+          "title": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目 / Best Embedding Models in 2026",
+          "title_zh": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目",
+          "title_en": "Best Embedding Models in 2026",
+          "title_original": "Best Embedding Models in 2026",
+          "summary": "OpenRouter 于 2026 年 9 月 11 日核实嵌入模型目录共 37 个条目，并通过自家 embeddings API 向 19 个模型发送批量请求、共 28 项检查，确认请求与响应行为。",
+          "recommend_reason_zh": null,
+          "url": "https://openrouter.ai/blog/insights/best-embedding-models-2026",
+          "source": "OpenRouter：Announcements（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7876,
+      "importance": 0.7876,
+      "importance_score": 0.7876,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9421,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-23T00:00:00Z",
+      "latest_at": "2026-09-23T00:00:00Z",
+      "primary_item": {
+        "id": "7e70efe4fff955c49b8391eb19b1a160f6fa5e52",
+        "title": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目 / Best Embedding Models in 2026",
+        "title_zh": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目",
+        "title_en": "Best Embedding Models in 2026",
+        "title_original": "Best Embedding Models in 2026",
+        "summary": "OpenRouter 于 2026 年 9 月 11 日核实嵌入模型目录共 37 个条目，并通过自家 embeddings API 向 19 个模型发送批量请求、共 28 项检查，确认请求与响应行为。",
+        "recommend_reason_zh": null,
+        "url": "https://openrouter.ai/blog/insights/best-embedding-models-2026",
+        "source": "OpenRouter：Announcements（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7876,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-23T06:12:35.197302Z"
+      }
+    },
+    {
+      "story_id": "story_e6ec0ac890a7",
+      "title": "Qwen-Image-2.1 登顶 Arena 图像编辑与文生图开源榜第一 / Thanks @arena for the recognition！ 🏆 Qwen-Image-2.1 is now the #1 open-source model in both the Ima…",
+      "url": "https://x.com/Alibaba_Qwen/status/2102569821997346912",
+      "primary_url": "https://x.com/Alibaba_Qwen/status/2102569821997346912",
+      "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "08e5874b4d216e542f242ee0134588f14db489e8",
+          "title": "Qwen-Image-2.1 登顶 Arena 图像编辑与文生图开源榜第一 / Thanks @arena for the recognition！ 🏆 Qwen-Image-2.1 is now the #1 open-source model in both the Ima…",
+          "title_zh": "Qwen-Image-2.1 登顶 Arena 图像编辑与文生图开源榜第一",
+          "title_en": "Thanks @arena for the recognition！ 🏆 Qwen-Image-2.1 is now the #1 open-source model in both the Ima…",
+          "title_original": "Thanks @arena for the recognition！ 🏆 Qwen-Image-2.1 is now the #1 open-source model in both the Ima…",
+          "summary": "通义千问宣布 Qwen-Image-2.1 在 Arena 的 Image Edit Arena 和 Text-to-Image Arena 均为开源模型第一。引用内容显示其 Image Edit Arena 得分 1367，总榜第 16，距第 15 名 GPT-Image-1.5-high-fidelity 仅 3 分，官方邀请用户体验该模型。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Alibaba_Qwen/status/2102569821997346912",
+          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T01:24:44Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：通义千问 / Qwen (@Alibaba_Qwen)"
+      ],
+      "items": [
+        {
+          "id": "08e5874b4d216e542f242ee0134588f14db489e8",
+          "title": "Qwen-Image-2.1 登顶 Arena 图像编辑与文生图开源榜第一 / Thanks @arena for the recognition！ 🏆 Qwen-Image-2.1 is now the #1 open-source model in both the Ima…",
+          "title_zh": "Qwen-Image-2.1 登顶 Arena 图像编辑与文生图开源榜第一",
+          "title_en": "Thanks @arena for the recognition！ 🏆 Qwen-Image-2.1 is now the #1 open-source model in both the Ima…",
+          "title_original": "Thanks @arena for the recognition！ 🏆 Qwen-Image-2.1 is now the #1 open-source model in both the Ima…",
+          "summary": "通义千问宣布 Qwen-Image-2.1 在 Arena 的 Image Edit Arena 和 Text-to-Image Arena 均为开源模型第一。引用内容显示其 Image Edit Arena 得分 1367，总榜第 16，距第 15 名 GPT-Image-1.5-high-fidelity 仅 3 分，官方邀请用户体验该模型。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Alibaba_Qwen/status/2102569821997346912",
+          "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T01:24:44Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7839,
+      "importance": 0.7839,
+      "importance_score": 0.7839,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.64,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.955,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-23T01:24:44Z",
+      "latest_at": "2026-09-23T01:24:44Z",
+      "primary_item": {
+        "id": "08e5874b4d216e542f242ee0134588f14db489e8",
+        "title": "Qwen-Image-2.1 登顶 Arena 图像编辑与文生图开源榜第一 / Thanks @arena for the recognition！ 🏆 Qwen-Image-2.1 is now the #1 open-source model in both the Ima…",
+        "title_zh": "Qwen-Image-2.1 登顶 Arena 图像编辑与文生图开源榜第一",
+        "title_en": "Thanks @arena for the recognition！ 🏆 Qwen-Image-2.1 is now the #1 open-source model in both the Ima…",
+        "title_original": "Thanks @arena for the recognition！ 🏆 Qwen-Image-2.1 is now the #1 open-source model in both the Ima…",
+        "summary": "通义千问宣布 Qwen-Image-2.1 在 Arena 的 Image Edit Arena 和 Text-to-Image Arena 均为开源模型第一。引用内容显示其 Image Edit Arena 得分 1367，总榜第 16，距第 15 名 GPT-Image-1.5-high-fidelity 仅 3 分，官方邀请用户体验该模型。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/Alibaba_Qwen/status/2102569821997346912",
+        "source": "X：通义千问 / Qwen (@Alibaba_Qwen)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7839,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -1491,15 +1744,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8026,
-      "importance": 0.8026,
-      "importance_score": 0.8026,
+      "score": 0.7941,
+      "importance": 0.7941,
+      "importance_score": 0.7941,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9255,
+        "recency": 0.8785,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1527,7 +1780,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -1575,15 +1828,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7748,
-      "importance": 0.7748,
-      "importance_score": 0.7748,
+      "score": 0.7661,
+      "importance": 0.7661,
+      "importance_score": 0.7661,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9569,
+        "recency": 0.9084,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1611,7 +1864,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -1659,15 +1912,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7797,
-      "importance": 0.7797,
-      "importance_score": 0.7797,
+      "score": 0.771,
+      "importance": 0.771,
+      "importance_score": 0.771,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9504,
+        "recency": 0.9022,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1695,7 +1948,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     },
     {
@@ -1743,15 +1996,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8392,
-      "importance": 0.8392,
-      "importance_score": 0.8392,
+      "score": 0.8311,
+      "importance": 0.8311,
+      "importance_score": 0.8311,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8842,
+        "recency": 0.8393,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1780,259 +2033,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
-      }
-    },
-    {
-      "story_id": "story_a4d49cf0b546",
-      "title": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送 / GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-      "url": "https://x.com/ChatGPT/status/2102462020339613966",
-      "primary_url": "https://x.com/ChatGPT/status/2102462020339613966",
-      "source": "X：ChatGPT (@ChatGPT)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "c942be01e1874da3049cd300815d62f60121508f",
-          "title": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送 / GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-          "title_zh": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送",
-          "title_en": "GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-          "title_original": "GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-          "summary": "OpenAI 的 ChatGPT 官方账号宣布 GPT-6 Sol 和 GPT-6 Luna 两款模型即日起推送，面向 Plus、Pro、Business、Enterprise 和 Edu 用户，可在 ChatGPT Work 和 Codex 中使用。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ChatGPT/status/2102462020339613966",
-          "source": "X：ChatGPT (@ChatGPT)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T18:16:22Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：ChatGPT (@ChatGPT)"
-      ],
-      "items": [
-        {
-          "id": "c942be01e1874da3049cd300815d62f60121508f",
-          "title": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送 / GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-          "title_zh": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送",
-          "title_en": "GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-          "title_original": "GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-          "summary": "OpenAI 的 ChatGPT 官方账号宣布 GPT-6 Sol 和 GPT-6 Luna 两款模型即日起推送，面向 Plus、Pro、Business、Enterprise 和 Edu 用户，可在 ChatGPT Work 和 Codex 中使用。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ChatGPT/status/2102462020339613966",
-          "source": "X：ChatGPT (@ChatGPT)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T18:16:22Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7717,
-      "importance": 0.7717,
-      "importance_score": 0.7717,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.77,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9393,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-22T18:16:22Z",
-      "latest_at": "2026-09-22T18:16:22Z",
-      "primary_item": {
-        "id": "c942be01e1874da3049cd300815d62f60121508f",
-        "title": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送 / GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-        "title_zh": "GPT-6 Sol 与 GPT-6 Luna 在 ChatGPT Work 和 Codex 中推送",
-        "title_en": "GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-        "title_original": "GPT-6 Sol and GPT-6 Luna， it's your time to shine. Rolling out today in ChatGPT Work and Codex for …",
-        "summary": "OpenAI 的 ChatGPT 官方账号宣布 GPT-6 Sol 和 GPT-6 Luna 两款模型即日起推送，面向 Plus、Pro、Business、Enterprise 和 Edu 用户，可在 ChatGPT Work 和 Codex 中使用。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/ChatGPT/status/2102462020339613966",
-        "source": "X：ChatGPT (@ChatGPT)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7771,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
-      }
-    },
-    {
-      "story_id": "story_73d2d693822d",
-      "title": "GPT-6 Sol 与 Luna 发布，API 价格比 GPT-5.6 低 50% / GPT-6 Luna is $0.10 / $0.50 per 1M tokens！ We're soon going to have to switch to per billion token…",
-      "url": "https://x.com/sherwinwu/status/2102462783707344907",
-      "primary_url": "https://x.com/sherwinwu/status/2102462783707344907",
-      "source": "X：Sherwin Wu（@sherwinwu）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "256a8b6195b5278f7cf4a57f5abf587403338648",
-          "title": "GPT-6 Sol 与 Luna 发布，API 价格比 GPT-5.6 低 50% / GPT-6 Luna is $0.10 / $0.50 per 1M tokens！ We're soon going to have to switch to per billion token…",
-          "title_zh": "GPT-6 Sol 与 Luna 发布，API 价格比 GPT-5.6 低 50%",
-          "title_en": "GPT-6 Luna is $0.10 / $0.50 per 1M tokens！ We're soon going to have to switch to per billion token…",
-          "title_original": "GPT-6 Luna is $0.10 / $0.50 per 1M tokens！ We're soon going to have to switch to per billion token…",
-          "summary": "OpenAI 开发者账号宣布 GPT-6 Sol 和 Luna 发布，两者 API 定价比 GPT-5.6 低 50%。Sherwin Wu 补充 GPT-6 Luna 定价为每 1M tokens 输入 $0.10、输出 $0.50，并称价格很快需要改按每十亿 tokens 计价。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/sherwinwu/status/2102462783707344907",
-          "source": "X：Sherwin Wu（@sherwinwu）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T18:19:24Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Sherwin Wu（@sherwinwu）"
-      ],
-      "items": [
-        {
-          "id": "256a8b6195b5278f7cf4a57f5abf587403338648",
-          "title": "GPT-6 Sol 与 Luna 发布，API 价格比 GPT-5.6 低 50% / GPT-6 Luna is $0.10 / $0.50 per 1M tokens！ We're soon going to have to switch to per billion token…",
-          "title_zh": "GPT-6 Sol 与 Luna 发布，API 价格比 GPT-5.6 低 50%",
-          "title_en": "GPT-6 Luna is $0.10 / $0.50 per 1M tokens！ We're soon going to have to switch to per billion token…",
-          "title_original": "GPT-6 Luna is $0.10 / $0.50 per 1M tokens！ We're soon going to have to switch to per billion token…",
-          "summary": "OpenAI 开发者账号宣布 GPT-6 Sol 和 Luna 发布，两者 API 定价比 GPT-5.6 低 50%。Sherwin Wu 补充 GPT-6 Luna 定价为每 1M tokens 输入 $0.10、输出 $0.50，并称价格很快需要改按每十亿 tokens 计价。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/sherwinwu/status/2102462783707344907",
-          "source": "X：Sherwin Wu（@sherwinwu）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T18:19:24Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7718,
-      "importance": 0.7718,
-      "importance_score": 0.7718,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.77,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9397,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-22T18:19:24Z",
-      "latest_at": "2026-09-22T18:19:24Z",
-      "primary_item": {
-        "id": "256a8b6195b5278f7cf4a57f5abf587403338648",
-        "title": "GPT-6 Sol 与 Luna 发布，API 价格比 GPT-5.6 低 50% / GPT-6 Luna is $0.10 / $0.50 per 1M tokens！ We're soon going to have to switch to per billion token…",
-        "title_zh": "GPT-6 Sol 与 Luna 发布，API 价格比 GPT-5.6 低 50%",
-        "title_en": "GPT-6 Luna is $0.10 / $0.50 per 1M tokens！ We're soon going to have to switch to per billion token…",
-        "title_original": "GPT-6 Luna is $0.10 / $0.50 per 1M tokens！ We're soon going to have to switch to per billion token…",
-        "summary": "OpenAI 开发者账号宣布 GPT-6 Sol 和 Luna 发布，两者 API 定价比 GPT-5.6 低 50%。Sherwin Wu 补充 GPT-6 Luna 定价为每 1M tokens 输入 $0.10、输出 $0.50，并称价格很快需要改按每十亿 tokens 计价。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/sherwinwu/status/2102462783707344907",
-        "source": "X：Sherwin Wu（@sherwinwu）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7771,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
-      }
-    },
-    {
-      "story_id": "story_f9845f56532f",
-      "title": "五角大楼内部审查：过度依赖 Palantir Maven AI 系统导致误击伊朗学校、123 名儿童死亡 / Pentagon： Palantir AI Overreliance Led to Strike Killing 123 Iranian Children",
-      "url": "https://gizmodo.com/pentagon-investigators-say-overreliance-on-palantir-ai-tech-contributed-to-u-s-strike-that-killed-123-iranian-children-2000814477",
-      "primary_url": "https://gizmodo.com/pentagon-investigators-say-overreliance-on-palantir-ai-tech-contributed-to-u-s-strike-that-killed-123-iranian-children-2000814477",
-      "source": "Hacker News：AI 热帖",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "5503f54f6e0d17bf05ddac161e7b35568bf21675",
-          "title": "五角大楼内部审查：过度依赖 Palantir Maven AI 系统导致误击伊朗学校、123 名儿童死亡 / Pentagon： Palantir AI Overreliance Led to Strike Killing 123 Iranian Children",
-          "title_zh": "五角大楼内部审查：过度依赖 Palantir Maven AI 系统导致误击伊朗学校、123 名儿童死亡",
-          "title_en": "Pentagon： Palantir AI Overreliance Led to Strike Killing 123 Iranian Children",
-          "title_original": "Pentagon： Palantir AI Overreliance Led to Strike Killing 123 Iranian Children",
-          "summary": "据 Bloomberg 援引未公开的五角大楼内部审查官员报道，美军今年 2 月开战首日误击伊朗 Minab 的 Shajarah Tayyebeh 小学，造成超 150 人死亡、其中至少 123 名儿童，过度依赖 Palantir 开发的 Maven Smart System 是原因之一。",
-          "recommend_reason_zh": null,
-          "url": "https://gizmodo.com/pentagon-investigators-say-overreliance-on-palantir-ai-tech-contributed-to-u-s-strike-that-killed-123-iranian-children-2000814477",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T19:03:38Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News：AI 热帖"
-      ],
-      "items": [
-        {
-          "id": "5503f54f6e0d17bf05ddac161e7b35568bf21675",
-          "title": "五角大楼内部审查：过度依赖 Palantir Maven AI 系统导致误击伊朗学校、123 名儿童死亡 / Pentagon： Palantir AI Overreliance Led to Strike Killing 123 Iranian Children",
-          "title_zh": "五角大楼内部审查：过度依赖 Palantir Maven AI 系统导致误击伊朗学校、123 名儿童死亡",
-          "title_en": "Pentagon： Palantir AI Overreliance Led to Strike Killing 123 Iranian Children",
-          "title_original": "Pentagon： Palantir AI Overreliance Led to Strike Killing 123 Iranian Children",
-          "summary": "据 Bloomberg 援引未公开的五角大楼内部审查官员报道，美军今年 2 月开战首日误击伊朗 Minab 的 Shajarah Tayyebeh 小学，造成超 150 人死亡、其中至少 123 名儿童，过度依赖 Palantir 开发的 Maven Smart System 是原因之一。",
-          "recommend_reason_zh": null,
-          "url": "https://gizmodo.com/pentagon-investigators-say-overreliance-on-palantir-ai-tech-contributed-to-u-s-strike-that-killed-123-iranian-children-2000814477",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-22T19:03:38Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8,
-      "importance": 0.8,
-      "importance_score": 0.8,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.86,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9464,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-22T19:03:38Z",
-      "latest_at": "2026-09-22T19:03:38Z",
-      "primary_item": {
-        "id": "5503f54f6e0d17bf05ddac161e7b35568bf21675",
-        "title": "五角大楼内部审查：过度依赖 Palantir Maven AI 系统导致误击伊朗学校、123 名儿童死亡 / Pentagon： Palantir AI Overreliance Led to Strike Killing 123 Iranian Children",
-        "title_zh": "五角大楼内部审查：过度依赖 Palantir Maven AI 系统导致误击伊朗学校、123 名儿童死亡",
-        "title_en": "Pentagon： Palantir AI Overreliance Led to Strike Killing 123 Iranian Children",
-        "title_original": "Pentagon： Palantir AI Overreliance Led to Strike Killing 123 Iranian Children",
-        "summary": "据 Bloomberg 援引未公开的五角大楼内部审查官员报道，美军今年 2 月开战首日误击伊朗 Minab 的 Shajarah Tayyebeh 小学，造成超 150 人死亡、其中至少 123 名儿童，过度依赖 Palantir 开发的 Maven Smart System 是原因之一。",
-        "recommend_reason_zh": null,
-        "url": "https://gizmodo.com/pentagon-investigators-say-overreliance-on-palantir-ai-tech-contributed-to-u-s-strike-that-killed-123-iranian-children-2000814477",
-        "source": "Hacker News：AI 热帖",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8054,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T00:47:52.213869Z"
+        "scored_at": "2026-09-23T06:12:35.197302Z"
       }
     }
   ]
