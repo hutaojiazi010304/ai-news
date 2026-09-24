@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T23:49:01.931187Z",
+  "generated_at": "2026-09-24T05:06:42.817750Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -77,15 +77,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.863,
-      "importance": 0.863,
-      "importance_score": 0.863,
+      "score": 0.8548,
+      "importance": 0.8548,
+      "importance_score": 0.8548,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9223,
+        "recency": 0.8765,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -115,7 +115,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -163,15 +163,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8613,
-      "importance": 0.8613,
-      "importance_score": 0.8613,
+      "score": 0.8528,
+      "importance": 0.8528,
+      "importance_score": 0.8528,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9519,
+        "recency": 0.9046,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -200,7 +200,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -306,15 +306,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.8529,
-      "importance": 0.8529,
-      "importance_score": 0.8529,
+      "score": 0.8445,
+      "importance": 0.8445,
+      "importance_score": 0.8445,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9497,
+        "recency": 0.9025,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -343,92 +343,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
-      }
-    },
-    {
-      "story_id": "story_bf530929af3e",
-      "title": "Codex CLI 0.156.1",
-      "url": "https://developers.openai.com/codex/changelog",
-      "primary_url": "https://developers.openai.com/codex/changelog",
-      "source": "OpenAI Codex Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "1673cf098377ad515b7921904f29c746b731cb0a",
-          "title": "Codex CLI 0.156.1",
-          "title_zh": null,
-          "title_en": "Codex CLI 0.156.1",
-          "title_original": "Codex CLI 0.156.1",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-23T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI Codex Changelog"
-      ],
-      "items": [
-        {
-          "id": "1673cf098377ad515b7921904f29c746b731cb0a",
-          "title": "Codex CLI 0.156.1",
-          "title_zh": null,
-          "title_en": "Codex CLI 0.156.1",
-          "title_original": "Codex CLI 0.156.1",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-23T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8291,
-      "importance": 0.8291,
-      "importance_score": 0.8291,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.98,
-        "recency": 0.7951,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-23T00:00:00Z",
-      "latest_at": "2026-09-23T00:00:00Z",
-      "primary_item": {
-        "id": "1673cf098377ad515b7921904f29c746b731cb0a",
-        "title": "Codex CLI 0.156.1",
-        "title_zh": null,
-        "title_en": "Codex CLI 0.156.1",
-        "title_original": "Codex CLI 0.156.1",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://developers.openai.com/codex/changelog",
-        "source": "OpenAI Codex Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8556,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -494,8 +409,8 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-23T23:49:01.931187Z",
-      "latest_at": "2026-09-23T23:49:01.931187Z",
+      "earliest_at": "2026-09-24T05:06:42.817750Z",
+      "latest_at": "2026-09-24T05:06:42.817750Z",
       "primary_item": {
         "id": "48e7e143951a807062656727fb44afb909b365f9",
         "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
@@ -513,7 +428,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -561,15 +476,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.843,
-      "importance": 0.843,
-      "importance_score": 0.843,
+      "score": 0.8345,
+      "importance": 0.8345,
+      "importance_score": 0.8345,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9501,
+        "recency": 0.9029,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -598,7 +513,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -646,15 +561,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8342,
-      "importance": 0.8342,
-      "importance_score": 0.8342,
+      "score": 0.8257,
+      "importance": 0.8257,
+      "importance_score": 0.8257,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9455,
+        "recency": 0.8985,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -683,7 +598,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -731,15 +646,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8426,
-      "importance": 0.8426,
-      "importance_score": 0.8426,
+      "score": 0.8346,
+      "importance": 0.8346,
+      "importance_score": 0.8346,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9036,
+        "recency": 0.8587,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -768,7 +683,120 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
+      }
+    },
+    {
+      "story_id": "story_c47cc5cebc25",
+      "title": "OpenRouter 解析 Kimi K3：开源权重与许可证条款，以及如何调用 / Is Kimi K3 Open Source？ Weights， License， and How to Call It",
+      "url": "https://openrouter.ai/blog/insights/kimi-k3-open-source",
+      "primary_url": "https://openrouter.ai/blog/insights/kimi-k3-open-source",
+      "source": "OpenRouter：Announcements（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "576a54fdbc1cf3414d61535bc441b1f3ae8edc2d",
+          "title": "OpenRouter 解析 Kimi K3：开源权重与许可证条款，以及如何调用 / Is Kimi K3 Open Source？ Weights， License， and How to Call It",
+          "title_zh": "OpenRouter 解析 Kimi K3：开源权重与许可证条款，以及如何调用",
+          "title_en": "Is Kimi K3 Open Source？ Weights， License， and How to Call It",
+          "title_original": "Is Kimi K3 Open Source？ Weights， License， and How to Call It",
+          "summary": "OpenRouter 撰文说明 Kimi K3 是开放权重而非开源模型，Moonshot AI 以自定义 Kimi K3 License 在 Hugging Face 发布 moonshotai/Kimi-K3。",
+          "recommend_reason_zh": null,
+          "url": "https://openrouter.ai/blog/insights/kimi-k3-open-source",
+          "source": "OpenRouter：Announcements（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-24T00:00:00Z"
+        },
+        {
+          "id": "515463891121be2ac20bcae3f336e90421360f27",
+          "title": "OpenRouter 解析 Kimi K3：开源权重与许可证条款，以及如何调用 / Is Kimi K3 Open Source? Weights, License, and How to Call It",
+          "title_zh": "OpenRouter 解析 Kimi K3：开源权重与许可证条款，以及如何调用",
+          "title_en": "Is Kimi K3 Open Source? Weights, License, and How to Call It",
+          "title_original": "Is Kimi K3 Open Source? Weights, License, and How to Call It",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openrouter.ai/blog/insights/kimi-k3-open-source",
+          "source": "OpenRouter Announcements",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-24T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenRouter Announcements",
+        "OpenRouter：Announcements（RSS）"
+      ],
+      "items": [
+        {
+          "id": "576a54fdbc1cf3414d61535bc441b1f3ae8edc2d",
+          "title": "OpenRouter 解析 Kimi K3：开源权重与许可证条款，以及如何调用 / Is Kimi K3 Open Source？ Weights， License， and How to Call It",
+          "title_zh": "OpenRouter 解析 Kimi K3：开源权重与许可证条款，以及如何调用",
+          "title_en": "Is Kimi K3 Open Source？ Weights， License， and How to Call It",
+          "title_original": "Is Kimi K3 Open Source？ Weights， License， and How to Call It",
+          "summary": "OpenRouter 撰文说明 Kimi K3 是开放权重而非开源模型，Moonshot AI 以自定义 Kimi K3 License 在 Hugging Face 发布 moonshotai/Kimi-K3。",
+          "recommend_reason_zh": null,
+          "url": "https://openrouter.ai/blog/insights/kimi-k3-open-source",
+          "source": "OpenRouter：Announcements（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-24T00:00:00Z"
+        },
+        {
+          "id": "515463891121be2ac20bcae3f336e90421360f27",
+          "title": "OpenRouter 解析 Kimi K3：开源权重与许可证条款，以及如何调用 / Is Kimi K3 Open Source? Weights, License, and How to Call It",
+          "title_zh": "OpenRouter 解析 Kimi K3：开源权重与许可证条款，以及如何调用",
+          "title_en": "Is Kimi K3 Open Source? Weights, License, and How to Call It",
+          "title_original": "Is Kimi K3 Open Source? Weights, License, and How to Call It",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openrouter.ai/blog/insights/kimi-k3-open-source",
+          "source": "OpenRouter Announcements",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-24T00:00:00Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.8224,
+      "importance": 0.8224,
+      "importance_score": 0.8224,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.77,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.952,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-24T00:00:00Z",
+      "latest_at": "2026-09-24T00:00:00Z",
+      "primary_item": {
+        "id": "576a54fdbc1cf3414d61535bc441b1f3ae8edc2d",
+        "title": "OpenRouter 解析 Kimi K3：开源权重与许可证条款，以及如何调用 / Is Kimi K3 Open Source？ Weights， License， and How to Call It",
+        "title_zh": "OpenRouter 解析 Kimi K3：开源权重与许可证条款，以及如何调用",
+        "title_en": "Is Kimi K3 Open Source？ Weights， License， and How to Call It",
+        "title_original": "Is Kimi K3 Open Source？ Weights， License， and How to Call It",
+        "summary": "OpenRouter 撰文说明 Kimi K3 是开放权重而非开源模型，Moonshot AI 以自定义 Kimi K3 License 在 Hugging Face 发布 moonshotai/Kimi-K3。",
+        "recommend_reason_zh": null,
+        "url": "https://openrouter.ai/blog/insights/kimi-k3-open-source",
+        "source": "OpenRouter：Announcements（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8224,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -816,15 +844,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8466,
-      "importance": 0.8466,
-      "importance_score": 0.8466,
+      "score": 0.8387,
+      "importance": 0.8387,
+      "importance_score": 0.8387,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.8925,
+        "recency": 0.8481,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -853,7 +881,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -901,15 +929,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.831,
-      "importance": 0.831,
-      "importance_score": 0.831,
+      "score": 0.8227,
+      "importance": 0.8227,
+      "importance_score": 0.8227,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9276,
+        "recency": 0.8815,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -938,7 +966,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -986,15 +1014,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7988,
-      "importance": 0.7988,
-      "importance_score": 0.7988,
+      "score": 0.7904,
+      "importance": 0.7904,
+      "importance_score": 0.7904,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9378,
+        "recency": 0.8912,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1022,7 +1050,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -1128,15 +1156,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.802,
-      "importance": 0.802,
-      "importance_score": 0.802,
+      "score": 0.7932,
+      "importance": 0.7932,
+      "importance_score": 0.7932,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9913,
+        "recency": 0.942,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1164,7 +1192,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -1327,15 +1355,15 @@
       ],
       "item_count": 5,
       "duplicate_count": 5,
-      "score": 0.8001,
-      "importance": 0.8001,
-      "importance_score": 0.8001,
+      "score": 0.7915,
+      "importance": 0.7915,
+      "importance_score": 0.7915,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9583,
+        "recency": 0.9107,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -1364,7 +1392,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
+      }
+    },
+    {
+      "story_id": "story_fb55ca811502",
+      "title": "OpenAI 更新 ChatGPT Voice：支持邮件、日历、Slack 插件并由 GPT-6 Astra、Sol、Luna 驱动 / We heard you loud and clear. ChatGPT Voice can now： - Use plugins like your email， calendar， and Sl…",
+      "url": "https://x.com/OpenAI/status/2102808325742322002",
+      "primary_url": "https://x.com/OpenAI/status/2102808325742322002",
+      "source": "X：OpenAI (@OpenAI)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "0b306dcf799e0488c97d3d336fce3b824d9d900f",
+          "title": "OpenAI 更新 ChatGPT Voice：支持邮件、日历、Slack 插件并由 GPT-6 Astra、Sol、Luna 驱动 / We heard you loud and clear. ChatGPT Voice can now： - Use plugins like your email， calendar， and Sl…",
+          "title_zh": "OpenAI 更新 ChatGPT Voice：支持邮件、日历、Slack 插件并由 GPT-6 Astra、Sol、Luna 驱动",
+          "title_en": "We heard you loud and clear. ChatGPT Voice can now： - Use plugins like your email， calendar， and Sl…",
+          "title_original": "We heard you loud and clear. ChatGPT Voice can now： - Use plugins like your email， calendar， and Sl…",
+          "summary": "OpenAI 宣布 ChatGPT Voice 更新，即日起在最新版应用全球推送。语音功能现可使用邮件、日历和 Slack 等插件，并由 GPT-6 Astra、Sol 和 Luna 模型驱动。同时语音可在网页和移动端的 ChatGPT Work 中使用，仅通过说话即可在浏览器中创建文档、演示文稿、网站和表格，或处理复杂任务。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/OpenAI/status/2102808325742322002",
+          "source": "X：OpenAI (@OpenAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T17:12:27Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：OpenAI (@OpenAI)"
+      ],
+      "items": [
+        {
+          "id": "0b306dcf799e0488c97d3d336fce3b824d9d900f",
+          "title": "OpenAI 更新 ChatGPT Voice：支持邮件、日历、Slack 插件并由 GPT-6 Astra、Sol、Luna 驱动 / We heard you loud and clear. ChatGPT Voice can now： - Use plugins like your email， calendar， and Sl…",
+          "title_zh": "OpenAI 更新 ChatGPT Voice：支持邮件、日历、Slack 插件并由 GPT-6 Astra、Sol、Luna 驱动",
+          "title_en": "We heard you loud and clear. ChatGPT Voice can now： - Use plugins like your email， calendar， and Sl…",
+          "title_original": "We heard you loud and clear. ChatGPT Voice can now： - Use plugins like your email， calendar， and Sl…",
+          "summary": "OpenAI 宣布 ChatGPT Voice 更新，即日起在最新版应用全球推送。语音功能现可使用邮件、日历和 Slack 等插件，并由 GPT-6 Astra、Sol 和 Luna 模型驱动。同时语音可在网页和移动端的 ChatGPT Work 中使用，仅通过说话即可在浏览器中创建文档、演示文稿、网站和表格，或处理复杂任务。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/OpenAI/status/2102808325742322002",
+          "source": "X：OpenAI (@OpenAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-23T17:12:27Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7965,
+      "importance": 0.7965,
+      "importance_score": 0.7965,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.8917,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-23T17:12:27Z",
+      "latest_at": "2026-09-23T17:12:27Z",
+      "primary_item": {
+        "id": "0b306dcf799e0488c97d3d336fce3b824d9d900f",
+        "title": "OpenAI 更新 ChatGPT Voice：支持邮件、日历、Slack 插件并由 GPT-6 Astra、Sol、Luna 驱动 / We heard you loud and clear. ChatGPT Voice can now： - Use plugins like your email， calendar， and Sl…",
+        "title_zh": "OpenAI 更新 ChatGPT Voice：支持邮件、日历、Slack 插件并由 GPT-6 Astra、Sol、Luna 驱动",
+        "title_en": "We heard you loud and clear. ChatGPT Voice can now： - Use plugins like your email， calendar， and Sl…",
+        "title_original": "We heard you loud and clear. ChatGPT Voice can now： - Use plugins like your email， calendar， and Sl…",
+        "summary": "OpenAI 宣布 ChatGPT Voice 更新，即日起在最新版应用全球推送。语音功能现可使用邮件、日历和 Slack 等插件，并由 GPT-6 Astra、Sol 和 Luna 模型驱动。同时语音可在网页和移动端的 ChatGPT Work 中使用，仅通过说话即可在浏览器中创建文档、演示文稿、网站和表格，或处理复杂任务。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/OpenAI/status/2102808325742322002",
+        "source": "X：OpenAI (@OpenAI)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7965,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -1412,15 +1524,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7774,
-      "importance": 0.7774,
-      "importance_score": 0.7774,
+      "score": 0.7696,
+      "importance": 0.7696,
+      "importance_score": 0.7696,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8686,
+        "recency": 0.8255,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1448,7 +1560,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -1496,15 +1608,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7899,
-      "importance": 0.7899,
-      "importance_score": 0.7899,
+      "score": 0.7814,
+      "importance": 0.7814,
+      "importance_score": 0.7814,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9552,
+        "recency": 0.9077,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1532,7 +1644,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -1609,15 +1721,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7652,
-      "importance": 0.7652,
-      "importance_score": 0.7652,
+      "score": 0.7577,
+      "importance": 0.7577,
+      "importance_score": 0.7577,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8368,
+        "recency": 0.7952,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1645,7 +1757,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
+      }
+    },
+    {
+      "story_id": "story_1a73e228157c",
+      "title": "Claude Code 澄清 Cloud sessions 按订阅计费，Pro 补 $100、Max 补 $250 一次性抵用金 / Sorry for any confusion！ Cloud sessions run on your Pro or Max plan， like the rest of Claude Code. T…",
+      "url": "https://x.com/ClaudeDevs/status/2102940480736821610",
+      "primary_url": "https://x.com/ClaudeDevs/status/2102940480736821610",
+      "source": "X：Claude Devs (@ClaudeDevs)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "cfbdab71373cddcec67901d56fe99685cbb4ae0a",
+          "title": "Claude Code 澄清 Cloud sessions 按订阅计费，Pro 补 $100、Max 补 $250 一次性抵用金 / Sorry for any confusion！ Cloud sessions run on your Pro or Max plan， like the rest of Claude Code. T…",
+          "title_zh": "Claude Code 澄清 Cloud sessions 按订阅计费，Pro 补 $100、Max 补 $250 一次性抵用金",
+          "title_en": "Sorry for any confusion！ Cloud sessions run on your Pro or Max plan， like the rest of Claude Code. T…",
+          "title_original": "Sorry for any confusion！ Cloud sessions run on your Pro or Max plan， like the rest of Claude Code. T…",
+          "summary": "Claude Code 团队澄清 Cloud sessions 与 Claude Code 其他功能一样运行在 Pro 或 Max 订阅计划内，此次推广是可选的一次性抵用金，会先被 Cloud sessions 消耗，再回落到正常订阅用量。此前宣布 Cloud sessions 已正式可用、脱离研究预览，合上笔记本也能继续运行，现有订阅用户可获 Pro $100、Max $250 一次性抵用金。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/ClaudeDevs/status/2102940480736821610",
+          "source": "X：Claude Devs (@ClaudeDevs)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-24T01:57:36Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Claude Devs (@ClaudeDevs)"
+      ],
+      "items": [
+        {
+          "id": "cfbdab71373cddcec67901d56fe99685cbb4ae0a",
+          "title": "Claude Code 澄清 Cloud sessions 按订阅计费，Pro 补 $100、Max 补 $250 一次性抵用金 / Sorry for any confusion！ Cloud sessions run on your Pro or Max plan， like the rest of Claude Code. T…",
+          "title_zh": "Claude Code 澄清 Cloud sessions 按订阅计费，Pro 补 $100、Max 补 $250 一次性抵用金",
+          "title_en": "Sorry for any confusion！ Cloud sessions run on your Pro or Max plan， like the rest of Claude Code. T…",
+          "title_original": "Sorry for any confusion！ Cloud sessions run on your Pro or Max plan， like the rest of Claude Code. T…",
+          "summary": "Claude Code 团队澄清 Cloud sessions 与 Claude Code 其他功能一样运行在 Pro 或 Max 订阅计划内，此次推广是可选的一次性抵用金，会先被 Cloud sessions 消耗，再回落到正常订阅用量。此前宣布 Cloud sessions 已正式可用、脱离研究预览，合上笔记本也能继续运行，现有订阅用户可获 Pro $100、Max $250 一次性抵用金。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/ClaudeDevs/status/2102940480736821610",
+          "source": "X：Claude Devs (@ClaudeDevs)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-24T01:57:36Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7926,
+      "importance": 0.7926,
+      "importance_score": 0.7926,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9701,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-24T01:57:36Z",
+      "latest_at": "2026-09-24T01:57:36Z",
+      "primary_item": {
+        "id": "cfbdab71373cddcec67901d56fe99685cbb4ae0a",
+        "title": "Claude Code 澄清 Cloud sessions 按订阅计费，Pro 补 $100、Max 补 $250 一次性抵用金 / Sorry for any confusion！ Cloud sessions run on your Pro or Max plan， like the rest of Claude Code. T…",
+        "title_zh": "Claude Code 澄清 Cloud sessions 按订阅计费，Pro 补 $100、Max 补 $250 一次性抵用金",
+        "title_en": "Sorry for any confusion！ Cloud sessions run on your Pro or Max plan， like the rest of Claude Code. T…",
+        "title_original": "Sorry for any confusion！ Cloud sessions run on your Pro or Max plan， like the rest of Claude Code. T…",
+        "summary": "Claude Code 团队澄清 Cloud sessions 与 Claude Code 其他功能一样运行在 Pro 或 Max 订阅计划内，此次推广是可选的一次性抵用金，会先被 Cloud sessions 消耗，再回落到正常订阅用量。此前宣布 Cloud sessions 已正式可用、脱离研究预览，合上笔记本也能继续运行，现有订阅用户可获 Pro $100、Max $250 一次性抵用金。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/ClaudeDevs/status/2102940480736821610",
+        "source": "X：Claude Devs (@ClaudeDevs)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7926,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -1693,15 +1889,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7861,
-      "importance": 0.7861,
-      "importance_score": 0.7861,
+      "score": 0.7776,
+      "importance": 0.7776,
+      "importance_score": 0.7776,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9527,
+        "recency": 0.9053,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1729,7 +1925,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     },
     {
@@ -1777,15 +1973,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.839,
-      "importance": 0.839,
-      "importance_score": 0.839,
+      "score": 0.8307,
+      "importance": 0.8307,
+      "importance_score": 0.8307,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9275,
+        "recency": 0.8814,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1814,175 +2010,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
-      }
-    },
-    {
-      "story_id": "story_c2767647a96e",
-      "title": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目 / Best Embedding Models in 2026",
-      "url": "https://openrouter.ai/blog/insights/best-embedding-models-2026",
-      "primary_url": "https://openrouter.ai/blog/insights/best-embedding-models-2026",
-      "source": "OpenRouter：Announcements（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "7e70efe4fff955c49b8391eb19b1a160f6fa5e52",
-          "title": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目 / Best Embedding Models in 2026",
-          "title_zh": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目",
-          "title_en": "Best Embedding Models in 2026",
-          "title_original": "Best Embedding Models in 2026",
-          "summary": "OpenRouter 于 2026 年 9 月 11 日核实嵌入模型目录共 37 个条目，并通过自家 embeddings API 向 19 个模型发送批量请求、共 28 项检查，确认请求与响应行为。",
-          "recommend_reason_zh": null,
-          "url": "https://openrouter.ai/blog/insights/best-embedding-models-2026",
-          "source": "OpenRouter：Announcements（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-23T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenRouter：Announcements（RSS）"
-      ],
-      "items": [
-        {
-          "id": "7e70efe4fff955c49b8391eb19b1a160f6fa5e52",
-          "title": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目 / Best Embedding Models in 2026",
-          "title_zh": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目",
-          "title_en": "Best Embedding Models in 2026",
-          "title_original": "Best Embedding Models in 2026",
-          "summary": "OpenRouter 于 2026 年 9 月 11 日核实嵌入模型目录共 37 个条目，并通过自家 embeddings API 向 19 个模型发送批量请求、共 28 项检查，确认请求与响应行为。",
-          "recommend_reason_zh": null,
-          "url": "https://openrouter.ai/blog/insights/best-embedding-models-2026",
-          "source": "OpenRouter：Announcements（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-23T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7611,
-      "importance": 0.7611,
-      "importance_score": 0.7611,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.66,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.7951,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-23T00:00:00Z",
-      "latest_at": "2026-09-23T00:00:00Z",
-      "primary_item": {
-        "id": "7e70efe4fff955c49b8391eb19b1a160f6fa5e52",
-        "title": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目 / Best Embedding Models in 2026",
-        "title_zh": "OpenRouter 发布 2026 年最佳嵌入模型选型指南，覆盖 37 个目录条目",
-        "title_en": "Best Embedding Models in 2026",
-        "title_original": "Best Embedding Models in 2026",
-        "summary": "OpenRouter 于 2026 年 9 月 11 日核实嵌入模型目录共 37 个条目，并通过自家 embeddings API 向 19 个模型发送批量请求、共 28 项检查，确认请求与响应行为。",
-        "recommend_reason_zh": null,
-        "url": "https://openrouter.ai/blog/insights/best-embedding-models-2026",
-        "source": "OpenRouter：Announcements（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7876,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
-      }
-    },
-    {
-      "story_id": "story_76e284c5a332",
-      "title": "团队分享提升 Agent Harness Token 效率的提示词 / here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
-      "url": "https://x.com/ericzakariasson/status/2102853511637774551",
-      "primary_url": "https://x.com/ericzakariasson/status/2102853511637774551",
-      "source": "X：Eric Zakariasson (@ericzakariasson)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "39e65b238e8b2c16e0a6b4204234979ad4753e74",
-          "title": "团队分享提升 Agent Harness Token 效率的提示词 / here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
-          "title_zh": "团队分享提升 Agent Harness Token 效率的提示词",
-          "title_en": "here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
-          "title_original": "here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
-          "summary": "一份公开提示词用于优化 LLM Agent Harness，目标是在不降低任务质量的前提下降低每任务的价格加权 token 成本。某团队一轮改动（提示词精简、工具卸载、缓存布局、稀疏行号、子智能体调优）将整体 token 成本降低约 7%，且质量无损。提示词强调按任务而非按请求计量，并建议先映射 harness、测量基线，再按优先级实施改动。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ericzakariasson/status/2102853511637774551",
-          "source": "X：Eric Zakariasson (@ericzakariasson)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-23T20:12:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Eric Zakariasson (@ericzakariasson)"
-      ],
-      "items": [
-        {
-          "id": "39e65b238e8b2c16e0a6b4204234979ad4753e74",
-          "title": "团队分享提升 Agent Harness Token 效率的提示词 / here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
-          "title_zh": "团队分享提升 Agent Harness Token 效率的提示词",
-          "title_en": "here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
-          "title_original": "here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
-          "summary": "一份公开提示词用于优化 LLM Agent Harness，目标是在不降低任务质量的前提下降低每任务的价格加权 token 成本。某团队一轮改动（提示词精简、工具卸载、缓存布局、稀疏行号、子智能体调优）将整体 token 成本降低约 7%，且质量无损。提示词强调按任务而非按请求计量，并建议先映射 harness、测量基线，再按优先级实施改动。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ericzakariasson/status/2102853511637774551",
-          "source": "X：Eric Zakariasson (@ericzakariasson)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-23T20:12:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7764,
-      "importance": 0.7764,
-      "importance_score": 0.7764,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.77,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9658,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-23T20:12:00Z",
-      "latest_at": "2026-09-23T20:12:00Z",
-      "primary_item": {
-        "id": "39e65b238e8b2c16e0a6b4204234979ad4753e74",
-        "title": "团队分享提升 Agent Harness Token 效率的提示词 / here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
-        "title_zh": "团队分享提升 Agent Harness Token 效率的提示词",
-        "title_en": "here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
-        "title_original": "here's a prompt to improve your agent harness based on what we've learned at cursor. enjoy # Improv…",
-        "summary": "一份公开提示词用于优化 LLM Agent Harness，目标是在不降低任务质量的前提下降低每任务的价格加权 token 成本。某团队一轮改动（提示词精简、工具卸载、缓存布局、稀疏行号、子智能体调优）将整体 token 成本降低约 7%，且质量无损。提示词强调按任务而非按请求计量，并建议先映射 harness、测量基线，再按优先级实施改动。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/ericzakariasson/status/2102853511637774551",
-        "source": "X：Eric Zakariasson (@ericzakariasson)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.782,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-23T23:52:33.310565Z"
+        "scored_at": "2026-09-24T05:07:39.767338Z"
       }
     }
   ]
