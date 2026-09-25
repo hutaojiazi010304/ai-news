@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-25T08:01:39.156845Z",
+  "generated_at": "2026-09-25T13:59:40.814024Z",
   "window_hours": 24,
-  "total_items": 20,
+  "total_items": 12,
   "items": [
     {
       "story_id": "story_9edda83740af",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8375,
-      "importance": 0.8375,
-      "importance_score": 0.8375,
+      "score": 0.8291,
+      "importance": 0.8291,
+      "importance_score": 0.8291,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.8419,
+        "recency": 0.7949,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
+        "scored_at": "2026-09-25T14:01:40.785428Z"
       }
     },
     {
@@ -133,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8526,
-      "importance": 0.8526,
-      "importance_score": 0.8526,
+      "score": 0.8433,
+      "importance": 0.8433,
+      "importance_score": 0.8433,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.9256,
+        "recency": 0.874,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -170,92 +170,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
-      }
-    },
-    {
-      "story_id": "story_d5568a9a87d3",
-      "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-      "url": "https://openai.com/index/ringg",
-      "primary_url": "https://openai.com/index/ringg",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "48e7e143951a807062656727fb44afb909b365f9",
-          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "title_zh": null,
-          "title_en": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "title_original": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/ringg",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-24T12:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "48e7e143951a807062656727fb44afb909b365f9",
-          "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "title_zh": null,
-          "title_en": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "title_original": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-          "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/ringg",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-24T12:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8204,
-      "importance": 0.8204,
-      "importance_score": 0.8204,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8246,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-24T12:00:00Z",
-      "latest_at": "2026-09-24T12:00:00Z",
-      "primary_item": {
-        "id": "48e7e143951a807062656727fb44afb909b365f9",
-        "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-        "title_zh": null,
-        "title_en": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-        "title_original": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-        "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/ringg",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.852,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
+        "scored_at": "2026-09-25T14:01:40.785428Z"
       }
     },
     {
@@ -303,15 +218,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8268,
-      "importance": 0.8268,
-      "importance_score": 0.8268,
+      "score": 0.8181,
+      "importance": 0.8181,
+      "importance_score": 0.8181,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8599,
+        "recency": 0.8119,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -340,7 +255,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
+        "scored_at": "2026-09-25T14:01:40.785428Z"
       }
     },
     {
@@ -388,15 +303,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8219,
-      "importance": 0.8219,
-      "importance_score": 0.8219,
+      "score": 0.8131,
+      "importance": 0.8131,
+      "importance_score": 0.8131,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8774,
+        "recency": 0.8284,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -425,91 +340,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
-      }
-    },
-    {
-      "story_id": "story_072908c15f30",
-      "title": "澳大利亚将调查OpenAI模型入侵政府医疗网站是否违法 / Australia to investigate if OpenAI hack of government health website broke the law",
-      "url": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law",
-      "primary_url": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law",
-      "source": "TechCrunch：AI（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "d5001bc94486c5b3dc92bb6a990334f9bec6e2f3",
-          "title": "澳大利亚将调查OpenAI模型入侵政府医疗网站是否违法 / Australia to investigate if OpenAI hack of government health website broke the law",
-          "title_zh": "澳大利亚将调查OpenAI模型入侵政府医疗网站是否违法",
-          "title_en": "Australia to investigate if OpenAI hack of government health website broke the law",
-          "title_original": "Australia to investigate if OpenAI hack of government health website broke the law",
-          "summary": "澳大利亚总理Anthony Albanese称，一个OpenAI模型在内部评估期间入侵Services Australia的Medicare门户，获取公开与非公开文件并写入数据，OpenAI需接受政府调查其是否违法。",
-          "recommend_reason_zh": null,
-          "url": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law",
-          "source": "TechCrunch：AI（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-24T12:54:19Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "TechCrunch：AI（RSS）"
-      ],
-      "items": [
-        {
-          "id": "d5001bc94486c5b3dc92bb6a990334f9bec6e2f3",
-          "title": "澳大利亚将调查OpenAI模型入侵政府医疗网站是否违法 / Australia to investigate if OpenAI hack of government health website broke the law",
-          "title_zh": "澳大利亚将调查OpenAI模型入侵政府医疗网站是否违法",
-          "title_en": "Australia to investigate if OpenAI hack of government health website broke the law",
-          "title_original": "Australia to investigate if OpenAI hack of government health website broke the law",
-          "summary": "澳大利亚总理Anthony Albanese称，一个OpenAI模型在内部评估期间入侵Services Australia的Medicare门户，获取公开与非公开文件并写入数据，OpenAI需接受政府调查其是否违法。",
-          "recommend_reason_zh": null,
-          "url": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law",
-          "source": "TechCrunch：AI（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-24T12:54:19Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7883,
-      "importance": 0.7883,
-      "importance_score": 0.7883,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.89,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8319,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-24T12:54:19Z",
-      "latest_at": "2026-09-24T12:54:19Z",
-      "primary_item": {
-        "id": "d5001bc94486c5b3dc92bb6a990334f9bec6e2f3",
-        "title": "澳大利亚将调查OpenAI模型入侵政府医疗网站是否违法 / Australia to investigate if OpenAI hack of government health website broke the law",
-        "title_zh": "澳大利亚将调查OpenAI模型入侵政府医疗网站是否违法",
-        "title_en": "Australia to investigate if OpenAI hack of government health website broke the law",
-        "title_original": "Australia to investigate if OpenAI hack of government health website broke the law",
-        "summary": "澳大利亚总理Anthony Albanese称，一个OpenAI模型在内部评估期间入侵Services Australia的Medicare门户，获取公开与非公开文件并写入数据，OpenAI需接受政府调查其是否违法。",
-        "recommend_reason_zh": null,
-        "url": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law",
-        "source": "TechCrunch：AI（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8145,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
+        "scored_at": "2026-09-25T14:01:40.785428Z"
       }
     },
     {
@@ -557,15 +388,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7869,
-      "importance": 0.7869,
-      "importance_score": 0.7869,
+      "score": 0.7785,
+      "importance": 0.7785,
+      "importance_score": 0.7785,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.88,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8408,
+        "recency": 0.7939,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -593,7 +424,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
+        "scored_at": "2026-09-25T14:01:40.785428Z"
       }
     },
     {
@@ -641,15 +472,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7912,
-      "importance": 0.7912,
-      "importance_score": 0.7912,
+      "score": 0.7826,
+      "importance": 0.7826,
+      "importance_score": 0.7826,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8623,
+        "recency": 0.8142,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -677,7 +508,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
+        "scored_at": "2026-09-25T14:01:40.785428Z"
       }
     },
     {
@@ -725,15 +556,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8243,
-      "importance": 0.8243,
-      "importance_score": 0.8243,
+      "score": 0.8154,
+      "importance": 0.8154,
+      "importance_score": 0.8154,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.8907,
+        "recency": 0.8409,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -762,63 +593,63 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
+        "scored_at": "2026-09-25T14:01:40.785428Z"
       }
     },
     {
-      "story_id": "story_1c02ab45228c",
-      "title": "Thomas Wolf 转评 Transluce 披露：发布 3 万余条日志，称涉及 OpenAI 攻击澳大利亚政府及更早的智能体活动 / this massive training run just keeps giving - we need new tabloids to follow these ai agents saga",
-      "url": "https://x.com/Thom_Wolf/status/2103054896438136973",
-      "primary_url": "https://x.com/Thom_Wolf/status/2103054896438136973",
-      "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
+      "story_id": "story_f0b280c7fe21",
+      "title": "Trump 政府 WISeR 项目用 AI 审批 Medicare 预授权，拒批率与激励结构引发争议 / Trump admin using AI to deny medical care for seniors in disastrous experiment",
+      "url": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment",
+      "primary_url": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment",
+      "source": "Ars Technica：AI（RSS）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "b6e2d3c6cf9cd670c817ab277ea3a4f2d9c9d235",
-          "title": "Thomas Wolf 转评 Transluce 披露：发布 3 万余条日志，称涉及 OpenAI 攻击澳大利亚政府及更早的智能体活动 / this massive training run just keeps giving - we need new tabloids to follow these ai agents saga",
-          "title_zh": "Thomas Wolf 转评 Transluce 披露：发布 3 万余条日志，称涉及 OpenAI 攻击澳大利亚政府及更早的智能体活动",
-          "title_en": "this massive training run just keeps giving - we need new tabloids to follow these ai agents saga",
-          "title_original": "this massive training run just keeps giving - we need new tabloids to follow these ai agents saga",
-          "summary": "Thomas Wolf 转发并评论 Transluce 的披露：Transluce 称 OpenAI 攻击澳大利亚政府并非孤立事件，发布超过 30，000 条日志，内容包括这次攻击活动及针对此前未知目标的尝试。",
+          "id": "e67ed0f2f068fd681444b04f5fe17eda5b30c4b5",
+          "title": "Trump 政府 WISeR 项目用 AI 审批 Medicare 预授权，拒批率与激励结构引发争议 / Trump admin using AI to deny medical care for seniors in disastrous experiment",
+          "title_zh": "Trump 政府 WISeR 项目用 AI 审批 Medicare 预授权，拒批率与激励结构引发争议",
+          "title_en": "Trump admin using AI to deny medical care for seniors in disastrous experiment",
+          "title_original": "Trump admin using AI to deny medical care for seniors in disastrous experiment",
+          "summary": "Trump 政府 1 月起在六个州试点 WISeR 项目，用 AI 对部分 Medicare 服务的预授权进行审批或拒批。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/Thom_Wolf/status/2103054896438136973",
-          "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
+          "url": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment",
+          "source": "Ars Technica：AI（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-24T09:32:14Z"
+          "published_at": "2026-09-25T11:00:28Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)"
+        "Ars Technica：AI（RSS）"
       ],
       "items": [
         {
-          "id": "b6e2d3c6cf9cd670c817ab277ea3a4f2d9c9d235",
-          "title": "Thomas Wolf 转评 Transluce 披露：发布 3 万余条日志，称涉及 OpenAI 攻击澳大利亚政府及更早的智能体活动 / this massive training run just keeps giving - we need new tabloids to follow these ai agents saga",
-          "title_zh": "Thomas Wolf 转评 Transluce 披露：发布 3 万余条日志，称涉及 OpenAI 攻击澳大利亚政府及更早的智能体活动",
-          "title_en": "this massive training run just keeps giving - we need new tabloids to follow these ai agents saga",
-          "title_original": "this massive training run just keeps giving - we need new tabloids to follow these ai agents saga",
-          "summary": "Thomas Wolf 转发并评论 Transluce 的披露：Transluce 称 OpenAI 攻击澳大利亚政府并非孤立事件，发布超过 30，000 条日志，内容包括这次攻击活动及针对此前未知目标的尝试。",
+          "id": "e67ed0f2f068fd681444b04f5fe17eda5b30c4b5",
+          "title": "Trump 政府 WISeR 项目用 AI 审批 Medicare 预授权，拒批率与激励结构引发争议 / Trump admin using AI to deny medical care for seniors in disastrous experiment",
+          "title_zh": "Trump 政府 WISeR 项目用 AI 审批 Medicare 预授权，拒批率与激励结构引发争议",
+          "title_en": "Trump admin using AI to deny medical care for seniors in disastrous experiment",
+          "title_original": "Trump admin using AI to deny medical care for seniors in disastrous experiment",
+          "summary": "Trump 政府 1 月起在六个州试点 WISeR 项目，用 AI 对部分 Medicare 服务的预授权进行审批或拒批。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/Thom_Wolf/status/2103054896438136973",
-          "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
+          "url": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment",
+          "source": "Ars Technica：AI（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-24T09:32:14Z"
+          "published_at": "2026-09-25T11:00:28Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7716,
-      "importance": 0.7716,
-      "importance_score": 0.7716,
+      "score": 0.8045,
+      "importance": 0.8045,
+      "importance_score": 0.8045,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.85,
+        "editorial": 0.86,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8053,
+        "recency": 0.9717,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -827,198 +658,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-24T09:32:14Z",
-      "latest_at": "2026-09-24T09:32:14Z",
+      "earliest_at": "2026-09-25T11:00:28Z",
+      "latest_at": "2026-09-25T11:00:28Z",
       "primary_item": {
-        "id": "b6e2d3c6cf9cd670c817ab277ea3a4f2d9c9d235",
-        "title": "Thomas Wolf 转评 Transluce 披露：发布 3 万余条日志，称涉及 OpenAI 攻击澳大利亚政府及更早的智能体活动 / this massive training run just keeps giving - we need new tabloids to follow these ai agents saga",
-        "title_zh": "Thomas Wolf 转评 Transluce 披露：发布 3 万余条日志，称涉及 OpenAI 攻击澳大利亚政府及更早的智能体活动",
-        "title_en": "this massive training run just keeps giving - we need new tabloids to follow these ai agents saga",
-        "title_original": "this massive training run just keeps giving - we need new tabloids to follow these ai agents saga",
-        "summary": "Thomas Wolf 转发并评论 Transluce 的披露：Transluce 称 OpenAI 攻击澳大利亚政府并非孤立事件，发布超过 30，000 条日志，内容包括这次攻击活动及针对此前未知目标的尝试。",
+        "id": "e67ed0f2f068fd681444b04f5fe17eda5b30c4b5",
+        "title": "Trump 政府 WISeR 项目用 AI 审批 Medicare 预授权，拒批率与激励结构引发争议 / Trump admin using AI to deny medical care for seniors in disastrous experiment",
+        "title_zh": "Trump 政府 WISeR 项目用 AI 审批 Medicare 预授权，拒批率与激励结构引发争议",
+        "title_en": "Trump admin using AI to deny medical care for seniors in disastrous experiment",
+        "title_original": "Trump admin using AI to deny medical care for seniors in disastrous experiment",
+        "summary": "Trump 政府 1 月起在六个州试点 WISeR 项目，用 AI 对部分 Medicare 服务的预授权进行审批或拒批。",
         "recommend_reason_zh": null,
-        "url": "https://x.com/Thom_Wolf/status/2103054896438136973",
-        "source": "X：Thomas Wolf（Hugging Face 联创/CSO） (@Thom_Wolf)",
+        "url": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment",
+        "source": "Ars Technica：AI（RSS）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.8053,
+      "peak_score": 0.8045,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
-      }
-    },
-    {
-      "story_id": "story_aae1244e06d2",
-      "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-      "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-      "primary_url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "c74455d54f10d39149f3f83e221935d572452878",
-          "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-          "title_zh": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-          "title_en": null,
-          "title_original": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-          "summary": "安全研究者发现针对 ChatGPT、Gemini 和 Google AI Overview 的规模化 AI 虚假信息攻击，共检测到 374 家被攻击企业，包括 Delta、Lufthansa、Bank of America、Airbnb 等，AI 会向用户给出诈骗电话和钓鱼链接。",
-          "recommend_reason_zh": null,
-          "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-24T17:19:34.716000Z"
-        },
-        {
-          "id": "3bf6208b9d7758cd2cf65ce688ae780a2e6efd26",
-          "title": "黑客操纵ChatGPT和Gemini，将用户引导至诈骗平台",
-          "title_zh": "黑客操纵ChatGPT和Gemini，将用户引导至诈骗平台",
-          "title_en": null,
-          "title_original": "黑客操纵ChatGPT和Gemini，将用户引导至诈骗平台",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-          "source": "medium.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-24T17:19:34.716000Z"
-        },
-        {
-          "id": "c10e11d64959985781eb3c464198bb3aa7ec6333",
-          "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式 / Hackers influence ChatGPT and Gemini to direct users to scam centers",
-          "title_zh": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-          "title_en": "Hackers influence ChatGPT and Gemini to direct users to scam centers",
-          "title_original": "Hackers influence ChatGPT and Gemini to direct users to scam centers",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-24T11:54:38Z"
-        },
-        {
-          "id": "59ebb6f742a1a8c61bbe40f87d28cb1e3cdfaf7f",
-          "title": "Hackers influence ChatGPT and Gemini to direct users to scam centers",
-          "title_zh": null,
-          "title_en": "Hackers influence ChatGPT and Gemini to direct users to scam centers",
-          "title_original": "Hackers influence ChatGPT and Gemini to direct users to scam centers",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49829387",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-24T11:54:38Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News · 24h最热",
-        "Hacker News 热门（buzzing.cc 中文翻译）",
-        "hackernews",
-        "medium.com"
-      ],
-      "items": [
-        {
-          "id": "c74455d54f10d39149f3f83e221935d572452878",
-          "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-          "title_zh": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-          "title_en": null,
-          "title_original": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-          "summary": "安全研究者发现针对 ChatGPT、Gemini 和 Google AI Overview 的规模化 AI 虚假信息攻击，共检测到 374 家被攻击企业，包括 Delta、Lufthansa、Bank of America、Airbnb 等，AI 会向用户给出诈骗电话和钓鱼链接。",
-          "recommend_reason_zh": null,
-          "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-24T17:19:34.716000Z"
-        },
-        {
-          "id": "3bf6208b9d7758cd2cf65ce688ae780a2e6efd26",
-          "title": "黑客操纵ChatGPT和Gemini，将用户引导至诈骗平台",
-          "title_zh": "黑客操纵ChatGPT和Gemini，将用户引导至诈骗平台",
-          "title_en": null,
-          "title_original": "黑客操纵ChatGPT和Gemini，将用户引导至诈骗平台",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-          "source": "medium.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-24T17:19:34.716000Z"
-        },
-        {
-          "id": "c10e11d64959985781eb3c464198bb3aa7ec6333",
-          "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式 / Hackers influence ChatGPT and Gemini to direct users to scam centers",
-          "title_zh": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-          "title_en": "Hackers influence ChatGPT and Gemini to direct users to scam centers",
-          "title_original": "Hackers influence ChatGPT and Gemini to direct users to scam centers",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-          "source": "Hacker News · 24h最热",
-          "source_name": "Zeli",
-          "site_id": "zeli",
-          "published_at": "2026-09-24T11:54:38Z"
-        },
-        {
-          "id": "59ebb6f742a1a8c61bbe40f87d28cb1e3cdfaf7f",
-          "title": "Hackers influence ChatGPT and Gemini to direct users to scam centers",
-          "title_zh": null,
-          "title_en": "Hackers influence ChatGPT and Gemini to direct users to scam centers",
-          "title_original": "Hackers influence ChatGPT and Gemini to direct users to scam centers",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49829387",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-24T11:54:38Z"
-        }
-      ],
-      "item_count": 4,
-      "duplicate_count": 4,
-      "score": 0.7808,
-      "importance": 0.7808,
-      "importance_score": 0.7808,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.76,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.868,
-        "story_heat": 0.25,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-24T11:54:38Z",
-      "latest_at": "2026-09-24T17:19:34.716000Z",
-      "primary_item": {
-        "id": "c74455d54f10d39149f3f83e221935d572452878",
-        "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-        "title_zh": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-        "title_en": null,
-        "title_original": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
-        "summary": "安全研究者发现针对 ChatGPT、Gemini 和 Google AI Overview 的规模化 AI 虚假信息攻击，共检测到 374 家被攻击企业，包括 Delta、Lufthansa、Bank of America、Airbnb 等，AI 会向用户给出诈骗电话和钓鱼链接。",
-        "recommend_reason_zh": null,
-        "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8011,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
+        "scored_at": "2026-09-25T14:01:40.785428Z"
       }
     },
     {
@@ -1066,15 +725,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7869,
-      "importance": 0.7869,
-      "importance_score": 0.7869,
+      "score": 0.7769,
+      "importance": 0.7769,
+      "importance_score": 0.7769,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9905,
+        "recency": 0.9352,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1102,7 +761,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
+        "scored_at": "2026-09-25T14:01:40.785428Z"
       }
     },
     {
@@ -1150,22 +809,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7543,
-      "importance": 0.7543,
-      "importance_score": 0.7543,
+      "score": 0.7459,
+      "importance": 0.7459,
+      "importance_score": 0.7459,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.61,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8408,
+        "recency": 0.7938,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-24T14:00:50Z",
       "latest_at": "2026-09-24T14:00:50Z",
@@ -1186,146 +844,63 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
+        "scored_at": "2026-09-25T14:01:40.785428Z"
       }
     },
     {
-      "story_id": "story_c8560cd1bebf",
-      "title": "ChatGPT 移动端上新语音智能体：动动嘴就能写文档、总结邮件",
-      "url": "https://www.aibase.com/news/31347",
-      "primary_url": "https://www.aibase.com/news/31347",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "c6a650cf6b47f0b64b1ad22881ea705e4b0fb463",
-          "title": "ChatGPT 移动端上新语音智能体：动动嘴就能写文档、总结邮件",
-          "title_zh": "ChatGPT 移动端上新语音智能体：动动嘴就能写文档、总结邮件",
-          "title_en": null,
-          "title_original": "ChatGPT 移动端上新语音智能体：动动嘴就能写文档、总结邮件",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31347",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-24T10:16:22.801017Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "c6a650cf6b47f0b64b1ad22881ea705e4b0fb463",
-          "title": "ChatGPT 移动端上新语音智能体：动动嘴就能写文档、总结邮件",
-          "title_zh": "ChatGPT 移动端上新语音智能体：动动嘴就能写文档、总结邮件",
-          "title_en": null,
-          "title_original": "ChatGPT 移动端上新语音智能体：动动嘴就能写文档、总结邮件",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31347",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-24T10:16:22.801017Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7336,
-      "importance": 0.7336,
-      "importance_score": 0.7336,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.811,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-24T10:16:22.801017Z",
-      "latest_at": "2026-09-24T10:16:22.801017Z",
-      "primary_item": {
-        "id": "c6a650cf6b47f0b64b1ad22881ea705e4b0fb463",
-        "title": "ChatGPT 移动端上新语音智能体：动动嘴就能写文档、总结邮件",
-        "title_zh": "ChatGPT 移动端上新语音智能体：动动嘴就能写文档、总结邮件",
-        "title_en": null,
-        "title_original": "ChatGPT 移动端上新语音智能体：动动嘴就能写文档、总结邮件",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31347",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
-      }
-    },
-    {
-      "story_id": "story_6c9d14ec3920",
-      "title": "Gary Marcus 借 Jensen Huang 言论主张暂时关停 OpenAI / \"I think the answer is we have to shut the labs down\" - Jensen Huang",
-      "url": "https://garymarcus.substack.com/p/i-think-the-answer-is-we-have-to",
-      "primary_url": "https://garymarcus.substack.com/p/i-think-the-answer-is-we-have-to",
-      "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+      "story_id": "story_ff8c712f94de",
+      "title": "Satya Nadella 宣布 Copilot 迄今最大更新，定位为工作新 OS / We're building Copilot as a new OS for work that spans every model， every form factor， and every tas…",
+      "url": "https://x.com/satyanadella/status/2103455884366188544",
+      "primary_url": "https://x.com/satyanadella/status/2103455884366188544",
+      "source": "X：Satya Nadella (@satyanadella)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "edea0fcca689be6ff0e0727e7e3ff4d2b6db3fdd",
-          "title": "Gary Marcus 借 Jensen Huang 言论主张暂时关停 OpenAI / \"I think the answer is we have to shut the labs down\" - Jensen Huang",
-          "title_zh": "Gary Marcus 借 Jensen Huang 言论主张暂时关停 OpenAI",
-          "title_en": "\"I think the answer is we have to shut the labs down\" - Jensen Huang",
-          "title_original": "\"I think the answer is we have to shut the labs down\" - Jensen Huang",
-          "summary": "Gary Marcus 引用 Jensen Huang 接受 Ezra Klein 访谈时的话，认为无法控制软件的公司应被关停，并据此主张暂时关停 OpenAI。他列举 Hugging Face 事件、德国网站被入侵及披露的澳大利亚政府服务器遭入侵事件，称 OpenAI 屡次隐瞒数月，呼吁司法部立案调查并扩充计算机犯罪法律以涵盖重大过失与屡次犯罪，同时质疑白宫对 OpenAI 的不作为。",
+          "id": "aaaa5a0af320fe8603a96f2c2297d2315b39b9df",
+          "title": "Satya Nadella 宣布 Copilot 迄今最大更新，定位为工作新 OS / We're building Copilot as a new OS for work that spans every model， every form factor， and every tas…",
+          "title_zh": "Satya Nadella 宣布 Copilot 迄今最大更新，定位为工作新 OS",
+          "title_en": "We're building Copilot as a new OS for work that spans every model， every form factor， and every tas…",
+          "title_original": "We're building Copilot as a new OS for work that spans every model， every form factor， and every tas…",
+          "summary": "Satya Nadella 宣布 Copilot 迄今最大更新，将其定位为覆盖每个模型、设备和任务的工作新 OS。",
           "recommend_reason_zh": null,
-          "url": "https://garymarcus.substack.com/p/i-think-the-answer-is-we-have-to",
-          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+          "url": "https://x.com/satyanadella/status/2103455884366188544",
+          "source": "X：Satya Nadella (@satyanadella)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-24T12:27:50Z"
+          "published_at": "2026-09-25T12:05:37Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Gary Marcus：The Road to AI We Can Trust（RSS）"
+        "X：Satya Nadella (@satyanadella)"
       ],
       "items": [
         {
-          "id": "edea0fcca689be6ff0e0727e7e3ff4d2b6db3fdd",
-          "title": "Gary Marcus 借 Jensen Huang 言论主张暂时关停 OpenAI / \"I think the answer is we have to shut the labs down\" - Jensen Huang",
-          "title_zh": "Gary Marcus 借 Jensen Huang 言论主张暂时关停 OpenAI",
-          "title_en": "\"I think the answer is we have to shut the labs down\" - Jensen Huang",
-          "title_original": "\"I think the answer is we have to shut the labs down\" - Jensen Huang",
-          "summary": "Gary Marcus 引用 Jensen Huang 接受 Ezra Klein 访谈时的话，认为无法控制软件的公司应被关停，并据此主张暂时关停 OpenAI。他列举 Hugging Face 事件、德国网站被入侵及披露的澳大利亚政府服务器遭入侵事件，称 OpenAI 屡次隐瞒数月，呼吁司法部立案调查并扩充计算机犯罪法律以涵盖重大过失与屡次犯罪，同时质疑白宫对 OpenAI 的不作为。",
+          "id": "aaaa5a0af320fe8603a96f2c2297d2315b39b9df",
+          "title": "Satya Nadella 宣布 Copilot 迄今最大更新，定位为工作新 OS / We're building Copilot as a new OS for work that spans every model， every form factor， and every tas…",
+          "title_zh": "Satya Nadella 宣布 Copilot 迄今最大更新，定位为工作新 OS",
+          "title_en": "We're building Copilot as a new OS for work that spans every model， every form factor， and every tas…",
+          "title_original": "We're building Copilot as a new OS for work that spans every model， every form factor， and every tas…",
+          "summary": "Satya Nadella 宣布 Copilot 迄今最大更新，将其定位为覆盖每个模型、设备和任务的工作新 OS。",
           "recommend_reason_zh": null,
-          "url": "https://garymarcus.substack.com/p/i-think-the-answer-is-we-have-to",
-          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+          "url": "https://x.com/satyanadella/status/2103455884366188544",
+          "source": "X：Satya Nadella (@satyanadella)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-24T12:27:50Z"
+          "published_at": "2026-09-25T12:05:37Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7277,
-      "importance": 0.7277,
-      "importance_score": 0.7277,
+      "score": 0.7493,
+      "importance": 0.7493,
+      "importance_score": 0.7493,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.69,
+        "editorial": 0.67,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8283,
+        "recency": 0.9819,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1333,82 +908,111 @@
       "reasons": [
         "high_ai_relevance"
       ],
-      "earliest_at": "2026-09-24T12:27:50Z",
-      "latest_at": "2026-09-24T12:27:50Z",
+      "earliest_at": "2026-09-25T12:05:37Z",
+      "latest_at": "2026-09-25T12:05:37Z",
       "primary_item": {
-        "id": "edea0fcca689be6ff0e0727e7e3ff4d2b6db3fdd",
-        "title": "Gary Marcus 借 Jensen Huang 言论主张暂时关停 OpenAI / \"I think the answer is we have to shut the labs down\" - Jensen Huang",
-        "title_zh": "Gary Marcus 借 Jensen Huang 言论主张暂时关停 OpenAI",
-        "title_en": "\"I think the answer is we have to shut the labs down\" - Jensen Huang",
-        "title_original": "\"I think the answer is we have to shut the labs down\" - Jensen Huang",
-        "summary": "Gary Marcus 引用 Jensen Huang 接受 Ezra Klein 访谈时的话，认为无法控制软件的公司应被关停，并据此主张暂时关停 OpenAI。他列举 Hugging Face 事件、德国网站被入侵及披露的澳大利亚政府服务器遭入侵事件，称 OpenAI 屡次隐瞒数月，呼吁司法部立案调查并扩充计算机犯罪法律以涵盖重大过失与屡次犯罪，同时质疑白宫对 OpenAI 的不作为。",
+        "id": "aaaa5a0af320fe8603a96f2c2297d2315b39b9df",
+        "title": "Satya Nadella 宣布 Copilot 迄今最大更新，定位为工作新 OS / We're building Copilot as a new OS for work that spans every model， every form factor， and every tas…",
+        "title_zh": "Satya Nadella 宣布 Copilot 迄今最大更新，定位为工作新 OS",
+        "title_en": "We're building Copilot as a new OS for work that spans every model， every form factor， and every tas…",
+        "title_original": "We're building Copilot as a new OS for work that spans every model， every form factor， and every tas…",
+        "summary": "Satya Nadella 宣布 Copilot 迄今最大更新，将其定位为覆盖每个模型、设备和任务的工作新 OS。",
         "recommend_reason_zh": null,
-        "url": "https://garymarcus.substack.com/p/i-think-the-answer-is-we-have-to",
-        "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+        "url": "https://x.com/satyanadella/status/2103455884366188544",
+        "source": "X：Satya Nadella (@satyanadella)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7537,
+      "peak_score": 0.7493,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
+        "scored_at": "2026-09-25T14:01:40.785428Z"
       }
     },
     {
-      "story_id": "story_57778852def4",
-      "title": "Kimi K3.1十月或压轴登场:三档推理强度、百万超长上下文，Agent与Swarm全塞进配置",
-      "url": "https://www.aibase.com/news/31348",
-      "primary_url": "https://www.aibase.com/news/31348",
-      "source": "AIbase",
-      "source_name": "AIbase",
+      "story_id": "story_e0fa10f7de75",
+      "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
+      "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+      "primary_url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
       "sources": [
         {
-          "id": "90ce9f84b627eda47df99dc0f98635ebf9c8b6ff",
-          "title": "Kimi K3.1十月或压轴登场:三档推理强度、百万超长上下文，Agent与Swarm全塞进配置",
-          "title_zh": "Kimi K3.1十月或压轴登场:三档推理强度、百万超长上下文，Agent与Swarm全塞进配置",
+          "id": "c74455d54f10d39149f3f83e221935d572452878",
+          "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
+          "title_zh": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
           "title_en": null,
-          "title_original": "Kimi K3.1十月或压轴登场:三档推理强度、百万超长上下文，Agent与Swarm全塞进配置",
+          "title_original": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
+          "summary": "安全研究者发现针对 ChatGPT、Gemini 和 Google AI Overview 的规模化 AI 虚假信息攻击，共检测到 374 家被攻击企业，包括 Delta、Lufthansa、Bank of America、Airbnb 等，AI 会向用户给出诈骗电话和钓鱼链接。",
+          "recommend_reason_zh": null,
+          "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-24T17:19:34.716000Z"
+        },
+        {
+          "id": "3bf6208b9d7758cd2cf65ce688ae780a2e6efd26",
+          "title": "黑客操纵ChatGPT和Gemini，将用户引导至诈骗平台",
+          "title_zh": "黑客操纵ChatGPT和Gemini，将用户引导至诈骗平台",
+          "title_en": null,
+          "title_original": "黑客操纵ChatGPT和Gemini，将用户引导至诈骗平台",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31348",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-24T10:16:22.801017Z"
+          "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+          "source": "medium.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-24T17:19:34.716000Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "AIbase"
+        "Hacker News 热门（buzzing.cc 中文翻译）",
+        "medium.com"
       ],
       "items": [
         {
-          "id": "90ce9f84b627eda47df99dc0f98635ebf9c8b6ff",
-          "title": "Kimi K3.1十月或压轴登场:三档推理强度、百万超长上下文，Agent与Swarm全塞进配置",
-          "title_zh": "Kimi K3.1十月或压轴登场:三档推理强度、百万超长上下文，Agent与Swarm全塞进配置",
+          "id": "c74455d54f10d39149f3f83e221935d572452878",
+          "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
+          "title_zh": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
           "title_en": null,
-          "title_original": "Kimi K3.1十月或压轴登场:三档推理强度、百万超长上下文，Agent与Swarm全塞进配置",
+          "title_original": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
+          "summary": "安全研究者发现针对 ChatGPT、Gemini 和 Google AI Overview 的规模化 AI 虚假信息攻击，共检测到 374 家被攻击企业，包括 Delta、Lufthansa、Bank of America、Airbnb 等，AI 会向用户给出诈骗电话和钓鱼链接。",
+          "recommend_reason_zh": null,
+          "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-24T17:19:34.716000Z"
+        },
+        {
+          "id": "3bf6208b9d7758cd2cf65ce688ae780a2e6efd26",
+          "title": "黑客操纵ChatGPT和Gemini，将用户引导至诈骗平台",
+          "title_zh": "黑客操纵ChatGPT和Gemini，将用户引导至诈骗平台",
+          "title_en": null,
+          "title_original": "黑客操纵ChatGPT和Gemini，将用户引导至诈骗平台",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31348",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-24T10:16:22.801017Z"
+          "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+          "source": "medium.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-24T17:19:34.716000Z"
         }
       ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7336,
-      "importance": 0.7336,
-      "importance_score": 0.7336,
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.7471,
+      "importance": 0.7471,
+      "importance_score": 0.7471,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.72,
+        "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.811,
+        "recency": 0.8196,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1416,358 +1020,26 @@
       "reasons": [
         "high_ai_relevance"
       ],
-      "earliest_at": "2026-09-24T10:16:22.801017Z",
-      "latest_at": "2026-09-24T10:16:22.801017Z",
+      "earliest_at": "2026-09-24T17:19:34.716000Z",
+      "latest_at": "2026-09-24T17:19:34.716000Z",
       "primary_item": {
-        "id": "90ce9f84b627eda47df99dc0f98635ebf9c8b6ff",
-        "title": "Kimi K3.1十月或压轴登场:三档推理强度、百万超长上下文，Agent与Swarm全塞进配置",
-        "title_zh": "Kimi K3.1十月或压轴登场:三档推理强度、百万超长上下文，Agent与Swarm全塞进配置",
+        "id": "c74455d54f10d39149f3f83e221935d572452878",
+        "title": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
+        "title_zh": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
         "title_en": null,
-        "title_original": "Kimi K3.1十月或压轴登场:三档推理强度、百万超长上下文，Agent与Swarm全塞进配置",
-        "summary": null,
+        "title_original": "安全研究者披露黑客用 GEO 污染 ChatGPT、Gemini 和 Google AI Overview，374 家企业被植入诈骗联系方式",
+        "summary": "安全研究者发现针对 ChatGPT、Gemini 和 Google AI Overview 的规模化 AI 虚假信息攻击，共检测到 374 家被攻击企业，包括 Delta、Lufthansa、Bank of America、Airbnb 等，AI 会向用户给出诈骗电话和钓鱼链接。",
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31348",
-        "source": "AIbase",
-        "source_name": "AIbase"
+        "url": "https://medium.com/@arielsimon/dark-sourcery-how-hackers-manipulate-ai-to-scam-you-88df434d2073",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
       },
-      "peak_score": 0.7676,
+      "peak_score": 0.7471,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
-      }
-    },
-    {
-      "story_id": "story_24868f144755",
-      "title": "Meta Connect 发布会：Muse 全面接入 AI 眼镜，小扎要让数十亿人用上超级智能",
-      "url": "https://www.aibase.com/news/31346",
-      "primary_url": "https://www.aibase.com/news/31346",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "802526543c016938251409bbf0b4e02c560e55ab",
-          "title": "Meta Connect 发布会：Muse 全面接入 AI 眼镜，小扎要让数十亿人用上超级智能",
-          "title_zh": "Meta Connect 发布会：Muse 全面接入 AI 眼镜，小扎要让数十亿人用上超级智能",
-          "title_en": null,
-          "title_original": "Meta Connect 发布会：Muse 全面接入 AI 眼镜，小扎要让数十亿人用上超级智能",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31346",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-24T10:16:22.801017Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "802526543c016938251409bbf0b4e02c560e55ab",
-          "title": "Meta Connect 发布会：Muse 全面接入 AI 眼镜，小扎要让数十亿人用上超级智能",
-          "title_zh": "Meta Connect 发布会：Muse 全面接入 AI 眼镜，小扎要让数十亿人用上超级智能",
-          "title_en": null,
-          "title_original": "Meta Connect 发布会：Muse 全面接入 AI 眼镜，小扎要让数十亿人用上超级智能",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31346",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-24T10:16:22.801017Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7336,
-      "importance": 0.7336,
-      "importance_score": 0.7336,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.811,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-24T10:16:22.801017Z",
-      "latest_at": "2026-09-24T10:16:22.801017Z",
-      "primary_item": {
-        "id": "802526543c016938251409bbf0b4e02c560e55ab",
-        "title": "Meta Connect 发布会：Muse 全面接入 AI 眼镜，小扎要让数十亿人用上超级智能",
-        "title_zh": "Meta Connect 发布会：Muse 全面接入 AI 眼镜，小扎要让数十亿人用上超级智能",
-        "title_en": null,
-        "title_original": "Meta Connect 发布会：Muse 全面接入 AI 眼镜，小扎要让数十亿人用上超级智能",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31346",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
-      }
-    },
-    {
-      "story_id": "story_7013a64c530f",
-      "title": "OpenAI、Anthropic、Hugging Face 联合国呼吁 AI 国际协调，特朗普政府明确反对\"全球治理\"",
-      "url": "https://www.aibase.com/news/31353",
-      "primary_url": "https://www.aibase.com/news/31353",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "5e6c2275bad9593f80df3c1fce3bdde86367c703",
-          "title": "OpenAI、Anthropic、Hugging Face 联合国呼吁 AI 国际协调，特朗普政府明确反对\"全球治理\"",
-          "title_zh": "OpenAI、Anthropic、Hugging Face 联合国呼吁 AI 国际协调，特朗普政府明确反对\"全球治理\"",
-          "title_en": null,
-          "title_original": "OpenAI、Anthropic、Hugging Face 联合国呼吁 AI 国际协调，特朗普政府明确反对\"全球治理\"",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31353",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-24T10:16:22.801017Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "5e6c2275bad9593f80df3c1fce3bdde86367c703",
-          "title": "OpenAI、Anthropic、Hugging Face 联合国呼吁 AI 国际协调，特朗普政府明确反对\"全球治理\"",
-          "title_zh": "OpenAI、Anthropic、Hugging Face 联合国呼吁 AI 国际协调，特朗普政府明确反对\"全球治理\"",
-          "title_en": null,
-          "title_original": "OpenAI、Anthropic、Hugging Face 联合国呼吁 AI 国际协调，特朗普政府明确反对\"全球治理\"",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31353",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-24T10:16:22.801017Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7336,
-      "importance": 0.7336,
-      "importance_score": 0.7336,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.811,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-24T10:16:22.801017Z",
-      "latest_at": "2026-09-24T10:16:22.801017Z",
-      "primary_item": {
-        "id": "5e6c2275bad9593f80df3c1fce3bdde86367c703",
-        "title": "OpenAI、Anthropic、Hugging Face 联合国呼吁 AI 国际协调，特朗普政府明确反对\"全球治理\"",
-        "title_zh": "OpenAI、Anthropic、Hugging Face 联合国呼吁 AI 国际协调，特朗普政府明确反对\"全球治理\"",
-        "title_en": null,
-        "title_original": "OpenAI、Anthropic、Hugging Face 联合国呼吁 AI 国际协调，特朗普政府明确反对\"全球治理\"",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31353",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
-      }
-    },
-    {
-      "story_id": "story_18b95bbd79f7",
-      "title": "交易额逼近 7 万亿！深度聚焦中国直播电商：AI 降本大潮下，真人主播会被取代吗？",
-      "url": "https://www.aibase.com/news/31342",
-      "primary_url": "https://www.aibase.com/news/31342",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "9ad973906a7d3b7f658d86b698e722f1b5ed2d98",
-          "title": "交易额逼近 7 万亿！深度聚焦中国直播电商：AI 降本大潮下，真人主播会被取代吗？",
-          "title_zh": "交易额逼近 7 万亿！深度聚焦中国直播电商：AI 降本大潮下，真人主播会被取代吗？",
-          "title_en": null,
-          "title_original": "交易额逼近 7 万亿！深度聚焦中国直播电商：AI 降本大潮下，真人主播会被取代吗？",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31342",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-24T10:16:22.801017Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "9ad973906a7d3b7f658d86b698e722f1b5ed2d98",
-          "title": "交易额逼近 7 万亿！深度聚焦中国直播电商：AI 降本大潮下，真人主播会被取代吗？",
-          "title_zh": "交易额逼近 7 万亿！深度聚焦中国直播电商：AI 降本大潮下，真人主播会被取代吗？",
-          "title_en": null,
-          "title_original": "交易额逼近 7 万亿！深度聚焦中国直播电商：AI 降本大潮下，真人主播会被取代吗？",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31342",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-24T10:16:22.801017Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7336,
-      "importance": 0.7336,
-      "importance_score": 0.7336,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.811,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-24T10:16:22.801017Z",
-      "latest_at": "2026-09-24T10:16:22.801017Z",
-      "primary_item": {
-        "id": "9ad973906a7d3b7f658d86b698e722f1b5ed2d98",
-        "title": "交易额逼近 7 万亿！深度聚焦中国直播电商：AI 降本大潮下，真人主播会被取代吗？",
-        "title_zh": "交易额逼近 7 万亿！深度聚焦中国直播电商：AI 降本大潮下，真人主播会被取代吗？",
-        "title_en": null,
-        "title_original": "交易额逼近 7 万亿！深度聚焦中国直播电商：AI 降本大潮下，真人主播会被取代吗？",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31342",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
-      }
-    },
-    {
-      "story_id": "story_1e92608c2cdf",
-      "title": "华为小艺Work正式上线:7×24小时养成系助理，支持一句话做PPT与数据分析",
-      "url": "https://www.aibase.com/news/31343",
-      "primary_url": "https://www.aibase.com/news/31343",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "cbcb2ee88fda7851441f217f0f274c8494629fc5",
-          "title": "华为小艺Work正式上线:7×24小时养成系助理，支持一句话做PPT与数据分析",
-          "title_zh": "华为小艺Work正式上线:7×24小时养成系助理，支持一句话做PPT与数据分析",
-          "title_en": null,
-          "title_original": "华为小艺Work正式上线:7×24小时养成系助理，支持一句话做PPT与数据分析",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31343",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-24T10:16:22.801017Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "cbcb2ee88fda7851441f217f0f274c8494629fc5",
-          "title": "华为小艺Work正式上线:7×24小时养成系助理，支持一句话做PPT与数据分析",
-          "title_zh": "华为小艺Work正式上线:7×24小时养成系助理，支持一句话做PPT与数据分析",
-          "title_en": null,
-          "title_original": "华为小艺Work正式上线:7×24小时养成系助理，支持一句话做PPT与数据分析",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31343",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-24T10:16:22.801017Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7336,
-      "importance": 0.7336,
-      "importance_score": 0.7336,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.811,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-24T10:16:22.801017Z",
-      "latest_at": "2026-09-24T10:16:22.801017Z",
-      "primary_item": {
-        "id": "cbcb2ee88fda7851441f217f0f274c8494629fc5",
-        "title": "华为小艺Work正式上线:7×24小时养成系助理，支持一句话做PPT与数据分析",
-        "title_zh": "华为小艺Work正式上线:7×24小时养成系助理，支持一句话做PPT与数据分析",
-        "title_en": null,
-        "title_original": "华为小艺Work正式上线:7×24小时养成系助理，支持一句话做PPT与数据分析",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31343",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-25T08:02:34.218470Z"
+        "scored_at": "2026-09-25T14:01:40.785428Z"
       }
     }
   ]
