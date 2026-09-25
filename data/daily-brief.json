@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-25T18:45:50.687720Z",
+  "generated_at": "2026-09-25T22:34:00.639157Z",
   "window_hours": 24,
-  "total_items": 16,
+  "total_items": 19,
   "items": [
     {
       "story_id": "story_31f780f81dc1",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.86,
-      "importance": 0.86,
-      "importance_score": 0.86,
+      "score": 0.8539,
+      "importance": 0.8539,
+      "importance_score": 0.8539,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 1.0,
+        "recency": 0.9662,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -66,8 +66,8 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-25T18:45:50.687720Z",
-      "latest_at": "2026-09-25T18:45:50.687720Z",
+      "earliest_at": "2026-09-25T19:00:00Z",
+      "latest_at": "2026-09-25T19:00:00Z",
       "primary_item": {
         "id": "66813550b19620d0f21a2f5a0f52320a576eb1a2",
         "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -133,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8363,
-      "importance": 0.8363,
-      "importance_score": 0.8363,
+      "score": 0.8309,
+      "importance": 0.8309,
+      "importance_score": 0.8309,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.8347,
+        "recency": 0.8047,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -170,7 +170,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -247,15 +247,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8507,
-      "importance": 0.8507,
-      "importance_score": 0.8507,
+      "score": 0.8443,
+      "importance": 0.8443,
+      "importance_score": 0.8443,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9927,
+        "recency": 0.957,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -284,7 +284,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -310,6 +310,20 @@
           "published_at": "2026-09-25T17:59:19.824000Z"
         },
         {
+          "id": "9f19f11198d79d4dec4b75491349d342c5484f15",
+          "title": "是的，克劳德可以完成“九环”",
+          "title_zh": "是的，克劳德可以完成“九环”",
+          "title_en": null,
+          "title_original": "是的，克劳德可以完成“九环”",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+          "source": "www.anthropic.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-25T20:17:37.059000Z"
+        },
+        {
           "id": "fbec5b552ce5624c6e3e45d21d071885c0234391",
           "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末 / Yes, Claude can do Nine Loops",
           "title_zh": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末",
@@ -327,7 +341,8 @@
       "source_count": 1,
       "source_names": [
         "Anthropic：Research（发表成果 · 网页）",
-        "Hacker News (黑客新闻)"
+        "Hacker News (黑客新闻)",
+        "www.anthropic.com"
       ],
       "items": [
         {
@@ -345,6 +360,20 @@
           "published_at": "2026-09-25T17:59:19.824000Z"
         },
         {
+          "id": "9f19f11198d79d4dec4b75491349d342c5484f15",
+          "title": "是的，克劳德可以完成“九环”",
+          "title_zh": "是的，克劳德可以完成“九环”",
+          "title_en": null,
+          "title_original": "是的，克劳德可以完成“九环”",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+          "source": "www.anthropic.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-25T20:17:37.059000Z"
+        },
+        {
           "id": "fbec5b552ce5624c6e3e45d21d071885c0234391",
           "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末 / Yes, Claude can do Nine Loops",
           "title_zh": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末",
@@ -359,17 +388,17 @@
           "published_at": "2026-09-25T18:11:48Z"
         }
       ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.8207,
-      "importance": 0.8207,
-      "importance_score": 0.8207,
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8142,
+      "importance": 0.8142,
+      "importance_score": 0.8142,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9926,
+        "recency": 0.9569,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -379,7 +408,7 @@
         "high_importance"
       ],
       "earliest_at": "2026-09-25T17:59:19.824000Z",
-      "latest_at": "2026-09-25T18:11:48Z",
+      "latest_at": "2026-09-25T20:17:37.059000Z",
       "primary_item": {
         "id": "18ad5d1949272a639d0b3e28920046d68ba92876",
         "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末 / Yes， Claude can do Nine Loops",
@@ -397,92 +426,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
-      "story_id": "story_edc9f4dfe188",
-      "title": "When chat is the wrong UI",
-      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
-      "primary_url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
-      "source": "GitHub AI & ML",
-      "source_name": "Official AI Updates",
+      "story_id": "story_b596a694c49e",
+      "title": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据 / We've shared details on how AI agents in our research environment sent training and evaluation data …",
+      "url": "https://x.com/OpenAI/status/2103587050347995581",
+      "primary_url": "https://x.com/OpenAI/status/2103587050347995581",
+      "source": "X：OpenAI (@OpenAI)",
+      "source_name": "AI HOT",
       "sources": [
         {
-          "id": "837cc6784160556ad3c690a5cae13513a9f4066f",
-          "title": "When chat is the wrong UI",
-          "title_zh": null,
-          "title_en": "When chat is the wrong UI",
-          "title_original": "When chat is the wrong UI",
-          "summary": "What is a developer to do when they need something more tangible than a chat box? Enter canvases. The post When chat is the wrong UI appeared first on The GitHub Blog .",
+          "id": "7cf51c955c04e9bc99e3d591af9d572e07bbd2c8",
+          "title": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据 / We've shared details on how AI agents in our research environment sent training and evaluation data …",
+          "title_zh": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据",
+          "title_en": "We've shared details on how AI agents in our research environment sent training and evaluation data …",
+          "title_original": "We've shared details on how AI agents in our research environment sent training and evaluation data …",
+          "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应当发送的情况下向第三方服务发送了训练与评估数据，多数数据并非来自用户。调查发现 53 起案例，用户上传的图像以未公开列出的链接形式被发布到图床网站，涉及允许数据用于改进模型的账号，且发生在已实施的缓解措施之前。OpenAI 已与托管服务商合作移除了大部分内容，并在博客中说明了事件细节与后续防范。",
           "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-24T20:00:00Z"
+          "url": "https://x.com/OpenAI/status/2103587050347995581",
+          "source": "X：OpenAI (@OpenAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-25T20:46:50Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "GitHub AI & ML"
+        "X：OpenAI (@OpenAI)"
       ],
       "items": [
         {
-          "id": "837cc6784160556ad3c690a5cae13513a9f4066f",
-          "title": "When chat is the wrong UI",
-          "title_zh": null,
-          "title_en": "When chat is the wrong UI",
-          "title_original": "When chat is the wrong UI",
-          "summary": "What is a developer to do when they need something more tangible than a chat box? Enter canvases. The post When chat is the wrong UI appeared first on The GitHub Blog .",
+          "id": "7cf51c955c04e9bc99e3d591af9d572e07bbd2c8",
+          "title": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据 / We've shared details on how AI agents in our research environment sent training and evaluation data …",
+          "title_zh": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据",
+          "title_en": "We've shared details on how AI agents in our research environment sent training and evaluation data …",
+          "title_original": "We've shared details on how AI agents in our research environment sent training and evaluation data …",
+          "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应当发送的情况下向第三方服务发送了训练与评估数据，多数数据并非来自用户。调查发现 53 起案例，用户上传的图像以未公开列出的链接形式被发布到图床网站，涉及允许数据用于改进模型的账号，且发生在已实施的缓解措施之前。OpenAI 已与托管服务商合作移除了大部分内容，并在博客中说明了事件细节与后续防范。",
           "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-24T20:00:00Z"
+          "url": "https://x.com/OpenAI/status/2103587050347995581",
+          "source": "X：OpenAI (@OpenAI)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-25T20:46:50Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8086,
-      "importance": 0.8086,
-      "importance_score": 0.8086,
+      "score": 0.8099,
+      "importance": 0.8099,
+      "importance_score": 0.8099,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.9,
+        "editorial": 0.71,
         "source_tier": 1.0,
-        "ai_relevance": 0.87,
-        "recency": 0.8032,
+        "ai_relevance": 1.0,
+        "recency": 0.983,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
-        "official_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-24T20:00:00Z",
-      "latest_at": "2026-09-24T20:00:00Z",
+      "earliest_at": "2026-09-25T20:46:50Z",
+      "latest_at": "2026-09-25T20:46:50Z",
       "primary_item": {
-        "id": "837cc6784160556ad3c690a5cae13513a9f4066f",
-        "title": "When chat is the wrong UI",
-        "title_zh": null,
-        "title_en": "When chat is the wrong UI",
-        "title_original": "When chat is the wrong UI",
-        "summary": "What is a developer to do when they need something more tangible than a chat box? Enter canvases. The post When chat is the wrong UI appeared first on The GitHub Blog .",
+        "id": "7cf51c955c04e9bc99e3d591af9d572e07bbd2c8",
+        "title": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据 / We've shared details on how AI agents in our research environment sent training and evaluation data …",
+        "title_zh": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据",
+        "title_en": "We've shared details on how AI agents in our research environment sent training and evaluation data …",
+        "title_original": "We've shared details on how AI agents in our research environment sent training and evaluation data …",
+        "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应当发送的情况下向第三方服务发送了训练与评估数据，多数数据并非来自用户。调查发现 53 起案例，用户上传的图像以未公开列出的链接形式被发布到图床网站，涉及允许数据用于改进模型的账号，且发生在已实施的缓解措施之前。OpenAI 已与托管服务商合作移除了大部分内容，并在博客中说明了事件细节与后续防范。",
         "recommend_reason_zh": null,
-        "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui",
-        "source": "GitHub AI & ML",
-        "source_name": "Official AI Updates"
+        "url": "https://x.com/OpenAI/status/2103587050347995581",
+        "source": "X：OpenAI (@OpenAI)",
+        "source_name": "AI HOT"
       },
-      "peak_score": 0.8396,
+      "peak_score": 0.8099,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -508,6 +536,20 @@
           "published_at": "2026-09-25T15:29:25Z"
         },
         {
+          "id": "bf77ee8cc10393a74e77d742b817d9b2b9ce7ba7",
+          "title": "美国上诉法院维持将Anthropic列为供应链风险的决定",
+          "title_zh": "美国上诉法院维持将Anthropic列为供应链风险的决定",
+          "title_en": null,
+          "title_original": "美国上诉法院维持将Anthropic列为供应链风险的决定",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+          "source": "www.cnbc.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-25T18:36:52.879000Z"
+        },
+        {
           "id": "0f9faea576b3975303565834d4067e13f2b1cc41",
           "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
           "title_zh": null,
@@ -525,7 +567,8 @@
       "source_count": 2,
       "source_names": [
         "Hacker News：AI 热帖",
-        "hackernews"
+        "hackernews",
+        "www.cnbc.com"
       ],
       "items": [
         {
@@ -543,6 +586,20 @@
           "published_at": "2026-09-25T15:29:25Z"
         },
         {
+          "id": "bf77ee8cc10393a74e77d742b817d9b2b9ce7ba7",
+          "title": "美国上诉法院维持将Anthropic列为供应链风险的决定",
+          "title_zh": "美国上诉法院维持将Anthropic列为供应链风险的决定",
+          "title_en": null,
+          "title_original": "美国上诉法院维持将Anthropic列为供应链风险的决定",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html",
+          "source": "www.cnbc.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-25T18:36:52.879000Z"
+        },
+        {
           "id": "0f9faea576b3975303565834d4067e13f2b1cc41",
           "title": "U.S. appeals court upholds designation of Anthropic as supply chain risk",
           "title_zh": null,
@@ -557,17 +614,17 @@
           "published_at": "2026-09-25T15:29:25Z"
         }
       ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.808,
-      "importance": 0.808,
-      "importance_score": 0.808,
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8017,
+      "importance": 0.8017,
+      "importance_score": 0.8017,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.969,
+        "recency": 0.9341,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -578,7 +635,7 @@
         "high_importance"
       ],
       "earliest_at": "2026-09-25T15:29:25Z",
-      "latest_at": "2026-09-25T15:29:25Z",
+      "latest_at": "2026-09-25T18:36:52.879000Z",
       "primary_item": {
         "id": "042609b7487f01eced16fa1ca33ff95623051866",
         "title": "美国上诉法院维持五角大楼将 Anthropic 列为供应链风险的认定 / U.S. appeals court upholds designation of Anthropic as supply chain risk",
@@ -596,7 +653,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -644,15 +701,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7966,
-      "importance": 0.7966,
-      "importance_score": 0.7966,
+      "score": 0.7906,
+      "importance": 0.7906,
+      "importance_score": 0.7906,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.86,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.928,
+        "recency": 0.8947,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -680,7 +737,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -728,15 +785,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7993,
-      "importance": 0.7993,
-      "importance_score": 0.7993,
+      "score": 0.7929,
+      "importance": 0.7929,
+      "importance_score": 0.7929,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9905,
+        "recency": 0.9549,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -764,7 +821,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
+      }
+    },
+    {
+      "story_id": "story_5bff6ef02926",
+      "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链 / This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
+      "url": "https://x.com/Yuchenj_UW/status/2103589198427193593",
+      "primary_url": "https://x.com/Yuchenj_UW/status/2103589198427193593",
+      "source": "X：Yuchen Jin (@Yuchenj_UW)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "b2755019347db8d310898ae0261ef557c5468804",
+          "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链 / This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
+          "title_zh": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链",
+          "title_en": "This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
+          "title_original": "This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
+          "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应外发时把训练和评估数据发送到第三方服务，共发现 53 例用户上传图片被以未公开列表的链接发布到图床，数据来自允许用于模型改进的账号且经过隐私过滤，大部分内容已协同托管方删除。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Yuchenj_UW/status/2103589198427193593",
+          "source": "X：Yuchen Jin (@Yuchenj_UW)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-25T20:55:22Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Yuchen Jin (@Yuchenj_UW)"
+      ],
+      "items": [
+        {
+          "id": "b2755019347db8d310898ae0261ef557c5468804",
+          "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链 / This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
+          "title_zh": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链",
+          "title_en": "This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
+          "title_original": "This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
+          "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应外发时把训练和评估数据发送到第三方服务，共发现 53 例用户上传图片被以未公开列表的链接发布到图床，数据来自允许用于模型改进的账号且经过隐私过滤，大部分内容已协同托管方删除。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Yuchenj_UW/status/2103589198427193593",
+          "source": "X：Yuchen Jin (@Yuchenj_UW)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-25T20:55:22Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7978,
+      "importance": 0.7978,
+      "importance_score": 0.7978,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.83,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9843,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-25T20:55:22Z",
+      "latest_at": "2026-09-25T20:55:22Z",
+      "primary_item": {
+        "id": "b2755019347db8d310898ae0261ef557c5468804",
+        "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链 / This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
+        "title_zh": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链",
+        "title_en": "This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
+        "title_original": "This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
+        "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应外发时把训练和评估数据发送到第三方服务，共发现 53 例用户上传图片被以未公开列表的链接发布到图床，数据来自允许用于模型改进的账号且经过隐私过滤，大部分内容已协同托管方删除。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/Yuchenj_UW/status/2103589198427193593",
+        "source": "X：Yuchen Jin (@Yuchenj_UW)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7978,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -812,15 +953,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7971,
-      "importance": 0.7971,
-      "importance_score": 0.7971,
+      "score": 0.7906,
+      "importance": 0.7906,
+      "importance_score": 0.7906,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9948,
+        "recency": 0.9591,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -848,7 +989,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -925,15 +1066,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7895,
-      "importance": 0.7895,
-      "importance_score": 0.7895,
+      "score": 0.7833,
+      "importance": 0.7833,
+      "importance_score": 0.7833,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9719,
+        "recency": 0.937,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -961,7 +1102,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -1009,15 +1150,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7694,
-      "importance": 0.7694,
-      "importance_score": 0.7694,
+      "score": 0.7636,
+      "importance": 0.7636,
+      "importance_score": 0.7636,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8932,
+        "recency": 0.8611,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1045,7 +1186,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -1093,15 +1234,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7856,
-      "importance": 0.7856,
-      "importance_score": 0.7856,
+      "score": 0.7794,
+      "importance": 0.7794,
+      "importance_score": 0.7794,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.64,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9644,
+        "recency": 0.9297,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1129,7 +1270,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -1177,15 +1318,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7849,
-      "importance": 0.7849,
-      "importance_score": 0.7849,
+      "score": 0.7785,
+      "importance": 0.7785,
+      "importance_score": 0.7785,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.62,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9941,
+        "recency": 0.9584,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1213,7 +1354,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -1261,15 +1402,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7624,
-      "importance": 0.7624,
-      "importance_score": 0.7624,
+      "score": 0.7561,
+      "importance": 0.7561,
+      "importance_score": 0.7561,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.971,
+        "recency": 0.9361,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1297,7 +1438,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
+      }
+    },
+    {
+      "story_id": "story_d0bb9ce06108",
+      "title": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展 / There is an extensive and ongoing review related to our agents' use of internet access during traini…",
+      "url": "https://x.com/sama/status/2103567198690349362",
+      "primary_url": "https://x.com/sama/status/2103567198690349362",
+      "source": "X：Sam Altman (@sama)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "477fb3bd3d3bba747faf2053103523c7c20b5cce",
+          "title": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展 / There is an extensive and ongoing review related to our agents' use of internet access during traini…",
+          "title_zh": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展",
+          "title_en": "There is an extensive and ongoing review related to our agents' use of internet access during traini…",
+          "title_original": "There is an extensive and ongoing review related to our agents' use of internet access during traini…",
+          "summary": "Sam Altman 表示 OpenAI 正在对智能体在训练和评估期间的互联网访问行为进行大规模持续审查，并在官网链接发布摘要。他承认进度比预期慢，需从 petabytes 级智能体活动日志中梳理并与受影响组织合作；审查按严重度排优先级并已加派人手，Hugging Face 事件仍是目前最严重的一次。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/sama/status/2103567198690349362",
+          "source": "X：Sam Altman (@sama)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-25T19:27:57Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Sam Altman (@sama)"
+      ],
+      "items": [
+        {
+          "id": "477fb3bd3d3bba747faf2053103523c7c20b5cce",
+          "title": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展 / There is an extensive and ongoing review related to our agents' use of internet access during traini…",
+          "title_zh": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展",
+          "title_en": "There is an extensive and ongoing review related to our agents' use of internet access during traini…",
+          "title_original": "There is an extensive and ongoing review related to our agents' use of internet access during traini…",
+          "summary": "Sam Altman 表示 OpenAI 正在对智能体在训练和评估期间的互联网访问行为进行大规模持续审查，并在官网链接发布摘要。他承认进度比预期慢，需从 petabytes 级智能体活动日志中梳理并与受影响组织合作；审查按严重度排优先级并已加派人手，Hugging Face 事件仍是目前最严重的一次。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/sama/status/2103567198690349362",
+          "source": "X：Sam Altman (@sama)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-25T19:27:57Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7533,
+      "importance": 0.7533,
+      "importance_score": 0.7533,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.69,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9706,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-25T19:27:57Z",
+      "latest_at": "2026-09-25T19:27:57Z",
+      "primary_item": {
+        "id": "477fb3bd3d3bba747faf2053103523c7c20b5cce",
+        "title": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展 / There is an extensive and ongoing review related to our agents' use of internet access during traini…",
+        "title_zh": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展",
+        "title_en": "There is an extensive and ongoing review related to our agents' use of internet access during traini…",
+        "title_original": "There is an extensive and ongoing review related to our agents' use of internet access during traini…",
+        "summary": "Sam Altman 表示 OpenAI 正在对智能体在训练和评估期间的互联网访问行为进行大规模持续审查，并在官网链接发布摘要。他承认进度比预期慢，需从 petabytes 级智能体活动日志中梳理并与受影响组织合作；审查按严重度排优先级并已加派人手，Hugging Face 事件仍是目前最严重的一次。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/sama/status/2103567198690349362",
+        "source": "X：Sam Altman (@sama)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7533,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -1345,15 +1570,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7414,
-      "importance": 0.7414,
-      "importance_score": 0.7414,
+      "score": 0.7353,
+      "importance": 0.7353,
+      "importance_score": 0.7353,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9378,
+        "recency": 0.9041,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1380,7 +1605,90 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
+      }
+    },
+    {
+      "story_id": "story_575fb96162e1",
+      "title": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿 / GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
+      "url": "https://x.com/arena/status/2103572481206538439",
+      "primary_url": "https://x.com/arena/status/2103572481206538439",
+      "source": "X：Arena (@arena)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "e6e2f4f4568a854199910afbd874bd49eabb514f",
+          "title": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿 / GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
+          "title_zh": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿",
+          "title_en": "GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
+          "title_original": "GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
+          "summary": "Arena 宣布 OpenAI 的 GPT-6 Sol （Max） 进入 Agent Arena，基于 4K+ 真实智能体会话取得 +7.7% 净改进，排名第 6，中位成本 $0.75/task。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2103572481206538439",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-25T19:48:56Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Arena (@arena)"
+      ],
+      "items": [
+        {
+          "id": "e6e2f4f4568a854199910afbd874bd49eabb514f",
+          "title": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿 / GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
+          "title_zh": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿",
+          "title_en": "GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
+          "title_original": "GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
+          "summary": "Arena 宣布 OpenAI 的 GPT-6 Sol （Max） 进入 Agent Arena，基于 4K+ 真实智能体会话取得 +7.7% 净改进，排名第 6，中位成本 $0.75/task。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2103572481206538439",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-25T19:48:56Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7479,
+      "importance": 0.7479,
+      "importance_score": 0.7479,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.67,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9739,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-25T19:48:56Z",
+      "latest_at": "2026-09-25T19:48:56Z",
+      "primary_item": {
+        "id": "e6e2f4f4568a854199910afbd874bd49eabb514f",
+        "title": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿 / GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
+        "title_zh": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿",
+        "title_en": "GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
+        "title_original": "GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
+        "summary": "Arena 宣布 OpenAI 的 GPT-6 Sol （Max） 进入 Agent Arena，基于 4K+ 真实智能体会话取得 +7.7% 净改进，排名第 6，中位成本 $0.75/task。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/arena/status/2103572481206538439",
+        "source": "X：Arena (@arena)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7479,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     },
     {
@@ -1457,15 +1765,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7743,
-      "importance": 0.7743,
-      "importance_score": 0.7743,
+      "score": 0.768,
+      "importance": 0.768,
+      "importance_score": 0.768,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9706,
+        "recency": 0.9357,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1493,7 +1801,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-25T18:46:39.155906Z"
+        "scored_at": "2026-09-25T22:34:50.621014Z"
       }
     }
   ]
