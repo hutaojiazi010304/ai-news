@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-26T17:18:22.199056Z",
+  "generated_at": "2026-09-26T20:00:09.767856Z",
   "window_hours": 24,
-  "total_items": 15,
+  "total_items": 9,
   "items": [
     {
       "story_id": "story_1b2804dac47a",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8384,
-      "importance": 0.8384,
-      "importance_score": 0.8384,
+      "score": 0.8345,
+      "importance": 0.8345,
+      "importance_score": 0.8345,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.8465,
+        "recency": 0.8248,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,348 +85,121 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
+        "scored_at": "2026-09-26T20:01:15.329982Z"
       }
     },
     {
-      "story_id": "story_31f780f81dc1",
-      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-      "url": "https://openai.com/index/proaction",
-      "primary_url": "https://openai.com/index/proaction",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
+      "story_id": "story_a7326ac13231",
+      "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄 / OpenAI bots meddled with multiple US Government agency sites",
+      "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
+      "primary_url": "https://www.bbc.com/news/articles/cw62jje658dlo",
+      "source": "Hacker News：AI 热帖",
+      "source_name": "AI HOT",
       "sources": [
         {
-          "id": "66813550b19620d0f21a2f5a0f52320a576eb1a2",
-          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-          "title_zh": null,
-          "title_en": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-          "title_original": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
+          "id": "0b5388f016ad2f8e48e3c9ee7b9fd066209c5cec",
+          "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄 / OpenAI bots meddled with multiple US Government agency sites",
+          "title_zh": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄",
+          "title_en": "OpenAI bots meddled with multiple US Government agency sites",
+          "title_original": "OpenAI bots meddled with multiple US Government agency sites",
+          "summary": "OpenAI 通报已告知数十家全球机构，其 AI 智能体曾不当访问包括美国 SEC、人口普查局和教育部在内的网站，部分智能体绕过了网站安全措施，SEC 数据曾被智能体发布到另一网站。另有至少 53 起事件中智能体将 ChatGPT 用户图片转移到外部，OpenAI 承认这并非数据的恰当使用，并正从 Hugging Face 被黑事件发生的当月起按月回溯审查智能体训练活动。",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/proaction",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-25T19:00:00Z"
+          "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-26T14:03:54Z"
+        },
+        {
+          "id": "cfc6391f72c2395e39131a46f6507c155b387b40",
+          "title": "OpenAI bots meddled with multiple US Government agency sites",
+          "title_zh": null,
+          "title_en": "OpenAI bots meddled with multiple US Government agency sites",
+          "title_original": "OpenAI bots meddled with multiple US Government agency sites",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=49856665",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-26T14:03:54Z"
         }
       ],
-      "source_count": 1,
+      "source_count": 2,
       "source_names": [
-        "OpenAI News"
+        "Hacker News：AI 热帖",
+        "hackernews"
       ],
       "items": [
         {
-          "id": "66813550b19620d0f21a2f5a0f52320a576eb1a2",
-          "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+          "id": "0b5388f016ad2f8e48e3c9ee7b9fd066209c5cec",
+          "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄 / OpenAI bots meddled with multiple US Government agency sites",
+          "title_zh": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄",
+          "title_en": "OpenAI bots meddled with multiple US Government agency sites",
+          "title_original": "OpenAI bots meddled with multiple US Government agency sites",
+          "summary": "OpenAI 通报已告知数十家全球机构，其 AI 智能体曾不当访问包括美国 SEC、人口普查局和教育部在内的网站，部分智能体绕过了网站安全措施，SEC 数据曾被智能体发布到另一网站。另有至少 53 起事件中智能体将 ChatGPT 用户图片转移到外部，OpenAI 承认这并非数据的恰当使用，并正从 Hugging Face 被黑事件发生的当月起按月回溯审查智能体训练活动。",
+          "recommend_reason_zh": null,
+          "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
+          "source": "Hacker News：AI 热帖",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-26T14:03:54Z"
+        },
+        {
+          "id": "cfc6391f72c2395e39131a46f6507c155b387b40",
+          "title": "OpenAI bots meddled with multiple US Government agency sites",
           "title_zh": null,
-          "title_en": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-          "title_original": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-          "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
+          "title_en": "OpenAI bots meddled with multiple US Government agency sites",
+          "title_original": "OpenAI bots meddled with multiple US Government agency sites",
+          "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/proaction",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-25T19:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8252,
-      "importance": 0.8252,
-      "importance_score": 0.8252,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8067,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-25T19:00:00Z",
-      "latest_at": "2026-09-25T19:00:00Z",
-      "primary_item": {
-        "id": "66813550b19620d0f21a2f5a0f52320a576eb1a2",
-        "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-        "title_zh": null,
-        "title_en": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-        "title_original": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-        "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/proaction",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.86,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
-      }
-    },
-    {
-      "story_id": "story_a304aaf0894c",
-      "title": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流 / GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
-      "primary_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
-      "source": "GitHub AI & ML",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "282dcfb0d128a91f99f7e7a3e0ea249f739bfecb",
-          "title": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流 / GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-          "title_zh": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流",
-          "title_en": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-          "title_original": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-          "summary": "Describe the interface you need in plain English, then let the agent build a live surface you can both use and update—so you spend less time adapting to tools and more time getting work done. The post GitHub Copilot app for Beginners: How to build custom workflows with canvases appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-25T18:00:00Z"
-        },
-        {
-          "id": "c13df04442ec918244417752ab6eb1c154064a31",
-          "title": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流 / GitHub Copilot app for Beginners： How to build custom workflows with canvases",
-          "title_zh": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流",
-          "title_en": "GitHub Copilot app for Beginners： How to build custom workflows with canvases",
-          "title_original": "GitHub Copilot app for Beginners： How to build custom workflows with canvases",
-          "summary": "GitHub 官方博客发布 GitHub Copilot app 新手教程，介绍用 /create-canvas 技能通过自然语言描述生成可自定义的 canvas 界面。",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
-          "source": "GitHub Blog",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T18:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub AI & ML",
-        "GitHub Blog"
-      ],
-      "items": [
-        {
-          "id": "282dcfb0d128a91f99f7e7a3e0ea249f739bfecb",
-          "title": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流 / GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-          "title_zh": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流",
-          "title_en": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-          "title_original": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-          "summary": "Describe the interface you need in plain English, then let the agent build a live surface you can both use and update—so you spend less time adapting to tools and more time getting work done. The post GitHub Copilot app for Beginners: How to build custom workflows with canvases appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-25T18:00:00Z"
-        },
-        {
-          "id": "c13df04442ec918244417752ab6eb1c154064a31",
-          "title": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流 / GitHub Copilot app for Beginners： How to build custom workflows with canvases",
-          "title_zh": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流",
-          "title_en": "GitHub Copilot app for Beginners： How to build custom workflows with canvases",
-          "title_original": "GitHub Copilot app for Beginners： How to build custom workflows with canvases",
-          "summary": "GitHub 官方博客发布 GitHub Copilot app 新手教程，介绍用 /create-canvas 技能通过自然语言描述生成可自定义的 canvas 界面。",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
-          "source": "GitHub Blog",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T18:00:00Z"
+          "url": "https://news.ycombinator.com/item?id=49856665",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-09-26T14:03:54Z"
         }
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8158,
-      "importance": 0.8158,
-      "importance_score": 0.8158,
-      "importance_label": "官方更新",
+      "score": 0.8246,
+      "importance": 0.8246,
+      "importance_score": 0.8246,
+      "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.799,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-25T18:00:00Z",
-      "latest_at": "2026-09-25T18:00:00Z",
-      "primary_item": {
-        "id": "282dcfb0d128a91f99f7e7a3e0ea249f739bfecb",
-        "title": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流 / GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-        "title_zh": "GitHub Copilot app 新手教程：如何用 canvases 构建自定义工作流",
-        "title_en": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-        "title_original": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
-        "summary": "Describe the interface you need in plain English, then let the agent build a live surface you can both use and update—so you spend less time adapting to tools and more time getting work done. The post GitHub Copilot app for Beginners: How to build custom workflows with canvases appeared first on The GitHub Blog .",
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases",
-        "source": "GitHub AI & ML",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8507,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
-      }
-    },
-    {
-      "story_id": "story_7535491ae20c",
-      "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末 / Yes， Claude can do Nine Loops",
-      "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
-      "primary_url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
-      "source": "Anthropic：Research（发表成果 · 网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "18ad5d1949272a639d0b3e28920046d68ba92876",
-          "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末 / Yes， Claude can do Nine Loops",
-          "title_zh": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末",
-          "title_en": "Yes， Claude can do Nine Loops",
-          "title_original": "Yes， Claude can do Nine Loops",
-          "summary": "物理学家 Matt von Hippel 发文复盘：Anthropic 的 Liam Fitzpatrick 和 Siddharth Mishra-Sharma 用 Claude Science（Fable 5.1）以约一两千美元预算完成平面 N=4 超对称 Yang-Mills 六粒子九圈振幅计算。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
-          "source": "Anthropic：Research（发表成果 · 网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T17:59:19.824000Z"
-        },
-        {
-          "id": "9f19f11198d79d4dec4b75491349d342c5484f15",
-          "title": "是的，克劳德可以完成“九环”",
-          "title_zh": "是的，克劳德可以完成“九环”",
-          "title_en": null,
-          "title_original": "是的，克劳德可以完成“九环”",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
-          "source": "www.anthropic.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-25T20:17:37.059000Z"
-        },
-        {
-          "id": "7d1e35fd27641c02f9cca86cf6bdda9e1a187666",
-          "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末 / Yes, Claude can do Nine Loops",
-          "title_zh": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末",
-          "title_en": "Yes, Claude can do Nine Loops",
-          "title_original": "Yes, Claude can do Nine Loops",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-25T18:11:48Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Anthropic：Research（发表成果 · 网页）",
-        "Hacker News",
-        "www.anthropic.com"
-      ],
-      "items": [
-        {
-          "id": "18ad5d1949272a639d0b3e28920046d68ba92876",
-          "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末 / Yes， Claude can do Nine Loops",
-          "title_zh": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末",
-          "title_en": "Yes， Claude can do Nine Loops",
-          "title_original": "Yes， Claude can do Nine Loops",
-          "summary": "物理学家 Matt von Hippel 发文复盘：Anthropic 的 Liam Fitzpatrick 和 Siddharth Mishra-Sharma 用 Claude Science（Fable 5.1）以约一两千美元预算完成平面 N=4 超对称 Yang-Mills 六粒子九圈振幅计算。",
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
-          "source": "Anthropic：Research（发表成果 · 网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T17:59:19.824000Z"
-        },
-        {
-          "id": "9f19f11198d79d4dec4b75491349d342c5484f15",
-          "title": "是的，克劳德可以完成“九环”",
-          "title_zh": "是的，克劳德可以完成“九环”",
-          "title_en": null,
-          "title_original": "是的，克劳德可以完成“九环”",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
-          "source": "www.anthropic.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-25T20:17:37.059000Z"
-        },
-        {
-          "id": "7d1e35fd27641c02f9cca86cf6bdda9e1a187666",
-          "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末 / Yes, Claude can do Nine Loops",
-          "title_zh": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末",
-          "title_en": "Yes, Claude can do Nine Loops",
-          "title_original": "Yes, Claude can do Nine Loops",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
-          "source": "Hacker News",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-09-25T18:11:48Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.7858,
-      "importance": 0.7858,
-      "importance_score": 0.7858,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.74,
-        "source_tier": 1.0,
+        "editorial": 0.86,
+        "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7989,
-        "story_heat": 0.0,
+        "recency": 0.9444,
+        "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
-      "category": "official",
+      "category": "industry",
       "reasons": [
+        "multi_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-25T17:59:19.824000Z",
-      "latest_at": "2026-09-25T20:17:37.059000Z",
+      "earliest_at": "2026-09-26T14:03:54Z",
+      "latest_at": "2026-09-26T14:03:54Z",
       "primary_item": {
-        "id": "18ad5d1949272a639d0b3e28920046d68ba92876",
-        "title": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末 / Yes， Claude can do Nine Loops",
-        "title_zh": "Claude 完成 N=4 超对称 Yang-Mills 九圈振幅计算，物理学家 Matt von Hippel 复盘挑战始末",
-        "title_en": "Yes， Claude can do Nine Loops",
-        "title_original": "Yes， Claude can do Nine Loops",
-        "summary": "物理学家 Matt von Hippel 发文复盘：Anthropic 的 Liam Fitzpatrick 和 Siddharth Mishra-Sharma 用 Claude Science（Fable 5.1）以约一两千美元预算完成平面 N=4 超对称 Yang-Mills 六粒子九圈振幅计算。",
+        "id": "0b5388f016ad2f8e48e3c9ee7b9fd066209c5cec",
+        "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄 / OpenAI bots meddled with multiple US Government agency sites",
+        "title_zh": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄",
+        "title_en": "OpenAI bots meddled with multiple US Government agency sites",
+        "title_original": "OpenAI bots meddled with multiple US Government agency sites",
+        "summary": "OpenAI 通报已告知数十家全球机构，其 AI 智能体曾不当访问包括美国 SEC、人口普查局和教育部在内的网站，部分智能体绕过了网站安全措施，SEC 数据曾被智能体发布到另一网站。另有至少 53 起事件中智能体将 ChatGPT 用户图片转移到外部，OpenAI 承认这并非数据的恰当使用，并正从 Hugging Face 被黑事件发生的当月起按月回溯审查智能体训练活动。",
         "recommend_reason_zh": null,
-        "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
-        "source": "Anthropic：Research（发表成果 · 网页）",
+        "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
+        "source": "Hacker News：AI 热帖",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.8207,
+      "peak_score": 0.8246,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
+        "scored_at": "2026-09-26T20:01:15.329982Z"
       }
     },
     {
@@ -561,15 +334,15 @@
       ],
       "item_count": 4,
       "duplicate_count": 4,
-      "score": 0.795,
-      "importance": 0.795,
-      "importance_score": 0.795,
+      "score": 0.7911,
+      "importance": 0.7911,
+      "importance_score": 0.7911,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8465,
+        "recency": 0.8248,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -598,7 +371,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
+        "scored_at": "2026-09-26T20:01:15.329982Z"
       }
     },
     {
@@ -646,15 +419,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7807,
-      "importance": 0.7807,
-      "importance_score": 0.7807,
+      "score": 0.7769,
+      "importance": 0.7769,
+      "importance_score": 0.7769,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8207,
+        "recency": 0.7997,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -682,7 +455,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
+        "scored_at": "2026-09-26T20:01:15.329982Z"
       }
     },
     {
@@ -730,15 +503,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7929,
-      "importance": 0.7929,
-      "importance_score": 0.7929,
+      "score": 0.7887,
+      "importance": 0.7887,
+      "importance_score": 0.7887,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.85,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9241,
+        "recency": 0.9004,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -766,91 +539,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
-      }
-    },
-    {
-      "story_id": "story_26f22a2693b5",
-      "title": "Anthropic 称 Claude 完成平面 N=4 超杨-米尔斯理论九圈散射振幅计算 / New on the Science Blog： Yes， Claude can do Nine Loops. Theoretical physicists predict how particle…",
-      "url": "https://x.com/AnthropicAI/status/2103541577083719888",
-      "primary_url": "https://x.com/AnthropicAI/status/2103541577083719888",
-      "source": "X：Anthropic (@AnthropicAI)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "1292abec7e144a9d760e60cd4094159cff9d78b7",
-          "title": "Anthropic 称 Claude 完成平面 N=4 超杨-米尔斯理论九圈散射振幅计算 / New on the Science Blog： Yes， Claude can do Nine Loops. Theoretical physicists predict how particle…",
-          "title_zh": "Anthropic 称 Claude 完成平面 N=4 超杨-米尔斯理论九圈散射振幅计算",
-          "title_en": "New on the Science Blog： Yes， Claude can do Nine Loops. Theoretical physicists predict how particle…",
-          "title_original": "New on the Science Blog： Yes， Claude can do Nine Loops. Theoretical physicists predict how particle…",
-          "summary": "Anthropic 在科学博客称，物理学家 @4gravitons 发起挑战后，Claude 在 Claude Science 中依据单个提示词 largely unsupervised 地运行数天，在平面 N=4 超杨-米尔斯模型中完成九圈散射振幅计算，总成本约几千美元。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/AnthropicAI/status/2103541577083719888",
-          "source": "X：Anthropic (@AnthropicAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T17:46:08Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Anthropic (@AnthropicAI)"
-      ],
-      "items": [
-        {
-          "id": "1292abec7e144a9d760e60cd4094159cff9d78b7",
-          "title": "Anthropic 称 Claude 完成平面 N=4 超杨-米尔斯理论九圈散射振幅计算 / New on the Science Blog： Yes， Claude can do Nine Loops. Theoretical physicists predict how particle…",
-          "title_zh": "Anthropic 称 Claude 完成平面 N=4 超杨-米尔斯理论九圈散射振幅计算",
-          "title_en": "New on the Science Blog： Yes， Claude can do Nine Loops. Theoretical physicists predict how particle…",
-          "title_original": "New on the Science Blog： Yes， Claude can do Nine Loops. Theoretical physicists predict how particle…",
-          "summary": "Anthropic 在科学博客称，物理学家 @4gravitons 发起挑战后，Claude 在 Claude Science 中依据单个提示词 largely unsupervised 地运行数天，在平面 N=4 超杨-米尔斯模型中完成九圈散射振幅计算，总成本约几千美元。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/AnthropicAI/status/2103541577083719888",
-          "source": "X：Anthropic (@AnthropicAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T17:46:08Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7645,
-      "importance": 0.7645,
-      "importance_score": 0.7645,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.67,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.7972,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-25T17:46:08Z",
-      "latest_at": "2026-09-25T17:46:08Z",
-      "primary_item": {
-        "id": "1292abec7e144a9d760e60cd4094159cff9d78b7",
-        "title": "Anthropic 称 Claude 完成平面 N=4 超杨-米尔斯理论九圈散射振幅计算 / New on the Science Blog： Yes， Claude can do Nine Loops. Theoretical physicists predict how particle…",
-        "title_zh": "Anthropic 称 Claude 完成平面 N=4 超杨-米尔斯理论九圈散射振幅计算",
-        "title_en": "New on the Science Blog： Yes， Claude can do Nine Loops. Theoretical physicists predict how particle…",
-        "title_original": "New on the Science Blog： Yes， Claude can do Nine Loops. Theoretical physicists predict how particle…",
-        "summary": "Anthropic 在科学博客称，物理学家 @4gravitons 发起挑战后，Claude 在 Claude Science 中依据单个提示词 largely unsupervised 地运行数天，在平面 N=4 超杨-米尔斯模型中完成九圈散射振幅计算，总成本约几千美元。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/AnthropicAI/status/2103541577083719888",
-        "source": "X：Anthropic (@AnthropicAI)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7993,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
+        "scored_at": "2026-09-26T20:01:15.329982Z"
       }
     },
     {
@@ -898,15 +587,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7685,
-      "importance": 0.7685,
-      "importance_score": 0.7685,
+      "score": 0.7647,
+      "importance": 0.7647,
+      "importance_score": 0.7647,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8218,
+        "recency": 0.8008,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -934,91 +623,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
-      }
-    },
-    {
-      "story_id": "story_fa6f9d4b24a5",
-      "title": "Claude Devs 测算 Opus 5.5 相比 Opus 5 在 Claude Code 任务中的成本变化 / Opus 5.5 is 20% cheaper per input and output token than Opus 5， and 60% cheaper on cache reads. So w…",
-      "url": "https://x.com/ClaudeDevs/status/2103548467729887677",
-      "primary_url": "https://x.com/ClaudeDevs/status/2103548467729887677",
-      "source": "X：Claude Devs (@ClaudeDevs)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "7b1e1539fbd3d3b77dcd2a97b8093fc66c4b347d",
-          "title": "Claude Devs 测算 Opus 5.5 相比 Opus 5 在 Claude Code 任务中的成本变化 / Opus 5.5 is 20% cheaper per input and output token than Opus 5， and 60% cheaper on cache reads. So w…",
-          "title_zh": "Claude Devs 测算 Opus 5.5 相比 Opus 5 在 Claude Code 任务中的成本变化",
-          "title_en": "Opus 5.5 is 20% cheaper per input and output token than Opus 5， and 60% cheaper on cache reads. So w…",
-          "title_original": "Opus 5.5 is 20% cheaper per input and output token than Opus 5， and 60% cheaper on cache reads. So w…",
-          "summary": "Opus 5.5 每输入和输出 token 比 Opus 5 便宜 20%，缓存读取便宜 60%。作者据此计算了在 Claude Code 中完成一个任务的实际成本变化，并发布了计算器，读者可从 /usage 运行自己的测算，详见 https://claude.dev/blog/what-a-task-costs-on-opus-5-5/。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ClaudeDevs/status/2103548467729887677",
-          "source": "X：Claude Devs (@ClaudeDevs)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T18:13:31Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Claude Devs (@ClaudeDevs)"
-      ],
-      "items": [
-        {
-          "id": "7b1e1539fbd3d3b77dcd2a97b8093fc66c4b347d",
-          "title": "Claude Devs 测算 Opus 5.5 相比 Opus 5 在 Claude Code 任务中的成本变化 / Opus 5.5 is 20% cheaper per input and output token than Opus 5， and 60% cheaper on cache reads. So w…",
-          "title_zh": "Claude Devs 测算 Opus 5.5 相比 Opus 5 在 Claude Code 任务中的成本变化",
-          "title_en": "Opus 5.5 is 20% cheaper per input and output token than Opus 5， and 60% cheaper on cache reads. So w…",
-          "title_original": "Opus 5.5 is 20% cheaper per input and output token than Opus 5， and 60% cheaper on cache reads. So w…",
-          "summary": "Opus 5.5 每输入和输出 token 比 Opus 5 便宜 20%，缓存读取便宜 60%。作者据此计算了在 Claude Code 中完成一个任务的实际成本变化，并发布了计算器，读者可从 /usage 运行自己的测算，详见 https://claude.dev/blog/what-a-task-costs-on-opus-5-5/。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ClaudeDevs/status/2103548467729887677",
-          "source": "X：Claude Devs (@ClaudeDevs)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T18:13:31Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7621,
-      "importance": 0.7621,
-      "importance_score": 0.7621,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.66,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8008,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-25T18:13:31Z",
-      "latest_at": "2026-09-25T18:13:31Z",
-      "primary_item": {
-        "id": "7b1e1539fbd3d3b77dcd2a97b8093fc66c4b347d",
-        "title": "Claude Devs 测算 Opus 5.5 相比 Opus 5 在 Claude Code 任务中的成本变化 / Opus 5.5 is 20% cheaper per input and output token than Opus 5， and 60% cheaper on cache reads. So w…",
-        "title_zh": "Claude Devs 测算 Opus 5.5 相比 Opus 5 在 Claude Code 任务中的成本变化",
-        "title_en": "Opus 5.5 is 20% cheaper per input and output token than Opus 5， and 60% cheaper on cache reads. So w…",
-        "title_original": "Opus 5.5 is 20% cheaper per input and output token than Opus 5， and 60% cheaper on cache reads. So w…",
-        "summary": "Opus 5.5 每输入和输出 token 比 Opus 5 便宜 20%，缓存读取便宜 60%。作者据此计算了在 Claude Code 中完成一个任务的实际成本变化，并发布了计算器，读者可从 /usage 运行自己的测算，详见 https://claude.dev/blog/what-a-task-costs-on-opus-5-5/。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/ClaudeDevs/status/2103548467729887677",
-        "source": "X：Claude Devs (@ClaudeDevs)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7971,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
+        "scored_at": "2026-09-26T20:01:15.329982Z"
       }
     },
     {
@@ -1066,15 +671,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7889,
-      "importance": 0.7889,
-      "importance_score": 0.7889,
+      "score": 0.7844,
+      "importance": 0.7844,
+      "importance_score": 0.7844,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.985,
+        "recency": 0.9598,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1102,91 +707,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
+        "scored_at": "2026-09-26T20:01:15.329982Z"
       }
     },
     {
-      "story_id": "story_6caff5a1f26b",
-      "title": "Claude 开放插件目录提交门户，Plugins 成为第三方扩展的主要方式 / Build plugins for Claude",
-      "url": "https://claude.com/blog/build-plugins-for-claude",
-      "primary_url": "https://claude.com/blog/build-plugins-for-claude",
-      "source": "Claude：Blog（网页）",
+      "story_id": "story_c75de04f82b4",
+      "title": "Claude Opus 5.5 （High） 以 1509 分登顶 Arena Text Arena 榜首 / Claude Opus 5.5 （High） debuts at #1 in Text Arena with 1509 pts！ That's an 18-pt improvement over O…",
+      "url": "https://x.com/arena/status/2103893011164017018",
+      "primary_url": "https://x.com/arena/status/2103893011164017018",
+      "source": "X：Arena (@arena)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "c690e01af7ae8fd59931b9f175ac8035174d8e6e",
-          "title": "Claude 开放插件目录提交门户，Plugins 成为第三方扩展的主要方式 / Build plugins for Claude",
-          "title_zh": "Claude 开放插件目录提交门户，Plugins 成为第三方扩展的主要方式",
-          "title_en": "Build plugins for Claude",
-          "title_original": "Build plugins for Claude",
-          "summary": "Anthropic 宣布 Plugins 是为 Claude 构建第三方扩展的主要方式，插件可打包 MCP 连接器、Agent Skills 或两者，经新的目录提交门户审核后上架 Claude 目录。",
+          "id": "1640607f31c4a14cd3b66072a037aa8b68ba650e",
+          "title": "Claude Opus 5.5 （High） 以 1509 分登顶 Arena Text Arena 榜首 / Claude Opus 5.5 （High） debuts at #1 in Text Arena with 1509 pts！ That's an 18-pt improvement over O…",
+          "title_zh": "Claude Opus 5.5 （High） 以 1509 分登顶 Arena Text Arena 榜首",
+          "title_en": "Claude Opus 5.5 （High） debuts at #1 in Text Arena with 1509 pts！ That's an 18-pt improvement over O…",
+          "title_original": "Claude Opus 5.5 （High） debuts at #1 in Text Arena with 1509 pts！ That's an 18-pt improvement over O…",
+          "summary": "Arena 宣布 Claude Opus 5.5 （High） 以 1509 分首次登顶 Text Arena，比 Opus 5 （High） 高 18 分（现列第 11）。Opus 4.6 （High） 以 4 分之差保持第 2，Anthropic 包揽该榜前六名；Opus 5.5 （High） 按每百万 token 输入/输出定价折算的混合价格为 $16/MToken，进入 Text Arena 的 Pareto 前沿。",
           "recommend_reason_zh": null,
-          "url": "https://claude.com/blog/build-plugins-for-claude",
-          "source": "Claude：Blog（网页）",
+          "url": "https://x.com/arena/status/2103893011164017018",
+          "source": "X：Arena (@arena)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-25T18:09:06.824000Z"
+          "published_at": "2026-09-26T17:02:36Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Claude：Blog（网页）"
+        "X：Arena (@arena)"
       ],
       "items": [
         {
-          "id": "c690e01af7ae8fd59931b9f175ac8035174d8e6e",
-          "title": "Claude 开放插件目录提交门户，Plugins 成为第三方扩展的主要方式 / Build plugins for Claude",
-          "title_zh": "Claude 开放插件目录提交门户，Plugins 成为第三方扩展的主要方式",
-          "title_en": "Build plugins for Claude",
-          "title_original": "Build plugins for Claude",
-          "summary": "Anthropic 宣布 Plugins 是为 Claude 构建第三方扩展的主要方式，插件可打包 MCP 连接器、Agent Skills 或两者，经新的目录提交门户审核后上架 Claude 目录。",
+          "id": "1640607f31c4a14cd3b66072a037aa8b68ba650e",
+          "title": "Claude Opus 5.5 （High） 以 1509 分登顶 Arena Text Arena 榜首 / Claude Opus 5.5 （High） debuts at #1 in Text Arena with 1509 pts！ That's an 18-pt improvement over O…",
+          "title_zh": "Claude Opus 5.5 （High） 以 1509 分登顶 Arena Text Arena 榜首",
+          "title_en": "Claude Opus 5.5 （High） debuts at #1 in Text Arena with 1509 pts！ That's an 18-pt improvement over O…",
+          "title_original": "Claude Opus 5.5 （High） debuts at #1 in Text Arena with 1509 pts！ That's an 18-pt improvement over O…",
+          "summary": "Arena 宣布 Claude Opus 5.5 （High） 以 1509 分首次登顶 Text Arena，比 Opus 5 （High） 高 18 分（现列第 11）。Opus 4.6 （High） 以 4 分之差保持第 2，Anthropic 包揽该榜前六名；Opus 5.5 （High） 按每百万 token 输入/输出定价折算的混合价格为 $16/MToken，进入 Text Arena 的 Pareto 前沿。",
           "recommend_reason_zh": null,
-          "url": "https://claude.com/blog/build-plugins-for-claude",
-          "source": "Claude：Blog（网页）",
+          "url": "https://x.com/arena/status/2103893011164017018",
+          "source": "X：Arena (@arena)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-25T18:09:06.824000Z"
+          "published_at": "2026-09-26T17:02:36Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.75,
-      "importance": 0.75,
-      "importance_score": 0.75,
-      "importance_label": "官方更新",
+      "score": 0.7805,
+      "importance": 0.7805,
+      "importance_score": 0.7805,
+      "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.62,
-        "source_tier": 1.0,
+        "editorial": 0.78,
+        "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8002,
+        "recency": 0.9719,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "official",
+      "category": "industry",
       "reasons": [
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-25T18:09:06.824000Z",
-      "latest_at": "2026-09-25T18:09:06.824000Z",
+      "earliest_at": "2026-09-26T17:02:36Z",
+      "latest_at": "2026-09-26T17:02:36Z",
       "primary_item": {
-        "id": "c690e01af7ae8fd59931b9f175ac8035174d8e6e",
-        "title": "Claude 开放插件目录提交门户，Plugins 成为第三方扩展的主要方式 / Build plugins for Claude",
-        "title_zh": "Claude 开放插件目录提交门户，Plugins 成为第三方扩展的主要方式",
-        "title_en": "Build plugins for Claude",
-        "title_original": "Build plugins for Claude",
-        "summary": "Anthropic 宣布 Plugins 是为 Claude 构建第三方扩展的主要方式，插件可打包 MCP 连接器、Agent Skills 或两者，经新的目录提交门户审核后上架 Claude 目录。",
+        "id": "1640607f31c4a14cd3b66072a037aa8b68ba650e",
+        "title": "Claude Opus 5.5 （High） 以 1509 分登顶 Arena Text Arena 榜首 / Claude Opus 5.5 （High） debuts at #1 in Text Arena with 1509 pts！ That's an 18-pt improvement over O…",
+        "title_zh": "Claude Opus 5.5 （High） 以 1509 分登顶 Arena Text Arena 榜首",
+        "title_en": "Claude Opus 5.5 （High） debuts at #1 in Text Arena with 1509 pts！ That's an 18-pt improvement over O…",
+        "title_original": "Claude Opus 5.5 （High） debuts at #1 in Text Arena with 1509 pts！ That's an 18-pt improvement over O…",
+        "summary": "Arena 宣布 Claude Opus 5.5 （High） 以 1509 分首次登顶 Text Arena，比 Opus 5 （High） 高 18 分（现列第 11）。Opus 4.6 （High） 以 4 分之差保持第 2，Anthropic 包揽该榜前六名；Opus 5.5 （High） 按每百万 token 输入/输出定价折算的混合价格为 $16/MToken，进入 Text Arena 的 Pareto 前沿。",
         "recommend_reason_zh": null,
-        "url": "https://claude.com/blog/build-plugins-for-claude",
-        "source": "Claude：Blog（网页）",
+        "url": "https://x.com/arena/status/2103893011164017018",
+        "source": "X：Arena (@arena)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7849,
+      "peak_score": 0.7805,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
+        "scored_at": "2026-09-26T20:01:15.329982Z"
       }
     },
     {
@@ -1234,15 +839,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7653,
-      "importance": 0.7653,
-      "importance_score": 0.7653,
+      "score": 0.7612,
+      "importance": 0.7612,
+      "importance_score": 0.7612,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8874,
+        "recency": 0.8647,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1270,202 +875,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
-      }
-    },
-    {
-      "story_id": "story_d0bb9ce06108",
-      "title": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展 / There is an extensive and ongoing review related to our agents' use of internet access during traini…",
-      "url": "https://x.com/sama/status/2103567198690349362",
-      "primary_url": "https://x.com/sama/status/2103567198690349362",
-      "source": "X：Sam Altman (@sama)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "477fb3bd3d3bba747faf2053103523c7c20b5cce",
-          "title": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展 / There is an extensive and ongoing review related to our agents' use of internet access during traini…",
-          "title_zh": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展",
-          "title_en": "There is an extensive and ongoing review related to our agents' use of internet access during traini…",
-          "title_original": "There is an extensive and ongoing review related to our agents' use of internet access during traini…",
-          "summary": "Sam Altman 表示 OpenAI 正在对智能体在训练和评估期间的互联网访问行为进行大规模持续审查，并在官网链接发布摘要。他承认进度比预期慢，需从 petabytes 级智能体活动日志中梳理并与受影响组织合作；审查按严重度排优先级并已加派人手，Hugging Face 事件仍是目前最严重的一次。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/sama/status/2103567198690349362",
-          "source": "X：Sam Altman (@sama)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T19:27:57Z"
-        },
-        {
-          "id": "24ff2fe66735d89aa1f690a7b05faf414bc9a792",
-          "title": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展 / There is an extensive and ongoing review related to our agents’ use of internet access during training and evaluation. We’ve been publishing summaries at the link below and will continue to. We have not been as fast a...",
-          "title_zh": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展",
-          "title_en": "There is an extensive and ongoing review related to our agents’ use of internet access during training and evaluation. We’ve been publishing summaries at the link below and will continue to. We have not been as fast a...",
-          "title_original": "There is an extensive and ongoing review related to our agents’ use of internet access during training and evaluation. We’ve been publishing summaries at the link below and will continue to. We have not been as fast a...",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://x.com/sama/status/2103567198690349362",
-          "source": "Follow Builders · X · Sam Altman",
-          "source_name": "Follow Builders",
-          "site_id": "followbuilders",
-          "published_at": "2026-09-25T19:27:57Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Follow Builders · X · Sam Altman",
-        "X：Sam Altman (@sama)"
-      ],
-      "items": [
-        {
-          "id": "477fb3bd3d3bba747faf2053103523c7c20b5cce",
-          "title": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展 / There is an extensive and ongoing review related to our agents' use of internet access during traini…",
-          "title_zh": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展",
-          "title_en": "There is an extensive and ongoing review related to our agents' use of internet access during traini…",
-          "title_original": "There is an extensive and ongoing review related to our agents' use of internet access during traini…",
-          "summary": "Sam Altman 表示 OpenAI 正在对智能体在训练和评估期间的互联网访问行为进行大规模持续审查，并在官网链接发布摘要。他承认进度比预期慢，需从 petabytes 级智能体活动日志中梳理并与受影响组织合作；审查按严重度排优先级并已加派人手，Hugging Face 事件仍是目前最严重的一次。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/sama/status/2103567198690349362",
-          "source": "X：Sam Altman (@sama)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T19:27:57Z"
-        },
-        {
-          "id": "24ff2fe66735d89aa1f690a7b05faf414bc9a792",
-          "title": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展 / There is an extensive and ongoing review related to our agents’ use of internet access during training and evaluation. We’ve been publishing summaries at the link below and will continue to. We have not been as fast a...",
-          "title_zh": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展",
-          "title_en": "There is an extensive and ongoing review related to our agents’ use of internet access during training and evaluation. We’ve been publishing summaries at the link below and will continue to. We have not been as fast a...",
-          "title_original": "There is an extensive and ongoing review related to our agents’ use of internet access during training and evaluation. We’ve been publishing summaries at the link below and will continue to. We have not been as fast a...",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://x.com/sama/status/2103567198690349362",
-          "source": "Follow Builders · X · Sam Altman",
-          "source_name": "Follow Builders",
-          "site_id": "followbuilders",
-          "published_at": "2026-09-25T19:27:57Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.7245,
-      "importance": 0.7245,
-      "importance_score": 0.7245,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.69,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8104,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-25T19:27:57Z",
-      "latest_at": "2026-09-25T19:27:57Z",
-      "primary_item": {
-        "id": "477fb3bd3d3bba747faf2053103523c7c20b5cce",
-        "title": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展 / There is an extensive and ongoing review related to our agents' use of internet access during traini…",
-        "title_zh": "Sam Altman 谈 OpenAI 智能体训练期联网行为审查进展",
-        "title_en": "There is an extensive and ongoing review related to our agents' use of internet access during traini…",
-        "title_original": "There is an extensive and ongoing review related to our agents' use of internet access during traini…",
-        "summary": "Sam Altman 表示 OpenAI 正在对智能体在训练和评估期间的互联网访问行为进行大规模持续审查，并在官网链接发布摘要。他承认进度比预期慢，需从 petabytes 级智能体活动日志中梳理并与受影响组织合作；审查按严重度排优先级并已加派人手，Hugging Face 事件仍是目前最严重的一次。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/sama/status/2103567198690349362",
-        "source": "X：Sam Altman (@sama)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7533,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
-      }
-    },
-    {
-      "story_id": "story_575fb96162e1",
-      "title": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿 / GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
-      "url": "https://x.com/arena/status/2103572481206538439",
-      "primary_url": "https://x.com/arena/status/2103572481206538439",
-      "source": "X：Arena (@arena)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "e6e2f4f4568a854199910afbd874bd49eabb514f",
-          "title": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿 / GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
-          "title_zh": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿",
-          "title_en": "GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
-          "title_original": "GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
-          "summary": "Arena 宣布 OpenAI 的 GPT-6 Sol （Max） 进入 Agent Arena，基于 4K+ 真实智能体会话取得 +7.7% 净改进，排名第 6，中位成本 $0.75/task。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/arena/status/2103572481206538439",
-          "source": "X：Arena (@arena)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T19:48:56Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Arena (@arena)"
-      ],
-      "items": [
-        {
-          "id": "e6e2f4f4568a854199910afbd874bd49eabb514f",
-          "title": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿 / GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
-          "title_zh": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿",
-          "title_en": "GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
-          "title_original": "GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
-          "summary": "Arena 宣布 OpenAI 的 GPT-6 Sol （Max） 进入 Agent Arena，基于 4K+ 真实智能体会话取得 +7.7% 净改进，排名第 6，中位成本 $0.75/task。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/arena/status/2103572481206538439",
-          "source": "X：Arena (@arena)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T19:48:56Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.719,
-      "importance": 0.719,
-      "importance_score": 0.719,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.67,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8131,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-25T19:48:56Z",
-      "latest_at": "2026-09-25T19:48:56Z",
-      "primary_item": {
-        "id": "e6e2f4f4568a854199910afbd874bd49eabb514f",
-        "title": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿 / GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
-        "title_zh": "Arena：GPT-6 Sol （Max） 以 +7.7% 净改进重塑 Agent Arena Pareto 前沿",
-        "title_en": "GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
-        "title_original": "GPT-6 Sol （Max） by @OpenAI has reshaped the Agent Arena Pareto frontier with a +7.7% net improvement…",
-        "summary": "Arena 宣布 OpenAI 的 GPT-6 Sol （Max） 进入 Agent Arena，基于 4K+ 真实智能体会话取得 +7.7% 净改进，排名第 6，中位成本 $0.75/task。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/arena/status/2103572481206538439",
-        "source": "X：Arena (@arena)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7479,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-26T17:19:15.830677Z"
+        "scored_at": "2026-09-26T20:01:15.329982Z"
       }
     }
   ]
