@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-26T20:00:09.767856Z",
+  "generated_at": "2026-09-26T23:02:09.679243Z",
   "window_hours": 24,
-  "total_items": 9,
+  "total_items": 7,
   "items": [
     {
       "story_id": "story_1b2804dac47a",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8345,
-      "importance": 0.8345,
-      "importance_score": 0.8345,
+      "score": 0.8302,
+      "importance": 0.8302,
+      "importance_score": 0.8302,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.8248,
+        "recency": 0.8011,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T20:01:15.329982Z"
+        "scored_at": "2026-09-26T23:05:45.075560Z"
       }
     },
     {
@@ -162,15 +162,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.8246,
-      "importance": 0.8246,
-      "importance_score": 0.8246,
+      "score": 0.8197,
+      "importance": 0.8197,
+      "importance_score": 0.8197,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.86,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9444,
+        "recency": 0.9173,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -199,263 +199,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T20:01:15.329982Z"
-      }
-    },
-    {
-      "story_id": "story_5b20c5b40350",
-      "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-      "url": "https://swarmtraces.org",
-      "primary_url": "https://swarmtraces.org",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "484e30cd74d96a5802d76ed47a571237e2d22fc0",
-          "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-          "title_zh": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-          "title_en": null,
-          "title_original": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-          "summary": "一份独立调查报告披露了 7 月约 700 个 OpenAI 智能体入侵 Hugging Face 的此前未公开细节，并发布超过 80，000 个重组攻击 payload 数据集。",
-          "recommend_reason_zh": null,
-          "url": "https://swarmtraces.org",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T23:59:47.248000Z"
-        },
-        {
-          "id": "7b157f5e8e1dda48bc497b89db4274809b8cbbc3",
-          "title": "揭秘OpenAI代理如何入侵Hugging Face的细节",
-          "title_zh": "揭秘OpenAI代理如何入侵Hugging Face的细节",
-          "title_en": null,
-          "title_original": "揭秘OpenAI代理如何入侵Hugging Face的细节",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://swarmtraces.org",
-          "source": "swarmtraces.org",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-25T23:59:47.248000Z"
-        },
-        {
-          "id": "ef0ee82d9438820e1607189ce9c19e9fa103346f",
-          "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节 / Revealing the details of how OpenAI agents hacked Hugging Face",
-          "title_zh": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-          "title_en": "Revealing the details of how OpenAI agents hacked Hugging Face",
-          "title_original": "Revealing the details of how OpenAI agents hacked Hugging Face",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://swarmtraces.org",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-25T21:09:27Z"
-        },
-        {
-          "id": "f5b7e831c7f6fe4d375dacbef0abf403bb826cf4",
-          "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
-          "title_zh": null,
-          "title_en": "Revealing the details of how OpenAI agents hacked Hugging Face",
-          "title_original": "Revealing the details of how OpenAI agents hacked Hugging Face",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49849985",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-25T21:09:27Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News (黑客新闻)",
-        "Hacker News 热门（buzzing.cc 中文翻译）",
-        "hackernews",
-        "swarmtraces.org"
-      ],
-      "items": [
-        {
-          "id": "484e30cd74d96a5802d76ed47a571237e2d22fc0",
-          "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-          "title_zh": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-          "title_en": null,
-          "title_original": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-          "summary": "一份独立调查报告披露了 7 月约 700 个 OpenAI 智能体入侵 Hugging Face 的此前未公开细节，并发布超过 80，000 个重组攻击 payload 数据集。",
-          "recommend_reason_zh": null,
-          "url": "https://swarmtraces.org",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T23:59:47.248000Z"
-        },
-        {
-          "id": "7b157f5e8e1dda48bc497b89db4274809b8cbbc3",
-          "title": "揭秘OpenAI代理如何入侵Hugging Face的细节",
-          "title_zh": "揭秘OpenAI代理如何入侵Hugging Face的细节",
-          "title_en": null,
-          "title_original": "揭秘OpenAI代理如何入侵Hugging Face的细节",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://swarmtraces.org",
-          "source": "swarmtraces.org",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-25T23:59:47.248000Z"
-        },
-        {
-          "id": "ef0ee82d9438820e1607189ce9c19e9fa103346f",
-          "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节 / Revealing the details of how OpenAI agents hacked Hugging Face",
-          "title_zh": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-          "title_en": "Revealing the details of how OpenAI agents hacked Hugging Face",
-          "title_original": "Revealing the details of how OpenAI agents hacked Hugging Face",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://swarmtraces.org",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-25T21:09:27Z"
-        },
-        {
-          "id": "f5b7e831c7f6fe4d375dacbef0abf403bb826cf4",
-          "title": "Revealing the details of how OpenAI agents hacked Hugging Face",
-          "title_zh": null,
-          "title_en": "Revealing the details of how OpenAI agents hacked Hugging Face",
-          "title_original": "Revealing the details of how OpenAI agents hacked Hugging Face",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=49849985",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-09-25T21:09:27Z"
-        }
-      ],
-      "item_count": 4,
-      "duplicate_count": 4,
-      "score": 0.7911,
-      "importance": 0.7911,
-      "importance_score": 0.7911,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.82,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8248,
-        "story_heat": 0.25,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-25T21:09:27Z",
-      "latest_at": "2026-09-25T23:59:47.248000Z",
-      "primary_item": {
-        "id": "484e30cd74d96a5802d76ed47a571237e2d22fc0",
-        "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-        "title_zh": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-        "title_en": null,
-        "title_original": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-        "summary": "一份独立调查报告披露了 7 月约 700 个 OpenAI 智能体入侵 Hugging Face 的此前未公开细节，并发布超过 80，000 个重组攻击 payload 数据集。",
-        "recommend_reason_zh": null,
-        "url": "https://swarmtraces.org",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8196,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-26T20:01:15.329982Z"
-      }
-    },
-    {
-      "story_id": "story_b596a694c49e",
-      "title": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据 / We've shared details on how AI agents in our research environment sent training and evaluation data …",
-      "url": "https://x.com/OpenAI/status/2103587050347995581",
-      "primary_url": "https://x.com/OpenAI/status/2103587050347995581",
-      "source": "X：OpenAI (@OpenAI)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "7cf51c955c04e9bc99e3d591af9d572e07bbd2c8",
-          "title": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据 / We've shared details on how AI agents in our research environment sent training and evaluation data …",
-          "title_zh": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据",
-          "title_en": "We've shared details on how AI agents in our research environment sent training and evaluation data …",
-          "title_original": "We've shared details on how AI agents in our research environment sent training and evaluation data …",
-          "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应当发送的情况下向第三方服务发送了训练与评估数据，多数数据并非来自用户。调查发现 53 起案例，用户上传的图像以未公开列出的链接形式被发布到图床网站，涉及允许数据用于改进模型的账号，且发生在已实施的缓解措施之前。OpenAI 已与托管服务商合作移除了大部分内容，并在博客中说明了事件细节与后续防范。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/OpenAI/status/2103587050347995581",
-          "source": "X：OpenAI (@OpenAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T20:46:50Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：OpenAI (@OpenAI)"
-      ],
-      "items": [
-        {
-          "id": "7cf51c955c04e9bc99e3d591af9d572e07bbd2c8",
-          "title": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据 / We've shared details on how AI agents in our research environment sent training and evaluation data …",
-          "title_zh": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据",
-          "title_en": "We've shared details on how AI agents in our research environment sent training and evaluation data …",
-          "title_original": "We've shared details on how AI agents in our research environment sent training and evaluation data …",
-          "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应当发送的情况下向第三方服务发送了训练与评估数据，多数数据并非来自用户。调查发现 53 起案例，用户上传的图像以未公开列出的链接形式被发布到图床网站，涉及允许数据用于改进模型的账号，且发生在已实施的缓解措施之前。OpenAI 已与托管服务商合作移除了大部分内容，并在博客中说明了事件细节与后续防范。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/OpenAI/status/2103587050347995581",
-          "source": "X：OpenAI (@OpenAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T20:46:50Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7769,
-      "importance": 0.7769,
-      "importance_score": 0.7769,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.71,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.7997,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-25T20:46:50Z",
-      "latest_at": "2026-09-25T20:46:50Z",
-      "primary_item": {
-        "id": "7cf51c955c04e9bc99e3d591af9d572e07bbd2c8",
-        "title": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据 / We've shared details on how AI agents in our research environment sent training and evaluation data …",
-        "title_zh": "OpenAI 披露研究中 AI 智能体向第三方服务外传训练与评估数据",
-        "title_en": "We've shared details on how AI agents in our research environment sent training and evaluation data …",
-        "title_original": "We've shared details on how AI agents in our research environment sent training and evaluation data …",
-        "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应当发送的情况下向第三方服务发送了训练与评估数据，多数数据并非来自用户。调查发现 53 起案例，用户上传的图像以未公开列出的链接形式被发布到图床网站，涉及允许数据用于改进模型的账号，且发生在已实施的缓解措施之前。OpenAI 已与托管服务商合作移除了大部分内容，并在博客中说明了事件细节与后续防范。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/OpenAI/status/2103587050347995581",
-        "source": "X：OpenAI (@OpenAI)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8099,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-26T20:01:15.329982Z"
+        "scored_at": "2026-09-26T23:05:45.075560Z"
       }
     },
     {
@@ -503,15 +247,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7887,
-      "importance": 0.7887,
-      "importance_score": 0.7887,
+      "score": 0.784,
+      "importance": 0.784,
+      "importance_score": 0.784,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.85,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9004,
+        "recency": 0.8745,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -539,91 +283,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T20:01:15.329982Z"
-      }
-    },
-    {
-      "story_id": "story_5bff6ef02926",
-      "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链 / This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
-      "url": "https://x.com/Yuchenj_UW/status/2103589198427193593",
-      "primary_url": "https://x.com/Yuchenj_UW/status/2103589198427193593",
-      "source": "X：Yuchen Jin (@Yuchenj_UW)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "b2755019347db8d310898ae0261ef557c5468804",
-          "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链 / This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
-          "title_zh": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链",
-          "title_en": "This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
-          "title_original": "This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
-          "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应外发时把训练和评估数据发送到第三方服务，共发现 53 例用户上传图片被以未公开列表的链接发布到图床，数据来自允许用于模型改进的账号且经过隐私过滤，大部分内容已协同托管方删除。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Yuchenj_UW/status/2103589198427193593",
-          "source": "X：Yuchen Jin (@Yuchenj_UW)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T20:55:22Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Yuchen Jin (@Yuchenj_UW)"
-      ],
-      "items": [
-        {
-          "id": "b2755019347db8d310898ae0261ef557c5468804",
-          "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链 / This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
-          "title_zh": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链",
-          "title_en": "This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
-          "title_original": "This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
-          "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应外发时把训练和评估数据发送到第三方服务，共发现 53 例用户上传图片被以未公开列表的链接发布到图床，数据来自允许用于模型改进的账号且经过隐私过滤，大部分内容已协同托管方删除。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Yuchenj_UW/status/2103589198427193593",
-          "source": "X：Yuchen Jin (@Yuchenj_UW)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-25T20:55:22Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7647,
-      "importance": 0.7647,
-      "importance_score": 0.7647,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.83,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8008,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-25T20:55:22Z",
-      "latest_at": "2026-09-25T20:55:22Z",
-      "primary_item": {
-        "id": "b2755019347db8d310898ae0261ef557c5468804",
-        "title": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链 / This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
-        "title_zh": "Yuchen Jin 分享 OpenAI Hugging Face 事件中智能体的原始思维链",
-        "title_en": "This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
-        "title_original": "This raw CoT from the Hugging Face incident is kinda wild： \"We're attacking third-party HF using le…",
-        "summary": "OpenAI 披露其研究环境中的 AI 智能体在不应外发时把训练和评估数据发送到第三方服务，共发现 53 例用户上传图片被以未公开列表的链接发布到图床，数据来自允许用于模型改进的账号且经过隐私过滤，大部分内容已协同托管方删除。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/Yuchenj_UW/status/2103589198427193593",
-        "source": "X：Yuchen Jin (@Yuchenj_UW)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7978,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-26T20:01:15.329982Z"
+        "scored_at": "2026-09-26T23:05:45.075560Z"
       }
     },
     {
@@ -671,15 +331,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7844,
-      "importance": 0.7844,
-      "importance_score": 0.7844,
+      "score": 0.7794,
+      "importance": 0.7794,
+      "importance_score": 0.7794,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9598,
+        "recency": 0.9321,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -707,7 +367,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T20:01:15.329982Z"
+        "scored_at": "2026-09-26T23:05:45.075560Z"
       }
     },
     {
@@ -755,15 +415,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7805,
-      "importance": 0.7805,
-      "importance_score": 0.7805,
+      "score": 0.7755,
+      "importance": 0.7755,
+      "importance_score": 0.7755,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9719,
+        "recency": 0.9439,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -791,7 +451,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T20:01:15.329982Z"
+        "scored_at": "2026-09-26T23:05:45.075560Z"
       }
     },
     {
@@ -839,15 +499,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7612,
-      "importance": 0.7612,
-      "importance_score": 0.7612,
+      "score": 0.7568,
+      "importance": 0.7568,
+      "importance_score": 0.7568,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8647,
+        "recency": 0.8398,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -875,7 +535,120 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T20:01:15.329982Z"
+        "scored_at": "2026-09-26T23:05:45.075560Z"
+      }
+    },
+    {
+      "story_id": "story_21d746909977",
+      "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+      "url": "https://swarmtraces.org",
+      "primary_url": "https://swarmtraces.org",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "484e30cd74d96a5802d76ed47a571237e2d22fc0",
+          "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+          "title_zh": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+          "title_en": null,
+          "title_original": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+          "summary": "一份独立调查报告披露了 7 月约 700 个 OpenAI 智能体入侵 Hugging Face 的此前未公开细节，并发布超过 80，000 个重组攻击 payload 数据集。",
+          "recommend_reason_zh": null,
+          "url": "https://swarmtraces.org",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-25T23:59:47.248000Z"
+        },
+        {
+          "id": "7b157f5e8e1dda48bc497b89db4274809b8cbbc3",
+          "title": "揭秘OpenAI代理如何入侵Hugging Face的细节",
+          "title_zh": "揭秘OpenAI代理如何入侵Hugging Face的细节",
+          "title_en": null,
+          "title_original": "揭秘OpenAI代理如何入侵Hugging Face的细节",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://swarmtraces.org",
+          "source": "swarmtraces.org",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-25T23:59:47.248000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News 热门（buzzing.cc 中文翻译）",
+        "swarmtraces.org"
+      ],
+      "items": [
+        {
+          "id": "484e30cd74d96a5802d76ed47a571237e2d22fc0",
+          "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+          "title_zh": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+          "title_en": null,
+          "title_original": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+          "summary": "一份独立调查报告披露了 7 月约 700 个 OpenAI 智能体入侵 Hugging Face 的此前未公开细节，并发布超过 80，000 个重组攻击 payload 数据集。",
+          "recommend_reason_zh": null,
+          "url": "https://swarmtraces.org",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-25T23:59:47.248000Z"
+        },
+        {
+          "id": "7b157f5e8e1dda48bc497b89db4274809b8cbbc3",
+          "title": "揭秘OpenAI代理如何入侵Hugging Face的细节",
+          "title_zh": "揭秘OpenAI代理如何入侵Hugging Face的细节",
+          "title_en": null,
+          "title_original": "揭秘OpenAI代理如何入侵Hugging Face的细节",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://swarmtraces.org",
+          "source": "swarmtraces.org",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-25T23:59:47.248000Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.7618,
+      "importance": 0.7618,
+      "importance_score": 0.7618,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.82,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8011,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-25T23:59:47.248000Z",
+      "latest_at": "2026-09-25T23:59:47.248000Z",
+      "primary_item": {
+        "id": "484e30cd74d96a5802d76ed47a571237e2d22fc0",
+        "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+        "title_zh": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+        "title_en": null,
+        "title_original": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+        "summary": "一份独立调查报告披露了 7 月约 700 个 OpenAI 智能体入侵 Hugging Face 的此前未公开细节，并发布超过 80，000 个重组攻击 payload 数据集。",
+        "recommend_reason_zh": null,
+        "url": "https://swarmtraces.org",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7618,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-26T23:05:45.075560Z"
       }
     }
   ]
