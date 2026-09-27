@@ -1,33 +1,63 @@
 {
-  "generated_at": "2026-09-27T18:32:46.802715Z",
+  "generated_at": "2026-09-27T22:24:26.794943Z",
   "timezone": "Asia/Shanghai",
   "root_url": "https://waytoagi.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e?fromScene=spaceOverview",
   "history_url": "https://waytoagi.feishu.cn/wiki/FjiOwWp2giA7hRk6jjfcPioCnAc",
   "window_days": 7,
-  "latest_date": "2026-09-26",
-  "count_today": 3,
+  "latest_date": "2026-09-27",
+  "count_today": 4,
   "updates_today": [
     {
-      "date": "2026-09-26",
-      "title": "第五次GEO公开课：GEO到底该投多少钱？1.3万字讲透效果归因与ROI（附10种标记方法）",
-      "summary": "GEO最难的环节，已经从“怎么让 AI 提到我”，转到“线索怎么算、ROI 怎么证明”。乔木老师和姚老师的第五次GEO公开课把GEO效果如何归因拆得很系统：围绕直接转化、延迟效应、渠道协同、间接转化，给出了专属电话、口令、页面、表单、销售追问、词根级 A/B 测试等方法。适合做GEO服务、品牌增长、AI营销的人收藏，读完你会更清楚预算该怎么投、效果该怎么证明。",
-      "url": "https://waytoagi.feishu.cn/wiki/VMeEwEv2Niqf8LkFbt0c4Gz4nzW?from=from_copylink"
+      "date": "2026-09-27",
+      "title": "使用 Pi 和 Jev 构建自定义 Harness",
+      "summary": "作者用Pi SDK和Jev搭建了一个自定义的Harness，把Agent循环里的关键决策拆成了三层：Router负责按任务难度选便宜模型还是强模型，Gate在每次工具调用前判断是否危险、是否需要人工审批，Verifier在最终交付前检查答案质量和依据。Jev是一个专门为这些决策构建的小型模型。你描述情况并提出几个问题，它用数字回答每一个问题。它从不写文本。当你构建自定义harness 时，这一点最为重要！",
+      "url": "https://waytoagi.feishu.cn/wiki/GXe6wa2lRiKKpRkRqwjcBzyRnLg?from=from_copylink"
     },
     {
-      "date": "2026-09-26",
-      "title": "【深度】一文读懂 Muse 爆火背后的底层逻辑：你最需要的可能不是 Agent",
-      "summary": "很多人看到 Muse 爆火，第一反应是“又来了一个 Agent”，但这篇文章能帮你看清背后的底层逻辑，或许会对你关于Muse的理解和对Agent的思考有所帮助！",
-      "url": "https://waytoagi.feishu.cn/wiki/GG6lws3qriFWRrkxN9tce93rn6g?from=from_copylink"
+      "date": "2026-09-27",
+      "title": "「闪电.skill」发布！用Anthropic的方法论把你的产品提速3倍！",
+      "summary": "作者把 Anthropic 提速 Claude 产品 3 倍的方法拆成了可复用的流程：先找到能量化的指标，再验证这个指标和真实体验相关，接着让 Agent 持续爬山优化，最后用测试、CI 棘轮、功能开关和人工审批把成果锁住。他还把这套方法做成了「闪电.skill」，并拿自己的 4 个网站进行了实测，快来看看效果如何！",
+      "url": "https://waytoagi.feishu.cn/wiki/X02mwBQqxiuzank2op4cdmXCnPg?from=from_copylink"
     },
     {
-      "date": "2026-09-26",
-      "title": "Opus5.5 正在吃掉视频！分镜、动画、音效、配乐，它全做了",
-      "summary": "成峰这篇文章拆解了10个关于Opus 5.5的实测案例，讲清了Claude用代码逐帧“画”视频的思路：生成画面、渲染截图、自己检查、继续修改。此外他还复盘了中秋短片《咬了一口月亮》的分镜、角色设定、音效和成本。想用 AI 做短片、动画、视觉内容的创作者不要错过，能少走很多“只会写提示词却做不出片”的弯路。",
-      "url": "https://waytoagi.feishu.cn/wiki/CMiAwUiw8i9bLPkP43IcQ2dfn71?from=from_copylink"
+      "date": "2026-09-27",
+      "title": "DeepSeek 还没官宣的桌面版，我抢先装上跑了一遍，结果有点炸",
+      "summary": "作者抢先装上还没正式官宣的 DeepSeek Harness 桌面版，实测了它的登录引导、任务模式、插件系统和完整思维链展示，并用“读取本地环境，生成一个模拟 macOS 的演示网页”做了对比测试。结果很反常识：便宜的 DeepSeek V4.1 flash 在 Harness 里还原出了非常接近本机桌面的交互效果，速度快、过程清晰；而同定位的 GPT-6 Luna 反而更像凭理解重画了一版。模型之外，任务规划和执行框架可能才是下一轮差距。",
+      "url": "https://waytoagi.feishu.cn/wiki/CHStwYIADig6PdkeWQCctOTxngg?from=from_copylink"
+    },
+    {
+      "date": "2026-09-27",
+      "title": "9.21—9.27｜本周顶级 AI 论文",
+      "summary": "本周顶刊 AI 论文合集直击 Agent 开发的各类痛点：涵盖长上下文注意力优化、代码智能体低成本自迭代、机器人图世界规划、Wiki 知识检索、低成本模型裁判方案，还有自组织多智能体、全自动科研智能体等创新方向。附带详实的基准数据，不管是做模型推理优化、搭建多智能体系统，还是设计评估链路，都能快速挖到可复用技术思路。",
+      "url": "https://waytoagi.feishu.cn/wiki/XA5CwszYGik8CokJ2YeciRzYnxf?from=from_copylink"
     }
   ],
-  "count_7d": 10,
+  "count_7d": 14,
   "updates_7d": [
+    {
+      "date": "2026-09-27",
+      "title": "使用 Pi 和 Jev 构建自定义 Harness",
+      "summary": "作者用Pi SDK和Jev搭建了一个自定义的Harness，把Agent循环里的关键决策拆成了三层：Router负责按任务难度选便宜模型还是强模型，Gate在每次工具调用前判断是否危险、是否需要人工审批，Verifier在最终交付前检查答案质量和依据。Jev是一个专门为这些决策构建的小型模型。你描述情况并提出几个问题，它用数字回答每一个问题。它从不写文本。当你构建自定义harness 时，这一点最为重要！",
+      "url": "https://waytoagi.feishu.cn/wiki/GXe6wa2lRiKKpRkRqwjcBzyRnLg?from=from_copylink"
+    },
+    {
+      "date": "2026-09-27",
+      "title": "「闪电.skill」发布！用Anthropic的方法论把你的产品提速3倍！",
+      "summary": "作者把 Anthropic 提速 Claude 产品 3 倍的方法拆成了可复用的流程：先找到能量化的指标，再验证这个指标和真实体验相关，接着让 Agent 持续爬山优化，最后用测试、CI 棘轮、功能开关和人工审批把成果锁住。他还把这套方法做成了「闪电.skill」，并拿自己的 4 个网站进行了实测，快来看看效果如何！",
+      "url": "https://waytoagi.feishu.cn/wiki/X02mwBQqxiuzank2op4cdmXCnPg?from=from_copylink"
+    },
+    {
+      "date": "2026-09-27",
+      "title": "DeepSeek 还没官宣的桌面版，我抢先装上跑了一遍，结果有点炸",
+      "summary": "作者抢先装上还没正式官宣的 DeepSeek Harness 桌面版，实测了它的登录引导、任务模式、插件系统和完整思维链展示，并用“读取本地环境，生成一个模拟 macOS 的演示网页”做了对比测试。结果很反常识：便宜的 DeepSeek V4.1 flash 在 Harness 里还原出了非常接近本机桌面的交互效果，速度快、过程清晰；而同定位的 GPT-6 Luna 反而更像凭理解重画了一版。模型之外，任务规划和执行框架可能才是下一轮差距。",
+      "url": "https://waytoagi.feishu.cn/wiki/CHStwYIADig6PdkeWQCctOTxngg?from=from_copylink"
+    },
+    {
+      "date": "2026-09-27",
+      "title": "9.21—9.27｜本周顶级 AI 论文",
+      "summary": "本周顶刊 AI 论文合集直击 Agent 开发的各类痛点：涵盖长上下文注意力优化、代码智能体低成本自迭代、机器人图世界规划、Wiki 知识检索、低成本模型裁判方案，还有自组织多智能体、全自动科研智能体等创新方向。附带详实的基准数据，不管是做模型推理优化、搭建多智能体系统，还是设计评估链路，都能快速挖到可复用技术思路。",
+      "url": "https://waytoagi.feishu.cn/wiki/XA5CwszYGik8CokJ2YeciRzYnxf?from=from_copylink"
+    },
     {
       "date": "2026-09-26",
       "title": "第五次GEO公开课：GEO到底该投多少钱？1.3万字讲透效果归因与ROI（附10种标记方法）",
