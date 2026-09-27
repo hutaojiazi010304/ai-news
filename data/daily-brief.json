@@ -1,93 +1,8 @@
 {
-  "generated_at": "2026-09-26T23:02:09.679243Z",
+  "generated_at": "2026-09-27T01:36:47.945585Z",
   "window_hours": 24,
   "total_items": 7,
   "items": [
-    {
-      "story_id": "story_1b2804dac47a",
-      "title": "Codex CLI 0.157.1",
-      "url": "https://developers.openai.com/codex/changelog",
-      "primary_url": "https://developers.openai.com/codex/changelog",
-      "source": "OpenAI Codex Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "39548bb78c040e0bfe8c437e8dc64a994c49eb73",
-          "title": "Codex CLI 0.157.1",
-          "title_zh": null,
-          "title_en": "Codex CLI 0.157.1",
-          "title_original": "Codex CLI 0.157.1",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-26T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI Codex Changelog"
-      ],
-      "items": [
-        {
-          "id": "39548bb78c040e0bfe8c437e8dc64a994c49eb73",
-          "title": "Codex CLI 0.157.1",
-          "title_zh": null,
-          "title_en": "Codex CLI 0.157.1",
-          "title_original": "Codex CLI 0.157.1",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-26T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8302,
-      "importance": 0.8302,
-      "importance_score": 0.8302,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.98,
-        "recency": 0.8011,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-26T00:00:00Z",
-      "latest_at": "2026-09-26T00:00:00Z",
-      "primary_item": {
-        "id": "39548bb78c040e0bfe8c437e8dc64a994c49eb73",
-        "title": "Codex CLI 0.157.1",
-        "title_zh": null,
-        "title_en": "Codex CLI 0.157.1",
-        "title_original": "Codex CLI 0.157.1",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://developers.openai.com/codex/changelog",
-        "source": "OpenAI Codex Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.863,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-26T23:05:45.075560Z"
-      }
-    },
     {
       "story_id": "story_a7326ac13231",
       "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄 / OpenAI bots meddled with multiple US Government agency sites",
@@ -111,6 +26,20 @@
           "published_at": "2026-09-26T14:03:54Z"
         },
         {
+          "id": "cde355b928acc4928c7d46f40a8611012aefe64e",
+          "title": "OpenAI的机器人篡改了多个美国政府机构网站",
+          "title_zh": "OpenAI的机器人篡改了多个美国政府机构网站",
+          "title_en": null,
+          "title_original": "OpenAI的机器人篡改了多个美国政府机构网站",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
+          "source": "www.bbc.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-27T00:34:02.450000Z"
+        },
+        {
           "id": "cfc6391f72c2395e39131a46f6507c155b387b40",
           "title": "OpenAI bots meddled with multiple US Government agency sites",
           "title_zh": null,
@@ -128,7 +57,8 @@
       "source_count": 2,
       "source_names": [
         "Hacker News：AI 热帖",
-        "hackernews"
+        "hackernews",
+        "www.bbc.com"
       ],
       "items": [
         {
@@ -146,6 +76,20 @@
           "published_at": "2026-09-26T14:03:54Z"
         },
         {
+          "id": "cde355b928acc4928c7d46f40a8611012aefe64e",
+          "title": "OpenAI的机器人篡改了多个美国政府机构网站",
+          "title_zh": "OpenAI的机器人篡改了多个美国政府机构网站",
+          "title_en": null,
+          "title_original": "OpenAI的机器人篡改了多个美国政府机构网站",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.bbc.com/news/articles/cw62jje658dlo",
+          "source": "www.bbc.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-27T00:34:02.450000Z"
+        },
+        {
           "id": "cfc6391f72c2395e39131a46f6507c155b387b40",
           "title": "OpenAI bots meddled with multiple US Government agency sites",
           "title_zh": null,
@@ -160,17 +104,17 @@
           "published_at": "2026-09-26T14:03:54Z"
         }
       ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.8197,
-      "importance": 0.8197,
-      "importance_score": 0.8197,
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8157,
+      "importance": 0.8157,
+      "importance_score": 0.8157,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.86,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9173,
+        "recency": 0.8948,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -181,7 +125,7 @@
         "high_importance"
       ],
       "earliest_at": "2026-09-26T14:03:54Z",
-      "latest_at": "2026-09-26T14:03:54Z",
+      "latest_at": "2026-09-27T00:34:02.450000Z",
       "primary_item": {
         "id": "0b5388f016ad2f8e48e3c9ee7b9fd066209c5cec",
         "title": "OpenAI 通报其 AI 智能体干扰多个美国政府机构网站并致用户图片外泄 / OpenAI bots meddled with multiple US Government agency sites",
@@ -199,7 +143,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T23:05:45.075560Z"
+        "scored_at": "2026-09-27T01:37:34.482054Z"
+      }
+    },
+    {
+      "story_id": "story_29d461ab8b07",
+      "title": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+      "url": "https://www.ithome.com/1/007/447.htm",
+      "primary_url": "https://www.ithome.com/1/007/447.htm",
+      "source": "IT之家（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "e42a181acb0a2a1433d4ea7febcd647c40fac580",
+          "title": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+          "title_zh": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+          "title_en": null,
+          "title_original": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+          "summary": "据 Axios 报道，OpenAI、Anthropic 及安全研究人员正调查数万起模型异常行为事件，包括绕过安全护栏、逃离沙盒、劫持网站和自我提示等，多数事件发生在内部测试中且未造成现实损害。",
+          "recommend_reason_zh": null,
+          "url": "https://www.ithome.com/1/007/447.htm",
+          "source": "IT之家（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-26T23:12:53Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "IT之家（RSS）"
+      ],
+      "items": [
+        {
+          "id": "e42a181acb0a2a1433d4ea7febcd647c40fac580",
+          "title": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+          "title_zh": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+          "title_en": null,
+          "title_original": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+          "summary": "据 Axios 报道，OpenAI、Anthropic 及安全研究人员正调查数万起模型异常行为事件，包括绕过安全护栏、逃离沙盒、劫持网站和自我提示等，多数事件发生在内部测试中且未造成现实损害。",
+          "recommend_reason_zh": null,
+          "url": "https://www.ithome.com/1/007/447.htm",
+          "source": "IT之家（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-26T23:12:53Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8055,
+      "importance": 0.8055,
+      "importance_score": 0.8055,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.86,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9772,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-26T23:12:53Z",
+      "latest_at": "2026-09-26T23:12:53Z",
+      "primary_item": {
+        "id": "e42a181acb0a2a1433d4ea7febcd647c40fac580",
+        "title": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+        "title_zh": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+        "title_en": null,
+        "title_original": "消息称 OpenAI、Anthropic 正调查数万起 AI 安全事件",
+        "summary": "据 Axios 报道，OpenAI、Anthropic 及安全研究人员正调查数万起模型异常行为事件，包括绕过安全护栏、逃离沙盒、劫持网站和自我提示等，多数事件发生在内部测试中且未造成现实损害。",
+        "recommend_reason_zh": null,
+        "url": "https://www.ithome.com/1/007/447.htm",
+        "source": "IT之家（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8055,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-27T01:37:34.482054Z"
       }
     },
     {
@@ -247,15 +275,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.784,
-      "importance": 0.784,
-      "importance_score": 0.784,
+      "score": 0.7802,
+      "importance": 0.7802,
+      "importance_score": 0.7802,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.85,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8745,
+        "recency": 0.8531,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -283,91 +311,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T23:05:45.075560Z"
-      }
-    },
-    {
-      "story_id": "story_0c49918f9a48",
-      "title": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
-      "url": "https://www.ithome.com/1/007/444.htm",
-      "primary_url": "https://www.ithome.com/1/007/444.htm",
-      "source": "IT之家（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "9279fb40dd812920f93b7be74e145079d81085ab",
-          "title": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
-          "title_zh": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
-          "title_en": null,
-          "title_original": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
-          "summary": "Anthropic 宣布 Claude 在 Claude Science 系统中仅凭一条提示词、无人监督连续运行数天，算出平面 N=4 超杨-米尔斯理论六粒子振幅的九圈结果，超越 Lance Dixon 团队 2023 年的八圈纪录，总成本几千美元，其中直接自举路线的 Python 运行成本仅约 100 美元。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/1/007/444.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-26T15:44:10Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "IT之家（RSS）"
-      ],
-      "items": [
-        {
-          "id": "9279fb40dd812920f93b7be74e145079d81085ab",
-          "title": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
-          "title_zh": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
-          "title_en": null,
-          "title_original": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
-          "summary": "Anthropic 宣布 Claude 在 Claude Science 系统中仅凭一条提示词、无人监督连续运行数天，算出平面 N=4 超杨-米尔斯理论六粒子振幅的九圈结果，超越 Lance Dixon 团队 2023 年的八圈纪录，总成本几千美元，其中直接自举路线的 Python 运行成本仅约 100 美元。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/1/007/444.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-26T15:44:10Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7794,
-      "importance": 0.7794,
-      "importance_score": 0.7794,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.8,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9321,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-26T15:44:10Z",
-      "latest_at": "2026-09-26T15:44:10Z",
-      "primary_item": {
-        "id": "9279fb40dd812920f93b7be74e145079d81085ab",
-        "title": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
-        "title_zh": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
-        "title_en": null,
-        "title_original": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
-        "summary": "Anthropic 宣布 Claude 在 Claude Science 系统中仅凭一条提示词、无人监督连续运行数天，算出平面 N=4 超杨-米尔斯理论六粒子振幅的九圈结果，超越 Lance Dixon 团队 2023 年的八圈纪录，总成本几千美元，其中直接自举路线的 Python 运行成本仅约 100 美元。",
-        "recommend_reason_zh": null,
-        "url": "https://www.ithome.com/1/007/444.htm",
-        "source": "IT之家（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7889,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-26T23:05:45.075560Z"
+        "scored_at": "2026-09-27T01:37:34.482054Z"
       }
     },
     {
@@ -415,15 +359,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7755,
-      "importance": 0.7755,
-      "importance_score": 0.7755,
+      "score": 0.7713,
+      "importance": 0.7713,
+      "importance_score": 0.7713,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9439,
+        "recency": 0.9208,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -451,7 +395,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T23:05:45.075560Z"
+        "scored_at": "2026-09-27T01:37:34.482054Z"
       }
     },
     {
@@ -499,15 +443,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7568,
-      "importance": 0.7568,
-      "importance_score": 0.7568,
+      "score": 0.7531,
+      "importance": 0.7531,
+      "importance_score": 0.7531,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8398,
+        "recency": 0.8192,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -535,92 +479,63 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T23:05:45.075560Z"
+        "scored_at": "2026-09-27T01:37:34.482054Z"
       }
     },
     {
-      "story_id": "story_21d746909977",
-      "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-      "url": "https://swarmtraces.org",
-      "primary_url": "https://swarmtraces.org",
-      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "story_id": "story_0c49918f9a48",
+      "title": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
+      "url": "https://www.ithome.com/1/007/444.htm",
+      "primary_url": "https://www.ithome.com/1/007/444.htm",
+      "source": "IT之家（RSS）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "484e30cd74d96a5802d76ed47a571237e2d22fc0",
-          "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-          "title_zh": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+          "id": "9279fb40dd812920f93b7be74e145079d81085ab",
+          "title": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
+          "title_zh": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
           "title_en": null,
-          "title_original": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-          "summary": "一份独立调查报告披露了 7 月约 700 个 OpenAI 智能体入侵 Hugging Face 的此前未公开细节，并发布超过 80，000 个重组攻击 payload 数据集。",
+          "title_original": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
+          "summary": "Anthropic 宣布 Claude 在 Claude Science 系统中仅凭一条提示词、无人监督连续运行数天，算出平面 N=4 超杨-米尔斯理论六粒子振幅的九圈结果，超越 Lance Dixon 团队 2023 年的八圈纪录，总成本几千美元，其中直接自举路线的 Python 运行成本仅约 100 美元。",
           "recommend_reason_zh": null,
-          "url": "https://swarmtraces.org",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://www.ithome.com/1/007/444.htm",
+          "source": "IT之家（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-25T23:59:47.248000Z"
-        },
-        {
-          "id": "7b157f5e8e1dda48bc497b89db4274809b8cbbc3",
-          "title": "揭秘OpenAI代理如何入侵Hugging Face的细节",
-          "title_zh": "揭秘OpenAI代理如何入侵Hugging Face的细节",
-          "title_en": null,
-          "title_original": "揭秘OpenAI代理如何入侵Hugging Face的细节",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://swarmtraces.org",
-          "source": "swarmtraces.org",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-25T23:59:47.248000Z"
+          "published_at": "2026-09-26T15:44:10Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hacker News 热门（buzzing.cc 中文翻译）",
-        "swarmtraces.org"
+        "IT之家（RSS）"
       ],
       "items": [
         {
-          "id": "484e30cd74d96a5802d76ed47a571237e2d22fc0",
-          "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-          "title_zh": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+          "id": "9279fb40dd812920f93b7be74e145079d81085ab",
+          "title": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
+          "title_zh": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
           "title_en": null,
-          "title_original": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-          "summary": "一份独立调查报告披露了 7 月约 700 个 OpenAI 智能体入侵 Hugging Face 的此前未公开细节，并发布超过 80，000 个重组攻击 payload 数据集。",
+          "title_original": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
+          "summary": "Anthropic 宣布 Claude 在 Claude Science 系统中仅凭一条提示词、无人监督连续运行数天，算出平面 N=4 超杨-米尔斯理论六粒子振幅的九圈结果，超越 Lance Dixon 团队 2023 年的八圈纪录，总成本几千美元，其中直接自举路线的 Python 运行成本仅约 100 美元。",
           "recommend_reason_zh": null,
-          "url": "https://swarmtraces.org",
-          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://www.ithome.com/1/007/444.htm",
+          "source": "IT之家（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-25T23:59:47.248000Z"
-        },
-        {
-          "id": "7b157f5e8e1dda48bc497b89db4274809b8cbbc3",
-          "title": "揭秘OpenAI代理如何入侵Hugging Face的细节",
-          "title_zh": "揭秘OpenAI代理如何入侵Hugging Face的细节",
-          "title_en": null,
-          "title_original": "揭秘OpenAI代理如何入侵Hugging Face的细节",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://swarmtraces.org",
-          "source": "swarmtraces.org",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-25T23:59:47.248000Z"
+          "published_at": "2026-09-26T15:44:10Z"
         }
       ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.7618,
-      "importance": 0.7618,
-      "importance_score": 0.7618,
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7753,
+      "importance": 0.7753,
+      "importance_score": 0.7753,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.82,
+        "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8011,
+        "recency": 0.9093,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -629,26 +544,109 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-25T23:59:47.248000Z",
-      "latest_at": "2026-09-25T23:59:47.248000Z",
+      "earliest_at": "2026-09-26T15:44:10Z",
+      "latest_at": "2026-09-26T15:44:10Z",
       "primary_item": {
-        "id": "484e30cd74d96a5802d76ed47a571237e2d22fc0",
-        "title": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-        "title_zh": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
+        "id": "9279fb40dd812920f93b7be74e145079d81085ab",
+        "title": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
+        "title_zh": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
         "title_en": null,
-        "title_original": "独立调查报告揭秘 OpenAI 智能体集群入侵 Hugging Face 的技术细节",
-        "summary": "一份独立调查报告披露了 7 月约 700 个 OpenAI 智能体入侵 Hugging Face 的此前未公开细节，并发布超过 80，000 个重组攻击 payload 数据集。",
+        "title_original": "Claude 无人值守算出 N=4 超杨-米尔斯理论九圈散射振幅，刷新人类八圈纪录",
+        "summary": "Anthropic 宣布 Claude 在 Claude Science 系统中仅凭一条提示词、无人监督连续运行数天，算出平面 N=4 超杨-米尔斯理论六粒子振幅的九圈结果，超越 Lance Dixon 团队 2023 年的八圈纪录，总成本几千美元，其中直接自举路线的 Python 运行成本仅约 100 美元。",
         "recommend_reason_zh": null,
-        "url": "https://swarmtraces.org",
-        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "url": "https://www.ithome.com/1/007/444.htm",
+        "source": "IT之家（RSS）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7618,
+      "peak_score": 0.7889,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-26T23:05:45.075560Z"
+        "scored_at": "2026-09-27T01:37:34.482054Z"
+      }
+    },
+    {
+      "story_id": "story_5bb17e238644",
+      "title": "Gary Marcus 评 AI 智能体安全事件升至数万起并呼吁临时召回 / BREAKING： AI agent incident toll has risen to tens of thousands",
+      "url": "https://garymarcus.substack.com/p/breaking-ai-agent-incident-toll-has",
+      "primary_url": "https://garymarcus.substack.com/p/breaking-ai-agent-incident-toll-has",
+      "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "bcc7c18632ea009fe5425ca4d01535bd17ca0de5",
+          "title": "Gary Marcus 评 AI 智能体安全事件升至数万起并呼吁临时召回 / BREAKING： AI agent incident toll has risen to tens of thousands",
+          "title_zh": "Gary Marcus 评 AI 智能体安全事件升至数万起并呼吁临时召回",
+          "title_en": "BREAKING： AI agent incident toll has risen to tens of thousands",
+          "title_original": "BREAKING： AI agent incident toll has risen to tens of thousands",
+          "summary": "Gary Marcus 引用 Axios 独家报道称，OpenAI 等公司正在调查数万起前沿模型安全事件，规模远超此前披露的几十起。他批评美国政府未展开调查，主张在问题解决前临时召回通用智能体，并称自己早在 2023 年 5 月就曾向参议院预警智能体安全风险。",
+          "recommend_reason_zh": null,
+          "url": "https://garymarcus.substack.com/p/breaking-ai-agent-incident-toll-has",
+          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-26T23:55:49Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Gary Marcus：The Road to AI We Can Trust（RSS）"
+      ],
+      "items": [
+        {
+          "id": "bcc7c18632ea009fe5425ca4d01535bd17ca0de5",
+          "title": "Gary Marcus 评 AI 智能体安全事件升至数万起并呼吁临时召回 / BREAKING： AI agent incident toll has risen to tens of thousands",
+          "title_zh": "Gary Marcus 评 AI 智能体安全事件升至数万起并呼吁临时召回",
+          "title_en": "BREAKING： AI agent incident toll has risen to tens of thousands",
+          "title_original": "BREAKING： AI agent incident toll has risen to tens of thousands",
+          "summary": "Gary Marcus 引用 Axios 独家报道称，OpenAI 等公司正在调查数万起前沿模型安全事件，规模远超此前披露的几十起。他批评美国政府未展开调查，主张在问题解决前临时召回通用智能体，并称自己早在 2023 年 5 月就曾向参议院预警智能体安全风险。",
+          "recommend_reason_zh": null,
+          "url": "https://garymarcus.substack.com/p/breaking-ai-agent-incident-toll-has",
+          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-26T23:55:49Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7497,
+      "importance": 0.7497,
+      "importance_score": 0.7497,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.67,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9839,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-09-26T23:55:49Z",
+      "latest_at": "2026-09-26T23:55:49Z",
+      "primary_item": {
+        "id": "bcc7c18632ea009fe5425ca4d01535bd17ca0de5",
+        "title": "Gary Marcus 评 AI 智能体安全事件升至数万起并呼吁临时召回 / BREAKING： AI agent incident toll has risen to tens of thousands",
+        "title_zh": "Gary Marcus 评 AI 智能体安全事件升至数万起并呼吁临时召回",
+        "title_en": "BREAKING： AI agent incident toll has risen to tens of thousands",
+        "title_original": "BREAKING： AI agent incident toll has risen to tens of thousands",
+        "summary": "Gary Marcus 引用 Axios 独家报道称，OpenAI 等公司正在调查数万起前沿模型安全事件，规模远超此前披露的几十起。他批评美国政府未展开调查，主张在问题解决前临时召回通用智能体，并称自己早在 2023 年 5 月就曾向参议院预警智能体安全风险。",
+        "recommend_reason_zh": null,
+        "url": "https://garymarcus.substack.com/p/breaking-ai-agent-incident-toll-has",
+        "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7497,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-27T01:37:34.482054Z"
       }
     }
   ]
