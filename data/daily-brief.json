@@ -1,8 +1,93 @@
 {
-  "generated_at": "2026-09-29T08:47:44.940377Z",
+  "generated_at": "2026-09-29T16:01:40.748492Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
+    {
+      "story_id": "story_a2df1f649cab",
+      "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "primary_url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "source": "Hugging Face Blog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "9baf50548a49a1286d6439cae3f912053b8f9914",
+          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+          "title_zh": null,
+          "title_en": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+          "title_original": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-29T13:07:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hugging Face Blog"
+      ],
+      "items": [
+        {
+          "id": "9baf50548a49a1286d6439cae3f912053b8f9914",
+          "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+          "title_zh": null,
+          "title_en": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+          "title_original": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-29T13:07:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.863,
+      "importance": 0.863,
+      "importance_score": 0.863,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.99,
+        "recency": 0.9724,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-29T13:07:00Z",
+      "latest_at": "2026-09-29T13:07:00Z",
+      "primary_item": {
+        "id": "9baf50548a49a1286d6439cae3f912053b8f9914",
+        "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+        "title_zh": null,
+        "title_en": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+        "title_original": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+        "source": "Hugging Face Blog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.863,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-29T16:03:05.223772Z"
+      }
+    },
     {
       "story_id": "story_c49bc1306894",
       "title": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施 / How we will do better for Australia",
@@ -48,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.839,
-      "importance": 0.839,
-      "importance_score": 0.839,
+      "score": 0.8278,
+      "importance": 0.8278,
+      "importance_score": 0.8278,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9277,
+        "recency": 0.8653,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,92 +170,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
-      }
-    },
-    {
-      "story_id": "story_299644506077",
-      "title": "H Company 发布 Holo4 智能体模型系列，含 27B 与 35B-A3B 两个版本 / Holo4: powering generalist computer-use agents",
-      "url": "https://huggingface.co/blog/Hcompany/holo4",
-      "primary_url": "https://huggingface.co/blog/Hcompany/holo4",
-      "source": "Hugging Face Blog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "d71f45cd9039539f9fe378c80828a34f54cedaf4",
-          "title": "H Company 发布 Holo4 智能体模型系列，含 27B 与 35B-A3B 两个版本 / Holo4: powering generalist computer-use agents",
-          "title_zh": "H Company 发布 Holo4 智能体模型系列，含 27B 与 35B-A3B 两个版本",
-          "title_en": "Holo4: powering generalist computer-use agents",
-          "title_original": "Holo4: powering generalist computer-use agents",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/Hcompany/holo4",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-28T09:44:05Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hugging Face Blog"
-      ],
-      "items": [
-        {
-          "id": "d71f45cd9039539f9fe378c80828a34f54cedaf4",
-          "title": "H Company 发布 Holo4 智能体模型系列，含 27B 与 35B-A3B 两个版本 / Holo4: powering generalist computer-use agents",
-          "title_zh": "H Company 发布 Holo4 智能体模型系列，含 27B 与 35B-A3B 两个版本",
-          "title_en": "Holo4: powering generalist computer-use agents",
-          "title_original": "Holo4: powering generalist computer-use agents",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/Hcompany/holo4",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-28T09:44:05Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8242,
-      "importance": 0.8242,
-      "importance_score": 0.8242,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8009,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-28T09:44:05Z",
-      "latest_at": "2026-09-28T09:44:05Z",
-      "primary_item": {
-        "id": "d71f45cd9039539f9fe378c80828a34f54cedaf4",
-        "title": "H Company 发布 Holo4 智能体模型系列，含 27B 与 35B-A3B 两个版本 / Holo4: powering generalist computer-use agents",
-        "title_zh": "H Company 发布 Holo4 智能体模型系列，含 27B 与 35B-A3B 两个版本",
-        "title_en": "Holo4: powering generalist computer-use agents",
-        "title_original": "Holo4: powering generalist computer-use agents",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/Hcompany/holo4",
-        "source": "Hugging Face Blog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.85,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -218,15 +218,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8276,
-      "importance": 0.8276,
-      "importance_score": 0.8276,
+      "score": 0.817,
+      "importance": 0.817,
+      "importance_score": 0.817,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.9,
-        "recency": 0.8756,
+        "recency": 0.8167,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -255,7 +255,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -303,15 +303,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8217,
-      "importance": 0.8217,
-      "importance_score": 0.8217,
+      "score": 0.8109,
+      "importance": 0.8109,
+      "importance_score": 0.8109,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8985,
+        "recency": 0.8381,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -339,7 +339,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -387,15 +387,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8132,
-      "importance": 0.8132,
-      "importance_score": 0.8132,
+      "score": 0.8027,
+      "importance": 0.8027,
+      "importance_score": 0.8027,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8678,
+        "recency": 0.8094,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -423,7 +423,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
+      }
+    },
+    {
+      "story_id": "story_a12eaf57e6f0",
+      "title": "NVIDIA 发布开源表格基础模型 Kumo Tabular，在 TabArena 等四项基准排名第一 / NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+      "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "primary_url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "source": "Hugging Face Blog",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "3764f310b38ccbc112606e16cd32a15f32cfeef7",
+          "title": "NVIDIA 发布开源表格基础模型 Kumo Tabular，在 TabArena 等四项基准排名第一 / NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "title_zh": "NVIDIA 发布开源表格基础模型 Kumo Tabular，在 TabArena 等四项基准排名第一",
+          "title_en": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "title_original": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-29T15:30:38Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hugging Face Blog"
+      ],
+      "items": [
+        {
+          "id": "3764f310b38ccbc112606e16cd32a15f32cfeef7",
+          "title": "NVIDIA 发布开源表格基础模型 Kumo Tabular，在 TabArena 等四项基准排名第一 / NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "title_zh": "NVIDIA 发布开源表格基础模型 Kumo Tabular，在 TabArena 等四项基准排名第一",
+          "title_en": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "title_original": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+          "source": "Hugging Face Blog",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-09-29T15:30:38Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8591,
+      "importance": 0.8591,
+      "importance_score": 0.8591,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.95,
+        "recency": 0.995,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-29T15:30:38Z",
+      "latest_at": "2026-09-29T15:30:38Z",
+      "primary_item": {
+        "id": "3764f310b38ccbc112606e16cd32a15f32cfeef7",
+        "title": "NVIDIA 发布开源表格基础模型 Kumo Tabular，在 TabArena 等四项基准排名第一 / NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+        "title_zh": "NVIDIA 发布开源表格基础模型 Kumo Tabular，在 TabArena 等四项基准排名第一",
+        "title_en": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+        "title_original": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+        "source": "Hugging Face Blog",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8591,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -449,7 +534,7 @@
           "published_at": "2026-09-28T19:00:00Z"
         },
         {
-          "id": "68096672c10e6f534abdc424b80ac488cf8eee91",
+          "id": "68f00302c3948fb61d0d7e1a7dc3735272b08cfc",
           "title": "GitHub 安全团队如何用开源 AI 安全 Agent 找出 24 个 Android 漏洞 / We found 24 Android vulnerabilities using our open source AI security agent",
           "title_zh": "GitHub 安全团队如何用开源 AI 安全 Agent 找出 24 个 Android 漏洞",
           "title_en": "We found 24 Android vulnerabilities using our open source AI security agent",
@@ -457,9 +542,9 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
           "published_at": "2026-09-29T00:55:47Z"
         },
         {
@@ -480,7 +565,7 @@
       "source_count": 2,
       "source_names": [
         "GitHub Blog",
-        "Hacker News (黑客新闻)",
+        "Hacker News",
         "hackernews"
       ],
       "items": [
@@ -499,7 +584,7 @@
           "published_at": "2026-09-28T19:00:00Z"
         },
         {
-          "id": "68096672c10e6f534abdc424b80ac488cf8eee91",
+          "id": "68f00302c3948fb61d0d7e1a7dc3735272b08cfc",
           "title": "GitHub 安全团队如何用开源 AI 安全 Agent 找出 24 个 Android 漏洞 / We found 24 Android vulnerabilities using our open source AI security agent",
           "title_zh": "GitHub 安全团队如何用开源 AI 安全 Agent 找出 24 个 Android 漏洞",
           "title_en": "We found 24 Android vulnerabilities using our open source AI security agent",
@@ -507,9 +592,9 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
+          "source": "Hacker News",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
           "published_at": "2026-09-29T00:55:47Z"
         },
         {
@@ -529,15 +614,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.8156,
-      "importance": 0.8156,
-      "importance_score": 0.8156,
+      "score": 0.805,
+      "importance": 0.805,
+      "importance_score": 0.805,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8756,
+        "recency": 0.8167,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -566,7 +651,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -614,15 +699,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7945,
-      "importance": 0.7945,
-      "importance_score": 0.7945,
+      "score": 0.7834,
+      "importance": 0.7834,
+      "importance_score": 0.7834,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.86,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.916,
+        "recency": 0.8544,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -650,91 +735,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
-      }
-    },
-    {
-      "story_id": "story_3622c48a5055",
-      "title": "英伟达联合超100家伙伴推出开放代理安全平台 / Today, with over 100 industry partners, we introduced the NVIDIA Open Agent Safety Platform, bringing together OpenShell and Sentry.",
-      "url": "https://x.com/JensenHuang/status/2104499465055023424",
-      "primary_url": "https://x.com/JensenHuang/status/2104499465055023424",
-      "source": "X：Jensen Huang (@JensenHuang)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "313d612771791ee3e9d2f3e1eb7618cb5ea71fc5",
-          "title": "英伟达联合超100家伙伴推出开放代理安全平台 / Today, with over 100 industry partners, we introduced the NVIDIA Open Agent Safety Platform, bringing together OpenShell and Sentry.",
-          "title_zh": "英伟达联合超100家伙伴推出开放代理安全平台",
-          "title_en": "Today, with over 100 industry partners, we introduced the NVIDIA Open Agent Safety Platform, bringing together OpenShell and Sentry.",
-          "title_original": "Today, with over 100 industry partners, we introduced the NVIDIA Open Agent Safety Platform, bringing together OpenShell and Sentry.",
-          "summary": "2026年9月28日，黄仁勋在X平台宣布，英伟达联合超过100家行业伙伴，推出NVIDIA Open Agent Safety Platform，整合OpenShell与Sentry两大组件。该平台旨在构建安全代理系统的信任层，强调“安全是信任的基础”，并称其为“AI经济的基石”。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/JensenHuang/status/2104499465055023424",
-          "source": "X：Jensen Huang (@JensenHuang)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-28T09:12:26Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Jensen Huang (@JensenHuang)"
-      ],
-      "items": [
-        {
-          "id": "313d612771791ee3e9d2f3e1eb7618cb5ea71fc5",
-          "title": "英伟达联合超100家伙伴推出开放代理安全平台 / Today, with over 100 industry partners, we introduced the NVIDIA Open Agent Safety Platform, bringing together OpenShell and Sentry.",
-          "title_zh": "英伟达联合超100家伙伴推出开放代理安全平台",
-          "title_en": "Today, with over 100 industry partners, we introduced the NVIDIA Open Agent Safety Platform, bringing together OpenShell and Sentry.",
-          "title_original": "Today, with over 100 industry partners, we introduced the NVIDIA Open Agent Safety Platform, bringing together OpenShell and Sentry.",
-          "summary": "2026年9月28日，黄仁勋在X平台宣布，英伟达联合超过100家行业伙伴，推出NVIDIA Open Agent Safety Platform，整合OpenShell与Sentry两大组件。该平台旨在构建安全代理系统的信任层，强调“安全是信任的基础”，并称其为“AI经济的基石”。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/JensenHuang/status/2104499465055023424",
-          "source": "X：Jensen Huang (@JensenHuang)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-28T09:12:26Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.779,
-      "importance": 0.779,
-      "importance_score": 0.779,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.88,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7969,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-28T09:12:26Z",
-      "latest_at": "2026-09-28T09:12:26Z",
-      "primary_item": {
-        "id": "313d612771791ee3e9d2f3e1eb7618cb5ea71fc5",
-        "title": "英伟达联合超100家伙伴推出开放代理安全平台 / Today, with over 100 industry partners, we introduced the NVIDIA Open Agent Safety Platform, bringing together OpenShell and Sentry.",
-        "title_zh": "英伟达联合超100家伙伴推出开放代理安全平台",
-        "title_en": "Today, with over 100 industry partners, we introduced the NVIDIA Open Agent Safety Platform, bringing together OpenShell and Sentry.",
-        "title_original": "Today, with over 100 industry partners, we introduced the NVIDIA Open Agent Safety Platform, bringing together OpenShell and Sentry.",
-        "summary": "2026年9月28日，黄仁勋在X平台宣布，英伟达联合超过100家行业伙伴，推出NVIDIA Open Agent Safety Platform，整合OpenShell与Sentry两大组件。该平台旨在构建安全代理系统的信任层，强调“安全是信任的基础”，并称其为“AI经济的基石”。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/JensenHuang/status/2104499465055023424",
-        "source": "X：Jensen Huang (@JensenHuang)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.8047,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -811,15 +812,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7862,
-      "importance": 0.7862,
-      "importance_score": 0.7862,
+      "score": 0.7755,
+      "importance": 0.7755,
+      "importance_score": 0.7755,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.85,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8867,
+        "recency": 0.827,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -847,7 +848,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -895,15 +896,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7862,
-      "importance": 0.7862,
-      "importance_score": 0.7862,
+      "score": 0.7757,
+      "importance": 0.7757,
+      "importance_score": 0.7757,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8677,
+        "recency": 0.8094,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -931,7 +932,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -979,15 +980,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8018,
-      "importance": 0.8018,
-      "importance_score": 0.8018,
+      "score": 0.7904,
+      "importance": 0.7904,
+      "importance_score": 0.7904,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.87,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9399,
+        "recency": 0.8767,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1015,7 +1016,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -1063,15 +1064,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7838,
-      "importance": 0.7838,
-      "importance_score": 0.7838,
+      "score": 0.773,
+      "importance": 0.773,
+      "importance_score": 0.773,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8897,
+        "recency": 0.8299,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1099,7 +1100,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -1147,15 +1148,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.814,
-      "importance": 0.814,
-      "importance_score": 0.814,
+      "score": 0.8035,
+      "importance": 0.8035,
+      "importance_score": 0.8035,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8723,
+        "recency": 0.8136,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1183,7 +1184,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -1231,15 +1232,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8296,
-      "importance": 0.8296,
-      "importance_score": 0.8296,
+      "score": 0.819,
+      "importance": 0.819,
+      "importance_score": 0.819,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.8756,
+        "recency": 0.8167,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1268,7 +1269,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -1316,15 +1317,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7791,
-      "importance": 0.7791,
-      "importance_score": 0.7791,
+      "score": 0.7682,
+      "importance": 0.7682,
+      "importance_score": 0.7682,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8972,
+        "recency": 0.8368,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1352,7 +1353,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -1400,15 +1401,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7745,
-      "importance": 0.7745,
-      "importance_score": 0.7745,
+      "score": 0.7639,
+      "importance": 0.7639,
+      "importance_score": 0.7639,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8716,
+        "recency": 0.813,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1436,7 +1437,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -1484,15 +1485,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7714,
-      "importance": 0.7714,
-      "importance_score": 0.7714,
+      "score": 0.7607,
+      "importance": 0.7607,
+      "importance_score": 0.7607,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.64,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8857,
+        "recency": 0.8261,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1520,7 +1521,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -1568,15 +1569,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7708,
-      "importance": 0.7708,
-      "importance_score": 0.7708,
+      "score": 0.7603,
+      "importance": 0.7603,
+      "importance_score": 0.7603,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8675,
+        "recency": 0.8092,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1604,7 +1605,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -1652,15 +1653,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7629,
-      "importance": 0.7629,
-      "importance_score": 0.7629,
+      "score": 0.7521,
+      "importance": 0.7521,
+      "importance_score": 0.7521,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8904,
+        "recency": 0.8305,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1688,7 +1689,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     },
     {
@@ -1736,22 +1737,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7591,
-      "importance": 0.7591,
-      "importance_score": 0.7591,
+      "score": 0.7482,
+      "importance": 0.7482,
+      "importance_score": 0.7482,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.903,
+        "recency": 0.8422,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-09-28T22:11:36.573241Z",
       "latest_at": "2026-09-28T22:11:36.573241Z",
@@ -1772,7 +1772,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-29T08:51:43.602699Z"
+        "scored_at": "2026-09-29T16:03:05.223772Z"
       }
     }
   ]
