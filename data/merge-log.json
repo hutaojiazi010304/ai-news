@@ -1,22 +1,8 @@
 {
-  "generated_at": "2026-09-29T20:56:08.239375Z",
+  "generated_at": "2026-09-30T00:37:17.083881Z",
   "merge_strategy": "url_or_title_similarity_v0_6",
-  "total_events": 24,
+  "total_events": 26,
   "events": [
-    {
-      "story_id": "story_4958fb2aa897",
-      "item_id": "5bc6b4f0a1b2259d86f0573f0a2631a1d10c619f",
-      "merged_into": "story_4958fb2aa897",
-      "reason": "canonical_url",
-      "similarity": 1.0
-    },
-    {
-      "story_id": "story_f706fa5d70cc",
-      "item_id": "8aa1011c2bc3786b8884e3746d799aedee417e8b",
-      "merged_into": "story_f706fa5d70cc",
-      "reason": "canonical_url",
-      "similarity": 1.0
-    },
     {
       "story_id": "story_154ec8d90020",
       "item_id": "0e39b6b90af3e9ad24b491ee69b08957951a8540",
@@ -25,9 +11,9 @@
       "similarity": 1.0
     },
     {
-      "story_id": "story_f7e3a14cc820",
-      "item_id": "38650c8f5b96f871575103acd8b8f20a393cf56e",
-      "merged_into": "story_f7e3a14cc820",
+      "story_id": "story_c7c927c4c637",
+      "item_id": "7d97b0e6e2c845d9d6770ae4080d97e6ab66004e",
+      "merged_into": "story_c7c927c4c637",
       "reason": "title_similarity",
       "similarity": 0.885
     },
@@ -57,13 +43,6 @@
       "item_id": "269a46f85949862f4eda55fdd3ed88635ff5608d",
       "merged_into": "story_295d80b95c35",
       "reason": "title_similarity",
-      "similarity": 1.0
-    },
-    {
-      "story_id": "story_35e544e96040",
-      "item_id": "1ff52627af4657e1883adf05565e8c1681a38bf2",
-      "merged_into": "story_35e544e96040",
-      "reason": "canonical_url",
       "similarity": 1.0
     },
     {
@@ -116,16 +95,9 @@
       "similarity": 1.0
     },
     {
-      "story_id": "story_83e2e2180846",
-      "item_id": "e61c8538b91723609748335f63d606600688e18a",
-      "merged_into": "story_83e2e2180846",
-      "reason": "canonical_url",
-      "similarity": 1.0
-    },
-    {
-      "story_id": "story_83e2e2180846",
+      "story_id": "story_3b1c935eea0a",
       "item_id": "f5800fcde9d1657f69a08421b120dda90d3395db",
-      "merged_into": "story_83e2e2180846",
+      "merged_into": "story_3b1c935eea0a",
       "reason": "canonical_url",
       "similarity": 1.0
     },
@@ -144,10 +116,24 @@
       "similarity": 1.0
     },
     {
-      "story_id": "story_83e2e2180846",
-      "item_id": "1c68c3e1f1673d60618000416d29305baeffb172",
-      "merged_into": "story_83e2e2180846",
+      "story_id": "story_3b1c935eea0a",
+      "item_id": "058bb9eef35cccc5cd53e7c8748b2fa91d574ab2",
+      "merged_into": "story_3b1c935eea0a",
       "reason": "canonical_url",
+      "similarity": 1.0
+    },
+    {
+      "story_id": "story_3b1c935eea0a",
+      "item_id": "1c68c3e1f1673d60618000416d29305baeffb172",
+      "merged_into": "story_3b1c935eea0a",
+      "reason": "canonical_url",
+      "similarity": 1.0
+    },
+    {
+      "story_id": "story_37d4fa6b3569",
+      "item_id": "2ac560369e6e13183fecf984acb463d84a8e7f8e",
+      "merged_into": "story_37d4fa6b3569",
+      "reason": "title_similarity",
       "similarity": 1.0
     },
     {
@@ -170,6 +156,34 @@
       "merged_into": "story_df2a86bb655e",
       "reason": "canonical_url",
       "similarity": 1.0
+    },
+    {
+      "story_id": "story_d7cd52f14066",
+      "item_id": "b4460cea68954c1c65d4712b7e85b60cd7790ac6",
+      "merged_into": "story_d7cd52f14066",
+      "reason": "title_similarity",
+      "similarity": 1.0
+    },
+    {
+      "story_id": "story_80c91623eba5",
+      "item_id": "6f01e916530166e9c59a6636a0701c0552820cea",
+      "merged_into": "story_80c91623eba5",
+      "reason": "canonical_url",
+      "similarity": 1.0
+    },
+    {
+      "story_id": "story_0d4039a431d0",
+      "item_id": "27cd86d52b7eb28c0cce0f3c24c8621928600b17",
+      "merged_into": "story_0d4039a431d0",
+      "reason": "canonical_url",
+      "similarity": 1.0
+    },
+    {
+      "story_id": "story_188907ccfc71",
+      "item_id": "a8c9817f1e1b3e095e8aeb2e69f18d8e55e8bd1f",
+      "merged_into": "story_188907ccfc71",
+      "reason": "title_similarity",
+      "similarity": 0.9898
     }
   ]
 }
