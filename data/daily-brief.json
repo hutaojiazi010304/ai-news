@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T00:37:17.083881Z",
+  "generated_at": "2026-09-30T06:57:13.289093Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8491,
-      "importance": 0.8491,
-      "importance_score": 0.8491,
+      "score": 0.8396,
+      "importance": 0.8396,
+      "importance_score": 0.8396,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.8952,
+        "recency": 0.8422,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,63 +85,121 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
-      "story_id": "story_c49bc1306894",
-      "title": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施 / How we will do better for Australia",
-      "url": "https://openai.com/index/how-we-will-do-better-for-australia",
-      "primary_url": "https://openai.com/index/how-we-will-do-better-for-australia",
+      "story_id": "story_632fc8ebf5dc",
+      "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / Introducing GPT-6.1 Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "primary_url": "https://openai.com/index/introducing-gpt-6-1-sol",
       "source": "OpenAI News",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "fe0a8a71338d71eb6a8ab393365bb8993319c9b3",
-          "title": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施 / How we will do better for Australia",
-          "title_zh": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施",
-          "title_en": "How we will do better for Australia",
-          "title_original": "How we will do better for Australia",
-          "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+          "id": "79e8ec51dfc696a0fb49d867a814731799bbc3d6",
+          "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / Introducing GPT-6.1 Sol",
+          "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
+          "title_en": "Introducing GPT-6.1 Sol",
+          "title_original": "Introducing GPT-6.1 Sol",
+          "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-29T01:00:00Z"
+          "published_at": "2026-09-29T10:00:00Z"
+        },
+        {
+          "id": "476791ea672f7f5d5323dc1c86416a98c0375b53",
+          "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / GPT 6.1 Sol",
+          "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
+          "title_en": "GPT 6.1 Sol",
+          "title_original": "GPT 6.1 Sol",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-29T17:20:30.075000Z"
+        },
+        {
+          "id": "38962e864ad8b46571505649290c8d777c5cbc56",
+          "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+          "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
+          "title_en": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+          "title_original": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-29T17:06:45Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "OpenAI News"
+        "Hacker News (黑客新闻)",
+        "OpenAI News",
+        "openai.com"
       ],
       "items": [
         {
-          "id": "fe0a8a71338d71eb6a8ab393365bb8993319c9b3",
-          "title": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施 / How we will do better for Australia",
-          "title_zh": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施",
-          "title_en": "How we will do better for Australia",
-          "title_original": "How we will do better for Australia",
-          "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+          "id": "79e8ec51dfc696a0fb49d867a814731799bbc3d6",
+          "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / Introducing GPT-6.1 Sol",
+          "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
+          "title_en": "Introducing GPT-6.1 Sol",
+          "title_original": "Introducing GPT-6.1 Sol",
+          "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-09-29T01:00:00Z"
+          "published_at": "2026-09-29T10:00:00Z"
+        },
+        {
+          "id": "476791ea672f7f5d5323dc1c86416a98c0375b53",
+          "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / GPT 6.1 Sol",
+          "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
+          "title_en": "GPT 6.1 Sol",
+          "title_original": "GPT 6.1 Sol",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+          "source": "openai.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-09-29T17:20:30.075000Z"
+        },
+        {
+          "id": "38962e864ad8b46571505649290c8d777c5cbc56",
+          "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+          "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
+          "title_en": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+          "title_original": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-09-29T17:06:45Z"
         }
       ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8154,
-      "importance": 0.8154,
-      "importance_score": 0.8154,
+      "item_count": 3,
+      "duplicate_count": 3,
+      "score": 0.8271,
+      "importance": 0.8271,
+      "importance_score": 0.8271,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.7966,
+        "ai_relevance": 0.95,
+        "recency": 0.8173,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -151,26 +209,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-29T01:00:00Z",
-      "latest_at": "2026-09-29T01:00:00Z",
+      "earliest_at": "2026-09-29T10:00:00Z",
+      "latest_at": "2026-09-29T17:20:30.075000Z",
       "primary_item": {
-        "id": "fe0a8a71338d71eb6a8ab393365bb8993319c9b3",
-        "title": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施 / How we will do better for Australia",
-        "title_zh": "OpenAI 披露模型在训练评估中未经授权访问澳大利亚政府网站事件及整改措施",
-        "title_en": "How we will do better for Australia",
-        "title_original": "How we will do better for Australia",
-        "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+        "id": "79e8ec51dfc696a0fb49d867a814731799bbc3d6",
+        "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / Introducing GPT-6.1 Sol",
+        "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
+        "title_en": "Introducing GPT-6.1 Sol",
+        "title_original": "Introducing GPT-6.1 Sol",
+        "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+        "url": "https://openai.com/index/introducing-gpt-6-1-sol",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8501,
+      "peak_score": 0.842,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
@@ -305,15 +363,15 @@
       ],
       "item_count": 4,
       "duplicate_count": 4,
-      "score": 0.8312,
-      "importance": 0.8312,
-      "importance_score": 0.8312,
+      "score": 0.8213,
+      "importance": 0.8213,
+      "importance_score": 0.8213,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9347,
+        "recency": 0.8794,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -341,7 +399,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
@@ -389,15 +447,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8449,
-      "importance": 0.8449,
-      "importance_score": 0.8449,
+      "score": 0.8351,
+      "importance": 0.8351,
+      "importance_score": 0.8351,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.916,
+        "recency": 0.8619,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -426,7 +484,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
@@ -474,15 +532,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8197,
-      "importance": 0.8197,
-      "importance_score": 0.8197,
+      "score": 0.8097,
+      "importance": 0.8097,
+      "importance_score": 0.8097,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9373,
+        "recency": 0.8819,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -510,121 +568,177 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
-      "story_id": "story_632fc8ebf5dc",
-      "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / Introducing GPT-6.1 Sol",
-      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-      "primary_url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "story_id": "story_789068731278",
+      "title": "OpenAI 据报道洽谈以约 1.4 万亿美元估值融资至少 300 亿美元 / OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+      "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation",
+      "primary_url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation",
+      "source": "TechCrunch：AI（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "498dc000c78d24ef9003ed81482127745fdc4a1b",
+          "title": "OpenAI 据报道洽谈以约 1.4 万亿美元估值融资至少 300 亿美元 / OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+          "title_zh": "OpenAI 据报道洽谈以约 1.4 万亿美元估值融资至少 300 亿美元",
+          "title_en": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+          "title_original": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+          "summary": "据 Bloomberg 报道，OpenAI 正与投资者洽谈在 IPO 前融资至少 300 亿美元，估值约 1.4 万亿美元。自 7 月以来其 run-rate 收入增长 70%，8 月达 400 亿美元；公司今年 3 月曾以 8520 亿美元估值融资 1220 亿美元，CEO Sam Altman 已排除 2026 年上市，本轮将作为 IPO 前的过桥轮。",
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation",
+          "source": "TechCrunch：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-29T19:52:37Z"
+        },
+        {
+          "id": "50995d2157f72a22df0cd3ef3e5bbd2052988e9b",
+          "title": "OpenAI repotedly in talks to raise $30B round at $1.4T valuation",
+          "title_zh": null,
+          "title_en": "OpenAI repotedly in talks to raise $30B round at $1.4T valuation",
+          "title_original": "OpenAI repotedly in talks to raise $30B round at $1.4T valuation",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/29/openai-repotedly-in-talks-to-raise-30b-round-at-1-4t-valuation",
+          "source": "TechCrunch AI",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-29T19:52:37Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "TechCrunch AI",
+        "TechCrunch：AI（RSS）"
+      ],
+      "items": [
+        {
+          "id": "498dc000c78d24ef9003ed81482127745fdc4a1b",
+          "title": "OpenAI 据报道洽谈以约 1.4 万亿美元估值融资至少 300 亿美元 / OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+          "title_zh": "OpenAI 据报道洽谈以约 1.4 万亿美元估值融资至少 300 亿美元",
+          "title_en": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+          "title_original": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+          "summary": "据 Bloomberg 报道，OpenAI 正与投资者洽谈在 IPO 前融资至少 300 亿美元，估值约 1.4 万亿美元。自 7 月以来其 run-rate 收入增长 70%，8 月达 400 亿美元；公司今年 3 月曾以 8520 亿美元估值融资 1220 亿美元，CEO Sam Altman 已排除 2026 年上市，本轮将作为 IPO 前的过桥轮。",
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation",
+          "source": "TechCrunch：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-29T19:52:37Z"
+        },
+        {
+          "id": "50995d2157f72a22df0cd3ef3e5bbd2052988e9b",
+          "title": "OpenAI repotedly in talks to raise $30B round at $1.4T valuation",
+          "title_zh": null,
+          "title_en": "OpenAI repotedly in talks to raise $30B round at $1.4T valuation",
+          "title_original": "OpenAI repotedly in talks to raise $30B round at $1.4T valuation",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://techcrunch.com/2026/09/29/openai-repotedly-in-talks-to-raise-30b-round-at-1-4t-valuation",
+          "source": "TechCrunch AI",
+          "source_name": "Curated Media",
+          "site_id": "curated_media",
+          "published_at": "2026-09-29T19:52:37Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.8074,
+      "importance": 0.8074,
+      "importance_score": 0.8074,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.83,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8989,
+        "story_heat": 0.25,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "multi_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-29T19:52:37Z",
+      "latest_at": "2026-09-29T19:52:37Z",
+      "primary_item": {
+        "id": "498dc000c78d24ef9003ed81482127745fdc4a1b",
+        "title": "OpenAI 据报道洽谈以约 1.4 万亿美元估值融资至少 300 亿美元 / OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+        "title_zh": "OpenAI 据报道洽谈以约 1.4 万亿美元估值融资至少 300 亿美元",
+        "title_en": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+        "title_original": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+        "summary": "据 Bloomberg 报道，OpenAI 正与投资者洽谈在 IPO 前融资至少 300 亿美元，估值约 1.4 万亿美元。自 7 月以来其 run-rate 收入增长 70%，8 月达 400 亿美元；公司今年 3 月曾以 8520 亿美元估值融资 1220 亿美元，CEO Sam Altman 已排除 2026 年上市，本轮将作为 IPO 前的过桥轮。",
+        "recommend_reason_zh": null,
+        "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation",
+        "source": "TechCrunch：AI（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8074,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-30T06:58:08.506248Z"
+      }
+    },
+    {
+      "story_id": "story_4fbbd781192d",
+      "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新 / DevDay 2026 Recap",
+      "url": "https://openai.com/index/devday-2026-recap",
+      "primary_url": "https://openai.com/index/devday-2026-recap",
       "source": "OpenAI News",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "79e8ec51dfc696a0fb49d867a814731799bbc3d6",
-          "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / Introducing GPT-6.1 Sol",
-          "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
-          "title_en": "Introducing GPT-6.1 Sol",
-          "title_original": "Introducing GPT-6.1 Sol",
-          "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+          "id": "fe865f29c90443fb346190f239a0c160b5988efa",
+          "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新 / DevDay 2026 Recap",
+          "title_zh": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新",
+          "title_en": "DevDay 2026 Recap",
+          "title_original": "DevDay 2026 Recap",
+          "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+          "url": "https://openai.com/index/devday-2026-recap",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
           "published_at": "2026-09-29T10:00:00Z"
-        },
-        {
-          "id": "476791ea672f7f5d5323dc1c86416a98c0375b53",
-          "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / GPT 6.1 Sol",
-          "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
-          "title_en": "GPT 6.1 Sol",
-          "title_original": "GPT 6.1 Sol",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-          "source": "openai.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-29T17:20:30.075000Z"
-        },
-        {
-          "id": "38962e864ad8b46571505649290c8d777c5cbc56",
-          "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-          "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
-          "title_en": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-          "title_original": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-29T17:06:45Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hacker News (黑客新闻)",
-        "OpenAI News",
-        "openai.com"
+        "OpenAI News"
       ],
       "items": [
         {
-          "id": "79e8ec51dfc696a0fb49d867a814731799bbc3d6",
-          "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / Introducing GPT-6.1 Sol",
-          "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
-          "title_en": "Introducing GPT-6.1 Sol",
-          "title_original": "Introducing GPT-6.1 Sol",
-          "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+          "id": "fe865f29c90443fb346190f239a0c160b5988efa",
+          "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新 / DevDay 2026 Recap",
+          "title_zh": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新",
+          "title_en": "DevDay 2026 Recap",
+          "title_original": "DevDay 2026 Recap",
+          "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+          "url": "https://openai.com/index/devday-2026-recap",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
           "published_at": "2026-09-29T10:00:00Z"
-        },
-        {
-          "id": "476791ea672f7f5d5323dc1c86416a98c0375b53",
-          "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / GPT 6.1 Sol",
-          "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
-          "title_en": "GPT 6.1 Sol",
-          "title_original": "GPT 6.1 Sol",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-          "source": "openai.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-09-29T17:20:30.075000Z"
-        },
-        {
-          "id": "38962e864ad8b46571505649290c8d777c5cbc56",
-          "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-          "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
-          "title_en": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-          "title_original": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-09-29T17:06:45Z"
         }
       ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.8364,
-      "importance": 0.8364,
-      "importance_score": 0.8364,
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8191,
+      "importance": 0.8191,
+      "importance_score": 0.8191,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8687,
+        "ai_relevance": 0.91,
+        "recency": 0.8173,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -635,81 +749,81 @@
         "high_importance"
       ],
       "earliest_at": "2026-09-29T10:00:00Z",
-      "latest_at": "2026-09-29T17:20:30.075000Z",
+      "latest_at": "2026-09-29T10:00:00Z",
       "primary_item": {
-        "id": "79e8ec51dfc696a0fb49d867a814731799bbc3d6",
-        "title": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能 / Introducing GPT-6.1 Sol",
-        "title_zh": "OpenAI 发布 GPT-6.1 Sol，以约五分之一价格接近 GPT-6 Astra 智能",
-        "title_en": "Introducing GPT-6.1 Sol",
-        "title_original": "Introducing GPT-6.1 Sol",
-        "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+        "id": "fe865f29c90443fb346190f239a0c160b5988efa",
+        "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新 / DevDay 2026 Recap",
+        "title_zh": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新",
+        "title_en": "DevDay 2026 Recap",
+        "title_original": "DevDay 2026 Recap",
+        "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+        "url": "https://openai.com/index/devday-2026-recap",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.842,
+      "peak_score": 0.834,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
-      "story_id": "story_7e0e84425f1a",
-      "title": "路透审阅 Anthropic IPO 招股书：收入增长 12 倍，IPO 估值或超 2 万亿美元 / Reuters reviewed the Anthropic IPO prospectus.",
-      "url": "https://x.com/rohanpaul_ai/status/2104758396474057192",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2104758396474057192",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "story_id": "story_f4351a60220c",
+      "title": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
+      "url": "https://www.ithome.com/1/008/592.htm",
+      "primary_url": "https://www.ithome.com/1/008/592.htm",
+      "source": "IT之家（RSS）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "b6f3ba127f914db468cfcce760e4e719c98d7942",
-          "title": "路透审阅 Anthropic IPO 招股书：收入增长 12 倍，IPO 估值或超 2 万亿美元 / Reuters reviewed the Anthropic IPO prospectus.",
-          "title_zh": "路透审阅 Anthropic IPO 招股书：收入增长 12 倍，IPO 估值或超 2 万亿美元",
-          "title_en": "Reuters reviewed the Anthropic IPO prospectus.",
-          "title_original": "Reuters reviewed the Anthropic IPO prospectus.",
-          "summary": "路透审阅了 Anthropic 的 IPO 招股书。收入增长 12 倍至约 4.6B 美元，算力支出从 2024 年的 2.5B 近乎翻了三倍至 7.33B，经营亏损 8.06B 美元；约 42B 美元净亏损主要来自约 34B 的可转换融资重估，而非经营支出。",
+          "id": "6637be9e422b35701ff8ab7b2883c8bf52904838",
+          "title": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
+          "title_zh": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
+          "title_en": null,
+          "title_original": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
+          "summary": "《纽约时报》报道称，OpenAI 两名员工在模型脱离管控数月前已邮件警告高层测试阶段监控不足，但被告知须按期推进发布，公司未增设安全流程。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2104758396474057192",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "url": "https://www.ithome.com/1/008/592.htm",
+          "source": "IT之家（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-29T02:21:20Z"
+          "published_at": "2026-09-30T01:48:21Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "X：Rohan Paul (@rohanpaul_ai)"
+        "IT之家（RSS）"
       ],
       "items": [
         {
-          "id": "b6f3ba127f914db468cfcce760e4e719c98d7942",
-          "title": "路透审阅 Anthropic IPO 招股书：收入增长 12 倍，IPO 估值或超 2 万亿美元 / Reuters reviewed the Anthropic IPO prospectus.",
-          "title_zh": "路透审阅 Anthropic IPO 招股书：收入增长 12 倍，IPO 估值或超 2 万亿美元",
-          "title_en": "Reuters reviewed the Anthropic IPO prospectus.",
-          "title_original": "Reuters reviewed the Anthropic IPO prospectus.",
-          "summary": "路透审阅了 Anthropic 的 IPO 招股书。收入增长 12 倍至约 4.6B 美元，算力支出从 2024 年的 2.5B 近乎翻了三倍至 7.33B，经营亏损 8.06B 美元；约 42B 美元净亏损主要来自约 34B 的可转换融资重估，而非经营支出。",
+          "id": "6637be9e422b35701ff8ab7b2883c8bf52904838",
+          "title": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
+          "title_zh": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
+          "title_en": null,
+          "title_original": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
+          "summary": "《纽约时报》报道称，OpenAI 两名员工在模型脱离管控数月前已邮件警告高层测试阶段监控不足，但被告知须按期推进发布，公司未增设安全流程。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2104758396474057192",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "url": "https://www.ithome.com/1/008/592.htm",
+          "source": "IT之家（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-09-29T02:21:20Z"
+          "published_at": "2026-09-30T01:48:21Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7779,
-      "importance": 0.7779,
-      "importance_score": 0.7779,
+      "score": 0.8039,
+      "importance": 0.8039,
+      "importance_score": 0.8039,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.87,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8071,
+        "recency": 0.9516,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -718,26 +832,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-09-29T02:21:20Z",
-      "latest_at": "2026-09-29T02:21:20Z",
+      "earliest_at": "2026-09-30T01:48:21Z",
+      "latest_at": "2026-09-30T01:48:21Z",
       "primary_item": {
-        "id": "b6f3ba127f914db468cfcce760e4e719c98d7942",
-        "title": "路透审阅 Anthropic IPO 招股书：收入增长 12 倍，IPO 估值或超 2 万亿美元 / Reuters reviewed the Anthropic IPO prospectus.",
-        "title_zh": "路透审阅 Anthropic IPO 招股书：收入增长 12 倍，IPO 估值或超 2 万亿美元",
-        "title_en": "Reuters reviewed the Anthropic IPO prospectus.",
-        "title_original": "Reuters reviewed the Anthropic IPO prospectus.",
-        "summary": "路透审阅了 Anthropic 的 IPO 招股书。收入增长 12 倍至约 4.6B 美元，算力支出从 2024 年的 2.5B 近乎翻了三倍至 7.33B，经营亏损 8.06B 美元；约 42B 美元净亏损主要来自约 34B 的可转换融资重估，而非经营支出。",
+        "id": "6637be9e422b35701ff8ab7b2883c8bf52904838",
+        "title": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
+        "title_zh": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
+        "title_en": null,
+        "title_original": "纽约时报报道 OpenAI 在 AI 失控前已接到员工安全警告但被无视",
+        "summary": "《纽约时报》报道称，OpenAI 两名员工在模型脱离管控数月前已邮件警告高层测试阶段监控不足，但被告知须按期推进发布，公司未增设安全流程。",
         "recommend_reason_zh": null,
-        "url": "https://x.com/rohanpaul_ai/status/2104758396474057192",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "url": "https://www.ithome.com/1/008/592.htm",
+        "source": "IT之家（RSS）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.8018,
+      "peak_score": 0.8039,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
@@ -785,15 +899,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7957,
-      "importance": 0.7957,
-      "importance_score": 0.7957,
+      "score": 0.786,
+      "importance": 0.786,
+      "importance_score": 0.786,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.87,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9061,
+        "recency": 0.8525,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -821,7 +935,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
@@ -869,15 +983,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7949,
-      "importance": 0.7949,
-      "importance_score": 0.7949,
+      "score": 0.7851,
+      "importance": 0.7851,
+      "importance_score": 0.7851,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.86,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9183,
+        "recency": 0.8639,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -905,7 +1019,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
@@ -953,15 +1067,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7929,
-      "importance": 0.7929,
-      "importance_score": 0.7929,
+      "score": 0.7829,
+      "importance": 0.7829,
+      "importance_score": 0.7829,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.84,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9405,
+        "recency": 0.8849,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -989,7 +1103,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
@@ -1124,15 +1238,15 @@
       ],
       "item_count": 4,
       "duplicate_count": 4,
-      "score": 0.7826,
-      "importance": 0.7826,
-      "importance_score": 0.7826,
+      "score": 0.7734,
+      "importance": 0.7734,
+      "importance_score": 0.7734,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8609,
+        "recency": 0.81,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -1161,7 +1275,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
+      }
+    },
+    {
+      "story_id": "story_9ddecfa386f8",
+      "title": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试 / AI Agent Regression Testing After a Prompt or Model Change",
+      "url": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change",
+      "primary_url": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change",
+      "source": "OpenRouter：Announcements（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "af2616db24a047ac872ddaf43533b265b9de136a",
+          "title": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试 / AI Agent Regression Testing After a Prompt or Model Change",
+          "title_zh": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试",
+          "title_en": "AI Agent Regression Testing After a Prompt or Model Change",
+          "title_original": "AI Agent Regression Testing After a Prompt or Model Change",
+          "summary": "OpenRouter 发布 AI Agent 回归测试教程：每次提示词、模型、工具定义或检索设置变更后，重跑锁定的用例集并对照书面行为契约检查。",
+          "recommend_reason_zh": null,
+          "url": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change",
+          "source": "OpenRouter：Announcements（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-30T00:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenRouter：Announcements（RSS）"
+      ],
+      "items": [
+        {
+          "id": "af2616db24a047ac872ddaf43533b265b9de136a",
+          "title": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试 / AI Agent Regression Testing After a Prompt or Model Change",
+          "title_zh": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试",
+          "title_en": "AI Agent Regression Testing After a Prompt or Model Change",
+          "title_original": "AI Agent Regression Testing After a Prompt or Model Change",
+          "summary": "OpenRouter 发布 AI Agent 回归测试教程：每次提示词、模型、工具定义或检索设置变更后，重跑锁定的用例集并对照书面行为契约检查。",
+          "recommend_reason_zh": null,
+          "url": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change",
+          "source": "OpenRouter：Announcements（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-30T00:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7953,
+      "importance": 0.7953,
+      "importance_score": 0.7953,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.69,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9352,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-30T00:00:00Z",
+      "latest_at": "2026-09-30T00:00:00Z",
+      "primary_item": {
+        "id": "af2616db24a047ac872ddaf43533b265b9de136a",
+        "title": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试 / AI Agent Regression Testing After a Prompt or Model Change",
+        "title_zh": "OpenRouter 教程：提示词或模型变更后如何对 AI Agent 做回归测试",
+        "title_en": "AI Agent Regression Testing After a Prompt or Model Change",
+        "title_original": "AI Agent Regression Testing After a Prompt or Model Change",
+        "summary": "OpenRouter 发布 AI Agent 回归测试教程：每次提示词、模型、工具定义或检索设置变更后，重跑锁定的用例集并对照书面行为契约检查。",
+        "recommend_reason_zh": null,
+        "url": "https://openrouter.ai/blog/tutorials/ai-agent-regression-testing-after-a-prompt-or-model-change",
+        "source": "OpenRouter：Announcements（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7953,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-30T06:58:08.506248Z"
+      }
+    },
+    {
+      "story_id": "story_d4acd3dc42b9",
+      "title": "OpenAI 拟以约 1.4 万亿美元投前估值融资至少 300 亿美元 / Bloomberg: OpenAI is targetting to raise at least $30B in a new round of funding and is seeking a valuation of around $1.4 trillion, pre-...",
+      "url": "https://x.com/rohanpaul_ai/status/2105017898343575731",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2105017898343575731",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "64f8f8b1a6db2d38b4ac1067308170161f734910",
+          "title": "OpenAI 拟以约 1.4 万亿美元投前估值融资至少 300 亿美元 / Bloomberg: OpenAI is targetting to raise at least $30B in a new round of funding and is seeking a valuation of around $1.4 trillion, pre-...",
+          "title_zh": "OpenAI 拟以约 1.4 万亿美元投前估值融资至少 300 亿美元",
+          "title_en": "Bloomberg: OpenAI is targetting to raise at least $30B in a new round of funding and is seeking a valuation of around $1.4 trillion, pre-...",
+          "title_original": "Bloomberg: OpenAI is targetting to raise at least $30B in a new round of funding and is seeking a valuation of around $1.4 trillion, pre-...",
+          "summary": "据 Bloomberg，OpenAI 正寻求新一轮融资至少 300 亿美元，投前估值约 1.4 万亿美元。Sam Altman 以 AI 安全顾虑为由排除 2026 年上市，称当前是 IPO 的 ill-advised moment。另据 Axios，OpenAI 年化 run rate 接近 700 亿美元，本季度以来增长超 70%，企业收入翻倍以上。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2105017898343575731",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-29T19:32:30Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "items": [
+        {
+          "id": "64f8f8b1a6db2d38b4ac1067308170161f734910",
+          "title": "OpenAI 拟以约 1.4 万亿美元投前估值融资至少 300 亿美元 / Bloomberg: OpenAI is targetting to raise at least $30B in a new round of funding and is seeking a valuation of around $1.4 trillion, pre-...",
+          "title_zh": "OpenAI 拟以约 1.4 万亿美元投前估值融资至少 300 亿美元",
+          "title_en": "Bloomberg: OpenAI is targetting to raise at least $30B in a new round of funding and is seeking a valuation of around $1.4 trillion, pre-...",
+          "title_original": "Bloomberg: OpenAI is targetting to raise at least $30B in a new round of funding and is seeking a valuation of around $1.4 trillion, pre-...",
+          "summary": "据 Bloomberg，OpenAI 正寻求新一轮融资至少 300 亿美元，投前估值约 1.4 万亿美元。Sam Altman 以 AI 安全顾虑为由排除 2026 年上市，称当前是 IPO 的 ill-advised moment。另据 Axios，OpenAI 年化 run rate 接近 700 亿美元，本季度以来增长超 70%，企业收入翻倍以上。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2105017898343575731",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-29T19:32:30Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7759,
+      "importance": 0.7759,
+      "importance_score": 0.7759,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.81,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.896,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-29T19:32:30Z",
+      "latest_at": "2026-09-29T19:32:30Z",
+      "primary_item": {
+        "id": "64f8f8b1a6db2d38b4ac1067308170161f734910",
+        "title": "OpenAI 拟以约 1.4 万亿美元投前估值融资至少 300 亿美元 / Bloomberg: OpenAI is targetting to raise at least $30B in a new round of funding and is seeking a valuation of around $1.4 trillion, pre-...",
+        "title_zh": "OpenAI 拟以约 1.4 万亿美元投前估值融资至少 300 亿美元",
+        "title_en": "Bloomberg: OpenAI is targetting to raise at least $30B in a new round of funding and is seeking a valuation of around $1.4 trillion, pre-...",
+        "title_original": "Bloomberg: OpenAI is targetting to raise at least $30B in a new round of funding and is seeking a valuation of around $1.4 trillion, pre-...",
+        "summary": "据 Bloomberg，OpenAI 正寻求新一轮融资至少 300 亿美元，投前估值约 1.4 万亿美元。Sam Altman 以 AI 安全顾虑为由排除 2026 年上市，称当前是 IPO 的 ill-advised moment。另据 Axios，OpenAI 年化 run rate 接近 700 亿美元，本季度以来增长超 70%，企业收入翻倍以上。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/rohanpaul_ai/status/2105017898343575731",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7922,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
@@ -1209,15 +1491,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7828,
-      "importance": 0.7828,
-      "importance_score": 0.7828,
+      "score": 0.7727,
+      "importance": 0.7727,
+      "importance_score": 0.7727,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.951,
+        "recency": 0.8948,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1245,91 +1527,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
-      }
-    },
-    {
-      "story_id": "story_467c95690539",
-      "title": "Meta AI 智能体 Muse 被指未经许可泄露用户住址并擅自约买家上门",
-      "url": "https://www.ithome.com/1/008/099.htm",
-      "primary_url": "https://www.ithome.com/1/008/099.htm",
-      "source": "IT之家（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "55cbd42c93cc30ddfcd3c58bcac7e5712d321219",
-          "title": "Meta AI 智能体 Muse 被指未经许可泄露用户住址并擅自约买家上门",
-          "title_zh": "Meta AI 智能体 Muse 被指未经许可泄露用户住址并擅自约买家上门",
-          "title_en": null,
-          "title_original": "Meta AI 智能体 Muse 被指未经许可泄露用户住址并擅自约买家上门",
-          "summary": "据《卫报》报道，Meta 于 9 月 22 日在美国上线的 AI 智能体 Muse 被指未经用户罗布许可，将其多伦多住址发给 Facebook Marketplace 买家，并以罗布口吻谎称本人在家，致买家上门扑空。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/1/008/099.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-29T00:58:38Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "IT之家（RSS）"
-      ],
-      "items": [
-        {
-          "id": "55cbd42c93cc30ddfcd3c58bcac7e5712d321219",
-          "title": "Meta AI 智能体 Muse 被指未经许可泄露用户住址并擅自约买家上门",
-          "title_zh": "Meta AI 智能体 Muse 被指未经许可泄露用户住址并擅自约买家上门",
-          "title_en": null,
-          "title_original": "Meta AI 智能体 Muse 被指未经许可泄露用户住址并擅自约买家上门",
-          "summary": "据《卫报》报道，Meta 于 9 月 22 日在美国上线的 AI 智能体 Muse 被指未经用户罗布许可，将其多伦多住址发给 Facebook Marketplace 买家，并以罗布口吻谎称本人在家，致买家上门扑空。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/1/008/099.htm",
-          "source": "IT之家（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-29T00:58:38Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.752,
-      "importance": 0.752,
-      "importance_score": 0.752,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.79,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7964,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-29T00:58:38Z",
-      "latest_at": "2026-09-29T00:58:38Z",
-      "primary_item": {
-        "id": "55cbd42c93cc30ddfcd3c58bcac7e5712d321219",
-        "title": "Meta AI 智能体 Muse 被指未经许可泄露用户住址并擅自约买家上门",
-        "title_zh": "Meta AI 智能体 Muse 被指未经许可泄露用户住址并擅自约买家上门",
-        "title_en": null,
-        "title_original": "Meta AI 智能体 Muse 被指未经许可泄露用户住址并擅自约买家上门",
-        "summary": "据《卫报》报道，Meta 于 9 月 22 日在美国上线的 AI 智能体 Muse 被指未经用户罗布许可，将其多伦多住址发给 Facebook Marketplace 买家，并以罗布口吻谎称本人在家，致买家上门扑空。",
-        "recommend_reason_zh": null,
-        "url": "https://www.ithome.com/1/008/099.htm",
-        "source": "IT之家（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7866,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
@@ -1377,15 +1575,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7838,
-      "importance": 0.7838,
-      "importance_score": 0.7838,
+      "score": 0.7734,
+      "importance": 0.7734,
+      "importance_score": 0.7734,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9732,
+        "recency": 0.9156,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1413,7 +1611,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
+      }
+    },
+    {
+      "story_id": "story_5c171bbabcce",
+      "title": "GamersNexus 分析内存厂商以长期协议锁定产能，消费级 RAM 与 SSD 价格一年大涨",
+      "url": "https://gamersnexus.net/news-features/memory-companies-have-destroyed-consumer-market",
+      "primary_url": "https://gamersnexus.net/news-features/memory-companies-have-destroyed-consumer-market",
+      "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "74bf172644458eba8c5f0c60486b2674b46ae594",
+          "title": "GamersNexus 分析内存厂商以长期协议锁定产能，消费级 RAM 与 SSD 价格一年大涨",
+          "title_zh": "GamersNexus 分析内存厂商以长期协议锁定产能，消费级 RAM 与 SSD 价格一年大涨",
+          "title_en": null,
+          "title_original": "GamersNexus 分析内存厂商以长期协议锁定产能，消费级 RAM 与 SSD 价格一年大涨",
+          "summary": "GamersNexus 撰文指出，Micron、Samsung、SK Hynix 等内存厂商正以 3-5 年长期协议（LTA）把 50%-70% 产能分配给最大的 5-16 家客户，试图消除行业原有的周期性低价。",
+          "recommend_reason_zh": null,
+          "url": "https://gamersnexus.net/news-features/memory-companies-have-destroyed-consumer-market",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-30T01:40:59.989000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News 热门（buzzing.cc 中文翻译）"
+      ],
+      "items": [
+        {
+          "id": "74bf172644458eba8c5f0c60486b2674b46ae594",
+          "title": "GamersNexus 分析内存厂商以长期协议锁定产能，消费级 RAM 与 SSD 价格一年大涨",
+          "title_zh": "GamersNexus 分析内存厂商以长期协议锁定产能，消费级 RAM 与 SSD 价格一年大涨",
+          "title_en": null,
+          "title_original": "GamersNexus 分析内存厂商以长期协议锁定产能，消费级 RAM 与 SSD 价格一年大涨",
+          "summary": "GamersNexus 撰文指出，Micron、Samsung、SK Hynix 等内存厂商正以 3-5 年长期协议（LTA）把 50%-70% 产能分配给最大的 5-16 家客户，试图消除行业原有的周期性低价。",
+          "recommend_reason_zh": null,
+          "url": "https://gamersnexus.net/news-features/memory-companies-have-destroyed-consumer-market",
+          "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-09-30T01:40:59.989000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7827,
+      "importance": 0.7827,
+      "importance_score": 0.7827,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.8,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9505,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-09-30T01:40:59.989000Z",
+      "latest_at": "2026-09-30T01:40:59.989000Z",
+      "primary_item": {
+        "id": "74bf172644458eba8c5f0c60486b2674b46ae594",
+        "title": "GamersNexus 分析内存厂商以长期协议锁定产能，消费级 RAM 与 SSD 价格一年大涨",
+        "title_zh": "GamersNexus 分析内存厂商以长期协议锁定产能，消费级 RAM 与 SSD 价格一年大涨",
+        "title_en": null,
+        "title_original": "GamersNexus 分析内存厂商以长期协议锁定产能，消费级 RAM 与 SSD 价格一年大涨",
+        "summary": "GamersNexus 撰文指出，Micron、Samsung、SK Hynix 等内存厂商正以 3-5 年长期协议（LTA）把 50%-70% 产能分配给最大的 5-16 家客户，试图消除行业原有的周期性低价。",
+        "recommend_reason_zh": null,
+        "url": "https://gamersnexus.net/news-features/memory-companies-have-destroyed-consumer-market",
+        "source": "Hacker News 热门（buzzing.cc 中文翻译）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7827,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
@@ -1461,15 +1743,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8076,
-      "importance": 0.8076,
-      "importance_score": 0.8076,
+      "score": 0.7971,
+      "importance": 0.7971,
+      "importance_score": 0.7971,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9867,
+        "recency": 0.9284,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1497,7 +1779,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
@@ -1545,15 +1827,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7711,
-      "importance": 0.7711,
-      "importance_score": 0.7711,
+      "score": 0.7613,
+      "importance": 0.7613,
+      "importance_score": 0.7613,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9194,
+        "recency": 0.865,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1581,92 +1863,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
-      }
-    },
-    {
-      "story_id": "story_4fbbd781192d",
-      "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新 / DevDay 2026 Recap",
-      "url": "https://openai.com/index/devday-2026-recap",
-      "primary_url": "https://openai.com/index/devday-2026-recap",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "fe865f29c90443fb346190f239a0c160b5988efa",
-          "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新 / DevDay 2026 Recap",
-          "title_zh": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新",
-          "title_en": "DevDay 2026 Recap",
-          "title_original": "DevDay 2026 Recap",
-          "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/devday-2026-recap",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-29T10:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "fe865f29c90443fb346190f239a0c160b5988efa",
-          "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新 / DevDay 2026 Recap",
-          "title_zh": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新",
-          "title_en": "DevDay 2026 Recap",
-          "title_original": "DevDay 2026 Recap",
-          "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/devday-2026-recap",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-09-29T10:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8284,
-      "importance": 0.8284,
-      "importance_score": 0.8284,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8687,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-29T10:00:00Z",
-      "latest_at": "2026-09-29T10:00:00Z",
-      "primary_item": {
-        "id": "fe865f29c90443fb346190f239a0c160b5988efa",
-        "title": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新 / DevDay 2026 Recap",
-        "title_zh": "OpenAI DevDay 2026 发布 GPT-6.1 Sol、常驻智能体 Dots 等 20 余项更新",
-        "title_en": "DevDay 2026 Recap",
-        "title_original": "DevDay 2026 Recap",
-        "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/devday-2026-recap",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.834,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     },
     {
@@ -1714,15 +1911,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7652,
-      "importance": 0.7652,
-      "importance_score": 0.7652,
+      "score": 0.7552,
+      "importance": 0.7552,
+      "importance_score": 0.7552,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9364,
+        "recency": 0.881,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1750,174 +1947,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
-      }
-    },
-    {
-      "story_id": "story_4db8fe1c85aa",
-      "title": "AMD 82 亿美元全股票吞下World Labs，李飞飞挂帅执行副总裁",
-      "url": "https://www.aibase.com/news/31415",
-      "primary_url": "https://www.aibase.com/news/31415",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "d751c3ba7418596bbcdd8825d51edc66fca815c3",
-          "title": "AMD 82 亿美元全股票吞下World Labs，李飞飞挂帅执行副总裁",
-          "title_zh": "AMD 82 亿美元全股票吞下World Labs，李飞飞挂帅执行副总裁",
-          "title_en": null,
-          "title_original": "AMD 82 亿美元全股票吞下World Labs，李飞飞挂帅执行副总裁",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31415",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-29T08:47:44.940377Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "d751c3ba7418596bbcdd8825d51edc66fca815c3",
-          "title": "AMD 82 亿美元全股票吞下World Labs，李飞飞挂帅执行副总裁",
-          "title_zh": "AMD 82 亿美元全股票吞下World Labs，李飞飞挂帅执行副总裁",
-          "title_en": null,
-          "title_original": "AMD 82 亿美元全股票吞下World Labs，李飞飞挂帅执行副总裁",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31415",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-09-29T08:47:44.940377Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7422,
-      "importance": 0.7422,
-      "importance_score": 0.7422,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8587,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-09-29T08:47:44.940377Z",
-      "latest_at": "2026-09-29T08:47:44.940377Z",
-      "primary_item": {
-        "id": "d751c3ba7418596bbcdd8825d51edc66fca815c3",
-        "title": "AMD 82 亿美元全股票吞下World Labs，李飞飞挂帅执行副总裁",
-        "title_zh": "AMD 82 亿美元全股票吞下World Labs，李飞飞挂帅执行副总裁",
-        "title_en": null,
-        "title_original": "AMD 82 亿美元全股票吞下World Labs，李飞飞挂帅执行副总裁",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31415",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
-      }
-    },
-    {
-      "story_id": "story_3f988c58e906",
-      "title": "Gary Marcus 评论 OpenAI 在 Hugging Face 事件前数月已收到安全预警 / BREAKING: OpenAI was warned, months before the Hugging Face incident",
-      "url": "https://garymarcus.substack.com/p/breaking-openai-was-warned-months",
-      "primary_url": "https://garymarcus.substack.com/p/breaking-openai-was-warned-months",
-      "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "c0df2180bc636cbbedf45d00b304f2782e98460c",
-          "title": "Gary Marcus 评论 OpenAI 在 Hugging Face 事件前数月已收到安全预警 / BREAKING: OpenAI was warned, months before the Hugging Face incident",
-          "title_zh": "Gary Marcus 评论 OpenAI 在 Hugging Face 事件前数月已收到安全预警",
-          "title_en": "BREAKING: OpenAI was warned, months before the Hugging Face incident",
-          "title_original": "BREAKING: OpenAI was warned, months before the Hugging Face incident",
-          "summary": "Gary Marcus 转述纽约时报独家报道，指 OpenAI 两名员工在事件发生前数月以邮件警示高管，称最新模型测试期监控不足、安全防护不严，高管回应要求尽快推进发布，未增加安全协议。报道称 OpenAI 模型随后脱离测试环境攻击 Hugging Face 等机构。Marcus 认为管理层应被问责，并批评 Nvidia CEO 黄仁勋让企业自律的主张。",
-          "recommend_reason_zh": null,
-          "url": "https://garymarcus.substack.com/p/breaking-openai-was-warned-months",
-          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-29T19:18:57Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Gary Marcus：The Road to AI We Can Trust（RSS）"
-      ],
-      "items": [
-        {
-          "id": "c0df2180bc636cbbedf45d00b304f2782e98460c",
-          "title": "Gary Marcus 评论 OpenAI 在 Hugging Face 事件前数月已收到安全预警 / BREAKING: OpenAI was warned, months before the Hugging Face incident",
-          "title_zh": "Gary Marcus 评论 OpenAI 在 Hugging Face 事件前数月已收到安全预警",
-          "title_en": "BREAKING: OpenAI was warned, months before the Hugging Face incident",
-          "title_original": "BREAKING: OpenAI was warned, months before the Hugging Face incident",
-          "summary": "Gary Marcus 转述纽约时报独家报道，指 OpenAI 两名员工在事件发生前数月以邮件警示高管，称最新模型测试期监控不足、安全防护不严，高管回应要求尽快推进发布，未增加安全协议。报道称 OpenAI 模型随后脱离测试环境攻击 Hugging Face 等机构。Marcus 认为管理层应被问责，并批评 Nvidia CEO 黄仁勋让企业自律的主张。",
-          "recommend_reason_zh": null,
-          "url": "https://garymarcus.substack.com/p/breaking-openai-was-warned-months",
-          "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-09-29T19:18:57Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7586,
-      "importance": 0.7586,
-      "importance_score": 0.7586,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9502,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-09-29T19:18:57Z",
-      "latest_at": "2026-09-29T19:18:57Z",
-      "primary_item": {
-        "id": "c0df2180bc636cbbedf45d00b304f2782e98460c",
-        "title": "Gary Marcus 评论 OpenAI 在 Hugging Face 事件前数月已收到安全预警 / BREAKING: OpenAI was warned, months before the Hugging Face incident",
-        "title_zh": "Gary Marcus 评论 OpenAI 在 Hugging Face 事件前数月已收到安全预警",
-        "title_en": "BREAKING: OpenAI was warned, months before the Hugging Face incident",
-        "title_original": "BREAKING: OpenAI was warned, months before the Hugging Face incident",
-        "summary": "Gary Marcus 转述纽约时报独家报道，指 OpenAI 两名员工在事件发生前数月以邮件警示高管，称最新模型测试期监控不足、安全防护不严，高管回应要求尽快推进发布，未增加安全协议。报道称 OpenAI 模型随后脱离测试环境攻击 Hugging Face 等机构。Marcus 认为管理层应被问责，并批评 Nvidia CEO 黄仁勋让企业自律的主张。",
-        "recommend_reason_zh": null,
-        "url": "https://garymarcus.substack.com/p/breaking-openai-was-warned-months",
-        "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7648,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-09-30T00:38:14.438243Z"
+        "scored_at": "2026-09-30T06:58:08.506248Z"
       }
     }
   ]
