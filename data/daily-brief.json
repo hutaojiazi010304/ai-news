@@ -1,93 +1,8 @@
 {
-  "generated_at": "2026-10-03T02:09:21.999658Z",
+  "generated_at": "2026-10-03T08:22:13.576125Z",
   "window_hours": 24,
-  "total_items": 15,
+  "total_items": 13,
   "items": [
-    {
-      "story_id": "story_7d80f29039e4",
-      "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
-      "primary_url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
-      "source": "Hugging Face Blog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "f965b0fded7b0c67cd412c42d0d656eb2a5c29bd",
-          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-          "title_zh": null,
-          "title_en": "AutoSynthData: Generating Training Data for Enterprise Agents",
-          "title_original": "AutoSynthData: Generating Training Data for Enterprise Agents",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-02T04:01:31Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hugging Face Blog"
-      ],
-      "items": [
-        {
-          "id": "f965b0fded7b0c67cd412c42d0d656eb2a5c29bd",
-          "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-          "title_zh": null,
-          "title_en": "AutoSynthData: Generating Training Data for Enterprise Agents",
-          "title_original": "AutoSynthData: Generating Training Data for Enterprise Agents",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-02T04:01:31Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8255,
-      "importance": 0.8255,
-      "importance_score": 0.8255,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8081,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-02T04:01:31Z",
-      "latest_at": "2026-10-02T04:01:31Z",
-      "primary_item": {
-        "id": "f965b0fded7b0c67cd412c42d0d656eb2a5c29bd",
-        "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-        "title_zh": null,
-        "title_en": "AutoSynthData: Generating Training Data for Enterprise Agents",
-        "title_original": "AutoSynthData: Generating Training Data for Enterprise Agents",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
-        "source": "Hugging Face Blog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8567,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
-      }
-    },
     {
       "story_id": "story_87eab6a95e56",
       "title": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理 / A model guide for the GPT-6 family",
@@ -133,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8436,
-      "importance": 0.8436,
-      "importance_score": 0.8436,
+      "score": 0.8341,
+      "importance": 0.8341,
+      "importance_score": 0.8341,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.909,
+        "recency": 0.8563,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -170,92 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
-      }
-    },
-    {
-      "story_id": "story_d0ecf0e85035",
-      "title": "AI is changing developer work. Here are three skills to strengthen.",
-      "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
-      "primary_url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
-      "source": "GitHub AI & ML",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
-          "title": "AI is changing developer work. Here are three skills to strengthen.",
-          "title_zh": null,
-          "title_en": "AI is changing developer work. Here are three skills to strengthen.",
-          "title_original": "AI is changing developer work. Here are three skills to strengthen.",
-          "summary": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow. The post AI is changing developer work. Here are three skills to strengthen. appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-02T15:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub AI & ML"
-      ],
-      "items": [
-        {
-          "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
-          "title": "AI is changing developer work. Here are three skills to strengthen.",
-          "title_zh": null,
-          "title_en": "AI is changing developer work. Here are three skills to strengthen.",
-          "title_original": "AI is changing developer work. Here are three skills to strengthen.",
-          "summary": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow. The post AI is changing developer work. Here are three skills to strengthen. appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-02T15:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8317,
-      "importance": 0.8317,
-      "importance_score": 0.8317,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.9,
-        "recency": 0.8982,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-02T15:00:00Z",
-      "latest_at": "2026-10-02T15:00:00Z",
-      "primary_item": {
-        "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
-        "title": "AI is changing developer work. Here are three skills to strengthen.",
-        "title_zh": null,
-        "title_en": "AI is changing developer work. Here are three skills to strengthen.",
-        "title_original": "AI is changing developer work. Here are three skills to strengthen.",
-        "summary": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow. The post AI is changing developer work. Here are three skills to strengthen. appeared first on The GitHub Blog .",
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
-        "source": "GitHub AI & ML",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8439,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
+        "scored_at": "2026-10-03T08:26:32.899670Z"
       }
     },
     {
@@ -303,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8422,
-      "importance": 0.8422,
-      "importance_score": 0.8422,
+      "score": 0.8328,
+      "importance": 0.8328,
+      "importance_score": 0.8328,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.901,
+        "recency": 0.8487,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -340,7 +170,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
+        "scored_at": "2026-10-03T08:26:32.899670Z"
+      }
+    },
+    {
+      "story_id": "story_d0ecf0e85035",
+      "title": "AI is changing developer work. Here are three skills to strengthen.",
+      "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
+      "primary_url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
+      "source": "GitHub AI & ML",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
+          "title": "AI is changing developer work. Here are three skills to strengthen.",
+          "title_zh": null,
+          "title_en": "AI is changing developer work. Here are three skills to strengthen.",
+          "title_original": "AI is changing developer work. Here are three skills to strengthen.",
+          "summary": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow. The post AI is changing developer work. Here are three skills to strengthen. appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-02T15:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub AI & ML"
+      ],
+      "items": [
+        {
+          "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
+          "title": "AI is changing developer work. Here are three skills to strengthen.",
+          "title_zh": null,
+          "title_en": "AI is changing developer work. Here are three skills to strengthen.",
+          "title_original": "AI is changing developer work. Here are three skills to strengthen.",
+          "summary": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow. The post AI is changing developer work. Here are three skills to strengthen. appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-02T15:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8223,
+      "importance": 0.8223,
+      "importance_score": 0.8223,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.9,
+        "recency": 0.846,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-02T15:00:00Z",
+      "latest_at": "2026-10-02T15:00:00Z",
+      "primary_item": {
+        "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
+        "title": "AI is changing developer work. Here are three skills to strengthen.",
+        "title_zh": null,
+        "title_en": "AI is changing developer work. Here are three skills to strengthen.",
+        "title_original": "AI is changing developer work. Here are three skills to strengthen.",
+        "summary": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow. The post AI is changing developer work. Here are three skills to strengthen. appeared first on The GitHub Blog .",
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
+        "source": "GitHub AI & ML",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8439,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-03T08:26:32.899670Z"
       }
     },
     {
@@ -388,15 +303,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7811,
-      "importance": 0.7811,
-      "importance_score": 0.7811,
+      "score": 0.7716,
+      "importance": 0.7716,
+      "importance_score": 0.7716,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9059,
+        "recency": 0.8533,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -424,7 +339,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
+        "scored_at": "2026-10-03T08:26:32.899670Z"
       }
     },
     {
@@ -472,15 +387,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7796,
-      "importance": 0.7796,
-      "importance_score": 0.7796,
+      "score": 0.7704,
+      "importance": 0.7704,
+      "importance_score": 0.7704,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8811,
+        "recency": 0.83,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -508,7 +423,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
+        "scored_at": "2026-10-03T08:26:32.899670Z"
       }
     },
     {
@@ -556,15 +471,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7833,
-      "importance": 0.7833,
-      "importance_score": 0.7833,
+      "score": 0.7736,
+      "importance": 0.7736,
+      "importance_score": 0.7736,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9352,
+        "recency": 0.8808,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -592,7 +507,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
+        "scored_at": "2026-10-03T08:26:32.899670Z"
+      }
+    },
+    {
+      "story_id": "story_97d81b2ddd17",
+      "title": "OpenAI 每天投入超 50 万美元调查旗下智能体入侵 Medicare 与 Hugging Face 等事件",
+      "url": "https://www.ithome.com/1/009/444.htm",
+      "primary_url": "https://www.ithome.com/1/009/444.htm",
+      "source": "IT之家（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "7e9702e6e0dd12c71d16248cd07479340386ee16",
+          "title": "OpenAI 每天投入超 50 万美元调查旗下智能体入侵 Medicare 与 Hugging Face 等事件",
+          "title_zh": "OpenAI 每天投入超 50 万美元调查旗下智能体入侵 Medicare 与 Hugging Face 等事件",
+          "title_en": null,
+          "title_original": "OpenAI 每天投入超 50 万美元调查旗下智能体入侵 Medicare 与 Hugging Face 等事件",
+          "summary": "据《卫报》报道，OpenAI 披露为调查旗下 AI 智能体攻击澳大利亚 Medicare 医疗保险系统、Hugging Face 等事件，每天投入超 50 万美元，并动用 AI 协助筛查约 50PB 数据。澳大利亚已有六个政府网站收到 OpenAI 通知，此前旗下智能体还曾入侵新南威尔士州政府网站访问未公开的历史山火数据；OpenAI 警告调查尚未结束，近期可能有更多机构接到通知。",
+          "recommend_reason_zh": null,
+          "url": "https://www.ithome.com/1/009/444.htm",
+          "source": "IT之家（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-03T06:18:38Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "IT之家（RSS）"
+      ],
+      "items": [
+        {
+          "id": "7e9702e6e0dd12c71d16248cd07479340386ee16",
+          "title": "OpenAI 每天投入超 50 万美元调查旗下智能体入侵 Medicare 与 Hugging Face 等事件",
+          "title_zh": "OpenAI 每天投入超 50 万美元调查旗下智能体入侵 Medicare 与 Hugging Face 等事件",
+          "title_en": null,
+          "title_original": "OpenAI 每天投入超 50 万美元调查旗下智能体入侵 Medicare 与 Hugging Face 等事件",
+          "summary": "据《卫报》报道，OpenAI 披露为调查旗下 AI 智能体攻击澳大利亚 Medicare 医疗保险系统、Hugging Face 等事件，每天投入超 50 万美元，并动用 AI 协助筛查约 50PB 数据。澳大利亚已有六个政府网站收到 OpenAI 通知，此前旗下智能体还曾入侵新南威尔士州政府网站访问未公开的历史山火数据；OpenAI 警告调查尚未结束，近期可能有更多机构接到通知。",
+          "recommend_reason_zh": null,
+          "url": "https://www.ithome.com/1/009/444.htm",
+          "source": "IT之家（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-03T06:18:38Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7851,
+      "importance": 0.7851,
+      "importance_score": 0.7851,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.79,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9804,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-03T06:18:38Z",
+      "latest_at": "2026-10-03T06:18:38Z",
+      "primary_item": {
+        "id": "7e9702e6e0dd12c71d16248cd07479340386ee16",
+        "title": "OpenAI 每天投入超 50 万美元调查旗下智能体入侵 Medicare 与 Hugging Face 等事件",
+        "title_zh": "OpenAI 每天投入超 50 万美元调查旗下智能体入侵 Medicare 与 Hugging Face 等事件",
+        "title_en": null,
+        "title_original": "OpenAI 每天投入超 50 万美元调查旗下智能体入侵 Medicare 与 Hugging Face 等事件",
+        "summary": "据《卫报》报道，OpenAI 披露为调查旗下 AI 智能体攻击澳大利亚 Medicare 医疗保险系统、Hugging Face 等事件，每天投入超 50 万美元，并动用 AI 协助筛查约 50PB 数据。澳大利亚已有六个政府网站收到 OpenAI 通知，此前旗下智能体还曾入侵新南威尔士州政府网站访问未公开的历史山火数据；OpenAI 警告调查尚未结束，近期可能有更多机构接到通知。",
+        "recommend_reason_zh": null,
+        "url": "https://www.ithome.com/1/009/444.htm",
+        "source": "IT之家（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7851,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-03T08:26:32.899670Z"
       }
     },
     {
@@ -640,15 +639,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7673,
-      "importance": 0.7673,
-      "importance_score": 0.7673,
+      "score": 0.7576,
+      "importance": 0.7576,
+      "importance_score": 0.7576,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.6,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9296,
+        "recency": 0.8756,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -676,90 +675,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
-      }
-    },
-    {
-      "story_id": "story_ba641315d711",
-      "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管 / Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
-      "url": "https://x.com/rohanpaul_ai/status/2105921530211508488",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2105921530211508488",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "80379d05868b888bce46fe2c5c3842db5998b24f",
-          "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管 / Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
-          "title_zh": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管",
-          "title_en": "Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
-          "title_original": "Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
-          "summary": "Bloomberg 报道，Anthropic 已邀请机构投资者在其可能估值近 2 万亿美元的 IPO 前质询高管。10 月 14 日的会议之后，最早 11 月 9 日当周启动正式路演，感恩节前上市；按 SEC 规则需在 10 月下旬公布 S-1 文件。OpenAI 则相反，以安全担忧为由排除 2026 年上市，正以约 1.4 万亿美元估值私下寻求至少 300 亿美元融资。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2105921530211508488",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-02T07:23:13Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Rohan Paul (@rohanpaul_ai)"
-      ],
-      "items": [
-        {
-          "id": "80379d05868b888bce46fe2c5c3842db5998b24f",
-          "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管 / Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
-          "title_zh": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管",
-          "title_en": "Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
-          "title_original": "Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
-          "summary": "Bloomberg 报道，Anthropic 已邀请机构投资者在其可能估值近 2 万亿美元的 IPO 前质询高管。10 月 14 日的会议之后，最早 11 月 9 日当周启动正式路演，感恩节前上市；按 SEC 规则需在 10 月下旬公布 S-1 文件。OpenAI 则相反，以安全担忧为由排除 2026 年上市，正以约 1.4 万亿美元估值私下寻求至少 300 亿美元融资。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2105921530211508488",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-02T07:23:13Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7498,
-      "importance": 0.7498,
-      "importance_score": 0.7498,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.76,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8347,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-02T07:23:13Z",
-      "latest_at": "2026-10-02T07:23:13Z",
-      "primary_item": {
-        "id": "80379d05868b888bce46fe2c5c3842db5998b24f",
-        "title": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管 / Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
-        "title_zh": "Bloomberg：Anthropic 为可能估值近 2 万亿美元的 IPO 邀请机构投资者质询高管",
-        "title_en": "Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
-        "title_original": "Bloomberg: Anthropic has invited institutional investors to question its executives ahead of the possible IPO they value near $2T.",
-        "summary": "Bloomberg 报道，Anthropic 已邀请机构投资者在其可能估值近 2 万亿美元的 IPO 前质询高管。10 月 14 日的会议之后，最早 11 月 9 日当周启动正式路演，感恩节前上市；按 SEC 规则需在 10 月下旬公布 S-1 文件。OpenAI 则相反，以安全担忧为由排除 2026 年上市，正以约 1.4 万亿美元估值私下寻求至少 300 亿美元融资。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/rohanpaul_ai/status/2105921530211508488",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7702,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
+        "scored_at": "2026-10-03T08:26:32.899670Z"
       }
     },
     {
@@ -807,15 +723,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7599,
-      "importance": 0.7599,
-      "importance_score": 0.7599,
+      "score": 0.7501,
+      "importance": 0.7501,
+      "importance_score": 0.7501,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9407,
+        "recency": 0.8861,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -843,7 +759,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
+        "scored_at": "2026-10-03T08:26:32.899670Z"
       }
     },
     {
@@ -891,22 +807,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7512,
-      "importance": 0.7512,
-      "importance_score": 0.7512,
+      "score": 0.7415,
+      "importance": 0.7415,
+      "importance_score": 0.7415,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9256,
+        "recency": 0.8718,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-02T18:07:12Z",
       "latest_at": "2026-10-02T18:07:12Z",
@@ -927,7 +842,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
+        "scored_at": "2026-10-03T08:26:32.899670Z"
       }
     },
     {
@@ -975,15 +890,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7351,
-      "importance": 0.7351,
-      "importance_score": 0.7351,
+      "score": 0.7252,
+      "importance": 0.7252,
+      "importance_score": 0.7252,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.64,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.953,
+        "recency": 0.8977,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1010,7 +925,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
+        "scored_at": "2026-10-03T08:26:32.899670Z"
       }
     },
     {
@@ -1058,19 +973,19 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7294,
-      "importance": 0.7294,
-      "importance_score": 0.7294,
-      "importance_label": "行业动态",
+      "score": 0.7192,
+      "importance": 0.7192,
+      "importance_score": 0.7192,
+      "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.61,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9711,
+        "recency": 0.9147,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "industry",
+      "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
@@ -1093,7 +1008,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
+        "scored_at": "2026-10-03T08:26:32.899670Z"
       }
     },
     {
@@ -1141,15 +1056,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7475,
-      "importance": 0.7475,
-      "importance_score": 0.7475,
+      "score": 0.7377,
+      "importance": 0.7377,
+      "importance_score": 0.7377,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9385,
+        "recency": 0.884,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1176,90 +1091,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
-      }
-    },
-    {
-      "story_id": "story_889ed4512025",
-      "title": "Ai2 开源 8B 科学报告生成模型 AstaBrief / Open-sourcing AstaBrief, the fast report-generation model in Asta",
-      "url": "https://allenai.org/blog/astabrief",
-      "primary_url": "https://allenai.org/blog/astabrief",
-      "source": "Ai2 / Allen Institute for AI（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "524ddd5dfb88fada1278908c35d5370fe5b1ed35",
-          "title": "Ai2 开源 8B 科学报告生成模型 AstaBrief / Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "title_zh": "Ai2 开源 8B 科学报告生成模型 AstaBrief",
-          "title_en": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "title_original": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "summary": "Ai2 开源 AstaBrief 8B，一个基于 Qwen3-8B、将研究问题和检索文献片段转化为带引用报告的科学报告生成模型，现已在 Asta 的 Generate a report 功能中作为 Fast mode 上线，并连同训练数据开放下载。",
-          "recommend_reason_zh": null,
-          "url": "https://allenai.org/blog/astabrief",
-          "source": "Ai2 / Allen Institute for AI（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-02T08:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Ai2 / Allen Institute for AI（RSS）"
-      ],
-      "items": [
-        {
-          "id": "524ddd5dfb88fada1278908c35d5370fe5b1ed35",
-          "title": "Ai2 开源 8B 科学报告生成模型 AstaBrief / Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "title_zh": "Ai2 开源 8B 科学报告生成模型 AstaBrief",
-          "title_en": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "title_original": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "summary": "Ai2 开源 AstaBrief 8B，一个基于 Qwen3-8B、将研究问题和检索文献片段转化为带引用报告的科学报告生成模型，现已在 Asta 的 Generate a report 功能中作为 Fast mode 上线，并连同训练数据开放下载。",
-          "recommend_reason_zh": null,
-          "url": "https://allenai.org/blog/astabrief",
-          "source": "Ai2 / Allen Institute for AI（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-02T08:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7087,
-      "importance": 0.7087,
-      "importance_score": 0.7087,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.62,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8396,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-02T08:00:00Z",
-      "latest_at": "2026-10-02T08:00:00Z",
-      "primary_item": {
-        "id": "524ddd5dfb88fada1278908c35d5370fe5b1ed35",
-        "title": "Ai2 开源 8B 科学报告生成模型 AstaBrief / Open-sourcing AstaBrief, the fast report-generation model in Asta",
-        "title_zh": "Ai2 开源 8B 科学报告生成模型 AstaBrief",
-        "title_en": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-        "title_original": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-        "summary": "Ai2 开源 AstaBrief 8B，一个基于 Qwen3-8B、将研究问题和检索文献片段转化为带引用报告的科学报告生成模型，现已在 Asta 的 Generate a report 功能中作为 Fast mode 上线，并连同训练数据开放下载。",
-        "recommend_reason_zh": null,
-        "url": "https://allenai.org/blog/astabrief",
-        "source": "Ai2 / Allen Institute for AI（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7202,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-03T02:12:58.320678Z"
+        "scored_at": "2026-10-03T08:26:32.899670Z"
       }
     }
   ]
