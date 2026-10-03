@@ -1,345 +1,90 @@
 {
-  "generated_at": "2026-10-03T13:33:49.663603Z",
+  "generated_at": "2026-10-03T18:04:21.433182Z",
   "window_hours": 24,
-  "total_items": 12,
+  "total_items": 9,
   "items": [
     {
-      "story_id": "story_87eab6a95e56",
-      "title": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理 / A model guide for the GPT-6 family",
-      "url": "https://openai.com/index/practical-guide-building-gpt-6",
-      "primary_url": "https://openai.com/index/practical-guide-building-gpt-6",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "367c0500a3638f38bcbde66ccd6c4245025a561b",
-          "title": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理 / A model guide for the GPT-6 family",
-          "title_zh": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理",
-          "title_en": "A model guide for the GPT-6 family",
-          "title_original": "A model guide for the GPT-6 family",
-          "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/practical-guide-building-gpt-6",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-02T16:15:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "367c0500a3638f38bcbde66ccd6c4245025a561b",
-          "title": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理 / A model guide for the GPT-6 family",
-          "title_zh": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理",
-          "title_en": "A model guide for the GPT-6 family",
-          "title_original": "A model guide for the GPT-6 family",
-          "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/practical-guide-building-gpt-6",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-02T16:15:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8266,
-      "importance": 0.8266,
-      "importance_score": 0.8266,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8145,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-02T16:15:00Z",
-      "latest_at": "2026-10-02T16:15:00Z",
-      "primary_item": {
-        "id": "367c0500a3638f38bcbde66ccd6c4245025a561b",
-        "title": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理 / A model guide for the GPT-6 family",
-        "title_zh": "OpenAI 发布 GPT-6 家族实用指南：选型、提示词与长任务管理",
-        "title_en": "A model guide for the GPT-6 family",
-        "title_original": "A model guide for the GPT-6 family",
-        "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/practical-guide-building-gpt-6",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.856,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-03T13:34:50.437670Z"
-      }
-    },
-    {
-      "story_id": "story_2e2e433e3cb1",
-      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-      "url": "https://huggingface.co/blog/allenai/astabrief",
-      "primary_url": "https://huggingface.co/blog/allenai/astabrief",
-      "source": "Hugging Face Blog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "48ab6be8be1ae5fa20bc6b26fcfcc2f5fdadf96d",
-          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "title_zh": null,
-          "title_en": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "title_original": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/allenai/astabrief",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-02T15:19:50Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hugging Face Blog"
-      ],
-      "items": [
-        {
-          "id": "48ab6be8be1ae5fa20bc6b26fcfcc2f5fdadf96d",
-          "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "title_zh": null,
-          "title_en": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "title_original": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/allenai/astabrief",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-02T15:19:50Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8253,
-      "importance": 0.8253,
-      "importance_score": 0.8253,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8073,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-02T15:19:50Z",
-      "latest_at": "2026-10-02T15:19:50Z",
-      "primary_item": {
-        "id": "48ab6be8be1ae5fa20bc6b26fcfcc2f5fdadf96d",
-        "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-        "title_zh": null,
-        "title_en": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-        "title_original": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/allenai/astabrief",
-        "source": "Hugging Face Blog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8545,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-03T13:34:50.437670Z"
-      }
-    },
-    {
-      "story_id": "story_d0ecf0e85035",
-      "title": "AI is changing developer work. Here are three skills to strengthen.",
-      "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
-      "primary_url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
-      "source": "GitHub AI & ML",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
-          "title": "AI is changing developer work. Here are three skills to strengthen.",
-          "title_zh": null,
-          "title_en": "AI is changing developer work. Here are three skills to strengthen.",
-          "title_original": "AI is changing developer work. Here are three skills to strengthen.",
-          "summary": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow. The post AI is changing developer work. Here are three skills to strengthen. appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-02T15:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "GitHub AI & ML"
-      ],
-      "items": [
-        {
-          "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
-          "title": "AI is changing developer work. Here are three skills to strengthen.",
-          "title_zh": null,
-          "title_en": "AI is changing developer work. Here are three skills to strengthen.",
-          "title_original": "AI is changing developer work. Here are three skills to strengthen.",
-          "summary": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow. The post AI is changing developer work. Here are three skills to strengthen. appeared first on The GitHub Blog .",
-          "recommend_reason_zh": null,
-          "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
-          "source": "GitHub AI & ML",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-02T15:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8149,
-      "importance": 0.8149,
-      "importance_score": 0.8149,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.9,
-        "recency": 0.8048,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-02T15:00:00Z",
-      "latest_at": "2026-10-02T15:00:00Z",
-      "primary_item": {
-        "id": "ba529ffae291cc96f6a5485d0dfa487db6e084e5",
-        "title": "AI is changing developer work. Here are three skills to strengthen.",
-        "title_zh": null,
-        "title_en": "AI is changing developer work. Here are three skills to strengthen.",
-        "title_original": "AI is changing developer work. Here are three skills to strengthen.",
-        "summary": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow. The post AI is changing developer work. Here are three skills to strengthen. appeared first on The GitHub Blog .",
-        "recommend_reason_zh": null,
-        "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out",
-        "source": "GitHub AI & ML",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8439,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-03T13:34:50.437670Z"
-      }
-    },
-    {
-      "story_id": "story_fb1107e372ac",
-      "title": "Google Project Suncatcher 首颗原型卫星发射入轨 / Project Suncatcher has liftoff! ☀️🚀",
-      "url": "https://x.com/GoogleAI/status/2106049984164463069",
-      "primary_url": "https://x.com/GoogleAI/status/2106049984164463069",
-      "source": "X：Google AI (@GoogleAI)",
+      "story_id": "story_52f3cf9a90e0",
+      "title": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300 / Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
+      "url": "https://www.lmsys.org/blog/2023-03-30-vicuna",
+      "primary_url": "https://www.lmsys.org/blog/2023-03-30-vicuna",
+      "source": "LMSYS：Blog（Chatbot Arena 团队）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "85a23bfcf12c8943396e2a3e845d81e8ef1a63d0",
-          "title": "Google Project Suncatcher 首颗原型卫星发射入轨 / Project Suncatcher has liftoff! ☀️🚀",
-          "title_zh": "Google Project Suncatcher 首颗原型卫星发射入轨",
-          "title_en": "Project Suncatcher has liftoff! ☀️🚀",
-          "title_original": "Project Suncatcher has liftoff! ☀️🚀",
-          "summary": "Google 宣布其探索在太空托管机器学习基础设施的 Project Suncatcher 已将一颗与 Planet 合作建造的原型卫星送入轨道，搭乘 SpaceX Transporter-18 拼车任务。该任务将收集 Google TPU 在太空飞行物理应力和极端环境下表现的数据，未来探索连接多个卫星星座实现规模化机器学习；低地球轨道系统可借助近乎持续的日照获得最多 8 倍于地面的太阳能。",
+          "id": "7654202328494479b00a63601dedf32af4a164cb",
+          "title": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300 / Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
+          "title_zh": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300",
+          "title_en": "Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
+          "title_original": "Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
+          "summary": "LMSYS 团队发布 Vicuna-13B，通过约 70K ShareGPT 用户共享对话微调 LLaMA，训练成本约 $300，代码、权重和在线 demo 以非商业许可公开。GPT-4 作为评审的初步评估显示其达到 ChatGPT/Bard 90% 以上质量，在 45% 问题上不逊于 ChatGPT；团队同时提出基于 GPT-4 的自动评测框架，并说明其尚非严谨方法。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/GoogleAI/status/2106049984164463069",
-          "source": "X：Google AI (@GoogleAI)",
+          "url": "https://www.lmsys.org/blog/2023-03-30-vicuna",
+          "source": "LMSYS：Blog（Chatbot Arena 团队）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-10-02T15:53:39Z"
+          "published_at": null
         }
       ],
       "source_count": 1,
       "source_names": [
-        "X：Google AI (@GoogleAI)"
+        "LMSYS：Blog（Chatbot Arena 团队）"
       ],
       "items": [
         {
-          "id": "85a23bfcf12c8943396e2a3e845d81e8ef1a63d0",
-          "title": "Google Project Suncatcher 首颗原型卫星发射入轨 / Project Suncatcher has liftoff! ☀️🚀",
-          "title_zh": "Google Project Suncatcher 首颗原型卫星发射入轨",
-          "title_en": "Project Suncatcher has liftoff! ☀️🚀",
-          "title_original": "Project Suncatcher has liftoff! ☀️🚀",
-          "summary": "Google 宣布其探索在太空托管机器学习基础设施的 Project Suncatcher 已将一颗与 Planet 合作建造的原型卫星送入轨道，搭乘 SpaceX Transporter-18 拼车任务。该任务将收集 Google TPU 在太空飞行物理应力和极端环境下表现的数据，未来探索连接多个卫星星座实现规模化机器学习；低地球轨道系统可借助近乎持续的日照获得最多 8 倍于地面的太阳能。",
+          "id": "7654202328494479b00a63601dedf32af4a164cb",
+          "title": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300 / Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
+          "title_zh": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300",
+          "title_en": "Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
+          "title_original": "Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
+          "summary": "LMSYS 团队发布 Vicuna-13B，通过约 70K ShareGPT 用户共享对话微调 LLaMA，训练成本约 $300，代码、权重和在线 demo 以非商业许可公开。GPT-4 作为评审的初步评估显示其达到 ChatGPT/Bard 90% 以上质量，在 45% 问题上不逊于 ChatGPT；团队同时提出基于 GPT-4 的自动评测框架，并说明其尚非严谨方法。",
           "recommend_reason_zh": null,
-          "url": "https://x.com/GoogleAI/status/2106049984164463069",
-          "source": "X：Google AI (@GoogleAI)",
+          "url": "https://www.lmsys.org/blog/2023-03-30-vicuna",
+          "source": "LMSYS：Blog（Chatbot Arena 团队）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-10-02T15:53:39Z"
+          "published_at": null
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7641,
-      "importance": 0.7641,
-      "importance_score": 0.7641,
-      "importance_label": "官方更新",
+      "score": 0.7886,
+      "importance": 0.7886,
+      "importance_score": 0.7886,
+      "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.66,
-        "source_tier": 1.0,
+        "editorial": 0.79,
+        "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8117,
+        "recency": 1.0,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "official",
+      "category": "industry",
       "reasons": [
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-10-02T15:53:39Z",
-      "latest_at": "2026-10-02T15:53:39Z",
+      "earliest_at": "2026-10-03T18:04:21.433182Z",
+      "latest_at": "2026-10-03T18:04:21.433182Z",
       "primary_item": {
-        "id": "85a23bfcf12c8943396e2a3e845d81e8ef1a63d0",
-        "title": "Google Project Suncatcher 首颗原型卫星发射入轨 / Project Suncatcher has liftoff! ☀️🚀",
-        "title_zh": "Google Project Suncatcher 首颗原型卫星发射入轨",
-        "title_en": "Project Suncatcher has liftoff! ☀️🚀",
-        "title_original": "Project Suncatcher has liftoff! ☀️🚀",
-        "summary": "Google 宣布其探索在太空托管机器学习基础设施的 Project Suncatcher 已将一颗与 Planet 合作建造的原型卫星送入轨道，搭乘 SpaceX Transporter-18 拼车任务。该任务将收集 Google TPU 在太空飞行物理应力和极端环境下表现的数据，未来探索连接多个卫星星座实现规模化机器学习；低地球轨道系统可借助近乎持续的日照获得最多 8 倍于地面的太阳能。",
+        "id": "7654202328494479b00a63601dedf32af4a164cb",
+        "title": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300 / Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
+        "title_zh": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300",
+        "title_en": "Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
+        "title_original": "Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
+        "summary": "LMSYS 团队发布 Vicuna-13B，通过约 70K ShareGPT 用户共享对话微调 LLaMA，训练成本约 $300，代码、权重和在线 demo 以非商业许可公开。GPT-4 作为评审的初步评估显示其达到 ChatGPT/Bard 90% 以上质量，在 45% 问题上不逊于 ChatGPT；团队同时提出基于 GPT-4 的自动评测框架，并说明其尚非严谨方法。",
         "recommend_reason_zh": null,
-        "url": "https://x.com/GoogleAI/status/2106049984164463069",
-        "source": "X：Google AI (@GoogleAI)",
+        "url": "https://www.lmsys.org/blog/2023-03-30-vicuna",
+        "source": "LMSYS：Blog（Chatbot Arena 团队）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7934,
+      "peak_score": 0.7886,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T13:34:50.437670Z"
+        "scored_at": "2026-10-03T18:05:13.492223Z"
       }
     },
     {
@@ -387,15 +132,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7658,
-      "importance": 0.7658,
-      "importance_score": 0.7658,
+      "score": 0.7594,
+      "importance": 0.7594,
+      "importance_score": 0.7594,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8379,
+        "recency": 0.8023,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -423,7 +168,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T13:34:50.437670Z"
+        "scored_at": "2026-10-03T18:05:13.492223Z"
       }
     },
     {
@@ -471,15 +216,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7765,
-      "importance": 0.7765,
-      "importance_score": 0.7765,
+      "score": 0.7693,
+      "importance": 0.7693,
+      "importance_score": 0.7693,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.79,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9326,
+        "recency": 0.8929,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -507,7 +252,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T13:34:50.437670Z"
+        "scored_at": "2026-10-03T18:05:13.492223Z"
       }
     },
     {
@@ -555,15 +300,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7499,
-      "importance": 0.7499,
-      "importance_score": 0.7499,
+      "score": 0.7436,
+      "importance": 0.7436,
+      "importance_score": 0.7436,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.6,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8329,
+        "recency": 0.7975,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -590,7 +335,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T13:34:50.437670Z"
+        "scored_at": "2026-10-03T18:05:13.492223Z"
       }
     },
     {
@@ -638,15 +383,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7423,
-      "importance": 0.7423,
-      "importance_score": 0.7423,
+      "score": 0.7359,
+      "importance": 0.7359,
+      "importance_score": 0.7359,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8428,
+        "recency": 0.807,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -673,7 +418,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T13:34:50.437670Z"
+        "scored_at": "2026-10-03T18:05:13.492223Z"
       }
     },
     {
@@ -721,15 +466,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7339,
-      "importance": 0.7339,
-      "importance_score": 0.7339,
+      "score": 0.7275,
+      "importance": 0.7275,
+      "importance_score": 0.7275,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8293,
+        "recency": 0.7941,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -756,7 +501,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T13:34:50.437670Z"
+        "scored_at": "2026-10-03T18:05:13.492223Z"
       }
     },
     {
@@ -804,15 +549,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7173,
-      "importance": 0.7173,
-      "importance_score": 0.7173,
+      "score": 0.7108,
+      "importance": 0.7108,
+      "importance_score": 0.7108,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.64,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8539,
+        "recency": 0.8176,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -839,7 +584,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T13:34:50.437670Z"
+        "scored_at": "2026-10-03T18:05:13.492223Z"
       }
     },
     {
@@ -887,15 +632,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7112,
-      "importance": 0.7112,
-      "importance_score": 0.7112,
+      "score": 0.7046,
+      "importance": 0.7046,
+      "importance_score": 0.7046,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.61,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8701,
+        "recency": 0.8331,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -922,7 +667,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T13:34:50.437670Z"
+        "scored_at": "2026-10-03T18:05:13.492223Z"
       }
     },
     {
@@ -970,15 +715,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.73,
-      "importance": 0.73,
-      "importance_score": 0.73,
+      "score": 0.7235,
+      "importance": 0.7235,
+      "importance_score": 0.7235,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.69,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8409,
+        "recency": 0.8052,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1005,7 +750,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-03T13:34:50.437670Z"
+        "scored_at": "2026-10-03T18:05:13.492223Z"
       }
     }
   ]
