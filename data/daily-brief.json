@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-04T14:53:47.735825Z",
+  "generated_at": "2026-10-04T18:41:50.970249Z",
   "window_hours": 24,
-  "total_items": 3,
+  "total_items": 2,
   "items": [
     {
       "story_id": "story_1be63ddb3fed",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8344,
-      "importance": 0.8344,
-      "importance_score": 0.8344,
+      "score": 0.8288,
+      "importance": 0.8288,
+      "importance_score": 0.8288,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8577,
+        "recency": 0.8268,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,91 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-04T14:54:40.685872Z"
-      }
-    },
-    {
-      "story_id": "story_52f3cf9a90e0",
-      "title": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300 / Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
-      "url": "https://www.lmsys.org/blog/2023-03-30-vicuna",
-      "primary_url": "https://www.lmsys.org/blog/2023-03-30-vicuna",
-      "source": "LMSYS：Blog（Chatbot Arena 团队）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "7654202328494479b00a63601dedf32af4a164cb",
-          "title": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300 / Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
-          "title_zh": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300",
-          "title_en": "Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
-          "title_original": "Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
-          "summary": "LMSYS 团队发布 Vicuna-13B，通过约 70K ShareGPT 用户共享对话微调 LLaMA，训练成本约 $300，代码、权重和在线 demo 以非商业许可公开。GPT-4 作为评审的初步评估显示其达到 ChatGPT/Bard 90% 以上质量，在 45% 问题上不逊于 ChatGPT；团队同时提出基于 GPT-4 的自动评测框架，并说明其尚非严谨方法。",
-          "recommend_reason_zh": null,
-          "url": "https://www.lmsys.org/blog/2023-03-30-vicuna",
-          "source": "LMSYS：Blog（Chatbot Arena 团队）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": null
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "LMSYS：Blog（Chatbot Arena 团队）"
-      ],
-      "items": [
-        {
-          "id": "7654202328494479b00a63601dedf32af4a164cb",
-          "title": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300 / Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
-          "title_zh": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300",
-          "title_en": "Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
-          "title_original": "Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
-          "summary": "LMSYS 团队发布 Vicuna-13B，通过约 70K ShareGPT 用户共享对话微调 LLaMA，训练成本约 $300，代码、权重和在线 demo 以非商业许可公开。GPT-4 作为评审的初步评估显示其达到 ChatGPT/Bard 90% 以上质量，在 45% 问题上不逊于 ChatGPT；团队同时提出基于 GPT-4 的自动评测框架，并说明其尚非严谨方法。",
-          "recommend_reason_zh": null,
-          "url": "https://www.lmsys.org/blog/2023-03-30-vicuna",
-          "source": "LMSYS：Blog（Chatbot Arena 团队）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": null
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7559,
-      "importance": 0.7559,
-      "importance_score": 0.7559,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.79,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8183,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-03T18:04:21.433182Z",
-      "latest_at": "2026-10-03T18:04:21.433182Z",
-      "primary_item": {
-        "id": "7654202328494479b00a63601dedf32af4a164cb",
-        "title": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300 / Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
-        "title_zh": "LMSYS 发布开源聊天模型 Vicuna-13B，用 ShareGPT 对话微调 LLaMA，训练成本约 $300",
-        "title_en": "Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
-        "title_original": "Blog Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achiev... The Vicuna Team March 30, 2023",
-        "summary": "LMSYS 团队发布 Vicuna-13B，通过约 70K ShareGPT 用户共享对话微调 LLaMA，训练成本约 $300，代码、权重和在线 demo 以非商业许可公开。GPT-4 作为评审的初步评估显示其达到 ChatGPT/Bard 90% 以上质量，在 45% 问题上不逊于 ChatGPT；团队同时提出基于 GPT-4 的自动评测框架，并说明其尚非严谨方法。",
-        "recommend_reason_zh": null,
-        "url": "https://www.lmsys.org/blog/2023-03-30-vicuna",
-        "source": "LMSYS：Blog（Chatbot Arena 团队）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7886,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-04T14:54:40.685872Z"
+        "scored_at": "2026-10-04T18:42:44.459714Z"
       }
     },
     {
@@ -217,22 +133,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7554,
-      "importance": 0.7554,
-      "importance_score": 0.7554,
+      "score": 0.7499,
+      "importance": 0.7499,
+      "importance_score": 0.7499,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8488,
+        "recency": 0.8183,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-03T21:52:11Z",
       "latest_at": "2026-10-03T21:52:11Z",
@@ -253,7 +168,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-04T14:54:40.685872Z"
+        "scored_at": "2026-10-04T18:42:44.459714Z"
       }
     }
   ]
