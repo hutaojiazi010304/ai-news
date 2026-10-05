@@ -1,8 +1,263 @@
 {
-  "generated_at": "2026-10-05T07:18:00.648590Z",
+  "generated_at": "2026-10-05T16:14:41.137764Z",
   "window_hours": 24,
-  "total_items": 1,
+  "total_items": 4,
   "items": [
+    {
+      "story_id": "story_6f6f6c4ad8fb",
+      "title": "OpenAI 公布 EU AI Act 下的文本溯源方案，推出 textGrain 文本水印 / Our approach to EU text provenance rules",
+      "url": "https://openai.com/index/eu-text-provenance",
+      "primary_url": "https://openai.com/index/eu-text-provenance",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "41383479c4a10511f043979bc4fd02e409189d41",
+          "title": "OpenAI 公布 EU AI Act 下的文本溯源方案，推出 textGrain 文本水印 / Our approach to EU text provenance rules",
+          "title_zh": "OpenAI 公布 EU AI Act 下的文本溯源方案，推出 textGrain 文本水印",
+          "title_en": "Our approach to EU text provenance rules",
+          "title_original": "Our approach to EU text provenance rules",
+          "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/eu-text-provenance",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-05T15:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "41383479c4a10511f043979bc4fd02e409189d41",
+          "title": "OpenAI 公布 EU AI Act 下的文本溯源方案，推出 textGrain 文本水印 / Our approach to EU text provenance rules",
+          "title_zh": "OpenAI 公布 EU AI Act 下的文本溯源方案，推出 textGrain 文本水印",
+          "title_en": "Our approach to EU text provenance rules",
+          "title_original": "Our approach to EU text provenance rules",
+          "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/eu-text-provenance",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-05T15:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8499,
+      "importance": 0.8499,
+      "importance_score": 0.8499,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9881,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-05T15:00:00Z",
+      "latest_at": "2026-10-05T15:00:00Z",
+      "primary_item": {
+        "id": "41383479c4a10511f043979bc4fd02e409189d41",
+        "title": "OpenAI 公布 EU AI Act 下的文本溯源方案，推出 textGrain 文本水印 / Our approach to EU text provenance rules",
+        "title_zh": "OpenAI 公布 EU AI Act 下的文本溯源方案，推出 textGrain 文本水印",
+        "title_en": "Our approach to EU text provenance rules",
+        "title_original": "Our approach to EU text provenance rules",
+        "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/eu-text-provenance",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8499,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-05T16:15:49.000403Z"
+      }
+    },
+    {
+      "story_id": "story_b4c0a1b83afc",
+      "title": "ReviewBench: An open benchmark for AI code review",
+      "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review",
+      "primary_url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review",
+      "source": "GitHub AI & ML",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "5485f124bd8b54fc5ffe89af7e88245b913e1568",
+          "title": "ReviewBench: An open benchmark for AI code review",
+          "title_zh": null,
+          "title_en": "ReviewBench: An open benchmark for AI code review",
+          "title_original": "ReviewBench: An open benchmark for AI code review",
+          "summary": "We’re launching ReviewBench, a benchmark for code review agents built on representative GitHub pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics. The post ReviewBench: An open benchmark for AI code review appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-05T15:59:40Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub AI & ML"
+      ],
+      "items": [
+        {
+          "id": "5485f124bd8b54fc5ffe89af7e88245b913e1568",
+          "title": "ReviewBench: An open benchmark for AI code review",
+          "title_zh": null,
+          "title_en": "ReviewBench: An open benchmark for AI code review",
+          "title_original": "ReviewBench: An open benchmark for AI code review",
+          "summary": "We’re launching ReviewBench, a benchmark for code review agents built on representative GitHub pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics. The post ReviewBench: An open benchmark for AI code review appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-05T15:59:40Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8496,
+      "importance": 0.8496,
+      "importance_score": 0.8496,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.9,
+        "recency": 0.9976,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-05T15:59:40Z",
+      "latest_at": "2026-10-05T15:59:40Z",
+      "primary_item": {
+        "id": "5485f124bd8b54fc5ffe89af7e88245b913e1568",
+        "title": "ReviewBench: An open benchmark for AI code review",
+        "title_zh": null,
+        "title_en": "ReviewBench: An open benchmark for AI code review",
+        "title_original": "ReviewBench: An open benchmark for AI code review",
+        "summary": "We’re launching ReviewBench, a benchmark for code review agents built on representative GitHub pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics. The post ReviewBench: An open benchmark for AI code review appeared first on The GitHub Blog .",
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review",
+        "source": "GitHub AI & ML",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8496,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-05T16:15:49.000403Z"
+      }
+    },
+    {
+      "story_id": "story_aec85adef32a",
+      "title": "OpenAI 在 ChatGPT 推出全新视觉广告格式并扩展广告测量工具 / Building advertising for the way people use AI",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "primary_url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "45fb4b2a7cbdba9b5e57a8e18c394834d442c661",
+          "title": "OpenAI 在 ChatGPT 推出全新视觉广告格式并扩展广告测量工具 / Building advertising for the way people use AI",
+          "title_zh": "OpenAI 在 ChatGPT 推出全新视觉广告格式并扩展广告测量工具",
+          "title_en": "Building advertising for the way people use AI",
+          "title_original": "Building advertising for the way people use AI",
+          "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-05T10:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "45fb4b2a7cbdba9b5e57a8e18c394834d442c661",
+          "title": "OpenAI 在 ChatGPT 推出全新视觉广告格式并扩展广告测量工具 / Building advertising for the way people use AI",
+          "title_zh": "OpenAI 在 ChatGPT 推出全新视觉广告格式并扩展广告测量工具",
+          "title_en": "Building advertising for the way people use AI",
+          "title_original": "Building advertising for the way people use AI",
+          "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-05T10:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8415,
+      "importance": 0.8415,
+      "importance_score": 0.8415,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9417,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-05T10:00:00Z",
+      "latest_at": "2026-10-05T10:00:00Z",
+      "primary_item": {
+        "id": "45fb4b2a7cbdba9b5e57a8e18c394834d442c661",
+        "title": "OpenAI 在 ChatGPT 推出全新视觉广告格式并扩展广告测量工具 / Building advertising for the way people use AI",
+        "title_zh": "OpenAI 在 ChatGPT 推出全新视觉广告格式并扩展广告测量工具",
+        "title_en": "Building advertising for the way people use AI",
+        "title_original": "Building advertising for the way people use AI",
+        "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8415,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-05T16:15:49.000403Z"
+      }
+    },
     {
       "story_id": "story_92fa9be3e195",
       "title": "PromptArmor 披露 Databricks Genie 恶意 Skill 可绕过四类控制实施钓鱼与数据外泄 / Four Databricks Genie Controls That Don't Stop Malicious Skills",
@@ -48,15 +303,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.738,
-      "importance": 0.738,
-      "importance_score": 0.738,
+      "score": 0.7241,
+      "importance": 0.7241,
+      "importance_score": 0.7241,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9357,
+        "recency": 0.8585,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -83,7 +338,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-05T07:21:30.622530Z"
+        "scored_at": "2026-10-05T16:15:49.000403Z"
       }
     }
   ]
