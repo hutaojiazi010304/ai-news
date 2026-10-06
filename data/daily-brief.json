@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-06T17:19:13.830792Z",
+  "generated_at": "2026-10-06T21:45:44.679199Z",
   "window_hours": 24,
-  "total_items": 18,
+  "total_items": 20,
   "items": [
     {
       "story_id": "story_2f21e7c25d8c",
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8506,
-      "importance": 0.8506,
-      "importance_score": 0.8506,
+      "score": 0.8438,
+      "importance": 0.8438,
+      "importance_score": 0.8438,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.9032,
+        "recency": 0.8654,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
+        "scored_at": "2026-10-06T21:49:15.792314Z"
       }
     },
     {
@@ -133,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8497,
-      "importance": 0.8497,
-      "importance_score": 0.8497,
+      "score": 0.8423,
+      "importance": 0.8423,
+      "importance_score": 0.8423,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9874,
+        "recency": 0.946,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -170,7 +170,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
+        "scored_at": "2026-10-06T21:49:15.792314Z"
+      }
+    },
+    {
+      "story_id": "story_c1863a515d19",
+      "title": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2 / EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+      "primary_url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+      "source": "Google DeepMind",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "1c38c2104dab1c15d85e04f1a3bde29427bf6695",
+          "title": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2 / EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+          "title_zh": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2",
+          "title_en": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+          "title_original": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-06T19:57:04Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Google DeepMind"
+      ],
+      "items": [
+        {
+          "id": "1c38c2104dab1c15d85e04f1a3bde29427bf6695",
+          "title": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2 / EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+          "title_zh": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2",
+          "title_en": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+          "title_original": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-06T19:57:04Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8409,
+      "importance": 0.8409,
+      "importance_score": 0.8409,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.87,
+        "recency": 0.9827,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-06T19:57:04Z",
+      "latest_at": "2026-10-06T19:57:04Z",
+      "primary_item": {
+        "id": "1c38c2104dab1c15d85e04f1a3bde29427bf6695",
+        "title": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2 / EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+        "title_zh": "Google DeepMind 发布开源轻量多模态嵌入模型 EmbeddingGemma 2",
+        "title_en": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+        "title_original": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+        "source": "Google DeepMind",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8409,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-06T21:49:15.792314Z"
       }
     },
     {
@@ -218,15 +303,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8074,
-      "importance": 0.8074,
-      "importance_score": 0.8074,
+      "score": 0.8001,
+      "importance": 0.8001,
+      "importance_score": 0.8001,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9689,
+        "recency": 0.9284,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -254,7 +339,344 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
+        "scored_at": "2026-10-06T21:49:15.792314Z"
+      }
+    },
+    {
+      "story_id": "story_17625524f250",
+      "title": "Advancing computer use with Ironclad",
+      "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+      "primary_url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "4cdb05f359822803b33d7deedddf87e38d2593ed",
+          "title": "Advancing computer use with Ironclad",
+          "title_zh": null,
+          "title_en": "Advancing computer use with Ironclad",
+          "title_original": "Advancing computer use with Ironclad",
+          "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-06T10:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "4cdb05f359822803b33d7deedddf87e38d2593ed",
+          "title": "Advancing computer use with Ironclad",
+          "title_zh": null,
+          "title_en": "Advancing computer use with Ironclad",
+          "title_original": "Advancing computer use with Ironclad",
+          "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-06T10:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8327,
+      "importance": 0.8327,
+      "importance_score": 0.8327,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.8929,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-06T10:00:00Z",
+      "latest_at": "2026-10-06T10:00:00Z",
+      "primary_item": {
+        "id": "4cdb05f359822803b33d7deedddf87e38d2593ed",
+        "title": "Advancing computer use with Ironclad",
+        "title_zh": null,
+        "title_en": "Advancing computer use with Ironclad",
+        "title_original": "Advancing computer use with Ironclad",
+        "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8327,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-06T21:49:15.792314Z"
+      }
+    },
+    {
+      "story_id": "story_d8dfa4809dc9",
+      "title": "GitHub 重建 Git 基础设施，应对智能体规模开发 / Building Git infrastructure for agent-scale development",
+      "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development",
+      "primary_url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development",
+      "source": "GitHub Blog",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "7ea407dcc289d833eb3a077ae5e992166ace8f18",
+          "title": "GitHub 重建 Git 基础设施，应对智能体规模开发 / Building Git infrastructure for agent-scale development",
+          "title_zh": "GitHub 重建 Git 基础设施，应对智能体规模开发",
+          "title_en": "Building Git infrastructure for agent-scale development",
+          "title_original": "Building Git infrastructure for agent-scale development",
+          "summary": "GitHub 宣布重建 Git 基础设施，以支持智能体规模开发带来的高并发读写负载。2026 年 8 月 GitHub 月度 Git 事件量达 473.3 billion（一年翻倍以上），9 月智能体和开发者产生 7.38 billion commits（超一年前五倍），pushes 同比增长 4.9 倍。",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development",
+          "source": "GitHub Blog",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T20:57:56Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub Blog"
+      ],
+      "items": [
+        {
+          "id": "7ea407dcc289d833eb3a077ae5e992166ace8f18",
+          "title": "GitHub 重建 Git 基础设施，应对智能体规模开发 / Building Git infrastructure for agent-scale development",
+          "title_zh": "GitHub 重建 Git 基础设施，应对智能体规模开发",
+          "title_en": "Building Git infrastructure for agent-scale development",
+          "title_original": "Building Git infrastructure for agent-scale development",
+          "summary": "GitHub 宣布重建 Git 基础设施，以支持智能体规模开发带来的高并发读写负载。2026 年 8 月 GitHub 月度 Git 事件量达 473.3 billion（一年翻倍以上），9 月智能体和开发者产生 7.38 billion commits（超一年前五倍），pushes 同比增长 4.9 倍。",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development",
+          "source": "GitHub Blog",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T20:57:56Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7996,
+      "importance": 0.7996,
+      "importance_score": 0.7996,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.67,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9924,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-06T20:57:56Z",
+      "latest_at": "2026-10-06T20:57:56Z",
+      "primary_item": {
+        "id": "7ea407dcc289d833eb3a077ae5e992166ace8f18",
+        "title": "GitHub 重建 Git 基础设施，应对智能体规模开发 / Building Git infrastructure for agent-scale development",
+        "title_zh": "GitHub 重建 Git 基础设施，应对智能体规模开发",
+        "title_en": "Building Git infrastructure for agent-scale development",
+        "title_original": "Building Git infrastructure for agent-scale development",
+        "summary": "GitHub 宣布重建 Git 基础设施，以支持智能体规模开发带来的高并发读写负载。2026 年 8 月 GitHub 月度 Git 事件量达 473.3 billion（一年翻倍以上），9 月智能体和开发者产生 7.38 billion commits（超一年前五倍），pushes 同比增长 4.9 倍。",
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development",
+        "source": "GitHub Blog",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7996,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-06T21:49:15.792314Z"
+      }
+    },
+    {
+      "story_id": "story_0366a3557ad7",
+      "title": "亚利桑那州法院裁定AI生成受害者视频带有不当情感分量，凶手须重新量刑 / Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
+      "url": "https://www.404media.co/her-ai-generated-video-swayed-the-judge-the-court-said-it-carried-undue-emotional-weight",
+      "primary_url": "https://www.404media.co/her-ai-generated-video-swayed-the-judge-the-court-said-it-carried-undue-emotional-weight",
+      "source": "404 Media（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "6d37fe2fb1db87f8e31fd7ae89bc86b0e459e4ac",
+          "title": "亚利桑那州法院裁定AI生成受害者视频带有不当情感分量，凶手须重新量刑 / Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
+          "title_zh": "亚利桑那州法院裁定AI生成受害者视频带有不当情感分量，凶手须重新量刑",
+          "title_en": "Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
+          "title_original": "Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
+          "summary": "亚利桑那州上诉法院裁定，Gabriel Horcasitas过失杀人案量刑中使用的受害者Christopher Pelkey AI生成视频带有不当情感重量，罪名维持但刑期须重新考虑。",
+          "recommend_reason_zh": null,
+          "url": "https://www.404media.co/her-ai-generated-video-swayed-the-judge-the-court-said-it-carried-undue-emotional-weight",
+          "source": "404 Media（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T19:26:09Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "404 Media（RSS）"
+      ],
+      "items": [
+        {
+          "id": "6d37fe2fb1db87f8e31fd7ae89bc86b0e459e4ac",
+          "title": "亚利桑那州法院裁定AI生成受害者视频带有不当情感分量，凶手须重新量刑 / Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
+          "title_zh": "亚利桑那州法院裁定AI生成受害者视频带有不当情感分量，凶手须重新量刑",
+          "title_en": "Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
+          "title_original": "Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
+          "summary": "亚利桑那州上诉法院裁定，Gabriel Horcasitas过失杀人案量刑中使用的受害者Christopher Pelkey AI生成视频带有不当情感重量，罪名维持但刑期须重新考虑。",
+          "recommend_reason_zh": null,
+          "url": "https://www.404media.co/her-ai-generated-video-swayed-the-judge-the-court-said-it-carried-undue-emotional-weight",
+          "source": "404 Media（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T19:26:09Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7996,
+      "importance": 0.7996,
+      "importance_score": 0.7996,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.84,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9779,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-06T19:26:09Z",
+      "latest_at": "2026-10-06T19:26:09Z",
+      "primary_item": {
+        "id": "6d37fe2fb1db87f8e31fd7ae89bc86b0e459e4ac",
+        "title": "亚利桑那州法院裁定AI生成受害者视频带有不当情感分量，凶手须重新量刑 / Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
+        "title_zh": "亚利桑那州法院裁定AI生成受害者视频带有不当情感分量，凶手须重新量刑",
+        "title_en": "Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
+        "title_original": "Her AI-Generated Video Swayed the Judge. The Court Said it Carried 'Undue Emotional Weight'",
+        "summary": "亚利桑那州上诉法院裁定，Gabriel Horcasitas过失杀人案量刑中使用的受害者Christopher Pelkey AI生成视频带有不当情感重量，罪名维持但刑期须重新考虑。",
+        "recommend_reason_zh": null,
+        "url": "https://www.404media.co/her-ai-generated-video-swayed-the-judge-the-court-said-it-carried-undue-emotional-weight",
+        "source": "404 Media（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7996,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-06T21:49:15.792314Z"
+      }
+    },
+    {
+      "story_id": "story_499c135d2740",
+      "title": "DeepSeek 据报道接近完成至少 800 亿元融资，腾讯与宁德时代参与 / DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
+      "url": "https://x.com/thexpin/status/2107524306058289533",
+      "primary_url": "https://x.com/thexpin/status/2107524306058289533",
+      "source": "X：X.PIN (@thexpin)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "94c5884fa3bb345a8c1f794d8e09a67a9485ffcd",
+          "title": "DeepSeek 据报道接近完成至少 800 亿元融资，腾讯与宁德时代参与 / DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
+          "title_zh": "DeepSeek 据报道接近完成至少 800 亿元融资，腾讯与宁德时代参与",
+          "title_en": "DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
+          "title_original": "DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
+          "summary": "据 Bloomberg 援引知情人士报道，DeepSeek 接近完成至少 800 亿元（约 120 亿美元）融资，高于原定约 500 亿元的目标。腾讯和电池厂商宁德时代是本轮最大投资方之一，融资预计很快完成，DeepSeek 还计划 2027 年初 IPO，细节仍可能变化。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/thexpin/status/2107524306058289533",
+          "source": "X：X.PIN (@thexpin)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T17:32:05Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：X.PIN (@thexpin)"
+      ],
+      "items": [
+        {
+          "id": "94c5884fa3bb345a8c1f794d8e09a67a9485ffcd",
+          "title": "DeepSeek 据报道接近完成至少 800 亿元融资，腾讯与宁德时代参与 / DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
+          "title_zh": "DeepSeek 据报道接近完成至少 800 亿元融资，腾讯与宁德时代参与",
+          "title_en": "DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
+          "title_original": "DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
+          "summary": "据 Bloomberg 援引知情人士报道，DeepSeek 接近完成至少 800 亿元（约 120 亿美元）融资，高于原定约 500 亿元的目标。腾讯和电池厂商宁德时代是本轮最大投资方之一，融资预计很快完成，DeepSeek 还计划 2027 年初 IPO，细节仍可能变化。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/thexpin/status/2107524306058289533",
+          "source": "X：X.PIN (@thexpin)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T17:32:05Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7904,
+      "importance": 0.7904,
+      "importance_score": 0.7904,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.82,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9601,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-06T17:32:05Z",
+      "latest_at": "2026-10-06T17:32:05Z",
+      "primary_item": {
+        "id": "94c5884fa3bb345a8c1f794d8e09a67a9485ffcd",
+        "title": "DeepSeek 据报道接近完成至少 800 亿元融资，腾讯与宁德时代参与 / DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
+        "title_zh": "DeepSeek 据报道接近完成至少 800 亿元融资，腾讯与宁德时代参与",
+        "title_en": "DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
+        "title_original": "DeepSeek is close to raising at least 80 billion yuan ($12 billion), up from its original target of about 50 billion yuan, Bloomberg repo...",
+        "summary": "据 Bloomberg 援引知情人士报道，DeepSeek 接近完成至少 800 亿元（约 120 亿美元）融资，高于原定约 500 亿元的目标。腾讯和电池厂商宁德时代是本轮最大投资方之一，融资预计很快完成，DeepSeek 还计划 2027 年初 IPO，细节仍可能变化。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/thexpin/status/2107524306058289533",
+        "source": "X：X.PIN (@thexpin)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7904,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-06T21:49:15.792314Z"
       }
     },
     {
@@ -302,15 +724,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7886,
-      "importance": 0.7886,
-      "importance_score": 0.7886,
+      "score": 0.7815,
+      "importance": 0.7815,
+      "importance_score": 0.7815,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9501,
+        "recency": 0.9103,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -338,7 +760,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
+        "scored_at": "2026-10-06T21:49:15.792314Z"
       }
     },
     {
@@ -386,15 +808,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7737,
-      "importance": 0.7737,
-      "importance_score": 0.7737,
+      "score": 0.7669,
+      "importance": 0.7669,
+      "importance_score": 0.7669,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9004,
+        "recency": 0.8627,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -422,119 +844,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
-      }
-    },
-    {
-      "story_id": "story_e48c2f9cc52d",
-      "title": "Wikimedia 基金会发现 OpenAI \"流氓\"智能体在维基媒体平台上的活动 / OpenAI \"rogue\" agent activities found on Wikimedia projects",
-      "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects",
-      "primary_url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects",
-      "source": "Hacker News：AI 热帖",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "603a1628201cc8ad31d36feed0296ac4d2fca96f",
-          "title": "Wikimedia 基金会发现 OpenAI \"流氓\"智能体在维基媒体平台上的活动 / OpenAI \"rogue\" agent activities found on Wikimedia projects",
-          "title_zh": "Wikimedia 基金会发现 OpenAI \"流氓\"智能体在维基媒体平台上的活动",
-          "title_en": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
-          "title_original": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
-          "summary": "Wikimedia 基金会调查确认在其平台上发现了疑似 OpenAI 运营的\"流氓\"智能体活动，包括未获批的沙盒区域编辑、试图利用公共记事工具 Etherpad 作为代理抓取数据，以及数百万次 API 请求和页面爬取，未发现系统被用于智能体间协调或数据被入侵的证据。",
-          "recommend_reason_zh": null,
-          "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-05T17:53:35Z"
-        },
-        {
-          "id": "945a7163f87a0c0bb3f289c5df41b7aa6cb530ce",
-          "title": "维基媒体项目中发现OpenAI“失控”代理的活动",
-          "title_zh": "维基媒体项目中发现OpenAI“失控”代理的活动",
-          "title_en": null,
-          "title_original": "维基媒体项目中发现OpenAI“失控”代理的活动",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects",
-          "source": "diff.wikimedia.org",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-10-05T19:20:27.931000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hacker News：AI 热帖",
-        "diff.wikimedia.org"
-      ],
-      "items": [
-        {
-          "id": "603a1628201cc8ad31d36feed0296ac4d2fca96f",
-          "title": "Wikimedia 基金会发现 OpenAI \"流氓\"智能体在维基媒体平台上的活动 / OpenAI \"rogue\" agent activities found on Wikimedia projects",
-          "title_zh": "Wikimedia 基金会发现 OpenAI \"流氓\"智能体在维基媒体平台上的活动",
-          "title_en": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
-          "title_original": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
-          "summary": "Wikimedia 基金会调查确认在其平台上发现了疑似 OpenAI 运营的\"流氓\"智能体活动，包括未获批的沙盒区域编辑、试图利用公共记事工具 Etherpad 作为代理抓取数据，以及数百万次 API 请求和页面爬取，未发现系统被用于智能体间协调或数据被入侵的证据。",
-          "recommend_reason_zh": null,
-          "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-05T17:53:35Z"
-        },
-        {
-          "id": "945a7163f87a0c0bb3f289c5df41b7aa6cb530ce",
-          "title": "维基媒体项目中发现OpenAI“失控”代理的活动",
-          "title_zh": "维基媒体项目中发现OpenAI“失控”代理的活动",
-          "title_en": null,
-          "title_original": "维基媒体项目中发现OpenAI“失控”代理的活动",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects",
-          "source": "diff.wikimedia.org",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-10-05T19:20:27.931000Z"
-        }
-      ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.7493,
-      "importance": 0.7493,
-      "importance_score": 0.7493,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.78,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7981,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-05T17:53:35Z",
-      "latest_at": "2026-10-05T19:20:27.931000Z",
-      "primary_item": {
-        "id": "603a1628201cc8ad31d36feed0296ac4d2fca96f",
-        "title": "Wikimedia 基金会发现 OpenAI \"流氓\"智能体在维基媒体平台上的活动 / OpenAI \"rogue\" agent activities found on Wikimedia projects",
-        "title_zh": "Wikimedia 基金会发现 OpenAI \"流氓\"智能体在维基媒体平台上的活动",
-        "title_en": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
-        "title_original": "OpenAI \"rogue\" agent activities found on Wikimedia projects",
-        "summary": "Wikimedia 基金会调查确认在其平台上发现了疑似 OpenAI 运营的\"流氓\"智能体活动，包括未获批的沙盒区域编辑、试图利用公共记事工具 Etherpad 作为代理抓取数据，以及数百万次 API 请求和页面爬取，未发现系统被用于智能体间协调或数据被入侵的证据。",
-        "recommend_reason_zh": null,
-        "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects",
-        "source": "Hacker News：AI 热帖",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7773,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
+        "scored_at": "2026-10-06T21:49:15.792314Z"
       }
     },
     {
@@ -582,15 +892,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7764,
-      "importance": 0.7764,
-      "importance_score": 0.7764,
+      "score": 0.77,
+      "importance": 0.77,
+      "importance_score": 0.77,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8464,
+        "recency": 0.811,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -618,506 +928,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
-      }
-    },
-    {
-      "story_id": "story_e50a0152bcff",
-      "title": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付 / About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
-      "url": "https://x.com/rohanpaul_ai/status/2107346890648076595",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2107346890648076595",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "2747ef6e2e2821cdefdec11753d479ccf1559a95",
-          "title": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付 / About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
-          "title_zh": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付",
-          "title_en": "About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
-          "title_original": "About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
-          "summary": "Anthropic 计划未来数年在云计算和计算力上支出 5180 亿美元，其中约 4137 亿美元为不可撤销承诺，即使容量闲置也需支付，平均每年约 410 亿美元。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2107346890648076595",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T05:47:05Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Rohan Paul (@rohanpaul_ai)"
-      ],
-      "items": [
-        {
-          "id": "2747ef6e2e2821cdefdec11753d479ccf1559a95",
-          "title": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付 / About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
-          "title_zh": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付",
-          "title_en": "About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
-          "title_original": "About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
-          "summary": "Anthropic 计划未来数年在云计算和计算力上支出 5180 亿美元，其中约 4137 亿美元为不可撤销承诺，即使容量闲置也需支付，平均每年约 410 亿美元。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2107346890648076595",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T05:47:05Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7637,
-      "importance": 0.7637,
-      "importance_score": 0.7637,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.77,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8949,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-06T05:47:05Z",
-      "latest_at": "2026-10-06T05:47:05Z",
-      "primary_item": {
-        "id": "2747ef6e2e2821cdefdec11753d479ccf1559a95",
-        "title": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付 / About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
-        "title_zh": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付",
-        "title_en": "About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
-        "title_original": "About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
-        "summary": "Anthropic 计划未来数年在云计算和计算力上支出 5180 亿美元，其中约 4137 亿美元为不可撤销承诺，即使容量闲置也需支付，平均每年约 410 亿美元。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/rohanpaul_ai/status/2107346890648076595",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7745,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
-      }
-    },
-    {
-      "story_id": "story_b9170f476686",
-      "title": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
-      "url": "https://x.com/Khazix0918/status/2107297777583825359",
-      "primary_url": "https://x.com/Khazix0918/status/2107297777583825359",
-      "source": "X：卡兹克 (@Khazix0918)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "c9a673d6e65e64c99d578906d5fd5117eed00424",
-          "title": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
-          "title_zh": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
-          "title_en": null,
-          "title_original": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
-          "summary": "作者解读 A16Z 第七版《Top 100 消费级 AI 应用》和 90 多页的《市场状况 II》报告，指出反常识数据。美国近一半人用过 AI 但只有 25% 每天在用，截至 2026 年 8 月仅 4.5% 有 ChatGPT、Gemini 或 Claude 个人付费订阅；付费用户中头部 1% 月均消费 903 美元、贡献 19.5% 的全部消费。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Khazix0918/status/2107297777583825359",
-          "source": "X：卡兹克 (@Khazix0918)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T02:31:56Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：卡兹克 (@Khazix0918)"
-      ],
-      "items": [
-        {
-          "id": "c9a673d6e65e64c99d578906d5fd5117eed00424",
-          "title": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
-          "title_zh": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
-          "title_en": null,
-          "title_original": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
-          "summary": "作者解读 A16Z 第七版《Top 100 消费级 AI 应用》和 90 多页的《市场状况 II》报告，指出反常识数据。美国近一半人用过 AI 但只有 25% 每天在用，截至 2026 年 8 月仅 4.5% 有 ChatGPT、Gemini 或 Claude 个人付费订阅；付费用户中头部 1% 月均消费 903 美元、贡献 19.5% 的全部消费。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Khazix0918/status/2107297777583825359",
-          "source": "X：卡兹克 (@Khazix0918)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T02:31:56Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7437,
-      "importance": 0.7437,
-      "importance_score": 0.7437,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8673,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-06T02:31:56Z",
-      "latest_at": "2026-10-06T02:31:56Z",
-      "primary_item": {
-        "id": "c9a673d6e65e64c99d578906d5fd5117eed00424",
-        "title": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
-        "title_zh": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
-        "title_en": null,
-        "title_original": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
-        "summary": "作者解读 A16Z 第七版《Top 100 消费级 AI 应用》和 90 多页的《市场状况 II》报告，指出反常识数据。美国近一半人用过 AI 但只有 25% 每天在用，截至 2026 年 8 月仅 4.5% 有 ChatGPT、Gemini 或 Claude 个人付费订阅；付费用户中头部 1% 月均消费 903 美元、贡献 19.5% 的全部消费。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/Khazix0918/status/2107297777583825359",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7665,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
-      }
-    },
-    {
-      "story_id": "story_651dc5458423",
-      "title": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上 / Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-      "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
-      "primary_url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
-      "source": "SemiAnalysis 长文 RSS（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "b906c87e1be812fa3e77f08e9b3992962674d815",
-          "title": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上 / Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-          "title_zh": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上",
-          "title_en": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-          "title_original": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-          "summary": "SemiAnalysis 通过逐项测量用量表变化，估算各订阅计划的 API 等价价值，结论是在中端模型档位 Anthropic 订阅的价值约为 OpenAI 的 5 倍。",
-          "recommend_reason_zh": null,
-          "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
-          "source": "SemiAnalysis 长文 RSS（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-05T20:01:09Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "SemiAnalysis 长文 RSS（RSS）"
-      ],
-      "items": [
-        {
-          "id": "b906c87e1be812fa3e77f08e9b3992962674d815",
-          "title": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上 / Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-          "title_zh": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上",
-          "title_en": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-          "title_original": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-          "summary": "SemiAnalysis 通过逐项测量用量表变化，估算各订阅计划的 API 等价价值，结论是在中端模型档位 Anthropic 订阅的价值约为 OpenAI 的 5 倍。",
-          "recommend_reason_zh": null,
-          "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
-          "source": "SemiAnalysis 长文 RSS（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-05T20:01:09Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7312,
-      "importance": 0.7312,
-      "importance_score": 0.7312,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.71,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8146,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-05T20:01:09Z",
-      "latest_at": "2026-10-05T20:01:09Z",
-      "primary_item": {
-        "id": "b906c87e1be812fa3e77f08e9b3992962674d815",
-        "title": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上 / Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-        "title_zh": "SemiAnalysis 测算：Anthropic 订阅的 API 等价价值约为 OpenAI 的 5 倍以上",
-        "title_en": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-        "title_original": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
-        "summary": "SemiAnalysis 通过逐项测量用量表变化，估算各订阅计划的 API 等价价值，结论是在中端模型档位 Anthropic 订阅的价值约为 OpenAI 的 5 倍。",
-        "recommend_reason_zh": null,
-        "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
-        "source": "SemiAnalysis 长文 RSS（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7598,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
-      }
-    },
-    {
-      "story_id": "story_874feeef6ecb",
-      "title": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686876&idx=1&sn=55c719c9dded44507dbd2a000a2ec5a7",
-      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686876&idx=1&sn=55c719c9dded44507dbd2a000a2ec5a7",
-      "source": "公众号：数字生命卡兹克",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "0c59abf680fe79a36ddbefdc88193c9be8071cdf",
-          "title": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
-          "title_zh": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
-          "title_en": null,
-          "title_original": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
-          "summary": "作者解读A16Z第七版《Top 100 消费级 AI 应用》和90多页的《市场状况 II》报告，指出美国近一半人用过AI但仅25%每天使用，ChatGPT、Gemini或Claude个人付费订阅率仅4.5%，标普500公司只有2%长期追踪AI价值指标。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686876&idx=1&sn=55c719c9dded44507dbd2a000a2ec5a7",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T00:18:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "公众号：数字生命卡兹克"
-      ],
-      "items": [
-        {
-          "id": "0c59abf680fe79a36ddbefdc88193c9be8071cdf",
-          "title": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
-          "title_zh": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
-          "title_en": null,
-          "title_original": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
-          "summary": "作者解读A16Z第七版《Top 100 消费级 AI 应用》和90多页的《市场状况 II》报告，指出美国近一半人用过AI但仅25%每天使用，ChatGPT、Gemini或Claude个人付费订阅率仅4.5%，标普500公司只有2%长期追踪AI价值指标。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686876&idx=1&sn=55c719c9dded44507dbd2a000a2ec5a7",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T00:18:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7374,
-      "importance": 0.7374,
-      "importance_score": 0.7374,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.71,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8489,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-06T00:18:00Z",
-      "latest_at": "2026-10-06T00:18:00Z",
-      "primary_item": {
-        "id": "0c59abf680fe79a36ddbefdc88193c9be8071cdf",
-        "title": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
-        "title_zh": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
-        "title_en": null,
-        "title_original": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
-        "summary": "作者解读A16Z第七版《Top 100 消费级 AI 应用》和90多页的《市场状况 II》报告，指出美国近一半人用过AI但仅25%每天使用，ChatGPT、Gemini或Claude个人付费订阅率仅4.5%，标普500公司只有2%长期追踪AI价值指标。",
-        "recommend_reason_zh": null,
-        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686876&idx=1&sn=55c719c9dded44507dbd2a000a2ec5a7",
-        "source": "公众号：数字生命卡兹克",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7597,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
-      }
-    },
-    {
-      "story_id": "story_8250f00047d3",
-      "title": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布 / DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
-      "url": "https://x.com/arcprize/status/2107491194007585239",
-      "primary_url": "https://x.com/arcprize/status/2107491194007585239",
-      "source": "X：ARC Prize (@arcprize)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "ada926462a325cd9fc30810db5f960c8b658e641",
-          "title": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布 / DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
-          "title_zh": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布",
-          "title_en": "DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
-          "title_original": "DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
-          "summary": "ARC Prize 公布 DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 的成绩：ARC-AGI-2 得分 72.9%，每任务成本 $0.13；ARC-AGI-1 得分 94.5%，每任务成本 $0.07。相比 V4 Flash 的最佳成绩，ARC-AGI-1 高 5.5 分，ARC-AGI-2 高 11.5 分，但每任务成本高约 250%。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/arcprize/status/2107491194007585239",
-          "source": "X：ARC Prize (@arcprize)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T15:20:30Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：ARC Prize (@arcprize)"
-      ],
-      "items": [
-        {
-          "id": "ada926462a325cd9fc30810db5f960c8b658e641",
-          "title": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布 / DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
-          "title_zh": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布",
-          "title_en": "DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
-          "title_original": "DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
-          "summary": "ARC Prize 公布 DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 的成绩：ARC-AGI-2 得分 72.9%，每任务成本 $0.13；ARC-AGI-1 得分 94.5%，每任务成本 $0.07。相比 V4 Flash 的最佳成绩，ARC-AGI-1 高 5.5 分，ARC-AGI-2 高 11.5 分，但每任务成本高约 250%。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/arcprize/status/2107491194007585239",
-          "source": "X：ARC Prize (@arcprize)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T15:20:30Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7492,
-      "importance": 0.7492,
-      "importance_score": 0.7492,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.67,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9811,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-06T15:20:30Z",
-      "latest_at": "2026-10-06T15:20:30Z",
-      "primary_item": {
-        "id": "ada926462a325cd9fc30810db5f960c8b658e641",
-        "title": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布 / DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
-        "title_zh": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布",
-        "title_en": "DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
-        "title_original": "DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
-        "summary": "ARC Prize 公布 DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 的成绩：ARC-AGI-2 得分 72.9%，每任务成本 $0.13；ARC-AGI-1 得分 94.5%，每任务成本 $0.07。相比 V4 Flash 的最佳成绩，ARC-AGI-1 高 5.5 分，ARC-AGI-2 高 11.5 分，但每任务成本高约 250%。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/arcprize/status/2107491194007585239",
-        "source": "X：ARC Prize (@arcprize)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7492,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
-      }
-    },
-    {
-      "story_id": "story_9019cb276f9d",
-      "title": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测 / Mistral Large 4 by @MistralAI is now in the Arena!",
-      "url": "https://x.com/arena/status/2107476436223504484",
-      "primary_url": "https://x.com/arena/status/2107476436223504484",
-      "source": "X：Arena (@arena)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "bff3f1ce265e017e2e8c5d6372d84e46c5213079",
-          "title": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测 / Mistral Large 4 by @MistralAI is now in the Arena!",
-          "title_zh": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测",
-          "title_en": "Mistral Large 4 by @MistralAI is now in the Arena!",
-          "title_original": "Mistral Large 4 by @MistralAI is now in the Arena!",
-          "summary": "Arena 宣布 Mistral 的 Mistral Large 4 现已进入 Agent Arena，用户可前往测试投票，分数稍后公布。该模型为 1T 参数、49B 激活的原生多模态开放权重模型，也已在 Code Arena 的 WebDev、Text 和 Vision 中可用。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/arena/status/2107476436223504484",
-          "source": "X：Arena (@arena)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T14:21:52Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Arena (@arena)"
-      ],
-      "items": [
-        {
-          "id": "bff3f1ce265e017e2e8c5d6372d84e46c5213079",
-          "title": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测 / Mistral Large 4 by @MistralAI is now in the Arena!",
-          "title_zh": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测",
-          "title_en": "Mistral Large 4 by @MistralAI is now in the Arena!",
-          "title_original": "Mistral Large 4 by @MistralAI is now in the Arena!",
-          "summary": "Arena 宣布 Mistral 的 Mistral Large 4 现已进入 Agent Arena，用户可前往测试投票，分数稍后公布。该模型为 1T 参数、49B 激活的原生多模态开放权重模型，也已在 Code Arena 的 WebDev、Text 和 Vision 中可用。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/arena/status/2107476436223504484",
-          "source": "X：Arena (@arena)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T14:21:52Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7475,
-      "importance": 0.7475,
-      "importance_score": 0.7475,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.67,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9719,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-06T14:21:52Z",
-      "latest_at": "2026-10-06T14:21:52Z",
-      "primary_item": {
-        "id": "bff3f1ce265e017e2e8c5d6372d84e46c5213079",
-        "title": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测 / Mistral Large 4 by @MistralAI is now in the Arena!",
-        "title_zh": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测",
-        "title_en": "Mistral Large 4 by @MistralAI is now in the Arena!",
-        "title_original": "Mistral Large 4 by @MistralAI is now in the Arena!",
-        "summary": "Arena 宣布 Mistral 的 Mistral Large 4 现已进入 Agent Arena，用户可前往测试投票，分数稍后公布。该模型为 1T 参数、49B 激活的原生多模态开放权重模型，也已在 Code Arena 的 WebDev、Text 和 Vision 中可用。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/arena/status/2107476436223504484",
-        "source": "X：Arena (@arena)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7475,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
+        "scored_at": "2026-10-06T21:49:15.792314Z"
       }
     },
     {
@@ -1194,15 +1005,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.776,
-      "importance": 0.776,
-      "importance_score": 0.776,
+      "score": 0.7687,
+      "importance": 0.7687,
+      "importance_score": 0.7687,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9632,
+        "recency": 0.9229,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1230,7 +1041,590 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
+        "scored_at": "2026-10-06T21:49:15.792314Z"
+      }
+    },
+    {
+      "story_id": "story_e50a0152bcff",
+      "title": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付 / About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
+      "url": "https://x.com/rohanpaul_ai/status/2107346890648076595",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2107346890648076595",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "2747ef6e2e2821cdefdec11753d479ccf1559a95",
+          "title": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付 / About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
+          "title_zh": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付",
+          "title_en": "About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
+          "title_original": "About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
+          "summary": "Anthropic 计划未来数年在云计算和计算力上支出 5180 亿美元，其中约 4137 亿美元为不可撤销承诺，即使容量闲置也需支付，平均每年约 410 亿美元。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2107346890648076595",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T05:47:05Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "items": [
+        {
+          "id": "2747ef6e2e2821cdefdec11753d479ccf1559a95",
+          "title": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付 / About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
+          "title_zh": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付",
+          "title_en": "About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
+          "title_original": "About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
+          "summary": "Anthropic 计划未来数年在云计算和计算力上支出 5180 亿美元，其中约 4137 亿美元为不可撤销承诺，即使容量闲置也需支付，平均每年约 410 亿美元。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2107346890648076595",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T05:47:05Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7569,
+      "importance": 0.7569,
+      "importance_score": 0.7569,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.77,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8574,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-06T05:47:05Z",
+      "latest_at": "2026-10-06T05:47:05Z",
+      "primary_item": {
+        "id": "2747ef6e2e2821cdefdec11753d479ccf1559a95",
+        "title": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付 / About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
+        "title_zh": "Anthropic 5180亿美元计算力支出中约4137亿美元无论使用与否都需支付",
+        "title_en": "About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
+        "title_original": "About 80% of Anthropic's $518B compute plan is owed even if the capacity sits idle.",
+        "summary": "Anthropic 计划未来数年在云计算和计算力上支出 5180 亿美元，其中约 4137 亿美元为不可撤销承诺，即使容量闲置也需支付，平均每年约 410 亿美元。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/rohanpaul_ai/status/2107346890648076595",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7745,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-06T21:49:15.792314Z"
+      }
+    },
+    {
+      "story_id": "story_b9170f476686",
+      "title": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
+      "url": "https://x.com/Khazix0918/status/2107297777583825359",
+      "primary_url": "https://x.com/Khazix0918/status/2107297777583825359",
+      "source": "X：卡兹克 (@Khazix0918)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "c9a673d6e65e64c99d578906d5fd5117eed00424",
+          "title": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
+          "title_zh": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
+          "title_en": null,
+          "title_original": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
+          "summary": "作者解读 A16Z 第七版《Top 100 消费级 AI 应用》和 90 多页的《市场状况 II》报告，指出反常识数据。美国近一半人用过 AI 但只有 25% 每天在用，截至 2026 年 8 月仅 4.5% 有 ChatGPT、Gemini 或 Claude 个人付费订阅；付费用户中头部 1% 月均消费 903 美元、贡献 19.5% 的全部消费。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Khazix0918/status/2107297777583825359",
+          "source": "X：卡兹克 (@Khazix0918)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T02:31:56Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：卡兹克 (@Khazix0918)"
+      ],
+      "items": [
+        {
+          "id": "c9a673d6e65e64c99d578906d5fd5117eed00424",
+          "title": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
+          "title_zh": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
+          "title_en": null,
+          "title_original": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
+          "summary": "作者解读 A16Z 第七版《Top 100 消费级 AI 应用》和 90 多页的《市场状况 II》报告，指出反常识数据。美国近一半人用过 AI 但只有 25% 每天在用，截至 2026 年 8 月仅 4.5% 有 ChatGPT、Gemini 或 Claude 个人付费订阅；付费用户中头部 1% 月均消费 903 美元、贡献 19.5% 的全部消费。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/Khazix0918/status/2107297777583825359",
+          "source": "X：卡兹克 (@Khazix0918)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T02:31:56Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7372,
+      "importance": 0.7372,
+      "importance_score": 0.7372,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.831,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-06T02:31:56Z",
+      "latest_at": "2026-10-06T02:31:56Z",
+      "primary_item": {
+        "id": "c9a673d6e65e64c99d578906d5fd5117eed00424",
+        "title": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
+        "title_zh": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
+        "title_en": null,
+        "title_original": "卡兹克解读 A16Z 两份 AI 报告：AI 使用很广但用得还浅，头部 1% 用户月均花 903 美元",
+        "summary": "作者解读 A16Z 第七版《Top 100 消费级 AI 应用》和 90 多页的《市场状况 II》报告，指出反常识数据。美国近一半人用过 AI 但只有 25% 每天在用，截至 2026 年 8 月仅 4.5% 有 ChatGPT、Gemini 或 Claude 个人付费订阅；付费用户中头部 1% 月均消费 903 美元、贡献 19.5% 的全部消费。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/Khazix0918/status/2107297777583825359",
+        "source": "X：卡兹克 (@Khazix0918)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7665,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-06T21:49:15.792314Z"
+      }
+    },
+    {
+      "story_id": "story_651dc5458423",
+      "title": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+      "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+      "primary_url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+      "source": "Hacker News · 24h最热",
+      "source_name": "Zeli",
+      "sources": [
+        {
+          "id": "03b6147524e903c22cd2df034b994431b5c531a3",
+          "title": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+          "title_zh": null,
+          "title_en": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+          "title_original": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-10-06T07:29:50Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News · 24h最热"
+      ],
+      "items": [
+        {
+          "id": "03b6147524e903c22cd2df034b994431b5c531a3",
+          "title": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+          "title_zh": null,
+          "title_en": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+          "title_original": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-10-06T07:29:50Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.4977,
+      "importance": 0.4977,
+      "importance_score": 0.4977,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.8717,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-10-06T07:29:50Z",
+      "latest_at": "2026-10-06T07:29:50Z",
+      "primary_item": {
+        "id": "03b6147524e903c22cd2df034b994431b5c531a3",
+        "title": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+        "title_zh": null,
+        "title_en": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+        "title_original": "Anthropic Subscriptions Offer 5x+ More Value Than OpenAI",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x",
+        "source": "Hacker News · 24h最热",
+        "source_name": "Zeli"
+      },
+      "peak_score": 0.7598,
+      "persona_id": "pragmatic",
+      "persona_score": 0,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-06T21:49:15.792314Z"
+      }
+    },
+    {
+      "story_id": "story_874feeef6ecb",
+      "title": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686876&idx=1&sn=55c719c9dded44507dbd2a000a2ec5a7",
+      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686876&idx=1&sn=55c719c9dded44507dbd2a000a2ec5a7",
+      "source": "公众号：数字生命卡兹克",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "0c59abf680fe79a36ddbefdc88193c9be8071cdf",
+          "title": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
+          "title_zh": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
+          "title_en": null,
+          "title_original": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
+          "summary": "作者解读A16Z第七版《Top 100 消费级 AI 应用》和90多页的《市场状况 II》报告，指出美国近一半人用过AI但仅25%每天使用，ChatGPT、Gemini或Claude个人付费订阅率仅4.5%，标普500公司只有2%长期追踪AI价值指标。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686876&idx=1&sn=55c719c9dded44507dbd2a000a2ec5a7",
+          "source": "公众号：数字生命卡兹克",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T00:18:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "公众号：数字生命卡兹克"
+      ],
+      "items": [
+        {
+          "id": "0c59abf680fe79a36ddbefdc88193c9be8071cdf",
+          "title": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
+          "title_zh": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
+          "title_en": null,
+          "title_original": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
+          "summary": "作者解读A16Z第七版《Top 100 消费级 AI 应用》和90多页的《市场状况 II》报告，指出美国近一半人用过AI但仅25%每天使用，ChatGPT、Gemini或Claude个人付费订阅率仅4.5%，标普500公司只有2%长期追踪AI价值指标。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686876&idx=1&sn=55c719c9dded44507dbd2a000a2ec5a7",
+          "source": "公众号：数字生命卡兹克",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T00:18:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.731,
+      "importance": 0.731,
+      "importance_score": 0.731,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.71,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8133,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-06T00:18:00Z",
+      "latest_at": "2026-10-06T00:18:00Z",
+      "primary_item": {
+        "id": "0c59abf680fe79a36ddbefdc88193c9be8071cdf",
+        "title": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
+        "title_zh": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
+        "title_en": null,
+        "title_original": "卡兹克解读A16Z两份AI报告，AI使用广但付费和深度仍小众",
+        "summary": "作者解读A16Z第七版《Top 100 消费级 AI 应用》和90多页的《市场状况 II》报告，指出美国近一半人用过AI但仅25%每天使用，ChatGPT、Gemini或Claude个人付费订阅率仅4.5%，标普500公司只有2%长期追踪AI价值指标。",
+        "recommend_reason_zh": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686876&idx=1&sn=55c719c9dded44507dbd2a000a2ec5a7",
+        "source": "公众号：数字生命卡兹克",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7597,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-06T21:49:15.792314Z"
+      }
+    },
+    {
+      "story_id": "story_5951f365282f",
+      "title": "Claude for Google Workspace 开启 beta，可直接在 Docs、Sheets、Slides 中编辑 / Claude for Google Workspace™",
+      "url": "https://www.youtube.com/watch?v=idJQMJwHtyM",
+      "primary_url": "https://www.youtube.com/watch?v=idJQMJwHtyM",
+      "source": "Claude：YouTube（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "c540239301bf1b32a1c7a206dc6db87208c2c739",
+          "title": "Claude for Google Workspace 开启 beta，可直接在 Docs、Sheets、Slides 中编辑 / Claude for Google Workspace™",
+          "title_zh": "Claude for Google Workspace 开启 beta，可直接在 Docs、Sheets、Slides 中编辑",
+          "title_en": "Claude for Google Workspace™",
+          "title_original": "Claude for Google Workspace™",
+          "summary": "Claude 宣布推出 Claude for Google Workspace（beta），一次安装即可覆盖 Google Docs、Sheets 和 Slides。",
+          "recommend_reason_zh": null,
+          "url": "https://www.youtube.com/watch?v=idJQMJwHtyM",
+          "source": "Claude：YouTube（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T17:02:37Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Claude：YouTube（RSS）"
+      ],
+      "items": [
+        {
+          "id": "c540239301bf1b32a1c7a206dc6db87208c2c739",
+          "title": "Claude for Google Workspace 开启 beta，可直接在 Docs、Sheets、Slides 中编辑 / Claude for Google Workspace™",
+          "title_zh": "Claude for Google Workspace 开启 beta，可直接在 Docs、Sheets、Slides 中编辑",
+          "title_en": "Claude for Google Workspace™",
+          "title_original": "Claude for Google Workspace™",
+          "summary": "Claude 宣布推出 Claude for Google Workspace（beta），一次安装即可覆盖 Google Docs、Sheets 和 Slides。",
+          "recommend_reason_zh": null,
+          "url": "https://www.youtube.com/watch?v=idJQMJwHtyM",
+          "source": "Claude：YouTube（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T17:02:37Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7536,
+      "importance": 0.7536,
+      "importance_score": 0.7536,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.7,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9556,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-06T17:02:37Z",
+      "latest_at": "2026-10-06T17:02:37Z",
+      "primary_item": {
+        "id": "c540239301bf1b32a1c7a206dc6db87208c2c739",
+        "title": "Claude for Google Workspace 开启 beta，可直接在 Docs、Sheets、Slides 中编辑 / Claude for Google Workspace™",
+        "title_zh": "Claude for Google Workspace 开启 beta，可直接在 Docs、Sheets、Slides 中编辑",
+        "title_en": "Claude for Google Workspace™",
+        "title_original": "Claude for Google Workspace™",
+        "summary": "Claude 宣布推出 Claude for Google Workspace（beta），一次安装即可覆盖 Google Docs、Sheets 和 Slides。",
+        "recommend_reason_zh": null,
+        "url": "https://www.youtube.com/watch?v=idJQMJwHtyM",
+        "source": "Claude：YouTube（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7536,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-06T21:49:15.792314Z"
+      }
+    },
+    {
+      "story_id": "story_8250f00047d3",
+      "title": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布 / DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
+      "url": "https://x.com/arcprize/status/2107491194007585239",
+      "primary_url": "https://x.com/arcprize/status/2107491194007585239",
+      "source": "X：ARC Prize (@arcprize)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "ada926462a325cd9fc30810db5f960c8b658e641",
+          "title": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布 / DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
+          "title_zh": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布",
+          "title_en": "DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
+          "title_original": "DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
+          "summary": "ARC Prize 公布 DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 的成绩：ARC-AGI-2 得分 72.9%，每任务成本 $0.13；ARC-AGI-1 得分 94.5%，每任务成本 $0.07。相比 V4 Flash 的最佳成绩，ARC-AGI-1 高 5.5 分，ARC-AGI-2 高 11.5 分，但每任务成本高约 250%。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arcprize/status/2107491194007585239",
+          "source": "X：ARC Prize (@arcprize)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T15:20:30Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：ARC Prize (@arcprize)"
+      ],
+      "items": [
+        {
+          "id": "ada926462a325cd9fc30810db5f960c8b658e641",
+          "title": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布 / DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
+          "title_zh": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布",
+          "title_en": "DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
+          "title_original": "DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
+          "summary": "ARC Prize 公布 DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 的成绩：ARC-AGI-2 得分 72.9%，每任务成本 $0.13；ARC-AGI-1 得分 94.5%，每任务成本 $0.07。相比 V4 Flash 的最佳成绩，ARC-AGI-1 高 5.5 分，ARC-AGI-2 高 11.5 分，但每任务成本高约 250%。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arcprize/status/2107491194007585239",
+          "source": "X：ARC Prize (@arcprize)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T15:20:30Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7418,
+      "importance": 0.7418,
+      "importance_score": 0.7418,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.67,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9401,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-06T15:20:30Z",
+      "latest_at": "2026-10-06T15:20:30Z",
+      "primary_item": {
+        "id": "ada926462a325cd9fc30810db5f960c8b658e641",
+        "title": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布 / DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
+        "title_zh": "DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 评测中的成绩公布",
+        "title_en": "DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
+        "title_original": "DeepSeek V4.1 Flash from @deepseek_ai on ARC-AGI (Verified):",
+        "summary": "ARC Prize 公布 DeepSeek V4.1 Flash 在 ARC-AGI (Verified) 的成绩：ARC-AGI-2 得分 72.9%，每任务成本 $0.13；ARC-AGI-1 得分 94.5%，每任务成本 $0.07。相比 V4 Flash 的最佳成绩，ARC-AGI-1 高 5.5 分，ARC-AGI-2 高 11.5 分，但每任务成本高约 250%。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/arcprize/status/2107491194007585239",
+        "source": "X：ARC Prize (@arcprize)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7492,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-06T21:49:15.792314Z"
+      }
+    },
+    {
+      "story_id": "story_9019cb276f9d",
+      "title": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测 / Mistral Large 4 by @MistralAI is now in the Arena!",
+      "url": "https://x.com/arena/status/2107476436223504484",
+      "primary_url": "https://x.com/arena/status/2107476436223504484",
+      "source": "X：Arena (@arena)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "bff3f1ce265e017e2e8c5d6372d84e46c5213079",
+          "title": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测 / Mistral Large 4 by @MistralAI is now in the Arena!",
+          "title_zh": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测",
+          "title_en": "Mistral Large 4 by @MistralAI is now in the Arena!",
+          "title_original": "Mistral Large 4 by @MistralAI is now in the Arena!",
+          "summary": "Arena 宣布 Mistral 的 Mistral Large 4 现已进入 Agent Arena，用户可前往测试投票，分数稍后公布。该模型为 1T 参数、49B 激活的原生多模态开放权重模型，也已在 Code Arena 的 WebDev、Text 和 Vision 中可用。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2107476436223504484",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T14:21:52Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Arena (@arena)"
+      ],
+      "items": [
+        {
+          "id": "bff3f1ce265e017e2e8c5d6372d84e46c5213079",
+          "title": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测 / Mistral Large 4 by @MistralAI is now in the Arena!",
+          "title_zh": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测",
+          "title_en": "Mistral Large 4 by @MistralAI is now in the Arena!",
+          "title_original": "Mistral Large 4 by @MistralAI is now in the Arena!",
+          "summary": "Arena 宣布 Mistral 的 Mistral Large 4 现已进入 Agent Arena，用户可前往测试投票，分数稍后公布。该模型为 1T 参数、49B 激活的原生多模态开放权重模型，也已在 Code Arena 的 WebDev、Text 和 Vision 中可用。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2107476436223504484",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-06T14:21:52Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7402,
+      "importance": 0.7402,
+      "importance_score": 0.7402,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.67,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9313,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-06T14:21:52Z",
+      "latest_at": "2026-10-06T14:21:52Z",
+      "primary_item": {
+        "id": "bff3f1ce265e017e2e8c5d6372d84e46c5213079",
+        "title": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测 / Mistral Large 4 by @MistralAI is now in the Arena!",
+        "title_zh": "Mistral Large 4 上线 Arena 的 Agent Arena 与 Code Arena 评测",
+        "title_en": "Mistral Large 4 by @MistralAI is now in the Arena!",
+        "title_original": "Mistral Large 4 by @MistralAI is now in the Arena!",
+        "summary": "Arena 宣布 Mistral 的 Mistral Large 4 现已进入 Agent Arena，用户可前往测试投票，分数稍后公布。该模型为 1T 参数、49B 激活的原生多模态开放权重模型，也已在 Code Arena 的 WebDev、Text 和 Vision 中可用。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/arena/status/2107476436223504484",
+        "source": "X：Arena (@arena)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7475,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-06T21:49:15.792314Z"
       }
     },
     {
@@ -1278,15 +1672,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7318,
-      "importance": 0.7318,
-      "importance_score": 0.7318,
+      "score": 0.725,
+      "importance": 0.725,
+      "importance_score": 0.725,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9009,
+        "recency": 0.8632,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1313,257 +1707,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
-      }
-    },
-    {
-      "story_id": "story_a4b54cc613c1",
-      "title": "Google 发布 EmbeddingGemma 2：基于 Gemma 4 的开源多模态嵌入模型 / EmbeddingGemma 2: The Developer Guide",
-      "url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide",
-      "primary_url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide",
-      "source": "Google Developers Blog（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "267785fd4de90b59e251bb94fd2a030f86f4df98",
-          "title": "Google 发布 EmbeddingGemma 2：基于 Gemma 4 的开源多模态嵌入模型 / EmbeddingGemma 2: The Developer Guide",
-          "title_zh": "Google 发布 EmbeddingGemma 2：基于 Gemma 4 的开源多模态嵌入模型",
-          "title_en": "EmbeddingGemma 2: The Developer Guide",
-          "title_original": "EmbeddingGemma 2: The Developer Guide",
-          "summary": "Google 发布基于 Gemma 4 的开源嵌入模型 EmbeddingGemma 2，采用 Apache 2.0 许可，将文本、代码、图像、视频和音频映射到统一的 768 维向量空间，参数量从 270M（文本/代码）到 740M（全模态）按需加载。",
-          "recommend_reason_zh": null,
-          "url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide",
-          "source": "Google Developers Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Google Developers Blog（RSS）"
-      ],
-      "items": [
-        {
-          "id": "267785fd4de90b59e251bb94fd2a030f86f4df98",
-          "title": "Google 发布 EmbeddingGemma 2：基于 Gemma 4 的开源多模态嵌入模型 / EmbeddingGemma 2: The Developer Guide",
-          "title_zh": "Google 发布 EmbeddingGemma 2：基于 Gemma 4 的开源多模态嵌入模型",
-          "title_en": "EmbeddingGemma 2: The Developer Guide",
-          "title_original": "EmbeddingGemma 2: The Developer Guide",
-          "summary": "Google 发布基于 Gemma 4 的开源嵌入模型 EmbeddingGemma 2，采用 Apache 2.0 许可，将文本、代码、图像、视频和音频映射到统一的 768 维向量空间，参数量从 270M（文本/代码）到 740M（全模态）按需加载。",
-          "recommend_reason_zh": null,
-          "url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide",
-          "source": "Google Developers Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7704,
-      "importance": 0.7704,
-      "importance_score": 0.7704,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.66,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8464,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-06T00:00:00Z",
-      "latest_at": "2026-10-06T00:00:00Z",
-      "primary_item": {
-        "id": "267785fd4de90b59e251bb94fd2a030f86f4df98",
-        "title": "Google 发布 EmbeddingGemma 2：基于 Gemma 4 的开源多模态嵌入模型 / EmbeddingGemma 2: The Developer Guide",
-        "title_zh": "Google 发布 EmbeddingGemma 2：基于 Gemma 4 的开源多模态嵌入模型",
-        "title_en": "EmbeddingGemma 2: The Developer Guide",
-        "title_original": "EmbeddingGemma 2: The Developer Guide",
-        "summary": "Google 发布基于 Gemma 4 的开源嵌入模型 EmbeddingGemma 2，采用 Apache 2.0 许可，将文本、代码、图像、视频和音频映射到统一的 768 维向量空间，参数量从 270M（文本/代码）到 740M（全模态）按需加载。",
-        "recommend_reason_zh": null,
-        "url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide",
-        "source": "Google Developers Blog（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7704,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
-      }
-    },
-    {
-      "story_id": "story_549df6d3483f",
-      "title": "Anthropic Cowork 改为云端运行模型推理与 VM / Quoting Felix Rieseberg",
-      "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg",
-      "primary_url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg",
-      "source": "Simon Willison 博客",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "cb0cddb76e30c17e18f4721998588c248f390c4c",
-          "title": "Anthropic Cowork 改为云端运行模型推理与 VM / Quoting Felix Rieseberg",
-          "title_zh": "Anthropic Cowork 改为云端运行模型推理与 VM",
-          "title_en": "Quoting Felix Rieseberg",
-          "title_original": "Quoting Felix Rieseberg",
-          "summary": "Anthropic 工程师 Felix Rieseberg 说明 Cowork 的新旧架构差异：旧版在云端推理、在用户电脑上运行本地 VM，磁盘、电池和性能开销大，合上笔记本工作就停止。新版把模型推理和 VM 都移到云端，每个会话有独立沙盒，桌面应用只负责文件访问等需要本机设备的工具调用，官方认为这解决了手机使用、保持工作运行和电池消耗等问题。",
-          "recommend_reason_zh": null,
-          "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg",
-          "source": "Simon Willison 博客",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-05T23:56:47Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Simon Willison 博客"
-      ],
-      "items": [
-        {
-          "id": "cb0cddb76e30c17e18f4721998588c248f390c4c",
-          "title": "Anthropic Cowork 改为云端运行模型推理与 VM / Quoting Felix Rieseberg",
-          "title_zh": "Anthropic Cowork 改为云端运行模型推理与 VM",
-          "title_en": "Quoting Felix Rieseberg",
-          "title_original": "Quoting Felix Rieseberg",
-          "summary": "Anthropic 工程师 Felix Rieseberg 说明 Cowork 的新旧架构差异：旧版在云端推理、在用户电脑上运行本地 VM，磁盘、电池和性能开销大，合上笔记本工作就停止。新版把模型推理和 VM 都移到云端，每个会话有独立沙盒，桌面应用只负责文件访问等需要本机设备的工具调用，官方认为这解决了手机使用、保持工作运行和电池消耗等问题。",
-          "recommend_reason_zh": null,
-          "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg",
-          "source": "Simon Willison 博客",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-05T23:56:47Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7069,
-      "importance": 0.7069,
-      "importance_score": 0.7069,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.61,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.846,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-05T23:56:47Z",
-      "latest_at": "2026-10-05T23:56:47Z",
-      "primary_item": {
-        "id": "cb0cddb76e30c17e18f4721998588c248f390c4c",
-        "title": "Anthropic Cowork 改为云端运行模型推理与 VM / Quoting Felix Rieseberg",
-        "title_zh": "Anthropic Cowork 改为云端运行模型推理与 VM",
-        "title_en": "Quoting Felix Rieseberg",
-        "title_original": "Quoting Felix Rieseberg",
-        "summary": "Anthropic 工程师 Felix Rieseberg 说明 Cowork 的新旧架构差异：旧版在云端推理、在用户电脑上运行本地 VM，磁盘、电池和性能开销大，合上笔记本工作就停止。新版把模型推理和 VM 都移到云端，每个会话有独立沙盒，桌面应用只负责文件访问等需要本机设备的工具调用，官方认为这解决了手机使用、保持工作运行和电池消耗等问题。",
-        "recommend_reason_zh": null,
-        "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg",
-        "source": "Simon Willison 博客",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7291,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
-      }
-    },
-    {
-      "story_id": "story_fd4ef3e638ea",
-      "title": "Gemini Nano Banana 2.1 正式发布，gemini-3.1-flash-image 将于 2026 年 10 月 29 日停用 / October 6, 2026",
-      "url": "https://ai.google.dev/gemini-api/docs/changelog",
-      "primary_url": "https://ai.google.dev/gemini-api/docs/changelog",
-      "source": "Gemini API：更新日志（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "25ea24117151845b17d578a06485a6530691099f",
-          "title": "Gemini Nano Banana 2.1 正式发布，gemini-3.1-flash-image 将于 2026 年 10 月 29 日停用 / October 6, 2026",
-          "title_zh": "Gemini Nano Banana 2.1 正式发布，gemini-3.1-flash-image 将于 2026 年 10 月 29 日停用",
-          "title_en": "October 6, 2026",
-          "title_original": "October 6, 2026",
-          "summary": "Google 发布 Gemini Nano Banana 2.1（gemini-nano-banana-2.1），定位为高效图像生成与对话式编辑模型，是 Nano Banana 2（gemini-3.1-flash-image）的更新版。",
-          "recommend_reason_zh": null,
-          "url": "https://ai.google.dev/gemini-api/docs/changelog",
-          "source": "Gemini API：更新日志（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Gemini API：更新日志（网页）"
-      ],
-      "items": [
-        {
-          "id": "25ea24117151845b17d578a06485a6530691099f",
-          "title": "Gemini Nano Banana 2.1 正式发布，gemini-3.1-flash-image 将于 2026 年 10 月 29 日停用 / October 6, 2026",
-          "title_zh": "Gemini Nano Banana 2.1 正式发布，gemini-3.1-flash-image 将于 2026 年 10 月 29 日停用",
-          "title_en": "October 6, 2026",
-          "title_original": "October 6, 2026",
-          "summary": "Google 发布 Gemini Nano Banana 2.1（gemini-nano-banana-2.1），定位为高效图像生成与对话式编辑模型，是 Nano Banana 2（gemini-3.1-flash-image）的更新版。",
-          "recommend_reason_zh": null,
-          "url": "https://ai.google.dev/gemini-api/docs/changelog",
-          "source": "Gemini API：更新日志（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-06T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.728,
-      "importance": 0.728,
-      "importance_score": 0.728,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.68,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8464,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-06T00:00:00Z",
-      "latest_at": "2026-10-06T00:00:00Z",
-      "primary_item": {
-        "id": "25ea24117151845b17d578a06485a6530691099f",
-        "title": "Gemini Nano Banana 2.1 正式发布，gemini-3.1-flash-image 将于 2026 年 10 月 29 日停用 / October 6, 2026",
-        "title_zh": "Gemini Nano Banana 2.1 正式发布，gemini-3.1-flash-image 将于 2026 年 10 月 29 日停用",
-        "title_en": "October 6, 2026",
-        "title_original": "October 6, 2026",
-        "summary": "Google 发布 Gemini Nano Banana 2.1（gemini-nano-banana-2.1），定位为高效图像生成与对话式编辑模型，是 Nano Banana 2（gemini-3.1-flash-image）的更新版。",
-        "recommend_reason_zh": null,
-        "url": "https://ai.google.dev/gemini-api/docs/changelog",
-        "source": "Gemini API：更新日志（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.728,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-06T17:20:18.810394Z"
+        "scored_at": "2026-10-06T21:49:15.792314Z"
       }
     }
   ]
