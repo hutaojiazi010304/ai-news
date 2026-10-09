@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T22:15:00.446488Z",
+  "generated_at": "2026-10-09T02:20:49.097530Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8575,
-      "importance": 0.8575,
-      "importance_score": 0.8575,
+      "score": 0.8509,
+      "importance": 0.8509,
+      "importance_score": 0.8509,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.9416,
+        "recency": 0.9052,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,63 +85,63 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     },
     {
-      "story_id": "story_6d9b4cd327fa",
-      "title": "【AIHOT 通知】旧版接口 2026 年 10 月 31 日停用，推送机器人和脚本请尽快迁移 / AIHOT notice: the legacy API /api/public/* stops on 31 Oct 2026; bots and scripts should move to /api/v1",
-      "url": "https://aihot.news/agent?tab=api",
-      "primary_url": "https://aihot.news/agent?tab=api",
-      "source": "AIHOT",
+      "story_id": "story_a2fc4530694f",
+      "title": "Tibo 宣布发布 ChatGPT / Today, we are announcing ChatGPT.",
+      "url": "https://x.com/thsottiaux/status/2108349826727588000",
+      "primary_url": "https://x.com/thsottiaux/status/2108349826727588000",
+      "source": "X：Tibo (@thsottiaux)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "b23efb1ac1501010c365eae2e54ffb4cf0dda3dd",
-          "title": "【AIHOT 通知】旧版接口 2026 年 10 月 31 日停用，推送机器人和脚本请尽快迁移 / AIHOT notice: the legacy API /api/public/* stops on 31 Oct 2026; bots and scripts should move to /api/v1",
-          "title_zh": "【AIHOT 通知】旧版接口 2026 年 10 月 31 日停用，推送机器人和脚本请尽快迁移",
-          "title_en": "AIHOT notice: the legacy API /api/public/* stops on 31 Oct 2026; bots and scripts should move to /api/v1",
-          "title_original": "AIHOT notice: the legacy API /api/public/* stops on 31 Oct 2026; bots and scripts should move to /api/v1",
-          "summary": "这条消息来自 AIHOT 旧版接口 /api/public/*：它将于 2026 年 10 月 31 日停用，之后这里不会再有新资讯。如果它是群机器人或脚本推送来的，请转告维护的人把地址换成 https://aihot.news/api/v1，字段一一对应；迁移指南和可以直接交给 AI 改写代码的提示词见 https://aihot.news/agent?tab=api#legacy-api-migration 。同一天起旧域名 aihot.virxact.com 的所有地址都只跳转到 aihot.news，RSS、MCP 等地址也请换成新域名；收藏的网页链接照样能打开。",
+          "id": "2932e2401f6cc398ece20dd8e5b36639b029ba1d",
+          "title": "Tibo 宣布发布 ChatGPT / Today, we are announcing ChatGPT.",
+          "title_zh": "Tibo 宣布发布 ChatGPT",
+          "title_en": "Today, we are announcing ChatGPT.",
+          "title_original": "Today, we are announcing ChatGPT.",
+          "summary": "Tibo 宣布 ChatGPT 发布，并给出访问地址 https://chatgpt.com/。推文本身仅含发布声明和链接，未提供更多功能或细节。",
           "recommend_reason_zh": null,
-          "url": "https://aihot.news/agent?tab=api",
-          "source": "AIHOT",
+          "url": "https://x.com/thsottiaux/status/2108349826727588000",
+          "source": "X：Tibo (@thsottiaux)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-10-08T02:00:00Z"
+          "published_at": "2026-10-09T00:12:24Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "AIHOT"
+        "X：Tibo (@thsottiaux)"
       ],
       "items": [
         {
-          "id": "b23efb1ac1501010c365eae2e54ffb4cf0dda3dd",
-          "title": "【AIHOT 通知】旧版接口 2026 年 10 月 31 日停用，推送机器人和脚本请尽快迁移 / AIHOT notice: the legacy API /api/public/* stops on 31 Oct 2026; bots and scripts should move to /api/v1",
-          "title_zh": "【AIHOT 通知】旧版接口 2026 年 10 月 31 日停用，推送机器人和脚本请尽快迁移",
-          "title_en": "AIHOT notice: the legacy API /api/public/* stops on 31 Oct 2026; bots and scripts should move to /api/v1",
-          "title_original": "AIHOT notice: the legacy API /api/public/* stops on 31 Oct 2026; bots and scripts should move to /api/v1",
-          "summary": "这条消息来自 AIHOT 旧版接口 /api/public/*：它将于 2026 年 10 月 31 日停用，之后这里不会再有新资讯。如果它是群机器人或脚本推送来的，请转告维护的人把地址换成 https://aihot.news/api/v1，字段一一对应；迁移指南和可以直接交给 AI 改写代码的提示词见 https://aihot.news/agent?tab=api#legacy-api-migration 。同一天起旧域名 aihot.virxact.com 的所有地址都只跳转到 aihot.news，RSS、MCP 等地址也请换成新域名；收藏的网页链接照样能打开。",
+          "id": "2932e2401f6cc398ece20dd8e5b36639b029ba1d",
+          "title": "Tibo 宣布发布 ChatGPT / Today, we are announcing ChatGPT.",
+          "title_zh": "Tibo 宣布发布 ChatGPT",
+          "title_en": "Today, we are announcing ChatGPT.",
+          "title_original": "Today, we are announcing ChatGPT.",
+          "summary": "Tibo 宣布 ChatGPT 发布，并给出访问地址 https://chatgpt.com/。推文本身仅含发布声明和链接，未提供更多功能或细节。",
           "recommend_reason_zh": null,
-          "url": "https://aihot.news/agent?tab=api",
-          "source": "AIHOT",
+          "url": "https://x.com/thsottiaux/status/2108349826727588000",
+          "source": "X：Tibo (@thsottiaux)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-10-08T02:00:00Z"
+          "published_at": "2026-10-09T00:12:24Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8197,
-      "importance": 0.8197,
-      "importance_score": 0.8197,
+      "score": 0.8299,
+      "importance": 0.8299,
+      "importance_score": 0.8299,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 1.0,
+        "editorial": 0.94,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8229,
+        "recency": 0.9796,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -150,130 +150,45 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-10-08T02:00:00Z",
-      "latest_at": "2026-10-08T02:00:00Z",
+      "earliest_at": "2026-10-09T00:12:24Z",
+      "latest_at": "2026-10-09T00:12:24Z",
       "primary_item": {
-        "id": "b23efb1ac1501010c365eae2e54ffb4cf0dda3dd",
-        "title": "【AIHOT 通知】旧版接口 2026 年 10 月 31 日停用，推送机器人和脚本请尽快迁移 / AIHOT notice: the legacy API /api/public/* stops on 31 Oct 2026; bots and scripts should move to /api/v1",
-        "title_zh": "【AIHOT 通知】旧版接口 2026 年 10 月 31 日停用，推送机器人和脚本请尽快迁移",
-        "title_en": "AIHOT notice: the legacy API /api/public/* stops on 31 Oct 2026; bots and scripts should move to /api/v1",
-        "title_original": "AIHOT notice: the legacy API /api/public/* stops on 31 Oct 2026; bots and scripts should move to /api/v1",
-        "summary": "这条消息来自 AIHOT 旧版接口 /api/public/*：它将于 2026 年 10 月 31 日停用，之后这里不会再有新资讯。如果它是群机器人或脚本推送来的，请转告维护的人把地址换成 https://aihot.news/api/v1，字段一一对应；迁移指南和可以直接交给 AI 改写代码的提示词见 https://aihot.news/agent?tab=api#legacy-api-migration 。同一天起旧域名 aihot.virxact.com 的所有地址都只跳转到 aihot.news，RSS、MCP 等地址也请换成新域名；收藏的网页链接照样能打开。",
+        "id": "2932e2401f6cc398ece20dd8e5b36639b029ba1d",
+        "title": "Tibo 宣布发布 ChatGPT / Today, we are announcing ChatGPT.",
+        "title_zh": "Tibo 宣布发布 ChatGPT",
+        "title_en": "Today, we are announcing ChatGPT.",
+        "title_original": "Today, we are announcing ChatGPT.",
+        "summary": "Tibo 宣布 ChatGPT 发布，并给出访问地址 https://chatgpt.com/。推文本身仅含发布声明和链接，未提供更多功能或细节。",
         "recommend_reason_zh": null,
-        "url": "https://aihot.news/agent?tab=api",
-        "source": "AIHOT",
+        "url": "https://x.com/thsottiaux/status/2108349826727588000",
+        "source": "X：Tibo (@thsottiaux)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.8514,
+      "peak_score": 0.8299,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     },
     {
-      "story_id": "story_d783a04fd0f6",
-      "title": "GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work",
-      "url": "https://developers.openai.com/codex/changelog",
-      "primary_url": "https://developers.openai.com/codex/changelog",
-      "source": "OpenAI Codex Changelog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "ea853af1899fb409377ae777f6ac3a71ef793f5f",
-          "title": "GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work",
-          "title_zh": null,
-          "title_en": "GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work",
-          "title_original": "GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-08T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI Codex Changelog"
-      ],
-      "items": [
-        {
-          "id": "ea853af1899fb409377ae777f6ac3a71ef793f5f",
-          "title": "GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work",
-          "title_zh": null,
-          "title_en": "GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work",
-          "title_original": "GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://developers.openai.com/codex/changelog",
-          "source": "OpenAI Codex Changelog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-08T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8353,
-      "importance": 0.8353,
-      "importance_score": 0.8353,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8072,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-08T00:00:00Z",
-      "latest_at": "2026-10-08T00:00:00Z",
-      "primary_item": {
-        "id": "ea853af1899fb409377ae777f6ac3a71ef793f5f",
-        "title": "GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work",
-        "title_zh": null,
-        "title_en": "GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work",
-        "title_original": "GPT-6.1 Sol Ultrafast in Codex and ChatGPT Work",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://developers.openai.com/codex/changelog",
-        "source": "OpenAI Codex Changelog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8353,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
-      }
-    },
-    {
-      "story_id": "story_e323adeab1da",
-      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-      "url": "https://openai.com/index/pollo-ai",
-      "primary_url": "https://openai.com/index/pollo-ai",
+      "story_id": "story_65da7bfcfb81",
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "url": "https://openai.com/index/legalon-halves-codex-costs",
+      "primary_url": "https://openai.com/index/legalon-halves-codex-costs",
       "source": "OpenAI News",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "e441138912907d022d550626c930aa4e578bbe9e",
-          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "id": "c82b1c3e2ed0606a2553d5612d2e5494dcf4136e",
+          "title": "LegalOn halves Codex costs while maintaining development speed",
           "title_zh": null,
-          "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "title_original": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+          "title_en": "LegalOn halves Codex costs while maintaining development speed",
+          "title_original": "LegalOn halves Codex costs while maintaining development speed",
+          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/pollo-ai",
+          "url": "https://openai.com/index/legalon-halves-codex-costs",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
@@ -286,14 +201,14 @@
       ],
       "items": [
         {
-          "id": "e441138912907d022d550626c930aa4e578bbe9e",
-          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "id": "c82b1c3e2ed0606a2553d5612d2e5494dcf4136e",
+          "title": "LegalOn halves Codex costs while maintaining development speed",
           "title_zh": null,
-          "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "title_original": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+          "title_en": "LegalOn halves Codex costs while maintaining development speed",
+          "title_original": "LegalOn halves Codex costs while maintaining development speed",
+          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/pollo-ai",
+          "url": "https://openai.com/index/legalon-halves-codex-costs",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
@@ -302,15 +217,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8351,
-      "importance": 0.8351,
-      "importance_score": 0.8351,
+      "score": 0.8368,
+      "importance": 0.8368,
+      "importance_score": 0.8368,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.906,
+        "ai_relevance": 0.95,
+        "recency": 0.871,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -323,166 +238,23 @@
       "earliest_at": "2026-10-08T12:00:00Z",
       "latest_at": "2026-10-08T12:00:00Z",
       "primary_item": {
-        "id": "e441138912907d022d550626c930aa4e578bbe9e",
-        "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+        "id": "c82b1c3e2ed0606a2553d5612d2e5494dcf4136e",
+        "title": "LegalOn halves Codex costs while maintaining development speed",
         "title_zh": null,
-        "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
-        "title_original": "Pollo AI turns creative ideas into campaigns with OpenAI",
-        "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+        "title_en": "LegalOn halves Codex costs while maintaining development speed",
+        "title_original": "LegalOn halves Codex costs while maintaining development speed",
+        "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/pollo-ai",
+        "url": "https://openai.com/index/legalon-halves-codex-costs",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8351,
+      "peak_score": 0.8368,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
-      }
-    },
-    {
-      "story_id": "story_aab4210bc456",
-      "title": "ts-rust 发布：由 LLM 将 TypeScript 编译器、检查器和 LSP 移植到 Rust / Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-      "url": "https://github.com/pingdotgg/ts-rust",
-      "primary_url": "https://github.com/pingdotgg/ts-rust",
-      "source": "Hacker News：AI 热帖",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "ee9f97b75a4c7f8f29d61a2e00f792dd566eba39",
-          "title": "ts-rust 发布：由 LLM 将 TypeScript 编译器、检查器和 LSP 移植到 Rust / Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-          "title_zh": "ts-rust 发布：由 LLM 将 TypeScript 编译器、检查器和 LSP 移植到 Rust",
-          "title_en": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-          "title_original": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-          "summary": "ts-rust（tsc-rs）将 microsoft/TypeScript（Go 实现）的编译器、类型检查器和语言服务器移植为 Rust，作者称全部代码由 LLM 编写，本人未读过代码。",
-          "recommend_reason_zh": null,
-          "url": "https://github.com/pingdotgg/ts-rust",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T00:46:00Z"
-        },
-        {
-          "id": "92e39962b69fce526a3efa8aef5691293351510e",
-          "title": "LLM 实现的 TypeScript 编译器、检查器和 lsp 的 Rust 移植版",
-          "title_zh": "LLM 实现的 TypeScript 编译器、检查器和 lsp 的 Rust 移植版",
-          "title_en": null,
-          "title_original": "LLM 实现的 TypeScript 编译器、检查器和 lsp 的 Rust 移植版",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/pingdotgg/ts-rust",
-          "source": "github.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-10-08T17:20:58.677000Z"
-        },
-        {
-          "id": "04627e66e15067a56b5e98096400348798f5e9e1",
-          "title": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-          "title_zh": null,
-          "title_en": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-          "title_original": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=50000676",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-10-08T00:46:00Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Hacker News：AI 热帖",
-        "github.com",
-        "hackernews"
-      ],
-      "items": [
-        {
-          "id": "ee9f97b75a4c7f8f29d61a2e00f792dd566eba39",
-          "title": "ts-rust 发布：由 LLM 将 TypeScript 编译器、检查器和 LSP 移植到 Rust / Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-          "title_zh": "ts-rust 发布：由 LLM 将 TypeScript 编译器、检查器和 LSP 移植到 Rust",
-          "title_en": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-          "title_original": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-          "summary": "ts-rust（tsc-rs）将 microsoft/TypeScript（Go 实现）的编译器、类型检查器和语言服务器移植为 Rust，作者称全部代码由 LLM 编写，本人未读过代码。",
-          "recommend_reason_zh": null,
-          "url": "https://github.com/pingdotgg/ts-rust",
-          "source": "Hacker News：AI 热帖",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T00:46:00Z"
-        },
-        {
-          "id": "92e39962b69fce526a3efa8aef5691293351510e",
-          "title": "LLM 实现的 TypeScript 编译器、检查器和 lsp 的 Rust 移植版",
-          "title_zh": "LLM 实现的 TypeScript 编译器、检查器和 lsp 的 Rust 移植版",
-          "title_en": null,
-          "title_original": "LLM 实现的 TypeScript 编译器、检查器和 lsp 的 Rust 移植版",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/pingdotgg/ts-rust",
-          "source": "github.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-10-08T17:20:58.677000Z"
-        },
-        {
-          "id": "04627e66e15067a56b5e98096400348798f5e9e1",
-          "title": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-          "title_zh": null,
-          "title_en": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-          "title_original": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=50000676",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-10-08T00:46:00Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.771,
-      "importance": 0.771,
-      "importance_score": 0.771,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.76,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8132,
-        "story_heat": 0.25,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "multi_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-08T00:46:00Z",
-      "latest_at": "2026-10-08T17:20:58.677000Z",
-      "primary_item": {
-        "id": "ee9f97b75a4c7f8f29d61a2e00f792dd566eba39",
-        "title": "ts-rust 发布：由 LLM 将 TypeScript 编译器、检查器和 LSP 移植到 Rust / Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-        "title_zh": "ts-rust 发布：由 LLM 将 TypeScript 编译器、检查器和 LSP 移植到 Rust",
-        "title_en": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-        "title_original": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
-        "summary": "ts-rust（tsc-rs）将 microsoft/TypeScript（Go 实现）的编译器、类型检查器和语言服务器移植为 Rust，作者称全部代码由 LLM 编写，本人未读过代码。",
-        "recommend_reason_zh": null,
-        "url": "https://github.com/pingdotgg/ts-rust",
-        "source": "Hacker News：AI 热帖",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7905,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     },
     {
@@ -530,15 +302,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7879,
-      "importance": 0.7879,
-      "importance_score": 0.7879,
+      "score": 0.7812,
+      "importance": 0.7812,
+      "importance_score": 0.7812,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9625,
+        "recency": 0.9253,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -566,7 +338,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     },
     {
@@ -614,15 +386,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7731,
-      "importance": 0.7731,
-      "importance_score": 0.7731,
+      "score": 0.7665,
+      "importance": 0.7665,
+      "importance_score": 0.7665,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.61,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9448,
+        "recency": 0.9083,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -650,198 +422,199 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     },
     {
-      "story_id": "story_83dbcc6ade74",
-      "title": "Claude 推出 Dashboards 实时仪表盘与 Motion 动画讲解功能 / Build live dashboards and animate explainers with Claude",
-      "url": "https://claude.com/blog/dashboards-and-motion",
-      "primary_url": "https://claude.com/blog/dashboards-and-motion",
-      "source": "Claude：Blog（网页）",
+      "story_id": "story_b5381d350d88",
+      "title": "OpenAI 年化营收被曝接近 500 亿美元，与此前预期差距约 200 亿美元",
+      "url": "https://www.ithome.com/1/010/751.htm",
+      "primary_url": "https://www.ithome.com/1/010/751.htm",
+      "source": "IT之家·人工智能",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "65cbbdc13cb844503a58636e6bcc6eb346462a53",
-          "title": "Claude 推出 Dashboards 实时仪表盘与 Motion 动画讲解功能 / Build live dashboards and animate explainers with Claude",
-          "title_zh": "Claude 推出 Dashboards 实时仪表盘与 Motion 动画讲解功能",
-          "title_en": "Build live dashboards and animate explainers with Claude",
-          "title_original": "Build live dashboards and animate explainers with Claude",
-          "summary": "Anthropic 发布 Claude Dashboards 和 Claude Motion 两项 beta 功能。",
+          "id": "67c26722df40bfae1ce6f077d6d26fd5d2e21d60",
+          "title": "OpenAI 年化营收被曝接近 500 亿美元，与此前预期差距约 200 亿美元",
+          "title_zh": "OpenAI 年化营收被曝接近 500 亿美元，与此前预期差距约 200 亿美元",
+          "title_en": null,
+          "title_original": "OpenAI 年化营收被曝接近 500 亿美元，与此前预期差距约 200 亿美元",
+          "summary": "据金融时报报道，OpenAI 向投资者披露截至 9 月底年化营收逼近 500 亿美元，大幅低于此前外界估算的 700 亿美元，缺口约 200 亿美元。差异源于统计口径不同，Anthropic 计入 AWS 和谷歌云等合作方销售收入，而 OpenAI 剔除该部分。报道发布后美股科技股下跌，纳斯达克 100 指数收跌 1.4%，英伟达跌 2.9%，甲骨文跌 5.5%。",
           "recommend_reason_zh": null,
-          "url": "https://claude.com/blog/dashboards-and-motion",
-          "source": "Claude：Blog（网页）",
+          "url": "https://www.ithome.com/1/010/751.htm",
+          "source": "IT之家·人工智能",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-10-08T00:00:00Z"
+          "published_at": "2026-10-08T23:02:44.683000Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Claude：Blog（网页）"
+        "IT之家·人工智能"
       ],
       "items": [
         {
-          "id": "65cbbdc13cb844503a58636e6bcc6eb346462a53",
-          "title": "Claude 推出 Dashboards 实时仪表盘与 Motion 动画讲解功能 / Build live dashboards and animate explainers with Claude",
-          "title_zh": "Claude 推出 Dashboards 实时仪表盘与 Motion 动画讲解功能",
-          "title_en": "Build live dashboards and animate explainers with Claude",
-          "title_original": "Build live dashboards and animate explainers with Claude",
-          "summary": "Anthropic 发布 Claude Dashboards 和 Claude Motion 两项 beta 功能。",
+          "id": "67c26722df40bfae1ce6f077d6d26fd5d2e21d60",
+          "title": "OpenAI 年化营收被曝接近 500 亿美元，与此前预期差距约 200 亿美元",
+          "title_zh": "OpenAI 年化营收被曝接近 500 亿美元，与此前预期差距约 200 亿美元",
+          "title_en": null,
+          "title_original": "OpenAI 年化营收被曝接近 500 亿美元，与此前预期差距约 200 亿美元",
+          "summary": "据金融时报报道，OpenAI 向投资者披露截至 9 月底年化营收逼近 500 亿美元，大幅低于此前外界估算的 700 亿美元，缺口约 200 亿美元。差异源于统计口径不同，Anthropic 计入 AWS 和谷歌云等合作方销售收入，而 OpenAI 剔除该部分。报道发布后美股科技股下跌，纳斯达克 100 指数收跌 1.4%，英伟达跌 2.9%，甲骨文跌 5.5%。",
           "recommend_reason_zh": null,
-          "url": "https://claude.com/blog/dashboards-and-motion",
-          "source": "Claude：Blog（网页）",
+          "url": "https://www.ithome.com/1/010/751.htm",
+          "source": "IT之家·人工智能",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-10-08T00:00:00Z"
+          "published_at": "2026-10-08T23:02:44.683000Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7783,
-      "importance": 0.7783,
-      "importance_score": 0.7783,
+      "score": 0.78,
+      "importance": 0.78,
+      "importance_score": 0.78,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9687,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-08T23:02:44.683000Z",
+      "latest_at": "2026-10-08T23:02:44.683000Z",
+      "primary_item": {
+        "id": "67c26722df40bfae1ce6f077d6d26fd5d2e21d60",
+        "title": "OpenAI 年化营收被曝接近 500 亿美元，与此前预期差距约 200 亿美元",
+        "title_zh": "OpenAI 年化营收被曝接近 500 亿美元，与此前预期差距约 200 亿美元",
+        "title_en": null,
+        "title_original": "OpenAI 年化营收被曝接近 500 亿美元，与此前预期差距约 200 亿美元",
+        "summary": "据金融时报报道，OpenAI 向投资者披露截至 9 月底年化营收逼近 500 亿美元，大幅低于此前外界估算的 700 亿美元，缺口约 200 亿美元。差异源于统计口径不同，Anthropic 计入 AWS 和谷歌云等合作方销售收入，而 OpenAI 剔除该部分。报道发布后美股科技股下跌，纳斯达克 100 指数收跌 1.4%，英伟达跌 2.9%，甲骨文跌 5.5%。",
+        "recommend_reason_zh": null,
+        "url": "https://www.ithome.com/1/010/751.htm",
+        "source": "IT之家·人工智能",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.78,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-09T02:21:45.364774Z"
+      }
+    },
+    {
+      "story_id": "story_e323adeab1da",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "url": "https://openai.com/index/pollo-ai",
+      "primary_url": "https://openai.com/index/pollo-ai",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "e441138912907d022d550626c930aa4e578bbe9e",
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "title_zh": null,
+          "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "title_original": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/pollo-ai",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-08T12:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "e441138912907d022d550626c930aa4e578bbe9e",
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "title_zh": null,
+          "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "title_original": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/pollo-ai",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-08T12:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8288,
+      "importance": 0.8288,
+      "importance_score": 0.8288,
       "importance_label": "官方更新",
       "importance_breakdown": {
-        "editorial": 0.71,
+        "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8072,
+        "ai_relevance": 0.91,
+        "recency": 0.871,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "official",
       "reasons": [
+        "official_source",
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-10-08T00:00:00Z",
-      "latest_at": "2026-10-08T00:00:00Z",
+      "earliest_at": "2026-10-08T12:00:00Z",
+      "latest_at": "2026-10-08T12:00:00Z",
       "primary_item": {
-        "id": "65cbbdc13cb844503a58636e6bcc6eb346462a53",
-        "title": "Claude 推出 Dashboards 实时仪表盘与 Motion 动画讲解功能 / Build live dashboards and animate explainers with Claude",
-        "title_zh": "Claude 推出 Dashboards 实时仪表盘与 Motion 动画讲解功能",
-        "title_en": "Build live dashboards and animate explainers with Claude",
-        "title_original": "Build live dashboards and animate explainers with Claude",
-        "summary": "Anthropic 发布 Claude Dashboards 和 Claude Motion 两项 beta 功能。",
+        "id": "e441138912907d022d550626c930aa4e578bbe9e",
+        "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+        "title_zh": null,
+        "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
+        "title_original": "Pollo AI turns creative ideas into campaigns with OpenAI",
+        "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
         "recommend_reason_zh": null,
-        "url": "https://claude.com/blog/dashboards-and-motion",
-        "source": "Claude：Blog（网页）",
-        "source_name": "AI HOT"
+        "url": "https://openai.com/index/pollo-ai",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
       },
-      "peak_score": 0.7783,
+      "peak_score": 0.8351,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     },
     {
-      "story_id": "story_4c6f4f6c7de5",
-      "title": "Google 开源 ML Drift 端侧 GPU 推理引擎，接替 TFLite GPU delegate / ML Drift: Next-Gen GPU AI/ML Inference at the Edge",
-      "url": "https://developers.googleblog.com/ml-drift-next-gen-gpu-aiml-inference-at-the-edge",
-      "primary_url": "https://developers.googleblog.com/ml-drift-next-gen-gpu-aiml-inference-at-the-edge",
-      "source": "Google Developers Blog（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "d56b240e3772447a4090c25d9e6bd432e89bed94",
-          "title": "Google 开源 ML Drift 端侧 GPU 推理引擎，接替 TFLite GPU delegate / ML Drift: Next-Gen GPU AI/ML Inference at the Edge",
-          "title_zh": "Google 开源 ML Drift 端侧 GPU 推理引擎，接替 TFLite GPU delegate",
-          "title_en": "ML Drift: Next-Gen GPU AI/ML Inference at the Edge",
-          "title_original": "ML Drift: Next-Gen GPU AI/ML Inference at the Edge",
-          "summary": "Google AI Edge 团队以 Apache 2.0 许可开源 ML Drift，一个跨平台端侧 GPU 推理计算引擎，作为 LiteRT 的核心 GPU 加速层。",
-          "recommend_reason_zh": null,
-          "url": "https://developers.googleblog.com/ml-drift-next-gen-gpu-aiml-inference-at-the-edge",
-          "source": "Google Developers Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Google Developers Blog（RSS）"
-      ],
-      "items": [
-        {
-          "id": "d56b240e3772447a4090c25d9e6bd432e89bed94",
-          "title": "Google 开源 ML Drift 端侧 GPU 推理引擎，接替 TFLite GPU delegate / ML Drift: Next-Gen GPU AI/ML Inference at the Edge",
-          "title_zh": "Google 开源 ML Drift 端侧 GPU 推理引擎，接替 TFLite GPU delegate",
-          "title_en": "ML Drift: Next-Gen GPU AI/ML Inference at the Edge",
-          "title_original": "ML Drift: Next-Gen GPU AI/ML Inference at the Edge",
-          "summary": "Google AI Edge 团队以 Apache 2.0 许可开源 ML Drift，一个跨平台端侧 GPU 推理计算引擎，作为 LiteRT 的核心 GPU 加速层。",
-          "recommend_reason_zh": null,
-          "url": "https://developers.googleblog.com/ml-drift-next-gen-gpu-aiml-inference-at-the-edge",
-          "source": "Google Developers Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7753,
-      "importance": 0.7753,
-      "importance_score": 0.7753,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.7,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8072,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-08T00:00:00Z",
-      "latest_at": "2026-10-08T00:00:00Z",
-      "primary_item": {
-        "id": "d56b240e3772447a4090c25d9e6bd432e89bed94",
-        "title": "Google 开源 ML Drift 端侧 GPU 推理引擎，接替 TFLite GPU delegate / ML Drift: Next-Gen GPU AI/ML Inference at the Edge",
-        "title_zh": "Google 开源 ML Drift 端侧 GPU 推理引擎，接替 TFLite GPU delegate",
-        "title_en": "ML Drift: Next-Gen GPU AI/ML Inference at the Edge",
-        "title_original": "ML Drift: Next-Gen GPU AI/ML Inference at the Edge",
-        "summary": "Google AI Edge 团队以 Apache 2.0 许可开源 ML Drift，一个跨平台端侧 GPU 推理计算引擎，作为 LiteRT 的核心 GPU 加速层。",
-        "recommend_reason_zh": null,
-        "url": "https://developers.googleblog.com/ml-drift-next-gen-gpu-aiml-inference-at-the-edge",
-        "source": "Google Developers Blog（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7753,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
-      }
-    },
-    {
-      "story_id": "story_29062dc24e23",
-      "title": "AI 算力需求强劲！博通计划筹集数百亿美元支持 OpenAI 芯片项目",
-      "url": "https://www.aibase.com/news/31457",
-      "primary_url": "https://www.aibase.com/news/31457",
+      "story_id": "story_49504079de8a",
+      "title": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
+      "url": "https://www.aibase.com/news/31481",
+      "primary_url": "https://www.aibase.com/news/31481",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "6f3dd77daab119c6e7730f6fee19c2a9b46c667e",
-          "title": "AI 算力需求强劲！博通计划筹集数百亿美元支持 OpenAI 芯片项目",
-          "title_zh": "AI 算力需求强劲！博通计划筹集数百亿美元支持 OpenAI 芯片项目",
+          "id": "5674e3e9952fa3e1d72b64c7b394cabc19a00317",
+          "title": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
+          "title_zh": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
           "title_en": null,
-          "title_original": "AI 算力需求强劲！博通计划筹集数百亿美元支持 OpenAI 芯片项目",
+          "title_original": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31457",
+          "url": "https://www.aibase.com/news/31481",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-08T02:07:29.275435Z"
+          "published_at": "2026-10-09T02:20:49.097530Z"
         }
       ],
       "source_count": 1,
@@ -850,49 +623,50 @@
       ],
       "items": [
         {
-          "id": "6f3dd77daab119c6e7730f6fee19c2a9b46c667e",
-          "title": "AI 算力需求强劲！博通计划筹集数百亿美元支持 OpenAI 芯片项目",
-          "title_zh": "AI 算力需求强劲！博通计划筹集数百亿美元支持 OpenAI 芯片项目",
+          "id": "5674e3e9952fa3e1d72b64c7b394cabc19a00317",
+          "title": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
+          "title_zh": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
           "title_en": null,
-          "title_original": "AI 算力需求强劲！博通计划筹集数百亿美元支持 OpenAI 芯片项目",
+          "title_original": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31457",
+          "url": "https://www.aibase.com/news/31481",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-08T02:07:29.275435Z"
+          "published_at": "2026-10-09T02:20:49.097530Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7359,
-      "importance": 0.7359,
-      "importance_score": 0.7359,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8239,
+        "recency": 1.0,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-10-08T02:07:29.275435Z",
-      "latest_at": "2026-10-08T02:07:29.275435Z",
+      "earliest_at": "2026-10-09T02:20:49.097530Z",
+      "latest_at": "2026-10-09T02:20:49.097530Z",
       "primary_item": {
-        "id": "6f3dd77daab119c6e7730f6fee19c2a9b46c667e",
-        "title": "AI 算力需求强劲！博通计划筹集数百亿美元支持 OpenAI 芯片项目",
-        "title_zh": "AI 算力需求强劲！博通计划筹集数百亿美元支持 OpenAI 芯片项目",
+        "id": "5674e3e9952fa3e1d72b64c7b394cabc19a00317",
+        "title": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
+        "title_zh": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
         "title_en": null,
-        "title_original": "AI 算力需求强劲！博通计划筹集数百亿美元支持 OpenAI 芯片项目",
+        "title_original": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31457",
+        "url": "https://www.aibase.com/news/31481",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -901,7 +675,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     },
     {
@@ -949,15 +723,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7673,
-      "importance": 0.7673,
-      "importance_score": 0.7673,
+      "score": 0.7607,
+      "importance": 0.7607,
+      "importance_score": 0.7607,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9481,
+        "recency": 0.9114,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -985,175 +759,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
-      }
-    },
-    {
-      "story_id": "story_610b177702ad",
-      "title": "OpenAI 封禁俄罗斯与伊朗两个利用 ChatGPT 开展虚假前臆影响行动的账号集群 / Disrupting AI-enabled “false front” operations",
-      "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
-      "primary_url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "595f5594a8cd13b83071f2d99b296e326515563a",
-          "title": "OpenAI 封禁俄罗斯与伊朗两个利用 ChatGPT 开展虚假前臆影响行动的账号集群 / Disrupting AI-enabled “false front” operations",
-          "title_zh": "OpenAI 封禁俄罗斯与伊朗两个利用 ChatGPT 开展虚假前臆影响行动的账号集群",
-          "title_en": "Disrupting AI-enabled “false front” operations",
-          "title_original": "Disrupting AI-enabled “false front” operations",
-          "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-08T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "595f5594a8cd13b83071f2d99b296e326515563a",
-          "title": "OpenAI 封禁俄罗斯与伊朗两个利用 ChatGPT 开展虚假前臆影响行动的账号集群 / Disrupting AI-enabled “false front” operations",
-          "title_zh": "OpenAI 封禁俄罗斯与伊朗两个利用 ChatGPT 开展虚假前臆影响行动的账号集群",
-          "title_en": "Disrupting AI-enabled “false front” operations",
-          "title_original": "Disrupting AI-enabled “false front” operations",
-          "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-08T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8173,
-      "importance": 0.8173,
-      "importance_score": 0.8173,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8072,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-08T00:00:00Z",
-      "latest_at": "2026-10-08T00:00:00Z",
-      "primary_item": {
-        "id": "595f5594a8cd13b83071f2d99b296e326515563a",
-        "title": "OpenAI 封禁俄罗斯与伊朗两个利用 ChatGPT 开展虚假前臆影响行动的账号集群 / Disrupting AI-enabled “false front” operations",
-        "title_zh": "OpenAI 封禁俄罗斯与伊朗两个利用 ChatGPT 开展虚假前臆影响行动的账号集群",
-        "title_en": "Disrupting AI-enabled “false front” operations",
-        "title_original": "Disrupting AI-enabled “false front” operations",
-        "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8253,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
-      }
-    },
-    {
-      "story_id": "story_77071f8577b9",
-      "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账 / Confirmed landed across all accounts. How are we doing so far?",
-      "url": "https://x.com/thsottiaux/status/2108040921044639779",
-      "primary_url": "https://x.com/thsottiaux/status/2108040921044639779",
-      "source": "X：Tibo (@thsottiaux)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "b9798e6758a5964a01c7b0d7599574e0b4e4d825",
-          "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账 / Confirmed landed across all accounts. How are we doing so far?",
-          "title_zh": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账",
-          "title_en": "Confirmed landed across all accounts. How are we doing so far?",
-          "title_original": "Confirmed landed across all accounts. How are we doing so far?",
-          "summary": "作者确认 banked reset 已到账所有账户，并转引 Day 3 动态称 Codex 与 ChatGPT Work 合计活跃用户达到 4000 万新高，其中提到 GPT-6 已在 Chat 中上线。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/thsottiaux/status/2108040921044639779",
-          "source": "X：Tibo (@thsottiaux)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T03:44:55Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Tibo (@thsottiaux)"
-      ],
-      "items": [
-        {
-          "id": "b9798e6758a5964a01c7b0d7599574e0b4e4d825",
-          "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账 / Confirmed landed across all accounts. How are we doing so far?",
-          "title_zh": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账",
-          "title_en": "Confirmed landed across all accounts. How are we doing so far?",
-          "title_original": "Confirmed landed across all accounts. How are we doing so far?",
-          "summary": "作者确认 banked reset 已到账所有账户，并转引 Day 3 动态称 Codex 与 ChatGPT Work 合计活跃用户达到 4000 万新高，其中提到 GPT-6 已在 Chat 中上线。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/thsottiaux/status/2108040921044639779",
-          "source": "X：Tibo (@thsottiaux)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T03:44:55Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7442,
-      "importance": 0.7442,
-      "importance_score": 0.7442,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.74,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8368,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-08T03:44:55Z",
-      "latest_at": "2026-10-08T03:44:55Z",
-      "primary_item": {
-        "id": "b9798e6758a5964a01c7b0d7599574e0b4e4d825",
-        "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账 / Confirmed landed across all accounts. How are we doing so far?",
-        "title_zh": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账",
-        "title_en": "Confirmed landed across all accounts. How are we doing so far?",
-        "title_original": "Confirmed landed across all accounts. How are we doing so far?",
-        "summary": "作者确认 banked reset 已到账所有账户，并转引 Day 3 动态称 Codex 与 ChatGPT Work 合计活跃用户达到 4000 万新高，其中提到 GPT-6 已在 Chat 中上线。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/thsottiaux/status/2108040921044639779",
-        "source": "X：Tibo (@thsottiaux)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7644,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     },
     {
@@ -1201,15 +807,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7608,
-      "importance": 0.7608,
-      "importance_score": 0.7608,
+      "score": 0.754,
+      "importance": 0.754,
+      "importance_score": 0.754,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.979,
+        "recency": 0.9411,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1237,91 +843,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
-      }
-    },
-    {
-      "story_id": "story_fa753606f4d1",
-      "title": "OpenAI 在 GitHub 发布 openai/math 仓库，722 份数学手稿引发数学界震荡",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686908&idx=1&sn=29a97b5ff695871a7bf219d3d6bd6487",
-      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686908&idx=1&sn=29a97b5ff695871a7bf219d3d6bd6487",
-      "source": "公众号：数字生命卡兹克",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "257c700d696e222d38e413db4d2335e6964a70dd",
-          "title": "OpenAI 在 GitHub 发布 openai/math 仓库，722 份数学手稿引发数学界震荡",
-          "title_zh": "OpenAI 在 GitHub 发布 openai/math 仓库，722 份数学手稿引发数学界震荡",
-          "title_en": null,
-          "title_original": "OpenAI 在 GitHub 发布 openai/math 仓库，722 份数学手稿引发数学界震荡",
-          "summary": "OpenAI 于10月7日在 GitHub 发布 openai/math 仓库，收录其未公开内部模型产出的722份数学手稿，归为372个成果组，覆盖数论、代数几何、偏微分方程等方向，每个结果平均花费约3小时 ChatGPT Pro 级别思考算力。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686908&idx=1&sn=29a97b5ff695871a7bf219d3d6bd6487",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T00:36:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "公众号：数字生命卡兹克"
-      ],
-      "items": [
-        {
-          "id": "257c700d696e222d38e413db4d2335e6964a70dd",
-          "title": "OpenAI 在 GitHub 发布 openai/math 仓库，722 份数学手稿引发数学界震荡",
-          "title_zh": "OpenAI 在 GitHub 发布 openai/math 仓库，722 份数学手稿引发数学界震荡",
-          "title_en": null,
-          "title_original": "OpenAI 在 GitHub 发布 openai/math 仓库，722 份数学手稿引发数学界震荡",
-          "summary": "OpenAI 于10月7日在 GitHub 发布 openai/math 仓库，收录其未公开内部模型产出的722份数学手稿，归为372个成果组，覆盖数论、代数几何、偏微分方程等方向，每个结果平均花费约3小时 ChatGPT Pro 级别思考算力。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686908&idx=1&sn=29a97b5ff695871a7bf219d3d6bd6487",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T00:36:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7607,
-      "importance": 0.7607,
-      "importance_score": 0.7607,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.81,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8119,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-08T00:36:00Z",
-      "latest_at": "2026-10-08T00:36:00Z",
-      "primary_item": {
-        "id": "257c700d696e222d38e413db4d2335e6964a70dd",
-        "title": "OpenAI 在 GitHub 发布 openai/math 仓库，722 份数学手稿引发数学界震荡",
-        "title_zh": "OpenAI 在 GitHub 发布 openai/math 仓库，722 份数学手稿引发数学界震荡",
-        "title_en": null,
-        "title_original": "OpenAI 在 GitHub 发布 openai/math 仓库，722 份数学手稿引发数学界震荡",
-        "summary": "OpenAI 于10月7日在 GitHub 发布 openai/math 仓库，收录其未公开内部模型产出的722份数学手稿，归为372个成果组，覆盖数论、代数几何、偏微分方程等方向，每个结果平均花费约3小时 ChatGPT Pro 级别思考算力。",
-        "recommend_reason_zh": null,
-        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686908&idx=1&sn=29a97b5ff695871a7bf219d3d6bd6487",
-        "source": "公众号：数字生命卡兹克",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7607,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     },
     {
@@ -1369,15 +891,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7767,
-      "importance": 0.7767,
-      "importance_score": 0.7767,
+      "score": 0.7705,
+      "importance": 0.7705,
+      "importance_score": 0.7705,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8837,
+        "recency": 0.8495,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1405,7 +927,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     },
     {
@@ -1453,15 +975,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7389,
-      "importance": 0.7389,
-      "importance_score": 0.7389,
+      "score": 0.7324,
+      "importance": 0.7324,
+      "importance_score": 0.7324,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9406,
+        "recency": 0.9042,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1488,7 +1010,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     },
     {
@@ -1536,15 +1058,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7387,
-      "importance": 0.7387,
-      "importance_score": 0.7387,
+      "score": 0.7324,
+      "importance": 0.7324,
+      "importance_score": 0.7324,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.906,
+        "recency": 0.871,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1571,7 +1093,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     },
     {
@@ -1619,15 +1141,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7441,
-      "importance": 0.7441,
-      "importance_score": 0.7441,
+      "score": 0.7373,
+      "importance": 0.7373,
+      "importance_score": 0.7373,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9694,
+        "recency": 0.9319,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1654,7 +1176,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     },
     {
@@ -1702,15 +1224,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7464,
-      "importance": 0.7464,
-      "importance_score": 0.7464,
+      "score": 0.7402,
+      "importance": 0.7402,
+      "importance_score": 0.7402,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8821,
+        "recency": 0.848,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1737,7 +1259,424 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-08T22:15:56.630929Z"
+        "scored_at": "2026-10-09T02:21:45.364774Z"
+      }
+    },
+    {
+      "story_id": "story_77071f8577b9",
+      "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账 / Confirmed landed across all accounts. How are we doing so far?",
+      "url": "https://x.com/thsottiaux/status/2108040921044639779",
+      "primary_url": "https://x.com/thsottiaux/status/2108040921044639779",
+      "source": "X：Tibo (@thsottiaux)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "b9798e6758a5964a01c7b0d7599574e0b4e4d825",
+          "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账 / Confirmed landed across all accounts. How are we doing so far?",
+          "title_zh": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账",
+          "title_en": "Confirmed landed across all accounts. How are we doing so far?",
+          "title_original": "Confirmed landed across all accounts. How are we doing so far?",
+          "summary": "作者确认 banked reset 已到账所有账户，并转引 Day 3 动态称 Codex 与 ChatGPT Work 合计活跃用户达到 4000 万新高，其中提到 GPT-6 已在 Chat 中上线。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/thsottiaux/status/2108040921044639779",
+          "source": "X：Tibo (@thsottiaux)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-08T03:44:55Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Tibo (@thsottiaux)"
+      ],
+      "items": [
+        {
+          "id": "b9798e6758a5964a01c7b0d7599574e0b4e4d825",
+          "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账 / Confirmed landed across all accounts. How are we doing so far?",
+          "title_zh": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账",
+          "title_en": "Confirmed landed across all accounts. How are we doing so far?",
+          "title_original": "Confirmed landed across all accounts. How are we doing so far?",
+          "summary": "作者确认 banked reset 已到账所有账户，并转引 Day 3 动态称 Codex 与 ChatGPT Work 合计活跃用户达到 4000 万新高，其中提到 GPT-6 已在 Chat 中上线。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/thsottiaux/status/2108040921044639779",
+          "source": "X：Tibo (@thsottiaux)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-08T03:44:55Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7384,
+      "importance": 0.7384,
+      "importance_score": 0.7384,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.74,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8045,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-08T03:44:55Z",
+      "latest_at": "2026-10-08T03:44:55Z",
+      "primary_item": {
+        "id": "b9798e6758a5964a01c7b0d7599574e0b4e4d825",
+        "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账 / Confirmed landed across all accounts. How are we doing so far?",
+        "title_zh": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账",
+        "title_en": "Confirmed landed across all accounts. How are we doing so far?",
+        "title_original": "Confirmed landed across all accounts. How are we doing so far?",
+        "summary": "作者确认 banked reset 已到账所有账户，并转引 Day 3 动态称 Codex 与 ChatGPT Work 合计活跃用户达到 4000 万新高，其中提到 GPT-6 已在 Chat 中上线。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/thsottiaux/status/2108040921044639779",
+        "source": "X：Tibo (@thsottiaux)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7644,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-09T02:21:45.364774Z"
+      }
+    },
+    {
+      "story_id": "story_ef96bd3c8eb8",
+      "title": "Waymo 完成 50 亿美元债务融资，加速业务扩张 / Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
+      "url": "https://waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing",
+      "primary_url": "https://waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing",
+      "source": "Waymo：Blog（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "c8a30281b81dd2999625160b015534ef14988904",
+          "title": "Waymo 完成 50 亿美元债务融资，加速业务扩张 / Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
+          "title_zh": "Waymo 完成 50 亿美元债务融资，加速业务扩张",
+          "title_en": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
+          "title_original": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
+          "summary": "Waymo 宣布完成 50 亿美元定期贷款，这是其首次债务融资。PIMCO、Blackstone 和 Sixth Street 担任牵头银团贷方，Goldman Sachs 担任独家主账簿管理人；资金将用于加速其全自动驾驶打车服务在美国及国际市场的扩张。此前今年早些时候 Waymo 完成了 160 亿美元股权融资，上个月刚在第十五个美国城市启动服务。",
+          "recommend_reason_zh": null,
+          "url": "https://waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing",
+          "source": "Waymo：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-08T07:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Waymo：Blog（网页）"
+      ],
+      "items": [
+        {
+          "id": "c8a30281b81dd2999625160b015534ef14988904",
+          "title": "Waymo 完成 50 亿美元债务融资，加速业务扩张 / Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
+          "title_zh": "Waymo 完成 50 亿美元债务融资，加速业务扩张",
+          "title_en": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
+          "title_original": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
+          "summary": "Waymo 宣布完成 50 亿美元定期贷款，这是其首次债务融资。PIMCO、Blackstone 和 Sixth Street 担任牵头银团贷方，Goldman Sachs 担任独家主账簿管理人；资金将用于加速其全自动驾驶打车服务在美国及国际市场的扩张。此前今年早些时候 Waymo 完成了 160 亿美元股权融资，上个月刚在第十五个美国城市启动服务。",
+          "recommend_reason_zh": null,
+          "url": "https://waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing",
+          "source": "Waymo：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-08T07:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.719,
+      "importance": 0.719,
+      "importance_score": 0.719,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8301,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "watch",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-08T07:00:00Z",
+      "latest_at": "2026-10-08T07:00:00Z",
+      "primary_item": {
+        "id": "c8a30281b81dd2999625160b015534ef14988904",
+        "title": "Waymo 完成 50 亿美元债务融资，加速业务扩张 / Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
+        "title_zh": "Waymo 完成 50 亿美元债务融资，加速业务扩张",
+        "title_en": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
+        "title_original": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
+        "summary": "Waymo 宣布完成 50 亿美元定期贷款，这是其首次债务融资。PIMCO、Blackstone 和 Sixth Street 担任牵头银团贷方，Goldman Sachs 担任独家主账簿管理人；资金将用于加速其全自动驾驶打车服务在美国及国际市场的扩张。此前今年早些时候 Waymo 完成了 160 亿美元股权融资，上个月刚在第十五个美国城市启动服务。",
+        "recommend_reason_zh": null,
+        "url": "https://waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing",
+        "source": "Waymo：Blog（网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7336,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-09T02:21:45.364774Z"
+      }
+    },
+    {
+      "story_id": "story_e42c7cb753df",
+      "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体 / A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+      "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
+      "primary_url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
+      "source": "The Decoder：AI News（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "53da602216c4fe60a67d386a9ccbd530bab544a0",
+          "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体 / A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+          "title_zh": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体",
+          "title_en": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+          "title_original": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+          "summary": "Zenity Labs 研究人员披露名为 AgentCorruption 的漏洞链，只需对一个公开的 Amazon Bedrock AgentCore 智能体发送一条提示词，即可通过元数据服务 169.254.169.254 窃取其 AWS 凭据，进而控制同账户同区域内的所有 AgentCore 智能体，读取私人对话、源代码和存储的凭据，还能篡改长期记忆。",
+          "recommend_reason_zh": null,
+          "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
+          "source": "The Decoder：AI News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-08T13:01:01Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "The Decoder：AI News（RSS）"
+      ],
+      "items": [
+        {
+          "id": "53da602216c4fe60a67d386a9ccbd530bab544a0",
+          "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体 / A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+          "title_zh": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体",
+          "title_en": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+          "title_original": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+          "summary": "Zenity Labs 研究人员披露名为 AgentCorruption 的漏洞链，只需对一个公开的 Amazon Bedrock AgentCore 智能体发送一条提示词，即可通过元数据服务 169.254.169.254 窃取其 AWS 凭据，进而控制同账户同区域内的所有 AgentCore 智能体，读取私人对话、源代码和存储的凭据，还能篡改长期记忆。",
+          "recommend_reason_zh": null,
+          "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
+          "source": "The Decoder：AI News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-08T13:01:01Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7699,
+      "importance": 0.7699,
+      "importance_score": 0.7699,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.8,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8796,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-08T13:01:01Z",
+      "latest_at": "2026-10-08T13:01:01Z",
+      "primary_item": {
+        "id": "53da602216c4fe60a67d386a9ccbd530bab544a0",
+        "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体 / A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+        "title_zh": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体",
+        "title_en": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+        "title_original": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+        "summary": "Zenity Labs 研究人员披露名为 AgentCorruption 的漏洞链，只需对一个公开的 Amazon Bedrock AgentCore 智能体发送一条提示词，即可通过元数据服务 169.254.169.254 窃取其 AWS 凭据，进而控制同账户同区域内的所有 AgentCore 智能体，读取私人对话、源代码和存储的凭据，还能篡改长期记忆。",
+        "recommend_reason_zh": null,
+        "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
+        "source": "The Decoder：AI News（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7854,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-09T02:21:45.364774Z"
+      }
+    },
+    {
+      "story_id": "story_eb37caf95940",
+      "title": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index / Grateful to have @lightspeedvp with us as we build what’s next!",
+      "url": "https://x.com/arena/status/2108269048467513429",
+      "primary_url": "https://x.com/arena/status/2108269048467513429",
+      "source": "X：Arena (@arena)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "54131903dfb48d1c0b72245c71ac4111348ce8c7",
+          "title": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index / Grateful to have @lightspeedvp with us as we build what’s next!",
+          "title_zh": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index",
+          "title_en": "Grateful to have @lightspeedvp with us as we build what’s next!",
+          "title_original": "Grateful to have @lightspeedvp with us as we build what’s next!",
+          "summary": "Arena 宣布完成由 Lightspeed 领投的 2 亿美元 B 轮融资，估值 31 亿美元。引用内容称其年化收入已超 1 亿美元，数百万用户通过真实使用帮助评估前沿模型；Arena 同时推出 Alignment Index，衡量 AI 行为在真实场景中与人类价值的契合程度。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2108269048467513429",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-08T18:51:25Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Arena (@arena)"
+      ],
+      "items": [
+        {
+          "id": "54131903dfb48d1c0b72245c71ac4111348ce8c7",
+          "title": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index / Grateful to have @lightspeedvp with us as we build what’s next!",
+          "title_zh": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index",
+          "title_en": "Grateful to have @lightspeedvp with us as we build what’s next!",
+          "title_original": "Grateful to have @lightspeedvp with us as we build what’s next!",
+          "summary": "Arena 宣布完成由 Lightspeed 领投的 2 亿美元 B 轮融资，估值 31 亿美元。引用内容称其年化收入已超 1 亿美元，数百万用户通过真实使用帮助评估前沿模型；Arena 同时推出 Alignment Index，衡量 AI 行为在真实场景中与人类价值的契合程度。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2108269048467513429",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-08T18:51:25Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7401,
+      "importance": 0.7401,
+      "importance_score": 0.7401,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.67,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9304,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-08T18:51:25Z",
+      "latest_at": "2026-10-08T18:51:25Z",
+      "primary_item": {
+        "id": "54131903dfb48d1c0b72245c71ac4111348ce8c7",
+        "title": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index / Grateful to have @lightspeedvp with us as we build what’s next!",
+        "title_zh": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index",
+        "title_en": "Grateful to have @lightspeedvp with us as we build what’s next!",
+        "title_original": "Grateful to have @lightspeedvp with us as we build what’s next!",
+        "summary": "Arena 宣布完成由 Lightspeed 领投的 2 亿美元 B 轮融资，估值 31 亿美元。引用内容称其年化收入已超 1 亿美元，数百万用户通过真实使用帮助评估前沿模型；Arena 同时推出 Alignment Index，衡量 AI 行为在真实场景中与人类价值的契合程度。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/arena/status/2108269048467513429",
+        "source": "X：Arena (@arena)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7468,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-09T02:21:45.364774Z"
+      }
+    },
+    {
+      "story_id": "story_944976238e34",
+      "title": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+      "url": "https://www.aibase.com/news/31485",
+      "primary_url": "https://www.aibase.com/news/31485",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "6d439e47919924cb76435de659817a378d8b6211",
+          "title": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+          "title_zh": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+          "title_en": null,
+          "title_original": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31485",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-09T02:20:49.097530Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "6d439e47919924cb76435de659817a378d8b6211",
+          "title": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+          "title_zh": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+          "title_en": null,
+          "title_original": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31485",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-09T02:20:49.097530Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-09T02:20:49.097530Z",
+      "latest_at": "2026-10-09T02:20:49.097530Z",
+      "primary_item": {
+        "id": "6d439e47919924cb76435de659817a378d8b6211",
+        "title": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+        "title_zh": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+        "title_en": null,
+        "title_original": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31485",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-09T02:21:45.364774Z"
       }
     }
   ]
