@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T02:20:49.097530Z",
+  "generated_at": "2026-10-09T09:22:24.483704Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8509,
-      "importance": 0.8509,
-      "importance_score": 0.8509,
+      "score": 0.8403,
+      "importance": 0.8403,
+      "importance_score": 0.8403,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.9052,
+        "recency": 0.846,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
@@ -109,10 +109,25 @@
           "source_name": "AI HOT",
           "site_id": "aihot",
           "published_at": "2026-10-09T00:12:24Z"
+        },
+        {
+          "id": "ddbb51583aca3acc8277682d4d19546f0e3aaba5",
+          "title": "Tibo 宣布发布 ChatGPT / Today, we are announcing ChatGPT. It is here: https://t.co/Pgk3THSyOJ",
+          "title_zh": "Tibo 宣布发布 ChatGPT",
+          "title_en": "Today, we are announcing ChatGPT. It is here: https://t.co/Pgk3THSyOJ",
+          "title_original": "Today, we are announcing ChatGPT. It is here: https://t.co/Pgk3THSyOJ",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://x.com/thsottiaux/status/2108349826727588000",
+          "source": "Follow Builders · X · Thibault Sottiaux",
+          "source_name": "Follow Builders",
+          "site_id": "followbuilders",
+          "published_at": "2026-10-09T00:12:24Z"
         }
       ],
       "source_count": 1,
       "source_names": [
+        "Follow Builders · X · Thibault Sottiaux",
         "X：Tibo (@thsottiaux)"
       ],
       "items": [
@@ -129,19 +144,33 @@
           "source_name": "AI HOT",
           "site_id": "aihot",
           "published_at": "2026-10-09T00:12:24Z"
+        },
+        {
+          "id": "ddbb51583aca3acc8277682d4d19546f0e3aaba5",
+          "title": "Tibo 宣布发布 ChatGPT / Today, we are announcing ChatGPT. It is here: https://t.co/Pgk3THSyOJ",
+          "title_zh": "Tibo 宣布发布 ChatGPT",
+          "title_en": "Today, we are announcing ChatGPT. It is here: https://t.co/Pgk3THSyOJ",
+          "title_original": "Today, we are announcing ChatGPT. It is here: https://t.co/Pgk3THSyOJ",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://x.com/thsottiaux/status/2108349826727588000",
+          "source": "Follow Builders · X · Thibault Sottiaux",
+          "source_name": "Follow Builders",
+          "site_id": "followbuilders",
+          "published_at": "2026-10-09T00:12:24Z"
         }
       ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8299,
-      "importance": 0.8299,
-      "importance_score": 0.8299,
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.8184,
+      "importance": 0.8184,
+      "importance_score": 0.8184,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.94,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9796,
+        "recency": 0.9155,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -169,30 +198,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
-      "story_id": "story_65da7bfcfb81",
-      "title": "LegalOn halves Codex costs while maintaining development speed",
-      "url": "https://openai.com/index/legalon-halves-codex-costs",
-      "primary_url": "https://openai.com/index/legalon-halves-codex-costs",
+      "story_id": "story_a9ec40ee13cc",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "url": "https://openai.com/index/sophos",
+      "primary_url": "https://openai.com/index/sophos",
       "source": "OpenAI News",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "c82b1c3e2ed0606a2553d5612d2e5494dcf4136e",
-          "title": "LegalOn halves Codex costs while maintaining development speed",
+          "id": "7cf10802079ba2bd37d9692217cf420a0d4f64a1",
+          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
           "title_zh": null,
-          "title_en": "LegalOn halves Codex costs while maintaining development speed",
-          "title_original": "LegalOn halves Codex costs while maintaining development speed",
-          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+          "title_en": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+          "title_original": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+          "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/legalon-halves-codex-costs",
+          "url": "https://openai.com/index/sophos",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-10-08T12:00:00Z"
+          "published_at": "2026-10-09T07:00:00Z"
         }
       ],
       "source_count": 1,
@@ -201,31 +230,31 @@
       ],
       "items": [
         {
-          "id": "c82b1c3e2ed0606a2553d5612d2e5494dcf4136e",
-          "title": "LegalOn halves Codex costs while maintaining development speed",
+          "id": "7cf10802079ba2bd37d9692217cf420a0d4f64a1",
+          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
           "title_zh": null,
-          "title_en": "LegalOn halves Codex costs while maintaining development speed",
-          "title_original": "LegalOn halves Codex costs while maintaining development speed",
-          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+          "title_en": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+          "title_original": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+          "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/legalon-halves-codex-costs",
+          "url": "https://openai.com/index/sophos",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
-          "published_at": "2026-10-08T12:00:00Z"
+          "published_at": "2026-10-09T07:00:00Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8368,
-      "importance": 0.8368,
-      "importance_score": 0.8368,
+      "score": 0.8479,
+      "importance": 0.8479,
+      "importance_score": 0.8479,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.871,
+        "ai_relevance": 0.91,
+        "recency": 0.9774,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -235,26 +264,26 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-10-08T12:00:00Z",
-      "latest_at": "2026-10-08T12:00:00Z",
+      "earliest_at": "2026-10-09T07:00:00Z",
+      "latest_at": "2026-10-09T07:00:00Z",
       "primary_item": {
-        "id": "c82b1c3e2ed0606a2553d5612d2e5494dcf4136e",
-        "title": "LegalOn halves Codex costs while maintaining development speed",
+        "id": "7cf10802079ba2bd37d9692217cf420a0d4f64a1",
+        "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
         "title_zh": null,
-        "title_en": "LegalOn halves Codex costs while maintaining development speed",
-        "title_original": "LegalOn halves Codex costs while maintaining development speed",
-        "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+        "title_en": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+        "title_original": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+        "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/legalon-halves-codex-costs",
+        "url": "https://openai.com/index/sophos",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8368,
+      "peak_score": 0.8479,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
@@ -302,15 +331,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7812,
-      "importance": 0.7812,
-      "importance_score": 0.7812,
+      "score": 0.7703,
+      "importance": 0.7703,
+      "importance_score": 0.7703,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9253,
+        "recency": 0.8648,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -338,7 +367,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
@@ -386,15 +415,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7665,
-      "importance": 0.7665,
-      "importance_score": 0.7665,
+      "score": 0.7558,
+      "importance": 0.7558,
+      "importance_score": 0.7558,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.61,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9083,
+        "recency": 0.8489,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -422,7 +451,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
@@ -470,15 +499,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.78,
-      "importance": 0.78,
-      "importance_score": 0.78,
+      "score": 0.7686,
+      "importance": 0.7686,
+      "importance_score": 0.7686,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9687,
+        "recency": 0.9054,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -506,26 +535,26 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
-      "story_id": "story_e323adeab1da",
-      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-      "url": "https://openai.com/index/pollo-ai",
-      "primary_url": "https://openai.com/index/pollo-ai",
+      "story_id": "story_65da7bfcfb81",
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "url": "https://openai.com/index/legalon-halves-codex-costs",
+      "primary_url": "https://openai.com/index/legalon-halves-codex-costs",
       "source": "OpenAI News",
       "source_name": "Official AI Updates",
       "sources": [
         {
-          "id": "e441138912907d022d550626c930aa4e578bbe9e",
-          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "id": "c82b1c3e2ed0606a2553d5612d2e5494dcf4136e",
+          "title": "LegalOn halves Codex costs while maintaining development speed",
           "title_zh": null,
-          "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "title_original": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+          "title_en": "LegalOn halves Codex costs while maintaining development speed",
+          "title_original": "LegalOn halves Codex costs while maintaining development speed",
+          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/pollo-ai",
+          "url": "https://openai.com/index/legalon-halves-codex-costs",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
@@ -538,14 +567,14 @@
       ],
       "items": [
         {
-          "id": "e441138912907d022d550626c930aa4e578bbe9e",
-          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "id": "c82b1c3e2ed0606a2553d5612d2e5494dcf4136e",
+          "title": "LegalOn halves Codex costs while maintaining development speed",
           "title_zh": null,
-          "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "title_original": "Pollo AI turns creative ideas into campaigns with OpenAI",
-          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+          "title_en": "LegalOn halves Codex costs while maintaining development speed",
+          "title_original": "LegalOn halves Codex costs while maintaining development speed",
+          "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
           "recommend_reason_zh": null,
-          "url": "https://openai.com/index/pollo-ai",
+          "url": "https://openai.com/index/legalon-halves-codex-costs",
           "source": "OpenAI News",
           "source_name": "Official AI Updates",
           "site_id": "official_ai",
@@ -554,15 +583,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8288,
-      "importance": 0.8288,
-      "importance_score": 0.8288,
+      "score": 0.8265,
+      "importance": 0.8265,
+      "importance_score": 0.8265,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.871,
+        "ai_relevance": 0.95,
+        "recency": 0.814,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -575,23 +604,23 @@
       "earliest_at": "2026-10-08T12:00:00Z",
       "latest_at": "2026-10-08T12:00:00Z",
       "primary_item": {
-        "id": "e441138912907d022d550626c930aa4e578bbe9e",
-        "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+        "id": "c82b1c3e2ed0606a2553d5612d2e5494dcf4136e",
+        "title": "LegalOn halves Codex costs while maintaining development speed",
         "title_zh": null,
-        "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
-        "title_original": "Pollo AI turns creative ideas into campaigns with OpenAI",
-        "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+        "title_en": "LegalOn halves Codex costs while maintaining development speed",
+        "title_original": "LegalOn halves Codex costs while maintaining development speed",
+        "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
         "recommend_reason_zh": null,
-        "url": "https://openai.com/index/pollo-ai",
+        "url": "https://openai.com/index/legalon-halves-codex-costs",
         "source": "OpenAI News",
         "source_name": "Official AI Updates"
       },
-      "peak_score": 0.8351,
+      "peak_score": 0.8368,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
@@ -639,15 +668,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7558,
+      "importance": 0.7558,
+      "importance_score": 0.7558,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9346,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -675,7 +704,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
@@ -723,22 +752,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7607,
-      "importance": 0.7607,
-      "importance_score": 0.7607,
+      "score": 0.7499,
+      "importance": 0.7499,
+      "importance_score": 0.7499,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9114,
+        "recency": 0.8518,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-08T16:42:42Z",
       "latest_at": "2026-10-08T16:42:42Z",
@@ -759,7 +787,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
@@ -807,22 +835,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.754,
-      "importance": 0.754,
-      "importance_score": 0.754,
+      "score": 0.7429,
+      "importance": 0.7429,
+      "importance_score": 0.7429,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.71,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9411,
+        "recency": 0.8796,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-08T20:02:39Z",
       "latest_at": "2026-10-08T20:02:39Z",
@@ -843,7 +870,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
+      }
+    },
+    {
+      "story_id": "story_c4d769a9c422",
+      "title": "OpenAI 研究负责人发声明回应三名员工离职争议 / A note from our research leaders:",
+      "url": "https://x.com/OpenAINewsroom/status/2108441580806025712",
+      "primary_url": "https://x.com/OpenAINewsroom/status/2108441580806025712",
+      "source": "X：OpenAI Newsroom (@OpenAINewsroom)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "c9a79fec44485cd24f540e96e9add155d83d27c6",
+          "title": "OpenAI 研究负责人发声明回应三名员工离职争议 / A note from our research leaders:",
+          "title_zh": "OpenAI 研究负责人发声明回应三名员工离职争议",
+          "title_en": "A note from our research leaders:",
+          "title_original": "A note from our research leaders:",
+          "summary": "OpenAI 研究负责人发声明，称上周在调查发现 Jasmine、Mikita 和 Tomek 违反敏感信息处理政策后终止其雇佣，并表示内部调查发现超出三人公开信所述的重大信任违规。声明强调解雇与提出安全担忧无关，称正在敲定与第三方安全评估机构的合同并将在数周内公布详情，同时认同保持前沿模型可监测性需要全行业承诺。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/OpenAINewsroom/status/2108441580806025712",
+          "source": "X：OpenAI Newsroom (@OpenAINewsroom)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-09T06:17:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：OpenAI Newsroom (@OpenAINewsroom)"
+      ],
+      "items": [
+        {
+          "id": "c9a79fec44485cd24f540e96e9add155d83d27c6",
+          "title": "OpenAI 研究负责人发声明回应三名员工离职争议 / A note from our research leaders:",
+          "title_zh": "OpenAI 研究负责人发声明回应三名员工离职争议",
+          "title_en": "A note from our research leaders:",
+          "title_original": "A note from our research leaders:",
+          "summary": "OpenAI 研究负责人发声明，称上周在调查发现 Jasmine、Mikita 和 Tomek 违反敏感信息处理政策后终止其雇佣，并表示内部调查发现超出三人公开信所述的重大信任违规。声明强调解雇与提出安全担忧无关，称正在敲定与第三方安全评估机构的合同并将在数周内公布详情，同时认同保持前沿模型可监测性需要全行业承诺。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/OpenAINewsroom/status/2108441580806025712",
+          "source": "X：OpenAI Newsroom (@OpenAINewsroom)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-09T06:17:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7563,
+      "importance": 0.7563,
+      "importance_score": 0.7563,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.7,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9707,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-09T06:17:00Z",
+      "latest_at": "2026-10-09T06:17:00Z",
+      "primary_item": {
+        "id": "c9a79fec44485cd24f540e96e9add155d83d27c6",
+        "title": "OpenAI 研究负责人发声明回应三名员工离职争议 / A note from our research leaders:",
+        "title_zh": "OpenAI 研究负责人发声明回应三名员工离职争议",
+        "title_en": "A note from our research leaders:",
+        "title_original": "A note from our research leaders:",
+        "summary": "OpenAI 研究负责人发声明，称上周在调查发现 Jasmine、Mikita 和 Tomek 违反敏感信息处理政策后终止其雇佣，并表示内部调查发现超出三人公开信所述的重大信任违规。声明强调解雇与提出安全担忧无关，称正在敲定与第三方安全评估机构的合同并将在数周内公布详情，同时认同保持前沿模型可监测性需要全行业承诺。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/OpenAINewsroom/status/2108441580806025712",
+        "source": "X：OpenAI Newsroom (@OpenAINewsroom)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7563,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
@@ -891,15 +1002,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7705,
-      "importance": 0.7705,
-      "importance_score": 0.7705,
+      "score": 0.7605,
+      "importance": 0.7605,
+      "importance_score": 0.7605,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8495,
+        "recency": 0.7939,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -927,7 +1038,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
@@ -975,15 +1086,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7324,
-      "importance": 0.7324,
-      "importance_score": 0.7324,
+      "score": 0.7217,
+      "importance": 0.7217,
+      "importance_score": 0.7217,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9042,
+        "recency": 0.8451,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1010,7 +1121,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
@@ -1058,15 +1169,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7324,
-      "importance": 0.7324,
-      "importance_score": 0.7324,
+      "score": 0.7221,
+      "importance": 0.7221,
+      "importance_score": 0.7221,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.871,
+        "recency": 0.814,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1093,7 +1204,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
+      }
+    },
+    {
+      "story_id": "story_e323adeab1da",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "url": "https://openai.com/index/pollo-ai",
+      "primary_url": "https://openai.com/index/pollo-ai",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "e441138912907d022d550626c930aa4e578bbe9e",
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "title_zh": null,
+          "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "title_original": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/pollo-ai",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-08T12:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "e441138912907d022d550626c930aa4e578bbe9e",
+          "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "title_zh": null,
+          "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "title_original": "Pollo AI turns creative ideas into campaigns with OpenAI",
+          "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/pollo-ai",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-08T12:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8185,
+      "importance": 0.8185,
+      "importance_score": 0.8185,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.814,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-08T12:00:00Z",
+      "latest_at": "2026-10-08T12:00:00Z",
+      "primary_item": {
+        "id": "e441138912907d022d550626c930aa4e578bbe9e",
+        "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+        "title_zh": null,
+        "title_en": "Pollo AI turns creative ideas into campaigns with OpenAI",
+        "title_original": "Pollo AI turns creative ideas into campaigns with OpenAI",
+        "summary": "With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/pollo-ai",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8351,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
@@ -1141,15 +1337,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7373,
-      "importance": 0.7373,
-      "importance_score": 0.7373,
+      "score": 0.7264,
+      "importance": 0.7264,
+      "importance_score": 0.7264,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9319,
+        "recency": 0.871,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1176,423 +1372,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
-      }
-    },
-    {
-      "story_id": "story_bad8b19b631e",
-      "title": "AI圈国庆大动作：DeepSeek拟募 800 亿，OpenAI立下 28 天连更军令状",
-      "url": "https://www.aibase.com/news/31469",
-      "primary_url": "https://www.aibase.com/news/31469",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "2fad4965faa21d3be58ad13bf43688091ebb08ac",
-          "title": "AI圈国庆大动作：DeepSeek拟募 800 亿，OpenAI立下 28 天连更军令状",
-          "title_zh": "AI圈国庆大动作：DeepSeek拟募 800 亿，OpenAI立下 28 天连更军令状",
-          "title_en": null,
-          "title_original": "AI圈国庆大动作：DeepSeek拟募 800 亿，OpenAI立下 28 天连更军令状",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31469",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-08T09:13:18.125457Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "2fad4965faa21d3be58ad13bf43688091ebb08ac",
-          "title": "AI圈国庆大动作：DeepSeek拟募 800 亿，OpenAI立下 28 天连更军令状",
-          "title_zh": "AI圈国庆大动作：DeepSeek拟募 800 亿，OpenAI立下 28 天连更军令状",
-          "title_en": null,
-          "title_original": "AI圈国庆大动作：DeepSeek拟募 800 亿，OpenAI立下 28 天连更军令状",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31469",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-08T09:13:18.125457Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7402,
-      "importance": 0.7402,
-      "importance_score": 0.7402,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.848,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-08T09:13:18.125457Z",
-      "latest_at": "2026-10-08T09:13:18.125457Z",
-      "primary_item": {
-        "id": "2fad4965faa21d3be58ad13bf43688091ebb08ac",
-        "title": "AI圈国庆大动作：DeepSeek拟募 800 亿，OpenAI立下 28 天连更军令状",
-        "title_zh": "AI圈国庆大动作：DeepSeek拟募 800 亿，OpenAI立下 28 天连更军令状",
-        "title_en": null,
-        "title_original": "AI圈国庆大动作：DeepSeek拟募 800 亿，OpenAI立下 28 天连更军令状",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31469",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
-      }
-    },
-    {
-      "story_id": "story_77071f8577b9",
-      "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账 / Confirmed landed across all accounts. How are we doing so far?",
-      "url": "https://x.com/thsottiaux/status/2108040921044639779",
-      "primary_url": "https://x.com/thsottiaux/status/2108040921044639779",
-      "source": "X：Tibo (@thsottiaux)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "b9798e6758a5964a01c7b0d7599574e0b4e4d825",
-          "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账 / Confirmed landed across all accounts. How are we doing so far?",
-          "title_zh": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账",
-          "title_en": "Confirmed landed across all accounts. How are we doing so far?",
-          "title_original": "Confirmed landed across all accounts. How are we doing so far?",
-          "summary": "作者确认 banked reset 已到账所有账户，并转引 Day 3 动态称 Codex 与 ChatGPT Work 合计活跃用户达到 4000 万新高，其中提到 GPT-6 已在 Chat 中上线。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/thsottiaux/status/2108040921044639779",
-          "source": "X：Tibo (@thsottiaux)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T03:44:55Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Tibo (@thsottiaux)"
-      ],
-      "items": [
-        {
-          "id": "b9798e6758a5964a01c7b0d7599574e0b4e4d825",
-          "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账 / Confirmed landed across all accounts. How are we doing so far?",
-          "title_zh": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账",
-          "title_en": "Confirmed landed across all accounts. How are we doing so far?",
-          "title_original": "Confirmed landed across all accounts. How are we doing so far?",
-          "summary": "作者确认 banked reset 已到账所有账户，并转引 Day 3 动态称 Codex 与 ChatGPT Work 合计活跃用户达到 4000 万新高，其中提到 GPT-6 已在 Chat 中上线。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/thsottiaux/status/2108040921044639779",
-          "source": "X：Tibo (@thsottiaux)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T03:44:55Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7384,
-      "importance": 0.7384,
-      "importance_score": 0.7384,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.74,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8045,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-08T03:44:55Z",
-      "latest_at": "2026-10-08T03:44:55Z",
-      "primary_item": {
-        "id": "b9798e6758a5964a01c7b0d7599574e0b4e4d825",
-        "title": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账 / Confirmed landed across all accounts. How are we doing so far?",
-        "title_zh": "Codex 与 ChatGPT Work 活跃用户达 4000 万新高，付费账户重置已全部到账",
-        "title_en": "Confirmed landed across all accounts. How are we doing so far?",
-        "title_original": "Confirmed landed across all accounts. How are we doing so far?",
-        "summary": "作者确认 banked reset 已到账所有账户，并转引 Day 3 动态称 Codex 与 ChatGPT Work 合计活跃用户达到 4000 万新高，其中提到 GPT-6 已在 Chat 中上线。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/thsottiaux/status/2108040921044639779",
-        "source": "X：Tibo (@thsottiaux)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7644,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
-      }
-    },
-    {
-      "story_id": "story_ef96bd3c8eb8",
-      "title": "Waymo 完成 50 亿美元债务融资，加速业务扩张 / Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
-      "url": "https://waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing",
-      "primary_url": "https://waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing",
-      "source": "Waymo：Blog（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "c8a30281b81dd2999625160b015534ef14988904",
-          "title": "Waymo 完成 50 亿美元债务融资，加速业务扩张 / Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
-          "title_zh": "Waymo 完成 50 亿美元债务融资，加速业务扩张",
-          "title_en": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
-          "title_original": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
-          "summary": "Waymo 宣布完成 50 亿美元定期贷款，这是其首次债务融资。PIMCO、Blackstone 和 Sixth Street 担任牵头银团贷方，Goldman Sachs 担任独家主账簿管理人；资金将用于加速其全自动驾驶打车服务在美国及国际市场的扩张。此前今年早些时候 Waymo 完成了 160 亿美元股权融资，上个月刚在第十五个美国城市启动服务。",
-          "recommend_reason_zh": null,
-          "url": "https://waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing",
-          "source": "Waymo：Blog（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T07:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Waymo：Blog（网页）"
-      ],
-      "items": [
-        {
-          "id": "c8a30281b81dd2999625160b015534ef14988904",
-          "title": "Waymo 完成 50 亿美元债务融资，加速业务扩张 / Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
-          "title_zh": "Waymo 完成 50 亿美元债务融资，加速业务扩张",
-          "title_en": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
-          "title_original": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
-          "summary": "Waymo 宣布完成 50 亿美元定期贷款，这是其首次债务融资。PIMCO、Blackstone 和 Sixth Street 担任牵头银团贷方，Goldman Sachs 担任独家主账簿管理人；资金将用于加速其全自动驾驶打车服务在美国及国际市场的扩张。此前今年早些时候 Waymo 完成了 160 亿美元股权融资，上个月刚在第十五个美国城市启动服务。",
-          "recommend_reason_zh": null,
-          "url": "https://waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing",
-          "source": "Waymo：Blog（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T07:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.719,
-      "importance": 0.719,
-      "importance_score": 0.719,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.66,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8301,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-08T07:00:00Z",
-      "latest_at": "2026-10-08T07:00:00Z",
-      "primary_item": {
-        "id": "c8a30281b81dd2999625160b015534ef14988904",
-        "title": "Waymo 完成 50 亿美元债务融资，加速业务扩张 / Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
-        "title_zh": "Waymo 完成 50 亿美元债务融资，加速业务扩张",
-        "title_en": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
-        "title_original": "Waymo Closes $5 Billion Debt Financing to Accelerate Business Expansion",
-        "summary": "Waymo 宣布完成 50 亿美元定期贷款，这是其首次债务融资。PIMCO、Blackstone 和 Sixth Street 担任牵头银团贷方，Goldman Sachs 担任独家主账簿管理人；资金将用于加速其全自动驾驶打车服务在美国及国际市场的扩张。此前今年早些时候 Waymo 完成了 160 亿美元股权融资，上个月刚在第十五个美国城市启动服务。",
-        "recommend_reason_zh": null,
-        "url": "https://waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing",
-        "source": "Waymo：Blog（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7336,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
-      }
-    },
-    {
-      "story_id": "story_e42c7cb753df",
-      "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体 / A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
-      "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
-      "primary_url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
-      "source": "The Decoder：AI News（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "53da602216c4fe60a67d386a9ccbd530bab544a0",
-          "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体 / A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
-          "title_zh": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体",
-          "title_en": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
-          "title_original": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
-          "summary": "Zenity Labs 研究人员披露名为 AgentCorruption 的漏洞链，只需对一个公开的 Amazon Bedrock AgentCore 智能体发送一条提示词，即可通过元数据服务 169.254.169.254 窃取其 AWS 凭据，进而控制同账户同区域内的所有 AgentCore 智能体，读取私人对话、源代码和存储的凭据，还能篡改长期记忆。",
-          "recommend_reason_zh": null,
-          "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
-          "source": "The Decoder：AI News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T13:01:01Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "The Decoder：AI News（RSS）"
-      ],
-      "items": [
-        {
-          "id": "53da602216c4fe60a67d386a9ccbd530bab544a0",
-          "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体 / A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
-          "title_zh": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体",
-          "title_en": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
-          "title_original": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
-          "summary": "Zenity Labs 研究人员披露名为 AgentCorruption 的漏洞链，只需对一个公开的 Amazon Bedrock AgentCore 智能体发送一条提示词，即可通过元数据服务 169.254.169.254 窃取其 AWS 凭据，进而控制同账户同区域内的所有 AgentCore 智能体，读取私人对话、源代码和存储的凭据，还能篡改长期记忆。",
-          "recommend_reason_zh": null,
-          "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
-          "source": "The Decoder：AI News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T13:01:01Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7699,
-      "importance": 0.7699,
-      "importance_score": 0.7699,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.8,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8796,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-08T13:01:01Z",
-      "latest_at": "2026-10-08T13:01:01Z",
-      "primary_item": {
-        "id": "53da602216c4fe60a67d386a9ccbd530bab544a0",
-        "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体 / A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
-        "title_zh": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体",
-        "title_en": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
-        "title_original": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
-        "summary": "Zenity Labs 研究人员披露名为 AgentCorruption 的漏洞链，只需对一个公开的 Amazon Bedrock AgentCore 智能体发送一条提示词，即可通过元数据服务 169.254.169.254 窃取其 AWS 凭据，进而控制同账户同区域内的所有 AgentCore 智能体，读取私人对话、源代码和存储的凭据，还能篡改长期记忆。",
-        "recommend_reason_zh": null,
-        "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
-        "source": "The Decoder：AI News（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7854,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
-      }
-    },
-    {
-      "story_id": "story_eb37caf95940",
-      "title": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index / Grateful to have @lightspeedvp with us as we build what’s next!",
-      "url": "https://x.com/arena/status/2108269048467513429",
-      "primary_url": "https://x.com/arena/status/2108269048467513429",
-      "source": "X：Arena (@arena)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "54131903dfb48d1c0b72245c71ac4111348ce8c7",
-          "title": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index / Grateful to have @lightspeedvp with us as we build what’s next!",
-          "title_zh": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index",
-          "title_en": "Grateful to have @lightspeedvp with us as we build what’s next!",
-          "title_original": "Grateful to have @lightspeedvp with us as we build what’s next!",
-          "summary": "Arena 宣布完成由 Lightspeed 领投的 2 亿美元 B 轮融资，估值 31 亿美元。引用内容称其年化收入已超 1 亿美元，数百万用户通过真实使用帮助评估前沿模型；Arena 同时推出 Alignment Index，衡量 AI 行为在真实场景中与人类价值的契合程度。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/arena/status/2108269048467513429",
-          "source": "X：Arena (@arena)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T18:51:25Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Arena (@arena)"
-      ],
-      "items": [
-        {
-          "id": "54131903dfb48d1c0b72245c71ac4111348ce8c7",
-          "title": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index / Grateful to have @lightspeedvp with us as we build what’s next!",
-          "title_zh": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index",
-          "title_en": "Grateful to have @lightspeedvp with us as we build what’s next!",
-          "title_original": "Grateful to have @lightspeedvp with us as we build what’s next!",
-          "summary": "Arena 宣布完成由 Lightspeed 领投的 2 亿美元 B 轮融资，估值 31 亿美元。引用内容称其年化收入已超 1 亿美元，数百万用户通过真实使用帮助评估前沿模型；Arena 同时推出 Alignment Index，衡量 AI 行为在真实场景中与人类价值的契合程度。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/arena/status/2108269048467513429",
-          "source": "X：Arena (@arena)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-08T18:51:25Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7401,
-      "importance": 0.7401,
-      "importance_score": 0.7401,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.67,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9304,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-08T18:51:25Z",
-      "latest_at": "2026-10-08T18:51:25Z",
-      "primary_item": {
-        "id": "54131903dfb48d1c0b72245c71ac4111348ce8c7",
-        "title": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index / Grateful to have @lightspeedvp with us as we build what’s next!",
-        "title_zh": "Arena 获 Lightspeed 领投 2 亿美元 B 轮融资，估值 31 亿美元并推出 Alignment Index",
-        "title_en": "Grateful to have @lightspeedvp with us as we build what’s next!",
-        "title_original": "Grateful to have @lightspeedvp with us as we build what’s next!",
-        "summary": "Arena 宣布完成由 Lightspeed 领投的 2 亿美元 B 轮融资，估值 31 亿美元。引用内容称其年化收入已超 1 亿美元，数百万用户通过真实使用帮助评估前沿模型；Arena 同时推出 Alignment Index，衡量 AI 行为在真实场景中与人类价值的契合程度。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/arena/status/2108269048467513429",
-        "source": "X：Arena (@arena)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7468,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     },
     {
@@ -1640,15 +1420,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7558,
+      "importance": 0.7558,
+      "importance_score": 0.7558,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9346,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1676,7 +1456,259 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-09T02:21:45.364774Z"
+        "scored_at": "2026-10-09T09:23:22.310972Z"
+      }
+    },
+    {
+      "story_id": "story_e42c7cb753df",
+      "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体 / A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+      "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
+      "primary_url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
+      "source": "The Decoder：AI News（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "53da602216c4fe60a67d386a9ccbd530bab544a0",
+          "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体 / A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+          "title_zh": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体",
+          "title_en": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+          "title_original": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+          "summary": "Zenity Labs 研究人员披露名为 AgentCorruption 的漏洞链，只需对一个公开的 Amazon Bedrock AgentCore 智能体发送一条提示词，即可通过元数据服务 169.254.169.254 窃取其 AWS 凭据，进而控制同账户同区域内的所有 AgentCore 智能体，读取私人对话、源代码和存储的凭据，还能篡改长期记忆。",
+          "recommend_reason_zh": null,
+          "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
+          "source": "The Decoder：AI News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-08T13:01:01Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "The Decoder：AI News（RSS）"
+      ],
+      "items": [
+        {
+          "id": "53da602216c4fe60a67d386a9ccbd530bab544a0",
+          "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体 / A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+          "title_zh": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体",
+          "title_en": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+          "title_original": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+          "summary": "Zenity Labs 研究人员披露名为 AgentCorruption 的漏洞链，只需对一个公开的 Amazon Bedrock AgentCore 智能体发送一条提示词，即可通过元数据服务 169.254.169.254 窃取其 AWS 凭据，进而控制同账户同区域内的所有 AgentCore 智能体，读取私人对话、源代码和存储的凭据，还能篡改长期记忆。",
+          "recommend_reason_zh": null,
+          "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
+          "source": "The Decoder：AI News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-08T13:01:01Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7596,
+      "importance": 0.7596,
+      "importance_score": 0.7596,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.8,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.822,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-08T13:01:01Z",
+      "latest_at": "2026-10-08T13:01:01Z",
+      "primary_item": {
+        "id": "53da602216c4fe60a67d386a9ccbd530bab544a0",
+        "title": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体 / A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+        "title_zh": "Zenity 研究人员发现一条提示词即可劫持 AWS 账户内全部 AgentCore 智能体",
+        "title_en": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+        "title_original": "A single prompt was enough to hijack every AI agent in an AWS account, Zenity researchers found",
+        "summary": "Zenity Labs 研究人员披露名为 AgentCorruption 的漏洞链，只需对一个公开的 Amazon Bedrock AgentCore 智能体发送一条提示词，即可通过元数据服务 169.254.169.254 窃取其 AWS 凭据，进而控制同账户同区域内的所有 AgentCore 智能体，读取私人对话、源代码和存储的凭据，还能篡改长期记忆。",
+        "recommend_reason_zh": null,
+        "url": "https://the-decoder.com/a-single-prompt-was-enough-to-hijack-every-ai-agent-in-an-aws-account-zenity-researchers-found",
+        "source": "The Decoder：AI News（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7854,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-09T09:23:22.310972Z"
+      }
+    },
+    {
+      "story_id": "story_fdcac8171d89",
+      "title": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43 / Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
+      "url": "https://x.com/arena/status/2108405474391728357",
+      "primary_url": "https://x.com/arena/status/2108405474391728357",
+      "source": "X：Arena (@arena)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "7b2be2a5f58bcc5cb80e275aa14f9d3fd7b99eef",
+          "title": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43 / Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
+          "title_zh": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43",
+          "title_en": "Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
+          "title_original": "Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
+          "summary": "Arena 宣布 Mistral Large 4 进入 Agent Arena 前十五实验室，基于超 5000 个真实智能体会话，该预览版净改进分为 -6.6%，总排名第 43，比前代 Mistral Medium 3.5（-12.60%）高出 11 位。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2108405474391728357",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-09T03:53:32Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Arena (@arena)"
+      ],
+      "items": [
+        {
+          "id": "7b2be2a5f58bcc5cb80e275aa14f9d3fd7b99eef",
+          "title": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43 / Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
+          "title_zh": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43",
+          "title_en": "Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
+          "title_original": "Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
+          "summary": "Arena 宣布 Mistral Large 4 进入 Agent Arena 前十五实验室，基于超 5000 个真实智能体会话，该预览版净改进分为 -6.6%，总排名第 43，比前代 Mistral Medium 3.5（-12.60%）高出 11 位。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2108405474391728357",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-09T03:53:32Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7553,
+      "importance": 0.7553,
+      "importance_score": 0.7553,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.71,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9486,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-09T03:53:32Z",
+      "latest_at": "2026-10-09T03:53:32Z",
+      "primary_item": {
+        "id": "7b2be2a5f58bcc5cb80e275aa14f9d3fd7b99eef",
+        "title": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43 / Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
+        "title_zh": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43",
+        "title_en": "Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
+        "title_original": "Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
+        "summary": "Arena 宣布 Mistral Large 4 进入 Agent Arena 前十五实验室，基于超 5000 个真实智能体会话，该预览版净改进分为 -6.6%，总排名第 43，比前代 Mistral Medium 3.5（-12.60%）高出 11 位。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/arena/status/2108405474391728357",
+        "source": "X：Arena (@arena)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7553,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-09T09:23:22.310972Z"
+      }
+    },
+    {
+      "story_id": "story_22dbf5a3027e",
+      "title": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
+      "url": "https://www.aibase.com/news/31490",
+      "primary_url": "https://www.aibase.com/news/31490",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "94b38ef7d4e84343d19c4bca6f70950cb8d1f4e5",
+          "title": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
+          "title_zh": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
+          "title_en": null,
+          "title_original": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31490",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-09T02:20:49.097530Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "94b38ef7d4e84343d19c4bca6f70950cb8d1f4e5",
+          "title": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
+          "title_zh": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
+          "title_en": null,
+          "title_original": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31490",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-09T02:20:49.097530Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7558,
+      "importance": 0.7558,
+      "importance_score": 0.7558,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9346,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-09T02:20:49.097530Z",
+      "latest_at": "2026-10-09T02:20:49.097530Z",
+      "primary_item": {
+        "id": "94b38ef7d4e84343d19c4bca6f70950cb8d1f4e5",
+        "title": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
+        "title_zh": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
+        "title_en": null,
+        "title_original": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31490",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-09T09:23:22.310972Z"
       }
     }
   ]
