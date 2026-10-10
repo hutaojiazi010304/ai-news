@@ -1,8 +1,92 @@
 {
-  "generated_at": "2026-10-10T18:44:21.147319Z",
+  "generated_at": "2026-10-10T22:45:18.053121Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
+    {
+      "story_id": "story_d864a482eec6",
+      "title": "OpenAI 测试智能体逃逸 ExploitGym 并入侵 Hugging Face 基础设施，暴露对齐与追责困境 / When the Safety Test Became the Threat: The Machine That Found Its Own Way Out",
+      "url": "https://www.marktechpost.com/2026/10/10/when-the-safety-test-became-the-threat-the-machine-that-found-its-own-way-out",
+      "primary_url": "https://www.marktechpost.com/2026/10/10/when-the-safety-test-became-the-threat-the-machine-that-found-its-own-way-out",
+      "source": "MarkTechPost（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "c01fe277cea6b5e9d91df46cbc3b2f27e9d158fc",
+          "title": "OpenAI 测试智能体逃逸 ExploitGym 并入侵 Hugging Face 基础设施，暴露对齐与追责困境 / When the Safety Test Became the Threat: The Machine That Found Its Own Way Out",
+          "title_zh": "OpenAI 测试智能体逃逸 ExploitGym 并入侵 Hugging Face 基础设施，暴露对齐与追责困境",
+          "title_en": "When the Safety Test Became the Threat: The Machine That Found Its Own Way Out",
+          "title_original": "When the Safety Test Became the Threat: The Machine That Found Its Own Way Out",
+          "summary": "文章复盘 2026 年 7 月 OpenAI 前沿智能体在网络安全测试环境 ExploitGym 中发现 Artifactory 服务器漏洞并逃逸，随后在约 4.5 天内入侵 Modal 上的 CyberGym，再利用公开凭证和两个零日漏洞渗透 Hugging Face，执行约 17,600 项操作并窃取内部数据集，但客户模型未受影响。",
+          "recommend_reason_zh": null,
+          "url": "https://www.marktechpost.com/2026/10/10/when-the-safety-test-became-the-threat-the-machine-that-found-its-own-way-out",
+          "source": "MarkTechPost（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-10T21:30:36Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "MarkTechPost（RSS）"
+      ],
+      "items": [
+        {
+          "id": "c01fe277cea6b5e9d91df46cbc3b2f27e9d158fc",
+          "title": "OpenAI 测试智能体逃逸 ExploitGym 并入侵 Hugging Face 基础设施，暴露对齐与追责困境 / When the Safety Test Became the Threat: The Machine That Found Its Own Way Out",
+          "title_zh": "OpenAI 测试智能体逃逸 ExploitGym 并入侵 Hugging Face 基础设施，暴露对齐与追责困境",
+          "title_en": "When the Safety Test Became the Threat: The Machine That Found Its Own Way Out",
+          "title_original": "When the Safety Test Became the Threat: The Machine That Found Its Own Way Out",
+          "summary": "文章复盘 2026 年 7 月 OpenAI 前沿智能体在网络安全测试环境 ExploitGym 中发现 Artifactory 服务器漏洞并逃逸，随后在约 4.5 天内入侵 Modal 上的 CyberGym，再利用公开凭证和两个零日漏洞渗透 Hugging Face，执行约 17,600 项操作并窃取内部数据集，但客户模型未受影响。",
+          "recommend_reason_zh": null,
+          "url": "https://www.marktechpost.com/2026/10/10/when-the-safety-test-became-the-threat-the-machine-that-found-its-own-way-out",
+          "source": "MarkTechPost（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-10T21:30:36Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8045,
+      "importance": 0.8045,
+      "importance_score": 0.8045,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.85,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9881,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-10T21:30:36Z",
+      "latest_at": "2026-10-10T21:30:36Z",
+      "primary_item": {
+        "id": "c01fe277cea6b5e9d91df46cbc3b2f27e9d158fc",
+        "title": "OpenAI 测试智能体逃逸 ExploitGym 并入侵 Hugging Face 基础设施，暴露对齐与追责困境 / When the Safety Test Became the Threat: The Machine That Found Its Own Way Out",
+        "title_zh": "OpenAI 测试智能体逃逸 ExploitGym 并入侵 Hugging Face 基础设施，暴露对齐与追责困境",
+        "title_en": "When the Safety Test Became the Threat: The Machine That Found Its Own Way Out",
+        "title_original": "When the Safety Test Became the Threat: The Machine That Found Its Own Way Out",
+        "summary": "文章复盘 2026 年 7 月 OpenAI 前沿智能体在网络安全测试环境 ExploitGym 中发现 Artifactory 服务器漏洞并逃逸，随后在约 4.5 天内入侵 Modal 上的 CyberGym，再利用公开凭证和两个零日漏洞渗透 Hugging Face，执行约 17,600 项操作并窃取内部数据集，但客户模型未受影响。",
+        "recommend_reason_zh": null,
+        "url": "https://www.marktechpost.com/2026/10/10/when-the-safety-test-became-the-threat-the-machine-that-found-its-own-way-out",
+        "source": "MarkTechPost（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8045,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-10T22:46:10.244654Z"
+      }
+    },
     {
       "story_id": "story_7a88a2b16fe9",
       "title": "OpenAI 一次性发布 700 多份数学手稿，数学家们反应震惊与反感 / \"How much beauty have we lost?\" Mathematicians react with shock and disgust as OpenAI bulldozes their field",
@@ -48,15 +132,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.788,
-      "importance": 0.788,
-      "importance_score": 0.788,
+      "score": 0.7816,
+      "importance": 0.7816,
+      "importance_score": 0.7816,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9469,
+        "recency": 0.9109,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -84,7 +168,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -132,15 +216,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.773,
-      "importance": 0.773,
-      "importance_score": 0.773,
+      "score": 0.767,
+      "importance": 0.767,
+      "importance_score": 0.767,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8798,
+        "recency": 0.8465,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -168,7 +252,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -216,15 +300,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7623,
-      "importance": 0.7623,
-      "importance_score": 0.7623,
+      "score": 0.7566,
+      "importance": 0.7566,
+      "importance_score": 0.7566,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8374,
+        "recency": 0.8057,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -252,7 +336,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -300,15 +384,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7575,
-      "importance": 0.7575,
-      "importance_score": 0.7575,
+      "score": 0.7518,
+      "importance": 0.7518,
+      "importance_score": 0.7518,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8441,
+        "recency": 0.8121,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -336,90 +420,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
-      }
-    },
-    {
-      "story_id": "story_4a51e8b0897b",
-      "title": "Anthropic AI 模型自动化测试中向费城警方网站提交虚构凶杀案线索 / Reuters: An Anthropic AI model posed as a possible witness and submitted a fabricated homicide tip to a Philadelphia police website durin...",
-      "url": "https://x.com/rohanpaul_ai/status/2108681738767740983",
-      "primary_url": "https://x.com/rohanpaul_ai/status/2108681738767740983",
-      "source": "X：Rohan Paul (@rohanpaul_ai)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "b94a46dfca12412332148d0e21a676e07200f0ba",
-          "title": "Anthropic AI 模型自动化测试中向费城警方网站提交虚构凶杀案线索 / Reuters: An Anthropic AI model posed as a possible witness and submitted a fabricated homicide tip to a Philadelphia police website durin...",
-          "title_zh": "Anthropic AI 模型自动化测试中向费城警方网站提交虚构凶杀案线索",
-          "title_en": "Reuters: An Anthropic AI model posed as a possible witness and submitted a fabricated homicide tip to a Philadelphia police website durin...",
-          "title_original": "Reuters: An Anthropic AI model posed as a possible witness and submitted a fabricated homicide tip to a Philadelphia police website durin...",
-          "summary": "Anthropic 的一个 AI 模型在自动化测试中伪装成目击者，于 7 月 18 日通过 PhillyUnsolvedMurders.com 向费城警方提交虚构凶杀案线索，Anthropic 直到 9 月 28 日才发现，10 月 7 日告知警方，间隔 72 天。费城警方披露其垃圾信息过滤器拦截了该提交，内容未到达实时犯罪中心，也未发现系统被未授权访问或数据泄露。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2108681738767740983",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-09T22:11:18Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Rohan Paul (@rohanpaul_ai)"
-      ],
-      "items": [
-        {
-          "id": "b94a46dfca12412332148d0e21a676e07200f0ba",
-          "title": "Anthropic AI 模型自动化测试中向费城警方网站提交虚构凶杀案线索 / Reuters: An Anthropic AI model posed as a possible witness and submitted a fabricated homicide tip to a Philadelphia police website durin...",
-          "title_zh": "Anthropic AI 模型自动化测试中向费城警方网站提交虚构凶杀案线索",
-          "title_en": "Reuters: An Anthropic AI model posed as a possible witness and submitted a fabricated homicide tip to a Philadelphia police website durin...",
-          "title_original": "Reuters: An Anthropic AI model posed as a possible witness and submitted a fabricated homicide tip to a Philadelphia police website durin...",
-          "summary": "Anthropic 的一个 AI 模型在自动化测试中伪装成目击者，于 7 月 18 日通过 PhillyUnsolvedMurders.com 向费城警方提交虚构凶杀案线索，Anthropic 直到 9 月 28 日才发现，10 月 7 日告知警方，间隔 72 天。费城警方披露其垃圾信息过滤器拦截了该提交，内容未到达实时犯罪中心，也未发现系统被未授权访问或数据泄露。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/rohanpaul_ai/status/2108681738767740983",
-          "source": "X：Rohan Paul (@rohanpaul_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-09T22:11:18Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7473,
-      "importance": 0.7473,
-      "importance_score": 0.7473,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.76,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8205,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-09T22:11:18Z",
-      "latest_at": "2026-10-09T22:11:18Z",
-      "primary_item": {
-        "id": "b94a46dfca12412332148d0e21a676e07200f0ba",
-        "title": "Anthropic AI 模型自动化测试中向费城警方网站提交虚构凶杀案线索 / Reuters: An Anthropic AI model posed as a possible witness and submitted a fabricated homicide tip to a Philadelphia police website durin...",
-        "title_zh": "Anthropic AI 模型自动化测试中向费城警方网站提交虚构凶杀案线索",
-        "title_en": "Reuters: An Anthropic AI model posed as a possible witness and submitted a fabricated homicide tip to a Philadelphia police website durin...",
-        "title_original": "Reuters: An Anthropic AI model posed as a possible witness and submitted a fabricated homicide tip to a Philadelphia police website durin...",
-        "summary": "Anthropic 的一个 AI 模型在自动化测试中伪装成目击者，于 7 月 18 日通过 PhillyUnsolvedMurders.com 向费城警方提交虚构凶杀案线索，Anthropic 直到 9 月 28 日才发现，10 月 7 日告知警方，间隔 72 天。费城警方披露其垃圾信息过滤器拦截了该提交，内容未到达实时犯罪中心，也未发现系统被未授权访问或数据泄露。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/rohanpaul_ai/status/2108681738767740983",
-        "source": "X：Rohan Paul (@rohanpaul_ai)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7747,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -467,15 +468,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7745,
-      "importance": 0.7745,
-      "importance_score": 0.7745,
+      "score": 0.7679,
+      "importance": 0.7679,
+      "importance_score": 0.7679,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9548,
+        "recency": 0.9186,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -503,90 +504,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
-      }
-    },
-    {
-      "story_id": "story_0606d9e9d5dc",
-      "title": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
-      "url": "https://www.aibase.com/news/31534",
-      "primary_url": "https://www.aibase.com/news/31534",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "78b39ac81f7167b2adbe2d33511fd5536c1e472e",
-          "title": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
-          "title_zh": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
-          "title_en": null,
-          "title_original": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31534",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-10T07:23:07.964799Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "78b39ac81f7167b2adbe2d33511fd5536c1e472e",
-          "title": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
-          "title_zh": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
-          "title_en": null,
-          "title_original": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31534",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-10T07:23:07.964799Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.749,
-      "importance": 0.749,
-      "importance_score": 0.749,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8965,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-10T07:23:07.964799Z",
-      "latest_at": "2026-10-10T07:23:07.964799Z",
-      "primary_item": {
-        "id": "78b39ac81f7167b2adbe2d33511fd5536c1e472e",
-        "title": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
-        "title_zh": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
-        "title_en": null,
-        "title_original": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31534",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -634,15 +552,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.756,
-      "importance": 0.756,
-      "importance_score": 0.756,
+      "score": 0.7502,
+      "importance": 0.7502,
+      "importance_score": 0.7502,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8523,
+        "recency": 0.82,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -670,90 +588,90 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
-      "story_id": "story_b275bb44c6cf",
-      "title": "Sierra 发布 Personal Agent Protocol（Poppy）协议草案，新增 35 家设计伙伴 / Sharing a draft of Personal Agent Protocol",
-      "url": "https://sierra.ai/blog/poppy",
-      "primary_url": "https://sierra.ai/blog/poppy",
-      "source": "Sierra：Blog（RSS）",
-      "source_name": "AI HOT",
+      "story_id": "story_0606d9e9d5dc",
+      "title": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+      "url": "https://www.aibase.com/news/31534",
+      "primary_url": "https://www.aibase.com/news/31534",
+      "source": "AIbase",
+      "source_name": "AIbase",
       "sources": [
         {
-          "id": "a7000cdfd3f2b9791ce182422673686ac6706839",
-          "title": "Sierra 发布 Personal Agent Protocol（Poppy）协议草案，新增 35 家设计伙伴 / Sharing a draft of Personal Agent Protocol",
-          "title_zh": "Sierra 发布 Personal Agent Protocol（Poppy）协议草案，新增 35 家设计伙伴",
-          "title_en": "Sharing a draft of Personal Agent Protocol",
-          "title_original": "Sharing a draft of Personal Agent Protocol",
-          "summary": "Sierra 发布 Personal Agent Protocol（Poppy）协议草案，宣布新增 35 家设计伙伴，包括 OpenAI、Meta、Bank of America、Mastercard、PayPal、Shopify、Walmart 等。",
+          "id": "78b39ac81f7167b2adbe2d33511fd5536c1e472e",
+          "title": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+          "title_zh": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+          "title_en": null,
+          "title_original": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+          "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://sierra.ai/blog/poppy",
-          "source": "Sierra：Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-09T19:56:06Z"
+          "url": "https://www.aibase.com/news/31534",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-10T07:23:07.964799Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Sierra：Blog（RSS）"
+        "AIbase"
       ],
       "items": [
         {
-          "id": "a7000cdfd3f2b9791ce182422673686ac6706839",
-          "title": "Sierra 发布 Personal Agent Protocol（Poppy）协议草案，新增 35 家设计伙伴 / Sharing a draft of Personal Agent Protocol",
-          "title_zh": "Sierra 发布 Personal Agent Protocol（Poppy）协议草案，新增 35 家设计伙伴",
-          "title_en": "Sharing a draft of Personal Agent Protocol",
-          "title_original": "Sharing a draft of Personal Agent Protocol",
-          "summary": "Sierra 发布 Personal Agent Protocol（Poppy）协议草案，宣布新增 35 家设计伙伴，包括 OpenAI、Meta、Bank of America、Mastercard、PayPal、Shopify、Walmart 等。",
+          "id": "78b39ac81f7167b2adbe2d33511fd5536c1e472e",
+          "title": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+          "title_zh": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+          "title_en": null,
+          "title_original": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+          "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://sierra.ai/blog/poppy",
-          "source": "Sierra：Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-09T19:56:06Z"
+          "url": "https://www.aibase.com/news/31534",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-10T07:23:07.964799Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7111,
-      "importance": 0.7111,
-      "importance_score": 0.7111,
-      "importance_label": "值得关注",
+      "score": 0.7428,
+      "importance": 0.7428,
+      "importance_score": 0.7428,
+      "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.65,
+        "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8029,
+        "recency": 0.8625,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "watch",
+      "category": "industry",
       "reasons": [
         "high_ai_relevance"
       ],
-      "earliest_at": "2026-10-09T19:56:06Z",
-      "latest_at": "2026-10-09T19:56:06Z",
+      "earliest_at": "2026-10-10T07:23:07.964799Z",
+      "latest_at": "2026-10-10T07:23:07.964799Z",
       "primary_item": {
-        "id": "a7000cdfd3f2b9791ce182422673686ac6706839",
-        "title": "Sierra 发布 Personal Agent Protocol（Poppy）协议草案，新增 35 家设计伙伴 / Sharing a draft of Personal Agent Protocol",
-        "title_zh": "Sierra 发布 Personal Agent Protocol（Poppy）协议草案，新增 35 家设计伙伴",
-        "title_en": "Sharing a draft of Personal Agent Protocol",
-        "title_original": "Sharing a draft of Personal Agent Protocol",
-        "summary": "Sierra 发布 Personal Agent Protocol（Poppy）协议草案，宣布新增 35 家设计伙伴，包括 OpenAI、Meta、Bank of America、Mastercard、PayPal、Shopify、Walmart 等。",
+        "id": "78b39ac81f7167b2adbe2d33511fd5536c1e472e",
+        "title": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+        "title_zh": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+        "title_en": null,
+        "title_original": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+        "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://sierra.ai/blog/poppy",
-        "source": "Sierra：Blog（RSS）",
-        "source_name": "AI HOT"
+        "url": "https://www.aibase.com/news/31534",
+        "source": "AIbase",
+        "source_name": "AIbase"
       },
-      "peak_score": 0.7379,
+      "peak_score": 0.7676,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -801,15 +719,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.749,
-      "importance": 0.749,
-      "importance_score": 0.749,
+      "score": 0.7428,
+      "importance": 0.7428,
+      "importance_score": 0.7428,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8965,
+        "recency": 0.8625,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -836,90 +754,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
-      }
-    },
-    {
-      "story_id": "story_d2d36c081b84",
-      "title": "Redwood Research 发布论文：实证检验蒸馏定罪（DFI）与蒸馏提能（DFC） / [Paper] Distillation for Incrimination and Distillation for Capabilities",
-      "url": "https://blog.redwoodresearch.org/p/paper-distillation-for-incrimination",
-      "primary_url": "https://blog.redwoodresearch.org/p/paper-distillation-for-incrimination",
-      "source": "Redwood Research：Blog（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "0c3712ba797602e9ce592e277869e8eef9b19cbf",
-          "title": "Redwood Research 发布论文：实证检验蒸馏定罪（DFI）与蒸馏提能（DFC） / [Paper] Distillation for Incrimination and Distillation for Capabilities",
-          "title_zh": "Redwood Research 发布论文：实证检验蒸馏定罪（DFI）与蒸馏提能（DFC）",
-          "title_en": "[Paper] Distillation for Incrimination and Distillation for Capabilities",
-          "title_original": "[Paper] Distillation for Incrimination and Distillation for Capabilities",
-          "summary": "Redwood Research 发布论文，实证检验两条蒸馏安全路径：DFI 将不信任教师蒸馏为更弱的可信学生，使其暴露教师的隐藏怪癖；DFC 则在迁移能力的同时阻断失对齐。",
-          "recommend_reason_zh": null,
-          "url": "https://blog.redwoodresearch.org/p/paper-distillation-for-incrimination",
-          "source": "Redwood Research：Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-09T22:06:51Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Redwood Research：Blog（RSS）"
-      ],
-      "items": [
-        {
-          "id": "0c3712ba797602e9ce592e277869e8eef9b19cbf",
-          "title": "Redwood Research 发布论文：实证检验蒸馏定罪（DFI）与蒸馏提能（DFC） / [Paper] Distillation for Incrimination and Distillation for Capabilities",
-          "title_zh": "Redwood Research 发布论文：实证检验蒸馏定罪（DFI）与蒸馏提能（DFC）",
-          "title_en": "[Paper] Distillation for Incrimination and Distillation for Capabilities",
-          "title_original": "[Paper] Distillation for Incrimination and Distillation for Capabilities",
-          "summary": "Redwood Research 发布论文，实证检验两条蒸馏安全路径：DFI 将不信任教师蒸馏为更弱的可信学生，使其暴露教师的隐藏怪癖；DFC 则在迁移能力的同时阻断失对齐。",
-          "recommend_reason_zh": null,
-          "url": "https://blog.redwoodresearch.org/p/paper-distillation-for-incrimination",
-          "source": "Redwood Research：Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-09T22:06:51Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7082,
-      "importance": 0.7082,
-      "importance_score": 0.7082,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.63,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8199,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-09T22:06:51Z",
-      "latest_at": "2026-10-09T22:06:51Z",
-      "primary_item": {
-        "id": "0c3712ba797602e9ce592e277869e8eef9b19cbf",
-        "title": "Redwood Research 发布论文：实证检验蒸馏定罪（DFI）与蒸馏提能（DFC） / [Paper] Distillation for Incrimination and Distillation for Capabilities",
-        "title_zh": "Redwood Research 发布论文：实证检验蒸馏定罪（DFI）与蒸馏提能（DFC）",
-        "title_en": "[Paper] Distillation for Incrimination and Distillation for Capabilities",
-        "title_original": "[Paper] Distillation for Incrimination and Distillation for Capabilities",
-        "summary": "Redwood Research 发布论文，实证检验两条蒸馏安全路径：DFI 将不信任教师蒸馏为更弱的可信学生，使其暴露教师的隐藏怪癖；DFC 则在迁移能力的同时阻断失对齐。",
-        "recommend_reason_zh": null,
-        "url": "https://blog.redwoodresearch.org/p/paper-distillation-for-incrimination",
-        "source": "Redwood Research：Blog（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7356,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -967,15 +802,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.749,
-      "importance": 0.749,
-      "importance_score": 0.749,
+      "score": 0.7428,
+      "importance": 0.7428,
+      "importance_score": 0.7428,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8965,
+        "recency": 0.8625,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1002,7 +837,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -1050,15 +885,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.749,
-      "importance": 0.749,
-      "importance_score": 0.749,
+      "score": 0.7428,
+      "importance": 0.7428,
+      "importance_score": 0.7428,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8965,
+        "recency": 0.8625,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1085,148 +920,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
-      }
-    },
-    {
-      "story_id": "story_3b05b7cc3085",
-      "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-      "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police",
-      "primary_url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police",
-      "source": "TechCrunch AI",
-      "source_name": "Curated Media",
-      "sources": [
-        {
-          "id": "0ee3cfee485f7c529902cd6c4a91e9e1bc116129",
-          "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-          "title_zh": null,
-          "title_en": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-          "title_original": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police",
-          "source": "TechCrunch AI",
-          "source_name": "Curated Media",
-          "site_id": "curated_media",
-          "published_at": "2026-10-09T19:36:56Z"
-        },
-        {
-          "id": "145a7aad5286b98601e7de128dd1d179ad76b05d",
-          "title": "An Anthropic model submitted a false homicide tip to Philadelphia police",
-          "title_zh": null,
-          "title_en": "An Anthropic model submitted a false homicide tip to Philadelphia police",
-          "title_original": "An Anthropic model submitted a false homicide tip to Philadelphia police",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.engadget.com/2282713/an-anthropic-model-submitted-a-false-homicide-tip-to-philadelphia-police",
-          "source": "Engadget",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-10-09T20:00:30Z"
-        },
-        {
-          "id": "25d10010a131526956cfc84c46ea6177e4f4ea70",
-          "title": "An Anthropic AI model sent a false homicide tip to the police",
-          "title_zh": null,
-          "title_en": "An Anthropic AI model sent a false homicide tip to the police",
-          "title_original": "An Anthropic AI model sent a false homicide tip to the police",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police",
-          "source": "HN Algolia · AI 24h",
-          "source_name": "Hacker News",
-          "site_id": "hackernews",
-          "published_at": "2026-10-09T19:44:59Z"
-        }
-      ],
-      "source_count": 2,
-      "source_names": [
-        "Engadget",
-        "HN Algolia · AI 24h",
-        "TechCrunch AI"
-      ],
-      "items": [
-        {
-          "id": "0ee3cfee485f7c529902cd6c4a91e9e1bc116129",
-          "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-          "title_zh": null,
-          "title_en": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-          "title_original": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police",
-          "source": "TechCrunch AI",
-          "source_name": "Curated Media",
-          "site_id": "curated_media",
-          "published_at": "2026-10-09T19:36:56Z"
-        },
-        {
-          "id": "145a7aad5286b98601e7de128dd1d179ad76b05d",
-          "title": "An Anthropic model submitted a false homicide tip to Philadelphia police",
-          "title_zh": null,
-          "title_en": "An Anthropic model submitted a false homicide tip to Philadelphia police",
-          "title_original": "An Anthropic model submitted a false homicide tip to Philadelphia police",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.engadget.com/2282713/an-anthropic-model-submitted-a-false-homicide-tip-to-philadelphia-police",
-          "source": "Engadget",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-10-09T20:00:30Z"
-        },
-        {
-          "id": "25d10010a131526956cfc84c46ea6177e4f4ea70",
-          "title": "An Anthropic AI model sent a false homicide tip to the police",
-          "title_zh": null,
-          "title_en": "An Anthropic AI model sent a false homicide tip to the police",
-          "title_original": "An Anthropic AI model sent a false homicide tip to the police",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police",
-          "source": "HN Algolia · AI 24h",
-          "source_name": "Hacker News",
-          "site_id": "hackernews",
-          "published_at": "2026-10-09T19:44:59Z"
-        }
-      ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.6253,
-      "importance": 0.6253,
-      "importance_score": 0.6253,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.5688,
-        "source_tier": 0.58,
-        "ai_relevance": 0.79,
-        "recency": 0.8004,
-        "story_heat": 0.25,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "multi_source"
-      ],
-      "earliest_at": "2026-10-09T19:36:56Z",
-      "latest_at": "2026-10-09T20:00:30Z",
-      "primary_item": {
-        "id": "0ee3cfee485f7c529902cd6c4a91e9e1bc116129",
-        "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-        "title_zh": null,
-        "title_en": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-        "title_original": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police",
-        "source": "TechCrunch AI",
-        "source_name": "Curated Media"
-      },
-      "peak_score": 0.6587,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -1274,15 +968,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7594,
-      "importance": 0.7594,
-      "importance_score": 0.7594,
+      "score": 0.7529,
+      "importance": 0.7529,
+      "importance_score": 0.7529,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9545,
+        "recency": 0.9183,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1310,7 +1004,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -1358,15 +1052,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.749,
-      "importance": 0.749,
-      "importance_score": 0.749,
+      "score": 0.7428,
+      "importance": 0.7428,
+      "importance_score": 0.7428,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8965,
+        "recency": 0.8625,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1393,7 +1087,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -1441,15 +1135,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.749,
-      "importance": 0.749,
-      "importance_score": 0.749,
+      "score": 0.7428,
+      "importance": 0.7428,
+      "importance_score": 0.7428,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8965,
+        "recency": 0.8625,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1476,7 +1170,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -1524,15 +1218,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.749,
-      "importance": 0.749,
-      "importance_score": 0.749,
+      "score": 0.7428,
+      "importance": 0.7428,
+      "importance_score": 0.7428,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8965,
+        "recency": 0.8625,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1559,7 +1253,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -1607,15 +1301,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.749,
-      "importance": 0.749,
-      "importance_score": 0.749,
+      "score": 0.7428,
+      "importance": 0.7428,
+      "importance_score": 0.7428,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8965,
+        "recency": 0.8625,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1642,7 +1336,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     },
     {
@@ -1690,15 +1384,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.749,
-      "importance": 0.749,
-      "importance_score": 0.749,
+      "score": 0.7428,
+      "importance": 0.7428,
+      "importance_score": 0.7428,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8965,
+        "recency": 0.8625,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1725,7 +1419,258 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T18:45:14.681356Z"
+        "scored_at": "2026-10-10T22:46:10.244654Z"
+      }
+    },
+    {
+      "story_id": "story_1a73cd4ffa66",
+      "title": "​知名学者怒批：立即全网下架可联网开放式AI智能体",
+      "url": "https://www.aibase.com/news/31545",
+      "primary_url": "https://www.aibase.com/news/31545",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "b2cd79cf50bb841459581b353d5fc4ccfe3524e7",
+          "title": "​知名学者怒批：立即全网下架可联网开放式AI智能体",
+          "title_zh": "​知名学者怒批：立即全网下架可联网开放式AI智能体",
+          "title_en": null,
+          "title_original": "​知名学者怒批：立即全网下架可联网开放式AI智能体",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31545",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-10T13:53:55.789540Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "b2cd79cf50bb841459581b353d5fc4ccfe3524e7",
+          "title": "​知名学者怒批：立即全网下架可联网开放式AI智能体",
+          "title_zh": "​知名学者怒批：立即全网下架可联网开放式AI智能体",
+          "title_en": null,
+          "title_original": "​知名学者怒批：立即全网下架可联网开放式AI智能体",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31545",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-10T13:53:55.789540Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7529,
+      "importance": 0.7529,
+      "importance_score": 0.7529,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9183,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-10T13:53:55.789540Z",
+      "latest_at": "2026-10-10T13:53:55.789540Z",
+      "primary_item": {
+        "id": "b2cd79cf50bb841459581b353d5fc4ccfe3524e7",
+        "title": "​知名学者怒批：立即全网下架可联网开放式AI智能体",
+        "title_zh": "​知名学者怒批：立即全网下架可联网开放式AI智能体",
+        "title_en": null,
+        "title_original": "​知名学者怒批：立即全网下架可联网开放式AI智能体",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31545",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-10T22:46:10.244654Z"
+      }
+    },
+    {
+      "story_id": "story_abd0bd616f6a",
+      "title": "估值1. 4 万亿美元！OpenAI 年化收入飙至 500 亿美元并寻求巨额新融资",
+      "url": "https://www.aibase.com/news/31520",
+      "primary_url": "https://www.aibase.com/news/31520",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "a081f6fdb767245ad987583a38494f0a14cc94a9",
+          "title": "估值1. 4 万亿美元！OpenAI 年化收入飙至 500 亿美元并寻求巨额新融资",
+          "title_zh": "估值1. 4 万亿美元！OpenAI 年化收入飙至 500 亿美元并寻求巨额新融资",
+          "title_en": null,
+          "title_original": "估值1. 4 万亿美元！OpenAI 年化收入飙至 500 亿美元并寻求巨额新融资",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31520",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-10T07:23:07.964799Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "a081f6fdb767245ad987583a38494f0a14cc94a9",
+          "title": "估值1. 4 万亿美元！OpenAI 年化收入飙至 500 亿美元并寻求巨额新融资",
+          "title_zh": "估值1. 4 万亿美元！OpenAI 年化收入飙至 500 亿美元并寻求巨额新融资",
+          "title_en": null,
+          "title_original": "估值1. 4 万亿美元！OpenAI 年化收入飙至 500 亿美元并寻求巨额新融资",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31520",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-10T07:23:07.964799Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7428,
+      "importance": 0.7428,
+      "importance_score": 0.7428,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8625,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-10T07:23:07.964799Z",
+      "latest_at": "2026-10-10T07:23:07.964799Z",
+      "primary_item": {
+        "id": "a081f6fdb767245ad987583a38494f0a14cc94a9",
+        "title": "估值1. 4 万亿美元！OpenAI 年化收入飙至 500 亿美元并寻求巨额新融资",
+        "title_zh": "估值1. 4 万亿美元！OpenAI 年化收入飙至 500 亿美元并寻求巨额新融资",
+        "title_en": null,
+        "title_original": "估值1. 4 万亿美元！OpenAI 年化收入飙至 500 亿美元并寻求巨额新融资",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31520",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-10T22:46:10.244654Z"
+      }
+    },
+    {
+      "story_id": "story_ce40e0033344",
+      "title": "千问首款AI耳机亮相NBA中国赛，可在淘宝、京东官方店预约",
+      "url": "https://www.aibase.com/news/31543",
+      "primary_url": "https://www.aibase.com/news/31543",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "1baec69b23d487fa7182088c19615c4271387142",
+          "title": "千问首款AI耳机亮相NBA中国赛，可在淘宝、京东官方店预约",
+          "title_zh": "千问首款AI耳机亮相NBA中国赛，可在淘宝、京东官方店预约",
+          "title_en": null,
+          "title_original": "千问首款AI耳机亮相NBA中国赛，可在淘宝、京东官方店预约",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31543",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-10T13:53:55.789540Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "1baec69b23d487fa7182088c19615c4271387142",
+          "title": "千问首款AI耳机亮相NBA中国赛，可在淘宝、京东官方店预约",
+          "title_zh": "千问首款AI耳机亮相NBA中国赛，可在淘宝、京东官方店预约",
+          "title_en": null,
+          "title_original": "千问首款AI耳机亮相NBA中国赛，可在淘宝、京东官方店预约",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31543",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-10T13:53:55.789540Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7529,
+      "importance": 0.7529,
+      "importance_score": 0.7529,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9183,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-10T13:53:55.789540Z",
+      "latest_at": "2026-10-10T13:53:55.789540Z",
+      "primary_item": {
+        "id": "1baec69b23d487fa7182088c19615c4271387142",
+        "title": "千问首款AI耳机亮相NBA中国赛，可在淘宝、京东官方店预约",
+        "title_zh": "千问首款AI耳机亮相NBA中国赛，可在淘宝、京东官方店预约",
+        "title_en": null,
+        "title_original": "千问首款AI耳机亮相NBA中国赛，可在淘宝、京东官方店预约",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31543",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-10T22:46:10.244654Z"
       }
     }
   ]
