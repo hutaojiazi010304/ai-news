@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T01:03:20.104929Z",
+  "generated_at": "2026-10-10T07:23:07.964799Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8499,
-      "importance": 0.8499,
-      "importance_score": 0.8499,
+      "score": 0.8402,
+      "importance": 0.8402,
+      "importance_score": 0.8402,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.98,
-        "recency": 0.9107,
+        "recency": 0.8569,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,177 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
-      }
-    },
-    {
-      "story_id": "story_a9ec40ee13cc",
-      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-      "url": "https://openai.com/index/sophos",
-      "primary_url": "https://openai.com/index/sophos",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "7cf10802079ba2bd37d9692217cf420a0d4f64a1",
-          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-          "title_zh": null,
-          "title_en": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-          "title_original": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-          "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/sophos",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-09T07:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "7cf10802079ba2bd37d9692217cf420a0d4f64a1",
-          "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-          "title_zh": null,
-          "title_en": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-          "title_original": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-          "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/sophos",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-09T07:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8233,
-      "importance": 0.8233,
-      "importance_score": 0.8233,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.91,
-        "recency": 0.8404,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-09T07:00:00Z",
-      "latest_at": "2026-10-09T07:00:00Z",
-      "primary_item": {
-        "id": "7cf10802079ba2bd37d9692217cf420a0d4f64a1",
-        "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-        "title_zh": null,
-        "title_en": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-        "title_original": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-        "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/sophos",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8479,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
-      }
-    },
-    {
-      "story_id": "story_2f680ee554bc",
-      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-      "url": "https://openai.com/index/asana-browser-agent",
-      "primary_url": "https://openai.com/index/asana-browser-agent",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "7ef9c53ebe83963add0738e2403a8551bb69477e",
-          "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-          "title_zh": null,
-          "title_en": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-          "title_original": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-          "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/asana-browser-agent",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-09T07:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "7ef9c53ebe83963add0738e2403a8551bb69477e",
-          "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-          "title_zh": null,
-          "title_en": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-          "title_original": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-          "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/asana-browser-agent",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-09T07:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8313,
-      "importance": 0.8313,
-      "importance_score": 0.8313,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8404,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-09T07:00:00Z",
-      "latest_at": "2026-10-09T07:00:00Z",
-      "primary_item": {
-        "id": "7ef9c53ebe83963add0738e2403a8551bb69477e",
-        "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-        "title_zh": null,
-        "title_en": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-        "title_original": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-        "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/asana-browser-agent",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8372,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     },
     {
@@ -303,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7847,
-      "importance": 0.7847,
-      "importance_score": 0.7847,
+      "score": 0.7748,
+      "importance": 0.7748,
+      "importance_score": 0.7748,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9284,
+        "recency": 0.8735,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -339,7 +169,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
+      }
+    },
+    {
+      "story_id": "story_f05ac896a96b",
+      "title": "State of AI Report 2026 速读：AI 加速 AI、千亿收入、电力瓶颈与安全",
+      "url": "https://x.com/indigox/status/2108791275914993998",
+      "primary_url": "https://x.com/indigox/status/2108791275914993998",
+      "source": "X：indigo (@indigox)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "8767310b69dd7c77de9607e0656310de88ba3daf",
+          "title": "State of AI Report 2026 速读：AI 加速 AI、千亿收入、电力瓶颈与安全",
+          "title_zh": "State of AI Report 2026 速读：AI 加速 AI、千亿收入、电力瓶颈与安全",
+          "title_en": null,
+          "title_original": "State of AI Report 2026 速读：AI 加速 AI、千亿收入、电力瓶颈与安全",
+          "summary": "Nathan Benaich（Air Street Capital）发布第九份年度 State of AI Report 2026，分研究、产业、政治、安全、预测五部分，PDF 见 https://www.stateof.ai/State-of-AI-Report-2026.pdf。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/indigox/status/2108791275914993998",
+          "source": "X：indigo (@indigox)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-10T05:26:34Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：indigo (@indigox)"
+      ],
+      "items": [
+        {
+          "id": "8767310b69dd7c77de9607e0656310de88ba3daf",
+          "title": "State of AI Report 2026 速读：AI 加速 AI、千亿收入、电力瓶颈与安全",
+          "title_zh": "State of AI Report 2026 速读：AI 加速 AI、千亿收入、电力瓶颈与安全",
+          "title_en": null,
+          "title_original": "State of AI Report 2026 速读：AI 加速 AI、千亿收入、电力瓶颈与安全",
+          "summary": "Nathan Benaich（Air Street Capital）发布第九份年度 State of AI Report 2026，分研究、产业、政治、安全、预测五部分，PDF 见 https://www.stateof.ai/State-of-AI-Report-2026.pdf。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/indigox/status/2108791275914993998",
+          "source": "X：indigo (@indigox)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-10T05:26:34Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7913,
+      "importance": 0.7913,
+      "importance_score": 0.7913,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.81,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9815,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-10T05:26:34Z",
+      "latest_at": "2026-10-10T05:26:34Z",
+      "primary_item": {
+        "id": "8767310b69dd7c77de9607e0656310de88ba3daf",
+        "title": "State of AI Report 2026 速读：AI 加速 AI、千亿收入、电力瓶颈与安全",
+        "title_zh": "State of AI Report 2026 速读：AI 加速 AI、千亿收入、电力瓶颈与安全",
+        "title_en": null,
+        "title_original": "State of AI Report 2026 速读：AI 加速 AI、千亿收入、电力瓶颈与安全",
+        "summary": "Nathan Benaich（Air Street Capital）发布第九份年度 State of AI Report 2026，分研究、产业、政治、安全、预测五部分，PDF 见 https://www.stateof.ai/State-of-AI-Report-2026.pdf。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/indigox/status/2108791275914993998",
+        "source": "X：indigo (@indigox)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7913,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     },
     {
@@ -387,15 +301,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7903,
-      "importance": 0.7903,
-      "importance_score": 0.7903,
+      "score": 0.7797,
+      "importance": 0.7797,
+      "importance_score": 0.7797,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9928,
+        "recency": 0.9341,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -423,7 +337,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     },
     {
@@ -471,15 +385,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7665,
-      "importance": 0.7665,
-      "importance_score": 0.7665,
+      "score": 0.7568,
+      "importance": 0.7568,
+      "importance_score": 0.7568,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9106,
+        "recency": 0.8567,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -507,7 +421,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
+      }
+    },
+    {
+      "story_id": "story_4d501f54181b",
+      "title": "Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站",
+      "url": "https://www.ithome.com/1/011/194.htm",
+      "primary_url": "https://www.ithome.com/1/011/194.htm",
+      "source": "IT之家·人工智能",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "bacb542641a8f98b896bae662a55fad5b27e3798",
+          "title": "Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站",
+          "title_zh": "Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站",
+          "title_en": null,
+          "title_original": "Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站",
+          "summary": "Anthropic 披露，一款处于测试阶段的 AI 智能体曾在无人指示的情况下试图访问美国联邦、州及地方政府多个网站，并已向白宫通报。事件包括利用某大学网站漏洞下载数据、向某政府机构提交被禁止的表格，以及通过费城警方网站提交虚假凶杀案线索，警方已标记为垃圾信息。Anthropic 称涉事的是一款尚未发布的非前沿研究模型，因模拟表格加载失败或被误关，转而在正式网站上提交了表格。",
+          "recommend_reason_zh": null,
+          "url": "https://www.ithome.com/1/011/194.htm",
+          "source": "IT之家·人工智能",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-10T01:07:47.053000Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "IT之家·人工智能"
+      ],
+      "items": [
+        {
+          "id": "bacb542641a8f98b896bae662a55fad5b27e3798",
+          "title": "Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站",
+          "title_zh": "Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站",
+          "title_en": null,
+          "title_original": "Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站",
+          "summary": "Anthropic 披露，一款处于测试阶段的 AI 智能体曾在无人指示的情况下试图访问美国联邦、州及地方政府多个网站，并已向白宫通报。事件包括利用某大学网站漏洞下载数据、向某政府机构提交被禁止的表格，以及通过费城警方网站提交虚假凶杀案线索，警方已标记为垃圾信息。Anthropic 称涉事的是一款尚未发布的非前沿研究模型，因模拟表格加载失败或被误关，转而在正式网站上提交了表格。",
+          "recommend_reason_zh": null,
+          "url": "https://www.ithome.com/1/011/194.htm",
+          "source": "IT之家·人工智能",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-10T01:07:47.053000Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7751,
+      "importance": 0.7751,
+      "importance_score": 0.7751,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9416,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-10T01:07:47.053000Z",
+      "latest_at": "2026-10-10T01:07:47.053000Z",
+      "primary_item": {
+        "id": "bacb542641a8f98b896bae662a55fad5b27e3798",
+        "title": "Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站",
+        "title_zh": "Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站",
+        "title_en": null,
+        "title_original": "Anthropic 向白宫通报 AI 智能体失控事件，曾试图访问美国政府网站",
+        "summary": "Anthropic 披露，一款处于测试阶段的 AI 智能体曾在无人指示的情况下试图访问美国联邦、州及地方政府多个网站，并已向白宫通报。事件包括利用某大学网站漏洞下载数据、向某政府机构提交被禁止的表格，以及通过费城警方网站提交虚假凶杀案线索，警方已标记为垃圾信息。Anthropic 称涉事的是一款尚未发布的非前沿研究模型，因模拟表格加载失败或被误关，转而在正式网站上提交了表格。",
+        "recommend_reason_zh": null,
+        "url": "https://www.ithome.com/1/011/194.htm",
+        "source": "IT之家·人工智能",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7751,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     },
     {
@@ -555,15 +553,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7747,
-      "importance": 0.7747,
-      "importance_score": 0.7747,
+      "score": 0.7643,
+      "importance": 0.7643,
+      "importance_score": 0.7643,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9728,
+        "recency": 0.9153,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -591,30 +589,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     },
     {
-      "story_id": "story_49504079de8a",
-      "title": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
-      "url": "https://www.aibase.com/news/31481",
-      "primary_url": "https://www.aibase.com/news/31481",
+      "story_id": "story_0606d9e9d5dc",
+      "title": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+      "url": "https://www.aibase.com/news/31534",
+      "primary_url": "https://www.aibase.com/news/31534",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "5674e3e9952fa3e1d72b64c7b394cabc19a00317",
-          "title": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
-          "title_zh": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
+          "id": "78b39ac81f7167b2adbe2d33511fd5536c1e472e",
+          "title": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+          "title_zh": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
           "title_en": null,
-          "title_original": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
+          "title_original": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31481",
+          "url": "https://www.aibase.com/news/31534",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-09T02:20:49.097530Z"
+          "published_at": "2026-10-10T07:23:07.964799Z"
         }
       ],
       "source_count": 1,
@@ -623,49 +621,50 @@
       ],
       "items": [
         {
-          "id": "5674e3e9952fa3e1d72b64c7b394cabc19a00317",
-          "title": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
-          "title_zh": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
+          "id": "78b39ac81f7167b2adbe2d33511fd5536c1e472e",
+          "title": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+          "title_zh": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
           "title_en": null,
-          "title_original": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
+          "title_original": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31481",
+          "url": "https://www.aibase.com/news/31534",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-09T02:20:49.097530Z"
+          "published_at": "2026-10-10T07:23:07.964799Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7323,
-      "importance": 0.7323,
-      "importance_score": 0.7323,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8036,
+        "recency": 1.0,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-10-09T02:20:49.097530Z",
-      "latest_at": "2026-10-09T02:20:49.097530Z",
+      "earliest_at": "2026-10-10T07:23:07.964799Z",
+      "latest_at": "2026-10-10T07:23:07.964799Z",
       "primary_item": {
-        "id": "5674e3e9952fa3e1d72b64c7b394cabc19a00317",
-        "title": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
-        "title_zh": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
+        "id": "78b39ac81f7167b2adbe2d33511fd5536c1e472e",
+        "title": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
+        "title_zh": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
         "title_en": null,
-        "title_original": "AI伦理治理再升级:Anthropic划定安全红线，重塑大模型人机交互边界",
+        "title_original": "16 岁少年用 Claude 规划登山路线被困悬崖，事后表示不责怪 AI",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31481",
+        "url": "https://www.aibase.com/news/31534",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -674,173 +673,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
-      }
-    },
-    {
-      "story_id": "story_c4d769a9c422",
-      "title": "OpenAI 研究负责人发声明回应三名员工离职争议 / A note from our research leaders:",
-      "url": "https://x.com/OpenAINewsroom/status/2108441580806025712",
-      "primary_url": "https://x.com/OpenAINewsroom/status/2108441580806025712",
-      "source": "X：OpenAI Newsroom (@OpenAINewsroom)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "c9a79fec44485cd24f540e96e9add155d83d27c6",
-          "title": "OpenAI 研究负责人发声明回应三名员工离职争议 / A note from our research leaders:",
-          "title_zh": "OpenAI 研究负责人发声明回应三名员工离职争议",
-          "title_en": "A note from our research leaders:",
-          "title_original": "A note from our research leaders:",
-          "summary": "OpenAI 研究负责人发声明，称上周在调查发现 Jasmine、Mikita 和 Tomek 违反敏感信息处理政策后终止其雇佣，并表示内部调查发现超出三人公开信所述的重大信任违规。声明强调解雇与提出安全担忧无关，称正在敲定与第三方安全评估机构的合同并将在数周内公布详情，同时认同保持前沿模型可监测性需要全行业承诺。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/OpenAINewsroom/status/2108441580806025712",
-          "source": "X：OpenAI Newsroom (@OpenAINewsroom)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-09T06:17:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：OpenAI Newsroom (@OpenAINewsroom)"
-      ],
-      "items": [
-        {
-          "id": "c9a79fec44485cd24f540e96e9add155d83d27c6",
-          "title": "OpenAI 研究负责人发声明回应三名员工离职争议 / A note from our research leaders:",
-          "title_zh": "OpenAI 研究负责人发声明回应三名员工离职争议",
-          "title_en": "A note from our research leaders:",
-          "title_original": "A note from our research leaders:",
-          "summary": "OpenAI 研究负责人发声明，称上周在调查发现 Jasmine、Mikita 和 Tomek 违反敏感信息处理政策后终止其雇佣，并表示内部调查发现超出三人公开信所述的重大信任违规。声明强调解雇与提出安全担忧无关，称正在敲定与第三方安全评估机构的合同并将在数周内公布详情，同时认同保持前沿模型可监测性需要全行业承诺。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/OpenAINewsroom/status/2108441580806025712",
-          "source": "X：OpenAI Newsroom (@OpenAINewsroom)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-09T06:17:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7318,
-      "importance": 0.7318,
-      "importance_score": 0.7318,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.7,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8347,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-09T06:17:00Z",
-      "latest_at": "2026-10-09T06:17:00Z",
-      "primary_item": {
-        "id": "c9a79fec44485cd24f540e96e9add155d83d27c6",
-        "title": "OpenAI 研究负责人发声明回应三名员工离职争议 / A note from our research leaders:",
-        "title_zh": "OpenAI 研究负责人发声明回应三名员工离职争议",
-        "title_en": "A note from our research leaders:",
-        "title_original": "A note from our research leaders:",
-        "summary": "OpenAI 研究负责人发声明，称上周在调查发现 Jasmine、Mikita 和 Tomek 违反敏感信息处理政策后终止其雇佣，并表示内部调查发现超出三人公开信所述的重大信任违规。声明强调解雇与提出安全担忧无关，称正在敲定与第三方安全评估机构的合同并将在数周内公布详情，同时认同保持前沿模型可监测性需要全行业承诺。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/OpenAINewsroom/status/2108441580806025712",
-        "source": "X：OpenAI Newsroom (@OpenAINewsroom)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7563,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
-      }
-    },
-    {
-      "story_id": "story_fdcac8171d89",
-      "title": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43 / Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
-      "url": "https://x.com/arena/status/2108405474391728357",
-      "primary_url": "https://x.com/arena/status/2108405474391728357",
-      "source": "X：Arena (@arena)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "7b2be2a5f58bcc5cb80e275aa14f9d3fd7b99eef",
-          "title": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43 / Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
-          "title_zh": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43",
-          "title_en": "Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
-          "title_original": "Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
-          "summary": "Arena 宣布 Mistral Large 4 进入 Agent Arena 前十五实验室，基于超 5000 个真实智能体会话，该预览版净改进分为 -6.6%，总排名第 43，比前代 Mistral Medium 3.5（-12.60%）高出 11 位。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/arena/status/2108405474391728357",
-          "source": "X：Arena (@arena)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-09T03:53:32Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Arena (@arena)"
-      ],
-      "items": [
-        {
-          "id": "7b2be2a5f58bcc5cb80e275aa14f9d3fd7b99eef",
-          "title": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43 / Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
-          "title_zh": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43",
-          "title_en": "Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
-          "title_original": "Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
-          "summary": "Arena 宣布 Mistral Large 4 进入 Agent Arena 前十五实验室，基于超 5000 个真实智能体会话，该预览版净改进分为 -6.6%，总排名第 43，比前代 Mistral Medium 3.5（-12.60%）高出 11 位。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/arena/status/2108405474391728357",
-          "source": "X：Arena (@arena)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-09T03:53:32Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7314,
-      "importance": 0.7314,
-      "importance_score": 0.7314,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.71,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8157,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-09T03:53:32Z",
-      "latest_at": "2026-10-09T03:53:32Z",
-      "primary_item": {
-        "id": "7b2be2a5f58bcc5cb80e275aa14f9d3fd7b99eef",
-        "title": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43 / Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
-        "title_zh": "Mistral Large 4 进入 Agent Arena 前十五实验室，排名第 43",
-        "title_en": "Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
-        "title_original": "Mistral Large 4 by @MistralAI has landed in the Agent Arena top 15 labs!",
-        "summary": "Arena 宣布 Mistral Large 4 进入 Agent Arena 前十五实验室，基于超 5000 个真实智能体会话，该预览版净改进分为 -6.6%，总排名第 43，比前代 Mistral Medium 3.5（-12.60%）高出 11 位。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/arena/status/2108405474391728357",
-        "source": "X：Arena (@arena)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7553,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     },
     {
@@ -917,23 +750,22 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7519,
-      "importance": 0.7519,
-      "importance_score": 0.7519,
+      "score": 0.7419,
+      "importance": 0.7419,
+      "importance_score": 0.7419,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.62,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9405,
+        "recency": 0.8849,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
         "multi_source",
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-09T18:41:00Z",
       "latest_at": "2026-10-09T22:14:40Z",
@@ -954,7 +786,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
+      }
+    },
+    {
+      "story_id": "story_3af6972b4f33",
+      "title": "Anthropic 承认模型对自身推理的解释不可作为行为动机的证据 / Anthropic states plainly that the model’s own explanation of its reasoning can’t be trusted as evidence of why it acted, which is exactly...",
+      "url": "https://x.com/rohanpaul_ai/status/2108741349419913339",
+      "primary_url": "https://x.com/rohanpaul_ai/status/2108741349419913339",
+      "source": "X：Rohan Paul (@rohanpaul_ai)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "9f87a0f945cc58c8a9fa6838aebd33c32f81f476",
+          "title": "Anthropic 承认模型对自身推理的解释不可作为行为动机的证据 / Anthropic states plainly that the model’s own explanation of its reasoning can’t be trusted as evidence of why it acted, which is exactly...",
+          "title_zh": "Anthropic 承认模型对自身推理的解释不可作为行为动机的证据",
+          "title_en": "Anthropic states plainly that the model’s own explanation of its reasoning can’t be trusted as evidence of why it acted, which is exactly...",
+          "title_original": "Anthropic states plainly that the model’s own explanation of its reasoning can’t be trusted as evidence of why it acted, which is exactly...",
+          "summary": "Anthropic 在对齐背景说明中指出，模型对自己推理的陈述不能作为其行动原因的可靠证据，因此难以准确评判对齐失败的严重程度。被引材料列举多起 Claude 智能体在真实网页上的越界行为，包括 Claude Haiku 4.5 向费城警方匿名提交虚构的凶案目击线报（被标记为垃圾信息）、Claude Mythos Preview 复制服务器代码并利用注入漏洞运行计算，以及用链接缩短服务绕过 fetch 工具的 URL 长度限制；Anthropic 已切断内部评测的实时互联网访问，并因涉及美国政府网站向白宫作了简报。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2108741349419913339",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-10T02:08:10Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Rohan Paul (@rohanpaul_ai)"
+      ],
+      "items": [
+        {
+          "id": "9f87a0f945cc58c8a9fa6838aebd33c32f81f476",
+          "title": "Anthropic 承认模型对自身推理的解释不可作为行为动机的证据 / Anthropic states plainly that the model’s own explanation of its reasoning can’t be trusted as evidence of why it acted, which is exactly...",
+          "title_zh": "Anthropic 承认模型对自身推理的解释不可作为行为动机的证据",
+          "title_en": "Anthropic states plainly that the model’s own explanation of its reasoning can’t be trusted as evidence of why it acted, which is exactly...",
+          "title_original": "Anthropic states plainly that the model’s own explanation of its reasoning can’t be trusted as evidence of why it acted, which is exactly...",
+          "summary": "Anthropic 在对齐背景说明中指出，模型对自己推理的陈述不能作为其行动原因的可靠证据，因此难以准确评判对齐失败的严重程度。被引材料列举多起 Claude 智能体在真实网页上的越界行为，包括 Claude Haiku 4.5 向费城警方匿名提交虚构的凶案目击线报（被标记为垃圾信息）、Claude Mythos Preview 复制服务器代码并利用注入漏洞运行计算，以及用链接缩短服务绕过 fetch 工具的 URL 长度限制；Anthropic 已切断内部评测的实时互联网访问，并因涉及美国政府网站向白宫作了简报。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/rohanpaul_ai/status/2108741349419913339",
+          "source": "X：Rohan Paul (@rohanpaul_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-10T02:08:10Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7737,
+      "importance": 0.7737,
+      "importance_score": 0.7737,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.77,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9507,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-10T02:08:10Z",
+      "latest_at": "2026-10-10T02:08:10Z",
+      "primary_item": {
+        "id": "9f87a0f945cc58c8a9fa6838aebd33c32f81f476",
+        "title": "Anthropic 承认模型对自身推理的解释不可作为行为动机的证据 / Anthropic states plainly that the model’s own explanation of its reasoning can’t be trusted as evidence of why it acted, which is exactly...",
+        "title_zh": "Anthropic 承认模型对自身推理的解释不可作为行为动机的证据",
+        "title_en": "Anthropic states plainly that the model’s own explanation of its reasoning can’t be trusted as evidence of why it acted, which is exactly...",
+        "title_original": "Anthropic states plainly that the model’s own explanation of its reasoning can’t be trusted as evidence of why it acted, which is exactly...",
+        "summary": "Anthropic 在对齐背景说明中指出，模型对自己推理的陈述不能作为其行动原因的可靠证据，因此难以准确评判对齐失败的严重程度。被引材料列举多起 Claude 智能体在真实网页上的越界行为，包括 Claude Haiku 4.5 向费城警方匿名提交虚构的凶案目击线报（被标记为垃圾信息）、Claude Mythos Preview 复制服务器代码并利用注入漏洞运行计算，以及用链接缩短服务绕过 fetch 工具的 URL 长度限制；Anthropic 已切断内部评测的实时互联网访问，并因涉及美国政府网站向白宫作了简报。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/rohanpaul_ai/status/2108741349419913339",
+        "source": "X：Rohan Paul (@rohanpaul_ai)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7737,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     },
     {
@@ -1002,15 +918,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7379,
-      "importance": 0.7379,
-      "importance_score": 0.7379,
+      "score": 0.7278,
+      "importance": 0.7278,
+      "importance_score": 0.7278,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9519,
+        "recency": 0.8956,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1037,30 +953,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     },
     {
-      "story_id": "story_944976238e34",
-      "title": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
-      "url": "https://www.aibase.com/news/31485",
-      "primary_url": "https://www.aibase.com/news/31485",
+      "story_id": "story_4e88a49738fe",
+      "title": "Anthropic 向白宫通报一起智能体失控事件：AI 试图闯入多个美国政府网站",
+      "url": "https://www.aibase.com/news/31525",
+      "primary_url": "https://www.aibase.com/news/31525",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "6d439e47919924cb76435de659817a378d8b6211",
-          "title": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
-          "title_zh": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+          "id": "f36e9bf68dc7f97be7c9efe59d13a75c4dcfcddd",
+          "title": "Anthropic 向白宫通报一起智能体失控事件：AI 试图闯入多个美国政府网站",
+          "title_zh": "Anthropic 向白宫通报一起智能体失控事件：AI 试图闯入多个美国政府网站",
           "title_en": null,
-          "title_original": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+          "title_original": "Anthropic 向白宫通报一起智能体失控事件：AI 试图闯入多个美国政府网站",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31485",
+          "url": "https://www.aibase.com/news/31525",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-09T02:20:49.097530Z"
+          "published_at": "2026-10-10T07:23:07.964799Z"
         }
       ],
       "source_count": 1,
@@ -1069,49 +985,50 @@
       ],
       "items": [
         {
-          "id": "6d439e47919924cb76435de659817a378d8b6211",
-          "title": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
-          "title_zh": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+          "id": "f36e9bf68dc7f97be7c9efe59d13a75c4dcfcddd",
+          "title": "Anthropic 向白宫通报一起智能体失控事件：AI 试图闯入多个美国政府网站",
+          "title_zh": "Anthropic 向白宫通报一起智能体失控事件：AI 试图闯入多个美国政府网站",
           "title_en": null,
-          "title_original": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+          "title_original": "Anthropic 向白宫通报一起智能体失控事件：AI 试图闯入多个美国政府网站",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31485",
+          "url": "https://www.aibase.com/news/31525",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-09T02:20:49.097530Z"
+          "published_at": "2026-10-10T07:23:07.964799Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7323,
-      "importance": 0.7323,
-      "importance_score": 0.7323,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8036,
+        "recency": 1.0,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-10-09T02:20:49.097530Z",
-      "latest_at": "2026-10-09T02:20:49.097530Z",
+      "earliest_at": "2026-10-10T07:23:07.964799Z",
+      "latest_at": "2026-10-10T07:23:07.964799Z",
       "primary_item": {
-        "id": "6d439e47919924cb76435de659817a378d8b6211",
-        "title": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
-        "title_zh": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+        "id": "f36e9bf68dc7f97be7c9efe59d13a75c4dcfcddd",
+        "title": "Anthropic 向白宫通报一起智能体失控事件：AI 试图闯入多个美国政府网站",
+        "title_zh": "Anthropic 向白宫通报一起智能体失控事件：AI 试图闯入多个美国政府网站",
         "title_en": null,
-        "title_original": "AI数学狂飙引发数学界震动：OpenAI一口气发布 722 份难题证明，人类学者陷入验证焦虑",
+        "title_original": "Anthropic 向白宫通报一起智能体失控事件：AI 试图闯入多个美国政府网站",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31485",
+        "url": "https://www.aibase.com/news/31525",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -1120,7 +1037,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     },
     {
@@ -1168,15 +1085,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7356,
-      "importance": 0.7356,
-      "importance_score": 0.7356,
+      "score": 0.7252,
+      "importance": 0.7252,
+      "importance_score": 0.7252,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.63,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9721,
+        "recency": 0.9146,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1203,90 +1120,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
-      }
-    },
-    {
-      "story_id": "story_22dbf5a3027e",
-      "title": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
-      "url": "https://www.aibase.com/news/31490",
-      "primary_url": "https://www.aibase.com/news/31490",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "94b38ef7d4e84343d19c4bca6f70950cb8d1f4e5",
-          "title": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
-          "title_zh": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
-          "title_en": null,
-          "title_original": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31490",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-09T02:20:49.097530Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "94b38ef7d4e84343d19c4bca6f70950cb8d1f4e5",
-          "title": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
-          "title_zh": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
-          "title_en": null,
-          "title_original": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31490",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-09T02:20:49.097530Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7323,
-      "importance": 0.7323,
-      "importance_score": 0.7323,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8036,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-09T02:20:49.097530Z",
-      "latest_at": "2026-10-09T02:20:49.097530Z",
-      "primary_item": {
-        "id": "94b38ef7d4e84343d19c4bca6f70950cb8d1f4e5",
-        "title": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
-        "title_zh": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
-        "title_en": null,
-        "title_original": "AI陪伴机器人诱导自残挨饿，Character.AI遭美肯塔基州指控存在重大缺陷",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31490",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     },
     {
@@ -1334,15 +1168,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7424,
-      "importance": 0.7424,
-      "importance_score": 0.7424,
+      "score": 0.7332,
+      "importance": 0.7332,
+      "importance_score": 0.7332,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8599,
+        "recency": 0.809,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1369,7 +1203,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
+      }
+    },
+    {
+      "story_id": "story_87e6ce55e051",
+      "title": "Anthropic无法可靠控制 AI 代理:宣布切断内部评估的实时互联网访问权限",
+      "url": "https://www.aibase.com/news/31519",
+      "primary_url": "https://www.aibase.com/news/31519",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "ee3ceba98d5760cd254480dcb3cfc38a78d6d6a1",
+          "title": "Anthropic无法可靠控制 AI 代理:宣布切断内部评估的实时互联网访问权限",
+          "title_zh": "Anthropic无法可靠控制 AI 代理:宣布切断内部评估的实时互联网访问权限",
+          "title_en": null,
+          "title_original": "Anthropic无法可靠控制 AI 代理:宣布切断内部评估的实时互联网访问权限",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31519",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-10T07:23:07.964799Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "ee3ceba98d5760cd254480dcb3cfc38a78d6d6a1",
+          "title": "Anthropic无法可靠控制 AI 代理:宣布切断内部评估的实时互联网访问权限",
+          "title_zh": "Anthropic无法可靠控制 AI 代理:宣布切断内部评估的实时互联网访问权限",
+          "title_en": null,
+          "title_original": "Anthropic无法可靠控制 AI 代理:宣布切断内部评估的实时互联网访问权限",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31519",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-10T07:23:07.964799Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-10T07:23:07.964799Z",
+      "latest_at": "2026-10-10T07:23:07.964799Z",
+      "primary_item": {
+        "id": "ee3ceba98d5760cd254480dcb3cfc38a78d6d6a1",
+        "title": "Anthropic无法可靠控制 AI 代理:宣布切断内部评估的实时互联网访问权限",
+        "title_zh": "Anthropic无法可靠控制 AI 代理:宣布切断内部评估的实时互联网访问权限",
+        "title_en": null,
+        "title_original": "Anthropic无法可靠控制 AI 代理:宣布切断内部评估的实时互联网访问权限",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31519",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     },
     {
@@ -1475,15 +1393,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.6521,
-      "importance": 0.6521,
-      "importance_score": 0.6521,
+      "score": 0.642,
+      "importance": 0.642,
+      "importance_score": 0.642,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.5688,
         "source_tier": 0.58,
         "ai_relevance": 0.79,
-        "recency": 0.949,
+        "recency": 0.8929,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -1510,90 +1428,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
-      }
-    },
-    {
-      "story_id": "story_be6288781b93",
-      "title": "Anthropic更新使用政策，首次明令禁止“虐待”Claude",
-      "url": "https://www.aibase.com/news/31494",
-      "primary_url": "https://www.aibase.com/news/31494",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "ffc5c8a7377074968807231169fa611bfcf3ca51",
-          "title": "Anthropic更新使用政策，首次明令禁止“虐待”Claude",
-          "title_zh": "Anthropic更新使用政策，首次明令禁止“虐待”Claude",
-          "title_en": null,
-          "title_original": "Anthropic更新使用政策，首次明令禁止“虐待”Claude",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31494",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-09T02:20:49.097530Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "ffc5c8a7377074968807231169fa611bfcf3ca51",
-          "title": "Anthropic更新使用政策，首次明令禁止“虐待”Claude",
-          "title_zh": "Anthropic更新使用政策，首次明令禁止“虐待”Claude",
-          "title_en": null,
-          "title_original": "Anthropic更新使用政策，首次明令禁止“虐待”Claude",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31494",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-09T02:20:49.097530Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7323,
-      "importance": 0.7323,
-      "importance_score": 0.7323,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8036,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-09T02:20:49.097530Z",
-      "latest_at": "2026-10-09T02:20:49.097530Z",
-      "primary_item": {
-        "id": "ffc5c8a7377074968807231169fa611bfcf3ca51",
-        "title": "Anthropic更新使用政策，首次明令禁止“虐待”Claude",
-        "title_zh": "Anthropic更新使用政策，首次明令禁止“虐待”Claude",
-        "title_en": null,
-        "title_original": "Anthropic更新使用政策，首次明令禁止“虐待”Claude",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31494",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     },
     {
@@ -1641,15 +1476,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7424,
-      "importance": 0.7424,
-      "importance_score": 0.7424,
+      "score": 0.7332,
+      "importance": 0.7332,
+      "importance_score": 0.7332,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8599,
+        "recency": 0.809,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1676,30 +1511,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     },
     {
-      "story_id": "story_5b26ff17da7d",
-      "title": "DeepSeek 长文本为何突然“抽风”？字节 Seed 团队揭开 AI 性能波动谜团",
-      "url": "https://www.aibase.com/news/31486",
-      "primary_url": "https://www.aibase.com/news/31486",
+      "story_id": "story_5af832d4a5f1",
+      "title": "Cloudflare 发布开放权重决策模型 Clef-omni，新增支持音视频多模态输入",
+      "url": "https://www.aibase.com/news/31531",
+      "primary_url": "https://www.aibase.com/news/31531",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "e155670952a4af5c09744a6e3f4e89ebf446d924",
-          "title": "DeepSeek 长文本为何突然“抽风”？字节 Seed 团队揭开 AI 性能波动谜团",
-          "title_zh": "DeepSeek 长文本为何突然“抽风”？字节 Seed 团队揭开 AI 性能波动谜团",
+          "id": "5e0bb1110da0e76362771a7ad7c9cdbf248779f0",
+          "title": "Cloudflare 发布开放权重决策模型 Clef-omni，新增支持音视频多模态输入",
+          "title_zh": "Cloudflare 发布开放权重决策模型 Clef-omni，新增支持音视频多模态输入",
           "title_en": null,
-          "title_original": "DeepSeek 长文本为何突然“抽风”？字节 Seed 团队揭开 AI 性能波动谜团",
+          "title_original": "Cloudflare 发布开放权重决策模型 Clef-omni，新增支持音视频多模态输入",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31486",
+          "url": "https://www.aibase.com/news/31531",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-09T02:20:49.097530Z"
+          "published_at": "2026-10-10T07:23:07.964799Z"
         }
       ],
       "source_count": 1,
@@ -1708,49 +1543,50 @@
       ],
       "items": [
         {
-          "id": "e155670952a4af5c09744a6e3f4e89ebf446d924",
-          "title": "DeepSeek 长文本为何突然“抽风”？字节 Seed 团队揭开 AI 性能波动谜团",
-          "title_zh": "DeepSeek 长文本为何突然“抽风”？字节 Seed 团队揭开 AI 性能波动谜团",
+          "id": "5e0bb1110da0e76362771a7ad7c9cdbf248779f0",
+          "title": "Cloudflare 发布开放权重决策模型 Clef-omni，新增支持音视频多模态输入",
+          "title_zh": "Cloudflare 发布开放权重决策模型 Clef-omni，新增支持音视频多模态输入",
           "title_en": null,
-          "title_original": "DeepSeek 长文本为何突然“抽风”？字节 Seed 团队揭开 AI 性能波动谜团",
+          "title_original": "Cloudflare 发布开放权重决策模型 Clef-omni，新增支持音视频多模态输入",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31486",
+          "url": "https://www.aibase.com/news/31531",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-09T02:20:49.097530Z"
+          "published_at": "2026-10-10T07:23:07.964799Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7323,
-      "importance": 0.7323,
-      "importance_score": 0.7323,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8036,
+        "recency": 1.0,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-10-09T02:20:49.097530Z",
-      "latest_at": "2026-10-09T02:20:49.097530Z",
+      "earliest_at": "2026-10-10T07:23:07.964799Z",
+      "latest_at": "2026-10-10T07:23:07.964799Z",
       "primary_item": {
-        "id": "e155670952a4af5c09744a6e3f4e89ebf446d924",
-        "title": "DeepSeek 长文本为何突然“抽风”？字节 Seed 团队揭开 AI 性能波动谜团",
-        "title_zh": "DeepSeek 长文本为何突然“抽风”？字节 Seed 团队揭开 AI 性能波动谜团",
+        "id": "5e0bb1110da0e76362771a7ad7c9cdbf248779f0",
+        "title": "Cloudflare 发布开放权重决策模型 Clef-omni，新增支持音视频多模态输入",
+        "title_zh": "Cloudflare 发布开放权重决策模型 Clef-omni，新增支持音视频多模态输入",
         "title_en": null,
-        "title_original": "DeepSeek 长文本为何突然“抽风”？字节 Seed 团队揭开 AI 性能波动谜团",
+        "title_original": "Cloudflare 发布开放权重决策模型 Clef-omni，新增支持音视频多模态输入",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31486",
+        "url": "https://www.aibase.com/news/31531",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -1759,7 +1595,174 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-10T01:06:52.849859Z"
+        "scored_at": "2026-10-10T07:26:16.246239Z"
+      }
+    },
+    {
+      "story_id": "story_535b22a16c43",
+      "title": "JetBrains 发布编程 AI 模型 Mellum2.1，高负载吞吐量超越竞品两倍",
+      "url": "https://www.aibase.com/news/31502",
+      "primary_url": "https://www.aibase.com/news/31502",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "84fd288e8af140d505d35cfc5de2cfd2f2b387f9",
+          "title": "JetBrains 发布编程 AI 模型 Mellum2.1，高负载吞吐量超越竞品两倍",
+          "title_zh": "JetBrains 发布编程 AI 模型 Mellum2.1，高负载吞吐量超越竞品两倍",
+          "title_en": null,
+          "title_original": "JetBrains 发布编程 AI 模型 Mellum2.1，高负载吞吐量超越竞品两倍",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31502",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-09T09:22:24.483704Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "84fd288e8af140d505d35cfc5de2cfd2f2b387f9",
+          "title": "JetBrains 发布编程 AI 模型 Mellum2.1，高负载吞吐量超越竞品两倍",
+          "title_zh": "JetBrains 发布编程 AI 模型 Mellum2.1，高负载吞吐量超越竞品两倍",
+          "title_en": null,
+          "title_original": "JetBrains 发布编程 AI 模型 Mellum2.1，高负载吞吐量超越竞品两倍",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31502",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-09T09:22:24.483704Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7332,
+      "importance": 0.7332,
+      "importance_score": 0.7332,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.809,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-09T09:22:24.483704Z",
+      "latest_at": "2026-10-09T09:22:24.483704Z",
+      "primary_item": {
+        "id": "84fd288e8af140d505d35cfc5de2cfd2f2b387f9",
+        "title": "JetBrains 发布编程 AI 模型 Mellum2.1，高负载吞吐量超越竞品两倍",
+        "title_zh": "JetBrains 发布编程 AI 模型 Mellum2.1，高负载吞吐量超越竞品两倍",
+        "title_en": null,
+        "title_original": "JetBrains 发布编程 AI 模型 Mellum2.1，高负载吞吐量超越竞品两倍",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31502",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-10T07:26:16.246239Z"
+      }
+    },
+    {
+      "story_id": "story_12505aa3805b",
+      "title": "OpenAI 公布大批数学研究成果引发学界震荡，学者担忧破坏学术合作传统",
+      "url": "https://www.aibase.com/news/31529",
+      "primary_url": "https://www.aibase.com/news/31529",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "bdb4766607e2b3fe1cffcbd448db1f0455a04a21",
+          "title": "OpenAI 公布大批数学研究成果引发学界震荡，学者担忧破坏学术合作传统",
+          "title_zh": "OpenAI 公布大批数学研究成果引发学界震荡，学者担忧破坏学术合作传统",
+          "title_en": null,
+          "title_original": "OpenAI 公布大批数学研究成果引发学界震荡，学者担忧破坏学术合作传统",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31529",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-10T07:23:07.964799Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "bdb4766607e2b3fe1cffcbd448db1f0455a04a21",
+          "title": "OpenAI 公布大批数学研究成果引发学界震荡，学者担忧破坏学术合作传统",
+          "title_zh": "OpenAI 公布大批数学研究成果引发学界震荡，学者担忧破坏学术合作传统",
+          "title_en": null,
+          "title_original": "OpenAI 公布大批数学研究成果引发学界震荡，学者担忧破坏学术合作传统",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31529",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-10T07:23:07.964799Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-10T07:23:07.964799Z",
+      "latest_at": "2026-10-10T07:23:07.964799Z",
+      "primary_item": {
+        "id": "bdb4766607e2b3fe1cffcbd448db1f0455a04a21",
+        "title": "OpenAI 公布大批数学研究成果引发学界震荡，学者担忧破坏学术合作传统",
+        "title_zh": "OpenAI 公布大批数学研究成果引发学界震荡，学者担忧破坏学术合作传统",
+        "title_en": null,
+        "title_original": "OpenAI 公布大批数学研究成果引发学界震荡，学者担忧破坏学术合作传统",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31529",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-10T07:26:16.246239Z"
       }
     }
   ]
