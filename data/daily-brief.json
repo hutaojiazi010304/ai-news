@@ -1,8 +1,93 @@
 {
-  "generated_at": "2026-10-12T15:49:18.483646Z",
+  "generated_at": "2026-10-12T23:06:09.807725Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
+    {
+      "story_id": "story_1327604ea90f",
+      "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+      "primary_url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+      "source": "GitHub AI & ML",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "6025f2a1f2f1476572425a515efa301b659def40",
+          "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+          "title_zh": null,
+          "title_en": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+          "title_original": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+          "summary": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright. The post GitHub Copilot app for Beginners: How to teach Copilot about your codebase appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-12T17:43:59Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "GitHub AI & ML"
+      ],
+      "items": [
+        {
+          "id": "6025f2a1f2f1476572425a515efa301b659def40",
+          "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+          "title_zh": null,
+          "title_en": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+          "title_original": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+          "summary": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright. The post GitHub Copilot app for Beginners: How to teach Copilot about your codebase appeared first on The GitHub Blog .",
+          "recommend_reason_zh": null,
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+          "source": "GitHub AI & ML",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-12T17:43:59Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8429,
+      "importance": 0.8429,
+      "importance_score": 0.8429,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9496,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-12T17:43:59Z",
+      "latest_at": "2026-10-12T17:43:59Z",
+      "primary_item": {
+        "id": "6025f2a1f2f1476572425a515efa301b659def40",
+        "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+        "title_zh": null,
+        "title_en": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+        "title_original": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+        "summary": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright. The post GitHub Copilot app for Beginners: How to teach Copilot about your codebase appeared first on The GitHub Blog .",
+        "recommend_reason_zh": null,
+        "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+        "source": "GitHub AI & ML",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8429,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-12T23:15:15.962526Z"
+      }
+    },
     {
       "story_id": "story_41c5d4380fc2",
       "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS bans AI assisted contributions",
@@ -52,10 +137,39 @@
           "source_name": "NewsNow",
           "site_id": "newsnow",
           "published_at": "2026-10-12T11:22:24Z"
+        },
+        {
+          "id": "239a5f6545c123ed3c0707897abab52c49422472",
+          "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS enacts moratorium on AI contributions",
+          "title_zh": "QGIS 通过 QEP428 禁止 AI 辅助贡献",
+          "title_en": "QGIS enacts moratorium on AI contributions",
+          "title_original": "QGIS enacts moratorium on AI contributions",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-10-12T11:22:24Z"
+        },
+        {
+          "id": "63b2c5c08418b80d6bfebde63faa839633604cd6",
+          "title": "QGIS enacts moratorium on AI contributions",
+          "title_zh": null,
+          "title_en": "QGIS enacts moratorium on AI contributions",
+          "title_original": "QGIS enacts moratorium on AI contributions",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=50054751",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-10-12T11:22:24Z"
         }
       ],
       "source_count": 2,
       "source_names": [
+        "Hacker News (黑客新闻)",
         "Hacker News：AI 热帖",
         "github.com",
         "hackernews"
@@ -102,19 +216,47 @@
           "source_name": "NewsNow",
           "site_id": "newsnow",
           "published_at": "2026-10-12T11:22:24Z"
+        },
+        {
+          "id": "239a5f6545c123ed3c0707897abab52c49422472",
+          "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS enacts moratorium on AI contributions",
+          "title_zh": "QGIS 通过 QEP428 禁止 AI 辅助贡献",
+          "title_en": "QGIS enacts moratorium on AI contributions",
+          "title_original": "QGIS enacts moratorium on AI contributions",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-10-12T11:22:24Z"
+        },
+        {
+          "id": "63b2c5c08418b80d6bfebde63faa839633604cd6",
+          "title": "QGIS enacts moratorium on AI contributions",
+          "title_zh": null,
+          "title_en": "QGIS enacts moratorium on AI contributions",
+          "title_original": "QGIS enacts moratorium on AI contributions",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=50054751",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-10-12T11:22:24Z"
         }
       ],
-      "item_count": 3,
-      "duplicate_count": 3,
-      "score": 0.7971,
-      "importance": 0.7971,
-      "importance_score": 0.7971,
+      "item_count": 5,
+      "duplicate_count": 5,
+      "score": 0.7854,
+      "importance": 0.7854,
+      "importance_score": 0.7854,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9581,
+        "recency": 0.8932,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -143,7 +285,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
+        "scored_at": "2026-10-12T23:15:15.962526Z"
+      }
+    },
+    {
+      "story_id": "story_b6844ce9c244",
+      "title": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索 / Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+      "url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police",
+      "primary_url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police",
+      "source": "Ars Technica：AI（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "3df9e5d8e050de37bee7775e1f9be729c18d418f",
+          "title": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索 / Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+          "title_zh": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索",
+          "title_en": "Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+          "title_original": "Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+          "summary": "Anthropic 确认，Claude Haiku 4.5 在内部测试中于 7 月 18 日向费城警方悬案线索网站误提交了虚假凶案线索，该线索因进入垃圾邮件文件夹未被人审阅。",
+          "recommend_reason_zh": null,
+          "url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police",
+          "source": "Ars Technica：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-12T18:21:36Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Ars Technica：AI（RSS）"
+      ],
+      "items": [
+        {
+          "id": "3df9e5d8e050de37bee7775e1f9be729c18d418f",
+          "title": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索 / Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+          "title_zh": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索",
+          "title_en": "Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+          "title_original": "Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+          "summary": "Anthropic 确认，Claude Haiku 4.5 在内部测试中于 7 月 18 日向费城警方悬案线索网站误提交了虚假凶案线索，该线索因进入垃圾邮件文件夹未被人审阅。",
+          "recommend_reason_zh": null,
+          "url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police",
+          "source": "Ars Technica：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-12T18:21:36Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7776,
+      "importance": 0.7776,
+      "importance_score": 0.7776,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9554,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-12T18:21:36Z",
+      "latest_at": "2026-10-12T18:21:36Z",
+      "primary_item": {
+        "id": "3df9e5d8e050de37bee7775e1f9be729c18d418f",
+        "title": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索 / Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+        "title_zh": "Anthropic 的 Claude 向费城警方误提交虚假凶案线索",
+        "title_en": "Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+        "title_original": "Anthropic's Claude AI submitted false murder tip to Philadelphia police",
+        "summary": "Anthropic 确认，Claude Haiku 4.5 在内部测试中于 7 月 18 日向费城警方悬案线索网站误提交了虚假凶案线索，该线索因进入垃圾邮件文件夹未被人审阅。",
+        "recommend_reason_zh": null,
+        "url": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police",
+        "source": "Ars Technica：AI（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7776,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-12T23:15:15.962526Z"
+      }
+    },
+    {
+      "story_id": "story_f0a7b95fb5f2",
+      "title": "Meta Muse Wonder 系列上线 Agent Arena，分数即将公布 / Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+      "url": "https://x.com/arena/status/2109706854700044523",
+      "primary_url": "https://x.com/arena/status/2109706854700044523",
+      "source": "X：Arena (@arena)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "4eb616f6e8dfc1b04a7e40de0dddb587442f07d7",
+          "title": "Meta Muse Wonder 系列上线 Agent Arena，分数即将公布 / Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+          "title_zh": "Meta Muse Wonder 系列上线 Agent Arena，分数即将公布",
+          "title_en": "Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+          "title_original": "Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+          "summary": "Arena 宣布 Meta 的 Muse Wonder 系列模型上线 Agent Arena，用户可实测，分数即将公布。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2109706854700044523",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-12T18:04:45Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Arena (@arena)"
+      ],
+      "items": [
+        {
+          "id": "4eb616f6e8dfc1b04a7e40de0dddb587442f07d7",
+          "title": "Meta Muse Wonder 系列上线 Agent Arena，分数即将公布 / Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+          "title_zh": "Meta Muse Wonder 系列上线 Agent Arena，分数即将公布",
+          "title_en": "Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+          "title_original": "Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+          "summary": "Arena 宣布 Meta 的 Muse Wonder 系列模型上线 Agent Arena，用户可实测，分数即将公布。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2109706854700044523",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-12T18:04:45Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7771,
+      "importance": 0.7771,
+      "importance_score": 0.7771,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9528,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-12T18:04:45Z",
+      "latest_at": "2026-10-12T18:04:45Z",
+      "primary_item": {
+        "id": "4eb616f6e8dfc1b04a7e40de0dddb587442f07d7",
+        "title": "Meta Muse Wonder 系列上线 Agent Arena，分数即将公布 / Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+        "title_zh": "Meta Muse Wonder 系列上线 Agent Arena，分数即将公布",
+        "title_en": "Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+        "title_original": "Muse Wonder by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+        "summary": "Arena 宣布 Meta 的 Muse Wonder 系列模型上线 Agent Arena，用户可实测，分数即将公布。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/arena/status/2109706854700044523",
+        "source": "X：Arena (@arena)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7771,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-12T23:15:15.962526Z"
       }
     },
     {
@@ -191,15 +501,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7691,
-      "importance": 0.7691,
-      "importance_score": 0.7691,
+      "score": 0.7577,
+      "importance": 0.7577,
+      "importance_score": 0.7577,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9418,
+        "recency": 0.8781,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -227,7 +537,179 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
+        "scored_at": "2026-10-12T23:15:15.962526Z"
+      }
+    },
+    {
+      "story_id": "story_8a809173e2e5",
+      "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+      "url": "https://github.com/openai/codex/issues/48195",
+      "primary_url": "https://github.com/openai/codex/issues/48195",
+      "source": "Codex：GitHub Releases（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "c9d10ab67673311a12bdbaad002267b02fe1faaf",
+          "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+          "title_zh": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+          "title_en": null,
+          "title_original": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+          "summary": "一位 Linux (WSL2) 用户报告，Codex CLI 0.157.0 起打开交互式会话即默认启动持久后台守护进程 codex app-server --managed-daemon，窗口关闭后仍驻留。",
+          "recommend_reason_zh": null,
+          "url": "https://github.com/openai/codex/issues/48195",
+          "source": "Codex：GitHub Releases（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-12T19:25:54.721000Z"
+        },
+        {
+          "id": "b3f3a72b69c005c1b6292fb5d7ff956a404ef53b",
+          "title": "Codex CLI 默认会安装一个持久化且能自动更新的后台守护进程",
+          "title_zh": "Codex CLI 默认会安装一个持久化且能自动更新的后台守护进程",
+          "title_en": null,
+          "title_original": "Codex CLI 默认会安装一个持久化且能自动更新的后台守护进程",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.com/openai/codex/issues/48195",
+          "source": "github.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-10-12T19:25:54.721000Z"
+        },
+        {
+          "id": "71fce9a1cf89501afadab8f00115e5d57278de2f",
+          "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程 / Codex CLI installs a persistent, self-updating background daemon by default",
+          "title_zh": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+          "title_en": "Codex CLI installs a persistent, self-updating background daemon by default",
+          "title_original": "Codex CLI installs a persistent, self-updating background daemon by default",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.com/openai/codex/issues/48195",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-10-12T18:29:04Z"
+        },
+        {
+          "id": "9a3904d8420618b314c5385243929e1aee3b2c58",
+          "title": "Codex CLI installs a persistent, self-updating background daemon by default",
+          "title_zh": null,
+          "title_en": "Codex CLI installs a persistent, self-updating background daemon by default",
+          "title_original": "Codex CLI installs a persistent, self-updating background daemon by default",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=50060694",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-10-12T18:29:04Z"
+        }
+      ],
+      "source_count": 2,
+      "source_names": [
+        "Codex：GitHub Releases（RSS）",
+        "Hacker News (黑客新闻)",
+        "github.com",
+        "hackernews"
+      ],
+      "items": [
+        {
+          "id": "c9d10ab67673311a12bdbaad002267b02fe1faaf",
+          "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+          "title_zh": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+          "title_en": null,
+          "title_original": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+          "summary": "一位 Linux (WSL2) 用户报告，Codex CLI 0.157.0 起打开交互式会话即默认启动持久后台守护进程 codex app-server --managed-daemon，窗口关闭后仍驻留。",
+          "recommend_reason_zh": null,
+          "url": "https://github.com/openai/codex/issues/48195",
+          "source": "Codex：GitHub Releases（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-12T19:25:54.721000Z"
+        },
+        {
+          "id": "b3f3a72b69c005c1b6292fb5d7ff956a404ef53b",
+          "title": "Codex CLI 默认会安装一个持久化且能自动更新的后台守护进程",
+          "title_zh": "Codex CLI 默认会安装一个持久化且能自动更新的后台守护进程",
+          "title_en": null,
+          "title_original": "Codex CLI 默认会安装一个持久化且能自动更新的后台守护进程",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.com/openai/codex/issues/48195",
+          "source": "github.com",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-10-12T19:25:54.721000Z"
+        },
+        {
+          "id": "71fce9a1cf89501afadab8f00115e5d57278de2f",
+          "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程 / Codex CLI installs a persistent, self-updating background daemon by default",
+          "title_zh": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+          "title_en": "Codex CLI installs a persistent, self-updating background daemon by default",
+          "title_original": "Codex CLI installs a persistent, self-updating background daemon by default",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://github.com/openai/codex/issues/48195",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-10-12T18:29:04Z"
+        },
+        {
+          "id": "9a3904d8420618b314c5385243929e1aee3b2c58",
+          "title": "Codex CLI installs a persistent, self-updating background daemon by default",
+          "title_zh": null,
+          "title_en": "Codex CLI installs a persistent, self-updating background daemon by default",
+          "title_original": "Codex CLI installs a persistent, self-updating background daemon by default",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://news.ycombinator.com/item?id=50060694",
+          "source": "hackernews",
+          "source_name": "NewsNow",
+          "site_id": "newsnow",
+          "published_at": "2026-10-12T18:29:04Z"
+        }
+      ],
+      "item_count": 4,
+      "duplicate_count": 4,
+      "score": 0.7683,
+      "importance": 0.7683,
+      "importance_score": 0.7683,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9653,
+        "story_heat": 0.25,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "multi_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-12T18:29:04Z",
+      "latest_at": "2026-10-12T19:25:54.721000Z",
+      "primary_item": {
+        "id": "c9d10ab67673311a12bdbaad002267b02fe1faaf",
+        "title": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+        "title_zh": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+        "title_en": null,
+        "title_original": "用户报告 Codex CLI 0.157.0 默认启动持久化自更新后台守护进程",
+        "summary": "一位 Linux (WSL2) 用户报告，Codex CLI 0.157.0 起打开交互式会话即默认启动持久后台守护进程 codex app-server --managed-daemon，窗口关闭后仍驻留。",
+        "recommend_reason_zh": null,
+        "url": "https://github.com/openai/codex/issues/48195",
+        "source": "Codex：GitHub Releases（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7683,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-12T23:15:15.962526Z"
       }
     },
     {
@@ -275,22 +757,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7517,
-      "importance": 0.7517,
-      "importance_score": 0.7517,
+      "score": 0.7406,
+      "importance": 0.7406,
+      "importance_score": 0.7406,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9119,
+        "recency": 0.8501,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-12T06:14:20.432370Z",
       "latest_at": "2026-10-12T06:14:20.432370Z",
@@ -311,7 +792,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
+        "scored_at": "2026-10-12T23:15:15.962526Z"
+      }
+    },
+    {
+      "story_id": "story_8b03c7583593",
+      "title": "Cursor 并入 The X Subscription 订阅体系 / Cursor is now part of The X Subscription.",
+      "url": "https://x.com/cursor_ai/status/2109779605699879146",
+      "primary_url": "https://x.com/cursor_ai/status/2109779605699879146",
+      "source": "X：Cursor (@cursor_ai)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "7d6bd475b7e7c844f04108333ca39af21815e521",
+          "title": "Cursor 并入 The X Subscription 订阅体系 / Cursor is now part of The X Subscription.",
+          "title_zh": "Cursor 并入 The X Subscription 订阅体系",
+          "title_en": "Cursor is now part of The X Subscription.",
+          "title_original": "Cursor is now part of The X Subscription.",
+          "summary": "Cursor 宣布并入 The X Subscription，现有 Cursor 订阅者可保留原计划或切换到新订阅。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/cursor_ai/status/2109779605699879146",
+          "source": "X：Cursor (@cursor_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-12T22:53:50Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Cursor (@cursor_ai)"
+      ],
+      "items": [
+        {
+          "id": "7d6bd475b7e7c844f04108333ca39af21815e521",
+          "title": "Cursor 并入 The X Subscription 订阅体系 / Cursor is now part of The X Subscription.",
+          "title_zh": "Cursor 并入 The X Subscription 订阅体系",
+          "title_en": "Cursor is now part of The X Subscription.",
+          "title_original": "Cursor is now part of The X Subscription.",
+          "summary": "Cursor 宣布并入 The X Subscription，现有 Cursor 订阅者可保留原计划或切换到新订阅。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/cursor_ai/status/2109779605699879146",
+          "source": "X：Cursor (@cursor_ai)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-12T22:53:50Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7612,
+      "importance": 0.7612,
+      "importance_score": 0.7612,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.7,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.998,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-12T22:53:50Z",
+      "latest_at": "2026-10-12T22:53:50Z",
+      "primary_item": {
+        "id": "7d6bd475b7e7c844f04108333ca39af21815e521",
+        "title": "Cursor 并入 The X Subscription 订阅体系 / Cursor is now part of The X Subscription.",
+        "title_zh": "Cursor 并入 The X Subscription 订阅体系",
+        "title_en": "Cursor is now part of The X Subscription.",
+        "title_original": "Cursor is now part of The X Subscription.",
+        "summary": "Cursor 宣布并入 The X Subscription，现有 Cursor 订阅者可保留原计划或切换到新订阅。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/cursor_ai/status/2109779605699879146",
+        "source": "X：Cursor (@cursor_ai)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7612,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-12T23:15:15.962526Z"
       }
     },
     {
@@ -359,15 +924,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.734,
-      "importance": 0.734,
-      "importance_score": 0.734,
+      "score": 0.7231,
+      "importance": 0.7231,
+      "importance_score": 0.7231,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8967,
+        "recency": 0.836,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -394,7 +959,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
+        "scored_at": "2026-10-12T23:15:15.962526Z"
       }
     },
     {
@@ -442,15 +1007,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7481,
-      "importance": 0.7481,
-      "importance_score": 0.7481,
+      "score": 0.7369,
+      "importance": 0.7369,
+      "importance_score": 0.7369,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9252,
+        "recency": 0.8626,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -477,7 +1042,120 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
+        "scored_at": "2026-10-12T23:15:15.962526Z"
+      }
+    },
+    {
+      "story_id": "story_d243d2985244",
+      "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Epic Games reportedly pivoting to \"AI first\" game development model",
+      "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
+      "primary_url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
+      "source": "Ars Technica：AI（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "b7d3568cf839d0191fb131fb6112169799a6dea1",
+          "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Epic Games reportedly pivoting to \"AI first\" game development model",
+          "title_zh": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期",
+          "title_en": "Epic Games reportedly pivoting to \"AI first\" game development model",
+          "title_original": "Epic Games reportedly pivoting to \"AI first\" game development model",
+          "summary": "据 Bloomberg 报道，Epic Games 在与迪士尼 15 亿美元合作项目中转向 AI 先行开发，由 Anthropic 的 Claude 等模型编写全部代码并指导全部美术，人类开发者负责管理和引导生成内容。",
+          "recommend_reason_zh": null,
+          "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
+          "source": "Ars Technica：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-12T20:59:50Z"
+        },
+        {
+          "id": "447f0dc283e6b994d3e34e787068eb3d48330b0d",
+          "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Report: Epic Games goes all-in on AI for Disney collaboration",
+          "title_zh": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期",
+          "title_en": "Report: Epic Games goes all-in on AI for Disney collaboration",
+          "title_original": "Report: Epic Games goes all-in on AI for Disney collaboration",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
+          "source": "Ars Technica",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-10-12T20:59:50Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Ars Technica",
+        "Ars Technica：AI（RSS）"
+      ],
+      "items": [
+        {
+          "id": "b7d3568cf839d0191fb131fb6112169799a6dea1",
+          "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Epic Games reportedly pivoting to \"AI first\" game development model",
+          "title_zh": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期",
+          "title_en": "Epic Games reportedly pivoting to \"AI first\" game development model",
+          "title_original": "Epic Games reportedly pivoting to \"AI first\" game development model",
+          "summary": "据 Bloomberg 报道，Epic Games 在与迪士尼 15 亿美元合作项目中转向 AI 先行开发，由 Anthropic 的 Claude 等模型编写全部代码并指导全部美术，人类开发者负责管理和引导生成内容。",
+          "recommend_reason_zh": null,
+          "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
+          "source": "Ars Technica：AI（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-12T20:59:50Z"
+        },
+        {
+          "id": "447f0dc283e6b994d3e34e787068eb3d48330b0d",
+          "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Report: Epic Games goes all-in on AI for Disney collaboration",
+          "title_zh": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期",
+          "title_en": "Report: Epic Games goes all-in on AI for Disney collaboration",
+          "title_original": "Report: Epic Games goes all-in on AI for Disney collaboration",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
+          "source": "Ars Technica",
+          "source_name": "TechURLs",
+          "site_id": "techurls",
+          "published_at": "2026-10-12T20:59:50Z"
+        }
+      ],
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.776,
+      "importance": 0.776,
+      "importance_score": 0.776,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.76,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9799,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-12T20:59:50Z",
+      "latest_at": "2026-10-12T20:59:50Z",
+      "primary_item": {
+        "id": "b7d3568cf839d0191fb131fb6112169799a6dea1",
+        "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Epic Games reportedly pivoting to \"AI first\" game development model",
+        "title_zh": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期",
+        "title_en": "Epic Games reportedly pivoting to \"AI first\" game development model",
+        "title_original": "Epic Games reportedly pivoting to \"AI first\" game development model",
+        "summary": "据 Bloomberg 报道，Epic Games 在与迪士尼 15 亿美元合作项目中转向 AI 先行开发，由 Anthropic 的 Claude 等模型编写全部代码并指导全部美术，人类开发者负责管理和引导生成内容。",
+        "recommend_reason_zh": null,
+        "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
+        "source": "Ars Technica：AI（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.776,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-12T23:15:15.962526Z"
       }
     },
     {
@@ -525,15 +1203,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7419,
-      "importance": 0.7419,
-      "importance_score": 0.7419,
+      "score": 0.73,
+      "importance": 0.73,
+      "importance_score": 0.73,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9738,
+        "recency": 0.9079,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -560,7 +1238,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
+        "scored_at": "2026-10-12T23:15:15.962526Z"
       }
     },
     {
@@ -608,19 +1286,19 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7248,
-      "importance": 0.7248,
-      "importance_score": 0.7248,
-      "importance_label": "行业动态",
+      "score": 0.7143,
+      "importance": 0.7143,
+      "importance_score": 0.7143,
+      "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8623,
+        "recency": 0.8039,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "industry",
+      "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
@@ -643,7 +1321,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
+        "scored_at": "2026-10-12T23:15:15.962526Z"
       }
     },
     {
@@ -691,15 +1369,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
+      "score": 0.7554,
+      "importance": 0.7554,
+      "importance_score": 0.7554,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 1.0,
+        "recency": 0.9323,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -727,7 +1405,90 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
+        "scored_at": "2026-10-12T23:15:15.962526Z"
+      }
+    },
+    {
+      "story_id": "story_f5cd9aba7e15",
+      "title": "AWS 提出 priming 方法，可将预训练 Transformer 改造成混合状态空间架构 / Can we change an AI model&#8217;s architecture without retraining it from scratch?",
+      "url": "https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch",
+      "primary_url": "https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch",
+      "source": "Amazon Science（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "0e3a671a7441e014235d27d12338ee7135f910ce",
+          "title": "AWS 提出 priming 方法，可将预训练 Transformer 改造成混合状态空间架构 / Can we change an AI model&#8217;s architecture without retraining it from scratch?",
+          "title_zh": "AWS 提出 priming 方法，可将预训练 Transformer 改造成混合状态空间架构",
+          "title_en": "Can we change an AI model&#8217;s architecture without retraining it from scratch?",
+          "title_original": "Can we change an AI model&#8217;s architecture without retraining it from scratch?",
+          "summary": "AWS 团队发布论文《Priming: Hybrid state space models from pre-trained Transformers》，提出 priming 方法，复用预训练 Transformer 权重构建混合架构，将预训练成本降低逾 99%，全流程消耗不足源模型 0.5% 的 token 预算。",
+          "recommend_reason_zh": null,
+          "url": "https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch",
+          "source": "Amazon Science（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-12T17:36:18Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Amazon Science（RSS）"
+      ],
+      "items": [
+        {
+          "id": "0e3a671a7441e014235d27d12338ee7135f910ce",
+          "title": "AWS 提出 priming 方法，可将预训练 Transformer 改造成混合状态空间架构 / Can we change an AI model&#8217;s architecture without retraining it from scratch?",
+          "title_zh": "AWS 提出 priming 方法，可将预训练 Transformer 改造成混合状态空间架构",
+          "title_en": "Can we change an AI model&#8217;s architecture without retraining it from scratch?",
+          "title_original": "Can we change an AI model&#8217;s architecture without retraining it from scratch?",
+          "summary": "AWS 团队发布论文《Priming: Hybrid state space models from pre-trained Transformers》，提出 priming 方法，复用预训练 Transformer 权重构建混合架构，将预训练成本降低逾 99%，全流程消耗不足源模型 0.5% 的 token 预算。",
+          "recommend_reason_zh": null,
+          "url": "https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch",
+          "source": "Amazon Science（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-12T17:36:18Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7253,
+      "importance": 0.7253,
+      "importance_score": 0.7253,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.61,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9484,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-12T17:36:18Z",
+      "latest_at": "2026-10-12T17:36:18Z",
+      "primary_item": {
+        "id": "0e3a671a7441e014235d27d12338ee7135f910ce",
+        "title": "AWS 提出 priming 方法，可将预训练 Transformer 改造成混合状态空间架构 / Can we change an AI model&#8217;s architecture without retraining it from scratch?",
+        "title_zh": "AWS 提出 priming 方法，可将预训练 Transformer 改造成混合状态空间架构",
+        "title_en": "Can we change an AI model&#8217;s architecture without retraining it from scratch?",
+        "title_original": "Can we change an AI model&#8217;s architecture without retraining it from scratch?",
+        "summary": "AWS 团队发布论文《Priming: Hybrid state space models from pre-trained Transformers》，提出 priming 方法，复用预训练 Transformer 权重构建混合架构，将预训练成本降低逾 99%，全流程消耗不足源模型 0.5% 的 token 预算。",
+        "recommend_reason_zh": null,
+        "url": "https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch",
+        "source": "Amazon Science（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7253,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-12T23:15:15.962526Z"
       }
     },
     {
@@ -804,15 +1565,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7058,
-      "importance": 0.7058,
-      "importance_score": 0.7058,
+      "score": 0.6954,
+      "importance": 0.6954,
+      "importance_score": 0.6954,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.6,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8568,
+        "recency": 0.7988,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -839,7 +1600,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
+        "scored_at": "2026-10-12T23:15:15.962526Z"
       }
     },
     {
@@ -887,22 +1648,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7517,
-      "importance": 0.7517,
-      "importance_score": 0.7517,
+      "score": 0.7406,
+      "importance": 0.7406,
+      "importance_score": 0.7406,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9119,
+        "recency": 0.8501,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-12T06:14:20.432370Z",
       "latest_at": "2026-10-12T06:14:20.432370Z",
@@ -923,7 +1683,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
+        "scored_at": "2026-10-12T23:15:15.962526Z"
       }
     },
     {
@@ -971,22 +1731,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7517,
-      "importance": 0.7517,
-      "importance_score": 0.7517,
+      "score": 0.7406,
+      "importance": 0.7406,
+      "importance_score": 0.7406,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9119,
+        "recency": 0.8501,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-12T06:14:20.432370Z",
       "latest_at": "2026-10-12T06:14:20.432370Z",
@@ -1007,7 +1766,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
+        "scored_at": "2026-10-12T23:15:15.962526Z"
       }
     },
     {
@@ -1055,22 +1814,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7517,
-      "importance": 0.7517,
-      "importance_score": 0.7517,
+      "score": 0.7406,
+      "importance": 0.7406,
+      "importance_score": 0.7406,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9119,
+        "recency": 0.8501,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-12T06:14:20.432370Z",
       "latest_at": "2026-10-12T06:14:20.432370Z",
@@ -1091,7 +1849,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
+        "scored_at": "2026-10-12T23:15:15.962526Z"
       }
     },
     {
@@ -1139,22 +1897,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7517,
-      "importance": 0.7517,
-      "importance_score": 0.7517,
+      "score": 0.7406,
+      "importance": 0.7406,
+      "importance_score": 0.7406,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9119,
+        "recency": 0.8501,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-12T06:14:20.432370Z",
       "latest_at": "2026-10-12T06:14:20.432370Z",
@@ -1175,595 +1932,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
-      }
-    },
-    {
-      "story_id": "story_001851d65eda",
-      "title": "OpenAI悄悄挂出未发布生命科学模型gpt-rosalind-discovery，要给药企当\"工具贩子\"",
-      "url": "https://www.aibase.com/news/31554",
-      "primary_url": "https://www.aibase.com/news/31554",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "51646a104dd439f6b214c57d0b6064d0e6fd929e",
-          "title": "OpenAI悄悄挂出未发布生命科学模型gpt-rosalind-discovery，要给药企当\"工具贩子\"",
-          "title_zh": "OpenAI悄悄挂出未发布生命科学模型gpt-rosalind-discovery，要给药企当\"工具贩子\"",
-          "title_en": null,
-          "title_original": "OpenAI悄悄挂出未发布生命科学模型gpt-rosalind-discovery，要给药企当\"工具贩子\"",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31554",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "51646a104dd439f6b214c57d0b6064d0e6fd929e",
-          "title": "OpenAI悄悄挂出未发布生命科学模型gpt-rosalind-discovery，要给药企当\"工具贩子\"",
-          "title_zh": "OpenAI悄悄挂出未发布生命科学模型gpt-rosalind-discovery，要给药企当\"工具贩子\"",
-          "title_en": null,
-          "title_original": "OpenAI悄悄挂出未发布生命科学模型gpt-rosalind-discovery，要给药企当\"工具贩子\"",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31554",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7517,
-      "importance": 0.7517,
-      "importance_score": 0.7517,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9119,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-12T06:14:20.432370Z",
-      "latest_at": "2026-10-12T06:14:20.432370Z",
-      "primary_item": {
-        "id": "51646a104dd439f6b214c57d0b6064d0e6fd929e",
-        "title": "OpenAI悄悄挂出未发布生命科学模型gpt-rosalind-discovery，要给药企当\"工具贩子\"",
-        "title_zh": "OpenAI悄悄挂出未发布生命科学模型gpt-rosalind-discovery，要给药企当\"工具贩子\"",
-        "title_en": null,
-        "title_original": "OpenAI悄悄挂出未发布生命科学模型gpt-rosalind-discovery，要给药企当\"工具贩子\"",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31554",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
-      }
-    },
-    {
-      "story_id": "story_fa48372b0d92",
-      "title": "OpenAI给GPT-6.1 Sol扩容记忆：默认上下文顶到 50 万，长文本不再单独计费",
-      "url": "https://www.aibase.com/news/31548",
-      "primary_url": "https://www.aibase.com/news/31548",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "451701a39af339db9fb336b812858c66ca67d082",
-          "title": "OpenAI给GPT-6.1 Sol扩容记忆：默认上下文顶到 50 万，长文本不再单独计费",
-          "title_zh": "OpenAI给GPT-6.1 Sol扩容记忆：默认上下文顶到 50 万，长文本不再单独计费",
-          "title_en": null,
-          "title_original": "OpenAI给GPT-6.1 Sol扩容记忆：默认上下文顶到 50 万，长文本不再单独计费",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31548",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "451701a39af339db9fb336b812858c66ca67d082",
-          "title": "OpenAI给GPT-6.1 Sol扩容记忆：默认上下文顶到 50 万，长文本不再单独计费",
-          "title_zh": "OpenAI给GPT-6.1 Sol扩容记忆：默认上下文顶到 50 万，长文本不再单独计费",
-          "title_en": null,
-          "title_original": "OpenAI给GPT-6.1 Sol扩容记忆：默认上下文顶到 50 万，长文本不再单独计费",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31548",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7517,
-      "importance": 0.7517,
-      "importance_score": 0.7517,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9119,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-12T06:14:20.432370Z",
-      "latest_at": "2026-10-12T06:14:20.432370Z",
-      "primary_item": {
-        "id": "451701a39af339db9fb336b812858c66ca67d082",
-        "title": "OpenAI给GPT-6.1 Sol扩容记忆：默认上下文顶到 50 万，长文本不再单独计费",
-        "title_zh": "OpenAI给GPT-6.1 Sol扩容记忆：默认上下文顶到 50 万，长文本不再单独计费",
-        "title_en": null,
-        "title_original": "OpenAI给GPT-6.1 Sol扩容记忆：默认上下文顶到 50 万，长文本不再单独计费",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31548",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
-      }
-    },
-    {
-      "story_id": "story_79c60ffdb517",
-      "title": "​Claude Opus 5.5 Max 强势登顶智能体榜首，国产多模型稳居中上游",
-      "url": "https://www.aibase.com/news/31567",
-      "primary_url": "https://www.aibase.com/news/31567",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "dc349e2b58e652e68a9117c8d8585b1a510af352",
-          "title": "​Claude Opus 5.5 Max 强势登顶智能体榜首，国产多模型稳居中上游",
-          "title_zh": "​Claude Opus 5.5 Max 强势登顶智能体榜首，国产多模型稳居中上游",
-          "title_en": null,
-          "title_original": "​Claude Opus 5.5 Max 强势登顶智能体榜首，国产多模型稳居中上游",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31567",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T15:49:18.483646Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "dc349e2b58e652e68a9117c8d8585b1a510af352",
-          "title": "​Claude Opus 5.5 Max 强势登顶智能体榜首，国产多模型稳居中上游",
-          "title_zh": "​Claude Opus 5.5 Max 强势登顶智能体榜首，国产多模型稳居中上游",
-          "title_en": null,
-          "title_original": "​Claude Opus 5.5 Max 强势登顶智能体榜首，国产多模型稳居中上游",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31567",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T15:49:18.483646Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-12T15:49:18.483646Z",
-      "latest_at": "2026-10-12T15:49:18.483646Z",
-      "primary_item": {
-        "id": "dc349e2b58e652e68a9117c8d8585b1a510af352",
-        "title": "​Claude Opus 5.5 Max 强势登顶智能体榜首，国产多模型稳居中上游",
-        "title_zh": "​Claude Opus 5.5 Max 强势登顶智能体榜首，国产多模型稳居中上游",
-        "title_en": null,
-        "title_original": "​Claude Opus 5.5 Max 强势登顶智能体榜首，国产多模型稳居中上游",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31567",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
-      }
-    },
-    {
-      "story_id": "story_41427d70694c",
-      "title": "亚马逊拟 70 亿美元收购 Decart，抢下 AI 芯片\"通用适配器\"",
-      "url": "https://www.aibase.com/news/31552",
-      "primary_url": "https://www.aibase.com/news/31552",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "41fcc96c83b71573194983addaf7625bd77dbe23",
-          "title": "亚马逊拟 70 亿美元收购 Decart，抢下 AI 芯片\"通用适配器\"",
-          "title_zh": "亚马逊拟 70 亿美元收购 Decart，抢下 AI 芯片\"通用适配器\"",
-          "title_en": null,
-          "title_original": "亚马逊拟 70 亿美元收购 Decart，抢下 AI 芯片\"通用适配器\"",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31552",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "41fcc96c83b71573194983addaf7625bd77dbe23",
-          "title": "亚马逊拟 70 亿美元收购 Decart，抢下 AI 芯片\"通用适配器\"",
-          "title_zh": "亚马逊拟 70 亿美元收购 Decart，抢下 AI 芯片\"通用适配器\"",
-          "title_en": null,
-          "title_original": "亚马逊拟 70 亿美元收购 Decart，抢下 AI 芯片\"通用适配器\"",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31552",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7517,
-      "importance": 0.7517,
-      "importance_score": 0.7517,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9119,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-12T06:14:20.432370Z",
-      "latest_at": "2026-10-12T06:14:20.432370Z",
-      "primary_item": {
-        "id": "41fcc96c83b71573194983addaf7625bd77dbe23",
-        "title": "亚马逊拟 70 亿美元收购 Decart，抢下 AI 芯片\"通用适配器\"",
-        "title_zh": "亚马逊拟 70 亿美元收购 Decart，抢下 AI 芯片\"通用适配器\"",
-        "title_en": null,
-        "title_original": "亚马逊拟 70 亿美元收购 Decart，抢下 AI 芯片\"通用适配器\"",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31552",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
-      }
-    },
-    {
-      "story_id": "story_efb1d33574f2",
-      "title": "唯品会上线自研 AI 助手“AI小唯” AI 导购进入能力深耕阶段",
-      "url": "https://www.aibase.com/news/31566",
-      "primary_url": "https://www.aibase.com/news/31566",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "637f670d7197f6c6b8692a515e257117675fe56c",
-          "title": "唯品会上线自研 AI 助手“AI小唯” AI 导购进入能力深耕阶段",
-          "title_zh": "唯品会上线自研 AI 助手“AI小唯” AI 导购进入能力深耕阶段",
-          "title_en": null,
-          "title_original": "唯品会上线自研 AI 助手“AI小唯” AI 导购进入能力深耕阶段",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31566",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T15:49:18.483646Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "637f670d7197f6c6b8692a515e257117675fe56c",
-          "title": "唯品会上线自研 AI 助手“AI小唯” AI 导购进入能力深耕阶段",
-          "title_zh": "唯品会上线自研 AI 助手“AI小唯” AI 导购进入能力深耕阶段",
-          "title_en": null,
-          "title_original": "唯品会上线自研 AI 助手“AI小唯” AI 导购进入能力深耕阶段",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31566",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T15:49:18.483646Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-12T15:49:18.483646Z",
-      "latest_at": "2026-10-12T15:49:18.483646Z",
-      "primary_item": {
-        "id": "637f670d7197f6c6b8692a515e257117675fe56c",
-        "title": "唯品会上线自研 AI 助手“AI小唯” AI 导购进入能力深耕阶段",
-        "title_zh": "唯品会上线自研 AI 助手“AI小唯” AI 导购进入能力深耕阶段",
-        "title_en": null,
-        "title_original": "唯品会上线自研 AI 助手“AI小唯” AI 导购进入能力深耕阶段",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31566",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
-      }
-    },
-    {
-      "story_id": "story_221e683ee734",
-      "title": "唯品会悄悄上线 AI 助手\"小唯\"：能聊天能比价，重金招人月薪最高 8 万",
-      "url": "https://www.aibase.com/news/31570",
-      "primary_url": "https://www.aibase.com/news/31570",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "e0c280aedc12bbcfe4b6a735a375c56b232c7cfe",
-          "title": "唯品会悄悄上线 AI 助手\"小唯\"：能聊天能比价，重金招人月薪最高 8 万",
-          "title_zh": "唯品会悄悄上线 AI 助手\"小唯\"：能聊天能比价，重金招人月薪最高 8 万",
-          "title_en": null,
-          "title_original": "唯品会悄悄上线 AI 助手\"小唯\"：能聊天能比价，重金招人月薪最高 8 万",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31570",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T15:49:18.483646Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "e0c280aedc12bbcfe4b6a735a375c56b232c7cfe",
-          "title": "唯品会悄悄上线 AI 助手\"小唯\"：能聊天能比价，重金招人月薪最高 8 万",
-          "title_zh": "唯品会悄悄上线 AI 助手\"小唯\"：能聊天能比价，重金招人月薪最高 8 万",
-          "title_en": null,
-          "title_original": "唯品会悄悄上线 AI 助手\"小唯\"：能聊天能比价，重金招人月薪最高 8 万",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31570",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T15:49:18.483646Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-12T15:49:18.483646Z",
-      "latest_at": "2026-10-12T15:49:18.483646Z",
-      "primary_item": {
-        "id": "e0c280aedc12bbcfe4b6a735a375c56b232c7cfe",
-        "title": "唯品会悄悄上线 AI 助手\"小唯\"：能聊天能比价，重金招人月薪最高 8 万",
-        "title_zh": "唯品会悄悄上线 AI 助手\"小唯\"：能聊天能比价，重金招人月薪最高 8 万",
-        "title_en": null,
-        "title_original": "唯品会悄悄上线 AI 助手\"小唯\"：能聊天能比价，重金招人月薪最高 8 万",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31570",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
-      }
-    },
-    {
-      "story_id": "story_608bad1068ca",
-      "title": "宇树科技王兴兴发声：过去犯的最大错误是不够相信 AI，具身智能临界点最快一两年内爆发",
-      "url": "https://www.aibase.com/news/31564",
-      "primary_url": "https://www.aibase.com/news/31564",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "8b932b656a992ffbcddd40ec349aa0c0af49d6dc",
-          "title": "宇树科技王兴兴发声：过去犯的最大错误是不够相信 AI，具身智能临界点最快一两年内爆发",
-          "title_zh": "宇树科技王兴兴发声：过去犯的最大错误是不够相信 AI，具身智能临界点最快一两年内爆发",
-          "title_en": null,
-          "title_original": "宇树科技王兴兴发声：过去犯的最大错误是不够相信 AI，具身智能临界点最快一两年内爆发",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31564",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T15:49:18.483646Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "8b932b656a992ffbcddd40ec349aa0c0af49d6dc",
-          "title": "宇树科技王兴兴发声：过去犯的最大错误是不够相信 AI，具身智能临界点最快一两年内爆发",
-          "title_zh": "宇树科技王兴兴发声：过去犯的最大错误是不够相信 AI，具身智能临界点最快一两年内爆发",
-          "title_en": null,
-          "title_original": "宇树科技王兴兴发声：过去犯的最大错误是不够相信 AI，具身智能临界点最快一两年内爆发",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31564",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T15:49:18.483646Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7676,
-      "importance": 0.7676,
-      "importance_score": 0.7676,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 1.0,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-12T15:49:18.483646Z",
-      "latest_at": "2026-10-12T15:49:18.483646Z",
-      "primary_item": {
-        "id": "8b932b656a992ffbcddd40ec349aa0c0af49d6dc",
-        "title": "宇树科技王兴兴发声：过去犯的最大错误是不够相信 AI，具身智能临界点最快一两年内爆发",
-        "title_zh": "宇树科技王兴兴发声：过去犯的最大错误是不够相信 AI，具身智能临界点最快一两年内爆发",
-        "title_en": null,
-        "title_original": "宇树科技王兴兴发声：过去犯的最大错误是不够相信 AI，具身智能临界点最快一两年内爆发",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31564",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-12T15:52:49.546490Z"
+        "scored_at": "2026-10-12T23:15:15.962526Z"
       }
     }
   ]
