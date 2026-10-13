@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T19:23:54.922586Z",
+  "generated_at": "2026-10-13T23:20:49.730570Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8561,
-      "importance": 0.8561,
-      "importance_score": 0.8561,
+      "score": 0.8495,
+      "importance": 0.8495,
+      "importance_score": 0.8495,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9781,
+        "recency": 0.9416,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
+      }
+    },
+    {
+      "story_id": "story_7e7580bbc9b4",
+      "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87% / Gemini 4 Argon for Robotics",
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
+      "primary_url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
+      "source": "Google DeepMind",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "f6e477ced73c4d2931cb1aa49deae0a673ccf494",
+          "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87% / Gemini 4 Argon for Robotics",
+          "title_zh": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87%",
+          "title_en": "Gemini 4 Argon for Robotics",
+          "title_original": "Gemini 4 Argon for Robotics",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-13T16:01:58Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Google DeepMind"
+      ],
+      "items": [
+        {
+          "id": "f6e477ced73c4d2931cb1aa49deae0a673ccf494",
+          "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87% / Gemini 4 Argon for Robotics",
+          "title_zh": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87%",
+          "title_en": "Gemini 4 Argon for Robotics",
+          "title_original": "Gemini 4 Argon for Robotics",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-13T16:01:58Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8518,
+      "importance": 0.8518,
+      "importance_score": 0.8518,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.97,
+        "recency": 0.932,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-13T16:01:58Z",
+      "latest_at": "2026-10-13T16:01:58Z",
+      "primary_item": {
+        "id": "f6e477ced73c4d2931cb1aa49deae0a673ccf494",
+        "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87% / Gemini 4 Argon for Robotics",
+        "title_zh": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87%",
+        "title_en": "Gemini 4 Argon for Robotics",
+        "title_original": "Gemini 4 Argon for Robotics",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
+        "source": "Google DeepMind",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8518,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -133,15 +218,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8462,
-      "importance": 0.8462,
-      "importance_score": 0.8462,
+      "score": 0.8397,
+      "importance": 0.8397,
+      "importance_score": 0.8397,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9678,
+        "recency": 0.9317,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -170,7 +255,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -218,15 +303,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8415,
-      "importance": 0.8415,
-      "importance_score": 0.8415,
+      "score": 0.8349,
+      "importance": 0.8349,
+      "importance_score": 0.8349,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9861,
+        "recency": 0.9493,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -255,7 +340,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -303,15 +388,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8396,
-      "importance": 0.8396,
-      "importance_score": 0.8396,
+      "score": 0.8334,
+      "importance": 0.8334,
+      "importance_score": 0.8334,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9313,
+        "recency": 0.8965,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -340,7 +425,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -388,15 +473,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8186,
-      "importance": 0.8186,
-      "importance_score": 0.8186,
+      "score": 0.8124,
+      "importance": 0.8124,
+      "importance_score": 0.8124,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9314,
+        "recency": 0.8966,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -424,7 +509,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -472,15 +557,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8169,
-      "importance": 0.8169,
-      "importance_score": 0.8169,
+      "score": 0.8104,
+      "importance": 0.8104,
+      "importance_score": 0.8104,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9719,
+        "recency": 0.9356,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -508,7 +593,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
+      }
+    },
+    {
+      "story_id": "story_46f20f54d699",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
+      "primary_url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
+      "source": "Google DeepMind",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "99cd44b34f17588252fe4a6eeec6f30c422114e5",
+          "title": "Developing Gemini 4 Argon responsibly and safely",
+          "title_zh": null,
+          "title_en": "Developing Gemini 4 Argon responsibly and safely",
+          "title_original": "Developing Gemini 4 Argon responsibly and safely",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-13T19:43:07Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Google DeepMind"
+      ],
+      "items": [
+        {
+          "id": "99cd44b34f17588252fe4a6eeec6f30c422114e5",
+          "title": "Developing Gemini 4 Argon responsibly and safely",
+          "title_zh": null,
+          "title_en": "Developing Gemini 4 Argon responsibly and safely",
+          "title_original": "Developing Gemini 4 Argon responsibly and safely",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
+          "source": "Google DeepMind",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-13T19:43:07Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8458,
+      "importance": 0.8458,
+      "importance_score": 0.8458,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9657,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-13T19:43:07Z",
+      "latest_at": "2026-10-13T19:43:07Z",
+      "primary_item": {
+        "id": "99cd44b34f17588252fe4a6eeec6f30c422114e5",
+        "title": "Developing Gemini 4 Argon responsibly and safely",
+        "title_zh": null,
+        "title_en": "Developing Gemini 4 Argon responsibly and safely",
+        "title_original": "Developing Gemini 4 Argon responsibly and safely",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely",
+        "source": "Google DeepMind",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.8458,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -614,15 +784,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.8019,
-      "importance": 0.8019,
-      "importance_score": 0.8019,
+      "score": 0.7957,
+      "importance": 0.7957,
+      "importance_score": 0.7957,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9183,
+        "recency": 0.884,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -651,7 +821,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -699,15 +869,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8134,
-      "importance": 0.8134,
-      "importance_score": 0.8134,
+      "score": 0.8069,
+      "importance": 0.8069,
+      "importance_score": 0.8069,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.73,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9687,
+        "recency": 0.9326,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -735,7 +905,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -783,15 +953,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7892,
-      "importance": 0.7892,
-      "importance_score": 0.7892,
+      "score": 0.783,
+      "importance": 0.783,
+      "importance_score": 0.783,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9178,
+        "recency": 0.8836,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -819,91 +989,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
-      }
-    },
-    {
-      "story_id": "story_7e7580bbc9b4",
-      "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87% / Gemini 4 Argon for Robotics",
-      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
-      "primary_url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
-      "source": "Google DeepMind：Blog（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "4a89c22013c3c0859b26480669881eba11516268",
-          "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87% / Gemini 4 Argon for Robotics",
-          "title_zh": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87%",
-          "title_en": "Gemini 4 Argon for Robotics",
-          "title_original": "Gemini 4 Argon for Robotics",
-          "summary": "Google DeepMind 发布 Gemini 4 Argon，定位为通用物理推理模型，在 Embodied Reasoning（ERQA）基准上以纯推理得分 87%，超过其他前沿模型。",
-          "recommend_reason_zh": null,
-          "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
-          "source": "Google DeepMind：Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-13T16:01:58Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Google DeepMind：Blog（RSS）"
-      ],
-      "items": [
-        {
-          "id": "4a89c22013c3c0859b26480669881eba11516268",
-          "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87% / Gemini 4 Argon for Robotics",
-          "title_zh": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87%",
-          "title_en": "Gemini 4 Argon for Robotics",
-          "title_original": "Gemini 4 Argon for Robotics",
-          "summary": "Google DeepMind 发布 Gemini 4 Argon，定位为通用物理推理模型，在 Embodied Reasoning（ERQA）基准上以纯推理得分 87%，超过其他前沿模型。",
-          "recommend_reason_zh": null,
-          "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
-          "source": "Google DeepMind：Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-13T16:01:58Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7983,
-      "importance": 0.7983,
-      "importance_score": 0.7983,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.68,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.9681,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-13T16:01:58Z",
-      "latest_at": "2026-10-13T16:01:58Z",
-      "primary_item": {
-        "id": "4a89c22013c3c0859b26480669881eba11516268",
-        "title": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87% / Gemini 4 Argon for Robotics",
-        "title_zh": "Google DeepMind 发布 Gemini 4 Argon 机器人模型，ERQA 基准得分 87%",
-        "title_en": "Gemini 4 Argon for Robotics",
-        "title_original": "Gemini 4 Argon for Robotics",
-        "summary": "Google DeepMind 发布 Gemini 4 Argon，定位为通用物理推理模型，在 Embodied Reasoning（ERQA）基准上以纯推理得分 87%，超过其他前沿模型。",
-        "recommend_reason_zh": null,
-        "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
-        "source": "Google DeepMind：Blog（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7983,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -951,15 +1037,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7982,
-      "importance": 0.7982,
-      "importance_score": 0.7982,
+      "score": 0.7916,
+      "importance": 0.7916,
+      "importance_score": 0.7916,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9867,
+        "recency": 0.9499,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -987,7 +1073,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
+      }
+    },
+    {
+      "story_id": "story_e1f4c7a875e0",
+      "title": "Character.ai 破产文件显示 AI 商业模式难以为继 / Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
+      "url": "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work",
+      "primary_url": "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work",
+      "source": "404 Media（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "f4a3e9592ee46fe829909fca7b0eee3e9cc03d57",
+          "title": "Character.ai 破产文件显示 AI 商业模式难以为继 / Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
+          "title_zh": "Character.ai 破产文件显示 AI 商业模式难以为继",
+          "title_en": "Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
+          "title_original": "Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
+          "summary": "Character.ai 进入破产程序，法院文件显示其商业模式难以支撑开支。公司 2024 年每月 AI 算力支出 1380 万美元、2025 年为 1000 万美元，订阅收入峰值仅每月 280 万美元，含广告的全部收入峰值 530 万美元；2026 年 1 至 8 月算力支出 5610 万美元，8 月时每月仍亏损约 800-900 万美元。",
+          "recommend_reason_zh": null,
+          "url": "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work",
+          "source": "404 Media（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-13T20:06:53Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "404 Media（RSS）"
+      ],
+      "items": [
+        {
+          "id": "f4a3e9592ee46fe829909fca7b0eee3e9cc03d57",
+          "title": "Character.ai 破产文件显示 AI 商业模式难以为继 / Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
+          "title_zh": "Character.ai 破产文件显示 AI 商业模式难以为继",
+          "title_en": "Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
+          "title_original": "Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
+          "summary": "Character.ai 进入破产程序，法院文件显示其商业模式难以支撑开支。公司 2024 年每月 AI 算力支出 1380 万美元、2025 年为 1000 万美元，订阅收入峰值仅每月 280 万美元，含广告的全部收入峰值 530 万美元；2026 年 1 至 8 月算力支出 5610 万美元，8 月时每月仍亏损约 800-900 万美元。",
+          "recommend_reason_zh": null,
+          "url": "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work",
+          "source": "404 Media（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-13T20:06:53Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7891,
+      "importance": 0.7891,
+      "importance_score": 0.7891,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.81,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9694,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-13T20:06:53Z",
+      "latest_at": "2026-10-13T20:06:53Z",
+      "primary_item": {
+        "id": "f4a3e9592ee46fe829909fca7b0eee3e9cc03d57",
+        "title": "Character.ai 破产文件显示 AI 商业模式难以为继 / Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
+        "title_zh": "Character.ai 破产文件显示 AI 商业模式难以为继",
+        "title_en": "Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
+        "title_original": "Character.ai's Bankruptcy Documents Show the Economics of AI Don't Work",
+        "summary": "Character.ai 进入破产程序，法院文件显示其商业模式难以支撑开支。公司 2024 年每月 AI 算力支出 1380 万美元、2025 年为 1000 万美元，订阅收入峰值仅每月 280 万美元，含广告的全部收入峰值 530 万美元；2026 年 1 至 8 月算力支出 5610 万美元，8 月时每月仍亏损约 800-900 万美元。",
+        "recommend_reason_zh": null,
+        "url": "https://www.404media.co/character-ais-bankruptcy-documents-show-the-economics-of-ai-dont-work",
+        "source": "404 Media（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7891,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -1035,15 +1205,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7765,
-      "importance": 0.7765,
-      "importance_score": 0.7765,
+      "score": 0.7705,
+      "importance": 0.7705,
+      "importance_score": 0.7705,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8971,
+        "recency": 0.8636,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1071,7 +1241,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -1119,15 +1289,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7859,
-      "importance": 0.7859,
-      "importance_score": 0.7859,
+      "score": 0.7796,
+      "importance": 0.7796,
+      "importance_score": 0.7796,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9348,
+        "recency": 0.8999,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1155,7 +1325,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -1203,15 +1373,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7793,
-      "importance": 0.7793,
-      "importance_score": 0.7793,
+      "score": 0.7738,
+      "importance": 0.7738,
+      "importance_score": 0.7738,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8297,
+        "recency": 0.7987,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1239,119 +1409,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
-      "story_id": "story_d243d2985244",
-      "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Epic Games reportedly pivoting to \"AI first\" game development model",
-      "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
-      "primary_url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
-      "source": "Ars Technica：AI（RSS）",
+      "story_id": "story_35a5de0aa347",
+      "title": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金 / GPT 5.6 Sol btw",
+      "url": "https://x.com/reach_vb/status/2110086935733833893",
+      "primary_url": "https://x.com/reach_vb/status/2110086935733833893",
+      "source": "X：Vaibhav Srivastav（OpenAI）(@reach_vb)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "b7d3568cf839d0191fb131fb6112169799a6dea1",
-          "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Epic Games reportedly pivoting to \"AI first\" game development model",
-          "title_zh": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期",
-          "title_en": "Epic Games reportedly pivoting to \"AI first\" game development model",
-          "title_original": "Epic Games reportedly pivoting to \"AI first\" game development model",
-          "summary": "据 Bloomberg 报道，Epic Games 在与迪士尼 15 亿美元合作项目中转向 AI 先行开发，由 Anthropic 的 Claude 等模型编写全部代码并指导全部美术，人类开发者负责管理和引导生成内容。",
+          "id": "df60096451cd548ff8b1205c04f0b8023dcd31d5",
+          "title": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金 / GPT 5.6 Sol btw",
+          "title_zh": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金",
+          "title_en": "GPT 5.6 Sol btw",
+          "title_original": "GPT 5.6 Sol btw",
+          "summary": "XBOW 团队使用 OpenAI 的 GPT-5.6 Sol 辅助，在 6 天内以 4 万美元算力构建出 Chrome 全链漏洞，获得 Google 25 万美元赏金，这是 Google 第二次就 Chrome 全链漏洞发放赏金，也是 2026 年新规则下的首次。受影响范围为 Windows 上的 Chrome，作者称过去类似漏洞需约 6 个月构建，并提醒用户在出现 Update 按钮时及时重启 Chrome。",
           "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
-          "source": "Ars Technica：AI（RSS）",
+          "url": "https://x.com/reach_vb/status/2110086935733833893",
+          "source": "X：Vaibhav Srivastav（OpenAI）(@reach_vb)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-10-12T20:59:50Z"
-        },
-        {
-          "id": "447f0dc283e6b994d3e34e787068eb3d48330b0d",
-          "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Report: Epic Games goes all-in on AI for Disney collaboration",
-          "title_zh": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期",
-          "title_en": "Report: Epic Games goes all-in on AI for Disney collaboration",
-          "title_original": "Report: Epic Games goes all-in on AI for Disney collaboration",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
-          "source": "Ars Technica",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-10-12T20:59:50Z"
+          "published_at": "2026-10-13T19:15:03Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Ars Technica",
-        "Ars Technica：AI（RSS）"
+        "X：Vaibhav Srivastav（OpenAI）(@reach_vb)"
       ],
       "items": [
         {
-          "id": "b7d3568cf839d0191fb131fb6112169799a6dea1",
-          "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Epic Games reportedly pivoting to \"AI first\" game development model",
-          "title_zh": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期",
-          "title_en": "Epic Games reportedly pivoting to \"AI first\" game development model",
-          "title_original": "Epic Games reportedly pivoting to \"AI first\" game development model",
-          "summary": "据 Bloomberg 报道，Epic Games 在与迪士尼 15 亿美元合作项目中转向 AI 先行开发，由 Anthropic 的 Claude 等模型编写全部代码并指导全部美术，人类开发者负责管理和引导生成内容。",
+          "id": "df60096451cd548ff8b1205c04f0b8023dcd31d5",
+          "title": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金 / GPT 5.6 Sol btw",
+          "title_zh": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金",
+          "title_en": "GPT 5.6 Sol btw",
+          "title_original": "GPT 5.6 Sol btw",
+          "summary": "XBOW 团队使用 OpenAI 的 GPT-5.6 Sol 辅助，在 6 天内以 4 万美元算力构建出 Chrome 全链漏洞，获得 Google 25 万美元赏金，这是 Google 第二次就 Chrome 全链漏洞发放赏金，也是 2026 年新规则下的首次。受影响范围为 Windows 上的 Chrome，作者称过去类似漏洞需约 6 个月构建，并提醒用户在出现 Update 按钮时及时重启 Chrome。",
           "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
-          "source": "Ars Technica：AI（RSS）",
+          "url": "https://x.com/reach_vb/status/2110086935733833893",
+          "source": "X：Vaibhav Srivastav（OpenAI）(@reach_vb)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-10-12T20:59:50Z"
-        },
-        {
-          "id": "447f0dc283e6b994d3e34e787068eb3d48330b0d",
-          "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Report: Epic Games goes all-in on AI for Disney collaboration",
-          "title_zh": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期",
-          "title_en": "Report: Epic Games goes all-in on AI for Disney collaboration",
-          "title_original": "Report: Epic Games goes all-in on AI for Disney collaboration",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
-          "source": "Ars Technica",
-          "source_name": "TechURLs",
-          "site_id": "techurls",
-          "published_at": "2026-10-12T20:59:50Z"
+          "published_at": "2026-10-13T19:15:03Z"
         }
       ],
-      "item_count": 2,
-      "duplicate_count": 2,
-      "score": 0.7447,
-      "importance": 0.7447,
-      "importance_score": 0.7447,
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7786,
+      "importance": 0.7786,
+      "importance_score": 0.7786,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.76,
+        "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.806,
+        "recency": 0.9613,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-10-12T20:59:50Z",
-      "latest_at": "2026-10-12T20:59:50Z",
+      "earliest_at": "2026-10-13T19:15:03Z",
+      "latest_at": "2026-10-13T19:15:03Z",
       "primary_item": {
-        "id": "b7d3568cf839d0191fb131fb6112169799a6dea1",
-        "title": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期 / Epic Games reportedly pivoting to \"AI first\" game development model",
-        "title_zh": "Epic Games 转向 AI 先行开发模式，与迪士尼合作射击游戏无限期延期",
-        "title_en": "Epic Games reportedly pivoting to \"AI first\" game development model",
-        "title_original": "Epic Games reportedly pivoting to \"AI first\" game development model",
-        "summary": "据 Bloomberg 报道，Epic Games 在与迪士尼 15 亿美元合作项目中转向 AI 先行开发，由 Anthropic 的 Claude 等模型编写全部代码并指导全部美术，人类开发者负责管理和引导生成内容。",
+        "id": "df60096451cd548ff8b1205c04f0b8023dcd31d5",
+        "title": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金 / GPT 5.6 Sol btw",
+        "title_zh": "XBOW 团队借助 OpenAI GPT-5.6 Sol 获 Google Chrome 25 万美元全链漏洞赏金",
+        "title_en": "GPT 5.6 Sol btw",
+        "title_original": "GPT 5.6 Sol btw",
+        "summary": "XBOW 团队使用 OpenAI 的 GPT-5.6 Sol 辅助，在 6 天内以 4 万美元算力构建出 Chrome 全链漏洞，获得 Google 25 万美元赏金，这是 Google 第二次就 Chrome 全链漏洞发放赏金，也是 2026 年新规则下的首次。受影响范围为 Windows 上的 Chrome，作者称过去类似漏洞需约 6 个月构建，并提醒用户在出现 Update 按钮时及时重启 Chrome。",
         "recommend_reason_zh": null,
-        "url": "https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration",
-        "source": "Ars Technica：AI（RSS）",
+        "url": "https://x.com/reach_vb/status/2110086935733833893",
+        "source": "X：Vaibhav Srivastav（OpenAI）(@reach_vb)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.776,
+      "peak_score": 0.7786,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -1399,15 +1541,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7737,
-      "importance": 0.7737,
-      "importance_score": 0.7737,
+      "score": 0.7671,
+      "importance": 0.7671,
+      "importance_score": 0.7671,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.984,
+        "recency": 0.9473,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1435,7 +1577,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -1483,15 +1625,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7705,
-      "importance": 0.7705,
-      "importance_score": 0.7705,
+      "score": 0.7643,
+      "importance": 0.7643,
+      "importance_score": 0.7643,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.61,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9308,
+        "recency": 0.8961,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1519,7 +1661,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     },
     {
@@ -1567,22 +1709,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7552,
-      "importance": 0.7552,
-      "importance_score": 0.7552,
+      "score": 0.749,
+      "importance": 0.749,
+      "importance_score": 0.749,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9312,
+        "recency": 0.8965,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-13T11:59:44.116505Z",
       "latest_at": "2026-10-13T11:59:44.116505Z",
@@ -1603,174 +1744,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
-      }
-    },
-    {
-      "story_id": "story_8b03c7583593",
-      "title": "Cursor 并入 The X Subscription 订阅体系 / Cursor is now part of The X Subscription.",
-      "url": "https://x.com/cursor_ai/status/2109779605699879146",
-      "primary_url": "https://x.com/cursor_ai/status/2109779605699879146",
-      "source": "X：Cursor (@cursor_ai)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "7d6bd475b7e7c844f04108333ca39af21815e521",
-          "title": "Cursor 并入 The X Subscription 订阅体系 / Cursor is now part of The X Subscription.",
-          "title_zh": "Cursor 并入 The X Subscription 订阅体系",
-          "title_en": "Cursor is now part of The X Subscription.",
-          "title_original": "Cursor is now part of The X Subscription.",
-          "summary": "Cursor 宣布并入 The X Subscription，现有 Cursor 订阅者可保留原计划或切换到新订阅。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/cursor_ai/status/2109779605699879146",
-          "source": "X：Cursor (@cursor_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-12T22:53:50Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Cursor (@cursor_ai)"
-      ],
-      "items": [
-        {
-          "id": "7d6bd475b7e7c844f04108333ca39af21815e521",
-          "title": "Cursor 并入 The X Subscription 订阅体系 / Cursor is now part of The X Subscription.",
-          "title_zh": "Cursor 并入 The X Subscription 订阅体系",
-          "title_en": "Cursor is now part of The X Subscription.",
-          "title_original": "Cursor is now part of The X Subscription.",
-          "summary": "Cursor 宣布并入 The X Subscription，现有 Cursor 订阅者可保留原计划或切换到新订阅。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/cursor_ai/status/2109779605699879146",
-          "source": "X：Cursor (@cursor_ai)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-12T22:53:50Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7294,
-      "importance": 0.7294,
-      "importance_score": 0.7294,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.7,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8209,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-12T22:53:50Z",
-      "latest_at": "2026-10-12T22:53:50Z",
-      "primary_item": {
-        "id": "7d6bd475b7e7c844f04108333ca39af21815e521",
-        "title": "Cursor 并入 The X Subscription 订阅体系 / Cursor is now part of The X Subscription.",
-        "title_zh": "Cursor 并入 The X Subscription 订阅体系",
-        "title_en": "Cursor is now part of The X Subscription.",
-        "title_original": "Cursor is now part of The X Subscription.",
-        "summary": "Cursor 宣布并入 The X Subscription，现有 Cursor 订阅者可保留原计划或切换到新订阅。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/cursor_ai/status/2109779605699879146",
-        "source": "X：Cursor (@cursor_ai)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7612,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
-      }
-    },
-    {
-      "story_id": "story_2de9956c802f",
-      "title": "ElevenLabs AI 重建嗓音助力 Baroness Campbell 在英国上议院发表演讲 / Today, Baroness Campbell of Surbiton delivered a speech in the @UKHouseofLords using an AI recreation of her voice, built by ElevenLabs. ...",
-      "url": "https://x.com/ElevenLabs/status/2110037384192774210",
-      "primary_url": "https://x.com/ElevenLabs/status/2110037384192774210",
-      "source": "X：ElevenLabs (@elevenlabs)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "9f835ec8a9fecd176b147602f184012d50c5cd1d",
-          "title": "ElevenLabs AI 重建嗓音助力 Baroness Campbell 在英国上议院发表演讲 / Today, Baroness Campbell of Surbiton delivered a speech in the @UKHouseofLords using an AI recreation of her voice, built by ElevenLabs. ...",
-          "title_zh": "ElevenLabs AI 重建嗓音助力 Baroness Campbell 在英国上议院发表演讲",
-          "title_en": "Today, Baroness Campbell of Surbiton delivered a speech in the @UKHouseofLords using an AI recreation of her voice, built by ElevenLabs. ...",
-          "title_original": "Today, Baroness Campbell of Surbiton delivered a speech in the @UKHouseofLords using an AI recreation of her voice, built by ElevenLabs. ...",
-          "summary": "ElevenLabs 宣布，Baroness Campbell of Surbiton 今日在英国上议院使用由其构建的 AI 重建嗓音发表演讲，为英国议会首次。Baroness 患有脊髓性肌萎缩症影响说话，AI 嗓音复刻了她原声的音调、节奏和音高。ElevenLabs 称其技术已帮助超过 11,000 名因伤病失声者恢复嗓音，并承诺帮助全球 100 万失声人群。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ElevenLabs/status/2110037384192774210",
-          "source": "X：ElevenLabs (@elevenlabs)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-13T15:58:09Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：ElevenLabs (@elevenlabs)"
-      ],
-      "items": [
-        {
-          "id": "9f835ec8a9fecd176b147602f184012d50c5cd1d",
-          "title": "ElevenLabs AI 重建嗓音助力 Baroness Campbell 在英国上议院发表演讲 / Today, Baroness Campbell of Surbiton delivered a speech in the @UKHouseofLords using an AI recreation of her voice, built by ElevenLabs. ...",
-          "title_zh": "ElevenLabs AI 重建嗓音助力 Baroness Campbell 在英国上议院发表演讲",
-          "title_en": "Today, Baroness Campbell of Surbiton delivered a speech in the @UKHouseofLords using an AI recreation of her voice, built by ElevenLabs. ...",
-          "title_original": "Today, Baroness Campbell of Surbiton delivered a speech in the @UKHouseofLords using an AI recreation of her voice, built by ElevenLabs. ...",
-          "summary": "ElevenLabs 宣布，Baroness Campbell of Surbiton 今日在英国上议院使用由其构建的 AI 重建嗓音发表演讲，为英国议会首次。Baroness 患有脊髓性肌萎缩症影响说话，AI 嗓音复刻了她原声的音调、节奏和音高。ElevenLabs 称其技术已帮助超过 11,000 名因伤病失声者恢复嗓音，并承诺帮助全球 100 万失声人群。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/ElevenLabs/status/2110037384192774210",
-          "source": "X：ElevenLabs (@elevenlabs)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-13T15:58:09Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7558,
-      "importance": 0.7558,
-      "importance_score": 0.7558,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.7,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9675,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-13T15:58:09Z",
-      "latest_at": "2026-10-13T15:58:09Z",
-      "primary_item": {
-        "id": "9f835ec8a9fecd176b147602f184012d50c5cd1d",
-        "title": "ElevenLabs AI 重建嗓音助力 Baroness Campbell 在英国上议院发表演讲 / Today, Baroness Campbell of Surbiton delivered a speech in the @UKHouseofLords using an AI recreation of her voice, built by ElevenLabs. ...",
-        "title_zh": "ElevenLabs AI 重建嗓音助力 Baroness Campbell 在英国上议院发表演讲",
-        "title_en": "Today, Baroness Campbell of Surbiton delivered a speech in the @UKHouseofLords using an AI recreation of her voice, built by ElevenLabs. ...",
-        "title_original": "Today, Baroness Campbell of Surbiton delivered a speech in the @UKHouseofLords using an AI recreation of her voice, built by ElevenLabs. ...",
-        "summary": "ElevenLabs 宣布，Baroness Campbell of Surbiton 今日在英国上议院使用由其构建的 AI 重建嗓音发表演讲，为英国议会首次。Baroness 患有脊髓性肌萎缩症影响说话，AI 嗓音复刻了她原声的音调、节奏和音高。ElevenLabs 称其技术已帮助超过 11,000 名因伤病失声者恢复嗓音，并承诺帮助全球 100 万失声人群。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/ElevenLabs/status/2110037384192774210",
-        "source": "X：ElevenLabs (@elevenlabs)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7558,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-13T19:24:55.675903Z"
+        "scored_at": "2026-10-13T23:21:56.830546Z"
       }
     }
   ]
