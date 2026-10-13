@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T03:41:32.901070Z",
+  "generated_at": "2026-10-13T11:59:44.116505Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8355,
-      "importance": 0.8355,
-      "importance_score": 0.8355,
+      "score": 0.823,
+      "importance": 0.823,
+      "importance_score": 0.823,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9086,
+        "recency": 0.8388,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,178 +85,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     },
     {
-      "story_id": "story_41c5d4380fc2",
-      "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS bans AI assisted contributions",
-      "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-      "primary_url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-      "source": "Hacker News：AI 热帖",
+      "story_id": "story_3f65ad068613",
+      "title": "Character.AI 申请 Chapter 11 破产，Disney 以 2000 万美元牵头竞购部分资产 / Character.AI files for bankruptcy",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
+      "primary_url": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
+      "source": "The Verge：AI（RSS）",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "e3ea9ace5d71835bc12e67ebcfd26e609b0319f8",
-          "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS bans AI assisted contributions",
-          "title_zh": "QGIS 通过 QEP428 禁止 AI 辅助贡献",
-          "title_en": "QGIS bans AI assisted contributions",
-          "title_original": "QGIS bans AI assisted contributions",
-          "summary": "QGIS 通过 QEP428 提案，将 AI 政策改为严格的 NOT ALLOWED，由 nyalldawson 提交并于 2026 年 10 月 7 日合并进 QGIS-Enhancement-Proposals 仓库。",
+          "id": "692bdb0fdd40ebdc44b831c8167d3a6317572ab3",
+          "title": "Character.AI 申请 Chapter 11 破产，Disney 以 2000 万美元牵头竞购部分资产 / Character.AI files for bankruptcy",
+          "title_zh": "Character.AI 申请 Chapter 11 破产，Disney 以 2000 万美元牵头竞购部分资产",
+          "title_en": "Character.AI files for bankruptcy",
+          "title_original": "Character.AI files for bankruptcy",
+          "summary": "Character.AI 已在美国申请 Chapter 11 破产保护，以推进出售公司及资产，负债估计在 5000 万至 1 亿美元之间。",
           "recommend_reason_zh": null,
-          "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-          "source": "Hacker News：AI 热帖",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
+          "source": "The Verge：AI（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-10-12T11:22:24Z"
+          "published_at": "2026-10-13T10:32:23Z"
         },
         {
-          "id": "5a8d5a7dfa130542456f3aaaed2113fcaf4fa8ba",
-          "title": "QGIS 禁止使用人工智能辅助的贡献",
-          "title_zh": "QGIS 禁止使用人工智能辅助的贡献",
-          "title_en": null,
-          "title_original": "QGIS 禁止使用人工智能辅助的贡献",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-          "source": "github.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-10-12T12:48:18.792000Z"
-        },
-        {
-          "id": "6f33ddfea5a68c7a99fa992198752c8d64dec86d",
-          "title": "QGIS bans AI assisted contributions",
+          "id": "dddc1a0f0f8ce63b53dd6a2eb6687d7791961e6f",
+          "title": "Character.ai Files for Bankruptcy",
           "title_zh": null,
-          "title_en": "QGIS bans AI assisted contributions",
-          "title_original": "QGIS bans AI assisted contributions",
+          "title_en": "Character.ai Files for Bankruptcy",
+          "title_original": "Character.ai Files for Bankruptcy",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=50054751",
+          "url": "https://news.ycombinator.com/item?id=50069942",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-10-12T11:22:24Z"
-        },
-        {
-          "id": "239a5f6545c123ed3c0707897abab52c49422472",
-          "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS enacts moratorium on AI contributions",
-          "title_zh": "QGIS 通过 QEP428 禁止 AI 辅助贡献",
-          "title_en": "QGIS enacts moratorium on AI contributions",
-          "title_original": "QGIS enacts moratorium on AI contributions",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-10-12T11:22:24Z"
-        },
-        {
-          "id": "63b2c5c08418b80d6bfebde63faa839633604cd6",
-          "title": "QGIS enacts moratorium on AI contributions",
-          "title_zh": null,
-          "title_en": "QGIS enacts moratorium on AI contributions",
-          "title_original": "QGIS enacts moratorium on AI contributions",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=50054751",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-10-12T11:22:24Z"
+          "published_at": "2026-10-13T11:24:08Z"
         }
       ],
       "source_count": 2,
       "source_names": [
-        "Hacker News (黑客新闻)",
-        "Hacker News：AI 热帖",
-        "github.com",
+        "The Verge：AI（RSS）",
         "hackernews"
       ],
       "items": [
         {
-          "id": "e3ea9ace5d71835bc12e67ebcfd26e609b0319f8",
-          "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS bans AI assisted contributions",
-          "title_zh": "QGIS 通过 QEP428 禁止 AI 辅助贡献",
-          "title_en": "QGIS bans AI assisted contributions",
-          "title_original": "QGIS bans AI assisted contributions",
-          "summary": "QGIS 通过 QEP428 提案，将 AI 政策改为严格的 NOT ALLOWED，由 nyalldawson 提交并于 2026 年 10 月 7 日合并进 QGIS-Enhancement-Proposals 仓库。",
+          "id": "692bdb0fdd40ebdc44b831c8167d3a6317572ab3",
+          "title": "Character.AI 申请 Chapter 11 破产，Disney 以 2000 万美元牵头竞购部分资产 / Character.AI files for bankruptcy",
+          "title_zh": "Character.AI 申请 Chapter 11 破产，Disney 以 2000 万美元牵头竞购部分资产",
+          "title_en": "Character.AI files for bankruptcy",
+          "title_original": "Character.AI files for bankruptcy",
+          "summary": "Character.AI 已在美国申请 Chapter 11 破产保护，以推进出售公司及资产，负债估计在 5000 万至 1 亿美元之间。",
           "recommend_reason_zh": null,
-          "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-          "source": "Hacker News：AI 热帖",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
+          "source": "The Verge：AI（RSS）",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-10-12T11:22:24Z"
+          "published_at": "2026-10-13T10:32:23Z"
         },
         {
-          "id": "5a8d5a7dfa130542456f3aaaed2113fcaf4fa8ba",
-          "title": "QGIS 禁止使用人工智能辅助的贡献",
-          "title_zh": "QGIS 禁止使用人工智能辅助的贡献",
-          "title_en": null,
-          "title_original": "QGIS 禁止使用人工智能辅助的贡献",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-          "source": "github.com",
-          "source_name": "Buzzing",
-          "site_id": "buzzing",
-          "published_at": "2026-10-12T12:48:18.792000Z"
-        },
-        {
-          "id": "6f33ddfea5a68c7a99fa992198752c8d64dec86d",
-          "title": "QGIS bans AI assisted contributions",
+          "id": "dddc1a0f0f8ce63b53dd6a2eb6687d7791961e6f",
+          "title": "Character.ai Files for Bankruptcy",
           "title_zh": null,
-          "title_en": "QGIS bans AI assisted contributions",
-          "title_original": "QGIS bans AI assisted contributions",
+          "title_en": "Character.ai Files for Bankruptcy",
+          "title_original": "Character.ai Files for Bankruptcy",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=50054751",
+          "url": "https://news.ycombinator.com/item?id=50069942",
           "source": "hackernews",
           "source_name": "NewsNow",
           "site_id": "newsnow",
-          "published_at": "2026-10-12T11:22:24Z"
-        },
-        {
-          "id": "239a5f6545c123ed3c0707897abab52c49422472",
-          "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS enacts moratorium on AI contributions",
-          "title_zh": "QGIS 通过 QEP428 禁止 AI 辅助贡献",
-          "title_en": "QGIS enacts moratorium on AI contributions",
-          "title_original": "QGIS enacts moratorium on AI contributions",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-          "source": "Hacker News (黑客新闻)",
-          "source_name": "Info Flow",
-          "site_id": "iris",
-          "published_at": "2026-10-12T11:22:24Z"
-        },
-        {
-          "id": "63b2c5c08418b80d6bfebde63faa839633604cd6",
-          "title": "QGIS enacts moratorium on AI contributions",
-          "title_zh": null,
-          "title_en": "QGIS enacts moratorium on AI contributions",
-          "title_original": "QGIS enacts moratorium on AI contributions",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://news.ycombinator.com/item?id=50054751",
-          "source": "hackernews",
-          "source_name": "NewsNow",
-          "site_id": "newsnow",
-          "published_at": "2026-10-12T11:22:24Z"
+          "published_at": "2026-10-13T11:24:08Z"
         }
       ],
-      "item_count": 5,
-      "duplicate_count": 5,
-      "score": 0.7784,
-      "importance": 0.7784,
-      "importance_score": 0.7784,
+      "item_count": 2,
+      "duplicate_count": 2,
+      "score": 0.8141,
+      "importance": 0.8141,
+      "importance_score": 0.8141,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.76,
+        "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8546,
+        "recency": 0.9861,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -266,26 +180,194 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-10-12T11:22:24Z",
-      "latest_at": "2026-10-12T12:48:18.792000Z",
+      "earliest_at": "2026-10-13T10:32:23Z",
+      "latest_at": "2026-10-13T11:24:08Z",
       "primary_item": {
-        "id": "e3ea9ace5d71835bc12e67ebcfd26e609b0319f8",
-        "title": "QGIS 通过 QEP428 禁止 AI 辅助贡献 / QGIS bans AI assisted contributions",
-        "title_zh": "QGIS 通过 QEP428 禁止 AI 辅助贡献",
-        "title_en": "QGIS bans AI assisted contributions",
-        "title_original": "QGIS bans AI assisted contributions",
-        "summary": "QGIS 通过 QEP428 提案，将 AI 政策改为严格的 NOT ALLOWED，由 nyalldawson 提交并于 2026 年 10 月 7 日合并进 QGIS-Enhancement-Proposals 仓库。",
+        "id": "692bdb0fdd40ebdc44b831c8167d3a6317572ab3",
+        "title": "Character.AI 申请 Chapter 11 破产，Disney 以 2000 万美元牵头竞购部分资产 / Character.AI files for bankruptcy",
+        "title_zh": "Character.AI 申请 Chapter 11 破产，Disney 以 2000 万美元牵头竞购部分资产",
+        "title_en": "Character.AI files for bankruptcy",
+        "title_original": "Character.AI files for bankruptcy",
+        "summary": "Character.AI 已在美国申请 Chapter 11 破产保护，以推进出售公司及资产，负债估计在 5000 万至 1 亿美元之间。",
         "recommend_reason_zh": null,
-        "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
-        "source": "Hacker News：AI 热帖",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1009802/character-ai-files-for-bankruptcy-disney",
+        "source": "The Verge：AI（RSS）",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7971,
+      "peak_score": 0.8141,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
+      }
+    },
+    {
+      "story_id": "story_25f006d4bed0",
+      "title": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
+      "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247499456&idx=1&sn=03da7aed4dabbd4fca5c89ce88d4a90a",
+      "primary_url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247499456&idx=1&sn=03da7aed4dabbd4fca5c89ce88d4a90a",
+      "source": "公众号：面壁智能（MiniCPM）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "6bfeadaedc605b5f1b8037b8215dc35e1d366e2f",
+          "title": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
+          "title_zh": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
+          "title_en": null,
+          "title_original": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
+          "summary": "面壁智能联合 OpenBMB 社区于10月13日发布并开源 MiniCPM-V 4.7，包含 35B-A3B 和 1B 两个版本，称其为全球首个可在端侧无损流畅运行的开源 MoE 多模态大模型。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247499456&idx=1&sn=03da7aed4dabbd4fca5c89ce88d4a90a",
+          "source": "公众号：面壁智能（MiniCPM）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-13T10:29:21Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "公众号：面壁智能（MiniCPM）"
+      ],
+      "items": [
+        {
+          "id": "6bfeadaedc605b5f1b8037b8215dc35e1d366e2f",
+          "title": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
+          "title_zh": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
+          "title_en": null,
+          "title_original": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
+          "summary": "面壁智能联合 OpenBMB 社区于10月13日发布并开源 MiniCPM-V 4.7，包含 35B-A3B 和 1B 两个版本，称其为全球首个可在端侧无损流畅运行的开源 MoE 多模态大模型。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247499456&idx=1&sn=03da7aed4dabbd4fca5c89ce88d4a90a",
+          "source": "公众号：面壁智能（MiniCPM）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-13T10:29:21Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8014,
+      "importance": 0.8014,
+      "importance_score": 0.8014,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.68,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9856,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-13T10:29:21Z",
+      "latest_at": "2026-10-13T10:29:21Z",
+      "primary_item": {
+        "id": "6bfeadaedc605b5f1b8037b8215dc35e1d366e2f",
+        "title": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
+        "title_zh": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
+        "title_en": null,
+        "title_original": "面壁智能开源 MiniCPM-V 4.7，35B-A3B MoE 模型 3GB 内存端侧流畅运行",
+        "summary": "面壁智能联合 OpenBMB 社区于10月13日发布并开源 MiniCPM-V 4.7，包含 35B-A3B 和 1B 两个版本，称其为全球首个可在端侧无损流畅运行的开源 MoE 多模态大模型。",
+        "recommend_reason_zh": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247499456&idx=1&sn=03da7aed4dabbd4fca5c89ce88d4a90a",
+        "source": "公众号：面壁智能（MiniCPM）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8014,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-13T12:06:15.970783Z"
+      }
+    },
+    {
+      "story_id": "story_bcdd8d085b93",
+      "title": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247489149&idx=1&sn=26d7fefe24bfb18efa4582467313b1eb",
+      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247489149&idx=1&sn=26d7fefe24bfb18efa4582467313b1eb",
+      "source": "公众号：千问APP（阿里）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "4f172c4abbb29f48b19f036cfe920cbc40312c05",
+          "title": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
+          "title_zh": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
+          "title_en": null,
+          "title_original": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
+          "summary": "千问发布三款硬件新品：AI眼镜N1、N1 Pro和AI耳夹式耳机，今日在淘宝、天猫、京东、抖音等平台现货开售，眼镜到手价2218元起，耳机1099元起。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247489149&idx=1&sn=26d7fefe24bfb18efa4582467313b1eb",
+          "source": "公众号：千问APP（阿里）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-13T08:06:57Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "公众号：千问APP（阿里）"
+      ],
+      "items": [
+        {
+          "id": "4f172c4abbb29f48b19f036cfe920cbc40312c05",
+          "title": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
+          "title_zh": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
+          "title_en": null,
+          "title_original": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
+          "summary": "千问发布三款硬件新品：AI眼镜N1、N1 Pro和AI耳夹式耳机，今日在淘宝、天猫、京东、抖音等平台现货开售，眼镜到手价2218元起，耳机1099元起。",
+          "recommend_reason_zh": null,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247489149&idx=1&sn=26d7fefe24bfb18efa4582467313b1eb",
+          "source": "公众号：千问APP（阿里）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-13T08:06:57Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7884,
+      "importance": 0.7884,
+      "importance_score": 0.7884,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.65,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9633,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-13T08:06:57Z",
+      "latest_at": "2026-10-13T08:06:57Z",
+      "primary_item": {
+        "id": "4f172c4abbb29f48b19f036cfe920cbc40312c05",
+        "title": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
+        "title_zh": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
+        "title_en": null,
+        "title_original": "千问发布AI眼镜N1/N1 Pro及首款AI耳夹式耳机并现货开售",
+        "summary": "千问发布三款硬件新品：AI眼镜N1、N1 Pro和AI耳夹式耳机，今日在淘宝、天猫、京东、抖音等平台现货开售，眼镜到手价2218元起，耳机1099元起。",
+        "recommend_reason_zh": null,
+        "url": "https://mp.weixin.qq.com/s?__biz=MzYzNDE5MDEwMQ%3D%3D&mid=2247489149&idx=1&sn=26d7fefe24bfb18efa4582467313b1eb",
+        "source": "公众号：千问APP（阿里）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7884,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     },
     {
@@ -333,15 +415,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7701,
-      "importance": 0.7701,
-      "importance_score": 0.7701,
+      "score": 0.7575,
+      "importance": 0.7575,
+      "importance_score": 0.7575,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9141,
+        "recency": 0.8439,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -369,7 +451,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     },
     {
@@ -417,15 +499,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7697,
-      "importance": 0.7697,
-      "importance_score": 0.7697,
+      "score": 0.7571,
+      "importance": 0.7571,
+      "importance_score": 0.7571,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9116,
+        "recency": 0.8416,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -453,91 +535,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
-      }
-    },
-    {
-      "story_id": "story_b41ff3f56559",
-      "title": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审 / Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
-      "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed",
-      "primary_url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed",
-      "source": "The Decoder：AI News（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "e202ca86d4ca8c9e05762dc4553f7a5e5beaa966",
-          "title": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审 / Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
-          "title_zh": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审",
-          "title_en": "Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
-          "title_original": "Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
-          "summary": "Science 新研究显示，Google DeepMind 的 AlphaProof Nexus 独立解决了 353 个开放 Erdős 问题中的 9 个，其中 2 个悬置 56 年。",
-          "recommend_reason_zh": null,
-          "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed",
-          "source": "The Decoder：AI News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-12T09:35:54Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "The Decoder：AI News（RSS）"
-      ],
-      "items": [
-        {
-          "id": "e202ca86d4ca8c9e05762dc4553f7a5e5beaa966",
-          "title": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审 / Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
-          "title_zh": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审",
-          "title_en": "Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
-          "title_original": "Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
-          "summary": "Science 新研究显示，Google DeepMind 的 AlphaProof Nexus 独立解决了 353 个开放 Erdős 问题中的 9 个，其中 2 个悬置 56 年。",
-          "recommend_reason_zh": null,
-          "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed",
-          "source": "The Decoder：AI News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-12T09:35:54Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7508,
-      "importance": 0.7508,
-      "importance_score": 0.7508,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.76,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8401,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-12T09:35:54Z",
-      "latest_at": "2026-10-12T09:35:54Z",
-      "primary_item": {
-        "id": "e202ca86d4ca8c9e05762dc4553f7a5e5beaa966",
-        "title": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审 / Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
-        "title_zh": "AlphaProof Nexus 攻克 9 个未解 Erdős 问题并经同行评审",
-        "title_en": "Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
-        "title_original": "Google Deepmind's AlphaProof Nexus solved dozens of open math problems and actually got peer reviewed",
-        "summary": "Science 新研究显示，Google DeepMind 的 AlphaProof Nexus 独立解决了 353 个开放 Erdős 问题中的 9 个，其中 2 个悬置 56 年。",
-        "recommend_reason_zh": null,
-        "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed",
-        "source": "The Decoder：AI News（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7691,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     },
     {
@@ -672,23 +670,22 @@
       ],
       "item_count": 4,
       "duplicate_count": 4,
-      "score": 0.7608,
-      "importance": 0.7608,
-      "importance_score": 0.7608,
+      "score": 0.7481,
+      "importance": 0.7481,
+      "importance_score": 0.7481,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.66,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9236,
+        "recency": 0.8526,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
         "multi_source",
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-12T18:29:04Z",
       "latest_at": "2026-10-12T19:25:54.721000Z",
@@ -709,30 +706,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     },
     {
-      "story_id": "story_b5fab2baca32",
-      "title": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
-      "url": "https://www.aibase.com/news/31576",
-      "primary_url": "https://www.aibase.com/news/31576",
+      "story_id": "story_f43109fcb1e0",
+      "title": "1688全面接入AI电商工作台Accio 赋能超1亿买家与百万源头厂商",
+      "url": "https://www.aibase.com/news/31599",
+      "primary_url": "https://www.aibase.com/news/31599",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "8ba66a77df54223e00f2f0816a98fd7f54b88573",
-          "title": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
-          "title_zh": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
+          "id": "bdd69da8a3134e313054297660085672f4069297",
+          "title": "1688全面接入AI电商工作台Accio 赋能超1亿买家与百万源头厂商",
+          "title_zh": "1688全面接入AI电商工作台Accio 赋能超1亿买家与百万源头厂商",
           "title_en": null,
-          "title_original": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
+          "title_original": "1688全面接入AI电商工作台Accio 赋能超1亿买家与百万源头厂商",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31576",
+          "url": "https://www.aibase.com/news/31599",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-13T03:41:32.901070Z"
+          "published_at": "2026-10-13T11:59:44.116505Z"
         }
       ],
       "source_count": 1,
@@ -741,18 +738,18 @@
       ],
       "items": [
         {
-          "id": "8ba66a77df54223e00f2f0816a98fd7f54b88573",
-          "title": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
-          "title_zh": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
+          "id": "bdd69da8a3134e313054297660085672f4069297",
+          "title": "1688全面接入AI电商工作台Accio 赋能超1亿买家与百万源头厂商",
+          "title_zh": "1688全面接入AI电商工作台Accio 赋能超1亿买家与百万源头厂商",
           "title_en": null,
-          "title_original": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
+          "title_original": "1688全面接入AI电商工作台Accio 赋能超1亿买家与百万源头厂商",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31576",
+          "url": "https://www.aibase.com/news/31599",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-13T03:41:32.901070Z"
+          "published_at": "2026-10-13T11:59:44.116505Z"
         }
       ],
       "item_count": 1,
@@ -774,17 +771,17 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-10-13T03:41:32.901070Z",
-      "latest_at": "2026-10-13T03:41:32.901070Z",
+      "earliest_at": "2026-10-13T11:59:44.116505Z",
+      "latest_at": "2026-10-13T11:59:44.116505Z",
       "primary_item": {
-        "id": "8ba66a77df54223e00f2f0816a98fd7f54b88573",
-        "title": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
-        "title_zh": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
+        "id": "bdd69da8a3134e313054297660085672f4069297",
+        "title": "1688全面接入AI电商工作台Accio 赋能超1亿买家与百万源头厂商",
+        "title_zh": "1688全面接入AI电商工作台Accio 赋能超1亿买家与百万源头厂商",
         "title_en": null,
-        "title_original": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
+        "title_original": "1688全面接入AI电商工作台Accio 赋能超1亿买家与百万源头厂商",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31576",
+        "url": "https://www.aibase.com/news/31599",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -793,7 +790,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     },
     {
@@ -841,22 +838,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7535,
-      "importance": 0.7535,
-      "importance_score": 0.7535,
+      "score": 0.7403,
+      "importance": 0.7403,
+      "importance_score": 0.7403,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9549,
+        "recency": 0.8815,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-12T22:53:50Z",
       "latest_at": "2026-10-12T22:53:50Z",
@@ -877,173 +873,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
-      }
-    },
-    {
-      "story_id": "story_6df55b1a5a3a",
-      "title": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
-      "url": "https://x.com/Khazix0918/status/2109501787736813663",
-      "primary_url": "https://x.com/Khazix0918/status/2109501787736813663",
-      "source": "X：卡兹克 (@Khazix0918)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "4d75d0fa41cd12eb95b90c1a1cbfd837476bafa8",
-          "title": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
-          "title_zh": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
-          "title_en": null,
-          "title_original": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
-          "summary": "数字生命卡兹克撰文分析AI驱动逆向工程热潮：开发者Brandon Thomas因不满Adobe订阅规则，用Claude Opus 5.5以Rust逆向重写了Photoshop、Illustrator等7款软件的开源替代品PhotoCraft、VectorCraft等，不到10天单PS项目获4.6万Star。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Khazix0918/status/2109501787736813663",
-          "source": "X：卡兹克 (@Khazix0918)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-12T04:29:53Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：卡兹克 (@Khazix0918)"
-      ],
-      "items": [
-        {
-          "id": "4d75d0fa41cd12eb95b90c1a1cbfd837476bafa8",
-          "title": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
-          "title_zh": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
-          "title_en": null,
-          "title_original": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
-          "summary": "数字生命卡兹克撰文分析AI驱动逆向工程热潮：开发者Brandon Thomas因不满Adobe订阅规则，用Claude Opus 5.5以Rust逆向重写了Photoshop、Illustrator等7款软件的开源替代品PhotoCraft、VectorCraft等，不到10天单PS项目获4.6万Star。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Khazix0918/status/2109501787736813663",
-          "source": "X：卡兹克 (@Khazix0918)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-12T04:29:53Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7166,
-      "importance": 0.7166,
-      "importance_score": 0.7166,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.67,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7999,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-12T04:29:53Z",
-      "latest_at": "2026-10-12T04:29:53Z",
-      "primary_item": {
-        "id": "4d75d0fa41cd12eb95b90c1a1cbfd837476bafa8",
-        "title": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
-        "title_zh": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
-        "title_en": null,
-        "title_original": "从Brandon Thomas用Claude Opus 5.5开源重写Adobe全家桶看AI逆向一切趋势",
-        "summary": "数字生命卡兹克撰文分析AI驱动逆向工程热潮：开发者Brandon Thomas因不满Adobe订阅规则，用Claude Opus 5.5以Rust逆向重写了Photoshop、Illustrator等7款软件的开源替代品PhotoCraft、VectorCraft等，不到10天单PS项目获4.6万Star。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/Khazix0918/status/2109501787736813663",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7496,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
-      }
-    },
-    {
-      "story_id": "story_75aedb54f50c",
-      "title": "用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程 / How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮",
-      "url": "https://x.com/MeshyAI/status/2109550836934471864",
-      "primary_url": "https://x.com/MeshyAI/status/2109550836934471864",
-      "source": "X：Meshy (@MeshyAI)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "91f6030ffc8e5c0d29755a33d9fe85e93f9085d5",
-          "title": "用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程 / How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮",
-          "title_zh": "用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程",
-          "title_en": "How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮",
-          "title_original": "How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮",
-          "summary": "一篇教程介绍用 Claude Opus 5.5 配合 Claude Code、Blender、Unreal Engine 5 和 Meshy 构建游戏的方法。核心思路是给每个工具分配单一职责：通过 MCP 连接 Blender 和 Meshy，由 Meshy 生成道具和角色、Blender 清理和放置、Unreal 负责光照物理和游戏本身、Opus 在一个对话里调度三者。流程为先让 Opus 头脑风暴 5 个游戏点子再展开，告知 GPU 以便压满画面性能，首个完整构建约花 4 小时和约 19% 的每周 Max plan 用量，之后因素材复用会快很多。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/MeshyAI/status/2109550836934471864",
-          "source": "X：Meshy (@MeshyAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-12T07:44:47Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Meshy (@MeshyAI)"
-      ],
-      "items": [
-        {
-          "id": "91f6030ffc8e5c0d29755a33d9fe85e93f9085d5",
-          "title": "用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程 / How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮",
-          "title_zh": "用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程",
-          "title_en": "How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮",
-          "title_original": "How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮",
-          "summary": "一篇教程介绍用 Claude Opus 5.5 配合 Claude Code、Blender、Unreal Engine 5 和 Meshy 构建游戏的方法。核心思路是给每个工具分配单一职责：通过 MCP 连接 Blender 和 Meshy，由 Meshy 生成道具和角色、Blender 清理和放置、Unreal 负责光照物理和游戏本身、Opus 在一个对话里调度三者。流程为先让 Opus 头脑风暴 5 个游戏点子再展开，告知 GPU 以便压满画面性能，首个完整构建约花 4 小时和约 19% 的每周 Max plan 用量，之后因素材复用会快很多。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/MeshyAI/status/2109550836934471864",
-          "source": "X：Meshy (@MeshyAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-12T07:44:47Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7302,
-      "importance": 0.7302,
-      "importance_score": 0.7302,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.7,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8253,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-12T07:44:47Z",
-      "latest_at": "2026-10-12T07:44:47Z",
-      "primary_item": {
-        "id": "91f6030ffc8e5c0d29755a33d9fe85e93f9085d5",
-        "title": "用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程 / How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮",
-        "title_zh": "用 Claude Opus 5.5、Blender、Unreal Engine 和 Meshy 构建游戏的七步教程",
-        "title_en": "How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮",
-        "title_original": "How to build a game with Claude Opus 5.5 + Blender + Unreal Engine + Meshy 🎮",
-        "summary": "一篇教程介绍用 Claude Opus 5.5 配合 Claude Code、Blender、Unreal Engine 5 和 Meshy 构建游戏的方法。核心思路是给每个工具分配单一职责：通过 MCP 连接 Blender 和 Meshy，由 Meshy 生成道具和角色、Blender 清理和放置、Unreal 负责光照物理和游戏本身、Opus 在一个对话里调度三者。流程为先让 Opus 头脑风暴 5 个游戏点子再展开，告知 GPU 以便压满画面性能，首个完整构建约花 4 小时和约 19% 的每周 Max plan 用量，之后因素材复用会快很多。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/MeshyAI/status/2109550836934471864",
-        "source": "X：Meshy (@MeshyAI)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7481,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     },
     {
@@ -1120,15 +950,15 @@
       ],
       "item_count": 2,
       "duplicate_count": 2,
-      "score": 0.7684,
-      "importance": 0.7684,
-      "importance_score": 0.7684,
+      "score": 0.7554,
+      "importance": 0.7554,
+      "importance_score": 0.7554,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9376,
+        "recency": 0.8656,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1156,7 +986,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     },
     {
@@ -1204,15 +1034,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7423,
-      "importance": 0.7423,
-      "importance_score": 0.7423,
+      "score": 0.7288,
+      "importance": 0.7288,
+      "importance_score": 0.7288,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9759,
+        "recency": 0.9009,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1239,7 +1069,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     },
     {
@@ -1287,19 +1117,19 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.723,
-      "importance": 0.723,
-      "importance_score": 0.723,
-      "importance_label": "行业动态",
+      "score": 0.7109,
+      "importance": 0.7109,
+      "importance_score": 0.7109,
+      "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.65,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8686,
+        "recency": 0.8019,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "industry",
+      "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
@@ -1322,30 +1152,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     },
     {
-      "story_id": "story_0bc3650116a3",
-      "title": "46岁数学家凭AI量化交易跻身英国富豪榜第八，身家超1417亿元",
-      "url": "https://www.aibase.com/news/31557",
-      "primary_url": "https://www.aibase.com/news/31557",
+      "story_id": "story_b5fab2baca32",
+      "title": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
+      "url": "https://www.aibase.com/news/31576",
+      "primary_url": "https://www.aibase.com/news/31576",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "bac70dad58153924bfcb22a6c0a9b2185168fc42",
-          "title": "46岁数学家凭AI量化交易跻身英国富豪榜第八，身家超1417亿元",
-          "title_zh": "46岁数学家凭AI量化交易跻身英国富豪榜第八，身家超1417亿元",
+          "id": "8ba66a77df54223e00f2f0816a98fd7f54b88573",
+          "title": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
+          "title_zh": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
           "title_en": null,
-          "title_original": "46岁数学家凭AI量化交易跻身英国富豪榜第八，身家超1417亿元",
+          "title_original": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31557",
+          "url": "https://www.aibase.com/news/31576",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
+          "published_at": "2026-10-13T03:41:32.901070Z"
         }
       ],
       "source_count": 1,
@@ -1354,49 +1184,50 @@
       ],
       "items": [
         {
-          "id": "bac70dad58153924bfcb22a6c0a9b2185168fc42",
-          "title": "46岁数学家凭AI量化交易跻身英国富豪榜第八，身家超1417亿元",
-          "title_zh": "46岁数学家凭AI量化交易跻身英国富豪榜第八，身家超1417亿元",
+          "id": "8ba66a77df54223e00f2f0816a98fd7f54b88573",
+          "title": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
+          "title_zh": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
           "title_en": null,
-          "title_original": "46岁数学家凭AI量化交易跻身英国富豪榜第八，身家超1417亿元",
+          "title_original": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31557",
+          "url": "https://www.aibase.com/news/31576",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
+          "published_at": "2026-10-13T03:41:32.901070Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.734,
-      "importance": 0.734,
-      "importance_score": 0.734,
+      "score": 0.7538,
+      "importance": 0.7538,
+      "importance_score": 0.7538,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8134,
+        "recency": 0.9232,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-10-12T06:14:20.432370Z",
-      "latest_at": "2026-10-12T06:14:20.432370Z",
+      "earliest_at": "2026-10-13T03:41:32.901070Z",
+      "latest_at": "2026-10-13T03:41:32.901070Z",
       "primary_item": {
-        "id": "bac70dad58153924bfcb22a6c0a9b2185168fc42",
-        "title": "46岁数学家凭AI量化交易跻身英国富豪榜第八，身家超1417亿元",
-        "title_zh": "46岁数学家凭AI量化交易跻身英国富豪榜第八，身家超1417亿元",
+        "id": "8ba66a77df54223e00f2f0816a98fd7f54b88573",
+        "title": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
+        "title_zh": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
         "title_en": null,
-        "title_original": "46岁数学家凭AI量化交易跻身英国富豪榜第八，身家超1417亿元",
+        "title_original": "3 个月烧掉 5000 亿 Token，AI 把《现代战争 2》源代码\"复刻\"了 83%",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31557",
+        "url": "https://www.aibase.com/news/31576",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -1405,7 +1236,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     },
     {
@@ -1453,15 +1284,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7179,
-      "importance": 0.7179,
-      "importance_score": 0.7179,
+      "score": 0.7054,
+      "importance": 0.7054,
+      "importance_score": 0.7054,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.61,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9075,
+        "recency": 0.8377,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1488,7 +1319,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
+      }
+    },
+    {
+      "story_id": "story_43649a7a39af",
+      "title": "700 颗自主气球飞进台风眼：WindBorne 拿下美国空军近 5000 万美元合同",
+      "url": "https://www.aibase.com/news/31613",
+      "primary_url": "https://www.aibase.com/news/31613",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "8893e38751dc4d8d52a1065d8e94c5f3c9bbd096",
+          "title": "700 颗自主气球飞进台风眼：WindBorne 拿下美国空军近 5000 万美元合同",
+          "title_zh": "700 颗自主气球飞进台风眼：WindBorne 拿下美国空军近 5000 万美元合同",
+          "title_en": null,
+          "title_original": "700 颗自主气球飞进台风眼：WindBorne 拿下美国空军近 5000 万美元合同",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31613",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-13T11:59:44.116505Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "8893e38751dc4d8d52a1065d8e94c5f3c9bbd096",
+          "title": "700 颗自主气球飞进台风眼：WindBorne 拿下美国空军近 5000 万美元合同",
+          "title_zh": "700 颗自主气球飞进台风眼：WindBorne 拿下美国空军近 5000 万美元合同",
+          "title_en": null,
+          "title_original": "700 颗自主气球飞进台风眼：WindBorne 拿下美国空军近 5000 万美元合同",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31613",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-13T11:59:44.116505Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-13T11:59:44.116505Z",
+      "latest_at": "2026-10-13T11:59:44.116505Z",
+      "primary_item": {
+        "id": "8893e38751dc4d8d52a1065d8e94c5f3c9bbd096",
+        "title": "700 颗自主气球飞进台风眼：WindBorne 拿下美国空军近 5000 万美元合同",
+        "title_zh": "700 颗自主气球飞进台风眼：WindBorne 拿下美国空军近 5000 万美元合同",
+        "title_en": null,
+        "title_original": "700 颗自主气球飞进台风眼：WindBorne 拿下美国空军近 5000 万美元合同",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31613",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     },
     {
@@ -1536,15 +1451,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7482,
-      "importance": 0.7482,
-      "importance_score": 0.7482,
+      "score": 0.7358,
+      "importance": 0.7358,
+      "importance_score": 0.7358,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.892,
+        "recency": 0.8235,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1571,30 +1486,30 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     },
     {
-      "story_id": "story_60f0e5ebdd7f",
-      "title": "AI 购物新玩法引发争议！马斯克称拍信用卡即可下单，遭 OpenAI 高管公开嘲讽",
-      "url": "https://www.aibase.com/news/31549",
-      "primary_url": "https://www.aibase.com/news/31549",
+      "story_id": "story_dba74a9fac78",
+      "title": "Anthropic 拉响红色警报：小型 AI 模型几个月内或将学会自我复制，而且你关不掉它",
+      "url": "https://www.aibase.com/news/31600",
+      "primary_url": "https://www.aibase.com/news/31600",
       "source": "AIbase",
       "source_name": "AIbase",
       "sources": [
         {
-          "id": "b7fec157c75072fe1e82fd52521c3ed0ddcf0e24",
-          "title": "AI 购物新玩法引发争议！马斯克称拍信用卡即可下单，遭 OpenAI 高管公开嘲讽",
-          "title_zh": "AI 购物新玩法引发争议！马斯克称拍信用卡即可下单，遭 OpenAI 高管公开嘲讽",
+          "id": "6e8bbcacccbbf036cf3f8740f51c678c4e533243",
+          "title": "Anthropic 拉响红色警报：小型 AI 模型几个月内或将学会自我复制，而且你关不掉它",
+          "title_zh": "Anthropic 拉响红色警报：小型 AI 模型几个月内或将学会自我复制，而且你关不掉它",
           "title_en": null,
-          "title_original": "AI 购物新玩法引发争议！马斯克称拍信用卡即可下单，遭 OpenAI 高管公开嘲讽",
+          "title_original": "Anthropic 拉响红色警报：小型 AI 模型几个月内或将学会自我复制，而且你关不掉它",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31549",
+          "url": "https://www.aibase.com/news/31600",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
+          "published_at": "2026-10-13T11:59:44.116505Z"
         }
       ],
       "source_count": 1,
@@ -1603,267 +1518,18 @@
       ],
       "items": [
         {
-          "id": "b7fec157c75072fe1e82fd52521c3ed0ddcf0e24",
-          "title": "AI 购物新玩法引发争议！马斯克称拍信用卡即可下单，遭 OpenAI 高管公开嘲讽",
-          "title_zh": "AI 购物新玩法引发争议！马斯克称拍信用卡即可下单，遭 OpenAI 高管公开嘲讽",
+          "id": "6e8bbcacccbbf036cf3f8740f51c678c4e533243",
+          "title": "Anthropic 拉响红色警报：小型 AI 模型几个月内或将学会自我复制，而且你关不掉它",
+          "title_zh": "Anthropic 拉响红色警报：小型 AI 模型几个月内或将学会自我复制，而且你关不掉它",
           "title_en": null,
-          "title_original": "AI 购物新玩法引发争议！马斯克称拍信用卡即可下单，遭 OpenAI 高管公开嘲讽",
+          "title_original": "Anthropic 拉响红色警报：小型 AI 模型几个月内或将学会自我复制，而且你关不掉它",
           "summary": null,
           "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31549",
+          "url": "https://www.aibase.com/news/31600",
           "source": "AIbase",
           "source_name": "AIbase",
           "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.734,
-      "importance": 0.734,
-      "importance_score": 0.734,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8134,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-12T06:14:20.432370Z",
-      "latest_at": "2026-10-12T06:14:20.432370Z",
-      "primary_item": {
-        "id": "b7fec157c75072fe1e82fd52521c3ed0ddcf0e24",
-        "title": "AI 购物新玩法引发争议！马斯克称拍信用卡即可下单，遭 OpenAI 高管公开嘲讽",
-        "title_zh": "AI 购物新玩法引发争议！马斯克称拍信用卡即可下单，遭 OpenAI 高管公开嘲讽",
-        "title_en": null,
-        "title_original": "AI 购物新玩法引发争议！马斯克称拍信用卡即可下单，遭 OpenAI 高管公开嘲讽",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31549",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
-      }
-    },
-    {
-      "story_id": "story_8044a36c6dff",
-      "title": "Anthropic放手后亚马逊接盘： 70 亿美元洽购Decart，盯上AI芯片间的\"万能转接头\"",
-      "url": "https://www.aibase.com/news/31551",
-      "primary_url": "https://www.aibase.com/news/31551",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "635e8df7bff5aec1f66e2f5d88f872aa3dda7de7",
-          "title": "Anthropic放手后亚马逊接盘： 70 亿美元洽购Decart，盯上AI芯片间的\"万能转接头\"",
-          "title_zh": "Anthropic放手后亚马逊接盘： 70 亿美元洽购Decart，盯上AI芯片间的\"万能转接头\"",
-          "title_en": null,
-          "title_original": "Anthropic放手后亚马逊接盘： 70 亿美元洽购Decart，盯上AI芯片间的\"万能转接头\"",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31551",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "635e8df7bff5aec1f66e2f5d88f872aa3dda7de7",
-          "title": "Anthropic放手后亚马逊接盘： 70 亿美元洽购Decart，盯上AI芯片间的\"万能转接头\"",
-          "title_zh": "Anthropic放手后亚马逊接盘： 70 亿美元洽购Decart，盯上AI芯片间的\"万能转接头\"",
-          "title_en": null,
-          "title_original": "Anthropic放手后亚马逊接盘： 70 亿美元洽购Decart，盯上AI芯片间的\"万能转接头\"",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31551",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.734,
-      "importance": 0.734,
-      "importance_score": 0.734,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8134,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-12T06:14:20.432370Z",
-      "latest_at": "2026-10-12T06:14:20.432370Z",
-      "primary_item": {
-        "id": "635e8df7bff5aec1f66e2f5d88f872aa3dda7de7",
-        "title": "Anthropic放手后亚马逊接盘： 70 亿美元洽购Decart，盯上AI芯片间的\"万能转接头\"",
-        "title_zh": "Anthropic放手后亚马逊接盘： 70 亿美元洽购Decart，盯上AI芯片间的\"万能转接头\"",
-        "title_en": null,
-        "title_original": "Anthropic放手后亚马逊接盘： 70 亿美元洽购Decart，盯上AI芯片间的\"万能转接头\"",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31551",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
-      }
-    },
-    {
-      "story_id": "story_ec16e714cb98",
-      "title": "Claude半年封杀 1140 万账号申诉翻盘仅4. 2 万，Anthropic还要立规矩禁止虐待AI",
-      "url": "https://www.aibase.com/news/31556",
-      "primary_url": "https://www.aibase.com/news/31556",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "fdb9288b3e1f0b01dd8b9b568a5056b07bdb199f",
-          "title": "Claude半年封杀 1140 万账号申诉翻盘仅4. 2 万，Anthropic还要立规矩禁止虐待AI",
-          "title_zh": "Claude半年封杀 1140 万账号申诉翻盘仅4. 2 万，Anthropic还要立规矩禁止虐待AI",
-          "title_en": null,
-          "title_original": "Claude半年封杀 1140 万账号申诉翻盘仅4. 2 万，Anthropic还要立规矩禁止虐待AI",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31556",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "fdb9288b3e1f0b01dd8b9b568a5056b07bdb199f",
-          "title": "Claude半年封杀 1140 万账号申诉翻盘仅4. 2 万，Anthropic还要立规矩禁止虐待AI",
-          "title_zh": "Claude半年封杀 1140 万账号申诉翻盘仅4. 2 万，Anthropic还要立规矩禁止虐待AI",
-          "title_en": null,
-          "title_original": "Claude半年封杀 1140 万账号申诉翻盘仅4. 2 万，Anthropic还要立规矩禁止虐待AI",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31556",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-12T06:14:20.432370Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.734,
-      "importance": 0.734,
-      "importance_score": 0.734,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8134,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-12T06:14:20.432370Z",
-      "latest_at": "2026-10-12T06:14:20.432370Z",
-      "primary_item": {
-        "id": "fdb9288b3e1f0b01dd8b9b568a5056b07bdb199f",
-        "title": "Claude半年封杀 1140 万账号申诉翻盘仅4. 2 万，Anthropic还要立规矩禁止虐待AI",
-        "title_zh": "Claude半年封杀 1140 万账号申诉翻盘仅4. 2 万，Anthropic还要立规矩禁止虐待AI",
-        "title_en": null,
-        "title_original": "Claude半年封杀 1140 万账号申诉翻盘仅4. 2 万，Anthropic还要立规矩禁止虐待AI",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31556",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
-      }
-    },
-    {
-      "story_id": "story_eb0b5c187dd7",
-      "title": "Meta 发 Muse Wonder 叫板 Anthropic 与 OpenAI，扎克伯格边烤肉边剧透\"大西瓜\"",
-      "url": "https://www.aibase.com/news/31584",
-      "primary_url": "https://www.aibase.com/news/31584",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "f739588e6fdea26df066fa5055fe5a38edb3fa49",
-          "title": "Meta 发 Muse Wonder 叫板 Anthropic 与 OpenAI，扎克伯格边烤肉边剧透\"大西瓜\"",
-          "title_zh": "Meta 发 Muse Wonder 叫板 Anthropic 与 OpenAI，扎克伯格边烤肉边剧透\"大西瓜\"",
-          "title_en": null,
-          "title_original": "Meta 发 Muse Wonder 叫板 Anthropic 与 OpenAI，扎克伯格边烤肉边剧透\"大西瓜\"",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31584",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-13T03:41:32.901070Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "f739588e6fdea26df066fa5055fe5a38edb3fa49",
-          "title": "Meta 发 Muse Wonder 叫板 Anthropic 与 OpenAI，扎克伯格边烤肉边剧透\"大西瓜\"",
-          "title_zh": "Meta 发 Muse Wonder 叫板 Anthropic 与 OpenAI，扎克伯格边烤肉边剧透\"大西瓜\"",
-          "title_en": null,
-          "title_original": "Meta 发 Muse Wonder 叫板 Anthropic 与 OpenAI，扎克伯格边烤肉边剧透\"大西瓜\"",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31584",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-13T03:41:32.901070Z"
+          "published_at": "2026-10-13T11:59:44.116505Z"
         }
       ],
       "item_count": 1,
@@ -1885,17 +1551,17 @@
         "high_ai_relevance",
         "high_importance"
       ],
-      "earliest_at": "2026-10-13T03:41:32.901070Z",
-      "latest_at": "2026-10-13T03:41:32.901070Z",
+      "earliest_at": "2026-10-13T11:59:44.116505Z",
+      "latest_at": "2026-10-13T11:59:44.116505Z",
       "primary_item": {
-        "id": "f739588e6fdea26df066fa5055fe5a38edb3fa49",
-        "title": "Meta 发 Muse Wonder 叫板 Anthropic 与 OpenAI，扎克伯格边烤肉边剧透\"大西瓜\"",
-        "title_zh": "Meta 发 Muse Wonder 叫板 Anthropic 与 OpenAI，扎克伯格边烤肉边剧透\"大西瓜\"",
+        "id": "6e8bbcacccbbf036cf3f8740f51c678c4e533243",
+        "title": "Anthropic 拉响红色警报：小型 AI 模型几个月内或将学会自我复制，而且你关不掉它",
+        "title_zh": "Anthropic 拉响红色警报：小型 AI 模型几个月内或将学会自我复制，而且你关不掉它",
         "title_en": null,
-        "title_original": "Meta 发 Muse Wonder 叫板 Anthropic 与 OpenAI，扎克伯格边烤肉边剧透\"大西瓜\"",
+        "title_original": "Anthropic 拉响红色警报：小型 AI 模型几个月内或将学会自我复制，而且你关不掉它",
         "summary": null,
         "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31584",
+        "url": "https://www.aibase.com/news/31600",
         "source": "AIbase",
         "source_name": "AIbase"
       },
@@ -1904,7 +1570,259 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-13T03:45:13.287440Z"
+        "scored_at": "2026-10-13T12:06:15.970783Z"
+      }
+    },
+    {
+      "story_id": "story_37a00aa0cf4e",
+      "title": "Anthropic 警告：AI 离\"自我复制\"只差几个月，关都关不掉",
+      "url": "https://www.aibase.com/news/31603",
+      "primary_url": "https://www.aibase.com/news/31603",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "28ce7aae28115993a7d6a3c9fb03aaebbbe9ec05",
+          "title": "Anthropic 警告：AI 离\"自我复制\"只差几个月，关都关不掉",
+          "title_zh": "Anthropic 警告：AI 离\"自我复制\"只差几个月，关都关不掉",
+          "title_en": null,
+          "title_original": "Anthropic 警告：AI 离\"自我复制\"只差几个月，关都关不掉",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31603",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-13T11:59:44.116505Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "28ce7aae28115993a7d6a3c9fb03aaebbbe9ec05",
+          "title": "Anthropic 警告：AI 离\"自我复制\"只差几个月，关都关不掉",
+          "title_zh": "Anthropic 警告：AI 离\"自我复制\"只差几个月，关都关不掉",
+          "title_en": null,
+          "title_original": "Anthropic 警告：AI 离\"自我复制\"只差几个月，关都关不掉",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31603",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-13T11:59:44.116505Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-13T11:59:44.116505Z",
+      "latest_at": "2026-10-13T11:59:44.116505Z",
+      "primary_item": {
+        "id": "28ce7aae28115993a7d6a3c9fb03aaebbbe9ec05",
+        "title": "Anthropic 警告：AI 离\"自我复制\"只差几个月，关都关不掉",
+        "title_zh": "Anthropic 警告：AI 离\"自我复制\"只差几个月，关都关不掉",
+        "title_en": null,
+        "title_original": "Anthropic 警告：AI 离\"自我复制\"只差几个月，关都关不掉",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31603",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-13T12:06:15.970783Z"
+      }
+    },
+    {
+      "story_id": "story_11769109c22f",
+      "title": "Character.AI 申请破产，迪士尼 2000 万美元抄底接手部分资产",
+      "url": "https://www.aibase.com/news/31611",
+      "primary_url": "https://www.aibase.com/news/31611",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "d87523dd29bad7b9c2a6ad006e65b72fdfcfb4c9",
+          "title": "Character.AI 申请破产，迪士尼 2000 万美元抄底接手部分资产",
+          "title_zh": "Character.AI 申请破产，迪士尼 2000 万美元抄底接手部分资产",
+          "title_en": null,
+          "title_original": "Character.AI 申请破产，迪士尼 2000 万美元抄底接手部分资产",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31611",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-13T11:59:44.116505Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "d87523dd29bad7b9c2a6ad006e65b72fdfcfb4c9",
+          "title": "Character.AI 申请破产，迪士尼 2000 万美元抄底接手部分资产",
+          "title_zh": "Character.AI 申请破产，迪士尼 2000 万美元抄底接手部分资产",
+          "title_en": null,
+          "title_original": "Character.AI 申请破产，迪士尼 2000 万美元抄底接手部分资产",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31611",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-13T11:59:44.116505Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-13T11:59:44.116505Z",
+      "latest_at": "2026-10-13T11:59:44.116505Z",
+      "primary_item": {
+        "id": "d87523dd29bad7b9c2a6ad006e65b72fdfcfb4c9",
+        "title": "Character.AI 申请破产，迪士尼 2000 万美元抄底接手部分资产",
+        "title_zh": "Character.AI 申请破产，迪士尼 2000 万美元抄底接手部分资产",
+        "title_en": null,
+        "title_original": "Character.AI 申请破产，迪士尼 2000 万美元抄底接手部分资产",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31611",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-13T12:06:15.970783Z"
+      }
+    },
+    {
+      "story_id": "story_0c6aa6cfd34e",
+      "title": "Epic 逼迪士尼射击游戏\"AI 优先\"：代码不再手敲，2027 发售已无限延期",
+      "url": "https://www.aibase.com/news/31607",
+      "primary_url": "https://www.aibase.com/news/31607",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "39166e252c0e51f895962f4e1449054d569c704b",
+          "title": "Epic 逼迪士尼射击游戏\"AI 优先\"：代码不再手敲，2027 发售已无限延期",
+          "title_zh": "Epic 逼迪士尼射击游戏\"AI 优先\"：代码不再手敲，2027 发售已无限延期",
+          "title_en": null,
+          "title_original": "Epic 逼迪士尼射击游戏\"AI 优先\"：代码不再手敲，2027 发售已无限延期",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31607",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-13T11:59:44.116505Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "39166e252c0e51f895962f4e1449054d569c704b",
+          "title": "Epic 逼迪士尼射击游戏\"AI 优先\"：代码不再手敲，2027 发售已无限延期",
+          "title_zh": "Epic 逼迪士尼射击游戏\"AI 优先\"：代码不再手敲，2027 发售已无限延期",
+          "title_en": null,
+          "title_original": "Epic 逼迪士尼射击游戏\"AI 优先\"：代码不再手敲，2027 发售已无限延期",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31607",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-13T11:59:44.116505Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7676,
+      "importance": 0.7676,
+      "importance_score": 0.7676,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 1.0,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-13T11:59:44.116505Z",
+      "latest_at": "2026-10-13T11:59:44.116505Z",
+      "primary_item": {
+        "id": "39166e252c0e51f895962f4e1449054d569c704b",
+        "title": "Epic 逼迪士尼射击游戏\"AI 优先\"：代码不再手敲，2027 发售已无限延期",
+        "title_zh": "Epic 逼迪士尼射击游戏\"AI 优先\"：代码不再手敲，2027 发售已无限延期",
+        "title_en": null,
+        "title_original": "Epic 逼迪士尼射击游戏\"AI 优先\"：代码不再手敲，2027 发售已无限延期",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31607",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-13T12:06:15.970783Z"
       }
     }
   ]
