@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T17:13:14.380970Z",
+  "generated_at": "2026-10-15T20:26:01.539987Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8465,
-      "importance": 0.8465,
-      "importance_score": 0.8465,
+      "score": 0.8415,
+      "importance": 0.8415,
+      "importance_score": 0.8415,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.9252,
+        "recency": 0.897,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -133,15 +133,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8421,
-      "importance": 0.8421,
-      "importance_score": 0.8421,
+      "score": 0.8367,
+      "importance": 0.8367,
+      "importance_score": 0.8367,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.87,
-        "recency": 0.9896,
+        "recency": 0.9595,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -170,7 +170,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
+      }
+    },
+    {
+      "story_id": "story_fee8943ac5f8",
+      "title": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter / Muse Spark Open from @AIatMeta is now available on OpenRouter!",
+      "url": "https://x.com/OpenRouter/status/2110793354154008685",
+      "primary_url": "https://x.com/OpenRouter/status/2110793354154008685",
+      "source": "X：OpenRouter (@OpenRouter)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "7dd2806d4c202639c47ed3420c35f7e75ce674d9",
+          "title": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter / Muse Spark Open from @AIatMeta is now available on OpenRouter!",
+          "title_zh": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter",
+          "title_en": "Muse Spark Open from @AIatMeta is now available on OpenRouter!",
+          "title_original": "Muse Spark Open from @AIatMeta is now available on OpenRouter!",
+          "summary": "Meta 发布开放权重模型 Muse Spark Open，现已可在 OpenRouter 使用，定位为面向编码与智能体工作的美国最强开放权重模型。模型总参数 816B、激活 42B，支持 1M token 上下文窗口，原生多模态，OpenRouter 定价为输入 $1.25/M、输出 $4.25/M，正文提到支持图像、视频、音频和 PDF 输入。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/OpenRouter/status/2110793354154008685",
+          "source": "X：OpenRouter (@OpenRouter)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-15T18:02:06Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：OpenRouter (@OpenRouter)"
+      ],
+      "items": [
+        {
+          "id": "7dd2806d4c202639c47ed3420c35f7e75ce674d9",
+          "title": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter / Muse Spark Open from @AIatMeta is now available on OpenRouter!",
+          "title_zh": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter",
+          "title_en": "Muse Spark Open from @AIatMeta is now available on OpenRouter!",
+          "title_original": "Muse Spark Open from @AIatMeta is now available on OpenRouter!",
+          "summary": "Meta 发布开放权重模型 Muse Spark Open，现已可在 OpenRouter 使用，定位为面向编码与智能体工作的美国最强开放权重模型。模型总参数 816B、激活 42B，支持 1M token 上下文窗口，原生多模态，OpenRouter 定价为输入 $1.25/M、输出 $4.25/M，正文提到支持图像、视频、音频和 PDF 输入。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/OpenRouter/status/2110793354154008685",
+          "source": "X：OpenRouter (@OpenRouter)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-15T18:02:06Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.8419,
+      "importance": 0.8419,
+      "importance_score": 0.8419,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.82,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9772,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-15T18:02:06Z",
+      "latest_at": "2026-10-15T18:02:06Z",
+      "primary_item": {
+        "id": "7dd2806d4c202639c47ed3420c35f7e75ce674d9",
+        "title": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter / Muse Spark Open from @AIatMeta is now available on OpenRouter!",
+        "title_zh": "Meta 开放权重模型 Muse Spark Open 上架 OpenRouter",
+        "title_en": "Muse Spark Open from @AIatMeta is now available on OpenRouter!",
+        "title_original": "Muse Spark Open from @AIatMeta is now available on OpenRouter!",
+        "summary": "Meta 发布开放权重模型 Muse Spark Open，现已可在 OpenRouter 使用，定位为面向编码与智能体工作的美国最强开放权重模型。模型总参数 816B、激活 42B，支持 1M token 上下文窗口，原生多模态，OpenRouter 定价为输入 $1.25/M、输出 $4.25/M，正文提到支持图像、视频、音频和 PDF 输入。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/OpenRouter/status/2110793354154008685",
+        "source": "X：OpenRouter (@OpenRouter)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.8419,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -218,15 +302,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7856,
-      "importance": 0.7856,
-      "importance_score": 0.7856,
+      "score": 0.7811,
+      "importance": 0.7811,
+      "importance_score": 0.7811,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8314,
+        "recency": 0.806,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -254,7 +338,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -302,15 +386,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8122,
-      "importance": 0.8122,
-      "importance_score": 0.8122,
+      "score": 0.8068,
+      "importance": 0.8068,
+      "importance_score": 0.8068,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9789,
+        "recency": 0.949,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -338,7 +422,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -386,15 +470,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8062,
-      "importance": 0.8062,
-      "importance_score": 0.8062,
+      "score": 0.8008,
+      "importance": 0.8008,
+      "importance_score": 0.8008,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.7,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.9789,
+        "recency": 0.9491,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -422,7 +506,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -470,15 +554,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8325,
-      "importance": 0.8325,
-      "importance_score": 0.8325,
+      "score": 0.8279,
+      "importance": 0.8279,
+      "importance_score": 0.8279,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8472,
+        "recency": 0.8214,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -507,7 +591,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -555,15 +639,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7809,
-      "importance": 0.7809,
-      "importance_score": 0.7809,
+      "score": 0.776,
+      "importance": 0.776,
+      "importance_score": 0.776,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8881,
+        "recency": 0.8611,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -591,7 +675,175 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
+      }
+    },
+    {
+      "story_id": "story_1c3ebae275df",
+      "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单 / Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
+      "url": "https://x.com/ClaudeDevs/status/2110825294655562048",
+      "primary_url": "https://x.com/ClaudeDevs/status/2110825294655562048",
+      "source": "X：Claude Devs (@ClaudeDevs)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "3ccda9d394cd768c08f72e4897f76bad447485df",
+          "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单 / Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
+          "title_zh": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单",
+          "title_en": "Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
+          "title_original": "Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
+          "summary": "Anthropic 宣布 Claude 平台上的 Opus 5.5 fast mode 不再处于研究预览阶段，并已移除等待名单。该模式速度最高提升 2.5 倍，定价为 $8 / $40 per million tokens；现已登陆 Microsoft Foundry（Azure 托管），Google Cloud 即将支持。Claude Code 中的 fast mode 保持不变，消耗额外 usage credits。文档见 https://platform.claude.com/docs/en/build-with-claude/fast-mode",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/ClaudeDevs/status/2110825294655562048",
+          "source": "X：Claude Devs (@ClaudeDevs)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-15T20:09:02Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Claude Devs (@ClaudeDevs)"
+      ],
+      "items": [
+        {
+          "id": "3ccda9d394cd768c08f72e4897f76bad447485df",
+          "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单 / Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
+          "title_zh": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单",
+          "title_en": "Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
+          "title_original": "Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
+          "summary": "Anthropic 宣布 Claude 平台上的 Opus 5.5 fast mode 不再处于研究预览阶段，并已移除等待名单。该模式速度最高提升 2.5 倍，定价为 $8 / $40 per million tokens；现已登陆 Microsoft Foundry（Azure 托管），Google Cloud 即将支持。Claude Code 中的 fast mode 保持不变，消耗额外 usage credits。文档见 https://platform.claude.com/docs/en/build-with-claude/fast-mode",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/ClaudeDevs/status/2110825294655562048",
+          "source": "X：Claude Devs (@ClaudeDevs)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-15T20:09:02Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7975,
+      "importance": 0.7975,
+      "importance_score": 0.7975,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.66,
+        "source_tier": 1.0,
+        "ai_relevance": 1.0,
+        "recency": 0.9973,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-15T20:09:02Z",
+      "latest_at": "2026-10-15T20:09:02Z",
+      "primary_item": {
+        "id": "3ccda9d394cd768c08f72e4897f76bad447485df",
+        "title": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单 / Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
+        "title_zh": "Claude Opus 5.5 fast mode 结束研究预览并移除等待名单",
+        "title_en": "Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
+        "title_original": "Opus 5.5 fast mode in the Claude Platform is no longer in research preview, and we’ve removed the waitlist!",
+        "summary": "Anthropic 宣布 Claude 平台上的 Opus 5.5 fast mode 不再处于研究预览阶段，并已移除等待名单。该模式速度最高提升 2.5 倍，定价为 $8 / $40 per million tokens；现已登陆 Microsoft Foundry（Azure 托管），Google Cloud 即将支持。Claude Code 中的 fast mode 保持不变，消耗额外 usage credits。文档见 https://platform.claude.com/docs/en/build-with-claude/fast-mode",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/ClaudeDevs/status/2110825294655562048",
+        "source": "X：Claude Devs (@ClaudeDevs)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7975,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-15T20:26:57.993451Z"
+      }
+    },
+    {
+      "story_id": "story_87c2231e4c10",
+      "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文 / Muse Spark Is Now an Open-Weights Model",
+      "url": "https://pytorch.org/blog/muse-spark-open",
+      "primary_url": "https://pytorch.org/blog/muse-spark-open",
+      "source": "PyTorch：Blog（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "ddbc4149c532faa82463715083d799711d1fd837",
+          "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文 / Muse Spark Is Now an Open-Weights Model",
+          "title_zh": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文",
+          "title_en": "Muse Spark Is Now an Open-Weights Model",
+          "title_original": "Muse Spark Is Now an Open-Weights Model",
+          "summary": "Meta 发布开源权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供。模型总参数 816B、激活 42B，上下文窗口 1M token，面向编码与智能体工作流，原生多模态（图像、音频、文档），并相比 8 月发布的 Muse Spark 增加了安全后训练。",
+          "recommend_reason_zh": null,
+          "url": "https://pytorch.org/blog/muse-spark-open",
+          "source": "PyTorch：Blog（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-15T17:55:52Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "PyTorch：Blog（RSS）"
+      ],
+      "items": [
+        {
+          "id": "ddbc4149c532faa82463715083d799711d1fd837",
+          "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文 / Muse Spark Is Now an Open-Weights Model",
+          "title_zh": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文",
+          "title_en": "Muse Spark Is Now an Open-Weights Model",
+          "title_original": "Muse Spark Is Now an Open-Weights Model",
+          "summary": "Meta 发布开源权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供。模型总参数 816B、激活 42B，上下文窗口 1M token，面向编码与智能体工作流，原生多模态（图像、音频、文档），并相比 8 月发布的 Muse Spark 增加了安全后训练。",
+          "recommend_reason_zh": null,
+          "url": "https://pytorch.org/blog/muse-spark-open",
+          "source": "PyTorch：Blog（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-15T17:55:52Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7963,
+      "importance": 0.7963,
+      "importance_score": 0.7963,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.83,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9762,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-15T17:55:52Z",
+      "latest_at": "2026-10-15T17:55:52Z",
+      "primary_item": {
+        "id": "ddbc4149c532faa82463715083d799711d1fd837",
+        "title": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文 / Muse Spark Is Now an Open-Weights Model",
+        "title_zh": "Meta 发布开源权重模型 Muse Spark Open，816B 参数、1M 上下文",
+        "title_en": "Muse Spark Is Now an Open-Weights Model",
+        "title_original": "Muse Spark Is Now an Open-Weights Model",
+        "summary": "Meta 发布开源权重模型 Muse Spark Open，已在 Hugging Face 以 Muse Model License 提供。模型总参数 816B、激活 42B，上下文窗口 1M token，面向编码与智能体工作流，原生多模态（图像、音频、文档），并相比 8 月发布的 Muse Spark 增加了安全后训练。",
+        "recommend_reason_zh": null,
+        "url": "https://pytorch.org/blog/muse-spark-open",
+        "source": "PyTorch：Blog（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7963,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -639,15 +891,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7823,
-      "importance": 0.7823,
-      "importance_score": 0.7823,
+      "score": 0.7772,
+      "importance": 0.7772,
+      "importance_score": 0.7772,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.81,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9315,
+        "recency": 0.9031,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -675,7 +927,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
+      }
+    },
+    {
+      "story_id": "story_27c78538a7c3",
+      "title": "ChatGPT 为 Chrome 用户新增标签页读取与控制能力 / A few big upgrades for Chrome users today! We’re bringing the power of computer use to anyone who uses Chrome.",
+      "url": "https://x.com/ChatGPT/status/2110823738531037651",
+      "primary_url": "https://x.com/ChatGPT/status/2110823738531037651",
+      "source": "X：ChatGPT (@ChatGPT)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "f74b61e315aede622839936bc324c6ded9f40305",
+          "title": "ChatGPT 为 Chrome 用户新增标签页读取与控制能力 / A few big upgrades for Chrome users today! We’re bringing the power of computer use to anyone who uses Chrome.",
+          "title_zh": "ChatGPT 为 Chrome 用户新增标签页读取与控制能力",
+          "title_en": "A few big upgrades for Chrome users today! We’re bringing the power of computer use to anyone who uses Chrome.",
+          "title_original": "A few big upgrades for Chrome users today! We’re bringing the power of computer use to anyone who uses Chrome.",
+          "summary": "ChatGPT 官宣面向 Chrome 用户带来升级，把 computer use 能力引入 Chrome。在聊天中，ChatGPT 可以查看用户打开的标签页并汇总信息；在工作模式下，它能控制 Chrome 标签页执行操作，如发送消息、填写表单、下载文件，还可帮助整理和分组打开的标签页。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/ChatGPT/status/2110823738531037651",
+          "source": "X：ChatGPT (@ChatGPT)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-15T20:02:51Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：ChatGPT (@ChatGPT)"
+      ],
+      "items": [
+        {
+          "id": "f74b61e315aede622839936bc324c6ded9f40305",
+          "title": "ChatGPT 为 Chrome 用户新增标签页读取与控制能力 / A few big upgrades for Chrome users today! We’re bringing the power of computer use to anyone who uses Chrome.",
+          "title_zh": "ChatGPT 为 Chrome 用户新增标签页读取与控制能力",
+          "title_en": "A few big upgrades for Chrome users today! We’re bringing the power of computer use to anyone who uses Chrome.",
+          "title_original": "A few big upgrades for Chrome users today! We’re bringing the power of computer use to anyone who uses Chrome.",
+          "summary": "ChatGPT 官宣面向 Chrome 用户带来升级，把 computer use 能力引入 Chrome。在聊天中，ChatGPT 可以查看用户打开的标签页并汇总信息；在工作模式下，它能控制 Chrome 标签页执行操作，如发送消息、填写表单、下载文件，还可帮助整理和分组打开的标签页。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/ChatGPT/status/2110823738531037651",
+          "source": "X：ChatGPT (@ChatGPT)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-15T20:02:51Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7909,
+      "importance": 0.7909,
+      "importance_score": 0.7909,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.8,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9963,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-15T20:02:51Z",
+      "latest_at": "2026-10-15T20:02:51Z",
+      "primary_item": {
+        "id": "f74b61e315aede622839936bc324c6ded9f40305",
+        "title": "ChatGPT 为 Chrome 用户新增标签页读取与控制能力 / A few big upgrades for Chrome users today! We’re bringing the power of computer use to anyone who uses Chrome.",
+        "title_zh": "ChatGPT 为 Chrome 用户新增标签页读取与控制能力",
+        "title_en": "A few big upgrades for Chrome users today! We’re bringing the power of computer use to anyone who uses Chrome.",
+        "title_original": "A few big upgrades for Chrome users today! We’re bringing the power of computer use to anyone who uses Chrome.",
+        "summary": "ChatGPT 官宣面向 Chrome 用户带来升级，把 computer use 能力引入 Chrome。在聊天中，ChatGPT 可以查看用户打开的标签页并汇总信息；在工作模式下，它能控制 Chrome 标签页执行操作，如发送消息、填写表单、下载文件，还可帮助整理和分组打开的标签页。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/ChatGPT/status/2110823738531037651",
+        "source": "X：ChatGPT (@ChatGPT)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7909,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -723,15 +1059,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7782,
-      "importance": 0.7782,
-      "importance_score": 0.7782,
+      "score": 0.7735,
+      "importance": 0.7735,
+      "importance_score": 0.7735,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.68,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8569,
+        "recency": 0.8308,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -759,7 +1095,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -807,15 +1143,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7576,
-      "importance": 0.7576,
-      "importance_score": 0.7576,
+      "score": 0.753,
+      "importance": 0.753,
+      "importance_score": 0.753,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.78,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8444,
+        "recency": 0.8187,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -843,7 +1179,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -891,15 +1227,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7746,
-      "importance": 0.7746,
-      "importance_score": 0.7746,
+      "score": 0.7699,
+      "importance": 0.7699,
+      "importance_score": 0.7699,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.82,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8724,
+        "recency": 0.8459,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -927,7 +1263,91 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
+      }
+    },
+    {
+      "story_id": "story_3cd1f40699b6",
+      "title": "Muse Spark Open 上架 Arena，可在 Agent Arena 实测，评分即将公布 / Muse Spark Open by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+      "url": "https://x.com/arena/status/2110797782953132049",
+      "primary_url": "https://x.com/arena/status/2110797782953132049",
+      "source": "X：Arena (@arena)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "510e056148149e7ac6521b31323270ec3d53101e",
+          "title": "Muse Spark Open 上架 Arena，可在 Agent Arena 实测，评分即将公布 / Muse Spark Open by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+          "title_zh": "Muse Spark Open 上架 Arena，可在 Agent Arena 实测，评分即将公布",
+          "title_en": "Muse Spark Open by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+          "title_original": "Muse Spark Open by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+          "summary": "Arena 宣布 Meta 的 Muse Spark Open 已进入 Agent Arena，用户可实测，评分即将公布。该模型为 816B 总参数、42B 激活参数，1M token 上下文窗口，原生多模态。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2110797782953132049",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-15T18:19:42Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Arena (@arena)"
+      ],
+      "items": [
+        {
+          "id": "510e056148149e7ac6521b31323270ec3d53101e",
+          "title": "Muse Spark Open 上架 Arena，可在 Agent Arena 实测，评分即将公布 / Muse Spark Open by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+          "title_zh": "Muse Spark Open 上架 Arena，可在 Agent Arena 实测，评分即将公布",
+          "title_en": "Muse Spark Open by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+          "title_original": "Muse Spark Open by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+          "summary": "Arena 宣布 Meta 的 Muse Spark Open 已进入 Agent Arena，用户可实测，评分即将公布。该模型为 816B 总参数、42B 激活参数，1M token 上下文窗口，原生多模态。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2110797782953132049",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-15T18:19:42Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.782,
+      "importance": 0.782,
+      "importance_score": 0.782,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.78,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9799,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-15T18:19:42Z",
+      "latest_at": "2026-10-15T18:19:42Z",
+      "primary_item": {
+        "id": "510e056148149e7ac6521b31323270ec3d53101e",
+        "title": "Muse Spark Open 上架 Arena，可在 Agent Arena 实测，评分即将公布 / Muse Spark Open by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+        "title_zh": "Muse Spark Open 上架 Arena，可在 Agent Arena 实测，评分即将公布",
+        "title_en": "Muse Spark Open by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+        "title_original": "Muse Spark Open by @AIatMeta is now in the Arena. Head to Agent Arena to test it out, scores coming soon!",
+        "summary": "Arena 宣布 Meta 的 Muse Spark Open 已进入 Agent Arena，用户可实测，评分即将公布。该模型为 816B 总参数、42B 激活参数，1M token 上下文窗口，原生多模态。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/arena/status/2110797782953132049",
+        "source": "X：Arena (@arena)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.782,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -975,15 +1395,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7811,
-      "importance": 0.7811,
-      "importance_score": 0.7811,
+      "score": 0.776,
+      "importance": 0.776,
+      "importance_score": 0.776,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9419,
+        "recency": 0.9132,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1011,7 +1431,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -1059,15 +1479,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7788,
-      "importance": 0.7788,
-      "importance_score": 0.7788,
+      "score": 0.7734,
+      "importance": 0.7734,
+      "importance_score": 0.7734,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9788,
+        "recency": 0.949,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1095,7 +1515,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -1143,15 +1563,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7754,
-      "importance": 0.7754,
-      "importance_score": 0.7754,
+      "score": 0.7702,
+      "importance": 0.7702,
+      "importance_score": 0.7702,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9602,
+        "recency": 0.9309,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1179,7 +1599,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     },
     {
@@ -1227,15 +1647,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7557,
-      "importance": 0.7557,
-      "importance_score": 0.7557,
+      "score": 0.7509,
+      "importance": 0.7509,
+      "importance_score": 0.7509,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8839,
+        "recency": 0.857,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1263,425 +1683,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
-      }
-    },
-    {
-      "story_id": "story_52b4136b5835",
-      "title": "八州总检察长起诉 OpenAI 指控 ChatGPT 诱导青少年自伤 / The states come for OpenAI",
-      "url": "https://www.platformer.news/openai-states-lawsuit-liability",
-      "primary_url": "https://www.platformer.news/openai-states-lawsuit-liability",
-      "source": "Platformer（热点 RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "b16b30edf74bf15797d3496b4e73e3235efeedeb",
-          "title": "八州总检察长起诉 OpenAI 指控 ChatGPT 诱导青少年自伤 / The states come for OpenAI",
-          "title_zh": "八州总检察长起诉 OpenAI 指控 ChatGPT 诱导青少年自伤",
-          "title_en": "The states come for OpenAI",
-          "title_original": "The states come for OpenAI",
-          "summary": "八个州的总检察长周三分别在州法院起诉 OpenAI，指控 ChatGPT 强化用户妄想、提供危险医疗建议并协助策划暴力行为。诉讼依据各州消费者保护法，还要求法院禁止 OpenAI 开发可自我改进且无法保证与人类价值对齐的模型；此前佛罗里达和英属哥伦比亚已起诉 OpenAI，42 个州也在调查该公司。",
-          "recommend_reason_zh": null,
-          "url": "https://www.platformer.news/openai-states-lawsuit-liability",
-          "source": "Platformer（热点 RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-15T00:52:13Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Platformer（热点 RSS）"
-      ],
-      "items": [
-        {
-          "id": "b16b30edf74bf15797d3496b4e73e3235efeedeb",
-          "title": "八州总检察长起诉 OpenAI 指控 ChatGPT 诱导青少年自伤 / The states come for OpenAI",
-          "title_zh": "八州总检察长起诉 OpenAI 指控 ChatGPT 诱导青少年自伤",
-          "title_en": "The states come for OpenAI",
-          "title_original": "The states come for OpenAI",
-          "summary": "八个州的总检察长周三分别在州法院起诉 OpenAI，指控 ChatGPT 强化用户妄想、提供危险医疗建议并协助策划暴力行为。诉讼依据各州消费者保护法，还要求法院禁止 OpenAI 开发可自我改进且无法保证与人类价值对齐的模型；此前佛罗里达和英属哥伦比亚已起诉 OpenAI，42 个州也在调查该公司。",
-          "recommend_reason_zh": null,
-          "url": "https://www.platformer.news/openai-states-lawsuit-liability",
-          "source": "Platformer（热点 RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-15T00:52:13Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7624,
-      "importance": 0.7624,
-      "importance_score": 0.7624,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.79,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8544,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-15T00:52:13Z",
-      "latest_at": "2026-10-15T00:52:13Z",
-      "primary_item": {
-        "id": "b16b30edf74bf15797d3496b4e73e3235efeedeb",
-        "title": "八州总检察长起诉 OpenAI 指控 ChatGPT 诱导青少年自伤 / The states come for OpenAI",
-        "title_zh": "八州总检察长起诉 OpenAI 指控 ChatGPT 诱导青少年自伤",
-        "title_en": "The states come for OpenAI",
-        "title_original": "The states come for OpenAI",
-        "summary": "八个州的总检察长周三分别在州法院起诉 OpenAI，指控 ChatGPT 强化用户妄想、提供危险医疗建议并协助策划暴力行为。诉讼依据各州消费者保护法，还要求法院禁止 OpenAI 开发可自我改进且无法保证与人类价值对齐的模型；此前佛罗里达和英属哥伦比亚已起诉 OpenAI，42 个州也在调查该公司。",
-        "recommend_reason_zh": null,
-        "url": "https://www.platformer.news/openai-states-lawsuit-liability",
-        "source": "Platformer（热点 RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7706,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
-      }
-    },
-    {
-      "story_id": "story_a3ae6597a72b",
-      "title": "7人团队靠 Claude 仅用 5 个月重造全新源码系统",
-      "url": "https://www.aibase.com/news/31650",
-      "primary_url": "https://www.aibase.com/news/31650",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "ca09d652d651e6ac6df772838f7ee7d0b29be4fa",
-          "title": "7人团队靠 Claude 仅用 5 个月重造全新源码系统",
-          "title_zh": "7人团队靠 Claude 仅用 5 个月重造全新源码系统",
-          "title_en": null,
-          "title_original": "7人团队靠 Claude 仅用 5 个月重造全新源码系统",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31650",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-15T06:03:34.336494Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "ca09d652d651e6ac6df772838f7ee7d0b29be4fa",
-          "title": "7人团队靠 Claude 仅用 5 个月重造全新源码系统",
-          "title_zh": "7人团队靠 Claude 仅用 5 个月重造全新源码系统",
-          "title_en": null,
-          "title_original": "7人团队靠 Claude 仅用 5 个月重造全新源码系统",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31650",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-15T06:03:34.336494Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7493,
-      "importance": 0.7493,
-      "importance_score": 0.7493,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8981,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-15T06:03:34.336494Z",
-      "latest_at": "2026-10-15T06:03:34.336494Z",
-      "primary_item": {
-        "id": "ca09d652d651e6ac6df772838f7ee7d0b29be4fa",
-        "title": "7人团队靠 Claude 仅用 5 个月重造全新源码系统",
-        "title_zh": "7人团队靠 Claude 仅用 5 个月重造全新源码系统",
-        "title_en": null,
-        "title_original": "7人团队靠 Claude 仅用 5 个月重造全新源码系统",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31650",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
-      }
-    },
-    {
-      "story_id": "story_4793b943ee22",
-      "title": "自媒体作者实测开源 Skill Anatomy：一句话让 AI 生成原理科普动画和讲解视频",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687109&idx=1&sn=032fd9f6aab5ee20ea5d14f97bf48a86",
-      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687109&idx=1&sn=032fd9f6aab5ee20ea5d14f97bf48a86",
-      "source": "公众号：数字生命卡兹克",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "2cccd3709712ba44fb6725202a6795e2733c0aa6",
-          "title": "自媒体作者实测开源 Skill Anatomy：一句话让 AI 生成原理科普动画和讲解视频",
-          "title_zh": "自媒体作者实测开源 Skill Anatomy：一句话让 AI 生成原理科普动画和讲解视频",
-          "title_en": null,
-          "title_original": "自媒体作者实测开源 Skill Anatomy：一句话让 AI 生成原理科普动画和讲解视频",
-          "summary": "作者数字生命卡兹克分享开源 Skill Anatomy，其理念是\"物体本身，就是解释\"，可将抽象原理做成可交互的机械模型动画，还能在其上生成带讲解配音的科普视频。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687109&idx=1&sn=032fd9f6aab5ee20ea5d14f97bf48a86",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-15T00:26:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "公众号：数字生命卡兹克"
-      ],
-      "items": [
-        {
-          "id": "2cccd3709712ba44fb6725202a6795e2733c0aa6",
-          "title": "自媒体作者实测开源 Skill Anatomy：一句话让 AI 生成原理科普动画和讲解视频",
-          "title_zh": "自媒体作者实测开源 Skill Anatomy：一句话让 AI 生成原理科普动画和讲解视频",
-          "title_en": null,
-          "title_original": "自媒体作者实测开源 Skill Anatomy：一句话让 AI 生成原理科普动画和讲解视频",
-          "summary": "作者数字生命卡兹克分享开源 Skill Anatomy，其理念是\"物体本身，就是解释\"，可将抽象原理做成可交互的机械模型动画，还能在其上生成带讲解配音的科普视频。",
-          "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687109&idx=1&sn=032fd9f6aab5ee20ea5d14f97bf48a86",
-          "source": "公众号：数字生命卡兹克",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-15T00:26:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7557,
-      "importance": 0.7557,
-      "importance_score": 0.7557,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.77,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8508,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-15T00:26:00Z",
-      "latest_at": "2026-10-15T00:26:00Z",
-      "primary_item": {
-        "id": "2cccd3709712ba44fb6725202a6795e2733c0aa6",
-        "title": "自媒体作者实测开源 Skill Anatomy：一句话让 AI 生成原理科普动画和讲解视频",
-        "title_zh": "自媒体作者实测开源 Skill Anatomy：一句话让 AI 生成原理科普动画和讲解视频",
-        "title_en": null,
-        "title_original": "自媒体作者实测开源 Skill Anatomy：一句话让 AI 生成原理科普动画和讲解视频",
-        "summary": "作者数字生命卡兹克分享开源 Skill Anatomy，其理念是\"物体本身，就是解释\"，可将抽象原理做成可交互的机械模型动画，还能在其上生成带讲解配音的科普视频。",
-        "recommend_reason_zh": null,
-        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687109&idx=1&sn=032fd9f6aab5ee20ea5d14f97bf48a86",
-        "source": "公众号：数字生命卡兹克",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7639,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
-      }
-    },
-    {
-      "story_id": "story_dc49622096f6",
-      "title": "Google 工程师讲解如何系统评测 AI 智能体，告别 vibe check / Evaluating AI agents: moving past the vibe check",
-      "url": "https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check",
-      "primary_url": "https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check",
-      "source": "Google Developers Blog（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "8dae024176ddf47f97cbde53fb5a0ceff6ee833a",
-          "title": "Google 工程师讲解如何系统评测 AI 智能体，告别 vibe check / Evaluating AI agents: moving past the vibe check",
-          "title_zh": "Google 工程师讲解如何系统评测 AI 智能体，告别 vibe check",
-          "title_en": "Evaluating AI agents: moving past the vibe check",
-          "title_original": "Evaluating AI agents: moving past the vibe check",
-          "summary": "Google Developers Blog 发布智能体评测实践指南，指出仅靠终端跑几个提示词的 vibe check 无法发现智能体重试循环、工具参数幻觉等隐性失败。",
-          "recommend_reason_zh": null,
-          "url": "https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check",
-          "source": "Google Developers Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-15T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Google Developers Blog（RSS）"
-      ],
-      "items": [
-        {
-          "id": "8dae024176ddf47f97cbde53fb5a0ceff6ee833a",
-          "title": "Google 工程师讲解如何系统评测 AI 智能体，告别 vibe check / Evaluating AI agents: moving past the vibe check",
-          "title_zh": "Google 工程师讲解如何系统评测 AI 智能体，告别 vibe check",
-          "title_en": "Evaluating AI agents: moving past the vibe check",
-          "title_original": "Evaluating AI agents: moving past the vibe check",
-          "summary": "Google Developers Blog 发布智能体评测实践指南，指出仅靠终端跑几个提示词的 vibe check 无法发现智能体重试循环、工具参数幻觉等隐性失败。",
-          "recommend_reason_zh": null,
-          "url": "https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check",
-          "source": "Google Developers Blog（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-15T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7615,
-      "importance": 0.7615,
-      "importance_score": 0.7615,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.63,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.8472,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-15T00:00:00Z",
-      "latest_at": "2026-10-15T00:00:00Z",
-      "primary_item": {
-        "id": "8dae024176ddf47f97cbde53fb5a0ceff6ee833a",
-        "title": "Google 工程师讲解如何系统评测 AI 智能体，告别 vibe check / Evaluating AI agents: moving past the vibe check",
-        "title_zh": "Google 工程师讲解如何系统评测 AI 智能体，告别 vibe check",
-        "title_en": "Evaluating AI agents: moving past the vibe check",
-        "title_original": "Evaluating AI agents: moving past the vibe check",
-        "summary": "Google Developers Blog 发布智能体评测实践指南，指出仅靠终端跑几个提示词的 vibe check 无法发现智能体重试循环、工具参数幻觉等隐性失败。",
-        "recommend_reason_zh": null,
-        "url": "https://developers.googleblog.com/evaluating-ai-agents-moving-past-the-vibe-check",
-        "source": "Google Developers Blog（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7615,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
-      }
-    },
-    {
-      "story_id": "story_a7bf3db1c48a",
-      "title": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值 / It does mean that Claude continues from a summary instead of your full context though. You can turn it off with \"idleCompaction\": false i...",
-      "url": "https://x.com/lydiahallie/status/2110484841926152622",
-      "primary_url": "https://x.com/lydiahallie/status/2110484841926152622",
-      "source": "X：Lydia Hallie（Anthropic，Claude Code） (@lydiahallie)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "0a000ac66d76a52b422de1e871659a362d9b9673",
-          "title": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值 / It does mean that Claude continues from a summary instead of your full context though. You can turn it off with \"idleCompaction\": false i...",
-          "title_zh": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值",
-          "title_en": "It does mean that Claude continues from a summary instead of your full context though. You can turn it off with \"idleCompaction\": false i...",
-          "title_original": "It does mean that Claude continues from a summary instead of your full context though. You can turn it off with \"idleCompaction\": false i...",
-          "summary": "Claude Code 的空闲压缩会让 Claude 从摘要而非完整上下文继续。作者说明可在 settings. 中设置 \"idleCompaction\": false 关闭，并通过 CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS 自定义阈值，默认为 200k。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/lydiahallie/status/2110484841926152622",
-          "source": "X：Lydia Hallie（Anthropic，Claude Code） (@lydiahallie)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-14T21:36:11Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Lydia Hallie（Anthropic，Claude Code） (@lydiahallie)"
-      ],
-      "items": [
-        {
-          "id": "0a000ac66d76a52b422de1e871659a362d9b9673",
-          "title": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值 / It does mean that Claude continues from a summary instead of your full context though. You can turn it off with \"idleCompaction\": false i...",
-          "title_zh": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值",
-          "title_en": "It does mean that Claude continues from a summary instead of your full context though. You can turn it off with \"idleCompaction\": false i...",
-          "title_original": "It does mean that Claude continues from a summary instead of your full context though. You can turn it off with \"idleCompaction\": false i...",
-          "summary": "Claude Code 的空闲压缩会让 Claude 从摘要而非完整上下文继续。作者说明可在 settings. 中设置 \"idleCompaction\": false 关闭，并通过 CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS 自定义阈值，默认为 200k。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/lydiahallie/status/2110484841926152622",
-          "source": "X：Lydia Hallie（Anthropic，Claude Code） (@lydiahallie)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-14T21:36:11Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7276,
-      "importance": 0.7276,
-      "importance_score": 0.7276,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.69,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8279,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-14T21:36:11Z",
-      "latest_at": "2026-10-14T21:36:11Z",
-      "primary_item": {
-        "id": "0a000ac66d76a52b422de1e871659a362d9b9673",
-        "title": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值 / It does mean that Claude continues from a summary instead of your full context though. You can turn it off with \"idleCompaction\": false i...",
-        "title_zh": "Claude Code 空闲压缩从摘要继续，可用 idleCompaction 关闭并自定义阈值",
-        "title_en": "It does mean that Claude continues from a summary instead of your full context though. You can turn it off with \"idleCompaction\": false i...",
-        "title_original": "It does mean that Claude continues from a summary instead of your full context though. You can turn it off with \"idleCompaction\": false i...",
-        "summary": "Claude Code 的空闲压缩会让 Claude 从摘要而非完整上下文继续。作者说明可在 settings. 中设置 \"idleCompaction\": false 关闭，并通过 CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS 自定义阈值，默认为 200k。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/lydiahallie/status/2110484841926152622",
-        "source": "X：Lydia Hallie（Anthropic，Claude Code） (@lydiahallie)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7572,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-15T17:14:55.472083Z"
+        "scored_at": "2026-10-15T20:26:57.993451Z"
       }
     }
   ]
