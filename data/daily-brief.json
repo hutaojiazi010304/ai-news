@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T21:26:53.386735Z",
+  "generated_at": "2026-10-16T23:44:51.168134Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
@@ -48,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8289,
-      "importance": 0.8289,
-      "importance_score": 0.8289,
+      "score": 0.8256,
+      "importance": 0.8256,
+      "importance_score": 0.8256,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8272,
+        "recency": 0.8091,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -85,7 +85,92 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
+      }
+    },
+    {
+      "story_id": "story_27f49e3620ac",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "primary_url": "https://openai.com/index/itau-generative-ai",
+      "source": "OpenAI News",
+      "source_name": "Official AI Updates",
+      "sources": [
+        {
+          "id": "f962ed66ceabadd86abe4e7127ba2c2a121f616a",
+          "title": "How Itaú is building generative AI for its entire customer base",
+          "title_zh": null,
+          "title_en": "How Itaú is building generative AI for its entire customer base",
+          "title_original": "How Itaú is building generative AI for its entire customer base",
+          "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/itau-generative-ai",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-16T19:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "OpenAI News"
+      ],
+      "items": [
+        {
+          "id": "f962ed66ceabadd86abe4e7127ba2c2a121f616a",
+          "title": "How Itaú is building generative AI for its entire customer base",
+          "title_zh": null,
+          "title_en": "How Itaú is building generative AI for its entire customer base",
+          "title_original": "How Itaú is building generative AI for its entire customer base",
+          "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+          "recommend_reason_zh": null,
+          "url": "https://openai.com/index/itau-generative-ai",
+          "source": "OpenAI News",
+          "source_name": "Official AI Updates",
+          "site_id": "official_ai",
+          "published_at": "2026-10-16T19:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.844,
+      "importance": 0.844,
+      "importance_score": 0.844,
+      "importance_label": "官方更新",
+      "importance_breakdown": {
+        "editorial": 0.9,
+        "source_tier": 1.0,
+        "ai_relevance": 0.91,
+        "recency": 0.9553,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "official",
+      "reasons": [
+        "official_source",
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-16T19:00:00Z",
+      "latest_at": "2026-10-16T19:00:00Z",
+      "primary_item": {
+        "id": "f962ed66ceabadd86abe4e7127ba2c2a121f616a",
+        "title": "How Itaú is building generative AI for its entire customer base",
+        "title_zh": null,
+        "title_en": "How Itaú is building generative AI for its entire customer base",
+        "title_original": "How Itaú is building generative AI for its entire customer base",
+        "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
+        "recommend_reason_zh": null,
+        "url": "https://openai.com/index/itau-generative-ai",
+        "source": "OpenAI News",
+        "source_name": "Official AI Updates"
+      },
+      "peak_score": 0.844,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -133,15 +218,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8344,
-      "importance": 0.8344,
-      "importance_score": 0.8344,
+      "score": 0.8312,
+      "importance": 0.8312,
+      "importance_score": 0.8312,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.99,
-        "recency": 0.8134,
+        "recency": 0.7956,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -170,7 +255,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -218,15 +303,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8264,
-      "importance": 0.8264,
-      "importance_score": 0.8264,
+      "score": 0.8232,
+      "importance": 0.8232,
+      "importance_score": 0.8232,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.95,
-        "recency": 0.8134,
+        "recency": 0.7956,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -255,7 +340,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -303,15 +388,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7793,
-      "importance": 0.7793,
-      "importance_score": 0.7793,
+      "score": 0.7759,
+      "importance": 0.7759,
+      "importance_score": 0.7759,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8819,
+        "recency": 0.8626,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -339,7 +424,174 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
+      }
+    },
+    {
+      "story_id": "story_65473974516c",
+      "title": "Muse Spark Open (Max) 登顶 Code Arena: WebDev 美国开源模型第一 / Exciting news: Muse Spark Open (Max) by @AIatMeta is the #1 US open model in the Code Arena: WebDev! With 1511 pts, it’s #13 among open m...",
+      "url": "https://x.com/arena/status/2111221323217412318",
+      "primary_url": "https://x.com/arena/status/2111221323217412318",
+      "source": "X：Arena (@arena)",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "e08d5df77f8ec08339c40bf8616c998e3810b335",
+          "title": "Muse Spark Open (Max) 登顶 Code Arena: WebDev 美国开源模型第一 / Exciting news: Muse Spark Open (Max) by @AIatMeta is the #1 US open model in the Code Arena: WebDev! With 1511 pts, it’s #13 among open m...",
+          "title_zh": "Muse Spark Open (Max) 登顶 Code Arena: WebDev 美国开源模型第一",
+          "title_en": "Exciting news: Muse Spark Open (Max) by @AIatMeta is the #1 US open model in the Code Arena: WebDev! With 1511 pts, it’s #13 among open m...",
+          "title_original": "Exciting news: Muse Spark Open (Max) by @AIatMeta is the #1 US open model in the Code Arena: WebDev! With 1511 pts, it’s #13 among open m...",
+          "summary": "Arena 公布 Meta 发布的 Muse Spark Open (Max) 在 Code Arena: WebDev 以 1511 分位居美国开源模型第一、开源模型总榜第 13。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2111221323217412318",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-16T22:22:42Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "X：Arena (@arena)"
+      ],
+      "items": [
+        {
+          "id": "e08d5df77f8ec08339c40bf8616c998e3810b335",
+          "title": "Muse Spark Open (Max) 登顶 Code Arena: WebDev 美国开源模型第一 / Exciting news: Muse Spark Open (Max) by @AIatMeta is the #1 US open model in the Code Arena: WebDev! With 1511 pts, it’s #13 among open m...",
+          "title_zh": "Muse Spark Open (Max) 登顶 Code Arena: WebDev 美国开源模型第一",
+          "title_en": "Exciting news: Muse Spark Open (Max) by @AIatMeta is the #1 US open model in the Code Arena: WebDev! With 1511 pts, it’s #13 among open m...",
+          "title_original": "Exciting news: Muse Spark Open (Max) by @AIatMeta is the #1 US open model in the Code Arena: WebDev! With 1511 pts, it’s #13 among open m...",
+          "summary": "Arena 公布 Meta 发布的 Muse Spark Open (Max) 在 Code Arena: WebDev 以 1511 分位居美国开源模型第一、开源模型总榜第 13。",
+          "recommend_reason_zh": null,
+          "url": "https://x.com/arena/status/2111221323217412318",
+          "source": "X：Arena (@arena)",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-16T22:22:42Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7892,
+      "importance": 0.7892,
+      "importance_score": 0.7892,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.8,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.9869,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance",
+        "high_importance"
+      ],
+      "earliest_at": "2026-10-16T22:22:42Z",
+      "latest_at": "2026-10-16T22:22:42Z",
+      "primary_item": {
+        "id": "e08d5df77f8ec08339c40bf8616c998e3810b335",
+        "title": "Muse Spark Open (Max) 登顶 Code Arena: WebDev 美国开源模型第一 / Exciting news: Muse Spark Open (Max) by @AIatMeta is the #1 US open model in the Code Arena: WebDev! With 1511 pts, it’s #13 among open m...",
+        "title_zh": "Muse Spark Open (Max) 登顶 Code Arena: WebDev 美国开源模型第一",
+        "title_en": "Exciting news: Muse Spark Open (Max) by @AIatMeta is the #1 US open model in the Code Arena: WebDev! With 1511 pts, it’s #13 among open m...",
+        "title_original": "Exciting news: Muse Spark Open (Max) by @AIatMeta is the #1 US open model in the Code Arena: WebDev! With 1511 pts, it’s #13 among open m...",
+        "summary": "Arena 公布 Meta 发布的 Muse Spark Open (Max) 在 Code Arena: WebDev 以 1511 分位居美国开源模型第一、开源模型总榜第 13。",
+        "recommend_reason_zh": null,
+        "url": "https://x.com/arena/status/2111221323217412318",
+        "source": "X：Arena (@arena)",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7892,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-16T23:45:52.778942Z"
+      }
+    },
+    {
+      "story_id": "story_b99d97516c95",
+      "title": "FLUX 3 Image Klein",
+      "url": "https://bfl.ai/blog/flux-3-image-klein",
+      "primary_url": "https://bfl.ai/blog/flux-3-image-klein",
+      "source": "Hacker News (黑客新闻)",
+      "source_name": "Info Flow",
+      "sources": [
+        {
+          "id": "7c4aabd1b8309d8822acc3cf967977c4460c7e12",
+          "title": "FLUX 3 Image Klein",
+          "title_zh": null,
+          "title_en": "FLUX 3 Image Klein",
+          "title_original": "FLUX 3 Image Klein",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://bfl.ai/blog/flux-3-image-klein",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-10-16T19:47:13Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Hacker News (黑客新闻)"
+      ],
+      "items": [
+        {
+          "id": "7c4aabd1b8309d8822acc3cf967977c4460c7e12",
+          "title": "FLUX 3 Image Klein",
+          "title_zh": null,
+          "title_en": "FLUX 3 Image Klein",
+          "title_original": "FLUX 3 Image Klein",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://bfl.ai/blog/flux-3-image-klein",
+          "source": "Hacker News (黑客新闻)",
+          "source_name": "Info Flow",
+          "site_id": "iris",
+          "published_at": "2026-10-16T19:47:13Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.5141,
+      "importance": 0.5141,
+      "importance_score": 0.5141,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.9626,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "watch",
+      "reasons": [
+        "recent_ai_signal"
+      ],
+      "earliest_at": "2026-10-16T19:47:13Z",
+      "latest_at": "2026-10-16T19:47:13Z",
+      "primary_item": {
+        "id": "7c4aabd1b8309d8822acc3cf967977c4460c7e12",
+        "title": "FLUX 3 Image Klein",
+        "title_zh": null,
+        "title_en": "FLUX 3 Image Klein",
+        "title_original": "FLUX 3 Image Klein",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://bfl.ai/blog/flux-3-image-klein",
+        "source": "Hacker News (黑客新闻)",
+        "source_name": "Info Flow"
+      },
+      "peak_score": 0.7788,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -387,15 +639,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7404,
-      "importance": 0.7404,
-      "importance_score": 0.7404,
+      "score": 0.7372,
+      "importance": 0.7372,
+      "importance_score": 0.7372,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8158,
+        "recency": 0.7979,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -422,7 +674,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -470,22 +722,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7529,
-      "importance": 0.7529,
-      "importance_score": 0.7529,
+      "score": 0.7493,
+      "importance": 0.7493,
+      "importance_score": 0.7493,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9183,
+        "recency": 0.8982,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-16T12:35:52.199180Z",
       "latest_at": "2026-10-16T12:35:52.199180Z",
@@ -506,7 +757,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -554,15 +805,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7459,
-      "importance": 0.7459,
-      "importance_score": 0.7459,
+      "score": 0.7427,
+      "importance": 0.7427,
+      "importance_score": 0.7427,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.75,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8297,
+        "recency": 0.8115,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -589,7 +840,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -637,15 +888,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.758,
-      "importance": 0.758,
-      "importance_score": 0.758,
+      "score": 0.7544,
+      "importance": 0.7544,
+      "importance_score": 0.7544,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9131,
+        "recency": 0.8931,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -673,90 +924,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
-      }
-    },
-    {
-      "story_id": "story_3090d5c4ae91",
-      "title": "Musk 称 xAI 2027 年底算力目标可能超过 10GW / Maybe more than 10GW",
-      "url": "https://x.com/elonmusk/status/2110877572011844019",
-      "primary_url": "https://x.com/elonmusk/status/2110877572011844019",
-      "source": "X：Elon Musk (@elonmusk, xAI)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "8ba076865f20470ccb2a3e571b829cd08f93667d",
-          "title": "Musk 称 xAI 2027 年底算力目标可能超过 10GW / Maybe more than 10GW",
-          "title_zh": "Musk 称 xAI 2027 年底算力目标可能超过 10GW",
-          "title_en": "Maybe more than 10GW",
-          "title_original": "Maybe more than 10GW",
-          "summary": "Musk 转发黄仁勋在 BG2Pod 访谈中的表态并评论算力目标可能超过 10GW；访谈称 Nvidia 已把 SpaceX 归入云服务商客户，两家工程师正合作设计可用于太空的新型服务器架构。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/elonmusk/status/2110877572011844019",
-          "source": "X：Elon Musk (@elonmusk, xAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-15T23:36:46Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：Elon Musk (@elonmusk, xAI)"
-      ],
-      "items": [
-        {
-          "id": "8ba076865f20470ccb2a3e571b829cd08f93667d",
-          "title": "Musk 称 xAI 2027 年底算力目标可能超过 10GW / Maybe more than 10GW",
-          "title_zh": "Musk 称 xAI 2027 年底算力目标可能超过 10GW",
-          "title_en": "Maybe more than 10GW",
-          "title_original": "Maybe more than 10GW",
-          "summary": "Musk 转发黄仁勋在 BG2Pod 访谈中的表态并评论算力目标可能超过 10GW；访谈称 Nvidia 已把 SpaceX 归入云服务商客户，两家工程师正合作设计可用于太空的新型服务器架构。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/elonmusk/status/2110877572011844019",
-          "source": "X：Elon Musk (@elonmusk, xAI)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-15T23:36:46Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7245,
-      "importance": 0.7245,
-      "importance_score": 0.7245,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.69,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8104,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-15T23:36:46Z",
-      "latest_at": "2026-10-15T23:36:46Z",
-      "primary_item": {
-        "id": "8ba076865f20470ccb2a3e571b829cd08f93667d",
-        "title": "Musk 称 xAI 2027 年底算力目标可能超过 10GW / Maybe more than 10GW",
-        "title_zh": "Musk 称 xAI 2027 年底算力目标可能超过 10GW",
-        "title_en": "Maybe more than 10GW",
-        "title_original": "Maybe more than 10GW",
-        "summary": "Musk 转发黄仁勋在 BG2Pod 访谈中的表态并评论算力目标可能超过 10GW；访谈称 Nvidia 已把 SpaceX 归入云服务商客户，两家工程师正合作设计可用于太空的新型服务器架构。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/elonmusk/status/2110877572011844019",
-        "source": "X：Elon Musk (@elonmusk, xAI)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7553,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -862,15 +1030,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5456,
-      "importance": 0.5456,
-      "importance_score": 0.5456,
+      "score": 0.5417,
+      "importance": 0.5417,
+      "importance_score": 0.5417,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.999,
+        "recency": 0.9771,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -897,7 +1065,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -945,22 +1113,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7503,
-      "importance": 0.7503,
-      "importance_score": 0.7503,
+      "score": 0.7471,
+      "importance": 0.7471,
+      "importance_score": 0.7471,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.77,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8205,
+        "recency": 0.8026,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-16T00:54:07.827000Z",
       "latest_at": "2026-10-16T00:54:07.827000Z",
@@ -981,7 +1148,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -1029,15 +1196,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7494,
-      "importance": 0.7494,
-      "importance_score": 0.7494,
+      "score": 0.7462,
+      "importance": 0.7462,
+      "importance_score": 0.7462,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.61,
         "source_tier": 1.0,
         "ai_relevance": 1.0,
-        "recency": 0.8134,
+        "recency": 0.7956,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1064,7 +1231,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -1112,15 +1279,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7486,
-      "importance": 0.7486,
-      "importance_score": 0.7486,
+      "score": 0.7447,
+      "importance": 0.7447,
+      "importance_score": 0.7447,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9776,
+        "recency": 0.9562,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1147,7 +1314,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -1195,22 +1362,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7529,
-      "importance": 0.7529,
-      "importance_score": 0.7529,
+      "score": 0.7493,
+      "importance": 0.7493,
+      "importance_score": 0.7493,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9183,
+        "recency": 0.8982,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-16T12:35:52.199180Z",
       "latest_at": "2026-10-16T12:35:52.199180Z",
@@ -1231,7 +1397,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -1279,19 +1445,19 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7202,
-      "importance": 0.7202,
-      "importance_score": 0.7202,
-      "importance_label": "行业动态",
+      "score": 0.7168,
+      "importance": 0.7168,
+      "importance_score": 0.7168,
+      "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.64,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8701,
+        "recency": 0.8511,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "industry",
+      "category": "watch",
       "reasons": [
         "high_ai_relevance"
       ],
@@ -1314,7 +1480,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -1362,15 +1528,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.719,
-      "importance": 0.719,
-      "importance_score": 0.719,
+      "score": 0.7158,
+      "importance": 0.7158,
+      "importance_score": 0.7158,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8134,
+        "recency": 0.7956,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1397,7 +1563,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -1445,15 +1611,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7192,
-      "importance": 0.7192,
-      "importance_score": 0.7192,
+      "score": 0.7155,
+      "importance": 0.7155,
+      "importance_score": 0.7155,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.6,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9309,
+        "recency": 0.9105,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1480,7 +1646,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     },
     {
@@ -1528,15 +1694,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7551,
-      "importance": 0.7551,
-      "importance_score": 0.7551,
+      "score": 0.7517,
+      "importance": 0.7517,
+      "importance_score": 0.7517,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8638,
+        "recency": 0.8449,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1564,173 +1730,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
-      }
-    },
-    {
-      "story_id": "story_39259f2ac699",
-      "title": "Anthropic IPO 估值遭砍：增速放缓，2 万亿美元预期回落至 1.5 万亿",
-      "url": "https://www.aibase.com/news/31680",
-      "primary_url": "https://www.aibase.com/news/31680",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "3fbde3066c7bd52d79dca951469dc316d66358d3",
-          "title": "Anthropic IPO 估值遭砍：增速放缓，2 万亿美元预期回落至 1.5 万亿",
-          "title_zh": "Anthropic IPO 估值遭砍：增速放缓，2 万亿美元预期回落至 1.5 万亿",
-          "title_en": null,
-          "title_original": "Anthropic IPO 估值遭砍：增速放缓，2 万亿美元预期回落至 1.5 万亿",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31680",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-16T01:32:23.371780Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "3fbde3066c7bd52d79dca951469dc316d66358d3",
-          "title": "Anthropic IPO 估值遭砍：增速放缓，2 万亿美元预期回落至 1.5 万亿",
-          "title_zh": "Anthropic IPO 估值遭砍：增速放缓，2 万亿美元预期回落至 1.5 万亿",
-          "title_en": null,
-          "title_original": "Anthropic IPO 估值遭砍：增速放缓，2 万亿美元预期回落至 1.5 万亿",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31680",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-16T01:32:23.371780Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7362,
-      "importance": 0.7362,
-      "importance_score": 0.7362,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8256,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-16T01:32:23.371780Z",
-      "latest_at": "2026-10-16T01:32:23.371780Z",
-      "primary_item": {
-        "id": "3fbde3066c7bd52d79dca951469dc316d66358d3",
-        "title": "Anthropic IPO 估值遭砍：增速放缓，2 万亿美元预期回落至 1.5 万亿",
-        "title_zh": "Anthropic IPO 估值遭砍：增速放缓，2 万亿美元预期回落至 1.5 万亿",
-        "title_en": null,
-        "title_original": "Anthropic IPO 估值遭砍：增速放缓，2 万亿美元预期回落至 1.5 万亿",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31680",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
-      }
-    },
-    {
-      "story_id": "story_ac3ac3a38b3f",
-      "title": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
-      "url": "https://www.aibase.com/news/31697",
-      "primary_url": "https://www.aibase.com/news/31697",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "9fe5c1aa51a65597a2e6c9742bd152a6ec4dcb87",
-          "title": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
-          "title_zh": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
-          "title_en": null,
-          "title_original": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31697",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-16T07:23:09.469678Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "9fe5c1aa51a65597a2e6c9742bd152a6ec4dcb87",
-          "title": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
-          "title_zh": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
-          "title_en": null,
-          "title_original": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31697",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-16T07:23:09.469678Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7448,
-      "importance": 0.7448,
-      "importance_score": 0.7448,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8734,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-16T07:23:09.469678Z",
-      "latest_at": "2026-10-16T07:23:09.469678Z",
-      "primary_item": {
-        "id": "9fe5c1aa51a65597a2e6c9742bd152a6ec4dcb87",
-        "title": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
-        "title_zh": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
-        "title_en": null,
-        "title_original": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31697",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-16T21:27:51.426764Z"
+        "scored_at": "2026-10-16T23:45:52.778942Z"
       }
     }
   ]
