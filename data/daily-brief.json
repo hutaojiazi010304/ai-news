@@ -1,93 +1,8 @@
 {
-  "generated_at": "2026-10-16T23:44:51.168134Z",
+  "generated_at": "2026-10-17T04:45:16.511052Z",
   "window_hours": 24,
   "total_items": 20,
   "items": [
-    {
-      "story_id": "story_7db28526b529",
-      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-      "primary_url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-      "source": "Hugging Face Blog",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "b52dd80c7de1b122a45016c0a987a40272dbe73f",
-          "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-          "title_zh": null,
-          "title_en": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-          "title_original": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-16T01:44:47Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Hugging Face Blog"
-      ],
-      "items": [
-        {
-          "id": "b52dd80c7de1b122a45016c0a987a40272dbe73f",
-          "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-          "title_zh": null,
-          "title_en": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-          "title_original": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-16T01:44:47Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8256,
-      "importance": 0.8256,
-      "importance_score": 0.8256,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.8091,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-16T01:44:47Z",
-      "latest_at": "2026-10-16T01:44:47Z",
-      "primary_item": {
-        "id": "b52dd80c7de1b122a45016c0a987a40272dbe73f",
-        "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-        "title_zh": null,
-        "title_en": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-        "title_original": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-        "source": "Hugging Face Blog",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8505,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
-      }
-    },
     {
       "story_id": "story_27f49e3620ac",
       "title": "How Itaú is building generative AI for its entire customer base",
@@ -133,15 +48,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.844,
-      "importance": 0.844,
-      "importance_score": 0.844,
+      "score": 0.8359,
+      "importance": 0.8359,
+      "importance_score": 0.8359,
       "importance_label": "官方更新",
       "importance_breakdown": {
         "editorial": 0.9,
         "source_tier": 1.0,
         "ai_relevance": 0.91,
-        "recency": 0.9553,
+        "recency": 0.9104,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -170,92 +85,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
-      }
-    },
-    {
-      "story_id": "story_6b115062be00",
-      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-      "primary_url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-      "source": "OpenAI News",
-      "source_name": "Official AI Updates",
-      "sources": [
-        {
-          "id": "b36f45115eff92fea7b2009844b09042a3428aee",
-          "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-          "title_zh": null,
-          "title_en": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-          "title_original": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-          "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-16T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "OpenAI News"
-      ],
-      "items": [
-        {
-          "id": "b36f45115eff92fea7b2009844b09042a3428aee",
-          "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-          "title_zh": null,
-          "title_en": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-          "title_original": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-          "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
-          "recommend_reason_zh": null,
-          "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-          "source": "OpenAI News",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-16T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.8312,
-      "importance": 0.8312,
-      "importance_score": 0.8312,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.99,
-        "recency": 0.7956,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
-      ],
-      "earliest_at": "2026-10-16T00:00:00Z",
-      "latest_at": "2026-10-16T00:00:00Z",
-      "primary_item": {
-        "id": "b36f45115eff92fea7b2009844b09042a3428aee",
-        "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-        "title_zh": null,
-        "title_en": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-        "title_original": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-        "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
-        "recommend_reason_zh": null,
-        "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-        "source": "OpenAI News",
-        "source_name": "Official AI Updates"
-      },
-      "peak_score": 0.8344,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
+        "scored_at": "2026-10-17T04:46:06.386633Z"
       }
     },
     {
@@ -263,11 +93,11 @@
       "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
       "url": "https://huggingface.co/blog/reflection-beam",
       "primary_url": "https://huggingface.co/blog/reflection-beam",
-      "source": "Hugging Face Blog",
-      "source_name": "Official AI Updates",
+      "source": "Hacker News · 24h最热",
+      "source_name": "Zeli",
       "sources": [
         {
-          "id": "95491a4527855e05ea7d028887b6961c55e82c89",
+          "id": "cb599432b653b1d4b45d724cb97dd3475cf32af4",
           "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
           "title_zh": null,
           "title_en": "Welcome Beam: a 501B open model you can own, customize, and scale",
@@ -275,19 +105,19 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://huggingface.co/blog/reflection-beam",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-16T00:00:00Z"
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-10-16T14:05:19Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "Hugging Face Blog"
+        "Hacker News · 24h最热"
       ],
       "items": [
         {
-          "id": "95491a4527855e05ea7d028887b6961c55e82c89",
+          "id": "cb599432b653b1d4b45d724cb97dd3475cf32af4",
           "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
           "title_zh": null,
           "title_en": "Welcome Beam: a 501B open model you can own, customize, and scale",
@@ -295,36 +125,34 @@
           "summary": null,
           "recommend_reason_zh": null,
           "url": "https://huggingface.co/blog/reflection-beam",
-          "source": "Hugging Face Blog",
-          "source_name": "Official AI Updates",
-          "site_id": "official_ai",
-          "published_at": "2026-10-16T00:00:00Z"
+          "source": "Hacker News · 24h最热",
+          "source_name": "Zeli",
+          "site_id": "zeli",
+          "published_at": "2026-10-16T14:05:19Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.8232,
-      "importance": 0.8232,
-      "importance_score": 0.8232,
-      "importance_label": "官方更新",
+      "score": 0.4971,
+      "importance": 0.4971,
+      "importance_score": 0.4971,
+      "importance_label": "值得关注",
       "importance_breakdown": {
-        "editorial": 0.9,
-        "source_tier": 1.0,
-        "ai_relevance": 0.95,
-        "recency": 0.7956,
+        "editorial": 0.468,
+        "source_tier": 0.32,
+        "ai_relevance": 0.65,
+        "recency": 0.8683,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
-      "category": "official",
+      "category": "watch",
       "reasons": [
-        "official_source",
-        "high_ai_relevance",
-        "high_importance"
+        "recent_ai_signal"
       ],
-      "earliest_at": "2026-10-16T00:00:00Z",
-      "latest_at": "2026-10-16T00:00:00Z",
+      "earliest_at": "2026-10-16T14:05:19Z",
+      "latest_at": "2026-10-16T14:05:19Z",
       "primary_item": {
-        "id": "95491a4527855e05ea7d028887b6961c55e82c89",
+        "id": "cb599432b653b1d4b45d724cb97dd3475cf32af4",
         "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
         "title_zh": null,
         "title_en": "Welcome Beam: a 501B open model you can own, customize, and scale",
@@ -332,15 +160,15 @@
         "summary": null,
         "recommend_reason_zh": null,
         "url": "https://huggingface.co/blog/reflection-beam",
-        "source": "Hugging Face Blog",
-        "source_name": "Official AI Updates"
+        "source": "Hacker News · 24h最热",
+        "source_name": "Zeli"
       },
       "peak_score": 0.832,
       "persona_id": "pragmatic",
-      "persona_score": 1,
+      "persona_score": 0,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
+        "scored_at": "2026-10-17T04:46:06.386633Z"
       }
     },
     {
@@ -388,15 +216,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7759,
-      "importance": 0.7759,
-      "importance_score": 0.7759,
+      "score": 0.7686,
+      "importance": 0.7686,
+      "importance_score": 0.7686,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.83,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8626,
+        "recency": 0.822,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -424,7 +252,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
+        "scored_at": "2026-10-17T04:46:06.386633Z"
       }
     },
     {
@@ -472,15 +300,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7892,
-      "importance": 0.7892,
-      "importance_score": 0.7892,
+      "score": 0.7809,
+      "importance": 0.7809,
+      "importance_score": 0.7809,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.8,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9869,
+        "recency": 0.9405,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -508,21 +336,35 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
+        "scored_at": "2026-10-17T04:46:06.386633Z"
       }
     },
     {
       "story_id": "story_b99d97516c95",
-      "title": "FLUX 3 Image Klein",
+      "title": "FLUX 3 图片 克莱因",
       "url": "https://bfl.ai/blog/flux-3-image-klein",
       "primary_url": "https://bfl.ai/blog/flux-3-image-klein",
-      "source": "Hacker News (黑客新闻)",
-      "source_name": "Info Flow",
+      "source": "bfl.ai",
+      "source_name": "Buzzing",
       "sources": [
         {
+          "id": "dd7b3d8f6404ed2e9941f3ecfcb33bbd413279cc",
+          "title": "FLUX 3 图片 克莱因",
+          "title_zh": "FLUX 3 图片 克莱因",
+          "title_en": null,
+          "title_original": "FLUX 3 图片 克莱因",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://bfl.ai/blog/flux-3-image-klein",
+          "source": "bfl.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-10-17T00:48:15.026000Z"
+        },
+        {
           "id": "7c4aabd1b8309d8822acc3cf967977c4460c7e12",
-          "title": "FLUX 3 Image Klein",
-          "title_zh": null,
+          "title": "FLUX 3 图片 克莱因 / FLUX 3 Image Klein",
+          "title_zh": "FLUX 3 图片 克莱因",
           "title_en": "FLUX 3 Image Klein",
           "title_original": "FLUX 3 Image Klein",
           "summary": null,
@@ -536,13 +378,28 @@
       ],
       "source_count": 1,
       "source_names": [
-        "Hacker News (黑客新闻)"
+        "Hacker News (黑客新闻)",
+        "bfl.ai"
       ],
       "items": [
         {
+          "id": "dd7b3d8f6404ed2e9941f3ecfcb33bbd413279cc",
+          "title": "FLUX 3 图片 克莱因",
+          "title_zh": "FLUX 3 图片 克莱因",
+          "title_en": null,
+          "title_original": "FLUX 3 图片 克莱因",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://bfl.ai/blog/flux-3-image-klein",
+          "source": "bfl.ai",
+          "source_name": "Buzzing",
+          "site_id": "buzzing",
+          "published_at": "2026-10-17T00:48:15.026000Z"
+        },
+        {
           "id": "7c4aabd1b8309d8822acc3cf967977c4460c7e12",
-          "title": "FLUX 3 Image Klein",
-          "title_zh": null,
+          "title": "FLUX 3 图片 克莱因 / FLUX 3 Image Klein",
+          "title_zh": "FLUX 3 图片 克莱因",
           "title_en": "FLUX 3 Image Klein",
           "title_original": "FLUX 3 Image Klein",
           "summary": null,
@@ -554,8 +411,8 @@
           "published_at": "2026-10-16T19:47:13Z"
         }
       ],
-      "item_count": 1,
-      "duplicate_count": 1,
+      "item_count": 2,
+      "duplicate_count": 2,
       "score": 0.5141,
       "importance": 0.5141,
       "importance_score": 0.5141,
@@ -564,7 +421,7 @@
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9626,
+        "recency": 0.9627,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -573,108 +430,109 @@
         "recent_ai_signal"
       ],
       "earliest_at": "2026-10-16T19:47:13Z",
-      "latest_at": "2026-10-16T19:47:13Z",
+      "latest_at": "2026-10-17T00:48:15.026000Z",
       "primary_item": {
-        "id": "7c4aabd1b8309d8822acc3cf967977c4460c7e12",
-        "title": "FLUX 3 Image Klein",
-        "title_zh": null,
-        "title_en": "FLUX 3 Image Klein",
-        "title_original": "FLUX 3 Image Klein",
+        "id": "dd7b3d8f6404ed2e9941f3ecfcb33bbd413279cc",
+        "title": "FLUX 3 图片 克莱因",
+        "title_zh": "FLUX 3 图片 克莱因",
+        "title_en": null,
+        "title_original": "FLUX 3 图片 克莱因",
         "summary": null,
         "recommend_reason_zh": null,
         "url": "https://bfl.ai/blog/flux-3-image-klein",
-        "source": "Hacker News (黑客新闻)",
-        "source_name": "Info Flow"
+        "source": "bfl.ai",
+        "source_name": "Buzzing"
       },
       "peak_score": 0.7788,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
+        "scored_at": "2026-10-17T04:46:06.386633Z"
       }
     },
     {
-      "story_id": "story_1d26621d617a",
-      "title": "可灵 Kling 4.0 上线：支持30秒一镜到底，作者实测动态与全能参考",
-      "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687203&idx=1&sn=a58bc4411e8226b629f1b5c61509a198",
-      "primary_url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687203&idx=1&sn=a58bc4411e8226b629f1b5c61509a198",
-      "source": "公众号：数字生命卡兹克",
+      "story_id": "story_4b8a0416def4",
+      "title": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
+      "url": "https://x.com/shao__meng/status/2111274173192638932",
+      "primary_url": "https://x.com/shao__meng/status/2111274173192638932",
+      "source": "X：邵猛 (@shao__meng)",
       "source_name": "AI HOT",
       "sources": [
         {
-          "id": "27d32b3fe77e5f77e8f1e5a9aa33e8f9a3671b7d",
-          "title": "可灵 Kling 4.0 上线：支持30秒一镜到底，作者实测动态与全能参考",
-          "title_zh": "可灵 Kling 4.0 上线：支持30秒一镜到底，作者实测动态与全能参考",
+          "id": "edf3b79c0aea87734c3d6ad818540ed4846f6b63",
+          "title": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
+          "title_zh": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
           "title_en": null,
-          "title_original": "可灵 Kling 4.0 上线：支持30秒一镜到底，作者实测动态与全能参考",
-          "summary": "可灵AI凌晨正式上线视频模型 Kling 4.0，支持最长30秒直出和最多10帧的多帧参考，并强化全能参考与复杂打斗等大范围动态表现。作者烧数万积分实测城市追逐、电梯打斗、花样滑冰等场景，认为纸箱形变等细节体现物理规律理解的提升。1080P 30秒约450积分（约16元），720P约9元，4.0 Flash 720P 20秒仅120积分，官方还预告将支持10-bit 4K HDR输出。",
+          "title_original": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
+          "summary": "作者解读 Anthropic 关于 Claude Code 代码评审重构的博客：Claude 写了约 90% 的代码，2026 年 6 月到 9 月合并 PR 翻倍以上而 revert 率下降超 40%。",
           "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687203&idx=1&sn=a58bc4411e8226b629f1b5c61509a198",
-          "source": "公众号：数字生命卡兹克",
+          "url": "https://x.com/shao__meng/status/2111274173192638932",
+          "source": "X：邵猛 (@shao__meng)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-10-16T00:18:00Z"
+          "published_at": "2026-10-17T01:52:43Z"
         }
       ],
       "source_count": 1,
       "source_names": [
-        "公众号：数字生命卡兹克"
+        "X：邵猛 (@shao__meng)"
       ],
       "items": [
         {
-          "id": "27d32b3fe77e5f77e8f1e5a9aa33e8f9a3671b7d",
-          "title": "可灵 Kling 4.0 上线：支持30秒一镜到底，作者实测动态与全能参考",
-          "title_zh": "可灵 Kling 4.0 上线：支持30秒一镜到底，作者实测动态与全能参考",
+          "id": "edf3b79c0aea87734c3d6ad818540ed4846f6b63",
+          "title": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
+          "title_zh": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
           "title_en": null,
-          "title_original": "可灵 Kling 4.0 上线：支持30秒一镜到底，作者实测动态与全能参考",
-          "summary": "可灵AI凌晨正式上线视频模型 Kling 4.0，支持最长30秒直出和最多10帧的多帧参考，并强化全能参考与复杂打斗等大范围动态表现。作者烧数万积分实测城市追逐、电梯打斗、花样滑冰等场景，认为纸箱形变等细节体现物理规律理解的提升。1080P 30秒约450积分（约16元），720P约9元，4.0 Flash 720P 20秒仅120积分，官方还预告将支持10-bit 4K HDR输出。",
+          "title_original": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
+          "summary": "作者解读 Anthropic 关于 Claude Code 代码评审重构的博客：Claude 写了约 90% 的代码，2026 年 6 月到 9 月合并 PR 翻倍以上而 revert 率下降超 40%。",
           "recommend_reason_zh": null,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687203&idx=1&sn=a58bc4411e8226b629f1b5c61509a198",
-          "source": "公众号：数字生命卡兹克",
+          "url": "https://x.com/shao__meng/status/2111274173192638932",
+          "source": "X：邵猛 (@shao__meng)",
           "source_name": "AI HOT",
           "site_id": "aihot",
-          "published_at": "2026-10-16T00:18:00Z"
+          "published_at": "2026-10-17T01:52:43Z"
         }
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7372,
-      "importance": 0.7372,
-      "importance_score": 0.7372,
+      "score": 0.7747,
+      "importance": 0.7747,
+      "importance_score": 0.7747,
       "importance_label": "行业动态",
       "importance_breakdown": {
-        "editorial": 0.74,
+        "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.7979,
+        "recency": 0.9727,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance"
+        "high_ai_relevance",
+        "high_importance"
       ],
-      "earliest_at": "2026-10-16T00:18:00Z",
-      "latest_at": "2026-10-16T00:18:00Z",
+      "earliest_at": "2026-10-17T01:52:43Z",
+      "latest_at": "2026-10-17T01:52:43Z",
       "primary_item": {
-        "id": "27d32b3fe77e5f77e8f1e5a9aa33e8f9a3671b7d",
-        "title": "可灵 Kling 4.0 上线：支持30秒一镜到底，作者实测动态与全能参考",
-        "title_zh": "可灵 Kling 4.0 上线：支持30秒一镜到底，作者实测动态与全能参考",
+        "id": "edf3b79c0aea87734c3d6ad818540ed4846f6b63",
+        "title": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
+        "title_zh": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
         "title_en": null,
-        "title_original": "可灵 Kling 4.0 上线：支持30秒一镜到底，作者实测动态与全能参考",
-        "summary": "可灵AI凌晨正式上线视频模型 Kling 4.0，支持最长30秒直出和最多10帧的多帧参考，并强化全能参考与复杂打斗等大范围动态表现。作者烧数万积分实测城市追逐、电梯打斗、花样滑冰等场景，认为纸箱形变等细节体现物理规律理解的提升。1080P 30秒约450积分（约16元），720P约9元，4.0 Flash 720P 20秒仅120积分，官方还预告将支持10-bit 4K HDR输出。",
+        "title_original": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
+        "summary": "作者解读 Anthropic 关于 Claude Code 代码评审重构的博客：Claude 写了约 90% 的代码，2026 年 6 月到 9 月合并 PR 翻倍以上而 revert 率下降超 40%。",
         "recommend_reason_zh": null,
-        "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647687203&idx=1&sn=a58bc4411e8226b629f1b5c61509a198",
-        "source": "公众号：数字生命卡兹克",
+        "url": "https://x.com/shao__meng/status/2111274173192638932",
+        "source": "X：邵猛 (@shao__meng)",
         "source_name": "AI HOT"
       },
-      "peak_score": 0.7715,
+      "peak_score": 0.7747,
       "persona_id": "pragmatic",
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
+        "scored_at": "2026-10-17T04:46:06.386633Z"
       }
     },
     {
@@ -722,15 +580,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7493,
-      "importance": 0.7493,
-      "importance_score": 0.7493,
+      "score": 0.7417,
+      "importance": 0.7417,
+      "importance_score": 0.7417,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.72,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8982,
+        "recency": 0.856,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -757,90 +615,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
-      }
-    },
-    {
-      "story_id": "story_6892471b94f6",
-      "title": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
-      "url": "https://x.com/Khazix0918/status/2110914404393091205",
-      "primary_url": "https://x.com/Khazix0918/status/2110914404393091205",
-      "source": "X：卡兹克 (@Khazix0918)",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "641e7ffc841e1c9081bb0af205cda7491927164f",
-          "title": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
-          "title_zh": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
-          "title_en": null,
-          "title_original": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
-          "summary": "可灵AI凌晨正式上线视频模型 Kling 4.0，作者烧数万积分实测后认为其在大范围动态、复杂动作衔接和全能参考可控性上有扎实进步。支持最长30秒一镜到底直出，视频首尾帧改为最多10帧的多帧参考；1080P 30秒约450积分，720P 20秒的 Kling 4.0 Flash 仅120积分，作者推荐先用 Flash 打样再用正式版出片，此外10-bit 4K HDR 输出规格尚未上线。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Khazix0918/status/2110914404393091205",
-          "source": "X：卡兹克 (@Khazix0918)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-16T02:03:07Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "X：卡兹克 (@Khazix0918)"
-      ],
-      "items": [
-        {
-          "id": "641e7ffc841e1c9081bb0af205cda7491927164f",
-          "title": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
-          "title_zh": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
-          "title_en": null,
-          "title_original": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
-          "summary": "可灵AI凌晨正式上线视频模型 Kling 4.0，作者烧数万积分实测后认为其在大范围动态、复杂动作衔接和全能参考可控性上有扎实进步。支持最长30秒一镜到底直出，视频首尾帧改为最多10帧的多帧参考；1080P 30秒约450积分，720P 20秒的 Kling 4.0 Flash 仅120积分，作者推荐先用 Flash 打样再用正式版出片，此外10-bit 4K HDR 输出规格尚未上线。",
-          "recommend_reason_zh": null,
-          "url": "https://x.com/Khazix0918/status/2110914404393091205",
-          "source": "X：卡兹克 (@Khazix0918)",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-16T02:03:07Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7427,
-      "importance": 0.7427,
-      "importance_score": 0.7427,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.75,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8115,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-16T02:03:07Z",
-      "latest_at": "2026-10-16T02:03:07Z",
-      "primary_item": {
-        "id": "641e7ffc841e1c9081bb0af205cda7491927164f",
-        "title": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
-        "title_zh": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
-        "title_en": null,
-        "title_original": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
-        "summary": "可灵AI凌晨正式上线视频模型 Kling 4.0，作者烧数万积分实测后认为其在大范围动态、复杂动作衔接和全能参考可控性上有扎实进步。支持最长30秒一镜到底直出，视频首尾帧改为最多10帧的多帧参考；1080P 30秒约450积分，720P 20秒的 Kling 4.0 Flash 仅120积分，作者推荐先用 Flash 打样再用正式版出片，此外10-bit 4K HDR 输出规格尚未上线。",
-        "recommend_reason_zh": null,
-        "url": "https://x.com/Khazix0918/status/2110914404393091205",
-        "source": "X：卡兹克 (@Khazix0918)",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
+        "scored_at": "2026-10-17T04:46:06.386633Z"
       }
     },
     {
@@ -888,22 +663,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7544,
-      "importance": 0.7544,
-      "importance_score": 0.7544,
+      "score": 0.7468,
+      "importance": 0.7468,
+      "importance_score": 0.7468,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.74,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8931,
+        "recency": 0.851,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-16T12:00:00Z",
       "latest_at": "2026-10-16T12:00:00Z",
@@ -924,7 +698,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
+        "scored_at": "2026-10-17T04:46:06.386633Z"
       }
     },
     {
@@ -1030,15 +804,15 @@
       ],
       "item_count": 3,
       "duplicate_count": 3,
-      "score": 0.5417,
-      "importance": 0.5417,
-      "importance_score": 0.5417,
+      "score": 0.5334,
+      "importance": 0.5334,
+      "importance_score": 0.5334,
       "importance_label": "值得关注",
       "importance_breakdown": {
         "editorial": 0.468,
         "source_tier": 0.32,
         "ai_relevance": 0.65,
-        "recency": 0.9771,
+        "recency": 0.9312,
         "story_heat": 0.25,
         "soft_content_penalty": 0.0
       },
@@ -1065,173 +839,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
-      }
-    },
-    {
-      "story_id": "story_499a3c6a499f",
-      "title": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
-      "url": "https://www.ithome.com/1/013/723.htm",
-      "primary_url": "https://www.ithome.com/1/013/723.htm",
-      "source": "IT之家·人工智能",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "60e47fcff41d839ffe6522686a0cb56f8d7f20b9",
-          "title": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
-          "title_zh": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
-          "title_en": null,
-          "title_original": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
-          "summary": "路透社援引知情人士消息称，Anthropic 公布最新财务数据后，部分投资者开始考虑下调其 IPO 估值，此前预期 11 月上市时估值约 2 万亿美元，投资者日活动讨论约 1.5 万亿美元。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/1/013/723.htm",
-          "source": "IT之家·人工智能",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-16T00:54:07.827000Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "IT之家·人工智能"
-      ],
-      "items": [
-        {
-          "id": "60e47fcff41d839ffe6522686a0cb56f8d7f20b9",
-          "title": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
-          "title_zh": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
-          "title_en": null,
-          "title_original": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
-          "summary": "路透社援引知情人士消息称，Anthropic 公布最新财务数据后，部分投资者开始考虑下调其 IPO 估值，此前预期 11 月上市时估值约 2 万亿美元，投资者日活动讨论约 1.5 万亿美元。",
-          "recommend_reason_zh": null,
-          "url": "https://www.ithome.com/1/013/723.htm",
-          "source": "IT之家·人工智能",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-16T00:54:07.827000Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7471,
-      "importance": 0.7471,
-      "importance_score": 0.7471,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.77,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8026,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-16T00:54:07.827000Z",
-      "latest_at": "2026-10-16T00:54:07.827000Z",
-      "primary_item": {
-        "id": "60e47fcff41d839ffe6522686a0cb56f8d7f20b9",
-        "title": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
-        "title_zh": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
-        "title_en": null,
-        "title_original": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
-        "summary": "路透社援引知情人士消息称，Anthropic 公布最新财务数据后，部分投资者开始考虑下调其 IPO 估值，此前预期 11 月上市时估值约 2 万亿美元，投资者日活动讨论约 1.5 万亿美元。",
-        "recommend_reason_zh": null,
-        "url": "https://www.ithome.com/1/013/723.htm",
-        "source": "IT之家·人工智能",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7815,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
-      }
-    },
-    {
-      "story_id": "story_e285a13670b3",
-      "title": "Google Research 展示 AI 智能体自主湿实验室的三项进展：VERID 框架、适配体闭环发现与全新蛋白结合剂设计 / Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
-      "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs",
-      "primary_url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs",
-      "source": "Google Research：Blog（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "d81d150625e008e8d7dfbcc947f04def83034cb9",
-          "title": "Google Research 展示 AI 智能体自主湿实验室的三项进展：VERID 框架、适配体闭环发现与全新蛋白结合剂设计 / Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
-          "title_zh": "Google Research 展示 AI 智能体自主湿实验室的三项进展：VERID 框架、适配体闭环发现与全新蛋白结合剂设计",
-          "title_en": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
-          "title_original": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
-          "summary": "Google Research 发布三项研究，构建 AI 智能体自主湿实验室的基础模块。",
-          "recommend_reason_zh": null,
-          "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs",
-          "source": "Google Research：Blog（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-16T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Google Research：Blog（网页）"
-      ],
-      "items": [
-        {
-          "id": "d81d150625e008e8d7dfbcc947f04def83034cb9",
-          "title": "Google Research 展示 AI 智能体自主湿实验室的三项进展：VERID 框架、适配体闭环发现与全新蛋白结合剂设计 / Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
-          "title_zh": "Google Research 展示 AI 智能体自主湿实验室的三项进展：VERID 框架、适配体闭环发现与全新蛋白结合剂设计",
-          "title_en": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
-          "title_original": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
-          "summary": "Google Research 发布三项研究，构建 AI 智能体自主湿实验室的基础模块。",
-          "recommend_reason_zh": null,
-          "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs",
-          "source": "Google Research：Blog（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-16T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7462,
-      "importance": 0.7462,
-      "importance_score": 0.7462,
-      "importance_label": "官方更新",
-      "importance_breakdown": {
-        "editorial": 0.61,
-        "source_tier": 1.0,
-        "ai_relevance": 1.0,
-        "recency": 0.7956,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "official",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-16T00:00:00Z",
-      "latest_at": "2026-10-16T00:00:00Z",
-      "primary_item": {
-        "id": "d81d150625e008e8d7dfbcc947f04def83034cb9",
-        "title": "Google Research 展示 AI 智能体自主湿实验室的三项进展：VERID 框架、适配体闭环发现与全新蛋白结合剂设计 / Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
-        "title_zh": "Google Research 展示 AI 智能体自主湿实验室的三项进展：VERID 框架、适配体闭环发现与全新蛋白结合剂设计",
-        "title_en": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
-        "title_original": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
-        "summary": "Google Research 发布三项研究，构建 AI 智能体自主湿实验室的基础模块。",
-        "recommend_reason_zh": null,
-        "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs",
-        "source": "Google Research：Blog（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7494,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
+        "scored_at": "2026-10-17T04:46:06.386633Z"
       }
     },
     {
@@ -1279,15 +887,15 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7447,
-      "importance": 0.7447,
-      "importance_score": 0.7447,
+      "score": 0.7366,
+      "importance": 0.7366,
+      "importance_score": 0.7366,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.67,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.9562,
+        "recency": 0.9112,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
@@ -1314,339 +922,7 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
-      }
-    },
-    {
-      "story_id": "story_5ca42a9e449b",
-      "title": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
-      "url": "https://www.aibase.com/news/31699",
-      "primary_url": "https://www.aibase.com/news/31699",
-      "source": "AIbase",
-      "source_name": "AIbase",
-      "sources": [
-        {
-          "id": "62e2d3157f20d98a2a4c1a943c25450af790ce7d",
-          "title": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
-          "title_zh": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
-          "title_en": null,
-          "title_original": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31699",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-16T12:35:52.199180Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "AIbase"
-      ],
-      "items": [
-        {
-          "id": "62e2d3157f20d98a2a4c1a943c25450af790ce7d",
-          "title": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
-          "title_zh": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
-          "title_en": null,
-          "title_original": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
-          "summary": null,
-          "recommend_reason_zh": null,
-          "url": "https://www.aibase.com/news/31699",
-          "source": "AIbase",
-          "source_name": "AIbase",
-          "site_id": "aibase",
-          "published_at": "2026-10-16T12:35:52.199180Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7493,
-      "importance": 0.7493,
-      "importance_score": 0.7493,
-      "importance_label": "行业动态",
-      "importance_breakdown": {
-        "editorial": 0.72,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8982,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "industry",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-16T12:35:52.199180Z",
-      "latest_at": "2026-10-16T12:35:52.199180Z",
-      "primary_item": {
-        "id": "62e2d3157f20d98a2a4c1a943c25450af790ce7d",
-        "title": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
-        "title_zh": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
-        "title_en": null,
-        "title_original": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
-        "summary": null,
-        "recommend_reason_zh": null,
-        "url": "https://www.aibase.com/news/31699",
-        "source": "AIbase",
-        "source_name": "AIbase"
-      },
-      "peak_score": 0.7676,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
-      }
-    },
-    {
-      "story_id": "story_6f5f767d896e",
-      "title": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客 / Hello Toronto! Waymo is En Route",
-      "url": "https://waymo.com/blog/2026/10/waymo-in-toronto",
-      "primary_url": "https://waymo.com/blog/2026/10/waymo-in-toronto",
-      "source": "Waymo：Blog（网页）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "3e43a73eedcc1aa2770320cebf07c8532e011d56",
-          "title": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客 / Hello Toronto! Waymo is En Route",
-          "title_zh": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客",
-          "title_en": "Hello Toronto! Waymo is En Route",
-          "title_original": "Hello Toronto! Waymo is En Route",
-          "summary": "Waymo 宣布进入加拿大，将在多伦多布局完全自动驾驶出行服务，目标2028年迎接首批乘客。近期将先以人工驾驶方式采集高精地图并由自动驾驶专家进行测试；Waymo 与 Element Fleet Management 合作提供车队管理服务，将逐步创造数百个岗位。官方称基于超4亿公里完全自动驾驶里程，其车辆在严重伤害及以上事故中比人类驾驶少95%。",
-          "recommend_reason_zh": null,
-          "url": "https://waymo.com/blog/2026/10/waymo-in-toronto",
-          "source": "Waymo：Blog（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-16T07:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "Waymo：Blog（网页）"
-      ],
-      "items": [
-        {
-          "id": "3e43a73eedcc1aa2770320cebf07c8532e011d56",
-          "title": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客 / Hello Toronto! Waymo is En Route",
-          "title_zh": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客",
-          "title_en": "Hello Toronto! Waymo is En Route",
-          "title_original": "Hello Toronto! Waymo is En Route",
-          "summary": "Waymo 宣布进入加拿大，将在多伦多布局完全自动驾驶出行服务，目标2028年迎接首批乘客。近期将先以人工驾驶方式采集高精地图并由自动驾驶专家进行测试；Waymo 与 Element Fleet Management 合作提供车队管理服务，将逐步创造数百个岗位。官方称基于超4亿公里完全自动驾驶里程，其车辆在严重伤害及以上事故中比人类驾驶少95%。",
-          "recommend_reason_zh": null,
-          "url": "https://waymo.com/blog/2026/10/waymo-in-toronto",
-          "source": "Waymo：Blog（网页）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-16T07:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7168,
-      "importance": 0.7168,
-      "importance_score": 0.7168,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.64,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.8511,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-16T07:00:00Z",
-      "latest_at": "2026-10-16T07:00:00Z",
-      "primary_item": {
-        "id": "3e43a73eedcc1aa2770320cebf07c8532e011d56",
-        "title": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客 / Hello Toronto! Waymo is En Route",
-        "title_zh": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客",
-        "title_en": "Hello Toronto! Waymo is En Route",
-        "title_original": "Hello Toronto! Waymo is En Route",
-        "summary": "Waymo 宣布进入加拿大，将在多伦多布局完全自动驾驶出行服务，目标2028年迎接首批乘客。近期将先以人工驾驶方式采集高精地图并由自动驾驶专家进行测试；Waymo 与 Element Fleet Management 合作提供车队管理服务，将逐步创造数百个岗位。官方称基于超4亿公里完全自动驾驶里程，其车辆在严重伤害及以上事故中比人类驾驶少95%。",
-        "recommend_reason_zh": null,
-        "url": "https://waymo.com/blog/2026/10/waymo-in-toronto",
-        "source": "Waymo：Blog（网页）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7342,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
-      }
-    },
-    {
-      "story_id": "story_7a7e72eaea1c",
-      "title": "PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88% / Open-weight models 88% more susceptible to cyber attacks",
-      "url": "https://www.promptarmor.com/resources/open-weight-susceptibility",
-      "primary_url": "https://www.promptarmor.com/resources/open-weight-susceptibility",
-      "source": "PromptArmor：Threat Intelligence",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "bd211a85c1c7833d0d8781e08ea2b1e6223f63b4",
-          "title": "PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88% / Open-weight models 88% more susceptible to cyber attacks",
-          "title_zh": "PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88%",
-          "title_en": "Open-weight models 88% more susceptible to cyber attacks",
-          "title_original": "Open-weight models 88% more susceptible to cyber attacks",
-          "summary": "PromptArmor 在 9800 次试验的评测中发现，开放权重模型（DeepSeek、Kimi、GLM、Qwen）对真实世界间接提示词注入攻击链的易感率为 26.7%，闭源模型（GPT、Claude、Gemini）为 14.2%，开放权重模型易感率高 88%。",
-          "recommend_reason_zh": null,
-          "url": "https://www.promptarmor.com/resources/open-weight-susceptibility",
-          "source": "PromptArmor：Threat Intelligence",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-16T00:00:00Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "PromptArmor：Threat Intelligence"
-      ],
-      "items": [
-        {
-          "id": "bd211a85c1c7833d0d8781e08ea2b1e6223f63b4",
-          "title": "PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88% / Open-weight models 88% more susceptible to cyber attacks",
-          "title_zh": "PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88%",
-          "title_en": "Open-weight models 88% more susceptible to cyber attacks",
-          "title_original": "Open-weight models 88% more susceptible to cyber attacks",
-          "summary": "PromptArmor 在 9800 次试验的评测中发现，开放权重模型（DeepSeek、Kimi、GLM、Qwen）对真实世界间接提示词注入攻击链的易感率为 26.7%，闭源模型（GPT、Claude、Gemini）为 14.2%，开放权重模型易感率高 88%。",
-          "recommend_reason_zh": null,
-          "url": "https://www.promptarmor.com/resources/open-weight-susceptibility",
-          "source": "PromptArmor：Threat Intelligence",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-16T00:00:00Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7158,
-      "importance": 0.7158,
-      "importance_score": 0.7158,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.67,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.7956,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-16T00:00:00Z",
-      "latest_at": "2026-10-16T00:00:00Z",
-      "primary_item": {
-        "id": "bd211a85c1c7833d0d8781e08ea2b1e6223f63b4",
-        "title": "PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88% / Open-weight models 88% more susceptible to cyber attacks",
-        "title_zh": "PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88%",
-        "title_en": "Open-weight models 88% more susceptible to cyber attacks",
-        "title_original": "Open-weight models 88% more susceptible to cyber attacks",
-        "summary": "PromptArmor 在 9800 次试验的评测中发现，开放权重模型（DeepSeek、Kimi、GLM、Qwen）对真实世界间接提示词注入攻击链的易感率为 26.7%，闭源模型（GPT、Claude、Gemini）为 14.2%，开放权重模型易感率高 88%。",
-        "recommend_reason_zh": null,
-        "url": "https://www.promptarmor.com/resources/open-weight-susceptibility",
-        "source": "PromptArmor：Threat Intelligence",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.732,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
-      }
-    },
-    {
-      "story_id": "story_0fd53cefa455",
-      "title": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后 / This Week in Charts: Agents Denied",
-      "url": "https://www.a16z.news/p/this-week-in-charts-agents-denied",
-      "primary_url": "https://www.a16z.news/p/this-week-in-charts-agents-denied",
-      "source": "a16z：News（RSS）",
-      "source_name": "AI HOT",
-      "sources": [
-        {
-          "id": "aaafea4ab7c61be4f4e1ab35bad8ca54646fc4c1",
-          "title": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后 / This Week in Charts: Agents Denied",
-          "title_zh": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后",
-          "title_en": "This Week in Charts: Agents Denied",
-          "title_original": "This Week in Charts: Agents Denied",
-          "summary": "a16z 图表周报指出智能体商务遇阻，Cloudflare 数据显示智能体与爬虫收到的 403 拒绝响应自夏季起明显增多，约为原先两倍。文章引用 NRF 数据称退货率与退货成本自 2019 年以来分别翻倍和增至三倍，并引用调查指 42% 消费者完全不信任 AI 代购，Similarweb 数据显示 AI 购物多发生在发现与购买之间的中间阶段，而非下单环节。",
-          "recommend_reason_zh": null,
-          "url": "https://www.a16z.news/p/this-week-in-charts-agents-denied",
-          "source": "a16z：News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-16T14:00:39Z"
-        }
-      ],
-      "source_count": 1,
-      "source_names": [
-        "a16z：News（RSS）"
-      ],
-      "items": [
-        {
-          "id": "aaafea4ab7c61be4f4e1ab35bad8ca54646fc4c1",
-          "title": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后 / This Week in Charts: Agents Denied",
-          "title_zh": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后",
-          "title_en": "This Week in Charts: Agents Denied",
-          "title_original": "This Week in Charts: Agents Denied",
-          "summary": "a16z 图表周报指出智能体商务遇阻，Cloudflare 数据显示智能体与爬虫收到的 403 拒绝响应自夏季起明显增多，约为原先两倍。文章引用 NRF 数据称退货率与退货成本自 2019 年以来分别翻倍和增至三倍，并引用调查指 42% 消费者完全不信任 AI 代购，Similarweb 数据显示 AI 购物多发生在发现与购买之间的中间阶段，而非下单环节。",
-          "recommend_reason_zh": null,
-          "url": "https://www.a16z.news/p/this-week-in-charts-agents-denied",
-          "source": "a16z：News（RSS）",
-          "source_name": "AI HOT",
-          "site_id": "aihot",
-          "published_at": "2026-10-16T14:00:39Z"
-        }
-      ],
-      "item_count": 1,
-      "duplicate_count": 1,
-      "score": 0.7155,
-      "importance": 0.7155,
-      "importance_score": 0.7155,
-      "importance_label": "值得关注",
-      "importance_breakdown": {
-        "editorial": 0.6,
-        "source_tier": 0.78,
-        "ai_relevance": 1.0,
-        "recency": 0.9105,
-        "story_heat": 0.0,
-        "soft_content_penalty": 0.0
-      },
-      "category": "watch",
-      "reasons": [
-        "high_ai_relevance"
-      ],
-      "earliest_at": "2026-10-16T14:00:39Z",
-      "latest_at": "2026-10-16T14:00:39Z",
-      "primary_item": {
-        "id": "aaafea4ab7c61be4f4e1ab35bad8ca54646fc4c1",
-        "title": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后 / This Week in Charts: Agents Denied",
-        "title_zh": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后",
-        "title_en": "This Week in Charts: Agents Denied",
-        "title_original": "This Week in Charts: Agents Denied",
-        "summary": "a16z 图表周报指出智能体商务遇阻，Cloudflare 数据显示智能体与爬虫收到的 403 拒绝响应自夏季起明显增多，约为原先两倍。文章引用 NRF 数据称退货率与退货成本自 2019 年以来分别翻倍和增至三倍，并引用调查指 42% 消费者完全不信任 AI 代购，Similarweb 数据显示 AI 购物多发生在发现与购买之间的中间阶段，而非下单环节。",
-        "recommend_reason_zh": null,
-        "url": "https://www.a16z.news/p/this-week-in-charts-agents-denied",
-        "source": "a16z：News（RSS）",
-        "source_name": "AI HOT"
-      },
-      "peak_score": 0.7256,
-      "persona_id": "pragmatic",
-      "persona_score": 1,
-      "persona_meta": {
-        "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
+        "scored_at": "2026-10-17T04:46:06.386633Z"
       }
     },
     {
@@ -1694,22 +970,21 @@
       ],
       "item_count": 1,
       "duplicate_count": 1,
-      "score": 0.7517,
-      "importance": 0.7517,
-      "importance_score": 0.7517,
+      "score": 0.7445,
+      "importance": 0.7445,
+      "importance_score": 0.7445,
       "importance_label": "行业动态",
       "importance_breakdown": {
         "editorial": 0.76,
         "source_tier": 0.78,
         "ai_relevance": 1.0,
-        "recency": 0.8449,
+        "recency": 0.8052,
         "story_heat": 0.0,
         "soft_content_penalty": 0.0
       },
       "category": "industry",
       "reasons": [
-        "high_ai_relevance",
-        "high_importance"
+        "high_ai_relevance"
       ],
       "earliest_at": "2026-10-16T06:14:36.073000Z",
       "latest_at": "2026-10-16T06:14:36.073000Z",
@@ -1730,7 +1005,754 @@
       "persona_score": 1,
       "persona_meta": {
         "mode": "rules_fallback",
-        "scored_at": "2026-10-16T23:45:52.778942Z"
+        "scored_at": "2026-10-17T04:46:06.386633Z"
+      }
+    },
+    {
+      "story_id": "story_5ca42a9e449b",
+      "title": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
+      "url": "https://www.aibase.com/news/31699",
+      "primary_url": "https://www.aibase.com/news/31699",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "62e2d3157f20d98a2a4c1a943c25450af790ce7d",
+          "title": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
+          "title_zh": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
+          "title_en": null,
+          "title_original": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31699",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T12:35:52.199180Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "62e2d3157f20d98a2a4c1a943c25450af790ce7d",
+          "title": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
+          "title_zh": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
+          "title_en": null,
+          "title_original": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31699",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T12:35:52.199180Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7417,
+      "importance": 0.7417,
+      "importance_score": 0.7417,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.856,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-16T12:35:52.199180Z",
+      "latest_at": "2026-10-16T12:35:52.199180Z",
+      "primary_item": {
+        "id": "62e2d3157f20d98a2a4c1a943c25450af790ce7d",
+        "title": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
+        "title_zh": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
+        "title_en": null,
+        "title_original": "AI日报：Kling4.0全面上线；阅文推出AI精品动画；小米开源空间音频大模型",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31699",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-17T04:46:06.386633Z"
+      }
+    },
+    {
+      "story_id": "story_6f5f767d896e",
+      "title": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客 / Hello Toronto! Waymo is En Route",
+      "url": "https://waymo.com/blog/2026/10/waymo-in-toronto",
+      "primary_url": "https://waymo.com/blog/2026/10/waymo-in-toronto",
+      "source": "Waymo：Blog（网页）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "3e43a73eedcc1aa2770320cebf07c8532e011d56",
+          "title": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客 / Hello Toronto! Waymo is En Route",
+          "title_zh": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客",
+          "title_en": "Hello Toronto! Waymo is En Route",
+          "title_original": "Hello Toronto! Waymo is En Route",
+          "summary": "Waymo 宣布进入加拿大，将在多伦多布局完全自动驾驶出行服务，目标2028年迎接首批乘客。近期将先以人工驾驶方式采集高精地图并由自动驾驶专家进行测试；Waymo 与 Element Fleet Management 合作提供车队管理服务，将逐步创造数百个岗位。官方称基于超4亿公里完全自动驾驶里程，其车辆在严重伤害及以上事故中比人类驾驶少95%。",
+          "recommend_reason_zh": null,
+          "url": "https://waymo.com/blog/2026/10/waymo-in-toronto",
+          "source": "Waymo：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-16T07:00:00Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "Waymo：Blog（网页）"
+      ],
+      "items": [
+        {
+          "id": "3e43a73eedcc1aa2770320cebf07c8532e011d56",
+          "title": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客 / Hello Toronto! Waymo is En Route",
+          "title_zh": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客",
+          "title_en": "Hello Toronto! Waymo is En Route",
+          "title_original": "Hello Toronto! Waymo is En Route",
+          "summary": "Waymo 宣布进入加拿大，将在多伦多布局完全自动驾驶出行服务，目标2028年迎接首批乘客。近期将先以人工驾驶方式采集高精地图并由自动驾驶专家进行测试；Waymo 与 Element Fleet Management 合作提供车队管理服务，将逐步创造数百个岗位。官方称基于超4亿公里完全自动驾驶里程，其车辆在严重伤害及以上事故中比人类驾驶少95%。",
+          "recommend_reason_zh": null,
+          "url": "https://waymo.com/blog/2026/10/waymo-in-toronto",
+          "source": "Waymo：Blog（网页）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-16T07:00:00Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7096,
+      "importance": 0.7096,
+      "importance_score": 0.7096,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.64,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.811,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "watch",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-16T07:00:00Z",
+      "latest_at": "2026-10-16T07:00:00Z",
+      "primary_item": {
+        "id": "3e43a73eedcc1aa2770320cebf07c8532e011d56",
+        "title": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客 / Hello Toronto! Waymo is En Route",
+        "title_zh": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客",
+        "title_en": "Hello Toronto! Waymo is En Route",
+        "title_original": "Hello Toronto! Waymo is En Route",
+        "summary": "Waymo 宣布进入加拿大，将在多伦多布局完全自动驾驶出行服务，目标2028年迎接首批乘客。近期将先以人工驾驶方式采集高精地图并由自动驾驶专家进行测试；Waymo 与 Element Fleet Management 合作提供车队管理服务，将逐步创造数百个岗位。官方称基于超4亿公里完全自动驾驶里程，其车辆在严重伤害及以上事故中比人类驾驶少95%。",
+        "recommend_reason_zh": null,
+        "url": "https://waymo.com/blog/2026/10/waymo-in-toronto",
+        "source": "Waymo：Blog（网页）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7342,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-17T04:46:06.386633Z"
+      }
+    },
+    {
+      "story_id": "story_0fd53cefa455",
+      "title": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后 / This Week in Charts: Agents Denied",
+      "url": "https://www.a16z.news/p/this-week-in-charts-agents-denied",
+      "primary_url": "https://www.a16z.news/p/this-week-in-charts-agents-denied",
+      "source": "a16z：News（RSS）",
+      "source_name": "AI HOT",
+      "sources": [
+        {
+          "id": "aaafea4ab7c61be4f4e1ab35bad8ca54646fc4c1",
+          "title": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后 / This Week in Charts: Agents Denied",
+          "title_zh": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后",
+          "title_en": "This Week in Charts: Agents Denied",
+          "title_original": "This Week in Charts: Agents Denied",
+          "summary": "a16z 图表周报指出智能体商务遇阻，Cloudflare 数据显示智能体与爬虫收到的 403 拒绝响应自夏季起明显增多，约为原先两倍。文章引用 NRF 数据称退货率与退货成本自 2019 年以来分别翻倍和增至三倍，并引用调查指 42% 消费者完全不信任 AI 代购，Similarweb 数据显示 AI 购物多发生在发现与购买之间的中间阶段，而非下单环节。",
+          "recommend_reason_zh": null,
+          "url": "https://www.a16z.news/p/this-week-in-charts-agents-denied",
+          "source": "a16z：News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-16T14:00:39Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "a16z：News（RSS）"
+      ],
+      "items": [
+        {
+          "id": "aaafea4ab7c61be4f4e1ab35bad8ca54646fc4c1",
+          "title": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后 / This Week in Charts: Agents Denied",
+          "title_zh": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后",
+          "title_en": "This Week in Charts: Agents Denied",
+          "title_original": "This Week in Charts: Agents Denied",
+          "summary": "a16z 图表周报指出智能体商务遇阻，Cloudflare 数据显示智能体与爬虫收到的 403 拒绝响应自夏季起明显增多，约为原先两倍。文章引用 NRF 数据称退货率与退货成本自 2019 年以来分别翻倍和增至三倍，并引用调查指 42% 消费者完全不信任 AI 代购，Similarweb 数据显示 AI 购物多发生在发现与购买之间的中间阶段，而非下单环节。",
+          "recommend_reason_zh": null,
+          "url": "https://www.a16z.news/p/this-week-in-charts-agents-denied",
+          "source": "a16z：News（RSS）",
+          "source_name": "AI HOT",
+          "site_id": "aihot",
+          "published_at": "2026-10-16T14:00:39Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7078,
+      "importance": 0.7078,
+      "importance_score": 0.7078,
+      "importance_label": "值得关注",
+      "importance_breakdown": {
+        "editorial": 0.6,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8677,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "watch",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-16T14:00:39Z",
+      "latest_at": "2026-10-16T14:00:39Z",
+      "primary_item": {
+        "id": "aaafea4ab7c61be4f4e1ab35bad8ca54646fc4c1",
+        "title": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后 / This Week in Charts: Agents Denied",
+        "title_zh": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后",
+        "title_en": "This Week in Charts: Agents Denied",
+        "title_original": "This Week in Charts: Agents Denied",
+        "summary": "a16z 图表周报指出智能体商务遇阻，Cloudflare 数据显示智能体与爬虫收到的 403 拒绝响应自夏季起明显增多，约为原先两倍。文章引用 NRF 数据称退货率与退货成本自 2019 年以来分别翻倍和增至三倍，并引用调查指 42% 消费者完全不信任 AI 代购，Similarweb 数据显示 AI 购物多发生在发现与购买之间的中间阶段，而非下单环节。",
+        "recommend_reason_zh": null,
+        "url": "https://www.a16z.news/p/this-week-in-charts-agents-denied",
+        "source": "a16z：News（RSS）",
+        "source_name": "AI HOT"
+      },
+      "peak_score": 0.7256,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-17T04:46:06.386633Z"
+      }
+    },
+    {
+      "story_id": "story_ac3ac3a38b3f",
+      "title": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
+      "url": "https://www.aibase.com/news/31697",
+      "primary_url": "https://www.aibase.com/news/31697",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "9fe5c1aa51a65597a2e6c9742bd152a6ec4dcb87",
+          "title": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
+          "title_zh": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
+          "title_en": null,
+          "title_original": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31697",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T07:23:09.469678Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "9fe5c1aa51a65597a2e6c9742bd152a6ec4dcb87",
+          "title": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
+          "title_zh": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
+          "title_en": null,
+          "title_original": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31697",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T07:23:09.469678Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7341,
+      "importance": 0.7341,
+      "importance_score": 0.7341,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8141,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-16T07:23:09.469678Z",
+      "latest_at": "2026-10-16T07:23:09.469678Z",
+      "primary_item": {
+        "id": "9fe5c1aa51a65597a2e6c9742bd152a6ec4dcb87",
+        "title": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
+        "title_zh": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
+        "title_en": null,
+        "title_original": "ChatGPT 浏览器扩展大升级：能读你开着的标签页，还替你填表发信",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31697",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-17T04:46:06.386633Z"
+      }
+    },
+    {
+      "story_id": "story_c5bfb243fd96",
+      "title": "Claude Opus5.5极速模式全面开放，输出速度提升2.5倍",
+      "url": "https://www.aibase.com/news/31682",
+      "primary_url": "https://www.aibase.com/news/31682",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "65125746edacdae03a7d6eb6f3aaf270920897b2",
+          "title": "Claude Opus5.5极速模式全面开放，输出速度提升2.5倍",
+          "title_zh": "Claude Opus5.5极速模式全面开放，输出速度提升2.5倍",
+          "title_en": null,
+          "title_original": "Claude Opus5.5极速模式全面开放，输出速度提升2.5倍",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31682",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T07:23:09.469678Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "65125746edacdae03a7d6eb6f3aaf270920897b2",
+          "title": "Claude Opus5.5极速模式全面开放，输出速度提升2.5倍",
+          "title_zh": "Claude Opus5.5极速模式全面开放，输出速度提升2.5倍",
+          "title_en": null,
+          "title_original": "Claude Opus5.5极速模式全面开放，输出速度提升2.5倍",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31682",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T07:23:09.469678Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7341,
+      "importance": 0.7341,
+      "importance_score": 0.7341,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8141,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-16T07:23:09.469678Z",
+      "latest_at": "2026-10-16T07:23:09.469678Z",
+      "primary_item": {
+        "id": "65125746edacdae03a7d6eb6f3aaf270920897b2",
+        "title": "Claude Opus5.5极速模式全面开放，输出速度提升2.5倍",
+        "title_zh": "Claude Opus5.5极速模式全面开放，输出速度提升2.5倍",
+        "title_en": null,
+        "title_original": "Claude Opus5.5极速模式全面开放，输出速度提升2.5倍",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31682",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-17T04:46:06.386633Z"
+      }
+    },
+    {
+      "story_id": "story_4af294a32150",
+      "title": "Cursor 紧急调查内部测试涉密数据流向 SpaceX 的风波",
+      "url": "https://www.aibase.com/news/31696",
+      "primary_url": "https://www.aibase.com/news/31696",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "8ef1326f8efe146c4e04617f2dccaff556bc2081",
+          "title": "Cursor 紧急调查内部测试涉密数据流向 SpaceX 的风波",
+          "title_zh": "Cursor 紧急调查内部测试涉密数据流向 SpaceX 的风波",
+          "title_en": null,
+          "title_original": "Cursor 紧急调查内部测试涉密数据流向 SpaceX 的风波",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31696",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T07:23:09.469678Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "8ef1326f8efe146c4e04617f2dccaff556bc2081",
+          "title": "Cursor 紧急调查内部测试涉密数据流向 SpaceX 的风波",
+          "title_zh": "Cursor 紧急调查内部测试涉密数据流向 SpaceX 的风波",
+          "title_en": null,
+          "title_original": "Cursor 紧急调查内部测试涉密数据流向 SpaceX 的风波",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31696",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T07:23:09.469678Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7341,
+      "importance": 0.7341,
+      "importance_score": 0.7341,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8141,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-16T07:23:09.469678Z",
+      "latest_at": "2026-10-16T07:23:09.469678Z",
+      "primary_item": {
+        "id": "8ef1326f8efe146c4e04617f2dccaff556bc2081",
+        "title": "Cursor 紧急调查内部测试涉密数据流向 SpaceX 的风波",
+        "title_zh": "Cursor 紧急调查内部测试涉密数据流向 SpaceX 的风波",
+        "title_en": null,
+        "title_original": "Cursor 紧急调查内部测试涉密数据流向 SpaceX 的风波",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31696",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-17T04:46:06.386633Z"
+      }
+    },
+    {
+      "story_id": "story_474a4f7a38f7",
+      "title": "Cursor 调查 Grok Bot 内部测试数据或涉机密信息问题",
+      "url": "https://www.aibase.com/news/31686",
+      "primary_url": "https://www.aibase.com/news/31686",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "e8a19a6de19143aada6a96e1a91953281ae24043",
+          "title": "Cursor 调查 Grok Bot 内部测试数据或涉机密信息问题",
+          "title_zh": "Cursor 调查 Grok Bot 内部测试数据或涉机密信息问题",
+          "title_en": null,
+          "title_original": "Cursor 调查 Grok Bot 内部测试数据或涉机密信息问题",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31686",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T07:23:09.469678Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "e8a19a6de19143aada6a96e1a91953281ae24043",
+          "title": "Cursor 调查 Grok Bot 内部测试数据或涉机密信息问题",
+          "title_zh": "Cursor 调查 Grok Bot 内部测试数据或涉机密信息问题",
+          "title_en": null,
+          "title_original": "Cursor 调查 Grok Bot 内部测试数据或涉机密信息问题",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31686",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T07:23:09.469678Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7341,
+      "importance": 0.7341,
+      "importance_score": 0.7341,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8141,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-16T07:23:09.469678Z",
+      "latest_at": "2026-10-16T07:23:09.469678Z",
+      "primary_item": {
+        "id": "e8a19a6de19143aada6a96e1a91953281ae24043",
+        "title": "Cursor 调查 Grok Bot 内部测试数据或涉机密信息问题",
+        "title_zh": "Cursor 调查 Grok Bot 内部测试数据或涉机密信息问题",
+        "title_en": null,
+        "title_original": "Cursor 调查 Grok Bot 内部测试数据或涉机密信息问题",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31686",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-17T04:46:06.386633Z"
+      }
+    },
+    {
+      "story_id": "story_08f65a60d972",
+      "title": "DeepSeek 突发故障 4 小时 53 分，腾讯 WorkBuddy 补偿：积分全退再送 500",
+      "url": "https://www.aibase.com/news/31693",
+      "primary_url": "https://www.aibase.com/news/31693",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "5bbcf78cffcdcc95a99d8fa0922f52decc545a5d",
+          "title": "DeepSeek 突发故障 4 小时 53 分，腾讯 WorkBuddy 补偿：积分全退再送 500",
+          "title_zh": "DeepSeek 突发故障 4 小时 53 分，腾讯 WorkBuddy 补偿：积分全退再送 500",
+          "title_en": null,
+          "title_original": "DeepSeek 突发故障 4 小时 53 分，腾讯 WorkBuddy 补偿：积分全退再送 500",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31693",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T07:23:09.469678Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "5bbcf78cffcdcc95a99d8fa0922f52decc545a5d",
+          "title": "DeepSeek 突发故障 4 小时 53 分，腾讯 WorkBuddy 补偿：积分全退再送 500",
+          "title_zh": "DeepSeek 突发故障 4 小时 53 分，腾讯 WorkBuddy 补偿：积分全退再送 500",
+          "title_en": null,
+          "title_original": "DeepSeek 突发故障 4 小时 53 分，腾讯 WorkBuddy 补偿：积分全退再送 500",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31693",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T07:23:09.469678Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7341,
+      "importance": 0.7341,
+      "importance_score": 0.7341,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8141,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-16T07:23:09.469678Z",
+      "latest_at": "2026-10-16T07:23:09.469678Z",
+      "primary_item": {
+        "id": "5bbcf78cffcdcc95a99d8fa0922f52decc545a5d",
+        "title": "DeepSeek 突发故障 4 小时 53 分，腾讯 WorkBuddy 补偿：积分全退再送 500",
+        "title_zh": "DeepSeek 突发故障 4 小时 53 分，腾讯 WorkBuddy 补偿：积分全退再送 500",
+        "title_en": null,
+        "title_original": "DeepSeek 突发故障 4 小时 53 分，腾讯 WorkBuddy 补偿：积分全退再送 500",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31693",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-17T04:46:06.386633Z"
+      }
+    },
+    {
+      "story_id": "story_f40f47e9d4a4",
+      "title": "Meta 发布 Muse Spark Open：自称\"美国最强开源\"，两台 Mac Studio 就能跑",
+      "url": "https://www.aibase.com/news/31685",
+      "primary_url": "https://www.aibase.com/news/31685",
+      "source": "AIbase",
+      "source_name": "AIbase",
+      "sources": [
+        {
+          "id": "2b0bde30684851be18708dd712c75332985113e8",
+          "title": "Meta 发布 Muse Spark Open：自称\"美国最强开源\"，两台 Mac Studio 就能跑",
+          "title_zh": "Meta 发布 Muse Spark Open：自称\"美国最强开源\"，两台 Mac Studio 就能跑",
+          "title_en": null,
+          "title_original": "Meta 发布 Muse Spark Open：自称\"美国最强开源\"，两台 Mac Studio 就能跑",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31685",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T07:23:09.469678Z"
+        }
+      ],
+      "source_count": 1,
+      "source_names": [
+        "AIbase"
+      ],
+      "items": [
+        {
+          "id": "2b0bde30684851be18708dd712c75332985113e8",
+          "title": "Meta 发布 Muse Spark Open：自称\"美国最强开源\"，两台 Mac Studio 就能跑",
+          "title_zh": "Meta 发布 Muse Spark Open：自称\"美国最强开源\"，两台 Mac Studio 就能跑",
+          "title_en": null,
+          "title_original": "Meta 发布 Muse Spark Open：自称\"美国最强开源\"，两台 Mac Studio 就能跑",
+          "summary": null,
+          "recommend_reason_zh": null,
+          "url": "https://www.aibase.com/news/31685",
+          "source": "AIbase",
+          "source_name": "AIbase",
+          "site_id": "aibase",
+          "published_at": "2026-10-16T07:23:09.469678Z"
+        }
+      ],
+      "item_count": 1,
+      "duplicate_count": 1,
+      "score": 0.7341,
+      "importance": 0.7341,
+      "importance_score": 0.7341,
+      "importance_label": "行业动态",
+      "importance_breakdown": {
+        "editorial": 0.72,
+        "source_tier": 0.78,
+        "ai_relevance": 1.0,
+        "recency": 0.8141,
+        "story_heat": 0.0,
+        "soft_content_penalty": 0.0
+      },
+      "category": "industry",
+      "reasons": [
+        "high_ai_relevance"
+      ],
+      "earliest_at": "2026-10-16T07:23:09.469678Z",
+      "latest_at": "2026-10-16T07:23:09.469678Z",
+      "primary_item": {
+        "id": "2b0bde30684851be18708dd712c75332985113e8",
+        "title": "Meta 发布 Muse Spark Open：自称\"美国最强开源\"，两台 Mac Studio 就能跑",
+        "title_zh": "Meta 发布 Muse Spark Open：自称\"美国最强开源\"，两台 Mac Studio 就能跑",
+        "title_en": null,
+        "title_original": "Meta 发布 Muse Spark Open：自称\"美国最强开源\"，两台 Mac Studio 就能跑",
+        "summary": null,
+        "recommend_reason_zh": null,
+        "url": "https://www.aibase.com/news/31685",
+        "source": "AIbase",
+        "source_name": "AIbase"
+      },
+      "peak_score": 0.7676,
+      "persona_id": "pragmatic",
+      "persona_score": 1,
+      "persona_meta": {
+        "mode": "rules_fallback",
+        "scored_at": "2026-10-17T04:46:06.386633Z"
       }
     }
   ]
